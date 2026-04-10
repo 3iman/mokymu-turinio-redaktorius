@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f8f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    width: 900px;
+    background: white;
+    border-radius: 20px;
+    padding: 48px 56px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.06);
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 44px;
+    letter-spacing: -0.3px;
+  }
+
+  .states {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+  }
+
+  .state {
+    flex: 1;
+    border-radius: 14px;
+    padding: 28px 24px;
+  }
+
+  .state-waiting {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+  }
+
+  .state-syncing {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+  }
+
+  .state-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .state-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .state-waiting .state-icon {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+  }
+
+  .state-syncing .state-icon {
+    background: linear-gradient(135deg, #34a853, #2d9248);
+  }
+
+  .state-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .state-title {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .state-waiting .state-title { color: #b45309; }
+  .state-syncing .state-title { color: #16a34a; }
+
+  /* Mini spreadsheet */
+  .spreadsheet {
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+    margin-bottom: 16px;
+    background: white;
+  }
+
+  .ss-row {
+    display: flex;
+  }
+
+  .ss-row + .ss-row {
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .ss-cell {
+    flex: 1;
+    padding: 8px 12px;
+    font-size: 12px;
+    color: #334155;
+    min-width: 0;
+  }
+
+  .ss-cell + .ss-cell {
+    border-left: 1px solid #e2e8f0;
+  }
+
+  .ss-header {
+    background: #f1f5f9;
+    font-weight: 600;
+    color: #64748b;
+    font-size: 11px;
+  }
+
+  .ss-cell.active-cell {
+    background: #fff7ed;
+    outline: 2px solid #f59e0b;
+    outline-offset: -1px;
+    position: relative;
+  }
+
+  .ss-cell.active-cell .cursor {
+    display: inline-block;
+    width: 1px;
+    height: 14px;
+    background: #1a1a2e;
+    animation: blink 1s infinite;
+    vertical-align: middle;
+    margin-left: 1px;
+  }
+
+  @keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+  }
+
+  .ss-cell.changed-cell {
+    background: #f0fdf4;
+  }
+
+  /* Status bar under spreadsheet */
+  .status-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 0 0;
+  }
+
+  .status-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .state-waiting .status-dot { background: #f59e0b; }
+  .state-syncing .status-dot { background: #16a34a; }
+
+  .status-text {
+    font-size: 12px;
+    line-height: 1.4;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .state-waiting .status-text { color: #92400e; }
+  .state-syncing .status-text { color: #166534; }
+
+  /* Arrow between states */
+  .states-arrow {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 40px;
+    gap: 6px;
+  }
+
+  .arrow-circle {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #34a853, #2d9248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .arrow-circle svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .arrow-hint {
+    font-size: 10px;
+    font-weight: 600;
+    color: #16a34a;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.3;
+  }
+
+  /* Bottom summary */
+  .summary {
+    padding: 16px 20px;
+    background: #eff6ff;
+    border-radius: 10px;
+    border: 1px solid #bfdbfe;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .summary-icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+
+  .summary-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1e40af;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .brand-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  .brand-logo {
+    height: 22px;
+    width: auto;
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+
+    <div class="states">
+      <!-- State 1: Still editing cell -->
+      <div class="state state-waiting">
+        <div class="state-header">
+          <div class="state-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="10" y1="15" x2="10" y2="9"/>
+              <line x1="14" y1="15" x2="14" y2="9"/>
+            </svg>
+          </div>
+          <div class="state-title">{{state_editing_title}}</div>
+        </div>
+
+        <div class="spreadsheet">
+          <div class="ss-row">
+            <div class="ss-cell ss-header">{{col_nr}}</div>
+            <div class="ss-cell ss-header">{{col_name}}</div>
+            <div class="ss-cell ss-header">{{col_role}}</div>
+          </div>
+          <div class="ss-row">
+            <div class="ss-cell">1.</div>
+            <div class="ss-cell">{{row1_name}}</div>
+            <div class="ss-cell">{{row1_role}}</div>
+          </div>
+          <div class="ss-row">
+            <div class="ss-cell">2.</div>
+            <div class="ss-cell active-cell">{{row2_name_editing}}<span class="cursor"></span></div>
+            <div class="ss-cell">{{row2_role}}</div>
+          </div>
+        </div>
+
+        <div class="status-bar">
+          <div class="status-dot"></div>
+          <div class="status-text">{{status_waiting}}</div>
+        </div>
+      </div>
+
+      <!-- Arrow -->
+      <div class="states-arrow">
+        <div class="arrow-circle">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </div>
+        <div class="arrow-hint">{{arrow_hint}}</div>
+      </div>
+
+      <!-- State 2: Left the cell -->
+      <div class="state state-syncing">
+        <div class="state-header">
+          <div class="state-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <div class="state-title">{{state_left_title}}</div>
+        </div>
+
+        <div class="spreadsheet">
+          <div class="ss-row">
+            <div class="ss-cell ss-header">{{col_nr}}</div>
+            <div class="ss-cell ss-header">{{col_name}}</div>
+            <div class="ss-cell ss-header">{{col_role}}</div>
+          </div>
+          <div class="ss-row">
+            <div class="ss-cell">1.</div>
+            <div class="ss-cell">{{row1_name}}</div>
+            <div class="ss-cell">{{row1_role}}</div>
+          </div>
+          <div class="ss-row">
+            <div class="ss-cell">2.</div>
+            <div class="ss-cell changed-cell">{{row2_name_done}}</div>
+            <div class="ss-cell">{{row2_role}}</div>
+          </div>
+        </div>
+
+        <div class="status-bar">
+          <div class="status-dot"></div>
+          <div class="status-text">{{status_synced}}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary">
+      <svg class="summary-icon" viewBox="0 0 24 24" fill="none" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <polyline points="12 6 12 12 16 14"/>
+      </svg>
+      <div class="summary-text">{{summary}}</div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo" src="{{brand_logo_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

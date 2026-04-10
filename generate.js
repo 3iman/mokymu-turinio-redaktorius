@@ -166,6 +166,28 @@ const TEMPLATE_KEYS = {
       table_r2_c1: d.table_r2_c1, table_r2_c2: d.table_r2_c2, table_r2_c3: d.table_r2_c3,
     };
   },
+  '08-duomenu-atsinaujinimas': (data) => {
+    const d = data['08_duomenu_atsinaujinimas'];
+    return {
+      lang: data.lang,
+      brand_logo_path: './assets/cleverphant-juodas.svg',
+      title: d.title,
+      state_editing_title: d.state_editing_title,
+      state_left_title: d.state_left_title,
+      col_nr: d.col_nr,
+      col_name: d.col_name,
+      col_role: d.col_role,
+      row1_name: d.row1_name,
+      row1_role: d.row1_role,
+      row2_name_editing: d.row2_name_editing,
+      row2_name_done: d.row2_name_done,
+      row2_role: d.row2_role,
+      status_waiting: d.status_waiting,
+      status_synced: d.status_synced,
+      arrow_hint: d.arrow_hint,
+      summary: d.summary,
+    };
+  },
   '01-teisingas-projekto-puslapis': (data) => {
     const d = data['01_teisingas_projekto_puslapis'];
     return {

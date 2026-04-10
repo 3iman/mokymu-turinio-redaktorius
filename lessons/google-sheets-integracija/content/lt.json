@@ -90,6 +90,23 @@
     "ok_title": "Kitus lapus galima tvarkyti laisvai",
     "ok_desc": "Pervadinti, perkelti, pridėti naujų – kiekvieno lapo gID nesikeičia"
   },
+  "08_duomenu_atsinaujinimas": {
+    "title": "Kada atsinaujina duomenys svetainėje",
+    "state_editing_title": "Dar redaguojate celę",
+    "state_left_title": "Išėjote iš celės",
+    "col_nr": "Eil. Nr.",
+    "col_name": "Vardas, pavardė",
+    "col_role": "Atstovavimas",
+    "row1_name": "Jolanta Kazlauskienė",
+    "row1_role": "Mokytojų atstovė",
+    "row2_name_editing": "Rasa Petrait",
+    "row2_name_done": "Rasa Petraitienė",
+    "row2_role": "Tėvų atstovė",
+    "status_waiting": "Pakeitimai dar nesiunčiami – kol esate celėje, sistema laukia",
+    "status_synced": "Duomenys išsiųsti – svetainė atsinaujins per kelias sekundes",
+    "arrow_hint": "Tab / Enter",
+    "summary": "Baigus redaguoti celę – pereikite į kitą ir duomenys atsinaujins automatiškai"
+  },
   "07_kodo_iterpimas_rezultatas": {
     "title": "Lentelės įterpimas į puslapį",
     "editor_label": "Turinio redaktorius",
