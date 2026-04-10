@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f8f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    width: 900px;
+    background: white;
+    border-radius: 20px;
+    padding: 48px 56px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.06);
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: -0.3px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- File mockup section ---- */
+  .file-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+
+  .file-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 12px;
+    text-align: center;
+    width: 100%;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .file-mockup {
+    width: 420px;
+    background: #f0faf3;
+    border: 2px solid #34a853;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .file-body {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .file-icon {
+    width: 28px;
+    height: 28px;
+    color: #34a853;
+  }
+
+  .sheet-tabs {
+    display: flex;
+    border-top: 1px solid #c8e6c9;
+  }
+
+  .sheet-tab {
+    flex: 1;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .sheet-tab:nth-child(1) {
+    background: #34a853;
+    border-radius: 0 0 0 10px;
+  }
+
+  .sheet-tab:nth-child(2) {
+    background: #2d9248;
+  }
+
+  .sheet-tab:nth-child(3) {
+    background: #257a3b;
+    border-radius: 0 0 10px 0;
+  }
+
+  /* ---- URL bar section ---- */
+  .url-section {
+    margin-bottom: 32px;
+  }
+
+  .url-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 12px;
+    text-align: center;
+    width: 100%;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .url-bar {
+    background: #f8f9fb;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 13px;
+    color: #64748b;
+    flex-wrap: wrap;
+  }
+
+  .url-base {
+    color: #94a3b8;
+  }
+
+  .url-file-id {
+    background: #fef3c7;
+    color: #b45309;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+  }
+
+  .url-separator {
+    color: #94a3b8;
+  }
+
+  .url-gid {
+    background: #ede9fe;
+    color: #7c3aed;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 700;
+  }
+
+  /* ---- gID mapping section ---- */
+  .gid-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gid-explain {
+    font-size: 13px;
+    color: #64748b;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    font-style: italic;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .gid-mappings {
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+    width: 100%;
+  }
+
+  .gid-mapping {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .gid-tab-name {
+    font-size: 13px;
+    font-weight: 600;
+    color: #1a1a2e;
+    background: #f0faf3;
+    border: 1.5px solid #34a853;
+    padding: 6px 16px;
+    border-radius: 6px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .gid-connector {
+    width: 1px;
+    height: 20px;
+    border-left: 2px dotted #cbd5e1;
+  }
+
+  .gid-value {
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    color: #7c3aed;
+    background: #ede9fe;
+    padding: 5px 12px;
+    border-radius: 6px;
+  }
+
+  /* ---- Brand bar ---- */
+  .brand-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  .brand-logo {
+    height: 22px;
+    width: auto;
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Failo struktūra ir URL anatomija</div>
+
+    <!-- File mockup -->
+    <div class="file-section">
+      <div class="file-label">Google Sheets failas</div>
+      <div class="file-mockup">
+        <div class="file-body">
+          <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="8" y1="13" x2="16" y2="13"/>
+            <line x1="8" y1="17" x2="16" y2="17"/>
+            <line x1="10" y1="9" x2="8" y2="9"/>
+          </svg>
+        </div>
+        <div class="sheet-tabs">
+          <div class="sheet-tab">Gimnazijos taryba</div>
+          <div class="sheet-tab">Mokytojų sąrašas</div>
+          <div class="sheet-tab">Darbo užmokestis</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- URL bar -->
+    <div class="url-section">
+      <div class="url-label">URL struktūra</div>
+      <div class="url-bar">
+        <span class="url-base">docs.google.com/spreadsheets/d/</span><span class="url-file-id">FAILO_ID</span><span class="url-separator">/edit#gid=</span><span class="url-gid">gID</span>
+      </div>
+    </div>
+
+    <!-- gID mappings -->
+    <div class="gid-section">
+      <div class="gid-explain">Kiekvienas lapas turi unikalų gID numerį</div>
+      <div class="gid-mappings">
+        <div class="gid-mapping">
+          <div class="gid-tab-name">Gimnazijos taryba</div>
+          <div class="gid-connector"></div>
+          <div class="gid-value">gID = 0</div>
+        </div>
+        <div class="gid-mapping">
+          <div class="gid-tab-name">Mokytojų sąrašas</div>
+          <div class="gid-connector"></div>
+          <div class="gid-value">gID = 1890969320</div>
+        </div>
+        <div class="gid-mapping">
+          <div class="gid-tab-name">Darbo užmokestis</div>
+          <div class="gid-connector"></div>
+          <div class="gid-value">gID = 1753601957</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

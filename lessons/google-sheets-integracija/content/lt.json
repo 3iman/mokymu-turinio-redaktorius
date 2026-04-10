@@ -1,0 +1,110 @@
+{
+  "lang": "lt",
+  "common": {
+    "google_sheets": "Google Sheets",
+    "cleverphant": "Cleverphant",
+    "website": "Svetainė"
+  },
+  "00_kodel_tai_naudinga": {
+    "title": "Kodėl tai naudinga",
+    "old_title": "Senoji tvarka",
+    "old_step_1": "Prisijungiate prie TVS",
+    "old_step_2": "Randate puslapį su lentele",
+    "old_step_3": "Redaguojate lentelę WYSIWYG redaktoriuje",
+    "old_step_4": "Formatuojate, taisote stilių, bandote iš naujo",
+    "new_title": "Su \u201eGoogle Sheets\u201c",
+    "new_step_1": "Atidarote \u201eGoogle Sheets\u201c failą",
+    "new_step_2": "Pakeičiate duomenis \u2013 svetainė atsinaujina automatiškai",
+    "summary": "Vienkartinė integracija \u2013 toliau tik redaguojate duomenis"
+  },
+  "01_sheets_tvs_svetaine": {
+    "title": "Kaip veikia \u201eGoogle Sheets\u201c integracija",
+    "step1_label": "Redaguojate",
+    "step1_desc": "Atnaujinate duomenis\n\u201eGoogle Sheets\u201c faile",
+    "step2_label": "Sinchronizuojama",
+    "step2_desc": "TVS automatiškai\nnuskaito pakeitimus",
+    "step3_label": "Atvaizduojama",
+    "step3_desc": "Lentelė atsinaujina\njūsų svetainėje",
+    "arrow_label_1": "Automatinis nuskaitymas",
+    "arrow_label_2": "Realiu laiku"
+  },
+  "02_failo_url_anatomija": {
+    "title": "Failo struktūra ir URL anatomija",
+    "file_label": "Google Sheets failas",
+    "sheet_tabs": ["Gimnazijos taryba", "Mokytojų sąrašas", "Darbo užmokestis"],
+    "url_label": "URL struktūra",
+    "url_base": "docs.google.com/spreadsheets/d/",
+    "url_file_id": "FAILO_ID",
+    "url_gid": "gID",
+    "gid_explain": "Kiekvienas lapas turi unikalų gID numerį",
+    "gid_values": ["gID = 0", "gID = 1890969320", "gID = 1753601957"]
+  },
+  "03_kopija_pavadinimas_formatas": {
+    "title": "Nuo ko pradėti?",
+    "step1_label": "Atidarote šabloną",
+    "step1_desc": "Paruoštas šablono failas atidaromas paspaudus nuorodą",
+    "step2_label": "Pasidarote kopiją",
+    "step2_code": "Failas → Sukurti kopiją",
+    "step2_desc": "ir išsaugote savo Google Diske",
+    "step3_label": "Suteikiate pavadinimą",
+    "step3_desc": "Privalomas pavadinimo formatas:",
+    "step3_format": "Mokyklos pavadinimas – TABLE",
+    "step4_label": "Suteikiate prieigą",
+    "step4_desc": "Jei norite, kad padėtume sutvarkyti lentelę – suteikiate prieigą adresu",
+    "step4_email": "cleverphant@gmail.com",
+    "step4_note": "Jei failas liks užrakintas, pagalbos suteikti negalėsime"
+  },
+  "04_publikavimas_share_viewer": {
+    "title": "Kaip publikuoti failą",
+    "share_button": "Bendrinti",
+    "access_label": "Bendroji prieiga",
+    "anyone_label": "Visi, turintys nuorodą",
+    "role_label": "Žiūrintysis",
+    "done_label": "Atlikta",
+    "step1_desc": "Spaudžiate mygtuką",
+    "step2_desc": "Skiltyje Bendroji prieiga pasirenkate",
+    "step3_desc": "Paliekate rolę",
+    "warning": "Jei failas nepublikuotas – lentelė nebus rodoma svetainėje"
+  },
+  "05_taisyklingai_netaisyklingai_lentele": {
+    "title": "Lentelės redagavimo taisyklės",
+    "do_title": "Taisyklingai",
+    "dont_title": "Netaisyklingai",
+    "do_1": "Viena celė = viena eilutė",
+    "dont_1": "Shift+Enter kelios eilutės celėje",
+    "do_2": "Paprastas tekstas celėse",
+    "dont_2": "Formulės celių viduje",
+    "do_3": "A stulpelis = minimalus formatavimas",
+    "dont_3": "Stulpelių stiliai ir spalvos",
+    "do_4": "Fiksuotas stulpelių skaičius",
+    "dont_4": "Skirtingas stulpelių skaičius eilutėse"
+  },
+  "06_lapu_tvarka_gid_reiksmes": {
+    "title": "Lapų tvarka ir gID reikšmės",
+    "tab_1": "Gimnazijos taryba",
+    "tab_2": "Mokytojų sąrašas",
+    "tab_3": "Darbo užmokestis",
+    "first_label": "Pirmas lapas – visada gID = 0",
+    "warn_title": "Nekeiskite pirmo lapo eilės",
+    "warn_desc": "Perkėlus pirmą lapą, jo vietoje atsiras kitas lapas su gID = 0 – ir į svetainę bus įterpta ne ta lentelė",
+    "ok_title": "Kitus lapus galima tvarkyti laisvai",
+    "ok_desc": "Pervadinti, perkelti, pridėti naujų – kiekvieno lapo gID nesikeičia"
+  },
+  "07_kodo_iterpimas_rezultatas": {
+    "title": "Lentelės įterpimas į puslapį",
+    "editor_label": "Turinio redaktorius",
+    "code_template": "{{google_sheet(1, {'tab':'0'})}}",
+    "code_warn": "Kodas kopijuojamas pilnai – su {{ }} iš abiejų pusių",
+    "result_label": "Rezultatas svetainėje",
+    "table_h2": "Gimnazijos tarybos sudėtis",
+    "table_header_1": "Eil. Nr.",
+    "table_header_2": "Vardas, pavardė",
+    "table_header_3": "Atstovavimas",
+    "table_r1_c1": "1.",
+    "table_r1_c2": "Jolanta Kazlauskienė",
+    "table_r1_c3": "Mokytojų atstovė",
+    "table_r2_c1": "2.",
+    "table_r2_c2": "Rasa Petraitienė",
+    "table_r2_c3": "Tėvų atstovė"
+  }
+}

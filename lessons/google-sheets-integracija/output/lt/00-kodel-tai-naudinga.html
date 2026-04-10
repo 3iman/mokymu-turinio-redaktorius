@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f8f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    width: 900px;
+    background: white;
+    border-radius: 20px;
+    padding: 48px 56px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.06);
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: -0.3px;
+  }
+
+  .comparison {
+    display: flex;
+    gap: 24px;
+  }
+
+  .column {
+    flex: 1;
+    border-radius: 14px;
+    padding: 28px 24px;
+  }
+
+  .column-old {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+  }
+
+  .column-new {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+  }
+
+  .column-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .column-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .column-old .column-icon {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+  }
+
+  .column-new .column-icon {
+    background: linear-gradient(135deg, #34a853, #2d9248);
+  }
+
+  .column-icon svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .column-title {
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .column-old .column-title { color: #dc2626; }
+  .column-new .column-title { color: #16a34a; }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .step-num {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 11px;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .column-old .step-num {
+    background: #fecaca;
+    color: #dc2626;
+  }
+
+  .column-new .step-num {
+    background: #bbf7d0;
+    color: #16a34a;
+  }
+
+  .step-text {
+    font-size: 13px;
+    color: #475569;
+    line-height: 1.5;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* Divider with arrow */
+  .divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    flex-shrink: 0;
+    width: 40px;
+  }
+
+  .divider-arrow {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #34a853, #2d9248);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .divider-arrow svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* Bottom summary */
+  .summary {
+    margin-top: 28px;
+    padding: 16px 20px;
+    background: #f0fdf4;
+    border-radius: 10px;
+    border: 1px solid #bbf7d0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .summary-icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+
+  .summary-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #16a34a;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .brand-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  .brand-logo {
+    height: 22px;
+    width: auto;
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Kodėl tai naudinga</div>
+
+    <div class="comparison">
+      <!-- Old way -->
+      <div class="column column-old">
+        <div class="column-header">
+          <div class="column-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </div>
+          <div class="column-title">Senoji tvarka</div>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-text">Prisijungiate prie TVS</div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-text">Randate puslapį su lentele</div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-text">Redaguojate lentelę WYSIWYG redaktoriuje</div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-text">Formatuojate, taisote stilių, bandote iš naujo</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow -->
+      <div class="divider">
+        <div class="divider-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- New way -->
+      <div class="column column-new">
+        <div class="column-header">
+          <div class="column-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <div class="column-title">Su „Google Sheets“</div>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-text">Atidarote „Google Sheets“ failą</div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-text">Pakeičiate duomenis – svetainė atsinaujina automatiškai</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary">
+      <svg class="summary-icon" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <polyline points="12 6 12 12 16 14"/>
+      </svg>
+      <div class="summary-text">Vienkartinė integracija – toliau tik redaguojate duomenis</div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

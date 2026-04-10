@@ -1,0 +1,98 @@
+{
+  "lang": "en",
+  "common": {
+    "google_sheets": "Google Sheets",
+    "cleverphant": "Cleverphant",
+    "website": "Website"
+  },
+  "01_sheets_tvs_svetaine": {
+    "title": "How Google Sheets Integration Works",
+    "step1_label": "You edit",
+    "step1_desc": "You update data in your\nGoogle Sheets file",
+    "step2_label": "It syncs",
+    "step2_desc": "The CMS automatically\ndetects changes",
+    "step3_label": "It displays",
+    "step3_desc": "The table updates\non your website",
+    "arrow_label_1": "Auto sync",
+    "arrow_label_2": "Real-time"
+  },
+  "02_failo_url_anatomija": {
+    "title": "File Structure & URL Anatomy",
+    "file_label": "Google Sheets file",
+    "sheet_tabs": ["School council", "Teachers list", "Salary info"],
+    "url_label": "URL structure",
+    "url_base": "docs.google.com/spreadsheets/d/",
+    "url_file_id": "FILE_ID",
+    "url_gid": "gID",
+    "gid_explain": "Each sheet has a unique gID number",
+    "gid_values": ["gID = 0", "gID = 1890969320", "gID = 1753601957"]
+  },
+  "03_kopija_pavadinimas_formatas": {
+    "title": "Getting Started",
+    "step1_label": "You open the template",
+    "step1_desc": "The prepared template file opens via a shared link",
+    "step2_label": "You make a copy",
+    "step2_code": "File → Make a copy",
+    "step2_desc": "and save to your Google Drive",
+    "step3_label": "You name the file",
+    "step3_desc": "Required naming format:",
+    "step3_format": "School name – TABLE",
+    "step4_label": "You grant access",
+    "step4_desc": "If you'd like help setting up the table – grant access to",
+    "step4_email": "cleverphant@gmail.com",
+    "step4_note": "If the file stays locked, we won't be able to help"
+  },
+  "04_publikavimas_share_viewer": {
+    "title": "How to Publish the File",
+    "share_button": "Share",
+    "access_label": "General access",
+    "anyone_label": "Anyone with the link",
+    "role_label": "Viewer",
+    "done_label": "Done",
+    "step1_desc": "You click the button",
+    "step2_desc": "In General access you select",
+    "step3_desc": "You keep the role as",
+    "warning": "If the file is not published, the table won't appear on the website"
+  },
+  "05_taisyklingai_netaisyklingai_lentele": {
+    "title": "Table Editing Rules",
+    "do_title": "Correct",
+    "dont_title": "Incorrect",
+    "do_1": "One cell = one row",
+    "dont_1": "Shift+Enter for multiple lines in a cell",
+    "do_2": "Plain text in cells",
+    "dont_2": "Formulas inside cells",
+    "do_3": "Column A = minimal formatting",
+    "dont_3": "Column styles and colors",
+    "do_4": "Fixed number of columns",
+    "dont_4": "Different column count per row"
+  },
+  "06_lapu_tvarka_gid_reiksmes": {
+    "title": "Sheet Order & gID Values",
+    "tab_1": "School council",
+    "tab_2": "Teachers list",
+    "tab_3": "Salary info",
+    "first_label": "First sheet – always gID = 0",
+    "warn_title": "Do not change the first sheet's position",
+    "warn_desc": "If moved, another sheet takes its place with gID = 0 – and the wrong table will appear on the website",
+    "ok_title": "Other sheets can be rearranged freely",
+    "ok_desc": "Rename, move, add new ones – each sheet's gID stays the same"
+  },
+  "07_kodo_iterpimas_rezultatas": {
+    "title": "Embedding a Table into a Page",
+    "editor_label": "Content editor",
+    "code_template": "{{google_sheet(1, {'tab':'0'})}}",
+    "code_warn": "Copy the full code – including {{ }} on both sides",
+    "result_label": "Result on website",
+    "table_h2": "School Council Members",
+    "table_header_1": "No.",
+    "table_header_2": "Full name",
+    "table_header_3": "Representation",
+    "table_r1_c1": "1.",
+    "table_r1_c2": "Sarah Johnson",
+    "table_r1_c3": "Teacher representative",
+    "table_r2_c1": "2.",
+    "table_r2_c2": "Emily Davis",
+    "table_r2_c3": "Parent representative"
+  }
+}

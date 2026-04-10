@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f8f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    width: 900px;
+    background: white;
+    border-radius: 20px;
+    padding: 48px 56px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.06);
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 36px;
+    letter-spacing: -0.3px;
+  }
+
+  /* Browser mockup */
+  .mockup {
+    border-radius: 10px;
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+    background: white;
+  }
+
+  .browser-bar {
+    background: #f1f5f9;
+    padding: 8px 14px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .browser-dots {
+    display: flex;
+    gap: 5px;
+  }
+
+  .browser-dots span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #cbd5e1;
+  }
+
+  .browser-url {
+    flex: 1;
+    background: white;
+    border-radius: 5px;
+    padding: 4px 10px;
+    font-size: 10px;
+    color: #94a3b8;
+    border: 1px solid #e2e8f0;
+  }
+
+  /* Site header */
+  .site-header {
+    background: #2e7d32;
+    padding: 6px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .site-nav-item {
+    font-size: 8px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    opacity: 0.9;
+  }
+
+  /* Breadcrumb */
+  .breadcrumb {
+    padding: 8px 20px;
+    font-size: 9px;
+    color: #94a3b8;
+    border-bottom: 1px solid #f1f5f9;
+  }
+
+  .breadcrumb span {
+    color: #cbd5e1;
+    margin: 0 4px;
+  }
+
+  /* Page layout */
+  .page-layout {
+    display: flex;
+    gap: 0;
+  }
+
+  .page-main {
+    flex: 1;
+    padding: 16px 20px 20px;
+  }
+
+  .page-sidebar {
+    width: 140px;
+    background: #f8f9fb;
+    padding: 16px 12px;
+    border-left: 1px solid #f1f5f9;
+    flex-shrink: 0;
+  }
+
+  /* Page title */
+  .page-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 14px;
+  }
+
+  /* EU banner */
+  .eu-banner {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+  }
+
+  .eu-flag-img {
+    width: 64px;
+    height: 44px;
+    background: #003399;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .eu-flag-img svg {
+    width: 64px;
+    height: 44px;
+  }
+
+  .eu-banner-text {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a1a2e;
+    line-height: 1.3;
+  }
+
+  /* Project text */
+  .project-text {
+    font-size: 10px;
+    color: #475569;
+    line-height: 1.7;
+    margin-bottom: 6px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .project-text strong {
+    color: #1a1a2e;
+  }
+
+  /* Sidebar modules */
+  .sidebar-module {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    padding: 7px 8px;
+    margin-bottom: 4px;
+    background: white;
+    border-radius: 4px;
+    border: 1px solid #e2e8f0;
+  }
+
+  .sidebar-icon {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+    background: #2e7d32;
+    flex-shrink: 0;
+  }
+
+  .sidebar-label {
+    font-size: 8px;
+    font-weight: 600;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+
+  .brand-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 36px;
+    padding-top: 20px;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  .brand-logo {
+    height: 22px;
+    width: auto;
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Teisingas projekto puslapis</div>
+
+    <div class="mockup">
+      <!-- Browser bar -->
+      <div class="browser-bar">
+        <div class="browser-dots">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="browser-url">www.mokykla.lt/projektai/es-finansuojami-projektai/galimybiu-mokykla/</div>
+      </div>
+
+      <!-- Site header (green nav bar) -->
+      <div class="site-header">
+        <div class="site-nav-item">Ugdymas</div>
+        <div class="site-nav-item">Paslaugos</div>
+        <div class="site-nav-item">Renginiai</div>
+        <div class="site-nav-item">Kontaktai</div>
+      </div>
+
+      <!-- Breadcrumb -->
+      <div class="breadcrumb">
+        Titulinis<span>›</span>Projektai<span>›</span>ES finansuojami projektai
+      </div>
+
+      <!-- Page layout -->
+      <div class="page-layout">
+        <!-- Main content -->
+        <div class="page-main">
+          <div class="page-title">Projektas „Galimybių mokykla“</div>
+
+          <!-- EU banner -->
+          <div class="eu-banner">
+            <div class="eu-flag-img">
+              <svg viewBox="0 0 64 44" width="64" height="44">
+                <rect width="64" height="44" rx="2" fill="#003399"/>
+                <g transform="translate(32,22)" fill="#ffcc00">
+                  <circle cx="0" cy="-14" r="1.8"/>
+                  <circle cx="7" cy="-12.1" r="1.8"/>
+                  <circle cx="12.1" cy="-7" r="1.8"/>
+                  <circle cx="14" cy="0" r="1.8"/>
+                  <circle cx="12.1" cy="7" r="1.8"/>
+                  <circle cx="7" cy="12.1" r="1.8"/>
+                  <circle cx="0" cy="14" r="1.8"/>
+                  <circle cx="-7" cy="12.1" r="1.8"/>
+                  <circle cx="-12.1" cy="7" r="1.8"/>
+                  <circle cx="-14" cy="0" r="1.8"/>
+                  <circle cx="-12.1" cy="-7" r="1.8"/>
+                  <circle cx="-7" cy="-12.1" r="1.8"/>
+                </g>
+              </svg>
+            </div>
+            <div class="eu-banner-text">Bendrai finansuoja
+Europos Sąjunga</div>
+          </div>
+
+          <!-- Project description (real-looking text) -->
+          <div class="project-text">
+            <strong>Mokyklos pavadinimas</strong> partnerio teisėmis dalyvauja projekte „Galimybių mokykla“ Nr. 10-072-P-0001, kuris yra finansuojamas ES fondų lėšomis.
+          </div>
+          <div class="project-text">Šio projekto tikslas – stiprinti ugdymo, atliepiančio mokinių amžių ir poreikius, kokybę.</div>
+          <div class="project-text">Projekto įgyvendinimas – nuo 2024 m. balandžio mėn. iki 2027 m. liepos mėn.</div>
+          <div class="project-text">Projekto vykdytojas – Nacionalinė švietimo agentūra.</div>
+          <div class="project-text">Bendras projekto biudžetas – 19 187 021,64 Eur.</div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="page-sidebar">
+          <div class="sidebar-module">
+            <div class="sidebar-icon"></div>
+            <div class="sidebar-label">Dokumentai</div>
+          </div>
+          <div class="sidebar-module">
+            <div class="sidebar-icon"></div>
+            <div class="sidebar-label">Projektai</div>
+          </div>
+          <div class="sidebar-module">
+            <div class="sidebar-icon"></div>
+            <div class="sidebar-label">Veiklos planas</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

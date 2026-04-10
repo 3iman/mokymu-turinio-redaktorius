@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f8f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    width: 900px;
+    background: white;
+    border-radius: 20px;
+    padding: 48px 56px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.06);
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: -0.3px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Share dialog mockup ---- */
+  .dialog {
+    max-width: 480px;
+    margin: 0 auto 28px;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .dialog-header {
+    background: #f8f9fb;
+    padding: 14px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e8f0;
+  }
+
+  .dialog-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a2e;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .dialog-close {
+    width: 20px;
+    height: 20px;
+    color: #94a3b8;
+  }
+
+  .dialog-body {
+    padding: 24px 20px;
+  }
+
+  .access-section {
+    margin-bottom: 16px;
+  }
+
+  .access-label {
+    font-size: 11px;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 10px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .access-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f0faf3;
+    border: 1.5px solid #34a853;
+    border-radius: 8px;
+    padding: 10px 14px;
+  }
+
+  .access-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .access-icon {
+    width: 32px;
+    height: 32px;
+    background: linear-gradient(135deg, #34a853, #2d9248);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .access-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .access-anyone {
+    font-size: 14px;
+    font-weight: 600;
+    color: #1a1a2e;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .access-role {
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+    background: #f1f5f9;
+    padding: 4px 12px;
+    border-radius: 6px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .dialog-footer {
+    padding: 14px 20px;
+    border-top: 1px solid #e2e8f0;
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .done-btn {
+    background: linear-gradient(135deg, #3363ab, #2a5291);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 8px 24px;
+    border-radius: 6px;
+    border: none;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Steps annotation ---- */
+  .steps-row {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 24px;
+  }
+
+  .step-annotation {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  .step-badge {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+    color: white;
+    flex-shrink: 0;
+  }
+
+  .step-annotation:nth-child(1) .step-badge { background: linear-gradient(135deg, #34a853, #2d9248); }
+  .step-annotation:nth-child(2) .step-badge { background: linear-gradient(135deg, #3363ab, #2a5291); }
+  .step-annotation:nth-child(3) .step-badge { background: linear-gradient(135deg, #7c3aed, #6d28d9); }
+
+  .step-text {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.4;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .step-text strong {
+    color: #1a1a2e;
+    font-weight: 600;
+  }
+
+  /* ---- Warning ---- */
+  .warning {
+    text-align: center;
+    font-size: 13px;
+    color: #b45309;
+    background: #fef3c7;
+    padding: 10px 20px;
+    border-radius: 8px;
+    max-width: 480px;
+    margin: 0 auto;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Brand bar ---- */
+  .brand-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  .brand-logo {
+    height: 22px;
+    width: auto;
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">How to Publish the File</div>
+
+    <!-- Share dialog mockup -->
+    <div class="dialog">
+      <div class="dialog-header">
+        <div class="dialog-title">Share</div>
+        <svg class="dialog-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </div>
+      <div class="dialog-body">
+        <div class="access-section">
+          <div class="access-label">General access</div>
+          <div class="access-row">
+            <div class="access-left">
+              <div class="access-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <div class="access-anyone">Anyone with the link</div>
+            </div>
+            <div class="access-role">Viewer</div>
+          </div>
+        </div>
+      </div>
+      <div class="dialog-footer">
+        <div class="done-btn">Done</div>
+      </div>
+    </div>
+
+    <!-- Steps -->
+    <div class="steps-row">
+      <div class="step-annotation">
+        <div class="step-badge">1</div>
+        <div class="step-text">You click the button <strong>Share</strong></div>
+      </div>
+      <div class="step-annotation">
+        <div class="step-badge">2</div>
+        <div class="step-text">In General access you select <strong>Anyone with the link</strong></div>
+      </div>
+      <div class="step-annotation">
+        <div class="step-badge">3</div>
+        <div class="step-text">You keep the role as <strong>Viewer</strong></div>
+      </div>
+    </div>
+
+    <!-- Warning -->
+    <div class="warning">If the file is not published, the table won't appear on the website</div>
+
+    <div class="brand-bar">
+      <img class="brand-logo" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

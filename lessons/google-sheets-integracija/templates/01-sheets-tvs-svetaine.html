@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f8f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    width: 900px;
+    background: white;
+    border-radius: 20px;
+    padding: 48px 56px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.06);
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 48px;
+    letter-spacing: -0.3px;
+  }
+
+  .workflow {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 180px;
+    flex: 1;
+    max-width: 240px;
+  }
+
+  .step-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+    position: relative;
+  }
+
+  .step-icon svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .step-1 .step-icon { background: linear-gradient(135deg, #34a853, #2d9248); }
+  .step-2 .step-icon { background: linear-gradient(135deg, #3363ab, #2a5291); }
+  .step-3 .step-icon { background: linear-gradient(135deg, #7c3aed, #6d28d9); }
+
+  .step-label {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    text-align: center;
+  }
+
+  .step-desc {
+    font-size: 13px;
+    color: #64748b;
+    text-align: center;
+    line-height: 1.5;
+    white-space: pre-line;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 28px;
+    width: 120px;
+  }
+
+  .arrow-line {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  .arrow-dash {
+    width: 70px;
+    height: 2px;
+    background: repeating-linear-gradient(
+      90deg,
+      #cbd5e1 0px,
+      #cbd5e1 6px,
+      transparent 6px,
+      transparent 10px
+    );
+  }
+
+  .arrow-head {
+    width: 0;
+    height: 0;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 8px solid #94a3b8;
+  }
+
+  .arrow-label {
+    font-size: 10px;
+    font-weight: 600;
+    color: #94a3b8;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-top: 8px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .brand-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  .brand-logo {
+    height: 22px;
+    width: auto;
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+
+    <div class="workflow">
+      <!-- Step 1: Google Sheets -->
+      <div class="step step-1">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="8" y1="13" x2="16" y2="13"/>
+            <line x1="8" y1="17" x2="16" y2="17"/>
+            <line x1="10" y1="9" x2="8" y2="9"/>
+          </svg>
+        </div>
+        <div class="step-label">{{step1_label}}</div>
+        <div class="step-desc">{{step1_desc}}</div>
+      </div>
+
+      <!-- Arrow 1 -->
+      <div class="arrow-container">
+        <div class="arrow-line">
+          <div class="arrow-dash"></div>
+          <div class="arrow-head"></div>
+        </div>
+        <div class="arrow-label">{{arrow_label_1}}</div>
+      </div>
+
+      <!-- Step 2: Cleverphant -->
+      <div class="step step-2">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 3 21 3 21 8"/>
+            <line x1="4" y1="20" x2="21" y2="3"/>
+            <polyline points="21 16 21 21 16 21"/>
+            <line x1="15" y1="15" x2="21" y2="21"/>
+            <line x1="4" y1="4" x2="9" y2="9"/>
+          </svg>
+        </div>
+        <div class="step-label">{{step2_label}}</div>
+        <div class="step-desc">{{step2_desc}}</div>
+      </div>
+
+      <!-- Arrow 2 -->
+      <div class="arrow-container">
+        <div class="arrow-line">
+          <div class="arrow-dash"></div>
+          <div class="arrow-head"></div>
+        </div>
+        <div class="arrow-label">{{arrow_label_2}}</div>
+      </div>
+
+      <!-- Step 3: Website -->
+      <div class="step step-3">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+        </div>
+        <div class="step-label">{{step3_label}}</div>
+        <div class="step-desc">{{step3_desc}}</div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo" src="{{brand_logo_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

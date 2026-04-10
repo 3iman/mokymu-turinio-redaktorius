@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f8f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    width: 900px;
+    background: white;
+    border-radius: 20px;
+    padding: 48px 56px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.06);
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 36px;
+    letter-spacing: -0.3px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- File mockup with tabs ---- */
+  .file-mockup {
+    width: 520px;
+    margin: 0 auto 12px;
+    background: #f0faf3;
+    border: 2px solid #34a853;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+
+  .file-body {
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .file-icon {
+    width: 24px;
+    height: 24px;
+    color: #34a853;
+  }
+
+  .sheet-tabs {
+    display: flex;
+    border-top: 1px solid #c8e6c9;
+  }
+
+  .sheet-tab {
+    flex: 1;
+    padding: 10px 0;
+    text-align: center;
+    font-size: 13px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .sheet-tab:nth-child(1) {
+    background: #34a853;
+    border-radius: 0 0 0 10px;
+  }
+
+  .sheet-tab:nth-child(2) {
+    background: #2d9248;
+  }
+
+  .sheet-tab:nth-child(3) {
+    background: #257a3b;
+    border-radius: 0 0 10px 0;
+  }
+
+  /* First tab pointer */
+  .first-pointer {
+    display: flex;
+    align-items: center;
+    width: 520px;
+    margin: 0 auto 32px;
+    padding-left: 4px;
+  }
+
+  .pointer-line {
+    width: 40px;
+    height: 2px;
+    background: #94a3b8;
+    position: relative;
+  }
+
+  .pointer-line::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -2px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #94a3b8;
+  }
+
+  .pointer-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #64748b;
+    margin-left: 8px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .pointer-label .gid-badge {
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-weight: 700;
+    color: #7c3aed;
+    background: #ede9fe;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+  }
+
+  /* ---- Notes ---- */
+  .notes {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 620px;
+    margin: 0 auto;
+  }
+
+  .note {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 14px 18px;
+    border-radius: 10px;
+  }
+
+  .note-warn {
+    background: #fef2f2;
+    border: 1.5px solid #fecaca;
+  }
+
+  .note-ok {
+    background: #f0faf3;
+    border: 1.5px solid #c8e6c9;
+  }
+
+  .note-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 1px;
+  }
+
+  .note-warn .note-icon {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+  }
+
+  .note-ok .note-icon {
+    background: linear-gradient(135deg, #34a853, #2d9248);
+  }
+
+  .note-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .note-content {
+    flex: 1;
+  }
+
+  .note-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 3px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .note-desc {
+    font-size: 13px;
+    color: #64748b;
+    line-height: 1.5;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Brand bar ---- */
+  .brand-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  .brand-logo {
+    height: 22px;
+    width: auto;
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+
+    <!-- File with tabs -->
+    <div class="file-mockup">
+      <div class="file-body">
+        <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="8" y1="13" x2="16" y2="13"/>
+          <line x1="8" y1="17" x2="16" y2="17"/>
+        </svg>
+      </div>
+      <div class="sheet-tabs">
+        <div class="sheet-tab">{{tab_1}}</div>
+        <div class="sheet-tab">{{tab_2}}</div>
+        <div class="sheet-tab">{{tab_3}}</div>
+      </div>
+    </div>
+
+    <!-- Pointer to first tab -->
+    <div class="first-pointer">
+      <div class="pointer-line"></div>
+      <div class="pointer-label">{{first_label}} → <span class="gid-badge">gID = 0</span></div>
+    </div>
+
+    <!-- Notes -->
+    <div class="notes">
+      <div class="note note-warn">
+        <div class="note-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </div>
+        <div class="note-content">
+          <div class="note-title">{{warn_title}}</div>
+          <div class="note-desc">{{warn_desc}}</div>
+        </div>
+      </div>
+      <div class="note note-ok">
+        <div class="note-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="note-content">
+          <div class="note-title">{{ok_title}}</div>
+          <div class="note-desc">{{ok_desc}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo" src="{{brand_logo_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

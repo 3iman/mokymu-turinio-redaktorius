@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f8f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    width: 900px;
+    background: white;
+    border-radius: 20px;
+    padding: 48px 56px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.06);
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: -0.3px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Two columns ---- */
+  .columns {
+    display: flex;
+    gap: 24px;
+  }
+
+  .column {
+    flex: 1;
+    border-radius: 12px;
+    padding: 24px;
+  }
+
+  .col-do {
+    background: #f0faf3;
+    border: 1.5px solid #c8e6c9;
+  }
+
+  .col-dont {
+    background: #fef2f2;
+    border: 1.5px solid #fecaca;
+  }
+
+  .col-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+    padding-bottom: 14px;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
+  }
+
+  .col-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .col-do .col-icon {
+    background: linear-gradient(135deg, #34a853, #2d9248);
+  }
+
+  .col-dont .col-icon {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+  }
+
+  .col-icon svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .col-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a2e;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .rules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .rule-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14px;
+    color: #1a1a2e;
+    line-height: 1.5;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .rule-bullet {
+    flex-shrink: 0;
+    margin-top: 2px;
+    font-size: 14px;
+  }
+
+  .col-do .rule-bullet { color: #34a853; }
+  .col-dont .rule-bullet { color: #ef4444; }
+
+  /* ---- Brand bar ---- */
+  .brand-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  .brand-logo {
+    height: 22px;
+    width: auto;
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+
+    <div class="columns">
+      <!-- Do's column -->
+      <div class="column col-do">
+        <div class="col-header">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="col-title">{{do_title}}</div>
+        </div>
+        <div class="rules-list">
+          <div class="rule-item"><span class="rule-bullet">✓</span> {{do_1}}</div>
+          <div class="rule-item"><span class="rule-bullet">✓</span> {{do_2}}</div>
+          <div class="rule-item"><span class="rule-bullet">✓</span> {{do_3}}</div>
+          <div class="rule-item"><span class="rule-bullet">✓</span> {{do_4}}</div>
+        </div>
+      </div>
+
+      <!-- Don'ts column -->
+      <div class="column col-dont">
+        <div class="col-header">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </div>
+          <div class="col-title">{{dont_title}}</div>
+        </div>
+        <div class="rules-list">
+          <div class="rule-item"><span class="rule-bullet">✗</span> {{dont_1}}</div>
+          <div class="rule-item"><span class="rule-bullet">✗</span> {{dont_2}}</div>
+          <div class="rule-item"><span class="rule-bullet">✗</span> {{dont_3}}</div>
+          <div class="rule-item"><span class="rule-bullet">✗</span> {{dont_4}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo" src="{{brand_logo_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

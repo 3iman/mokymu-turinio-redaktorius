@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f8f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    width: 900px;
+    background: white;
+    border-radius: 20px;
+    padding: 48px 56px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.06);
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: -0.3px;
+  }
+
+  .cards-row {
+    display: flex;
+    gap: 20px;
+  }
+
+  .doc-card {
+    flex: 1;
+    background: #f8f9fb;
+    border-radius: 14px;
+    padding: 28px 24px;
+    border: 1px solid #e2e8f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: border-color 0.2s;
+  }
+
+  .doc-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .doc-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .doc-card-1 .doc-icon { background: linear-gradient(135deg, #3363ab, #2a5291); }
+  .doc-card-2 .doc-icon { background: linear-gradient(135deg, #7c3aed, #6d28d9); }
+  .doc-card-3 .doc-icon { background: linear-gradient(135deg, #34a853, #2d9248); }
+
+  .doc-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 8px;
+    line-height: 1.4;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .doc-desc {
+    font-size: 12px;
+    color: #64748b;
+    line-height: 1.5;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .doc-tag {
+    margin-top: 14px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .doc-card-1 .doc-tag { background: #eff6ff; color: #3363ab; }
+  .doc-card-2 .doc-tag { background: #f5f3ff; color: #7c3aed; }
+  .doc-card-3 .doc-tag { background: #f0fdf4; color: #16a34a; }
+
+  .brand-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  .brand-logo {
+    height: 22px;
+    width: auto;
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Naudinga susipažinti</div>
+
+    <div class="cards-row">
+      <!-- Document 1 -->
+      <div class="doc-card doc-card-1">
+        <div class="doc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+          </svg>
+        </div>
+        <div class="doc-label">ES emblemos naudojimas</div>
+        <div class="doc-desc">Kaip teisingai naudoti ES emblemą vykdant programas</div>
+        <div class="doc-tag">CPVA</div>
+      </div>
+
+      <!-- Document 2 -->
+      <div class="doc-card doc-card-2">
+        <div class="doc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 11l3 3L22 4"/>
+            <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+          </svg>
+        </div>
+        <div class="doc-label">Informacija interneto svetainėje</div>
+        <div class="doc-desc">Patarimai, kaip teisingai paskelbti informaciją apie projektą</div>
+        <div class="doc-tag">Patarimai</div>
+      </div>
+
+      <!-- Document 3 -->
+      <div class="doc-card doc-card-3">
+        <div class="doc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/>
+            <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>
+          </svg>
+        </div>
+        <div class="doc-label">Komunikacijos leidinys</div>
+        <div class="doc-desc">Ką projektų vykdytojai turėtų žinoti apie komunikaciją</div>
+        <div class="doc-tag">Leidinys</div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f8f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    width: 900px;
+    background: white;
+    border-radius: 20px;
+    padding: 48px 56px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.06);
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: #1a1a2e;
+    text-align: center;
+    margin-bottom: 36px;
+    letter-spacing: -0.3px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- CKEditor mockup ---- */
+  .editor-section {
+    margin-bottom: 8px;
+  }
+
+  .section-label {
+    font-size: 12px;
+    font-weight: 600;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 12px;
+    text-align: center;
+    width: 100%;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .editor-mockup {
+    max-width: 620px;
+    margin: 0 auto;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .editor-toolbar {
+    background: #f8f9fb;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 8px 12px;
+    display: flex;
+    gap: 2px;
+  }
+
+  .toolbar-btn {
+    width: 28px;
+    height: 28px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #94a3b8;
+  }
+
+  .toolbar-btn:hover {
+    background: #e2e8f0;
+  }
+
+  .toolbar-sep {
+    width: 1px;
+    height: 20px;
+    background: #e2e8f0;
+    margin: 4px 6px;
+  }
+
+  .editor-body {
+    padding: 20px 24px;
+    min-height: 60px;
+    background: white;
+  }
+
+  .editor-code {
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 15px;
+    color: #1a1a2e;
+    background: #f1f5f9;
+    padding: 8px 14px;
+    border-radius: 6px;
+    display: inline-block;
+    letter-spacing: 0.3px;
+  }
+
+  .editor-code .brace {
+    color: #ef4444;
+    font-weight: 700;
+  }
+
+  /* ---- Code warning ---- */
+  .code-warn {
+    max-width: 620px;
+    margin: 12px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    background: #fef3c7;
+    border-radius: 8px;
+  }
+
+  .code-warn-icon {
+    flex-shrink: 0;
+    width: 18px;
+    height: 18px;
+    color: #b45309;
+  }
+
+  .code-warn-text {
+    font-size: 13px;
+    font-weight: 600;
+    color: #92400e;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Arrow ---- */
+  .arrow-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  .arrow-down-line {
+    width: 2px;
+    height: 24px;
+    background: repeating-linear-gradient(
+      180deg,
+      #cbd5e1 0px,
+      #cbd5e1 5px,
+      transparent 5px,
+      transparent 9px
+    );
+  }
+
+  .arrow-down-head {
+    width: 0;
+    height: 0;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    border-top: 8px solid #94a3b8;
+  }
+
+  /* ---- Result section ---- */
+  .result-section {
+    margin-bottom: 0;
+  }
+
+  .result-preview {
+    max-width: 620px;
+    margin: 0 auto;
+    border: 1.5px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 24px 28px;
+    background: white;
+  }
+
+  .result-h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3363ab;
+    display: inline-block;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .result-table {
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+  }
+
+  .result-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .result-table th {
+    background: linear-gradient(135deg, #3363ab, #2a5291);
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px 14px;
+    text-align: left;
+    border-right: 1px solid rgba(255,255,255,0.15);
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .result-table th:last-child {
+    border-right: none;
+  }
+
+  .result-table td {
+    font-size: 13px;
+    color: #1a1a2e;
+    padding: 9px 14px;
+    border-bottom: 1px solid #f1f5f9;
+    border-right: 1px solid #f1f5f9;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .result-table td:last-child {
+    border-right: none;
+  }
+
+  .result-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .result-table tr:nth-child(even) td {
+    background: #f8f9fb;
+  }
+
+  /* ---- Brand bar ---- */
+  .brand-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid #f1f5f9;
+  }
+
+  .brand-logo {
+    height: 22px;
+    width: auto;
+    opacity: 0.5;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Embedding a Table into a Page</div>
+
+    <!-- CKEditor mockup -->
+    <div class="editor-section">
+      <div class="section-label">Content editor</div>
+      <div class="editor-mockup">
+        <div class="editor-toolbar">
+          <div class="toolbar-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"/><path d="M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"/></svg></div>
+          <div class="toolbar-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="4" x2="10" y2="4"/><line x1="14" y1="20" x2="5" y2="20"/><line x1="15" y1="4" x2="9" y2="20"/></svg></div>
+          <div class="toolbar-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg></div>
+          <div class="toolbar-sep"></div>
+          <div class="toolbar-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="17" y1="10" x2="3" y2="10"/><line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="14" x2="3" y2="14"/><line x1="17" y1="18" x2="3" y2="18"/></svg></div>
+          <div class="toolbar-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg></div>
+        </div>
+        <div class="editor-body">
+          <div class="editor-code"><span class="brace">{{</span>google_sheet(1, {'tab':'0'})<span class="brace">}}</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Warning about full copy -->
+    <div class="code-warn">
+      <svg class="code-warn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <div class="code-warn-text">Copy the full code – including {{ }} on both sides</div>
+    </div>
+
+    <!-- Arrow -->
+    <div class="arrow-down">
+      <div class="arrow-down-line"></div>
+      <div class="arrow-down-head"></div>
+    </div>
+
+    <!-- Result preview -->
+    <div class="result-section">
+      <div class="section-label">Result on website</div>
+      <div class="result-preview">
+        <div class="result-h2">School Council Members</div>
+        <div class="result-table">
+          <table>
+            <thead>
+              <tr>
+                <th>No.</th>
+                <th>Full name</th>
+                <th>Representation</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>Sarah Johnson</td>
+                <td>Teacher representative</td>
+              </tr>
+              <tr>
+                <td>2.</td>
+                <td>Emily Davis</td>
+                <td>Parent representative</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>
