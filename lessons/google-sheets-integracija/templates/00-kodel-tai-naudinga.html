@@ -3,30 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: #f8f9fb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-
-  .card {
-    width: 900px;
-    background: white;
-    border-radius: 20px;
-    padding: 48px 56px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.06);
-  }
 
   .title {
     font-size: 22px;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--c-text);
     text-align: center;
     margin-bottom: 40px;
     letter-spacing: -0.3px;
@@ -44,13 +28,13 @@
   }
 
   .column-old {
-    background: #fef2f2;
-    border: 1px solid #fecaca;
+    background: var(--c-red-bg);
+    border: 1px solid var(--c-red-border);
   }
 
   .column-new {
-    background: #f0fdf4;
-    border: 1px solid #bbf7d0;
+    background: var(--c-green-bg);
+    border: 1px solid var(--c-green-border);
   }
 
   .column-header {
@@ -71,11 +55,11 @@
   }
 
   .column-old .column-icon {
-    background: linear-gradient(135deg, #ef4444, #dc2626);
+    background: linear-gradient(135deg, var(--c-red-gradient-from), var(--c-red-gradient-to));
   }
 
   .column-new .column-icon {
-    background: linear-gradient(135deg, #34a853, #2d9248);
+    background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to));
   }
 
   .column-icon svg {
@@ -92,8 +76,8 @@
     overflow-wrap: break-word;
   }
 
-  .column-old .column-title { color: #dc2626; }
-  .column-new .column-title { color: #16a34a; }
+  .column-old .column-title { color: var(--c-red-text-vivid); }
+  .column-new .column-title { color: var(--c-green-text-vivid); }
 
   .steps {
     display: flex;
@@ -121,18 +105,18 @@
   }
 
   .column-old .step-num {
-    background: #fecaca;
-    color: #dc2626;
+    background: var(--c-red-border);
+    color: var(--c-red-text-vivid);
   }
 
   .column-new .step-num {
-    background: #bbf7d0;
-    color: #16a34a;
+    background: var(--c-green-border);
+    color: var(--c-green-text-vivid);
   }
 
   .step-text {
     font-size: 13px;
-    color: #475569;
+    color: var(--c-text-secondary);
     line-height: 1.5;
     hyphens: auto;
     overflow-wrap: break-word;
@@ -153,7 +137,7 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #34a853, #2d9248);
+    background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -168,9 +152,9 @@
   .summary {
     margin-top: 28px;
     padding: 16px 20px;
-    background: #f0fdf4;
+    background: var(--c-green-bg);
     border-radius: 10px;
-    border: 1px solid #bbf7d0;
+    border: 1px solid var(--c-green-border);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -186,25 +170,11 @@
   .summary-text {
     font-size: 14px;
     font-weight: 600;
-    color: #16a34a;
+    color: var(--c-green-text-vivid);
     hyphens: auto;
     overflow-wrap: break-word;
   }
 
-  .brand-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    padding-top: 24px;
-    border-top: 1px solid #f1f5f9;
-  }
-
-  .brand-logo {
-    height: 22px;
-    width: auto;
-    opacity: 0.5;
-  }
 </style>
 </head>
 <body>
@@ -278,7 +248,7 @@
 
     <!-- Summary -->
     <div class="summary">
-      <svg class="summary-icon" viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg class="summary-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="12" cy="12" r="10"/>
         <polyline points="12 6 12 12 16 14"/>
       </svg>
@@ -286,7 +256,8 @@
     </div>
 
     <div class="brand-bar">
-      <img class="brand-logo" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
     </div>
   </div>
 </body>

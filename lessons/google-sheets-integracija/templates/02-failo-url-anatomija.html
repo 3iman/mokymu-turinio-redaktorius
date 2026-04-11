@@ -3,30 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: #f8f9fb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-
-  .card {
-    width: 900px;
-    background: white;
-    border-radius: 20px;
-    padding: 48px 56px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.06);
-  }
 
   .title {
     font-size: 22px;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--c-text);
     text-align: center;
     margin-bottom: 40px;
     letter-spacing: -0.3px;
@@ -45,7 +29,7 @@
   .file-label {
     font-size: 12px;
     font-weight: 600;
-    color: #64748b;
+    color: var(--c-text-muted);
     text-transform: uppercase;
     letter-spacing: 0.8px;
     margin-bottom: 12px;
@@ -57,8 +41,8 @@
 
   .file-mockup {
     width: 420px;
-    background: #f0faf3;
-    border: 2px solid #34a853;
+    background: var(--c-green-bg);
+    border: 2px solid var(--c-green-solid);
     border-radius: 12px;
     overflow: hidden;
   }
@@ -73,12 +57,12 @@
   .file-icon {
     width: 28px;
     height: 28px;
-    color: #34a853;
+    color: var(--c-green-solid);
   }
 
   .sheet-tabs {
     display: flex;
-    border-top: 1px solid #c8e6c9;
+    border-top: 1px solid var(--c-green-border);
   }
 
   .sheet-tab {
@@ -94,16 +78,16 @@
   }
 
   .sheet-tab:nth-child(1) {
-    background: #34a853;
+    background: var(--c-green-solid);
     border-radius: 0 0 0 10px;
   }
 
   .sheet-tab:nth-child(2) {
-    background: #2d9248;
+    background: var(--c-green-gradient-to);
   }
 
   .sheet-tab:nth-child(3) {
-    background: #257a3b;
+    background: var(--c-green-deep);
     border-radius: 0 0 10px 0;
   }
 
@@ -115,7 +99,7 @@
   .url-label {
     font-size: 12px;
     font-weight: 600;
-    color: #64748b;
+    color: var(--c-text-muted);
     text-transform: uppercase;
     letter-spacing: 0.8px;
     margin-bottom: 12px;
@@ -126,8 +110,8 @@
   }
 
   .url-bar {
-    background: #f8f9fb;
-    border: 1.5px solid #e2e8f0;
+    background: var(--c-bg);
+    border: 1.5px solid var(--c-border);
     border-radius: 10px;
     padding: 14px 20px;
     display: flex;
@@ -136,29 +120,29 @@
     gap: 0;
     font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
     font-size: 13px;
-    color: #64748b;
+    color: var(--c-text-muted);
     flex-wrap: wrap;
   }
 
   .url-base {
-    color: #94a3b8;
+    color: var(--c-text-faint);
   }
 
   .url-file-id {
-    background: #fef3c7;
-    color: #b45309;
+    background: var(--c-amber-bg);
+    color: var(--c-amber-text-vivid);
     padding: 2px 8px;
     border-radius: 4px;
     font-weight: 700;
   }
 
   .url-separator {
-    color: #94a3b8;
+    color: var(--c-text-faint);
   }
 
   .url-gid {
-    background: #ede9fe;
-    color: #7c3aed;
+    background: var(--c-purple-border);
+    color: var(--c-purple-text-vivid);
     padding: 2px 8px;
     border-radius: 4px;
     font-weight: 700;
@@ -173,7 +157,7 @@
 
   .gid-explain {
     font-size: 13px;
-    color: #64748b;
+    color: var(--c-text-muted);
     text-align: center;
     width: 100%;
     margin-bottom: 20px;
@@ -199,9 +183,9 @@
   .gid-tab-name {
     font-size: 13px;
     font-weight: 600;
-    color: #1a1a2e;
-    background: #f0faf3;
-    border: 1.5px solid #34a853;
+    color: var(--c-text);
+    background: var(--c-green-bg);
+    border: 1.5px solid var(--c-green-solid);
     padding: 6px 16px;
     border-radius: 6px;
     hyphens: auto;
@@ -211,34 +195,20 @@
   .gid-connector {
     width: 1px;
     height: 20px;
-    border-left: 2px dotted #cbd5e1;
+    border-left: 2px dotted var(--c-line);
   }
 
   .gid-value {
     font-size: 12px;
     font-weight: 600;
     font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
-    color: #7c3aed;
-    background: #ede9fe;
+    color: var(--c-purple-text-vivid);
+    background: var(--c-purple-border);
     padding: 5px 12px;
     border-radius: 6px;
   }
 
   /* ---- Brand bar ---- */
-  .brand-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    padding-top: 24px;
-    border-top: 1px solid #f1f5f9;
-  }
-
-  .brand-logo {
-    height: 22px;
-    width: auto;
-    opacity: 0.5;
-  }
 </style>
 </head>
 <body>
@@ -297,7 +267,8 @@
     </div>
 
     <div class="brand-bar">
-      <img class="brand-logo" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
     </div>
   </div>
 </body>

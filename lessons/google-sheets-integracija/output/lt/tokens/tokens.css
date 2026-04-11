@@ -34,6 +34,11 @@
   --c-green-solid:         #34a853;   /* icons, badges on white */
   --c-green-gradient-from: #34a853;
   --c-green-gradient-to:   #2d9248;
+  --c-green-deep:          #257a3b;   /* darkest tab shade, decorative */
+  --c-green-nav:           #2e7d32;   /* school-site nav bar */
+
+  /* ---- Accent (EU flag yellow) ---- */
+  --c-eu-yellow:           #ffcc00;
 
   /* ---- Red (negative, old, error) ---- */
   --c-red-bg:            #fef2f2;
@@ -114,6 +119,11 @@
     --c-green-solid:         #34d399;
     --c-green-gradient-from: #22c55e;
     --c-green-gradient-to:   #16a34a;
+    --c-green-deep:          #0f5132;
+    --c-green-nav:           #1b5e20;
+
+    /* ---- EU flag yellow (dark) ---- */
+    --c-eu-yellow:           #fdd835;
 
     /* ---- Red ---- */
     --c-red-bg:            #350a0a;

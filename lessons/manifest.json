@@ -1,0 +1,258 @@
+{
+  "lessons": {
+    "es-projektu-viesinimas": {
+      "templates": [
+        {
+          "name": "01-teisingas-projekto-puslapis",
+          "json_section": "01_teisingas_projekto_puslapis",
+          "placeholders": [
+            "lang",
+            "title",
+            "browser_url",
+            "nav_1",
+            "nav_2",
+            "nav_3",
+            "nav_4",
+            "bc_1",
+            "bc_2",
+            "bc_3",
+            "page_title",
+            "eu_banner_text",
+            "school_name",
+            "project_intro",
+            "project_goal",
+            "project_period",
+            "project_executor",
+            "project_budget",
+            "sidebar_1",
+            "sidebar_2",
+            "sidebar_3",
+            "brand_logo_path",
+            "brand_logo_dark_path"
+          ]
+        },
+        {
+          "name": "02-cpva-dokumentai",
+          "json_section": "02_cpva_dokumentai",
+          "placeholders": [
+            "lang",
+            "title",
+            "doc1_label",
+            "doc1_desc",
+            "doc1_tag",
+            "doc2_label",
+            "doc2_desc",
+            "doc2_tag",
+            "doc3_label",
+            "doc3_desc",
+            "doc3_tag",
+            "brand_logo_path",
+            "brand_logo_dark_path"
+          ]
+        }
+      ],
+      "languages": [
+        "en",
+        "lt"
+      ]
+    },
+    "google-sheets-integracija": {
+      "templates": [
+        {
+          "name": "00-kodel-tai-naudinga",
+          "json_section": "00_kodel_tai_naudinga",
+          "placeholders": [
+            "lang",
+            "title",
+            "old_title",
+            "old_step_1",
+            "old_step_2",
+            "old_step_3",
+            "old_step_4",
+            "new_title",
+            "new_step_1",
+            "new_step_2",
+            "summary",
+            "brand_logo_path",
+            "brand_logo_dark_path"
+          ]
+        },
+        {
+          "name": "01-sheets-tvs-svetaine",
+          "json_section": "01_sheets_tvs_svetaine",
+          "placeholders": [
+            "lang",
+            "title",
+            "step1_label",
+            "step1_desc",
+            "arrow_label_1",
+            "step2_label",
+            "step2_desc",
+            "arrow_label_2",
+            "step3_label",
+            "step3_desc",
+            "brand_logo_path",
+            "brand_logo_dark_path"
+          ]
+        },
+        {
+          "name": "02-failo-url-anatomija",
+          "json_section": "02_failo_url_anatomija",
+          "placeholders": [
+            "lang",
+            "title",
+            "file_label",
+            "sheet_tab_1",
+            "sheet_tab_2",
+            "sheet_tab_3",
+            "url_label",
+            "url_base",
+            "url_file_id",
+            "url_gid",
+            "gid_explain",
+            "gid_value_1",
+            "gid_value_2",
+            "gid_value_3",
+            "brand_logo_path",
+            "brand_logo_dark_path"
+          ]
+        },
+        {
+          "name": "03-kopija-pavadinimas-formatas",
+          "json_section": "03_kopija_pavadinimas_formatas",
+          "placeholders": [
+            "lang",
+            "title",
+            "step1_num",
+            "step1_label",
+            "step1_desc",
+            "step2_num",
+            "step2_label",
+            "step2_desc_prefix",
+            "step2_desc_code",
+            "step2_desc_suffix",
+            "step3_num",
+            "step3_label",
+            "step3_desc",
+            "step3_format",
+            "step4_num",
+            "step4_label",
+            "step4_desc",
+            "step4_email",
+            "step4_note",
+            "brand_logo_path",
+            "brand_logo_dark_path"
+          ]
+        },
+        {
+          "name": "04-publikavimas-share-viewer",
+          "json_section": "04_publikavimas_share_viewer",
+          "placeholders": [
+            "lang",
+            "title",
+            "share_button",
+            "access_label",
+            "anyone_label",
+            "role_label",
+            "done_label",
+            "step1_desc",
+            "step2_desc",
+            "step3_desc",
+            "warning",
+            "brand_logo_path",
+            "brand_logo_dark_path"
+          ]
+        },
+        {
+          "name": "05-taisyklingai-netaisyklingai-lentele",
+          "json_section": "05_taisyklingai_netaisyklingai_lentele",
+          "placeholders": [
+            "lang",
+            "title",
+            "do_title",
+            "do_1",
+            "do_2",
+            "do_3",
+            "do_4",
+            "dont_title",
+            "dont_1",
+            "dont_2",
+            "dont_3",
+            "dont_4",
+            "brand_logo_path",
+            "brand_logo_dark_path"
+          ]
+        },
+        {
+          "name": "06-lapu-tvarka-gid-reiksmes",
+          "json_section": "06_lapu_tvarka_gid_reiksmes",
+          "placeholders": [
+            "lang",
+            "title",
+            "tab_1",
+            "tab_2",
+            "tab_3",
+            "first_label",
+            "warn_title",
+            "warn_desc",
+            "ok_title",
+            "ok_desc",
+            "brand_logo_path",
+            "brand_logo_dark_path"
+          ]
+        },
+        {
+          "name": "07-kodo-iterpimas-rezultatas",
+          "json_section": "07_kodo_iterpimas_rezultatas",
+          "placeholders": [
+            "lang",
+            "title",
+            "editor_label",
+            "code_warn",
+            "result_label",
+            "table_h2",
+            "table_header_1",
+            "table_header_2",
+            "table_header_3",
+            "table_r1_c1",
+            "table_r1_c2",
+            "table_r1_c3",
+            "table_r2_c1",
+            "table_r2_c2",
+            "table_r2_c3",
+            "brand_logo_path",
+            "brand_logo_dark_path"
+          ]
+        },
+        {
+          "name": "08-duomenu-atsinaujinimas",
+          "json_section": "08_duomenu_atsinaujinimas",
+          "placeholders": [
+            "lang",
+            "title",
+            "state_editing_title",
+            "col_nr",
+            "col_name",
+            "col_role",
+            "row1_name",
+            "row1_role",
+            "row2_name_editing",
+            "row2_role",
+            "status_waiting",
+            "arrow_hint",
+            "state_left_title",
+            "row2_name_done",
+            "status_synced",
+            "summary",
+            "brand_logo_path",
+            "brand_logo_dark_path"
+          ]
+        }
+      ],
+      "languages": [
+        "en",
+        "lt"
+      ]
+    }
+  }
+}

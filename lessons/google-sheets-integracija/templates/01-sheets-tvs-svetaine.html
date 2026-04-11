@@ -3,30 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: #f8f9fb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-
-  .card {
-    width: 900px;
-    background: white;
-    border-radius: 20px;
-    padding: 48px 56px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.06);
-  }
 
   .title {
     font-size: 22px;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--c-text);
     text-align: center;
     margin-bottom: 48px;
     letter-spacing: -0.3px;
@@ -64,14 +48,14 @@
     height: 36px;
   }
 
-  .step-1 .step-icon { background: linear-gradient(135deg, #34a853, #2d9248); }
-  .step-2 .step-icon { background: linear-gradient(135deg, #3363ab, #2a5291); }
-  .step-3 .step-icon { background: linear-gradient(135deg, #7c3aed, #6d28d9); }
+  .step-1 .step-icon { background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to)); }
+  .step-2 .step-icon { background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to)); }
+  .step-3 .step-icon { background: linear-gradient(135deg, var(--c-purple-gradient-from), var(--c-purple-gradient-to)); }
 
   .step-label {
     font-size: 15px;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--c-text);
     margin-bottom: 6px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -82,7 +66,7 @@
 
   .step-desc {
     font-size: 13px;
-    color: #64748b;
+    color: var(--c-text-muted);
     text-align: center;
     line-height: 1.5;
     white-space: pre-line;
@@ -110,8 +94,8 @@
     height: 2px;
     background: repeating-linear-gradient(
       90deg,
-      #cbd5e1 0px,
-      #cbd5e1 6px,
+      var(--c-line) 0px,
+      var(--c-line) 6px,
       transparent 6px,
       transparent 10px
     );
@@ -122,13 +106,13 @@
     height: 0;
     border-top: 6px solid transparent;
     border-bottom: 6px solid transparent;
-    border-left: 8px solid #94a3b8;
+    border-left: 8px solid var(--c-text-faint);
   }
 
   .arrow-label {
     font-size: 10px;
     font-weight: 600;
-    color: #94a3b8;
+    color: var(--c-text-faint);
     text-transform: uppercase;
     letter-spacing: 0.8px;
     margin-top: 8px;
@@ -136,20 +120,6 @@
     width: 100%;
   }
 
-  .brand-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    padding-top: 24px;
-    border-top: 1px solid #f1f5f9;
-  }
-
-  .brand-logo {
-    height: 22px;
-    width: auto;
-    opacity: 0.5;
-  }
 </style>
 </head>
 <body>
@@ -220,7 +190,8 @@
     </div>
 
     <div class="brand-bar">
-      <img class="brand-logo" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
     </div>
   </div>
 </body>

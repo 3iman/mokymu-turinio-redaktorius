@@ -1,0 +1,42 @@
+{
+  "lang": "en",
+  "common": {},
+  "01_teisingas_projekto_puslapis": {
+    "title": "A Proper Project Page",
+    "browser_url": "www.school.org/projects/eu-funded-projects/opportunity-school/",
+    "nav_1": "Education",
+    "nav_2": "Services",
+    "nav_3": "Events",
+    "nav_4": "Contacts",
+    "bc_1": "Home",
+    "bc_2": "Projects",
+    "bc_3": "EU-funded projects",
+    "page_title": "Project \u201cOpportunity School\u201d",
+    "eu_banner_text": "Co-funded by\nthe European Union",
+    "school_name": "School name",
+    "project_intro": "participates as a partner in the project \u201cOpportunity School\u201d No. 10-072-P-0001, funded by EU structural funds.",
+    "project_goal": "The goal of this project is to strengthen the quality of education that meets the age and needs of students.",
+    "project_period": "Project implementation \u2013 from April 2024 to July 2027.",
+    "project_executor": "Project executor \u2013 National Education Agency.",
+    "project_budget": "Total project budget \u2013 EUR 19,187,021.64.",
+    "sidebar_1": "Documents",
+    "sidebar_2": "Projects",
+    "sidebar_3": "Activity plan",
+    "ann_1": "EU logo \u2013 at the top of the page, not on the homepage",
+    "ann_2": "Not smaller than other logos, proportional to content",
+    "ann_3": "Description directly on the website \u2013 not in PDF or DOC files",
+    "ann_4": "Published for the entire commitment period (~5 years)"
+  },
+  "02_cpva_dokumentai": {
+    "title": "Useful Resources",
+    "doc1_label": "EU Emblem Usage",
+    "doc1_desc": "How to correctly use the EU emblem when implementing programs",
+    "doc1_tag": "CPVA",
+    "doc2_label": "Website Information",
+    "doc2_desc": "Tips on how to correctly publish project information",
+    "doc2_tag": "Tips",
+    "doc3_label": "Communication Guide",
+    "doc3_desc": "What project implementers should know about communication",
+    "doc3_tag": "Guide"
+  }
+}

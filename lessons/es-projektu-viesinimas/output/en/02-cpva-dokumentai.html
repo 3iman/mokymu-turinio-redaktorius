@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: var(--c-bg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  .card {
+    width: 900px;
+    background: var(--c-surface);
+    border-radius: 20px;
+    padding: 48px 56px;
+    box-shadow: var(--c-shadow-card);
+  }
+
+  .title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: -0.3px;
+  }
+
+  .cards-row {
+    display: flex;
+    gap: 20px;
+  }
+
+  .doc-card {
+    flex: 1;
+    background: var(--c-bg);
+    border-radius: 14px;
+    padding: 28px 24px;
+    border: 1px solid var(--c-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: border-color 0.2s;
+  }
+
+  .doc-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+
+  .doc-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .doc-card-1 .doc-icon { background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to)); }
+  .doc-card-2 .doc-icon { background: linear-gradient(135deg, var(--c-purple-gradient-from), var(--c-purple-gradient-to)); }
+  .doc-card-3 .doc-icon { background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to)); }
+
+  .doc-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--c-text);
+    margin-bottom: 8px;
+    line-height: 1.4;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .doc-desc {
+    font-size: 12px;
+    color: var(--c-text-muted);
+    line-height: 1.5;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .doc-tag {
+    margin-top: 14px;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+
+  .doc-card-1 .doc-tag { background: var(--c-blue-bg); color: var(--c-blue-gradient-from); }
+  .doc-card-2 .doc-tag { background: var(--c-purple-bg); color: var(--c-purple-text-vivid); }
+  .doc-card-3 .doc-tag { background: var(--c-green-bg); color: var(--c-green-text-vivid); }
+
+  .brand-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-top: 24px;
+    border-top: 1px solid var(--c-border-soft);
+  }
+
+  .brand-logo-dark { display: none; }
+
+  @media (prefers-color-scheme: dark) {
+    .brand-logo-light { display: none; }
+    .brand-logo-dark { display: block; }
+  }
+
+  .brand-logo {
+    height: 22px;
+    width: auto;
+    opacity: var(--c-brand-logo-opacity);
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Useful Resources</div>
+
+    <div class="cards-row">
+      <!-- Document 1 -->
+      <div class="doc-card doc-card-1">
+        <div class="doc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+          </svg>
+        </div>
+        <div class="doc-label">EU Emblem Usage</div>
+        <div class="doc-desc">How to correctly use the EU emblem when implementing programs</div>
+        <div class="doc-tag">CPVA</div>
+      </div>
+
+      <!-- Document 2 -->
+      <div class="doc-card doc-card-2">
+        <div class="doc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 11l3 3L22 4"/>
+            <path d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11"/>
+          </svg>
+        </div>
+        <div class="doc-label">Website Information</div>
+        <div class="doc-desc">Tips on how to correctly publish project information</div>
+        <div class="doc-tag">Tips</div>
+      </div>
+
+      <!-- Document 3 -->
+      <div class="doc-card doc-card-3">
+        <div class="doc-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2z"/>
+            <path d="M22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>
+          </svg>
+        </div>
+        <div class="doc-label">Communication Guide</div>
+        <div class="doc-desc">What project implementers should know about communication</div>
+        <div class="doc-tag">Guide</div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

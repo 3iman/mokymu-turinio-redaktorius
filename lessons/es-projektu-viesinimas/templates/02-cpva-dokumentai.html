@@ -3,30 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
 <style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-
-  body {
-    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: #f8f9fb;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-
-  .card {
-    width: 900px;
-    background: white;
-    border-radius: 20px;
-    padding: 48px 56px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.06);
-  }
 
   .title {
     font-size: 22px;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--c-text);
     text-align: center;
     margin-bottom: 40px;
     letter-spacing: -0.3px;
@@ -39,10 +23,10 @@
 
   .doc-card {
     flex: 1;
-    background: #f8f9fb;
+    background: var(--c-bg);
     border-radius: 14px;
     padding: 28px 24px;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--c-border);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -65,14 +49,14 @@
     height: 28px;
   }
 
-  .doc-card-1 .doc-icon { background: linear-gradient(135deg, #3363ab, #2a5291); }
-  .doc-card-2 .doc-icon { background: linear-gradient(135deg, #7c3aed, #6d28d9); }
-  .doc-card-3 .doc-icon { background: linear-gradient(135deg, #34a853, #2d9248); }
+  .doc-card-1 .doc-icon { background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to)); }
+  .doc-card-2 .doc-icon { background: linear-gradient(135deg, var(--c-purple-gradient-from), var(--c-purple-gradient-to)); }
+  .doc-card-3 .doc-icon { background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to)); }
 
   .doc-label {
     font-size: 13px;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--c-text);
     margin-bottom: 8px;
     line-height: 1.4;
     hyphens: auto;
@@ -81,7 +65,7 @@
 
   .doc-desc {
     font-size: 12px;
-    color: #64748b;
+    color: var(--c-text-muted);
     line-height: 1.5;
     hyphens: auto;
     overflow-wrap: break-word;
@@ -97,24 +81,10 @@
     letter-spacing: 0.5px;
   }
 
-  .doc-card-1 .doc-tag { background: #eff6ff; color: #3363ab; }
-  .doc-card-2 .doc-tag { background: #f5f3ff; color: #7c3aed; }
-  .doc-card-3 .doc-tag { background: #f0fdf4; color: #16a34a; }
+  .doc-card-1 .doc-tag { background: var(--c-blue-bg); color: var(--c-blue-gradient-from); }
+  .doc-card-2 .doc-tag { background: var(--c-purple-bg); color: var(--c-purple-text-vivid); }
+  .doc-card-3 .doc-tag { background: var(--c-green-bg); color: var(--c-green-text-vivid); }
 
-  .brand-bar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    padding-top: 24px;
-    border-top: 1px solid #f1f5f9;
-  }
-
-  .brand-logo {
-    height: 22px;
-    width: auto;
-    opacity: 0.5;
-  }
 </style>
 </head>
 <body>
@@ -164,7 +134,8 @@
     </div>
 
     <div class="brand-bar">
-      <img class="brand-logo" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
     </div>
   </div>
 </body>

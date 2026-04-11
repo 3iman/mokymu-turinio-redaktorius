@@ -2,36 +2,38 @@
 
 ## Kortelė (card)
 - Plotis: **900px**
-- Fonas: baltas (`#ffffff`)
+- Fonas: `var(--c-surface)`
 - Border-radius: **20px**
-- Shadow: subtilus (`0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.06)`)
+- Shadow: `var(--c-shadow-card)`
 - Padding: **48px 56px**
 
 ## Šriftas
 - Šeima: **Inter** (fallback: -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif)
-- Pavadinimas: 22px, bold (700), `#1a1a2e`
-- Etiketės: 15px, bold (700), uppercase, `#1a1a2e`
-- Aprašymai: 13px, regular, `#64748b`
-- Smulkios etiketės (ant rodyklių): 10px, semibold (600), uppercase, `#94a3b8`
+- Pavadinimas: 22px, bold (700), `var(--c-text)`
+- Etiketės: 15px, bold (700), uppercase, `var(--c-text)`
+- Aprašymai: 13px, regular, `var(--c-text-muted)`
+- Smulkios etiketės (ant rodyklių): 10px, semibold (600), uppercase, `var(--c-text-faint)`
 
-## Spalvų paletė
-- Pagrindinis tekstas: `#1a1a2e`
-- Antrinis tekstas: `#64748b`
-- Trečias lygis (etiketės): `#94a3b8`
-- Žalia (Google Sheets): `#34a853` → `#2d9248` gradientas
-- Mėlyna (TVS): `#3363ab` → `#2a5291` gradientas
-- Violetinė (svetainė): `#7c3aed` → `#6d28d9` gradientas
-- Geltona / amber (įspėjimas, dėmesio): `#f59e0b` → `#d97706` gradientas
-- Raudona (draudimas, klaida): `#ef4444` → `#dc2626` gradientas
-- Linijų spalva: `#cbd5e1`
-- Fono spalva (body): `#f8f9fb`
-- Separatoriaus linija: `#f1f5f9`
+## Spalvų sistema
 
-### Spalvų prasmės
-- **Žalia** — teigiamas veiksmas, taisyklingai, galima
-- **Raudona** — draudimas, negalima, klaida, netaisyklingai
-- **Amber / geltona** — įspėjimas, dėmesio reikalaujantis momentas
+Visos spalvos centralizuotos **`tokens/tokens.css`** — CSS custom properties su automatniu light / dark mode.
+
+**Niekada nenaudoti hardcoded hex reikšmių šablonuose.** Visada naudoti `var(--c-...)` tokenus.
+
+### Spalvų grupės ir prasmės
+
+| Grupė | Token prefiksas | Paskirtis |
+|---|---|---|
+| Neutral | `--c-bg`, `--c-surface`, `--c-text`, `--c-border`, `--c-line` | Fonas, tekstas, linijos |
+| Green | `--c-green-*` | Teigiamas veiksmas, taisyklingai, Google Sheets |
+| Red | `--c-red-*` | Draudimas, klaida, netaisyklingai |
+| Blue | `--c-blue-*` | Informatyvi, TVS, neutral-akcentas |
+| Purple | `--c-purple-*` | Rezultatas, svetainė, trečias žingsnis |
+| Amber | `--c-amber-*` | Įspėjimas, dėmesio reikalaujantis momentas |
+
 - Niekada nenaudoti oranžinės draudimui — draudimui tik raudona
+- Kiekviena teksto + fono pora tikrinta per WCAG AA kontrastą (≥ 4.5:1)
+- Dark mode aktyvuojamas automatiškai per `@media (prefers-color-scheme: dark)`
 
 ## German-first projektavimas
 
@@ -88,7 +90,7 @@ Veikia tik su teisingu `<html lang="...">` atributu — naršyklė naudoja kalbo
 
 ## Rodyklės
 - Punktyrinė linija: 70px ilgio, 2px aukščio
-- Spalva: `#cbd5e1` (linija), `#94a3b8` (rodyklės galvutė)
+- Spalva: `var(--c-line)` (linija), `var(--c-text-faint)` (rodyklės galvutė)
 - Etiketė po rodykle: **privalomas `text-align: center` ir `width: 100%`**
 - Etiketės margin-top: 8px
 - Konteineris: `align-items: center` kad rodyklė ir etiketė būtų ant tos pačios ašies
@@ -101,10 +103,10 @@ lygiuojasi kairėn ir vizualiai „nušoka" nuo rodyklės centro.
 ## Brand bar
 - Margin-top: **40px**
 - Padding-top: **24px**
-- Viršuje: 1px `#f1f5f9` separatorius
-- Logo: **Cleverphant su drambliuku** (juodas variantas)
+- Viršuje: 1px `var(--c-border-soft)` separatorius
+- Logo: du variantai — juodas (light mode) ir baltas (dark mode), perjungiami per `<img>` + `@media`
 - Logo aukštis: **22px**
-- Logo opacity: **0.5**
+- Logo opacity: `var(--c-brand-logo-opacity)` (light: 0.5, dark: 0.35)
 - Centruotas horizontaliai
 
 ## PNG eksportas

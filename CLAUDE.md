@@ -237,8 +237,33 @@ Agentas niekada nesiunčia į produkciją be aiškaus „taip".
 - Šriftas: Inter
 - URL: `mokymai.cleverphant.lt/kursai/{kurso-slug}/{pamokos-slug}/`
 
-### Ką daryti
-Agentas prieš pirmą publikavimą pats nueina į `wp-admin`, peržiūri kaip sukurtas Kursai post type — kokie laukai, kaip struktūruotas turinys, kaip įterpiamos iliustracijos. Išmoksta pats, nedokumentuoja — WordPress gali keistis.
+### REST API (iliustracijų įkėlimas)
+
+Kredencialai saugomi `.env` faile (WP_URL, WP_USER, WP_APP_PASSWORD). Application Password sugeneruotas per WordPress profilį.
+
+**Autentifikacija:** Basic Auth su Application Password.
+
+```bash
+# Autentifikacijos patikrinimas
+curl -s -u "$WP_USER:$WP_APP_PASSWORD" "$WP_URL/wp-json/wp/v2/users/me"
+
+# Media įkėlimas (PNG iliustracija)
+curl -s -u "$WP_USER:$WP_APP_PASSWORD" \
+  -X POST "$WP_URL/wp-json/wp/v2/media" \
+  -H "Content-Disposition: attachment; filename=iliustracija.png" \
+  -H "Content-Type: image/png" \
+  --data-binary @output/lt/00-kodel-tai-naudinga.png
+```
+
+**Atsakymas grąžina:** `id` (media ID), `source_url` (pilnas URL). Media ID naudojamas įterpiant iliustraciją į pamokos turinį.
+
+**Workflow:**
+1. Sugeneruoti PNG (`node generate.js --png`)
+2. Įkelti per REST API → gauti media ID
+3. Naudoti media ID Bricks builder turinyje arba post content
+
+### Ką daryti prieš pirmą publikavimą
+Agentas pats nueina į `wp-admin`, peržiūri kaip sukurtas Kursai post type — kokie laukai, kaip struktūruotas turinys, kaip įterpiamos iliustracijos. Išmoksta pats, nedokumentuoja — WordPress gali keistis.
 
 ---
 
@@ -265,5 +290,5 @@ Agentas prieš pirmą publikavimą pats nueina į `wp-admin`, peržiūri kaip su
 
 | Failas | Kada skaityti |
 |---|---|
-| `agent/GLOSSARY.md` | Kai dirbi su tekstais — terminų žodynas iš 47 pamokų |
+| `Archive1011/GLOSSARY.md` | Kai dirbi su tekstais — terminų žodynas iš 47 pamokų |
 | `DESIGN_RULES.md` | Kai kuri iliustracijas — spalvos, šriftai, dydžiai, German-first |

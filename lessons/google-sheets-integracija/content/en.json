@@ -5,6 +5,18 @@
     "cleverphant": "Cleverphant",
     "website": "Website"
   },
+  "00_kodel_tai_naudinga": {
+    "title": "Why This Is Useful",
+    "old_title": "The old way",
+    "old_step_1": "Log in to the CMS",
+    "old_step_2": "Find the page with the table",
+    "old_step_3": "Edit the table in the WYSIWYG editor",
+    "old_step_4": "Format, fix styles, try again",
+    "new_title": "With Google Sheets",
+    "new_step_1": "Open the Google Sheets file",
+    "new_step_2": "Update the data \u2013 the website refreshes automatically",
+    "summary": "One-time integration \u2013 after that you only edit the data"
+  },
   "01_sheets_tvs_svetaine": {
     "title": "How Google Sheets Integration Works",
     "step1_label": "You edit",
@@ -94,5 +106,22 @@
     "table_r2_c1": "2.",
     "table_r2_c2": "Emily Davis",
     "table_r2_c3": "Parent representative"
+  },
+  "08_duomenu_atsinaujinimas": {
+    "title": "When Does the Website Data Update",
+    "state_editing_title": "Still editing the cell",
+    "state_left_title": "Left the cell",
+    "col_nr": "No.",
+    "col_name": "Full name",
+    "col_role": "Representation",
+    "row1_name": "Sarah Johnson",
+    "row1_role": "Teacher representative",
+    "row2_name_editing": "Emily Dav",
+    "row2_name_done": "Emily Davis",
+    "row2_role": "Parent representative",
+    "status_waiting": "Changes not sent yet \u2013 while you\u2019re in the cell, the system waits",
+    "status_synced": "Data sent \u2013 the website will update in a few seconds",
+    "arrow_hint": "Tab / Enter",
+    "summary": "After editing a cell \u2013 move to the next one and the data will update automatically"
   }
 }
