@@ -177,15 +177,26 @@ Agentas niekada nesiunčia į produkciją be aiškaus „taip".
 
 ### Iliustracijų QA (prieš rodant žmogui)
 
+**Prasmės tikrinimas (pirma):**
+
 | # | Tikrinimas | Klausimas |
 |---|---|---|
-| 1 | Duomenys | Ar naudojami realūs duomenys, ne pramanytai? |
+| 1 | Turinio atitikimas | Ar iliustracija kilo iš sekcijos turinio, o ne iš noro „kažką nupiešti"? |
+| 2 | Vizualinė forma | Ar pasirinkta forma (palyginimas, procesas, lentelė...) atitinka turinio tipą? |
+| 3 | Unikalumas | Ar ši iliustracija sukurta būtent šiai sekcijai, o ne pernaudotas ankstesnis šablonas? |
+| 4 | Tankumas | Ar nesugrūsta per daug konceptų? Jei daugiau nei vienas — siūlyti skaidyti į atskiras iliustracijas |
+| 5 | Supratimas | Ar žmogus, perskaitęs tik iliustraciją, suprastų tą patį ką pasako sekcijos tekstas? |
+
+**Formos tikrinimas (po to):**
+
+| # | Tikrinimas | Klausimas |
+|---|---|---|
+| 1 | Duomenys | Ar naudojami realūs duomenys iš CMS / Google Sheets, ne pramanytai? |
 | 2 | Terminai | Ar terminai atitinka pamokos tekstą ir `GLOSSARY.md`? |
-| 3 | Nuoseklumas | Ar dera su kitomis tos pačios serijos iliustracijomis? |
+| 3 | Nuoseklumas | Ar dera su kitomis tos pačios serijos iliustracijomis, bet yra unikali forma? |
 | 4 | UI kalba | Ar Google Sheets / TVS elementai tiksline kalba? |
-| 5 | Skaitomumas | Ar suprantama be teksto? Ar nėra perteklinių elementų? |
-| 6 | Dvitaškiai | Ar nėra dvitaškių po etikečių ir sekcijų pavadinimų? |
-| 7 | Teksto ilgis | Ar tilptų vokiškais tekstais? (German-first principas) |
+| 5 | Dvitaškiai | Ar nėra dvitaškių po etikečių ir sekcijų pavadinimų? |
+| 6 | Teksto ilgis | Ar tilptų vokiškais tekstais? (German-first principas) |
 
 ### Frontend QA (po publikavimo)
 

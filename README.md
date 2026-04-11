@@ -5,7 +5,11 @@ HTML šablonų sistema, generuojanti daugiakalbias iliustracijas Cleverphant mok
 ## Kaip veikia
 
 ```
-templates/*.html   +   content/{lt,en}.json   →   generate.js   →   output/{lang}/*.html + *.png
+templates/*.html   +   content/{lt,en}.json   +   tokens/tokens.css
+        ↓                      ↓                        ↓
+                        generate.js
+                            ↓
+                  output/{lang}/*.html + *.png
 ```
 
 Kiekviena pamoka turi savo katalogą `lessons/{pamokos-slug}/` su trimis dalimis:
@@ -29,13 +33,15 @@ node generate.js --lang lt    # Tik lietuvių kalba
 
 ```
 ├── CLAUDE.md                 ← Agento instrukcijos (mindset, workflow, QA)
-├── DESIGN_RULES.md           ← Vizualinės taisyklės (spalvos, šriftai, dydžiai)
+├── DESIGN_RULES.md           ← Vizualinės taisyklės (šriftai, dydžiai)
+├── tokens/
+│   └── tokens.css            ← Spalvų sistema (light + dark mode, WCAG AA)
 ├── agent/
 │   └── GLOSSARY.md           ← Terminų žodynas
-├── assets/                   ← Bendri resursai (logotipai)
+├── assets/                   ← Logotipai (juodas + baltas dark mode)
 ├── lessons/
 │   ├── google-sheets-integracija/
-│   │   ├── templates/        ← 8 iliustracijų šablonai (00–07)
+│   │   ├── templates/        ← 9 iliustracijų šablonai (00–08)
 │   │   └── content/          ← lt.json, en.json
 │   └── es-projektu-viesinimas/
 │       ├── templates/        ← 2 iliustracijų šablonai (01–02)
@@ -44,10 +50,34 @@ node generate.js --lang lt    # Tik lietuvių kalba
 └── server.js                 ← Dev serveris peržiūrai
 ```
 
+## Spalvų sistema (Design Tokens)
+
+Visos spalvos centralizuotos `tokens/tokens.css` — CSS custom properties su light ir dark mode.
+
+| Grupė | Paskirtis |
+|---|---|
+| Neutral | Fonas, tekstas, linijos, rėmeliai |
+| Green | Teigiama, nauja, sinchronizuota |
+| Red | Neigiama, sena tvarka, klaida |
+| Blue | Informatyvi, neutral-akcentas |
+| Purple | Rezultatas, trečias žingsnis |
+| Amber | Įspėjimas, laukimas |
+
+Dark mode aktyvuojamas per `@media (prefers-color-scheme: dark)`. Kiekviena teksto + fono pora atitinka WCAG AA kontrastą (>= 4.5:1).
+
+Šablonuose:
+```css
+<link rel="stylesheet" href="./tokens/tokens.css">
+
+background: var(--c-green-bg);
+color: var(--c-green-text);
+background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to));
+```
+
 ## Naujos pamokos kūrimas
 
 1. Sukurti katalogą `lessons/{slug}/templates/` ir `content/`
-2. Parašyti HTML šabloną su `{{kintamaisiais}}`
+2. Parašyti HTML šabloną su `{{kintamaisiais}}` ir `tokens.css`
 3. Sukurti `content/lt.json` su atitinkamais raktais
 4. Pridėti mapper funkciją į `TEMPLATE_KEYS` objekte `generate.js`
 5. Paleisti `node generate.js --png`
@@ -55,3 +85,5 @@ node generate.js --lang lt    # Tik lietuvių kalba
 ## PNG eksportas
 
 PNG generuojami per Puppeteer — fotografuojamas `.card` elementas 2x raiška (retina). Rezultatai tinka tiesioginiam įkėlimui į WordPress.
+
+Dark mode PNG generuojamas atskirai per Puppeteer `emulateMediaFeatures`.

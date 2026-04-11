@@ -18,6 +18,7 @@ const path = require('path');
 
 const LESSONS_DIR = path.join(__dirname, 'lessons');
 const ASSETS_DIR = path.join(__dirname, 'assets');
+const TOKENS_DIR = path.join(__dirname, 'tokens');
 
 // Parse CLI args
 const args = process.argv.slice(2);
@@ -171,6 +172,7 @@ const TEMPLATE_KEYS = {
     return {
       lang: data.lang,
       brand_logo_path: './assets/cleverphant-juodas.svg',
+      brand_logo_dark_path: './assets/cleverphant-baltas.png',
       title: d.title,
       state_editing_title: d.state_editing_title,
       state_left_title: d.state_left_title,
@@ -345,6 +347,16 @@ function generate() {
         fs.copyFileSync(path.join(ASSETS_DIR, assetFile), path.join(langAssetsDir, assetFile));
       }
       console.log(`  [${lang.lang}] Copied ${assetFiles.length} asset(s)`);
+
+      // Copy tokens to output lang directory (same relative path as templates use)
+      const langTokensDir = path.join(langDir, 'tokens');
+      if (!fs.existsSync(langTokensDir)) {
+        fs.mkdirSync(langTokensDir, { recursive: true });
+      }
+      const tokenFiles = fs.readdirSync(TOKENS_DIR).filter(f => f.endsWith('.css'));
+      for (const tokenFile of tokenFiles) {
+        fs.copyFileSync(path.join(TOKENS_DIR, tokenFile), path.join(langTokensDir, tokenFile));
+      }
     }
   }
 

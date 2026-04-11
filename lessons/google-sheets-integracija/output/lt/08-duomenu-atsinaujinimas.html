@@ -3,12 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
 <style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
     font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: #f8f9fb;
+    background: var(--c-bg);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,16 +18,16 @@
 
   .card {
     width: 900px;
-    background: white;
+    background: var(--c-surface);
     border-radius: 20px;
     padding: 48px 56px;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.06);
+    box-shadow: var(--c-shadow-card);
   }
 
   .title {
     font-size: 22px;
     font-weight: 700;
-    color: #1a1a2e;
+    color: var(--c-text);
     text-align: center;
     margin-bottom: 44px;
     letter-spacing: -0.3px;
@@ -45,13 +46,13 @@
   }
 
   .state-waiting {
-    background: #fef2f2;
-    border: 1px solid #fecaca;
+    background: var(--c-red-bg);
+    border: 1px solid var(--c-red-border);
   }
 
   .state-syncing {
-    background: #f0fdf4;
-    border: 1px solid #bbf7d0;
+    background: var(--c-green-bg);
+    border: 1px solid var(--c-green-border);
   }
 
   .state-header {
@@ -72,11 +73,11 @@
   }
 
   .state-waiting .state-icon {
-    background: linear-gradient(135deg, #f59e0b, #d97706);
+    background: linear-gradient(135deg, var(--c-amber-gradient-from), var(--c-amber-gradient-to));
   }
 
   .state-syncing .state-icon {
-    background: linear-gradient(135deg, #34a853, #2d9248);
+    background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to));
   }
 
   .state-icon svg {
@@ -91,16 +92,16 @@
     letter-spacing: 0.5px;
   }
 
-  .state-waiting .state-title { color: #b45309; }
-  .state-syncing .state-title { color: #16a34a; }
+  .state-waiting .state-title { color: var(--c-amber-text-vivid); }
+  .state-syncing .state-title { color: var(--c-green-text-vivid); }
 
   /* Mini spreadsheet */
   .spreadsheet {
     border-radius: 8px;
     overflow: hidden;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--c-border);
     margin-bottom: 16px;
-    background: white;
+    background: var(--c-surface);
   }
 
   .ss-row {
@@ -108,31 +109,31 @@
   }
 
   .ss-row + .ss-row {
-    border-top: 1px solid #e2e8f0;
+    border-top: 1px solid var(--c-border);
   }
 
   .ss-cell {
     flex: 1;
     padding: 8px 12px;
     font-size: 12px;
-    color: #334155;
+    color: var(--c-text);
     min-width: 0;
   }
 
   .ss-cell + .ss-cell {
-    border-left: 1px solid #e2e8f0;
+    border-left: 1px solid var(--c-border);
   }
 
   .ss-header {
-    background: #f1f5f9;
+    background: var(--c-surface-alt);
     font-weight: 600;
-    color: #64748b;
+    color: var(--c-text-muted);
     font-size: 11px;
   }
 
   .ss-cell.active-cell {
-    background: #fff7ed;
-    outline: 2px solid #f59e0b;
+    background: var(--c-cell-active-bg);
+    outline: 2px solid var(--c-cell-active-border);
     outline-offset: -1px;
     position: relative;
   }
@@ -141,7 +142,7 @@
     display: inline-block;
     width: 1px;
     height: 14px;
-    background: #1a1a2e;
+    background: var(--c-text);
     animation: blink 1s infinite;
     vertical-align: middle;
     margin-left: 1px;
@@ -153,10 +154,10 @@
   }
 
   .ss-cell.changed-cell {
-    background: #f0fdf4;
+    background: var(--c-cell-changed-bg);
   }
 
-  /* Status bar under spreadsheet */
+  /* Status bar */
   .status-bar {
     display: flex;
     align-items: center;
@@ -171,8 +172,8 @@
     flex-shrink: 0;
   }
 
-  .state-waiting .status-dot { background: #f59e0b; }
-  .state-syncing .status-dot { background: #16a34a; }
+  .state-waiting .status-dot { background: var(--c-amber-solid); }
+  .state-syncing .status-dot { background: var(--c-green-solid); }
 
   .status-text {
     font-size: 12px;
@@ -181,10 +182,10 @@
     overflow-wrap: break-word;
   }
 
-  .state-waiting .status-text { color: #92400e; }
-  .state-syncing .status-text { color: #166534; }
+  .state-waiting .status-text { color: var(--c-amber-text); }
+  .state-syncing .status-text { color: var(--c-green-text); }
 
-  /* Arrow between states */
+  /* Arrow */
   .states-arrow {
     display: flex;
     flex-direction: column;
@@ -199,7 +200,7 @@
     width: 36px;
     height: 36px;
     border-radius: 50%;
-    background: linear-gradient(135deg, #34a853, #2d9248);
+    background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to));
     display: flex;
     align-items: center;
     justify-content: center;
@@ -213,19 +214,19 @@
   .arrow-hint {
     font-size: 10px;
     font-weight: 600;
-    color: #16a34a;
+    color: var(--c-green-text-vivid);
     text-align: center;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     line-height: 1.3;
   }
 
-  /* Bottom summary */
+  /* Summary */
   .summary {
     padding: 16px 20px;
-    background: #eff6ff;
+    background: var(--c-blue-bg);
     border-radius: 10px;
-    border: 1px solid #bfdbfe;
+    border: 1px solid var(--c-blue-border);
     display: flex;
     align-items: center;
     gap: 12px;
@@ -237,10 +238,14 @@
     flex-shrink: 0;
   }
 
+  .summary-icon svg {
+    stroke: var(--c-blue-text);
+  }
+
   .summary-text {
     font-size: 14px;
     font-weight: 600;
-    color: #1e40af;
+    color: var(--c-blue-text);
     hyphens: auto;
     overflow-wrap: break-word;
   }
@@ -251,13 +256,20 @@
     justify-content: center;
     margin-top: 40px;
     padding-top: 24px;
-    border-top: 1px solid #f1f5f9;
+    border-top: 1px solid var(--c-border-soft);
   }
 
   .brand-logo {
     height: 22px;
     width: auto;
-    opacity: 0.5;
+    opacity: var(--c-brand-logo-opacity);
+  }
+
+  .brand-logo-dark { display: none; }
+
+  @media (prefers-color-scheme: dark) {
+    .brand-logo-light { display: none; }
+    .brand-logo-dark { display: block; }
   }
 </style>
 </head>
@@ -352,7 +364,7 @@
 
     <!-- Summary -->
     <div class="summary">
-      <svg class="summary-icon" viewBox="0 0 24 24" fill="none" stroke="#1e40af" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <svg class="summary-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
         <circle cx="12" cy="12" r="10"/>
         <polyline points="12 6 12 12 16 14"/>
       </svg>
@@ -360,7 +372,8 @@
     </div>
 
     <div class="brand-bar">
-      <img class="brand-logo" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
     </div>
   </div>
 </body>
