@@ -8,11 +8,11 @@
 <style>
 
   .title {
-    font-size: 22px;
+    font-size: 44px;
     font-weight: 700;
     color: var(--c-text);
     text-align: center;
-    margin-bottom: 44px;
+    margin-bottom: 48px;
     letter-spacing: -0.3px;
   }
 
@@ -21,35 +21,35 @@
     display: flex;
     flex-direction: column;
     gap: 0;
-    max-width: 560px;
+    max-width: 1200px;
     margin: 0 auto;
   }
 
   .step {
     display: flex;
     align-items: flex-start;
-    gap: 20px;
+    gap: 40px;
     position: relative;
   }
 
   /* Vertical connector line */
   .step:not(:last-child) {
-    padding-bottom: 32px;
+    padding-bottom: 52px;
   }
 
   .step:not(:last-child) .step-num-wrapper::after {
     content: '';
     position: absolute;
-    left: 22px;
-    top: 46px;
+    left: 50px;
+    top: 104px;
     bottom: 0;
-    width: 2px;
+    width: 4px;
     background: repeating-linear-gradient(
       180deg,
       var(--c-line) 0px,
-      var(--c-line) 5px,
-      transparent 5px,
-      transparent 9px
+      var(--c-line) 10px,
+      transparent 10px,
+      transparent 18px
     );
   }
 
@@ -59,13 +59,13 @@
   }
 
   .step-num {
-    width: 44px;
-    height: 44px;
+    width: 88px;
+    height: 88px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 18px;
+    font-size: 42px;
     font-weight: 700;
     color: white;
   }
@@ -76,21 +76,21 @@
   .step:nth-child(4) .step-num { background: linear-gradient(135deg, var(--c-amber-gradient-from), var(--c-amber-gradient-to)); }
 
   .step-content {
-    padding-top: 2px;
+    padding-top: 4px;
   }
 
   .step-label {
-    font-size: 16px;
+    font-size: 37px;
     font-weight: 700;
     color: var(--c-text);
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     line-height: 1.4;
     hyphens: auto;
     overflow-wrap: break-word;
   }
 
   .step-desc {
-    font-size: 14px;
+    font-size: 31px;
     color: var(--c-text-muted);
     line-height: 1.5;
     hyphens: auto;
@@ -101,34 +101,35 @@
     font-weight: 600;
     color: var(--c-text);
     background: var(--c-surface-alt);
-    padding: 1px 6px;
-    border-radius: 4px;
+    padding: 2px 12px;
+    border-radius: 8px;
     font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
-    font-size: 13px;
+    font-size: 26px;
     overflow-wrap: break-word;
   }
 
   .step-desc .format-example {
     display: inline-block;
-    margin-top: 6px;
+    margin-top: 12px;
     font-weight: 600;
     color: var(--c-text);
     background: var(--c-amber-bg);
-    padding: 4px 12px;
-    border-radius: 6px;
-    font-size: 13px;
+    padding: 8px 24px;
+    border-radius: 12px;
+    font-size: 26px;
     letter-spacing: 0.2px;
   }
 
   .step-desc .email {
     font-weight: 700;
     color: var(--c-blue-gradient-from);
+    white-space: nowrap;
   }
 
   .step-note {
-    font-size: 12px;
+    font-size: 24px;
     color: var(--c-text-faint);
-    margin-top: 4px;
+    margin-top: 8px;
     font-style: italic;
   }
 

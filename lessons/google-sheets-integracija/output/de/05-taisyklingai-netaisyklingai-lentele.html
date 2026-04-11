@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+
+  .title {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 80px;
+    letter-spacing: -0.3px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Two columns ---- */
+  .columns {
+    display: flex;
+    gap: 62px;
+    align-items: stretch;
+  }
+
+  .column {
+    flex: 1;
+    border-radius: 24px;
+    padding: 60px;
+  }
+
+  .col-do {
+    background: var(--c-green-bg);
+    border: 1.5px solid var(--c-green-border);
+  }
+
+  .col-dont {
+    background: var(--c-red-bg);
+    border: 1.5px solid var(--c-red-border);
+  }
+
+  .col-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 40px;
+    padding-bottom: 28px;
+    border-bottom: 1px solid var(--c-border-soft);
+  }
+
+  .col-icon {
+    width: 77px;
+    height: 77px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .col-do .col-icon {
+    background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to));
+  }
+
+  .col-dont .col-icon {
+    background: linear-gradient(135deg, var(--c-red-gradient-from), var(--c-red-gradient-to));
+  }
+
+  .col-icon svg {
+    width: 38px;
+    height: 38px;
+  }
+
+  .col-title {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--c-text);
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .rules-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .rule-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    font-size: 32px;
+    color: var(--c-text);
+    line-height: 1.5;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .rule-bullet {
+    flex-shrink: 0;
+    margin-top: 4px;
+    font-size: 32px;
+  }
+
+  .col-do .rule-bullet { color: var(--c-green-solid); }
+  .col-dont .rule-bullet { color: var(--c-red-solid); }
+
+  /* ---- Brand bar ---- */
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Regeln für die Tabellenbearbeitung</div>
+
+    <div class="columns">
+      <!-- Do's column -->
+      <div class="column col-do">
+        <div class="col-header">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+          </div>
+          <div class="col-title">Richtig</div>
+        </div>
+        <div class="rules-list">
+          <div class="rule-item"><span class="rule-bullet">✓</span> Eine Zelle = eine Zeile</div>
+          <div class="rule-item"><span class="rule-bullet">✓</span> Nur Text in den Zellen</div>
+          <div class="rule-item"><span class="rule-bullet">✓</span> Spalte A = minimale Formatierung</div>
+          <div class="rule-item"><span class="rule-bullet">✓</span> Feste Anzahl an Spalten</div>
+        </div>
+      </div>
+
+      <!-- Don'ts column -->
+      <div class="column col-dont">
+        <div class="col-header">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+          </div>
+          <div class="col-title">Falsch</div>
+        </div>
+        <div class="rules-list">
+          <div class="rule-item"><span class="rule-bullet">✗</span> Shift+Enter für mehrere Zeilen in einer Zelle</div>
+          <div class="rule-item"><span class="rule-bullet">✗</span> Formeln innerhalb der Zellen</div>
+          <div class="rule-item"><span class="rule-bullet">✗</span> Spaltenformate und Farben</div>
+          <div class="rule-item"><span class="rule-bullet">✗</span> Unterschiedliche Spaltenanzahl pro Zeile</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

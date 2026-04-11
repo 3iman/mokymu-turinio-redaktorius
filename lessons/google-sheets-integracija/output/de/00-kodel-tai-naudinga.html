@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+
+  .title {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 64px;
+    letter-spacing: -0.5px;
+  }
+
+  .comparison {
+    display: flex;
+    gap: 48px;
+    align-items: stretch;
+  }
+
+  .column {
+    flex: 1;
+    border-radius: 24px;
+    padding: 48px 44px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .column-old {
+    background: var(--c-red-bg);
+    border: 1px solid var(--c-red-border);
+  }
+
+  .column-new {
+    background: var(--c-green-bg);
+    border: 1px solid var(--c-green-border);
+  }
+
+  .column-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 36px;
+  }
+
+  .column-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .column-old .column-icon {
+    background: linear-gradient(135deg, var(--c-red-gradient-from), var(--c-red-gradient-to));
+  }
+
+  .column-new .column-icon {
+    background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to));
+  }
+
+  .column-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .column-title {
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .column-old .column-title { color: var(--c-red-text-vivid); }
+  .column-new .column-title { color: var(--c-green-text-vivid); }
+
+  .steps {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    flex: 1;
+  }
+
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .step-num {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .column-old .step-num {
+    background: var(--c-red-border);
+    color: var(--c-red-text-vivid);
+  }
+
+  .column-new .step-num {
+    background: var(--c-green-border);
+    color: var(--c-green-text-vivid);
+  }
+
+  .step-text {
+    font-size: 24px;
+    color: var(--c-text-secondary);
+    line-height: 1.5;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* Divider with arrow */
+  .divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    flex-shrink: 0;
+    width: 72px;
+  }
+
+  .divider-arrow {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .divider-arrow svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  /* Bottom summary */
+  .summary {
+    margin-top: 56px;
+    padding: 28px 36px;
+    background: var(--c-green-bg);
+    border-radius: 18px;
+    border: 1px solid var(--c-green-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .summary-icon {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+  }
+
+  .summary-text {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--c-green-text-vivid);
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Warum das nützlich ist</div>
+
+    <div class="comparison">
+      <!-- Old way -->
+      <div class="column column-old">
+        <div class="column-header">
+          <div class="column-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </div>
+          <div class="column-title">Der alte Weg</div>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-text">Im CMS anmelden</div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-text">Seite mit der Tabelle finden</div>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-text">Tabelle im WYSIWYG-Editor bearbeiten</div>
+          </div>
+          <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-text">Formatieren, Stile korrigieren, erneut versuchen</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Arrow -->
+      <div class="divider">
+        <div class="divider-arrow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"/>
+            <polyline points="12 5 19 12 12 19"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- New way -->
+      <div class="column column-new">
+        <div class="column-header">
+          <div class="column-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <div class="column-title">Mit Google Sheets</div>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-text">Google-Sheets-Datei öffnen</div>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-text">Daten ändern – die Website aktualisiert sich automatisch</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary">
+      <svg class="summary-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <polyline points="12 6 12 12 16 14"/>
+      </svg>
+      <div class="summary-text">Einmalige Integration – danach bearbeiten Sie nur noch die Daten</div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

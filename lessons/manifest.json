@@ -247,11 +247,102 @@
             "brand_logo_path",
             "brand_logo_dark_path"
           ]
+        },
+        {
+          "name": "09-ka-matote-atidare-sablona",
+          "json_section": "09_ka_matote_atidare_sablona",
+          "placeholders": [
+            "lang",
+            "title",
+            "filename",
+            "table_title",
+            "col_nr",
+            "col_name",
+            "col_role",
+            "col_position",
+            "r1_name",
+            "r1_role",
+            "r1_position",
+            "r2_name",
+            "r2_role",
+            "r2_position",
+            "r3_name",
+            "r3_role",
+            "r3_position",
+            "r4_name",
+            "r4_role",
+            "r4_position",
+            "r5_name",
+            "r5_role",
+            "r5_position",
+            "r6_name",
+            "r6_role",
+            "r6_position",
+            "tab_1",
+            "tab_2",
+            "tab_3",
+            "tab_4",
+            "tab_5",
+            "tab_6",
+            "menu_title",
+            "menu_subtitle",
+            "summary",
+            "brand_logo_path",
+            "brand_logo_dark_path"
+          ]
+        },
+        {
+          "name": "10-tvs-modulis",
+          "json_section": "10_tvs_modulis",
+          "placeholders": [
+            "lang",
+            "title",
+            "breadcrumb_module",
+            "breadcrumb_list",
+            "breadcrumb_edit",
+            "list_col_id",
+            "list_col_name",
+            "list_col_enabled",
+            "list_row1_name",
+            "list_row2_name",
+            "list_row3_name",
+            "edit_field_name",
+            "edit_field_name_hint",
+            "edit_field_name_value",
+            "edit_field_sheets_id",
+            "edit_field_sheets_id_hint",
+            "edit_field_sheets_id_value",
+            "edit_field_enabled",
+            "anno_id",
+            "brand_logo_path",
+            "brand_logo_dark_path"
+          ]
+        },
+        {
+          "name": "11-kaip-organizuoti-failus",
+          "json_section": "11_kaip_organizuoti_failus",
+          "placeholders": [
+            "lang",
+            "title",
+            "file_admin_name",
+            "admin_tab_1",
+            "admin_tab_2",
+            "admin_tab_3",
+            "file_edu_name",
+            "edu_tab_1",
+            "edu_tab_2",
+            "edu_tab_3",
+            "summary",
+            "brand_logo_path",
+            "brand_logo_dark_path"
+          ]
         }
       ],
       "languages": [
         "en",
-        "lt"
+        "lt",
+        "de",
+        "pl"
       ]
     }
   }

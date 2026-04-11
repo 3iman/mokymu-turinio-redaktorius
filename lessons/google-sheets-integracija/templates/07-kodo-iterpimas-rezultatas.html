@@ -8,11 +8,11 @@
 <style>
 
   .title {
-    font-size: 22px;
+    font-size: 44px;
     font-weight: 700;
     color: var(--c-text);
     text-align: center;
-    margin-bottom: 36px;
+    margin-bottom: 50px;
     letter-spacing: -0.3px;
     hyphens: auto;
     overflow-wrap: break-word;
@@ -20,16 +20,16 @@
 
   /* ---- CKEditor mockup ---- */
   .editor-section {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
   }
 
   .section-label {
-    font-size: 12px;
+    font-size: 22px;
     font-weight: 600;
     color: var(--c-text-muted);
     text-transform: uppercase;
     letter-spacing: 0.8px;
-    margin-bottom: 12px;
+    margin-bottom: 18px;
     text-align: center;
     width: 100%;
     hyphens: auto;
@@ -37,25 +37,25 @@
   }
 
   .editor-mockup {
-    max-width: 620px;
+    max-width: 1240px;
     margin: 0 auto;
     border: 1.5px solid var(--c-border);
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
   }
 
   .editor-toolbar {
     background: var(--c-bg);
     border-bottom: 1px solid var(--c-border);
-    padding: 8px 12px;
+    padding: 12px 20px;
     display: flex;
-    gap: 2px;
+    gap: 4px;
   }
 
   .toolbar-btn {
-    width: 28px;
-    height: 28px;
-    border-radius: 4px;
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,25 +67,25 @@
   }
 
   .toolbar-sep {
-    width: 1px;
-    height: 20px;
+    width: 2px;
+    height: 40px;
     background: var(--c-border);
-    margin: 4px 6px;
+    margin: 8px 12px;
   }
 
   .editor-body {
-    padding: 20px 24px;
-    min-height: 60px;
+    padding: 32px 38px;
+    min-height: 120px;
     background: var(--c-surface);
   }
 
   .editor-code {
     font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
-    font-size: 15px;
+    font-size: 26px;
     color: var(--c-text);
     background: var(--c-surface-alt);
-    padding: 8px 14px;
-    border-radius: 6px;
+    padding: 12px 24px;
+    border-radius: 12px;
     display: inline-block;
     letter-spacing: 0.3px;
   }
@@ -97,25 +97,25 @@
 
   /* ---- Code warning ---- */
   .code-warn {
-    max-width: 620px;
-    margin: 12px auto 0;
+    max-width: 1240px;
+    margin: 18px auto 0;
     display: flex;
     align-items: center;
-    gap: 8px;
-    padding: 10px 16px;
+    gap: 14px;
+    padding: 16px 26px;
     background: var(--c-amber-bg);
-    border-radius: 8px;
+    border-radius: 16px;
   }
 
   .code-warn-icon {
     flex-shrink: 0;
-    width: 18px;
-    height: 18px;
+    width: 36px;
+    height: 36px;
     color: var(--c-amber-text-vivid);
   }
 
   .code-warn-text {
-    font-size: 13px;
+    font-size: 26px;
     font-weight: 600;
     color: var(--c-amber-text);
     hyphens: auto;
@@ -127,12 +127,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 20px 0;
+    margin: 28px 0;
   }
 
   .arrow-down-line {
-    width: 2px;
-    height: 24px;
+    width: 4px;
+    height: 48px;
     background: repeating-linear-gradient(
       180deg,
       var(--c-line) 0px,
@@ -145,9 +145,9 @@
   .arrow-down-head {
     width: 0;
     height: 0;
-    border-left: 6px solid transparent;
-    border-right: 6px solid transparent;
-    border-top: 8px solid var(--c-text-faint);
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 16px solid var(--c-text-faint);
   }
 
   /* ---- Result section ---- */
@@ -156,21 +156,21 @@
   }
 
   .result-preview {
-    max-width: 620px;
+    max-width: 1240px;
     margin: 0 auto;
     border: 1.5px solid var(--c-border);
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
-    padding: 24px 28px;
+    padding: 38px 44px;
     background: var(--c-surface);
   }
 
   .result-h2 {
-    font-size: 18px;
+    font-size: 30px;
     font-weight: 700;
     color: var(--c-text);
-    margin-bottom: 16px;
-    padding-bottom: 10px;
+    margin-bottom: 27px;
+    padding-bottom: 17px;
     border-bottom: 2px solid var(--c-blue-gradient-from);
     display: inline-block;
     hyphens: auto;
@@ -179,7 +179,7 @@
 
   .result-table {
     width: 100%;
-    border-radius: 8px;
+    border-radius: 16px;
     overflow: hidden;
     border: 1px solid var(--c-border);
   }
@@ -192,9 +192,9 @@
   .result-table th {
     background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to));
     color: white;
-    font-size: 13px;
+    font-size: 23px;
     font-weight: 600;
-    padding: 10px 14px;
+    padding: 16px 24px;
     text-align: left;
     border-right: 1px solid rgba(255,255,255,0.15);
     hyphens: auto;
@@ -206,9 +206,9 @@
   }
 
   .result-table td {
-    font-size: 13px;
+    font-size: 23px;
     color: var(--c-text);
-    padding: 9px 14px;
+    padding: 14px 24px;
     border-bottom: 1px solid var(--c-border-soft);
     border-right: 1px solid var(--c-border-soft);
     hyphens: auto;

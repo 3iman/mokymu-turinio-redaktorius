@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+
+  .title {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 48px;
+    letter-spacing: -0.3px;
+  }
+
+  .layout {
+    display: flex;
+    gap: 44px;
+    align-items: stretch;
+    margin-bottom: 44px;
+  }
+
+  /* Left: spreadsheet */
+  .sheets-mockup {
+    flex: 3;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--c-border);
+    background: var(--c-surface);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sheets-toolbar {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 20px;
+    background: var(--c-surface-alt);
+    border-bottom: 1px solid var(--c-border);
+  }
+
+  .sheets-icon {
+    width: 28px;
+    height: 28px;
+    flex-shrink: 0;
+  }
+
+  .sheets-filename {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--c-text);
+  }
+
+  .sheets-grid { flex: 1; }
+
+  .sg-row { display: flex; }
+  .sg-row + .sg-row { border-top: 1px solid var(--c-border); }
+
+  .sg-cell {
+    padding: 8px 16px;
+    font-size: 17px;
+    color: var(--c-text-secondary);
+    min-width: 0;
+  }
+
+  .sg-cell + .sg-cell { border-left: 1px solid var(--c-border); }
+
+  .sg-header {
+    background: var(--c-surface-alt);
+    font-weight: 600;
+    color: var(--c-text-muted);
+    font-size: 15px;
+  }
+
+  .sg-cell.sg-nr { flex: 0 0 56px; text-align: center; }
+  .sg-cell.sg-name { flex: 2; }
+  .sg-cell.sg-role { flex: 2; }
+  .sg-cell.sg-pos { flex: 1.5; }
+
+  .sg-cell.sg-title-row {
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--c-text);
+    padding: 10px 16px;
+  }
+
+  /* Bottom tab bar */
+  .sheets-tabs-bar {
+    display: flex;
+    align-items: flex-end;
+    border-top: 1px solid var(--c-border);
+    background: var(--c-surface-alt);
+    padding: 0 10px;
+  }
+
+  .tab-mini {
+    padding: 10px 18px;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--c-text-muted);
+    white-space: nowrap;
+    border-bottom: 2px solid transparent;
+  }
+
+  .tab-mini.active {
+    color: var(--c-green-text-vivid);
+    border-bottom-color: var(--c-green-solid);
+    font-weight: 600;
+    background: var(--c-surface);
+    border-radius: 6px 6px 0 0;
+  }
+
+  .tab-mini.tab-menu-btn {
+    color: var(--c-text-faint);
+    font-size: 16px;
+    cursor: default;
+    position: relative;
+  }
+
+  /* Right: expanded tab menu (the focus) */
+  .tab-menu {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .tab-menu-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .tab-menu-icon {
+    width: 52px;
+    height: 52px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .tab-menu-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .tab-menu-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--c-green-text-vivid);
+  }
+
+  .tab-menu-subtitle {
+    font-size: 16px;
+    color: var(--c-text-muted);
+    margin-top: 2px;
+  }
+
+  /* Tab list */
+  .tab-list {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: 16px;
+    padding: 12px;
+    flex: 1;
+  }
+
+  .tab-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    transition: background 0.15s;
+  }
+
+  .tab-item.tab-active {
+    background: var(--c-green-bg);
+    border: 1px solid var(--c-green-border);
+  }
+
+  .tab-item:not(.tab-active) {
+    border: 1px solid transparent;
+  }
+
+  .tab-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  .tab-color-green { background: var(--c-green-solid); }
+  .tab-color-blue { background: var(--c-blue-solid); }
+  .tab-color-purple { background: var(--c-purple-solid); }
+  .tab-color-amber { background: var(--c-amber-solid); }
+
+  .tab-item-name {
+    font-size: 20px;
+    color: var(--c-text-secondary);
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .tab-item.tab-active .tab-item-name {
+    color: var(--c-green-text);
+    font-weight: 600;
+  }
+
+  /* Summary */
+  .summary {
+    padding: 28px 36px;
+    background: var(--c-blue-bg);
+    border-radius: 20px;
+    border: 1px solid var(--c-blue-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .summary-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+  }
+
+  .summary-icon svg {
+    stroke: var(--c-blue-text);
+  }
+
+  .summary-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--c-blue-text);
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Was Sie in der Vorlage sehen</div>
+
+    <div class="layout">
+      <!-- Left: spreadsheet preview -->
+      <div class="sheets-mockup">
+        <div class="sheets-toolbar">
+          <svg class="sheets-icon" viewBox="0 0 48 48" fill="none">
+            <rect x="4" y="4" width="40" height="40" rx="4" fill="#34a853"/>
+            <rect x="12" y="14" width="24" height="4" rx="1" fill="white" opacity="0.9"/>
+            <rect x="12" y="22" width="24" height="4" rx="1" fill="white" opacity="0.7"/>
+            <rect x="12" y="30" width="24" height="4" rx="1" fill="white" opacity="0.5"/>
+          </svg>
+          <div class="sheets-filename">Berliner Gymnasium – TABLES</div>
+        </div>
+
+        <div class="sheets-grid">
+          <div class="sg-row">
+            <div class="sg-cell sg-nr sg-title-row"></div>
+            <div class="sg-cell sg-title-row" style="flex:5.5">Mitglieder des Schulrats</div>
+          </div>
+          <div class="sg-row">
+            <div class="sg-cell sg-header sg-nr">Nr.</div>
+            <div class="sg-cell sg-header sg-name">Name</div>
+            <div class="sg-cell sg-header sg-role">Vertretung</div>
+            <div class="sg-cell sg-header sg-pos">Funktion im Rat</div>
+          </div>
+          <div class="sg-row">
+            <div class="sg-cell sg-nr">1.</div>
+            <div class="sg-cell sg-name">Name, Vorname</div>
+            <div class="sg-cell sg-role">Lehrervertreterin</div>
+            <div class="sg-cell sg-pos">Vorsitzende</div>
+          </div>
+          <div class="sg-row">
+            <div class="sg-cell sg-nr">2.</div>
+            <div class="sg-cell sg-name">Name, Vorname</div>
+            <div class="sg-cell sg-role">Lehrervertreterin</div>
+            <div class="sg-cell sg-pos">Stellvertreterin</div>
+          </div>
+          <div class="sg-row">
+            <div class="sg-cell sg-nr">3.</div>
+            <div class="sg-cell sg-name">Name, Vorname</div>
+            <div class="sg-cell sg-role">Elternvertreterin</div>
+            <div class="sg-cell sg-pos">Mitglied</div>
+          </div>
+          <div class="sg-row">
+            <div class="sg-cell sg-nr">4.</div>
+            <div class="sg-cell sg-name">Name, Vorname</div>
+            <div class="sg-cell sg-role">Elternvertreter</div>
+            <div class="sg-cell sg-pos">Mitglied</div>
+          </div>
+          <div class="sg-row">
+            <div class="sg-cell sg-nr">5.</div>
+            <div class="sg-cell sg-name">Name, Vorname</div>
+            <div class="sg-cell sg-role">Elternvertreterin</div>
+            <div class="sg-cell sg-pos">Mitglied</div>
+          </div>
+          <div class="sg-row">
+            <div class="sg-cell sg-nr">6.</div>
+            <div class="sg-cell sg-name">Name, Vorname</div>
+            <div class="sg-cell sg-role">Lehrervertreterin</div>
+            <div class="sg-cell sg-pos">Mitglied</div>
+          </div>
+        </div>
+
+        <!-- Mini tab bar at the bottom -->
+        <div class="sheets-tabs-bar">
+          <div class="tab-mini tab-menu-btn">☰</div>
+          <div class="tab-mini active">Schulrat</div>
+          <div class="tab-mini">Schülerrat</div>
+          <div class="tab-mini">…</div>
+        </div>
+      </div>
+
+      <!-- Right: expanded tab menu -->
+      <div class="tab-menu">
+        <div class="tab-menu-header">
+          <div class="tab-menu-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="8" y1="6" x2="21" y2="6"/>
+              <line x1="8" y1="12" x2="21" y2="12"/>
+              <line x1="8" y1="18" x2="21" y2="18"/>
+              <line x1="3" y1="6" x2="3.01" y2="6"/>
+              <line x1="3" y1="12" x2="3.01" y2="12"/>
+              <line x1="3" y1="18" x2="3.01" y2="18"/>
+            </svg>
+          </div>
+          <div>
+            <div class="tab-menu-title">Blattmenü</div>
+            <div class="tab-menu-subtitle">Unten links am Bildschirm</div>
+          </div>
+        </div>
+
+        <div class="tab-list">
+          <div class="tab-item tab-active">
+            <div class="tab-color tab-color-green"></div>
+            <div class="tab-item-name">Schulrat</div>
+          </div>
+          <div class="tab-item">
+            <div class="tab-color tab-color-green"></div>
+            <div class="tab-item-name">Schülerrat</div>
+          </div>
+          <div class="tab-item">
+            <div class="tab-color tab-color-blue"></div>
+            <div class="tab-item-name">Lehrerrat</div>
+          </div>
+          <div class="tab-item">
+            <div class="tab-color tab-color-blue"></div>
+            <div class="tab-item-name">Elternbeirat</div>
+          </div>
+          <div class="tab-item">
+            <div class="tab-color tab-color-purple"></div>
+            <div class="tab-item-name">Kinderschutzkommission</div>
+          </div>
+          <div class="tab-item">
+            <div class="tab-color tab-color-amber"></div>
+            <div class="tab-item-name">Gehaltsinformationen</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary">
+      <svg class="summary-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="12" y1="8" x2="12" y2="12"/>
+        <line x1="12" y1="16" x2="12.01" y2="16"/>
+      </svg>
+      <div class="summary-text">In der Vorlage sind die häufigsten Tabellen bereits vorbereitet – Sie müssen nur die Daten eintragen</div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

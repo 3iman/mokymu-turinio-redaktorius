@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+
+  .title {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: -0.3px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- CKEditor mockup ---- */
+  .editor-section {
+    margin-bottom: 16px;
+  }
+
+  .section-label {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--c-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 18px;
+    text-align: center;
+    width: 100%;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .editor-mockup {
+    max-width: 1240px;
+    margin: 0 auto;
+    border: 1.5px solid var(--c-border);
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .editor-toolbar {
+    background: var(--c-bg);
+    border-bottom: 1px solid var(--c-border);
+    padding: 12px 20px;
+    display: flex;
+    gap: 4px;
+  }
+
+  .toolbar-btn {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-text-faint);
+  }
+
+  .toolbar-btn:hover {
+    background: var(--c-border);
+  }
+
+  .toolbar-sep {
+    width: 2px;
+    height: 40px;
+    background: var(--c-border);
+    margin: 8px 12px;
+  }
+
+  .editor-body {
+    padding: 32px 38px;
+    min-height: 120px;
+    background: var(--c-surface);
+  }
+
+  .editor-code {
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 26px;
+    color: var(--c-text);
+    background: var(--c-surface-alt);
+    padding: 12px 24px;
+    border-radius: 12px;
+    display: inline-block;
+    letter-spacing: 0.3px;
+  }
+
+  .editor-code .brace {
+    color: var(--c-red-solid);
+    font-weight: 700;
+  }
+
+  /* ---- Code warning ---- */
+  .code-warn {
+    max-width: 1240px;
+    margin: 18px auto 0;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 26px;
+    background: var(--c-amber-bg);
+    border-radius: 16px;
+  }
+
+  .code-warn-icon {
+    flex-shrink: 0;
+    width: 36px;
+    height: 36px;
+    color: var(--c-amber-text-vivid);
+  }
+
+  .code-warn-text {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--c-amber-text);
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Arrow ---- */
+  .arrow-down {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 28px 0;
+  }
+
+  .arrow-down-line {
+    width: 4px;
+    height: 48px;
+    background: repeating-linear-gradient(
+      180deg,
+      var(--c-line) 0px,
+      var(--c-line) 5px,
+      transparent 5px,
+      transparent 9px
+    );
+  }
+
+  .arrow-down-head {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 16px solid var(--c-text-faint);
+  }
+
+  /* ---- Result section ---- */
+  .result-section {
+    margin-bottom: 0;
+  }
+
+  .result-preview {
+    max-width: 1240px;
+    margin: 0 auto;
+    border: 1.5px solid var(--c-border);
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 38px 44px;
+    background: var(--c-surface);
+  }
+
+  .result-h2 {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--c-text);
+    margin-bottom: 27px;
+    padding-bottom: 17px;
+    border-bottom: 2px solid var(--c-blue-gradient-from);
+    display: inline-block;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .result-table {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--c-border);
+  }
+
+  .result-table table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .result-table th {
+    background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to));
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    padding: 16px 24px;
+    text-align: left;
+    border-right: 1px solid rgba(255,255,255,0.15);
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .result-table th:last-child {
+    border-right: none;
+  }
+
+  .result-table td {
+    font-size: 23px;
+    color: var(--c-text);
+    padding: 14px 24px;
+    border-bottom: 1px solid var(--c-border-soft);
+    border-right: 1px solid var(--c-border-soft);
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .result-table td:last-child {
+    border-right: none;
+  }
+
+  .result-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .result-table tr:nth-child(even) td {
+    background: var(--c-bg);
+  }
+
+  /* ---- Brand bar ---- */
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Tabelle in eine Seite einbetten</div>
+
+    <!-- CKEditor mockup -->
+    <div class="editor-section">
+      <div class="section-label">Inhaltseditor</div>
+      <div class="editor-mockup">
+        <div class="editor-toolbar">
+          <div class="toolbar-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M6 4h8a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"/><path d="M6 12h9a4 4 0 0 1 4 4 4 4 0 0 1-4 4H6z"/></svg></div>
+          <div class="toolbar-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="19" y1="4" x2="10" y2="4"/><line x1="14" y1="20" x2="5" y2="20"/><line x1="15" y1="4" x2="9" y2="20"/></svg></div>
+          <div class="toolbar-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg></div>
+          <div class="toolbar-sep"></div>
+          <div class="toolbar-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="17" y1="10" x2="3" y2="10"/><line x1="21" y1="6" x2="3" y2="6"/><line x1="21" y1="14" x2="3" y2="14"/><line x1="17" y1="18" x2="3" y2="18"/></svg></div>
+          <div class="toolbar-btn"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/></svg></div>
+        </div>
+        <div class="editor-body">
+          <div class="editor-code"><span class="brace">{{</span>google_sheet(1, {'tab':'0'})<span class="brace">}}</span></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Warning about full copy -->
+    <div class="code-warn">
+      <svg class="code-warn-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+      <div class="code-warn-text">Den vollständigen Code kopieren – einschließlich {{ }} auf beiden Seiten</div>
+    </div>
+
+    <!-- Arrow -->
+    <div class="arrow-down">
+      <div class="arrow-down-line"></div>
+      <div class="arrow-down-head"></div>
+    </div>
+
+    <!-- Result preview -->
+    <div class="result-section">
+      <div class="section-label">Ergebnis auf der Website</div>
+      <div class="result-preview">
+        <div class="result-h2">Mitglieder des Schulrats</div>
+        <div class="result-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Nr.</th>
+                <th>Name</th>
+                <th>Vertretung</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1.</td>
+                <td>Anna Müller</td>
+                <td>Lehrervertreterin</td>
+              </tr>
+              <tr>
+                <td>2.</td>
+                <td>Sabine Weber</td>
+                <td>Elternvertreterin</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

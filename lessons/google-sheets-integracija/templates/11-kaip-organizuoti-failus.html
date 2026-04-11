@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+
+  .title {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 72px;
+    letter-spacing: -0.3px;
+  }
+
+  /* Two files side by side */
+  .files {
+    display: flex;
+    gap: 56px;
+    align-items: stretch;
+    margin-bottom: 56px;
+  }
+
+  .file-card {
+    flex: 1;
+    border-radius: 24px;
+    padding: 44px 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .file-admin {
+    background: var(--c-blue-bg);
+    border: 1px solid var(--c-blue-border);
+  }
+
+  .file-edu {
+    background: var(--c-purple-bg);
+    border: 1px solid var(--c-purple-border);
+  }
+
+  /* File header */
+  .file-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 32px;
+  }
+
+  .file-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .file-admin .file-icon {
+    background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to));
+  }
+
+  .file-edu .file-icon {
+    background: linear-gradient(135deg, var(--c-purple-gradient-from), var(--c-purple-gradient-to));
+  }
+
+  .file-icon svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  .file-name {
+    font-size: 28px;
+    font-weight: 700;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .file-admin .file-name { color: var(--c-blue-text); }
+  .file-edu .file-name { color: var(--c-purple-text); }
+
+  /* Tabs inside file */
+  .file-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    flex: 1;
+  }
+
+  .file-tab {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 24px;
+    background: var(--c-surface);
+    border-radius: 14px;
+    border: 1px solid var(--c-border);
+  }
+
+  .file-tab-icon {
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    flex-shrink: 0;
+  }
+
+  .file-admin .file-tab-icon { background: var(--c-blue-solid); }
+  .file-edu .file-tab-icon { background: var(--c-purple-solid); }
+
+  .file-tab-name {
+    font-size: 22px;
+    color: var(--c-text-secondary);
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* Summary */
+  .summary {
+    padding: 32px 44px;
+    background: var(--c-green-bg);
+    border-radius: 20px;
+    border: 1px solid var(--c-green-border);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .summary-icon {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+  }
+
+  .summary-icon svg {
+    stroke: var(--c-green-text);
+  }
+
+  .summary-text {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--c-green-text);
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+
+    <div class="files">
+      <!-- Admin file -->
+      <div class="file-card file-admin">
+        <div class="file-header">
+          <div class="file-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+          </div>
+          <div class="file-name">{{file_admin_name}}</div>
+        </div>
+        <div class="file-tabs">
+          <div class="file-tab">
+            <div class="file-tab-icon"></div>
+            <div class="file-tab-name">{{admin_tab_1}}</div>
+          </div>
+          <div class="file-tab">
+            <div class="file-tab-icon"></div>
+            <div class="file-tab-name">{{admin_tab_2}}</div>
+          </div>
+          <div class="file-tab">
+            <div class="file-tab-icon"></div>
+            <div class="file-tab-name">{{admin_tab_3}}</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Education file -->
+      <div class="file-card file-edu">
+        <div class="file-header">
+          <div class="file-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+            </svg>
+          </div>
+          <div class="file-name">{{file_edu_name}}</div>
+        </div>
+        <div class="file-tabs">
+          <div class="file-tab">
+            <div class="file-tab-icon"></div>
+            <div class="file-tab-name">{{edu_tab_1}}</div>
+          </div>
+          <div class="file-tab">
+            <div class="file-tab-icon"></div>
+            <div class="file-tab-name">{{edu_tab_2}}</div>
+          </div>
+          <div class="file-tab">
+            <div class="file-tab-icon"></div>
+            <div class="file-tab-name">{{edu_tab_3}}</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary">
+      <svg class="summary-icon" viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polyline points="20 6 9 17 4 12"/>
+      </svg>
+      <div class="summary-text">{{summary}}</div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

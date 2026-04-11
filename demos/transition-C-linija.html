@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    width: 1920px;
+    height: 1080px;
+    overflow: hidden;
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #f0f2f5;
+  }
+
+  /* Simulate a clip ending */
+  .clip-before {
+    position: absolute;
+    inset: 0;
+    background: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: clipFadeOut 0.4s ease-in 1.5s forwards;
+  }
+
+  .clip-before-inner {
+    width: 1680px;
+    height: 920px;
+    background: white;
+    border-radius: 32px;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: #64748b;
+    font-weight: 600;
+  }
+
+  @keyframes clipFadeOut {
+    to { opacity: 0; }
+  }
+
+  /* Transition C: linija brėžia */
+  .transition-bg {
+    position: absolute;
+    inset: 0;
+    background: #f0f2f5;
+    opacity: 0;
+    animation: bgIn 0.01s linear 1.9s forwards;
+  }
+
+  /* The sweeping line */
+  .line-sweep {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    transform: translateY(-50%) scaleX(0);
+    transform-origin: left center;
+    animation: lineSweep 0.8s cubic-bezier(0.16, 1, 0.3, 1) 2.0s forwards,
+               lineFadeOut 0.3s ease 3.2s forwards;
+  }
+
+  /* Number appears at the center as line passes */
+  .line-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    font-size: 120px;
+    font-weight: 800;
+    color: #3b82f6;
+    opacity: 0;
+    animation: numPop 0.5s cubic-bezier(0.16, 1, 0.3, 1) 2.3s forwards,
+               numFade 0.3s ease 3.2s forwards;
+  }
+
+  /* Subtle section title below number */
+  .line-title {
+    position: absolute;
+    top: calc(50% + 80px);
+    left: 50%;
+    transform: translate(-50%, 0) translateY(10px);
+    font-size: 28px;
+    font-weight: 600;
+    color: #64748b;
+    opacity: 0;
+    white-space: nowrap;
+    animation: titleSlide 0.4s cubic-bezier(0.16, 1, 0.3, 1) 2.6s forwards,
+               numFade 0.3s ease 3.2s forwards;
+  }
+
+  /* Trail effect — thin lines that follow */
+  .line-trail-1 {
+    position: absolute;
+    top: calc(50% - 20px);
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(59,130,246,0.2) 30%, rgba(139,92,246,0.15) 70%, transparent 100%);
+    transform: scaleX(0);
+    transform-origin: left center;
+    animation: lineSweep 0.8s cubic-bezier(0.16, 1, 0.3, 1) 2.1s forwards,
+               lineFadeOut 0.3s ease 3.2s forwards;
+  }
+
+  .line-trail-2 {
+    position: absolute;
+    top: calc(50% + 20px);
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(59,130,246,0.2) 30%, rgba(139,92,246,0.15) 70%, transparent 100%);
+    transform: scaleX(0);
+    transform-origin: left center;
+    animation: lineSweep 0.8s cubic-bezier(0.16, 1, 0.3, 1) 2.15s forwards,
+               lineFadeOut 0.3s ease 3.2s forwards;
+  }
+
+  @keyframes bgIn {
+    to { opacity: 1; }
+  }
+
+  @keyframes lineSweep {
+    to { transform: translateY(-50%) scaleX(1); }
+  }
+
+  @keyframes lineFadeOut {
+    to { opacity: 0; }
+  }
+
+  @keyframes numPop {
+    to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  }
+
+  @keyframes numFade {
+    to { opacity: 0; }
+  }
+
+  @keyframes titleSlide {
+    to { opacity: 1; transform: translate(-50%, 0) translateY(0); }
+  }
+
+  /* Next clip appearing */
+  .clip-after {
+    position: absolute;
+    inset: 0;
+    background: #f0f2f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    animation: clipFadeIn 0.5s cubic-bezier(0.16, 1, 0.3, 1) 3.5s forwards;
+  }
+
+  .clip-after-inner {
+    width: 1680px;
+    height: 920px;
+    background: white;
+    border-radius: 32px;
+    box-shadow: 0 4px 40px rgba(0,0,0,0.06);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 36px;
+    color: #64748b;
+    font-weight: 600;
+  }
+
+  @keyframes clipFadeIn {
+    from { opacity: 0; transform: scale(0.98); }
+    to { opacity: 1; transform: scale(1); }
+  }
+
+  /* Replay hint */
+  .replay {
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
+    font-size: 16px;
+    color: #94a3b8;
+    opacity: 0;
+    animation: replayIn 0.3s ease 4.5s forwards;
+  }
+
+  @keyframes replayIn {
+    to { opacity: 1; }
+  }
+</style>
+</head>
+<body>
+  <!-- Previous clip fading out -->
+  <div class="clip-before">
+    <div class="clip-before-inner">
+      04 &mdash; Kaip publikuoti failą
+    </div>
+  </div>
+
+  <!-- Transition C: linija brėžia -->
+  <div class="transition-bg">
+    <div class="line-trail-1"></div>
+    <div class="line-sweep"></div>
+    <div class="line-trail-2"></div>
+    <div class="line-number">05</div>
+    <div class="line-title">Ką matote atidarę šabloną</div>
+  </div>
+
+  <!-- Next clip fading in -->
+  <div class="clip-after">
+    <div class="clip-after-inner">
+      05 &mdash; Ką matote atidarę šabloną
+    </div>
+  </div>
+
+  <div class="replay">Atnaujinkite puslapį, kad pakartotumėte</div>
+</body>
+</html>

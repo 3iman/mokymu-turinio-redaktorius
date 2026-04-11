@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+
+  .title {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 72px;
+    letter-spacing: -0.3px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- File mockup with tabs ---- */
+  .file-mockup {
+    width: 1248px;
+    margin: 0 auto 28px;
+    background: var(--c-green-bg);
+    border: 2px solid var(--c-green-solid);
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  .file-body {
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .file-icon {
+    width: 48px;
+    height: 48px;
+    color: var(--c-green-solid);
+  }
+
+  .sheet-tabs {
+    display: flex;
+    border-top: 1px solid var(--c-green-border);
+  }
+
+  .sheet-tab {
+    flex: 1;
+    padding: 23px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .sheet-tab:nth-child(1) {
+    background: var(--c-green-solid);
+    border-radius: 0 0 0 20px;
+  }
+
+  .sheet-tab:nth-child(2) {
+    background: var(--c-green-gradient-to);
+  }
+
+  .sheet-tab:nth-child(3) {
+    background: var(--c-green-deep);
+    border-radius: 0 0 20px 0;
+  }
+
+  /* First tab pointer */
+  .first-pointer {
+    display: flex;
+    align-items: center;
+    width: 1248px;
+    margin: 0 auto 76px;
+    padding-left: 8px;
+  }
+
+  .pointer-line {
+    width: 92px;
+    height: 4px;
+    background: var(--c-text-faint);
+    position: relative;
+  }
+
+  .pointer-line::before {
+    content: '';
+    position: absolute;
+    top: -8px;
+    left: -4px;
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+    background: var(--c-text-faint);
+  }
+
+  .pointer-label {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--c-text-muted);
+    margin-left: 18px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .pointer-label .gid-badge {
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-weight: 700;
+    color: var(--c-purple-text-vivid);
+    background: var(--c-purple-border);
+    padding: 5px 18px;
+    border-radius: 8px;
+    font-size: 28px;
+  }
+
+  /* ---- Notes ---- */
+  .notes {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    max-width: 1424px;
+    margin: 0 auto;
+  }
+
+  .note {
+    display: flex;
+    align-items: flex-start;
+    gap: 32px;
+    padding: 32px 42px;
+    border-radius: 20px;
+  }
+
+  .note-warn {
+    background: var(--c-red-bg);
+    border: 1.5px solid var(--c-red-border);
+  }
+
+  .note-ok {
+    background: var(--c-green-bg);
+    border: 1.5px solid var(--c-green-border);
+  }
+
+  .note-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .note-warn .note-icon {
+    background: linear-gradient(135deg, var(--c-red-gradient-from), var(--c-red-gradient-to));
+  }
+
+  .note-ok .note-icon {
+    background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to));
+  }
+
+  .note-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .note-content {
+    flex: 1;
+  }
+
+  .note-title {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--c-text);
+    margin-bottom: 7px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .note-desc {
+    font-size: 30px;
+    color: var(--c-text-muted);
+    line-height: 1.5;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Brand bar ---- */
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Blattreihenfolge und gID-Werte</div>
+
+    <!-- File with tabs -->
+    <div class="file-mockup">
+      <div class="file-body">
+        <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="8" y1="13" x2="16" y2="13"/>
+          <line x1="8" y1="17" x2="16" y2="17"/>
+        </svg>
+      </div>
+      <div class="sheet-tabs">
+        <div class="sheet-tab">Schulrat</div>
+        <div class="sheet-tab">Lehrerliste</div>
+        <div class="sheet-tab">Gehaltsinformationen</div>
+      </div>
+    </div>
+
+    <!-- Pointer to first tab -->
+    <div class="first-pointer">
+      <div class="pointer-line"></div>
+      <div class="pointer-label">Erstes Blatt – immer gID = 0 → <span class="gid-badge">gID = 0</span></div>
+    </div>
+
+    <!-- Notes -->
+    <div class="notes">
+      <div class="note note-warn">
+        <div class="note-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </div>
+        <div class="note-content">
+          <div class="note-title">Position des ersten Blatts nicht ändern</div>
+          <div class="note-desc">Wird es verschoben, erhält ein anderes Blatt die gID = 0 – und die falsche Tabelle erscheint auf der Website</div>
+        </div>
+      </div>
+      <div class="note note-ok">
+        <div class="note-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+        </div>
+        <div class="note-content">
+          <div class="note-title">Andere Blätter können frei sortiert werden</div>
+          <div class="note-desc">Umbenennen, verschieben, neue hinzufügen – die gID jedes Blatts bleibt gleich</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

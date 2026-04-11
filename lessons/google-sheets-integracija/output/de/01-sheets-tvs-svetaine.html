@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+
+  .title {
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 112px;
+    letter-spacing: -0.3px;
+  }
+
+  .workflow {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 0;
+    max-width: 1400px;
+    margin: 0 auto;
+  }
+
+  .step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 360px;
+    flex: 1;
+    max-width: 480px;
+  }
+
+  .step-icon {
+    width: 208px;
+    height: 208px;
+    border-radius: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .step-icon svg {
+    width: 94px;
+    height: 94px;
+  }
+
+  .step-1 .step-icon { background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to)); }
+  .step-2 .step-icon { background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to)); }
+  .step-3 .step-icon { background: linear-gradient(135deg, var(--c-purple-gradient-from), var(--c-purple-gradient-to)); }
+
+  .step-label {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--c-text);
+    margin-bottom: 16px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    text-align: center;
+  }
+
+  .step-desc {
+    font-size: 32px;
+    color: var(--c-text-muted);
+    text-align: center;
+    line-height: 1.5;
+    white-space: pre-line;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .arrow-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding-top: 72px;
+    width: 336px;
+  }
+
+  .arrow-line {
+    display: flex;
+    align-items: center;
+    gap: 0;
+  }
+
+  .arrow-dash {
+    width: 200px;
+    height: 5px;
+    background: repeating-linear-gradient(
+      90deg,
+      var(--c-line) 0px,
+      var(--c-line) 12px,
+      transparent 12px,
+      transparent 20px
+    );
+  }
+
+  .arrow-head {
+    width: 0;
+    height: 0;
+    border-top: 14px solid transparent;
+    border-bottom: 14px solid transparent;
+    border-left: 20px solid var(--c-text-faint);
+  }
+
+  .arrow-label {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--c-text-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-top: 16px;
+    text-align: center;
+    width: 100%;
+  }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">So funktioniert die Google-Sheets-Integration</div>
+
+    <div class="workflow">
+      <!-- Step 1: Google Sheets -->
+      <div class="step step-1">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="8" y1="13" x2="16" y2="13"/>
+            <line x1="8" y1="17" x2="16" y2="17"/>
+            <line x1="10" y1="9" x2="8" y2="9"/>
+          </svg>
+        </div>
+        <div class="step-label">Sie bearbeiten</div>
+        <div class="step-desc">Sie aktualisieren Daten in
+Ihrer Google-Sheets-Datei</div>
+      </div>
+
+      <!-- Arrow 1 -->
+      <div class="arrow-container">
+        <div class="arrow-line">
+          <div class="arrow-dash"></div>
+          <div class="arrow-head"></div>
+        </div>
+        <div class="arrow-label">Automatische Synchronisierung</div>
+      </div>
+
+      <!-- Step 2: Cleverphant -->
+      <div class="step step-2">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="16 3 21 3 21 8"/>
+            <line x1="4" y1="20" x2="21" y2="3"/>
+            <polyline points="21 16 21 21 16 21"/>
+            <line x1="15" y1="15" x2="21" y2="21"/>
+            <line x1="4" y1="4" x2="9" y2="9"/>
+          </svg>
+        </div>
+        <div class="step-label">Synchronisierung</div>
+        <div class="step-desc">Das CMS erkennt
+Änderungen automatisch</div>
+      </div>
+
+      <!-- Arrow 2 -->
+      <div class="arrow-container">
+        <div class="arrow-line">
+          <div class="arrow-dash"></div>
+          <div class="arrow-head"></div>
+        </div>
+        <div class="arrow-label">In Echtzeit</div>
+      </div>
+
+      <!-- Step 3: Website -->
+      <div class="step step-3">
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="2" y1="12" x2="22" y2="12"/>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+          </svg>
+        </div>
+        <div class="step-label">Anzeige</div>
+        <div class="step-desc">Die Tabelle wird auf
+Ihrer Website aktualisiert</div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+
+  .title {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 48px;
+    letter-spacing: -0.3px;
+  }
+
+  /* Two panels side by side */
+  .layout {
+    display: flex;
+    gap: 36px;
+    align-items: stretch;
+    margin-bottom: 40px;
+  }
+
+  /* === Left: list view === */
+  .cms-list {
+    flex: 5;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--c-border);
+    background: var(--c-surface);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cms-breadcrumb {
+    padding: 14px 24px;
+    font-size: 14px;
+    color: var(--c-text-faint);
+    background: var(--c-surface-alt);
+    border-bottom: 1px solid var(--c-border);
+  }
+
+  .cms-breadcrumb span { color: var(--c-text-muted); }
+
+  .cms-list-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 24px;
+    background: var(--c-blue-bg);
+    border-bottom: 1px solid var(--c-blue-border);
+  }
+
+  .cms-list-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+    background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .cms-list-icon svg { width: 18px; height: 18px; }
+
+  .cms-list-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--c-blue-text);
+  }
+
+  .list-table {
+    width: 100%;
+    border-collapse: collapse;
+    flex: 1;
+  }
+
+  .list-table th {
+    padding: 12px 24px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--c-text-faint);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    background: var(--c-surface-alt);
+    border-bottom: 1px solid var(--c-border);
+  }
+
+  .list-table td {
+    padding: 14px 24px;
+    font-size: 19px;
+    color: var(--c-text);
+    border-bottom: 1px solid var(--c-border-soft);
+    vertical-align: middle;
+  }
+
+  .list-table tr:last-child td { border-bottom: none; }
+
+  .list-id {
+    width: 56px;
+    font-weight: 700;
+    font-size: 22px;
+    color: var(--c-blue-text-vivid);
+    text-align: center;
+  }
+
+  .list-name { font-weight: 600; }
+
+  .list-enabled { width: 90px; }
+
+  .toggle {
+    display: inline-flex;
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--c-green-border);
+  }
+
+  .toggle-yes {
+    padding: 4px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    background: var(--c-green-solid);
+    color: white;
+  }
+
+  .toggle-no {
+    padding: 4px 8px;
+    font-size: 13px;
+    background: var(--c-surface-alt);
+    color: var(--c-text-faint);
+  }
+
+  /* Active row highlight */
+  .list-table tr.active-row td {
+    background: var(--c-blue-bg);
+  }
+
+  /* === Right: edit view === */
+  .cms-edit {
+    flex: 4;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid var(--c-border);
+    background: var(--c-surface);
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cms-edit .cms-breadcrumb span.current {
+    color: var(--c-text-secondary);
+    font-weight: 600;
+  }
+
+  .edit-form {
+    padding: 28px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    flex: 1;
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+
+  .form-label {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--c-text);
+  }
+
+  .form-hint {
+    font-size: 13px;
+    color: var(--c-text-faint);
+    line-height: 1.4;
+  }
+
+  .form-input {
+    padding: 12px 18px;
+    border: 1px solid var(--c-border);
+    border-radius: 10px;
+    font-size: 17px;
+    color: var(--c-text-secondary);
+    background: var(--c-surface);
+    font-family: inherit;
+  }
+
+  .form-input-mono {
+    font-family: 'SF Mono', 'Fira Code', monospace;
+    font-size: 14px;
+    color: var(--c-text-muted);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .form-enabled-label {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--c-text);
+    margin-bottom: 4px;
+  }
+
+  /* Connector arrow between panels */
+  .connector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    color: var(--c-text-faint);
+    font-size: 28px;
+  }
+
+  /* Annotation */
+  .annotation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px 36px;
+    background: var(--c-blue-bg);
+    border-radius: 20px;
+    border: 1px solid var(--c-blue-border);
+  }
+
+  .annotation-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .annotation-icon svg { width: 24px; height: 24px; }
+
+  .annotation-text {
+    font-size: 22px;
+    color: var(--c-blue-text);
+    hyphens: auto;
+    overflow-wrap: break-word;
+    line-height: 1.4;
+  }
+
+  .annotation-text strong {
+    font-weight: 700;
+    color: var(--c-text);
+  }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">So sieht das Tabellenmodul im CMS aus</div>
+
+    <div class="layout">
+      <!-- Left: list view -->
+      <div class="cms-list">
+        <div class="cms-breadcrumb">
+          Google Sheets Tabellenmodul / <span>Google Tabellen</span>
+        </div>
+        <div class="cms-list-header">
+          <div class="cms-list-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="3" y="3" width="7" height="7"/>
+              <rect x="14" y="3" width="7" height="7"/>
+              <rect x="3" y="14" width="7" height="7"/>
+              <rect x="14" y="14" width="7" height="7"/>
+            </svg>
+          </div>
+          <div class="cms-list-title">Google Tabellen</div>
+        </div>
+        <table class="list-table">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Bezeichnung</th>
+              <th>Enabled</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="active-row">
+              <td class="list-id">1</td>
+              <td class="list-name">Verwaltung</td>
+              <td class="list-enabled"><span class="toggle"><span class="toggle-yes">Yes</span><span class="toggle-no"></span></span></td>
+            </tr>
+            <tr>
+              <td class="list-id">2</td>
+              <td class="list-name">Bildung</td>
+              <td class="list-enabled"><span class="toggle"><span class="toggle-yes">Yes</span><span class="toggle-no"></span></span></td>
+            </tr>
+            <tr>
+              <td class="list-id">3</td>
+              <td class="list-name">Gehaltsinformationen</td>
+              <td class="list-enabled"><span class="toggle"><span class="toggle-yes">Yes</span><span class="toggle-no"></span></span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Connector -->
+      <div class="connector">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </div>
+
+      <!-- Right: edit view -->
+      <div class="cms-edit">
+        <div class="cms-breadcrumb">
+          Google Tabellen / <span class="current">Bearbeiten</span>
+        </div>
+        <div class="edit-form">
+          <div class="form-group">
+            <div class="form-label">Bezeichnung</div>
+            <div class="form-hint">Die Google-Sheets-Tabelle muss über einen Link für alle zugänglich sein.</div>
+            <div class="form-input">Verwaltung</div>
+          </div>
+          <div class="form-group">
+            <div class="form-label">Google Sheets ID</div>
+            <div class="form-hint">Die aus der URL extrahierte ID, z. B. die Zeichenfolge nach https://docs.google.com/spreadsheets/d/</div>
+            <div class="form-input form-input-mono">1x63fLffnqq9ePloBaLYTF2baJs7ynlnbqCqTuV7mpXA</div>
+          </div>
+          <div class="form-group">
+            <div class="form-enabled-label">Enabled</div>
+            <span class="toggle"><span class="toggle-yes">Yes</span><span class="toggle-no"></span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Annotation -->
+    <div class="annotation">
+      <div class="annotation-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="12"/>
+          <line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+      </div>
+      <div class="annotation-text">Jede Datei hat eine eigene <strong>ID</strong> – diese verwenden Sie im Code zusammen mit der Blatt-<strong>gID</strong></div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

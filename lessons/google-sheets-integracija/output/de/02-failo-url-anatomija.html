@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+
+  .title {
+    font-size: 44px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 92px;
+    letter-spacing: -0.3px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- File mockup section ---- */
+  .file-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 86px;
+  }
+
+  .file-label {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--c-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 24px;
+    text-align: center;
+    width: 100%;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .file-mockup {
+    width: 840px;
+    background: var(--c-green-bg);
+    border: 4px solid var(--c-green-solid);
+    border-radius: 24px;
+    overflow: hidden;
+  }
+
+  .file-body {
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .file-icon {
+    width: 56px;
+    height: 56px;
+    color: var(--c-green-solid);
+  }
+
+  .sheet-tabs {
+    display: flex;
+    border-top: 1px solid var(--c-green-border);
+  }
+
+  .sheet-tab {
+    flex: 1;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    color: white;
+    position: relative;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .sheet-tab:nth-child(1) {
+    background: var(--c-green-solid);
+    border-radius: 0 0 0 20px;
+  }
+
+  .sheet-tab:nth-child(2) {
+    background: var(--c-green-gradient-to);
+  }
+
+  .sheet-tab:nth-child(3) {
+    background: var(--c-green-deep);
+    border-radius: 0 0 20px 0;
+  }
+
+  /* ---- URL bar section ---- */
+  .url-section {
+    margin-bottom: 76px;
+  }
+
+  .url-label {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--c-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 24px;
+    text-align: center;
+    width: 100%;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .url-bar {
+    background: var(--c-bg);
+    border: 3px solid var(--c-border);
+    border-radius: 20px;
+    padding: 28px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    font-size: 26px;
+    color: var(--c-text-muted);
+    flex-wrap: wrap;
+  }
+
+  .url-base {
+    color: var(--c-text-faint);
+  }
+
+  .url-file-id {
+    background: var(--c-amber-bg);
+    color: var(--c-amber-text-vivid);
+    padding: 4px 16px;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+
+  .url-separator {
+    color: var(--c-text-faint);
+  }
+
+  .url-gid {
+    background: var(--c-purple-border);
+    color: var(--c-purple-text-vivid);
+    padding: 4px 16px;
+    border-radius: 8px;
+    font-weight: 700;
+  }
+
+  /* ---- gID mapping section ---- */
+  .gid-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gid-explain {
+    font-size: 26px;
+    color: var(--c-text-muted);
+    text-align: center;
+    width: 100%;
+    margin-bottom: 48px;
+    font-style: italic;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .gid-mappings {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+    width: 100%;
+  }
+
+  .gid-mapping {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+  }
+
+  .gid-tab-name {
+    font-size: 26px;
+    font-weight: 600;
+    color: var(--c-text);
+    background: var(--c-green-bg);
+    border: 3px solid var(--c-green-solid);
+    padding: 12px 32px;
+    border-radius: 12px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .gid-connector {
+    width: 1px;
+    height: 40px;
+    border-left: 2px dotted var(--c-line);
+  }
+
+  .gid-value {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'SF Mono', 'Fira Code', 'Consolas', monospace;
+    color: var(--c-purple-text-vivid);
+    background: var(--c-purple-border);
+    padding: 10px 24px;
+    border-radius: 12px;
+  }
+
+  /* ---- Brand bar ---- */
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Dateistruktur und URL-Anatomie</div>
+
+    <!-- File mockup -->
+    <div class="file-section">
+      <div class="file-label">Google-Sheets-Datei</div>
+      <div class="file-mockup">
+        <div class="file-body">
+          <svg class="file-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+            <polyline points="14 2 14 8 20 8"/>
+            <line x1="8" y1="13" x2="16" y2="13"/>
+            <line x1="8" y1="17" x2="16" y2="17"/>
+            <line x1="10" y1="9" x2="8" y2="9"/>
+          </svg>
+        </div>
+        <div class="sheet-tabs">
+          <div class="sheet-tab">Schulrat</div>
+          <div class="sheet-tab">Lehrerliste</div>
+          <div class="sheet-tab">Gehaltsinformationen</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- URL bar -->
+    <div class="url-section">
+      <div class="url-label">URL-Struktur</div>
+      <div class="url-bar">
+        <span class="url-base">docs.google.com/spreadsheets/d/</span><span class="url-file-id">DATEI_ID</span><span class="url-separator">/edit#gid=</span><span class="url-gid">gID</span>
+      </div>
+    </div>
+
+    <!-- gID mappings -->
+    <div class="gid-section">
+      <div class="gid-explain">Jedes Tabellenblatt hat eine eindeutige gID-Nummer</div>
+      <div class="gid-mappings">
+        <div class="gid-mapping">
+          <div class="gid-tab-name">Schulrat</div>
+          <div class="gid-connector"></div>
+          <div class="gid-value">gID = 0</div>
+        </div>
+        <div class="gid-mapping">
+          <div class="gid-tab-name">Lehrerliste</div>
+          <div class="gid-connector"></div>
+          <div class="gid-value">gID = 1890969320</div>
+        </div>
+        <div class="gid-mapping">
+          <div class="gid-tab-name">Gehaltsinformationen</div>
+          <div class="gid-connector"></div>
+          <div class="gid-value">gID = 1753601957</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>
