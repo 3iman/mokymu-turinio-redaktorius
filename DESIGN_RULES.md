@@ -109,6 +109,21 @@ lygiuojasi kairėn ir vizualiai „nušoka" nuo rodyklės centro.
 - Logo opacity: `var(--c-brand-logo-opacity)` (light: 0.5, dark: 0.35)
 - Centruotas horizontaliai
 
+## Teksto taisyklės iliustracijose
+
+### Antraštės
+- **Be klaustukų** — net jei antraštė skamba kaip klausimas. „Nuo ko pradėti", ne „Nuo ko pradėti?"
+- Antraštės yra informacinės, ne retorinės
+
+### Emailai ir URL
+- **Niekada nelūžta per eilutes** — `white-space: nowrap` ant kiekvieno email ir URL elemento
+- Tai yra išimtis iš bendros `overflow-wrap: break-word` taisyklės — emailai ir URL yra nedalomi vienetai
+
+### Video overlay numeracija
+- Grynas tekstas be fono, be dėžučių, be šešėlių — minimalizmas
+- Spalva: `#94a3b8` (faint), dydis: 32px, svoris: 700
+- Pozicija: apatinis kairys kampas
+
 ## PNG eksportas
 - Device scale factor: **2x** (retina)
 - Viewport: 1200x800

@@ -126,16 +126,22 @@ Prieš bet kokį darbą — pažink sistemas iš vidaus:
 3. **QA — teksto tikrinimas** — savikontrolė prieš pateikiant žmogui (žr. QA checklist)
 4. **Žmogus tvirtina tekstą**
 5. **Sekcijų inventorizacija** — perskaityti visą patvirtintą tekstą, sunumeruoti kiekvieną sekcijos antraštę, pateikti žmogui: „Pamokoje matau **N** sekcijų: [00] ... [01] ... [02] ..."
-6. **Iliustracijų planas** — kiekvienai sekcijai siūlyti arba pagrįsti kodėl nereikia. Patikrinti: iliustracijų skaičius + praleidimų skaičius = sekcijų skaičius → **žmogus tvirtina**
-7. **Iliustracijų kūrimas** — po vieną, kiekvieną rodyti žmogui → **žmogus tvirtina kiekvieną**
-8. **Publikavimas** → **žmogus tvirtina**
-9. **QA — frontend** — patikrinti per Chrome MCP
+6. **Turinio pilnumo tikrinimas** (PRIVALOMA prieš vizualinį darbą):
+   - **Vartotojo kelionės žemėlapis** — surašyti konkrečią seką ką vartotojas realiai daro nuo pradžios iki galo. Kiekvienas fizinis veiksmas = atskiras žingsnis. Kiekvienam žingsniui — priskirti iliustraciją arba pagrįsti kodėl nereikia.
+   - **Aplinkų inventorizacija** — surašyti visas aplinkas/ekranus, kuriuose vartotojas dirba (Google Sheets, TVS, svetainė, el. paštas...). Kiekvienai aplinkai — patikrinti ar yra bent viena iliustracija, kuri parodo tą aplinką.
+   - **Rekomendacijų tikrinimas** — ar pamoka turi ne tik „kaip", bet ir „kaip geriau"? (pvz., failų organizavimas pagal atsakomybes, ne tik techniniai žingsniai)
+   - **Spragų ataskaita** — pateikti žmogui: „Vartotojo kelionėje matau N žingsnių, turime M iliustracijų. Trūksta: [...]" → **žmogus tvirtina**
+7. **Iliustracijų planas** — kiekvienai sekcijai siūlyti arba pagrįsti kodėl nereikia. Patikrinti: iliustracijų skaičius + praleidimų skaičius = sekcijų skaičius → **žmogus tvirtina**
+8. **Iliustracijų kūrimas** — po vieną, kiekvieną rodyti žmogui → **žmogus tvirtina kiekvieną**
+9. **Publikavimas** → **žmogus tvirtina**
+10. **QA — frontend** — patikrinti per Chrome MCP
 
 ### Scenarijus B: Iliustracijos esamam turiniui
 
 1. **Sekcijų inventorizacija** — perskaityti turinį, sunumeruoti **visas** sekcijų antraštes, pateikti pilną sąrašą žmogui
 2. Klausti: „Kurioms sekcijoms reikia iliustracijų?"
-3. Toliau kaip A (žingsniai 6–9)
+3. **Turinio pilnumo tikrinimas** — kaip A žingsnis 6 (vartotojo kelionė, aplinkos, rekomendacijos, spragų ataskaita)
+4. Toliau kaip A (žingsniai 7–10)
 
 ### Scenarijus C: Esamų tekstų tobulinimas
 
@@ -149,6 +155,7 @@ Prieš bet kokį darbą — pažink sistemas iš vidaus:
 
 ```
 Tekstas parašytas          → žmogus tvirtina
+Turinio pilnumas           → žmogus tvirtina spragų ataskaitą
 Iliustracijų planas        → žmogus tvirtina
 Kiekviena iliustracija     → žmogus tvirtina arba komentuoja
 Publikavimas               → žmogus tvirtina
@@ -198,6 +205,31 @@ Agentas niekada nesiunčia į produkciją be aiškaus „taip".
 | 5 | Dvitaškiai | Ar nėra dvitaškių po etikečių ir sekcijų pavadinimų? |
 | 6 | Teksto ilgis | Ar tilptų vokiškais tekstais? (German-first principas) |
 
+**Kompozicijos tikrinimas (PRIVALOMA — iš `COMPOSITION_PRINCIPLES.md`):**
+
+| # | Tikrinimas | Klausimas |
+|---|---|---|
+| 1 | Viena žinutė | Ar galima aprašyti vienu sakiniu ką iliustracija sako? |
+| 2 | Hierarchija | Ar akis pirmiausia mato pavadinimą, tada blokus, tada detales? |
+| 3 | Balansas | Ar nė viena pusė neatrodo „sunkesnė"? |
+| 4 | Tuščia erdvė | Ar yra pakankamai kvėpavimo tarp elementų? |
+| 5 | Dominantė | Ar yra vienas aiškus fokuso taškas? |
+| 6 | Spalvos | Ar max 5 spalvos, visos iš `tokens.css`? |
+| 7 | Proporcijos | Ar elementų dydžiai atspindi svarbą (didesnis = svarbesnis)? |
+| 8 | 3s testas | Ar žiūrovas suprastų per 3 sekundes? |
+
+**Animacijos tikrinimas (kai kuriami animuoti klipai — iš `ANIMATION_PRINCIPLES.md`):**
+
+| # | Tikrinimas | Klausimas |
+|---|---|---|
+| 1 | Staging | Ar kortelė ir fonas matomi nuo pradžių, animuojasi tik turinys? |
+| 2 | Gradual reveal | Ar elementai atsiranda logine seka (pavadinimas → blokai → detalės → summary)? |
+| 3 | Pauzės | Ar tarp loginių blokų yra kvėpavimo pauzės (0.5–1s)? |
+| 4 | Easing | Ar naudojamas spring easing `cubic-bezier(0.16, 1, 0.3, 1)`, ne linear? |
+| 5 | Mass/weight | Ar sunkesni elementai animuojasi lėčiau nei lengvi? |
+| 6 | Max vienu metu | Ar ne daugiau nei 2–3 elementai juda vienu metu? |
+| 7 | Trukmė | Ar visa animacija telpa į 6s, po to hold? |
+
 ### Frontend QA (po publikavimo)
 
 | # | Tikrinimas | Klausimas |
@@ -221,9 +253,28 @@ Agentas niekada nesiunčia į produkciją be aiškaus „taip".
 
 ### Taisyklės
 - Vizualinis stilius: **`DESIGN_RULES.md`** (kortelė, šriftai, spalvos, German-first)
+- **Kompozicija: `COMPOSITION_PRINCIPLES.md`** — PRIVALOMA perskaityti prieš kuriant bet kokią iliustraciją. Taikyti: trijų lygių hierarchiją, balansą, tuščią erdvę, dominantę, spalvų ribojimą, grupavimą. Prieš finalizuojant — pravaryti checklist iš failo pabaigos.
+- **Animacija: `ANIMATION_PRINCIPLES.md`** — PRIVALOMA perskaityti prieš kuriant animuotus klipus (`generate-video-clips.js`). Taikyti: gradual reveal, pacing su pauzėmis, staging, spring easing, mass/weight, sequential annotation. Niekada linear easing, niekada bounce, niekada visi elementai vienu metu.
 - Iliustracijų tekstai: informaciniai, antras asmuo, be dvitaškių, be „Cleverphant"
+- **UI mockup'ai originalo kalba** — Google Sheets, CMS ar kitos programos UI elementai (mygtukai, meniu, etiketės) turi būti originalo kalba (anglų). Verčiami tik paaiškinamieji tekstai apačioje, ne pati sąsaja. Lietuviškas UI atrodo nenatūraliai ir klaidina.
 - Duomenys: realūs (iš Google Sheets API, iš CMS), ne pramanytai
 - Failų pavadinimai: ~3 žodžiai, tiksline kalba, tik ASCII
+- **Šablonų CSS izoliacija** — nauji šablonai NETURI turėti savo `.brand-bar`, `.card` ar kitų base.css klasių CSS. Jei šablonas perrašo base stilius — tai bug'as. Tik unikalios šablono klasės turi būti `<style>` bloke.
+
+### Video generavimo workflow
+Pilna seka, kuri turi būti vykdoma griežtai:
+1. `node generate.js --png --lang lt` — HTML + PNG
+2. `node generate-video-clips.js --lesson <slug> --lang lt` — animuoti klipai
+3. **Uždaryti QuickTime Player** — `osascript -e 'quit app "QuickTime Player"'` (kitaip kešuoja seną failą)
+4. **Ištrinti seną video** — `rm -f lessons/<slug>/video/*.mp4`
+5. `node build-video.js --lesson <slug> --lang lt` — galutinis video
+6. `open` — atidaryti naują
+
+**NIEKADA** negeneruoti naujo video neištrynus seno. **VISADA** uždaryti grotuvą prieš trinant.
+
+### Lokalizacija
+- **Jokių hardcoded tekstų konkrečia kalba** — visi rodomi tekstai (intro title, subtitle, perėjimų pavadinimai) turi ateiti iš kalbos failo arba lokalizuoto žodyno kode
+- Intro subtitle turi būti lokalizuotas `build-video.js` viduje (žr. `subtitles` objektą)
 
 ---
 
@@ -288,7 +339,9 @@ Agentas pats nueina į `wp-admin`, peržiūri kaip sukurtas Kursai post type —
 
 ## Papildomi failai
 
-| Failas | Kada skaityti |
-|---|---|
-| `Archive1011/GLOSSARY.md` | Kai dirbi su tekstais — terminų žodynas iš 47 pamokų |
-| `DESIGN_RULES.md` | Kai kuri iliustracijas — spalvos, šriftai, dydžiai, German-first |
+| Failas | Kada skaityti | Privalomas? |
+|---|---|---|
+| `Archive1011/GLOSSARY.md` | Kai dirbi su tekstais — terminų žodynas iš 47 pamokų | Taip |
+| `DESIGN_RULES.md` | Kai kuri iliustracijas — spalvos, šriftai, dydžiai, German-first | Taip |
+| `COMPOSITION_PRINCIPLES.md` | **Prieš kiekvieną iliustraciją** — hierarchija, balansas, erdvė, proporcijos | Taip |
+| `ANIMATION_PRINCIPLES.md` | **Prieš animuotus klipus** — timing, easing, staging, gradual reveal | Taip |

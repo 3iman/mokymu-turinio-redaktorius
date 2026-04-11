@@ -21,43 +21,53 @@ body {
 }
 
 .card {
-  width: 900px;
-  background: var(--c-surface);
-  border-radius: 20px;
-  padding: 48px 56px;
+  width: 1920px;
+  height: 1080px;
+  background: #f3f4f6;
+  border-radius: 32px;
+  padding: 80px 120px;
   box-shadow: var(--c-shadow-card);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Branded watermark — simbolis per visą kadrą, kaip blue_bg.png */
+.card::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1400px;
+  height: 1400px;
+  background: url('../assets/simbolis_big.png') no-repeat center / contain;
+  opacity: 0.37;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  z-index: 0;
+}
+
+/* Turinys visada virš watermark */
+.card > * {
+  position: relative;
+  z-index: 1;
 }
 
 .title {
-  font-size: 22px;
+  font-size: 44px;
   font-weight: 700;
   color: var(--c-text);
   text-align: center;
-  margin-bottom: 32px;
-  letter-spacing: -0.3px;
+  margin-bottom: 56px;
+  letter-spacing: -0.5px;
   hyphens: auto;
   overflow-wrap: break-word;
 }
 
-/* ---- Brand bar ---- */
+/* ---- Brand bar — paslėptas, simbolis fone per ::before ---- */
 .brand-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 40px;
-  padding-top: 24px;
-  border-top: 1px solid var(--c-border-soft);
-}
-
-.brand-logo {
-  height: 22px;
-  width: auto;
-  opacity: var(--c-brand-logo-opacity);
-}
-
-.brand-logo-dark { display: none; }
-
-@media (prefers-color-scheme: dark) {
-  .brand-logo-light { display: none; }
-  .brand-logo-dark { display: block; }
+  display: none;
 }

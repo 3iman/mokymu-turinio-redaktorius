@@ -77,6 +77,76 @@ const TEMPLATE_OVERRIDES = {
   },
 };
 
+/**
+ * Content QA — automatic checks run after every generation.
+ * Based on CLAUDE.md QA checklists + COMPOSITION_PRINCIPLES.md.
+ */
+function runContentQA(lessons, langFilter) {
+  const warnings = [];
+
+  for (const lesson of lessons) {
+    if (!fs.existsSync(lesson.contentDir)) continue;
+
+    const langFiles = fs.readdirSync(lesson.contentDir).filter(f => f.endsWith('.json'));
+
+    for (const langFile of langFiles) {
+      const data = JSON.parse(fs.readFileSync(path.join(lesson.contentDir, langFile), 'utf-8'));
+      if (langFilter && data.lang !== langFilter) continue;
+
+      const lang = data.lang;
+
+      for (const [sectionKey, section] of Object.entries(data)) {
+        if (sectionKey === 'lang' || sectionKey === 'common') continue;
+        if (typeof section !== 'object') continue;
+
+        for (const [key, value] of Object.entries(section)) {
+          if (typeof value !== 'string') continue;
+
+          // 1. Check for "Cleverphant" in user-facing text (not email addresses)
+          if (value.includes('Cleverphant') && !value.includes('@') && !key.includes('email')) {
+            warnings.push({ lesson: lesson.name, lang, section: sectionKey, key, msg: `Contains "Cleverphant" — use "TVS" instead` });
+          }
+
+          // 2. Check for colons after labels (dvitaškiai)
+          if (key.includes('label') && value.endsWith(':')) {
+            warnings.push({ lesson: lesson.name, lang, section: sectionKey, key, msg: `Label ends with colon — remove it` });
+          }
+
+          // 3. Check for very long text (>120 chars) that might overflow
+          if (value.length > 120 && !key.includes('code')) {
+            warnings.push({ lesson: lesson.name, lang, section: sectionKey, key, msg: `Text very long (${value.length} chars) — may overflow card` });
+          }
+
+          // 4. Check for imperative mood (Lithuanian: ends with -kite, -tis)
+          if (/[Nn]uspauskite|[Ss]pauskite|[Pp]asirinkite|[Ii]štrinkite|[Rr]edaguokite|[Gg]rįžkite/.test(value)) {
+            warnings.push({ lesson: lesson.name, lang, section: sectionKey, key, msg: `Imperative mood detected — use "jūs" form (esamasis laikas)` });
+          }
+
+          // 5. Check for mixed UI language in same section
+          // If a section has English UI terms, check Lithuanian descriptions don't reference Lithuanian UI names
+          const englishUITerms = ['Share', 'Done', 'General access', 'Viewer', 'Editor', 'Anyone with the link'];
+          const litUITerms = ['Bendrinti', 'Atlikta', 'Bendroji prieiga', 'Žiūrintysis', 'Redaktorius'];
+          const sectionValues = Object.values(section).filter(v => typeof v === 'string');
+          const hasEnglishUI = sectionValues.some(v => englishUITerms.some(t => v.includes(t)));
+          const hasLitUI = sectionValues.some(v => litUITerms.some(t => v.includes(t)));
+          if (hasEnglishUI && hasLitUI && key === Object.keys(section)[0]) {
+            warnings.push({ lesson: lesson.name, lang, section: sectionKey, key: '*', msg: `Mixed UI languages — English UI terms and Lithuanian UI terms in same section` });
+          }
+        }
+      }
+    }
+  }
+
+  if (warnings.length > 0) {
+    console.log(`\n🔍 CONTENT QA: ${warnings.length} warning(s):`);
+    for (const w of warnings) {
+      console.warn(`  [${w.lang}] ${w.section}${w.key !== '*' ? '.' + w.key : ''}: ${w.msg}`);
+    }
+  } else {
+    console.log(`\n✅ CONTENT QA: all checks passed`);
+  }
+}
+
 function replaceTemplateVars(html, vars) {
   const missing = [];
   const result = html.replace(/\{\{(\w+)\}\}/g, (match, key) => {
@@ -192,7 +262,7 @@ function generate() {
       if (!fs.existsSync(langAssetsDir)) {
         fs.mkdirSync(langAssetsDir, { recursive: true });
       }
-      const assetFiles = fs.readdirSync(ASSETS_DIR).filter(f => !f.startsWith('.'));
+      const assetFiles = fs.readdirSync(ASSETS_DIR).filter(f => !f.startsWith('.') && fs.statSync(path.join(ASSETS_DIR, f)).isFile());
       for (const assetFile of assetFiles) {
         fs.copyFileSync(path.join(ASSETS_DIR, assetFile), path.join(langAssetsDir, assetFile));
       }
@@ -218,6 +288,9 @@ function generate() {
       console.error(`  [${err.lang}] ${err.template}: ${err.keys.join(', ')}`);
     }
   }
+
+  // ---- Content QA (automatic) ----
+  runContentQA(lessons, langFilter);
 
   if (exportPng || exportDark) {
     return generatePng(allHtmlFiles);
@@ -246,7 +319,7 @@ async function generatePng(htmlFiles) {
       const page = await browser.newPage();
 
       // Set viewport wide enough for the card
-      await page.setViewport({ width: 1200, height: 800, deviceScaleFactor: 2 });
+      await page.setViewport({ width: 1920, height: 1080, deviceScaleFactor: 1 });
 
       // Enable dark mode via Puppeteer media feature emulation
       if (mode.darkFeature) {
