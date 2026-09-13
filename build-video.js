@@ -402,8 +402,17 @@ function buildVideo(frames, durations, introClipPath, introPng) {
     }
 
     if (hasAnimClip) {
-      // Use animated clip + extend with static hold for remaining duration
-      const holdDuration = Math.max(0, frame.duration - 6);
+      // ⛔ Klipo trukmė matuojama, o ne spėjama. Anksčiau čia buvo `frame.duration - 6`,
+      // t. y. prielaida, kad kiekvienas klipas yra 6 s. Kai klipai tapo skirtingo ilgio,
+      // ta prielaida ant kiekvieno jų užklijuodavo papildomą stop kadrą.
+      let animSeconds = 6;
+      try {
+        animSeconds = parseFloat(execSync(
+          `ffprobe -v error -show_entries format=duration -of csv=p=0 "${animClipPath}"`,
+          { encoding: 'utf-8' }
+        ).trim()) || 6;
+      } catch (e) { /* liks 6 */ }
+      const holdDuration = Math.max(0, frame.duration - animSeconds);
       if (holdDuration > 0) {
         // Create a hold clip from the PNG, then concat animated + hold
         const holdPath = path.join(clipDir, `hold_${String(i).padStart(3, '0')}.mp4`);
@@ -501,7 +510,16 @@ function buildVideo(frames, durations, introClipPath, introPng) {
     console.log(`  ${transCount} transitions interleaved`);
   }
 
+  let outroSeconds = 0;
   if (hasOutro) {
+    // ⛔ Vaizdas konkatenuojamas be garso (visi klipai be jo), bet autro garsas —
+    // firminis širdies plakimas — atskirai įmaišomas žemiau, 4 žingsnyje.
+    try {
+      outroSeconds = parseFloat(execSync(
+        `ffprobe -v error -show_entries format=duration -of csv=p=0 "${outroPath}"`,
+        { encoding: 'utf-8' }
+      ).trim()) || 0;
+    } catch (e) { outroSeconds = 0; }
     // Copy outro to clip dir for concat
     const outroDest = path.join(clipDir, 'outro.mp4');
     // Re-encode outro to match format
@@ -543,14 +561,34 @@ function buildVideo(frames, durations, introClipPath, introPng) {
     } catch (_) {
       totalDur = allFrames.reduce((s, f) => s + f.duration, 0) + transCount * 2;
     }
-    const fadeStart = Math.max(0, totalDur - 3);
+    const turiPlakima = hasOutro && outroSeconds > 0;
+    // Muzika nutyla prieš vinjetę, kad širdies plakimas liktų vienas — kaip originale.
+    const outroStart = turiPlakima ? Math.max(0, totalDur - outroSeconds) : totalDur;
+    const fadeStart = turiPlakima
+      ? Math.max(0, outroStart - 1.5)
+      : Math.max(0, totalDur - 3);
+    const fadeLen = turiPlakima ? 1.5 : 3;
 
-    execSync([
-      'ffmpeg', '-y',
+    const ivestys = [
       '-i', `"${silentVideo}"`,
       '-stream_loop', '-1',
       '-i', `"${musicPath}"`,
-      '-filter_complex', `"[1:a]volume=0.4[bg];[bg]afade=t=out:st=${fadeStart}:d=3[aout]"`,
+    ];
+    let filtras = `[1:a]volume=0.4,afade=t=out:st=${fadeStart}:d=${fadeLen}[aout]`;
+
+    if (turiPlakima) {
+      ivestys.push('-i', `"${outroPath}"`);
+      const delayMs = Math.round(outroStart * 1000);
+      filtras =
+        `[1:a]volume=0.4,afade=t=out:st=${fadeStart}:d=${fadeLen}[bg];` +
+        `[2:a]adelay=${delayMs}|${delayMs}[sirdis];` +
+        `[bg][sirdis]amix=inputs=2:duration=first:normalize=0[aout]`;
+    }
+
+    execSync([
+      'ffmpeg', '-y',
+      ...ivestys,
+      '-filter_complex', `"${filtras}"`,
       '-map', '0:v',
       '-map', '"[aout]"',
       '-c:v', 'copy',
@@ -558,6 +596,9 @@ function buildVideo(frames, durations, introClipPath, introPng) {
       '-shortest',
       `"${videoOut}"`,
     ].join(' '), { stdio: 'pipe' });
+    if (turiPlakima) {
+      console.log(`  Vinjetės garsas grąžintas nuo ${outroStart.toFixed(1)}s (${outroSeconds.toFixed(1)}s)`);
+    }
   } else {
     fs.renameSync(silentVideo, videoOut);
   }
@@ -612,6 +653,10 @@ async function main() {
     // Use the main flow title if available
     if (content['01_sheets_tvs_svetaine']) {
       introTitle = content['01_sheets_tvs_svetaine'].title;
+    }
+    // Explicit lesson intro title override (preferred, generic)
+    if (content._intro && content._intro.title) {
+      introTitle = content._intro.title;
     }
     // Localized subtitle
     const subtitles = {

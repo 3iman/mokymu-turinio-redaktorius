@@ -35,6 +35,18 @@ Visos spalvos centralizuotos **`tokens/tokens.css`** — CSS custom properties s
 - Kiekviena teksto + fono pora tikrinta per WCAG AA kontrastą (≥ 4.5:1)
 - Dark mode aktyvuojamas automatiškai per `@media (prefers-color-scheme: dark)`
 
+### Spalvų semantika — kada kuri spalva
+
+| Spalva | Kada naudoti | Pavyzdžiai |
+|---|---|---|
+| **Blue** (`--c-blue-*`) | Rekomendacija, instrukcija, teigiamas tech'inis variantas, pagrindinis variantas palyginime | „Rekomendacija: prieš lentelę įdėkite…"; pagrindinis įrankis kelių palyginime; TVS žymėjimas |
+| **Green** (`--c-green-*`) | Teisinga praktika, sėkmė, teigiama būsena, svetainės frontend rezultatas | Pavyzdžiai „kaip reikia"; „Svetainėje" blokas; antrinis taisyklingas variantas |
+| **Red** (`--c-red-*`) | Klaida, antipaternas, draudimas, įspėjimas apie problemą | „Klaida" ženklas; „bold vietoj TH"; truncated lentelė redaktoriuje |
+| **Amber** (`--c-amber-*`) | **Kraštutinis atvejis**, paskutinė išeitis — NE rekomendacija | „Kraštutinis atvejis: PDF arba paveikslėlis" |
+| **Purple** (`--c-purple-*`) | Rezultatas, trečias žingsnis, dekoratyvus akcentas kai reikia 3-ios lygiavertės kategorijos | Retai, tik kai trys kategorijos lygiavertės |
+
+**Kritiška skirti:** **rekomendacija ≠ kraštutinis atvejis.** Rekomendacija pritaikoma dažnai — blue. Kraštutinis atvejis — tik kai niekas kitas nebeveikia, amber. Prieš spalvindamas kortelę, paklausk: tai rekomendacija ar paskutinė išeitis?
+
 ## German-first projektavimas
 
 Šablonai projektuojami ir testuojami **vokiškais tekstais**. Jei vokiškas tekstas netelpa — keičiamas layout, ne tekstas. Jei telpa vokiškai — telps ir visomis kitomis kalbomis.
@@ -87,6 +99,26 @@ Veikia tik su teisingu `<html lang="...">` atributu — naršyklė naudoja kalbo
 - **Aprašymai po ikonėlėmis** — vienodo pločio zona, tekstas centruotas
 - **Elementų grupės** (pvz. 3 žingsniai) — lygiuojami flex su vienodais tarpais
 - **Vertikalus lygiavimas**: ikonos, etiketės, aprašymai pradedami nuo tos pačios linijos nepriklausomai nuo turinio ilgio
+
+## UI mockup'ai (dialog'ai, sąsajos, kompiuterio ekranai)
+
+### Dialog mockup'ai (CKeditor, Google Sheets, panašiai)
+- **Titlebar** su dialogo pavadinimu — **Capital Case** (`Table Properties`, `Cell Properties`), ne lowercase, ne UPPERCASE
+- **Tabs** jei originalus UI juos turi (pvz., Table Properties → General/Advanced)
+- **Laukai 2-column grid** — Label kairėje, Value dešinėje
+- **OK mygtukas žalias** (CKeditor default) — **NE mėlynas**
+- **Cancel kairėje, OK dešinėje** apačioje — WCAG OS konvencija
+- **Akcentuoti lauką**, kurį pamoka moko pildyti — storesnis border'is arba spalvinis akcentas
+
+### UI mockup'ų reikšmės
+Mockup'ų laukų reikšmės turi atitikti **kurso mokomą praktiką**, ne realaus UI default'us. Jei Pamokos moko, kad lentelės plotis = 100%, tai `Width` laukas rodo `100%`, ne `500px`. Pilnesnė taisyklė: `memory/feedback_ui_mockups_show_best_practice.md`.
+
+### Screenshot matching
+Kai user pateikia UI screenshot'us kaip referenciją, mockup'o **vizualinė struktūra** (tabs, field tipai, pozicijos, mygtukų spalvos, ikonos, šriftai) turi atitikti — tai portretinis atkartojimas, ne „įkvėpta".
+
+**Tačiau turinį (kuris submenu atidarytas, kokia reikšmė lauke, kuris punktas paryškintas) tikrinti prieš atkartojant.** Screenshot dažnai užfiksuoja atsitiktinę UI būseną (pvz., kaip tik buvo atidarytas Cell submenu, nors pamoka moko tik Row/Column veiksmus). Jei screenshot'o turinys kertasi su pamokos rekomendacijomis — mockup'as **rodo pamokos rekomendaciją**, ne screenshot'ą. Tai šalutinis „UI mockup'ų reikšmės" taisyklės atvejis: vizualinė forma iš screenshot'o, turinys iš pamokos.
+
+Bendra atsakomybė: user pateikia tikslų vizualinį referencą, agentas sutikrina, ar screenshot'o būsena atitinka pamokos kontekstą prieš atkartodamas.
 
 ## Rodyklės
 - Punktyrinė linija: 70px ilgio, 2px aukščio

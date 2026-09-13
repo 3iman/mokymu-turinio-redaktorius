@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html><head><meta charset="UTF-8"><style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    width: 1920px; height: 1080px;
+    overflow: hidden;
+    font-family: 'Inter', -apple-system, sans-serif;
+    background: #f0f2f5;
+  }
+  .line-sweep {
+    position: absolute; top: 50%; left: 0;
+    width: 100%; height: 3px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    transform: translateY(-50%) scaleX(0);
+    transform-origin: left center;
+    animation: lineSweep 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.05s forwards,
+               allFadeOut 0.3s ease 2.1s forwards;
+  }
+  .line-trail-1 {
+    position: absolute; top: calc(50% - 20px); left: 0;
+    width: 100%; height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(59,130,246,0.2) 30%, rgba(139,92,246,0.15) 70%, transparent 100%);
+    transform: scaleX(0); transform-origin: left center;
+    animation: lineSweep 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.12s forwards,
+               allFadeOut 0.3s ease 2.1s forwards;
+  }
+  .line-trail-2 {
+    position: absolute; top: calc(50% + 20px); left: 0;
+    width: 100%; height: 1px;
+    background: linear-gradient(90deg, transparent 0%, rgba(59,130,246,0.2) 30%, rgba(139,92,246,0.15) 70%, transparent 100%);
+    transform: scaleX(0); transform-origin: left center;
+    animation: lineSweep 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.17s forwards,
+               allFadeOut 0.3s ease 2.1s forwards;
+  }
+  .line-number {
+    position: absolute; top: 50%; left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    font-size: 120px; font-weight: 800; color: #3b82f6;
+    opacity: 0;
+    animation: numPop 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards,
+               allFadeOut 0.3s ease 2.1s forwards;
+  }
+  .line-title {
+    position: absolute; top: calc(50% + 80px); left: 50%;
+    transform: translate(-50%, 0) translateY(10px);
+    font-size: 28px; font-weight: 600; color: #64748b;
+    white-space: nowrap; opacity: 0;
+    animation: titleSlide 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.35s forwards,
+               allFadeOut 0.3s ease 2.1s forwards;
+  }
+  @keyframes lineSweep {
+    to { transform: translateY(-50%) scaleX(1); }
+  }
+  @keyframes numPop {
+    to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  }
+  @keyframes titleSlide {
+    to { opacity: 1; transform: translate(-50%, 0) translateY(0); }
+  }
+  @keyframes allFadeOut {
+    to { opacity: 0; }
+  }
+</style></head><body>
+  <div class="line-trail-1"></div>
+  <div class="line-sweep"></div>
+  <div class="line-trail-2"></div>
+  <div class="line-number">05</div>
+  <div class="line-title">Kai netelpa – keturi žingsniai</div>
+</body></html>

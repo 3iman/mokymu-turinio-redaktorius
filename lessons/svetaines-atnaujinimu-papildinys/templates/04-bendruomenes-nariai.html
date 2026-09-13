@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--c-text-muted);
+    text-align: center;
+    margin-top: -32px;
+    margin-bottom: 32px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---- Radial container ---- */
+  .radial {
+    position: relative;
+    width: 1320px;
+    height: 720px;
+    margin: 0 auto 28px auto;
+  }
+
+  .radial-svg {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  /* ---- Center email mockup ---- */
+  .email {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 360px;
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-radius: 16px;
+    box-shadow: 0 18px 48px rgba(15, 23, 42, 0.12), 0 4px 10px rgba(15, 23, 42, 0.05);
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  .email-header {
+    background: var(--c-surface-alt);
+    border-bottom: 1px solid var(--c-border);
+    padding: 12px 18px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .email-header-icon {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .email-header-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .email-header-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    min-width: 0;
+  }
+
+  .email-from {
+    font-size: 10px;
+    font-weight: 600;
+    color: var(--c-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+  }
+
+  .email-subject {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--c-text);
+    line-height: 1.2;
+  }
+
+  .email-body {
+    padding: 16px 18px 18px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .email-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .email-item-tag {
+    flex-shrink: 0;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    line-height: 1.4;
+  }
+  .email-item-tag.add {
+    background: var(--c-green-bg);
+    color: var(--c-green-text-vivid);
+  }
+  .email-item-tag.upd {
+    background: var(--c-amber-bg);
+    color: var(--c-amber-text-vivid);
+  }
+  .email-item-tag.doc {
+    background: var(--c-blue-bg);
+    color: var(--c-blue-text-vivid);
+  }
+
+  .email-item-text {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--c-text);
+    line-height: 1.4;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .email-item-text b {
+    font-weight: 700;
+  }
+
+  /* ---- Persona nodes ---- */
+  .persona {
+    position: absolute;
+    width: 280px;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .persona.persona-top-left {
+    top: 0;
+    left: 40px;
+  }
+  .persona.persona-top-right {
+    top: 0;
+    right: 40px;
+  }
+  .persona.persona-bottom {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .avatar {
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+    flex-shrink: 0;
+    box-shadow: 0 8px 22px rgba(15, 23, 42, 0.12);
+    border: 4px solid var(--c-bg);
+  }
+
+  .persona.theme-blue .avatar {
+    background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to));
+  }
+  .persona.theme-green .avatar {
+    background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to));
+  }
+  .persona.theme-purple .avatar {
+    background: linear-gradient(135deg, var(--c-purple-gradient-from), var(--c-purple-gradient-to));
+  }
+
+  .avatar svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .persona-label {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--c-text);
+    margin-bottom: 8px;
+    line-height: 1.2;
+  }
+
+  .persona-desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--c-text-secondary);
+    line-height: 1.45;
+    max-width: 260px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Bottom insight ---- */
+  .insight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-radius: 16px;
+    padding: 18px 32px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .insight-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #475569, #1f2937);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .insight-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+
+  .insight-text {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--c-text);
+    line-height: 1.4;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="subtitle">{{subtitle}}</div>
+
+    <div class="radial">
+      <!-- SVG arrows from center email to each persona -->
+      <svg class="radial-svg" viewBox="0 0 1320 720" preserveAspectRatio="none">
+        <defs>
+          <marker id="arr-blue" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0,0 L10,5 L0,10 Z" fill="#4285f4"/>
+          </marker>
+          <marker id="arr-green" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0,0 L10,5 L0,10 Z" fill="#34a853"/>
+          </marker>
+          <marker id="arr-purple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto">
+            <path d="M0,0 L10,5 L0,10 Z" fill="#7c3aed"/>
+          </marker>
+        </defs>
+
+        <!-- Center email center: (660, 360); size ~360x210 → top:255 bottom:465 left:480 right:840 -->
+        <!-- Tėvai (top-left) — curved path arcing above persona text -->
+        <path d="M 510 285 Q 350 90 215 100"
+              fill="none"
+              stroke="#4285f4" stroke-width="2.5" stroke-dasharray="6 6"
+              marker-end="url(#arr-blue)" opacity="0.85"/>
+
+        <!-- Mokytojai (top-right) — curved path arcing above persona text -->
+        <path d="M 810 285 Q 970 90 1105 100"
+              fill="none"
+              stroke="#34a853" stroke-width="2.5" stroke-dasharray="6 6"
+              marker-end="url(#arr-green)" opacity="0.85"/>
+
+        <!-- Darbuotojai (bottom-center) — straight down -->
+        <line x1="660" y1="475" x2="660" y2="528"
+              stroke="#7c3aed" stroke-width="2.5" stroke-dasharray="6 6"
+              marker-end="url(#arr-purple)" opacity="0.85"/>
+      </svg>
+
+      <!-- Center: weekly summary email -->
+      <div class="email">
+        <div class="email-header">
+          <div class="email-header-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div class="email-header-text">
+            <div class="email-from">{{email_from}}</div>
+            <div class="email-subject">{{email_subject}}</div>
+          </div>
+        </div>
+        <div class="email-body">
+          <div class="email-item">
+            <div class="email-item-tag add">{{tag_new}}</div>
+            <div class="email-item-text"><b>{{item1}}</b></div>
+          </div>
+          <div class="email-item">
+            <div class="email-item-tag upd">{{tag_update}}</div>
+            <div class="email-item-text"><b>{{item2}}</b></div>
+          </div>
+          <div class="email-item">
+            <div class="email-item-tag doc">{{tag_doc}}</div>
+            <div class="email-item-text"><b>{{item3}}</b></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tėvai (top-left) -->
+      <div class="persona persona-top-left theme-blue">
+        <div class="avatar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="7" cy="9" r="3"/>
+            <circle cx="17" cy="9" r="3"/>
+            <path d="M2 22v-2a4 4 0 0 1 4-4h2a4 4 0 0 1 4 4v2"/>
+            <path d="M14 22v-2a4 4 0 0 1 4-4h0a4 4 0 0 1 4 4v2"/>
+          </svg>
+        </div>
+        <div class="persona-label">{{p1_label}}</div>
+        <div class="persona-desc">{{p1_desc}}</div>
+      </div>
+
+      <!-- Vietos bendruomenė (bottom-center) -->
+      <div class="persona persona-bottom theme-purple">
+        <div class="avatar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="9" cy="9" r="3"/>
+            <circle cx="17" cy="10" r="2.5"/>
+            <path d="M3 19v-1a5 5 0 0 1 10 0v1"/>
+            <path d="M13 18.5a3.5 3.5 0 0 1 7 0V19"/>
+          </svg>
+        </div>
+        <div class="persona-label">{{p3_label}}</div>
+        <div class="persona-desc">{{p3_desc}}</div>
+      </div>
+
+      <!-- Mokyklos personalas (top-right) -->
+      <div class="persona persona-top-right theme-green">
+        <div class="avatar">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 21h18"/>
+            <path d="M5 21V11l7-5 7 5v10"/>
+            <path d="M10 21v-5h4v5"/>
+            <line x1="9" y1="11" x2="9" y2="13"/>
+            <line x1="15" y1="11" x2="15" y2="13"/>
+          </svg>
+        </div>
+        <div class="persona-label">{{p2_label}}</div>
+        <div class="persona-desc">{{p2_desc}}</div>
+      </div>
+    </div>
+
+    <div class="insight">
+      <div class="insight-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+          <polyline points="9 12 12 15 16 10"/>
+        </svg>
+      </div>
+      <div class="insight-text">{{summary_text}}</div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

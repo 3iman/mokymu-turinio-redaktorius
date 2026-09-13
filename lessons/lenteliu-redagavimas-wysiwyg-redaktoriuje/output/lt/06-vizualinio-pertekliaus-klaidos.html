@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .title {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--c-text-muted);
+    text-align: center;
+    margin-bottom: 32px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---- 2x2 error grid ---- */
+  .errors-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 26px;
+    max-width: 1700px;
+    margin: 0 auto 26px;
+  }
+
+  .error-card {
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-top: 6px solid var(--c-red-solid);
+    border-radius: 18px;
+    padding: 22px 26px 22px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card-head {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 16px;
+  }
+
+  .error-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+    background: var(--c-red-bg);
+    border: 1px solid var(--c-red-border);
+    color: var(--c-red-text-vivid);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 4px 10px;
+    border-radius: 10px;
+    flex-shrink: 0;
+  }
+
+  .error-badge-icon {
+    width: 12px;
+    height: 12px;
+    color: var(--c-red-text-vivid);
+  }
+
+  .error-title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--c-text);
+    line-height: 1.3;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* Main body split: visual left + why right */
+  .card-body {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    flex: 1;
+  }
+
+  .visual-area {
+    flex: 0 0 auto;
+    width: 340px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .why-area {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .why-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--c-red-text-vivid);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 6px;
+  }
+
+  .why-text {
+    font-size: 15px;
+    color: var(--c-text);
+    line-height: 1.45;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Common mini table base ---- */
+  .mt {
+    width: 100%;
+    max-width: 320px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 12px;
+    border: 1px solid var(--c-border);
+  }
+
+  .mt th,
+  .mt td {
+    padding: 7px 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--c-border);
+  }
+
+  .mt tr:last-child th,
+  .mt tr:last-child td {
+    border-bottom: none;
+  }
+
+  .mt th {
+    background: var(--c-blue-solid);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 11px;
+  }
+
+  .mt td {
+    background: var(--c-surface);
+    color: var(--c-text-secondary);
+  }
+
+  /* ---- Error 1: chaotic cell colors ---- */
+  .mt-colors .row-a td { background: #fce4ec; color: #880e4f; }
+  .mt-colors .row-b td { background: #fff3e0; color: #e65100; }
+  .mt-colors .row-c td { background: #e8f5e9; color: #1b5e20; }
+  .mt-colors .row-d td { background: #ede7f6; color: #311b92; }
+
+  /* ---- Error 2: font-size / font chaos ---- */
+  .mt-fonts .size-s td { font-size: 9px; }
+  .mt-fonts .size-m td { font-size: 13px; }
+  .mt-fonts .size-l td { font-size: 16px; }
+  .mt-fonts .serif td { font-family: Georgia, 'Times New Roman', serif; font-style: italic; }
+
+  /* ---- Error 3: bold everywhere ---- */
+  .mt-bold td,
+  .mt-bold th {
+    font-weight: 700;
+  }
+  .mt-bold td {
+    color: var(--c-text);
+  }
+
+  /* ---- Error 4: fancy merge + colored stripes ---- */
+  .mt-fancy {
+    font-size: 11px;
+  }
+  .mt-fancy .super-head {
+    background: linear-gradient(90deg, #c62828, #6a1b9a);
+    color: #ffffff;
+    text-align: center;
+    font-weight: 700;
+    padding: 9px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+  }
+  .mt-fancy .group-head-a td {
+    background: #ef6c00;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+  }
+  .mt-fancy .group-head-b td {
+    background: #00695c;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+  }
+  .mt-fancy .side-label {
+    background: #1565c0;
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    width: 24px;
+    padding: 7px 4px;
+    font-size: 10px;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+  }
+
+  /* ---- Bottom takeaway ---- */
+  .takeaway {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    background: var(--c-surface-alt);
+    border-radius: 14px;
+    padding: 16px 28px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .takeaway-icon {
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    color: var(--c-text-secondary);
+  }
+
+  .takeaway-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--c-text);
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Vizualinio pertekliaus klaidos</div>
+    <div class="subtitle">Dizaino sistema pati tvarko stilių – rankinis „pagražinimas" jai trukdo</div>
+
+    <div class="errors-grid">
+      <!-- ERROR 1: Rankinis celių fono ir spalvų keitimas -->
+      <div class="error-card">
+        <div class="card-head">
+          <div class="error-badge">
+            <svg class="error-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+            Klaida
+          </div>
+          <div class="error-title">Rankinis celių fono ir spalvų keitimas</div>
+        </div>
+
+        <div class="card-body">
+          <div class="visual-area">
+            <table class="mt mt-colors">
+              <thead>
+                <tr><th>Vardas, pavardė</th><th>Pareigos įstaigoje</th></tr>
+              </thead>
+              <tbody>
+                <tr class="row-a"><td>Jolanta Kazlauskienė</td><td>Lietuvių kalbos mokytoja</td></tr>
+                <tr class="row-b"><td>Rasa Petraitienė</td><td>Matematikos mokytoja</td></tr>
+                <tr class="row-c"><td>Mindaugas Petraitis</td><td>Istorijos mokytojas</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="why-area">
+            <div class="why-label">Kodėl kenkia</div>
+            <div class="why-text">Spalvos nesiderina su svetainės palete, tamsiuoju režimu lūžta ir tampa neįskaitomos</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ERROR 2: Šriftas/dydis -->
+      <div class="error-card">
+        <div class="card-head">
+          <div class="error-badge">
+            <svg class="error-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+            Klaida
+          </div>
+          <div class="error-title">Šrifto ar jo dydžio keitimas lentelėje</div>
+        </div>
+
+        <div class="card-body">
+          <div class="visual-area">
+            <table class="mt mt-fonts">
+              <thead>
+                <tr><th>Vardas, pavardė</th><th>Pareigos įstaigoje</th></tr>
+              </thead>
+              <tbody>
+                <tr class="size-s"><td>Jolanta Kazlauskienė</td><td>Lietuvių kalbos mokytoja</td></tr>
+                <tr class="size-l"><td>Rasa Petraitienė</td><td>Matematikos mokytoja</td></tr>
+                <tr class="size-m serif"><td>Mindaugas Petraitis</td><td>Istorijos mokytojas</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="why-area">
+            <div class="why-label">Kodėl kenkia</div>
+            <div class="why-text">Praranda vizualinį nuoseklumą su likusiu svetainės turiniu, mobiliame ekrane trikdo</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ERROR 3: Bold per visą lentelę -->
+      <div class="error-card">
+        <div class="card-head">
+          <div class="error-badge">
+            <svg class="error-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+            Klaida
+          </div>
+          <div class="error-title">Bold per visą lentelę</div>
+        </div>
+
+        <div class="card-body">
+          <div class="visual-area">
+            <table class="mt mt-bold">
+              <thead>
+                <tr><th>Vardas, pavardė</th><th>Pareigos įstaigoje</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Jolanta Kazlauskienė</td><td>Lietuvių kalbos mokytoja</td></tr>
+                <tr><td>Rasa Petraitienė</td><td>Matematikos mokytoja</td></tr>
+                <tr><td>Mindaugas Petraitis</td><td>Istorijos mokytojas</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="why-area">
+            <div class="why-label">Kodėl kenkia</div>
+            <div class="why-text">Kai paryškinta viskas, akcento nebelieka – skaitytojas pasimeta</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ERROR 4: Įmantresnis dizainas -->
+      <div class="error-card">
+        <div class="card-head">
+          <div class="error-badge">
+            <svg class="error-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+            Klaida
+          </div>
+          <div class="error-title">Bandymai išlaužti įmantresnį dizainą</div>
+        </div>
+
+        <div class="card-body">
+          <div class="visual-area">
+            <table class="mt mt-fancy">
+              <thead>
+                <tr><td class="super-head" colspan="3">Gimnazijos tarybos sudėtis</td></tr>
+              </thead>
+              <tbody>
+                <tr class="group-head-a"><td colspan="3">Mokytojai</td></tr>
+                <tr>
+                  <td class="side-label" rowspan="2">A</td>
+                  <td>Jolanta K.</td>
+                  <td>Lietuvių k.</td>
+                </tr>
+                <tr>
+                  <td>Rasa P.</td>
+                  <td>Matematikos</td>
+                </tr>
+                <tr class="group-head-b"><td colspan="3">Tėvai</td></tr>
+                <tr>
+                  <td class="side-label">B</td>
+                  <td>Mindaugas P.</td>
+                  <td>Istorijos</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="why-area">
+            <div class="why-label">Kodėl kenkia</div>
+            <div class="why-text">Mobiliame ekrane lūžta, redaktorius praranda dalį turinio, ekrano skaitytuvai pasimeta sudėtingose struktūrose</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom takeaway -->
+    <div class="takeaway">
+      <svg class="takeaway-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="13.5" cy="6.5" r=".5"/>
+        <circle cx="17.5" cy="10.5" r=".5"/>
+        <circle cx="8.5" cy="7.5" r=".5"/>
+        <circle cx="6.5" cy="12.5" r=".5"/>
+        <path d="M12 2C6.5 2 2 6.5 2 12s4.5 10 10 10c.926 0 1.648-.746 1.648-1.688 0-.437-.18-.835-.437-1.125-.29-.289-.438-.652-.438-1.125a1.64 1.64 0 0 1 1.668-1.668h1.996c3.051 0 5.555-2.503 5.555-5.554C21.965 6.012 17.461 2 12 2z"/>
+      </svg>
+      <div class="takeaway-text">Dizaino sistema viską padaro pati</div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

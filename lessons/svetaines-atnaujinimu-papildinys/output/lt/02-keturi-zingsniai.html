@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--c-text-muted);
+    text-align: center;
+    margin-top: -32px;
+    margin-bottom: 64px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Steps row ---- */
+  .steps {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 0;
+    margin-bottom: 56px;
+  }
+
+  .step {
+    flex: 1;
+    min-width: 0;
+    max-width: 360px;
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-radius: 22px;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border-top: 6px solid var(--c-blue-solid);
+  }
+
+  .step-number {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: var(--c-blue-text-vivid);
+    margin-bottom: 14px;
+  }
+
+  .step-icon {
+    width: 76px;
+    height: 76px;
+    border-radius: 18px;
+    background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-shrink: 0;
+  }
+
+  .step-icon svg {
+    width: 38px;
+    height: 38px;
+  }
+
+  .step-label {
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--c-text);
+    margin-bottom: 12px;
+    line-height: 1.25;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .step-desc {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--c-text-secondary);
+    line-height: 1.45;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Arrow between steps ---- */
+  .arrow {
+    flex-shrink: 0;
+    width: 56px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--c-text-faint);
+  }
+
+  .arrow svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* ---- Summary banner ---- */
+  .summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 22px;
+    background: var(--c-blue-bg);
+    border: 1.5px solid var(--c-blue-border);
+    border-radius: 18px;
+    padding: 22px 36px;
+    max-width: 920px;
+    margin: 0 auto;
+  }
+
+  .summary-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .summary-icon svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .summary-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .summary-label {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: var(--c-blue-text-vivid);
+  }
+
+  .summary-text {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--c-text);
+    line-height: 1.35;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Kaip tai veikia</div>
+    <div class="subtitle">Keturi komponentai, dirbantys nepertraukiamai be jūsų įsikišimo</div>
+
+    <div class="steps">
+      <!-- Step 1: Subscription form -->
+      <div class="step">
+        <div class="step-number">1</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+            <rect x="6" y="13" width="9" height="3" rx="1.5" fill="white" stroke="none" opacity="0.85"/>
+          </svg>
+        </div>
+        <div class="step-label">Prenumeratos langelis</div>
+        <div class="step-desc">Svetainėje keliose vietose. Lankytojas mato, kas tai yra ir kaip atsisakyti</div>
+      </div>
+
+      <div class="arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="13 6 19 12 13 18"/>
+        </svg>
+      </div>
+
+      <!-- Step 2: Subscriber management -->
+      <div class="step">
+        <div class="step-number">2</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <div class="step-label">Prenumeratorių valdymas</div>
+        <div class="step-desc">Sistema priima naujus, siunčia patvirtinimą, valdo atsisakymus</div>
+      </div>
+
+      <div class="arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="13 6 19 12 13 18"/>
+        </svg>
+      </div>
+
+      <!-- Step 3: Content tracking -->
+      <div class="step">
+        <div class="step-number">3</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="3"/>
+            <path d="M12 1v3M12 20v3M4.22 4.22l2.12 2.12M17.66 17.66l2.12 2.12M1 12h3M20 12h3M4.22 19.78l2.12-2.12M17.66 6.34l2.12-2.12"/>
+          </svg>
+        </div>
+        <div class="step-label">Atnaujinimų sekimas</div>
+        <div class="step-desc">Stebi naujus puslapius, atnaujintus dokumentus, įkeltas naujienas</div>
+      </div>
+
+      <div class="arrow">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="13 6 19 12 13 18"/>
+        </svg>
+      </div>
+
+      <!-- Step 4: Email sending -->
+      <div class="step">
+        <div class="step-number">4</div>
+        <div class="step-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+        </div>
+        <div class="step-label">Laiškų siuntimas</div>
+        <div class="step-desc">Pagal šabloną sudaroma savaitinė santrauka ir išsiunčiama</div>
+      </div>
+    </div>
+
+    <div class="summary">
+      <div class="summary-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="23 4 23 10 17 10"/>
+          <polyline points="1 20 1 14 7 14"/>
+          <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+        </svg>
+      </div>
+      <div class="summary-content">
+        <div class="summary-label">Automatiškai</div>
+        <div class="summary-text">Jums nereikia nieko rašyti, siųsti ar konfigūruoti</div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

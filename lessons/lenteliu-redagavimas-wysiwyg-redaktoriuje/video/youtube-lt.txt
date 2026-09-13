@@ -1,0 +1,22 @@
+Ši pamoka apie tai, ką turinio redaktorius leidžia nuveikti su lentelėmis ir kurių įpročių verta atsikratyti. Turinio redaktorius – tai ta pati vieta, kurią pamokos pavadinime trumpiau vadiname WYSIWYG: joje pildote puslapio turinį TVS viduje. Bendros lentelių kūrimo taisyklės aprašytos pamokoje „Lentelių kūrimo principai", o sudėtingesniems atvejams – „Google Sheets integracija". Čia koncentruojamės į patį redaktorių.
+
+📋 SKYRIAI
+
+0:00 Įvadas. Kada WYSIWYG yra tinkamas įrankis
+0:15 Panašumas su Word
+0:26 Antraštinė eilutė – du keliai
+0:36 Lentelių stiliaus išvalymas
+0:47 Kai netelpa – keturi žingsniai
+0:57 Semantikos klaidos
+1:08 Vizualinio pertekliaus klaidos
+
+🔗 SUSIJUSIOS PAMOKOS
+
+• Lentelių kūrimo principai
+  https://mokymai.cleverphant.lt/kursai/lenteliu-kurimas-ir-redagavimas/lenteliu-kurimo-principai/
+• Google Sheets integracija
+  https://mokymai.cleverphant.lt/kursai/lenteliu-kurimas-ir-redagavimas/google-sheets-integracija-lenteliu-atvaizdavimui/
+
+—
+Cleverphant mokymai mokyklų svetainių administratoriams
+https://mokymai.cleverphant.lt

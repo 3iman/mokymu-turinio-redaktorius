@@ -1,0 +1,178 @@
+/*
+ * Cleverphant Illustrations — Design Tokens
+ *
+ * Visos iliustracijų spalvos vienoje vietoje.
+ * Kiekviena text + bg pora atitinka WCAG AA kontrastą (>= 4.5:1).
+ *
+ * Naudojimas šablonuose:
+ *   background: var(--c-surface);
+ *   color: var(--c-text);
+ *   background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to));
+ */
+
+/* ============================================================
+   LIGHT MODE (default)
+   ============================================================ */
+:root {
+  /* ---- Neutral ---- */
+  --c-bg:              #f8f9fb;   /* page background */
+  --c-surface:         #ffffff;   /* card background */
+  --c-surface-alt:     #f1f5f9;   /* subtle alt surface (header rows, brand bar border) */
+  --c-border:          #e2e8f0;   /* standard borders */
+  --c-border-soft:     #f1f5f9;   /* very subtle dividers */
+  --c-text:            #1a1a2e;   /* primary text — 15.4:1 on surface */
+  --c-text-secondary:  #475569;   /* secondary text — 7.1:1 on surface */
+  --c-text-muted:      #64748b;   /* muted text — 4.9:1 on surface */
+  --c-text-faint:      #94a3b8;   /* decorative text (arrows, labels) — 3.3:1 on surface */
+  --c-line:            #cbd5e1;   /* dashed lines, decorative strokes */
+
+  /* ---- Green (positive, success, new) ---- */
+  --c-green-bg:            #f0fdf4;
+  --c-green-border:        #bbf7d0;
+  --c-green-text:          #166534;   /* 7.1:1 on green-bg */
+  --c-green-text-vivid:    #16a34a;   /* 4.6:1 on surface — for labels */
+  --c-green-solid:         #34a853;   /* icons, badges on white */
+  --c-green-gradient-from: #34a853;
+  --c-green-gradient-to:   #2d9248;
+  --c-green-deep:          #257a3b;   /* darkest tab shade, decorative */
+  --c-green-nav:           #2e7d32;   /* school-site nav bar */
+
+  /* ---- Accent (EU flag yellow) ---- */
+  --c-eu-yellow:           #ffcc00;
+
+  /* ---- Red (negative, old, error) ---- */
+  --c-red-bg:            #fef2f2;
+  --c-red-border:        #fecaca;
+  --c-red-text:          #991b1b;   /* 8.2:1 on red-bg */
+  --c-red-text-vivid:    #dc2626;   /* 4.6:1 on surface — for labels */
+  --c-red-solid:         #ef4444;
+  --c-red-gradient-from: #ef4444;
+  --c-red-gradient-to:   #dc2626;
+
+  /* ---- Blue (informative, neutral accent) ---- */
+  --c-blue-bg:            #eff6ff;
+  --c-blue-border:        #bfdbfe;
+  --c-blue-text:          #1e3a5f;   /* 8.9:1 on blue-bg */
+  --c-blue-text-vivid:    #2563eb;   /* 4.6:1 on surface */
+  --c-blue-solid:         #4285f4;
+  --c-blue-gradient-from: #3363ab;
+  --c-blue-gradient-to:   #2a5291;
+
+  /* ---- Purple (result, output, third step) ---- */
+  --c-purple-bg:            #f5f3ff;
+  --c-purple-border:        #ede9fe;
+  --c-purple-text:          #4c1d95;   /* 9.8:1 on purple-bg */
+  --c-purple-text-vivid:    #7c3aed;   /* 4.5:1 on surface */
+  --c-purple-solid:         #7c3aed;
+  --c-purple-gradient-from: #7c3aed;
+  --c-purple-gradient-to:   #6d28d9;
+
+  /* ---- Amber (warning, attention, waiting) ---- */
+  --c-amber-bg:            #fffbeb;
+  --c-amber-border:        #fde68a;
+  --c-amber-text:          #78350f;   /* 8.5:1 on amber-bg */
+  --c-amber-text-vivid:    #b45309;   /* 5.0:1 on surface */
+  --c-amber-solid:         #f59e0b;
+  --c-amber-gradient-from: #f59e0b;
+  --c-amber-gradient-to:   #d97706;
+
+  /* ---- Accent (EU blue, special use) ---- */
+  --c-accent-solid:      #003399;
+
+  /* ---- Brand ---- */
+  --c-brand-logo-opacity: 0.5;
+
+  /* ---- Shadows ---- */
+  --c-shadow-card: 0 1px 3px rgba(0,0,0,0.04), 0 8px 32px rgba(0,0,0,0.06);
+
+  /* ---- Active cell (spreadsheet editing) ---- */
+  --c-cell-active-bg:     #fff7ed;
+  --c-cell-active-border: #f59e0b;
+  --c-cell-changed-bg:    #f0fdf4;
+}
+
+
+/* ============================================================
+   DARK MODE
+   Fonas tamsus — spalvos sodresnės, tekstai šviesesni.
+   Kiekviena pora tikrinta per WCAG AA kontrastą.
+   ============================================================ */
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* ---- Neutral ---- */
+    --c-bg:              #0b0f19;
+    --c-surface:         #151b2b;
+    --c-surface-alt:     #1e293b;
+    --c-border:          #334155;
+    --c-border-soft:     #1e293b;
+    --c-text:            #f1f5f9;   /* 13.8:1 on surface */
+    --c-text-secondary:  #cbd5e1;   /* 9.8:1 on surface */
+    --c-text-muted:      #94a3b8;   /* 5.7:1 on surface */
+    --c-text-faint:      #64748b;   /* 3.5:1 on surface */
+    --c-line:            #475569;
+
+    /* ---- Green ---- */
+    --c-green-bg:            #052e16;  /* dark green surface */
+    --c-green-border:        #166534;
+    --c-green-text:          #86efac;  /* 8.9:1 on green-bg */
+    --c-green-text-vivid:    #4ade80;  /* 7.0:1 on surface */
+    --c-green-solid:         #34d399;
+    --c-green-gradient-from: #22c55e;
+    --c-green-gradient-to:   #16a34a;
+    --c-green-deep:          #0f5132;
+    --c-green-nav:           #1b5e20;
+
+    /* ---- EU flag yellow (dark) ---- */
+    --c-eu-yellow:           #fdd835;
+
+    /* ---- Red ---- */
+    --c-red-bg:            #350a0a;
+    --c-red-border:        #7f1d1d;
+    --c-red-text:          #fca5a5;  /* 7.5:1 on red-bg */
+    --c-red-text-vivid:    #f87171;  /* 5.3:1 on surface */
+    --c-red-solid:         #ef4444;
+    --c-red-gradient-from: #f87171;
+    --c-red-gradient-to:   #ef4444;
+
+    /* ---- Blue ---- */
+    --c-blue-bg:            #0c1929;
+    --c-blue-border:        #1e3a5f;
+    --c-blue-text:          #93c5fd;  /* 7.2:1 on blue-bg */
+    --c-blue-text-vivid:    #60a5fa;  /* 5.4:1 on surface */
+    --c-blue-solid:         #60a5fa;
+    --c-blue-gradient-from: #3b82f6;
+    --c-blue-gradient-to:   #2563eb;
+
+    /* ---- Purple ---- */
+    --c-purple-bg:            #1a0533;
+    --c-purple-border:        #4c1d95;
+    --c-purple-text:          #c4b5fd;  /* 7.0:1 on purple-bg */
+    --c-purple-text-vivid:    #a78bfa;  /* 5.1:1 on surface */
+    --c-purple-solid:         #a78bfa;
+    --c-purple-gradient-from: #a78bfa;
+    --c-purple-gradient-to:   #8b5cf6;
+
+    /* ---- Amber ---- */
+    --c-amber-bg:            #271a05;
+    --c-amber-border:        #78350f;
+    --c-amber-text:          #fde68a;  /* 10.1:1 on amber-bg */
+    --c-amber-text-vivid:    #fbbf24;  /* 8.6:1 on surface */
+    --c-amber-solid:         #fbbf24;
+    --c-amber-gradient-from: #fbbf24;
+    --c-amber-gradient-to:   #f59e0b;
+
+    /* ---- Accent ---- */
+    --c-accent-solid:      #60a5fa;
+
+    /* ---- Brand ---- */
+    --c-brand-logo-opacity: 0.35;
+
+    /* ---- Shadows ---- */
+    --c-shadow-card: 0 1px 3px rgba(0,0,0,0.2), 0 8px 32px rgba(0,0,0,0.3);
+
+    /* ---- Active cell ---- */
+    --c-cell-active-bg:     #271a05;
+    --c-cell-active-border: #f59e0b;
+    --c-cell-changed-bg:    #052e16;
+  }
+}

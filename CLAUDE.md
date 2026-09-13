@@ -34,6 +34,10 @@ Cleverphant mokymų platformos turinio redaktorius. Kuriu pamokų turinį, ilius
 
 **Iteravimas.** Pirmas variantas retai būna geriausias. Kai žmogus komentuoja — tai kryptis, ne kritika. Pirma suprask ką turi omenyje, tada taisyk.
 
+**Faktinis teisingumas.** Prieš tvirtinant „X veikia taip", patikrinti, ar tikrai veikia. Ypač kai kalbama apie Cleverphant produktus (Google Sheets integracija slopina stilių, ne naudoja jį stilizavimui), apie WordPress/CKeditor elgseną, apie UI default'us. Viena klaidinga techninė detalė pamokoje nuvertina visą tekstą.
+
+**Alternatyvos, ne vienas „geriausias"**. Kai sprendimas turi kelis protingus variantus (teksto formuluotė, spalva, layout'as, struktūra) — pateikti 3-4 glausčiai aprašytus variantus (A/B/C/D), ne vieną rekomendaciją. Žmogus greitai pasirenka; vienos rekomendacijos forma dažniau baigiasi korekcija („bandykim kitaip"). Viena rekomendacija tik tada, kai yra aiškus faktinis arba kurso standartais apibrėžtas teisingas atsakymas.
+
 ---
 
 ## Komunikacijos tonas
@@ -57,7 +61,9 @@ Cleverphant mokymų platformos turinio redaktorius. Kuriu pamokų turinį, ilius
 - Niekada ciniški ar sarkastiški
 
 ### Paryškinimai
-- **Bold** — raktiniams terminams. *Kursyvas* — retai, citatoms. `code` — tik techniniams elementams
+- **Bold** — raktiniams terminams
+- *Kursyvas* — citatoms IR **metaforiškiems/šnekamosios kalbos žodžiams** („likusių redaktorius *nebesuvirškina*", „Bandymai *išlaužti* dizainą"). Italic signalizuoja, kad žodis vartojamas perkeltine reikšme, ne tiesiogiai. Prieš publikuojant — paklausti žmogaus, ar konkretus žodis turėtų būti paitalintas. Pilna taisyklė: `memory/feedback_italic_zargonui_ir_metaforoms.md`
+- `code` — tik techniniams elementams (shortcode'ams, klavišams, ID'ams)
 - CAPS LOCK akcentavimui nenaudoti
 
 ### Vidinės nuorodos
@@ -132,7 +138,10 @@ Prieš bet kokį darbą — pažink sistemas iš vidaus:
    - **Rekomendacijų tikrinimas** — ar pamoka turi ne tik „kaip", bet ir „kaip geriau"? (pvz., failų organizavimas pagal atsakomybes, ne tik techniniai žingsniai)
    - **Spragų ataskaita** — pateikti žmogui: „Vartotojo kelionėje matau N žingsnių, turime M iliustracijų. Trūksta: [...]" → **žmogus tvirtina**
 7. **Iliustracijų planas** — kiekvienai sekcijai siūlyti arba pagrįsti kodėl nereikia. Patikrinti: iliustracijų skaičius + praleidimų skaičius = sekcijų skaičius → **žmogus tvirtina**
-8. **Iliustracijų kūrimas** — po vieną, kiekvieną rodyti žmogui → **žmogus tvirtina kiekvieną**
+8. **Iliustracijų kūrimas** — po vieną, su dviem patvirtinimo taškais kiekvienai:
+   - **(a) Koncepto eskizas** — tekstinis aprašymas: elementai, layout'o idėja, spalvų semantika (pvz., „rekomendacija = blue, kraštutinis = amber"). Ne piešinys, bet pakankamai detalus → **žmogus tvirtina koncepciją**
+   - **(b) HTML + JSON + PNG** — tik po koncepto patvirtinimo → **žmogus tvirtina PNG**, tik tada pereinam prie kitos iliustracijos
+   - Neshortcut'inti net jei atrodo akivaizdu — koncepcijos patvirtinimas taupo HTML perdirbimo iteracijas
 9. **Publikavimas** → **žmogus tvirtina**
 10. **QA — frontend** — patikrinti per Chrome MCP
 
@@ -264,13 +273,45 @@ Agentas niekada nesiunčia į produkciją be aiškaus „taip".
 ### Video generavimo workflow
 Pilna seka, kuri turi būti vykdoma griežtai:
 1. `node generate.js --png --lang lt` — HTML + PNG
-2. `node generate-video-clips.js --lesson <slug> --lang lt` — animuoti klipai
-3. **Uždaryti QuickTime Player** — `osascript -e 'quit app "QuickTime Player"'` (kitaip kešuoja seną failą)
-4. **Ištrinti seną video** — `rm -f lessons/<slug>/video/*.mp4`
-5. `node build-video.js --lesson <slug> --lang lt` — galutinis video
-6. `open` — atidaryti naują
+2. Sukurti `lessons/<slug>/video/scenarijus-<lang>.md` su pamokos tvarka (žr. formatą žemiau)
+3. `node generate-video-clips.js --lesson <slug> --lang lt` — animuoti klipai
+4. **Uždaryti QuickTime Player** — `osascript -e 'quit app "QuickTime Player"'` (kitaip kešuoja seną failą)
+5. **Ištrinti seną video** — `rm -f lessons/<slug>/video/*.mp4`
+6. `node build-video.js --lesson <slug> --lang lt` — galutinis video
+7. `node generate-youtube-description.js --lesson <slug> --lang lt` — YouTube aprašymas su timestamps
+8. `open` — atidaryti naują
 
 **NIEKADA** negeneruoti naujo video neištrynus seno. **VISADA** uždaryti grotuvą prieš trinant.
+
+### `scenarijus-<lang>.md` formatas
+Kontroliuoja iliustracijų tvarką, trukmes ir antraštes video'e. Eilė „| NUM TITLE | NN sek. | FILENAME |":
+```
+| Kadras | Trukmė | Failas |
+|---|---|---|
+| 0 Intro | 5 sek. | intro |
+| 1 Pirma skyrius | 8 sek. | 01-failo-vardas |
+| 2 Antras skyrius | 8 sek. | 07-kitas-failas |
+```
+Iliustracijos rikiuojamos **pagal pamokos skyrių tvarką** (ne pagal failų numeraciją, jei jos nesutampa).
+
+### Intro title override
+Pamokos video intro naudoja **pamokos title'ą** (iš `content/<lang>.json` → `_intro.title`):
+```json
+{
+  "_intro": { "title": "Pamokos pavadinimas" },
+  ...
+}
+```
+Jei `_intro.title` nėra — fallback į pirmos sekcijos title. Subtitle hardcoded „250+ mokyklų jau naudoja Cleverphant" (build-video.js:617).
+
+### YouTube aprašymo generavimas
+`generate-youtube-description.js` automatiškai sukuria tekstą pasta'inimui į YouTube description lauką:
+- Skaito `scenarijus-<lang>.md` → timestamps (perėjimai = 2.5s)
+- Pirmas chapter'is sujungia „Įvadas + pirmas skyrius" (YouTube reikalauja min. 10s pirmam chapter'iui)
+- Fetch'ina `le_intro` iš WP → intro paragraph (HTML išvalytas) + susijusių pamokų linkai (parse'inti iš anchor'ų)
+- Output: `lessons/<slug>/video/youtube-<lang>.txt`
+
+Linkai **sinchronizuoti su pamokos intro tekstu** — kai le_intro WP'e atnaujinamas, paleiskite skriptą iš naujo.
 
 ### Lokalizacija
 - **Jokių hardcoded tekstų konkrečia kalba** — visi rodomi tekstai (intro title, subtitle, perėjimų pavadinimai) turi ateiti iš kalbos failo arba lokalizuoto žodyno kode
@@ -288,32 +329,158 @@ Pilna seka, kuri turi būti vykdoma griežtai:
 - Šriftas: Inter
 - URL: `mokymai.cleverphant.lt/kursai/{kurso-slug}/{pamokos-slug}/`
 
-### REST API (iliustracijų įkėlimas)
+### REST API (iliustracijų ir pamokų turinio įkėlimas)
 
-Kredencialai saugomi `.env` faile (WP_URL, WP_USER, WP_APP_PASSWORD). Application Password sugeneruotas per WordPress profilį.
+#### `.env` konfigūracija
 
-**Autentifikacija:** Basic Auth su Application Password.
+Kredencialai saugomi `illustrations/.env` faile (t.y. `/Users/eimantasgardauskas/Documents/AI vizualai/illustrations/.env`), ne repo root.
+
+Raktai:
+- `WP_URL` — pvz., `https://mokymai.cleverphant.lt`
+- `WP_USER` — WP vartotojo login
+- `WP_APP_PASSWORD` — Application Password, sugeneruotas per `wp-admin → Users → Profile → Application Passwords`
+
+Iš pamokos direktorijos `.env` pasiekiamas per `../../.env`.
+
+#### Autentifikacija
+
+Basic Auth su Application Password — base64(`WP_USER:WP_APP_PASSWORD`) `Authorization: Basic ...` antraštėje.
 
 ```bash
-# Autentifikacijos patikrinimas
+# Patikrinti, ar kredencialai veikia
 curl -s -u "$WP_USER:$WP_APP_PASSWORD" "$WP_URL/wp-json/wp/v2/users/me"
-
-# Media įkėlimas (PNG iliustracija)
-curl -s -u "$WP_USER:$WP_APP_PASSWORD" \
-  -X POST "$WP_URL/wp-json/wp/v2/media" \
-  -H "Content-Disposition: attachment; filename=iliustracija.png" \
-  -H "Content-Type: image/png" \
-  --data-binary @output/lt/00-kodel-tai-naudinga.png
 ```
 
-**Atsakymas grąžina:** `id` (media ID), `source_url` (pilnas URL). Media ID naudojamas įterpiant iliustraciją į pamokos turinį.
+#### Post ID suradimas pagal slug
 
-**Workflow:**
-1. Sugeneruoti PNG (`node generate.js --png`)
-2. Įkelti per REST API → gauti media ID
-3. Naudoti media ID Bricks builder turinyje arba post content
+```bash
+curl -s -u "$WP_USER:$WP_APP_PASSWORD" \
+  "$WP_URL/wp-json/wp/v2/kursai?slug={pamokos-slug}&status=any" | jq '.[0].id'
+```
 
-### Ką daryti prieš pirmą publikavimą
+**Svarbu:** `status=any` reikalingas, nes juodraščiai (`status=draft`) priešingu atveju neatsiranda rezultate.
+
+#### GET prieš POST — visada patikrinti esamą struktūrą
+
+```bash
+curl -s -u "$WP_USER:$WP_APP_PASSWORD" \
+  "$WP_URL/wp-json/wp/v2/kursai/{post_id}" | jq '.meta_box.le_list'
+```
+
+#### Media įkėlimas (grąžina `id`)
+
+```bash
+curl -s -u "$WP_USER:$WP_APP_PASSWORD" \
+  -X POST "$WP_URL/wp-json/wp/v2/media" \
+  -H "Content-Disposition: attachment; filename=05-semantikos-klaidos.png" \
+  -H "Content-Type: image/png" \
+  --data-binary @output/lt/05-semantikos-klaidos.png | jq '.id'
+```
+
+Atsakymas: `id` (media ID), `source_url` (pilnas URL). Media ID naudojamas `le_list` objekto `image` lauke.
+
+#### Meta Box `le_list` grupinio lauko POST payload
+
+Kursai post type naudoja Meta Box plugin'ą, kuris pamokos skyrius saugo kaip `le_list` grupinį lauką. Kiekvienas skyrius — objektas su 4 laukais:
+
+```json
+{
+  "meta_box": {
+    "le_list": [
+      {
+        "title": "Skyriaus antraštė",
+        "content_selector": ["Text", "Image"],
+        "text": "<p>HTML turinys su <strong>bold</strong>, <ul>, <code>...</code></p>",
+        "image": "1701"
+      }
+    ]
+  }
+}
+```
+
+- `title` — skyriaus antraštė (H2/H3 frontend'e)
+- `content_selector` — masyvas iš `"Text"` ir/arba `"Image"`. Valdo ką rodys Bricks builder skyriaus viduje
+- `text` — pilnas HTML, tiksliai taip kaip į WP editor paste'inama (mes generuojam skriptu)
+- `image` — **STRING**, ne integer (`"1701"`, ne `1701`). Meta Box image_advanced field parsina kaip string; integer'as gali nepriimti
+
+**Kritiška:** siunčiame **VISĄ `le_list` masyvą** — POST perrašo jį pilnai, ne diff'ina. Jei praleidi skyrių — jis bus ištrintas.
+
+#### POST pavyzdys (Python)
+
+```python
+import json, os, urllib.request, base64
+
+env = {}
+with open(os.path.join(os.path.dirname(__file__), '../../.env')) as f:
+    for line in f:
+        if '=' in line:
+            k, v = line.strip().split('=', 1)
+            env[k] = v
+
+auth = base64.b64encode(f"{env['WP_USER']}:{env['WP_APP_PASSWORD']}".encode()).decode()
+le_list = [{"title": "...", "content_selector": ["Text", "Image"], "text": "<p>...</p>", "image": "1701"}]
+
+req = urllib.request.Request(
+    f"{env['WP_URL']}/wp-json/wp/v2/kursai/{post_id}",
+    method="POST",
+    data=json.dumps({"meta_box": {"le_list": le_list}}).encode(),
+    headers={"Content-Type": "application/json", "Authorization": f"Basic {auth}"}
+)
+urllib.request.urlopen(req)
+```
+
+#### `.wp-update.py` pattern — po vieną skriptą kiekvienai pamokai
+
+- Vieta: `illustrations/lessons/{pamokos-slug}/.wp-update.py`
+- Template'as: `illustrations/lessons/lenteliu-redagavimas-wysiwyg-redaktoriuje/.wp-update.py`
+- Skriptas: skaito `.env`, konstruoja `le_list` sąrašą su media ID'ais ir HTML tekstais, POST'ina, printina patvirtinimą (kiek skyrių grįžo, kokie image ID priskirti)
+
+#### End-to-end workflow
+
+1. `node generate.js --png --lang lt` → PNG'ai į `output/lt/`
+2. Kiekvieną PNG upload'ini per `/wp-json/wp/v2/media` → susirašai ID'us (grąžina JSON su `id`)
+3. Sudėlioji `.wp-update.py` su `le_list` masyvu — įterpi HTML tekstus ir media ID'us pagal skyrius
+4. `python3 .wp-update.py` → POST atnaujina visą skyrių struktūrą atomiškai
+5. Verifikacija: `{WP_URL}/?post_type=kursai&p={post_id}&preview=true` (preview URL, jei status=draft; viešas URL neveiks)
+
+#### Kursų ir pamokų eiliškumas archyve (svarbu!)
+
+**Kursų archyvas (`/kursai/`) ir pamokų sąrašas kurso viduje rūšiuojami pagal `date` ASC (seniausia pirma), NE pagal `menu_order`.**
+
+Bricks temos archyvo query ignoruoja `menu_order` lauką, net jei jis nustatytas. Tai patikrinta empiriškai — nustačius menu_order reikšmes (10, 20, 30...) archyvo tvarka nepasikeitė, o pakeitus `date` laukus tvarka iš karto pasikeičia.
+
+**Kaip valdyti eiliškumą:**
+
+```python
+# Pakeisti kurso arba pamokos poziciją — keisti date, ne menu_order
+payload = json.dumps({"date": "2023-01-02T12:00:00"}).encode()
+req = urllib.request.Request(
+    f"{env['WP_URL']}/wp-json/wp/v2/kursai/{post_id}",
+    method="POST",
+    data=payload,
+    headers={"Content-Type": "application/json", "Authorization": f"Basic {auth}"}
+)
+```
+
+**Strategija:** jei nori „įstumti" naują kursą į tam tikrą poziciją — nustatyti datą tarp gretimų kursų datų. Pvz., Pradžių pradžia = 2023-01-01, antras kursas (pritaikymas-neigaliesiems) = 2023-02-15 → naujam „antram" kursui nustatyti 2023-01-02 iki 2023-02-14.
+
+**Kompromisas:** `date` yra publikavimo data, tad keitimas paveikia WP admin rodymą („paskelbta 2023-01"), RSS feed'ą (jei yra) ir minimaliai SEO „freshness" signalus. Kituose kontekstuose tai gali būti problema, bet kurso archyvo valdymui tinka.
+
+**Prieš keitimą:** visada patikrinti dabartinę tvarką per live URL (ne per REST API, kuris gali grąžinti kitą tvarką):
+```bash
+curl -s https://mokymai.cleverphant.lt/kursai/ | grep -oE '/kursai/[a-z0-9-]+/'
+```
+
+**Taip pat išlaikyti `menu_order` vertes** kaip semantinę ordering intenciją — jei ateityje Bricks query'is pereis į `orderby=menu_order`, eiliškumas jau bus teisingas be papildomo darbo.
+
+#### Kodėl REST API patikimesnis nei UI per TinyMCE
+
+Meta Box `image_advanced` field naudoja backbone.js modelį. Net rankinis hidden input reikšmės keitimas per DevTools neišsaugo — backbone model ne atnaujinamas. TinyMCE `getContent()`/`setContent()` veikia tik text field'ui, bet ne image field'ui ir ne `content_selector` array'ui.
+
+**REST API POST yra vienintelis patikimas būdas** masiniam skyrių + paveikslėlių + content_selector atnaujinimui. Net jei redaguoji vieną skyrių — siųsk pilną le_list per REST API.
+
+#### Ką daryti prieš pirmą publikavimą
+
 Agentas pats nueina į `wp-admin`, peržiūri kaip sukurtas Kursai post type — kokie laukai, kaip struktūruotas turinys, kaip įterpiamos iliustracijos. Išmoksta pats, nedokumentuoja — WordPress gali keistis.
 
 ---
@@ -342,6 +509,8 @@ Agentas pats nueina į `wp-admin`, peržiūri kaip sukurtas Kursai post type —
 | Failas | Kada skaityti | Privalomas? |
 |---|---|---|
 | `Archive1011/GLOSSARY.md` | Kai dirbi su tekstais — terminų žodynas iš 47 pamokų | Taip |
+| `EIMANTO_PASTABOS.md` | **Prieš kiekvieną tekstą ir vizualą** — kaupiamos Eimanto pastabos, pasakytos darbo metu | Taip |
 | `DESIGN_RULES.md` | Kai kuri iliustracijas — spalvos, šriftai, dydžiai, German-first | Taip |
 | `COMPOSITION_PRINCIPLES.md` | **Prieš kiekvieną iliustraciją** — hierarchija, balansas, erdvė, proporcijos | Taip |
 | `ANIMATION_PRINCIPLES.md` | **Prieš animuotus klipus** — timing, easing, staging, gradual reveal | Taip |
+| `VIDEO_GAMYBA.md` | **Prieš kiekvieną video** — visa grandinė, konstantos, spąstai, priėmimo patikra | Taip |

@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--c-text-muted);
+    text-align: center;
+    margin-top: -32px;
+    margin-bottom: 48px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Three columns ---- */
+  .places {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .place {
+    flex: 1;
+    min-width: 0;
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ---- Browser mockup ---- */
+  .browser {
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    margin-bottom: 22px;
+  }
+
+  .browser-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: var(--c-surface-alt);
+    border-bottom: 1px solid var(--c-border);
+  }
+
+  .browser-dots {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .browser-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--c-border);
+  }
+
+  .browser-url {
+    flex: 1;
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--c-text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .browser-body {
+    padding: 18px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Page header strip */
+  .page-nav {
+    height: 22px;
+    background: var(--c-surface-alt);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    margin-bottom: 4px;
+  }
+  .page-nav-item {
+    height: 6px;
+    background: var(--c-border);
+    border-radius: 3px;
+  }
+  .page-nav-item.dark { background: var(--c-text-faint); }
+
+  .ctx-h1 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--c-text);
+    line-height: 1.3;
+    margin-bottom: 2px;
+  }
+
+  .ctx-meta {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--c-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 4px;
+  }
+
+  .ctx-line {
+    height: 5px;
+    background: var(--c-border);
+    border-radius: 3px;
+  }
+  .ctx-line.short { width: 76%; }
+  .ctx-line.shorter { width: 56%; }
+
+  .ctx-doc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border: 1px solid var(--c-border);
+    border-radius: 6px;
+  }
+  .ctx-doc-icon {
+    width: 14px;
+    height: 16px;
+    background: var(--c-blue-solid);
+    border-radius: 2px;
+    opacity: 0.6;
+    flex-shrink: 0;
+  }
+  .ctx-doc-name {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--c-text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* ---- Subscription form (realistic) ---- */
+  .subform {
+    position: relative;
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-green-border);
+    border-radius: 10px;
+    padding: 14px 16px 16px 16px;
+    box-shadow: 0 0 0 4px var(--c-green-bg);
+    margin-top: 6px;
+  }
+
+  .subform-pin {
+    position: absolute;
+    top: -10px;
+    right: 12px;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .place.theme-blue .subform-pin { background: var(--c-blue-solid); }
+  .place.theme-green .subform-pin { background: var(--c-green-solid); }
+  .place.theme-purple .subform-pin { background: var(--c-purple-solid); }
+
+  .subform-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--c-green-bg);
+    color: var(--c-green-text);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+  }
+
+  .subform-badge svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .subform-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--c-text);
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+
+  .subform-steps {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 10px;
+  }
+
+  .subform-step {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+  }
+
+  .subform-step-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--c-green-bg);
+    color: var(--c-green-text-vivid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .subform-step-icon svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .subform-step-text {
+    font-size: 9.5px;
+    font-weight: 500;
+    color: var(--c-text-secondary);
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .subform-step-arrow {
+    color: var(--c-text-faint);
+    font-size: 11px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .subform-input-row {
+    display: flex;
+    gap: 6px;
+  }
+
+  .subform-input {
+    flex: 1;
+    height: 32px;
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 11px;
+    color: var(--c-text-faint);
+    min-width: 0;
+  }
+
+  .subform-button {
+    background: var(--c-green-solid);
+    color: white;
+    border-radius: 6px;
+    padding: 0 14px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .subform-button svg {
+    width: 11px;
+    height: 11px;
+  }
+
+  /* Layouts per place */
+  .browser-body.layout-page {
+    min-height: 320px;
+  }
+  .browser-body.layout-page .subform {
+    margin-top: 8px;
+  }
+
+  .browser-body.layout-news {
+    min-height: 320px;
+  }
+
+  .browser-body.layout-docs {
+    min-height: 320px;
+  }
+
+  /* ---- Caption below browser ---- */
+  .caption {
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-radius: 14px;
+    padding: 22px 26px;
+    border-top: 5px solid var(--c-border);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .place.theme-blue .caption { border-top-color: var(--c-blue-solid); }
+  .place.theme-green .caption { border-top-color: var(--c-green-solid); }
+  .place.theme-purple .caption { border-top-color: var(--c-purple-solid); }
+
+  .caption-number {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .caption-num-circle {
+    width: 26px;
+    height: 26px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .place.theme-blue .caption-num-circle { background: var(--c-blue-solid); }
+  .place.theme-green .caption-num-circle { background: var(--c-green-solid); }
+  .place.theme-purple .caption-num-circle { background: var(--c-purple-solid); }
+
+  .caption-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--c-text);
+    margin-bottom: 10px;
+    line-height: 1.25;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .caption-reason {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--c-text-secondary);
+    line-height: 1.5;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="subtitle">{{subtitle}}</div>
+
+    <div class="places">
+
+      <!-- Place 1: Dedicated subscription page -->
+      <div class="place theme-blue">
+        <div class="browser">
+          <div class="browser-bar">
+            <div class="browser-dots">
+              <div class="browser-dot"></div>
+              <div class="browser-dot"></div>
+              <div class="browser-dot"></div>
+            </div>
+            <div class="browser-url">{{url1}}</div>
+          </div>
+          <div class="browser-body layout-page">
+            <div class="page-nav">
+              <div class="page-nav-item dark" style="width:38px"></div>
+              <div class="page-nav-item" style="width:32px"></div>
+              <div class="page-nav-item" style="width:38px"></div>
+              <div class="page-nav-item" style="width:32px"></div>
+            </div>
+            <div class="ctx-h1">{{context1_h1}}</div>
+
+            <div class="subform">
+              <div class="subform-pin">1</div>
+              <div class="subform-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 4 23 10 17 10"/>
+                  <polyline points="1 20 1 14 7 14"/>
+                  <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+                </svg>
+                {{form_badge}}
+              </div>
+              <div class="subform-title">{{form_title}}</div>
+              <div class="subform-steps">
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">{{form_step1}}</div>
+                </div>
+                <div class="subform-step-arrow">›</div>
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">{{form_step2}}</div>
+                </div>
+                <div class="subform-step-arrow">›</div>
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                      <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">{{form_step3}}</div>
+                </div>
+              </div>
+              <div class="subform-input-row">
+                <div class="subform-input">{{form_input_placeholder}}</div>
+                <div class="subform-button">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"/>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                  </svg>
+                  {{form_button}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="caption">
+          <div class="caption-number">
+            <div class="caption-num-circle">1</div>
+          </div>
+          <div class="caption-title">{{place1_title}}</div>
+          <div class="caption-reason">{{place1_reason}}</div>
+        </div>
+      </div>
+
+      <!-- Place 2: After news article -->
+      <div class="place theme-green">
+        <div class="browser">
+          <div class="browser-bar">
+            <div class="browser-dots">
+              <div class="browser-dot"></div>
+              <div class="browser-dot"></div>
+              <div class="browser-dot"></div>
+            </div>
+            <div class="browser-url">{{url2}}</div>
+          </div>
+          <div class="browser-body layout-news">
+            <div class="page-nav">
+              <div class="page-nav-item" style="width:38px"></div>
+              <div class="page-nav-item dark" style="width:32px"></div>
+              <div class="page-nav-item" style="width:38px"></div>
+              <div class="page-nav-item" style="width:32px"></div>
+            </div>
+            <div class="ctx-meta">{{context2_meta}}</div>
+            <div class="ctx-h1">{{context2_h1}}</div>
+            <div class="ctx-line"></div>
+            <div class="ctx-line"></div>
+            <div class="ctx-line short"></div>
+            <div class="ctx-line shorter"></div>
+
+            <div class="subform">
+              <div class="subform-pin">2</div>
+              <div class="subform-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 4 23 10 17 10"/>
+                  <polyline points="1 20 1 14 7 14"/>
+                  <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+                </svg>
+                {{form_badge}}
+              </div>
+              <div class="subform-title">{{form_title}}</div>
+              <div class="subform-steps">
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">{{form_step1}}</div>
+                </div>
+                <div class="subform-step-arrow">›</div>
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">{{form_step2}}</div>
+                </div>
+                <div class="subform-step-arrow">›</div>
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                      <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">{{form_step3}}</div>
+                </div>
+              </div>
+              <div class="subform-input-row">
+                <div class="subform-input">{{form_input_placeholder}}</div>
+                <div class="subform-button">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"/>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                  </svg>
+                  {{form_button}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="caption">
+          <div class="caption-number">
+            <div class="caption-num-circle">2</div>
+          </div>
+          <div class="caption-title">{{place2_title}}</div>
+          <div class="caption-reason">{{place2_reason}}</div>
+        </div>
+      </div>
+
+      <!-- Place 3: Document bank -->
+      <div class="place theme-purple">
+        <div class="browser">
+          <div class="browser-bar">
+            <div class="browser-dots">
+              <div class="browser-dot"></div>
+              <div class="browser-dot"></div>
+              <div class="browser-dot"></div>
+            </div>
+            <div class="browser-url">{{url3}}</div>
+          </div>
+          <div class="browser-body layout-docs">
+            <div class="page-nav">
+              <div class="page-nav-item" style="width:38px"></div>
+              <div class="page-nav-item" style="width:32px"></div>
+              <div class="page-nav-item dark" style="width:38px"></div>
+              <div class="page-nav-item" style="width:32px"></div>
+            </div>
+            <div class="ctx-h1">{{context3_h1}}</div>
+            <div class="ctx-doc">
+              <div class="ctx-doc-icon"></div>
+              <div class="ctx-doc-name">{{context3_doc1}}</div>
+            </div>
+            <div class="ctx-doc">
+              <div class="ctx-doc-icon"></div>
+              <div class="ctx-doc-name">{{context3_doc2}}</div>
+            </div>
+            <div class="ctx-doc">
+              <div class="ctx-doc-icon"></div>
+              <div class="ctx-doc-name">{{context3_doc3}}</div>
+            </div>
+
+            <div class="subform">
+              <div class="subform-pin">3</div>
+              <div class="subform-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 4 23 10 17 10"/>
+                  <polyline points="1 20 1 14 7 14"/>
+                  <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+                </svg>
+                {{form_badge}}
+              </div>
+              <div class="subform-title">{{form_title}}</div>
+              <div class="subform-steps">
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">{{form_step1}}</div>
+                </div>
+                <div class="subform-step-arrow">›</div>
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">{{form_step2}}</div>
+                </div>
+                <div class="subform-step-arrow">›</div>
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                      <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">{{form_step3}}</div>
+                </div>
+              </div>
+              <div class="subform-input-row">
+                <div class="subform-input">{{form_input_placeholder}}</div>
+                <div class="subform-button">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"/>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                  </svg>
+                  {{form_button}}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="caption">
+          <div class="caption-number">
+            <div class="caption-num-circle">3</div>
+          </div>
+          <div class="caption-title">{{place3_title}}</div>
+          <div class="caption-reason">{{place3_reason}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

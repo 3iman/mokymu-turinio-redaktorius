@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .title {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--c-text-muted);
+    text-align: center;
+    margin-bottom: 44px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---- 3 error cards ---- */
+  .errors-row {
+    display: flex;
+    gap: 32px;
+    align-items: stretch;
+    justify-content: center;
+    margin-bottom: 36px;
+  }
+
+  .error-card {
+    flex: 1;
+    min-width: 0;
+    max-width: 520px;
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-top: 6px solid var(--c-red-solid);
+    border-radius: 20px;
+    padding: 26px 28px 24px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .error-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: var(--c-red-bg);
+    border: 1px solid var(--c-red-border);
+    color: var(--c-red-text-vivid);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 5px 12px;
+    border-radius: 12px;
+    align-self: flex-start;
+    margin-bottom: 14px;
+  }
+
+  .error-badge-icon {
+    width: 14px;
+    height: 14px;
+    color: var(--c-red-text-vivid);
+  }
+
+  .error-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--c-text);
+    line-height: 1.3;
+    margin-bottom: 20px;
+    min-height: 58px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Visual area ---- */
+  .error-visual {
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 22px;
+  }
+
+  /* ---- Common mini table ---- */
+  .mt {
+    width: 100%;
+    max-width: 340px;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    font-size: 12px;
+    border: 1px solid var(--c-border);
+  }
+
+  .mt th,
+  .mt td {
+    padding: 7px 10px;
+    text-align: left;
+    border-bottom: 1px solid var(--c-border);
+  }
+
+  .mt tr:last-child th,
+  .mt tr:last-child td {
+    border-bottom: none;
+  }
+
+  .mt th {
+    background: var(--c-blue-solid);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 11px;
+  }
+
+  .mt td {
+    background: var(--c-surface);
+    color: var(--c-text-secondary);
+  }
+
+  /* ---- Error 1: nested table ---- */
+  .nested-wrap {
+    position: relative;
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .inner-table {
+    display: inline-block;
+    border: 1.5px dashed var(--c-red-solid);
+    border-radius: 4px;
+    padding: 3px;
+    background: var(--c-red-bg);
+    font-size: 9px;
+    line-height: 1.2;
+  }
+
+  .inner-table-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--c-border);
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+  .inner-cell {
+    background: var(--c-surface);
+    padding: 3px 6px;
+    color: var(--c-text-secondary);
+    font-weight: 500;
+  }
+
+  .inner-cell.head {
+    background: var(--c-blue-solid);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 8px;
+  }
+
+  .nested-indicator {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--c-red-solid);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 14px;
+  }
+
+  /* ---- Error 2: bold fake header ---- */
+  .mt.fake-header th {
+    background: var(--c-surface);
+    color: var(--c-text);
+    font-weight: 700;
+    border-bottom: 2px solid var(--c-border);
+    position: relative;
+  }
+
+  .fake-header-row {
+    position: relative;
+  }
+
+  .fake-header-indicator {
+    position: absolute;
+    top: 50%;
+    right: -28px;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--c-red-solid);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  /* ---- Error 3: empty row ---- */
+  .empty-row td {
+    background: var(--c-red-bg) !important;
+    color: var(--c-red-text);
+    font-style: italic;
+    font-size: 10px;
+    text-align: center;
+    position: relative;
+    padding: 10px 10px;
+  }
+
+  .empty-row-indicator {
+    position: absolute;
+    top: 50%;
+    right: -28px;
+    transform: translateY(-50%);
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background: var(--c-red-solid);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 13px;
+  }
+
+  /* Container that allows overflow for indicators */
+  .mt-container {
+    position: relative;
+    padding-right: 34px;
+  }
+
+  /* ---- Why hurts section ---- */
+  .why-section {
+    border-top: 1px solid var(--c-border);
+    padding-top: 18px;
+    margin-top: auto;
+  }
+
+  .why-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--c-red-text-vivid);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+  }
+
+  .why-text {
+    font-size: 16px;
+    color: var(--c-text);
+    line-height: 1.45;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Bottom takeaway ---- */
+  .takeaway {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    background: var(--c-surface-alt);
+    border-radius: 14px;
+    padding: 18px 28px;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .takeaway-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    color: var(--c-text-secondary);
+  }
+
+  .takeaway-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--c-text);
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .takeaway-text strong {
+    color: var(--c-red-text-vivid);
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="subtitle">{{subtitle}}</div>
+
+    <div class="errors-row">
+      <!-- ERROR 1: Lentelė lentelėje -->
+      <div class="error-card">
+        <div class="error-badge">
+          <svg class="error-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+          {{error_badge}}
+        </div>
+        <div class="error-title">{{e1_title}}</div>
+
+        <div class="error-visual">
+          <div class="nested-wrap">
+            <table class="mt">
+              <thead>
+                <tr>
+                  <th>{{col_name}}</th>
+                  <th>{{col_role}}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>{{e1_r1_name}}</td>
+                  <td>
+                    <div class="inner-table">
+                      <div class="inner-table-grid">
+                        <div class="inner-cell head">A</div>
+                        <div class="inner-cell head">B</div>
+                        <div class="inner-cell">1</div>
+                        <div class="inner-cell">2</div>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>{{e1_r2_name}}</td>
+                  <td>{{e1_r2_role}}</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="nested-indicator">!</div>
+          </div>
+        </div>
+
+        <div class="why-section">
+          <div class="why-label">{{why_label}}</div>
+          <div class="why-text">{{e1_why}}</div>
+        </div>
+      </div>
+
+      <!-- ERROR 2: Bold vietoj antraštinės -->
+      <div class="error-card">
+        <div class="error-badge">
+          <svg class="error-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+          {{error_badge}}
+        </div>
+        <div class="error-title">{{e2_title}}</div>
+
+        <div class="error-visual">
+          <div class="mt-container">
+            <table class="mt fake-header">
+              <thead>
+                <tr class="fake-header-row">
+                  <th>{{col_name}}</th>
+                  <th>{{col_role}}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>{{e2_r1_name}}</td><td>{{e2_r1_role}}</td></tr>
+                <tr><td>{{e2_r2_name}}</td><td>{{e2_r2_role}}</td></tr>
+                <tr><td>{{e2_r3_name}}</td><td>{{e2_r3_role}}</td></tr>
+              </tbody>
+            </table>
+            <div class="fake-header-indicator">!</div>
+          </div>
+        </div>
+
+        <div class="why-section">
+          <div class="why-label">{{why_label}}</div>
+          <div class="why-text">{{e2_why}}</div>
+        </div>
+      </div>
+
+      <!-- ERROR 3: Tuščios eilutės tarpams -->
+      <div class="error-card">
+        <div class="error-badge">
+          <svg class="error-badge-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+          {{error_badge}}
+        </div>
+        <div class="error-title">{{e3_title}}</div>
+
+        <div class="error-visual">
+          <div class="mt-container">
+            <table class="mt">
+              <thead>
+                <tr>
+                  <th>{{col_name}}</th>
+                  <th>{{col_role}}</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>{{e3_r1_name}}</td><td>{{e3_r1_role}}</td></tr>
+                <tr class="empty-row">
+                  <td colspan="2">{{empty_row_label}}</td>
+                </tr>
+                <tr><td>{{e3_r2_name}}</td><td>{{e3_r2_role}}</td></tr>
+                <tr><td>{{e3_r3_name}}</td><td>{{e3_r3_role}}</td></tr>
+              </tbody>
+            </table>
+            <div class="empty-row-indicator">!</div>
+          </div>
+        </div>
+
+        <div class="why-section">
+          <div class="why-label">{{why_label}}</div>
+          <div class="why-text">{{e3_why}}</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom takeaway -->
+    <div class="takeaway">
+      <svg class="takeaway-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="11" cy="11" r="8"/>
+        <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+      </svg>
+      <div class="takeaway-text">{{takeaway_text}}</div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

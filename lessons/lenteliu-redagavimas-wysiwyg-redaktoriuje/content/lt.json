@@ -1,0 +1,230 @@
+{
+  "lang": "lt",
+  "_intro": {
+    "title": "Lentelių redagavimas WYSIWYG redaktoriuje"
+  },
+  "common": {
+    "tvs": "TVS",
+    "redaktorius": "redaktorius"
+  },
+  "01_irankio_pasirinkimas": {
+    "title": "Įrankio pasirinkimas pagal lentelės paskirtį",
+    "subtitle": "Priklauso nuo sudėtingumo ir pildytojų skaičiaus",
+    "example_label": "Pavyzdys",
+
+    "col1_label": "Turinio redaktorius",
+    "col1_scenario": "Paprastos ir retai keičiamos",
+    "col1_example": "Pamokų laikas",
+
+    "col2_label": "Google Sheets integracija",
+    "col2_scenario": "Keli sąrašai, centralizuotas valdymas",
+    "col2_example": "Gimnazijos tarybos sudėtis",
+
+    "fallback_badge": "Kraštutinis atvejis",
+    "col3_label": "PDF arba paveikslėlis",
+    "col3_scenario": "Kai struktūros nepavyksta supaprastinti – pvz., skenuotas dokumentas"
+  },
+  "02_antrastine_du_keliai": {
+    "title": "Antraštinė eilutė – du keliai",
+    "subtitle": "Abu būdai leidžia ekrano skaitytuvams ir paieškos sistemoms atpažinti antraštę",
+
+    "case1_badge": "Atvejis 1",
+    "case1_title": "Kai visa pirma eilutė yra kepurė",
+    "case1_step1": "Table properties",
+    "case1_step2": "Headers: First row",
+
+    "case2_badge": "Atvejis 2",
+    "case2_title": "Kai antraštė ne pirmoje eilutėje arba jų yra kelios",
+    "case2_step1": "Cell properties",
+    "case2_step2": "Cell type: Header",
+
+    "col_nr": "Eil. Nr.",
+    "col_name": "Vardas, pavardė",
+    "col_role": "Pareigos",
+    "r1_nr": "1.",
+    "r1_name": "Jolanta Kazlauskienė",
+    "r1_role": "Pirmininkė",
+    "r2_nr": "2.",
+    "r2_name": "Rasa Petraitienė",
+    "r2_role": "Pavaduotoja",
+    "r3_nr": "3.",
+    "r3_name": "Mindaugas Petraitis",
+    "r3_role": "Narys",
+
+    "c2_col_name": "Vardas, pavardė",
+    "c2_col_role": "Pareigos",
+    "c2_group1": "Mokytojai",
+    "c2_group2": "Tėvai",
+    "c2_r1_name": "Jolanta Kazlauskienė",
+    "c2_r1_role": "Pirmininkė",
+    "c2_r2_name": "Rasa Petraitienė",
+    "c2_r2_role": "Pavaduotoja",
+    "c2_r3_name": "Mindaugas Petraitis",
+    "c2_r3_role": "Narys",
+
+    "warning_text": "Bold šriftas nepadaro eilutės antraštine"
+  },
+  "03_klastingas_simptomas": {
+    "title": "Klastingas simptomas",
+    "subtitle": "Stilizuota lentelė svetainėje atrodo pilna, bet grįžę į redaktorių matysite tik dalį eilučių",
+
+    "left_badge": "Svetainėje",
+    "left_sublabel": "rezultatas lankytojui",
+    "browser_url": "mokykla.lt/mokytojai",
+    "page_h2": "Mokytojų sąrašas",
+    "col_nr": "Eil. Nr.",
+    "col_name": "Vardas, pavardė",
+    "col_role": "Pareigos įstaigoje",
+    "r1_nr": "1.",
+    "r1_name": "Jolanta Kazlauskienė",
+    "r1_role": "Lietuvių kalbos mokytoja",
+    "r2_nr": "2.",
+    "r2_name": "Rasa Petraitienė",
+    "r2_role": "Matematikos mokytoja",
+    "r3_nr": "3.",
+    "r3_name": "Mindaugas Petraitis",
+    "r3_role": "Istorijos mokytojas",
+    "r4_nr": "4.",
+    "r4_name": "Domas Jonaitis",
+    "r4_role": "Fizinio ugdymo mokytojas",
+    "r5_nr": "5.",
+    "r5_name": "Jūratė Mikalauskienė",
+    "r5_role": "Anglų kalbos mokytoja",
+    "left_caption": "Lentelė rodoma pilnai",
+
+    "right_badge": "Redaktoriuje",
+    "right_sublabel": "grįžus redaguoti vėliau",
+    "cutoff_text": "Redaktorius nebesuvirškino likusių eilučių",
+    "right_caption": "Matoma tik dalis",
+
+    "prevention_text": "Prieš išsaugant – išvalykite HTML šiukšles"
+  },
+  "04_kai_netelpa": {
+    "title": "Kai lentelė netelpa į svetainės plotį",
+    "subtitle": "Keturi žingsniai pločio tvarkymui ir rekomendacija plačioms lentelėms",
+
+    "step1_title": "Nustatykite plotį 100%",
+    "step2_title": "Išvalykite formatavimą",
+    "step3_title": "Patikrinkite tarpus celėse",
+    "step4_title": "Peržiūrėkite stulpelius",
+
+    "divider_text": "Papildoma rekomendacija plačioms lentelėms",
+
+    "fallback_badge": "Rekomendacija",
+    "code_label": "Prieš lentelę įdėkite",
+    "shortcode": "{{t('table_ux_accessibility')}}",
+    "result_label": "Svetainėje pasirodo",
+    "banner_text": "Nematote visos lentelės? Spauskite ant tvarkaraščio ir naudokitės klaviatūros mygtuku „dešinėn\" arba slinkite su pirštu, jei naudojate mobilų telefoną."
+  },
+  "05_semantikos_klaidos": {
+    "title": "Semantikos klaidos",
+    "subtitle": "Akys mato tvarkingą lentelę, bet sistema ir ekrano skaitytuvai – kitą vaizdą",
+
+    "error_badge": "Klaida",
+    "why_label": "Kodėl kenkia",
+
+    "col_name": "Vardas, pavardė",
+    "col_role": "Pareigos įstaigoje",
+
+    "e1_title": "Lentelė lentelėje",
+    "e1_r1_name": "Jolanta Kazlauskienė",
+    "e1_r2_name": "Rasa Petraitienė",
+    "e1_r2_role": "Matematikos mokytoja",
+    "e1_why": "Ekrano skaitytuvai nebesupranta struktūros, mobiliame ekrane lentelė subyra",
+
+    "e2_title": "Bold vietoj antraštinės eilutės",
+    "e2_r1_name": "Jolanta Kazlauskienė",
+    "e2_r1_role": "Lietuvių kalbos mokytoja",
+    "e2_r2_name": "Rasa Petraitienė",
+    "e2_r2_role": "Matematikos mokytoja",
+    "e2_r3_name": "Mindaugas Petraitis",
+    "e2_r3_role": "Istorijos mokytojas",
+    "e2_why": "Sistemai tai nėra antraštė – paieška ir skaitytuvai praleis svarbią struktūrą",
+
+    "e3_title": "Tuščios eilutės atskyrimui",
+    "e3_r1_name": "Jolanta Kazlauskienė",
+    "e3_r1_role": "Lietuvių kalbos mokytoja",
+    "e3_r2_name": "Rasa Petraitienė",
+    "e3_r2_role": "Matematikos mokytoja",
+    "e3_r3_name": "Mindaugas Petraitis",
+    "e3_r3_role": "Istorijos mokytojas",
+    "empty_row_label": "(tuščia eilutė)",
+    "e3_why": "Skaitytuvas praneša apie eilutę, kurios iš tikrųjų nėra",
+
+    "takeaway_text": "Sistema mato semantiką, ne stilių"
+  },
+  "07_panasumas_su_word": {
+    "title": "Lentelės redagavimas — tas pats gestas kaip Word'e",
+    "subtitle": "Dešinysis pelės klavišas atveria visus svarbiausius veiksmus — ir Word'e, ir turinio redaktoriuje",
+
+    "left_badge": "Jūs jau darote",
+    "left_app_label": "Word",
+
+    "w_insert": "Insert",
+    "w_delete": "Delete Cells",
+    "w_split": "Split Cells",
+    "w_merge": "Merge Cells",
+    "w_props": "Table Properties",
+
+    "connector_label": "Tas pats gestas",
+    "connector_sublabel": "dešinysis pelės klavišas",
+
+    "right_badge": "Ir čia veikia",
+    "right_app_label": "Turinio redaktorius",
+
+    "ck_cut": "Cut",
+    "ck_copy": "Copy",
+    "ck_paste": "Paste",
+    "ck_cell": "Cell",
+    "ck_row": "Row",
+    "ck_column": "Column",
+    "ck_delete_table": "Delete Table",
+    "ck_table_props": "Table Properties",
+
+    "ck_row_insert_before": "Insert Row Before",
+    "ck_row_insert_after": "Insert Row After",
+    "ck_row_delete": "Delete Row",
+
+    "takeaway_text": "Paspaudus dešinį pelės klavišą ant celės — visi svarbiausi veiksmai pasiekiami"
+  },
+  "06_vizualinio_pertekliaus_klaidos": {
+    "title": "Vizualinio pertekliaus klaidos",
+    "subtitle": "Dizaino sistema pati tvarko stilių – rankinis „pagražinimas\" jai trukdo",
+
+    "error_badge": "Klaida",
+    "why_label": "Kodėl kenkia",
+
+    "col_name": "Vardas, pavardė",
+    "col_role": "Pareigos įstaigoje",
+    "r1_name": "Jolanta Kazlauskienė",
+    "r1_role": "Lietuvių kalbos mokytoja",
+    "r2_name": "Rasa Petraitienė",
+    "r2_role": "Matematikos mokytoja",
+    "r3_name": "Mindaugas Petraitis",
+    "r3_role": "Istorijos mokytojas",
+
+    "r1_name_short": "Jolanta K.",
+    "r1_role_short": "Lietuvių k.",
+    "r2_name_short": "Rasa P.",
+    "r2_role_short": "Matematikos",
+    "r3_name_short": "Mindaugas P.",
+    "r3_role_short": "Istorijos",
+
+    "e1_title": "Rankinis celių fono ir spalvų keitimas",
+    "e1_why": "Spalvos nesiderina su svetainės palete, tamsiuoju režimu lūžta ir tampa neįskaitomos",
+
+    "e2_title": "Šrifto ar jo dydžio keitimas lentelėje",
+    "e2_why": "Praranda vizualinį nuoseklumą su likusiu svetainės turiniu, mobiliame ekrane trikdo",
+
+    "e3_title": "Bold per visą lentelę",
+    "e3_why": "Kai paryškinta viskas, akcento nebelieka – skaitytojas pasimeta",
+
+    "e4_title": "Bandymai išlaužti įmantresnį dizainą",
+    "e4_super_head": "Gimnazijos tarybos sudėtis",
+    "e4_group_a": "Mokytojai",
+    "e4_group_b": "Tėvai",
+    "e4_why": "Mobiliame ekrane lūžta, redaktorius praranda dalį turinio, ekrano skaitytuvai pasimeta sudėtingose struktūrose",
+
+    "takeaway_text": "Dizaino sistema viską padaro pati"
+  }
+}

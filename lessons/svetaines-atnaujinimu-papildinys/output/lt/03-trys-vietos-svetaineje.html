@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--c-text-muted);
+    text-align: center;
+    margin-top: -32px;
+    margin-bottom: 48px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Three columns ---- */
+  .places {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  .place {
+    flex: 1;
+    min-width: 0;
+    max-width: 540px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ---- Browser mockup ---- */
+  .browser {
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+    margin-bottom: 22px;
+  }
+
+  .browser-bar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 14px;
+    background: var(--c-surface-alt);
+    border-bottom: 1px solid var(--c-border);
+  }
+
+  .browser-dots {
+    display: flex;
+    gap: 6px;
+    flex-shrink: 0;
+  }
+
+  .browser-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--c-border);
+  }
+
+  .browser-url {
+    flex: 1;
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: 6px;
+    padding: 5px 12px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--c-text-muted);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .browser-body {
+    padding: 18px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  /* Page header strip */
+  .page-nav {
+    height: 22px;
+    background: var(--c-surface-alt);
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    margin-bottom: 4px;
+  }
+  .page-nav-item {
+    height: 6px;
+    background: var(--c-border);
+    border-radius: 3px;
+  }
+  .page-nav-item.dark { background: var(--c-text-faint); }
+
+  .ctx-h1 {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--c-text);
+    line-height: 1.3;
+    margin-bottom: 2px;
+  }
+
+  .ctx-meta {
+    font-size: 10px;
+    font-weight: 500;
+    color: var(--c-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-bottom: 4px;
+  }
+
+  .ctx-line {
+    height: 5px;
+    background: var(--c-border);
+    border-radius: 3px;
+  }
+  .ctx-line.short { width: 76%; }
+  .ctx-line.shorter { width: 56%; }
+
+  .ctx-doc {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 10px;
+    border: 1px solid var(--c-border);
+    border-radius: 6px;
+  }
+  .ctx-doc-icon {
+    width: 14px;
+    height: 16px;
+    background: var(--c-blue-solid);
+    border-radius: 2px;
+    opacity: 0.6;
+    flex-shrink: 0;
+  }
+  .ctx-doc-name {
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--c-text-secondary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  /* ---- Subscription form (realistic) ---- */
+  .subform {
+    position: relative;
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-green-border);
+    border-radius: 10px;
+    padding: 14px 16px 16px 16px;
+    box-shadow: 0 0 0 4px var(--c-green-bg);
+    margin-top: 6px;
+  }
+
+  .subform-pin {
+    position: absolute;
+    top: -10px;
+    right: 12px;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .place.theme-blue .subform-pin { background: var(--c-blue-solid); }
+  .place.theme-green .subform-pin { background: var(--c-green-solid); }
+  .place.theme-purple .subform-pin { background: var(--c-purple-solid); }
+
+  .subform-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--c-green-bg);
+    color: var(--c-green-text);
+    padding: 4px 10px;
+    border-radius: 999px;
+    font-size: 9px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+  }
+
+  .subform-badge svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .subform-title {
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--c-text);
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+
+  .subform-steps {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-bottom: 10px;
+  }
+
+  .subform-step {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+  }
+
+  .subform-step-icon {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: var(--c-green-bg);
+    color: var(--c-green-text-vivid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-size: 10px;
+    font-weight: 700;
+  }
+
+  .subform-step-icon svg {
+    width: 10px;
+    height: 10px;
+  }
+
+  .subform-step-text {
+    font-size: 9.5px;
+    font-weight: 500;
+    color: var(--c-text-secondary);
+    line-height: 1.2;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .subform-step-arrow {
+    color: var(--c-text-faint);
+    font-size: 11px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .subform-input-row {
+    display: flex;
+    gap: 6px;
+  }
+
+  .subform-input {
+    flex: 1;
+    height: 32px;
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    font-size: 11px;
+    color: var(--c-text-faint);
+    min-width: 0;
+  }
+
+  .subform-button {
+    background: var(--c-green-solid);
+    color: white;
+    border-radius: 6px;
+    padding: 0 14px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 11px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .subform-button svg {
+    width: 11px;
+    height: 11px;
+  }
+
+  /* Layouts per place */
+  .browser-body.layout-page {
+    min-height: 320px;
+  }
+  .browser-body.layout-page .subform {
+    margin-top: 8px;
+  }
+
+  .browser-body.layout-news {
+    min-height: 320px;
+  }
+
+  .browser-body.layout-docs {
+    min-height: 320px;
+  }
+
+  /* ---- Caption below browser ---- */
+  .caption {
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-radius: 14px;
+    padding: 22px 26px;
+    border-top: 5px solid var(--c-border);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .place.theme-blue .caption { border-top-color: var(--c-blue-solid); }
+  .place.theme-green .caption { border-top-color: var(--c-green-solid); }
+  .place.theme-purple .caption { border-top-color: var(--c-purple-solid); }
+
+  .caption-number {
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 12px;
+  }
+
+  .caption-num-circle {
+    width: 26px;
+    height: 26px;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 700;
+  }
+  .place.theme-blue .caption-num-circle { background: var(--c-blue-solid); }
+  .place.theme-green .caption-num-circle { background: var(--c-green-solid); }
+  .place.theme-purple .caption-num-circle { background: var(--c-purple-solid); }
+
+  .caption-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--c-text);
+    margin-bottom: 10px;
+    line-height: 1.25;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .caption-reason {
+    font-size: 15px;
+    font-weight: 400;
+    color: var(--c-text-secondary);
+    line-height: 1.5;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Kur matomas papildinys ir kodėl</div>
+    <div class="subtitle">Viena vieta veikia jau dabar, dar dvi — nuo 2027 m. I ketvirčio</div>
+
+    <div class="places">
+
+      <!-- Place 1: Dedicated subscription page -->
+      <div class="place theme-blue">
+        <div class="browser">
+          <div class="browser-bar">
+            <div class="browser-dots">
+              <div class="browser-dot"></div>
+              <div class="browser-dot"></div>
+              <div class="browser-dot"></div>
+            </div>
+            <div class="browser-url">mokykla.lt/prenumerata</div>
+          </div>
+          <div class="browser-body layout-page">
+            <div class="page-nav">
+              <div class="page-nav-item dark" style="width:38px"></div>
+              <div class="page-nav-item" style="width:32px"></div>
+              <div class="page-nav-item" style="width:38px"></div>
+              <div class="page-nav-item" style="width:32px"></div>
+            </div>
+            <div class="ctx-h1">Atnaujinimų prenumerata</div>
+
+            <div class="subform">
+              <div class="subform-pin">1</div>
+              <div class="subform-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 4 23 10 17 10"/>
+                  <polyline points="1 20 1 14 7 14"/>
+                  <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+                </svg>
+                Kartą per savaitę
+              </div>
+              <div class="subform-title">Nori sekti mūsų informaciją</div>
+              <div class="subform-steps">
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">Įveskite el. paštą</div>
+                </div>
+                <div class="subform-step-arrow">›</div>
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">Patvirtinkite laiške</div>
+                </div>
+                <div class="subform-step-arrow">›</div>
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                      <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">Gaukite santrauką</div>
+                </div>
+              </div>
+              <div class="subform-input-row">
+                <div class="subform-input">El. pašto adresas</div>
+                <div class="subform-button">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"/>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                  </svg>
+                  Prenumeruoti
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="caption">
+          <div class="caption-number">
+            <div class="caption-num-circle">1</div>
+          </div>
+          <div class="caption-title">Atskiras puslapis</div>
+          <div class="caption-reason">Veikia dabar. Pasiekiamas per juodąją navigaciją — aiški pirminė vieta, kur galima užsisakyti atnaujinimus</div>
+        </div>
+      </div>
+
+      <!-- Place 2: After news article -->
+      <div class="place theme-green">
+        <div class="browser">
+          <div class="browser-bar">
+            <div class="browser-dots">
+              <div class="browser-dot"></div>
+              <div class="browser-dot"></div>
+              <div class="browser-dot"></div>
+            </div>
+            <div class="browser-url">mokykla.lt/naujienos/...</div>
+          </div>
+          <div class="browser-body layout-news">
+            <div class="page-nav">
+              <div class="page-nav-item" style="width:38px"></div>
+              <div class="page-nav-item dark" style="width:32px"></div>
+              <div class="page-nav-item" style="width:38px"></div>
+              <div class="page-nav-item" style="width:32px"></div>
+            </div>
+            <div class="ctx-meta">2026-04-15 · Naujienos</div>
+            <div class="ctx-h1">Mokyklos diena 2026</div>
+            <div class="ctx-line"></div>
+            <div class="ctx-line"></div>
+            <div class="ctx-line short"></div>
+            <div class="ctx-line shorter"></div>
+
+            <div class="subform">
+              <div class="subform-pin">2</div>
+              <div class="subform-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 4 23 10 17 10"/>
+                  <polyline points="1 20 1 14 7 14"/>
+                  <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+                </svg>
+                Kartą per savaitę
+              </div>
+              <div class="subform-title">Nori sekti mūsų informaciją</div>
+              <div class="subform-steps">
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">Įveskite el. paštą</div>
+                </div>
+                <div class="subform-step-arrow">›</div>
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">Patvirtinkite laiške</div>
+                </div>
+                <div class="subform-step-arrow">›</div>
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                      <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">Gaukite santrauką</div>
+                </div>
+              </div>
+              <div class="subform-input-row">
+                <div class="subform-input">El. pašto adresas</div>
+                <div class="subform-button">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"/>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                  </svg>
+                  Prenumeruoti
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="caption">
+          <div class="caption-number">
+            <div class="caption-num-circle">2</div>
+          </div>
+          <div class="caption-title">Po kiekviena naujiena</div>
+          <div class="caption-reason">Planuojama nuo 2027 m. I ketv. Lankytojas, ką tik perskaitęs naujieną, iškart matys galimybę gauti tokius pranešimus el. paštu</div>
+        </div>
+      </div>
+
+      <!-- Place 3: Document bank -->
+      <div class="place theme-purple">
+        <div class="browser">
+          <div class="browser-bar">
+            <div class="browser-dots">
+              <div class="browser-dot"></div>
+              <div class="browser-dot"></div>
+              <div class="browser-dot"></div>
+            </div>
+            <div class="browser-url">mokykla.lt/dokumentai</div>
+          </div>
+          <div class="browser-body layout-docs">
+            <div class="page-nav">
+              <div class="page-nav-item" style="width:38px"></div>
+              <div class="page-nav-item" style="width:32px"></div>
+              <div class="page-nav-item dark" style="width:38px"></div>
+              <div class="page-nav-item" style="width:32px"></div>
+            </div>
+            <div class="ctx-h1">Dokumentų bankas</div>
+            <div class="ctx-doc">
+              <div class="ctx-doc-icon"></div>
+              <div class="ctx-doc-name">Ugdymo planas</div>
+            </div>
+            <div class="ctx-doc">
+              <div class="ctx-doc-icon"></div>
+              <div class="ctx-doc-name">Pamokų tvarkaraštis</div>
+            </div>
+            <div class="ctx-doc">
+              <div class="ctx-doc-icon"></div>
+              <div class="ctx-doc-name">Mokinio elgesio taisyklės</div>
+            </div>
+
+            <div class="subform">
+              <div class="subform-pin">3</div>
+              <div class="subform-badge">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="23 4 23 10 17 10"/>
+                  <polyline points="1 20 1 14 7 14"/>
+                  <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"/>
+                </svg>
+                Kartą per savaitę
+              </div>
+              <div class="subform-title">Nori sekti mūsų informaciją</div>
+              <div class="subform-steps">
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                      <polyline points="22,6 12,13 2,6"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">Įveskite el. paštą</div>
+                </div>
+                <div class="subform-step-arrow">›</div>
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">Patvirtinkite laiške</div>
+                </div>
+                <div class="subform-step-arrow">›</div>
+                <div class="subform-step">
+                  <div class="subform-step-icon">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"/>
+                      <path d="M13.73 21a2 2 0 0 1-3.46 0"/>
+                    </svg>
+                  </div>
+                  <div class="subform-step-text">Gaukite santrauką</div>
+                </div>
+              </div>
+              <div class="subform-input-row">
+                <div class="subform-input">El. pašto adresas</div>
+                <div class="subform-button">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"/>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                  </svg>
+                  Prenumeruoti
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="caption">
+          <div class="caption-number">
+            <div class="caption-num-circle">3</div>
+          </div>
+          <div class="caption-title">Dokumentų banko apačioje</div>
+          <div class="caption-reason">Planuojama nuo 2027 m. I ketv. Atėjusiam pasitikrinti dokumentų bus pasiūlyta gauti pranešimą, kai jie atsinaujins</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .title {
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 56px;
+    letter-spacing: -0.3px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .columns {
+    display: flex;
+    gap: 40px;
+    align-items: stretch;
+    margin-bottom: 44px;
+  }
+
+  .column {
+    flex: 1;
+    border-radius: 22px;
+    padding: 32px 36px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-do {
+    background: var(--c-green-bg);
+    border: 1.5px solid var(--c-green-border);
+  }
+
+  .col-dont {
+    background: var(--c-red-bg);
+    border: 1.5px solid var(--c-red-border);
+  }
+
+  .col-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 8px;
+  }
+
+  .col-icon {
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .col-do .col-icon {
+    background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to));
+  }
+
+  .col-dont .col-icon {
+    background: linear-gradient(135deg, var(--c-red-gradient-from), var(--c-red-gradient-to));
+  }
+
+  .col-icon svg { width: 24px; height: 24px; }
+
+  .col-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--c-text);
+    letter-spacing: -0.1px;
+  }
+
+  .col-subtitle {
+    font-size: 15px;
+    color: var(--c-text-muted);
+    margin: 0 0 22px 62px;
+    line-height: 1.4;
+  }
+
+  /* ---- Tables ---- */
+  .demo-table {
+    background: var(--c-surface);
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid var(--c-border-soft);
+  }
+
+  .demo-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 15px;
+    color: var(--c-text);
+    line-height: 1.4;
+  }
+
+  .demo-table th,
+  .demo-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid var(--c-border-soft);
+  }
+
+  .demo-table thead th {
+    font-weight: 700;
+    background: var(--c-bg);
+    border-bottom: 1.5px solid var(--c-border-soft);
+  }
+
+  .demo-table tbody tr:last-child td { border-bottom: none; }
+
+  /* Complex table extras */
+  .complex-table .super-header {
+    background: var(--c-bg);
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--c-text);
+    text-align: center;
+    border-bottom: 2px solid var(--c-border);
+    letter-spacing: 0.2px;
+  }
+
+  .complex-table .group-cell {
+    background: var(--c-bg);
+    font-weight: 700;
+    vertical-align: middle;
+    text-align: center;
+    border-right: 1.5px solid var(--c-border);
+  }
+
+  .complex-table th {
+    background: var(--c-bg);
+    border-bottom: 1.5px solid var(--c-border-soft);
+    border-right: 1px solid var(--c-border-soft);
+  }
+
+  .complex-table th:last-child { border-right: none; }
+
+  .complex-table td {
+    border-right: 1px solid var(--c-border-soft);
+  }
+
+  .complex-table td:last-child { border-right: none; }
+
+  /* ---- Summary ---- */
+  .summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 22px 32px;
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--c-text);
+    text-align: center;
+    letter-spacing: -0.1px;
+  }
+
+  .summary-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    color: var(--c-blue-solid);
+  }
+
+  .summary-icon svg { width: 100%; height: 100%; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+
+    <div class="columns">
+      <!-- Simple table -->
+      <div class="column col-do">
+        <div class="col-header">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <div class="col-title">{{do_title}}</div>
+        </div>
+        <div class="col-subtitle">{{do_subtitle}}</div>
+
+        <div class="demo-table">
+          <table>
+            <thead>
+              <tr>
+                <th>{{col_name}}</th>
+                <th>{{col_role}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>{{r1_name}}</td><td>{{r1_role}}</td></tr>
+              <tr><td>{{r2_name}}</td><td>{{r2_role}}</td></tr>
+              <tr><td>{{r3_name}}</td><td>{{r3_role}}</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- Complex table -->
+      <div class="column col-dont">
+        <div class="col-header">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </div>
+          <div class="col-title">{{dont_title}}</div>
+        </div>
+        <div class="col-subtitle">{{dont_subtitle}}</div>
+
+        <div class="demo-table complex-table">
+          <table>
+            <thead>
+              <tr>
+                <th class="super-header" colspan="3">{{super_header}}</th>
+              </tr>
+              <tr>
+                <th>{{col_group}}</th>
+                <th>{{col_name}}</th>
+                <th>{{col_role}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="group-cell" rowspan="2">{{group_teachers}}</td>
+                <td>{{r1_name}}</td>
+                <td>{{r1_role}}</td>
+              </tr>
+              <tr>
+                <td>{{r2_name}}</td>
+                <td>{{r2_role}}</td>
+              </tr>
+              <tr>
+                <td class="group-cell">{{group_parents}}</td>
+                <td>{{r3_name}}</td>
+                <td>{{r3_role}}</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Summary -->
+    <div class="summary">
+      <div class="summary-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="16" x2="12" y2="12"/>
+          <line x1="12" y1="8" x2="12.01" y2="8"/>
+        </svg>
+      </div>
+      <span>{{summary}}</span>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

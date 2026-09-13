@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .title {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--c-text-muted);
+    text-align: center;
+    margin-bottom: 36px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---- Two case columns ---- */
+  .cases-row {
+    display: flex;
+    gap: 44px;
+    align-items: stretch;
+    justify-content: center;
+    margin-bottom: 28px;
+  }
+
+  .case {
+    flex: 1;
+    min-width: 0;
+    max-width: 740px;
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-top: 6px solid var(--c-blue-solid);
+    border-radius: 22px;
+    padding: 26px 32px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .case-badge {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--c-blue-text-vivid);
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    margin-bottom: 8px;
+  }
+
+  .case-title {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--c-text);
+    line-height: 1.3;
+    margin-bottom: 20px;
+    max-width: 560px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* ---- CKeditor dialog mockup ---- */
+  .dialog {
+    width: 420px;
+    background: #ffffff;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-shadow: 0 10px 28px rgba(15, 23, 42, 0.14), 0 2px 6px rgba(15, 23, 42, 0.06);
+    margin-bottom: 18px;
+    overflow: hidden;
+    text-align: left;
+  }
+
+  .dialog-titlebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e8e8e8;
+    padding: 10px 14px;
+    border-bottom: 1px solid #cccccc;
+  }
+
+  .dialog-titlebar-title {
+    font-size: 15px;
+    font-weight: 700;
+    color: #333333;
+  }
+
+  .dialog-titlebar-close {
+    color: #888888;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+  }
+
+  /* ---- Tabs (Table Properties only) ---- */
+  .dialog-tabs {
+    display: flex;
+    background: #f5f5f5;
+    border-bottom: 1px solid #cccccc;
+    padding: 0 10px;
+  }
+
+  .tab {
+    padding: 9px 14px;
+    font-size: 12px;
+    color: #666666;
+    border: 1px solid transparent;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    margin-right: 4px;
+    margin-top: 6px;
+    position: relative;
+    top: 1px;
+  }
+
+  .tab.active {
+    background: #ffffff;
+    color: #333333;
+    font-weight: 600;
+    border-color: #cccccc;
+  }
+
+  .dialog-body {
+    padding: 14px 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px 20px;
+  }
+
+  .field {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+  }
+
+  .field-label {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333333;
+  }
+
+  .field-label.bold {
+    font-weight: 700;
+  }
+
+  .field-input {
+    font-size: 12px;
+    color: #333333;
+    background: #fafafa;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    padding: 5px 9px;
+    min-height: 28px;
+    display: flex;
+    align-items: center;
+  }
+
+  .field-input.dropdown {
+    background: #ffffff;
+    justify-content: space-between;
+  }
+
+  .field-input.dropdown::after {
+    content: '▾';
+    color: #666666;
+    font-size: 11px;
+    margin-left: 6px;
+  }
+
+  .field-input.small {
+    min-height: 26px;
+    font-size: 11px;
+  }
+
+  .field-group {
+    display: flex;
+    gap: 6px;
+  }
+
+  .field-group .field-input:first-child {
+    flex: 1;
+  }
+
+  .field-group .field-input.unit {
+    flex: 0 0 auto;
+    width: auto;
+    background: #ffffff;
+  }
+
+  .field-inline-unit {
+    font-size: 12px;
+    color: #666666;
+    align-self: center;
+  }
+
+  /* Highlighted (key) field */
+  .field-highlight .field-input {
+    border: 2px solid var(--c-blue-solid);
+    background: #ffffff;
+    font-weight: 600;
+    color: var(--c-blue-text);
+    box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.15);
+  }
+
+  .field-highlight .field-label {
+    color: var(--c-blue-text-vivid);
+    font-weight: 700;
+  }
+
+  .dialog-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+    padding: 10px 14px;
+    background: #f5f5f5;
+    border-top: 1px solid #cccccc;
+  }
+
+  .btn {
+    font-size: 13px;
+    font-weight: 600;
+    padding: 7px 18px;
+    border-radius: 3px;
+    border: 1px solid transparent;
+  }
+
+  .btn-primary {
+    background: var(--c-green-solid);
+    color: #ffffff;
+    border-color: #2d9248;
+  }
+
+  .btn-secondary {
+    background: #ffffff;
+    color: #333333;
+    border-color: #cccccc;
+  }
+
+  /* ---- Connector arrow ---- */
+  .connector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 14px;
+  }
+
+  .connector svg {
+    width: 24px;
+    height: 24px;
+    color: var(--c-text-faint);
+  }
+
+  /* ---- Mini table mockup ---- */
+  .mini-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    overflow: hidden;
+    font-size: 14px;
+    border: 1px solid var(--c-border);
+  }
+
+  .mini-table th,
+  .mini-table td {
+    padding: 9px 14px;
+    text-align: left;
+    border-bottom: 1px solid var(--c-border);
+  }
+
+  .mini-table tr:last-child th,
+  .mini-table tr:last-child td {
+    border-bottom: none;
+  }
+
+  .mini-table th {
+    background: var(--c-blue-solid);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0;
+  }
+
+  .mini-table td {
+    background: var(--c-surface);
+    color: var(--c-text-secondary);
+    font-weight: 500;
+  }
+
+  .mini-table .group-header td {
+    background: var(--c-blue-solid);
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0;
+    text-align: left;
+  }
+
+  /* ---- Warning banner (bottom, red) ---- */
+  .warning {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    background: var(--c-red-bg);
+    border: 1.5px solid var(--c-red-border);
+    border-radius: 14px;
+    padding: 14px 24px;
+    max-width: 820px;
+    margin: 0 auto;
+  }
+
+  .warning-icon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: var(--c-red-solid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .warning-icon svg {
+    width: 15px;
+    height: 15px;
+  }
+
+  .warning-text {
+    font-size: 17px;
+    font-weight: 600;
+    color: var(--c-red-text);
+    line-height: 1.35;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="subtitle">{{subtitle}}</div>
+
+    <div class="cases-row">
+      <!-- Case 1: Table Properties → Headers: First Row -->
+      <div class="case">
+        <div class="case-badge">{{case1_badge}}</div>
+        <div class="case-title">{{case1_title}}</div>
+
+        <!-- Dialog mockup -->
+        <div class="dialog">
+          <div class="dialog-titlebar">
+            <div class="dialog-titlebar-title">Table Properties</div>
+            <div class="dialog-titlebar-close">×</div>
+          </div>
+          <div class="dialog-tabs">
+            <div class="tab active">Table Properties</div>
+            <div class="tab">Advanced</div>
+          </div>
+          <div class="dialog-body">
+            <div class="field">
+              <div class="field-label bold">Rows</div>
+              <div class="field-input">3</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Width</div>
+              <div class="field-input">100%</div>
+            </div>
+            <div class="field">
+              <div class="field-label bold">Columns</div>
+              <div class="field-input">2</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Height</div>
+              <div class="field-input">&nbsp;</div>
+            </div>
+            <div class="field field-highlight">
+              <div class="field-label">Headers</div>
+              <div class="field-input dropdown">First Row</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Cell spacing</div>
+              <div class="field-input">1</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Border size</div>
+              <div class="field-input">1</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Cell padding</div>
+              <div class="field-input">1</div>
+            </div>
+          </div>
+          <div class="dialog-footer">
+            <div class="btn btn-secondary">Cancel</div>
+            <div class="btn btn-primary">OK</div>
+          </div>
+        </div>
+
+        <div class="connector">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <polyline points="19 12 12 19 5 12"/>
+          </svg>
+        </div>
+
+        <table class="mini-table">
+          <thead>
+            <tr>
+              <th>{{col_nr}}</th>
+              <th>{{col_name}}</th>
+              <th>{{col_role}}</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr><td>{{r1_nr}}</td><td>{{r1_name}}</td><td>{{r1_role}}</td></tr>
+            <tr><td>{{r2_nr}}</td><td>{{r2_name}}</td><td>{{r2_role}}</td></tr>
+            <tr><td>{{r3_nr}}</td><td>{{r3_name}}</td><td>{{r3_role}}</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- Case 2: Cell Properties → Cell Type: Header -->
+      <div class="case">
+        <div class="case-badge">{{case2_badge}}</div>
+        <div class="case-title">{{case2_title}}</div>
+
+        <div class="dialog">
+          <div class="dialog-titlebar">
+            <div class="dialog-titlebar-title">Cell Properties</div>
+            <div class="dialog-titlebar-close">×</div>
+          </div>
+          <div class="dialog-body">
+            <div class="field">
+              <div class="field-label">Width</div>
+              <div class="field-group">
+                <div class="field-input">&nbsp;</div>
+                <div class="field-input dropdown unit">pixels</div>
+              </div>
+            </div>
+            <div class="field field-highlight">
+              <div class="field-label">Cell Type</div>
+              <div class="field-input dropdown">Header</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Height</div>
+              <div class="field-input">&nbsp;</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Rows Span</div>
+              <div class="field-input">&nbsp;</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Word Wrap</div>
+              <div class="field-input dropdown">Yes</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Columns Span</div>
+              <div class="field-input">&nbsp;</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Horizontal Alignment</div>
+              <div class="field-input dropdown">&lt;not set&gt;</div>
+            </div>
+            <div class="field">
+              <div class="field-label">Vertical Alignment</div>
+              <div class="field-input dropdown">&lt;not set&gt;</div>
+            </div>
+          </div>
+          <div class="dialog-footer">
+            <div class="btn btn-secondary">Cancel</div>
+            <div class="btn btn-primary">OK</div>
+          </div>
+        </div>
+
+        <div class="connector">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="5" x2="12" y2="19"/>
+            <polyline points="19 12 12 19 5 12"/>
+          </svg>
+        </div>
+
+        <table class="mini-table">
+          <tbody>
+            <tr class="group-header"><td colspan="2">{{c2_group1}}</td></tr>
+            <tr><td>{{c2_r1_name}}</td><td>{{c2_r1_role}}</td></tr>
+            <tr class="group-header"><td colspan="2">{{c2_group2}}</td></tr>
+            <tr><td>{{c2_r2_name}}</td><td>{{c2_r2_role}}</td></tr>
+            <tr><td>{{c2_r3_name}}</td><td>{{c2_r3_role}}</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="warning">
+      <div class="warning-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </div>
+      <div class="warning-text">{{warning_text}}</div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

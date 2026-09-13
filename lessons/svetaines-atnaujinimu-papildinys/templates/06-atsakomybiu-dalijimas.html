@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--c-text-muted);
+    text-align: center;
+    margin-top: -32px;
+    margin-bottom: 56px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---- Comparison table ---- */
+  .table-wrap {
+    max-width: 1180px;
+    margin: 0 auto 40px auto;
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.05);
+  }
+
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table th, .table td {
+    padding: 18px 28px;
+    text-align: left;
+    vertical-align: middle;
+  }
+
+  /* Header row */
+  .table thead th {
+    background: var(--c-surface-alt);
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--c-text-faint);
+  }
+
+  .table th.col-school,
+  .table th.col-cleverphant {
+    text-align: center;
+    width: 240px;
+  }
+
+  .table th.col-school {
+    color: var(--c-text-muted);
+  }
+
+  .table th.col-cleverphant {
+    color: var(--c-blue-text-vivid);
+  }
+
+  /* Body rows */
+  .table tbody tr {
+    border-top: 1px solid var(--c-border);
+  }
+
+  .table tbody td.q-cell {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--c-text);
+  }
+
+  .table tbody td.answer {
+    text-align: center;
+  }
+
+  /* Mark badges (Ne / Taip) */
+  .mark {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .mark.no {
+    background: var(--c-surface-alt);
+    color: var(--c-text-muted);
+    border: 1px solid var(--c-border);
+  }
+
+  .mark.no svg {
+    width: 14px;
+    height: 14px;
+    color: var(--c-text-faint);
+  }
+
+  .mark.yes {
+    background: var(--c-blue-bg);
+    color: var(--c-blue-text);
+    border: 1px solid var(--c-blue-border);
+  }
+
+  .mark.yes svg {
+    width: 14px;
+    height: 14px;
+    color: var(--c-blue-solid);
+  }
+
+  /* Bottom row highlight (school totals) */
+  .table tfoot td {
+    background: var(--c-blue-bg);
+    border-top: 2px solid var(--c-blue-border);
+  }
+
+  .table tfoot td.q-cell {
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--c-blue-text);
+  }
+
+  /* ---- Bottom summary banner ---- */
+  .summary {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-radius: 18px;
+    padding: 22px 32px;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  .summary-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .summary-icon svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .summary-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .summary-label {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: var(--c-blue-text-vivid);
+  }
+
+  .summary-text {
+    font-size: 19px;
+    font-weight: 500;
+    color: var(--c-text-secondary);
+    line-height: 1.4;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="subtitle">{{subtitle}}</div>
+
+    <div class="table-wrap">
+      <table class="table">
+        <thead>
+          <tr>
+            <th class="col-q">{{col_question}}</th>
+            <th class="col-school">{{col_school}}</th>
+            <th class="col-cleverphant">{{col_cleverphant}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="q-cell">{{q1}}</td>
+            <td class="answer">
+              <span class="mark no">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="6" y1="6" x2="18" y2="18"/>
+                  <line x1="18" y1="6" x2="6" y2="18"/>
+                </svg>
+                {{school_answer}}
+              </span>
+            </td>
+            <td class="answer">
+              <span class="mark yes">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                {{cleverphant_answer}}
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td class="q-cell">{{q2}}</td>
+            <td class="answer">
+              <span class="mark no">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="6" y1="6" x2="18" y2="18"/>
+                  <line x1="18" y1="6" x2="6" y2="18"/>
+                </svg>
+                {{school_answer}}
+              </span>
+            </td>
+            <td class="answer">
+              <span class="mark yes">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                {{cleverphant_answer}}
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td class="q-cell">{{q3}}</td>
+            <td class="answer">
+              <span class="mark no">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="6" y1="6" x2="18" y2="18"/>
+                  <line x1="18" y1="6" x2="6" y2="18"/>
+                </svg>
+                {{school_answer}}
+              </span>
+            </td>
+            <td class="answer">
+              <span class="mark yes">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                {{cleverphant_answer}}
+              </span>
+            </td>
+          </tr>
+          <tr>
+            <td class="q-cell">{{q4}}</td>
+            <td class="answer">
+              <span class="mark no">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="6" y1="6" x2="18" y2="18"/>
+                  <line x1="18" y1="6" x2="6" y2="18"/>
+                </svg>
+                {{school_answer}}
+              </span>
+            </td>
+            <td class="answer">
+              <span class="mark yes">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"/>
+                </svg>
+                {{cleverphant_answer}}
+              </span>
+            </td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td class="q-cell">{{summary_label}}</td>
+            <td class="answer" colspan="2" style="text-align: center; font-size: 22px; font-weight: 700; color: var(--c-blue-text-vivid);">{{summary_value}}</td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+
+    <div class="summary">
+      <div class="summary-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+      </div>
+      <div class="summary-content">
+        <div class="summary-text">{{summary_text}}</div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

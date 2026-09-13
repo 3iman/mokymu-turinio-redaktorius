@@ -117,9 +117,50 @@ const COMMON_CSS = `
     100% { background: rgba(59,130,246,0); box-shadow: 0 0 0 0 rgba(59,130,246,0); }
   }
 
+
+
+  /* Kryptingi atsiradimai — kryptis seka turinio logiką, ne įprotį */
+  @keyframes slinktisIsKaires {
+    from { opacity: 0; transform: translateX(-30px) scale(0.985); }
+    to   { opacity: 1; transform: translateX(0) scale(1); }
+  }
+  @keyframes slinktisIsDesines {
+    from { opacity: 0; transform: translateX(30px) scale(0.985); }
+    to   { opacity: 1; transform: translateX(0) scale(1); }
+  }
+  /* Augimas — kai elementas yra atsakymas, ne dar vienas punktas */
+  @keyframes issiskleidzia {
+    from { opacity: 0; transform: scale(0.94); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+  /* Rodyklė nubrėžiama, o ne atsiranda */
+  @keyframes rodyklePiesiama {
+    from { opacity: 0; clip-path: inset(0 100% 0 0); }
+    to   { opacity: 1; clip-path: inset(0 0 0 0); }
+  }
+
+  /* Žiedas ryškėja — akcentas, ne atsiradimas (ANIMATION_PRINCIPLES §11) */
+  @keyframes ziedasRyskeja {
+    from { border-color: transparent; }
+    to   { border-color: #dc2626; }
+  }
+  @keyframes ziedasZalias {
+    from { border-color: transparent; }
+    to   { border-color: #16a34a; }
+  }
+
+
+  /* Lėtas kortelės dreifas — kadras kvėpuoja, o ne sustingsta.
+     Trukmė paimama iš --klipo-trukme, tad dreifas tęsiasi visą klipą. */
+  @keyframes kortelesDreifas {
+    from { transform: scale(1) translateY(0); }
+    to   { transform: scale(1.018) translateY(-6px); }
+  }
+
   /* ---- STAGING: scene visible from start ---- */
   .card {
     opacity: 1 !important;
+    animation: kortelesDreifas var(--klipo-trukme, 6s) linear 0s forwards !important;
   }
   .card::before {
     opacity: 0.37 !important; /* watermark always visible */
@@ -131,6 +172,183 @@ const COMMON_CSS = `
 // Timing follows ANIMATION_PRINCIPLES.md sequence.
 
 const TEMPLATE_ANIMATIONS = {
+
+  // ============================================================
+  // Slapukų atitiktis — ANIMATION_PRINCIPLES.md seka
+  // Scena: kortelė + watermark matomi nuo pradžių. Aktoriai: title → lead → turinys → foot
+  // ============================================================
+
+  // Viršelis: klausimas atsiranda pirmas, atsakymo teiginiai — po vieną
+  '00-virselis': `
+    .card > .title, .card > .lead, .card > .cols, .card > .foot { opacity: 0; }
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+    .card > .lead  { animation: fadeUpLight 0.4s var(--ease-spring) 0.35s forwards; }
+    .card > .cols  { animation: fadeIn 0.01s linear 0.99s forwards; }
+
+    .cols > .col { opacity: 0; }
+    .cols > .col:nth-child(1) { animation: slinktisIsKaires 0.55s var(--ease-spring) 1.0s forwards; }
+    .cols > .col:nth-child(2) { animation: issiskleidzia 0.55s var(--ease-spring) 1.9s forwards; }
+
+    .col .zenklas, .col .kl-txt, .col .ats-item { opacity: 0; }
+    .kl .zenklas  { animation: fadeUpLight 0.35s var(--ease-spring) 1.25s forwards; }
+    .kl .kl-txt   { animation: fadeUpLight 0.35s var(--ease-spring) 1.45s forwards; }
+    .col-do .zenklas { animation: fadeUpLight 0.35s var(--ease-spring) 2.15s forwards; }
+    .col-do .ats-item:nth-child(2) { animation: fadeUpLight 0.35s var(--ease-spring) 2.4s forwards; }
+    .col-do .ats-item:nth-child(3) { animation: fadeUpLight 0.35s var(--ease-spring) 2.6s forwards; }
+    .col-do .ats-item:nth-child(4) { animation: fadeUpLight 0.35s var(--ease-spring) 2.8s forwards; }
+
+    .card > .foot { animation: fadeUpMedium 0.5s var(--ease-spring) 3.9s forwards; }
+    .card > .brand-bar { opacity: 0 !important; }
+  `,
+
+  // Grandinė: trys žingsniai su rodyklėmis tarp jų
+  '01-is-kur-ateina-klausimas': `
+    .card > .title, .card > .steps, .card > .foot { opacity: 0; }
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+    .card > .steps { animation: fadeIn 0.01s linear 0.69s forwards; }
+
+    .steps > .step, .steps > .arrow { opacity: 0; }
+    .steps > .step:nth-child(1) { animation: slinktisIsKaires 0.5s var(--ease-spring) 0.7s forwards; }
+    .steps > .step:nth-child(1) .step-num { animation: iconPulse 0.5s var(--ease-soft) 1.2s forwards; }
+    .steps > .arrow:nth-child(2)  { animation: rodyklePiesiama 0.45s var(--ease-spring) 1.35s forwards; }
+    .steps > .step:nth-child(3) { animation: slinktisIsKaires 0.5s var(--ease-spring) 1.8s forwards; }
+    .steps > .step:nth-child(3) .step-num { animation: iconPulse 0.5s var(--ease-soft) 2.3s forwards; }
+    .steps > .arrow:nth-child(4)  { animation: rodyklePiesiama 0.45s var(--ease-spring) 2.45s forwards; }
+    .steps > .step:nth-child(5) { animation: slinktisIsKaires 0.5s var(--ease-spring) 2.9s forwards; }
+    .steps > .step:nth-child(5) .step-num { animation: iconPulse 0.5s var(--ease-soft) 3.4s forwards; }
+
+    .card > .foot { animation: fadeUpMedium 0.5s var(--ease-spring) 3.9s forwards; }
+    .card > .brand-bar { opacity: 0 !important; }
+  `,
+
+  // Tas pats žingsnių karkasas
+  '07-vienas-taisymas': `
+    .card > .title, .card > .steps, .card > .foot { opacity: 0; }
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+    .card > .steps { animation: fadeIn 0.01s linear 0.69s forwards; }
+
+    .steps > .step, .steps > .arrow { opacity: 0; }
+    .steps > .step:nth-child(1) { animation: slinktisIsKaires 0.5s var(--ease-spring) 0.7s forwards; }
+    .steps > .step:nth-child(1) .step-num { animation: iconPulse 0.5s var(--ease-soft) 1.2s forwards; }
+    .steps > .arrow:nth-child(2)  { animation: rodyklePiesiama 0.45s var(--ease-spring) 1.35s forwards; }
+    .steps > .step:nth-child(3) { animation: slinktisIsKaires 0.5s var(--ease-spring) 1.8s forwards; }
+    .steps > .step:nth-child(3) .step-num { animation: iconPulse 0.5s var(--ease-soft) 2.3s forwards; }
+    .steps > .arrow:nth-child(4)  { animation: rodyklePiesiama 0.45s var(--ease-spring) 2.45s forwards; }
+    .steps > .step:nth-child(5) { animation: slinktisIsKaires 0.5s var(--ease-spring) 2.9s forwards; }
+    .steps > .step:nth-child(5) .step-num { animation: iconPulse 0.5s var(--ease-soft) 3.4s forwards; }
+
+    .card > .foot { animation: fadeUpMedium 0.5s var(--ease-spring) 3.9s forwards; }
+    .card > .brand-bar { opacity: 0 !important; }
+  `,
+
+  // Modulis → svetainės: šaltinis pirmas, tada rodyklė, tada svetainės po vieną
+  '02-tas-pats-modulis': `
+    .card > .title, .card > .srautas, .card > .foot { opacity: 0; }
+    .card > .title   { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+    .card > .srautas { animation: fadeIn 0.01s linear 0.69s forwards; }
+
+    .srautas > .core, .srautas > .arrow, .sites > .site { opacity: 0; }
+    .srautas > .core  { animation: slinktisIsKaires 0.55s var(--ease-spring) 0.7s forwards; }
+    .srautas > .arrow { animation: rodyklePiesiama 0.45s var(--ease-spring) 1.45s forwards; }
+
+    .sites > .site:nth-child(1) { animation: slinktisIsDesines 0.4s var(--ease-spring) 1.95s forwards; }
+    .sites > .site:nth-child(2) { animation: slinktisIsDesines 0.4s var(--ease-spring) 2.12s forwards; }
+    .sites > .site:nth-child(3) { animation: slinktisIsDesines 0.4s var(--ease-spring) 2.29s forwards; }
+    .sites > .site:nth-child(4) { animation: slinktisIsDesines 0.4s var(--ease-spring) 2.5s forwards; }
+    .sites > .site:nth-child(5) { animation: slinktisIsDesines 0.4s var(--ease-spring) 2.67s forwards; }
+    .sites > .site:nth-child(6) { animation: slinktisIsDesines 0.4s var(--ease-spring) 2.84s forwards; }
+
+    .card > .foot { animation: fadeUpMedium 0.5s var(--ease-spring) 3.9s forwards; }
+    .card > .brand-bar { opacity: 0 !important; }
+  `,
+
+  // Poraštė: pirma visa poraštė, tada žiedas, paskiausiai rodyklė — akis vedama
+  '03-kur-rasti-nuoroda': `
+    .card > .title, .card > .lead, .card > .fm, .card > .foot { opacity: 0; }
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+    .card > .lead  { animation: fadeUpLight 0.4s var(--ease-spring) 0.35s forwards; }
+    .card > .fm    { animation: issiskleidzia 0.6s var(--ease-spring) 1.0s forwards; }
+
+    .fm .fm-target { border-color: transparent; }
+    .fm .fm-target {
+      animation: ziedasRyskeja 0.6s var(--ease-spring) 2.3s forwards;
+    }
+    .fm .fm-arrow { opacity: 0; animation: fadeUpLight 0.4s var(--ease-spring) 2.9s forwards; }
+
+    .card > .foot { animation: fadeUpMedium 0.5s var(--ease-spring) 3.9s forwards; }
+    .card > .brand-bar { opacity: 0 !important; }
+  `,
+
+  // Palyginimas: klaida kairėje, tada teisinga dešinėje, vidus po vieną
+  '04-pirma-karta-nepazymeta': `
+    .card > .title, .card > .lead, .card > .cols, .card > .foot { opacity: 0; }
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+    .card > .lead  { animation: fadeUpLight 0.4s var(--ease-spring) 0.35s forwards; }
+    .card > .cols  { animation: fadeIn 0.01s linear 0.99s forwards; }
+
+    .cols > .col { opacity: 0; }
+    .cols > .col:nth-child(1) { animation: slinktisIsKaires 0.55s var(--ease-spring) 1.0s forwards; }
+    .cols > .col:nth-child(2) { animation: slinktisIsDesines 0.55s var(--ease-spring) 2.2s forwards; }
+
+    .col .col-icon { animation: iconPulse 0.5s var(--ease-soft) 1.5s forwards; }
+    .col-do .col-icon { animation: iconPulse 0.5s var(--ease-soft) 2.6s forwards; }
+
+    .col .eil, .col .klaus { opacity: 0; }
+    .col-dont .eil:nth-child(1) { animation: fadeUpLight 0.35s var(--ease-spring) 1.45s forwards; }
+    .col-dont .eil:nth-child(2) { animation: fadeUpLight 0.35s var(--ease-spring) 1.65s forwards; }
+    .col-do .klaus              { animation: fadeUpLight 0.35s var(--ease-spring) 2.55s forwards; }
+    .col-do .eil:nth-child(2)   { animation: fadeUpLight 0.35s var(--ease-spring) 2.8s forwards; }
+    .col-do .eil:nth-child(3)   { animation: fadeUpLight 0.35s var(--ease-spring) 3.0s forwards; }
+
+    .card > .foot { animation: fadeUpMedium 0.5s var(--ease-spring) 4.0s forwards; }
+    .card > .brand-bar { opacity: 0 !important; }
+  `,
+
+  // Mygtukai: klaida, tada tikra juosta, žiedas apie porą paskutinis
+  '05-mygtukai-vienodi': `
+    .card > .title, .card > .lead, .card > .cols, .card > .foot { opacity: 0; }
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+    .card > .lead  { animation: fadeUpLight 0.4s var(--ease-spring) 0.35s forwards; }
+    .card > .cols  { animation: fadeIn 0.01s linear 0.99s forwards; }
+
+    .cols > .col { opacity: 0; }
+    .cols > .col:nth-child(1) { animation: slinktisIsKaires 0.55s var(--ease-spring) 1.0s forwards; }
+    .cols > .col:nth-child(2) { animation: slinktisIsDesines 0.55s var(--ease-spring) 2.2s forwards; }
+
+    .col-dont .col-icon { animation: iconPulse 0.5s var(--ease-soft) 1.5s forwards; }
+    .col-do .col-icon   { animation: iconPulse 0.5s var(--ease-soft) 2.6s forwards; }
+
+    .juosta > .mb, .juosta > .pora, .juosta > .m-yes, .juosta > .m-no { opacity: 0; }
+    .col-dont .juosta > .m-yes { animation: fadeUpLight 0.35s var(--ease-spring) 1.45s forwards; }
+    .col-dont .juosta > .m-no  { animation: fadeUpLight 0.35s var(--ease-spring) 1.65s forwards; }
+    .col-do .juosta > .mb      { animation: fadeUpLight 0.35s var(--ease-spring) 2.55s forwards; }
+    .col-do .juosta > .pora    { animation: fadeUpLight 0.35s var(--ease-spring) 2.75s forwards; }
+
+    .col-do .pora { border-color: transparent; }
+    .col-do .pora { animation: fadeUpLight 0.35s var(--ease-spring) 2.75s forwards,
+                               ziedasZalias 0.6s var(--ease-spring) 3.4s forwards; }
+
+    .card > .foot { animation: fadeUpMedium 0.5s var(--ease-spring) 4.2s forwards; }
+    .card > .brand-bar { opacity: 0 !important; }
+  `,
+
+  // Lentelė: antraštė, tada eilutės po vieną — kaip skaitymas
+  '06-ka-renka': `
+    .card > .title, .card > .lead, .card > .lent, .card > .foot { opacity: 0; }
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+    .card > .lead  { animation: fadeUpLight 0.4s var(--ease-spring) 0.35s forwards; }
+    .card > .lent  { animation: fadeIn 0.01s linear 0.99s forwards; }
+
+    .lent > .eil { opacity: 0; }
+    .lent > .eil:nth-child(1) { animation: fadeUpMedium 0.5s var(--ease-spring) 1.0s forwards; }
+    .lent > .eil:nth-child(2) { animation: slinktisIsKaires 0.45s var(--ease-spring) 1.75s forwards; }
+    .lent > .eil:nth-child(3) { animation: slinktisIsKaires 0.45s var(--ease-spring) 2.45s forwards; }
+    .lent > .eil:nth-child(4) { animation: slinktisIsKaires 0.45s var(--ease-spring) 3.15s forwards; }
+
+    .card > .foot { animation: fadeUpMedium 0.5s var(--ease-spring) 4.0s forwards; }
+    .card > .brand-bar { opacity: 0 !important; }
+  `,
+
 
   // ============================================================
   // 00: Comparison — senoji vs naujoji tvarka
@@ -805,6 +1023,260 @@ const TEMPLATE_ANIMATIONS = {
 
     .card > .brand-bar { opacity: 0 !important; }
   `,
+
+  // ============================================================
+  // Lentelių pamoka 01: Įrankio pasirinkimas (2 primary columns + amber fallback)
+  // Sequence: title → subtitle → WYSIWYG column → Sheets column → fallback banner
+  // ============================================================
+  '01-irankio-pasirinkimas': `
+    .card > .title,
+    .card > .subtitle,
+    .card > .primary-row,
+    .card > .fallback-row,
+    .card > .brand-bar { opacity: 0; }
+
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.3s forwards; }
+    .card > .subtitle { animation: fadeIn 0.4s var(--ease-spring) 1.0s forwards; }
+
+    .card > .primary-row { animation: fadeIn 0.01s linear 1.49s forwards; }
+
+    .primary-row > .column-blue {
+      opacity: 0;
+      animation: fadeUpMedium 0.55s var(--ease-spring) 1.5s forwards;
+    }
+    .primary-row > .column-green {
+      opacity: 0;
+      animation: fadeUpMedium 0.55s var(--ease-spring) 2.1s forwards;
+    }
+    .column-blue .icon { animation: iconPulse 0.5s var(--ease-soft) 2.05s forwards; }
+    .column-green .icon { animation: iconPulse 0.5s var(--ease-soft) 2.65s forwards; }
+
+    .card > .fallback-row {
+      animation: fadeUpMedium 0.5s var(--ease-spring) 3.3s forwards;
+    }
+    .fallback-badge { animation: iconPulse 0.5s var(--ease-soft) 3.8s forwards; }
+
+    .card > .brand-bar { opacity: 0 !important; }
+  `,
+
+  // ============================================================
+  // Lentelių pamoka 02: Antraštinė eilutė – 2 cases with dialogs
+  // Sequence: title → subtitle → case1 (left) → case2 (right) → warning
+  // ============================================================
+  '02-antrastine-du-keliai': `
+    .card > .title,
+    .card > .subtitle,
+    .card > .cases-row,
+    .card > .warning,
+    .card > .brand-bar { opacity: 0; }
+
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.3s forwards; }
+    .card > .subtitle { animation: fadeIn 0.4s var(--ease-spring) 1.0s forwards; }
+
+    .card > .cases-row { animation: fadeIn 0.01s linear 1.49s forwards; }
+
+    .cases-row > .case:nth-of-type(1) {
+      opacity: 0;
+      animation: fadeUpMedium 0.55s var(--ease-spring) 1.5s forwards;
+    }
+    .cases-row > .case:nth-of-type(2) {
+      opacity: 0;
+      animation: fadeUpMedium 0.55s var(--ease-spring) 2.6s forwards;
+    }
+
+    .case:nth-of-type(1) .case-badge { animation: iconPulse 0.5s var(--ease-soft) 2.05s forwards; }
+    .case:nth-of-type(2) .case-badge { animation: iconPulse 0.5s var(--ease-soft) 3.15s forwards; }
+
+    .card > .warning {
+      animation: fadeUpMedium 0.5s var(--ease-spring) 4.0s forwards;
+    }
+
+    .card > .brand-bar { opacity: 0 !important; }
+  `,
+
+  // ============================================================
+  // Lentelių pamoka 03: Klastingas simptomas – split svetainėje vs redaktoriuje
+  // Sequence: title → subtitle → left panel → right panel → prevention banner
+  // ============================================================
+  '03-klastingas-simptomas': `
+    .card > .title,
+    .card > .subtitle,
+    .card > .comparison,
+    .card > .prevention,
+    .card > .brand-bar { opacity: 0; }
+
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.3s forwards; }
+    .card > .subtitle { animation: fadeIn 0.4s var(--ease-spring) 1.0s forwards; }
+
+    .card > .comparison { animation: fadeIn 0.01s linear 1.49s forwards; }
+
+    .comparison > *:nth-child(1) {
+      opacity: 0;
+      animation: fadeUpMedium 0.55s var(--ease-spring) 1.5s forwards;
+    }
+    .comparison > *:nth-child(2) {
+      opacity: 0;
+      animation: fadeUpMedium 0.55s var(--ease-spring) 2.6s forwards;
+    }
+
+    .comparison > *:nth-child(1) .panel-badge { animation: iconPulse 0.5s var(--ease-soft) 2.05s forwards; }
+    .comparison > *:nth-child(2) .panel-badge { animation: iconPulse 0.5s var(--ease-soft) 3.15s forwards; }
+
+    .card > .prevention {
+      animation: fadeUpMedium 0.5s var(--ease-spring) 4.0s forwards;
+    }
+
+    .card > .brand-bar { opacity: 0 !important; }
+  `,
+
+  // ============================================================
+  // Lentelių pamoka 04: Kai netelpa – 4 steps + fallback section
+  // Sequence: title → subtitle → 4 steps sequential → divider → fallback section
+  // ============================================================
+  '04-kai-netelpa': `
+    .card > .title,
+    .card > .subtitle,
+    .card > .steps-row,
+    .card > .fallback-divider,
+    .card > .fallback-section,
+    .card > .brand-bar { opacity: 0; }
+
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.3s forwards; }
+    .card > .subtitle { animation: fadeIn 0.4s var(--ease-spring) 1.0s forwards; }
+
+    .card > .steps-row { animation: fadeIn 0.01s linear 1.49s forwards; }
+    .steps-row > .step { opacity: 0; }
+    .steps-row > .step:nth-child(1) { animation: fadeUpMedium 0.45s var(--ease-spring) 1.5s forwards; }
+    .steps-row > .step:nth-child(2) { animation: fadeUpMedium 0.45s var(--ease-spring) 1.85s forwards; }
+    .steps-row > .step:nth-child(3) { animation: fadeUpMedium 0.45s var(--ease-spring) 2.2s forwards; }
+    .steps-row > .step:nth-child(4) { animation: fadeUpMedium 0.45s var(--ease-spring) 2.55s forwards; }
+
+    .step:nth-child(1) .step-num { animation: iconPulse 0.5s var(--ease-soft) 1.95s forwards; }
+    .step:nth-child(2) .step-num { animation: iconPulse 0.5s var(--ease-soft) 2.3s forwards; }
+    .step:nth-child(3) .step-num { animation: iconPulse 0.5s var(--ease-soft) 2.65s forwards; }
+    .step:nth-child(4) .step-num { animation: iconPulse 0.5s var(--ease-soft) 3.0s forwards; }
+
+    .card > .fallback-divider {
+      animation: fadeIn 0.4s var(--ease-soft) 3.4s forwards;
+    }
+    .card > .fallback-section {
+      animation: fadeUpMedium 0.55s var(--ease-spring) 3.8s forwards;
+    }
+    .fallback-badge { animation: iconPulse 0.5s var(--ease-soft) 4.35s forwards; }
+
+    .card > .brand-bar { opacity: 0 !important; }
+  `,
+
+  // ============================================================
+  // Lentelių pamoka 05: Semantikos klaidos – 3 error cards + takeaway
+  // Sequence: title → subtitle → 3 error cards sequential → takeaway
+  // ============================================================
+  '05-semantikos-klaidos': `
+    .card > .title,
+    .card > .subtitle,
+    .card > .errors-row,
+    .card > .takeaway,
+    .card > .brand-bar { opacity: 0; }
+
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.3s forwards; }
+    .card > .subtitle { animation: fadeIn 0.4s var(--ease-spring) 1.0s forwards; }
+
+    .card > .errors-row { animation: fadeIn 0.01s linear 1.49s forwards; }
+    .errors-row > .error-card { opacity: 0; }
+    .errors-row > .error-card:nth-child(1) { animation: fadeUpMedium 0.5s var(--ease-spring) 1.5s forwards; }
+    .errors-row > .error-card:nth-child(2) { animation: fadeUpMedium 0.5s var(--ease-spring) 2.1s forwards; }
+    .errors-row > .error-card:nth-child(3) { animation: fadeUpMedium 0.5s var(--ease-spring) 2.7s forwards; }
+
+    .error-card:nth-child(1) .error-badge { animation: iconPulse 0.5s var(--ease-soft) 2.05s forwards; }
+    .error-card:nth-child(2) .error-badge { animation: iconPulse 0.5s var(--ease-soft) 2.65s forwards; }
+    .error-card:nth-child(3) .error-badge { animation: iconPulse 0.5s var(--ease-soft) 3.25s forwards; }
+
+    .card > .takeaway {
+      animation: fadeUpMedium 0.5s var(--ease-spring) 4.0s forwards;
+    }
+
+    .card > .brand-bar { opacity: 0 !important; }
+  `,
+
+  // ============================================================
+  // Lentelių pamoka 06: Vizualinio pertekliaus klaidos – 2x2 grid + takeaway
+  // Sequence: title → subtitle → 4 error cards sequential (grid) → takeaway
+  // ============================================================
+  '06-vizualinio-pertekliaus-klaidos': `
+    .card > .title,
+    .card > .subtitle,
+    .card > .errors-grid,
+    .card > .takeaway,
+    .card > .brand-bar { opacity: 0; }
+
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.3s forwards; }
+    .card > .subtitle { animation: fadeIn 0.4s var(--ease-spring) 1.0s forwards; }
+
+    .card > .errors-grid { animation: fadeIn 0.01s linear 1.49s forwards; }
+    .errors-grid > .error-card { opacity: 0; }
+    .errors-grid > .error-card:nth-child(1) { animation: fadeUpMedium 0.5s var(--ease-spring) 1.5s forwards; }
+    .errors-grid > .error-card:nth-child(2) { animation: fadeUpMedium 0.5s var(--ease-spring) 1.9s forwards; }
+    .errors-grid > .error-card:nth-child(3) { animation: fadeUpMedium 0.5s var(--ease-spring) 2.3s forwards; }
+    .errors-grid > .error-card:nth-child(4) { animation: fadeUpMedium 0.5s var(--ease-spring) 2.7s forwards; }
+
+    .error-card:nth-child(1) .error-badge { animation: iconPulse 0.5s var(--ease-soft) 2.0s forwards; }
+    .error-card:nth-child(2) .error-badge { animation: iconPulse 0.5s var(--ease-soft) 2.4s forwards; }
+    .error-card:nth-child(3) .error-badge { animation: iconPulse 0.5s var(--ease-soft) 2.8s forwards; }
+    .error-card:nth-child(4) .error-badge { animation: iconPulse 0.5s var(--ease-soft) 3.2s forwards; }
+
+    .card > .takeaway {
+      animation: fadeUpMedium 0.5s var(--ease-spring) 4.0s forwards;
+    }
+
+    .card > .brand-bar { opacity: 0 !important; }
+  `,
+
+  // ============================================================
+  // Lentelių pamoka 07: Panašumas su Word – split comparison + connector + takeaway
+  // Sequence: title → subtitle → Word card (left) → connector (mouse+gesture) → CKeditor card (right) → takeaway
+  // ============================================================
+  '07-panasumas-su-word': `
+    .card > .title,
+    .card > .subtitle,
+    .card > .comparison-row,
+    .card > .takeaway,
+    .card > .brand-bar { opacity: 0; }
+
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.3s forwards; }
+    .card > .subtitle { animation: fadeIn 0.4s var(--ease-spring) 1.0s forwards; }
+
+    .card > .comparison-row { animation: fadeIn 0.01s linear 1.49s forwards; }
+
+    .comparison-row > .editor-card.word-card {
+      opacity: 0;
+      animation: fadeUpMedium 0.55s var(--ease-spring) 1.5s forwards;
+    }
+    .editor-card.word-card .context-badge {
+      animation: iconPulse 0.5s var(--ease-soft) 2.05s forwards;
+    }
+
+    .comparison-row > .connector {
+      opacity: 0;
+      animation: fadeUpMedium 0.5s var(--ease-spring) 2.4s forwards;
+    }
+    .connector .click-ripple {
+      animation: iconPulse 0.5s var(--ease-soft) 2.9s forwards;
+    }
+
+    .comparison-row > .editor-card.ck-card {
+      opacity: 0;
+      animation: fadeUpMedium 0.55s var(--ease-spring) 3.0s forwards;
+    }
+    .editor-card.ck-card .context-badge {
+      animation: iconPulse 0.5s var(--ease-soft) 3.55s forwards;
+    }
+
+    .card > .takeaway {
+      animation: fadeUpMedium 0.5s var(--ease-spring) 4.3s forwards;
+    }
+
+    .card > .brand-bar { opacity: 0 !important; }
+  `,
 };
 
 // Fallback generic animation for unknown templates
@@ -828,7 +1300,7 @@ const FALLBACK_CSS = `
 
 // How long to record each clip (seconds)
 const CLIP_DURATION = 6;
-const TRANSITION_DURATION = 2.5; // seconds per transition clip
+const TRANSITION_DURATION = 3.2; // skaitymo laikas: pavadinimas laikomas ~2.1 s prieš išnykstant
 const FPS = 30;
 const WIDTH = 1920;
 const HEIGHT = 1080;
@@ -846,9 +1318,10 @@ function parseScenarioOrder() {
     if (m) {
       const kadrasNum = parseInt(m[1]);
       const title = m[2].trim();
+      const sek = parseInt(m[3]);
       const fileName = m[4].trim().replace(/\.(mp4|png)$/, '');
       if (kadrasNum === 0 || fileName.includes('intro') || fileName.includes('autro')) continue;
-      order.push({ kadrasNum, title, fileName });
+      order.push({ kadrasNum, title, fileName, sek });
     }
   }
   return order.length > 0 ? order : null;
@@ -879,6 +1352,10 @@ const NUMBER_OVERLAY_CSS = `
 // ---- Transition C HTML generator ----
 function buildTransitionHtml(number, title) {
   const num = String(number).padStart(2, '0');
+  // Kryptis kaitaliojasi: nelyginis kadras brėžia iš kairės, lyginis — iš dešinės.
+  const isKaires = number % 2 === 1;
+  const kilme = isKaires ? 'left center' : 'right center';
+  const gradKryptis = isKaires ? '90deg' : '270deg';
   return `<!DOCTYPE html>
 <html><head><meta charset="UTF-8"><style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -886,32 +1363,44 @@ function buildTransitionHtml(number, title) {
     width: ${WIDTH}px; height: ${HEIGHT}px;
     overflow: hidden;
     font-family: 'Inter', -apple-system, sans-serif;
-    background: #f0f2f5;
+    /* ⛔ Tas pats fonas kaip .card skaidrėje — kitaip pjūvis tarp skirtuko ir skaidrės matomas */
+    background: #f3f4f6;
+  }
+  /* Tas pats vandens ženklas kaip skaidrėje — kad skirtukas ir skaidrė būtų viena erdvė */
+  body::before {
+    content: '';
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1400px; height: 1400px;
+    background: url('../../assets/simbolis_big.png') no-repeat center / contain;
+    opacity: 0.37;
+    pointer-events: none;
   }
   .line-sweep {
     position: absolute; top: 50%; left: 0;
     width: 100%; height: 3px;
-    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    background: linear-gradient(${gradKryptis}, #3b82f6, #8b5cf6);
     transform: translateY(-50%) scaleX(0);
-    transform-origin: left center;
+    transform-origin: ${kilme};
     animation: lineSweep 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.05s forwards,
-               allFadeOut 0.3s ease 2.1s forwards;
+               allFadeOut 0.4s ease 2.75s forwards;
   }
   .line-trail-1 {
     position: absolute; top: calc(50% - 20px); left: 0;
     width: 100%; height: 1px;
-    background: linear-gradient(90deg, transparent 0%, rgba(59,130,246,0.2) 30%, rgba(139,92,246,0.15) 70%, transparent 100%);
-    transform: scaleX(0); transform-origin: left center;
+    background: linear-gradient(${gradKryptis}, transparent 0%, rgba(59,130,246,0.2) 30%, rgba(139,92,246,0.15) 70%, transparent 100%);
+    transform: scaleX(0); transform-origin: ${kilme};
     animation: lineSweep 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.12s forwards,
-               allFadeOut 0.3s ease 2.1s forwards;
+               allFadeOut 0.4s ease 2.75s forwards;
   }
   .line-trail-2 {
     position: absolute; top: calc(50% + 20px); left: 0;
     width: 100%; height: 1px;
-    background: linear-gradient(90deg, transparent 0%, rgba(59,130,246,0.2) 30%, rgba(139,92,246,0.15) 70%, transparent 100%);
-    transform: scaleX(0); transform-origin: left center;
+    background: linear-gradient(${gradKryptis}, transparent 0%, rgba(59,130,246,0.2) 30%, rgba(139,92,246,0.15) 70%, transparent 100%);
+    transform: scaleX(0); transform-origin: ${kilme};
     animation: lineSweep 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.17s forwards,
-               allFadeOut 0.3s ease 2.1s forwards;
+               allFadeOut 0.4s ease 2.75s forwards;
   }
   .line-number {
     position: absolute; top: 50%; left: 50%;
@@ -919,7 +1408,7 @@ function buildTransitionHtml(number, title) {
     font-size: 120px; font-weight: 800; color: #3b82f6;
     opacity: 0;
     animation: numPop 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards,
-               allFadeOut 0.3s ease 2.1s forwards;
+               allFadeOut 0.4s ease 2.75s forwards;
   }
   .line-title {
     position: absolute; top: calc(50% + 80px); left: 50%;
@@ -927,7 +1416,7 @@ function buildTransitionHtml(number, title) {
     font-size: 28px; font-weight: 600; color: #64748b;
     white-space: nowrap; opacity: 0;
     animation: titleSlide 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.35s forwards,
-               allFadeOut 0.3s ease 2.1s forwards;
+               allFadeOut 0.4s ease 2.75s forwards;
   }
   @keyframes lineSweep {
     to { transform: translateY(-50%) scaleX(1); }
@@ -1009,6 +1498,8 @@ async function main() {
     if (kadrasInfo) {
       fullCSS += NUMBER_OVERLAY_CSS;
     }
+    const klipoTrukme = (kadrasInfo && kadrasInfo.sek) ? kadrasInfo.sek : CLIP_DURATION;
+    fullCSS = `:root { --klipo-trukme: ${klipoTrukme}s; }\n` + fullCSS;
 
     const page = await browser.newPage();
     await page.setViewport({ width: WIDTH, height: HEIGHT, deviceScaleFactor: 1 });
@@ -1037,30 +1528,27 @@ async function main() {
       }, kadrasInfo.kadrasNum);
     }
 
-    // Force replay: reset all animations so they start fresh
+    // ⛔ Determinuotas laikas. Anksčiau kadrai buvo renkami realiu laiku, o CSS animacija
+    // suko savo laikrodį — 4.5 s seka suspausdavo į ~2 s, ir likusios 4 s būdavo stop kadras.
+    // Dabar animacijos pristabdomos ir kiekvienam kadrui nustatomas tikslus currentTime.
     await page.evaluate(() => {
-      document.querySelectorAll('*').forEach(el => {
-        const style = window.getComputedStyle(el);
-        if (style.animationName && style.animationName !== 'none') {
-          el.style.animation = 'none';
-          el.offsetHeight; // force reflow
-          el.style.animation = '';
-        }
-      });
+      document.getAnimations().forEach(a => { a.pause(); a.currentTime = 0; });
     });
 
-    // Capture frames
-    const totalFrames = Math.ceil(CLIP_DURATION * FPS);
+    // Klipo trukmė — iš scenarijaus lentelės, jei ji ten nurodyta
+    const clipSeconds = (kadrasInfo && kadrasInfo.sek) ? kadrasInfo.sek : CLIP_DURATION;
+    const totalFrames = Math.ceil(clipSeconds * FPS);
 
     for (let f = 0; f < totalFrames; f++) {
+      const tMs = (f / FPS) * 1000;
+      await page.evaluate((t) => {
+        document.getAnimations().forEach(a => { a.pause(); a.currentTime = t; });
+      }, tMs);
+
       const framePath = path.join(framesDir, `frame_${String(f).padStart(4, '0')}.png`);
       await page.screenshot({ path: framePath, type: 'png' });
 
-      if (f < totalFrames - 1) {
-        await new Promise(r => setTimeout(r, 1000 / FPS));
-      }
-
-      if ((f + 1) % 15 === 0 || f === totalFrames - 1) {
+      if ((f + 1) % 30 === 0 || f === totalFrames - 1) {
         process.stdout.write(`  ${name}: frame ${f + 1}/${totalFrames}\r`);
       }
     }
@@ -1110,25 +1598,21 @@ async function main() {
       await page.goto('file://' + path.resolve(tmpHtml), { waitUntil: 'networkidle0' });
       await page.evaluateHandle('document.fonts.ready');
 
-      // Force replay
+      // ⛔ Skirtukui galioja tas pats determinuotas laikas kaip ir klipams.
+      // Kol jo nebuvo, numeris su pavadinimu blykstelėdavo per ~0.5 s, o likusį laiką
+      // ekranas būdavo tuščias — žiūrovas nespėdavo perskaityti.
       await page.evaluate(() => {
-        document.querySelectorAll('*').forEach(el => {
-          const style = window.getComputedStyle(el);
-          if (style.animationName && style.animationName !== 'none') {
-            el.style.animation = 'none';
-            el.offsetHeight;
-            el.style.animation = '';
-          }
-        });
+        document.getAnimations().forEach(a => { a.pause(); a.currentTime = 0; });
       });
 
       const totalFrames = Math.ceil(TRANSITION_DURATION * FPS);
       for (let f = 0; f < totalFrames; f++) {
+        const tMs = (f / FPS) * 1000;
+        await page.evaluate((ms) => {
+          document.getAnimations().forEach(a => { a.pause(); a.currentTime = ms; });
+        }, tMs);
         const framePath = path.join(framesDir, `frame_${String(f).padStart(4, '0')}.png`);
         await page.screenshot({ path: framePath, type: 'png' });
-        if (f < totalFrames - 1) {
-          await new Promise(r => setTimeout(r, 1000 / FPS));
-        }
       }
 
       await page.close();

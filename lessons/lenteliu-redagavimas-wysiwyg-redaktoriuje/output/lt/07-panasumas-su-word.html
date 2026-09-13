@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .title {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 10px;
+    letter-spacing: -0.5px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .subtitle {
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--c-text-muted);
+    text-align: center;
+    margin-bottom: 44px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---- Comparison row ---- */
+  .comparison-row {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 28px;
+    align-items: stretch;
+    margin-bottom: 40px;
+  }
+
+  .editor-card {
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-radius: 20px;
+    padding: 26px 28px 30px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  .editor-card.word-card {
+    border-top: 6px solid var(--c-blue-solid);
+  }
+
+  .editor-card.ck-card {
+    border-top: 6px solid var(--c-green-solid);
+  }
+
+  .context-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 5px 12px;
+    border-radius: 12px;
+    align-self: flex-start;
+    margin-bottom: 14px;
+  }
+
+  .badge-blue {
+    background: var(--c-blue-bg);
+    border: 1px solid var(--c-blue-border);
+    color: var(--c-blue-text-vivid);
+  }
+
+  .badge-green {
+    background: var(--c-green-bg);
+    border: 1px solid var(--c-green-border);
+    color: var(--c-green-text-vivid);
+  }
+
+  .app-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--c-text);
+    background: var(--c-surface-alt);
+    border: 1px solid var(--c-border);
+    padding: 6px 12px;
+    border-radius: 8px;
+    align-self: flex-start;
+    margin-bottom: 20px;
+  }
+
+  .app-chip-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    font-size: 12px;
+    color: #ffffff;
+    flex-shrink: 0;
+  }
+
+  .app-chip-icon.word {
+    background: #2B579A;
+  }
+
+  .app-chip-icon.ck {
+    background: var(--c-text);
+  }
+
+  /* ---- Mockup area ---- */
+  .mockup-area {
+    flex: 1;
+    position: relative;
+    background: var(--c-surface-alt);
+    border-radius: 12px;
+    padding: 22px;
+    min-height: 380px;
+    overflow: hidden;
+  }
+
+  .mockup-area-wide {
+    min-height: 460px;
+  }
+
+  /* ---- Demo table (in background) ---- */
+  .demo-table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+    background: #ffffff;
+    border: 1px solid var(--c-border);
+    border-radius: 4px;
+    overflow: hidden;
+    max-width: 280px;
+    margin-bottom: 0;
+    position: relative;
+    z-index: 1;
+  }
+
+  .dt-cell {
+    padding: 10px 8px;
+    font-size: 11px;
+    color: var(--c-text-faint);
+    border-right: 1px solid var(--c-border);
+    border-bottom: 1px solid var(--c-border);
+    background: #ffffff;
+    min-height: 14px;
+  }
+
+  .dt-cell:nth-child(3n) {
+    border-right: none;
+  }
+
+  .dt-cell.dt-head {
+    background: var(--c-surface-alt);
+    color: var(--c-text-muted);
+    font-weight: 600;
+  }
+
+  .dt-cell.dt-clicked {
+    background: var(--c-blue-bg);
+    outline: 2px dashed var(--c-blue-solid);
+    outline-offset: -2px;
+    position: relative;
+  }
+
+  .click-dot {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--c-red-solid);
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 4px rgba(225, 45, 45, 0.18);
+  }
+
+  /* ---- Context menu (shared) ---- */
+  .context-menu {
+    position: absolute;
+    background: #ffffff;
+    border: 1px solid var(--c-border);
+    border-radius: 6px;
+    box-shadow: 0 6px 22px rgba(15, 23, 42, 0.18);
+    padding: 5px 0;
+    font-size: 12.5px;
+    z-index: 5;
+    min-width: 180px;
+  }
+
+  .menu-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 7px 14px 7px 34px;
+    color: var(--c-text);
+    position: relative;
+    white-space: nowrap;
+    justify-content: space-between;
+  }
+
+  .menu-item .mi-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .menu-item .mi-icon {
+    position: absolute;
+    left: 12px;
+    width: 14px;
+    height: 14px;
+    color: var(--c-text-muted);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-item .mi-arrow {
+    color: var(--c-text-muted);
+    font-size: 11px;
+    margin-left: 12px;
+  }
+
+  .menu-item .mi-shortcut {
+    color: var(--c-text-faint);
+    font-size: 11px;
+    font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+    margin-left: 16px;
+  }
+
+  .menu-item.mi-disabled {
+    color: var(--c-text-faint);
+    opacity: 0.5;
+  }
+
+  .menu-item.mi-selected {
+    background: var(--c-blue-solid);
+    color: #ffffff;
+  }
+
+  .menu-item.mi-selected .mi-arrow,
+  .menu-item.mi-selected .mi-shortcut,
+  .menu-item.mi-selected .mi-icon {
+    color: #ffffff;
+  }
+
+  .menu-item.mi-parent-active {
+    background: var(--c-surface-alt);
+  }
+
+  .menu-divider {
+    height: 1px;
+    background: var(--c-border);
+    margin: 4px 8px;
+  }
+
+  /* ---- Word menu placement ---- */
+  .word-menu {
+    top: 90px;
+    left: 110px;
+  }
+
+  /* ---- CK menu placement ---- */
+  .ck-menu {
+    top: 90px;
+    left: 110px;
+    min-width: 200px;
+  }
+
+  .ck-submenu {
+    position: absolute;
+    top: 178px;
+    left: 310px;
+    background: #ffffff;
+    border: 1px solid var(--c-border);
+    border-radius: 6px;
+    box-shadow: 0 6px 22px rgba(15, 23, 42, 0.18);
+    padding: 5px 0;
+    font-size: 12.5px;
+    z-index: 6;
+    min-width: 200px;
+  }
+
+  /* ---- Center connector ---- */
+  .connector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    padding: 0 6px;
+    min-width: 160px;
+  }
+
+  .mouse-wrap {
+    width: 84px;
+    height: 110px;
+    position: relative;
+  }
+
+  .mouse-svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .click-ripple {
+    position: absolute;
+    top: 18px;
+    right: -6px;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: var(--c-red-solid);
+    opacity: 0.9;
+    box-shadow: 0 0 0 6px rgba(225, 45, 45, 0.18), 0 0 0 14px rgba(225, 45, 45, 0.08);
+  }
+
+  .connector-equals {
+    font-size: 42px;
+    font-weight: 700;
+    color: var(--c-text-faint);
+    line-height: 1;
+  }
+
+  .connector-label {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    text-align: center;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .connector-sublabel {
+    font-size: 13px;
+    color: var(--c-text-muted);
+    text-align: center;
+    font-style: italic;
+    max-width: 150px;
+    line-height: 1.35;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Takeaway ---- */
+  .takeaway {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    background: var(--c-surface-alt);
+    border-radius: 14px;
+    padding: 20px 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .takeaway-icon {
+    width: 32px;
+    height: 32px;
+    flex-shrink: 0;
+    color: var(--c-text-secondary);
+  }
+
+  .takeaway-text {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--c-text);
+    text-align: center;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .takeaway-text strong {
+    color: var(--c-blue-text-vivid);
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Lentelės redagavimas — tas pats gestas kaip Word'e</div>
+    <div class="subtitle">Dešinysis pelės klavišas atveria visus svarbiausius veiksmus — ir Word'e, ir turinio redaktoriuje</div>
+
+    <div class="comparison-row">
+      <!-- LEFT: Word -->
+      <div class="editor-card word-card">
+        <div class="context-badge badge-blue">Jūs jau darote</div>
+        <div class="app-chip">
+          <div class="app-chip-icon word">W</div>
+          Word
+        </div>
+
+        <div class="mockup-area">
+          <div class="demo-table">
+            <div class="dt-cell dt-head">A</div>
+            <div class="dt-cell dt-head">B</div>
+            <div class="dt-cell dt-head">C</div>
+            <div class="dt-cell"></div>
+            <div class="dt-cell dt-clicked">
+              <div class="click-dot"></div>
+            </div>
+            <div class="dt-cell"></div>
+            <div class="dt-cell"></div>
+            <div class="dt-cell"></div>
+            <div class="dt-cell"></div>
+          </div>
+
+          <div class="context-menu word-menu">
+            <div class="menu-item">
+              <span class="mi-label">Insert</span>
+              <span class="mi-arrow">▸</span>
+            </div>
+            <div class="menu-item">
+              <span class="mi-label">Delete Cells</span>
+              <span class="mi-arrow">▸</span>
+            </div>
+            <div class="menu-divider"></div>
+            <div class="menu-item">
+              <span class="mi-label">Split Cells</span>
+            </div>
+            <div class="menu-item">
+              <span class="mi-label">Merge Cells</span>
+            </div>
+            <div class="menu-divider"></div>
+            <div class="menu-item">
+              <span class="mi-label">Table Properties</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- CENTER connector -->
+      <div class="connector">
+        <div class="mouse-wrap">
+          <svg class="mouse-svg" viewBox="0 0 84 110" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <!-- mouse body -->
+            <rect x="6" y="6" width="72" height="98" rx="34" ry="34" fill="#ffffff" stroke="var(--c-text)" stroke-width="2.5"/>
+            <!-- vertical split -->
+            <line x1="42" y1="6" x2="42" y2="54" stroke="var(--c-text)" stroke-width="2"/>
+            <!-- horizontal split -->
+            <line x1="6" y1="54" x2="78" y2="54" stroke="var(--c-text)" stroke-width="2"/>
+            <!-- right button highlighted -->
+            <path d="M 42,7 L 58,7 Q 77,7 77,35 L 77,52 L 43,52 Z" fill="var(--c-red-bg)" stroke="var(--c-red-solid)" stroke-width="2"/>
+            <!-- cable hint -->
+            <path d="M 42,6 Q 42,-4 48,-4" stroke="var(--c-text-faint)" stroke-width="1.5" fill="none"/>
+          </svg>
+          <div class="click-ripple"></div>
+        </div>
+
+        <div class="connector-equals">=</div>
+        <div class="connector-label">Tas pats gestas</div>
+        <div class="connector-sublabel">dešinysis pelės klavišas</div>
+      </div>
+
+      <!-- RIGHT: CKeditor -->
+      <div class="editor-card ck-card">
+        <div class="context-badge badge-green">Ir čia veikia</div>
+        <div class="app-chip">
+          <div class="app-chip-icon ck">T</div>
+          Turinio redaktorius
+        </div>
+
+        <div class="mockup-area mockup-area-wide">
+          <div class="demo-table">
+            <div class="dt-cell dt-head">A</div>
+            <div class="dt-cell dt-head">B</div>
+            <div class="dt-cell dt-head">C</div>
+            <div class="dt-cell"></div>
+            <div class="dt-cell dt-clicked">
+              <div class="click-dot"></div>
+            </div>
+            <div class="dt-cell"></div>
+            <div class="dt-cell"></div>
+            <div class="dt-cell"></div>
+            <div class="dt-cell"></div>
+          </div>
+
+          <div class="context-menu ck-menu">
+            <div class="menu-item">
+              <span class="mi-label">Cut</span>
+              <span class="mi-shortcut">⌘X</span>
+            </div>
+            <div class="menu-item">
+              <span class="mi-label">Copy</span>
+              <span class="mi-shortcut">⌘C</span>
+            </div>
+            <div class="menu-item">
+              <span class="mi-label">Paste</span>
+              <span class="mi-shortcut">⌘V</span>
+            </div>
+            <div class="menu-divider"></div>
+            <div class="menu-item">
+              <span class="mi-label">Cell</span>
+              <span class="mi-arrow">▸</span>
+            </div>
+            <div class="menu-item mi-parent-active">
+              <span class="mi-label">Row</span>
+              <span class="mi-arrow">▸</span>
+            </div>
+            <div class="menu-item">
+              <span class="mi-label">Column</span>
+              <span class="mi-arrow">▸</span>
+            </div>
+            <div class="menu-divider"></div>
+            <div class="menu-item">
+              <span class="mi-label">Delete Table</span>
+            </div>
+            <div class="menu-item">
+              <span class="mi-label">Table Properties</span>
+            </div>
+          </div>
+
+          <div class="ck-submenu">
+            <div class="menu-item">
+              <span class="mi-label">Insert Row Before</span>
+            </div>
+            <div class="menu-item mi-selected">
+              <span class="mi-label">Insert Row After</span>
+            </div>
+            <div class="menu-item">
+              <span class="mi-label">Delete Row</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bottom takeaway -->
+    <div class="takeaway">
+      <svg class="takeaway-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="9"/>
+        <path d="M9 12l2 2 4-4"/>
+      </svg>
+      <div class="takeaway-text">Paspaudus dešinį pelės klavišą ant celės — visi svarbiausi veiksmai pasiekiami</div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

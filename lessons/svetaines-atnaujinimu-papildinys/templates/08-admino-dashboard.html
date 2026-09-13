@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--c-text-muted);
+    text-align: center;
+    margin-top: -32px;
+    margin-bottom: 56px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---- Big stats row ---- */
+  .stats {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    gap: 32px;
+    max-width: 1280px;
+    margin: 0 auto 32px auto;
+  }
+
+  .stat {
+    flex: 1;
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-radius: 22px;
+    padding: 36px 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+    border-top: 6px solid var(--c-blue-solid);
+    position: relative;
+  }
+
+  .stat.stat-secondary {
+    border-top-color: var(--c-text-faint);
+  }
+
+  .stat-icon {
+    position: absolute;
+    top: 32px;
+    right: 36px;
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: var(--c-blue-bg);
+    color: var(--c-blue-text-vivid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .stat.stat-secondary .stat-icon {
+    background: var(--c-surface-alt);
+    color: var(--c-text-faint);
+  }
+
+  .stat-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .stat-value {
+    font-size: 96px;
+    font-weight: 800;
+    color: var(--c-text);
+    line-height: 1;
+    letter-spacing: -2px;
+  }
+
+  .stat.stat-primary .stat-value {
+    color: var(--c-blue-text-vivid);
+  }
+
+  .stat-label {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--c-text);
+    line-height: 1.25;
+    margin-top: 14px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .stat-hint {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--c-text-muted);
+    line-height: 1.4;
+  }
+
+  /* ---- Archive card ---- */
+  .archive {
+    max-width: 1280px;
+    margin: 0 auto;
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-radius: 22px;
+    padding: 28px 36px 22px 36px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+  }
+
+  .archive-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 1px solid var(--c-border);
+    margin-bottom: 8px;
+  }
+
+  .archive-title {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--c-text);
+  }
+
+  .archive-title svg {
+    width: 22px;
+    height: 22px;
+    color: var(--c-blue-text-vivid);
+  }
+
+  .archive-meta {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--c-text-faint);
+  }
+
+  .archive-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .archive-row {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--c-border-soft);
+  }
+
+  .archive-row:last-child {
+    border-bottom: none;
+  }
+
+  .archive-date {
+    flex-shrink: 0;
+    width: 130px;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--c-blue-text-vivid);
+    font-variant-numeric: tabular-nums;
+  }
+
+  .archive-summary {
+    flex: 1;
+    font-size: 15px;
+    font-weight: 500;
+    color: var(--c-text-secondary);
+    line-height: 1.4;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .archive-action {
+    flex-shrink: 0;
+    color: var(--c-text-faint);
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .archive-action svg {
+    width: 12px;
+    height: 12px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="subtitle">{{subtitle}}</div>
+
+    <!-- Big stats -->
+    <div class="stats">
+      <div class="stat stat-primary">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="9" cy="7" r="4"/>
+            <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+            <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+          </svg>
+        </div>
+        <div class="stat-value">{{stat1_value}}</div>
+        <div class="stat-label">{{stat1_label}}</div>
+        <div class="stat-hint">{{stat1_hint}}</div>
+      </div>
+
+      <div class="stat stat-secondary">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+            <circle cx="8.5" cy="7" r="4"/>
+            <line x1="18" y1="8" x2="23" y2="13"/>
+            <line x1="23" y1="8" x2="18" y2="13"/>
+          </svg>
+        </div>
+        <div class="stat-value">{{stat2_value}}</div>
+        <div class="stat-label">{{stat2_label}}</div>
+        <div class="stat-hint">{{stat2_hint}}</div>
+      </div>
+    </div>
+
+    <!-- Archive list -->
+    <div class="archive">
+      <div class="archive-header">
+        <div class="archive-title">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="21 8 21 21 3 21 3 8"/>
+            <rect x="1" y="3" width="22" height="5"/>
+            <line x1="10" y1="12" x2="14" y2="12"/>
+          </svg>
+          {{archive_label}}
+        </div>
+        <div class="archive-meta">{{archive_meta}}</div>
+      </div>
+
+      <div class="archive-list">
+        <div class="archive-row">
+          <div class="archive-date">{{a1_date}}</div>
+          <div class="archive-summary">{{a1_summary}}</div>
+          <div class="archive-action">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            Peržiūrėti
+          </div>
+        </div>
+        <div class="archive-row">
+          <div class="archive-date">{{a2_date}}</div>
+          <div class="archive-summary">{{a2_summary}}</div>
+          <div class="archive-action">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            Peržiūrėti
+          </div>
+        </div>
+        <div class="archive-row">
+          <div class="archive-date">{{a3_date}}</div>
+          <div class="archive-summary">{{a3_summary}}</div>
+          <div class="archive-action">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            Peržiūrėti
+          </div>
+        </div>
+        <div class="archive-row">
+          <div class="archive-date">{{a4_date}}</div>
+          <div class="archive-summary">{{a4_summary}}</div>
+          <div class="archive-action">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            Peržiūrėti
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

@@ -15,6 +15,42 @@
 - Viena iliustracija neturi prieštarauti kitai
 - Spalvos ir stilius turi derėti tarpusavyje per visą seriją
 
+### Personažų nuoseklumas per seriją
+Kai pamokoje per kelias iliustracijas rodomi tie patys lentelės duomenys (pvz., Mokytojų sąrašas), naudoti **tą patį personažų rinkinį** visose iliustracijose. Pavyzdys iš Lentelių redagavimo pamokos:
+
+| Vardas, pavardė | Pareigos įstaigoje |
+|---|---|
+| Jolanta Kazlauskienė | Lietuvių kalbos mokytoja |
+| Rasa Petraitienė | Matematikos mokytoja |
+| Mindaugas Petraitis | Istorijos mokytojas |
+| Domas Jonaitis | Fizinio ugdymo mokytojas |
+| Jūratė Mikalauskienė | Anglų kalbos mokytoja |
+
+Jei iliustracija rodo trumpesnę lentelę (pvz., 3 eilutes), imti pirmas tris iš rinkinio, ne kurti naujų vardų. Trumpintos versijos (pvz., „Jolanta K.") atitinka pilną vardą.
+
+## Lentelių struktūros konvencijos
+
+### Du TH iš eilės nebūna
+- Lentelė turi **vieną eilę stulpelinių antraščių** (TH)
+- Grupinės antraštės (pvz., „Mokytojai", „Tėvai") eina kaip **`<tr>` su `<td colspan="N">`**, ne kaip antros eilės TH
+- Dvi eilės TH iš eilės vizualiai susilieja net jei spalvos skiriasi — skaitytojas nesupranta struktūros
+- Grupinės antraštės atskiriamos viena nuo kitos **duomenų eilutėmis**, ne kitais grupiniais TH
+
+### Grupinių antraščių spalva
+Ta pati kaip TH (`--c-blue-solid` pagal nutylėjimą). Ne darker navy, ne kontrastinė — užtenka `colspan` + padding, kad vizualiai atskirtų nuo duomenų eilučių.
+
+### Colspan'o naudojimas
+- **Grupinėms antraštėms:** `<tr><td colspan="N">Mokytojai</td></tr>`
+- **Tuščių eilučių antipaternų** demonstracijai — rodom su `colspan` ir raudonu fonu, bet **tik kaip KLAIDOS pavyzdį**, niekada kaip teisingą praktiką
+
+### TH be uppercase
+Lentelių antraštės ir grupinės antraštės rašomos **natūraliu registru**, ne uppercase. Pilna taisyklė: `memory/project_table_headers_no_uppercase.md`. Išimtis — smulkios dekoratyvios etiketės (badges) kortelių viršuje, pvz., „KRAŠTUTINIS ATVEJIS", „ATVEJIS 1" — jos **gali** būti uppercase, nes nėra lentelės antraštės.
+
+### Stulpelių pavadinimų konvencija personalo sąrašuose
+- „Vardas, pavardė" (ne „Pavardė, vardas", ne „Vardas ir pavardė")
+- „Pareigos įstaigoje" (ne „Dalykas") — pilna taisyklė: `memory/project_pareigos_istaigoje_format.md`
+- „Eil. Nr." (su tarpu po taško) — numeruotam stulpeliui
+
 ## Auditorijos kalba
 - Auditorija — **lietuviškai kalbantys** žmonės, dažnai ne IT specialistai
 - Google Sheets sąsajos elementai rodomi **lietuviškai** (taip, kaip vartotojas mato savo ekrane):

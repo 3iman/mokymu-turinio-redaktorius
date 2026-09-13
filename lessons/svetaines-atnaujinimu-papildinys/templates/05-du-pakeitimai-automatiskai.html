@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--c-text-muted);
+    text-align: center;
+    margin-top: -32px;
+    margin-bottom: 56px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---- Items list ---- */
+  .items {
+    max-width: 1180px;
+    margin: 0 auto 44px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+  }
+
+  .item {
+    display: flex;
+    align-items: stretch;
+    gap: 28px;
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-green-border);
+    border-left: 6px solid var(--c-green-solid);
+    border-radius: 18px;
+    padding: 28px 36px;
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+  }
+
+  .item-check {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-top: 6px;
+  }
+
+  .item-check svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .item-body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    justify-content: center;
+  }
+
+  .item-tag {
+    display: inline-flex;
+    align-self: flex-start;
+    background: var(--c-green-bg);
+    color: var(--c-green-text);
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-bottom: 4px;
+  }
+
+  .item-title {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--c-text);
+    line-height: 1.2;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .item-where {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--c-blue-text-vivid);
+  }
+
+  .item-desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--c-text-secondary);
+    line-height: 1.5;
+    margin-top: 4px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Visual mockups ---- */
+  .item-visual {
+    width: 320px;
+    flex-shrink: 0;
+    background: var(--c-bg);
+    border: 1.5px solid var(--c-border);
+    border-radius: 12px;
+    padding: 18px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  /* Form mockup (item 1) */
+  .form-mock {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .form-mock-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--c-green-text);
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+  }
+
+  .form-mock-label svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  .form-mock-input-row {
+    display: flex;
+    gap: 8px;
+  }
+
+  .form-mock-input {
+    flex: 1;
+    height: 36px;
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+    font-size: 12px;
+    color: var(--c-text-faint);
+    min-width: 0;
+  }
+
+  .form-mock-button {
+    background: var(--c-green-solid);
+    color: white;
+    border-radius: 6px;
+    padding: 0 14px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+
+  .form-mock-button svg {
+    width: 12px;
+    height: 12px;
+  }
+
+  /* Checkbox mockup (item 2) */
+  .checkbox-mock {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 8px 4px;
+    position: relative;
+  }
+
+  .checkbox-box {
+    width: 28px;
+    height: 28px;
+    border-radius: 6px;
+    background: var(--c-green-solid);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 0 0 4px var(--c-green-bg);
+    position: relative;
+  }
+
+  .checkbox-box::after {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    border: 2px dashed var(--c-green-solid);
+    border-radius: 12px;
+    opacity: 0.6;
+  }
+
+  .checkbox-box svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  /* "click" pointer indicator next to checkbox */
+  .checkbox-pointer {
+    position: absolute;
+    top: -4px;
+    left: 28px;
+    color: var(--c-green-text-vivid);
+    font-size: 18px;
+    transform: rotate(-12deg);
+  }
+
+  .checkbox-pointer svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .checkbox-text {
+    font-size: 14px;
+    line-height: 1.45;
+    color: var(--c-text);
+    padding-top: 4px;
+  }
+
+  .checkbox-link {
+    color: var(--c-green-text-vivid);
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+    text-underline-offset: 3px;
+    font-weight: 600;
+  }
+
+  /* ---- Bottom summary banner ---- */
+  .summary {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    background: var(--c-blue-bg);
+    border: 1.5px solid var(--c-blue-border);
+    border-radius: 18px;
+    padding: 22px 36px;
+    max-width: 1180px;
+    margin: 0 auto;
+  }
+
+  .summary-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .summary-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .summary-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .summary-label {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: var(--c-blue-text-vivid);
+  }
+
+  .summary-text {
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--c-text);
+    line-height: 1.35;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="subtitle">{{subtitle}}</div>
+
+    <div class="items">
+
+      <!-- Item 1: Subscription form -->
+      <div class="item">
+        <div class="item-check">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+        <div class="item-body">
+          <div class="item-tag">{{item1_label}}</div>
+          <div class="item-title">{{item1_title}}</div>
+          <div class="item-where">{{item1_where}}</div>
+          <div class="item-desc">{{item1_desc}}</div>
+        </div>
+        <div class="item-visual">
+          <div class="form-mock">
+            <div class="form-mock-label">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                <polyline points="22,6 12,13 2,6"/>
+              </svg>
+              {{item1_title}}
+            </div>
+            <div class="form-mock-input-row">
+              <div class="form-mock-input">{{form_input_placeholder}}</div>
+              <div class="form-mock-button">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="22" y1="2" x2="11" y2="13"/>
+                  <polygon points="22 2 15 22 11 13 2 9 22 2"/>
+                </svg>
+                {{form_button}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 2: Cleverphant privacy policy + consent checkbox -->
+      <div class="item">
+        <div class="item-check">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+        <div class="item-body">
+          <div class="item-tag">{{item2_label}}</div>
+          <div class="item-title">{{item2_title}}</div>
+          <div class="item-where">{{item2_where}}</div>
+          <div class="item-desc">{{item2_desc}}</div>
+        </div>
+        <div class="item-visual">
+          <div class="checkbox-mock">
+            <div class="checkbox-box">
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"/>
+              </svg>
+            </div>
+            <div class="checkbox-text">
+              {{consent_text}} <span class="checkbox-link">{{consent_link}}</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="summary">
+      <div class="summary-icon">
+        <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <polyline points="9 12 11 14 15 9"/>
+        </svg>
+      </div>
+      <div class="summary-content">
+        <div class="summary-label">{{summary_label}}</div>
+        <div class="summary-text">{{summary_text}}</div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

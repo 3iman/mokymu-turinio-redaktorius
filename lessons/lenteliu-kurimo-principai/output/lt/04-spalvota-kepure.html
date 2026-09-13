@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .title {
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 56px;
+    letter-spacing: -0.3px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Two-table comparison ---- */
+  .comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    margin-bottom: 48px;
+  }
+
+  .table-block {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  .table-label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--c-text-muted);
+    letter-spacing: 0.2px;
+  }
+
+  .label-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    flex-shrink: 0;
+  }
+
+  .table-block.before .label-dot {
+    background: var(--c-border);
+    border: 1.5px solid var(--c-text-faint);
+  }
+
+  .table-block.after .label-dot {
+    background: var(--c-green-deep);
+  }
+
+  .table-block.after .table-label {
+    color: var(--c-green-deep);
+  }
+
+  /* ---- Shared table base ---- */
+  .demo-table {
+    background: var(--c-surface);
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--c-border-soft);
+    box-shadow: 0 6px 20px rgba(15, 23, 42, 0.05);
+  }
+
+  .demo-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 17px;
+    color: var(--c-text);
+    line-height: 1.4;
+  }
+
+  .demo-table th,
+  .demo-table td {
+    padding: 16px 22px;
+    text-align: left;
+  }
+
+  .demo-table tbody td {
+    border-bottom: 1px solid var(--c-border-soft);
+  }
+
+  .demo-table tbody tr:last-child td { border-bottom: none; }
+
+  /* Before — no kepurė */
+  .before-table thead th {
+    font-weight: 700;
+    background: var(--c-surface);
+    color: var(--c-text);
+    border-bottom: 1.5px solid var(--c-border);
+  }
+
+  /* After — with kepurė */
+  .after-table thead th {
+    font-weight: 700;
+    background: var(--c-green-deep);
+    color: #ffffff;
+    letter-spacing: 0.1px;
+  }
+
+  /* ---- Spec cards ---- */
+  .specs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+
+  .spec {
+    display: flex;
+    align-items: center;
+    gap: 22px;
+    padding: 24px 28px;
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-radius: 18px;
+  }
+
+  .spec-swatch {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  .spec-bg .spec-swatch {
+    background: var(--c-green-deep);
+    color: #ffffff;
+  }
+
+  .spec-text .spec-swatch {
+    background: #ffffff;
+    color: var(--c-text-muted);
+    border: 1.5px solid var(--c-border);
+  }
+
+  .spec-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+    flex: 1;
+  }
+
+  .spec-title {
+    font-size: 21px;
+    font-weight: 700;
+    color: var(--c-text);
+    letter-spacing: -0.1px;
+  }
+
+  .spec-desc {
+    font-size: 16px;
+    color: var(--c-text-muted);
+    line-height: 1.4;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Nuspalvinkite pirmą lentelės eilutę</div>
+
+    <div class="comparison">
+      <!-- Before — no kepurė -->
+      <div class="table-block before">
+        <div class="table-label">
+          <span class="label-dot"></span>
+          <span>Be kepurės</span>
+        </div>
+        <div class="demo-table before-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Eil. Nr.</th>
+                <th>Vardas, pavardė</th>
+                <th>Pareigos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1.</td><td>Jolanta Kazlauskienė</td><td>Pirmininkė</td></tr>
+              <tr><td>2.</td><td>Rasa Petraitienė</td><td>Pavaduotoja</td></tr>
+              <tr><td>3.</td><td>Mindaugas Petraitis</td><td>Narys</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+
+      <!-- After — with kepurė -->
+      <div class="table-block after">
+        <div class="table-label">
+          <span class="label-dot"></span>
+          <span>Su kepure</span>
+        </div>
+        <div class="demo-table after-table">
+          <table>
+            <thead>
+              <tr>
+                <th>Eil. Nr.</th>
+                <th>Vardas, pavardė</th>
+                <th>Pareigos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1.</td><td>Jolanta Kazlauskienė</td><td>Pirmininkė</td></tr>
+              <tr><td>2.</td><td>Rasa Petraitienė</td><td>Pavaduotoja</td></tr>
+              <tr><td>3.</td><td>Mindaugas Petraitis</td><td>Narys</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Spec cards -->
+    <div class="specs">
+      <div class="spec spec-bg">
+        <div class="spec-swatch">Aa</div>
+        <div class="spec-text-block">
+          <div class="spec-title">Fonas</div>
+          <div class="spec-desc">Dominuojanti svetainės spalva</div>
+        </div>
+      </div>
+
+      <div class="spec spec-text">
+        <div class="spec-swatch">Aa</div>
+        <div class="spec-text-block">
+          <div class="spec-title">Tekstas</div>
+          <div class="spec-desc">Baltas</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

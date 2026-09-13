@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--c-text-muted);
+    text-align: center;
+    margin-top: -32px;
+    margin-bottom: 56px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Document mockup ---- */
+  .doc-wrap {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 56px;
+  }
+
+  .doc {
+    position: relative;
+    width: 920px;
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-radius: 14px;
+    padding: 56px 64px 52px 64px;
+    box-shadow: 0 12px 40px rgba(15, 23, 42, 0.08), 0 2px 6px rgba(15, 23, 42, 0.04);
+  }
+
+  .doc-header {
+    border-bottom: 1px solid var(--c-border);
+    padding-bottom: 22px;
+    margin-bottom: 28px;
+    text-align: center;
+  }
+
+  .doc-meta {
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: var(--c-blue-text-vivid);
+    margin-bottom: 10px;
+  }
+
+  .doc-type {
+    font-size: 26px;
+    font-weight: 700;
+    color: var(--c-text);
+    line-height: 1.2;
+    letter-spacing: -0.3px;
+    margin-bottom: 12px;
+  }
+
+  .doc-subject {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--c-text-secondary);
+    line-height: 1.45;
+    max-width: 680px;
+    margin: 0 auto;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .doc-quote {
+    background: var(--c-blue-bg);
+    border-left: 5px solid var(--c-blue-solid);
+    border-radius: 8px;
+    padding: 26px 30px;
+    margin: 28px 0 18px 0;
+  }
+
+  .doc-quote-text {
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--c-text);
+    line-height: 1.4;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .doc-attribution {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--c-text-muted);
+    text-align: right;
+    font-style: italic;
+  }
+
+  /* "Privaloma" stamp — rotated, in top-right corner of document */
+  .stamp {
+    position: absolute;
+    top: 36px;
+    right: -22px;
+    transform: rotate(8deg);
+    background: var(--c-amber-bg);
+    border: 3px solid var(--c-amber-solid);
+    color: var(--c-amber-text-vivid);
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    box-shadow: 0 4px 12px rgba(245, 158, 11, 0.25);
+  }
+
+  /* ---- Meta row (date + auditor) ---- */
+  .meta-row {
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+  }
+
+  .meta-item {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-radius: 16px;
+    padding: 18px 28px;
+    min-width: 320px;
+  }
+
+  .meta-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 14px;
+    background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .meta-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+
+  .meta-content {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    min-width: 0;
+  }
+
+  .meta-label {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    color: var(--c-text-faint);
+  }
+
+  .meta-value {
+    font-size: 19px;
+    font-weight: 600;
+    color: var(--c-text);
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="subtitle">{{subtitle}}</div>
+
+    <div class="doc-wrap">
+      <div class="doc">
+        <div class="stamp">{{stamp_label}}</div>
+
+        <div class="doc-header">
+          <div class="doc-meta">{{doc_meta}}</div>
+          <div class="doc-type">{{doc_type}}</div>
+          <div class="doc-subject">{{doc_subject}}</div>
+        </div>
+
+        <div class="doc-quote">
+          <div class="doc-quote-text">{{doc_quote}}</div>
+        </div>
+
+        <div class="doc-attribution">{{doc_attribution}}</div>
+      </div>
+    </div>
+
+    <div class="meta-row">
+      <div class="meta-item">
+        <div class="meta-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="4" width="18" height="18" rx="2"/>
+            <line x1="16" y1="2" x2="16" y2="6"/>
+            <line x1="8" y1="2" x2="8" y2="6"/>
+            <line x1="3" y1="10" x2="21" y2="10"/>
+          </svg>
+        </div>
+        <div class="meta-content">
+          <div class="meta-label">{{meta1_label}}</div>
+          <div class="meta-value">{{meta1_value}}</div>
+        </div>
+      </div>
+
+      <div class="meta-item">
+        <div class="meta-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 11l3 3L22 4"/>
+            <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+          </svg>
+        </div>
+        <div class="meta-content">
+          <div class="meta-label">{{meta2_label}}</div>
+          <div class="meta-value">{{meta2_value}}</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

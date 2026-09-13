@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .title {
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 48px;
+    letter-spacing: -0.3px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Browser frame ---- */
+  .browser {
+    max-width: 1400px;
+    margin: 0 auto;
+    background: var(--c-surface);
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 18px 48px rgba(15, 23, 42, 0.10), 0 4px 12px rgba(15, 23, 42, 0.05);
+    border: 1px solid var(--c-border);
+  }
+
+  .browser-chrome {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 14px 20px;
+    background: var(--c-bg);
+    border-bottom: 1px solid var(--c-border-soft);
+  }
+
+  .browser-dots {
+    display: flex;
+    gap: 8px;
+  }
+
+  .browser-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+  }
+
+  .browser-dot:nth-child(1) { background: #fbbf24; }
+  .browser-dot:nth-child(2) { background: #34d399; }
+  .browser-dot:nth-child(3) { background: #9ca3af; }
+
+  .browser-url {
+    flex: 1;
+    padding: 10px 18px;
+    background: var(--c-surface);
+    border: 1px solid var(--c-border-soft);
+    border-radius: 8px;
+    font-family: 'SF Mono', 'Monaco', 'Consolas', monospace;
+    font-size: 15px;
+    color: var(--c-text-muted);
+    letter-spacing: 0.1px;
+  }
+
+  /* ---- Page content ---- */
+  .page {
+    padding: 48px 56px 56px;
+    background: var(--c-surface);
+  }
+
+  .page-h2 {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--c-text);
+    margin-bottom: 24px;
+    padding-bottom: 18px;
+    border-bottom: 2px solid var(--c-green-deep);
+    display: inline-block;
+    letter-spacing: -0.2px;
+  }
+
+  .page-intro {
+    font-size: 19px;
+    color: var(--c-text-muted);
+    line-height: 1.55;
+    margin-bottom: 34px;
+    max-width: 900px;
+  }
+
+  /* ---- The final table — all principles applied ---- */
+  .final-table {
+    background: var(--c-surface);
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid var(--c-border-soft);
+  }
+
+  .final-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: 19px;
+    color: var(--c-text);
+    line-height: 1.45;
+  }
+
+  .final-table thead th {
+    font-weight: 700;
+    text-align: left;
+    padding: 20px 26px;
+    background: var(--c-green-deep);
+    color: #ffffff;
+    letter-spacing: 0.1px;
+  }
+
+  .final-table tbody td {
+    padding: 18px 26px;
+    text-align: left;
+    border-bottom: 1px solid var(--c-border-soft);
+  }
+
+  .final-table tbody tr:last-child td { border-bottom: none; }
+
+  /* ---- Principle tags ---- */
+  .tags {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 36px;
+  }
+
+  .tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 20px;
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-green-border);
+    border-radius: 999px;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--c-green-deep);
+    letter-spacing: 0.1px;
+  }
+
+  .tag-check {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: var(--c-green-deep);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .tag-check svg {
+    width: 12px;
+    height: 12px;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+
+    <div class="browser">
+      <div class="browser-chrome">
+        <div class="browser-dots">
+          <span class="browser-dot"></span>
+          <span class="browser-dot"></span>
+          <span class="browser-dot"></span>
+        </div>
+        <div class="browser-url">{{browser_url}}</div>
+      </div>
+
+      <div class="page">
+        <div class="page-h2">{{page_h2}}</div>
+        <div class="page-intro">{{page_intro}}</div>
+
+        <div class="final-table">
+          <table>
+            <thead>
+              <tr>
+                <th>{{col_nr}}</th>
+                <th>{{col_name}}</th>
+                <th>{{col_role}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>{{r1_nr}}</td><td>{{r1_name}}</td><td>{{r1_role}}</td></tr>
+              <tr><td>{{r2_nr}}</td><td>{{r2_name}}</td><td>{{r2_role}}</td></tr>
+              <tr><td>{{r3_nr}}</td><td>{{r3_name}}</td><td>{{r3_role}}</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <!-- Principle tags -->
+    <div class="tags">
+      <div class="tag">
+        <div class="tag-check">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+        <span>{{tag_kepure}}</span>
+      </div>
+      <div class="tag">
+        <div class="tag-check">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+        <span>{{tag_kaire}}</span>
+      </div>
+      <div class="tag">
+        <div class="tag-check">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="20 6 9 17 4 12"/>
+          </svg>
+        </div>
+        <span>{{tag_paprastai}}</span>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

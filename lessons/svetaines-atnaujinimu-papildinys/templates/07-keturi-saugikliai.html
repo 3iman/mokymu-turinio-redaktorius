@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .subtitle {
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--c-text-muted);
+    text-align: center;
+    margin-top: -32px;
+    margin-bottom: 64px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* ---- 2x2 grid ---- */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .card-item {
+    background: var(--c-surface);
+    border: 1.5px solid var(--c-border);
+    border-radius: 22px;
+    padding: 36px 40px 36px 40px;
+    display: flex;
+    align-items: flex-start;
+    gap: 26px;
+    border-top: 6px solid var(--c-blue-solid);
+    box-shadow: 0 4px 14px rgba(15, 23, 42, 0.04);
+  }
+
+  .icon-wrap {
+    width: 84px;
+    height: 84px;
+    border-radius: 20px;
+    background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .icon-wrap svg {
+    width: 42px;
+    height: 42px;
+  }
+
+  .card-body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .card-num {
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.4px;
+    color: var(--c-blue-text-vivid);
+  }
+
+  .card-label {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--c-text);
+    line-height: 1.25;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  .card-desc {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--c-text-secondary);
+    line-height: 1.5;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="subtitle">{{subtitle}}</div>
+
+    <div class="grid">
+
+      <!-- 1: Double opt-in -->
+      <div class="card-item">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+            <polyline points="9 12 11 14 15 9"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-num">01</div>
+          <div class="card-label">{{s1_label}}</div>
+          <div class="card-desc">{{s1_desc}}</div>
+        </div>
+      </div>
+
+      <!-- 2: One-click unsubscribe -->
+      <div class="card-item">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+            <polyline points="16 17 21 12 16 7"/>
+            <line x1="21" y1="12" x2="9" y2="12"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-num">02</div>
+          <div class="card-label">{{s2_label}}</div>
+          <div class="card-desc">{{s2_desc}}</div>
+        </div>
+      </div>
+
+      <!-- 3: Privacy -->
+      <div class="card-item">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="11" width="18" height="11" rx="2"/>
+            <path d="M7 11V7a5 5 0 0 1 10 0v4"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-num">03</div>
+          <div class="card-label">{{s3_label}}</div>
+          <div class="card-desc">{{s3_desc}}</div>
+        </div>
+      </div>
+
+      <!-- 4: Email deliverability -->
+      <div class="card-item">
+        <div class="icon-wrap">
+          <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M22 12.5V18a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h11"/>
+            <polyline points="2 6 12 13 16 10.2"/>
+            <polyline points="17 6 20 9 23 5"/>
+          </svg>
+        </div>
+        <div class="card-body">
+          <div class="card-num">04</div>
+          <div class="card-label">{{s4_label}}</div>
+          <div class="card-desc">{{s4_desc}}</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

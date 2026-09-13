@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .lead { font-size: 26px; color: var(--c-text-muted); text-align: center; margin: -28px 0 56px;
+          hyphens: auto; overflow-wrap: break-word; }
+  .foot { font-size: 24px; color: var(--c-text-secondary); text-align: center; margin-top: 50px;
+          hyphens: auto; overflow-wrap: break-word; }
+  .cols { display: flex; gap: 56px; align-items: stretch; }
+  .col { flex: 1; border-radius: 24px; padding: 48px; display: flex; flex-direction: column; }
+  .col-do { background: var(--c-green-bg); border: 1.5px solid var(--c-green-border); }
+  .col-dont { background: var(--c-red-bg); border: 1.5px solid var(--c-red-border); }
+  .col-head { display: flex; align-items: center; gap: 20px; margin-bottom: 36px; }
+  .col-icon { width: 72px; height: 72px; border-radius: 50%; display: flex; align-items: center;
+              justify-content: center; flex-shrink: 0; }
+  .col-do .col-icon { background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to)); }
+  .col-dont .col-icon { background: linear-gradient(135deg, var(--c-red-gradient-from), var(--c-red-gradient-to)); }
+  .col-icon svg { width: 36px; height: 36px; }
+  .col-title { font-size: 28px; font-weight: 700; color: var(--c-text); }
+  .note { font-size: 23px; margin-top: 30px; hyphens: auto; overflow-wrap: break-word; }
+  .col-do .note { color: var(--c-green-text); }
+  .col-dont .note { color: var(--c-red-text); }
+
+  /* ---- Nustatymų puslapio maketas ---- */
+  .laukas { background: var(--c-surface); border: 1.5px solid var(--c-border); border-radius: 16px;
+            padding: 38px 34px; flex: 1; }
+  .col-dont .laukas { border-color: var(--c-red-border); }
+
+  .klaus { font-size: 22px; font-weight: 700; line-height: 1.45; color: var(--c-text);
+           margin-bottom: 30px; hyphens: auto; overflow-wrap: break-word; }
+
+  .eil { display: flex; align-items: center; gap: 20px; font-size: 26px; color: var(--c-text);
+         margin-bottom: 26px; }
+  .eil:last-child { margin-bottom: 0; }
+
+  .radijas { width: 30px; height: 30px; border-radius: 50%; border: 2.5px solid var(--c-line);
+             background: var(--c-surface); flex-shrink: 0; }
+  .dez { width: 32px; height: 32px; border-radius: 7px; background: var(--c-green-solid); flex-shrink: 0;
+         display: flex; align-items: center; justify-content: center; }
+  .dez svg { width: 19px; height: 19px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Pirmą kartą užėjus nepažymėta nieko</div>
+    <div class="lead">Sutikimas duodamas aktyviu veiksmu. Langelis, kurį galima atžymėti, netinka.</div>
+    <div class="cols">
+      <div class="col col-dont">
+        <div class="col-head">
+          <div class="col-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
+          <div class="col-title">Taip neturi būti</div>
+        </div>
+        <div class="laukas">
+          <div class="eil"><span class="dez"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Statistikos slapukai</div>
+          <div class="eil"><span class="dez"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Rinkodaros slapukai</div>
+        </div>
+        <div class="note">Pažymėta už lankytoją.</div>
+      </div>
+      <div class="col col-do">
+        <div class="col-head">
+          <div class="col-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="col-title">Taip yra jūsų svetainėje</div>
+        </div>
+        <div class="laukas">
+          <div class="klaus">Ar sutinkate, kad „Google Analytics“ rinktų informaciją apie jūsų apsilankymus šioje svetainėje?</div>
+          <div class="eil"><span class="radijas"></span>Sutinku</div>
+          <div class="eil"><span class="radijas"></span>Nesutinku</div>
+        </div>
+        <div class="note">Abu apskritimai tušti. Pasirinkti turi pats lankytojas.</div>
+      </div>
+    </div>
+    <div class="foot">Jei matote jau pažymėtą, tai jūsų paties ankstesnis pasirinkimas, ne numatytoji tvarka.</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .title {
+    font-size: 52px;
+    font-weight: 700;
+    color: var(--c-text);
+    text-align: center;
+    margin-bottom: 64px;
+    letter-spacing: -0.3px;
+    hyphens: auto;
+    overflow-wrap: break-word;
+  }
+
+  /* ---- Two columns ---- */
+  .columns {
+    display: flex;
+    gap: 48px;
+    align-items: stretch;
+  }
+
+  .column {
+    flex: 1;
+    border-radius: 24px;
+    padding: 40px 44px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .col-do {
+    background: var(--c-green-bg);
+    border: 1.5px solid var(--c-green-border);
+  }
+
+  .col-dont {
+    background: var(--c-red-bg);
+    border: 1.5px solid var(--c-red-border);
+  }
+
+  .col-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 28px;
+  }
+
+  .col-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .col-do .col-icon {
+    background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to));
+  }
+
+  .col-dont .col-icon {
+    background: linear-gradient(135deg, var(--c-red-gradient-from), var(--c-red-gradient-to));
+  }
+
+  .col-icon svg { width: 32px; height: 32px; }
+
+  .col-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .col-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--c-text);
+    letter-spacing: -0.1px;
+  }
+
+  .col-subtitle {
+    font-size: 17px;
+    color: var(--c-text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+  }
+
+  /* ---- Mini table ---- */
+  .mini-table {
+    background: var(--c-surface);
+    border-radius: 14px;
+    overflow: hidden;
+    margin-bottom: 22px;
+    border: 1px solid var(--c-border-soft);
+  }
+
+  .mini-table table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 17px;
+    color: var(--c-text);
+    line-height: 1.4;
+  }
+
+  .mini-table thead th {
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--c-text);
+    padding: 14px 20px;
+    border-bottom: 1.5px solid var(--c-border-soft);
+    background: var(--c-bg);
+  }
+
+  .mini-table tbody td {
+    padding: 14px 20px;
+    border-bottom: 1px solid var(--c-border-soft);
+  }
+
+  .mini-table tbody tr:last-child td { border-bottom: none; }
+
+  /* Align variants */
+  .align-left th, .align-left td { text-align: left; }
+  .align-center th, .align-center td { text-align: center; }
+
+  /* ---- Note ---- */
+  .col-note {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 17px;
+    line-height: 1.45;
+    color: var(--c-text-muted);
+    padding-top: 18px;
+    border-top: 1px solid var(--c-border-soft);
+    hyphens: auto;
+    overflow-wrap: break-word;
+    margin-top: auto;
+  }
+
+  .note-bullet {
+    flex-shrink: 0;
+    font-size: 20px;
+    margin-top: -2px;
+    font-weight: 700;
+  }
+
+  .col-do .note-bullet { color: var(--c-green-solid); }
+  .col-dont .note-bullet { color: var(--c-red-solid); }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+
+    <div class="columns">
+      <!-- Do column -->
+      <div class="column col-do">
+        <div class="col-header">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <polyline points="20 6 9 17 4 12"/>
+            </svg>
+          </div>
+          <div class="col-titles">
+            <div class="col-title">{{do_title}}</div>
+            <div class="col-subtitle">{{do_subtitle}}</div>
+          </div>
+        </div>
+
+        <div class="mini-table">
+          <table class="align-left">
+            <thead>
+              <tr>
+                <th>{{col_name}}</th>
+                <th>{{col_role}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>{{r1_name}}</td><td>{{r1_role}}</td></tr>
+              <tr><td>{{r2_name}}</td><td>{{r2_role}}</td></tr>
+              <tr><td>{{r3_name}}</td><td>{{r3_role}}</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-note">
+          <span class="note-bullet">✓</span>
+          <span>{{note_good}}</span>
+        </div>
+      </div>
+
+      <!-- Don't column -->
+      <div class="column col-dont">
+        <div class="col-header">
+          <div class="col-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </div>
+          <div class="col-titles">
+            <div class="col-title">{{dont_title}}</div>
+            <div class="col-subtitle">{{dont_subtitle}}</div>
+          </div>
+        </div>
+
+        <div class="mini-table">
+          <table class="align-center">
+            <thead>
+              <tr>
+                <th>{{col_name}}</th>
+                <th>{{col_role}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>{{r1_name}}</td><td>{{r1_role}}</td></tr>
+              <tr><td>{{r2_name}}</td><td>{{r2_role}}</td></tr>
+              <tr><td>{{r3_name}}</td><td>{{r3_role}}</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="col-note">
+          <span class="note-bullet">✗</span>
+          <span>{{note_bad}}</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>
