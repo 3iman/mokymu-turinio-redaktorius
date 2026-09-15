@@ -8,3 +8,6 @@ node_modules/
 
 # Balso kandidatai — klausymui, ne saugojimui. Pasirinktas kandidatas perkeliamas į balsas-{lang}/ (jis saugomas)
 lessons/*/video/balsas-*-kandidatai/
+
+# Vinjetės pradžia — tarpinis failas, perrenkamas kiekvieno build-video.js metu
+lessons/*/video/outro-galva-*.mp4

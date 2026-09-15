@@ -56,6 +56,9 @@ const HEIGHT = 1080;
 const FPS = 1; // for static frames, 1 fps is enough (duration controlled per frame)
 const BG_COLOR = isDark ? '#151b2b' : '#f8f9fb';
 const VOICE_TARGET_LUFS = -19; // balso garsumas montaže (VIDEO_GAMYBA.md §7 „Balsas“)
+// Vinjetės pradžia iš templates/video-outro.html; kalboms be teksto lieka visas senas autro.mp4
+const OUTRO_THANKS = { lt: 'Ačiū, kad skyrėte laiko' };
+const OUTRO_HEAD_SECONDS = 4.0; // autro.mp4: 4,0–4,24 s tuščias #dfecf3, logotipas atsiranda 4,24 s
 
 // ---- Parse scenario order (file → kadras mapping) ----
 function parseScenarioOrder() {
@@ -287,8 +290,59 @@ async function generateIntroPng(title, subtitle) {
   return introPng;
 }
 
+// ---- Vinjetės pradžia (0–OUTRO_HEAD_SECONDS) iš šablono ----
+// ⛔ Kiekvienam kadrui nustatomas tikslus laikas (VIDEO_GAMYBA.md §6), ne realiu laiku.
+async function generateOutroHead() {
+  const text = OUTRO_THANKS[lang];
+  const tpl = path.join(TEMPLATES_DIR, 'video-outro.html');
+  if (!text || !fs.existsSync(tpl)) return null;
+
+  const zodziai = String(text).trim().split(/\s+/);
+  const html = fs.readFileSync(tpl, 'utf-8')
+    .replace(/\{\{lang\}\}/g, lang)
+    .replace(/\{\{plona\}\}/g, zodziai.slice(0, -1).join(' '))
+    .replace(/\{\{stora\}\}/g, zodziai.slice(-1).join(' '));
+  const tmpHtml = path.join(videoDir, '_outro_tmp.html');
+  fs.writeFileSync(tmpHtml, html, 'utf-8');
+  const framesDir = path.join(videoDir, '_outro_frames');
+  fs.rmSync(framesDir, { recursive: true, force: true });
+  fs.mkdirSync(framesDir, { recursive: true });
+
+  const puppeteer = require('puppeteer');
+  const browser = await puppeteer.launch({ headless: true });
+  const page = await browser.newPage();
+  await page.setViewport({ width: WIDTH, height: HEIGHT, deviceScaleFactor: 1 });
+  await page.goto('file://' + path.resolve(tmpHtml), { waitUntil: 'networkidle0' });
+  await page.evaluateHandle('document.fonts.ready');
+
+  const kadru = Math.round(OUTRO_HEAD_SECONDS * 30);
+  for (let f = 0; f < kadru; f++) {
+    await page.evaluate((ms) => {
+      document.getAnimations().forEach(a => { a.pause(); a.currentTime = ms; });
+    }, (f / 30) * 1000);
+    await page.screenshot({ path: path.join(framesDir, `frame_${String(f).padStart(4, '0')}.png`), type: 'png' });
+    if ((f + 1) % 30 === 0 || f === kadru - 1) process.stdout.write(`  Vinjetė: kadras ${f + 1}/${kadru}\r`);
+  }
+  await browser.close();
+  fs.unlinkSync(tmpHtml);
+
+  const outroHead = path.join(videoDir, `outro-galva-${lang}${suffix}.mp4`);
+  execSync([
+    'ffmpeg', '-y',
+    '-framerate', '30',
+    '-i', `"${path.join(framesDir, 'frame_%04d.png')}"`,
+    '-c:v', 'libx264',
+    '-pix_fmt', 'yuv420p',
+    '-r', '30',
+    `"${outroHead}"`,
+  ].join(' '), { stdio: 'pipe' });
+  fs.rmSync(framesDir, { recursive: true, force: true });
+  console.log(`\n  Vinjetės pradžia: ${outroHead}`);
+  return outroHead;
+}
+
 // ---- Build video with ffmpeg ----
-function buildVideo(frames, durations, introClipPath, introPng) {
+function buildVideo(frames, durations, introClipPath, introPng, outroHeadPath) {
   const videoOut = path.join(videoDir, `${lessonSlug}-${lang}${suffix}.mp4`);
 
   // Parse scenario order for correct clip sequencing
@@ -519,6 +573,24 @@ function buildVideo(frames, durations, introClipPath, introPng) {
       `"${outroDest}"`,
     ].join(' ');
     execSync(cmd, { stdio: 'pipe' });
+    if (outroHeadPath && fs.existsSync(outroHeadPath)) {
+      // ⛔ Nauja vinjetės pradžia + autro.mp4 nuo OUTRO_HEAD_SECONDS. Bendra trukmė nepakinta,
+      // tad širdies plakimo takelis (4 žingsnis, iš autro.mp4) lieka tose pačiose vietose.
+      const uodega = path.join(clipDir, 'outro_uodega.mp4');
+      execSync([
+        'ffmpeg', '-y', '-i', `"${outroDest}"`, '-ss', String(OUTRO_HEAD_SECONDS),
+        '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', '30', '-an', `"${uodega}"`,
+      ].join(' '), { stdio: 'pipe' });
+      const galva = path.join(clipDir, 'outro_galva.mp4');
+      fs.copyFileSync(outroHeadPath, galva);
+      const oc = path.join(clipDir, 'outro_concat.txt');
+      fs.writeFileSync(oc, "file 'outro_galva.mp4'\nfile 'outro_uodega.mp4'\n");
+      const tmp = path.join(clipDir, 'outro_sujungta.mp4');
+      execSync(['ffmpeg', '-y', '-f', 'concat', '-safe', '0', '-i', `"${oc}"`, '-c', 'copy', `"${tmp}"`].join(' '), { stdio: 'pipe' });
+      fs.renameSync(tmp, outroDest);
+      [uodega, galva, oc].forEach(f => fs.unlinkSync(f));
+      console.log(`  Vinjetė: „${OUTRO_THANKS[lang]}“ ${OUTRO_HEAD_SECONDS}s + logotipo dalis iš autro.mp4`);
+    }
     concatContent += `file 'outro.mp4'\n`;
   }
   fs.writeFileSync(concatList, concatContent, 'utf-8');
@@ -750,9 +822,10 @@ async function main() {
   // Generate animated intro clip + static PNG for hold
   const introClip = await generateIntroClip(introTitle, introSubtitle);
   const introPng = await generateIntroPng(introTitle, introSubtitle);
+  const outroHead = await generateOutroHead();
 
   // Build video
-  buildVideo(frames, durations, introClip, introPng);
+  buildVideo(frames, durations, introClip, introPng, outroHead);
 }
 
 if (isAllLangs) {

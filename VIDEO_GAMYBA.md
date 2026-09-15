@@ -209,6 +209,47 @@ Patikra po montažo (slapukų pamoka, 2026-09-15):
 Kaina: ~740 simbolių vienai versijai 110 s filmukui, tad trys kandidatai ~2 200. Raktas `illustrations/.env` → `ELEVENLABS_API_KEY`.
 Rakto teisės: Text to Speech, `user_read`, tarimo žodynai (read/write).
 
+### Vinjetė (nuo 2026-09-15)
+
+Senos `autro.mp4` pirmos 4 s (sodriai mėlynas fonas, ranka pieštos „AČIŪ, KAD MOKOTĖS“)
+buvo paskutinis senos vizualikos kadras ir davė du spalvos šuolius. Dabar pradžia
+atvaizduojama iš `templates/video-outro.html`, o nuo 4,0 s prijungiama nekeista `autro.mp4`
+logotipo dalis. Širdies plakimo takelis imamas iš `autro.mp4` visas, tad nepasislenka.
+
+| Laikas | Vaizdas | Kodėl |
+|---|---|---|
+| 0,0 s | tas pats šviesus fonas kaip skaidrių ir skirtukų | iš paskutinio kadro nėra spalvos šuolio |
+| 0,2 s | centre „Ačiū, kad skyrėte **laiko**“ (92 px, 400/800) | „skyrėte laiko“, ne „mokotės“ — kreipiamasi į suaugusį (Eimantas) |
+| 0,9 s | brūkšnys iš #3ab0b0 į #f3a8c4, kaip skirtuke | ta pati brando kalba |
+| 3,05–3,40 s | tekstas išnyksta | teksto matomumas ~2,9 s (≥ 2 s) |
+| 3,30–4,00 s | fonas pereina į #dfecf3 | tokia `autro.mp4` spalva 4,0–4,24 s — pjūvis nematomas |
+| 3,40–3,95 s | brūkšnys susitraukia į kadro centrą (960, 540) | ten 4,24 s nusileidžia logotipas |
+| 4,0–8,0 s | `autro.mp4` logotipo dalis ir garsas | brando dalis nekeičiama |
+
+Išmatuoti atskaitos taškai (`autro.mp4`): 29,97 kadro/s, 7,97 s; 4,0–4,24 s tuščias
+#dfecf3; logotipas matomas nuo 4,24 s, sustoja iki 5,0 s bloke x 580–1336, y 232–844,
+centras (958, 538); garsas 0,2–3,3 s ir dūžis 4,1 s.
+
+⛔ **Tekstas išeina PRIEŠ brūkšnį.** „laiko“ stovi ant kadro centro. Kai abu išėjimai
+prasidėdavo 3,3 s, į centrą keliaujantis brūkšnys ėjo per blankstantį žodį ir atrodė kaip
+perbraukimas. Skaičiai to neparodė — pagauta tik apžiūrėjus centrą pilna raiška.
+
+⛔ Kadrai atvaizduojami **nustatant laiką** kiekvienam (`currentTime`), kaip §6.
+
+Kalbos: tekstas imamas iš `OUTRO_THANKS` (`build-video.js`). Kol kas tik `lt`; kitos kalbos
+gauna visą seną `autro.mp4`. Tarpinis `video/outro-galva-{lang}.mp4` perrenkamas kiekvieną
+kartą ir į git neįtraukiamas.
+
+Priėmimo patikra (slapukų pamoka, 2026-09-15):
+
+| Rodiklis | Riba | Rezultatas |
+|---|---|---|
+| paskutinio kadro ir vinjetės 0,05 s kampo spalva | sutampa | #ecf0f5 / #ecf0f5 |
+| 3,95 s ir 4,05 s kampo spalva | abi #dfecf3 | #dfecf3 / #dfecf3 |
+| vinjetės garso vidurkis | ± 0,5 dB nuo originalo | −29,5 dB |
+| filmuko trukmė | nepakinta | 110,4 s |
+| kadro centras 3,2–3,9 s pilna raiška | brūkšnys nekerta teksto | ✅ |
+
 ---
 
 ## 8. YouTube aprašymas
@@ -258,4 +299,6 @@ vinjetė −29,5 dB prieš −29,4 dB.
 - Nedėti vienodų trukmių visiems kadrams.
 - Nemontuoti neištrynus senų klipų ir seno mp4.
 - Negeneruoti balso po vieną kadrą ir nerašyti balso, kuris garsiai skaito ekrano tekstą.
+- Nekeisti vinjetės laiko taip, kad brūkšnys keliautų į centrą, kol tekstas dar matomas.
+- Neperdarinėti `autro.mp4` — logotipo dalis ir širdies plakimas imami iš jo nekeisti.
 - Nekelti į YouTube be žmogaus sprendimo — prieigos raktų projekte nėra, įkėlimas rankinis.

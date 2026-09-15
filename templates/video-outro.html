@@ -2,75 +2,75 @@
 <html lang="{{lang}}">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--
+  Vinjetės pradžia (0–4,0 s). Po jos prijungiama autro.mp4 logotipo dalis nuo 4,0 s.
+  Koncepcija B, patvirtinta Eimanto 2026-09-15 (EIMANTO_PASTABOS.md):
+  - fonas toks pat kaip skaidrių ir skirtukų — iš paskutinio kadro nėra spalvos šuolio;
+  - „Ačiū, kad skyrėte laiko“ centre dviem svoriais, brūkšnys iš žalsvai mėlynos į rožinę;
+  - 3,3–4,0 s fonas pereina į autro logotipo foną #dfecf3 (išmatuota), tekstas išnyksta,
+    brūkšnys susitraukia į kadro centrą (960, 540) — ten, kur 4,24 s nusileidžia logotipas.
+  Eiliškumas: tekstas išeina 3,05–3,40 s, tik tada brūkšnys keliauja į centrą 3,40–3,95 s.
+  ⛔ Laikas nustatomas kiekvienam kadrui (document.getAnimations → currentTime), ne realiu laiku.
+-->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap">
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --sp: cubic-bezier(0.16, 1, 0.3, 1); }
+  body {
+    width: 1920px; height: 1080px; overflow: hidden; position: relative;
+    font-family: Inter, -apple-system, sans-serif; color: #14142b;
+    background:
+      radial-gradient(circle 430px at 88% 6%,  rgba(255,255,255,.80) 0 99%, rgba(255,255,255,0) 100%),
+      radial-gradient(circle 190px at 3% 95%,  rgba(199,185,219,.34) 0 99%, rgba(199,185,219,0) 100%),
+      radial-gradient(circle 78px  at 93% 88%, rgba(243,168,196,.50) 0 99%, rgba(243,168,196,0) 100%),
+      linear-gradient(160deg, #eef1f8 0%, #f4f6fa 42%, #faf9fb 100%);
+  }
 
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: #1a1a2e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
+  /* 3,3–4,0 s: fonas pereina į autro logotipo foną — pjūvis ties 4,0 s nematomas */
+  .logofonas {
+    position: absolute; inset: 0; background: #dfecf3; opacity: 0;
+    animation: fonasPereina .7s ease-in-out 3.3s forwards;
+  }
 
-.card {
-  width: 1920px;
-  height: 1080px;
-  background-image: url('{{bg_image_path}}');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 40px;
-  position: relative;
-}
+  /* Tekstas: iškyla 0,2 s, lėtai dreifuoja, išnyksta 3,05–3,40 s.
+     ⛔ Tekstas turi dingti PRIEŠ brūkšniui keliaujant į centrą: „laiko“ stovi ant kadro centro,
+     ir kitaip brūkšnys jį „perbraukia“ (rasta vizualiai 2026-09-15). */
+  .tekstas {
+    position: absolute; left: 50%; top: 50%; text-align: center; white-space: nowrap;
+    font-size: 92px; letter-spacing: -2.5px; line-height: 1.06;
+    transform: translate(-50%, calc(-50% - 40px));
+    animation: tekstasKyla .65s var(--sp) .2s both, tekstasDingsta .35s ease 3.05s forwards;
+  }
+  .tekstas .plona { display: block; font-weight: 400; }
+  .tekstas .stora { display: block; font-weight: 800; }
+  .dreifas { animation: dreifas 4s linear 0s both; }
 
-.thanks {
-  font-size: 64px;
-  font-weight: 800;
-  color: #ffffff;
-  text-align: center;
-  line-height: 1.2;
-  letter-spacing: -0.5px;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
-}
+  /* Brūkšnys: nusipiešia 0,9 s; 3,40–3,95 s susitraukia į kadro centrą per jau tuščią vietą */
+  .bruksnys {
+    position: absolute; left: 50%; top: 50%; height: 4px; border-radius: 2px;
+    width: 280px; margin-top: 110px; transform: translate(-50%, -50%);
+    background: linear-gradient(90deg, #3ab0b0, #f3a8c4);
+    animation: bruksnysPlinta .7s var(--sp) .9s both, bruksnysITaska .55s var(--sp) 3.4s forwards;
+  }
 
-.accent-line {
-  width: 80px;
-  height: 4px;
-  border-radius: 2px;
-  background: rgba(255, 255, 255, 0.4);
-}
-
-.brand-name {
-  font-size: 32px;
-  font-weight: 600;
-  color: rgba(255, 255, 255, 0.85);
-  text-align: center;
-  letter-spacing: 2px;
-}
-
-.url {
-  font-size: 20px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
-  text-align: center;
-  letter-spacing: 1px;
-  position: absolute;
-  bottom: 48px;
-}
+  @keyframes fonasPereina   { to { opacity: 1; } }
+  @keyframes tekstasKyla    { from { opacity: 0; transform: translate(-50%, calc(-50% - 14px)); }
+                              to   { opacity: 1; transform: translate(-50%, calc(-50% - 40px)); } }
+  @keyframes tekstasDingsta { to   { opacity: 0; transform: translate(-50%, calc(-50% - 52px)); } }
+  @keyframes dreifas        { from { transform: scale(1); } to { transform: scale(1.015); } }
+  @keyframes bruksnysPlinta { from { width: 0; } to { width: 280px; } }
+  @keyframes bruksnysITaska {
+    0%   { width: 280px; margin-top: 110px; opacity: 1; }
+    70%  { width: 8px;   margin-top: 0;     opacity: 1; }
+    100% { width: 8px;   margin-top: 0;     opacity: 0; }
+  }
 </style>
 </head>
 <body>
-  <div class="card">
-    <div class="thanks">{{outro_thanks}}</div>
-    <div class="accent-line"></div>
-    <div class="brand-name">CLEVERPHANT</div>
-    <div class="url">www.cleverphant.lt</div>
+  <div class="logofonas"></div>
+  <div class="dreifas" style="position:absolute;inset:0;">
+    <div class="tekstas"><span class="plona">{{plona}}</span><span class="stora">{{stora}}</span></div>
   </div>
+  <div class="bruksnys"></div>
 </body>
 </html>

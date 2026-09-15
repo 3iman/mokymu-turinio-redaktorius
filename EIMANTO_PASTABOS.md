@@ -300,6 +300,24 @@ DPO. Iš trijų viso teksto versijų išrinkta trečia, `seed` 1779642367.
    **Eimantas**, ne agentas — panašumą į Darių girdi tik žmogus, kuris jį pažįsta.
 3. Profesionalus Dariaus klonas ElevenLabs paskyroje neapmokytas, API jo neleidžia naudoti.
 
+### 2026-09-15 · Vinjetė — paskutinis senos vizualikos kadras
+
+> „Kadras kur yra AČIŪ, kad mokotės paskutinis likęs iš senos vizualikos. Gal ir jį
+> persidarome?“
+> „Ir gal net Ačiū, kad skyrėte laiko būtų teisingesnis padėkojimas :)“
+
+`autro.mp4` (2026-04) pirmos 4 s — sodriai mėlynas fonas (#3161ab) ir ranka pieštos raidės.
+Paskutinis šviesus turinio kadras į jį šoka staigiai, o po 4 s — antras šuolis į šviesiai
+mėlyną logotipo foną (#dfecf3).
+
+**Sprendimas (koncepcija B, patvirtinta):** šviesus skaidrių fonas, centre „Ačiū, kad
+skyrėte laiko“ dviem svoriais, brūkšnys iš žalsvai mėlynos į rožinę; išeinant fonas pereina
+į #dfecf3, o brūkšnys **susitraukia į centrą** — ten, kur atsiras logotipas. Logotipo dalis
+ir širdies plakimo garsas nekeičiami. Kol kas tik lietuviškai.
+
+**Kodėl „skyrėte laiko“, ne „mokotės“:** kreipiamasi į suaugusį žmogų, kuris skyrė savo laiką,
+ne į mokinį; tinka ir bet kuriam YouTube žiūrovui.
+
 ## Straipsniai (tinklaraštis)
 
 ### 2026-09-13 · Straipsnis nėra pamoka — taisyklės skirtingos
