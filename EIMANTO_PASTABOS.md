@@ -43,6 +43,31 @@ nepažymėta nieko.
 **Kitą kartą:** kai pamoka liepia kažką pamatyti ekrane, patikrinti, ar tas vaizdas
 vienodas **pirmam** ir **grįžtančiam** lankytojui. Jei ne — abu atvejai aprašomi.
 
+### 2026-09-15 · „Iš kur ateina klausimas“ — vertinys; lietuviškai „Ko klausiama“
+
+> „02 Iš kur ateina klausimas - Pažodinis vertimas iš anglų kalbos. Lietuviškai šiame
+> kontekste būtų rašyti Ko klausiama“
+
+Antras tos pačios rūšies pataisymas po „Kur dažniausiai nueinama ne ten“ → „Dvi dažniausios
+klaidos“ (2026-09-14). „Iš kur ateina…“ yra angliško *where does it come from* kalkė.
+
+**Kitą kartą:** prieš įrašant antraštę, perskaityti ją garsiai ir paklausti — ar lietuvis
+taip pasakytų? Jei ne, ieškoti trumpesnės, klausimu atsakančios formos („Ko klausiama“,
+„Dvi dažniausios klaidos“). Galioja skirtukams, pamokų sekcijoms ir straipsniams.
+
+### 2026-09-15 · Pamokų antraštės pagal žanrą, veiksmažodžiai esamuoju laiku
+
+> „Sutinku su abiem“ — į pasiūlymą dėl dviejų prieštaravimų tarp `mokytoju-turinys` ir
+> projekto taisyklių.
+
+1. **Antraštės pagal žanrą.** Klausimai su klaustuku — kai pamoka sudaryta iš atsakymų į tai,
+   ko mokykla klausia (prieinamumo kursas, DUK). Teiginiai be klaustuko — kai pamoka veda per
+   veiksmą ar sandarą. Įrodymai: klausimų forma vyrauja 7 pamokose iš 72.
+2. **Veiksmažodžiai pamokose — esamuoju laiku** („Spaudžiate“). Liepiamoji lieka straipsniams.
+
+⛔ `DESIGN_RULES.md` „Be klaustukų“ galioja **iliustracijų ir skirtukų** antraštėms, ne pamokų
+sekcijoms.
+
 ---
 
 ## Vizualai

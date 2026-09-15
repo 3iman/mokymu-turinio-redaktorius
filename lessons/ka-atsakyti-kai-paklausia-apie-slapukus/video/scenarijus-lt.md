@@ -13,7 +13,7 @@
 |---|---|---|---|
 | 0 Intro | 5 sek. | intro | — |
 | 1 Klausimas ir atsakymas | 8 sek. | 00-virselis | Kartą per metus ar dažniau į ràštinę ateina laiškas iš asmens duomenų apsaugos pareigūno. |
-| 2 Iš kur ateina klausimas | 9 sek. | 01-is-kur-ateina-klausimas | Klausiama ne apie tai, ar naudojate slapukus, o apie tai, ar lankytojas turi tikrą pasirinkimą jų atsisakyti. |
+| 2 Ko klausiama | 9 sek. | 01-is-kur-ateina-klausimas | Klausiama ne apie tai, ar naudojate slapukus, o apie tai, ar lankytojas turi tikrą pasirinkimą jų atsisakyti. |
 | 3 Visur toks pats modulis | 8 sek. | 02-tas-pats-modulis | Reikalavimus stebime mes. Daryti jums nereikia nieko. |
 | 4 Kur rasti nuorodą | 10 sek. | 03-kur-rasti-nuoroda | Sutikimą galima bet kada pakeisti per nuorodą Slapukų valdymas svetainės apačioje. |
 | 5 Pirmą kartą nepažymėta nieko | 11 sek. | 04-pirma-karta-nepazymeta | Jei lankytojui reikia langelį atžymėti, kad atsisakytų, tai jau ne sutikimas, o numatytoji tvarka. |
@@ -42,7 +42,7 @@
 
 ---
 
-### KADRAS 2: Iš kur ateina klausimas (8 sek.)
+### KADRAS 2: Ko klausiama (8 sek.)
 **Failas:** `01-is-kur-ateina-klausimas.png`
 **Overlay tekstas:** Tai ne patikra. Tai klausimas, į kurį pakanka atsakyti raštu.
 

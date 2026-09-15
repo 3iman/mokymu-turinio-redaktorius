@@ -5,7 +5,7 @@ Kartą per metus ar dažniau į raštinę ateina laiškas iš asmens duomenų ap
 📋 SKYRIAI
 
 0:00 Įvadas. Klausimas ir atsakymas
-0:16 Iš kur ateina klausimas
+0:16 Ko klausiama
 0:28 Visur toks pats modulis
 0:39 Kur rasti nuorodą
 0:52 Pirmą kartą nepažymėta nieko
