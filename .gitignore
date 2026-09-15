@@ -5,3 +5,6 @@ node_modules/
 # Laikini kadrai iš klipų gamybos — paprastai ištrinami patys,
 # bet nutrūkus procesui lieka diske
 **/_frames_*/
+
+# Balso kandidatai — klausymui, ne saugojimui. Pasirinktas kandidatas perkeliamas į balsas-{lang}/ (jis saugomas)
+lessons/*/video/balsas-*-kandidatai/

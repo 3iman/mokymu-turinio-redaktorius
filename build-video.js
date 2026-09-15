@@ -55,6 +55,7 @@ const WIDTH = 1920;
 const HEIGHT = 1080;
 const FPS = 1; // for static frames, 1 fps is enough (duration controlled per frame)
 const BG_COLOR = isDark ? '#151b2b' : '#f8f9fb';
+const VOICE_TARGET_LUFS = -19; // balso garsumas montaže (VIDEO_GAMYBA.md §7 „Balsas“)
 
 // ---- Parse scenario order (file → kadras mapping) ----
 function parseScenarioOrder() {
@@ -533,50 +534,144 @@ function buildVideo(frames, durations, introClipPath, introPng) {
     `"${silentVideo}"`,
   ].join(' '), { stdio: 'pipe' });
 
-  // Step 4: Add background music if available
-  if (hasMusic) {
-    // Get actual video duration (includes transitions)
-    let totalDur;
-    try {
-      totalDur = parseFloat(execSync(
-        `ffprobe -v error -show_entries format=duration -of csv=p=0 "${silentVideo}"`,
+  // Step 4: Garsas — foninė muzika, vinjetės širdies plakimas ir (jei yra) balsas
+  let totalDur;
+  try {
+    totalDur = parseFloat(execSync(
+      `ffprobe -v error -show_entries format=duration -of csv=p=0 "${silentVideo}"`,
+      { encoding: 'utf-8' }
+    ).trim());
+  } catch (_) {
+    totalDur = allFrames.reduce((s, f) => s + f.duration, 0) + transCount * 2;
+  }
+
+  // ⛔ Balsas (node generate-voice.js) dedamas ties TIKRA kadro pradžia — ji išmatuojama
+  // iš sukonkatenuotų failų (intro, klipai, skirtukai), o ne apskaičiuojama iš scenarijaus.
+  const voiceDir = path.join(videoDir, `balsas-${lang}`);
+  const voiceManifestPath = path.join(voiceDir, 'manifest.json');
+  const voice = [];
+  let voiceGainDb = 0;
+  if (fs.existsSync(voiceManifestPath)) {
+    const vm = JSON.parse(fs.readFileSync(voiceManifestPath, 'utf-8'));
+    const kadroPradzia = {};
+    const kadroTrukme = {};
+    let laikas = 0;
+    for (const line of concatContent.split('\n')) {
+      const m = line.match(/^file '(.+)'$/);
+      if (!m) continue;
+      const d = parseFloat(execSync(
+        `ffprobe -v error -show_entries format=duration -of csv=p=0 "${path.join(clipDir, m[1])}"`,
         { encoding: 'utf-8' }
-      ).trim());
-    } catch (_) {
-      totalDur = allFrames.reduce((s, f) => s + f.duration, 0) + transCount * 2;
+      ).trim()) || 0;
+      const c = m[1].match(/^clip_(\d{3})\.mp4$/);
+      if (c) {
+        const fr = allFrames[parseInt(c[1], 10)];
+        if (fr && fr.kadrasNum) { kadroPradzia[fr.kadrasNum] = laikas; kadroTrukme[fr.kadrasNum] = d; }
+      }
+      laikas += d;
     }
-    const turiPlakima = hasOutro && outroSeconds > 0;
+    const startIn = vm.start_in_frame || 0.6;
+    for (const it of vm.items || []) {
+      const file = path.join(voiceDir, it.file);
+      if (kadroPradzia[it.kadras] === undefined || !fs.existsSync(file)) {
+        console.warn(`  ⛔ Balsas K${it.kadras}: kadras arba failas nerastas — praleidžiama`);
+        continue;
+      }
+      const langas = kadroTrukme[it.kadras] - startIn - 0.5;
+      if (it.duration > langas) {
+        console.warn(`  ⛔ Balsas K${it.kadras} (${it.duration}s) netelpa į kadrą (${langas.toFixed(1)}s) — pailgink kadrą scenarijuje`);
+      }
+      voice.push({ file, at: kadroPradzia[it.kadras] + startIn });
+    }
+    // ⛔ Balso garsumas suvienodinamas iki VOICE_TARGET_LUFS VIENU stiprinimu visiems kadrams —
+    // taip išlieka natūralus garsumo skirtumas tarp sakinių. eleven_v3_dpo generuoja ~9 dB
+    // tyliau nei eleven_v3 (−27,8 prieš −18,8 LUFS, 2026-09-15): be to balsas skęsta muzikoje.
+    let integ = null;
+    if (voice.length) {
+      const ins = voice.map(v => `-i "${v.file}"`).join(' ');
+      const cc = voice.map((_, j) => `[${j}:a]aresample=44100,aformat=channel_layouts=mono[c${j}]`).join(';') + ';'
+        + voice.map((_, j) => `[c${j}]`).join('') + `concat=n=${voice.length}:v=0:a=1,ebur128`;
+      try {
+        const o = execSync(`ffmpeg -v info ${ins} -filter_complex "${cc}" -f null - 2>&1`,
+          { encoding: 'utf-8', maxBuffer: 64 * 1024 * 1024 });
+        const all = [...o.matchAll(/I:\s+(-?[\d.]+) LUFS/g)];
+        if (all.length) integ = parseFloat(all[all.length - 1][1]);
+      } catch (e) { integ = null; }
+    }
+    if (integ !== null && isFinite(integ)) {
+      voiceGainDb = Math.max(-12, Math.min(15, VOICE_TARGET_LUFS - integ));
+      console.log(`  Balsas: ${voice.length} kadrai (${vm.model}) · ${integ.toFixed(1)} LUFS → ${VOICE_TARGET_LUFS} LUFS (${voiceGainDb >= 0 ? '+' : ''}${voiceGainDb.toFixed(1)} dB)`);
+    } else {
+      console.warn('  ⛔ Balso garsumo išmatuoti nepavyko — įmaišoma be suvienodinimo');
+      console.log(`  Balsas: ${voice.length} kadrai (${vm.model})`);
+    }
+  }
+
+  const turiPlakima = hasOutro && outroSeconds > 0;
+  if (hasMusic || turiPlakima || voice.length) {
     // Muzika nutyla prieš vinjetę, kad širdies plakimas liktų vienas — kaip originale.
     const outroStart = turiPlakima ? Math.max(0, totalDur - outroSeconds) : totalDur;
-    const fadeStart = turiPlakima
-      ? Math.max(0, outroStart - 1.5)
-      : Math.max(0, totalDur - 3);
+    const fadeStart = turiPlakima ? Math.max(0, outroStart - 1.5) : Math.max(0, totalDur - 3);
     const fadeLen = turiPlakima ? 1.5 : 3;
 
-    const ivestys = [
-      '-i', `"${silentVideo}"`,
-      '-stream_loop', '-1',
-      '-i', `"${musicPath}"`,
-    ];
-    let filtras = `[1:a]volume=0.4,afade=t=out:st=${fadeStart}:d=${fadeLen}[aout]`;
-
+    const ivestys = ['-i', `"${silentVideo}"`];
+    const filtrai = [];
+    const fonai = [];
+    let n = 1;
+    if (hasMusic) {
+      ivestys.push('-stream_loop', '-1', '-i', `"${musicPath}"`);
+      filtrai.push(`[${n}:a]volume=0.4,afade=t=out:st=${fadeStart}:d=${fadeLen},aresample=44100,aformat=channel_layouts=stereo[muzika]`);
+      fonai.push('[muzika]');
+      n++;
+    }
     if (turiPlakima) {
       ivestys.push('-i', `"${outroPath}"`);
       const delayMs = Math.round(outroStart * 1000);
-      filtras =
-        `[1:a]volume=0.4,afade=t=out:st=${fadeStart}:d=${fadeLen}[bg];` +
-        `[2:a]adelay=${delayMs}|${delayMs}[sirdis];` +
-        `[bg][sirdis]amix=inputs=2:duration=first:normalize=0[aout]`;
+      filtrai.push(`[${n}:a]aresample=44100,aformat=channel_layouts=stereo,adelay=${delayMs}|${delayMs}[sirdis]`);
+      fonai.push('[sirdis]');
+      n++;
+    }
+    let fonas = null;
+    if (fonai.length === 1) {
+      fonas = fonai[0];
+    } else if (fonai.length > 1) {
+      filtrai.push(`${fonai.join('')}amix=inputs=${fonai.length}:duration=first:normalize=0[fonas]`);
+      fonas = '[fonas]';
+    }
+
+    if (voice.length) {
+      voice.forEach((v, j) => {
+        ivestys.push('-i', `"${v.file}"`);
+        const ms = Math.round(v.at * 1000);
+        filtrai.push(`[${n}:a]aresample=44100,aformat=channel_layouts=stereo,volume=${voiceGainDb.toFixed(2)}dB,adelay=${ms}|${ms}[b${j}]`);
+        n++;
+      });
+      const b = voice.map((_, j) => `[b${j}]`).join('');
+      filtrai.push(voice.length > 1
+        ? `${b}amix=inputs=${voice.length}:normalize=0,alimiter=limit=0.891:level=false,apad[balsas]`
+        : `${b}alimiter=limit=0.891:level=false,apad[balsas]`);
+      if (fonas) {
+        // ⛔ Muzika po balsu prislopinama švelniai (sidechain, release ~0,9 s).
+        // Staigus grįžimas iškart po sakinio skamba taip, lyg balsas būtų nukirptas.
+        filtrai.push('[balsas]asplit=2[balsasSc][balsasOut]');
+        filtrai.push(`${fonas}[balsasSc]sidechaincompress=threshold=0.02:ratio=6:attack=40:release=900[fonasTylus]`);
+        filtrai.push('[fonasTylus][balsasOut]amix=inputs=2:normalize=0:duration=first[aout]');
+      } else {
+        filtrai.push('[balsas]anull[aout]');
+      }
+    } else {
+      filtrai.push(`${fonas}anull[aout]`);
     }
 
     execSync([
       'ffmpeg', '-y',
       ...ivestys,
-      '-filter_complex', `"${filtras}"`,
+      '-filter_complex', `"${filtrai.join(';')}"`,
       '-map', '0:v',
       '-map', '"[aout]"',
       '-c:v', 'copy',
       '-c:a', 'aac',
+      '-b:a', '192k',
       '-shortest',
       `"${videoOut}"`,
     ].join(' '), { stdio: 'pipe' });

@@ -238,6 +238,68 @@ vardija, ko nėra, arba turi žodį „iš tikrųjų“, jis greičiausiai gina,
 
 ---
 
+### 2026-09-15 · Balso scenarijus gimsta kartu su pirma idėja
+
+> „Tiesiog darant Youtube filmuką, dar nuo pirmų kūrybinių idėjų turi būti kuriamas ir
+> voiceover scriptas.“
+
+Slapukų filmukas buvo sukurtas „be balso“, o balsą bandyta uždėti po to, kai kadrai, jų
+trukmės ir ekrano tekstai jau buvo sustatyti. Tada balsui lieka tik tai, kas telpa į
+svetimą ritmą: vienam kadrui tekstas netilpo, kitam liko tuščios sekundės.
+
+**Taisyklė:** kiekvienas kadras nuo pirmo eskizo turi tris dalis — **ką rodo, ką sako
+ekranas, ką sako balsas**. Kadro trukmė skaičiuojama iš balso, ne atvirkščiai.
+
+⛔ **Balsas neskaito ekrano.** Jei balsas kartoja tą patį sakinį, kuris parašytas kadre,
+žiūrovas tą patį gauna dukart ir sunkiau įsimena. Balsas papildo: ekranas parodo,
+balsas paaiškina, kodėl.
+
+Esamiems filmukams be balso išimtis: balsas **atsirenkamas iš pamokos teksto**, ne
+rašomas iš naujo.
+
+### 2026-09-15 · Kirtis: rÀštinė, ne raštInė
+
+> „Kirčiavimas ne raštInė, o rAštinė.“
+
+ElevenLabs `eleven_v3` žodį „raštinę“ sukirčiavo antrame skiemenyje. Iš trijų variantų
+(be ženklo, „rãštinę“, „ràštinę“) Eimantas patvirtino **„ràštinę“** su kairiniu kirčio
+ženklu tekste.
+
+**Kitą kartą:** balso tekste žodį „raštinė“ rašyti su kairiniu ženklu. Kirtis pirmame
+skiemenyje visose formose.
+
+⛔ ElevenLabs tarimo žodynas **nesukurtas**: raktui trūksta teisės
+`pronunciation_dictionaries_write`. Ar `eleven_v3` žodynus apskritai skaito, dar
+nepatikrinta — dokumentacija to nesako.
+
+### 2026-09-15 · Balsas nukirptas gale — ne tempas, o failo pabaiga
+
+> „Pabaigoje balsas turėtų nusileisti savo tembre, nes dabar atrodo, kad nukirpta.“
+
+Priežastis išmatuota, ne spėta: ElevenLabs failas baigiasi **tiksliai ties paskutine
+raide**, kol balsas dar skamba (−25 dB paskutinėse 0,15 s). Maišymas po sakinio muziką
+grąžindavo šuoliu ir nukirpimą pabrėždavo.
+
+**Kitą kartą:** visi kadrų sakiniai generuojami **viena užklausa**, o po paskutinio
+pridedamas atmetamas sakinys, kuris iškerpamas. Muzika po balsu prislopinama švelniai
+(`sidechaincompress`, release ~0,9 s). Lėtinimas 10 % tempą padaro ramesnį, bet nukirpimo
+nesutaiso.
+
+### 2026-09-15 · Balsas turi skambėti kaip Darius — modelis ir versija renkami ausimi
+
+> „Aš ElevenLabs esu testavęs Dariaus balsą ir antra generavimo versija yra artimesnė
+> Dariaus balsui. Ar galima tai kontroliuoti kažkaip?“
+
+„Antra versija“ buvo ne atsitiktinumas, o **kitas modelis**: ElevenLabs sąsaja šalia
+`eleven_v3` rodė `eleven_v3_dpo_20260217`. Palyginus tą patį kadrą abiem, Eimantas išrinko
+DPO. Iš trijų viso teksto versijų išrinkta trečia, `seed` 1779642367.
+
+**Kitą kartą:**
+1. Modelio ir balso nekeisti be klausymo — jie įrašyti `generate-voice.js`.
+2. Naujam filmukui balso versija renkama iš kandidatų (`--kandidatai 3`), ir renka
+   **Eimantas**, ne agentas — panašumą į Darių girdi tik žmogus, kuris jį pažįsta.
+3. Profesionalus Dariaus klonas ElevenLabs paskyroje neapmokytas, API jo neleidžia naudoti.
+
 ## Straipsniai (tinklaraštis)
 
 ### 2026-09-13 · Straipsnis nėra pamoka — taisyklės skirtingos

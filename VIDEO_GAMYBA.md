@@ -14,6 +14,7 @@ Darbinis katalogas: `~/Workspace/AI vizualai/illustrations`
 | Iliustracijų šablonai | `lessons/{slug}/templates/NN-*.html` | ⛔ `{slug}` = **WP pamokos slug**, ne laisvas vardas |
 | Tekstas | `lessons/{slug}/content/lt.json` | sekcijos raktas = failo vardas su `_` |
 | Scenarijus | `lessons/{slug}/video/scenarijus-lt.md` | privalo turėti **lentelę**, žr. §2 |
+| Balso tekstas | tame pačiame scenarijuje, stulpelis **Balsas** | ⛔ rašomas **kartu su kadrais**, ne po jų, žr. §2 |
 | Animacijos įrašai | `generate-video-clips.js` → `TEMPLATE_ANIMATIONS` | ⛔ po įrašą **kiekvienam** šablonui |
 
 ⛔ **Katalogo vardas privalo sutapti su WP slug.** `generate-youtube-description.js` ieško
@@ -36,6 +37,24 @@ YouTube laiko žymos. Žemiau esantys „KADRAS N“ aprašai skirti žmogui.
 | 9 Outro | 5 sek. | autro |
 ```
 
+⛔ **Balsas gimsta kartu su pirma idėja** (Eimantas, 2026-09-15). Lentelė turi ketvirtą
+stulpelį — **Balsas** — ir jis pildomas tą pačią minutę, kai sugalvojamas kadras:
+
+```
+| Kadras | Trukmė | Failas | Balsas |
+|---|---|---|---|
+| 1 Klausimas ir atsakymas | 8 sek. | 00-virselis | Kartą per metus ar dažniau į raštinę ateina laiškas… |
+```
+
+- Kadro trukmė = **ilgesnė iš dviejų**: balso trukmė + ~1,5 s kvėpavimui, arba turinio
+  svorio minimumas iš lentelės žemiau. Balsas niekada nespraudžiamas į jau parinktą trukmę.
+- Balsas **neskaito ekrano teksto** — papildo jį. Tas pats sakinys ekrane ir balse
+  žiūrovui yra perteklius.
+- Intro ir vinjetė lieka **be balso** (vinjetės širdies plakimas turi likti vienas, §7).
+- Filmukui, sukurtam be balso, balsas **atsirenkamas iš pamokos teksto**, ne rašomas iš naujo.
+
+Balsą gamina `generate-voice.js`, montažas jį įmaišo pats — žr. §7 „Balsas“.
+
 Trukmė renkama **pagal turinio svorį**, ne vienoda:
 
 | Turinys | Trukmė |
@@ -54,6 +73,7 @@ Trukmė renkama **pagal turinio svorį**, ne vienoda:
 ```bash
 node generate.js --png --lang lt
 node generate-video-clips.js --lesson {slug} --lang lt
+node generate-voice.js --lesson {slug} --lang lt
 node build-video.js --lesson {slug} --lang lt
 node generate-youtube-description.js --lesson {slug} --lang lt
 ```
@@ -154,6 +174,41 @@ ffmpeg -v info -ss {outroStart} -t 8 -i video.mp4 -af volumedetect -f null - 2>&
 ffmpeg -v info -i assets/video/autro.mp4 -af volumedetect -f null - 2>&1 | grep volume
 ```
 
+### Balsas (nuo 2026-09-15)
+
+`generate-voice.js` skaito scenarijaus stulpelį **Balsas** ir kuria
+`video/balsas-{lang}/kNN.wav` + `manifest.json`. `build-video.js` juos randa pats.
+
+| Kas | Kaip | Kodėl |
+|---|---|---|
+| Modelis ir balsas | `eleven_v3_dpo_20260217`, „Darius Cleverphant“ greitasis klonas `eqJHjeWMPGJFD6VBf1J2` | Eimantas išrinko ausimi 2026-09-15 prieš `eleven_v3`. Profesionalus klonas neapmokytas, o v3 jam dar neoptimizuotas |
+| Versija | `--kandidatai 3` → Eimantas renka ausimi → `--pasirinkti SEED` | ElevenLabs pakartojamumo negarantuoja, tad perkeliamas **išgirstas** garsas, ne pergeneruojamas. Seed įrašomas scenarijaus antraštėje |
+| Visi sakiniai | **viena** užklausa, iškerpami pagal simbolių laiko žymas | `eleven_v3` nepriima `previous_text`/`next_text`; atskiros užklausos duoda intonacijos šuolius |
+| Paskutinis sakinys | po jo pridedamas **atmetamas** sakinys | ElevenLabs failas baigiasi ties paskutine raide, kol balsas dar skamba (−25 dB) — skamba nukirpta |
+| Vieta filmuke | kadro pradžia **išmatuota** iš sukonkatenuotų failų + 0,6 s | ne apskaičiuota iš scenarijaus — skirtukai ir klipai gali skirtis |
+| Muzika po balsu | `sidechaincompress`, release ~0,9 s | staigus grįžimas po sakinio irgi skamba kaip nukirpimas |
+| Garsumas | montaže visų kadrų balsas pakeliamas iki **−19 LUFS vienu stiprinimu**, ribotuvas −1 dBFS | `eleven_v3_dpo` generuoja ~9 dB tyliau nei `eleven_v3` (−27,8 prieš −18,8 LUFS). Be suvienodinimo balsas skęsta muzikoje, nors ji prislopinama. Vienas stiprinimas visiems išsaugo skirtumus tarp sakinių |
+| Greitis | `speed: 0.9` | ramesnis tempas 45–65 m. žiūrovui |
+| Kešas | jei tekstai nepakito, API nekviečiama; `--force` pergeneruoja | pakeitus vieną sakinį, pergeneruojami **visi** — tyčia, dėl intonacijos |
+| Netelpa | `generate-voice.js` baigiasi kodu 2 | kadras pailginamas scenarijuje, balsas nespraudžiamas |
+
+⛔ **Kirtis rašomas tekste kirčio ženklu**, pvz. „ràštinę“ (Eimantas patvirtino
+2026-09-15). Tarimo žodynas `cleverphant-lt-tarimas` ElevenLabs paskyroje sukurtas, bet
+`eleven_v3` jo greičiausiai **neskaito**: normalizuotame tekste pakaitalas neatsirado.
+Įjungiamas per `.env` → `ELEVENLABS_PRON_DICT_ID`, jei kada nors pasitvirtintų.
+
+Patikra po montažo (slapukų pamoka, 2026-09-15):
+
+| Rodiklis | Be balso | Su balsu |
+|---|---|---|
+| trukmė | 110,4 s | 110,4 s |
+| vinjetės vidurkis | −29,5 dB | −29,5 dB |
+| K1 ruožas (balsas) | −26,6 dB | −21,4 dB |
+| tarpas tarp sakinių | −19,9 dB | −19,8 dB |
+
+Kaina: ~740 simbolių vienai versijai 110 s filmukui, tad trys kandidatai ~2 200. Raktas `illustrations/.env` → `ELEVENLABS_API_KEY`.
+Rakto teisės: Text to Speech, `user_read`, tarimo žodynai (read/write).
+
 ---
 
 ## 8. YouTube aprašymas
@@ -202,4 +257,5 @@ vinjetė −29,5 dB prieš −29,4 dB.
 - Netrumpinti skirtuko žemiau 3 s.
 - Nedėti vienodų trukmių visiems kadrams.
 - Nemontuoti neištrynus senų klipų ir seno mp4.
+- Negeneruoti balso po vieną kadrą ir nerašyti balso, kuris garsiai skaito ekrano tekstą.
 - Nekelti į YouTube be žmogaus sprendimo — prieigos raktų projekte nėra, įkėlimas rankinis.

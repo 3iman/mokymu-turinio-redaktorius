@@ -1,23 +1,26 @@
 # Video scenarijus: Ką atsakyti, kai paklausia apie slapukus
 
-**Formatas:** Lietuviškai, be balso — tik iliustracijos + tekstas ekrane + foninė muzika
+**Formatas:** Lietuviškai, su balsu — iliustracijos + tekstas ekrane + balsas + foninė muzika
+**Balsas:** ElevenLabs `eleven_v3`, balsas `eqJHjeWMPGJFD6VBf1J2`, greitis 0.9 — `node generate-voice.js --lesson ka-atsakyti-kai-paklausia-apie-slapukus --lang lt`
+**Balso seed:** 1779642367 — pasirinktas Eimanto ausimi; keičiant tekstą kandidatai renkami iš naujo
+**Balso tekstas:** atsirinktas iš pamokos teksto (WP), ne rašytas iš naujo. Kirtis „ràštinę“ patvirtintas Eimanto 2026-09-15.
 **Trukmė:** ~1:15 min.
 **Foninė muzika:** `jiglr-malibu_cleverphant-mokymu-fonas.mp3` (~20% garsumo)
 
 ---
 
-| Kadras | Trukmė | Failas |
-|---|---|---|
-| 0 Intro | 5 sek. | intro |
-| 1 Klausimas ir atsakymas | 8 sek. | 00-virselis |
-| 2 Iš kur ateina klausimas | 9 sek. | 01-is-kur-ateina-klausimas |
-| 3 Visur toks pats modulis | 8 sek. | 02-tas-pats-modulis |
-| 4 Kur rasti nuorodą | 10 sek. | 03-kur-rasti-nuoroda |
-| 5 Pirmą kartą nepažymėta nieko | 11 sek. | 04-pirma-karta-nepazymeta |
-| 6 Mygtukai vienodi | 9 sek. | 05-mygtukai-vienodi |
-| 7 Ką renka | 12 sek. | 06-ka-renka |
-| 8 Naują versiją gauna visos | 8 sek. | 07-vienas-taisymas |
-| 9 Outro | 5 sek. | autro |
+| Kadras | Trukmė | Failas | Balsas |
+|---|---|---|---|
+| 0 Intro | 5 sek. | intro | — |
+| 1 Klausimas ir atsakymas | 8 sek. | 00-virselis | Kartą per metus ar dažniau į ràštinę ateina laiškas iš asmens duomenų apsaugos pareigūno. |
+| 2 Iš kur ateina klausimas | 9 sek. | 01-is-kur-ateina-klausimas | Klausiama ne apie tai, ar naudojate slapukus, o apie tai, ar lankytojas turi tikrą pasirinkimą jų atsisakyti. |
+| 3 Visur toks pats modulis | 8 sek. | 02-tas-pats-modulis | Reikalavimus stebime mes. Daryti jums nereikia nieko. |
+| 4 Kur rasti nuorodą | 10 sek. | 03-kur-rasti-nuoroda | Sutikimą galima bet kada pakeisti per nuorodą Slapukų valdymas svetainės apačioje. |
+| 5 Pirmą kartą nepažymėta nieko | 11 sek. | 04-pirma-karta-nepazymeta | Jei lankytojui reikia langelį atžymėti, kad atsisakytų, tai jau ne sutikimas, o numatytoji tvarka. |
+| 6 Mygtukai vienodi | 9 sek. | 05-mygtukai-vienodi | Daugelyje svetainių Sutinku yra ryškus spalvotas mygtukas, o Nesutinku – pilkas tekstas šalia. |
+| 7 Ką renka | 12 sek. | 06-ka-renka | Google slapukas atsiranda tik tuo atveju, jei mokykla pati naudoja „Google Analytics“. Jei nenaudojate, jo svetainėje nėra. |
+| 8 Naują versiją gauna visos | 8 sek. | 07-vienas-taisymas | Naują versiją gauna visos mokyklos – ne tik ta, kuri paklausė. |
+| 9 Outro | 5 sek. | autro | — |
 
 ---
 
