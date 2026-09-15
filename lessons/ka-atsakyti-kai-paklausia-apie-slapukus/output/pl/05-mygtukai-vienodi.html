@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .lead { font-size: 26px; color: var(--c-text-muted); text-align: center; margin: -28px 0 62px;
+          hyphens: auto; overflow-wrap: break-word; }
+  .foot { font-size: 24px; color: var(--c-text-secondary); text-align: center; margin-top: 56px;
+          hyphens: auto; overflow-wrap: break-word; }
+  .cols { display: flex; gap: 56px; align-items: stretch; }
+  .col { flex: 1; border-radius: 24px; padding: 48px; display: flex; flex-direction: column; }
+  .col-do { background: var(--c-green-bg); border: 1.5px solid var(--c-green-border); }
+  .col-dont { background: var(--c-red-bg); border: 1.5px solid var(--c-red-border); }
+  .col-head { display: flex; align-items: center; gap: 20px; margin-bottom: 36px; }
+  .col-icon { width: 72px; height: 72px; border-radius: 50%; display: flex; align-items: center;
+              justify-content: center; flex-shrink: 0; }
+  .col-do .col-icon { background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to)); }
+  .col-dont .col-icon { background: linear-gradient(135deg, var(--c-red-gradient-from), var(--c-red-gradient-to)); }
+  .col-icon svg { width: 36px; height: 36px; }
+  .col-title { font-size: 28px; font-weight: 700; color: var(--c-text); }
+  .note { font-size: 23px; margin-top: 30px; hyphens: auto; overflow-wrap: break-word; }
+  .col-do .note { color: var(--c-green-text); }
+  .col-dont .note { color: var(--c-red-text); }
+
+  /* ---- Slapukų juostos maketas ---- */
+  .juosta { background: var(--c-surface); border: 1.5px solid var(--c-border); border-radius: 16px;
+            padding: 34px 28px; display: flex; align-items: center; gap: 18px; flex-wrap: nowrap; }
+  .col-dont .juosta { border-color: var(--c-red-border); }
+
+  .mb { font-size: 20px; letter-spacing: .6px; padding: 17px 24px; border-radius: 6px;
+        white-space: nowrap; }
+  .mb-tusc { border: 2px solid var(--c-text); color: var(--c-text); background: var(--c-surface); }
+  .mb-pilna { background: #2f2f2f; color: #fff; }
+
+  .pora { display: flex; gap: 18px; padding: 12px; border-radius: 12px;
+          border: 4px solid var(--c-green-solid); }
+
+  .m-yes { background: var(--c-green-solid); color: #fff; font-size: 26px; font-weight: 700;
+           padding: 22px 46px; border-radius: 10px; }
+  .m-no { color: var(--c-text-faint); font-size: 26px; text-decoration: underline; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Przyciski muszą być jednakowo dostępne</div>
+    <div class="lead">Wygląd przycisków nie może zachęcać do zgody. Najlepszą praktyką jest jednakowy wygląd.</div>
+    <div class="cols">
+      <div class="col col-dont">
+        <div class="col-head">
+          <div class="col-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div>
+          <div class="col-title">Tak być nie powinno</div>
+        </div>
+        <div class="juosta">
+          <span class="m-yes">Zgadzam się</span>
+          <span class="m-no">Nie zgadzam się</span>
+        </div>
+        <div class="note">Jeden wyrazisty, drugi ledwo widoczny.</div>
+      </div>
+      <div class="col col-do">
+        <div class="col-head">
+          <div class="col-icon"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
+          <div class="col-title">Tak jest na Waszej stronie</div>
+        </div>
+        <div class="juosta">
+          <span class="mb mb-tusc">USTAWIENIA</span>
+          <span class="pora">
+            <span class="mb mb-pilna">NIE ZGADZAM SIĘ</span>
+            <span class="mb mb-pilna">ZGADZAM SIĘ</span>
+          </span>
+        </div>
+        <div class="note">„Nie zgadzam się” i „Zgadzam się” – ten sam rozmiar, kształt i kolor.</div>
+      </div>
+    </div>
+    <div class="foot">Urząd wskazuje to jako osobny punkt.</div>
+  </div>
+</body>
+</html>

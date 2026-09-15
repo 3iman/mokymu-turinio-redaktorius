@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+
+  .lead { font-size: 26px; color: var(--c-text-muted); text-align: center; margin: -28px 0 62px;
+          hyphens: auto; overflow-wrap: break-word; }
+  .foot { font-size: 24px; color: var(--c-text-secondary); text-align: center; margin-top: 56px;
+          hyphens: auto; overflow-wrap: break-word; }
+  .cols { display: flex; gap: 56px; align-items: stretch; }
+  .col { flex: 1; border-radius: 24px; padding: 48px; display: flex; flex-direction: column; }
+  .col-do { background: var(--c-green-bg); border: 1.5px solid var(--c-green-border); }
+  .col-dont { background: var(--c-red-bg); border: 1.5px solid var(--c-red-border); }
+  .col-head { display: flex; align-items: center; gap: 20px; margin-bottom: 36px; }
+  .col-icon { width: 72px; height: 72px; border-radius: 50%; display: flex; align-items: center;
+              justify-content: center; flex-shrink: 0; }
+  .col-do .col-icon { background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to)); }
+  .col-dont .col-icon { background: linear-gradient(135deg, var(--c-red-gradient-from), var(--c-red-gradient-to)); }
+  .col-icon svg { width: 36px; height: 36px; }
+  .col-title { font-size: 28px; font-weight: 700; color: var(--c-text); }
+  .shot { border-radius: 14px; overflow: hidden; border: 1.5px solid var(--c-border);
+          background: var(--c-surface); position: relative; }
+  .shot img { display: block; width: 100%; }
+  .ring { position: absolute; border: 5px solid var(--c-green-solid); border-radius: 10px; }
+  .note { font-size: 23px; margin-top: 30px; hyphens: auto; overflow-wrap: break-word; }
+  .col-do .note { color: var(--c-green-text); }
+  .col-dont .note { color: var(--c-red-text); }
+
+  .srautas { display: flex; gap: 56px; align-items: center; }
+  .core { width: 520px; flex-shrink: 0; background: var(--c-blue-bg); border: 1.5px solid var(--c-blue-border);
+          border-radius: 24px; padding: 52px 44px; text-align: center; }
+  .core-label { font-size: 30px; font-weight: 700; color: var(--c-text); margin-bottom: 24px; }
+  .core-desc { font-size: 25px; line-height: 1.5; color: var(--c-text-muted); }
+  .arrow { color: var(--c-line); flex-shrink: 0; }
+  .sites { flex: 1; display: flex; flex-wrap: wrap; gap: 24px; }
+  .site { flex: 1 1 calc(33% - 24px); min-width: 240px; background: var(--c-green-bg);
+          border: 1.5px solid var(--c-green-border); border-radius: 18px; padding: 28px 24px;
+          display: flex; align-items: center; gap: 16px; font-size: 24px; color: var(--c-text);
+          hyphens: auto; overflow-wrap: break-word; }
+  .tick { width: 34px; height: 34px; border-radius: 50%; background: var(--c-green-solid); flex-shrink: 0;
+          display: flex; align-items: center; justify-content: center; }
+  .tick svg { width: 19px; height: 19px; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Zarządzanie plikami cookie jest wszędzie takie samo</div>
+    <div class="srautas">
+      <div class="core">
+        <div class="core-label">System zarządzania treścią</div>
+        <div class="core-desc">Jeden moduł zarządzania plikami cookie. Wszystkim stronom aktualizujemy tę samą jego wersję.</div>
+      </div>
+      <div class="arrow"><svg width="52" height="28" viewBox="0 0 52 28" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M2 14h46M38 5l10 9-10 9"/></svg></div>
+      <div class="sites">
+        <div class="site"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Wasza strona</div>
+        <div class="site"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Inna szkoła</div>
+        <div class="site"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Przedszkole</div>
+        <div class="site"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Liceum</div>
+        <div class="site"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>Gimnazjum</div>
+        <div class="site"><span class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>I wszystkie pozostałe</div>
+      </div>
+    </div>
+    <div class="foot">Każda strona działa osobno, ale wersja modułu jest w nich ta sama.</div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

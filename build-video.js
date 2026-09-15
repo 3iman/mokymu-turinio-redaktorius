@@ -121,44 +121,18 @@ function parseScenario() {
 
 // ---- Intro animation CSS ----
 const INTRO_ANIM_CSS = `
-  :root {
-    --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
-  }
+  :root { --ease-spring: cubic-bezier(0.16, 1, 0.3, 1); }
 
-  @keyframes fadeUpHeavy {
-    from { opacity: 0; transform: translateY(32px) scale(0.96); }
-    to   { opacity: 1; transform: translateY(0) scale(1); }
-  }
-  @keyframes fadeIn {
-    from { opacity: 0; }
-    to   { opacity: 1; }
-  }
-  @keyframes lineExpand {
-    from { opacity: 0; width: 0; }
-    to   { opacity: 1; width: 100px; }
-  }
+  @keyframes introKyla { from { opacity: 0; transform: translateY(26px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes introPlinta { from { width: 0; } to { width: 300px; } }
+  @keyframes introRyskeja { from { opacity: 0; } to { opacity: 1; } }
 
-  .title, .accent-line, .subtitle, .url { opacity: 0; }
+  .subtitle, .title, .accent-line, .url { opacity: 0; }
 
-  /* 0.5s — Title (heavy, 0.7s) */
-  .title {
-    animation: fadeUpHeavy 0.7s var(--ease-spring) 0.5s forwards;
-  }
-
-  /* 1.5s — Accent line (expand, 0.4s) */
-  .accent-line {
-    animation: lineExpand 0.4s var(--ease-spring) 1.5s forwards;
-  }
-
-  /* 2.1s — Subtitle (fade, 0.5s) */
-  .subtitle {
-    animation: fadeIn 0.5s var(--ease-spring) 2.1s forwards;
-  }
-
-  /* 3.0s — URL (fade, 0.4s) */
-  .url {
-    animation: fadeIn 0.4s var(--ease-spring) 3.0s forwards;
-  }
+  .subtitle    { animation: introKyla 0.55s var(--ease-spring) 0.45s forwards; }
+  .title       { animation: introKyla 0.80s var(--ease-spring) 0.70s forwards; }
+  .accent-line { animation: introPlinta 0.80s var(--ease-spring) 1.70s forwards, introRyskeja 0.3s linear 1.70s forwards; }
+  .url         { animation: introRyskeja 0.5s var(--ease-spring) 2.60s forwards; }
 `;
 
 // ---- Generate intro as animated clip ----
@@ -170,7 +144,12 @@ async function generateIntroClip(title, subtitle) {
   }
 
   let html = fs.readFileSync(introTemplate, 'utf-8');
-  html = html.replace(/\{\{video_title\}\}/g, title);
+  // Pavadinimas dviem svoriais: paskutiniai 1–2 žodžiai paryškinami (cleverphant.lt hero)
+  const zodziai = String(title).trim().split(/\s+/);
+  const stori = zodziai.length > 3 ? 2 : 1;
+  const pTitle = zodziai.slice(0, Math.max(1, zodziai.length - stori)).join(' ')
+               + '<b>' + zodziai.slice(Math.max(1, zodziai.length - stori)).join(' ') + '</b>';
+  html = html.replace(/\{\{video_title\}\}/g, pTitle);
   html = html.replace(/\{\{video_subtitle\}\}/g, subtitle);
   html = html.replace(/\{\{lang\}\}/g, lang);
   html = html.replace(/\{\{brand_logo_path\}\}/g, path.resolve(ASSETS_DIR, 'cleverphant-juodas.svg'));
@@ -261,7 +240,12 @@ async function generateIntroPng(title, subtitle) {
   if (!fs.existsSync(introTemplate)) return null;
 
   let html = fs.readFileSync(introTemplate, 'utf-8');
-  html = html.replace(/\{\{video_title\}\}/g, title);
+  // Pavadinimas dviem svoriais: paskutiniai 1–2 žodžiai paryškinami (cleverphant.lt hero)
+  const zodziai = String(title).trim().split(/\s+/);
+  const stori = zodziai.length > 3 ? 2 : 1;
+  const pTitle = zodziai.slice(0, Math.max(1, zodziai.length - stori)).join(' ')
+               + '<b>' + zodziai.slice(Math.max(1, zodziai.length - stori)).join(' ') + '</b>';
+  html = html.replace(/\{\{video_title\}\}/g, pTitle);
   html = html.replace(/\{\{video_subtitle\}\}/g, subtitle);
   html = html.replace(/\{\{lang\}\}/g, lang);
   html = html.replace(/\{\{brand_logo_path\}\}/g, path.resolve(ASSETS_DIR, 'cleverphant-juodas.svg'));

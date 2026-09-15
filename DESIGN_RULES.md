@@ -1,11 +1,24 @@
 # Dizaino taisyklės — iliustracijos
 
 ## Kortelė (card)
-- Plotis: **900px**
-- Fonas: `var(--c-surface)`
-- Border-radius: **20px**
-- Shadow: `var(--c-shadow-card)`
-- Padding: **48px 56px**
+
+⛔ **Pakeista 2026-09-14.** Iki tol kortelė buvo šviesiai pilkas stačiakampis su šešėliu ir
+milžinišku vandens ženklu per visą kadrą. Dabar ji kalba ta pačia kalba kaip
+**cleverphant.lt**, nes ten svetainė yra produkto įrodymas, o vizualai — jo dalis.
+
+- Kadras: **1920×1080**, `padding: 88px 120px`
+- Fonas: **pastelinis gradientas** `160deg, #eef1f8 → #f4f6fa 42% → #faf9fb`
+- Ant jo trys **permatomi apskritimai**, piešiami `radial-gradient`'ais (be papildomo DOM):
+  baltas 430 px viršuje dešinėje, alyvinis 190 px apačioje kairėje, rožinis 78 px apačioje dešinėje
+- **Be šešėlio, be apvalinimo, be vandens ženklo** — apskritimai užėmė jo vietą
+- Antraštė: **54px / 700**, `letter-spacing: -1.2px`, centruota
+- Tamsus režimas: tas pats piešinys tamsiais tonais (`#151b2b → #1d2438`)
+
+Viskas gyvena `tokens/base.css`, tad šablonų keisti nereikia — pakanka perleisti
+`node generate.js --png`.
+
+⛔ **Skirtukas tarp video kadrų privalo turėti TĄ PATĮ foną** (`generate-video-clips.js`,
+`buildTransitionHtml`). Kitaip pjūvis tarp skirtuko ir skaidrės matomas.
 
 ## Šriftas
 - Šeima: **Inter** (fallback: -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif)

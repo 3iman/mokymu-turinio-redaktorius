@@ -23,10 +23,14 @@ body {
 .card {
   width: 1920px;
   height: 1080px;
-  background: #f3f4f6;
-  border-radius: 32px;
-  padding: 80px 120px;
-  box-shadow: var(--c-shadow-card);
+  /* Pastelinis fonas ir permatomi apskritimai — ta pati kalba kaip cleverphant.lt.
+     Apskritimai piešiami radial-gradient'ais, tad papildomų DOM elementų nereikia. */
+  background:
+    radial-gradient(circle 430px at 88% 6%,  rgba(255,255,255,.80) 0 99%, rgba(255,255,255,0) 100%),
+    radial-gradient(circle 190px at 3% 95%,  rgba(199,185,219,.34) 0 99%, rgba(199,185,219,0) 100%),
+    radial-gradient(circle 78px  at 93% 88%, rgba(243,168,196,.50) 0 99%, rgba(243,168,196,0) 100%),
+    linear-gradient(160deg, #eef1f8 0%, #f4f6fa 42%, #faf9fb 100%);
+  padding: 88px 120px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -34,35 +38,31 @@ body {
   position: relative;
 }
 
-/* Branded watermark — simbolis per visą kadrą, kaip blue_bg.png */
-.card::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 1400px;
-  height: 1400px;
-  background: url('../assets/simbolis_big.png') no-repeat center / contain;
-  opacity: 0.37;
-  pointer-events: none;
-  mix-blend-mode: screen;
-  z-index: 0;
+/* ---- Tamsus režimas ---- */
+@media (prefers-color-scheme: dark) {
+  .card {
+    background:
+      radial-gradient(circle 430px at 88% 6%,  rgba(255,255,255,.05) 0 99%, rgba(255,255,255,0) 100%),
+      radial-gradient(circle 190px at 3% 95%,  rgba(199,185,219,.10) 0 99%, rgba(199,185,219,0) 100%),
+      radial-gradient(circle 78px  at 93% 88%, rgba(243,168,196,.16) 0 99%, rgba(243,168,196,0) 100%),
+      linear-gradient(160deg, #151b2b 0%, #1a2133 46%, #1d2438 100%);
+  }
 }
 
-/* Turinys visada virš watermark */
+/* Vandens ženklo nebėra — jo vietą užėmė apskritimai */
 .card > * {
   position: relative;
   z-index: 1;
 }
 
 .title {
-  font-size: 44px;
+  font-size: 54px;
   font-weight: 700;
   color: var(--c-text);
   text-align: center;
-  margin-bottom: 56px;
-  letter-spacing: -0.5px;
+  margin-bottom: 58px;
+  letter-spacing: -1.2px;
+  line-height: 1.1;
   hyphens: auto;
   overflow-wrap: break-word;
 }

@@ -2,77 +2,51 @@
 <html lang="{{lang}}">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
 <style>
-* { margin: 0; padding: 0; box-sizing: border-box; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --sp: cubic-bezier(0.16, 1, 0.3, 1); }
 
-body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  background: #1a1a2e;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-}
+  /* Tamsus atidarymas — pora firminei vinjetei pabaigoje.
+     Tarp jų filmas šviesus, tad gaunasi arka, ne vienalytė juosta. */
+  body {
+    width: 1920px; height: 1080px; overflow: hidden;
+    font-family: Inter, -apple-system, sans-serif;
+    background:
+      radial-gradient(circle 470px at 86% 8%,  rgba(58,176,176,.18) 0 99%, rgba(58,176,176,0) 100%),
+      radial-gradient(circle 220px at 5% 94%,  rgba(199,185,219,.16) 0 99%, rgba(199,185,219,0) 100%),
+      radial-gradient(circle 90px  at 92% 86%, rgba(243,168,196,.30) 0 99%, rgba(243,168,196,0) 100%),
+      linear-gradient(160deg, #0b1728 0%, #12203a 46%, #16264a 100%);
+    position: relative;
+  }
 
-.card {
-  width: 1920px;
-  height: 1080px;
-  background-image: url('{{bg_image_path}}');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 48px;
-  position: relative;
-}
+  .card { position: absolute; top: 50%; left: 140px; transform: translateY(-50%); width: 1500px; }
 
-.title {
-  font-size: 72px;
-  font-weight: 800;
-  color: #ffffff;
-  text-align: center;
-  max-width: 1400px;
-  line-height: 1.2;
-  letter-spacing: -1px;
-  text-shadow: 0 2px 16px rgba(0, 0, 0, 0.15);
-}
-
-.accent-line {
-  width: 100px;
-  height: 5px;
-  border-radius: 3px;
-  background: rgba(255, 255, 255, 0.45);
-}
-
-.subtitle {
-  font-size: 28px;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.75);
-  text-align: center;
-  letter-spacing: 0.5px;
-}
-
-.url {
-  font-size: 20px;
-  font-weight: 400;
-  color: rgba(255, 255, 255, 0.5);
-  text-align: center;
-  letter-spacing: 1px;
-  position: absolute;
-  bottom: 48px;
-}
+  .subtitle {
+    font-size: 19px; font-weight: 700; letter-spacing: 3.6px; text-transform: uppercase;
+    color: #6e86b5; margin-bottom: 28px;
+  }
+  .title {
+    font-size: 86px; font-weight: 400; letter-spacing: -2.4px; line-height: 1.06; color: #fff;
+    hyphens: auto; overflow-wrap: break-word;
+  }
+  .title b { display: block; font-weight: 800; }
+  .accent-line {
+    height: 5px; border-radius: 3px; width: 300px;
+    background: linear-gradient(90deg, #3ab0b0, #f3a8c4); margin-top: 40px;
+  }
+  .url {
+    position: absolute; left: 140px; bottom: 96px;
+    font-size: 22px; font-weight: 600; letter-spacing: 1.6px; color: rgba(255,255,255,.55);
+  }
 </style>
 </head>
 <body>
   <div class="card">
+    <div class="subtitle">{{video_subtitle}}</div>
     <div class="title">{{video_title}}</div>
     <div class="accent-line"></div>
-    <div class="subtitle">{{video_subtitle}}</div>
-    <div class="url">www.cleverphant.lt</div>
   </div>
+  <div class="url">cleverphant.lt</div>
 </body>
 </html>

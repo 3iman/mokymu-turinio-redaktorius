@@ -235,3 +235,127 @@ Trys taisymai viename sakinyje:
 
 ⛔ **Bendra taisyklė:** ramus teiginys stipresnis už išvardytą neigimą. Jei sakinys
 vardija, ko nėra, arba turi žodį „iš tikrųjų“, jis greičiausiai gina, o ne informuoja.
+
+---
+
+## Straipsniai (tinklaraštis)
+
+### 2026-09-13 · Straipsnis nėra pamoka — taisyklės skirtingos
+
+Perskaičiau visus septynis `cleverphant.lt/tinklarastis` straipsnius. Buvau parašęs savo,
+nepažiūrėjęs į jokį — ir suklydau tuo, kad į straipsnį perkėliau **pamokos** taisykles.
+
+| | Pamoka | Straipsnis |
+|---|---|---|
+| Ilgis | kiek reikia | **150–250 žodžių**, ilgiausias 473 |
+| Antraštės | be klaustukų | **klausimo forma su klaustuku** („Kam to reikia?“, „Ką siūlome daryti?“) |
+| Liepiamoji nuosaka | draudžiama | **naudojama** („Standartizuokite“, „Nepalikite nė vieno“) |
+| „Cleverphant“ | draudžiama | **įvardijama**, dar ir atskiru bloku |
+
+**Karkasas, kuris kartojasi visuose septyniuose:**
+
+1. **H1 — klausimas arba citata iš mokyklos lūpų.** „Gelbėkit, mūsų mokyklos interneto
+   svetainę nulaužė!“, „Kaip organizuoti mokyklos interneto svetainės turinį?“
+2. **Pradžia — lauko stebėjimas, ne naujiena.** „Dirbdami su įvairiomis mokyklomis
+   pastebėjome tendenciją…“, „Kai kalbame su švietimo įstaigomis…“, „Girdime, kad…“
+3. **Klaidingas įsivaizdavimas, tada apvertimas.** „Pradėkime nuo to, kaip įstaigos
+   įsivaizduoja… Tačiau dažnai būna visiškai priešingai.“
+4. **H3 paantraštės — klausimai.**
+5. **Blokas „Ką daro Cleverphant 🐘“** — sąrašu, prieš pabaigą.
+6. **Pabaiga — tiesioginis kreipinys.** „Tai ar galime sutarti, kad dirbsime išvien?
+   Pasidalinkit šia informacija su kolegomis.“
+
+Skaičiai konkretūs ir iš praktikos: „per mėnesį ~10 įrašų, per metus ~100, dar po metų 200“.
+
+⛔ **Mano pirmoji versija buvo 477 žodžiai, be klaustukų, be Cleverphant ir baigėsi šaltinių
+sąrašu.** Perrašyta iki 164 žodžių pagal šį karkasą. Senoji palikta kaip
+`straipsnis-senas.md` palyginimui.
+
+### 2026-09-14 · Keturios pastabos straipsniui
+
+> „Kur dažniausiai nueinama ne ten — lietuviai taip nesako.“
+> „Kodėl tai vienoda visose mokyklose — čia viešas straipsnis, tai nerašykime to.“
+> „Ką daryti, jei svetainė ne mūsų → Kaip pasitikrinti patiems“
+> „Šaltinių nededame. Nereikia.“
+
+| Taisyklė | Kodėl |
+|---|---|
+| **Antraštė turi skambėti lietuviškai** | „Kur dažniausiai nueinama ne ten“ yra vertinys. Lietuviškai — „Dvi dažniausios klaidos“ |
+| **Vidinės virtuvės viešai nerašome** | kiek klientų ir kaip centralizuotai prižiūrime yra mūsų reikalas; straipsnyje rašoma, **ką mokykla gauna**, ne kaip mes tai organizuojame |
+| **Skyrius apie patikrą — „Kaip pasitikrinti patiems“** | pavadinimas sako, ką skaitytojas gali padaryti, o ne kokiu atveju jam tai aktualu |
+| **Šaltinių sąrašo straipsnio gale nebūna** | šaltinis, jei reikia, įvardijamas sakinyje („Valstybinė duomenų apsaugos inspekcija tai įvardija atskiru punktu“) |
+
+⛔ Ta pati taisyklė kaip su „Ką renkame“: **antraštė, kuri aiškina mūsų pusę, keičiama į
+tokią, kuri sako skaitytojui, ką jis gali padaryti.**
+
+### 2026-09-14 · Straipsnio karkasas turi dar du privalomus elementus
+
+> „Čia pvz kaip konstruojame straipsnį nuo pradžių.“ (ekrane — „Gelbėkit, mūsų mokyklos
+> interneto svetainę nulaužė!“)
+
+Pirmą versiją įkėliau be dviejų dalykų, kuriuos turi **visi** septyni publikuoti straipsniai:
+
+1. **Įvadas `<em>` žymėje.** Tai ne kursyvas — tema jį atvaizduoja kaip didelį įvadinį
+   sakinį po antrašte. Turinio pradžia **visada** `<em>…</em>`, ir tai kabliukas, ne
+   santrauka: „Skamba baisiai, tiesa?“, „Pritaikomumas nėra tik techninė užduotis…“.
+   Tik po jo eina lauko stebėjimas įprastu šriftu.
+2. **Laukas `bl-color` (`meta_box`).** Kortelės spalva tinklaraščio sąraše. Ta pati
+   platformos palėtė kaip pamokose, ir **kiekvienas straipsnis turi savitą** — nė viena
+   iš aštuonių nesikartoja.
+
+Užimta: `accent-ultra-dark`, `primary-light`, `action-light`, `primary`, `secondary`,
+`accent-light`, `accent-ultra-light`, `secondary-light`. Slapukų straipsniui parinkta
+`var(--accent)`, nes ji dar nenaudota.
+
+Viršuje matoma etiketė **PAMĄSTYMAI** yra šablono dalis, ne taksonomija — nustatinėti
+nereikia. Featured image irgi ne: iš septynių jį turi tik vienas.
+
+⛔ **Techninis kelias:** `tinklarastis` yra atskiras įrašo tipas, redaktorius klasikinis.
+Turinys — paprastas HTML, pastraipos skiriamos `\r\n\r\n`, be `<p>`, antraštės `<h3>`.
+Rašoma per REST su prisijungusios sesijos `X-WP-Nonce`; programinio slaptažodžio
+cleverphant.lt neturime.
+
+### 2026-09-14 · cleverphant.lt tikslas — daryti įspūdį
+
+> „Cleverphant.lt svetainės tikslas daryti įspūdį.“
+> „O vakarykštį filmuką jei perdaryti tokiu stiliumi? Jaučiu labai nice būtų.“
+
+Straipsniui buvau pradėjęs piešti baltas korteles su raudonais ir žaliais rėmeliais — tai
+dokumentacijos kalba. Svetainės kalba kita: **73 px antraštė dviem svoriais, pastelinis
+mėlynai alyvinis fonas, milžiniški permatomi apskritimai, ploni spalvoti pabraukimai,
+daug oro.**
+
+**Sprendimas:** tai tampa standartu **visoms** pamokoms, ne tik straipsniui. Įgyvendinta
+`tokens/base.css` lygyje, tad visi 81 vizualas visomis kalbomis persipiešė be šablonų
+keitimo.
+
+⛔ **Prieš piešiant bet kam nors skirtą vizualą — pirma pažiūrėti, kaip atrodo ta vieta.**
+Tą pačią klaidą dariau tris kartus: vizualai be DESIGN_RULES, animacija be
+ANIMATION_PRINCIPLES, straipsnis be tavo straipsnių. Kiekvieną kartą atsakymas gulėjo
+projekte arba ekrane.
+
+⛔ **Istorinis skaičius nėra taisyklė.** „Nė viename straipsnyje nėra vizualų“ reiškė ne
+formatą, o tai, kad nebuvo galimybių. Prieš remiantis statistika verta paklausti, ar ji
+matuoja pasirinkimą, ar apribojimą.
+
+### 2026-09-14 · Skirtukas ir intro — paskutiniai šabloniniai elementai
+
+> „Dabar vienintelis šabloninis dalykas liko tas skirtukas.“
+> „Noriu, kad liktų mūsų tinklapio reklama cleverphant.lt kaip dabartiniame.“
+
+**Skirtukas.** Buvo tiesi gradientinė linija ir didelis mėlynas numeris centre — abu
+svetimi brando kalbai. Dabar: **nukirstas numeris fone** (citata iš cleverphant.lt hero,
+kur antraštė išeina už kadro), pavadinimas šalia **dviem svoriais**, po juo trumpas
+brūkšnys iš žalsvai mėlynos į rožinę. Pavadinimas skaidomas automatiškai: paskutiniai
+1–2 žodžiai paryškinami.
+
+**Intro.** Buvo vienintelis sodrios mėlynos kadras visame filme (`blue_bg.png`). Dabar —
+**tamsus atidarymas**, pora firminei vinjetei pabaigoje. Tarp jų filmas šviesus, tad
+gaunasi arka, ne vienalytė juosta. Tamsus kadras duoda spalvos smūgį pirmoje sekundėje
+brando spalvomis, o ne atsitiktine mėlyna.
+
+⛔ **`cleverphant.lt` lieka intro kadre** — tai reklama, ne dekoracija. Kairėje apačioje,
+sulygiuota su pavadinimo bloku, atsiranda paskutinė.
+
+⛔ Šablonas `templates/video-intro.html` nebenaudoja `blue_bg.png`. Fonas piešiamas
+`radial-gradient`'ais, tad jį keičia tik CSS, o ne paveikslėlis.

@@ -1352,93 +1352,63 @@ const NUMBER_OVERLAY_CSS = `
 // ---- Transition C HTML generator ----
 function buildTransitionHtml(number, title) {
   const num = String(number).padStart(2, '0');
-  // Kryptis kaitaliojasi: nelyginis kadras brėžia iš kairės, lyginis — iš dešinės.
-  const isKaires = number % 2 === 1;
-  const kilme = isKaires ? 'left center' : 'right center';
-  const gradKryptis = isKaires ? '90deg' : '270deg';
+  // Skirtuko etiketė pagal kalbą
+  const etiketes = { lt: 'KADRAS', pl: 'UJĘCIE', de: 'SZENE', en: 'SCENE' };
+  const et = etiketes[lang] || etiketes.en;
+  // Pavadinimas skaidomas į dvi eilutes: paskutiniai 1–2 žodžiai paryškinami.
+  const zod = String(title).trim().split(/\s+/);
+  const kiekStoru = zod.length > 3 ? 2 : 1;
+  const plona = zod.slice(0, Math.max(1, zod.length - kiekStoru)).join(' ');
+  const stora = zod.slice(Math.max(1, zod.length - kiekStoru)).join(' ');
   return `<!DOCTYPE html>
-<html><head><meta charset="UTF-8"><style>
+<html><head><meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap">
+<style>
   * { margin: 0; padding: 0; box-sizing: border-box; }
+  :root { --sp: cubic-bezier(0.16, 1, 0.3, 1); }
   body {
-    width: ${WIDTH}px; height: ${HEIGHT}px;
-    overflow: hidden;
-    font-family: 'Inter', -apple-system, sans-serif;
-    /* ⛔ Tas pats fonas kaip .card skaidrėje — kitaip pjūvis tarp skirtuko ir skaidrės matomas */
-    background: #f3f4f6;
+    width: ${WIDTH}px; height: ${HEIGHT}px; overflow: hidden;
+    font-family: Inter, -apple-system, sans-serif; color: #14142b;
+    /* Tas pats fonas kaip .card (tokens/base.css) — pjūvis tarp skirtuko ir skaidrės nematomas */
+    background:
+      radial-gradient(circle 430px at 88% 6%,  rgba(255,255,255,.80) 0 99%, rgba(255,255,255,0) 100%),
+      radial-gradient(circle 190px at 3% 95%,  rgba(199,185,219,.34) 0 99%, rgba(199,185,219,0) 100%),
+      radial-gradient(circle 78px  at 93% 88%, rgba(243,168,196,.50) 0 99%, rgba(243,168,196,0) 100%),
+      linear-gradient(160deg, #eef1f8 0%, #f4f6fa 42%, #faf9fb 100%);
+    position: relative;
   }
-  /* Tas pats vandens ženklas kaip skaidrėje — kad skirtukas ir skaidrė būtų viena erdvė */
-  body::before {
-    content: '';
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-    width: 1400px; height: 1400px;
-    background: url('../../assets/simbolis_big.png') no-repeat center / contain;
-    opacity: 0.37;
-    pointer-events: none;
+  /* Nukirstas numeris fone — citata iš cleverphant.lt hero, kur antraštė išeina už kadro */
+  .nr {
+    position: absolute; left: -70px; top: 50%; transform: translate(-90px, -50%);
+    font-size: 460px; font-weight: 800; letter-spacing: -22px; color: #dfe4f0; opacity: 0;
+    animation: nrAteina .9s var(--sp) .05s forwards, viskasDingsta .4s ease 2.75s forwards;
   }
-  .line-sweep {
-    position: absolute; top: 50%; left: 0;
-    width: 100%; height: 3px;
-    background: linear-gradient(${gradKryptis}, #3b82f6, #8b5cf6);
-    transform: translateY(-50%) scaleX(0);
-    transform-origin: ${kilme};
-    animation: lineSweep 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.05s forwards,
-               allFadeOut 0.4s ease 2.75s forwards;
+  .blokas {
+    position: absolute; left: 620px; top: 50%; width: 1120px; opacity: 0;
+    transform: translate(0, calc(-50% + 26px));
+    animation: blokasKyla .65s var(--sp) .5s forwards, viskasDingsta .4s ease 2.75s forwards;
   }
-  .line-trail-1 {
-    position: absolute; top: calc(50% - 20px); left: 0;
-    width: 100%; height: 1px;
-    background: linear-gradient(${gradKryptis}, transparent 0%, rgba(59,130,246,0.2) 30%, rgba(139,92,246,0.15) 70%, transparent 100%);
-    transform: scaleX(0); transform-origin: ${kilme};
-    animation: lineSweep 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.12s forwards,
-               allFadeOut 0.4s ease 2.75s forwards;
+  .et { font-size: 19px; font-weight: 700; letter-spacing: 3.5px; color: #9aa1b4; margin-bottom: 18px; }
+  .pav { font-size: 76px; font-weight: 400; letter-spacing: -2px; line-height: 1.06;
+         hyphens: auto; overflow-wrap: break-word; }
+  .pav b { display: block; font-weight: 800; }
+  .bruksnys {
+    position: absolute; left: 620px; top: 50%; margin-top: 150px; width: 0; height: 4px;
+    border-radius: 2px; background: linear-gradient(90deg, #3ab0b0, #f3a8c4);
+    animation: bruksnysPlinta .7s var(--sp) .95s forwards, viskasDingsta .4s ease 2.75s forwards;
   }
-  .line-trail-2 {
-    position: absolute; top: calc(50% + 20px); left: 0;
-    width: 100%; height: 1px;
-    background: linear-gradient(${gradKryptis}, transparent 0%, rgba(59,130,246,0.2) 30%, rgba(139,92,246,0.15) 70%, transparent 100%);
-    transform: scaleX(0); transform-origin: ${kilme};
-    animation: lineSweep 0.7s cubic-bezier(0.16, 1, 0.3, 1) 0.17s forwards,
-               allFadeOut 0.4s ease 2.75s forwards;
-  }
-  .line-number {
-    position: absolute; top: 50%; left: 50%;
-    transform: translate(-50%, -50%) scale(0.8);
-    font-size: 120px; font-weight: 800; color: #3b82f6;
-    opacity: 0;
-    animation: numPop 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.15s forwards,
-               allFadeOut 0.4s ease 2.75s forwards;
-  }
-  .line-title {
-    position: absolute; top: calc(50% + 80px); left: 50%;
-    transform: translate(-50%, 0) translateY(10px);
-    font-size: 28px; font-weight: 600; color: #64748b;
-    white-space: nowrap; opacity: 0;
-    animation: titleSlide 0.4s cubic-bezier(0.16, 1, 0.3, 1) 0.35s forwards,
-               allFadeOut 0.4s ease 2.75s forwards;
-  }
-  @keyframes lineSweep {
-    to { transform: translateY(-50%) scaleX(1); }
-  }
-  @keyframes numPop {
-    to { opacity: 1; transform: translate(-50%, -50%) scale(1); }
-  }
-  @keyframes titleSlide {
-    to { opacity: 1; transform: translate(-50%, 0) translateY(0); }
-  }
-  @keyframes allFadeOut {
-    to { opacity: 0; }
-  }
-</style></head><body>
-  <div class="line-trail-1"></div>
-  <div class="line-sweep"></div>
-  <div class="line-trail-2"></div>
-  <div class="line-number">${num}</div>
-  <div class="line-title">${title}</div>
+  @keyframes nrAteina { to { opacity: 1; transform: translate(0, -50%); } }
+  @keyframes blokasKyla { to { opacity: 1; transform: translate(0, -50%); } }
+  @keyframes bruksnysPlinta { to { width: 280px; } }
+  @keyframes viskasDingsta { to { opacity: 0; } }
+</style></head>
+<body>
+  <div class="nr">${num}</div>
+  <div class="blokas"><div class="et">${et}</div>
+    <div class="pav">${plona}<b>${stora}</b></div></div>
+  <div class="bruksnys"></div>
 </body></html>`;
 }
-
 async function main() {
   const outputDir = path.join(LESSONS_DIR, lessonSlug, 'output', lang);
   const clipsDir = path.join(outputDir, 'clips');
