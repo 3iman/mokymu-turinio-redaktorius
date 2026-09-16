@@ -2,6 +2,7 @@
 
 ## Saltiniai
 - Column Five Media: Infographic Design Tips & Minimal Design
+- explainer-visuals skill (mcpmarket, 1.0.0) — minties tipo ir formos atitikmenų idėja (2026-09-16)
 - Beautiful.ai: Ultimate Guide to Presentation Design
 - University of Hull: 6 Principles of Design for Infographics
 
@@ -111,6 +112,26 @@ Susiję elementai grupuojami vizualiai:
 
 **Atsargiai:** per daug boksų = vizualinis triukšmas. Naudoti selektyviai.
 
+### 12. Turinio tipas lemia vaizdo formą
+Prieš piešiant pirmiausia atsakyti: **kokio tipo mintį rodome?** Forma renkama pagal mintį,
+ne pagal tai, kas buvo pieštas praeitą kartą.
+
+| Minties tipas | Forma | Kodėl | Mūsų pavyzdys |
+|---|---|---|---|
+| **Virsmas** (buvo → tapo) | tas pats objektas prieš ir po | žiūrovas mato, kas pasikeitė, o ne du skirtingus daiktus | „O galima mainyti?“ — ta pati juosta prieš ir po |
+| **Procesas** (kaip kažkas vyksta) | vienas objektas, kuriame procesas įvyksta | procesas suprantamas, kai matai jį vykstantį | „Kaip gimsta dviaukštis meniu“ — viena juosta, į kurią įstumiamas punktas |
+| **Augimas / eskalacija** | grandinė su stiprėjančia spalva | kiekviena pakopa stipresnė už ankstesnę | „Nekaltas prašymas vis užauga“ — pageidavimas → prašymas → reikalavimas |
+| **Palyginimas** (du variantai) | dvi lygiavertės kolonos | simetrija leidžia lyginti | „Straipsniu arba žinute el. dienyne“ |
+| **Kriterijus** (kas tinka, kas ne) | dvi kolonos su priešinga semantine spalva | žalia ir pilka iškart pasako verdiktą | „Kas nusipelno durų?“ |
+| **Kiekis, matmuo** | objektas su matmenimis ta kryptimi, kurią matuoja | plotis rodomas horizontaliai, aukštis — vertikaliai | „Kiek vietos yra“ — 8 px greta raidės |
+| **Vieta** (kur kas yra) | tikras ekrano fragmentas arba maketas su slinkimu | žiūrovas atpažįsta savo svetainę | poraštės „Informacija“ stulpelis |
+| **Abstrakti mintis** | metafora iš kasdienybės | pažįstamas vaizdas nešioja nepažįstamą idėją | durys, pastatas, pramintas takas |
+| **Veiksmas TVS** (kur spausti) | TVS imitacija su vienu aktyviu žingsniu, priartinimu ir skaitikliu | žiūrovas turi rasti mygtuką, ne visą ekraną | žr. `ANIMATION_PRINCIPLES.md` § „UI žingsnių filmukai“ |
+
+⛔ **Metafora laikoma iki galo.** Jei filmas pradėjo durimis ir pastatu, kiti kadrai kalba ta pačia
+kalba („informacijos stendas fojė“, ne „kitos durys“). Metafora, kuri nušoka, klaidina labiau nei
+jokios metaforos (Eimantas 2026-09-16).
+
 ---
 
 ## Ko NEDARYTI
@@ -158,3 +179,4 @@ Susiję elementai grupuojami vizualiai:
 | 6 | Ar viskas subalansuota — nė viena pusė „nesunkesnė"? |
 | 7 | Ar galima suprasti per 3 sekundes? |
 | 8 | Ar tiktų su ilgesniais (vokiškais) tekstais? |
+| 9 | Ar forma atitinka minties tipą (virsmas, procesas, palyginimas…), ir ar metafora nenušoka nuo filmo kalbos? |

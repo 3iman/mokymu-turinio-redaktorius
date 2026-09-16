@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .lead { font-size: 26px; color: var(--c-text-muted); text-align: center; margin: -30px 0 54px;
+          hyphens: auto; overflow-wrap: break-word; }
+  .foot { font-size: 24px; color: var(--c-text-secondary); text-align: center; margin-top: 52px;
+          hyphens: auto; overflow-wrap: break-word; }
+
+  .askers { display: flex; justify-content: center; gap: 28px; margin-bottom: 52px; }
+  .asker { background: var(--c-surface); border: 1.5px solid var(--c-border); border-radius: 999px;
+           padding: 18px 34px; font-size: 24px; color: var(--c-text-muted); }
+  .chain { display: flex; align-items: stretch; justify-content: center; gap: 30px; }
+  .step { flex: 1; max-width: 440px; border-radius: 24px; padding: 42px 36px; text-align: center; }
+  .s1 { background: var(--c-surface); border: 1.5px solid var(--c-border); }
+  .s2 { background: var(--c-amber-bg); border: 1.5px solid var(--c-amber-border); }
+  .s3 { background: var(--c-red-bg); border: 1.5px solid var(--c-red-border); }
+  .step-t { font-size: 34px; font-weight: 700; color: var(--c-text); }
+  .step-n { font-size: 22px; color: var(--c-text-muted); margin-top: 12px; }
+  .arw { display: flex; align-items: center; color: var(--c-line); flex-shrink: 0; }
+  .empty { margin: 46px auto 0; max-width: 560px; border: 3px dashed var(--c-text-faint);
+           border-radius: 20px; padding: 32px; text-align: center; font-size: 32px;
+           font-weight: 700; color: var(--c-text-faint); }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Iš pageidavimo gimsta reikalavimas</div>
+    <div class="chain">
+      <div class="step s1"><div class="step-t">Pageidavimas</div></div>
+      <div class="arw"><svg width="60" height="30" viewBox="0 0 60 30" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 15h54M44 5l12 10-12 10"/></svg></div>
+      <div class="step s2"><div class="step-t">Prašymas</div></div>
+      <div class="arw"><svg width="60" height="30" viewBox="0 0 60 30" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 15h54M44 5l12 10-12 10"/></svg></div>
+      <div class="step s3"><div class="step-t">Reikalavimas</div></div>
+    </div>
+    <div class="empty">Vietoj ko?</div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

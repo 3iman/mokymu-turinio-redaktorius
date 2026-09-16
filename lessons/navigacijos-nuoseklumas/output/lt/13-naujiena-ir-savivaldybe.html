@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .cols { display: flex; gap: 52px; align-items: stretch; }
+  .col { flex: 1; border-radius: 24px; padding: 42px 40px; display: flex; flex-direction: column; }
+  .a { background: var(--c-blue-bg); border: 1.5px solid var(--c-blue-border); }
+  .b { background: var(--c-green-bg); border: 1.5px solid var(--c-green-border); }
+  .head { display: flex; align-items: center; gap: 18px; margin-bottom: 30px; }
+  .ico { width: 64px; height: 64px; border-radius: 16px; display: flex; align-items: center;
+         justify-content: center; flex-shrink: 0; }
+  .a .ico { background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to)); }
+  .b .ico { background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to)); }
+  .ico svg { width: 32px; height: 32px; }
+  .lbl { font-size: 32px; font-weight: 700; color: var(--c-text); }
+  .pt { background: var(--c-surface); border: 1.5px solid var(--c-border); border-radius: 14px;
+        padding: 22px 26px; font-size: 25px; color: var(--c-text); margin-bottom: 16px; }
+  .central { margin-top: auto; padding-top: 12px; display: flex; gap: 14px; align-items: flex-start;
+             font-size: 22px; color: var(--c-blue-text); line-height: 1.35; }
+  .central svg { width: 30px; height: 30px; flex-shrink: 0; margin-top: 2px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Straipsniu arba žinute el. dienyne</div>
+    <div class="cols">
+      <div class="col a">
+        <div class="head">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></div>
+          <div class="lbl">Straipsnis svetainėje</div>
+        </div>
+        <div class="pt">Naujienų sraute</div>
+        <div class="pt">Savaitinėje santraukoje el. paštu</div>
+        <div class="central"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="2.5"/><circle cx="5" cy="19" r="2.5"/><circle cx="12" cy="19" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M12 7.5v9M12 11l-6 5.5M12 11l6 5.5"/></svg>Savivaldybės straipsnį paskelbiame centralizuotai – visoms jos mokykloms</div>
+      </div>
+      <div class="col b">
+        <div class="head">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></svg></div>
+          <div class="lbl">Žinutė el. dienyne</div>
+        </div>
+        <div class="pt">Tiesiai tėvams ir mokiniams</div>
+        <div class="pt">Kai žinia skubi</div>
+      </div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

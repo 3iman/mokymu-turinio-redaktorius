@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .lead { font-size: 26px; color: var(--c-text-muted); text-align: center; margin: -30px 0 54px; }
+  .foot { font-size: 24px; color: var(--c-text-secondary); text-align: center; margin-top: 52px; }
+
+  .scene { background: var(--c-green-bg); border: 1.5px solid var(--c-green-border);
+           border-radius: 28px; padding: 36px 44px 28px; }
+  .scene svg { display: block; width: 100%; height: 440px; }
+  .cap { font-size: 23px; color: var(--c-green-text); text-align: center; margin-top: 8px; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="scene">
+      <svg viewBox="0 0 1560 440" fill="none">
+        <path d="M40 392 C 340 372, 470 300, 720 268 C 900 244, 1000 210, 1090 178"
+              stroke="#cbb994" stroke-width="50" stroke-linecap="round" opacity=".5"/>
+        <path d="M40 392 C 340 372, 470 300, 720 268 C 900 244, 1000 210, 1090 178"
+              stroke="#e6dcc4" stroke-width="28" stroke-linecap="round"/>
+        <g font-family="Inter, sans-serif" font-size="25" font-weight="700" fill="var(--c-green-text-vivid)" text-anchor="middle">
+          <text x="90" y="340">{{years_1}}</text><text x="270" y="318">{{years_2}}</text>
+          <text x="460" y="286">{{years_3}}</text><text x="650" y="240">{{years_4}}</text>
+          <text x="840" y="212">{{years_5}}</text><text x="1010" y="160">{{years_6}}</text>
+        </g>
+        <g stroke="var(--c-green-solid)" stroke-width="3" stroke-linecap="round" opacity=".4">
+          <path d="M150 300v-26M330 286v-24M520 250v-24M710 206v-24M900 180v-24"/>
+        </g>
+        <g transform="translate(1140 60)">
+          <rect x="0" y="0" width="286" height="96" rx="12" fill="var(--c-surface)" stroke="var(--c-red-border)" stroke-width="3"/>
+          <text x="143" y="48" font-family="Inter, sans-serif" font-size="27" font-weight="700"
+                fill="var(--c-red-text)" text-anchor="middle">{{sign}}</text>
+          <path d="M96 68h94M172 59l12 9-12 9" stroke="var(--c-red-text)" stroke-width="4"
+                stroke-linecap="round" stroke-linejoin="round"/>
+          <rect x="136" y="96" width="10" height="92" fill="var(--c-text-faint)"/>
+        </g>
+        <g transform="translate(1180 232)">
+          <circle cx="60" cy="80" r="52" fill="var(--c-amber-bg)" stroke="var(--c-amber-solid)" stroke-width="4"/>
+          <circle cx="42" cy="68" r="6" fill="#2b2216"/><circle cx="78" cy="68" r="6" fill="#2b2216"/>
+          <ellipse cx="60" cy="100" rx="15" ry="11" fill="none" stroke="#2b2216" stroke-width="4"/>
+          <text x="152" y="70" font-family="Inter, sans-serif" font-size="46" font-weight="800"
+                fill="var(--c-amber-text-vivid)">?!</text>
+          <text x="128" y="112" font-family="Inter, sans-serif" font-size="24"
+                fill="var(--c-text-muted)">{{reaction}}</text>
+        </g>
+      </svg>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

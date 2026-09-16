@@ -173,6 +173,111 @@ const COMMON_CSS = `
 
 const TEMPLATE_ANIMATIONS = {
 
+  // ===== navigacijos-nuoseklumas (Eimantas 2026-09-16: juokeliai ir procesai turi judėti) =====
+
+  // Dviaukštis meniu gimsta: septintas punktas atvažiuoja, atsitrenkia į juostą ir nukrenta į antrą aukštą
+  '04-du-aukstai': `
+    .card > .title, .card > .stack, .card > .mark { opacity: 0; }
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+    .card > .stack { animation: fadeUpMedium 0.5s var(--ease-spring) 0.9s forwards; }
+    .floor2 { overflow: visible; animation: aukstasGimsta 0.6s var(--ease-spring) 3.0s both; }
+    .floor2 .it { animation: punktasAtvaziuoja 1.6s var(--ease-soft) 1.6s both; }
+    .nav.top { animation: juostaSusvyra 0.5s ease-out 2.45s both; }
+    .card > .mark { animation: fadeUpLight 0.4s var(--ease-spring) 3.9s forwards; }
+    @keyframes aukstasGimsta {
+      from { background-color: transparent; border-top-color: transparent; }
+      to   { background-color: #3b4250; border-top-color: rgba(255,255,255,.22); }
+    }
+    @keyframes punktasAtvaziuoja {
+      0%   { transform: translate(1400px, -104px); }
+      55%  { transform: translate(30px, -104px); }
+      64%  { transform: translate(0, -104px); }
+      100% { transform: translate(0, 0); }
+    }
+    @keyframes juostaSusvyra {
+      0% { transform: translateX(0); } 35% { transform: translateX(-12px); }
+      70% { transform: translateX(6px); } 100% { transform: translateX(0); }
+    }
+  `,
+
+  // Reguliacinis vėjas: senos lentelės nukrenta, naujos užkabinamos, slapukų burbulas iššoka
+  '05-reguliacinis-vejas': `
+    .card > .title, .card > .doors, .card > .bubble { opacity: 0; }
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+    .card > .doors { animation: fadeUpMedium 0.5s var(--ease-spring) 0.8s forwards; }
+    .slot .falling { animation: lentelesKrenta 1.0s cubic-bezier(.55,0,.85,.35) 2.4s both; }
+    .slot:nth-child(2) .falling { animation-delay: 2.9s; }
+    .slot:nth-child(3) .falling { animation-delay: 3.4s; }
+    .slot .newplate { animation: lenteleKabinama 0.6s var(--ease-spring) 3.8s both; }
+    .slot:nth-child(2) .newplate { animation-delay: 4.25s; }
+    .slot:nth-child(3) .newplate { animation-delay: 4.7s; }
+    .card > .bubble { transform-origin: 0% 100%; animation: burbulasIssoka 0.8s var(--ease-soft) 6.2s both; }
+    @keyframes lentelesKrenta {
+      from { transform: translate(-50%, -250px) rotate(0deg); opacity: 1; color: var(--c-text); }
+    }
+    @keyframes lenteleKabinama {
+      from { opacity: 0; transform: translateY(-46px) rotate(-5deg); }
+      to   { opacity: 1; transform: translateY(0) rotate(0); }
+    }
+    @keyframes burbulasIssoka {
+      0%   { opacity: 0; transform: scale(.5) rotate(-6deg); }
+      55%  { opacity: 1; transform: scale(1.08) rotate(3deg); }
+      78%  { transform: scale(.97) rotate(-1.5deg); }
+      100% { opacity: 1; transform: scale(1) rotate(0); }
+    }
+  `,
+
+  // Stendas: žvilgsnio kelias nubrėžiamas, puslapis nuslenka iki poraštės, stulpelis užsidega
+  '09-porastes-informacija': `
+    .card > .title, .card > .viewport { opacity: 0; }
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+    .card > .viewport { animation: fadeUpMedium 0.5s var(--ease-spring) 0.8s forwards; }
+    .zpath path { stroke-dasharray: 100; animation: zBreziamas 2.6s var(--ease-soft) 1.4s both; }
+    .page { animation: puslapisSlenka 3.2s var(--ease-soft) 4.4s both; }
+    .fcol.on { animation: stulpelisUzsidega 0.7s var(--ease-spring) 7.8s both; }
+    .fcol.on .fh { animation: fadeIn 0.4s ease 7.9s both; }
+    @keyframes zBreziamas { from { stroke-dashoffset: 100; } to { stroke-dashoffset: 0; } }
+    @keyframes puslapisSlenka {
+      from { transform: translateY(calc(100% - 680px)); }
+      to   { transform: translateY(0); }
+    }
+    @keyframes stulpelisUzsidega {
+      0%   { border-color: transparent; background: transparent; transform: scale(1); }
+      60%  { transform: scale(1.03); }
+      100% { transform: scale(1); }
+    }
+  `,
+
+  // Šunelis: atbėga su nuoroda, padeda ją ant laiško, pavizgina uodegą
+  '10-neranda': `
+    .card > .title, .card > .row { opacity: 0; }
+    .card > .title { animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+    .card > .row { animation: fadeIn 0.01s linear 0.8s forwards; }
+    .row .mail { animation: fadeUpMedium 0.5s var(--ease-spring) 0.9s both; }
+    .row .search { animation: fadeUpLight 0.4s var(--ease-spring) 1.7s both; }
+    .row .tree { animation: fadeUpLight 0.4s var(--ease-spring) 2.1s both; }
+    .row .dog { animation: suoAtbega 1.4s linear 3.0s both; }
+    .dog svg .tag { animation: nuorodaAtiduodama 5.2s linear 3.0s both; }
+    .mail .mchip { animation: nuorodaPristatyta 0.6s var(--ease-spring) 7.8s both; }
+    .dog svg .tail { transform-box: fill-box; transform-origin: 0% 100%;
+                     animation: uodegaVizgina 0.3s ease-in-out 8.4s 8 alternate both; }
+    @keyframes suoAtbega {
+      0%   { transform: translate(900px, 0); }
+      20%  { transform: translate(720px, -20px); }
+      40%  { transform: translate(540px, 0); }
+      60%  { transform: translate(360px, -20px); }
+      80%  { transform: translate(160px, 0); }
+      92%  { transform: translate(40px, -8px); }
+      100% { transform: translate(0, 0); }
+    }
+    @keyframes nuorodaAtiduodama { 0%, 85% { opacity: 1; } 100% { opacity: 0; } }
+    @keyframes nuorodaPristatyta {
+      from { opacity: 0; transform: translateX(260px) scale(.6) rotate(8deg); }
+      to   { opacity: 1; transform: translateX(0) scale(1) rotate(0); }
+    }
+    @keyframes uodegaVizgina { from { transform: rotate(-14deg); } to { transform: rotate(16deg); } }
+  `,
+
   // ============================================================
   // Slapukų atitiktis — ANIMATION_PRINCIPLES.md seka
   // Scena: kortelė + watermark matomi nuo pradžių. Aktoriai: title → lead → turinys → foot

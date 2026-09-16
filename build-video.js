@@ -292,6 +292,59 @@ async function generateIntroPng(title, subtitle) {
 
 // ---- Vinjetės pradžia (0–OUTRO_HEAD_SECONDS) iš šablono ----
 // ⛔ Kiekvienam kadrui nustatomas tikslus laikas (VIDEO_GAMYBA.md §6), ne realiu laiku.
+
+/**
+ * Muzikos lova reikiamam ilgiui.
+ *
+ * ⛔ Takelis baigiasi ~6 s tyla, todėl `-stream_loop` kartodavo ir tą tylą —
+ * žiūrovui skambėdavo, lyg muzika būtų pasibaigusi vidury filmo (Eimantas 2026-09-16).
+ * Todėl tyla nukerpama, o kartojimai suklijuojami kryžmine perėja.
+ */
+function paruostiMuzikosLova(musicPath, reikiaSek, tmpDir) {
+  const trukme = parseFloat(execSync(
+    `ffprobe -v error -show_entries format=duration -of csv=p=0 "${musicPath}"`,
+    { encoding: 'utf-8' }).trim());
+
+  // Kur prasideda uodegos tyla
+  let kunas = trukme;
+  try {
+    const log = execSync(
+      `ffmpeg -v info -i "${musicPath}" -af silencedetect=n=-50dB:d=1.5 -f null - 2>&1`,
+      { encoding: 'utf-8', shell: '/bin/bash' });
+    const pradzios = [...log.matchAll(/silence_start:\s*([\d.]+)/g)].map(m => parseFloat(m[1]));
+    const paskutine = pradzios.filter(s => s > trukme - 20).pop();
+    if (paskutine) kunas = paskutine;
+  } catch (_) {}
+  kunas = Math.max(20, Math.min(kunas, trukme) - 0.2);
+
+  if (kunas >= reikiaSek) return { path: musicPath, trim: kunas };
+
+  const perEja = 2.0;
+  const kartu = Math.ceil((reikiaSek - kunas) / (kunas - perEja)) + 1;
+  const dalys = [];
+  const filtrai = [];
+  for (let i = 0; i < kartu; i++) {
+    filtrai.push(`[0:a]atrim=0:${kunas.toFixed(2)},asetpts=N/SR/TB,aresample=44100[k${i}]`);
+    dalys.push(`[k${i}]`);
+  }
+  let dabartinis = dalys[0];
+  for (let i = 1; i < kartu; i++) {
+    const isv = (i === kartu - 1) ? '[lova]' : `[m${i}]`;
+    filtrai.push(`${dabartinis}${dalys[i]}acrossfade=d=${perEja}:c1=tri:c2=tri${isv}`);
+    dabartinis = isv;
+  }
+  const lova = path.join(tmpDir, 'muzikos-lova.wav');
+  execSync([
+    'ffmpeg', '-y', '-v', 'error', '-i', `"${musicPath}"`,
+    '-filter_complex', `"${filtrai.join(';')}"`,
+    '-map', '"[lova]"', '-t', (reikiaSek + 2).toFixed(2),
+    '-c:a', 'pcm_s16le', `"${lova}"`,
+  ].join(' '), { stdio: 'pipe' });
+  console.log(`  Muzikos lova: ${kartu} kartojimai po ${kunas.toFixed(0)}s, perėja ${perEja}s`);
+  return { path: lova, trim: null };
+}
+
+
 async function generateOutroHead() {
   const text = OUTRO_THANKS[lang];
   const tpl = path.join(TEMPLATES_DIR, 'video-outro.html');
@@ -691,8 +744,10 @@ function buildVideo(frames, durations, introClipPath, introPng, outroHeadPath) {
     const fonai = [];
     let n = 1;
     if (hasMusic) {
-      ivestys.push('-stream_loop', '-1', '-i', `"${musicPath}"`);
-      filtrai.push(`[${n}:a]volume=0.4,afade=t=out:st=${fadeStart}:d=${fadeLen},aresample=44100,aformat=channel_layouts=stereo[muzika]`);
+      const lova = paruostiMuzikosLova(musicPath, totalDur, clipDir);
+      ivestys.push('-i', `"${lova.path}"`);
+      const kirpimas = lova.trim ? `atrim=0:${Math.min(lova.trim, totalDur).toFixed(2)},asetpts=N/SR/TB,` : '';
+      filtrai.push(`[${n}:a]${kirpimas}volume=0.4,afade=t=out:st=${fadeStart}:d=${fadeLen},aresample=44100,aformat=channel_layouts=stereo[muzika]`);
       fonai.push('[muzika]');
       n++;
     }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .lead { font-size: 26px; color: var(--c-text-muted); text-align: center; margin: -30px 0 54px; }
+  .foot { font-size: 24px; color: var(--c-text-secondary); text-align: center; margin-top: 52px; }
+
+  .nav { display: flex; background: #3b4250; border-radius: 10px; overflow: hidden; }
+  .nav .it { flex: 1; padding: 28px 14px; color: #fff; font-size: 19px; font-weight: 700;
+             text-transform: uppercase; text-align: center; line-height: 1.25;
+             border-right: 1px solid rgba(255,255,255,.22); display: flex; align-items: center;
+             justify-content: center; hyphens: auto; overflow-wrap: break-word; }
+  .nav .it:last-child { border-right: 0; }
+
+  .stack { display: flex; flex-direction: column; align-items: stretch; }
+  .nav.top { border-radius: 10px 10px 0 0; }
+  .floor2 { display: flex; background: #3b4250; border-radius: 0 0 10px 10px; overflow: hidden;
+            border-top: 1px solid rgba(255,255,255,.22); }
+  .floor2 .it { flex: 0 0 28%; padding: 28px 14px; color: #1d1b16; background: var(--c-amber-solid);
+                font-size: 19px; font-weight: 700; text-transform: uppercase; text-align: center;
+                display: flex; align-items: center; justify-content: center; }
+  .floor2 .rest { flex: 1; }
+  .mark { display: flex; align-items: center; gap: 16px; margin-top: 26px; font-size: 24px;
+          color: var(--c-red-text); }
+  .mark svg { width: 34px; height: 34px; flex-shrink: 0; }
+  .push { display: flex; justify-content: flex-end; align-items: center; gap: 14px; margin-bottom: 20px;
+          font-size: 22px; color: var(--c-amber-text-vivid); }
+  .chip { background: var(--c-amber-solid); color: #1d1b16; font-size: 19px; font-weight: 700;
+          text-transform: uppercase; padding: 14px 22px; border-radius: 8px; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="stack">
+      <div class="nav top">
+        <div class="it">{{items_1}}</div><div class="it">{{items_2}}</div><div class="it">{{items_3}}</div>
+        <div class="it">{{items_4}}</div><div class="it">{{items_5}}</div><div class="it">{{items_6}}</div>
+      </div>
+      <div class="floor2"><div class="it">{{new_item}}</div><div class="rest"></div></div>
+    </div>
+    <div class="mark">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v14M6 11l6 6 6-6"/></svg>
+      {{floor_label}}
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

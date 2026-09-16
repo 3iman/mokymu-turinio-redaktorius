@@ -1,0 +1,188 @@
+{
+  "lang": "lt",
+  "_intro": {
+    "title": "Kodėl pagrindinis meniu nesikeičia pagal kiekvieną prašymą"
+  },
+  "00_sesios_durys": {
+    "title": "Taip pat pagal Cleverphant standartą",
+    "items": [
+      "Ugdymas",
+      "Pagalba mokiniams ir tėvams",
+      "Neformalusis švietimas",
+      "Didžiuojamės",
+      "Renginiai",
+      "Struktūra ir kontaktai"
+    ]
+  },
+  "01_iprotis": {
+    "title": "Kelias minamas metus, o pakeičiamas per akimirką",
+    "years": [
+      "2020",
+      "2021",
+      "2022",
+      "2023",
+      "2024",
+      "2025"
+    ],
+    "sign": "Durys perkeltos",
+    "reaction": "Nuostaba ir erzelis"
+  },
+  "02_prasymas": {
+    "title": "Iš pageidavimo gimsta reikalavimas",
+    "step_1": "Pageidavimas",
+    "step_2": "Prašymas",
+    "step_3": "Reikalavimas",
+    "empty": "Vietoj ko?"
+  },
+  "03_kiek_vietos": {
+    "title": "Laisvos vietos mažiau nei vienai raidei",
+    "items": [
+      "Ugdymas",
+      "Pagalba mokiniams ir tėvams",
+      "Neformalusis švietimas",
+      "Didžiuojamės",
+      "Renginiai",
+      "Struktūra ir kontaktai"
+    ],
+    "total": "1178 px – visos juostos plotis",
+    "used": "1170 px – užima punktai",
+    "zoom_label": "Priartinta",
+    "free": "8 px",
+    "letter": "R",
+    "letter_note": "viena raidė – apie 10,7 px"
+  },
+  "04_du_aukstai": {
+    "title": "Septintas punktas pastato antrą aukštą",
+    "items": [
+      "Ugdymas",
+      "Pagalba mokiniams ir tėvams",
+      "Neformalusis švietimas",
+      "Didžiuojamės",
+      "Renginiai",
+      "Struktūra ir kontaktai"
+    ],
+    "new_item": "Nauja skiltis",
+    "floor_label": "Antras aukštas"
+  },
+  "05_reguliacinis_vejas": {
+    "title": "Senos lentelės krenta, naujos kabinamos",
+    "old": [
+      "Didžiuojamės",
+      "Renginiai",
+      "Neformalusis švietimas"
+    ],
+    "new": [
+      "Asmens duomenų apsauga",
+      "Korupcijos prevencija",
+      "Pranešėjų apsauga"
+    ],
+    "bubble": "Ir mūsų niekas neranda…",
+    "bubble_who": "Slapukų valdymas"
+  },
+  "06_es_logotipas": {
+    "title": "Tvirtas tonas dar nereiškia reikalavimo",
+    "chain_1": "Pačiame svetainės viršuje",
+    "chain_2": "Šalia mokyklos logotipo",
+    "chain_3": "Vietoj mokyklos logotipo",
+    "wire_page": "Projektas „Galimybių mokykla“",
+    "wire_eu": "Bendrai finansuoja Europos Sąjunga",
+    "wire_side": "Baneriai",
+    "left_head": "Augantis pageidavimas",
+    "right_head": "Tik tiek"
+  },
+  "07_kitokie": {
+    "title": "Ką čia randa bendruomenė?",
+    "items": [
+      "Mokykla",
+      "Veiklos sritys",
+      "Administracinė informacija",
+      "Struktūra ir kontaktai",
+      "Paslaugos",
+      "Specialiojo ugdymo skyrius",
+      "Teisinė informacija",
+      "Korupcijos prevencija"
+    ]
+  },
+  "08_kriterijus": {
+    "title": "Tai, kas duoda vertę bendruomenei",
+    "yes_title": "Verta durų",
+    "yes_1": "Projektai",
+    "yes_2": "Inžinerinis ugdymas",
+    "no_title": "Sukelia abejonę",
+    "no_1": "Korupcijos prevencija",
+    "no_2": "Pranešėjų apsauga"
+  },
+  "09_porastes_informacija": {
+    "title": "Jie kabo ant informacijos stendo",
+    "cols": [
+      "Gimnazija",
+      "Paslaugos",
+      "Ataskaitos",
+      "Informacija"
+    ],
+    "links": [
+      "Asmens duomenų apsauga",
+      "Pranešėjų apsauga",
+      "Korupcijos prevencija",
+      "Civilinė sauga",
+      "Teisinė informacija",
+      "Atviri duomenys"
+    ]
+  },
+  "10_neranda": {
+    "title": "Atsakymas telpa į vieną nuorodą",
+    "mail_text": "Neradau…",
+    "search_label": "Paieškos raktažodžiai",
+    "tree_label": "Svetainės medis",
+    "dog_label": "Nuoroda",
+    "dog_caption": "Paieška atneša"
+  },
+  "11_mainai": {
+    "title": "Taip, jei durų lieka šešerios",
+    "before_label": "Buvo",
+    "after_label": "Tampa",
+    "before_items": [
+      "Ugdymas",
+      "Pagalba mokiniams ir tėvams",
+      "Neformalusis švietimas",
+      "Didžiuojamės",
+      "Renginiai",
+      "Struktūra ir kontaktai"
+    ],
+    "after_items": [
+      "Ugdymas",
+      "Pagalba mokiniams ir tėvams",
+      "Inžinerinis ugdymas",
+      "Didžiuojamės",
+      "Renginiai",
+      "Struktūra ir kontaktai"
+    ]
+  },
+  "12_trumpinam": {
+    "title": "Taip, trumpesnis vardas atlaisvina vietos",
+    "before": "Pagalba mokiniams ir tėvams",
+    "after": "Švietimo pagalba",
+    "freed": "118 px"
+  },
+  "13_naujiena_ir_savivaldybe": {
+    "title": "Straipsniu arba žinute el. dienyne",
+    "a_label": "Straipsnis svetainėje",
+    "a_1": "Naujienų sraute",
+    "a_2": "Savaitinėje santraukoje el. paštu",
+    "a_central": "Savivaldybės straipsnį paskelbiame centralizuotai – visoms jos mokykloms",
+    "b_label": "Žinutė el. dienyne",
+    "b_1": "Tiesiai tėvams ir mokiniams",
+    "b_2": "Kai žinia skubi"
+  },
+  "14_musu_pastatas": {
+    "title": "Kad verta pasaugoti suformuotą nuoseklumą bei įprotį",
+    "items": [
+      "Ugdymas",
+      "Pagalba mokiniams ir tėvams",
+      "Neformalusis švietimas",
+      "Didžiuojamės",
+      "Renginiai",
+      "Struktūra ir kontaktai"
+    ]
+  }
+}

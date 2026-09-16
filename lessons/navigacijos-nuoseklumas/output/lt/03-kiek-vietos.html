@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .lead { font-size: 26px; color: var(--c-text-muted); text-align: center; margin: -30px 0 54px; }
+  .foot { font-size: 24px; color: var(--c-text-secondary); text-align: center; margin-top: 52px; }
+
+  .nav { display: flex; background: #3b4250; border-radius: 10px; overflow: hidden; }
+  .nav .it { flex: 1; padding: 28px 14px; color: #fff; font-size: 19px; font-weight: 700;
+             text-transform: uppercase; text-align: center; line-height: 1.25;
+             border-right: 1px solid rgba(255,255,255,.22); display: flex; align-items: center;
+             justify-content: center; hyphens: auto; overflow-wrap: break-word; }
+  .nav .it:last-child { border-right: 0; }
+
+  .mrow { display: flex; align-items: center; gap: 18px; margin-bottom: 18px; }
+  .rule { flex: 1; height: 2px; background: var(--c-line); position: relative; }
+  .rule::before, .rule::after { content: ""; position: absolute; top: -9px; width: 2px; height: 20px; background: var(--c-line); }
+  .rule::before { left: 0; } .rule::after { right: 0; }
+  .mlabel { font-size: 22px; color: var(--c-text-muted); white-space: nowrap; }
+  .zoom { margin-top: 46px; display: flex; align-items: center; justify-content: center; gap: 40px; }
+  .zbox { background: var(--c-surface); border: 1.5px solid var(--c-border); border-radius: 18px;
+          padding: 28px 34px; display: flex; align-items: flex-end; gap: 26px; }
+  .zlabel { font-size: 18px; text-transform: uppercase; letter-spacing: .8px; color: var(--c-text-faint);
+            align-self: center; }
+  .sliver { width: 24px; height: 96px; background: var(--c-amber-solid); border-radius: 3px; }
+  .zitem { text-align: center; }
+  .zitem .cap { font-size: 21px; color: var(--c-text-muted); margin-top: 12px; }
+  .letter { font-size: 96px; font-weight: 700; color: var(--c-text); line-height: .9;
+            border-bottom: 3px solid var(--c-line); padding: 0 4px; }
+  .vs { font-size: 26px; color: var(--c-text-faint); align-self: center; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Laisvos vietos mažiau nei vienai raidei</div>
+    <div class="mrow"><div class="mlabel">1178 px – visos juostos plotis</div><div class="rule"></div></div>
+    <div class="nav">
+      <div class="it">Ugdymas</div><div class="it">Pagalba mokiniams ir tėvams</div><div class="it">Neformalusis švietimas</div>
+      <div class="it">Didžiuojamės</div><div class="it">Renginiai</div><div class="it">Struktūra ir kontaktai</div>
+    </div>
+    <div class="mrow" style="margin: 18px 0 0;"><div class="rule"></div><div class="mlabel">1170 px – užima punktai</div></div>
+    <div class="zoom">
+      <div class="zbox">
+        <div class="zlabel">Priartinta</div>
+        <div class="zitem"><div class="sliver"></div><div class="cap">8 px</div></div>
+        <div class="vs">&lt;</div>
+        <div class="zitem"><div class="letter">R</div><div class="cap">viena raidė – apie 10,7 px</div></div>
+      </div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

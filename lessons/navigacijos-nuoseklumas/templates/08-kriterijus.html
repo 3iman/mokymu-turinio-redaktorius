@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .lead { font-size: 26px; color: var(--c-text-muted); text-align: center; margin: -30px 0 54px; }
+  .foot { font-size: 24px; color: var(--c-text-secondary); text-align: center; margin-top: 52px; }
+
+  .cols { display: flex; gap: 56px; align-items: stretch; }
+  .col { flex: 1; border-radius: 24px; padding: 42px 38px; display: flex; flex-direction: column; }
+  .yes { background: var(--c-green-bg); border: 1.5px solid var(--c-green-border); }
+  .no  { background: var(--c-surface); border: 1.5px solid var(--c-border); }
+  .ct { font-size: 30px; font-weight: 700; margin-bottom: 32px; text-align: center; }
+  .yes .ct { color: var(--c-green-text); } .no .ct { color: var(--c-text-muted); }
+  .item { background: var(--c-surface); border-radius: 16px; padding: 26px 28px; margin-bottom: 20px;
+          border: 1.5px solid var(--c-border); }
+  .no .item { background: var(--c-surface-alt); }
+  .in { font-size: 28px; font-weight: 700; color: var(--c-text); }
+  .id2 { font-size: 22px; color: var(--c-text-muted); margin-top: 8px; }
+  .tag { margin-top: auto; text-align: center; font-size: 22px; color: var(--c-text-faint); padding-top: 14px; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="cols">
+      <div class="col yes">
+        <div class="ct">{{yes_title}}</div>
+        <div class="item"><div class="in">{{yes_1}}</div></div>
+        <div class="item"><div class="in">{{yes_2}}</div></div>
+      </div>
+      <div class="col no">
+        <div class="ct">{{no_title}}</div>
+        <div class="item"><div class="in">{{no_1}}</div></div>
+        <div class="item"><div class="in">{{no_2}}</div></div>
+      </div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

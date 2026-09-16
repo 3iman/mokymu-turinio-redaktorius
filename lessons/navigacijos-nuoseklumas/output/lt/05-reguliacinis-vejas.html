@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .lead { font-size: 26px; color: var(--c-text-muted); text-align: center; margin: -30px 0 54px; }
+  .foot { font-size: 24px; color: var(--c-text-secondary); text-align: center; margin-top: 52px; }
+
+  .doors { display: flex; gap: 40px; justify-content: center; align-items: flex-start; }
+  .slot { flex: 1; max-width: 320px; position: relative; padding-bottom: 120px; }
+  .slot svg.door { display: block; width: 100%; height: auto; }
+  .newplate { position: absolute; left: 12%; right: 12%; top: 48%; background: var(--c-blue-bg);
+              border: 2px solid var(--c-blue-solid); border-radius: 8px; padding: 14px 10px;
+              text-align: center; font-size: 19px; font-weight: 700; color: var(--c-blue-text);
+              line-height: 1.25; hyphens: auto; overflow-wrap: break-word; }
+  .falling { position: absolute; left: 50%; bottom: 18px; transform: translateX(-50%) rotate(-12deg);
+             background: #f5f7fa; border: 2px solid #c3cad6; border-radius: 8px; padding: 12px 18px;
+             font-size: 18px; font-weight: 700; color: var(--c-text-faint); text-transform: uppercase;
+             white-space: nowrap; opacity: .7; }
+  .labels { display: flex; justify-content: space-between; max-width: 1080px; margin: 6px auto 0;
+            font-size: 20px; color: var(--c-text-faint); text-transform: uppercase; letter-spacing: .7px; }
+  .bubble { margin: 30px 0 0 auto; max-width: 560px; background: var(--c-surface);
+            border: 1.5px solid var(--c-border); border-radius: 20px; padding: 22px 28px; }
+  .bubble-t { font-size: 25px; color: var(--c-text); }
+  .bubble-w { font-size: 19px; color: var(--c-text-faint); margin-top: 6px; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">Senos lentelės krenta, naujos kabinamos</div>
+    <div class="doors">
+      <div class="slot">
+        <svg class="door" viewBox="0 0 150 230" fill="none"><rect x="6" y="6" width="138" height="218" rx="10" fill="var(--c-surface)" stroke="#4c5566" stroke-width="4"/><rect x="22" y="22" width="106" height="88" rx="6" fill="#eef1f6" stroke="#c3cad6" stroke-width="3"/><circle cx="120" cy="140" r="7" fill="#4c5566"/></svg>
+        <div class="newplate">Asmens duomenų apsauga</div>
+        <div class="falling">Didžiuojamės</div>
+      </div>
+      <div class="slot">
+        <svg class="door" viewBox="0 0 150 230" fill="none"><rect x="6" y="6" width="138" height="218" rx="10" fill="var(--c-surface)" stroke="#4c5566" stroke-width="4"/><rect x="22" y="22" width="106" height="88" rx="6" fill="#eef1f6" stroke="#c3cad6" stroke-width="3"/><circle cx="120" cy="140" r="7" fill="#4c5566"/></svg>
+        <div class="newplate">Korupcijos prevencija</div>
+        <div class="falling" style="transform: translateX(-50%) rotate(10deg);">Renginiai</div>
+      </div>
+      <div class="slot">
+        <svg class="door" viewBox="0 0 150 230" fill="none"><rect x="6" y="6" width="138" height="218" rx="10" fill="var(--c-surface)" stroke="#4c5566" stroke-width="4"/><rect x="22" y="22" width="106" height="88" rx="6" fill="#eef1f6" stroke="#c3cad6" stroke-width="3"/><circle cx="120" cy="140" r="7" fill="#4c5566"/></svg>
+        <div class="newplate">Pranešėjų apsauga</div>
+        <div class="falling" style="transform: translateX(-50%) rotate(-5deg);">Neformalusis švietimas</div>
+      </div>
+    </div>
+    <div class="bubble"><div class="bubble-t">Ir mūsų niekas neranda…</div><div class="bubble-w">Slapukų valdymas</div></div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="./assets/cleverphant-juodas.svg" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="./assets/cleverphant-baltas.png" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

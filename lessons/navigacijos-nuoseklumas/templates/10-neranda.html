@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .lead { font-size: 26px; color: var(--c-text-muted); text-align: center; margin: -30px 0 54px; }
+  .foot { font-size: 24px; color: var(--c-text-secondary); text-align: center; margin-top: 52px; }
+
+  .row { display: flex; gap: 46px; align-items: center; }
+  .mail { flex: 1; background: var(--c-surface); border: 1.5px solid var(--c-border); border-radius: 20px;
+          padding: 34px 32px; }
+  .ml { font-size: 19px; text-transform: uppercase; letter-spacing: .7px; color: var(--c-text-faint); margin-bottom: 16px; }
+  .mt { font-size: 40px; font-weight: 700; color: var(--c-text); }
+  .tools { flex: 1.1; display: flex; flex-direction: column; gap: 24px; }
+  .search { display: flex; align-items: center; gap: 16px; background: var(--c-surface);
+            border: 2px solid var(--c-border); border-radius: 12px; padding: 24px 26px;
+            font-size: 24px; color: var(--c-text-faint); }
+  .search svg { width: 30px; height: 30px; color: var(--c-text-muted); flex-shrink: 0; }
+  .tree { display: flex; align-items: center; gap: 16px; background: var(--c-surface-alt);
+          border-radius: 12px; padding: 24px 26px; font-size: 24px; color: var(--c-text-muted); }
+  .tree svg { width: 30px; height: 30px; flex-shrink: 0; }
+  .mchip { display: inline-block; margin-top: 22px; background: var(--c-blue-solid); color: #fff;
+           font-size: 24px; font-weight: 700; padding: 12px 24px; border-radius: 10px; }
+  .dog svg .tag { opacity: 0; }
+  .dog { flex: .9; display: flex; flex-direction: column; align-items: center; gap: 12px; }
+  .dog svg { width: 300px; height: 200px; }
+  .dl { font-size: 20px; color: var(--c-text-faint); }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="row">
+      <div class="mail"><div class="mt">{{mail_text}}</div><div class="mchip">{{dog_label}}</div></div>
+      <div class="tools">
+        <div class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>{{search_label}}</div>
+        <div class="tree"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="2" width="6" height="5" rx="1"/><rect x="2" y="16" width="6" height="5" rx="1"/><rect x="16" y="16" width="6" height="5" rx="1"/><path d="M12 7v5M5 16v-4h14v4"/></svg>{{tree_label}}</div>
+      </div>
+      <div class="dog">
+        <svg viewBox="0 0 320 210" fill="none">
+          <path class="tail" d="M252 104c26-10 40-34 38-52-16 8-34 12-44 16" fill="var(--c-amber-solid)" opacity=".85"/>
+          <ellipse cx="205" cy="118" rx="62" ry="44" fill="var(--c-amber-solid)"/>
+          <rect x="158" y="150" width="18" height="44" rx="9" fill="var(--c-amber-solid)"/>
+          <rect x="192" y="152" width="18" height="42" rx="9" fill="var(--c-amber-solid)" opacity=".82"/>
+          <rect x="228" y="152" width="18" height="42" rx="9" fill="var(--c-amber-solid)" opacity=".82"/>
+          <rect x="252" y="150" width="18" height="44" rx="9" fill="var(--c-amber-solid)"/>
+          <circle cx="112" cy="78" r="44" fill="var(--c-amber-solid)"/>
+          <path d="M76 48c-14 6-17 26-9 44 9-8 20-14 29-16z" fill="#b4791f"/>
+          <path d="M146 46c13 4 20 22 15 40-11-8-22-12-30-14z" fill="#b4791f"/>
+          <circle cx="96" cy="72" r="6" fill="#2b2216"/><circle cx="128" cy="72" r="6" fill="#2b2216"/>
+          <ellipse cx="112" cy="96" rx="20" ry="15" fill="#e6b45c"/>
+          <ellipse cx="112" cy="92" rx="9" ry="7" fill="#2b2216"/>
+          <g class="tag" transform="translate(30 130) rotate(-6)">
+            <rect x="0" y="0" width="136" height="46" rx="10" fill="var(--c-blue-solid)"/>
+            <text x="68" y="31" font-family="Inter, sans-serif" font-size="21" font-weight="700" fill="#fff" text-anchor="middle">{{dog_label}}</text>
+          </g>
+        </svg>
+        <div class="dl">{{dog_caption}}</div>
+      </div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

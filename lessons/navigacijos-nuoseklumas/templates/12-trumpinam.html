@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .lead { font-size: 26px; color: var(--c-text-muted); text-align: center; margin: -30px 0 54px; }
+  .foot { font-size: 24px; color: var(--c-text-secondary); text-align: center; margin-top: 52px; }
+
+  .row { display: flex; align-items: center; justify-content: center; gap: 44px; }
+  .chip { background: var(--c-green-nav); color: #fff; font-size: 26px; font-weight: 700;
+          text-transform: uppercase; padding: 34px 40px; border-radius: 12px; text-align: center; }
+  .chip.small { padding: 34px 28px; }
+  .arw { color: var(--c-line); }
+  .freed { background: var(--c-amber-bg); border: 2px solid var(--c-amber-solid); border-radius: 12px;
+           padding: 30px 34px; text-align: center; }
+  .fn { font-size: 40px; font-weight: 700; color: var(--c-amber-text-vivid); }
+  .fd { font-size: 21px; color: var(--c-amber-text); margin-top: 10px; max-width: 280px; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="row">
+      <div class="chip">{{before}}</div>
+      <div class="arw"><svg width="70" height="32" viewBox="0 0 70 32" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M2 16h62M52 5l12 11-12 11"/></svg></div>
+      <div class="chip small">{{after}}</div>
+      <div class="freed"><div class="fn">{{freed}}</div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

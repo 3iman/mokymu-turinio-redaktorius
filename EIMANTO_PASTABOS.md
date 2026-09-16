@@ -68,6 +68,17 @@ taip pasakytų? Jei ne, ieškoti trumpesnės, klausimu atsakančios formos („K
 ⛔ `DESIGN_RULES.md` „Be klaustukų“ galioja **iliustracijų ir skirtukų** antraštėms, ne pamokų
 sekcijoms.
 
+### 2026-09-15 · Balso versijų Eimantas nerenka
+
+> „Nežinau kodėl Aš dar pasak Tavęs renku Dariaus balsą, nerenku, mes jau viską padarėme
+> ir nusprendėme.“
+
+Modelis `eleven_v3_dpo_20260217`, balsas „Darius Cleverphant“ ir nustatymai nuspręsti kartą.
+Kandidatų rinkimas buvo vienkartinis kalibravimas slapukų filmukui, ne kiekvieno filmuko žingsnis.
+
+**Kitą kartą:** `generate-voice.js` generuoja vieną versiją ir įrašo seed scenarijuje.
+Eimanto nelaukiama. Jis peržiūri galutinį filmuką kartu su tekstu, kirčiu ir vertiniais.
+
 ---
 
 ## Vizualai
@@ -323,6 +334,7 @@ DPO. Iš trijų viso teksto versijų išrinkta trečia, `seed` 1779642367.
 1. Modelio ir balso nekeisti be klausymo — jie įrašyti `generate-voice.js`.
 2. Naujam filmukui balso versija renkama iš kandidatų (`--kandidatai 3`), ir renka
    **Eimantas**, ne agentas — panašumą į Darių girdi tik žmogus, kuris jį pažįsta.
+   ⛔ **Pakeista 2026-09-15** — žr. įrašą „Balso versijų Eimantas nerenka“.
 3. Profesionalus Dariaus klonas ElevenLabs paskyroje neapmokytas, API jo neleidžia naudoti.
 
 ### 2026-09-15 · Vinjetė — paskutinis senos vizualikos kadras
@@ -464,3 +476,62 @@ sulygiuota su pavadinimo bloku, atsiranda paskutinė.
 
 ⛔ Šablonas `templates/video-intro.html` nebenaudoja `blue_bg.png`. Fonas piešiamas
 `radial-gradient`'ais, tad jį keičia tik CSS, o ne paveikslėlis.
+
+## 2026-09-16 — Balsas generuojamas paskutinis
+
+> „Audio negeneruok, kol video nepadarysime."
+
+Balsas kainuoja kreditus ir keičiasi kartu su scenarijumi, todėl `generate-voice.js`
+paleidžiamas **tik tada, kai kadrai jau sugeneruoti** (PNG + klipai) ir scenarijus
+nebejuda. Scenarijaus stulpelis **Balsas** rašomas kartu su kadru, bet į API
+nesikreipiama, kol nėra vaizdo.
+
+## 2026-09-16 — Šunelis yra paieškos simbolis
+
+> „Jis gali tapti paieškos simboliu. Dramblys čia netinka :)“
+
+Navigacijos filmuko kadre „Bet mums rašo, kad neranda“ paieška vaizduojama **šuneliu,
+kuris atneša nuorodą**. Tai ne vienkartinis pokštas: nuo šiol paieška mūsų vizualuose
+piešiama juo, ne padidinamuoju stiklu.
+
+⛔ **Dramblys lieka Cleverphant ženklu** ir paieškos nevaizduoja. Šunelio darbas vienas —
+atneša. Greta jo rodomi tikri įrankiai: paieškos laukelis „Paieškos raktažodžiai“ viršuje
+ir „Svetainės medis“ apačioje (abu patikrinti skeletone 2026-09-16).
+
+## 2026-09-16 — Navigacijos filmuko pirmos peržiūros pastabos
+
+> „Pieškime tik duris ir ant durų dėkime užrašus… Žalia ji ne visur, tai geriau tamsiai pilka kituose kadruose.“
+> „px čia rodo, kad aukštis, o ne plotis.“
+> „Reikia rodyti vieną meniu, kur aiškiai pasirodo, kaip gimsta dviaukštis meniu.“
+> „Baigėsi garso takelis, tai reikia kažkaip padaryti loopsą muzikos.“
+
+1. **Mokyklos meniu juosta piešiama tamsiai pilka** (`#3b4250`), ne žalia — žalia ne visose
+   svetainėse, o pilka neprimena konkrečios mokyklos.
+2. **Durų metafora piešiama durimis su užrašais ant jų**, ne juosta. Juosta rodoma tik ten,
+   kur kalbama apie plotį.
+3. **Matmuo rodomas ta kryptimi, kurią jis matuoja.** Plotis — horizontaliai, šalia raidės
+   palyginimui. Aukštas stulpelis su „8 px“ skaitomas kaip aukštis.
+4. **Procesą rodome viename objekte**, ne dviem palyginimo stulpeliais: tas pats meniu,
+   į kurį įstumiamas punktas, ir po juo gimsta antras aukštas.
+5. **Muzika kartojama be tylos.** Takelis baigiasi ~6 s tyla, todėl `-stream_loop` ją
+   kartodavo ir atrodė, kad muzika pasibaigė. `build-video.js` dabar nukerpa uodegos tylą ir
+   kartojimus suklijuoja 2 s kryžmine perėja (`paruostiMuzikosLova`).
+6. **Klausiamos antraštės šiame filme leidžiamos** („O galima mainyti?“, „O galima
+   trumpinti?“, „Ar galime sutarti?“) — Eimanto žodžiai. Bendra taisyklė „be klaustukų“ lieka
+   kitoms iliustracijoms.
+
+## 2026-09-16 — Skirtukas klausia, kadras atsako. Mažiau yra daugiau
+
+> „Ar galime padaryti taip, kad skirtuko tekstas ir sekančio kadro H1 nebūtų vienas ir tas pats?“
+> „Kai klausiame, tai atsakyme Taip, …“
+> „Gal balsu pasakysime daugiau. Tai gal neverta perkrauti kadrų?“
+
+1. **Skirtuko pavadinimas (scenarijaus stulpelis „Kadras“) ir kadro H1 niekada nesutampa.**
+   Skirtukas įvardija temą arba užduoda klausimą, H1 atsako arba pasako esmę. Jei kadre
+   buvo mažesnė antraštė ar išvada — ji pakeliama į H1.
+2. **Klausimą skirtuke atsako H1, pradedamas „Taip, …“**: „O galima mainyti?“ → „Taip, jei
+   durų lieka šešerios“.
+3. **Kadre lieka tik H1 ir vaizdas.** Įžanga po antrašte, apatinis sakinys, paaiškinimai po
+   punktais — išmetami, jei tą patį pasako balsas. Kadras rodo, balsas aiškina.
+4. **Pastatas piešiamas iš tų pačių durų**, kurios buvo pirmame kadre — žiūrovas atpažįsta,
+   o piešinys tvarkingas (fasadas, stogas, žemės linija, paraštės abiejose pusėse).

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .lead { font-size: 26px; color: var(--c-text-muted); text-align: center; margin: -30px 0 54px; }
+  .foot { font-size: 24px; color: var(--c-text-secondary); text-align: center; margin-top: 52px; }
+
+  .nav { display: flex; background: var(--c-green-nav); border-radius: 10px; overflow: hidden; }
+  .nav .it { flex: 1; padding: 26px 12px; color: #fff; font-size: 18px; font-weight: 700;
+             text-transform: uppercase; text-align: center; line-height: 1.25;
+             border-right: 1px solid rgba(255,255,255,.3); display: flex; align-items: center; justify-content: center; }
+  .nav .it:last-child { border-right: 0; }
+
+  .stage { display: flex; flex-direction: column; gap: 30px; }
+  .lbl { font-size: 20px; text-transform: uppercase; letter-spacing: .8px; color: var(--c-text-faint); margin-bottom: 12px; }
+  .arw { display: flex; justify-content: center; color: var(--c-line); }
+  .it.out { background: rgba(255,255,255,.2); color: rgba(255,255,255,.5); }
+  .it.in2 { background: var(--c-blue-solid); }
+  .moved { margin-top: 26px; display: flex; align-items: center; gap: 18px; justify-content: center;
+           font-size: 23px; color: var(--c-blue-text); }
+  .moved svg { width: 34px; height: 34px; flex-shrink: 0; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="stage">
+      <div>
+        <div class="lbl">{{before_label}}</div>
+        <div class="nav">
+          <div class="it">{{before_items_1}}</div><div class="it">{{before_items_2}}</div>
+          <div class="it out">{{before_items_3}}</div><div class="it">{{before_items_4}}</div>
+          <div class="it">{{before_items_5}}</div><div class="it">{{before_items_6}}</div>
+        </div>
+      </div>
+      <div class="arw"><svg width="40" height="46" viewBox="0 0 40 46" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 2v40M9 32l11 11 11-11"/></svg></div>
+      <div>
+        <div class="lbl">{{after_label}}</div>
+        <div class="nav">
+          <div class="it">{{after_items_1}}</div><div class="it">{{after_items_2}}</div>
+          <div class="it in2">{{after_items_3}}</div><div class="it">{{after_items_4}}</div>
+          <div class="it">{{after_items_5}}</div><div class="it">{{after_items_6}}</div>
+        </div>
+      </div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>
