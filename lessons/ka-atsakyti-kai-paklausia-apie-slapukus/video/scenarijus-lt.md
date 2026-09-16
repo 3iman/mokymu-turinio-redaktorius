@@ -2,7 +2,7 @@
 
 **Formatas:** Lietuviškai, su balsu — iliustracijos + tekstas ekrane + balsas + foninė muzika
 **Balsas:** ElevenLabs `eleven_v3`, balsas `eqJHjeWMPGJFD6VBf1J2`, greitis 0.9 — `node generate-voice.js --lesson ka-atsakyti-kai-paklausia-apie-slapukus --lang lt`
-**Balso seed:** 1779642367 — pasirinktas Eimanto ausimi; keičiant tekstą kandidatai renkami iš naujo
+**Balso seed:** 1779642367 — įrašomas automatiškai; pakeitus tekstą balsas generuojamas iš naujo
 **Balso tekstas:** atsirinktas iš pamokos teksto (WP), ne rašytas iš naujo. Kirtis „ràštinę“ patvirtintas Eimanto 2026-09-15.
 **Trukmė:** ~1:15 min.
 **Foninė muzika:** `jiglr-malibu_cleverphant-mokymu-fonas.mp3` (~20% garsumo)

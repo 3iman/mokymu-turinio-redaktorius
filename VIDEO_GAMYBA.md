@@ -182,7 +182,7 @@ ffmpeg -v info -i assets/video/autro.mp4 -af volumedetect -f null - 2>&1 | grep 
 | Kas | Kaip | Kodėl |
 |---|---|---|
 | Modelis ir balsas | `eleven_v3_dpo_20260217`, „Darius Cleverphant“ greitasis klonas `eqJHjeWMPGJFD6VBf1J2` | Eimantas išrinko ausimi 2026-09-15 prieš `eleven_v3`. Profesionalus klonas neapmokytas, o v3 jam dar neoptimizuotas |
-| Versija | `--kandidatai 3` → Eimantas renka ausimi → `--pasirinkti SEED` | ElevenLabs pakartojamumo negarantuoja, tad perkeliamas **išgirstas** garsas, ne pergeneruojamas. Seed įrašomas scenarijaus antraštėje |
+| Versija | **viena versija**; seed įrašomas scenarijaus antraštėje automatiškai | modelis, balsas ir nustatymai nuspręsti 2026-09-15 — Eimantas versijų **nerenka**. Seed daro pergeneravimą pakartojamą. `--kandidatai` — tik jei Eimantas pats paprašo |
 | Visi sakiniai | **viena** užklausa, iškerpami pagal simbolių laiko žymas | `eleven_v3` nepriima `previous_text`/`next_text`; atskiros užklausos duoda intonacijos šuolius |
 | Paskutinis sakinys | po jo pridedamas **atmetamas** sakinys | ElevenLabs failas baigiasi ties paskutine raide, kol balsas dar skamba (−25 dB) — skamba nukirpta |
 | Vieta filmuke | kadro pradžia **išmatuota** iš sukonkatenuotų failų + 0,6 s | ne apskaičiuota iš scenarijaus — skirtukai ir klipai gali skirtis |
@@ -206,7 +206,7 @@ Patikra po montažo (slapukų pamoka, 2026-09-15):
 | K1 ruožas (balsas) | −26,6 dB | −21,4 dB |
 | tarpas tarp sakinių | −19,9 dB | −19,8 dB |
 
-Kaina: ~740 simbolių vienai versijai 110 s filmukui, tad trys kandidatai ~2 200. Raktas `illustrations/.env` → `ELEVENLABS_API_KEY`.
+Kaina: ~740 simbolių 110 s filmukui. Raktas `illustrations/.env` → `ELEVENLABS_API_KEY`.
 Rakto teisės: Text to Speech, `user_read`, tarimo žodynai (read/write).
 
 ### Vinjetė (nuo 2026-09-15)

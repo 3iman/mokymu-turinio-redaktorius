@@ -4,8 +4,8 @@
  * Balso įgarsinimas iš scenarijaus stulpelio „Balsas“ (ElevenLabs).
  *
  * Usage:
- *   node generate-voice.js --lesson {slug} --lang lt                 # naudoja scenarijaus seed, kešas
- *   node generate-voice.js --lesson {slug} --lang lt --kandidatai 3  # 3 versijos su skirtingais seed
+ *   node generate-voice.js --lesson {slug} --lang lt                 # viena versija; seed įrašomas scenarijuje
+ *   node generate-voice.js --lesson {slug} --lang lt --kandidatai 3  # tik jei Eimantas pats paprašo palyginti
  *   node generate-voice.js --lesson {slug} --lang lt --pasirinkti 12345  # perkelia kandidatą į konvejerį
  *   node generate-voice.js --lesson {slug} --lang lt --force         # ignoruoti kešą
  *
@@ -16,10 +16,10 @@
  *    Dariaus balsui (prieš `eleven_v3`). Pavadinime data: tai gali būti bandomoji versija,
  *    kurią ElevenLabs pervadins ar išims. Tada API grąžins klaidą ir skriptas SUSTOS —
  *    į kitą modelį tyliai negrįžtama, nes balsas skambėtų kitaip.
- * ⛔ Versija valdoma per `seed`. Kandidatai generuojami su skirtingais seed, Eimantas
- *    išsirenka ausimi, o `--pasirinkti` perkelia TĄ PATĮ garsą be naujo generavimo:
- *    ElevenLabs determinizmo negarantuoja, tad pergeneravus su tuo pačiu seed galima
- *    gauti kiek kitokią versiją. Seed įrašomas scenarijaus antraštėje.
+ * ⛔ Balso versijų Eimantas NERENKA (2026-09-15): modelis, balsas ir nustatymai nuspręsti.
+ *    Įprastas paleidimas generuoja vieną versiją ir įrašo jos seed scenarijaus antraštėje,
+ *    kad pergeneravimas būtų pakartojamas. `--kandidatai` lieka tik tam atvejui, kai
+ *    Eimantas pats paprašo palyginti. ElevenLabs determinizmo negarantuoja.
  * ⛔ Visi kadrų sakiniai generuojami VIENA užklausa. v3 modeliai nepriima
  *    `previous_text` / `next_text`, tad atskiri užklausimai duoda intonacijos šuolius.
  * ⛔ ElevenLabs failas baigiasi tiksliai ties paskutine raide, kol balsas dar skamba.
@@ -191,7 +191,7 @@ function previewTrack(dir, items) {
 }
 
 function setScenarioSeed(content, seed) {
-  const line = `**Balso seed:** ${seed} — pasirinktas Eimanto ausimi; keičiant tekstą kandidatai renkami iš naujo`;
+  const line = `**Balso seed:** ${seed} — įrašomas automatiškai; pakeitus tekstą balsas generuojamas iš naujo`;
   if (/^\*\*Balso seed:\*\*.*$/m.test(content)) return content.replace(/^\*\*Balso seed:\*\*.*$/m, line);
   if (/^\*\*Balsas:\*\*.*$/m.test(content)) return content.replace(/^(\*\*Balsas:\*\*.*)$/m, `$1\n${line}`);
   return content.replace(/^(# .*\n)/, `$1\n${line}\n`);
@@ -252,7 +252,8 @@ async function main() {
   }
 
   // Įprastas paleidimas: scenarijaus seed + kešas
-  const seed = scenarioSeed;
+  // Seed: iš scenarijaus arba naujas atsitiktinis, kuris po generavimo įrašomas į scenarijų
+  const seed = scenarioSeed !== null ? scenarioSeed : crypto.randomInt(1, 4294967295);
   const hash = hashOf(rows, seed, dictId);
   const manifestPath = path.join(outDir, 'manifest.json');
   if (!force && fs.existsSync(manifestPath)) {
@@ -263,10 +264,13 @@ async function main() {
       return;
     }
   }
-  if (seed === null) console.warn('  ⚠️ Scenarijuje nėra „**Balso seed:**“ — versija bus atsitiktinė. Rinkis per --kandidatai.');
   console.log(`\nĮgarsinimas: ${lessonSlug} [${lang}] · ${rows.length} kadrai · ${MODEL} · greitis ${SPEED} · seed ${seed ?? '—'}`);
   const gen = await generate(rows, seed, outDir, key, dictId);
   writeManifest(outDir, rows, seed, dictId, gen);
+  if (scenarioSeed === null) {
+    fs.writeFileSync(scenarioPath, setScenarioSeed(content, seed), 'utf-8');
+    console.log(`  Seed ${seed} įrašytas scenarijuje.`);
+  }
   console.log(`  Balsas: ${outDir}`);
   if (gen.overflow) {
     console.error('\n⛔ Bent vienas balsas netelpa į kadrą. Pailgink kadro trukmę scenarijuje — balsas nespraudžiamas (VIDEO_GAMYBA.md §2).');
