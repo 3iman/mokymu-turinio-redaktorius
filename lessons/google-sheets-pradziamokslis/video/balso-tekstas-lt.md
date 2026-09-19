@@ -58,7 +58,7 @@
 ## 08. Pervardyti lapą – 14 s
 *Antraštė:* Dukart spustelėjate pavadinimą ir rašote
 
-- ` 1.0` Lapą pervardyti paprasčiausia dukart spustelė́jus jo pavadinimą.
+- ` 1.0` Lapą pervardyti paprasčiausia dukart spustelėjus jo pavadinimą.
 - ` 5.9` Įrašote naują pavadinimą ir spaudžiate Enter.
 - ` 9.7` Lentelė svetainėje dėl to nesikeičia.
 
@@ -84,7 +84,7 @@
 ## 11. Rašymas langelyje – 14 s
 *Antraštė:* Spustelėjate langelį, rašote ir spaudžiate Enter
 
-- ` 1.0` Spustelė́jate langelį ir rašote.
+- ` 1.0` Spustelėjate langelį ir rašote.
 - ` 4.5` Baigę spaudžiate Enter – pakeitimas išsisaugo pats.
 - ` 9.3` Taip užpildote visą lentelę – langelis po langelio.
 
@@ -108,7 +108,7 @@
 *Antraštė:* Įklijavote iš Word? Sutraukiate į vieną eilutę
 
 - ` 1.0` Iš Word ar PDF tekstas dažnai atkeliauja su paslėptu eilutės perkėlimu.
-- ` 7.2` Viršutinėje juostoje spustelė́jate antros eilutės pradžią ir spaudžiate Backspace.
+- ` 7.2` Viršutinėje juostoje spustelėjate antros eilutės pradžią ir spaudžiate Backspace.
 - `14.2` Įrašote kablelį ir spaudžiate Enter.
 - `18.1` Dabar tai viena eilutė.
 
@@ -136,14 +136,14 @@
 ## 17. Paruošti pavyzdžiai – 17 s
 *Antraštė:* Paruošti pavyzdžiai jau veikia su svetaine
 
-- ` 1.0` Paruõšti pavyzdžiai jau veikia kartu su svetaine.
+- ` 1.0` Paruošti pavyzdžiai jau veikia kartu su svetaine.
 - ` 5.8` Todėl langelių geriau nejungti ir eilučių nerikiuoti.
 - `10.7` Išbandyti galite drąsiai, tik rezultatas ne visada bus toks, kokio tikitės.
 
 ## 18. Kai liko šablono spalva – 17 s
 *Antraštė:* Svetainėje spalvos nematyti – bet galite sutvarkyti
 
-- ` 1.0` Kartais perkeltame sąraše eilutė lieka su žalia šablono spalvà.
+- ` 1.0` Kartais perkeltame sąraše eilutė lieka su žalia šablono spalva.
 - ` 6.2` Svetainėje to nematyti, bet norėdami tvarkos pažymite tuos langelius
 - `11.5` ir meniu Formatas pasirenkate Išvalyti formatavimą.
 

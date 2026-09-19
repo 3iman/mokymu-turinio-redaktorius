@@ -1,0 +1,603 @@
+{
+  "hash": "5c3763ac80ed8c668be440805e5473c2770e56985d2b58b8cd91321887820d3c",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 545577973,
+  "characters": 3445,
+  "start_in_frame": 0.6,
+  "created": "2026-09-19T21:18:23.735Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Kodėl tai naudinga",
+      "text": "Mokyklos lentelės gali gyventi ne svetainėje, o „Google Sheets“ failuose.",
+      "file": "k01-1.wav",
+      "duration": 4.75,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Kodėl tai naudinga",
+      "text": "Lentelei pakeisti nebereikia jungtis prie turinio valdymo sistemos.",
+      "file": "k01-2.wav",
+      "duration": 3.93,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Kodėl tai naudinga",
+      "text": "Šablonai jau /paˈruoʃtʲi/ – užpildote tik duomenis.",
+      "file": "k01-3.wav",
+      "duration": 3.53,
+      "fits": false,
+      "reikia_sek": 23
+    },
+    {
+      "kadras": 1,
+      "cue": 4,
+      "title": "Kodėl tai naudinga",
+      "text": "Prieigą gali turėti keli darbuotojai, tad atsakomybes galima pasidalyti.",
+      "file": "k01-4.wav",
+      "duration": 5.29,
+      "fits": false,
+      "reikia_sek": 23
+    },
+    {
+      "kadras": 1,
+      "cue": 5,
+      "title": "Kodėl tai naudinga",
+      "text": "O suintegruojama vieną kartą.",
+      "file": "k01-5.wav",
+      "duration": 2.49,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Kaip tai veikia",
+      "text": "Duomenys gyvena „Google Sheets“ faile.",
+      "file": "k02-1.wav",
+      "duration": 2.25,
+      "fits": true,
+      "reikia_sek": 26
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Kaip tai veikia",
+      "text": "Failas prijungiamas prie turinio valdymo sistemos – ten tam yra modulis „Google Sheets Lentelės“.",
+      "file": "k02-2.wav",
+      "duration": 6.19,
+      "fits": true,
+      "reikia_sek": 26
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Kaip tai veikia",
+      "text": "O svetainės puslapis lentelę tiesiog parodo lankytojui.",
+      "file": "k02-3.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 26
+    },
+    {
+      "kadras": 2,
+      "cue": 4,
+      "title": "Kaip tai veikia",
+      "text": "Prijungtam failui sistema suteikia savo numerį, o kiekvienas lapas turi savo gID.",
+      "file": "k02-4.wav",
+      "duration": 5.29,
+      "fits": false,
+      "reikia_sek": 27
+    },
+    {
+      "kadras": 2,
+      "cue": 5,
+      "title": "Kaip tai veikia",
+      "text": "Pagal juos puslapis ir žino, kurią lentelę imti.",
+      "file": "k02-5.wav",
+      "duration": 3.13,
+      "fits": false,
+      "reikia_sek": 27
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Failo ir lapo numeriai",
+      "text": "Abu numerius matote to paties failo adrese.",
+      "file": "k03-1.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 24
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Failo ir lapo numeriai",
+      "text": "Failo numeris rodo patį failą – visoms jo lentelėms jis vienodas.",
+      "file": "k03-2.wav",
+      "duration": 4.73,
+      "fits": true,
+      "reikia_sek": 24
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Failo ir lapo numeriai",
+      "text": "O gID rodo konkretų lapą. Jis nesikeičia net tada, kai lapą pervadinate.",
+      "file": "k03-3.wav",
+      "duration": 5.95,
+      "fits": true,
+      "reikia_sek": 24
+    },
+    {
+      "kadras": 3,
+      "cue": 4,
+      "title": "Failo ir lapo numeriai",
+      "text": "Pirmasis lapas visada turi gID nulis – tai numatytasis lapas.",
+      "file": "k03-4.wav",
+      "duration": 4.65,
+      "fits": true,
+      "reikia_sek": 24
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Kas ką daro",
+      "text": "Prijungimą, publikavimą ir lentelės įdėjimą į puslapį padarome mes.",
+      "file": "k04-1.wav",
+      "duration": 4.57,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Kas ką daro",
+      "text": "Jums lieka svarbiausia dalis: duomenys.",
+      "file": "k04-2.wav",
+      "duration": 2.99,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Kas ką daro",
+      "text": "Jūs pildote lenteles, dalijatės prieiga su kolegomis",
+      "file": "k04-3.wav",
+      "duration": 3.37,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 4,
+      "cue": 4,
+      "title": "Kas ką daro",
+      "text": "ir parašote mums tada, kai kas nors nepavyksta.",
+      "file": "k04-4.wav",
+      "duration": 3.39,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 4,
+      "cue": 5,
+      "title": "Kas ką daro",
+      "text": "Šablono kopijuoti patiems nebereikia.",
+      "file": "k04-5.wav",
+      "duration": 2.67,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Publikavimas",
+      "text": "Kad svetainė galėtų perskaityti lentelę, failas turi būti atidarytas skaitymui.",
+      "file": "k05-1.wav",
+      "duration": 4.89,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Publikavimas",
+      "text": "Bendrojoje prieigoje pasirenkama „Visi, turintys nuorodą“.",
+      "file": "k05-2.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Publikavimas",
+      "text": "Rolės „Žiūrintysis“ visiškai pakanka – redaguoti svetainei nereikia.",
+      "file": "k05-3.wav",
+      "duration": 4.33,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 5,
+      "cue": 4,
+      "title": "Publikavimas",
+      "text": "Tai padarome prijungdami failą.",
+      "file": "k05-4.wav",
+      "duration": 2.33,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Lentelė puslapyje",
+      "text": "Puslapyje lentelė įrašoma viena eilute.",
+      "file": "k06-1.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 24
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Lentelė puslapyje",
+      "text": "Pirmas skaičius – failo numeris sistemoje, antras – lapo gID.",
+      "file": "k06-2.wav",
+      "duration": 4.65,
+      "fits": true,
+      "reikia_sek": 24
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Lentelė puslapyje",
+      "text": "Išsaugojus puslapį, lankytojas mato jau sutvarkytą lentelę.",
+      "file": "k06-3.wav",
+      "duration": 4.27,
+      "fits": true,
+      "reikia_sek": 24
+    },
+    {
+      "kadras": 6,
+      "cue": 4,
+      "title": "Lentelė puslapyje",
+      "text": "Jums šios eilutės rašyti nereikia – ją įdedame prijungdami lentelę.",
+      "file": "k06-4.wav",
+      "duration": 4.59,
+      "fits": false,
+      "reikia_sek": 25
+    },
+    {
+      "kadras": 6,
+      "cue": 5,
+      "title": "Lentelė puslapyje",
+      "text": "Vėliau keičiasi tik duomenys faile.",
+      "file": "k06-5.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 24
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Modulis sistemoje",
+      "text": "Turinio valdymo sistemoje prijungti failai turi savo sąrašą.",
+      "file": "k07-1.wav",
+      "duration": 4.33,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Modulis sistemoje",
+      "text": "Kiekvienas atpažįstamas pagal pavadinimą, kurį suteikiame patys.",
+      "file": "k07-2.wav",
+      "duration": 4.59,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Modulis sistemoje",
+      "text": "Numerį sistema priskiria pati – būtent jį puslapis naudoja lentelei rasti.",
+      "file": "k07-3.wav",
+      "duration": 5.39,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 7,
+      "cue": 4,
+      "title": "Modulis sistemoje",
+      "text": "O žyma „Enabled“ rodo, ar failas veikia.",
+      "file": "k07-4.wav",
+      "duration": 3.15,
+      "fits": false,
+      "reikia_sek": 23
+    },
+    {
+      "kadras": 7,
+      "cue": 5,
+      "title": "Modulis sistemoje",
+      "text": "Išjungto failo lentelės nematyti.",
+      "file": "k07-5.wav",
+      "duration": 3.21,
+      "fits": false,
+      "reikia_sek": 23
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Kaip greitai atsinaujina",
+      "text": "Pataisius langelį, svetainė atsinaujina pati.",
+      "file": "k08-1.wav",
+      "duration": 3.45,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Kaip greitai atsinaujina",
+      "text": "Dažniausiai tai trunka kelias sekundes.",
+      "file": "k08-2.wav",
+      "duration": 3.21,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Kaip greitai atsinaujina",
+      "text": "Jei pakeitimo nematyti, tikrinkite du dalykus.",
+      "file": "k08-3.wav",
+      "duration": 3.55,
+      "fits": false,
+      "reikia_sek": 21
+    },
+    {
+      "kadras": 8,
+      "cue": 4,
+      "title": "Kaip greitai atsinaujina",
+      "text": "Ar redaguojate tą pačią prijungtą lentelę.",
+      "file": "k08-4.wav",
+      "duration": 3.29,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 8,
+      "cue": 5,
+      "title": "Kaip greitai atsinaujina",
+      "text": "Ir ar tikrai išėjote iš langelio.",
+      "file": "k08-5.wav",
+      "duration": 2.99,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 9,
+      "cue": 1,
+      "title": "Lentelė yra duomenų bazė",
+      "text": "Lentelė čia veikia kaip duomenų bazė – svarbiausia tvarka, ne stilius.",
+      "file": "k09-1.wav",
+      "duration": 4.91,
+      "fits": true,
+      "reikia_sek": 26
+    },
+    {
+      "kadras": 9,
+      "cue": 2,
+      "title": "Lentelė yra duomenų bazė",
+      "text": "Langelyje neturi būti nei perkėlimo į naują eilutę, nei formulių, nei sujungtų langelių.",
+      "file": "k09-2.wav",
+      "duration": 6.73,
+      "fits": false,
+      "reikia_sek": 27
+    },
+    {
+      "kadras": 9,
+      "cue": 3,
+      "title": "Lentelė yra duomenų bazė",
+      "text": "Tinka tai, kas paruošta: A stulpelio žymos ir vienas formatas vienai eilutei.",
+      "file": "k09-3.wav",
+      "duration": 6.49,
+      "fits": false,
+      "reikia_sek": 27
+    },
+    {
+      "kadras": 9,
+      "cue": 4,
+      "title": "Lentelė yra duomenų bazė",
+      "text": "Sudėtingesnis formatavimas svetainėje nesimato.",
+      "file": "k09-4.wav",
+      "duration": 3.53,
+      "fits": false,
+      "reikia_sek": 27
+    },
+    {
+      "kadras": 9,
+      "cue": 5,
+      "title": "Lentelė yra duomenų bazė",
+      "text": "Todėl šabloną verta palikti tokį, koks yra.",
+      "file": "k09-5.wav",
+      "duration": 3.85,
+      "fits": false,
+      "reikia_sek": 27
+    },
+    {
+      "kadras": 10,
+      "cue": 1,
+      "title": "Lapų tvarka",
+      "text": "Pirmas lapas visada turi gID nulis.",
+      "file": "k10-1.wav",
+      "duration": 3.61,
+      "fits": false,
+      "reikia_sek": 21
+    },
+    {
+      "kadras": 10,
+      "cue": 2,
+      "title": "Lapų tvarka",
+      "text": "Jo vietos keisti nereikėtų – svetainė jį atpažįsta būtent pagal šį numerį.",
+      "file": "k10-2.wav",
+      "duration": 5.69,
+      "fits": false,
+      "reikia_sek": 21
+    },
+    {
+      "kadras": 10,
+      "cue": 3,
+      "title": "Lapų tvarka",
+      "text": "Kitus lapus galima perkelti ar pervadinti laisvai.",
+      "file": "k10-3.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 10,
+      "cue": 4,
+      "title": "Lapų tvarka",
+      "text": "Sistema juos atpažįsta pagal gID, ne pagal vietą.",
+      "file": "k10-4.wav",
+      "duration": 4.71,
+      "fits": false,
+      "reikia_sek": 21
+    },
+    {
+      "kadras": 11,
+      "cue": 1,
+      "title": "Keli failai pagal atsakomybes",
+      "text": "Visas lenteles galima sudėti į vieną failą, bet patogiau skaidyti pagal atsakomybes.",
+      "file": "k11-1.wav",
+      "duration": 6.01,
+      "fits": false,
+      "reikia_sek": 23
+    },
+    {
+      "kadras": 11,
+      "cue": 2,
+      "title": "Keli failai pagal atsakomybes",
+      "text": "Pavyzdžiui, administracijos ir ugdymo lentelės gyvena atskirai.",
+      "file": "k11-2.wav",
+      "duration": 4.89,
+      "fits": false,
+      "reikia_sek": 23
+    },
+    {
+      "kadras": 11,
+      "cue": 3,
+      "title": "Keli failai pagal atsakomybes",
+      "text": "Taip aišku, kuris failas kam priklauso,",
+      "file": "k11-3.wav",
+      "duration": 2.89,
+      "fits": false,
+      "reikia_sek": 23
+    },
+    {
+      "kadras": 11,
+      "cue": 4,
+      "title": "Keli failai pagal atsakomybes",
+      "text": "klaida paliečia tik vieną failą,",
+      "file": "k11-4.wav",
+      "duration": 2.17,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 11,
+      "cue": 5,
+      "title": "Keli failai pagal atsakomybes",
+      "text": "o skirtingi žmonės dirba vienas kitam netrukdydami.",
+      "file": "k11-5.wav",
+      "duration": 4.09,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 12,
+      "cue": 1,
+      "title": "Ką matote atidarę",
+      "text": "Atidarę failą matote, kad darbas jau pradėtas.",
+      "file": "k12-1.wav",
+      "duration": 3.39,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 12,
+      "cue": 2,
+      "title": "Ką matote atidarę",
+      "text": "Lapai /paˈruoʃtʲi/ dažniausioms lentelėms: taryba, komisijos, darbo užmokestis.",
+      "file": "k12-2.wav",
+      "duration": 5.53,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 12,
+      "cue": 3,
+      "title": "Ką matote atidarę",
+      "text": "Antraštės ir stulpeliai jau sudėlioti – lieka duomenys.",
+      "file": "k12-3.wav",
+      "duration": 4.33,
+      "fits": false,
+      "reikia_sek": 21
+    },
+    {
+      "kadras": 12,
+      "cue": 4,
+      "title": "Ką matote atidarę",
+      "text": "O jei kurios nors lentelės nereikia, tiesiog jos nepildote.",
+      "file": "k12-4.wav",
+      "duration": 4.09,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 13,
+      "cue": 1,
+      "title": "Kur toliau",
+      "text": "Ta pačia tema turime dar dvi pamokas.",
+      "file": "k13-1.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 13,
+      "cue": 2,
+      "title": "Kur toliau",
+      "text": "Pradžiamokslis parodo, kaip tvarkyti pačias lenteles.",
+      "file": "k13-2.wav",
+      "duration": 3.21,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 13,
+      "cue": 3,
+      "title": "Kur toliau",
+      "text": "O lentelių kūrimo principai – kaip lentelė turi atrodyti, kad būtų suprantama.",
+      "file": "k13-3.wav",
+      "duration": 5.69,
+      "fits": true,
+      "reikia_sek": 16
+    }
+  ]
+}

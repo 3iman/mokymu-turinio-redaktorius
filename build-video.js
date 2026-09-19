@@ -335,7 +335,7 @@ function paruostiMuzikosLova(musicPath, reikiaSek, tmpDir) {
       { encoding: 'utf-8', stdio: ['pipe', 'pipe', 'pipe'] }).trim();
     const info = JSON.parse(out);
     console.log(`  Muzikos miksas: ${info.bpm} BPM, kilpa ${info.kilpa[0]}–${info.kilpa[1]}s `
-      + `(${info.taktai} taktai) × ${info.kartojimu}, siūlė ${info.siules_tikslumas}, trukmė ${info.trukme}s`);
+      + `(${info.taktai} taktai) × ${info.kartojimu}, spektrai ${info.spektru_panasumas}, banga ${info.bangos_sutapimas}, trukmė ${info.trukme}s`);
     return { path: lovaMix, trim: null };
   } catch (e) {
     console.warn(`  ⛔ Miksas nepavyko (${String(e.message || e).split('\n')[0]}) — kartoju takelį senuoju būdu`);

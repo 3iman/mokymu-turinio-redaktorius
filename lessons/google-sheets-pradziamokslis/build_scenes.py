@@ -267,7 +267,7 @@ def window(s, inner_grid, active=3, extra='', tab_names=None, formula_name='A1',
             f'{tabbar_html if tabbar_html is not None else tabbar(s, active, tab_names)}{extra}</div>')
 
 
-def page(s, body, own_css=''):
+def page(s, body, own_css='', toast=''):
     return f'''<!DOCTYPE html>
 <html lang="{{{{lang}}}}">
 <head>
@@ -301,6 +301,7 @@ def page(s, body, own_css=''):
     <div class="stage">
 {body}
     </div>
+    <div class="toast-layer">{toast}</div>
     <div class="brand-bar">
       <img class="brand-logo brand-logo-light" src="{{{{brand_logo_path}}}}" alt="Cleverphant" />
       <img class="brand-logo brand-logo-dark" src="{{{{brand_logo_dark_path}}}}" alt="Cleverphant" />
@@ -684,11 +685,8 @@ css9 = '''
   .ren { margin-top: 26px; font-size: 24px; color: var(--c-text); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
   .ren b { font-family: var(--gs-font); font-weight: 500; background: var(--c-green-bg); border: 1.5px solid var(--c-green-border); border-radius: 10px; padding: 8px 16px; }
   .warn { margin-top: 26px; font-size: 24px; line-height: 1.4; color: var(--c-text); background: var(--c-amber-bg); border: 1.5px solid #fde68a; border-radius: 14px; padding: 16px 22px; }
-  .undo { position: absolute; left: 20px; top: 560px; width: 1640px; height: 150px; flex-wrap: wrap; align-content: center; border-radius: 24px; background: var(--c-green-bg);
-          border: 2px solid var(--c-green-border); display: flex; align-items: center; justify-content: center; gap: 26px; font-size: 30px; color: var(--c-text); }
-  .key { font-family: var(--gs-font); font-weight: 700; background: #fff; border: 2px solid #c4c7c5; border-bottom-width: 5px; border-radius: 10px; padding: 8px 18px; font-size: 28px; }
-  .sm { color: var(--c-text-muted); font-size: 24px; }
-  .sm.later { flex-basis: 100%; text-align: center; margin-top: 6px; }
+  /* „Suklydote? Ctrl + Z“ dabar rodoma kaip Material pranešimas kampe (.gs-toast), ne balta juosta */
+  .gs-toast .sm.later { border-left: 1px solid rgba(255,255,255,.22); padding-left: 16px; margin-left: 4px; }
 '''
 body = (f'<div class="box a"><div class="h">{s.t("a_h", "Pirmas lapas lieka pirmas")}</div>'
         f'<div class="mini-tabs"><div class="first"><span class="lock"></span>{s.t("a_t1", "Gimnazijos taryba")}</div><div>{s.t("a_t2", "Mokinių taryba")}</div><div>{s.t("a_t3", "Darbuotojai")}</div></div>'
@@ -698,9 +696,11 @@ body = (f'<div class="box a"><div class="h">{s.t("a_h", "Pirmas lapas lieka pirm
         f'<div class="del-item">{s.t("b_del", "Ištrinti")}</div>'
         f'<div class="why">{s.t("b_why", "Kartu dingsta ir lentelė svetainėje")}</div>'
         f'<div class="warn">{s.t("b_warn", "Tik neskubėkite – „nepildysime“ dažnai galioja iki pirmo audito")}</div></div>'
-        f'<div class="undo">{s.t("u_txt", "Suklydote?")} <span class="key">Ctrl</span> + <span class="key">Z</span> <span class="sm">{s.t("u_mac", "arba „Mac“ kompiuteryje")}</span> <span class="key">⌘</span> + <span class="key">Z</span>'
+        )
+undo = (f'<div class="gs-toast left undo">{s.t("u_txt", "Suklydote?")} <span class="key">Ctrl</span> + <span class="key">Z</span>'
+        f'<span class="sm">{s.t("u_mac", "arba „Mac“ kompiuteryje")}</span> <span class="key">⌘</span> + <span class="key">Z</span>'
         f'<span class="sm later">{s.t("u_later", "Atšaukti nebepavyksta? Padės versijų istorija")}</span></div>')
-add(s, page(s, body, css9))
+add(s, page(s, body, css9, toast=undo))
 s.appear('.box.a', 4.0, 'slinktisIsKaires', 0.6)
 s.visible('.box.a .ren', 8.8)
 s.appear('.box.b', 14.2, 'slinktisIsDesines', 0.6)
@@ -978,15 +978,15 @@ bar = (f'<div class="fbar">'
 cells = (f'<div class="d5 d5a" style="left:{dx + 1}px; top:{dy + 1}px; width:{dw - 2}px; height:{dh - 2}px; padding:7px 10px; box-sizing:border-box">{L1}</div>'
          f'<div class="d5 d5b" style="left:{dx + 1}px; top:{dy + 1}px; width:{dw - 2}px; height:{dh - 2}px; padding:7px 10px; box-sizing:border-box">{L1}, {L2}</div>')
 sel = f'<div class="gs-sel" style="left:{dx}px; top:{dy}px; width:{dw}px; height:{dh + 1}px"></div>'
-keys = (f'<div class="gs-note keycap kb" style="left:980px; top:290px"><b>Backspace</b><small>{s.t("mac_bs", "Mac: delete")}</small></div>'
-        f'<div class="gs-note keycap ke" style="left:980px; top:290px"><b>Enter</b></div>'
-        '')
+keys = ''
+klavisai = (f'<div class="gs-toast right keycap kb"><b>Backspace</b><small>{s.t("mac_bs", "Mac: delete")}</small></div>'
+            f'<div class="gs-toast right keycap ke"><b>Enter</b></div>')
 line2_x, line2_y = 150 + 24 + 4, 166 + 10 + 38 + 19
 extra = sel + cells + bar + keys + s.click(line2_x, line2_y, 7.0)
 extra += s.cursor_path('.cursor-wrap', [(0, 1200, 500), (5.6, 1200, 500), (6.8, line2_x, line2_y + 4), (13.0, line2_x, line2_y + 4), (14.2, 1250, 520), (17, 1250, 520)])
 win = (f'<div class="gs-window">{top(s)}{formula(s, "D5", L1 + ", " + L2)}'
        f'<div class="gs-grid">{colhead()}{"".join(rows_w)}</div>{tabbar(s, 3)}{extra}</div>')
-add(s, page(s, win, css_w))
+add(s, page(s, win, css_w, toast=klavisai))
 s.visible('.fbar', 1.8, 13.4)
 s.visible('.sA', 1.8, 7.05)
 s.visible('.sB', 7.1, 9.55)
@@ -1029,15 +1029,17 @@ sel_b = f'<div class="gs-sel selb" style="left:{b9x}px; top:{b9y}px; width:{bw}p
 pasted = f'<div class="pasted" style="position:absolute; left:{b9x}px; top:{b9y}px; width:{bw}px; z-index:5">' + \
     ''.join(f'<div style="height:{ROW_H}px; display:flex; align-items:center; padding:0 10px; font-size:18px; color:var(--gs-cell-text)">{k}.</div>' for k in (1, 2, 3)) + '</div>'
 dnx = cell_box('D', 4)[0] + 330
-formula_try = f'<div class="gs-note ftry" style="left:{dnx}px; top:{b9y + ROW_H - 6}px"><s>=B9+1</s>&nbsp; {s.t("ftry", "neveikia su „1.“")}</div>'
-keys_c = f'<div class="gs-note kc" style="left:{dnx}px; top:{b4y + 20}px"><b>Ctrl + C</b></div>'
-keys_v = f'<div class="gs-note kv" style="left:{dnx}px; top:{b9y + 20}px"><b>Ctrl + V</b></div>'
+formula_try = ''
+pranesimai = (f'<div class="gs-toast right ftry"><s>=B9+1</s> {s.t("ftry", "neveikia su „1.“")}</div>'
+              f'<div class="gs-toast right kc"><b>Ctrl + C</b></div>'
+              f'<div class="gs-toast right kv"><b>Ctrl + V</b></div>')
+keys_c = keys_v = ''
 p_a1 = cell('B', 4); p_a2 = cell('B', 6); p_b = cell('B', 9)
 extra = copy_box + sel_a + sel_b + pasted + formula_try + keys_c + keys_v
 extra += s.click(*p_a1, 6.2) + s.click(*p_b, 10.0)
 extra += s.cursor_path('.cursor-wrap', [(0, 1100, 250), (5.0, 1100, 250), (6.0, *p_a1), (6.3, *p_a1), (7.0, *p_a2), (9.2, *p_a2), (9.9, *p_b), (14, p_b[0] + 20, p_b[1] + 10)])
 win = f'<div class="gs-window">{top(s)}{formula(s)}<div class="gs-grid">{colhead()}{"".join(rows_n)}</div>{tabbar(s, 3)}{extra}</div>'
-add(s, page(s, win))
+add(s, page(s, win, toast=pranesimai))
 s.visible('.ftry', 1.6, 5.2)
 s.visible('.sela', 6.25, 10.0)
 s.visible('.kc', 7.4, 9.4)

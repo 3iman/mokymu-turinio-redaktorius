@@ -19,17 +19,17 @@
 | 5 Vaikščiojimas per lapus | 17 sek. | 04-lapai | Norėdami atidaryti kitą lentelę, spaudžiate jos pavadinimą apačioje. Jei visi lapai netelpa, rodyklėmis dešinėje paslenkate juostą. Atidarytas lapas apačioje lieka pažymėtas. |
 | 6 Visų lapų sąrašas | 14 sek. | 05-visi-lapai | Greičiausias kelias – mygtukas su trimis brūkšneliais. Jis parodo visus lapus, ir iš sąrašo pasirenkate reikiamą. Sąraše lapai išdėstyti ta pačia tvarka. |
 | 7 Lapo meniu | 17 sek. | 06-lapo-meniu | Paspaudę mažą rodyklę prie lapo pavadinimo, matote visus jo veiksmus. Pervardyti, pakeisti spalvą ar paslėpti lapą galite drąsiai. Ištrinti taip pat galite – apie tai dar pakalbėsime. |
-| 8 Pervardyti lapą | 14 sek. | 07-pervardyti | Lapą pervardyti paprasčiausia dukart spustelė́jus jo pavadinimą. Įrašote naują pavadinimą ir spaudžiate Enter. Lentelė svetainėje dėl to nesikeičia. |
+| 8 Pervardyti lapą | 14 sek. | 07-pervardyti | Lapą pervardyti paprasčiausia dukart spustelėjus jo pavadinimą. Įrašote naują pavadinimą ir spaudžiate Enter. Lentelė svetainėje dėl to nesikeičia. |
 | 9 Pirmas lapas ir trynimas | 38 sek. | 08-atsargiai | Dar du dalykai apie lapus. Pirmas lapas visada lieka pirmas, nes svetainė jį atpažįsta pagal vietą. Pervadinti jį galite – pavyzdžiui, Mokyklos taryba ar Lopšelio-darželio taryba. Tikrai nereikalingą lapą galite ištrinti – kartu dingsta ir lentelė svetainėje. Tik neskubėkite: „nepildysime“ dažnai galioja tik iki pirmo audito. O jei ištrynėte netyčia, spaudžiate Control ir Z. O jei atšaukti nebepavyksta, padės versijų istorija. |
 | 10 Pirmo stulpelio žymos | 20 sek. | 09-zymos | Pirmo stulpelio žyma pasako, kas yra eilutė. H2 – pavadinimas, H3 – skyrius, TH – lentelės stulpelių antraštės. Eilutė be žymos – įprasta lentelės eilutė, o su žyma ignore svetainėje nerodoma. |
-| 11 Rašymas langelyje | 14 sek. | 10-rasymas | Spustelė́jate langelį ir rašote. Baigę spaudžiate Enter – pakeitimas išsisaugo pats. Taip užpildote visą lentelę – langelis po langelio. |
+| 11 Rašymas langelyje | 14 sek. | 10-rasymas | Spustelėjate langelį ir rašote. Baigę spaudžiate Enter – pakeitimas išsisaugo pats. Taip užpildote visą lentelę – langelis po langelio. |
 | 12 Svetainėje – akimirksniu | 18 sek. | 11-akimirksniu | Vos išėjus iš langelio, pakeitimas jau matyti svetainėje. Ką matote lentelėje, tą mato ir lankytojas: tuščia eilutė svetainėje irgi tuščia, o užpildytas naujas stulpelis atsiranda ir svetainėje. |
 | 13 Vienas langelis – viena eilutė | 20 sek. | 12-viena-eilute | Langelyje visada rašote vieną eilutę. Jei tekstą perkeliate į naują eilutę, svetainė gauna tik pirmąją, ir lentelė lūžta. Vietoj to rašote per kablelį. Google Sheets čia – duomenų bazė, ne teksto redaktorius. |
-| 14 Tekstas iš Word | 21 sek. | 13-is-word | Iš Word ar PDF tekstas dažnai atkeliauja su paslėptu eilutės perkėlimu. Viršutinėje juostoje spustelė́jate antros eilutės pradžią ir spaudžiate Backspace. Įrašote kablelį ir spaudžiate Enter. Dabar tai viena eilutė. |
+| 14 Tekstas iš Word | 21 sek. | 13-is-word | Iš Word ar PDF tekstas dažnai atkeliauja su paslėptu eilutės perkėlimu. Viršutinėje juostoje spustelėjate antros eilutės pradžią ir spaudžiate Backspace. Įrašote kablelį ir spaudžiate Enter. Dabar tai viena eilutė. |
 | 15 Eilės numeriai | 14 sek. | 14-numeriai | Eilės numerių formulėmis nesuskaičiuosite – numeriai rašomi su tašku. Paprasčiausia nukopijuoti numerius iš kitos lentelės ir įklijuoti ten, kur jų trūksta. |
 | 16 Nauja ir išimta eilutė | 51 sek. | 15-nauja-eilute | Jei sąraše trūksta vietos, dešiniuoju pelės mygtuku spaudžiate eilutės numerį kairėje. Pasirenkate Įterpti 1 eilutę žemiau, ir atsiranda tuščia eilutė. Įrašote naują mokytoją. Pareigas ir kategoriją įrašote iš karto. Tik eilės numeriai pasislenka žemyn. Pažymite numerius žemiau naujos eilutės ir, paėmę už krašto, nutempiate vienu langeliu aukščiau. Paskutinį numerį įrašote ranka. O jei mokytojo sąraše nebeliko, žemiau esančius žmones su pareigomis nutempiate tiesiai ant jo eilutės. Likusį paskutinį numerį ištrinate. Sąrašas vėl iš eilės. |
-| 17 Paruošti pavyzdžiai | 17 sek. | 16-paruostukai | Paruõšti pavyzdžiai jau veikia kartu su svetaine. Todėl langelių geriau nejungti ir eilučių nerikiuoti. Išbandyti galite drąsiai, tik rezultatas ne visada bus toks, kokio tikitės. |
-| 18 Kai liko šablono spalva | 17 sek. | 17-spalvos | Kartais perkeltame sąraše eilutė lieka su žalia šablono spalvà. Svetainėje to nematyti, bet norėdami tvarkos pažymite tuos langelius ir meniu Formatas pasirenkate Išvalyti formatavimą. |
+| 17 Paruošti pavyzdžiai | 17 sek. | 16-paruostukai | Paruošti pavyzdžiai jau veikia kartu su svetaine. Todėl langelių geriau nejungti ir eilučių nerikiuoti. Išbandyti galite drąsiai, tik rezultatas ne visada bus toks, kokio tikitės. |
+| 18 Kai liko šablono spalva | 17 sek. | 17-spalvos | Kartais perkeltame sąraše eilutė lieka su žalia šablono spalva. Svetainėje to nematyti, bet norėdami tvarkos pažymite tuos langelius ir meniu Formatas pasirenkate Išvalyti formatavimą. |
 | 19 Kai antraštė liko be spalvos | 22 sek. | 18-th-spalva | Būna ir atvirkščiai: antraštės eilutė liko be spalvos. Pažymite pirmą langelį ir kibirėlio ženklu nuspalvinate jį žaliai. Tada spaudžiate volelio ženklą ir perbraukiate kitus antraštės langelius. Visa eilutė vienodos spalvos. |
 | 20 Versijų istorija | 40 sek. | 19-versijos | Jei atšaukti nebepavyksta, lieka versijų istorija. Viršuje dešinėje spaudžiate laikrodžio ženklą. Dešinėje atsiveria versijų sąrašas: dienos, laikai ir žmonės, kurie keitė lentelę. Paspaudę versiją matote, kaip lentelė atrodė tuo metu. Radę gerą versiją, viršuje kairėje spaudžiate Atkurti šią versiją. Dabartinė versija irgi lieka istorijoje – neprarandate nieko. Vieno langelio istoriją matote dešiniuoju pelės mygtuku. |
 | 21 Klysti nebaisu | 12 sek. | 20-nebijokite | Klysti nebaisu – beveik kiekvieną veiksmą galima atšaukti. Pakeitimai išsisaugo patys, tad galite ramiai bandyti. |
@@ -157,7 +157,7 @@
 
 | Laikas | Kas | Tekstas arba garsas |
 |---|---|---|
-| 1.0 | balsas | Lapą pervardyti paprasčiausia dukart spustelė́jus jo pavadinimą. |
+| 1.0 | balsas | Lapą pervardyti paprasčiausia dukart spustelėjus jo pavadinimą. |
 | 3.0 | garsas | spustelejimas |
 | 3.3 | garsas | spustelejimas |
 | 5.2 | garsas | rasymas |
@@ -208,7 +208,7 @@
 
 | Laikas | Kas | Tekstas arba garsas |
 |---|---|---|
-| 1.0 | balsas | Spustelė́jate langelį ir rašote. |
+| 1.0 | balsas | Spustelėjate langelį ir rašote. |
 | 2.4 | garsas | spustelejimas |
 | 4.4 | garsas | rasymas |
 | 4.5 | balsas | Baigę spaudžiate Enter – pakeitimas išsisaugo pats. |
@@ -266,7 +266,7 @@
 |---|---|---|
 | 1.0 | balsas | Iš Word ar PDF tekstas dažnai atkeliauja su paslėptu eilutės perkėlimu. |
 | 7.0 | garsas | spustelejimas |
-| 7.2 | balsas | Viršutinėje juostoje spustelė́jate antros eilutės pradžią ir spaudžiate Backspace. |
+| 7.2 | balsas | Viršutinėje juostoje spustelėjate antros eilutės pradžią ir spaudžiate Backspace. |
 | 9.6 | garsas | spustelejimas |
 | 11.2 | garsas | rasymas |
 | 13.3 | garsas | spustelejimas |
@@ -340,7 +340,7 @@
 
 | Laikas | Kas | Tekstas arba garsas |
 |---|---|---|
-| 1.0 | balsas | Paruõšti pavyzdžiai jau veikia kartu su svetaine. |
+| 1.0 | balsas | Paruošti pavyzdžiai jau veikia kartu su svetaine. |
 | 5.8 | balsas | Todėl langelių geriau nejungti ir eilučių nerikiuoti. |
 | 10.7 | balsas | Išbandyti galite drąsiai, tik rezultatas ne visada bus toks, kokio tikitės. |
 
@@ -354,7 +354,7 @@
 
 | Laikas | Kas | Tekstas arba garsas |
 |---|---|---|
-| 1.0 | balsas | Kartais perkeltame sąraše eilutė lieka su žalia šablono spalvà. |
+| 1.0 | balsas | Kartais perkeltame sąraše eilutė lieka su žalia šablono spalva. |
 | 6.2 | balsas | Svetainėje to nematyti, bet norėdami tvarkos pažymite tuos langelius |
 | 7.8 | garsas | spustelejimas |
 | 10.6 | garsas | spustelejimas |

@@ -103,9 +103,27 @@
 .gs-pop .it.tag-ok::before { background: #34a853; }
 .gs-pop .it.tag-warn::before { background: #e8710a; }
 
-/* Pastabos ant vaizdo */
-.gs-note { position: absolute; z-index: 15; background: #fff; border-radius: 14px; padding: 14px 20px; font-size: 22px;
-  color: var(--c-text, #1d2433); box-shadow: 0 10px 30px rgba(30,40,70,.18); display: flex; align-items: center; gap: 12px; white-space: nowrap; }
+/* Pastabos ant vaizdo.
+   ⛔ 2026-09-19 (Eimantas): baltos kortelės ant lentelės atrodė kaip pačios „Google Sheets“ dalis
+   („Ctrl + C“, „neveikia su 1.“). Dabar jos – tamsios, kaip Material pranešimai (snackbar):
+   iš karto matyti, kad tai mūsų paaiškinimas, o ne programos elementas. */
+.gs-note { position: absolute; z-index: 15; background: #2f3033; border-radius: 12px; padding: 16px 24px; font-size: 22px;
+  color: #f1f3f4; box-shadow: 0 8px 26px rgba(0,0,0,.30); display: flex; align-items: center; gap: 12px; white-space: nowrap; }
+.gs-note b { background: rgba(255,255,255,.16); border-radius: 8px; padding: 4px 12px; font-weight: 600; }
+.gs-note small { color: #bdc1c6; font-size: 19px; }
+.gs-note s { color: #9aa0a6; }
+
+/* Pranešimas kampe: nepriklauso nuo lango ir nuo priartinimo (gyvena už .stage). */
+/* .card > * turi position: relative, todėl selektorius privalo būti stipresnis */
+.card > .toast-layer { position: absolute; left: 0; right: 0; bottom: 96px; padding: 0 64px; pointer-events: none; z-index: 40; }
+.gs-toast { position: absolute; bottom: 0; background: #2f3033; color: #f1f3f4; border-radius: 12px; padding: 18px 28px;
+  font-size: 24px; box-shadow: 0 8px 26px rgba(0,0,0,.30); display: flex; align-items: center; gap: 14px; white-space: nowrap; }
+.gs-toast.left { left: 64px; }
+.gs-toast.right { right: 64px; }
+.gs-toast b { background: rgba(255,255,255,.16); border-radius: 8px; padding: 6px 14px; font-weight: 600; }
+.gs-toast small, .gs-toast .sm { color: #bdc1c6; font-size: 20px; }
+.gs-toast s { color: #9aa0a6; }
+.gs-toast .key { background: rgba(255,255,255,.16); border-radius: 8px; padding: 6px 14px; font-weight: 600; color: #fff; border: 0; font-size: 24px; }
 .gs-num { width: 40px; height: 40px; border-radius: 50%; background: var(--c-blue-solid, #2563eb); color: #fff; font-weight: 700;
   font-size: 21px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
 .gs-ring { position: absolute; border: 4px solid var(--c-blue-solid, #2563eb); border-radius: 10px; z-index: 14; pointer-events: none; }

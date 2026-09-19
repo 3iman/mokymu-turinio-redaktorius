@@ -3,7 +3,7 @@
   "file": "00-kodel",
   "title": "Kodėl tai naudinga",
   "h1": "Visos lentelės – vienoje vietoje",
-  "D": 22,
+  "D": 23,
   "ekrane": "Kairėje – žalias „Google Sheets“ failas su trimis lapais („Taryba“, „Mokytojai“, „Atlyginimai“). Dešinėje viena po kitos atslenka keturios naudos kortelės.",
   "komentaras": "Turinys iš publikuotos pamokos § „Kodėl tai naudinga“.",
   "cues": [
@@ -13,7 +13,7 @@
     "Mokyklos lentelės gali gyventi ne svetainėje, o „Google Sheets“ failuose."
    ],
    [
-    6.0,
+    6.1,
     "balsas",
     "Lentelei pakeisti nebereikia jungtis prie turinio valdymo sistemos."
    ],
@@ -23,12 +23,12 @@
     "Šablonai jau paruošti – užpildote tik duomenis."
    ],
    [
-    14.2,
+    14.5,
     "balsas",
     "Prieigą gali turėti keli darbuotojai, tad atsakomybes galima pasidalyti."
    ],
    [
-    19.0,
+    20.1,
     "balsas",
     "O suintegruojama vieną kartą."
    ]
@@ -38,7 +38,7 @@
   "file": "01-kaip-veikia",
   "title": "Kaip tai veikia",
   "h1": "Failas, turinio valdymo sistema ir puslapis",
-  "D": 26,
+  "D": 27,
   "ekrane": "Trys kortelės iš kairės į dešinę su rodyklėmis: failas → turinio valdymo sistema → svetainės puslapis. Apačioje – paaiškinimas apie ID ir gID.",
   "komentaras": "Publikuota pamoka § „Kaip tai veikia“. Sintaksė rodoma atskirame kadre.",
   "cues": [
@@ -63,7 +63,7 @@
     "Prijungtam failui sistema suteikia savo numerį, o kiekvienas lapas turi savo gID."
    ],
    [
-    22.4,
+    22.6,
     "balsas",
     "Pagal juos puslapis ir žino, kurią lentelę imti."
    ]
@@ -118,7 +118,7 @@
     "Jums lieka svarbiausia dalis: duomenys."
    ],
    [
-    10.2,
+    10.3,
     "balsas",
     "Jūs pildote lenteles, dalijatės prieiga su kolegomis"
    ],
@@ -128,7 +128,7 @@
     "ir parašote mums tada, kai kas nors nepavyksta."
    ],
    [
-    18.6,
+    18.7,
     "balsas",
     "Šablono kopijuoti patiems nebereikia."
    ]
@@ -168,7 +168,7 @@
   "file": "05-kodas",
   "title": "Lentelė puslapyje",
   "h1": "Puslapyje – viena eilutė, svetainėje – lentelė",
-  "D": 24,
+  "D": 25,
   "ekrane": "Kairėje kortelė su kodu {{google_sheet(1, {'tab':'0'})}}, dešinėje – kaip ta pati lentelė atrodo svetainėje.",
   "komentaras": "Publikuota pamoka § „Kaip įterpti lentelę į puslapį“. Sintaksė rodoma kaip paaiškinimas, ne kaip užduotis (Eimantas 2026-09-19).",
   "cues": [
@@ -193,7 +193,7 @@
     "Jums šios eilutės rašyti nereikia – ją įdedame prijungdami lentelę."
    ],
    [
-    20.4,
+    20.9,
     "balsas",
     "Vėliau keičiasi tik duomenys faile."
    ]
@@ -203,7 +203,7 @@
   "file": "06-tvs-modulis",
   "title": "Modulis sistemoje",
   "h1": "Prijungti failai turi savo sąrašą",
-  "D": 22,
+  "D": 24,
   "ekrane": "Modulio lentelė su trimis prijungtais failais: ID, pavadinimas ir „Enabled“ varnelė; trečias išjungtas.",
   "komentaras": "Publikuota pamoka § „Kaip atrodo lentelių modulis TVS“.",
   "cues": [
@@ -213,7 +213,7 @@
     "Turinio valdymo sistemoje prijungti failai turi savo sąrašą."
    ],
    [
-    5.6,
+    5.7,
     "balsas",
     "Kiekvienas atpažįstamas pagal pavadinimą, kurį suteikiame patys."
    ],
@@ -228,7 +228,7 @@
     "O žyma „Enabled“ rodo, ar failas veikia."
    ],
    [
-    19.2,
+    19.9,
     "balsas",
     "Išjungto failo lentelės nematyti."
    ]
@@ -258,12 +258,12 @@
     "Jei pakeitimo nematyti, tikrinkite du dalykus."
    ],
    [
-    12.6,
+    12.9,
     "balsas",
     "Ar redaguojate tą pačią prijungtą lentelę."
    ],
    [
-    16.2,
+    16.5,
     "balsas",
     "Ir ar tikrai išėjote iš langelio."
    ]
@@ -273,7 +273,7 @@
   "file": "08-duomenu-baze",
   "title": "Lentelė yra duomenų bazė",
   "h1": "Svarbu tvarka, ne stilius",
-  "D": 26,
+  "D": 29,
   "ekrane": "Dvi kortelės: raudona „Netinka“ su trimis draudimais ir žalia „Tinka“ su trimis leidžiamais dalykais.",
   "komentaras": "Publikuota pamoka § „Google Sheets lapų redagavimas“. Formuluotės sušvelnintos (Eimantas 2026-09-17: „nekeiskite“ skamba per griežtai).",
   "cues": [
@@ -288,17 +288,17 @@
     "Langelyje neturi būti nei perkėlimo į naują eilutę, nei formulių, nei sujungtų langelių."
    ],
    [
-    13.0,
+    13.5,
     "balsas",
     "Tinka tai, kas paruošta: A stulpelio žymos ir vienas formatas vienai eilutei."
    ],
    [
-    19.0,
+    20.3,
     "balsas",
     "Sudėtingesnis formatavimas svetainėje nesimato."
    ],
    [
-    22.2,
+    24.2,
     "balsas",
     "Todėl šabloną verta palikti tokį, koks yra."
    ]
@@ -308,7 +308,7 @@
   "file": "09-lapu-tvarka",
   "title": "Lapų tvarka",
   "h1": "Pirmas lapas lieka pirmas",
-  "D": 20,
+  "D": 21,
   "ekrane": "Trys lapų kortelės su gID reikšmėmis; pirmoji apvesta žaliai su prierašu „numatytasis – vietos nekeisti“.",
   "komentaras": "Publikuota pamoka § „Apie lapų tvarką ir gID reikšmes“.",
   "cues": [
@@ -318,12 +318,12 @@
     "Pirmas lapas visada turi gID nulis."
    ],
    [
-    4.6,
+    5,
     "balsas",
     "Jo vietos keisti nereikėtų – svetainė jį atpažįsta būtent pagal šį numerį."
    ],
    [
-    10.4,
+    11,
     "balsas",
     "Kitus lapus galima perkelti ar pervadinti laisvai."
    ],
@@ -338,7 +338,7 @@
   "file": "10-organizavimas",
   "title": "Keli failai pagal atsakomybes",
   "h1": "Ne vienas didelis, o keli aiškūs",
-  "D": 22,
+  "D": 23,
   "ekrane": "Du failai – „Administracija“ ir „Ugdymas“ – su savo lentelių sąrašais; apačioje trys privalumai.",
   "komentaras": "Publikuota pamoka § „Kaip organizuoti failus“. Sutampa su pradžiamokslio žinute, kad atsakomybėmis galima dalytis.",
   "cues": [
@@ -348,22 +348,22 @@
     "Visas lenteles galima sudėti į vieną failą, bet patogiau skaidyti pagal atsakomybes."
    ],
    [
-    7.0,
+    7.4,
     "balsas",
     "Pavyzdžiui, administracijos ir ugdymo lentelės gyvena atskirai."
    ],
    [
-    11.6,
+    12.6,
     "balsas",
     "Taip aišku, kuris failas kam priklauso,"
    ],
    [
-    14.6,
+    15.8,
     "balsas",
     "klaida paliečia tik vieną failą,"
    ],
    [
-    17.4,
+    18.3,
     "balsas",
     "o skirtingi žmonės dirba vienas kitam netrukdydami."
    ]
@@ -373,7 +373,7 @@
   "file": "11-sablonas",
   "title": "Ką matote atidarę",
   "h1": "Darbas jau pradėtas – lieka duomenys",
-  "D": 20,
+  "D": 21,
   "ekrane": "Paruoštas failas su trimis lapais; dešinėje trys kortelės apie tai, kas jau padaryta.",
   "komentaras": "Publikuota pamoka § „Ką matote atidarę šabloną“.",
   "cues": [
@@ -393,7 +393,7 @@
     "Antraštės ir stulpeliai jau sudėlioti – lieka duomenys."
    ],
    [
-    15.4,
+    15.7,
     "balsas",
     "O jei kurios nors lentelės nereikia, tiesiog jos nepildote."
    ]

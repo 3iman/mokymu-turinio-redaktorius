@@ -36,11 +36,8 @@
   .ren { margin-top: 26px; font-size: 24px; color: var(--c-text); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
   .ren b { font-family: var(--gs-font); font-weight: 500; background: var(--c-green-bg); border: 1.5px solid var(--c-green-border); border-radius: 10px; padding: 8px 16px; }
   .warn { margin-top: 26px; font-size: 24px; line-height: 1.4; color: var(--c-text); background: var(--c-amber-bg); border: 1.5px solid #fde68a; border-radius: 14px; padding: 16px 22px; }
-  .undo { position: absolute; left: 20px; top: 560px; width: 1640px; height: 150px; flex-wrap: wrap; align-content: center; border-radius: 24px; background: var(--c-green-bg);
-          border: 2px solid var(--c-green-border); display: flex; align-items: center; justify-content: center; gap: 26px; font-size: 30px; color: var(--c-text); }
-  .key { font-family: var(--gs-font); font-weight: 700; background: #fff; border: 2px solid #c4c7c5; border-bottom-width: 5px; border-radius: 10px; padding: 8px 18px; font-size: 28px; }
-  .sm { color: var(--c-text-muted); font-size: 24px; }
-  .sm.later { flex-basis: 100%; text-align: center; margin-top: 6px; }
+  /* „Suklydote? Ctrl + Z“ dabar rodoma kaip Material pranešimas kampe (.gs-toast), ne balta juosta */
+  .gs-toast .sm.later { border-left: 1px solid rgba(255,255,255,.22); padding-left: 16px; margin-left: 4px; }
 
 
 </style>
@@ -49,8 +46,9 @@
   <div class="card">
     <div class="title">{{title}}</div>
     <div class="stage">
-<div class="box a"><div class="h">{{a_h}}</div><div class="mini-tabs"><div class="first"><span class="lock"></span>{{a_t1}}</div><div>{{a_t2}}</div><div>{{a_t3}}</div></div><div class="why">{{a_why}}</div><div class="ren">{{a_ren}} <b>{{a_ren1}}</b> <b>{{a_ren2}}</b></div></div><div class="box b"><div class="h">{{b_h}}</div><div class="del-item">{{b_del}}</div><div class="why">{{b_why}}</div><div class="warn">{{b_warn}}</div></div><div class="undo">{{u_txt}} <span class="key">Ctrl</span> + <span class="key">Z</span> <span class="sm">{{u_mac}}</span> <span class="key">⌘</span> + <span class="key">Z</span><span class="sm later">{{u_later}}</span></div>
+<div class="box a"><div class="h">{{a_h}}</div><div class="mini-tabs"><div class="first"><span class="lock"></span>{{a_t1}}</div><div>{{a_t2}}</div><div>{{a_t3}}</div></div><div class="why">{{a_why}}</div><div class="ren">{{a_ren}} <b>{{a_ren1}}</b> <b>{{a_ren2}}</b></div></div><div class="box b"><div class="h">{{b_h}}</div><div class="del-item">{{b_del}}</div><div class="why">{{b_why}}</div><div class="warn">{{b_warn}}</div></div>
     </div>
+    <div class="toast-layer"><div class="gs-toast left undo">{{u_txt}} <span class="key">Ctrl</span> + <span class="key">Z</span><span class="sm">{{u_mac}}</span> <span class="key">⌘</span> + <span class="key">Z</span><span class="sm later">{{u_later}}</span></div></div>
     <div class="brand-bar">
       <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
       <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
