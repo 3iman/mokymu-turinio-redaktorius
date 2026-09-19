@@ -18,6 +18,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { parseCues } = require('./scenarijaus-zymos');
 const { execSync } = require('child_process');
 
 const LESSONS_DIR = path.join(__dirname, 'lessons');
@@ -140,6 +141,17 @@ const INTRO_ANIM_CSS = `
 `;
 
 // ---- Generate intro as animated clip ----
+// Intro pavadinimas dviem svoriais. Jei yra dvitaškis — skaidoma per jį, kiekviena mintis savo eilutėje
+// (Eimantas 2026-09-17: „ilga eilutė, žodis, vėl nauja eilutė“ atrodo neharmoningai). Kitaip — paskutiniai 1–2 žodžiai.
+function introPavadinimoHtml(title) {
+  const dv = String(title).trim().match(/^(.+?:)\s+(.+)$/);
+  if (dv) return '<span class="l">' + dv[1] + '</span><b>' + dv[2] + '</b>';
+  const zodziai = String(title).trim().split(/\s+/);
+  const stori = zodziai.length > 3 ? 2 : 1;
+  return '<span class="l">' + zodziai.slice(0, Math.max(1, zodziai.length - stori)).join(' ') + '</span>'
+       + '<b>' + zodziai.slice(Math.max(1, zodziai.length - stori)).join(' ') + '</b>';
+}
+
 async function generateIntroClip(title, subtitle) {
   const introTemplate = path.join(TEMPLATES_DIR, 'video-intro.html');
   if (!fs.existsSync(introTemplate)) {
@@ -149,10 +161,7 @@ async function generateIntroClip(title, subtitle) {
 
   let html = fs.readFileSync(introTemplate, 'utf-8');
   // Pavadinimas dviem svoriais: paskutiniai 1–2 žodžiai paryškinami (cleverphant.lt hero)
-  const zodziai = String(title).trim().split(/\s+/);
-  const stori = zodziai.length > 3 ? 2 : 1;
-  const pTitle = zodziai.slice(0, Math.max(1, zodziai.length - stori)).join(' ')
-               + '<b>' + zodziai.slice(Math.max(1, zodziai.length - stori)).join(' ') + '</b>';
+  const pTitle = introPavadinimoHtml(title);
   html = html.replace(/\{\{video_title\}\}/g, pTitle);
   html = html.replace(/\{\{video_subtitle\}\}/g, subtitle);
   html = html.replace(/\{\{lang\}\}/g, lang);
@@ -245,10 +254,7 @@ async function generateIntroPng(title, subtitle) {
 
   let html = fs.readFileSync(introTemplate, 'utf-8');
   // Pavadinimas dviem svoriais: paskutiniai 1–2 žodžiai paryškinami (cleverphant.lt hero)
-  const zodziai = String(title).trim().split(/\s+/);
-  const stori = zodziai.length > 3 ? 2 : 1;
-  const pTitle = zodziai.slice(0, Math.max(1, zodziai.length - stori)).join(' ')
-               + '<b>' + zodziai.slice(Math.max(1, zodziai.length - stori)).join(' ') + '</b>';
+  const pTitle = introPavadinimoHtml(title);
   html = html.replace(/\{\{video_title\}\}/g, pTitle);
   html = html.replace(/\{\{video_subtitle\}\}/g, subtitle);
   html = html.replace(/\{\{lang\}\}/g, lang);
@@ -676,10 +682,10 @@ function buildVideo(frames, durations, introClipPath, introPng, outroHeadPath) {
   const voiceManifestPath = path.join(voiceDir, 'manifest.json');
   const voice = [];
   let voiceGainDb = 0;
-  if (fs.existsSync(voiceManifestPath)) {
-    const vm = JSON.parse(fs.readFileSync(voiceManifestPath, 'utf-8'));
-    const kadroPradzia = {};
-    const kadroTrukme = {};
+  const scenarijausZymos = fs.existsSync(scenarioPath) ? parseCues(fs.readFileSync(scenarioPath, 'utf-8')) : {};
+  const kadroPradzia = {};
+  const kadroTrukme = {};
+  {
     let laikas = 0;
     for (const line of concatContent.split('\n')) {
       const m = line.match(/^file '(.+)'$/);
@@ -695,11 +701,50 @@ function buildVideo(frames, durations, introClipPath, introPng, outroHeadPath) {
       }
       laikas += d;
     }
+  }
+
+  // ⛔ Garsai („kur spausti“ filmukai, 2026-09-17): spustelėjimas, paėmimas, numetimas,
+  // patvirtinimas — ties scenarijaus laiko žymomis. Failai assets/video/sfx/{vardas}.wav,
+  // garsumas assets/video/sfx/garsumas.json. Garsai į muzikos prislopinimą nepatenka.
+  const sfxDir = path.join(VIDEO_ASSETS_DIR, 'sfx');
+  let sfxGain = {};
+  try { sfxGain = JSON.parse(fs.readFileSync(path.join(sfxDir, 'garsumas.json'), 'utf-8')); } catch (_) {}
+  const sfx = [];
+  for (const [k, list] of Object.entries(scenarijausZymos)) {
+    for (const c of list.filter(x => x.kind === 'garsas')) {
+      const file = path.join(sfxDir, `${c.value}.wav`);
+      if (kadroPradzia[k] === undefined || !fs.existsSync(file)) {
+        console.warn(`  ⛔ Garsas K${k} „${c.value}“: kadras arba failas nerastas — praleidžiama`);
+        continue;
+      }
+      sfx.push({ file, at: kadroPradzia[k] + c.at, gain: sfxGain[c.value] ?? 1 });
+    }
+  }
+  if (sfx.length) console.log(`  Garsai: ${sfx.length}`);
+
+  if (fs.existsSync(voiceManifestPath)) {
+    const vm = JSON.parse(fs.readFileSync(voiceManifestPath, 'utf-8'));
     const startIn = vm.start_in_frame || 0.6;
     for (const it of vm.items || []) {
       const file = path.join(voiceDir, it.file);
       if (kadroPradzia[it.kadras] === undefined || !fs.existsSync(file)) {
         console.warn(`  ⛔ Balsas K${it.kadras}: kadras arba failas nerastas — praleidžiama`);
+        continue;
+      }
+      // Laiko žymos: sakinys dedamas ties savo žyma, o ne ties kadro pradžia.
+      // Vieta imama iš scenarijaus, ne iš manifesto — perkėlus žymą balso generuoti iš naujo nereikia.
+      if (it.cue) {
+        const vc = (scenarijausZymos[it.kadras] || []).filter(c => c.kind === 'balsas');
+        const zyma = vc[it.cue - 1];
+        if (!zyma) {
+          console.warn(`  ⛔ Balsas K${it.kadras}.${it.cue}: scenarijuje tokios žymos nebėra — pergeneruok balsą`);
+          continue;
+        }
+        const iki = it.cue < vc.length ? vc[it.cue].at : kadroTrukme[it.kadras];
+        if (zyma.at + it.duration > iki) {
+          console.warn(`  ⛔ Balsas K${it.kadras}.${it.cue} (${it.duration}s nuo ${zyma.at}s) užlipa ant kitos žymos (${iki.toFixed(1)}s)`);
+        }
+        voice.push({ file, at: kadroPradzia[it.kadras] + zyma.at });
         continue;
       }
       const langas = kadroTrukme[it.kadras] - startIn - 0.5;
@@ -733,7 +778,7 @@ function buildVideo(frames, durations, introClipPath, introPng, outroHeadPath) {
   }
 
   const turiPlakima = hasOutro && outroSeconds > 0;
-  if (hasMusic || turiPlakima || voice.length) {
+  if (hasMusic || turiPlakima || voice.length || sfx.length) {
     // Muzika nutyla prieš vinjetę, kad širdies plakimas liktų vienas — kaip originale.
     const outroStart = turiPlakima ? Math.max(0, totalDur - outroSeconds) : totalDur;
     const fadeStart = turiPlakima ? Math.max(0, outroStart - 1.5) : Math.max(0, totalDur - 3);
@@ -786,8 +831,24 @@ function buildVideo(frames, durations, introClipPath, introPng, outroHeadPath) {
       } else {
         filtrai.push('[balsas]anull[aout]');
       }
-    } else {
+    } else if (fonas) {
       filtrai.push(`${fonas}anull[aout]`);
+    } else {
+      ivestys.push('-f', 'lavfi', '-t', totalDur.toFixed(2), '-i', 'anullsrc=r=44100:cl=stereo');
+      filtrai.push(`[${n}:a]anull[aout]`);
+      n++;
+    }
+
+    if (sfx.length) {
+      const last = filtrai.length - 1;
+      filtrai[last] = filtrai[last].replace(/\[aout\]$/, '[pagrindas]');
+      sfx.forEach((s, j) => {
+        ivestys.push('-i', `"${s.file}"`);
+        const ms = Math.round(s.at * 1000);
+        filtrai.push(`[${n}:a]aresample=44100,aformat=channel_layouts=stereo,volume=${Number(s.gain).toFixed(2)},adelay=${ms}|${ms}[g${j}]`);
+        n++;
+      });
+      filtrai.push(`[pagrindas]${sfx.map((_, j) => `[g${j}]`).join('')}amix=inputs=${sfx.length + 1}:normalize=0:duration=first,alimiter=limit=0.9:level=false[aout]`);
     }
 
     execSync([

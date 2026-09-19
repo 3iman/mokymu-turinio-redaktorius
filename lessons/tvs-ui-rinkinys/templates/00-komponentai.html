@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  .title { font-size: 44px; margin-bottom: 34px; }
+  .board { display: flex; gap: 46px; align-items: flex-start; }
+  .board > .tvs-window { flex: 0 0 1130px; }
+  .states { flex: 1; display: flex; flex-direction: column; gap: 26px; }
+  .lbl { font-size: 17px; text-transform: uppercase; letter-spacing: .8px; color: var(--c-text-faint); margin-bottom: 12px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .cap { font-size: 15px; color: var(--c-text-faint); text-align: center; margin-top: 6px; }
+  .cur { position: relative; width: 70px; height: 70px; display: flex; align-items: center; justify-content: center; }
+  .cur .tvs-cursor { position: static; }
+  .cur .tvs-ripple { left: 50%; top: 50%; }
+  .rowcap { font-size: 16px; color: var(--c-text-faint); margin: 10px 0 0 4px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="board">
+      <div class="tvs-window is-nosubnav">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar"></div></div>
+        <div class="tvs-side"><i></i><i></i><i class="is-on"></i><i></i><i></i><i></i></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">{{crumb}}</div>
+          <div><span class="tvs-btn"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>{{btn_create}}</span></div>
+          <div class="tvs-filter">
+            <div class="tvs-input">{{search}}</div>
+            <div class="tvs-input is-wide is-value">{{category}}</div>
+            <span class="tvs-btn"><svg viewBox="0 0 24 24" fill="#fff"><path d="M2 3h20l-8 9.5V20l-4 2v-9.5z"/></svg>{{btn_filter}}</span>
+            <span class="tvs-btn is-grey">{{btn_clear}}</span>
+          </div>
+          <div class="tvs-table is-compact">
+            <div class="tvs-th"><span></span><div class="tvs-check"></div><span>{{th_title}}</span><span>{{th_file}}</span><span></span></div>
+          <div class="tvs-row ">
+            <div class="tvs-handle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5l3.6 3.6h-2.4v5.7h5.7V8.4l3.6 3.6-3.6 3.6v-2.4h-5.7v5.7h2.4L12 22.5l-3.6-3.6h2.4v-5.7H5.1v2.4L1.5 12l3.6-3.6v2.4h5.7V5.1H8.4z"/></svg></div><div class="tvs-check"></div>
+            <div class="tvs-title">{{doc_1}}</div>
+            <div class="tvs-file"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/></svg></div>
+            <div class="tvs-actions"><span class="tvs-btn is-small is-info"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M1.5 12S5.5 5 12 5s10.5 7 10.5 7-4 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/></svg></span><span class="tvs-btn is-small is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>{{btn_edit}}</span></div>
+          </div>
+          <div class="tvs-row is-hover is-lifted">
+            <div class="tvs-handle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5l3.6 3.6h-2.4v5.7h5.7V8.4l3.6 3.6-3.6 3.6v-2.4h-5.7v5.7h2.4L12 22.5l-3.6-3.6h2.4v-5.7H5.1v2.4L1.5 12l3.6-3.6v2.4h5.7V5.1H8.4z"/></svg></div><div class="tvs-check"></div>
+            <div class="tvs-title">{{doc_2}}</div>
+            <div class="tvs-file"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/></svg></div>
+            <div class="tvs-actions"><span class="tvs-btn is-small is-info"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M1.5 12S5.5 5 12 5s10.5 7 10.5 7-4 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/></svg></span><span class="tvs-btn is-small is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>{{btn_edit}}</span></div><div class="tvs-cursor" style="left: 30px; top: 42px;"><svg viewBox="0 0 44 56"><path d="M9 26c0-3 2-4.5 4-4.5s3.5 1.5 3.5 3.5V21c0-2.5 1.8-4 3.7-4s3.8 1.5 3.8 4v1c0-2.4 1.8-3.8 3.7-3.8s3.8 1.4 3.8 3.8v2c0-2.2 1.7-3.4 3.4-3.4S38 22 38 24.3V36c0 9-6 16-14.5 16S9 46 9 38z" fill="#fff" stroke="#1d1d1f" stroke-width="2.6" stroke-linejoin="round"/></svg></div>
+          </div>
+            <div class="tvs-placeholder"></div>
+          <div class="tvs-row ">
+            <div class="tvs-handle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5l3.6 3.6h-2.4v5.7h5.7V8.4l3.6 3.6-3.6 3.6v-2.4h-5.7v5.7h2.4L12 22.5l-3.6-3.6h2.4v-5.7H5.1v2.4L1.5 12l3.6-3.6v2.4h5.7V5.1H8.4z"/></svg></div><div class="tvs-check"></div>
+            <div class="tvs-title">{{doc_3}}</div>
+            <div class="tvs-file"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/></svg></div>
+            <div class="tvs-actions"><span class="tvs-btn is-small is-info"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M1.5 12S5.5 5 12 5s10.5 7 10.5 7-4 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/></svg></span><span class="tvs-btn is-small is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>{{btn_edit}}</span></div>
+          </div>
+          <div class="tvs-row is-new">
+            <div class="tvs-handle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5l3.6 3.6h-2.4v5.7h5.7V8.4l3.6 3.6-3.6 3.6v-2.4h-5.7v5.7h2.4L12 22.5l-3.6-3.6h2.4v-5.7H5.1v2.4L1.5 12l3.6-3.6v2.4h5.7V5.1H8.4z"/></svg></div><div class="tvs-check"></div>
+            <div class="tvs-title">{{doc_new}}</div>
+            <div class="tvs-file"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/></svg></div>
+            <div class="tvs-actions"><span class="tvs-btn is-small is-info"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M1.5 12S5.5 5 12 5s10.5 7 10.5 7-4 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/></svg></span><span class="tvs-btn is-small is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>{{btn_edit}}</span></div>
+          </div>
+            <div class="tvs-foot"><span class="tvs-btn is-small"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 4v16M2 17l3 3 3-3M11 6h10M11 11h7M11 16h4"/></svg>{{btn_reorder}}</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="states">
+        <div>
+          <div class="lbl">{{l_buttons}}</div>
+          <div class="chips">
+            <div><span class="tvs-btn is-small is-disabled"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 4v16M2 17l3 3 3-3M11 6h10M11 11h7M11 16h4"/></svg>{{btn_reorder}}</span><div class="cap">{{l_disabled}}</div></div>
+            <div><span class="tvs-btn is-small is-hover"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round"><path d="M5 4v16M2 17l3 3 3-3M11 6h10M11 11h7M11 16h4"/></svg>{{btn_reorder}}</span><div class="cap">{{l_hover}}</div></div>
+          </div>
+        </div>
+        <div>
+          <div class="lbl">{{l_cursor}}</div>
+          <div class="chips">
+            <div><div class="cur"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div><div class="cap">{{l_arrow}}</div></div>
+            <div><div class="cur"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M9 26c0-3 2-4.5 4-4.5s3.5 1.5 3.5 3.5V21c0-2.5 1.8-4 3.7-4s3.8 1.5 3.8 4v1c0-2.4 1.8-3.8 3.7-3.8s3.8 1.4 3.8 3.8v2c0-2.2 1.7-3.4 3.4-3.4S38 22 38 24.3V36c0 9-6 16-14.5 16S9 46 9 38z" fill="#fff" stroke="#1d1d1f" stroke-width="2.6" stroke-linejoin="round"/></svg></div></div><div class="cap">{{l_grab}}</div></div>
+            <div><div class="cur"><div class="tvs-ripple is-shown"></div><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div><div class="cap">{{l_click}}</div></div>
+          </div>
+        </div>
+        <div>
+          <div class="lbl">{{l_site}}</div>
+          <div class="tvs-site">
+            <div class="tvs-site-h">{{site_h}}</div>
+            <div class="tvs-site-doc"><i></i>{{doc_1}}</div>
+            <div class="tvs-site-doc"><i></i>{{doc_2}}</div>
+            <div class="tvs-fold"></div>
+            <div class="tvs-site-doc"><i></i>{{doc_new}}</div>
+          </div>
+          <div class="cap" style="text-align:left">{{l_fold}}</div>
+        </div>
+        <div class="rowcap">{{l_row_states}}</div>
+      </div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

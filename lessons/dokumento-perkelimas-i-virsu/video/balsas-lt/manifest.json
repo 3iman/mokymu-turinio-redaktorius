@@ -1,0 +1,43 @@
+{
+  "hash": "66a70f77eb0a755783aac0f7f46a7f7dafb62f90d3dfc44b02459fa8b34d6126",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 1250707795,
+  "characters": 180,
+  "start_in_frame": 0.6,
+  "created": "2026-09-16T21:28:53.466Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Tempiate į viršų",
+      "text": "Paimate naują dokumentą už rankenėlės ir tempiate į viršų.",
+      "file": "k01-1.wav",
+      "duration": 3.55,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Tempiate į viršų",
+      "text": "Tvarka dar neišsaugota, todėl spaudžiate /ˈpɛr.rikʲuotʲi/.",
+      "file": "k01-2.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Tempiate į viršų",
+      "text": "Žalia juosta viršuje reiškia, kad pavyko.",
+      "file": "k01-3.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 15
+    }
+  ]
+}

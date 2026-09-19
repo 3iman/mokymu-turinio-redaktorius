@@ -535,3 +535,112 @@ ir „Svetainės medis“ apačioje (abu patikrinti skeletone 2026-09-16).
    punktais — išmetami, jei tą patį pasako balsas. Kadras rodo, balsas aiškina.
 4. **Pastatas piešiamas iš tų pačių durų**, kurios buvo pirmame kadre — žiūrovas atpažįsta,
    o piešinys tvarkingas (fasadas, stogas, žemės linija, paraštės abiejose pusėse).
+
+## 2026-09-16 — „Kur spausti“ filmukų stilius ir garsas
+
+> „Stilius turi gimti iš Cleverphant stilistikos. Minimalistiškai, kaip jau anksčiau piešei footerį arba Z skanavimo atvaizdavimą.“
+> „Mūsų auditorijai svarbu ne prigudrauti. Bet turi būti maloniai, švariai, garse būti click, gal dar kažkokie efektai, duodantys pojūtį.“
+
+1. **Pavyzdžių iš kitų produktų nėra ir nereikia** — stilius kyla iš mūsų pačių vizualų:
+   poraštės imitacija slapukų filme, informacijos stendo maketas su žvilgsnio keliu.
+2. **TVS piešiama minimalistiškai:** tikros spalvos, išdėstymas ir pavadinimai, bet be smulkmenų
+   (be trumpųjų kodų tekstų, be nereikalingų stulpelių). Atpažįstama, ne fotografiška.
+3. **Ne prigudrauti.** Jokių efektų dėl efektų — judesys tik ten, kur jis rodo veiksmą.
+4. **Garsas duoda pojūtį:** spustelėjimas ant mygtuko, paėmimas ir numetimas tempiant,
+   švelnus patvirtinimas išsaugojus. Tylūs, trumpi, po muzika.
+
+Tikras TVS elgesys dokumentų rikiavimui (skeleton admin, patikrinta 2026-09-16, nieko nekeista):
+- Rankenėlė atsiranda tik **išfiltravus sąrašą pagal kategoriją** (`fa fa-arrows handle`).
+- Tempiama eilutė tampa beveik permatoma (`opacity: 0.2`).
+- Numetus aktyvuojamas mygtukas **„Perrikiuoti“** — tvarka išsaugoma tik jį paspaudus.
+- Naujas dokumentas gauna didžiausią rikiavimo numerį → sąraše ir svetainėje yra paskutinis
+  (skeleton `korupcijos-prevencija`: 706 su sort 12 rodomas prieš 704 su sort 13).
+- Spalvos: žali mygtukai `#47d165`, oranžinis „Redaguoti“ `#ff754b`, violetinis failo ženkliukas
+  `#b21cc3`, tamsi šoninė juosta `#252525` (70 px), baltas viršus (70 px), fonas `#f1f1f1`,
+  eilučių skirtukai `#eceeef`, tekstas `#373a3c`, šriftas sisteminis.
+
+## 2026-09-17 — „Perrikiuoti“ kirtis ir kirčių žodynas
+
+> „Perrikiuota kirtis ne ten, bet šiaip puikiai.“
+> „Kirtis turėtų būti peeerrikiuoti — panaudok kirčių žodyną.“
+
+1. **Kirtis ant pirmo skiemens: PÈRrikiuoti.** Iš keturių IPA variantų tinka `/ˈpɛr.rikʲuotʲi/` —
+   su skiemens riba, trumpa „e“ (pirmiausia rinktas variantas su ilga „e“, Eimantas persigalvojo).
+2. **Kirčio ženklas tekste v3 modeliui nieko nekeičia** — „Perrikiúoti“ davė tą patį garsą iki
+   šimtosios sekundės dalies. ElevenLabs PLS žodyno v3 dokumentacija nemini.
+3. **Veikiantis kelias — IPA tarp pasvirųjų brūkšnių** tiesiai tekste. Todėl kirčių žodynas yra
+   mūsų: `tarimo-zodynas/lt.json` (žodis → tarimas), `generate-voice.js` jį pritaiko pats.
+   Scenarijuje žodis rašomas įprastai.
+
+## 2026-09-17 — Pavyzdžiuose tikrų vardų nenaudojame
+
+> „Nenaudokime tikrų vardų pavardžių. Surašykime kokius senus, jau mirusius lietuvių garsius asmenis:
+> prezidentus, rašytojus, menininkus, signatarus ir t. t.“
+
+Iliustracijose ir filmukuose pavyzdiniai žmonės — **garsūs mirę lietuviai**: Vincas Kudirka, Marija Pečkauskaitė,
+Jonas Basanavičius, Julija Žymantienė, Kazys Grinius, Steponas Kairys, Aleksandras Stulginskis, Marija Gimbutienė,
+Gabrielė Petkevičaitė-Bitė, Juozas Naujalis, Jonas Mačiulis, Juozas Tumas, Jonas Biliūnas, Antanas Baranauskas, Kristijonas Donelaitis.
+Sugalvoti „Rasa Petraitienė“ tipo vardai atrodo kaip tikri žmonės ir gali sutapti su realiu mokytoju.
+Rašoma tikruoju vardu ir pavarde, ne slapyvardžiu (ne „Maironis“, o „Jonas Mačiulis“).
+
+> Papildymas tą pačią dieną: „Tai tik neįrašyk veikėjų, kurie kažkaip kontraversiškai vertinami. Salomėja Neris,
+> Kostas Kubilinskas – yra tokie kur prieš Valstybę ėjo.“
+
+⛔ **Tik neginčijami asmenys.** Netinka tie, kurie bendradarbiavo su okupacine valdžia ar kitaip vertinami prieštaringai
+(Salomėja Nėris, Kostas Kubilinskas, Petras Cvirka, Liudas Gira, Justas Paleckis), ir tie, dėl kurių ginčijamasi
+(Antanas Smetona — 1926 m. perversmas). Abejoji — imk kitą vardą.
+
+## 2026-09-17 — Anatomijoje fokusas: tamsinti viską, kas ne apie tai
+
+> „Vietose kur step by step anatomiją pristatai, reikėtų aiškesnio išskyrimo kurią vietą rodai. Tikriausiai tamsinti
+> viską kas ne apie tai reikia ir išskirti tik tai ką nori parodyti. Gal yra kokia praktika tuo klausimu. Nes man atrodo
+> net ir negerai vienas, du, trys ir visus matyti. Fokusas turi būti.“
+
+Praktika — *spotlight* (produktų turuose ir mokomuosiuose filmukuose standartinė): pritemdymas + viena šviesi vieta,
+vienu metu vienas užrašas. Taisyklė įrašyta `ANIMATION_PRINCIPLES.md` § „Fokusas“. Pritaikyta Sheets pamokos
+scenose „Kas yra Google Sheets“, „Pažinkime langą“, „Pirmo stulpelio žymos“.
+
+## 2026-09-17 — Intro pavadinimo eilutės
+
+> „Bendras pastebėjimas pirmai skaidrei. Kažkaip neteisingai formatuoji jų ilgį. Neharmoningai atrodo. Ilga eilutė,
+> žodis vėl nauja eilutė - pagalavok kaip kitaip.“
+
+Priežastis: `build-video.js` paryškindavo paskutinius du žodžius, o likusi dalis lūždavo kur pakliuvo („…: kaip“ / „tvarkyti“).
+Dabar pavadinimas su dvitaškiu skaidomas per jį — kiekviena mintis savo eilutėje, abi dalys `text-wrap: balance`.
+Visiems filmukams: pavadinimą rašyti taip, kad jis natūraliai dalytųsi į dvi mintis.
+
+## 2026-09-17 — Kur Cleverphant veikia, rodomas spalvotas simbolis
+
+> „Ten kur rodai, kad suteikia prieiga Cleverphant būtų nice rodyti mūsų logo simbolį spalvotą.“
+
+Failas `assets/cleverphant-simbolis-spalvotas.svg` (spalvos paimtos iš tikro logotipo: #3363ab, #f3a8c4, #3ab0b0, #c6b8db, #d0deec).
+Raidės „C“ apskritime vietoj simbolio nenaudoti.
+
+## 2026-09-17 — Draudimai skamba per stipriai
+
+> „gan stipriai skamba nekeičiate.. kažkaip švelniau jie jautrūs“ / „nekeiskite“
+
+Ne „nekeičiate“, „nejungiate“, „nerikiuojate“ — mokytojams tai skamba kaip draudimas. Rašoma per priežastį ir
+„geriau“: „sandara jau veikia su svetaine, todėl langelių geriau nejungti“. Ženklai — pilki, ne raudoni.
+Raudona lieka tik tam, kas iš tikrųjų lūžta (pvz., dingusi eilutė svetainėje).
+
+## 2026-09-17 — Lapų trynimas ir kvietimas kreiptis
+
+> „Mūsų jau klausė ar gali prasitrinti nereikalingus lapus … Jei tikrai nereikalingi, trinkite. Bet jei administracija
+> paskubėjo pasakyti, kad darbo užmokesčio lentelės mes nepildysime - neskubėkite. Galimai, iki pirmo audito ir kitokio
+> pasidomėjimo nepildysite :)“
+
+> „Jei tik galima išvengti, geriau neskatinti kreiptis į mus. Mes jei kažkas nepavyko tik. Nes jei man parašys 280
+> mokyklų, bus bėdos :D“
+
+- Nereikalingus lapus trinti **galima**; su „nepildysime“ lentelėmis (darbo užmokestis) — neskubėti.
+- Pamokose ir filmukuose **nekviečiame** rašyti „jei neaišku“. Kontaktas rodomas tik kaip išeitis, kai kas nors nepavyko
+  („Atšaukti nebepavyksta? pagalba@…“). Pabaigoje — padrąsinimas, ne kvietimas kreiptis.
+
+## 2026-09-17 — Pirmą lapą galima pervadinti; piešti pagal tikrą lapo sandarą
+
+> „Pirmas lapas lieka reikia pasakyti, kad pervadinti į Mokyklos taryba ar Lopšelio darželio galima“
+
+> „Dienos ritmas mes tikrai ten palikę nereikalingą stulpelį?“ — ne: šablone A žyma, B laikas, C veikla. Tuščią B
+> stulpelį nupiešiau aš, nepažiūrėjęs lapo. ⛔ Lentelės sandarą piešti tik perskaičius tikrą lapą (gviz CSV skaitymui).
+

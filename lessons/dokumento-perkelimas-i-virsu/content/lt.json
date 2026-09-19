@@ -1,0 +1,24 @@
+{
+  "lang": "lt",
+  "_intro": {
+    "title": "Kaip perkelti naują dokumentą į sąrašo viršų"
+  },
+  "03_tempiate_i_virsu": {
+    "title": "Tempiate už rankenėlės į pirmą vietą",
+    "crumb": "Dokumentų banko modulis  /  Dokumentai",
+    "btn_create": "Sukurti",
+    "search": "Paieška",
+    "category": "Ugdymo planai",
+    "btn_filter": "Filtruoti",
+    "btn_clear": "Valyti",
+    "th_title": "Pavadinimas",
+    "th_file": "Failas",
+    "doc_1": "Ugdymo planas 2025–2026 m. m.",
+    "doc_2": "Mokinių priėmimo tvarkos aprašas",
+    "doc_3": "Pailgintos dienos grupės tvarka",
+    "doc_new": "Ugdymo organizavimo tvarka 2026",
+    "btn_edit": "Redaguoti",
+    "btn_reorder": "Perrikiuoti",
+    "alert": "4 eil. perrikiuotos sėkmingai"
+  }
+}

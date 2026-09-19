@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<link rel="stylesheet" href="./tokens/sheets.css">
+<style>
+  .title { font-size: 44px; margin-bottom: 26px; }
+  .stage { position: relative; width: 1680px; height: 780px; margin: 0 auto; }
+  .stage > .gs-window { position: absolute; left: 0; top: 18px; }
+  .cursor-wrap { position: absolute; width: 44px; height: 56px; z-index: 30; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+
+  .vs { position: absolute; left: 0; top: 20px; width: 860px; background: #fff; border-radius: 16px; border: 1.5px solid #dfe3ea;
+        box-shadow: 0 20px 50px rgba(30,40,70,.10); overflow: hidden; font-family: var(--gs-font); }
+  .vs .r { display: flex; border-bottom: 1px solid var(--gs-grid); font-size: 23px; color: var(--gs-cell-text); }
+  .vs .r > div { padding: 16px 20px; border-right: 1px solid var(--gs-grid); }
+  .vs .r > div:first-child { width: 330px; } .vs .r > div:last-child { flex: 1; border-right: 0; }
+  .vs .r.th > div { background: var(--gs-green-th); color: #fff; font-weight: 700; }
+  .vs .r.bad > div:last-child { line-height: 1.45; }
+  .ring-bad { position: absolute; left: 330px; top: 20px; width: 530px; border: 4px solid var(--c-red-solid); border-radius: 10px; pointer-events: none; }
+  .site { position: absolute; left: 960px; top: 20px; width: 720px; background: #fff; border-radius: 16px; border: 1.5px solid #dfe3ea;
+          box-shadow: 0 20px 50px rgba(30,40,70,.10); padding: 30px 34px; box-sizing: border-box; font-family: Inter, sans-serif; }
+  .site .lbl { font-size: 18px; text-transform: uppercase; letter-spacing: .8px; color: var(--c-text-faint); margin-bottom: 16px; }
+  .site .tr { display: flex; gap: 30px; padding: 14px 16px; font-size: 22px; color: var(--c-text); border-bottom: 1px solid #e5e7eb; }
+  .site .tr.h { background: #eef2f7; font-weight: 700; }
+  .site .tr span:first-child { width: 250px; }
+  .site .lost { margin-top: 18px; font-size: 21px; color: var(--c-red-text); }
+  .ok { position: absolute; left: 0; top: 470px; width: 1680px; height: 120px; border-radius: 20px; background: var(--c-green-bg); border: 2px solid var(--c-green-border);
+        display: flex; align-items: center; justify-content: center; gap: 18px; font-size: 27px; color: var(--c-text); }
+  .ok b { font-family: var(--gs-font); font-weight: 500; background: #fff; border: 1px solid var(--gs-grid); padding: 10px 18px; border-radius: 8px; }
+  .db { position: absolute; left: 0; right: 0; top: 630px; text-align: center; font-size: 30px; font-weight: 700; color: var(--c-text); }
+
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="stage">
+<div class="vs"><div class="r th"><div>{{x01}}</div><div>{{x02}}</div></div><div class="r"><div>{{x03}}</div><div>{{x04}}</div></div><div class="r bad"><div>{{x05}}</div><div>{{x06}}<br>{{x07}}</div></div></div><div class="ring-bad" style="top:140px; height:104px"></div><div class="site"><div class="lbl">{{s_lbl}}</div><div class="tr h"><span>{{x08}}</span><span>{{x09}}</span></div><div class="tr"><span>{{x10}}</span><span>{{x11}}</span></div><div class="tr"><span>{{x12}}</span><span>{{x13}}</span></div><div class="lost">{{lost}}</div></div><div class="ok">{{ok_q}} <b>{{ok_v}}</b></div><div class="db">{{db}}</div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

@@ -136,13 +136,48 @@ parodyti visą ekraną (kur esame) → priartėti prie vietos (ką spausti) → 
 
 ⛔ **Rašymas tik per CSS `steps()`**, ne laikmačiais — kitaip filmavimas jo nepagauna (§14).
 
+### Fokusas: rodoma tik viena vieta (Eimantas 2026-09-17)
+
+> „Vietose kur step by step anatomiją pristatai, reikėtų aiškesnio išskyrimo kurią vietą rodai. Tikriausiai tamsinti
+> viską kas ne apie tai … net ir negerai vienas, du, trys ir visus matyti. Fokusas turi būti.“
+
+- **Spotlight:** viskas, kas ne apie šį žingsnį, pritemsta (~60 % tamsos), šviesi lieka tik rodoma vieta su plonu mėlynu kraštu.
+- **Vienu metu — viena vieta.** Užrašas matomas tik savo žingsnio metu; ankstesni išnyksta. Numerių 1, 2, 3, kurie kaupiasi ekrane, nebėra.
+- **Šviesa slenka** iš vietos į vietą (~0,5 s), ne užgęsta ir užsidega — akis seka judesį (§13).
+- Kai lyginami du paviršiai (lentelė ↔ svetainė) — ryški aktyvi eilutė **ir jos atitikmuo**, kiti pritemsta iki ~30 %; pabaigoje fokusas nuimamas ir matosi visa sandara.
+- Įgyvendinimas Sheets pamokoje: `spotlight()` ir `dim_states()` faile `lessons/google-sheets-pradziamokslis/build_scenes.py`.
+
 ### Sustojęs kadras (§14)
 PNG rodo visą žingsnį vienu vaizdu: kursorius ant tikslo, paryškintas elementas, instrukcija ir
 skaitiklis. Jei iš PNG neaišku, ką spausti — žingsnis nepavyko.
 
+### Stilius ir garsas (Eimantas 2026-09-16)
+- **Stilius kyla iš mūsų vizualų**, ne iš kitų produktų: minimalistinė TVS imitacija, kaip poraštė
+  slapukų filme ar informacijos stendo maketas. Tikros spalvos ir pavadinimai, be smulkmenų.
+- **Ne prigudrauti.** Malonu ir švaru — judesys tik ten, kur rodo veiksmą.
+- **Garso efektai privalomi:** spustelėjimas, paėmimas, numetimas, patvirtinimas. Trumpi, tylūs,
+  po muzika. ⛔ `build-video.js` jų dar nepalaiko — reikės atskiro efektų takelio, kurį
+  valdo scenarijaus laiko žymos. Garsai sintetinami patys (ffmpeg), ne atsisiunčiami.
+
 ### Tikslumas
 TVS atkartojama pagal `DESIGN_RULES.md` § „UI mockup'ai“: struktūra iš tikros ekrano nuotraukos,
 pavadinimai tokie, kokius žmogus mato, reikšmės laukuose — kokias moko pamoka.
+
+### Kalbos (Eimantas 2026-09-16)
+TVS pavadinimai kita kalba **neverčiami ir neišgalvojami** — jie nusiskaitomi iš paties TVS.
+
+1. **Vienas TVS žodynas kalbai, bendras visiems filmukams.** Skeleton administravime perjungiama
+   kalba (apačioje, pasirinkime yra ir `pl`, ir `de`), ekrane matomi pavadinimai surašomi į žodyną.
+   Daroma **vieną kartą kalbai**, ne kiekvienam filmukui.
+   ⛔ Kalbos pasirinkimas saugomas prisijungusio vartotojo nustatymuose — Eimantas leido perjungti
+   laikinai; **nusiskaičius iškart grąžinama `lt`**.
+2. **Ko TVS neišvertė — neišgalvojama.** Baziniai mygtukai („Sukurti“, „Filtruoti“, „Perrikiuoti“)
+   greičiausiai išversti pačios sistemos, mūsų moduliai („Dokumentų banko modulis“) gali būti ne.
+   Tokie žodžiai žodyne pažymimi kaip spraga, sprendimas — su Eimantu.
+3. **Pavyzdiniai duomenys verčiami** (dokumentų pavadinimai, kategorijos) — tai turinys, ne sąsaja.
+4. **Išdėstymas tikrinamas vokiškai** (German-first, `DESIGN_RULES.md`): komponentai be fiksuotų
+   pločių tekstui; netelpa — keičiasi išdėstymas, ne tekstas.
+5. **Balsas kita kalba** — atskiras klausimas, Dariaus balsas kitomis kalbomis neišbandytas.
 
 ### Rinkinys (dar nesukurtas — kuriamas 2026-09-17)
 Bendros animacijos `generate-video-clips.js`, kad kiekvienas filmukas jas naudotų, o ne kurtų iš naujo:

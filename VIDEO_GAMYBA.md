@@ -209,6 +209,34 @@ Patikra po montažo (slapukų pamoka, 2026-09-15):
 Kaina: ~740 simbolių 110 s filmukui. Raktas `illustrations/.env` → `ELEVENLABS_API_KEY`.
 Rakto teisės: Text to Speech, `user_read`, tarimo žodynai (read/write).
 
+### Laiko žymos: balsas sakiniais ir garsai (nuo 2026-09-17)
+
+„Kur spausti“ filmukuose balsas sakomas ne vienu gabalu nuo kadro pradžios, o sakiniais, kurių
+kiekvienas skamba savo veiksmo metu, ir kiekvienas veiksmas turi savo garsą. Tai aprašoma kadro
+bloke lentele **„Laiko žymos“**:
+
+```
+**Laiko žymos:**
+
+| Laikas | Kas | Tekstas arba garsas |
+|---|---|---|
+| 1.5 | balsas | Paimate naują dokumentą už rankenėlės ir tempiate į viršų. |
+| 3.6 | garsas | paemimas |
+```
+
+- **Laikas** — sekundės nuo kadro pradžios. Skaitytuvas `scenarijaus-zymos.js`, bendras abiem įrankiams.
+- **`generate-voice.js`**: kadras su `balsas` žymomis įgarsinamas jų sakiniais (vis tiek viena
+  užklausa), failai `kNN-M.wav`. Sakinio langas — iki kitos balso žymos minus 0,15 s arba iki kadro
+  pabaigos minus 0,5 s. Netelpa — kodas 2: atitolinti kitą žymą arba pailginti kadrą.
+- **`build-video.js`**: sakinį deda ties jo žyma. Vieta skaitoma iš scenarijaus, ne iš manifesto —
+  perkėlus žymą balso generuoti iš naujo nereikia. Garsus ima iš `assets/video/sfx/{vardas}.wav`,
+  garsumą iš `assets/video/sfx/garsumas.json`. Garsai muzikos prislopinimo nesukelia.
+- **Garsai** sugeneruoti patys (ffmpeg sinusai ir triukšmas), nieko neatsisiųsta:
+  `spustelejimas`, `paemimas`, `numetimas`, `patvirtinimas`.
+- Kadrai be žymų veikia kaip anksčiau: balsas iš pagrindinės lentelės stulpelio „Balsas“.
+- Žymos laikas turi sutapti su animacijos laiku `TEMPLATE_ANIMATIONS` įraše — jo komentare
+  surašomi tie patys momentai.
+
 ### Vinjetė (nuo 2026-09-15)
 
 Senos `autro.mp4` pirmos 4 s (sodriai mėlynas fonas, ranka pieštos „AČIŪ, KAD MOKOTĖS“)

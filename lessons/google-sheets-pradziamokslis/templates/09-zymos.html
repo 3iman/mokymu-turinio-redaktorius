@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<link rel="stylesheet" href="./tokens/sheets.css">
+<style>
+  .title { font-size: 44px; margin-bottom: 26px; }
+  .stage { position: relative; width: 1680px; height: 780px; margin: 0 auto; }
+  .stage > .gs-window { position: absolute; left: 0; top: 18px; }
+  .cursor-wrap { position: absolute; width: 44px; height: 56px; z-index: 30; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+
+  .mini { position: absolute; left: 0; top: 30px; width: 900px; background: #fff; border-radius: 16px; border: 1.5px solid #dfe3ea;
+          box-shadow: 0 20px 50px rgba(30,40,70,.10); overflow: hidden; font-family: var(--gs-font); }
+  .mrow { display: flex; height: 78px; border-bottom: 1px solid var(--gs-grid); align-items: center; font-size: 26px; color: var(--gs-cell-text); position: relative; }
+  .mrow .ca { width: 190px; padding-left: 22px; border-right: 1px solid var(--gs-grid); height: 100%; display: flex; align-items: center; }
+  .mrow .cb { padding-left: 22px; flex: 1; display: flex; align-items: center; height: 100%; }
+  .mrow .gs-chip { font-size: 22px; height: 34px; min-width: 130px; border-radius: 17px; }
+  .mrow.th .cb { background: var(--gs-green-th); color: #fff; font-weight: 700; }
+  .mrow.h2 .cb { font-size: 32px; color: #000; }
+  .mrow.h3 .cb { font-weight: 700; }
+  .site { position: absolute; left: 1000px; top: 30px; width: 680px; min-height: 600px; background: #fff; border-radius: 16px; border: 1.5px solid #dfe3ea;
+          box-shadow: 0 20px 50px rgba(30,40,70,.10); padding: 34px 40px; box-sizing: border-box; font-family: Inter, sans-serif; }
+  .site .lbl { font-size: 18px; text-transform: uppercase; letter-spacing: .8px; color: var(--c-text-faint); margin-bottom: 18px; }
+  .site .s-h2 { font-size: 38px; font-weight: 700; color: var(--c-text); margin-bottom: 18px; }
+  .site .s-h3 { font-size: 28px; font-weight: 700; color: var(--c-text); margin-bottom: 16px; }
+  .site .s-th { display: flex; background: #eef2f7; font-weight: 700; font-size: 22px; padding: 14px 18px; gap: 40px; color: var(--c-text); }
+  .site .s-td { display: flex; font-size: 22px; padding: 14px 18px; gap: 72px; border-bottom: 1px solid #e5e7eb; color: var(--c-text); }
+  .site .s-ign { margin-top: 26px; font-size: 20px; color: var(--c-red-text); }
+  .hl { position: absolute; border: 4px solid var(--c-blue-solid); border-radius: 10px; pointer-events: none; }
+
+.hl0 { opacity: 0; }
+.hl1 { opacity: 0; }
+.hl2 { opacity: 0; }
+.hl3 { opacity: 0; }
+.hl4 { opacity: 0; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="stage">
+<div class="mini"><div class="mrow h2"><div class="ca"><span class="gs-chip">H2</span></div><div class="cb">{{m_h2}}</div></div><div class="mrow h3"><div class="ca"><span class="gs-chip">H3</span></div><div class="cb">{{m_h3}}</div></div><div class="mrow th"><div class="ca"><span class="gs-chip">TH</span></div><div class="cb">{{m_th}}</div></div><div class="mrow data"><div class="ca"></div><div class="cb">{{m_td}}</div></div><div class="mrow ign"><div class="ca"><span class="gs-chip">ignore</span></div><div class="cb">{{m_ig}}</div></div></div><div class="site"><div class="lbl">{{s_lbl}}</div><div class="s-h2">{{s_h2}}</div><div class="s-h3">{{s_h3}}</div><div class="s-th"><span>{{s_nr}}</span><span>{{s_nm}}</span></div><div class="s-td"><span>1.</span><span>{{s_n1}}</span></div><div class="s-ign">{{s_ign}}</div></div><div class="hl hl0" style="left:-6px; top:26px; width:912px; height:86px"></div><div class="hl hl1" style="left:-6px; top:105px; width:912px; height:86px"></div><div class="hl hl2" style="left:-6px; top:184px; width:912px; height:86px"></div><div class="hl hl3" style="left:-6px; top:263px; width:912px; height:86px"></div><div class="hl hl4" style="left:-6px; top:342px; width:912px; height:86px"></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

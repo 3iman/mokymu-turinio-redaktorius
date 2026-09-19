@@ -1,0 +1,427 @@
+[
+ {
+  "file": "00-turtas",
+  "title": "Domenas yra turtas",
+  "h1": "Domenas yra įstaigos skaitmeninis turtas",
+  "D": 17,
+  "ekrane": "Viršuje domenas mokykla.lt, nuo jo linijos į keturias korteles: svetainė, el. paštas, nuorodos, Google. Apačioje „Prarandamas ne puslapis, o viskas, kas prie jo prikabinta“.",
+  "komentaras": "",
+  "cues": [
+   [
+    1.0,
+    "balsas",
+    "Domenas nėra svetainės dalis. Tai įstaigos skaitmeninis turtas."
+   ],
+   [
+    5.6,
+    "balsas",
+    "Prie jo prikabinta svetainė, darbuotojų paštas, nuorodos ir paieškos istorija."
+   ],
+   [
+    11.2,
+    "balsas",
+    "Prarandamas ne puslapis, o visa tai iš karto."
+   ]
+  ]
+ },
+ {
+  "file": "01-tvarkingas",
+  "title": "Kaip atrodo tvarkingas įrašas",
+  "h1": "Turėtoju įrašyta pati įstaiga",
+  "D": 18,
+  "ekrane": "Naršyklėje domreg.lt WHOIS įrašas: domeno informacija, „Domeno turėtojas“ – gimnazijos pavadinimas žaliai, žemiau techninis kontaktas – tiekėjas. Dešinėje žalia žyma „Taip turi būti“.",
+  "komentaras": "Sandara pagal tikrą domreg.lt langą (Eimanto ekrano nuotraukos 2026-09-18). Pavadinimai pakeisti.",
+  "cues": [
+   [
+    1.0,
+    "balsas",
+    "Registro įraše svarbiausia viena dalis – domeno turėtojas."
+   ],
+   [
+    5.3,
+    "balsas",
+    "Ten turi būti įstaigos pavadinimas: mokykla, gimnazija, lopšelis-darželis."
+   ],
+   [
+    10.6,
+    "balsas",
+    "Tiekėjas gali būti įrašytas kaip techninis kontaktas. Tai normalu."
+   ]
+  ]
+ },
+ {
+  "file": "02-trys-atvejai",
+  "title": "Trys atvejai, dėl kurių verta sunerimti",
+  "h1": "Trys atvejai, kai domenas ne įstaigos",
+  "D": 20,
+  "ekrane": "Trys kortelės: „UAB „Tiekėjas““ (raudona), „Lopšelis-darželis „Rugelis““ su gelsva žyma, kad duomenys tiekėjo, ir „Fizinis asmuo (duomenys neskelbiami)“ (raudona). Apačioje „Visais trimis atvejais įstaigos adresas priklauso nuo kito“.",
+  "komentaras": "Keturi tikri atvejai iš Eimanto ekrano nuotraukų 2026-09-18: tvarkingas, kita įmonė, pusiau perregistruotas, fizinis asmuo.",
+  "cues": [
+   [
+    1.0,
+    "balsas",
+    "Trys atvejai, kai domenas įstaigai nepriklauso."
+   ],
+   [
+    4.6,
+    "balsas",
+    "Pirmas: turėtoju įrašyta tiekėjo įmonė."
+   ],
+   [
+    7.8,
+    "balsas",
+    "Antras: pavadinimas įstaigos, bet adresas, telefonas ir paštas – tiekėjo. Perregistruota ne iki galo."
+   ],
+   [
+    14.8,
+    "balsas",
+    "Trečias: fizinis asmuo. Adresas priklauso nuo vieno žmogaus."
+   ]
+  ]
+ },
+ {
+  "file": "03-pastas",
+  "title": "Kieno paštas įrašytas",
+  "h1": "Pranešimai eina tam, kieno paštas įrašytas",
+  "D": 20,
+  "ekrane": "Kairėje registro įrašas su tiekėjo el. paštu (raudonai). Dešinėje trys laiškai: galiojimo pabaiga, duomenų patvirtinimas, prašymas perduoti. Apačioje gelsva juosta „Įstaiga apie savo domeną nesužino nieko“.",
+  "komentaras": "Eimantas 2026-09-19: tiekėjas „dėl patogumo“ įrašo savo paštą; visi pranešimai eina jam, ir taip susidaro lock-in.",
+  "cues": [
+   [
+    1.0,
+    "balsas",
+    "Antras dalykas registre – koks el. paštas įrašytas prie turėtojo."
+   ],
+   [
+    5.8,
+    "balsas",
+    "Jei ten tiekėjo adresas, visi pranešimai eina jam: apie galiojimą, apie duomenų patvirtinimą, apie perdavimą."
+   ],
+   [
+    13.3,
+    "balsas",
+    "Įstaiga apie savo domeną nesužino nieko. Taip tyliai gimsta priklausomybė."
+   ]
+  ]
+ },
+ {
+  "file": "04-ikurta",
+  "title": "Įkūrimo data",
+  "h1": "Perregistravus data pradedama skaičiuoti iš naujo",
+  "D": 20,
+  "ekrane": "Kairėje registro įrašas „Įkurtas 2026-01-24“ su pastaba, kad atrodo naujas. Dešinėje archyvas: svetainė tuo pačiu adresu nuo 2019. Apačioje gelsva kortelė, kad perregistravus data prasideda iš naujo.",
+  "komentaras": "Eimantas 2026-09-18: įkūrimo data po perregistravimo skaičiuojama nuo nulio; archyvas (web.archive.org) rodo, kad adresas naudotas anksčiau.",
+  "cues": [
+   [
+    1.0,
+    "balsas",
+    "Registre yra eilutė „Įkurtas“. Ji rodo ne domeno amžių."
+   ],
+   [
+    5.1,
+    "balsas",
+    "Perregistravus domeną naujam turėtojui, ta data pradedama skaičiuoti iš naujo."
+   ],
+   [
+    10.7,
+    "balsas",
+    "Jei interneto archyve ta pati svetainė matoma anksčiau, domenas buvo kažkieno kito. Greičiausiai – įstaigos."
+   ]
+  ]
+ },
+ {
+  "file": "05-kol-veikia",
+  "title": "Kodėl to nepastebime",
+  "h1": "Kol viskas veikia, niekas netikrina",
+  "D": 15,
+  "ekrane": "Laiko juosta: 2016 svetainė padaryta, 2019 sąskaita už domeną, 2022 naujas dizainas, 2026 viskas veikia. Apačioje kortelė „Niekas neturi priežasties tikrinti“.",
+  "komentaras": "",
+  "cues": [
+   [
+    1.0,
+    "balsas",
+    "Metai bėga, svetainė veikia, sąskaitos apmokamos."
+   ],
+   [
+    5.0,
+    "balsas",
+    "Niekas neturi priežasties tikrinti, kam domenas registruotas."
+   ],
+   [
+    9.5,
+    "balsas",
+    "Bet veikianti svetainė nėra įrodymas, kad domenas jūsų."
+   ]
+  ]
+ },
+ {
+  "file": "06-testas",
+  "title": "Kada paaiškėja",
+  "h1": "Paaiškėja tada, kai norite ką nors keisti",
+  "D": 19,
+  "ekrane": "Kairėje laiškas „Prašome perduoti domeną naujam tiekėjui“, dešinėje trys atsakymai, tarp jų „Domeno perdavimas – 400 €“.",
+  "komentaras": "Eimantas 2026-09-18: 400 € — tikras atvejis, pasekmės iliustracija. Pavadinimų nevardijame.",
+  "cues": [
+   [
+    1.0,
+    "balsas",
+    "Klausimas iškyla vieną kartą – kai įstaiga nori keisti tiekėją."
+   ],
+   [
+    5.6,
+    "balsas",
+    "Atsakymai būna įvairūs: palaukite, sumokėkite, pasirašykite."
+   ],
+   [
+    10.1,
+    "balsas",
+    "Keturi šimtai eurų už nuosavą adresą – tikras pavyzdys."
+   ],
+   [
+    14.2,
+    "balsas",
+    "Iki tol viskas atrodė tvarkoje."
+   ]
+  ]
+ },
+ {
+  "file": "07-irodymas",
+  "title": "Kieno pusėje įrodymai",
+  "h1": "Perdavimą įrodo tas, kas domeną laiko",
+  "D": 21,
+  "ekrane": "Kairėje „Ką turi įstaiga“: registro ar archyvo pėdsakas, sutartys ir sąskaitos, susirašinėjimas. Dešinėje „Ką turi jis“ su žyma „Jei neperdavėte – dokumento nėra“.",
+  "komentaras": "Eimanto patirtis: įrodinėjimo našta tenka dabartiniam turėtojui.",
+  "cues": [
+   [
+    1.0,
+    "balsas",
+    "Registras remiasi savo istorija – ji viešai nematoma, bet saugoma."
+   ],
+   [
+    5.8,
+    "balsas",
+    "Jei jūsų įstaiga joje kada nors buvo turėtoja, užtenka pareiškimo, kad domeno niekam neperleidote."
+   ],
+   [
+    12.6,
+    "balsas",
+    "Perleidimą turi pagrįsti tas, kas domeną laiko dabar. Jei perdavimo nebuvo, dokumento jis neturi."
+   ]
+  ]
+ },
+ {
+  "file": "08-nera-istorijoje",
+  "title": "Jei istorijoje įstaigos nėra",
+  "h1": "Jei registre įstaigos niekada nebuvo",
+  "D": 24,
+  "ekrane": "Dvi kortelės: „Įstaiga registre kadaise buvo“ (žalia) ir „Įstaigos registre niekada nebuvo“ (gelsva). Apačioje du keliai: derėtis dėl perleidimo arba registruoti naują domeną ir persikelti.",
+  "komentaras": "Eimantas 2026-09-19: registras remiasi savo WHOIS istorija, kurios viešai nesimato; jei įstaigos joje nebuvo — nenagrinėja. Tada praktikoje registruojamas naujas domenas.",
+  "cues": [
+   [
+    1.0,
+    "balsas",
+    "Viskas priklauso nuo vieno dalyko: ar įstaiga registre kada nors buvo turėtoja."
+   ],
+   [
+    6.6,
+    "balsas",
+    "Jei buvo – užtenka pasakyti, kad domeno niekam neperleidote."
+   ],
+   [
+    11.1,
+    "balsas",
+    "Jei nebuvo – ginčui pagrindo nėra: domenas nuo pradžių registruotas ne jūsų vardu."
+   ],
+   [
+    16.9,
+    "balsas",
+    "Tada lieka du keliai: derėtis arba registruoti naują domeną ir persikelti."
+   ]
+  ]
+ },
+ {
+  "file": "09-ka-daryti",
+  "title": "Ką daryti",
+  "h1": "Keturi žingsniai, jei domenas ne įstaigos",
+  "D": 28,
+  "ekrane": "Keturi žingsniai: pasitikrinate registre, paprašote perrašyti įstaigos vardu, kreipiatės į registrą, jei nepavyksta – naujas domenas (gelsva kortelė).",
+  "komentaras": "Eimantas 2026-09-19: kai dokumentų nėra — prašyti perrašyti įstaigos vardu; teisininkai dažniausiai sako, kad bylinėtis neverta, todėl praktikoje registruojamas naujas domenas. ⛔ Rezultato nežadame.",
+  "cues": [
+   [
+    1.0,
+    "balsas",
+    "Jei pasitikrinę radote svetimą pavadinimą, kelias yra."
+   ],
+   [
+    5.1,
+    "balsas",
+    "Pirmiausia pasitikrinate registre, kas įrašytas turėtoju."
+   ],
+   [
+    9.3,
+    "balsas",
+    "Tada raštu paprašote perrašyti domeną įstaigos vardu – net jei senų dokumentų nebėra."
+   ],
+   [
+    15.3,
+    "balsas",
+    "Jei nepavyksta, rašote registrui. Dažnai pakanka kelių laiškų."
+   ],
+   [
+    19.9,
+    "balsas",
+    "Jei ir tai nepadeda, praktikoje dažniau renkamasi naują domeną, nes teisinis kelias ilgas."
+   ]
+  ]
+ },
+ {
+  "file": "10-google",
+  "title": "Kas su paieška",
+  "h1": "Pakeitus adresą paieška grįžta ne iš karto",
+  "D": 18,
+  "ekrane": "Dvi kortelės: „Ko nežadame“ – kad paieška atsistatys per dieną; „Ką darome“ – nukreipimai, svetainės žemėlapis, nuorodų atnaujinimas.",
+  "komentaras": "Eimantas 2026-09-18: jokių garantijų dėl greičio; su visu priemonių paketu grįžta.",
+  "cues": [
+   [
+    1.0,
+    "balsas",
+    "Dažnas klausimas: kaip greitai svetainė vėl bus randama paieškoje."
+   ],
+   [
+    5.8,
+    "balsas",
+    "Garantijų nėra – terminai būna labai skirtingi."
+   ],
+   [
+    9.5,
+    "balsas",
+    "Bet su nukreipimais, svetainės žemėlapiu ir atnaujintomis nuorodomis paieška vienaip ar kitaip susitvarko."
+   ]
+  ]
+ },
+ {
+  "file": "11-pries-starta",
+  "title": "Prieš startą",
+  "h1": "Domeno klausimas iškyla prieš pat startą",
+  "D": 26,
+  "ekrane": "Viršuje „Įstaiga laukia naujos svetainės“. Po juo dvi kortelės: profesionalus tiekėjas paaiškina; kitas pasiūlo „viskuo pasirūpinti“ ir įrašo save. Apačioje mūsų taisyklė su Cleverphant simboliu: domenas registruojamas įstaigos vardu, sąskaitą gauna įstaiga.",
+  "komentaras": "Eimantas 2026-09-19: sutartyse punkto neturime — turime nerašytą taisyklę; sąskaita įstaigai yra saugiklis. Nežadame sutarties punkto.",
+  "cues": [
+   [
+    1.0,
+    "balsas",
+    "Klaida dažniausiai padaroma ne dėl aplaidumo, o dėl nežinojimo."
+   ],
+   [
+    5.6,
+    "balsas",
+    "Įstaiga laukia naujos svetainės, o domeno klausimas iškyla paskutinę savaitę."
+   ],
+   [
+    11.1,
+    "balsas",
+    "Profesionalus tiekėjas tada paaiškina. Kitas pasiūlo viskuo pasirūpinti ir įrašo save."
+   ],
+   [
+    17.2,
+    "balsas",
+    "Mes domeną registruojame įstaigos vardu, o sąskaitą už jį gauna pati įstaiga. Ta sąskaita ir yra saugiklis."
+   ]
+  ]
+ },
+ {
+  "file": "12-penki-klausimai",
+  "title": "Penkių minučių patikra",
+  "h1": "Penki klausimai, kuriuos verta užduoti šiandien",
+  "D": 26,
+  "ekrane": "Penki sunumeruoti klausimai, apačioje gelsva juosta „Jei bent į vieną atsakymas „nežinome“ – verta pasitikrinti šiandien“.",
+  "komentaras": "",
+  "cues": [
+   [
+    1.0,
+    "balsas",
+    "Penki klausimai, kuriuos verta užduoti šiandien."
+   ],
+   [
+    4.7,
+    "balsas",
+    "Kam registruotas mūsų domenas."
+   ],
+   [
+    7.3,
+    "balsas",
+    "Ar turėtojo duomenys – įstaigos, ne tiekėjo."
+   ],
+   [
+    10.7,
+    "balsas",
+    "Kada domenas įkurtas registre."
+   ],
+   [
+    13.3,
+    "balsas",
+    "Ar rytoj galėtume pakeisti tiekėją be jo leidimo."
+   ],
+   [
+    17.1,
+    "balsas",
+    "Ar sutartyje parašyta, kam priklauso domenas."
+   ],
+   [
+    20.6,
+    "balsas",
+    "Jei bent į vieną atsakymas – nežinome, verta pasitikrinti."
+   ]
+  ]
+ },
+ {
+  "file": "13-kaip-pas-mus",
+  "title": "Kaip yra pas mus",
+  "h1": "Registruojame įstaigos vardu",
+  "D": 15,
+  "ekrane": "Kortelė su registro įrašu: domeno turėtojas – įstaiga (žaliai). Žemiau kortelė su Cleverphant simboliu: „Administruojame, bet nesavinamės“.",
+  "komentaras": "",
+  "cues": [
+   [
+    1.0,
+    "balsas",
+    "Mūsų klientų domenai registruoti įstaigos vardu."
+   ],
+   [
+    4.7,
+    "balsas",
+    "Tai matyti viešai, bet kada, be mūsų."
+   ],
+   [
+    7.7,
+    "balsas",
+    "Administruoti – paslauga. Turėti adresą turi pati įstaiga."
+   ]
+  ]
+ },
+ {
+  "file": "14-disclaimeris",
+  "title": "Kas tai yra ir kas ne",
+  "h1": "Tai ne teisinė konsultacija",
+  "D": 16,
+  "ekrane": "Kortelė su užrašu „Tai ne teisinė konsultacija“ ir paaiškinimu, kad remiamasi mūsų praktika bei viešais registro duomenimis nuo 2011 m. iki 2026 m. rugsėjo 1 d.",
+  "komentaras": "Eimantas 2026-09-19: gale reikia disclaimerio — analitinis vertinimas, ne teisiniai patarimai.",
+  "cues": [
+   [
+    1.0,
+    "balsas",
+    "Tai ne teisinė konsultacija."
+   ],
+   [
+    3.5,
+    "balsas",
+    "Remiamės savo praktika ir viešai prieinamais registro duomenimis nuo dviejų tūkstančių vienuoliktųjų iki šių metų rugsėjo."
+   ],
+   [
+    11.8,
+    "balsas",
+    "Kiekvienas atvejis skiriasi."
+   ]
+  ]
+ }
+]

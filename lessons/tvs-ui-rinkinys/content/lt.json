@@ -1,0 +1,32 @@
+{
+  "lang": "lt",
+  "00_komponentai": {
+    "title": "TVS komponentai",
+    "crumb": "Dokumentų banko modulis  /  Dokumentai",
+    "btn_create": "Sukurti",
+    "search": "Paieška",
+    "category": "Ugdymo planai",
+    "btn_filter": "Filtruoti",
+    "btn_clear": "Valyti",
+    "th_title": "Pavadinimas",
+    "th_file": "Failas",
+    "doc_1": "Ugdymo planas 2025–2026 m. m.",
+    "doc_2": "Mokinių priėmimo tvarkos aprašas",
+    "doc_3": "Pailgintos dienos grupės tvarka",
+    "doc_new": "Ugdymo organizavimo tvarka 2026",
+    "btn_edit": "Redaguoti",
+    "btn_reorder": "Perrikiuoti",
+    "btn_delete": "Ištrinti",
+    "l_buttons": "Mygtukai",
+    "l_disabled": "neaktyvus",
+    "l_hover": "užvestas",
+    "l_cursor": "Kursorius",
+    "l_arrow": "rodyklė",
+    "l_grab": "paėmus",
+    "l_click": "spustelėjimas",
+    "l_site": "Svetainėje",
+    "site_h": "Ugdymo planai",
+    "l_fold": "ekrano kraštas",
+    "l_row_states": "Eilutė: rami · paimta · vieta numesti · nauja"
+  }
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<link rel="stylesheet" href="./tokens/sheets.css">
+<style>
+  .title { font-size: 44px; margin-bottom: 26px; }
+  .stage { position: relative; width: 1680px; height: 780px; margin: 0 auto; }
+  .stage > .gs-window { position: absolute; left: 0; top: 18px; }
+  .cursor-wrap { position: absolute; width: 44px; height: 56px; z-index: 30; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+
+  .box { position: absolute; top: 40px; width: 800px; height: 470px; border-radius: 24px; padding: 40px; box-sizing: border-box; background: #fff;
+         border: 1.5px solid #dfe3ea; box-shadow: 0 20px 50px rgba(30,40,70,.10); }
+  .box.a { left: 20px; } .box.b { left: 860px; }
+  .box .h { font-size: 32px; font-weight: 700; color: var(--c-text); margin-bottom: 40px; }
+  .mini-tabs { display: flex; font-family: var(--gs-font); background: var(--gs-tabbar); border-top: 1px solid var(--gs-tabbar-line); height: 72px; align-items: stretch; }
+  .mini-tabs div { display: flex; align-items: center; padding: 0 22px; font-size: 24px; color: var(--gs-muted); font-weight: 500; }
+  .mini-tabs div.first { background: var(--gs-tab-active); color: var(--gs-blue); font-weight: 700; gap: 12px; }
+  .lock { width: 22px; height: 18px; border-radius: 4px; background: var(--gs-blue); position: relative; display: inline-block; }
+  .lock::before { content: ""; position: absolute; left: 4px; top: -10px; width: 10px; height: 12px; border: 3px solid var(--gs-blue); border-bottom: 0; border-radius: 8px 8px 0 0; }
+  .why { margin-top: 36px; font-size: 24px; color: var(--c-text-muted); }
+  .del-item { font-family: var(--gs-font); font-size: 28px; background: #fff; border: 1px solid #dadce0; border-radius: 8px; padding: 22px 30px; display: inline-flex; gap: 18px; align-items: center; position: relative; }
+  .ren { margin-top: 26px; font-size: 24px; color: var(--c-text); display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
+  .ren b { font-family: var(--gs-font); font-weight: 500; background: var(--c-green-bg); border: 1.5px solid var(--c-green-border); border-radius: 10px; padding: 8px 16px; }
+  .warn { margin-top: 26px; font-size: 24px; line-height: 1.4; color: var(--c-text); background: var(--c-amber-bg); border: 1.5px solid #fde68a; border-radius: 14px; padding: 16px 22px; }
+  .undo { position: absolute; left: 20px; top: 560px; width: 1640px; height: 150px; flex-wrap: wrap; align-content: center; border-radius: 24px; background: var(--c-green-bg);
+          border: 2px solid var(--c-green-border); display: flex; align-items: center; justify-content: center; gap: 26px; font-size: 30px; color: var(--c-text); }
+  .key { font-family: var(--gs-font); font-weight: 700; background: #fff; border: 2px solid #c4c7c5; border-bottom-width: 5px; border-radius: 10px; padding: 8px 18px; font-size: 28px; }
+  .sm { color: var(--c-text-muted); font-size: 24px; }
+  .sm.later { flex-basis: 100%; text-align: center; margin-top: 6px; }
+
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="stage">
+<div class="box a"><div class="h">{{a_h}}</div><div class="mini-tabs"><div class="first"><span class="lock"></span>{{a_t1}}</div><div>{{a_t2}}</div><div>{{a_t3}}</div></div><div class="why">{{a_why}}</div><div class="ren">{{a_ren}} <b>{{a_ren1}}</b> <b>{{a_ren2}}</b></div></div><div class="box b"><div class="h">{{b_h}}</div><div class="del-item">{{b_del}}</div><div class="why">{{b_why}}</div><div class="warn">{{b_warn}}</div></div><div class="undo">{{u_txt}} <span class="key">Ctrl</span> + <span class="key">Z</span> <span class="sm">{{u_mac}}</span> <span class="key">⌘</span> + <span class="key">Z</span><span class="sm later">{{u_later}}</span></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

@@ -11,3 +11,11 @@ lessons/*/video/balsas-*-kandidatai/
 
 # Vinjetės pradžia — tarpinis failas, perrenkamas kiekvieno build-video.js metu
 lessons/*/video/outro-galva-*.mp4
+
+# Gaminys, ne šaltinis (Eimantas 2026-09-19): PNG/HTML kadrai ir sumontuoti filmukai
+# atkuriami iš build_scenes.py + content/ dviem komandomis, todėl git'e nelaikomi:
+#   python3 lessons/{pamoka}/build_scenes.py
+#   node generate.js --png --lang lt && node generate-video-clips.js --lesson {pamoka} --lang lt && node build-video.js --lesson {pamoka} --lang lt
+lessons/*/output/
+lessons/*/video/*.mp4
+lessons/*/video/intro.png

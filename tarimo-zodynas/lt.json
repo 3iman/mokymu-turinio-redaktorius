@@ -1,0 +1,20 @@
+{
+  "_apie": "Kirčių ir tarimo žodynas balsui. Raktas — žodis, kaip jis rašomas scenarijuje; reikšmė — kaip jį siųsti ElevenLabs. v3 modelis priima IPA tarp pasvirųjų brūkšnių (/ˈpɛr.../). Kirčio ženklų (ú, à) ir PLS žodyno v3 nepaiso. Taikoma automatiškai generate-voice.js. Pildoma, kai Eimantas pasako, kad kirtis ne ten.",
+  "zodziai": {
+    "Perrikiuoti": "/ˈpɛr.rikʲuotʲi/",
+    "perrikiuoti": "/ˈpɛr.rikʲuotʲi/",
+    "H2": "haš du",
+    "H3": "haš trys",
+    "TH": "tėė haš",
+    "ignore": "/ɪɡˈnɔːr/",
+    "Gmail": "Džy meil"
+  },
+  "_pasirinkta": {
+    "Perrikiuoti": "Eimantas 2026-09-17: IPA su skiemens riba, trumpa „e“ (per-rikiuoti). Iš pradžių rinktas variantas su ilga „e“, pataisyta tą pačią dieną.",
+    "H2": "Eimantas 2026-09-17: „haš du“.",
+    "H3": "Eimantas 2026-09-17: „haš trys“.",
+    "TH": "Eimantas 2026-09-17: „tėė haš“.",
+    "ignore": "Eimantas 2026-09-17: angliškai. Parinkta IPA — dar neišklausyta.",
+    "Gmail": "Eimantas 2026-09-17: „Džy meil“."
+  }
+}

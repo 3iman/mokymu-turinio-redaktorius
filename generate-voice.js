@@ -27,7 +27,14 @@
  * ⛔ Kirtis rašomas tekste kirčio ženklu („ràštinę“). Tarimo žodyno v3 greičiausiai
  *    neskaito (2026-09-15 bandymas).
  * ⛔ Balso trukmė lemia kadro trukmę, ne atvirkščiai: netelpa — kodas 2, kadras ilginamas.
+ * ⛔ Laiko žymos („kur spausti“ filmukai, 2026-09-17): jei kadro bloke yra lentelė
+ *    „Laiko žymos“ su eilutėmis `balsas`, kadras įgarsinamas tais sakiniais, o ne pagrindinės
+ *    lentelės tekstu. Failai `kNN-M.wav`; sakinio langas — iki kitos žymos arba kadro pabaigos.
+ *    Žr. scenarijaus-zymos.js.
  *
+ * ⛔ Kirčių žodynas (2026-09-17): `tarimo-zodynas/{lang}.json`. Žodis scenarijuje rašomas
+ *    įprastai, o į ElevenLabs siunčiamas jo tarimas iš žodyno (v3 — IPA tarp pasvirųjų
+ *    brūkšnių). Kirčio ženklų tekste v3 nepaiso („Perrikiúoti“ nepakeitė nieko).
  * Raktas: `illustrations/.env` → `ELEVENLABS_API_KEY`.
  */
 
@@ -35,6 +42,7 @@ const fs = require('fs');
 const path = require('path');
 const crypto = require('crypto');
 const { execFileSync } = require('child_process');
+const { parseCues } = require('./scenarijaus-zymos');
 
 const VOICE_ID = 'eqJHjeWMPGJFD6VBf1J2';   // „Darius Cleverphant“, greitasis klonas
 const MODEL = 'eleven_v3_dpo_20260217';
@@ -88,15 +96,42 @@ function readScenario() {
     const m = line.match(/^\|\s*(\d+)\s+(.+?)\s*\|\s*(\d+)\s*sek\.\s*\|\s*(.+?)\s*\|\s*(.*?)\s*\|\s*$/);
     if (!m) continue;
     const text = m[5].trim();
-    if (!text || text === '—' || text === '-') continue;
-    rows.push({ kadras: parseInt(m[1]), title: m[2].trim(), duration: parseInt(m[3]), file: m[4].trim(), text });
+    rows.push({ kadras: parseInt(m[1]), title: m[2].trim(), duration: parseInt(m[3]), file: m[4].trim(),
+                text: (!text || text === '—' || text === '-') ? '' : text });
   }
   if (!hasVoiceColumn) {
     console.error('⛔ Scenarijaus lentelėje nėra stulpelio „Balsas“. Žr. VIDEO_GAMYBA.md §2.');
     process.exit(1);
   }
+  // Laiko žymos: kadras įgarsinamas žymų sakiniais; kitaip — pagrindinės lentelės tekstu
+  const cues = parseCues(content);
+  const voiceRows = [];
+  for (const r of rows) {
+    const vc = (cues[r.kadras] || []).filter(c => c.kind === 'balsas');
+    if (vc.length) {
+      vc.forEach((c, i) => {
+        const iki = i + 1 < vc.length ? vc[i + 1].at - 0.15 : r.duration - TAIL_MARGIN;
+        voiceRows.push({ ...r, cue: i + 1, at: c.at, text: c.value, window: iki - c.at });
+      });
+    } else if (r.text) {
+      voiceRows.push({ ...r, window: r.duration - START_IN_FRAME - TAIL_MARGIN });
+    }
+  }
+  // Kirčių žodynas: žodis pakeičiamas jo tarimu prieš siunčiant
+  let zodynas = {};
+  try { zodynas = JSON.parse(fs.readFileSync(path.join(__dirname, 'tarimo-zodynas', `${lang}.json`), 'utf-8')).zodziai || {}; } catch (_) {}
+  const zodziai = Object.keys(zodynas).sort((a, b) => b.length - a.length);
+  const escRe = s => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+  for (const r of voiceRows) {
+    r.tekstas_scenarijuje = r.text;
+    for (const w of zodziai) {
+      r.text = r.text.replace(new RegExp(`(?<![\\p{L}])${escRe(w)}(?![\\p{L}])`, 'gu'), zodynas[w]);
+    }
+  }
+  rows.length = 0;
+  rows.push(...voiceRows);
   if (!rows.length) {
-    console.error('⛔ Stulpelis „Balsas“ tuščias — nėra ką įgarsinti.');
+    console.error('⛔ Stulpelis „Balsas“ tuščias ir laiko žymų su balsu nėra — nėra ką įgarsinti.');
     process.exit(1);
   }
   const s = content.match(/^\*\*Balso seed:\*\*\s*(\d+)/m);
@@ -156,16 +191,17 @@ async function generate(rows, seed, dir, key, dictId) {
     const cutS = Math.max(0, s - 0.06);
     const cutE = Math.min(next - 0.05, e + MAX_TAIL);
     const len = cutE - cutS;
-    const file = `k${String(r.kadras).padStart(2, '0')}.wav`;
+    const file = `k${String(r.kadras).padStart(2, '0')}${r.cue ? `-${r.cue}` : ''}.wav`;
     execFileSync('ffmpeg', ['-y', '-v', 'error', '-ss', cutS.toFixed(3), '-t', len.toFixed(3), '-i', full,
       '-af', `afade=t=out:st=${Math.max(0, len - 0.08).toFixed(3)}:d=0.08`, path.join(dir, file)]);
     const d = probe(path.join(dir, file));
-    const window = r.duration - START_IN_FRAME - TAIL_MARGIN;
+    const window = r.window;
     const fits = d <= window;
     if (!fits) overflow = true;
-    const reikia = Math.ceil(d + START_IN_FRAME + TAIL_MARGIN);
-    items.push({ kadras: r.kadras, title: r.title, text: r.text, file, duration: +d.toFixed(3), fits, reikia_sek: fits ? r.duration : reikia });
-    console.log(`  K${r.kadras} | balsas ${d.toFixed(2)}s | langas ${window.toFixed(1)}s | ${fits ? 'telpa' : `⛔ VIRŠIJA ${(d - window).toFixed(2)}s → kadrui reikia ${reikia} sek.`}`);
+    const reikia = Math.ceil(r.duration + (d - window));
+    const zyme = r.cue ? `K${r.kadras}.${r.cue} @${r.at}s` : `K${r.kadras}`;
+    items.push({ kadras: r.kadras, cue: r.cue || null, title: r.title, text: r.text, file, duration: +d.toFixed(3), fits, reikia_sek: fits ? r.duration : reikia });
+    console.log(`  ${zyme} | balsas ${d.toFixed(2)}s | langas ${window.toFixed(1)}s | ${fits ? 'telpa' : `⛔ VIRŠIJA ${(d - window).toFixed(2)}s → ${r.cue ? 'atitolink kitą žymą arba pailgink kadrą' : `kadrui reikia ${reikia} sek.`}`}`);
   });
   fs.unlinkSync(full);
   return { items, overflow, characters: text.length };

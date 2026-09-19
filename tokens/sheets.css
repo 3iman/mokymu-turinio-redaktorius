@@ -1,0 +1,111 @@
+/* =====================================================================
+ * Google Sheets komponentai — „kur spausti“ filmukams
+ * Spalvos ir pavadinimai nusiskaityti iš tikro redaktoriaus (hl=lt, 2026-09-17).
+ * Geometrija fiksuota (≈1,5× tikros), kad animacijos koordinatės būtų tikslios:
+ * ją aprašo lessons/google-sheets-pradziamokslis/build_scenes.py (GEO).
+ * Klasės su priešdėliu gs-, kad nesusidurtų su base.css ir tvs.css.
+ * ===================================================================== */
+:root {
+  --gs-font: "Google Sans", Roboto, "Segoe UI", Arial, sans-serif;
+  --gs-text: #1f1f1f;
+  --gs-muted: #444746;
+  --gs-line: #e1e3e1;
+  --gs-grid: #e2e2e2;
+  --gs-head-text: #5f6368;
+  --gs-blue: #0b57d0;
+  --gs-select: #1a73e8;
+  --gs-tabbar: #f8fafd;
+  --gs-tab-active: #dde3ea;
+  --gs-tabbar-line: #c4c7c5;
+  --gs-toolbar: #edf2fa;
+  --gs-share: #c2e7ff;
+  --gs-green-th: #1c8d1f;
+  --gs-green-th-b: #157d3e;
+  --gs-band: #f1f1f1;
+  --gs-cell-text: #5f5f5f;
+  --gs-chip: #e8eaed;
+  --gs-menu-shadow: 0 2px 6px 2px rgba(60,64,67,.15), 0 1px 2px rgba(60,64,67,.3);
+}
+
+.gs-window { position: relative; width: 1680px; height: 744px; background: #fff; border-radius: 14px;
+  overflow: hidden; font-family: var(--gs-font); color: var(--gs-text); border: 1px solid #dfe3ea;
+  box-shadow: 0 24px 60px rgba(30,40,70,.12); }
+
+/* Viršus: logotipas, pavadinimas, meniu, Bendrinti */
+.gs-top { position: absolute; left: 0; right: 0; top: 0; height: 104px; }
+.gs-logo { position: absolute; left: 18px; top: 18px; width: 40px; height: 52px; border-radius: 5px; background: #0f9d58; }
+.gs-logo::after { content: ""; position: absolute; left: 9px; right: 9px; top: 20px; height: 20px;
+  border: 3px solid #fff; border-radius: 2px; background:
+  linear-gradient(#fff,#fff) 50% 0/3px 100% no-repeat, linear-gradient(#fff,#fff) 0 50%/100% 3px no-repeat; }
+.gs-filename { position: absolute; left: 76px; top: 12px; font-size: 26px; color: var(--gs-text); white-space: nowrap; }
+.gs-saved { position: absolute; top: 18px; font-size: 18px; color: var(--gs-muted); white-space: nowrap; }
+.gs-menu { position: absolute; left: 76px; top: 60px; display: flex; gap: 22px; font-size: 20px; color: var(--gs-text); }
+.gs-share { position: absolute; right: 92px; top: 22px; height: 54px; padding: 0 28px; border-radius: 27px;
+  background: var(--gs-share); color: #001d35; font-size: 20px; font-weight: 500; display: flex; align-items: center; gap: 10px; }
+.gs-avatar { position: absolute; right: 22px; top: 25px; width: 48px; height: 48px; border-radius: 50%; background: #8e6fd8;
+  color: #fff; font-size: 22px; display: flex; align-items: center; justify-content: center; }
+
+/* Įrankių juosta ir formulės eilutė — supaprastintos */
+.gs-toolbar { position: absolute; left: 16px; right: 16px; top: 108px; height: 54px; border-radius: 27px; background: var(--gs-toolbar);
+  display: flex; align-items: center; gap: 18px; padding: 0 26px; }
+.gs-toolbar i { width: 26px; height: 22px; border-radius: 5px; background: #c7ccd4; display: block; }
+.gs-toolbar i.w { width: 70px; }
+.gs-formula { position: absolute; left: 0; right: 0; top: 170px; height: 42px; border-bottom: 1px solid var(--gs-line);
+  display: flex; align-items: center; font-size: 19px; color: var(--gs-muted); }
+.gs-formula .nm { width: 110px; padding-left: 16px; border-right: 1px solid var(--gs-line); height: 100%; display: flex; align-items: center; }
+.gs-formula .fx { padding-left: 16px; font-style: italic; color: #80868b; }
+.gs-formula .val { padding-left: 16px; color: var(--gs-text); font-style: normal; }
+
+/* Tinklelis */
+.gs-grid { position: absolute; left: 0; right: 0; top: 212px; }
+.gs-colhead { display: flex; height: 34px; background: #fff; border-bottom: 1px solid var(--gs-grid); }
+.gs-colhead span { display: flex; align-items: center; justify-content: center; font-size: 17px; color: var(--gs-head-text);
+  border-right: 1px solid var(--gs-grid); box-sizing: border-box; }
+.gs-row { display: flex; height: 34px; border-bottom: 1px solid var(--gs-grid); box-sizing: border-box; position: relative; }
+.gs-row > span { display: flex; align-items: center; font-size: 18px; color: var(--gs-cell-text); padding: 0 10px;
+  border-right: 1px solid var(--gs-grid); box-sizing: border-box; white-space: nowrap; overflow: hidden; }
+.gs-row > span.rh { justify-content: center; font-size: 16px; color: var(--gs-head-text); padding: 0; background: #fff; }
+.gs-row.band > span:not(.rh):not(.a) { background: var(--gs-band); }
+.gs-row.th > span.th { background: var(--gs-green-th); color: #fff; font-weight: 700; font-size: 19px; }
+.gs-row.th > span.th.b { background: var(--gs-green-th-b); }
+.gs-row.h2 > span.big { font-size: 25px; color: #000; overflow: visible; }
+.gs-row.h3 > span.sub { font-weight: 700; color: var(--gs-cell-text); overflow: visible; }
+.gs-chip { display: inline-flex; align-items: center; justify-content: space-between; gap: 10px; min-width: 120px; height: 24px;
+  padding: 0 10px 0 12px; border-radius: 12px; background: var(--gs-chip); font-size: 16px; color: #202124; }
+.gs-chip::after { content: ""; border: 5px solid transparent; border-top: 6px solid #444; margin-top: 6px; }
+.gs-sel { position: absolute; border: 3px solid var(--gs-select); box-sizing: border-box; pointer-events: none; z-index: 6; }
+.gs-sel::after { content: ""; position: absolute; right: -6px; bottom: -6px; width: 9px; height: 9px; background: var(--gs-select); border: 1.5px solid #fff; }
+.gs-rowsel { position: absolute; left: 0; right: 0; height: 34px; background: rgba(26,115,232,.10); border: 2px solid var(--gs-select); z-index: 5; }
+
+/* Lapų juosta */
+.gs-tabbar { position: absolute; left: 0; right: 0; bottom: 0; height: 56px; background: var(--gs-tabbar);
+  border-top: 1px solid var(--gs-tabbar-line); display: flex; align-items: stretch; }
+.gs-tabbar .ic { width: 52px; display: flex; align-items: center; justify-content: center; font-size: 30px; color: var(--gs-muted); }
+.gs-tabbar .ic.list { flex-direction: column; gap: 5px; }
+.gs-tabbar .ic.list b { display: block; width: 22px; height: 2.5px; background: var(--gs-muted); border-radius: 2px; }
+.gs-tab { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 0 14px 0 20px;
+  font-size: 20px; font-weight: 500; color: var(--gs-muted); background: var(--gs-tabbar); white-space: nowrap; box-sizing: border-box; }
+.gs-tab::after { content: ""; border: 6px solid transparent; border-top: 7px solid #5f6368; margin-top: 8px; }
+.gs-tab.on { background: var(--gs-tab-active); color: var(--gs-blue); font-weight: 700; }
+.gs-tab.on::after { border-top-color: var(--gs-blue); }
+.gs-tab .edit { border: 2px solid var(--gs-select); background: #fff; color: var(--gs-text); padding: 4px 8px; font-weight: 500; }
+.gs-tabnav { margin-left: auto; display: flex; gap: 6px; align-items: center; padding-right: 16px; font-size: 30px; color: var(--gs-muted); }
+
+/* Meniu (lapo, eilutės, Formatas) ir sąrašai */
+.gs-pop { position: absolute; background: #fff; border-radius: 6px; box-shadow: var(--gs-menu-shadow); padding: 8px 0; z-index: 12;
+  font-size: 20px; color: var(--gs-text); min-width: 300px; }
+.gs-pop .it { height: 44px; display: flex; align-items: center; gap: 16px; padding: 0 26px; white-space: nowrap; }
+.gs-pop .it.dis { color: #9aa0a6; }
+.gs-pop .it.hl { background: #e8eaed; }
+.gs-pop .it .arr { margin-left: auto; color: #5f6368; font-size: 14px; }
+.gs-pop .sep { height: 1px; background: #dadce0; margin: 8px 0; }
+.gs-pop .it.tag-ok::before, .gs-pop .it.tag-warn::before { content: ""; width: 12px; height: 12px; border-radius: 50%; margin-left: -18px; }
+.gs-pop .it.tag-ok::before { background: #34a853; }
+.gs-pop .it.tag-warn::before { background: #e8710a; }
+
+/* Pastabos ant vaizdo */
+.gs-note { position: absolute; z-index: 15; background: #fff; border-radius: 14px; padding: 14px 20px; font-size: 22px;
+  color: var(--c-text, #1d2433); box-shadow: 0 10px 30px rgba(30,40,70,.18); display: flex; align-items: center; gap: 12px; white-space: nowrap; }
+.gs-num { width: 40px; height: 40px; border-radius: 50%; background: var(--c-blue-solid, #2563eb); color: #fff; font-weight: 700;
+  font-size: 21px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.gs-ring { position: absolute; border: 4px solid var(--c-blue-solid, #2563eb); border-radius: 10px; z-index: 14; pointer-events: none; }

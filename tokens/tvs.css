@@ -1,0 +1,123 @@
+/* =====================================================================
+ * TVS komponentai — „kur spausti“ filmukams
+ * Spalvos ir proporcijos nusiskaitytos iš tikro TVS administravimo
+ * (skeleton, 2026-09-16). Piešiama minimalistiškai: tikros spalvos ir
+ * pavadinimai, be smulkmenų. Dydžiai padidinti ~1,4 karto, kad telefone
+ * būtų įskaitoma. Žr. ANIMATION_PRINCIPLES.md § „UI žingsnių filmukai“.
+ * Visos klasės su priešdėliu tvs-, kad nesusidurtų su base.css.
+ * ===================================================================== */
+:root {
+  --tvs-green:        #47d165;
+  --tvs-orange:       #ff754b;
+  --tvs-info:         #11bef6;
+  --tvs-purple:       #b21cc3;
+  --tvs-accent:       #c82ecb;   /* aktyvaus meniu punkto kraštas */
+  --tvs-grey-btn:     #d4d6d7;
+  --tvs-text:         #373a3c;
+  --tvs-text-muted:   #818a91;
+  --tvs-line:         #eceeef;
+  --tvs-page:         #f1f1f1;
+  --tvs-crumb:        #eaeced;
+  --tvs-sidebar:      #252525;
+  --tvs-subnav:       #2f2f2f;
+  --tvs-white:        #ffffff;
+  --tvs-new:          #fff7d6;   /* naujos eilutės trumpas paryškinimas */
+  --tvs-radius:       3px;
+  --tvs-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* ---- Langas ---- */
+.tvs-window { position: relative; display: grid; grid-template-columns: 76px 230px 1fr;
+  grid-template-rows: 76px 1fr; background: var(--tvs-page); border-radius: 14px; overflow: hidden;
+  font-family: var(--tvs-font); color: var(--tvs-text); box-shadow: 0 24px 60px rgba(30, 40, 70, .12);
+  border: 1px solid #dfe3ea; }
+.tvs-top { grid-column: 1 / -1; display: flex; align-items: center; gap: 22px; background: var(--tvs-white);
+  border-bottom: 1px solid var(--tvs-line); padding: 0 26px 0 0; }
+.tvs-top .tvs-logo { width: 76px; height: 76px; display: flex; align-items: center; justify-content: center; }
+.tvs-top .tvs-logo i { width: 26px; height: 30px; border-radius: 6px 6px 14px 14px;
+  background: linear-gradient(160deg, #c46bd6, #7a3fd1); display: block; }
+.tvs-top .tvs-burger { width: 26px; height: 18px; border-top: 3px solid #9aa0a6; border-bottom: 3px solid #9aa0a6; position: relative; }
+.tvs-top .tvs-burger::after { content: ""; position: absolute; left: 0; right: 0; top: 4.5px; height: 3px; background: #9aa0a6; }
+.tvs-top .tvs-searchbar { flex: 1; height: 14px; max-width: 260px; border-radius: 7px; background: #eef0f2; }
+.tvs-side { background: var(--tvs-sidebar); display: flex; flex-direction: column; gap: 26px; padding-top: 30px; align-items: center; }
+.tvs-side i { width: 26px; height: 22px; border-radius: 5px; background: #5b5f63; display: block; }
+.tvs-side { position: relative; }
+.tvs-side i.is-on { background: #e7e7e7; position: relative; }
+.tvs-side i.is-on::before { content: ""; position: absolute; left: -25px; top: -12px; bottom: -12px; width: 5px; background: var(--tvs-accent); }
+.tvs-subnav { background: var(--tvs-subnav); padding: 30px 0 0 26px; display: flex; flex-direction: column; gap: 26px; }
+.tvs-subnav span { font-size: 24px; color: rgba(255,255,255,.32); }
+.tvs-subnav span.is-on { color: #eeeeee; }
+.tvs-main { padding: 0 30px 30px; display: flex; flex-direction: column; gap: 22px; min-width: 0; }
+.tvs-crumb { margin: 0 -30px; padding: 14px 30px; background: var(--tvs-crumb); font-size: 18px; color: var(--tvs-text-muted); }
+
+/* ---- Mygtukai ---- */
+.tvs-btn { display: inline-flex; align-items: center; gap: 10px; height: 52px; padding: 0 22px;
+  border-radius: var(--tvs-radius); font: 500 23px/1 var(--tvs-font); color: #fff; background: var(--tvs-green);
+  white-space: nowrap; position: relative; }
+.tvs-btn svg { width: 20px; height: 20px; }
+.tvs-btn.is-small { height: 42px; padding: 0 16px; font-size: 20px; }
+.tvs-btn.is-orange { background: var(--tvs-orange); }
+.tvs-btn.is-info { background: var(--tvs-info); }
+.tvs-btn.is-grey { background: var(--tvs-grey-btn); }
+.tvs-btn.is-disabled { opacity: .5; }
+.tvs-btn.is-hover { filter: brightness(.92); box-shadow: 0 0 0 4px rgba(71, 209, 101, .25); }
+
+/* ---- Filtras ---- */
+.tvs-filter { display: flex; gap: 12px; align-items: center; }
+.tvs-input { height: 52px; display: flex; align-items: center; padding: 0 18px; background: #fff;
+  border: 1.5px solid rgba(0,0,0,.15); border-radius: var(--tvs-radius); font-size: 22px; color: #9aa0a6; }
+.tvs-input.is-value { color: var(--tvs-text); }
+.tvs-input.is-focus { border-color: var(--tvs-info); }
+.tvs-input.is-wide { flex: 1; }
+
+/* ---- Lentelė ---- */
+.tvs-table { background: #fff; border-radius: var(--tvs-radius); }
+.tvs-th, .tvs-row { display: grid; grid-template-columns: 52px 44px 1fr 110px 250px 190px; align-items: center;
+  column-gap: 14px; padding: 0 20px; }
+.tvs-th { height: 62px; font-weight: 700; font-size: 21px; border-bottom: 2px solid var(--tvs-line); }
+.tvs-row { height: 84px; font-size: 23px; border-top: 1px solid var(--tvs-line); position: relative; background: #fff; }
+.tvs-row .tvs-title { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tvs-row .tvs-cat { font-size: 19px; color: var(--tvs-text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tvs-row .tvs-actions { display: flex; gap: 8px; justify-content: flex-end; }
+.tvs-handle { width: 30px; height: 30px; color: var(--tvs-text); display: flex; align-items: center; justify-content: center; }
+.tvs-handle svg { width: 26px; height: 26px; }
+.tvs-check { width: 22px; height: 22px; border: 2px solid #b8bec4; border-radius: 4px; background: #fff; }
+.tvs-file { width: 42px; height: 36px; border-radius: var(--tvs-radius); background: var(--tvs-purple);
+  display: flex; align-items: center; justify-content: center; }
+.tvs-file svg { width: 20px; height: 20px; }
+.tvs-foot { display: flex; gap: 10px; padding: 18px 20px; border-top: 1px solid var(--tvs-line); }
+
+/* Eilučių būsenos */
+.tvs-row.is-new { background: var(--tvs-new); }
+.tvs-row.is-hover .tvs-handle { color: var(--tvs-info); }
+.tvs-row.is-dragged { opacity: .2; }
+.tvs-row.is-lifted { box-shadow: 0 16px 36px rgba(30, 40, 70, .22); transform: scale(1.01); z-index: 5; }
+.tvs-placeholder { height: 84px; border: 2.5px dashed #9aa0a6; border-radius: var(--tvs-radius); margin: 4px 12px; background: rgba(17,190,246,.05); }
+
+/* ---- Kursorius ---- */
+.tvs-cursor { position: absolute; width: 44px; height: 56px; pointer-events: none; z-index: 20;
+  filter: drop-shadow(0 3px 4px rgba(0,0,0,.25)); transform-origin: 6px 4px; }
+.tvs-cursor svg { width: 100%; height: 100%; display: block; }
+.tvs-ripple { position: absolute; width: 70px; height: 70px; margin: -35px 0 0 -35px; border-radius: 50%;
+  border: 4px solid var(--tvs-info); opacity: 0; pointer-events: none; z-index: 19; }
+.tvs-ripple.is-shown { opacity: .55; }
+
+/* ---- Svetainės sąrašas (kaip mato lankytojas) ---- */
+.tvs-site { background: #fff; border-radius: 14px; border: 1px solid #dfe3ea; padding: 26px 30px;
+  font-family: var(--tvs-font); box-shadow: 0 24px 60px rgba(30, 40, 70, .10); }
+.tvs-site-h { font-size: 26px; font-weight: 700; color: var(--c-text); margin-bottom: 14px; }
+.tvs-site-doc { display: flex; align-items: center; gap: 16px; padding: 16px 0; border-top: 1px solid var(--tvs-line);
+  font-size: 22px; color: var(--c-text); }
+.tvs-site-doc i { width: 28px; height: 34px; border-radius: 4px; background: #e8ebf0; position: relative; flex-shrink: 0; }
+.tvs-site-doc i::after { content: "PDF"; position: absolute; left: 50%; bottom: 5px; transform: translateX(-50%);
+  font: 700 9px var(--tvs-font); color: #c0392b; font-style: normal; }
+.tvs-fold { position: relative; height: 0; border-top: 3px dashed var(--c-red-solid, #e14b4b); margin: 6px -30px; }
+
+/* ---- Variantai kadrui sutalpinti ---- */
+.tvs-window.is-nosubnav { grid-template-columns: 76px 1fr; }
+.tvs-table.is-compact .tvs-th, .tvs-table.is-compact .tvs-row { grid-template-columns: 44px 36px 1fr 64px 236px; }
+
+/* ---- Pranešimo juosta viršuje (TVS .alert-success) ----
+   Tekstas iš TVS branduolio vertimo, pvz. „:count eil. perrikiuotos sėkmingai“ */
+.tvs-alert { background: var(--tvs-green); color: #fff; padding: 16px 26px; font-size: 23px; line-height: 1.3;
+  border-radius: 2px; box-shadow: 1px 1px 0 rgba(66, 66, 66, .1); overflow: hidden; }
