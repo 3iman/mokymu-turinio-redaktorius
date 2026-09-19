@@ -351,9 +351,9 @@ dlg = (f'<div class="kort dlg" style="left:400px; top:70px; width:880px; padding
        f'<div class="h">{s.t("d_h", "Bendrinti failą")}</div>'
        f'<div class="zyme" style="margin-top:30px">{s.t("d_z", "Bendroji prieiga")}</div>'
        f'<div class="p sel" style="margin-top:14px; padding:18px 22px; border:2px solid #0b57d0; border-radius:12px; color:var(--c-text)">'
-       f'{s.t("d_v", "Bet kas, turintis nuorodą")}</div>'
+       f'{s.t("d_v", "Visi, turintys nuorodą")}</div>'
        f'<div class="p rol" style="margin-top:22px; padding:18px 22px; background:#eaf5ec; border-radius:12px; color:#1b5e20">'
-       f'{s.t("d_r", "Rolė: „Žiūrėtojas“ – to pakanka")}</div></div>')
+       f'{s.t("d_r", "Rolė: „Žiūrintysis“ – to pakanka")}</div></div>')
 body = dlg + (f'<div class="kort" style="left:400px; top:470px; width:880px; padding:24px 30px">'
               f'<div class="p">{s.t("pz", "Neatidarius failo skaitymui, svetainė lentelės duomenų nepasiekia.")}</div></div>')
 add(s, page(s, body))
@@ -361,12 +361,12 @@ s.appear('.dlg', 0.8, 'fadeUpMedium', 0.5)
 s.visible('.sel', 6.0)
 s.visible('.rol', 12.0)
 s.voice(1.0, 'Kad svetainė galėtų perskaityti lentelę, failas turi būti atidarytas skaitymui.')
-s.voice(6.6, 'Bendrojoje prieigoje pasirenkama „Bet kas, turintis nuorodą“.')
-s.voice(12.0, 'Rolės „Žiūrėtojas“ visiškai pakanka – redaguoti svetainei nereikia.')
+s.voice(6.6, 'Bendrojoje prieigoje pasirenkama „Visi, turintys nuorodą“.')
+s.voice(12.0, 'Rolės „Žiūrintysis“ visiškai pakanka – redaguoti svetainei nereikia.')
 s.voice(18.0, 'Tai padarome prijungdami failą.')
-s.ekrane = 'Bendrinimo lango kortelė: „Bendroji prieiga“ → „Bet kas, turintis nuorodą“, žemiau žalia juosta „Rolė: Žiūrėtojas – to pakanka“.'
+s.ekrane = 'Bendrinimo lango kortelė: „Bendroji prieiga“ → „Visi, turintys nuorodą“, žemiau žalia juosta „Rolė: Žiūrintysis – to pakanka“.'
 s.komentaras = ('Publikuota pamoka § „Kaip publikuoti Google Sheets failą“. ⛔ PATIKRINTI lietuviškus užrašus: '
-                '„Bendroji prieiga“, „Bet kas, turintis nuorodą“, „Žiūrėtojas“ — versti iš anglų (Share, General access, Anyone with the link, Viewer).')
+                '„Bendroji prieiga“, „Visi, turintys nuorodą“, „Žiūrintysis“ — versti iš anglų (Share, General access, Anyone with the link, Viewer).')
 
 # ================================================================ 6. Kodas puslapyje
 s = Scene('05-kodas', 'Lentelė puslapyje', 'Puslapyje – viena eilutė, svetainėje – lentelė', 24)

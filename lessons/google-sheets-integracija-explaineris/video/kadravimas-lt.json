@@ -139,8 +139,8 @@
   "title": "Publikavimas",
   "h1": "Kad svetainė galėtų perskaityti duomenis",
   "D": 22,
-  "ekrane": "Bendrinimo lango kortelė: „Bendroji prieiga“ → „Bet kas, turintis nuorodą“, žemiau žalia juosta „Rolė: Žiūrėtojas – to pakanka“.",
-  "komentaras": "Publikuota pamoka § „Kaip publikuoti Google Sheets failą“. ⛔ PATIKRINTI lietuviškus užrašus: „Bendroji prieiga“, „Bet kas, turintis nuorodą“, „Žiūrėtojas“ — versti iš anglų (Share, General access, Anyone with the link, Viewer).",
+  "ekrane": "Bendrinimo lango kortelė: „Bendroji prieiga“ → „Visi, turintys nuorodą“, žemiau žalia juosta „Rolė: Žiūrintysis – to pakanka“.",
+  "komentaras": "Publikuota pamoka § „Kaip publikuoti Google Sheets failą“. ⛔ PATIKRINTI lietuviškus užrašus: „Bendroji prieiga“, „Visi, turintys nuorodą“, „Žiūrintysis“ — versti iš anglų (Share, General access, Anyone with the link, Viewer).",
   "cues": [
    [
     1.0,
@@ -150,12 +150,12 @@
    [
     6.6,
     "balsas",
-    "Bendrojoje prieigoje pasirenkama „Bet kas, turintis nuorodą“."
+    "Bendrojoje prieigoje pasirenkama „Visi, turintys nuorodą“."
    ],
    [
     12.0,
     "balsas",
-    "Rolės „Žiūrėtojas“ visiškai pakanka – redaguoti svetainei nereikia."
+    "Rolės „Žiūrintysis“ visiškai pakanka – redaguoti svetainei nereikia."
    ],
    [
     18.0,

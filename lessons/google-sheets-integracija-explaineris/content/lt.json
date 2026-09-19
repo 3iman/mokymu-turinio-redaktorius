@@ -54,8 +54,8 @@
     "title": "Kad svetainė galėtų perskaityti duomenis",
     "d_h": "Bendrinti failą",
     "d_z": "Bendroji prieiga",
-    "d_v": "Bet kas, turintis nuorodą",
-    "d_r": "Rolė: „Žiūrėtojas“ – to pakanka",
+    "d_v": "Visi, turintys nuorodą",
+    "d_r": "Rolė: „Žiūrintysis“ – to pakanka",
     "pz": "Neatidarius failo skaitymui, svetainė lentelės duomenų nepasiekia."
   },
   "05_kodas": {

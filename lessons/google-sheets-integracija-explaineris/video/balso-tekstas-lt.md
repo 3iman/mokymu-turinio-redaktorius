@@ -41,8 +41,8 @@
 *Antraštė:* Kad svetainė galėtų perskaityti duomenis
 
 - ` 1.0` Kad svetainė galėtų perskaityti lentelę, failas turi būti atidarytas skaitymui.
-- ` 6.6` Bendrojoje prieigoje pasirenkama „Bet kas, turintis nuorodą“.
-- `12.0` Rolės „Žiūrėtojas“ visiškai pakanka – redaguoti svetainei nereikia.
+- ` 6.6` Bendrojoje prieigoje pasirenkama „Visi, turintys nuorodą“.
+- `12.0` Rolės „Žiūrintysis“ visiškai pakanka – redaguoti svetainei nereikia.
 - `18.0` Tai padarome prijungdami failą.
 
 ## 06. Lentelė puslapyje – 24 s

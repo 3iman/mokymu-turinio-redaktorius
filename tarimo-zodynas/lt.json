@@ -1,5 +1,5 @@
 {
-  "_apie": "Kirčių ir tarimo žodynas balsui. Raktas — žodis, kaip jis rašomas scenarijuje; reikšmė — kaip jį siųsti ElevenLabs. v3 modelis priima IPA tarp pasvirųjų brūkšnių (/ˈpɛr.../). Kirčio ženklų (ú, à) ir PLS žodyno v3 nepaiso. Taikoma automatiškai generate-voice.js. Pildoma, kai Eimantas pasako, kad kirtis ne ten.",
+  "_apie": "Kirčių ir tarimo žodynas balsui. Raktas — žodis, kaip jis rašomas scenarijuje; reikšmė — kaip jį siųsti ElevenLabs. v3 modelis priima IPA tarp pasvirųjų brūkšnių (/ˈpɛr.../). ⛔ Kirčio ženklų (à, ė́) ir PLS žodyno v3 NEPAISO — todėl kirtį taisome IPA, ne ženklu tekste. Taikoma automatiškai generate-voice.js. Pildoma, kai Eimantas pasako, kad kirtis ne ten (2026-09-19: spustelėjus, paruošti, spalva).",
   "zodziai": {
     "Perrikiuoti": "/ˈpɛr.rikʲuotʲi/",
     "perrikiuoti": "/ˈpɛr.rikʲuotʲi/",
@@ -7,7 +7,17 @@
     "H3": "haš trys",
     "TH": "tėė haš",
     "ignore": "/ɪɡˈnɔːr/",
-    "Gmail": "Džy meil"
+    "Gmail": "Džy meil",
+    "spustelėjus": "/spustɛˈlʲeːjus/",
+    "Spustelėjus": "/spustɛˈlʲeːjus/",
+    "spustelėjate": "/spustɛˈlʲeːjatɛ/",
+    "Spustelėjate": "/spustɛˈlʲeːjatɛ/",
+    "spustelėję": "/spustɛˈlʲeːjeː/",
+    "Spustelėję": "/spustɛˈlʲeːjeː/",
+    "Paruošti": "/paˈruoʃtʲi/",
+    "paruošti": "/paˈruoʃtʲi/",
+    "spalva": "/spalˈva/",
+    "Spalva": "/spalˈva/"
   },
   "_pasirinkta": {
     "Perrikiuoti": "Eimantas 2026-09-17: IPA su skiemens riba, trumpa „e“ (per-rikiuoti). Iš pradžių rinktas variantas su ilga „e“, pataisyta tą pačią dieną.",

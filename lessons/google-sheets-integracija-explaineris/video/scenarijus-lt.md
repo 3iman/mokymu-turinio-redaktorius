@@ -16,7 +16,7 @@
 | 2 Kaip tai veikia | 26 sek. | 01-kaip-veikia | Duomenys gyvena „Google Sheets“ faile. Failas prijungiamas prie turinio valdymo sistemos – ten tam yra modulis „Google Sheets Lentelės“. O svetainės puslapis lentelę tiesiog parodo lankytojui. Prijungtam failui sistema suteikia savo numerį, o kiekvienas lapas turi savo gID. Pagal juos puslapis ir žino, kurią lentelę imti. |
 | 3 Failo ir lapo numeriai | 24 sek. | 02-url | Abu numerius matote to paties failo adrese. Failo numeris rodo patį failą – visoms jo lentelėms jis vienodas. O gID rodo konkretų lapą. Jis nesikeičia net tada, kai lapą pervadinate. Pirmasis lapas visada turi gID nulis – tai numatytasis lapas. |
 | 4 Kas ką daro | 22 sek. | 03-kas-ka-daro | Prijungimą, publikavimą ir lentelės įdėjimą į puslapį padarome mes. Jums lieka svarbiausia dalis: duomenys. Jūs pildote lenteles, dalijatės prieiga su kolegomis ir parašote mums tada, kai kas nors nepavyksta. Šablono kopijuoti patiems nebereikia. |
-| 5 Publikavimas | 22 sek. | 04-publikavimas | Kad svetainė galėtų perskaityti lentelę, failas turi būti atidarytas skaitymui. Bendrojoje prieigoje pasirenkama „Bet kas, turintis nuorodą“. Rolės „Žiūrėtojas“ visiškai pakanka – redaguoti svetainei nereikia. Tai padarome prijungdami failą. |
+| 5 Publikavimas | 22 sek. | 04-publikavimas | Kad svetainė galėtų perskaityti lentelę, failas turi būti atidarytas skaitymui. Bendrojoje prieigoje pasirenkama „Visi, turintys nuorodą“. Rolės „Žiūrintysis“ visiškai pakanka – redaguoti svetainei nereikia. Tai padarome prijungdami failą. |
 | 6 Lentelė puslapyje | 24 sek. | 05-kodas | Puslapyje lentelė įrašoma viena eilute. Pirmas skaičius – failo numeris sistemoje, antras – lapo gID. Išsaugojus puslapį, lankytojas mato jau sutvarkytą lentelę. Jums šios eilutės rašyti nereikia – ją įdedame prijungdami lentelę. Vėliau keičiasi tik duomenys faile. |
 | 7 Modulis sistemoje | 22 sek. | 06-tvs-modulis | Turinio valdymo sistemoje prijungti failai turi savo sąrašą. Kiekvienas atpažįstamas pagal pavadinimą, kurį suteikiame patys. Numerį sistema priskiria pati – būtent jį puslapis naudoja lentelei rasti. O žyma „Enabled“ rodo, ar failas veikia. Išjungto failo lentelės nematyti. |
 | 8 Kaip greitai atsinaujina | 20 sek. | 07-atsinaujinimas | Pataisius langelį, svetainė atsinaujina pati. Dažniausiai tai trunka kelias sekundes. Jei pakeitimo nematyti, tikrinkite du dalykus. Ar redaguojate tą pačią prijungtą lentelę. Ir ar tikrai išėjote iš langelio. |
@@ -97,16 +97,16 @@
 ### KADRAS 5: Publikavimas (22 sek.)
 **Failas:** `04-publikavimas.png`
 **Antraštė kadre:** Kad svetainė galėtų perskaityti duomenis
-**Ekrane:** Bendrinimo lango kortelė: „Bendroji prieiga“ → „Bet kas, turintis nuorodą“, žemiau žalia juosta „Rolė: Žiūrėtojas – to pakanka“.
-**Komentaras:** Publikuota pamoka § „Kaip publikuoti Google Sheets failą“. ⛔ PATIKRINTI lietuviškus užrašus: „Bendroji prieiga“, „Bet kas, turintis nuorodą“, „Žiūrėtojas“ — versti iš anglų (Share, General access, Anyone with the link, Viewer).
+**Ekrane:** Bendrinimo lango kortelė: „Bendroji prieiga“ → „Visi, turintys nuorodą“, žemiau žalia juosta „Rolė: Žiūrintysis – to pakanka“.
+**Komentaras:** Publikuota pamoka § „Kaip publikuoti Google Sheets failą“. ⛔ PATIKRINTI lietuviškus užrašus: „Bendroji prieiga“, „Visi, turintys nuorodą“, „Žiūrintysis“ — versti iš anglų (Share, General access, Anyone with the link, Viewer).
 
 **Laiko žymos:**
 
 | Laikas | Kas | Tekstas arba garsas |
 |---|---|---|
 | 1.0 | balsas | Kad svetainė galėtų perskaityti lentelę, failas turi būti atidarytas skaitymui. |
-| 6.6 | balsas | Bendrojoje prieigoje pasirenkama „Bet kas, turintis nuorodą“. |
-| 12.0 | balsas | Rolės „Žiūrėtojas“ visiškai pakanka – redaguoti svetainei nereikia. |
+| 6.6 | balsas | Bendrojoje prieigoje pasirenkama „Visi, turintys nuorodą“. |
+| 12.0 | balsas | Rolės „Žiūrintysis“ visiškai pakanka – redaguoti svetainei nereikia. |
 | 18.0 | balsas | Tai padarome prijungdami failą. |
 
 ### KADRAS 6: Lentelė puslapyje (24 sek.)

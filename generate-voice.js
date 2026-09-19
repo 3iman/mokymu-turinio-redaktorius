@@ -132,6 +132,17 @@ function readScenario() {
       r.text = r.text.replace(new RegExp(`(?<![\\p{L}])${escRe(w)}(?![\\p{L}])`, 'gu'), zodynas[w]);
     }
   }
+  // ⛔ v3 kirčio ženklų nepaiso (tarimo-zodynas/lt.json § _apie), todėl jei jų liko tekste —
+  // tai tylus nieko nekeičiantis pataisymas. Geriau garsiai pasakyti ir nukreipti į žodyną.
+  const suKirciu = voiceRows.filter(r => /[\u0300\u0301\u0303àáãèéẽìíĩòóõùúũ]/.test(r.tekstas_scenarijuje));
+  if (suKirciu.length) {
+    console.warn(`  ⛔ ${suKirciu.length} sakiniuose yra kirčio ženklų — v3 jų nepaiso.`);
+    console.warn('     Kirtį taisyk tarimo-zodynas/' + lang + '.json (IPA), ne tekste:');
+    for (const r of suKirciu.slice(0, 3)) console.warn('       ' + r.text.slice(0, 70));
+  }
+  const pritaikyta = voiceRows.filter(r => r.text !== r.tekstas_scenarijuje).length;
+  if (pritaikyta) console.log(`  Tarimo žodynas: pritaikytas ${pritaikyta} sakiniuose`);
+
   rows.length = 0;
   rows.push(...voiceRows);
   if (!rows.length) {
