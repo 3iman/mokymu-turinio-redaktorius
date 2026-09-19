@@ -147,6 +147,53 @@ parodyti visą ekraną (kur esame) → priartėti prie vietos (ką spausti) → 
 - Kai lyginami du paviršiai (lentelė ↔ svetainė) — ryški aktyvi eilutė **ir jos atitikmuo**, kiti pritemsta iki ~30 %; pabaigoje fokusas nuimamas ir matosi visa sandara.
 - Įgyvendinimas Sheets pamokoje: `spotlight()` ir `dim_states()` faile `lessons/google-sheets-pradziamokslis/build_scenes.py`.
 
+### Tyla kadre: ne ilgiau kaip 3 s (2026-09-19)
+
+Be balso tylos nesimato — su balsu ji virsta duobe. Todėl kadro pabaigoje ar viduryje **tarpas tarp
+balso sakinių neturi viršyti ~3 s**; 2–2,5 s uodega kadro gale yra oras, 4 s — klaida.
+
+Matuojama iš `video/kadravimas-{lang}.json`, sakinio trukmė = simbolių skaičius / CPS (16,0):
+
+```bash
+python3 - <<'EOF'
+import json; CPS=16.0
+sc=json.load(open('video/kadravimas-lt.json',encoding='utf-8'))
+D=0; kalba=0
+for s in sc:
+    D+=s['D']; pab=0.0
+    for t,k,txt in s.get('cues',[]):
+        if k!='balsas': continue
+        il=len(txt)/CPS; kalba+=il
+        if t-pab>3: print('tarpas', s['file'], round(t-pab,1))
+        pab=t+il
+    if s['D']-pab>3: print('uodega', s['file'], round(s['D']-pab,1))
+print('kalba %.0f%%' % (100*kalba/D))
+EOF
+```
+
+**Taikinys — 70–80 % kalbos.** Mažiau reiškia, kad kadrai per ilgi arba trūksta sakinio; daugiau —
+kad žiūrovui nelieka laiko pamatyti, kas įvyko ekrane.
+
+Du taisymo būdai, ta eilės tvarka:
+1. **Pridėti sakinį**, jei kadre dar kas nors vyksta (dažniausiai taip — animacija tęsiasi).
+2. **Trumpinti `D`**, jei po paskutinio sakinio nieko nebejuda. ⛔ Pirma patikrinti, koks vėliausias
+   kadro įvykis: `D` trumpinimas žemiau jo nukerta animaciją.
+
+Google Sheets pradžiamokslyje taip rasta 10 tarpų (blogiausias 4,6 s); ištaisius — 70 % → **74 %** kalbos.
+
+### Skaitomumas: kadras žiūrimas ir telefone (2026-09-19)
+
+Kadras piešiamas 1920 px pločio, o žiūrimas dažnai 375 px ekrane — **penkis kartus mažesniame**.
+18 px lentelės tekstas tokiame ekrane yra ~3,5 px. Priartinimas 1,25–1,35 to neišgelbsti.
+
+- **Imituojamos TVS tekstas — ne mažesnis kaip 20 px** (lentelės langeliai, lapų juosta, meniu).
+  Bendrame `tokens/sheets.css` palikti tikroviškus dydžius, o pamokoje persidengti per `page()`
+  (pavyzdys — `lessons/google-sheets-pradziamokslis/build_scenes.py`, § skaitomumas).
+- **Priartinimas privalomas ten, kur veiksmas vyksta viename langelyje** (rašymas, tempimas,
+  formatavimas): `s.zoom(origin, t_in, t_out, 1.25–1.35)`.
+- **Priartinimas draudžiamas ten, kur rodoma sandara** — „keturios lango vietos“, lentelė ↔ svetainė.
+  Ten fokusas daromas pritemdymu (§ Fokusas), ne mastelio keitimu.
+
 ### Sustojęs kadras (§14)
 PNG rodo visą žingsnį vienu vaizdu: kursorius ant tikslo, paryškintas elementas, instrukcija ir
 skaitiklis. Jei iš PNG neaišku, ką spausti — žingsnis nepavyko.

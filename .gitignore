@@ -19,3 +19,12 @@ lessons/*/video/outro-galva-*.mp4
 lessons/*/output/
 lessons/*/video/*.mp4
 lessons/*/video/intro.png
+
+# YouTube įkėlimas: OAuth klientai ir token'ai — niekada į git
+.secrets/
+*.token.json
+.venv/
+
+# Subtitrai ir laiko juosta — gaminys, atkuriami iš scenarijaus ir balso
+lessons/*/video/timeline-*.json
+lessons/*/video/subtitles/

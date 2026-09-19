@@ -51,6 +51,10 @@ const START_IN_FRAME = 0.6;   // balsas prasideda, kai kadro antraštė jau pasi
 const TAIL_MARGIN = 0.5;      // iki kadro pabaigos turi likti bent tiek
 const MAX_TAIL = 0.45;        // natūrali uodega po paskutinės raidės
 const SEP = '\n\n';
+// ⛔ 2026-09-19: vienos užklausos riba. 4 900 simbolių užklausa grąžino PILNAS laiko žymas,
+// bet audio baigėsi ties ~67 sakiniu — paskutiniai 19 failų buvo tušti (0,01 s), o filmukas
+// nuo 18 kadro liko be balso. Todėl tekstas dalijamas į dalis ir siunčiamas per kelias užklausas.
+const DALIES_RIBA = 1500;
 const ATMETAMAS = { lt: 'Tiek šiam kartui.', en: 'That is all for now.', de: 'Das war es für heute.', pl: 'To wszystko na dziś.' };
 
 const args = process.argv.slice(2);
@@ -145,31 +149,81 @@ function hashOf(rows, seed, dictId) {
 }
 
 // ---- Vienas generavimas: visa pastraipa → sakiniai pagal laiko žymas ----
+function dalys(rows) {
+  const out = [];
+  let dabar = [], ilgis = 0;
+  for (const r of rows) {
+    const pridetu = r.text.length + SEP.length;
+    if (dabar.length && ilgis + pridetu > DALIES_RIBA) { out.push(dabar); dabar = []; ilgis = 0; }
+    dabar.push(r); ilgis += pridetu;
+  }
+  if (dabar.length) out.push(dabar);
+  return out;
+}
+
+
 async function generate(rows, seed, dir, key, dictId) {
+  fs.rmSync(dir, { recursive: true, force: true });
+  fs.mkdirSync(dir, { recursive: true });
+  const visos = dalys(rows);
+  console.log(`  Dalys: ${visos.length} (riba ${DALIES_RIBA} simb.)`);
+  const items = [];
+  let overflow = false, characters = 0;
+  for (let d = 0; d < visos.length; d++) {
+    const g = await generuotiDali(visos[d], seed, dir, key, dictId, d + 1, visos.length);
+    items.push(...g.items);
+    overflow = overflow || g.overflow;
+    characters += g.characters;
+  }
+  const tusti = items.filter(x => x.duration < 0.25 && x.text.length > 10);
+  if (tusti.length) {
+    console.error(`⛔ ${tusti.length} balso failų tušti (< 0,25 s): ${tusti.slice(0, 5).map(x => x.file).join(', ')}…`);
+    console.error('   Taip nutinka, kai ElevenLabs grąžina nukirptą audio su pilnomis laiko žymomis. Sumažink DALIES_RIBA ir bandyk dar kartą.');
+    process.exit(1);
+  }
+  return { items, overflow, characters };
+}
+
+
+async function generuotiDali(rows, seed, dir, key, dictId, nr, viso) {
   const tail = ATMETAMAS[lang] || ATMETAMAS.en;
   const text = rows.map(r => r.text).join(SEP) + SEP + tail;
   const body = { text, model_id: MODEL, language_code: lang, voice_settings: { speed: SPEED } };
   if (seed !== null && seed !== undefined) body.seed = seed;
   if (dictId) body.pronunciation_dictionary_locators = [{ pronunciation_dictionary_id: dictId }];
-  const res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${VOICE_ID}/with-timestamps`, {
-    method: 'POST',
-    headers: { 'xi-api-key': key, 'Content-Type': 'application/json' },
-    body: JSON.stringify(body),
-  });
-  if (!res.ok) {
-    console.error(`⛔ ElevenLabs ${res.status} (modelis ${MODEL}): ${(await res.text()).slice(0, 400)}`);
-    process.exit(1);
+  // ElevenLabs piko metu grąžina 429 „system_busy“ — ne mūsų klaida, tad laukiame ir bandome dar kartą
+  const PAUZES = [20, 45, 90, 180, 300];
+  let res;
+  for (let bandymas = 0; ; bandymas++) {
+    res = await fetch(`https://api.elevenlabs.io/v1/text-to-speech/${VOICE_ID}/with-timestamps`, {
+      method: 'POST',
+      headers: { 'xi-api-key': key, 'Content-Type': 'application/json' },
+      body: JSON.stringify(body),
+    });
+    if (res.ok) break;
+    // 2026-09-19: piko metu ElevenLabs tą pačią užklausą kartais atmeta 429 „system_busy“,
+    // kartais 400 „Invalid argument received“ — abu laikini, po kelių minučių ta pati
+    // užklausa praeina. Tikra mūsų klaida turėtų turėti konkretesnę žinutę.
+    const kunas = res.ok ? '' : (await res.clone().text());
+    const laikina = res.status === 429 || res.status >= 500 ||
+                    (res.status === 400 && /Invalid argument received/.test(kunas));
+    if (!laikina || bandymas >= PAUZES.length) {
+      console.error(`⛔ ElevenLabs ${res.status} (modelis ${MODEL}): ${(await res.text()).slice(0, 400)}`);
+      process.exit(1);
+    }
+    const s = PAUZES[bandymas];
+    console.log(`  ⏳ ElevenLabs ${res.status} — laukiu ${s} s ir bandau dar kartą (${bandymas + 1}/${PAUZES.length})`);
+    await new Promise(r => setTimeout(r, s * 1000));
   }
   const data = await res.json();
+  console.log(`  ── dalis ${nr}/${viso}: ${text.length} simb., ${rows.length} sakiniai`);
   const al = data.alignment;
   if (!al || al.characters.join('') !== text) {
     console.error('⛔ Laiko žymos nesutampa su tekstu — sakinių ribų nustatyti negalima.');
     process.exit(1);
   }
 
-  fs.rmSync(dir, { recursive: true, force: true });
-  fs.mkdirSync(dir, { recursive: true });
-  const full = path.join(dir, '_visa-pastraipa.mp3');
+  const full = path.join(dir, `_dalis-${nr}.mp3`);
   fs.writeFileSync(full, Buffer.from(data.audio_base64, 'base64'));
 
   const S = al.character_start_times_seconds;

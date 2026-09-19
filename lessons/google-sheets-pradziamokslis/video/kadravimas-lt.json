@@ -3,7 +3,7 @@
   "file": "00-kas-yra-sheets",
   "title": "Kas yra Google Sheets",
   "h1": "Svetainės lentelės gyvena Google Sheets failuose",
-  "D": 17,
+  "D": 18,
   "ekrane": "Google Sheets langas su mokytojų sąrašu. Viskas pritemsta, šviesi lieka lapų juosta, lapai vienas po kito sumirksi, užrašas „Kiekvienas lapas – atskira lentelė svetainėje“. Vėliau jį pakeičia „Failų gali būti keli – kiekvienas tvarko savo“.",
   "komentaras": "Eimantas 2026-09-17: mokymuose komunikuojame, kad atsakomybes galima ir reikia pasidalinti — tam naudojami keli failai. Todėl ne „vienas failas – visos lentelės“.",
   "cues": [
@@ -13,12 +13,12 @@
     "Google Sheets – tai lentelių failas, kuris atsidaro tiesiog naršyklėje."
    ],
    [
-    5.8,
+    6.4,
     "balsas",
     "Kiekvienas lapas apačioje yra atskira lentelė jūsų svetainėje."
    ],
    [
-    10.8,
+    11.6,
     "balsas",
     "Failų gali būti keli, kad kiekvienas atsakingas žmogus tvarkytų savo lenteles."
    ]
@@ -28,7 +28,7 @@
   "file": "01-prieiga",
   "title": "Pirmiausia – prieiga",
   "h1": "Prieigą suteikiame mes – toliau dalijatės patys",
-  "D": 31,
+  "D": 32,
   "ekrane": "Kairėje Google langas „Jums reikia prieigos“ su mygtuku „Prašyti prieigos“ — kursorius jį paspaudžia. Dešinėje atkeliauja laiškas „Cleverphant suteikė jums prieigą prie skaičiuoklės“. Tada matomas pats failas: viršuje dešinėje spaudžiama „Bendrinti“, atsiveria langas „Bendrinti „Miesto gimnazija – TABLE““, į lauką „Pridėti žmonių ir grupių“ įrašoma „mokytoja@gmail.com“, teisės „Redaktorius“, spaudžiama „Siųsti“.",
   "komentaras": "Eiga — Eimantas 2026-09-17: integraciją padaro Cleverphant, mokytojai tik prašo prieigos. Bendrinimo dalis — Eimantas 2026-09-19: rodyti visą eigą, kaip realiai perduodama prieiga (mygtukas „Bendrinti“, Gmail adresas). ⛔ PATIKRINTI lietuviškus Google užrašus: „Jums reikia prieigos“, „Prašyti prieigos“, „Pridėti žmonių ir grupių“, „Redaktorius“, „Siųsti“ — visi versti iš anglų, tikro lietuviško lango nemačiau.",
   "cues": [
@@ -38,7 +38,7 @@
     "Lenteles su svetaine mes jau sujungėme, jums reikia tik paprašyti prieigos."
    ],
    [
-    6.0,
+    6.8,
     "balsas",
     "Atidarote nuorodą ir, jei reikia, spaudžiate Prašyti prieigos."
    ],
@@ -53,12 +53,12 @@
     "patvirtinimas"
    ],
    [
-    10.1,
+    12,
     "balsas",
     "Kai prieigą suteiksime, gausite laišką."
    ],
    [
-    14.6,
+    15.2,
     "balsas",
     "Prieiga dalijamasi ir tarpusavyje: viršuje dešinėje spaudžiate Bendrinti."
    ],
@@ -73,7 +73,7 @@
     "rasymas"
    ],
    [
-    20.6,
+    21.3,
     "balsas",
     "Įrašote kolegos Gmail adresą ir spaudžiate Siųsti."
    ],
@@ -83,7 +83,7 @@
     "spustelejimas"
    ],
    [
-    25.2,
+    26.2,
     "balsas",
     "Nuo tada lentelę tvarkote dviese – atsakomybę galima pasidalyti."
    ]
@@ -93,7 +93,7 @@
   "file": "02-paskyra",
   "title": "Kokia paskyra geriausia",
   "h1": "Rekomenduojame Gmail paskyrą",
-  "D": 17,
+  "D": 20,
   "ekrane": "Mėlyna kortelė „Gmail paskyra – Rekomenduojama“: failą rasite savo „Google“ diske, veikia visos funkcijos. Geltona „Kitas el. pašto adresas“: kaskart jungiatės per laiško nuorodą ir PIN kodą, failo diske nerasite. Apačioje žalia juosta apie „Google Workspace“.",
   "komentaras": "Apribojimai — Eimantas 2026-09-17. Iš sąrašo paliktos tik mokytojai aktualios (PIN, failo nėra diske, Workspace išimtis); Apps Script, priedai, Gemini ir pan. nevardijami.",
   "cues": [
@@ -103,12 +103,12 @@
     "Geriausia prie failo jungtis su Gmail paskyra – failą rasite savo Google diske."
    ],
    [
-    6.4,
+    7.6,
     "balsas",
     "Su kitu el. pašto adresu irgi veiks, tik kaskart jungsitės per laiške gautą nuorodą ir PIN kodą."
    ],
    [
-    12.9,
+    15.3,
     "balsas",
     "Apribojimų nėra, jei mokyklos paštas veikia per Google."
    ]
@@ -118,7 +118,7 @@
   "file": "03-langas",
   "title": "Pažinkime langą",
   "h1": "Keturios vietos, kurių prireiks",
-  "D": 16,
+  "D": 17,
   "ekrane": "Visas Google Sheets langas. Viskas pritemsta, šviesa paeiliui slenka per keturias vietas: failo pavadinimas, meniu, langeliai, lapų juosta. Vienu metu matomas tik vienas užrašas.",
   "komentaras": "",
   "cues": [
@@ -128,12 +128,17 @@
     "Viršuje – failo pavadinimas, po juo – meniu."
    ],
    [
-    7.0,
+    5.3,
+    "balsas",
+    "Meniu prireiks retai."
+   ],
+   [
+    7.9,
     "balsas",
     "Per vidurį – langeliai, kuriuose rašote."
    ],
    [
-    10.6,
+    11.3,
     "balsas",
     "O apačioje – lapų juosta: čia persijungiate tarp lentelių."
    ]
@@ -143,7 +148,7 @@
   "file": "04-lapai",
   "title": "Vaikščiojimas per lapus",
   "h1": "Spaudžiate lapo pavadinimą apačioje",
-  "D": 15,
+  "D": 17,
   "ekrane": "Kamera priartėja prie lapų juostos. Kursorius paspaudžia „Darbuotojai“ — lapas tampa aktyvus, lentelė pasikeičia į darbuotojų sąrašą. Tada paspaudžiama rodyklė ›, ir lapų juosta paslenka.",
   "komentaras": "",
   "cues": [
@@ -166,6 +171,11 @@
     10.0,
     "garsas",
     "spustelejimas"
+   ],
+   [
+    12.4,
+    "balsas",
+    "Atidarytas lapas apačioje lieka pažymėtas."
    ]
   ]
  },
@@ -173,7 +183,7 @@
   "file": "05-visi-lapai",
   "title": "Visų lapų sąrašas",
   "h1": "Visi lapai – viename sąraše",
-  "D": 13,
+  "D": 14,
   "ekrane": "Kursorius paspaudžia mygtuką su trimis brūkšneliais — iškyla visų lapų sąrašas, dabartinis lapas pažymėtas. Pasirenkamas „Dienos ritmas“, sąrašas užsidaro, atsidaro dienos ritmo lentelė.",
   "komentaras": "",
   "cues": [
@@ -196,6 +206,11 @@
     7.4,
     "garsas",
     "spustelejimas"
+   ],
+   [
+    10.1,
+    "balsas",
+    "Sąraše lapai išdėstyti ta pačia tvarka."
    ]
   ]
  },
@@ -203,7 +218,7 @@
   "file": "06-lapo-meniu",
   "title": "Lapo meniu",
   "h1": "Rodyklė prie pavadinimo atveria lapo veiksmus",
-  "D": 15,
+  "D": 17,
   "ekrane": "Paspaudžiama rodyklė ▾ prie „Mokytojų sąrašas“ — atsidaro tikras lapo meniu: Ištrinti, Dubliuoti, Pervardyti, Pakeisti spalvą, Slėpti lapą, Peržiūrėti komentarus, Perkelti į dešinę, Perkelti į kairę. Žalias taškas prie „Pervardyti“, „Pakeisti spalvą“ ir „Slėpti lapą“, oranžinis — prie „Ištrinti“.",
   "komentaras": "Meniu punktai nusiskaityti iš tikro redaktoriaus (hl=lt). Prisijungusiam vartotojui meniu gali būti ilgesnis (pvz. „Kopijuoti į“). Paslėptas lapas svetainėje veikia toliau — Eimantas 2026-09-17.",
   "cues": [
@@ -218,12 +233,12 @@
     "spustelejimas"
    ],
    [
-    6.3,
+    6.4,
     "balsas",
     "Pervardyti, pakeisti spalvą ar paslėpti lapą galite drąsiai."
    ],
    [
-    10.4,
+    11.9,
     "balsas",
     "Ištrinti taip pat galite – apie tai dar pakalbėsime."
    ]
@@ -240,7 +255,7 @@
    [
     1.0,
     "balsas",
-    "Lapą pervardyti paprasčiausia dukart spustelėjus jo pavadinimą."
+    "Lapą pervardyti paprasčiausia dukart spustelė́jus jo pavadinimą."
    ],
    [
     3.0,
@@ -258,7 +273,7 @@
     "rasymas"
    ],
    [
-    5.6,
+    5.9,
     "balsas",
     "Įrašote naują pavadinimą ir spaudžiate Enter."
    ],
@@ -268,7 +283,7 @@
     "spustelejimas"
    ],
    [
-    9.4,
+    9.7,
     "balsas",
     "Lentelė svetainėje dėl to nesikeičia."
    ]
@@ -278,7 +293,7 @@
   "file": "08-atsargiai",
   "title": "Pirmas lapas ir trynimas",
   "h1": "Pirmas lapas lieka pirmas, nereikalingus galite ištrinti",
-  "D": 33,
+  "D": 38,
   "ekrane": "Dvi kortelės: „Pirmas lapas lieka pirmas“ su užrakintu pirmu lapu ir žaliais pavyzdžiais „Pervadinti galite: Mokyklos taryba, Lopšelio-darželio taryba“, „Nereikalingą lapą galite ištrinti“ su mygtuku „Ištrinti“, užrašu „Kartu dingsta ir lentelė svetainėje“ ir gelsva pastaba „Tik neskubėkite – „nepildysime“ dažnai galioja iki pirmo audito“. Apačioje žalia juosta „Suklydote? Ctrl + Z, „Mac“ kompiuteryje ⌘ + Z“.",
   "komentaras": "Eimantas 2026-09-17: mokyklos klausė, ar gali trinti nereikalingus lapus — taip, jei tikrai nereikalingi; neskubėti su darbo užmokesčio lentele („galimai iki pirmo audito nepildysite :)“). Ctrl+Z atšaukia ištrintą lapą, kol neuždarytas langas ir neperkrautas puslapis; po kelių veiksmų gali tekti spausti kelis kartus (Eimantas 2026-09-17). Versijų istorijos mokytojams nerodome — atkūrimą daro Cleverphant. Pirmo lapo taisyklė — iš ankstesnės pamokos (gID 0).",
   "cues": [
@@ -293,27 +308,27 @@
     "Pirmas lapas visada lieka pirmas, nes svetainė jį atpažįsta pagal vietą."
    ],
    [
-    8.8,
+    9.7,
     "balsas",
     "Pervadinti jį galite – pavyzdžiui, Mokyklos taryba ar Lopšelio-darželio taryba."
    ],
    [
-    14.2,
+    16.3,
     "balsas",
     "Tikrai nereikalingą lapą galite ištrinti – kartu dingsta ir lentelė svetainėje."
    ],
    [
-    19.4,
+    22.2,
     "balsas",
     "Tik neskubėkite: „nepildysime“ dažnai galioja tik iki pirmo audito."
    ],
    [
-    25.2,
+    27.4,
     "balsas",
     "O jei ištrynėte netyčia, spaudžiate Control ir Z."
    ],
    [
-    28.8,
+    31.9,
     "balsas",
     "O jei atšaukti nebepavyksta, padės versijų istorija."
    ]
@@ -323,7 +338,7 @@
   "file": "09-zymos",
   "title": "Pirmo stulpelio žymos",
   "h1": "A stulpelis pasako, kaip eilutė atrodys svetainėje",
-  "D": 18,
+  "D": 20,
   "ekrane": "Kairėje penkios lentelės eilutės su žymomis H2, H3, TH, be žymos ir ignore; dešinėje — kaip tai atrodo svetainėje. Balso metu paeiliui ryški tik viena eilutė ir jos atitikmuo svetainėje, kiti pritemsta; pabaigoje vėl matosi viskas.",
   "komentaras": "Žymos ir jų reikšmės — iš šablono lapo „Formatavimas“. ⛔ Balsui reikės tarimo žodyno: „H2“, „H3“, „TH“, „ignore“.",
   "cues": [
@@ -333,17 +348,17 @@
     "Pirmo stulpelio žyma pasako, kas yra eilutė."
    ],
    [
-    4.6,
+    5,
     "balsas",
     "H2 – pavadinimas, H3 – skyrius, TH – lentelės stulpelių antraštės."
    ],
    [
-    9.6,
+    12.2,
     "balsas",
     "Eilutė be žymos – įprasta lentelės eilutė,"
    ],
    [
-    12.9,
+    15.8,
     "balsas",
     "o su žyma ignore svetainėje nerodoma."
    ]
@@ -353,14 +368,14 @@
   "file": "10-rasymas",
   "title": "Rašymas langelyje",
   "h1": "Spustelėjate langelį, rašote ir spaudžiate Enter",
-  "D": 12,
+  "D": 14,
   "ekrane": "Priartinama prie tuščio langelio C9. Spustelėjus jis apvedamas mėlynai, raidė po raidės įrašoma „Antanas Baranauskas“. Enter — žymeklis nusileidžia į C10, viršuje trumpam „Išsaugoma…“.",
   "komentaras": "Kada pakeitimas atsiranda svetainėje — kita scena (Eimantas 2026-09-17: akimirksniu).",
   "cues": [
    [
     1.0,
     "balsas",
-    "Spustelėjate langelį ir rašote."
+    "Spustelė́jate langelį ir rašote."
    ],
    [
     2.4,
@@ -375,12 +390,17 @@
    [
     4.5,
     "balsas",
-    "Baigę spaudžiate Enter – pakeitimas išsaugomas pats."
+    "Baigę spaudžiate Enter – pakeitimas išsisaugo pats."
    ],
    [
     7.4,
     "garsas",
     "spustelejimas"
+   ],
+   [
+    9.3,
+    "balsas",
+    "Taip užpildote visą lentelę – langelis po langelio."
    ]
   ]
  },
@@ -388,7 +408,7 @@
   "file": "11-akimirksniu",
   "title": "Svetainėje – akimirksniu",
   "h1": "Ką matote lentelėje, tą mato ir lankytojas",
-  "D": 20,
+  "D": 18,
   "ekrane": "Kairėje lentelė, dešinėje svetainė. 1) „Kazys Grinius“ pareigos pakeičiamos į „Direktorius“, Enter — tą pačią akimirką pasikeičia ir svetainėje (sumirksi). 2) Abiejose pusėse apvedama tuščia eilutė, kitos pritemsta. 3) Lentelėje tuščiame trečiame stulpelyje įrašoma antraštė „Kabinetas“ ir reikšmės „12“, „14“ — svetainėje stulpelis „Kabinetas“ išsiplečia ir atsiranda; apvedamas abiejose pusėse.",
   "komentaras": "Eimantas 2026-09-17: pakeitimas atsiranda akimirksniu; tuščia eilutė rodoma tuščia; naujas stulpelis su turiniu nusipiešia svetainėje. Perstatyta, kad būtų matyti, kaip stulpelis atsiranda, ne tik apvestas.",
   "cues": [
@@ -418,14 +438,9 @@
     "Ką matote lentelėje, tą mato ir lankytojas:"
    ],
    [
-    8.8,
+    9.5,
     "balsas",
     "tuščia eilutė svetainėje irgi tuščia,"
-   ],
-   [
-    12.0,
-    "balsas",
-    "o užpildytas naujas stulpelis atsiranda ir svetainėje."
    ],
    [
     12.2,
@@ -436,6 +451,11 @@
     12.6,
     "garsas",
     "rasymas"
+   ],
+   [
+    12.7,
+    "balsas",
+    "o užpildytas naujas stulpelis atsiranda ir svetainėje."
    ],
    [
     13.8,
@@ -463,7 +483,7 @@
   "file": "12-viena-eilute",
   "title": "Vienas langelis – viena eilutė",
   "h1": "Langelyje rašote vieną eilutę",
-  "D": 16,
+  "D": 20,
   "ekrane": "Kairėje lentelė, kurioje Marijos Pečkauskaitės pareigos parašytos dviem eilutėmis viename langelyje (apvesta raudonai). Dešinėje svetainė rodo tik pirmąją eilutę, užrašas „Klasės vadovė dingo“. Apačioje žalia juosta su teisingu užrašymu per kablelį ir antraštė „Google Sheets – duomenų bazė, ne laisvas redaktorius“.",
   "komentaras": "Eimantas 2026-09-17: lentelės lūžta, kai langelyje naudojamas eilutės perkėlimas — API grąžina tik vieną eilutę. Klavišų kombinacijos sąmoningai nerodome, kad jos neišmoktų.",
   "cues": [
@@ -473,17 +493,17 @@
     "Langelyje visada rašote vieną eilutę."
    ],
    [
-    3.8,
+    4.6,
     "balsas",
     "Jei tekstą perkeliate į naują eilutę, svetainė gauna tik pirmąją, ir lentelė lūžta."
    ],
    [
-    9.4,
+    11.3,
     "balsas",
     "Vietoj to rašote per kablelį."
    ],
    [
-    11.7,
+    14.2,
     "balsas",
     "Google Sheets čia – duomenų bazė, ne teksto redaktorius."
    ]
@@ -493,7 +513,7 @@
   "file": "13-is-word",
   "title": "Tekstas iš Word",
   "h1": "Įklijavote iš Word? Sutraukiate į vieną eilutę",
-  "D": 17,
+  "D": 21,
   "ekrane": "Pažymėtas langelis D5. Viršuje išsiskleidžia formulės juosta su dviem eilutėmis: „Lietuvių kalbos mokytoja“ / „klasės vadovė“. Kursorius spusteli antros eilutės pradžioje, klavišas „Backspace (Mac: delete)“ — eilutės susijungia, įrašomas kablelis, „Enter“. Juosta susiskleidžia, langelyje „Lietuvių kalbos mokytoja, klasės vadovė“.",
   "komentaras": "Eimantas 2026-09-17: eilutės perkėlimą taisome viršutinėje langelio juostoje. ⛔ Išsiskleidžiančios formulės juostos vaizdas supaprastintas — tikrame Sheets ji plečiasi rodykle dešinėje; lietuviško „Mac: delete“ užrašo nėra, tai mūsų paaiškinimas.",
   "cues": [
@@ -503,24 +523,19 @@
     "Iš Word ar PDF tekstas dažnai atkeliauja su paslėptu eilutės perkėlimu."
    ],
    [
-    5.6,
-    "balsas",
-    "Viršutinėje juostoje spustelėjate antros eilutės pradžią ir spaudžiate Backspace."
-   ],
-   [
     7.0,
     "garsas",
     "spustelejimas"
    ],
    [
+    7.2,
+    "balsas",
+    "Viršutinėje juostoje spustelė́jate antros eilutės pradžią ir spaudžiate Backspace."
+   ],
+   [
     9.6,
     "garsas",
     "spustelejimas"
-   ],
-   [
-    10.9,
-    "balsas",
-    "Įrašote kablelį ir spaudžiate Enter."
    ],
    [
     11.2,
@@ -534,13 +549,18 @@
    ],
    [
     13.8,
-    "balsas",
-    "Dabar tai viena eilutė."
-   ],
-   [
-    13.8,
     "garsas",
     "patvirtinimas"
+   ],
+   [
+    14.2,
+    "balsas",
+    "Įrašote kablelį ir spaudžiate Enter."
+   ],
+   [
+    18.1,
+    "balsas",
+    "Dabar tai viena eilutė."
    ]
   ]
  },
@@ -558,24 +578,19 @@
     "Eilės numerių formulėmis nesuskaičiuosite – numeriai rašomi su tašku."
    ],
    [
-    5.6,
-    "balsas",
-    "Paprasčiausia nukopijuoti numerius iš kitos lentelės"
-   ],
-   [
     6.2,
     "garsas",
     "spustelejimas"
    ],
    [
+    6.8,
+    "balsas",
+    "Paprasčiausia nukopijuoti numerius iš kitos lentelės"
+   ],
+   [
     7.4,
     "garsas",
     "spustelejimas"
-   ],
-   [
-    9.4,
-    "balsas",
-    "ir įklijuoti ten, kur jų trūksta."
    ],
    [
     10.0,
@@ -586,6 +601,11 @@
     10.5,
     "garsas",
     "spustelejimas"
+   ],
+   [
+    10.6,
+    "balsas",
+    "ir įklijuoti ten, kur jų trūksta."
    ]
   ]
  },
@@ -593,7 +613,7 @@
   "file": "15-nauja-eilute",
   "title": "Nauja ir išimta eilutė",
   "h1": "Įterpiate ar išimate žmogų – sąrašas lieka iš eilės",
-  "D": 42,
+  "D": 51,
   "ekrane": "Sąrašas su penkiais mokytojais (1.–5.), tuščios eilutės be numerių. Dešinysis spustelėjimas ant 6 eilutės numerio — „Įterpti 1 eilutę žemiau“; atsiranda tuščia 7 eilutė, į ją įrašoma „Kristijonas Donelaitis“, „Pradinio ugdymo mokytojas“, „Mokytojas“. Numerių langelis apvedamas; numeriai B8:B9 paimami už krašto ir nutempiami aukštyn, B9 įrašoma „6.“. Tada C7:E9 (trys žmonės su pareigomis) paimami ir nutempiami tiesiai ant Jono Basanavičiaus eilutės. Likęs „6.“ pažymimas ir ištrinamas — sąrašas 1.–5. iš eilės.",
   "komentaras": "Eimantas 2026-09-17: įterpus eilutę numeriai pasislenka; išimant žmogų — perstumdyti žmones su pareigomis iš karto, be atskiro eilutės išvalymo; tuščios eilutės be numerių. ⛔ PATIKRINTI: ar Google Sheets, tempiant ant užpildytų langelių, klausia „pakeisti duomenis?“.",
   "cues": [
@@ -608,7 +628,7 @@
     "spustelejimas"
    ],
    [
-    7.0,
+    7.7,
     "balsas",
     "Pasirenkate Įterpti 1 eilutę žemiau, ir atsiranda tuščia eilutė."
    ],
@@ -628,11 +648,6 @@
     "rasymas"
    ],
    [
-    11.3,
-    "balsas",
-    "Įrašote naują mokytoją."
-   ],
-   [
     12.9,
     "garsas",
     "spustelejimas"
@@ -643,24 +658,29 @@
     "rasymas"
    ],
    [
+    14,
+    "balsas",
+    "Įrašote naują mokytoją."
+   ],
+   [
     15.2,
     "garsas",
     "rasymas"
    ],
    [
-    16.3,
+    16.9,
     "balsas",
-    "Tik eilės numeriai pasislenka žemyn."
-   ],
-   [
-    19.4,
-    "balsas",
-    "Pažymite numerius žemiau naujos eilutės ir, paėmę už krašto, nutempiate vienu langeliu aukščiau."
+    "Pareigas ir kategoriją įrašote iš karto."
    ],
    [
     20.0,
     "garsas",
     "spustelejimas"
+   ],
+   [
+    20.9,
+    "balsas",
+    "Tik eilės numeriai pasislenka žemyn."
    ],
    [
     22.6,
@@ -669,13 +689,13 @@
    ],
    [
     24.3,
-    "garsas",
-    "numetimas"
+    "balsas",
+    "Pažymite numerius žemiau naujos eilutės ir, paėmę už krašto, nutempiate vienu langeliu aukščiau."
    ],
    [
-    26.1,
-    "balsas",
-    "Paskutinį numerį įrašote ranka."
+    24.3,
+    "garsas",
+    "numetimas"
    ],
    [
     26.6,
@@ -688,14 +708,14 @@
     "rasymas"
    ],
    [
-    29.4,
-    "balsas",
-    "O jei mokytojo sąraše nebeliko, žemiau esančius žmones su pareigomis nutempiate tiesiai ant jo eilutės."
-   ],
-   [
     31.6,
     "garsas",
     "spustelejimas"
+   ],
+   [
+    32.8,
+    "balsas",
+    "Paskutinį numerį įrašote ranka."
    ],
    [
     33.6,
@@ -708,9 +728,9 @@
     "numetimas"
    ],
    [
-    36.9,
+    36.5,
     "balsas",
-    "Likusį paskutinį numerį ištrinate."
+    "O jei mokytojo sąraše nebeliko, žemiau esančius žmones su pareigomis nutempiate tiesiai ant jo eilutės."
    ],
    [
     37.4,
@@ -723,7 +743,12 @@
     "spustelejimas"
    ],
    [
-    39.6,
+    44.8,
+    "balsas",
+    "Likusį paskutinį numerį ištrinate."
+   ],
+   [
+    48,
     "balsas",
     "Sąrašas vėl iš eilės."
    ]
@@ -733,14 +758,14 @@
   "file": "16-paruostukai",
   "title": "Paruošti pavyzdžiai",
   "h1": "Paruošti pavyzdžiai jau veikia su svetaine",
-  "D": 15,
+  "D": 17,
   "ekrane": "Trys kortelės iš eilės: du langeliai su pilku × — „Langelius geriau palikti atskirus“; „A → Z“ su pilku × — „Rikiavimo geriau nekeisti“; geltonas klaustukas — „Išbandyti galite drąsiai, tik rezultatas ne visada bus toks, kokio tikitės“. Tonas švelnus (Eimantas: „jie jautrūs“).",
   "komentaras": "Eimantas 2026-09-17: „Negalima jungti langelių“, „rikiavimo taip pat nenaudojome. Naudojame paruoštukus ir nemodifikuojame jų, jei tiksliai nežinome kaip. Eksperimentuoti aišku nedraudžiama. Bet rezultatas nebūtinai bus geras.“",
   "cues": [
    [
     1.0,
     "balsas",
-    "Paruošti pavyzdžiai jau veikia kartu su svetaine."
+    "Paruõšti pavyzdžiai jau veikia kartu su svetaine."
    ],
    [
     5.8,
@@ -748,7 +773,7 @@
     "Todėl langelių geriau nejungti ir eilučių nerikiuoti."
    ],
    [
-    9.8,
+    10.7,
     "balsas",
     "Išbandyti galite drąsiai, tik rezultatas ne visada bus toks, kokio tikitės."
    ]
@@ -758,17 +783,17 @@
   "file": "17-spalvos",
   "title": "Kai liko šablono spalva",
   "h1": "Svetainėje spalvos nematyti – bet galite sutvarkyti",
-  "D": 16,
+  "D": 17,
   "ekrane": "Mokytojų sąrašas, kuriame dvi įprastos eilutės („Vincas Kudirka“, „Marija Pečkauskaitė“) liko su žalia antraštės spalva ir baltu tekstu — apvedamos oranžiškai. Pažymimi langeliai B4:E5, atidaromas meniu „Formatas“, pasirenkama „Išvalyti formatavimą“ — eilutės tampa įprastos.",
   "komentaras": "Priežastis — Eimantas 2026-09-17: keliant sąrašą per API, TH spalva lieka eilutėse, kurios tapo įprastomis; beveik visada mokytojų sąrašuose. Meniu „Formatas“ punktai ir ⌘\\ — iš tikro redaktoriaus.",
   "cues": [
    [
     1.0,
     "balsas",
-    "Kartais perkeltame sąraše eilutė lieka su žalia šablono spalva."
+    "Kartais perkeltame sąraše eilutė lieka su žalia šablono spalvà."
    ],
    [
-    5.4,
+    6.2,
     "balsas",
     "Svetainėje to nematyti, bet norėdami tvarkos pažymite tuos langelius"
    ],
@@ -778,14 +803,14 @@
     "spustelejimas"
    ],
    [
-    10.2,
-    "balsas",
-    "ir meniu Formatas pasirenkate Išvalyti formatavimą."
-   ],
-   [
     10.6,
     "garsas",
     "spustelejimas"
+   ],
+   [
+    11.5,
+    "balsas",
+    "ir meniu Formatas pasirenkate Išvalyti formatavimą."
    ],
    [
     12.8,
@@ -798,7 +823,7 @@
   "file": "18-th-spalva",
   "title": "Kai antraštė liko be spalvos",
   "h1": "Antraštė be spalvos? Nuspalvinate ir nukopijuojate",
-  "D": 17,
+  "D": 22,
   "ekrane": "Mokytojų sąraše antrosios grupės antraštės eilutė (13) balta — apvedama oranžiškai. Pažymimas langelis B13, įrankių juostoje spaudžiamas kibirėlis, iš spalvų paletės pasirenkama žalia — B13 tampa žalias. Tada spaudžiamas volelis (B13 apvedamas punktyru) ir perbraukiama C13:E13 — visa eilutė žalia.",
   "komentaras": "Eimantas 2026-09-17: „TH žmonės nesupras“ — balse ir antraštėje sakoma „antraštė“; rodyti, kad nuspalvinamas vienas langelis, o kiti nukopijuojami. ⛔ PATIKRINTI: lietuviški kibirėlio ir volelio mygtukų pavadinimai ir tiksli vieta įrankių juostoje; spalvų paletė supaprastinta.",
   "cues": [
@@ -808,14 +833,14 @@
     "Būna ir atvirkščiai: antraštės eilutė liko be spalvos."
    ],
    [
-    4.8,
-    "balsas",
-    "Pažymite pirmą langelį ir kibirėlio ženklu nuspalvinate jį žaliai."
-   ],
-   [
     5.2,
     "garsas",
     "spustelejimas"
+   ],
+   [
+    6.2,
+    "balsas",
+    "Pažymite pirmą langelį ir kibirėlio ženklu nuspalvinate jį žaliai."
    ],
    [
     6.6,
@@ -833,14 +858,14 @@
     "spustelejimas"
    ],
    [
-    9.6,
-    "balsas",
-    "Tada spaudžiate volelio ženklą ir perbraukiate kitus antraštės langelius."
-   ],
-   [
     10.2,
     "garsas",
     "spustelejimas"
+   ],
+   [
+    12.1,
+    "balsas",
+    "Tada spaudžiate volelio ženklą ir perbraukiate kitus antraštės langelius."
    ],
    [
     13.0,
@@ -848,7 +873,7 @@
     "patvirtinimas"
    ],
    [
-    14.5,
+    18.3,
     "balsas",
     "Visa eilutė vienodos spalvos."
    ]
@@ -858,9 +883,9 @@
   "file": "19-versijos",
   "title": "Versijų istorija",
   "h1": "Vakarykštę lentelę galite susigrąžinti",
-  "D": 35,
-  "ekrane": "Mokytojų sąrašas, virš jo kortelė su keliu „Failas → Versijų istorija → Žiūrėti versijų istoriją“. Dešinėje atsislenka skydelis „Versijų istorija“: „Šiandien 14.32 Marija Pečkauskaitė“, „11.05 Vincas Kudirka“, „Vakar 16.40 Jonas Basanavičius“ (pažymima žaliai), „9.12 Kazys Grinius“. Viršuje – žalias mygtukas „Atkurti šią versiją“, apačioje – kortelė „Atkūrus dabartinė versija lieka istorijoje“ ir smulkesnė eilutė apie vieno langelio istoriją.",
-  "komentaras": "Eimantas 2026-09-19: praktika parodė, kad mokytojai apie versijų istoriją nežino ir panikuoja — rodome patys. Kelias „Failas → Versijų istorija → Žiūrėti versijų istoriją“ — Eimanto patvirtintas 2026-09-17. ⛔ PATIKRINTI lietuviškus užrašus tikrame lange: „Atkurti šią versiją“ ir „Rodyti redagavimo istoriją“ — versti iš anglų.",
+  "D": 40,
+  "ekrane": "Mokytojų sąrašas; viršuje dešinėje sumirksi laikrodžio ženklas. Jį paspaudus viršų pakeičia juosta su ← , versijos vardu „Rugsėjo 18 d., 13.41“ ir mėlynu mygtuku „Atkurti šią versiją“, o dešinėje atsiveria skydelis „Versijų istorija“ su sąrašu „Visos versijos“: Šiandien 17.31 Marija Pečkauskaitė, Vakar 13.41 (pažymėta) ir 10.07 Vincas Kudirka, Ketvirtadienį 22.29 ir 15.25. Apačioje – žyma „Rodyti pakeitimus“.",
+  "komentaras": "Eimantas 2026-09-19: istorija iškviečiama LAIKRODŽIO ženklu viršuje dešinėje, ne per „Failas“; skydelio sandara pataisyta pagal tikras ekrano nuotraukas (grupės pagal dienas, vardai su spalvotu tašku, „Visos versijos“, „Rodyti pakeitimus“, ⋮ ties pažymėta versija). ⛔ PATIKRINTI lietuviškus užrašus: Eimanto sąsaja anglų kalba („Version history“, „Restore this version“, „All versions“, „Highlight changes“), lietuviški vertimai — mūsų.",
   "cues": [
    [
     1.0,
@@ -868,47 +893,57 @@
     "Jei atšaukti nebepavyksta, lieka versijų istorija."
    ],
    [
-    5.5,
+    6.0,
     "balsas",
-    "Meniu Failas pasirenkate Versijų istorija, tada Žiūrėti versijų istoriją."
+    "Viršuje dešinėje spaudžiate laikrodžio ženklą."
    ],
    [
-    5.8,
+    6.0,
     "garsas",
     "spustelejimas"
    ],
    [
-    11.8,
-    "balsas",
-    "Dešinėje matote datas ir žmones, kurie keitė lentelę."
-   ],
-   [
-    16.4,
-    "balsas",
-    "Paspaudę datą matote, kaip lentelė atrodė tuo metu."
-   ],
-   [
-    17.0,
+    6.0,
     "garsas",
     "spustelejimas"
    ],
    [
-    21.0,
+    10.4,
     "balsas",
-    "Radę gerą versiją, viršuje spaudžiate Atkurti šią versiją."
+    "Dešinėje atsiveria versijų sąrašas: dienos, laikai ir žmonės, kurie keitė lentelę."
    ],
    [
-    22.0,
+    17.4,
+    "balsas",
+    "Paspaudę versiją matote, kaip lentelė atrodė tuo metu."
+   ],
+   [
+    19.0,
     "garsas",
     "spustelejimas"
    ],
    [
-    26.0,
+    19.0,
+    "garsas",
+    "spustelejimas"
+   ],
+   [
+    23.0,
+    "balsas",
+    "Radę gerą versiją, viršuje kairėje spaudžiate Atkurti šią versiją."
+   ],
+   [
+    25.2,
+    "garsas",
+    "spustelejimas"
+   ],
+   [
+    29.0,
     "balsas",
     "Dabartinė versija irgi lieka istorijoje – neprarandate nieko."
    ],
    [
-    30.5,
+    34.5,
     "balsas",
     "Vieno langelio istoriją matote dešiniuoju pelės mygtuku."
    ]
@@ -928,9 +963,9 @@
     "Klysti nebaisu – beveik kiekvieną veiksmą galima atšaukti."
    ],
    [
-    5.7,
+    6,
     "balsas",
-    "Pakeitimai išsaugomi patys, tad galite ramiai bandyti."
+    "Pakeitimai išsisaugo patys, tad galite ramiai bandyti."
    ]
   ]
  }

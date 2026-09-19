@@ -71,12 +71,25 @@ Trukmė renkama **pagal turinio svorį**, ne vienoda:
 ## 3. Eiga
 
 ```bash
-node generate.js --png --lang lt
+node generate.js --png --lang lt --lesson {slug}
 node generate-video-clips.js --lesson {slug} --lang lt
 node generate-voice.js --lesson {slug} --lang lt
 node build-video.js --lesson {slug} --lang lt
 node generate-youtube-description.js --lesson {slug} --lang lt
+node make-srt.js --lesson {slug} --lang lt          # subtitrai, jei yra balsas
+node make-yt-meta.js --lesson {slug} --lang lt      # meta įkėlimui
+.venv/bin/python -m yt_upload run --lesson {slug} --dry-run
 ```
+
+⛔ **`--lesson` pridėtas 2026-09-19.** Be jo `generate.js` perpiešia VISŲ pamokų kadrus
+(109 PNG, ~1,5 min) — taisant vieną pamoką tai gryna laukimo mokestis; su filtru 13 PNG per 15 s.
+Kelios pamokos rašomos per kablelį. Manifestas (`--manifest`) filtro nepaiso: jis aprėpia visas.
+
+⛔ **Nieko netrinti, kol sukasi renderis.** 2026-09-19 pašalinus užsilikusį kadro HTML viduryje
+klipų generavimo, visa grandinė nulūžo su `net::ERR_FILE_NOT_FOUND`. Valymas — tarp paleidimų.
+
+⛔ **Laukiant proceso nenaudoti `pgrep -f "build-video.js"`** cikle: `pgrep` randa ir pačią laukimo
+komandą, tad ji laukia savęs amžinai (taip prarasta ~20 min). Laukti pagal žurnalo eilutę arba PID.
 
 ⛔ Prieš `build-video.js`: uždaryti grotuvą ir ištrinti seną failą.
 
@@ -191,6 +204,10 @@ ffmpeg -v info -i assets/video/autro.mp4 -af volumedetect -f null - 2>&1 | grep 
 | Greitis | `speed: 0.9` | ramesnis tempas 45–65 m. žiūrovui |
 | Kešas | jei tekstai nepakito, API nekviečiama; `--force` pergeneruoja | pakeitus vieną sakinį, pergeneruojami **visi** — tyčia, dėl intonacijos |
 | Netelpa | `generate-voice.js` baigiasi kodu 2 | kadras pailginamas scenarijuje, balsas nespraudžiamas |
+| Serveris užimtas | 429 `system_busy` arba 5xx — laukiama 20/45/90/180/300 s ir bandoma dar kartą (2026-09-19) | piko metu ElevenLabs atmeta užklausas; tai ne mūsų klaida, o be kartojimo visa eilė nutrūksta |
+
+⛔ **Prieš įgarsinant — patikrinti tylą** (`ANIMATION_PRINCIPLES.md` § „Tyla kadre“): tarpai tarp
+sakinių iki 3 s, kalbos dalis 70–80 %. Tyliame filmuke duobės nesimato, su balsu jos skamba kaip klaida.
 
 ⛔ **Kirtis rašomas tekste kirčio ženklu**, pvz. „ràštinę“ (Eimantas patvirtino
 2026-09-15). Tarimo žodynas `cleverphant-lt-tarimas` ElevenLabs paskyroje sukurtas, bet
@@ -289,6 +306,10 @@ iš WP.
 (`TRANSITION_DURATION`) ir `generate-youtube-description.js` (`TRANSITION`). Pakeitus vieną,
 antrą pakeisti **tą pačią minutę**, kitaip laiko žymos meluoja tyliai.
 
+⛔ **Trečios kopijos nedaryti.** Nuo 2026-09-19 `build-video.js` po montažo rašo
+`video/timeline-{lang}.json`, kuriame kadrų pradžios ir balso ruožai **išmatuoti** iš
+sumontuotų failų, ne perskaičiuoti. Viskas, kam reikia laiko (subtitrai, žymos), ima iš ten.
+
 ⛔ Sugeneravus **palyginti paskutinę žymą su tikrąja trukme**:
 
 ```bash
@@ -329,4 +350,32 @@ vinjetė −29,5 dB prieš −29,4 dB.
 - Negeneruoti balso po vieną kadrą ir nerašyti balso, kuris garsiai skaito ekrano tekstą.
 - Nekeisti vinjetės laiko taip, kad brūkšnys keliautų į centrą, kol tekstas dar matomas.
 - Neperdarinėti `autro.mp4` — logotipo dalis ir širdies plakimas imami iš jo nekeisti.
-- Nekelti į YouTube be žmogaus sprendimo — prieigos raktų projekte nėra, įkėlimas rankinis.
+- Nekelti į YouTube be žmogaus sprendimo. Nuo 2026-09-19 įkėlimas automatinis
+  (`yt_upload`, žr. `YOUTUBE_IKELIMAS.md`), bet filmukas keliamas **`private`** ir viešina
+  žmogus po peržiūros. Tai riba, ne laikinas apribojimas.
+- Nekelti to paties filmuko antrą kartą: jei `uploads-log.json` slug'as turi `video_id`,
+  `videos.insert` nekviečiamas. Naujiems vertimams ir subtitrams — `yt_upload update`.
+
+---
+
+## 11. Įkėlimas į YouTube
+
+Pilna tvarka — `YOUTUBE_IKELIMAS.md` (paruošimas, kanalai, kvota, klaidos).
+
+Trumpai:
+
+```bash
+node make-srt.js --lesson {slug} --lang lt
+node make-yt-meta.js --lesson {slug} --lang lt
+.venv/bin/python -m yt_upload run --lesson {slug} --dry-run
+.venv/bin/python -m yt_upload run --lesson {slug}
+```
+
+| Kas | Kur |
+|---|---|
+| kalbos ir kanalai | `config/settings.json`, `config/channels.json` — **ne kode** |
+| įrankio atmintis | `uploads-log.json` |
+| prieigos raktai | `.secrets/` (`.gitignore`) |
+
+⛔ Nauja kalba ar rinka pridedama tik JSON failuose. Jei tam prireikė keisti kodą — kažkas
+padaryta ne ten.

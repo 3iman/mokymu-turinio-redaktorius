@@ -18,7 +18,7 @@ import json, os, re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ILL = os.path.abspath(os.path.join(HERE, '..', '..'))
-CPS = 16.0  # išmatuota Dariaus balso sparta (simbolių per sekundę, greitis 0.9)
+CPS = 12.6  # išmatuota 2026-09-19 iš 86 tikrų įrašų (buvo spėta 16,0 — todėl kadrai nesutapo)
 
 CUR = json.load(open(os.path.join(os.path.dirname(os.path.abspath(__file__)), 'cursor_svgs.json'), encoding='utf-8'))
 
@@ -282,6 +282,15 @@ def page(s, body, own_css=''):
   .stage > .gs-window {{ position: absolute; left: 0; top: {WIN_TOP_IN_STAGE}px; }}
   .cursor-wrap {{ position: absolute; width: 44px; height: 56px; z-index: 30; pointer-events: none; }}
   .cursor-wrap .tvs-cursor {{ left: 0; top: 0; }}
+  /* Skaitomumas telefone (Eimantas 2026-09-19): lentelės tekstas šioje pamokoje didesnis nei
+     bendrame sheets.css — kadrai žiūrimi ir mažame ekrane. Galioja tik šiai pamokai. */
+  .gs-row > span {{ font-size: 21px; }}
+  .gs-row.th > span.th {{ font-size: 21px; }}
+  .gs-row > span.rh {{ font-size: 17px; }}
+  .gs-colhead span {{ font-size: 18px; }}
+  .gs-tab {{ font-size: 22px; }}
+  .gs-menu {{ font-size: 22px; }}
+  .gs-chip {{ font-size: 17px; }}
 {own_css}
 /*BASE*/
 </style>
@@ -350,7 +359,7 @@ def add(s, html):
 
 
 # ================================================================ 1. Kas yra Google Sheets
-s = Scene('00-kas-yra-sheets', 'Kas yra Google Sheets', 'Svetainės lentelės gyvena Google Sheets failuose', 17)
+s = Scene('00-kas-yra-sheets', 'Kas yra Google Sheets', 'Svetainės lentelės gyvena Google Sheets failuose', 18)
 ring = spotlight(s, [(6.0, 4, TABBAR_TOP + 2, WIN_W - 8, 52)])
 note = f'<div class="gs-note n-tabs" style="left:1160px; top:{TABBAR_TOP - 86}px">{s.t("note_tabs", "Kiekvienas lapas – atskira lentelė svetainėje")}</div>'
 note += f'<div class="gs-note n-files" style="left:1010px; top:{TABBAR_TOP - 86}px">{s.t("note_files", "Failų gali būti keli – kiekvienas tvarko savo")}</div>'
@@ -361,13 +370,13 @@ s.visible('.n-files', 10.9)
 for i in range(7):
     s.css.append(f".gs-tab.tab-{i} {{ animation: tabPulseGS 0.5s ease-in-out {6.8 + i * 0.28:.2f}s both; }}")
 s.voice(1.0, 'Google Sheets – tai lentelių failas, kuris atsidaro tiesiog naršyklėje.')
-s.voice(5.8, 'Kiekvienas lapas apačioje yra atskira lentelė jūsų svetainėje.')
-s.voice(10.8, 'Failų gali būti keli, kad kiekvienas atsakingas žmogus tvarkytų savo lenteles.')
+s.voice(6.4, 'Kiekvienas lapas apačioje yra atskira lentelė jūsų svetainėje.')
+s.voice(11.6, 'Failų gali būti keli, kad kiekvienas atsakingas žmogus tvarkytų savo lenteles.')
 s.ekrane = 'Google Sheets langas su mokytojų sąrašu. Viskas pritemsta, šviesi lieka lapų juosta, lapai vienas po kito sumirksi, užrašas „Kiekvienas lapas – atskira lentelė svetainėje“. Vėliau jį pakeičia „Failų gali būti keli – kiekvienas tvarko savo“.'
 s.komentaras = 'Eimantas 2026-09-17: mokymuose komunikuojame, kad atsakomybes galima ir reikia pasidalinti — tam naudojami keli failai. Todėl ne „vienas failas – visos lentelės“.'
 
 # ================================================================ 2. Prieiga
-s = Scene('01-prieiga', 'Pirmiausia – prieiga', 'Prieigą suteikiame mes – toliau dalijatės patys', 31)
+s = Scene('01-prieiga', 'Pirmiausia – prieiga', 'Prieigą suteikiame mes – toliau dalijatės patys', 32)
 css2 = """
   .req, .grant { position: absolute; background: #fff; border-radius: 18px; border: 1px solid #dfe3ea; box-shadow: 0 24px 60px rgba(30,40,70,.12);
                  font-family: var(--gs-font); box-sizing: border-box; }
@@ -439,11 +448,11 @@ s.sound(17.4, 'rasymas')
 s.css.append(f".shdlg .send {{ animation: siusti_{s.key} {s.D}s linear 0s both; }}")
 s.css.append(f"@keyframes siusti_{s.key} {{ 0%, {s.pct(23.55)} {{ filter: brightness(1); }} {s.pct(23.65)} {{ filter: brightness(.85); }} {s.pct(23.9)}, 100% {{ filter: brightness(1); }} }}")
 s.voice(1.0, 'Lenteles su svetaine mes jau sujungėme, jums reikia tik paprašyti prieigos.')
-s.voice(6.0, 'Atidarote nuorodą ir, jei reikia, spaudžiate Prašyti prieigos.')
-s.voice(10.1, 'Kai prieigą suteiksime, gausite laišką.')
-s.voice(14.6, 'Prieiga dalijamasi ir tarpusavyje: viršuje dešinėje spaudžiate Bendrinti.')
-s.voice(20.6, 'Įrašote kolegos Gmail adresą ir spaudžiate Siųsti.')
-s.voice(25.2, 'Nuo tada lentelę tvarkote dviese – atsakomybę galima pasidalyti.')
+s.voice(6.8, 'Atidarote nuorodą ir, jei reikia, spaudžiate Prašyti prieigos.')
+s.voice(12, 'Kai prieigą suteiksime, gausite laišką.')
+s.voice(15.2, 'Prieiga dalijamasi ir tarpusavyje: viršuje dešinėje spaudžiate Bendrinti.')
+s.voice(21.3, 'Įrašote kolegos Gmail adresą ir spaudžiate Siųsti.')
+s.voice(26.2, 'Nuo tada lentelę tvarkote dviese – atsakomybę galima pasidalyti.')
 s.ekrane = ('Kairėje Google langas „Jums reikia prieigos“ su mygtuku „Prašyti prieigos“ — kursorius jį paspaudžia. Dešinėje atkeliauja laiškas '
             '„Cleverphant suteikė jums prieigą prie skaičiuoklės“. Tada matomas pats failas: viršuje dešinėje spaudžiama „Bendrinti“, '
             'atsiveria langas „Bendrinti „Miesto gimnazija – TABLE““, į lauką „Pridėti žmonių ir grupių“ įrašoma „mokytoja@gmail.com“, '
@@ -454,7 +463,7 @@ s.komentaras = ('Eiga — Eimantas 2026-09-17: integraciją padaro Cleverphant, 
                 '„Redaktorius“, „Siųsti“ — visi versti iš anglų, tikro lietuviško lango nemačiau.')
 
 # ================================================================ 3. Paskyra
-s = Scene('02-paskyra', 'Kokia paskyra geriausia', 'Rekomenduojame Gmail paskyrą', 17)
+s = Scene('02-paskyra', 'Kokia paskyra geriausia', 'Rekomenduojame Gmail paskyrą', 20)
 css3 = """
   .acc { position: absolute; top: 40px; width: 780px; height: 520px; border-radius: 24px; padding: 46px; box-sizing: border-box; }
   .acc.g { left: 20px; background: var(--c-blue-bg); border: 2px solid var(--c-blue-border); }
@@ -482,13 +491,13 @@ s.css.append(".acc.g .badge { animation: iconPulse 0.6s ease-in-out 3.0s both; }
 s.appear('.acc.o', 6.4, 'slinktisIsDesines', 0.6)
 s.visible('.ws', 12.9)
 s.voice(1.0, 'Geriausia prie failo jungtis su Gmail paskyra – failą rasite savo Google diske.')
-s.voice(6.4, 'Su kitu el. pašto adresu irgi veiks, tik kaskart jungsitės per laiške gautą nuorodą ir PIN kodą.')
-s.voice(12.9, 'Apribojimų nėra, jei mokyklos paštas veikia per Google.')
+s.voice(7.6, 'Su kitu el. pašto adresu irgi veiks, tik kaskart jungsitės per laiške gautą nuorodą ir PIN kodą.')
+s.voice(15.3, 'Apribojimų nėra, jei mokyklos paštas veikia per Google.')
 s.ekrane = 'Mėlyna kortelė „Gmail paskyra – Rekomenduojama“: failą rasite savo „Google“ diske, veikia visos funkcijos. Geltona „Kitas el. pašto adresas“: kaskart jungiatės per laiško nuorodą ir PIN kodą, failo diske nerasite. Apačioje žalia juosta apie „Google Workspace“.'
 s.komentaras = 'Apribojimai — Eimantas 2026-09-17. Iš sąrašo paliktos tik mokytojai aktualios (PIN, failo nėra diske, Workspace išimtis); Apps Script, priedai, Gemini ir pan. nevardijami.'
 
 # ================================================================ 4. Langas
-s = Scene('03-langas', 'Pažinkime langą', 'Keturios vietos, kurių prireiks', 16)
+s = Scene('03-langas', 'Pažinkime langą', 'Keturios vietos, kurių prireiks', 17)
 rings = [
     ('r1', 66, 6, 520, 48, 1.3, (600, 14), 'Failo pavadinimas'),
     ('r2', 66, 54, 1000, 44, 3.2, (1080, 58), 'Meniu'),
@@ -505,12 +514,13 @@ for n, (key, *_rest) in enumerate(rings):
     off = rings[n + 1][5] - 0.05 if n + 1 < len(rings) else None
     s.visible('.n%s' % key, tt + 0.35, off)
 s.voice(1.0, 'Viršuje – failo pavadinimas, po juo – meniu.')
-s.voice(7.0, 'Per vidurį – langeliai, kuriuose rašote.')
-s.voice(10.6, 'O apačioje – lapų juosta: čia persijungiate tarp lentelių.')
+s.voice(5.3, 'Meniu prireiks retai.')
+s.voice(7.9, 'Per vidurį – langeliai, kuriuose rašote.')
+s.voice(11.3, 'O apačioje – lapų juosta: čia persijungiate tarp lentelių.')
 s.ekrane = 'Visas Google Sheets langas. Viskas pritemsta, šviesa paeiliui slenka per keturias vietas: failo pavadinimas, meniu, langeliai, lapų juosta. Vienu metu matomas tik vienas užrašas.'
 
 # ================================================================ 5. Lapai
-s = Scene('04-lapai', 'Vaikščiojimas per lapus', 'Spaudžiate lapo pavadinimą apačioje', 15)
+s = Scene('04-lapai', 'Vaikščiojimas per lapus', 'Spaudžiate lapo pavadinimą apačioje', 17)
 staff = [row_html(s, 1, 'h2', {'B': s.t('s_h2', 'Darbuotojai')}, chip='H2'),
          row_html(s, 2, 'th', {'B': s.t('s_nr', 'Eil. nr.'), 'C': s.t('s_name', 'Vardas, pavardė'), 'D': s.t('s_role', 'Pareigos'),
                                'E': s.t('s_mail', 'El. paštas')}, chip='TH')]
@@ -543,10 +553,11 @@ s.css.append(f"@keyframes juostaSlenkaGS {{ 0%, {s.pct(10.05)} {{ transform: tra
 s.zoom('0% 100%', 2.4, 12.4, 1.28)
 s.voice(1.0, 'Norėdami atidaryti kitą lentelę, spaudžiate jos pavadinimą apačioje.')
 s.voice(7.0, 'Jei visi lapai netelpa, rodyklėmis dešinėje paslenkate juostą.')
+s.voice(12.4, 'Atidarytas lapas apačioje lieka pažymėtas.')
 s.ekrane = 'Kamera priartėja prie lapų juostos. Kursorius paspaudžia „Darbuotojai“ — lapas tampa aktyvus, lentelė pasikeičia į darbuotojų sąrašą. Tada paspaudžiama rodyklė ›, ir lapų juosta paslenka.'
 
 # ================================================================ 6. Visi lapai
-s = Scene('05-visi-lapai', 'Visų lapų sąrašas', 'Visi lapai – viename sąraše', 13)
+s = Scene('05-visi-lapai', 'Visų lapų sąrašas', 'Visi lapai – viename sąraše', 14)
 lx, ly = 78, TABBAR_TOP + 28
 items = ['Gimnazijos taryba', 'Mokinių taryba', 'Darbuotojai', 'Mokytojų sąrašas', 'Dienos ritmas', 'Atostogos', 'Pamokų laikas', 'Formatavimas']
 pop_h = len(items) * 44 + 16
@@ -584,10 +595,11 @@ s.css.append(f"@keyframes t4GS_{s.key} {{ 0% {{ background: var(--gs-tabbar); co
 s.zoom('0% 100%', 1.6, 10.2, 1.3)
 s.voice(1.0, 'Greičiausias kelias – mygtukas su trimis brūkšneliais.')
 s.voice(5.2, 'Jis parodo visus lapus, ir iš sąrašo pasirenkate reikiamą.')
+s.voice(10.1, 'Sąraše lapai išdėstyti ta pačia tvarka.')
 s.ekrane = 'Kursorius paspaudžia mygtuką su trimis brūkšneliais — iškyla visų lapų sąrašas, dabartinis lapas pažymėtas. Pasirenkamas „Dienos ritmas“, sąrašas užsidaro, atsidaro dienos ritmo lentelė.'
 
 # ================================================================ 7. Lapo meniu
-s = Scene('06-lapo-meniu', 'Lapo meniu', 'Rodyklė prie pavadinimo atveria lapo veiksmus', 15)
+s = Scene('06-lapo-meniu', 'Lapo meniu', 'Rodyklė prie pavadinimo atveria lapo veiksmus', 17)
 mx, my = tab_arrow(3)
 menu_items = [('Ištrinti', 'tag-warn', 'del'), ('Dubliuoti', '', 'dup'), ('Pervardyti', 'tag-ok', 'ren'), ('Pakeisti spalvą', 'tag-ok arrowed', 'col'),
               ('Slėpti lapą', 'tag-ok', 'hide'), ('Peržiūrėti komentarus', 'dis', 'com'), (None, 'sep', 'sep'), ('Perkelti į dešinę', '', 'mr'), ('Perkelti į kairę', '', 'ml')]
@@ -621,8 +633,8 @@ for key, t_on, t_off in [('ren', 6.9, 8.0), ('col', 8.1, 9.0), ('hide', 9.1, 10.
     s.css.append(f"@keyframes {name} {{ {fr} }}")
 s.zoom('10% 100%', 2.0, None, 1.22)
 s.voice(1.0, 'Paspaudę mažą rodyklę prie lapo pavadinimo, matote visus jo veiksmus.')
-s.voice(6.3, 'Pervardyti, pakeisti spalvą ar paslėpti lapą galite drąsiai.')
-s.voice(10.4, 'Ištrinti taip pat galite – apie tai dar pakalbėsime.')
+s.voice(6.4, 'Pervardyti, pakeisti spalvą ar paslėpti lapą galite drąsiai.')
+s.voice(11.9, 'Ištrinti taip pat galite – apie tai dar pakalbėsime.')
 s.ekrane = 'Paspaudžiama rodyklė ▾ prie „Mokytojų sąrašas“ — atsidaro tikras lapo meniu: Ištrinti, Dubliuoti, Pervardyti, Pakeisti spalvą, Slėpti lapą, Peržiūrėti komentarus, Perkelti į dešinę, Perkelti į kairę. Žalias taškas prie „Pervardyti“, „Pakeisti spalvą“ ir „Slėpti lapą“, oranžinis — prie „Ištrinti“.'
 s.komentaras = 'Meniu punktai nusiskaityti iš tikro redaktoriaus (hl=lt). Prisijungusiam vartotojui meniu gali būti ilgesnis (pvz. „Kopijuoti į“). Paslėptas lapas svetainėje veikia toliau — Eimantas 2026-09-17.'
 
@@ -650,13 +662,13 @@ s.css.append(f"@keyframes senasGS_{s.key} {{ 0% {{ max-width: 400px; background:
 s.sound(5.2, 'rasymas')
 s.sound(8.0, 'spustelejimas')
 s.zoom('20% 100%', 1.6, None, 1.35)
-s.voice(1.0, 'Lapą pervardyti paprasčiausia dukart spustelėjus jo pavadinimą.')
-s.voice(5.6, 'Įrašote naują pavadinimą ir spaudžiate Enter.')
-s.voice(9.4, 'Lentelė svetainėje dėl to nesikeičia.')
+s.voice(1.0, 'Lapą pervardyti paprasčiausia dukart spustelė́jus jo pavadinimą.')
+s.voice(5.9, 'Įrašote naują pavadinimą ir spaudžiate Enter.')
+s.voice(9.7, 'Lentelė svetainėje dėl to nesikeičia.')
 s.ekrane = 'Priartinta lapų juosta. Dvigubas spustelėjimas ant „Mokytojų sąrašas“ — pavadinimas tampa redaguojamu laukeliu su pažymėtu tekstu. Raidė po raidės įrašoma „Mokytojai 2025–2026“, Enter.'
 
 # ================================================================ 9. Du dalykai
-s = Scene('08-atsargiai', 'Pirmas lapas ir trynimas', 'Pirmas lapas lieka pirmas, nereikalingus galite ištrinti', 33)
+s = Scene('08-atsargiai', 'Pirmas lapas ir trynimas', 'Pirmas lapas lieka pirmas, nereikalingus galite ištrinti', 38)
 css9 = '''
   .box { position: absolute; top: 40px; width: 800px; height: 470px; border-radius: 24px; padding: 40px; box-sizing: border-box; background: #fff;
          border: 1.5px solid #dfe3ea; box-shadow: 0 20px 50px rgba(30,40,70,.10); }
@@ -698,16 +710,16 @@ s.visible('.undo', 25.2)
 s.visible('.undo .later', 28.6)
 s.voice(1.0, 'Dar du dalykai apie lapus.')
 s.voice(4.0, 'Pirmas lapas visada lieka pirmas, nes svetainė jį atpažįsta pagal vietą.')
-s.voice(8.8, 'Pervadinti jį galite – pavyzdžiui, Mokyklos taryba ar Lopšelio-darželio taryba.')
-s.voice(14.2, 'Tikrai nereikalingą lapą galite ištrinti – kartu dingsta ir lentelė svetainėje.')
-s.voice(19.4, 'Tik neskubėkite: „nepildysime“ dažnai galioja tik iki pirmo audito.')
-s.voice(25.2, 'O jei ištrynėte netyčia, spaudžiate Control ir Z.')
-s.voice(28.8, 'O jei atšaukti nebepavyksta, padės versijų istorija.')
+s.voice(9.7, 'Pervadinti jį galite – pavyzdžiui, Mokyklos taryba ar Lopšelio-darželio taryba.')
+s.voice(16.3, 'Tikrai nereikalingą lapą galite ištrinti – kartu dingsta ir lentelė svetainėje.')
+s.voice(22.2, 'Tik neskubėkite: „nepildysime“ dažnai galioja tik iki pirmo audito.')
+s.voice(27.4, 'O jei ištrynėte netyčia, spaudžiate Control ir Z.')
+s.voice(31.9, 'O jei atšaukti nebepavyksta, padės versijų istorija.')
 s.ekrane = 'Dvi kortelės: „Pirmas lapas lieka pirmas“ su užrakintu pirmu lapu ir žaliais pavyzdžiais „Pervadinti galite: Mokyklos taryba, Lopšelio-darželio taryba“, „Nereikalingą lapą galite ištrinti“ su mygtuku „Ištrinti“, užrašu „Kartu dingsta ir lentelė svetainėje“ ir gelsva pastaba „Tik neskubėkite – „nepildysime“ dažnai galioja iki pirmo audito“. Apačioje žalia juosta „Suklydote? Ctrl + Z, „Mac“ kompiuteryje ⌘ + Z“.'
 s.komentaras = 'Eimantas 2026-09-17: mokyklos klausė, ar gali trinti nereikalingus lapus — taip, jei tikrai nereikalingi; neskubėti su darbo užmokesčio lentele („galimai iki pirmo audito nepildysite :)“). Ctrl+Z atšaukia ištrintą lapą, kol neuždarytas langas ir neperkrautas puslapis; po kelių veiksmų gali tekti spausti kelis kartus (Eimantas 2026-09-17). Versijų istorijos mokytojams nerodome — atkūrimą daro Cleverphant. Pirmo lapo taisyklė — iš ankstesnės pamokos (gID 0).'
 
 # ================================================================ 10. A stulpelis
-s = Scene('09-zymos', 'Pirmo stulpelio žymos', 'A stulpelis pasako, kaip eilutė atrodys svetainėje', 18)
+s = Scene('09-zymos', 'Pirmo stulpelio žymos', 'A stulpelis pasako, kaip eilutė atrodys svetainėje', 20)
 css10 = '''
   .mini { position: absolute; left: 0; top: 30px; width: 900px; background: #fff; border-radius: 16px; border: 1.5px solid #dfe3ea;
           box-shadow: 0 20px 50px rgba(30,40,70,.10); overflow: hidden; font-family: var(--gs-font); }
@@ -764,14 +776,14 @@ for i, (k, _c, _x) in enumerate(mrows):
         dim_states(s, site_of[i], st)
 s.visible('.site .s-ign', 13.4)
 s.voice(1.0, 'Pirmo stulpelio žyma pasako, kas yra eilutė.')
-s.voice(4.6, 'H2 – pavadinimas, H3 – skyrius, TH – lentelės stulpelių antraštės.')
-s.voice(9.6, 'Eilutė be žymos – įprasta lentelės eilutė,')
-s.voice(12.9, 'o su žyma ignore svetainėje nerodoma.')
+s.voice(5, 'H2 – pavadinimas, H3 – skyrius, TH – lentelės stulpelių antraštės.')
+s.voice(12.2, 'Eilutė be žymos – įprasta lentelės eilutė,')
+s.voice(15.8, 'o su žyma ignore svetainėje nerodoma.')
 s.ekrane = 'Kairėje penkios lentelės eilutės su žymomis H2, H3, TH, be žymos ir ignore; dešinėje — kaip tai atrodo svetainėje. Balso metu paeiliui ryški tik viena eilutė ir jos atitikmuo svetainėje, kiti pritemsta; pabaigoje vėl matosi viskas.'
 s.komentaras = 'Žymos ir jų reikšmės — iš šablono lapo „Formatavimas“. ⛔ Balsui reikės tarimo žodyno: „H2“, „H3“, „TH“, „ignore“.'
 
 # ================================================================ 11. Rašymas
-s = Scene('10-rasymas', 'Rašymas langelyje', 'Spustelėjate langelį, rašote ir spaudžiate Enter', 12)
+s = Scene('10-rasymas', 'Rašymas langelyje', 'Spustelėjate langelį, rašote ir spaudžiate Enter', 14)
 cx, cy = cell('C', 9)
 bx, by, bw, bh = cell_box('C', 9)
 name = 'Antanas Baranauskas'
@@ -792,13 +804,14 @@ s.visible('.gs-saved', 7.6, 10.0)
 s.sound(4.4, 'rasymas')
 s.sound(7.4, 'spustelejimas')
 s.zoom('30% 55%', 1.2, 9.8, 1.3)
-s.voice(1.0, 'Spustelėjate langelį ir rašote.')
-s.voice(4.5, 'Baigę spaudžiate Enter – pakeitimas išsaugomas pats.')
+s.voice(1.0, 'Spustelė́jate langelį ir rašote.')
+s.voice(4.5, 'Baigę spaudžiate Enter – pakeitimas išsisaugo pats.')
+s.voice(9.3, 'Taip užpildote visą lentelę – langelis po langelio.')
 s.ekrane = 'Priartinama prie tuščio langelio C9. Spustelėjus jis apvedamas mėlynai, raidė po raidės įrašoma „Antanas Baranauskas“. Enter — žymeklis nusileidžia į C10, viršuje trumpam „Išsaugoma…“.'
 s.komentaras = 'Kada pakeitimas atsiranda svetainėje — kita scena (Eimantas 2026-09-17: akimirksniu).'
 
 # ================================================================ 10b. Akimirksniu
-s = Scene('11-akimirksniu', 'Svetainėje – akimirksniu', 'Ką matote lentelėje, tą mato ir lankytojas', 20)
+s = Scene('11-akimirksniu', 'Svetainėje – akimirksniu', 'Ką matote lentelėje, tą mato ir lankytojas', 18)
 CW = [290, 330, 180]
 RH, TOP = 64, 40
 css_a = """
@@ -888,13 +901,13 @@ for side in 'ab':
     s.visible('.rc' + side, 17.0)
 s.voice(1.0, 'Vos išėjus iš langelio, pakeitimas jau matyti svetainėje.')
 s.voice(5.6, 'Ką matote lentelėje, tą mato ir lankytojas:')
-s.voice(8.8, 'tuščia eilutė svetainėje irgi tuščia,')
-s.voice(12.0, 'o užpildytas naujas stulpelis atsiranda ir svetainėje.')
+s.voice(9.5, 'tuščia eilutė svetainėje irgi tuščia,')
+s.voice(12.7, 'o užpildytas naujas stulpelis atsiranda ir svetainėje.')
 s.ekrane = 'Kairėje lentelė, dešinėje svetainė. 1) „Kazys Grinius“ pareigos pakeičiamos į „Direktorius“, Enter — tą pačią akimirką pasikeičia ir svetainėje (sumirksi). 2) Abiejose pusėse apvedama tuščia eilutė, kitos pritemsta. 3) Lentelėje tuščiame trečiame stulpelyje įrašoma antraštė „Kabinetas“ ir reikšmės „12“, „14“ — svetainėje stulpelis „Kabinetas“ išsiplečia ir atsiranda; apvedamas abiejose pusėse.'
 s.komentaras = 'Eimantas 2026-09-17: pakeitimas atsiranda akimirksniu; tuščia eilutė rodoma tuščia; naujas stulpelis su turiniu nusipiešia svetainėje. Perstatyta, kad būtų matyti, kaip stulpelis atsiranda, ne tik apvestas.'
 
 # ================================================================ 11b. Viena eilutė
-s = Scene('12-viena-eilute', 'Vienas langelis – viena eilutė', 'Langelyje rašote vieną eilutę', 16)
+s = Scene('12-viena-eilute', 'Vienas langelis – viena eilutė', 'Langelyje rašote vieną eilutę', 20)
 css_v = """
   .vs { position: absolute; left: 0; top: 20px; width: 860px; background: #fff; border-radius: 16px; border: 1.5px solid #dfe3ea;
         box-shadow: 0 20px 50px rgba(30,40,70,.10); overflow: hidden; font-family: var(--gs-font); }
@@ -935,14 +948,14 @@ s.visible('.site .lost', 7.0)
 s.visible('.ok', 9.6)
 s.visible('.db', 11.9)
 s.voice(1.0, 'Langelyje visada rašote vieną eilutę.')
-s.voice(3.8, 'Jei tekstą perkeliate į naują eilutę, svetainė gauna tik pirmąją, ir lentelė lūžta.')
-s.voice(9.4, 'Vietoj to rašote per kablelį.')
-s.voice(11.7, 'Google Sheets čia – duomenų bazė, ne teksto redaktorius.')
+s.voice(4.6, 'Jei tekstą perkeliate į naują eilutę, svetainė gauna tik pirmąją, ir lentelė lūžta.')
+s.voice(11.3, 'Vietoj to rašote per kablelį.')
+s.voice(14.2, 'Google Sheets čia – duomenų bazė, ne teksto redaktorius.')
 s.ekrane = 'Kairėje lentelė, kurioje Marijos Pečkauskaitės pareigos parašytos dviem eilutėmis viename langelyje (apvesta raudonai). Dešinėje svetainė rodo tik pirmąją eilutę, užrašas „Klasės vadovė dingo“. Apačioje žalia juosta su teisingu užrašymu per kablelį ir antraštė „Google Sheets – duomenų bazė, ne laisvas redaktorius“.'
 s.komentaras = 'Eimantas 2026-09-17: lentelės lūžta, kai langelyje naudojamas eilutės perkėlimas — API grąžina tik vieną eilutę. Klavišų kombinacijos sąmoningai nerodome, kad jos neišmoktų.'
 
 # ================================================================ 11c. Iš Word
-s = Scene('13-is-word', 'Tekstas iš Word', 'Įklijavote iš Word? Sutraukiate į vieną eilutę', 17)
+s = Scene('13-is-word', 'Tekstas iš Word', 'Įklijavote iš Word? Sutraukiate į vieną eilutę', 21)
 css_w = """
   .fbar { position: absolute; left: 150px; top: 166px; width: 1500px; background: #fff; border: 1px solid #c7c7c7; border-radius: 8px;
           box-shadow: 0 12px 32px rgba(30,40,70,.18); z-index: 12; padding: 10px 24px; box-sizing: border-box; font-family: var(--gs-font);
@@ -989,9 +1002,9 @@ s.visible('.d5b', 13.5)
 s.sound(13.8, 'patvirtinimas')
 s.zoom('0% 10%', 1.2, 14.6, 1.3)
 s.voice(1.0, 'Iš Word ar PDF tekstas dažnai atkeliauja su paslėptu eilutės perkėlimu.')
-s.voice(5.6, 'Viršutinėje juostoje spustelėjate antros eilutės pradžią ir spaudžiate Backspace.')
-s.voice(10.9, 'Įrašote kablelį ir spaudžiate Enter.')
-s.voice(13.8, 'Dabar tai viena eilutė.')
+s.voice(7.2, 'Viršutinėje juostoje spustelė́jate antros eilutės pradžią ir spaudžiate Backspace.')
+s.voice(14.2, 'Įrašote kablelį ir spaudžiate Enter.')
+s.voice(18.1, 'Dabar tai viena eilutė.')
 s.ekrane = 'Pažymėtas langelis D5. Viršuje išsiskleidžia formulės juosta su dviem eilutėmis: „Lietuvių kalbos mokytoja“ / „klasės vadovė“. Kursorius spusteli antros eilutės pradžioje, klavišas „Backspace (Mac: delete)“ — eilutės susijungia, įrašomas kablelis, „Enter“. Juosta susiskleidžia, langelyje „Lietuvių kalbos mokytoja, klasės vadovė“.'
 s.komentaras = 'Eimantas 2026-09-17: eilutės perkėlimą taisome viršutinėje langelio juostoje. ⛔ Išsiskleidžiančios formulės juostos vaizdas supaprastintas — tikrame Sheets ji plečiasi rodykle dešinėje; lietuviško „Mac: delete“ užrašo nėra, tai mūsų paaiškinimas.'
 
@@ -1036,13 +1049,13 @@ s.sound(7.4, 'spustelejimas')
 s.sound(10.5, 'spustelejimas')
 s.zoom('0% 45%', 0.6, 12.2, 1.25)
 s.voice(1.0, 'Eilės numerių formulėmis nesuskaičiuosite – numeriai rašomi su tašku.')
-s.voice(5.6, 'Paprasčiausia nukopijuoti numerius iš kitos lentelės')
-s.voice(9.4, 'ir įklijuoti ten, kur jų trūksta.')
+s.voice(6.8, 'Paprasčiausia nukopijuoti numerius iš kitos lentelės')
+s.voice(10.6, 'ir įklijuoti ten, kur jų trūksta.')
 s.ekrane = 'Antroje grupėje trūksta eilės numerių; prie jų trumpam užrašas „=B9+1 neveikia su „1.““. Pažymimi pirmos grupės numeriai 1.–3., „Ctrl + C“ (punktyrinis rėmelis), spustelimas B9, „Ctrl + V“ — numeriai atsiranda.'
 s.komentaras = 'Eimantas 2026-09-17: mokytoja bandė numeruoti formulėmis; su numeriais „1.“ įprastas veikimas neveikia. Paprasčiausia kopijuoti iš kitos sunumeruotos lentelės.'
 
 # ================================================================ 12. Nauja eilutė
-s = Scene('15-nauja-eilute', 'Nauja ir išimta eilutė', 'Įterpiate ar išimate žmogų – sąrašas lieka iš eilės', 42)
+s = Scene('15-nauja-eilute', 'Nauja ir išimta eilutė', 'Įterpiate ar išimate žmogų – sąrašas lieka iš eilės', 51)
 # pradinis sąrašas: 5 žmonės su numeriais, tuščios eilutės BE numerių (Eimantas 2026-09-17)
 PEOPLE0 = [('Vincas Kudirka', 'Pradinio ugdymo mokytojas', 'Mokytojas metodininkas'), ('Marija Pečkauskaitė', 'Pradinio ugdymo mokytoja', 'Vyresnioji mokytoja'),
            ('Jonas Basanavičius', 'Pradinio ugdymo mokytojas', 'Vyresnysis mokytojas'), ('Julija Žymantienė', 'Pradinio ugdymo mokytoja', 'Mokytoja metodininkė'),
@@ -1192,19 +1205,20 @@ s.base += [f'{B(8)}, {B(9)} {{ color: transparent; }}', '.selm { opacity: 0; }',
            f'{CE(6)}, {CE(8)}, {CE(9)}, .newt, .lastnr {{ opacity: 0; }}', f'.pblk {{ transform: translateY(-{ROW_H}px); }}']
 s.zoom('0% 55%', 2.0, 40.6, 1.25)
 s.voice(1.0, 'Jei sąraše trūksta vietos, dešiniuoju pelės mygtuku spaudžiate eilutės numerį kairėje.')
-s.voice(7.0, 'Pasirenkate Įterpti 1 eilutę žemiau, ir atsiranda tuščia eilutė.')
-s.voice(11.3, 'Įrašote naują mokytoją.')
-s.voice(16.3, 'Tik eilės numeriai pasislenka žemyn.')
-s.voice(19.4, 'Pažymite numerius žemiau naujos eilutės ir, paėmę už krašto, nutempiate vienu langeliu aukščiau.')
-s.voice(26.1, 'Paskutinį numerį įrašote ranka.')
-s.voice(29.4, 'O jei mokytojo sąraše nebeliko, žemiau esančius žmones su pareigomis nutempiate tiesiai ant jo eilutės.')
-s.voice(36.9, 'Likusį paskutinį numerį ištrinate.')
-s.voice(39.6, 'Sąrašas vėl iš eilės.')
+s.voice(7.7, 'Pasirenkate Įterpti 1 eilutę žemiau, ir atsiranda tuščia eilutė.')
+s.voice(14, 'Įrašote naują mokytoją.')
+s.voice(16.9, 'Pareigas ir kategoriją įrašote iš karto.')
+s.voice(20.9, 'Tik eilės numeriai pasislenka žemyn.')
+s.voice(24.3, 'Pažymite numerius žemiau naujos eilutės ir, paėmę už krašto, nutempiate vienu langeliu aukščiau.')
+s.voice(32.8, 'Paskutinį numerį įrašote ranka.')
+s.voice(36.5, 'O jei mokytojo sąraše nebeliko, žemiau esančius žmones su pareigomis nutempiate tiesiai ant jo eilutės.')
+s.voice(44.8, 'Likusį paskutinį numerį ištrinate.')
+s.voice(48, 'Sąrašas vėl iš eilės.')
 s.ekrane = 'Sąrašas su penkiais mokytojais (1.–5.), tuščios eilutės be numerių. Dešinysis spustelėjimas ant 6 eilutės numerio — „Įterpti 1 eilutę žemiau“; atsiranda tuščia 7 eilutė, į ją įrašoma „Kristijonas Donelaitis“, „Pradinio ugdymo mokytojas“, „Mokytojas“. Numerių langelis apvedamas; numeriai B8:B9 paimami už krašto ir nutempiami aukštyn, B9 įrašoma „6.“. Tada C7:E9 (trys žmonės su pareigomis) paimami ir nutempiami tiesiai ant Jono Basanavičiaus eilutės. Likęs „6.“ pažymimas ir ištrinamas — sąrašas 1.–5. iš eilės.'
 s.komentaras = 'Eimantas 2026-09-17: įterpus eilutę numeriai pasislenka; išimant žmogų — perstumdyti žmones su pareigomis iš karto, be atskiro eilutės išvalymo; tuščios eilutės be numerių. ⛔ PATIKRINTI: ar Google Sheets, tempiant ant užpildytų langelių, klausia „pakeisti duomenis?“.'
 
 # ================================================================ 16b. Paruošta sandara
-s = Scene('16-paruostukai', 'Paruošti pavyzdžiai', 'Paruošti pavyzdžiai jau veikia su svetaine', 15)
+s = Scene('16-paruostukai', 'Paruošti pavyzdžiai', 'Paruošti pavyzdžiai jau veikia su svetaine', 17)
 css_p = """
   .pc { position: absolute; top: 60px; width: 520px; height: 460px; background: #fff; border-radius: 20px; border: 1.5px solid #dfe3ea;
         box-shadow: 0 20px 50px rgba(30,40,70,.10); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 34px;
@@ -1231,14 +1245,14 @@ add(s, page(s, body, css_p))
 s.appear('.p1', 5.8, 'fadeUpMedium', 0.5)
 s.appear('.p2', 7.6, 'fadeUpMedium', 0.5)
 s.appear('.p3', 9.8, 'fadeUpMedium', 0.5)
-s.voice(1.0, 'Paruošti pavyzdžiai jau veikia kartu su svetaine.')
+s.voice(1.0, 'Paruõšti pavyzdžiai jau veikia kartu su svetaine.')
 s.voice(5.8, 'Todėl langelių geriau nejungti ir eilučių nerikiuoti.')
-s.voice(9.8, 'Išbandyti galite drąsiai, tik rezultatas ne visada bus toks, kokio tikitės.')
+s.voice(10.7, 'Išbandyti galite drąsiai, tik rezultatas ne visada bus toks, kokio tikitės.')
 s.ekrane = 'Trys kortelės iš eilės: du langeliai su pilku × — „Langelius geriau palikti atskirus“; „A → Z“ su pilku × — „Rikiavimo geriau nekeisti“; geltonas klaustukas — „Išbandyti galite drąsiai, tik rezultatas ne visada bus toks, kokio tikitės“. Tonas švelnus (Eimantas: „jie jautrūs“).'
 s.komentaras = 'Eimantas 2026-09-17: „Negalima jungti langelių“, „rikiavimo taip pat nenaudojome. Naudojame paruoštukus ir nemodifikuojame jų, jei tiksliai nežinome kaip. Eksperimentuoti aišku nedraudžiama. Bet rezultatas nebūtinai bus geras.“'
 
 # ================================================================ 13. Šablono spalva
-s = Scene('17-spalvos', 'Kai liko šablono spalva', 'Svetainėje spalvos nematyti – bet galite sutvarkyti', 16)
+s = Scene('17-spalvos', 'Kai liko šablono spalva', 'Svetainėje spalvos nematyti – bet galite sutvarkyti', 17)
 bad_rows = teachers_rows(s, prefix='b_')
 for idx in (3, 4):  # 4 ir 5 eilutės — likusi žalia šablono antraštės spalva
     bad_rows[idx] = bad_rows[idx].replace('class="gs-row data', 'class="gs-row data leftover', 1)
@@ -1291,14 +1305,14 @@ s.css.append(f".fmt .f16 {{ animation: {name} {s.D}s steps(1,end) 0s both; }}")
 s.css.append(f"@keyframes {name} {{ 0%, {s.pct(12.3)} {{ background: transparent; }} {s.pct(12.31)}, 100% {{ background: #e8eaed; }} }}")
 s.visible('.grid-bad', 0, 13.0)
 s.zoom('35% 40%', 0.8, 6.8, 1.18)
-s.voice(1.0, 'Kartais perkeltame sąraše eilutė lieka su žalia šablono spalva.')
-s.voice(5.4, 'Svetainėje to nematyti, bet norėdami tvarkos pažymite tuos langelius')
-s.voice(10.2, 'ir meniu Formatas pasirenkate Išvalyti formatavimą.')
+s.voice(1.0, 'Kartais perkeltame sąraše eilutė lieka su žalia šablono spalvà.')
+s.voice(6.2, 'Svetainėje to nematyti, bet norėdami tvarkos pažymite tuos langelius')
+s.voice(11.5, 'ir meniu Formatas pasirenkate Išvalyti formatavimą.')
 s.ekrane = 'Mokytojų sąrašas, kuriame dvi įprastos eilutės („Vincas Kudirka“, „Marija Pečkauskaitė“) liko su žalia antraštės spalva ir baltu tekstu — apvedamos oranžiškai. Pažymimi langeliai B4:E5, atidaromas meniu „Formatas“, pasirenkama „Išvalyti formatavimą“ — eilutės tampa įprastos.'
 s.komentaras = 'Priežastis — Eimantas 2026-09-17: keliant sąrašą per API, TH spalva lieka eilutėse, kurios tapo įprastomis; beveik visada mokytojų sąrašuose. Meniu „Formatas“ punktai ir ⌘\\ — iš tikro redaktoriaus.'
 
 # ================================================================ 13b. Antraštė be spalvos
-s = Scene('18-th-spalva', 'Kai antraštė liko be spalvos', 'Antraštė be spalvos? Nuspalvinate ir nukopijuojate', 17)
+s = Scene('18-th-spalva', 'Kai antraštė liko be spalvos', 'Antraštė be spalvos? Nuspalvinate ir nukopijuojate', 22)
 rows_t = teachers_rows(s)
 rows_t[12] = rows_t[12].replace('class="gs-row th', 'class="gs-row th nocolor', 1)
 TB = lambda idx: 42 + sum((88 if k in (4, 7) else 44) for k in range(idx))   # įrankių juostos mygtuko x
@@ -1355,95 +1369,115 @@ s.sound(8.3, 'spustelejimas')
 s.sound(13.0, 'patvirtinimas')
 s.zoom('0% 45%', 0.6, 14.0, 1.12)
 s.voice(1.0, 'Būna ir atvirkščiai: antraštės eilutė liko be spalvos.')
-s.voice(4.8, 'Pažymite pirmą langelį ir kibirėlio ženklu nuspalvinate jį žaliai.')
-s.voice(9.6, 'Tada spaudžiate volelio ženklą ir perbraukiate kitus antraštės langelius.')
-s.voice(14.5, 'Visa eilutė vienodos spalvos.')
+s.voice(6.2, 'Pažymite pirmą langelį ir kibirėlio ženklu nuspalvinate jį žaliai.')
+s.voice(12.1, 'Tada spaudžiate volelio ženklą ir perbraukiate kitus antraštės langelius.')
+s.voice(18.3, 'Visa eilutė vienodos spalvos.')
 s.ekrane = 'Mokytojų sąraše antrosios grupės antraštės eilutė (13) balta — apvedama oranžiškai. Pažymimas langelis B13, įrankių juostoje spaudžiamas kibirėlis, iš spalvų paletės pasirenkama žalia — B13 tampa žalias. Tada spaudžiamas volelis (B13 apvedamas punktyru) ir perbraukiama C13:E13 — visa eilutė žalia.'
 s.komentaras = 'Eimantas 2026-09-17: „TH žmonės nesupras“ — balse ir antraštėje sakoma „antraštė“; rodyti, kad nuspalvinamas vienas langelis, o kiti nukopijuojami. ⛔ PATIKRINTI: lietuviški kibirėlio ir volelio mygtukų pavadinimai ir tiksli vieta įrankių juostoje; spalvų paletė supaprastinta.'
 
 # ================================================================ 14. Pabaiga
 # ================================================================ 14b. Versijų istorija
-s = Scene('19-versijos', 'Versijų istorija', 'Vakarykštę lentelę galite susigrąžinti', 35)
+s = Scene('19-versijos', 'Versijų istorija', 'Vakarykštę lentelę galite susigrąžinti', 40)
 rows_v = teachers_rows(s)
 grid_v = f'<div class="gs-grid">{colhead()}{"".join(rows_v)}</div>'
-PANEL_W = 520
+PANEL_W = 560
 PANEL_X = WIN_W - PANEL_W
-versijos = [('Šiandien', None, None),
-            ('14.32', 'Marija Pečkauskaitė', 'dabar'),
-            ('11.05', 'Vincas Kudirka', None),
-            ('Vakar', None, None),
-            ('16.40', 'Jonas Basanavičius', 'gera'),
-            ('9.12', 'Kazys Grinius', None)]
+# Tikra sąsaja (Eimanto ekrano nuotraukos 2026-09-19): istorija atveriama LAIKRODŽIO ženklu
+# viršuje dešinėje (ne per meniu „Failas“); atsivėrus viršų pakeičia ← + versijos vardas +
+# mėlynas „Atkurti šią versiją“, o dešinėje – skydelis su versijomis, sugrupuotomis pagal dienas.
+LAIKRODIS = ('<svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#444746" stroke-width="2" '
+             'stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>')
+ikona = (f'<div class="vclock" style="position:absolute; right:320px; top:26px; width:52px; height:52px; '
+         f'border-radius:50%; display:flex; align-items:center; justify-content:center; z-index:9">{LAIKRODIS}</div>')
+versijos = [('grp', 'Šiandien', None),
+            ('it', '17.31', 'Marija Pečkauskaitė'),
+            ('grp', 'Vakar', None),
+            ('pick', '13.41', 'Marija Pečkauskaitė'),
+            ('it', '10.07', 'Vincas Kudirka'),
+            ('grp', 'Ketvirtadienį', None),
+            ('it', '22.29', 'Marija Pečkauskaitė'),
+            ('it', '15.25', 'Vincas Kudirka')]
 items = ''
-vi = 0
-for pav, kas, zyma in versijos:
-    if kas is None:
+for vi, (rus, pav, kas) in enumerate(versijos):
+    if rus == 'grp':
         items += f'<div class="vgrp">{s.t("vg%d" % vi, pav)}</div>'
-    else:
-        cls = 'vit' + (' now' if zyma == 'dabar' else '') + (' pick' if zyma == 'gera' else '')
-        items += (f'<div class="{cls}"><div class="vt">{s.t("vt%d" % vi, pav)}</div>'
-                  f'<div class="vn">{s.t("vn%d" % vi, kas)}</div></div>')
-    vi += 1
-panel = (f'<div class="vpanel" style="position:absolute; right:0; top:{42 + 66}px; width:{PANEL_W}px; bottom:56px">'
-         f'<div class="vhead">{s.t("vh", "Versijų istorija")}<span class="vx">×</span></div>'
-         f'<div class="vlist">{items}</div></div>')
-btn = (f'<div class="vbtn" style="position:absolute; left:64px; top:{42 + 62}px">'
-       f'{s.t("vb", "Atkurti šią versiją")}</div>')
-kelias = (f'<div class="vpath" style="position:absolute; left:64px; top:{42 + 74}px">'
-          f'{s.t("vp", "Failas → Versijų istorija → Žiūrėti versijų istoriją")}</div>')
+        continue
+    zyma = '<span class="vdots">⋮</span>' if rus == 'pick' else ''
+    items += (f'<div class="vit {rus}"><div class="vt">{s.t("vt%d" % vi, pav)}{zyma}</div>'
+              f'<div class="vn"><i></i>{s.t("vn%d" % vi, kas)}</div></div>')
+panel = (f'<div class="vpanel" style="position:absolute; right:0; top:0; width:{PANEL_W}px; bottom:0">'
+         f'<div class="vhead">{s.t("vh", "Versijų istorija")}</div>'
+         f'<div class="vsel">{s.t("vsel", "Visos versijos")}<span class="ar">▾</span></div>'
+         f'<div class="vlist">{items}</div>'
+         f'<div class="vfoot"><span class="cb on"></span>{s.t("vf1", "Rodyti pakeitimus")}</div></div>')
+virsus = (f'<div class="vbar" style="position:absolute; left:0; right:{PANEL_W}px; top:0; height:104px">'
+          f'<span class="back">←</span>'
+          f'<span class="vname">{s.t("vname", "Rugsėjo 18 d., 13.41")}</span>'
+          f'<span class="vbtn">{s.t("vb", "Atkurti šią versiją")}</span>'
+          f'<span class="vtot">{s.t("vtot", "Iš viso: 2 pakeitimai")}</span></div>')
 saugu = (f'<div class="vsafe">{s.t("vs", "Atkūrus dabartinė versija lieka istorijoje – neprarandate nieko")}'
          f'<span class="vcell">{s.t("vc", "Vieno langelio istorija: dešinysis pelės mygtukas → „Rodyti redagavimo istoriją“")}</span></div>')
-langelis = ''
-pick_y = 42 + 66 + 64 + 3 * 74 + 36
-extra = (panel + btn + kelias + saugu + langelis
-         + s.click(120, 42 + 16, 5.8) + s.click(PANEL_X + 200, pick_y, 17.0)
-         + s.click(200, 42 + 84, 22.0))
-extra += s.cursor_path('.cursor-wrap', [(0, 900, 560), (5.0, 900, 560), (5.7, 120, 58), (6.4, 120, 58),
-                                        (16.2, PANEL_X + 200, pick_y), (17.2, PANEL_X + 200, pick_y),
-                                        (21.2, 200, 126), (22.2, 200, 126), (35, 200, 126)])
+pick_y = 104 + 58 + 64 + 52 + 96           # pažymėtos versijos eilutė skydelyje
+extra = (ikona + panel + virsus + saugu
+         + s.click(WIN_W - 320 - 26, 52, 6.0) + s.click(PANEL_X + 240, pick_y, 19.0)
+         + s.click(560, 52, 25.2))
+extra += s.cursor_path('.cursor-wrap', [(0, 900, 560), (5.2, 900, 560), (5.9, WIN_W - 346, 52), (6.6, WIN_W - 346, 52),
+                                        (18.2, PANEL_X + 240, pick_y), (19.2, PANEL_X + 240, pick_y),
+                                        (24.4, 560, 52), (25.4, 560, 52), (38, 560, 52)])
 win = f'<div class="gs-window">{top(s)}{formula(s)}{grid_v}{tabbar(s, 3)}{extra}</div>'
 own_v = """
-  .vpanel { background:#fff; border-left:1.5px solid #dfe3ea; box-shadow:-12px 0 34px rgba(30,40,70,.08); z-index:7; overflow:hidden; }
-  .vhead { height:64px; display:flex; align-items:center; justify-content:space-between; padding:0 24px; font-size:26px;
-           font-weight:700; color:var(--c-text); border-bottom:1.5px solid #eef1f5; }
-  .vhead .vx { color:var(--c-text-muted); font-size:30px; }
-  .vlist { padding:10px 0; }
-  .vgrp { padding:14px 24px 6px; font-size:20px; color:var(--c-text-muted); text-transform:uppercase; letter-spacing:.06em; }
-  .vit { padding:12px 24px; border-left:6px solid transparent; }
-  .vit .vt { font-size:24px; color:var(--c-text); font-weight:600; }
-  .vit .vn { font-size:20px; color:var(--c-text-muted); margin-top:2px; }
-  .vit.now { background:#f1f3f4; }
-  .vit.pick { border-left-color: var(--gs-green-th); background:#e8f5e9; }
-  .vbtn { background:var(--gs-green-th); color:#fff; font-size:24px; font-weight:700; padding:14px 30px; border-radius:10px; z-index:8; }
-  .vpath { background:#fff; border:1.5px solid #dfe3ea; border-radius:12px; padding:14px 22px; font-size:24px;
-           color:var(--c-text); box-shadow:0 14px 34px rgba(30,40,70,.10); z-index:8; }
-  .vsafe { position:absolute; left:64px; bottom:84px; width:1020px; background:#fff; border:1.5px solid #dfe3ea; border-radius:16px;
+  .vpanel { background:#fff; border-left:1.5px solid #dfe3ea; box-shadow:-12px 0 34px rgba(30,40,70,.08); z-index:8; overflow:hidden; }
+  .vhead { padding:26px 28px 8px; font-size:30px; color:var(--c-text); }
+  .vsel { margin:6px 28px 10px; padding:12px 18px; border:1.5px solid #c4c7c5; border-radius:10px; font-size:21px;
+          color:var(--c-text); display:flex; align-items:center; justify-content:space-between; }
+  .vlist { padding:6px 0; }
+  .vgrp { padding:16px 28px 4px; font-size:19px; color:var(--c-text-muted); }
+  .vit { padding:10px 28px; }
+  .vit .vt { font-size:23px; font-weight:600; color:var(--c-text); display:flex; align-items:center; justify-content:space-between; }
+  .vit .vn { font-size:19px; color:var(--c-text-muted); margin-top:4px; display:flex; align-items:center; gap:10px; }
+  .vit .vn i { width:10px; height:10px; border-radius:50%; background:#8e6fd8; display:block; }
+  .vit:nth-child(6) .vn i, .vit:nth-child(9) .vn i { background:#12a4a4; }
+  .vit.pick { margin:4px 18px; padding:10px 18px; border:2px solid var(--c-blue-text-vivid, #0b57d0); border-radius:10px; background:#f6f9ff; }
+  .vdots { color:var(--c-text-muted); font-size:22px; }
+  .vfoot { position:absolute; left:0; right:0; bottom:0; padding:18px 28px; border-top:1.5px solid #eef1f5;
+           font-size:20px; color:var(--c-text); display:flex; align-items:center; gap:12px; }
+  .cb { width:22px; height:22px; border-radius:5px; background:#0b57d0; display:inline-block; position:relative; }
+  .cb::after { content:"✓"; position:absolute; left:4px; top:-2px; color:#fff; font-size:17px; }
+  .vbar { background:#fff; z-index:9; }
+  .vbar .back { position:absolute; left:34px; top:34px; font-size:32px; color:var(--c-text-muted); }
+  .vbar .vname { position:absolute; left:92px; top:38px; font-size:26px; color:var(--c-text); }
+  .vbar .vbtn { position:absolute; left:440px; top:28px; background:#0b57d0; color:#fff; font-size:22px;
+                font-weight:600; padding:14px 28px; border-radius:26px; }
+  .vbar .vtot { position:absolute; right:40px; top:40px; font-size:20px; color:var(--c-text-muted); }
+  .vsafe { position:absolute; left:64px; bottom:84px; width:940px; background:#fff; border:1.5px solid #dfe3ea; border-radius:16px;
            padding:22px 28px; font-size:26px; color:var(--c-text); box-shadow:0 16px 40px rgba(30,40,70,.10); z-index:8; }
   .vcell { display:block; margin-top:12px; font-size:21px; color:var(--c-text-muted); }
-  .vhide .gs-toolbar { visibility:hidden; }
 """
 add(s, page(s, win, own_v))
-s.visible('.vpath', 1.4, 11.4)
-s.visible('.vpanel', 11.6)
-s.visible('.vbtn', 20.6)
-s.visible('.gs-toolbar', 0, 20.5)   # tikrame lange atkūrimo juosta pakeičia įrankių juostą
-s.visible('.vsafe', 26.0)
-s.visible('.vsafe .vcell', 30.5)
-s.css.append(".vit.pick { animation: iconPulse 0.6s ease-in-out 17.0s both; }")
+s.visible('.vclock', 0, 6.4)
+s.visible('.vpanel', 6.6)
+s.visible('.vbar', 6.6)
+s.visible('.vsafe', 29.0)
+s.visible('.vsafe .vcell', 33.6)
+s.css.append(".vit.pick { animation: iconPulse 0.6s ease-in-out 19.0s both; }")
+s.sound(6.0, 'spustelejimas')
+s.sound(19.0, 'spustelejimas')
 s.voice(1.0, 'Jei atšaukti nebepavyksta, lieka versijų istorija.')
-s.voice(5.5, 'Meniu Failas pasirenkate Versijų istorija, tada Žiūrėti versijų istoriją.')
-s.voice(11.8, 'Dešinėje matote datas ir žmones, kurie keitė lentelę.')
-s.voice(16.4, 'Paspaudę datą matote, kaip lentelė atrodė tuo metu.')
-s.voice(21.0, 'Radę gerą versiją, viršuje spaudžiate Atkurti šią versiją.')
-s.voice(26.0, 'Dabartinė versija irgi lieka istorijoje – neprarandate nieko.')
-s.voice(30.5, 'Vieno langelio istoriją matote dešiniuoju pelės mygtuku.')
-s.ekrane = ('Mokytojų sąrašas, virš jo kortelė su keliu „Failas → Versijų istorija → Žiūrėti versijų istoriją“. '
-            'Dešinėje atsislenka skydelis „Versijų istorija“: „Šiandien 14.32 Marija Pečkauskaitė“, „11.05 Vincas Kudirka“, '
-            '„Vakar 16.40 Jonas Basanavičius“ (pažymima žaliai), „9.12 Kazys Grinius“. Viršuje – žalias mygtukas '
-            '„Atkurti šią versiją“, apačioje – kortelė „Atkūrus dabartinė versija lieka istorijoje“ ir smulkesnė eilutė apie vieno langelio istoriją.')
-s.komentaras = ('Eimantas 2026-09-19: praktika parodė, kad mokytojai apie versijų istoriją nežino ir panikuoja — rodome patys. '
-                'Kelias „Failas → Versijų istorija → Žiūrėti versijų istoriją“ — Eimanto patvirtintas 2026-09-17. '
-                '⛔ PATIKRINTI lietuviškus užrašus tikrame lange: „Atkurti šią versiją“ ir „Rodyti redagavimo istoriją“ — versti iš anglų.')
+s.voice(6.0, 'Viršuje dešinėje spaudžiate laikrodžio ženklą.')
+s.voice(10.4, 'Dešinėje atsiveria versijų sąrašas: dienos, laikai ir žmonės, kurie keitė lentelę.')
+s.voice(17.4, 'Paspaudę versiją matote, kaip lentelė atrodė tuo metu.')
+s.voice(23.0, 'Radę gerą versiją, viršuje kairėje spaudžiate Atkurti šią versiją.')
+s.voice(29.0, 'Dabartinė versija irgi lieka istorijoje – neprarandate nieko.')
+s.voice(34.5, 'Vieno langelio istoriją matote dešiniuoju pelės mygtuku.')
+s.ekrane = ('Mokytojų sąrašas; viršuje dešinėje sumirksi laikrodžio ženklas. Jį paspaudus viršų pakeičia juosta su ← , '
+            'versijos vardu „Rugsėjo 18 d., 13.41“ ir mėlynu mygtuku „Atkurti šią versiją“, o dešinėje atsiveria skydelis '
+            '„Versijų istorija“ su sąrašu „Visos versijos“: Šiandien 17.31 Marija Pečkauskaitė, Vakar 13.41 (pažymėta) ir '
+            '10.07 Vincas Kudirka, Ketvirtadienį 22.29 ir 15.25. Apačioje – žyma „Rodyti pakeitimus“.')
+s.komentaras = ('Eimantas 2026-09-19: istorija iškviečiama LAIKRODŽIO ženklu viršuje dešinėje, ne per „Failas“; skydelio '
+                'sandara pataisyta pagal tikras ekrano nuotraukas (grupės pagal dienas, vardai su spalvotu tašku, '
+                '„Visos versijos“, „Rodyti pakeitimus“, ⋮ ties pažymėta versija). '
+                '⛔ PATIKRINTI lietuviškus užrašus: Eimanto sąsaja anglų kalba („Version history“, „Restore this version“, '
+                '„All versions“, „Highlight changes“), lietuviški vertimai — mūsų.')
 
 s = Scene('20-nebijokite', 'Klysti nebaisu', 'Beveik viską galima atšaukti', 12)
 css14 = '''
@@ -1457,12 +1491,12 @@ css14 = '''
 '''
 body = (f'<div class="keys"><span class="key">Ctrl</span>+<span class="key">Z</span><span class="or">{s.t("or", "arba")}</span>'
         f'<span class="key">⌘</span>+<span class="key">Z</span></div>'
-        f'<div class="helpbox">{s.t("q", "Pakeitimai išsaugomi patys – galite ramiai bandyti")}</div>')
+        f'<div class="helpbox">{s.t("q", "Pakeitimai išsisaugo patys – galite ramiai bandyti")}</div>')
 add(s, page(s, body, css14))
 s.appear('.keys', 1.0, 'fadeUpMedium', 0.6)
 s.visible('.helpbox', 5.8)
 s.voice(1.0, 'Klysti nebaisu – beveik kiekvieną veiksmą galima atšaukti.')
-s.voice(5.7, 'Pakeitimai išsaugomi patys, tad galite ramiai bandyti.')
+s.voice(6, 'Pakeitimai išsisaugo patys, tad galite ramiai bandyti.')
 s.ekrane = 'Dideli klavišai „Ctrl + Z arba ⌘ + Z“, po jais kortelė „Pakeitimai išsaugomi patys – galite ramiai bandyti“. Į pagalbą kviečiame tik kai kas nors nepavyksta (Eimantas 2026-09-17).'
 
 
@@ -1511,6 +1545,12 @@ def main():
         md.append(f"| {i} {s.trans} | {s.D} sek. | {s.file} | {v} |")
     md.append(f"| {len(SCENES) + 1} Outro | 5 sek. | autro | — |")
     md += ["", "---", "", "## Kadrai"]
+    # Jei balsas jau sugeneruotas, rizika vertinama pagal TIKRAS trukmes, ne pagal CPS spėjimą.
+    tikros = {}
+    mpath = os.path.join(HERE, 'video', 'balsas-lt', 'manifest.json')
+    if os.path.exists(mpath):
+        for it in json.load(open(mpath, encoding='utf-8'))['items']:
+            tikros.setdefault(int(it['file'].split('-')[0][1:]), []).append(it['duration'])
     problems = []
     for i, (s, _) in enumerate(SCENES, 1):
         md += ["", f"### KADRAS {i}: {s.trans} ({s.D} sek.)", f"**Failas:** `{s.file}.png`",
@@ -1523,7 +1563,7 @@ def main():
         for c in cues:
             md.append(f"| {c[0]:.1f} | {c[1]} | {c[2]} |")
         for j, c in enumerate(vc):
-            est = len(c[2]) / CPS
+            est = tikros[i][j] if i in tikros and j < len(tikros[i]) else len(c[2]) / CPS
             end = vc[j + 1][0] - 0.15 if j + 1 < len(vc) else s.D - 0.5
             if c[0] + est > end:
                 problems.append(f"K{i}.{j + 1}: ~{est:.1f}s, langas {end - c[0]:.1f}s")
@@ -1543,6 +1583,17 @@ def main():
     json.dump([{'file': s.file, 'title': s.trans, 'h1': CONTENT[s.key]['title'], 'D': s.D, 'ekrane': s.ekrane,
                 'komentaras': s.komentaras, 'cues': sorted(s.cues)} for s, _ in SCENES],
               open(os.path.join(HERE, 'video', 'kadravimas-lt.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    # ⛔ Kalbos patikra paleidžiama PATI (Eimantas 2026-09-19: „ar naudoji agentą tik kai pasakau“).
+    # Nepamiršti neįmanoma tik tada, kai to nereikia prisiminti.
+    r = os.path.expanduser('~/.claude/skills/redaktorius/scripts/redaktorius.py')
+    if os.path.exists(r):
+        import subprocess
+        p = subprocess.run(['python3', r, os.path.join(HERE, 'content'),
+                            os.path.join(HERE, 'video', 'balso-tekstas-lt.md')], capture_output=True, text=True)
+        eilute = [l for l in p.stdout.split('\n') if 'Iš viso' in l]
+        if eilute:
+            print('redaktorius: ' + re.sub(r'\x1b\[[0-9;]*m', '', eilute[0]).replace('Iš viso:', '').strip())
+
     print(f"scenos: {len(SCENES)} | trukmė {total}s (~{full // 60}:{full % 60:02d}) | balso rizikos: {problems or 'nėra'}")
 
 

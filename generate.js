@@ -14,6 +14,11 @@
  *   node generate.js --lang lt    # Only Lithuanian
  *   node generate.js --png --dark --lang lt  # Both modes, Lithuanian only
  *   node generate.js --manifest             # Regenerate lessons/manifest.json
+ *   node generate.js --png --lang lt --lesson domeno-nuosavybe        # tik viena pamoka
+ *   node generate.js --png --lang lt --lesson a,b                     # kelios, per kablelį
+ *
+ * ⛔ Be --lesson perpiešiamos VISŲ pamokų iliustracijos (2026-09: 109 PNG ~1,5 min).
+ *   Taisant vieną pamoką tai bereikalingas laukimas — filtras pridėtas būtent tam.
  */
 
 const fs = require('fs');
@@ -29,6 +34,11 @@ const langFilter = args.includes('--lang') ? args[args.indexOf('--lang') + 1] : 
 const exportPng = args.includes('--png');
 const exportDark = args.includes('--dark'); // Generate dark mode PNGs (adds -dark suffix)
 const exportManifest = args.includes('--manifest'); // Regenerate lessons/manifest.json
+// --lesson: viena ar kelios pamokos per kablelį; be jo dirbama su visomis.
+// Manifesto generavimo NEFILTRUOJAME — jis turi aprėpti visas pamokas.
+const lessonFilter = args.includes('--lesson')
+  ? String(args[args.indexOf('--lesson') + 1] || '').split(',').map(s => s.trim()).filter(Boolean)
+  : null;
 
 // Common template variables injected into every template
 const COMMON_VARS = {
@@ -194,7 +204,19 @@ function discoverLessons() {
 }
 
 function generate() {
-  const lessons = discoverLessons();
+  let lessons = discoverLessons();
+  if (lessonFilter) {
+    const rasta = lessons.filter(l => lessonFilter.includes(l.name));
+    if (rasta.length === 0) {
+      console.error(`⛔ --lesson "${lessonFilter.join(',')}" neatitinka nė vienos pamokos.`);
+      console.error('   Yra: ' + lessons.map(l => l.name).join(', '));
+      process.exit(1);
+    }
+    const nerasta = lessonFilter.filter(n => !lessons.some(l => l.name === n));
+    if (nerasta.length) console.warn(`  [skip] nerasta: ${nerasta.join(', ')}`);
+    lessons = rasta;
+    console.log(`Filtras --lesson: ${lessons.map(l => l.name).join(', ')}`);
+  }
   let totalGenerated = 0;
   const allHtmlFiles = [];
   const validationErrors = [];

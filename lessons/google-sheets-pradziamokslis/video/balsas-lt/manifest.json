@@ -1,0 +1,873 @@
+{
+  "hash": "c70963825adaf0e3b04894cf95f27bfd95348f144f23bc1d8bfa0d324d09dce6",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 2993817124,
+  "characters": 5032,
+  "start_in_frame": 0.6,
+  "created": "2026-09-19T19:52:25.771Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Kas yra Google Sheets",
+      "text": "Google Sheets – tai lentelių failas, kuris atsidaro tiesiog naršyklėje.",
+      "file": "k01-1.wav",
+      "duration": 4.27,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Kas yra Google Sheets",
+      "text": "Kiekvienas lapas apačioje yra atskira lentelė jūsų svetainėje.",
+      "file": "k01-2.wav",
+      "duration": 3.93,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Kas yra Google Sheets",
+      "text": "Failų gali būti keli, kad kiekvienas atsakingas žmogus tvarkytų savo lenteles.",
+      "file": "k01-3.wav",
+      "duration": 5.13,
+      "fits": false,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Pirmiausia – prieiga",
+      "text": "Lenteles su svetaine mes jau sujungėme, jums reikia tik paprašyti prieigos.",
+      "file": "k02-1.wav",
+      "duration": 5.21,
+      "fits": true,
+      "reikia_sek": 32
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Pirmiausia – prieiga",
+      "text": "Atidarote nuorodą ir, jei reikia, spaudžiate Prašyti prieigos.",
+      "file": "k02-2.wav",
+      "duration": 4.17,
+      "fits": true,
+      "reikia_sek": 32
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Pirmiausia – prieiga",
+      "text": "Kai prieigą suteiksime, gausite laišką.",
+      "file": "k02-3.wav",
+      "duration": 2.49,
+      "fits": true,
+      "reikia_sek": 32
+    },
+    {
+      "kadras": 2,
+      "cue": 4,
+      "title": "Pirmiausia – prieiga",
+      "text": "Prieiga dalijamasi ir tarpusavyje: viršuje dešinėje spaudžiate Bendrinti.",
+      "file": "k02-4.wav",
+      "duration": 5.61,
+      "fits": true,
+      "reikia_sek": 32
+    },
+    {
+      "kadras": 2,
+      "cue": 5,
+      "title": "Pirmiausia – prieiga",
+      "text": "Įrašote kolegos Džy meil adresą ir spaudžiate Siųsti.",
+      "file": "k02-5.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 32
+    },
+    {
+      "kadras": 2,
+      "cue": 6,
+      "title": "Pirmiausia – prieiga",
+      "text": "Nuo tada lentelę tvarkote dviese – atsakomybę galima pasidalyti.",
+      "file": "k02-6.wav",
+      "duration": 4.57,
+      "fits": true,
+      "reikia_sek": 32
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Kokia paskyra geriausia",
+      "text": "Geriausia prie failo jungtis su Džy meil paskyra – failą rasite savo Google diske.",
+      "file": "k03-1.wav",
+      "duration": 4.73,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Kokia paskyra geriausia",
+      "text": "Su kitu el. pašto adresu irgi veiks, tik kaskart jungsitės per laiške gautą nuorodą ir PIN kodą.",
+      "file": "k03-2.wav",
+      "duration": 6.41,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Kokia paskyra geriausia",
+      "text": "Apribojimų nėra, jei mokyklos paštas veikia per Google.",
+      "file": "k03-3.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Pažinkime langą",
+      "text": "Viršuje – failo pavadinimas, po juo – meniu.",
+      "file": "k04-1.wav",
+      "duration": 3.37,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Pažinkime langą",
+      "text": "Meniu prireiks retai.",
+      "file": "k04-2.wav",
+      "duration": 1.77,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Pažinkime langą",
+      "text": "Per vidurį – langeliai, kuriuose rašote.",
+      "file": "k04-3.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 4,
+      "cue": 4,
+      "title": "Pažinkime langą",
+      "text": "O apačioje – lapų juosta: čia persijungiate tarp lentelių.",
+      "file": "k04-4.wav",
+      "duration": 4.49,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Vaikščiojimas per lapus",
+      "text": "Norėdami atidaryti kitą lentelę, spaudžiate jos pavadinimą apačioje.",
+      "file": "k05-1.wav",
+      "duration": 4.41,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Vaikščiojimas per lapus",
+      "text": "Jei visi lapai netelpa, rodyklėmis dešinėje paslenkate juostą.",
+      "file": "k05-2.wav",
+      "duration": 4.25,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Vaikščiojimas per lapus",
+      "text": "Atidarytas lapas apačioje lieka pažymėtas.",
+      "file": "k05-3.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Visų lapų sąrašas",
+      "text": "Greičiausias kelias – mygtukas su trimis brūkšneliais.",
+      "file": "k06-1.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Visų lapų sąrašas",
+      "text": "Jis parodo visus lapus, ir iš sąrašo pasirenkate reikiamą.",
+      "file": "k06-2.wav",
+      "duration": 4.09,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Visų lapų sąrašas",
+      "text": "Sąraše lapai išdėstyti ta pačia tvarka.",
+      "file": "k06-3.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Lapo meniu",
+      "text": "Paspaudę mažą rodyklę prie lapo pavadinimo, matote visus jo veiksmus.",
+      "file": "k07-1.wav",
+      "duration": 4.65,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Lapo meniu",
+      "text": "Pervardyti, pakeisti spalvą ar paslėpti lapą galite drąsiai.",
+      "file": "k07-2.wav",
+      "duration": 4.97,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Lapo meniu",
+      "text": "Ištrinti taip pat galite – apie tai dar pakalbėsime.",
+      "file": "k07-3.wav",
+      "duration": 3.55,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Pervardyti lapą",
+      "text": "Lapą pervardyti paprasčiausia dukart spustelė́jus jo pavadinimą.",
+      "file": "k08-1.wav",
+      "duration": 4.51,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Pervardyti lapą",
+      "text": "Įrašote naują pavadinimą ir spaudžiate Enter.",
+      "file": "k08-2.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Pervardyti lapą",
+      "text": "Lentelė svetainėje dėl to nesikeičia.",
+      "file": "k08-3.wav",
+      "duration": 2.59,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 9,
+      "cue": 1,
+      "title": "Pirmas lapas ir trynimas",
+      "text": "Dar du dalykai apie lapus.",
+      "file": "k09-1.wav",
+      "duration": 2.01,
+      "fits": true,
+      "reikia_sek": 38
+    },
+    {
+      "kadras": 9,
+      "cue": 2,
+      "title": "Pirmas lapas ir trynimas",
+      "text": "Pirmas lapas visada lieka pirmas, nes svetainė jį atpažįsta pagal vietą.",
+      "file": "k09-2.wav",
+      "duration": 4.75,
+      "fits": true,
+      "reikia_sek": 38
+    },
+    {
+      "kadras": 9,
+      "cue": 3,
+      "title": "Pirmas lapas ir trynimas",
+      "text": "Pervadinti jį galite – pavyzdžiui, Mokyklos taryba ar Lopšelio-darželio taryba.",
+      "file": "k09-3.wav",
+      "duration": 6.01,
+      "fits": true,
+      "reikia_sek": 38
+    },
+    {
+      "kadras": 9,
+      "cue": 4,
+      "title": "Pirmas lapas ir trynimas",
+      "text": "Tikrai nereikalingą lapą galite ištrinti – kartu dingsta ir lentelė svetainėje.",
+      "file": "k09-4.wav",
+      "duration": 5.05,
+      "fits": true,
+      "reikia_sek": 38
+    },
+    {
+      "kadras": 9,
+      "cue": 5,
+      "title": "Pirmas lapas ir trynimas",
+      "text": "Tik neskubėkite: „nepildysime“ dažnai galioja tik iki pirmo audito.",
+      "file": "k09-5.wav",
+      "duration": 4.81,
+      "fits": true,
+      "reikia_sek": 38
+    },
+    {
+      "kadras": 9,
+      "cue": 6,
+      "title": "Pirmas lapas ir trynimas",
+      "text": "O jei ištrynėte netyčia, spaudžiate Control ir Z.",
+      "file": "k09-6.wav",
+      "duration": 4.17,
+      "fits": true,
+      "reikia_sek": 38
+    },
+    {
+      "kadras": 9,
+      "cue": 7,
+      "title": "Pirmas lapas ir trynimas",
+      "text": "O jei atšaukti nebepavyksta, padės versijų istorija.",
+      "file": "k09-7.wav",
+      "duration": 4.25,
+      "fits": true,
+      "reikia_sek": 38
+    },
+    {
+      "kadras": 10,
+      "cue": 1,
+      "title": "Pirmo stulpelio žymos",
+      "text": "Pirmo stulpelio žyma pasako, kas yra eilutė.",
+      "file": "k10-1.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 10,
+      "cue": 2,
+      "title": "Pirmo stulpelio žymos",
+      "text": "haš du – pavadinimas, haš trys – skyrius, tėė haš – lentelės stulpelių antraštės.",
+      "file": "k10-2.wav",
+      "duration": 6.27,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 10,
+      "cue": 3,
+      "title": "Pirmo stulpelio žymos",
+      "text": "Eilutė be žymos – įprasta lentelės eilutė,",
+      "file": "k10-3.wav",
+      "duration": 3.29,
+      "fits": false,
+      "reikia_sek": 21
+    },
+    {
+      "kadras": 10,
+      "cue": 4,
+      "title": "Pirmo stulpelio žymos",
+      "text": "o su žyma /ɪɡˈnɔːr/ svetainėje nerodoma.",
+      "file": "k10-4.wav",
+      "duration": 3.21,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 11,
+      "cue": 1,
+      "title": "Rašymas langelyje",
+      "text": "Spustelė́jate langelį ir rašote.",
+      "file": "k11-1.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 11,
+      "cue": 2,
+      "title": "Rašymas langelyje",
+      "text": "Baigę spaudžiate Enter – pakeitimas išsisaugo pats.",
+      "file": "k11-2.wav",
+      "duration": 4.01,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 11,
+      "cue": 3,
+      "title": "Rašymas langelyje",
+      "text": "Taip užpildote visą lentelę – langelis po langelio.",
+      "file": "k11-3.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 12,
+      "cue": 1,
+      "title": "Svetainėje – akimirksniu",
+      "text": "Vos išėjus iš langelio, pakeitimas jau matyti svetainėje.",
+      "file": "k12-1.wav",
+      "duration": 4.01,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 12,
+      "cue": 2,
+      "title": "Svetainėje – akimirksniu",
+      "text": "Ką matote lentelėje, tą mato ir lankytojas:",
+      "file": "k12-2.wav",
+      "duration": 3.29,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 12,
+      "cue": 3,
+      "title": "Svetainėje – akimirksniu",
+      "text": "tuščia eilutė svetainėje irgi tuščia,",
+      "file": "k12-3.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 12,
+      "cue": 4,
+      "title": "Svetainėje – akimirksniu",
+      "text": "o užpildytas naujas stulpelis atsiranda ir svetainėje.",
+      "file": "k12-4.wav",
+      "duration": 4.19,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 13,
+      "cue": 1,
+      "title": "Vienas langelis – viena eilutė",
+      "text": "Langelyje visada rašote vieną eilutę.",
+      "file": "k13-1.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 13,
+      "cue": 2,
+      "title": "Vienas langelis – viena eilutė",
+      "text": "Jei tekstą perkeliate į naują eilutę, svetainė gauna tik pirmąją, ir lentelė lūžta.",
+      "file": "k13-2.wav",
+      "duration": 6.33,
+      "fits": false,
+      "reikia_sek": 21
+    },
+    {
+      "kadras": 13,
+      "cue": 3,
+      "title": "Vienas langelis – viena eilutė",
+      "text": "Vietoj to rašote per kablelį.",
+      "file": "k13-3.wav",
+      "duration": 2.41,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 13,
+      "cue": 4,
+      "title": "Vienas langelis – viena eilutė",
+      "text": "Google Sheets čia – duomenų bazė, ne teksto redaktorius.",
+      "file": "k13-4.wav",
+      "duration": 4.57,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 14,
+      "cue": 1,
+      "title": "Tekstas iš Word",
+      "text": "Iš Word ar PDF tekstas dažnai atkeliauja su paslėptu eilutės perkėlimu.",
+      "file": "k14-1.wav",
+      "duration": 5.45,
+      "fits": true,
+      "reikia_sek": 21
+    },
+    {
+      "kadras": 14,
+      "cue": 2,
+      "title": "Tekstas iš Word",
+      "text": "Viršutinėje juostoje spustelė́jate antros eilutės pradžią ir spaudžiate Backspace.",
+      "file": "k14-2.wav",
+      "duration": 6.11,
+      "fits": true,
+      "reikia_sek": 21
+    },
+    {
+      "kadras": 14,
+      "cue": 3,
+      "title": "Tekstas iš Word",
+      "text": "Įrašote kablelį ir spaudžiate Enter.",
+      "file": "k14-3.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 21
+    },
+    {
+      "kadras": 14,
+      "cue": 4,
+      "title": "Tekstas iš Word",
+      "text": "Dabar tai viena eilutė.",
+      "file": "k14-4.wav",
+      "duration": 2.19,
+      "fits": true,
+      "reikia_sek": 21
+    },
+    {
+      "kadras": 15,
+      "cue": 1,
+      "title": "Eilės numeriai",
+      "text": "Eilės numerių formulėmis nesuskaičiuosite – numeriai rašomi su tašku.",
+      "file": "k15-1.wav",
+      "duration": 5.13,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 15,
+      "cue": 2,
+      "title": "Eilės numeriai",
+      "text": "Paprasčiausia nukopijuoti numerius iš kitos lentelės",
+      "file": "k15-2.wav",
+      "duration": 3.45,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 15,
+      "cue": 3,
+      "title": "Eilės numeriai",
+      "text": "ir įklijuoti ten, kur jų trūksta.",
+      "file": "k15-3.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 16,
+      "cue": 1,
+      "title": "Nauja ir išimta eilutė",
+      "text": "Jei sąraše trūksta vietos, dešiniuoju pelės mygtuku spaudžiate eilutės numerį kairėje.",
+      "file": "k16-1.wav",
+      "duration": 5.93,
+      "fits": true,
+      "reikia_sek": 51
+    },
+    {
+      "kadras": 16,
+      "cue": 2,
+      "title": "Nauja ir išimta eilutė",
+      "text": "Pasirenkate Įterpti 1 eilutę žemiau, ir atsiranda tuščia eilutė.",
+      "file": "k16-2.wav",
+      "duration": 5.53,
+      "fits": true,
+      "reikia_sek": 51
+    },
+    {
+      "kadras": 16,
+      "cue": 3,
+      "title": "Nauja ir išimta eilutė",
+      "text": "Įrašote naują mokytoją.",
+      "file": "k16-3.wav",
+      "duration": 2.11,
+      "fits": true,
+      "reikia_sek": 51
+    },
+    {
+      "kadras": 16,
+      "cue": 4,
+      "title": "Nauja ir išimta eilutė",
+      "text": "Pareigas ir kategoriją įrašote iš karto.",
+      "file": "k16-4.wav",
+      "duration": 3.37,
+      "fits": true,
+      "reikia_sek": 51
+    },
+    {
+      "kadras": 16,
+      "cue": 5,
+      "title": "Nauja ir išimta eilutė",
+      "text": "Tik eilės numeriai pasislenka žemyn.",
+      "file": "k16-5.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 51
+    },
+    {
+      "kadras": 16,
+      "cue": 6,
+      "title": "Nauja ir išimta eilutė",
+      "text": "Pažymite numerius žemiau naujos eilutės ir, paėmę už krašto, nutempiate vienu langeliu aukščiau.",
+      "file": "k16-6.wav",
+      "duration": 7.69,
+      "fits": true,
+      "reikia_sek": 51
+    },
+    {
+      "kadras": 16,
+      "cue": 7,
+      "title": "Nauja ir išimta eilutė",
+      "text": "Paskutinį numerį įrašote ranka.",
+      "file": "k16-7.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 51
+    },
+    {
+      "kadras": 16,
+      "cue": 8,
+      "title": "Nauja ir išimta eilutė",
+      "text": "O jei mokytojo sąraše nebeliko, žemiau esančius žmones su pareigomis nutempiate tiesiai ant jo eilutės.",
+      "file": "k16-8.wav",
+      "duration": 7.93,
+      "fits": true,
+      "reikia_sek": 51
+    },
+    {
+      "kadras": 16,
+      "cue": 9,
+      "title": "Nauja ir išimta eilutė",
+      "text": "Likusį paskutinį numerį ištrinate.",
+      "file": "k16-9.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 51
+    },
+    {
+      "kadras": 16,
+      "cue": 10,
+      "title": "Nauja ir išimta eilutė",
+      "text": "Sąrašas vėl iš eilės.",
+      "file": "k16-10.wav",
+      "duration": 2.33,
+      "fits": true,
+      "reikia_sek": 51
+    },
+    {
+      "kadras": 17,
+      "cue": 1,
+      "title": "Paruošti pavyzdžiai",
+      "text": "Paruõšti pavyzdžiai jau veikia kartu su svetaine.",
+      "file": "k17-1.wav",
+      "duration": 3.21,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 17,
+      "cue": 2,
+      "title": "Paruošti pavyzdžiai",
+      "text": "Todėl langelių geriau nejungti ir eilučių nerikiuoti.",
+      "file": "k17-2.wav",
+      "duration": 3.93,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 17,
+      "cue": 3,
+      "title": "Paruošti pavyzdžiai",
+      "text": "Išbandyti galite drąsiai, tik rezultatas ne visada bus toks, kokio tikitės.",
+      "file": "k17-3.wav",
+      "duration": 5.29,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 18,
+      "cue": 1,
+      "title": "Kai liko šablono spalva",
+      "text": "Kartais perkeltame sąraše eilutė lieka su žalia šablono spalvà.",
+      "file": "k18-1.wav",
+      "duration": 4.49,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 18,
+      "cue": 2,
+      "title": "Kai liko šablono spalva",
+      "text": "Svetainėje to nematyti, bet norėdami tvarkos pažymite tuos langelius",
+      "file": "k18-2.wav",
+      "duration": 4.97,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 18,
+      "cue": 3,
+      "title": "Kai liko šablono spalva",
+      "text": "ir meniu Formatas pasirenkate Išvalyti formatavimą.",
+      "file": "k18-3.wav",
+      "duration": 4.41,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 19,
+      "cue": 1,
+      "title": "Kai antraštė liko be spalvos",
+      "text": "Būna ir atvirkščiai: antraštės eilutė liko be spalvos.",
+      "file": "k19-1.wav",
+      "duration": 4.33,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 19,
+      "cue": 2,
+      "title": "Kai antraštė liko be spalvos",
+      "text": "Pažymite pirmą langelį ir kibirėlio ženklu nuspalvinate jį žaliai.",
+      "file": "k19-2.wav",
+      "duration": 4.83,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 19,
+      "cue": 3,
+      "title": "Kai antraštė liko be spalvos",
+      "text": "Tada spaudžiate volelio ženklą ir perbraukiate kitus antraštės langelius.",
+      "file": "k19-3.wav",
+      "duration": 5.13,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 19,
+      "cue": 4,
+      "title": "Kai antraštė liko be spalvos",
+      "text": "Visa eilutė vienodos spalvos.",
+      "file": "k19-4.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 20,
+      "cue": 1,
+      "title": "Versijų istorija",
+      "text": "Jei atšaukti nebepavyksta, lieka versijų istorija.",
+      "file": "k20-1.wav",
+      "duration": 3.87,
+      "fits": true,
+      "reikia_sek": 39
+    },
+    {
+      "kadras": 20,
+      "cue": 2,
+      "title": "Versijų istorija",
+      "text": "Viršuje dešinėje spaudžiate laikrodžio ženklą.",
+      "file": "k20-2.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 39
+    },
+    {
+      "kadras": 20,
+      "cue": 3,
+      "title": "Versijų istorija",
+      "text": "Dešinėje atsiveria versijų sąrašas: dienos, laikai ir žmonės, kurie keitė lentelę.",
+      "file": "k20-3.wav",
+      "duration": 6.65,
+      "fits": true,
+      "reikia_sek": 39
+    },
+    {
+      "kadras": 20,
+      "cue": 4,
+      "title": "Versijų istorija",
+      "text": "Paspaudę versiją matote, kaip lentelė atrodė tuo metu.",
+      "file": "k20-4.wav",
+      "duration": 3.87,
+      "fits": true,
+      "reikia_sek": 39
+    },
+    {
+      "kadras": 20,
+      "cue": 5,
+      "title": "Versijų istorija",
+      "text": "Radę gerą versiją, viršuje kairėje spaudžiate Atkurti šią versiją.",
+      "file": "k20-5.wav",
+      "duration": 5.45,
+      "fits": true,
+      "reikia_sek": 39
+    },
+    {
+      "kadras": 20,
+      "cue": 6,
+      "title": "Versijų istorija",
+      "text": "Dabartinė versija irgi lieka istorijoje – neprarandate nieko.",
+      "file": "k20-6.wav",
+      "duration": 4.83,
+      "fits": true,
+      "reikia_sek": 39
+    },
+    {
+      "kadras": 20,
+      "cue": 7,
+      "title": "Versijų istorija",
+      "text": "Vieno langelio istoriją matote dešiniuoju pelės mygtuku.",
+      "file": "k20-7.wav",
+      "duration": 4.57,
+      "fits": false,
+      "reikia_sek": 40
+    },
+    {
+      "kadras": 21,
+      "cue": 1,
+      "title": "Klysti nebaisu",
+      "text": "Klysti nebaisu – beveik kiekvieną veiksmą galima atšaukti.",
+      "file": "k21-1.wav",
+      "duration": 4.17,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 21,
+      "cue": 2,
+      "title": "Klysti nebaisu",
+      "text": "Pakeitimai išsisaugo patys, tad galite ramiai bandyti.",
+      "file": "k21-2.wav",
+      "duration": 4.41,
+      "fits": true,
+      "reikia_sek": 12
+    }
+  ]
+}

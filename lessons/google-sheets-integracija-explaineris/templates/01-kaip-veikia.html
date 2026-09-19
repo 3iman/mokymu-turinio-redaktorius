@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<link rel="stylesheet" href="./tokens/sheets.css">
+<style>
+
+  .title { font-size: 44px; margin-bottom: 26px; }
+  .stage { position: relative; width: 1680px; height: 780px; margin: 0 auto; font-family: var(--font-ui, inherit); }
+  .cursor-wrap { position: absolute; width: 44px; height: 56px; z-index: 30; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+
+  .kort { position: absolute; background: #fff; border: 1.5px solid #dfe3ea; border-radius: 22px;
+          box-shadow: 0 20px 50px rgba(30,40,70,.10); box-sizing: border-box; }
+  .kort .h { font-size: 30px; font-weight: 700; color: var(--c-text); }
+  .kort .p { font-size: 25px; color: var(--c-text-muted); line-height: 1.45; }
+  .zyme { font-size: 21px; font-weight: 600; color: var(--c-text-muted); text-transform: uppercase; letter-spacing: .06em; }
+
+  .failas { position: absolute; border-radius: 20px; background: #eaf5ec; border: 2.5px solid var(--gs-green-th, #1c8d1f); overflow: hidden; }
+  .failas .vidus { height: 100%; display: flex; align-items: center; justify-content: center; font-size: 26px; color: #1b5e20; }
+  .lapai { position: absolute; left: 0; right: 0; bottom: 0; display: flex; }
+  .lapai span { flex: 1; text-align: center; padding: 16px 0; font-size: 23px; font-weight: 600; color: #fff; background: var(--gs-green-th, #1c8d1f); }
+  .lapai span:nth-child(2) { background: #197a1c; }
+  .lapai span:nth-child(3) { background: #14691a; }
+
+  .kodas { font-family: ui-monospace, "SF Mono", Menlo, monospace; font-size: 26px; }
+  .pill { display: inline-flex; align-items: center; border-radius: 10px; padding: 6px 14px; }
+  .kodas .pill { padding: 2px 9px; }
+  .pill.f { background: #fdf3d8; color: #a15c00; font-weight: 700; }
+  .pill.g { background: #ece7fb; color: #5b3bb5; font-weight: 700; }
+  .rodykle { position: absolute; height: 3px; background: #c7ced9; }
+  .rodykle::after { content: ""; position: absolute; right: -2px; top: -7px; border: 8px solid transparent; border-left-color: #c7ced9; }
+  .varnele { color: var(--gs-green-th, #1c8d1f); font-weight: 700; }
+
+
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="stage">
+<div class="kort g0" style="left:60px; top:120px; width:460px; height:230px; padding:28px 30px; background:#eaf5ec; border-color:#1c8d1f"><div class="h" style="color:#1c8d1f">{{gh0}}</div><div class="p" style="margin-top:14px">{{gp0}}</div></div><div class="kort g1" style="left:600px; top:120px; width:460px; height:230px; padding:28px 30px; background:#e8f0fe; border-color:#0b57d0"><div class="h" style="color:#0b57d0">{{gh1}}</div><div class="p" style="margin-top:14px">{{gp1}}</div></div><div class="kort g2" style="left:1140px; top:120px; width:460px; height:230px; padding:28px 30px; background:#f3eefb; border-color:#5b3bb5"><div class="h" style="color:#5b3bb5">{{gh2}}</div><div class="p" style="margin-top:14px">{{gp2}}</div></div><div class="rodykle r0" style="left:530px; top:232px; width:60px"></div><div class="rodykle r1" style="left:1070px; top:232px; width:60px"></div><div class="kort id" style="left:60px; top:430px; width:1540px; padding:26px 32px"><div class="p">{{idp}}</div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

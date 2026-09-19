@@ -280,6 +280,9 @@ Pilna seka, kuri turi būti vykdoma griežtai:
 6. `node build-video.js --lesson <slug> --lang lt` — galutinis video
 7. `node generate-youtube-description.js --lesson <slug> --lang lt` — YouTube aprašymas su timestamps
 8. `open` — atidaryti naują
+9. `node make-srt.js --lesson <slug> --lang lt` — subtitrai iš `timeline-<lang>.json`
+10. `node make-yt-meta.js --lesson <slug> --lang lt` — meta įkėlimui
+11. `.venv/bin/python -m yt_upload run --lesson <slug>` — įkėlimas (žr. `YOUTUBE_IKELIMAS.md`)
 
 **NIEKADA** negeneruoti naujo video neištrynus seno. **VISADA** uždaryti grotuvą prieš trinant.
 
@@ -306,12 +309,22 @@ Jei `_intro.title` nėra — fallback į pirmos sekcijos title. Subtitle hardcod
 
 ### YouTube aprašymo generavimas
 `generate-youtube-description.js` automatiškai sukuria tekstą pasta'inimui į YouTube description lauką:
-- Skaito `scenarijus-<lang>.md` → timestamps (perėjimai = 2.5s)
+- Skaito `scenarijus-<lang>.md` → timestamps (perėjimai = 3.2s, `TRANSITION`)
 - Pirmas chapter'is sujungia „Įvadas + pirmas skyrius" (YouTube reikalauja min. 10s pirmam chapter'iui)
 - Fetch'ina `le_intro` iš WP → intro paragraph (HTML išvalytas) + susijusių pamokų linkai (parse'inti iš anchor'ų)
 - Output: `lessons/<slug>/video/youtube-<lang>.txt`
 
 Linkai **sinchronizuoti su pamokos intro tekstu** — kai le_intro WP'e atnaujinamas, paleiskite skriptą iš naujo.
+
+### Laiko juosta ir subtitrai
+`build-video.js` po montažo rašo `lessons/<slug>/video/timeline-<lang>.json`: kadrų pradžios ir
+balso ruožai, **išmatuoti** iš sumontuotų failų. Tai vienintelis autoritetingas laiko šaltinis —
+`make-srt.js` ima iš jo, todėl `TRANSITION` konstantos trečios kopijos nėra.
+
+### Įkėlimas į YouTube
+`yt_upload` (Python) — `YOUTUBE_IKELIMAS.md`. Kalbos ir kanalai gyvena `config/settings.json` ir
+`config/channels.json`, atmintis — `uploads-log.json`, raktai — `.secrets/` (gitignore).
+Filmukas keliamas **`private`**; viešina žmogus. Tas pats slug'as antrą kartą nekeliamas niekada.
 
 ### Lokalizacija
 - **Jokių hardcoded tekstų konkrečia kalba** — visi rodomi tekstai (intro title, subtitle, perėjimų pavadinimai) turi ateiti iš kalbos failo arba lokalizuoto žodyno kode

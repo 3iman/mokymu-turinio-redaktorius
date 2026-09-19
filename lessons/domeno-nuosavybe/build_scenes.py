@@ -15,7 +15,7 @@ Rašo:
 ⛔ Balsas SUPLANUOTAS, NESUGENERUOTAS (Eimantas 2026-09-18: „Tik negarsink“).
 ⛔ Nejudantis kadras rodo galutinę būseną (ANIMATION_PRINCIPLES §14).
 """
-import json, os, re
+import json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ILL = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -706,6 +706,19 @@ def main():
     json.dump([{'file': s.file, 'title': s.trans, 'h1': CONTENT[s.key]['title'], 'D': s.D, 'ekrane': s.ekrane,
                 'komentaras': s.komentaras, 'cues': sorted(s.cues)} for s, _ in SCENES],
               open(os.path.join(HERE, 'video', 'kadravimas-lt.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
+    # ⛔ Kalbos patikra paleidžiama PATI (Eimantas 2026-09-19: „ar naudoji agentą tik kai pasakau“).
+    # Nepamiršti neįmanoma tik tada, kai to nereikia prisiminti.
+    r = os.path.expanduser('~/.claude/skills/redaktorius/scripts/redaktorius.py')
+    if os.path.exists(r):
+        import subprocess
+        kelias = [os.path.join(HERE, 'content'), os.path.join(HERE, 'video', 'balso-tekstas-lt.md')]
+        p = subprocess.run(['python3', r] + kelias, capture_output=True, text=True)
+        eilute = [l for l in p.stdout.split('\n') if 'Iš viso' in l]
+        if eilute:
+            print('redaktorius: ' + re.sub(r'\x1b\[[0-9;]*m', '', eilute[0]).replace('Iš viso:', '').strip())
+        if p.returncode == 1 and '--tyliai' not in sys.argv:
+            print('  (detaliau: python3 $R ' + os.path.relpath(HERE, ILL) + ')')
+
     print(f"scenos: {len(SCENES)} | trukmė {total}s (~{full // 60}:{full % 60:02d}) | balso rizikos: {problems or 'nėra'}")
 
 

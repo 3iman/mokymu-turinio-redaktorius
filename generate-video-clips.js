@@ -172,6 +172,184 @@ const COMMON_CSS = `
 // Timing follows ANIMATION_PRINCIPLES.md sequence.
 
 const TEMPLATE_ANIMATIONS = {
+  // >>> GS-INTEGRACIJA (generuoja lessons/google-sheets-integracija-explaineris/build_scenes.py — ranka neredaguoti)
+  '00-kodel': `
+    .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+
+    @keyframes ratilasGS { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
+    .failas { animation: fadeUpMedium 0.6s var(--ease-spring) 0.6s both; }
+    .n0 { animation: slinktisIsDesines 0.5s var(--ease-spring) 5.0s both; }
+    .n1 { animation: slinktisIsDesines 0.5s var(--ease-spring) 8.6s both; }
+    .n2 { animation: slinktisIsDesines 0.5s var(--ease-spring) 12.2s both; }
+    .n3 { animation: slinktisIsDesines 0.5s var(--ease-spring) 15.8s both; }
+  `,
+  '01-kaip-veikia': `
+    .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+
+    @keyframes ratilasGS { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
+    .g0 { animation: fadeUpMedium 0.5s var(--ease-spring) 1.0s both; }
+    .g1 { animation: fadeUpMedium 0.5s var(--ease-spring) 6.4s both; }
+    .g2 { animation: fadeUpMedium 0.5s var(--ease-spring) 11.8s both; }
+    .r0 { animation: fadeUpLight 0.4s var(--ease-spring) 5.6s both; }
+    .r1 { animation: fadeUpLight 0.4s var(--ease-spring) 11.0s both; }
+    .id { animation: v_01_kaip_veikia_5 26s linear 0s both; }
+    @keyframes v_01_kaip_veikia_5 { 0%, 65.381% { opacity: 0; } 66.346% { opacity: 1; } 100% { opacity: 1; } }
+  `,
+  '02-url': `
+    .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+
+    @keyframes ratilasGS { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
+    .urlbar { animation: fadeUpMedium 0.5s var(--ease-spring) 0.8s both; }
+    .u_f { animation: iconPulse 0.7s ease-in-out 5.2s both; }
+    .u_g { animation: iconPulse 0.7s ease-in-out 11.0s both; }
+    .u0 { animation: fadeUpLight 0.5s var(--ease-spring) 5.4s both; }
+    .u1 { animation: fadeUpLight 0.5s var(--ease-spring) 11.2s both; }
+  `,
+  '03-kas-ka-daro': `
+    .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+
+    @keyframes ratilasGS { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
+    .k0 { animation: slinktisIsKaires 0.5s var(--ease-spring) 0.8s both; }
+    .k1 { animation: slinktisIsDesines 0.5s var(--ease-spring) 8.6s both; }
+    .k0i0 { animation: v_03_kas_ka_daro_2 22s linear 0s both; }
+    @keyframes v_03_kas_ka_daro_2 { 0%, 9.086% { opacity: 0; } 10.227% { opacity: 1; } 100% { opacity: 1; } }
+    .k0i1 { animation: v_03_kas_ka_daro_4 22s linear 0s both; }
+    @keyframes v_03_kas_ka_daro_4 { 0%, 18.632% { opacity: 0; } 19.773% { opacity: 1; } 100% { opacity: 1; } }
+    .k0i2 { animation: v_03_kas_ka_daro_6 22s linear 0s both; }
+    @keyframes v_03_kas_ka_daro_6 { 0%, 28.177% { opacity: 0; } 29.318% { opacity: 1; } 100% { opacity: 1; } }
+    .k1i0 { animation: v_03_kas_ka_daro_8 22s linear 0s both; }
+    @keyframes v_03_kas_ka_daro_8 { 0%, 43.632% { opacity: 0; } 44.773% { opacity: 1; } 100% { opacity: 1; } }
+    .k1i1 { animation: v_03_kas_ka_daro_10 22s linear 0s both; }
+    @keyframes v_03_kas_ka_daro_10 { 0%, 53.177% { opacity: 0; } 54.318% { opacity: 1; } 100% { opacity: 1; } }
+    .k1i2 { animation: v_03_kas_ka_daro_12 22s linear 0s both; }
+    @keyframes v_03_kas_ka_daro_12 { 0%, 62.723% { opacity: 0; } 63.864% { opacity: 1; } 100% { opacity: 1; } }
+  `,
+  '04-publikavimas': `
+    .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+
+    @keyframes ratilasGS { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
+    .dlg { animation: fadeUpMedium 0.5s var(--ease-spring) 0.8s both; }
+    .sel { animation: v_04_publikavimas_1 22s linear 0s both; }
+    @keyframes v_04_publikavimas_1 { 0%, 27.268% { opacity: 0; } 28.409% { opacity: 1; } 100% { opacity: 1; } }
+    .rol { animation: v_04_publikavimas_3 22s linear 0s both; }
+    @keyframes v_04_publikavimas_3 { 0%, 54.541% { opacity: 0; } 55.682% { opacity: 1; } 100% { opacity: 1; } }
+  `,
+  '05-kodas': `
+    .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+
+    @keyframes ratilasGS { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
+    .kod { animation: fadeUpMedium 0.5s var(--ease-spring) 1.0s both; }
+    .res { animation: slinktisIsDesines 0.6s var(--ease-spring) 9.0s both; }
+  `,
+  '06-tvs-modulis': `
+    .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+
+    @keyframes ratilasGS { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
+    .mod { animation: fadeUpMedium 0.5s var(--ease-spring) 0.8s both; }
+    .me0 { animation: v_06_tvs_modulis_1 22s linear 0s both; }
+    @keyframes v_06_tvs_modulis_1 { 0%, 18.177% { opacity: 0; } 19.318% { opacity: 1; } 100% { opacity: 1; } }
+    .me1 { animation: v_06_tvs_modulis_3 22s linear 0s both; }
+    @keyframes v_06_tvs_modulis_3 { 0%, 28.177% { opacity: 0; } 29.318% { opacity: 1; } 100% { opacity: 1; } }
+    .me2 { animation: v_06_tvs_modulis_5 22s linear 0s both; }
+    @keyframes v_06_tvs_modulis_5 { 0%, 38.177% { opacity: 0; } 39.318% { opacity: 1; } 100% { opacity: 1; } }
+    .kort:last-child { animation: v_06_tvs_modulis_7 22s linear 0s both; }
+    @keyframes v_06_tvs_modulis_7 { 0%, 59.086% { opacity: 0; } 60.227% { opacity: 1; } 100% { opacity: 1; } }
+  `,
+  '07-atsinaujinimas': `
+    .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+
+    @keyframes ratilasGS { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
+    .a0 { animation: slinktisIsKaires 0.5s var(--ease-spring) 0.8s both; }
+    .a1 { animation: slinktisIsDesines 0.5s var(--ease-spring) 4.4s both; }
+    .t0 { animation: fadeUpLight 0.5s var(--ease-spring) 10.0s both; }
+    .t1 { animation: fadeUpLight 0.5s var(--ease-spring) 14.2s both; }
+  `,
+  '08-duomenu-baze': `
+    .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+
+    @keyframes ratilasGS { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
+    .d0 { animation: slinktisIsKaires 0.5s var(--ease-spring) 0.8s both; }
+    .d1 { animation: slinktisIsDesines 0.5s var(--ease-spring) 11.0s both; }
+    .d0i0 { animation: v_08_duomenu_baze_2 26s linear 0s both; }
+    @keyframes v_08_duomenu_baze_2 { 0%, 9.227% { opacity: 0; } 10.192% { opacity: 1; } 100% { opacity: 1; } }
+    .d0i1 { animation: v_08_duomenu_baze_4 26s linear 0s both; }
+    @keyframes v_08_duomenu_baze_4 { 0%, 18.458% { opacity: 0; } 19.423% { opacity: 1; } 100% { opacity: 1; } }
+    .d0i2 { animation: v_08_duomenu_baze_6 26s linear 0s both; }
+    @keyframes v_08_duomenu_baze_6 { 0%, 27.688% { opacity: 0; } 28.654% { opacity: 1; } 100% { opacity: 1; } }
+    .d1i0 { animation: v_08_duomenu_baze_8 26s linear 0s both; }
+    @keyframes v_08_duomenu_baze_8 { 0%, 47.688% { opacity: 0; } 48.654% { opacity: 1; } 100% { opacity: 1; } }
+    .d1i1 { animation: v_08_duomenu_baze_10 26s linear 0s both; }
+    @keyframes v_08_duomenu_baze_10 { 0%, 56.919% { opacity: 0; } 57.885% { opacity: 1; } 100% { opacity: 1; } }
+    .d1i2 { animation: v_08_duomenu_baze_12 26s linear 0s both; }
+    @keyframes v_08_duomenu_baze_12 { 0%, 66.150% { opacity: 0; } 67.115% { opacity: 1; } 100% { opacity: 1; } }
+  `,
+  '09-lapu-tvarka': `
+    .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+
+    @keyframes ratilasGS { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
+    .lp0 { animation: fadeUpMedium 0.5s var(--ease-spring) 1.0s both; }
+    .lp1 { animation: fadeUpMedium 0.5s var(--ease-spring) 4.2s both; }
+    .lp2 { animation: fadeUpMedium 0.5s var(--ease-spring) 7.4s both; }
+    .kort:last-child { animation: v_09_lapu_tvarka_3 20s linear 0s both; }
+    @keyframes v_09_lapu_tvarka_3 { 0%, 59.995% { opacity: 0; } 61.250% { opacity: 1; } 100% { opacity: 1; } }
+  `,
+  '10-organizavimas': `
+    .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+
+    @keyframes ratilasGS { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
+    .f0 { animation: slinktisIsKaires 0.5s var(--ease-spring) 0.8s both; }
+    .f1 { animation: slinktisIsDesines 0.5s var(--ease-spring) 4.6s both; }
+    .p0 { animation: fadeUpLight 0.5s var(--ease-spring) 10.0s both; }
+    .p1 { animation: fadeUpLight 0.5s var(--ease-spring) 13.0s both; }
+    .p2 { animation: fadeUpLight 0.5s var(--ease-spring) 16.0s both; }
+  `,
+  '11-sablonas': `
+    .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+
+    @keyframes ratilasGS { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
+    .failas { animation: fadeUpMedium 0.6s var(--ease-spring) 0.8s both; }
+    .r0 { animation: slinktisIsDesines 0.5s var(--ease-spring) 4.6s both; }
+    .r1 { animation: slinktisIsDesines 0.5s var(--ease-spring) 8.0s both; }
+    .r2 { animation: slinktisIsDesines 0.5s var(--ease-spring) 11.399999999999999s both; }
+    .kort:last-child { animation: v_11_sablonas_4 20s linear 0s both; }
+    @keyframes v_11_sablonas_4 { 0%, 74.995% { opacity: 0; } 76.250% { opacity: 1; } 100% { opacity: 1; } }
+  `,
+  '12-kur-toliau': `
+    .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
+
+    @keyframes ratilasGS { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
+    .v0 { animation: slinktisIsKaires 0.5s var(--ease-spring) 1.0s both; }
+    .v1 { animation: slinktisIsDesines 0.5s var(--ease-spring) 5.0s both; }
+    .kort:last-child { animation: v_12_kur_toliau_2 16s linear 0s both; }
+    @keyframes v_12_kur_toliau_2 { 0%, 58.744% { opacity: 0; } 60.312% { opacity: 1; } 100% { opacity: 1; } }
+  `,
+  // <<< GS-INTEGRACIJA
   // >>> DOMENAS (generuoja lessons/domeno-nuosavybe/build_scenes.py — ranka neredaguoti)
   '00-turtas': `
     .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
@@ -360,13 +538,13 @@ const TEMPLATE_ANIMATIONS = {
     @keyframes ratilasGS { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
     @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
     @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
-    .spot { animation: spot_00_kas_yra_sheets 17s linear 0s both; }
-    @keyframes spot_00_kas_yra_sheets { 0%, 35.288% { opacity: 0; left: 4px; top: 690px; width: 1672px; height: 52px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 37.647% { opacity: 1; left: 4px; top: 690px; width: 1672px; height: 52px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 100% { opacity: 1; left: 4px; top: 690px; width: 1672px; height: 52px; } }
+    .spot { animation: spot_00_kas_yra_sheets 18s linear 0s both; }
+    @keyframes spot_00_kas_yra_sheets { 0%, 33.328% { opacity: 0; left: 4px; top: 690px; width: 1672px; height: 52px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 35.556% { opacity: 1; left: 4px; top: 690px; width: 1672px; height: 52px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 100% { opacity: 1; left: 4px; top: 690px; width: 1672px; height: 52px; } }
     .stage > .gs-window { animation: fadeUpMedium 0.6s var(--ease-spring) 0.3s both; }
-    .n-tabs { animation: v_00_kas_yra_sheets_3 17s linear 0s both; }
-    @keyframes v_00_kas_yra_sheets_3 { 0%, 38.818% { opacity: 0; } 40.294% { opacity: 1; } 62.353% { opacity: 1; } 63.529%, 100% { opacity: 0; } }
-    .n-files { animation: v_00_kas_yra_sheets_5 17s linear 0s both; }
-    @keyframes v_00_kas_yra_sheets_5 { 0%, 64.112% { opacity: 0; } 65.588% { opacity: 1; } 100% { opacity: 1; } }
+    .n-tabs { animation: v_00_kas_yra_sheets_3 18s linear 0s both; }
+    @keyframes v_00_kas_yra_sheets_3 { 0%, 36.661% { opacity: 0; } 38.056% { opacity: 1; } 58.889% { opacity: 1; } 60.000%, 100% { opacity: 0; } }
+    .n-files { animation: v_00_kas_yra_sheets_5 18s linear 0s both; }
+    @keyframes v_00_kas_yra_sheets_5 { 0%, 60.550% { opacity: 0; } 61.944% { opacity: 1; } 100% { opacity: 1; } }
     .gs-tab.tab-0 { animation: tabPulseGS 0.5s ease-in-out 6.80s both; }
     .gs-tab.tab-1 { animation: tabPulseGS 0.5s ease-in-out 7.08s both; }
     .gs-tab.tab-2 { animation: tabPulseGS 0.5s ease-in-out 7.36s both; }
@@ -402,25 +580,25 @@ const TEMPLATE_ANIMATIONS = {
     .rip18 { animation: ratilasGS 0.6s ease-out 8.4s forwards; }
     .rip19 { animation: ratilasGS 0.6s ease-out 15.6s forwards; }
     .rip20 { animation: ratilasGS 0.6s ease-out 23.6s forwards; }
-    .cursor-wrap { animation: k_01_prieiga 31s linear 0s both; }
-    @keyframes k_01_prieiga { 0% { transform: translate(320px, 210px); } 0.000% { transform: translate(320px, 210px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 20.645% { transform: translate(320px, 210px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 26.129% { transform: translate(-874px, -1px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 43.871% { transform: translate(-874px, -1px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 49.355% { transform: translate(460px, -412px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 53.548% { transform: translate(460px, -412px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 55.484% { transform: translate(-480px, -190px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 74.194% { transform: translate(-480px, -190px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 75.484% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100.000% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
+    .cursor-wrap { animation: k_01_prieiga 32s linear 0s both; }
+    @keyframes k_01_prieiga { 0% { transform: translate(320px, 210px); } 0.000% { transform: translate(320px, 210px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 20.000% { transform: translate(320px, 210px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 25.312% { transform: translate(-874px, -1px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 42.500% { transform: translate(-874px, -1px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 47.812% { transform: translate(460px, -412px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 51.875% { transform: translate(460px, -412px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 53.750% { transform: translate(-480px, -190px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 71.875% { transform: translate(-480px, -190px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 73.125% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 96.875% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
     .req { animation: fadeUpMedium 0.6s var(--ease-spring) 0.5s both; }
-    .req .btn { animation: mygtukasGS 31s linear 0s both; }
-    @keyframes mygtukasGS { 0%, 26.935% { filter: brightness(1); transform: scale(1); } 27.258% { filter: brightness(.85); transform: scale(.96); } 28.065%, 100% { filter: brightness(1); transform: scale(1); } }
+    .req .btn { animation: mygtukasGS 32s linear 0s both; }
+    @keyframes mygtukasGS { 0%, 26.094% { filter: brightness(1); transform: scale(1); } 26.406% { filter: brightness(.85); transform: scale(.96); } 27.187%, 100% { filter: brightness(1); transform: scale(1); } }
     .grant { animation: slinktisIsDesines 0.6s var(--ease-spring) 10.0s both; }
-    .req { animation: v_01_prieiga_27 31s linear 0s both; }
-    @keyframes v_01_prieiga_27 { 0%, 1.610% { opacity: 0; } 2.419% { opacity: 1; } 45.161% { opacity: 1; } 45.806%, 100% { opacity: 0; } }
-    .grant { animation: v_01_prieiga_29 31s linear 0s both; }
-    @keyframes v_01_prieiga_29 { 0%, 32.255% { opacity: 0; } 33.065% { opacity: 1; } 45.161% { opacity: 1; } 45.806%, 100% { opacity: 0; } }
-    .shwrap { animation: v_01_prieiga_31 31s linear 0s both; }
-    @keyframes v_01_prieiga_31 { 0%, 45.803% { opacity: 0; } 46.613% { opacity: 1; } 100% { opacity: 1; } }
+    .req { animation: v_01_prieiga_27 32s linear 0s both; }
+    @keyframes v_01_prieiga_27 { 0%, 1.559% { opacity: 0; } 2.344% { opacity: 1; } 43.750% { opacity: 1; } 44.375%, 100% { opacity: 0; } }
+    .grant { animation: v_01_prieiga_29 32s linear 0s both; }
+    @keyframes v_01_prieiga_29 { 0%, 31.247% { opacity: 0; } 32.031% { opacity: 1; } 43.750% { opacity: 1; } 44.375%, 100% { opacity: 0; } }
+    .shwrap { animation: v_01_prieiga_31 32s linear 0s both; }
+    @keyframes v_01_prieiga_31 { 0%, 44.372% { opacity: 0; } 45.156% { opacity: 1; } 100% { opacity: 1; } }
     .shdlg { animation: fadeUpMedium 0.5s var(--ease-spring) 16.4s both; }
-    .shdlg .row { animation: v_01_prieiga_34 31s linear 0s both; }
-    @keyframes v_01_prieiga_34 { 0%, 67.739% { opacity: 0; } 68.548% { opacity: 1; } 100% { opacity: 1; } }
-    .shdlg .fld .ph { animation: v_01_prieiga_36 31s linear 0s both; }
-    @keyframes v_01_prieiga_36 { 0%, 45.803% { opacity: 0; } 46.613% { opacity: 1; } 56.129% { opacity: 1; } 56.774%, 100% { opacity: 0; } }
-    .shdlg .send { animation: siusti_01_prieiga 31s linear 0s both; }
-    @keyframes siusti_01_prieiga { 0%, 75.968% { filter: brightness(1); } 76.290% { filter: brightness(.85); } 77.097%, 100% { filter: brightness(1); } }
+    .shdlg .row { animation: v_01_prieiga_34 32s linear 0s both; }
+    @keyframes v_01_prieiga_34 { 0%, 65.622% { opacity: 0; } 66.406% { opacity: 1; } 100% { opacity: 1; } }
+    .shdlg .fld .ph { animation: v_01_prieiga_36 32s linear 0s both; }
+    @keyframes v_01_prieiga_36 { 0%, 44.372% { opacity: 0; } 45.156% { opacity: 1; } 54.375% { opacity: 1; } 55.000%, 100% { opacity: 0; } }
+    .shdlg .send { animation: siusti_01_prieiga 32s linear 0s both; }
+    @keyframes siusti_01_prieiga { 0%, 73.594% { filter: brightness(1); } 73.906% { filter: brightness(.85); } 74.688%, 100% { filter: brightness(1); } }
   `,
   '02-paskyra': `
     .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
@@ -431,8 +609,8 @@ const TEMPLATE_ANIMATIONS = {
     .acc.g { animation: slinktisIsKaires 0.6s var(--ease-spring) 1.0s both; }
     .acc.g .badge { animation: iconPulse 0.6s ease-in-out 3.0s both; }
     .acc.o { animation: slinktisIsDesines 0.6s var(--ease-spring) 6.4s both; }
-    .ws { animation: v_02_paskyra_3 17s linear 0s both; }
-    @keyframes v_02_paskyra_3 { 0%, 75.876% { opacity: 0; } 77.353% { opacity: 1; } 100% { opacity: 1; } }
+    .ws { animation: v_02_paskyra_3 20s linear 0s both; }
+    @keyframes v_02_paskyra_3 { 0%, 64.495% { opacity: 0; } 65.750% { opacity: 1; } 100% { opacity: 1; } }
   `,
   '03-langas': `
     .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
@@ -440,17 +618,17 @@ const TEMPLATE_ANIMATIONS = {
     @keyframes ratilasGS { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
     @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
     @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
-    .spot { animation: spot_03_langas 16s linear 0s both; }
-    @keyframes spot_03_langas { 0%, 8.119% { opacity: 0; left: 66px; top: 6px; width: 520px; height: 48px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 10.625% { opacity: 1; left: 66px; top: 6px; width: 520px; height: 48px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 20.000% { opacity: 1; left: 66px; top: 6px; width: 520px; height: 48px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 23.438% { opacity: 1; left: 66px; top: 54px; width: 1000px; height: 44px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 45.000% { opacity: 1; left: 66px; top: 54px; width: 1000px; height: 44px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 48.438% { opacity: 1; left: 64px; top: 248px; width: 1612px; height: 438px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 67.500% { opacity: 1; left: 64px; top: 248px; width: 1612px; height: 438px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 70.938% { opacity: 1; left: 4px; top: 690px; width: 1672px; height: 52px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 100% { opacity: 1; left: 4px; top: 690px; width: 1672px; height: 52px; } }
+    .spot { animation: spot_03_langas 17s linear 0s both; }
+    @keyframes spot_03_langas { 0%, 7.641% { opacity: 0; left: 66px; top: 6px; width: 520px; height: 48px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 10.000% { opacity: 1; left: 66px; top: 6px; width: 520px; height: 48px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 18.824% { opacity: 1; left: 66px; top: 6px; width: 520px; height: 48px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 22.059% { opacity: 1; left: 66px; top: 54px; width: 1000px; height: 44px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 42.353% { opacity: 1; left: 66px; top: 54px; width: 1000px; height: 44px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 45.588% { opacity: 1; left: 64px; top: 248px; width: 1612px; height: 438px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 63.529% { opacity: 1; left: 64px; top: 248px; width: 1612px; height: 438px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 66.765% { opacity: 1; left: 4px; top: 690px; width: 1672px; height: 52px; animation-timing-function: cubic-bezier(.4,0,.2,1); } 100% { opacity: 1; left: 4px; top: 690px; width: 1672px; height: 52px; } }
     .stage > .gs-window { animation: fadeUpMedium 0.5s var(--ease-spring) 0.2s both; }
-    .nr1 { animation: v_03_langas_3 16s linear 0s both; }
-    @keyframes v_03_langas_3 { 0%, 10.306% { opacity: 0; } 11.875% { opacity: 1; } 19.688% { opacity: 1; } 20.938%, 100% { opacity: 0; } }
-    .nr2 { animation: v_03_langas_5 16s linear 0s both; }
-    @keyframes v_03_langas_5 { 0%, 22.181% { opacity: 0; } 23.750% { opacity: 1; } 44.688% { opacity: 1; } 45.938%, 100% { opacity: 0; } }
-    .nr3 { animation: v_03_langas_7 16s linear 0s both; }
-    @keyframes v_03_langas_7 { 0%, 47.181% { opacity: 0; } 48.750% { opacity: 1; } 67.188% { opacity: 1; } 68.438%, 100% { opacity: 0; } }
-    .nr4 { animation: v_03_langas_9 16s linear 0s both; }
-    @keyframes v_03_langas_9 { 0%, 69.681% { opacity: 0; } 71.250% { opacity: 1; } 100% { opacity: 1; } }
+    .nr1 { animation: v_03_langas_3 17s linear 0s both; }
+    @keyframes v_03_langas_3 { 0%, 9.700% { opacity: 0; } 11.176% { opacity: 1; } 18.529% { opacity: 1; } 19.706%, 100% { opacity: 0; } }
+    .nr2 { animation: v_03_langas_5 17s linear 0s both; }
+    @keyframes v_03_langas_5 { 0%, 20.876% { opacity: 0; } 22.353% { opacity: 1; } 42.059% { opacity: 1; } 43.235%, 100% { opacity: 0; } }
+    .nr3 { animation: v_03_langas_7 17s linear 0s both; }
+    @keyframes v_03_langas_7 { 0%, 44.406% { opacity: 0; } 45.882% { opacity: 1; } 63.235% { opacity: 1; } 64.412%, 100% { opacity: 0; } }
+    .nr4 { animation: v_03_langas_9 17s linear 0s both; }
+    @keyframes v_03_langas_9 { 0%, 65.582% { opacity: 0; } 67.059% { opacity: 1; } 100% { opacity: 1; } }
   `,
   '04-lapai': `
     .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
@@ -460,18 +638,18 @@ const TEMPLATE_ANIMATIONS = {
     @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
     .rip0 { animation: ratilasGS 0.6s ease-out 4.6s forwards; }
     .rip1 { animation: ratilasGS 0.6s ease-out 10.0s forwards; }
-    .cursor-wrap { animation: k_04_lapai 15s linear 0s both; }
-    @keyframes k_04_lapai { 0% { transform: translate(-444px, -316px); } 0.000% { transform: translate(-444px, -316px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 18.667% { transform: translate(-444px, -316px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 28.667% { transform: translate(-980px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 57.333% { transform: translate(-980px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 64.667% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100.000% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
-    .grid-b { animation: v_04_lapai_4 15s linear 0s both; }
-    @keyframes v_04_lapai_4 { 0%, 31.660% { opacity: 0; } 33.333% { opacity: 1; } 100% { opacity: 1; } }
-    .gs-tab.tab-3 { animation: tabOnOffGS_04_lapai 15s steps(1,end) 0s both; }
-    @keyframes tabOnOffGS_04_lapai { 0% { background: var(--gs-tab-active); color: var(--gs-blue); font-weight: 700; } 31.333%, 100% { background: var(--gs-tabbar); color: var(--gs-muted); font-weight: 500; } }
-    .gs-tab.tab-2 { animation: tabOnGS_04_lapai 15s steps(1,end) 0s both; }
-    @keyframes tabOnGS_04_lapai { 0% { background: var(--gs-tabbar); color: var(--gs-muted); font-weight: 500; } 31.333%, 100% { background: var(--gs-tab-active); color: var(--gs-blue); font-weight: 700; } }
-    .strip { animation: juostaSlenkaGS 15s cubic-bezier(.3,0,.2,1) 0s both; }
-    @keyframes juostaSlenkaGS { 0%, 67.000% { transform: translateX(0); } 71.333%, 100% { transform: translateX(-250px); } }
-    .stage { transform-origin: 0% 100%; animation: z_04_lapai 15s cubic-bezier(.45,0,.2,1) 0s both; }
-    @keyframes z_04_lapai { 0%, 16.000% { transform: scale(1); } 23.333% { transform: scale(1.28); } 82.667% { transform: scale(1.28); } 90.000%, 100% { transform: scale(1); } }
+    .cursor-wrap { animation: k_04_lapai 17s linear 0s both; }
+    @keyframes k_04_lapai { 0% { transform: translate(-444px, -316px); } 0.000% { transform: translate(-444px, -316px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 16.471% { transform: translate(-444px, -316px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 25.294% { transform: translate(-980px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 50.588% { transform: translate(-980px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 57.059% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 88.235% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
+    .grid-b { animation: v_04_lapai_4 17s linear 0s both; }
+    @keyframes v_04_lapai_4 { 0%, 27.935% { opacity: 0; } 29.412% { opacity: 1; } 100% { opacity: 1; } }
+    .gs-tab.tab-3 { animation: tabOnOffGS_04_lapai 17s steps(1,end) 0s both; }
+    @keyframes tabOnOffGS_04_lapai { 0% { background: var(--gs-tab-active); color: var(--gs-blue); font-weight: 700; } 27.647%, 100% { background: var(--gs-tabbar); color: var(--gs-muted); font-weight: 500; } }
+    .gs-tab.tab-2 { animation: tabOnGS_04_lapai 17s steps(1,end) 0s both; }
+    @keyframes tabOnGS_04_lapai { 0% { background: var(--gs-tabbar); color: var(--gs-muted); font-weight: 500; } 27.647%, 100% { background: var(--gs-tab-active); color: var(--gs-blue); font-weight: 700; } }
+    .strip { animation: juostaSlenkaGS 17s cubic-bezier(.3,0,.2,1) 0s both; }
+    @keyframes juostaSlenkaGS { 0%, 59.118% { transform: translateX(0); } 62.941%, 100% { transform: translateX(-250px); } }
+    .stage { transform-origin: 0% 100%; animation: z_04_lapai 17s cubic-bezier(.45,0,.2,1) 0s both; }
+    @keyframes z_04_lapai { 0%, 14.118% { transform: scale(1); } 20.588% { transform: scale(1.28); } 72.941% { transform: scale(1.28); } 79.412%, 100% { transform: scale(1); } }
   `,
   '05-visi-lapai': `
     .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
@@ -481,20 +659,20 @@ const TEMPLATE_ANIMATIONS = {
     @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
     .rip0 { animation: ratilasGS 0.6s ease-out 2.8s forwards; }
     .rip1 { animation: ratilasGS 0.6s ease-out 7.4s forwards; }
-    .cursor-wrap { animation: k_05_visi_lapai 13s linear 0s both; }
-    @keyframes k_05_visi_lapai { 0% { transform: translate(724px, -220px); } 0.000% { transform: translate(724px, -220px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 9.231% { transform: translate(724px, -220px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 19.231% { transform: translate(-98px, 196px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 43.077% { transform: translate(-98px, 196px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 54.615% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100.000% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
-    .list-pop { animation: v_05_visi_lapai_4 13s linear 0s both; }
-    @keyframes v_05_visi_lapai_4 { 0%, 22.685% { opacity: 0; } 24.615% { opacity: 1; } 57.692% { opacity: 1; } 59.231%, 100% { opacity: 0; } }
-    .list-pop .li-4 { animation: hlGS_05_visi_lapai 13s steps(1,end) 0s both; }
-    @keyframes hlGS_05_visi_lapai { 0%, 50.769% { background: transparent; } 50.769%, 100% { background: #e8eaed; } }
-    .grid-c { animation: v_05_visi_lapai_8 13s linear 0s both; }
-    @keyframes v_05_visi_lapai_8 { 0%, 58.454% { opacity: 0; } 60.385% { opacity: 1; } 100% { opacity: 1; } }
-    .gs-tab.tab-3 { animation: t3GS_05_visi_lapai 13s steps(1,end) 0s both; }
-    @keyframes t3GS_05_visi_lapai { 0% { background: var(--gs-tab-active); color: var(--gs-blue); font-weight: 700; } 58.462%, 100% { background: var(--gs-tabbar); color: var(--gs-muted); font-weight: 500; } }
-    .gs-tab.tab-4 { animation: t4GS_05_visi_lapai 13s steps(1,end) 0s both; }
-    @keyframes t4GS_05_visi_lapai { 0% { background: var(--gs-tabbar); color: var(--gs-muted); font-weight: 500; } 58.462%, 100% { background: var(--gs-tab-active); color: var(--gs-blue); font-weight: 700; } }
-    .stage { transform-origin: 0% 100%; animation: z_05_visi_lapai 13s cubic-bezier(.45,0,.2,1) 0s both; }
-    @keyframes z_05_visi_lapai { 0%, 12.308% { transform: scale(1); } 20.769% { transform: scale(1.3); } 78.462% { transform: scale(1.3); } 86.923%, 100% { transform: scale(1); } }
+    .cursor-wrap { animation: k_05_visi_lapai 14s linear 0s both; }
+    @keyframes k_05_visi_lapai { 0% { transform: translate(724px, -220px); } 0.000% { transform: translate(724px, -220px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 8.571% { transform: translate(724px, -220px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 17.857% { transform: translate(-98px, 196px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 40.000% { transform: translate(-98px, 196px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 50.714% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 92.857% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
+    .list-pop { animation: v_05_visi_lapai_4 14s linear 0s both; }
+    @keyframes v_05_visi_lapai_4 { 0%, 21.064% { opacity: 0; } 22.857% { opacity: 1; } 53.571% { opacity: 1; } 55.000%, 100% { opacity: 0; } }
+    .list-pop .li-4 { animation: hlGS_05_visi_lapai 14s steps(1,end) 0s both; }
+    @keyframes hlGS_05_visi_lapai { 0%, 47.143% { background: transparent; } 47.143%, 100% { background: #e8eaed; } }
+    .grid-c { animation: v_05_visi_lapai_8 14s linear 0s both; }
+    @keyframes v_05_visi_lapai_8 { 0%, 54.279% { opacity: 0; } 56.071% { opacity: 1; } 100% { opacity: 1; } }
+    .gs-tab.tab-3 { animation: t3GS_05_visi_lapai 14s steps(1,end) 0s both; }
+    @keyframes t3GS_05_visi_lapai { 0% { background: var(--gs-tab-active); color: var(--gs-blue); font-weight: 700; } 54.286%, 100% { background: var(--gs-tabbar); color: var(--gs-muted); font-weight: 500; } }
+    .gs-tab.tab-4 { animation: t4GS_05_visi_lapai 14s steps(1,end) 0s both; }
+    @keyframes t4GS_05_visi_lapai { 0% { background: var(--gs-tabbar); color: var(--gs-muted); font-weight: 500; } 54.286%, 100% { background: var(--gs-tab-active); color: var(--gs-blue); font-weight: 700; } }
+    .stage { transform-origin: 0% 100%; animation: z_05_visi_lapai 14s cubic-bezier(.45,0,.2,1) 0s both; }
+    @keyframes z_05_visi_lapai { 0%, 11.429% { transform: scale(1); } 19.286% { transform: scale(1.3); } 72.857% { transform: scale(1.3); } 80.714%, 100% { transform: scale(1); } }
   `,
   '06-lapo-meniu': `
     .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
@@ -503,20 +681,20 @@ const TEMPLATE_ANIMATIONS = {
     @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
     @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
     .rip0 { animation: ratilasGS 0.6s ease-out 3.4s forwards; }
-    .cursor-wrap { animation: k_06_lapo_meniu 15s linear 0s both; }
-    @keyframes k_06_lapo_meniu { 0% { transform: translate(236px, -29px); } 0.000% { transform: translate(236px, -29px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 12.000% { transform: translate(236px, -29px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 20.667% { transform: translate(48px, 389px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 42.000% { transform: translate(48px, 389px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 46.000% { transform: translate(0px, 88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 52.000% { transform: translate(0px, 88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 54.000% { transform: translate(0px, 132px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 58.667% { transform: translate(0px, 132px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 60.667% { transform: translate(0px, 176px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 68.000% { transform: translate(0px, 176px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 72.000% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100.000% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
-    .tab-menu { animation: v_06_lapo_meniu_3 15s linear 0s both; }
-    @keyframes v_06_lapo_meniu_3 { 0%, 23.660% { opacity: 0; } 25.333% { opacity: 1; } 100% { opacity: 1; } }
-    .tab-menu .m-ren { animation: hl_06_lapo_meniu_ren 15s steps(1,end) 0s both; }
-    @keyframes hl_06_lapo_meniu_ren { 0%, 46.000% { background: transparent; } 46.067% { background: #e8eaed; } 53.333% { background: #e8eaed; } 53.400%, 100% { background: transparent; } }
-    .tab-menu .m-col { animation: hl_06_lapo_meniu_col 15s steps(1,end) 0s both; }
-    @keyframes hl_06_lapo_meniu_col { 0%, 54.000% { background: transparent; } 54.067% { background: #e8eaed; } 60.000% { background: #e8eaed; } 60.067%, 100% { background: transparent; } }
-    .tab-menu .m-hide { animation: hl_06_lapo_meniu_hide 15s steps(1,end) 0s both; }
-    @keyframes hl_06_lapo_meniu_hide { 0%, 60.667% { background: transparent; } 60.733% { background: #e8eaed; } 71.333% { background: #e8eaed; } 71.400%, 100% { background: transparent; } }
-    .tab-menu .m-del { animation: hl_06_lapo_meniu_del 15s steps(1,end) 0s both; }
-    @keyframes hl_06_lapo_meniu_del { 0%, 72.000% { background: transparent; } 72.067% { background: #e8eaed; } 100% { background: #e8eaed; } }
-    .stage { transform-origin: 10% 100%; animation: z_06_lapo_meniu 15s cubic-bezier(.45,0,.2,1) 0s both; }
-    @keyframes z_06_lapo_meniu { 0%, 13.333% { transform: scale(1); } 20.667% { transform: scale(1.22); } 100% { transform: scale(1.22); } }
+    .cursor-wrap { animation: k_06_lapo_meniu 17s linear 0s both; }
+    @keyframes k_06_lapo_meniu { 0% { transform: translate(236px, -29px); } 0.000% { transform: translate(236px, -29px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 10.588% { transform: translate(236px, -29px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 18.235% { transform: translate(48px, 389px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 37.059% { transform: translate(48px, 389px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 40.588% { transform: translate(0px, 88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 45.882% { transform: translate(0px, 88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 47.647% { transform: translate(0px, 132px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 51.765% { transform: translate(0px, 132px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 53.529% { transform: translate(0px, 176px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 60.000% { transform: translate(0px, 176px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 63.529% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 88.235% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
+    .tab-menu { animation: v_06_lapo_meniu_3 17s linear 0s both; }
+    @keyframes v_06_lapo_meniu_3 { 0%, 20.876% { opacity: 0; } 22.353% { opacity: 1; } 100% { opacity: 1; } }
+    .tab-menu .m-ren { animation: hl_06_lapo_meniu_ren 17s steps(1,end) 0s both; }
+    @keyframes hl_06_lapo_meniu_ren { 0%, 40.588% { background: transparent; } 40.647% { background: #e8eaed; } 47.059% { background: #e8eaed; } 47.118%, 100% { background: transparent; } }
+    .tab-menu .m-col { animation: hl_06_lapo_meniu_col 17s steps(1,end) 0s both; }
+    @keyframes hl_06_lapo_meniu_col { 0%, 47.647% { background: transparent; } 47.706% { background: #e8eaed; } 52.941% { background: #e8eaed; } 53.000%, 100% { background: transparent; } }
+    .tab-menu .m-hide { animation: hl_06_lapo_meniu_hide 17s steps(1,end) 0s both; }
+    @keyframes hl_06_lapo_meniu_hide { 0%, 53.529% { background: transparent; } 53.588% { background: #e8eaed; } 62.941% { background: #e8eaed; } 63.000%, 100% { background: transparent; } }
+    .tab-menu .m-del { animation: hl_06_lapo_meniu_del 17s steps(1,end) 0s both; }
+    @keyframes hl_06_lapo_meniu_del { 0%, 63.529% { background: transparent; } 63.588% { background: #e8eaed; } 100% { background: #e8eaed; } }
+    .stage { transform-origin: 10% 100%; animation: z_06_lapo_meniu 17s cubic-bezier(.45,0,.2,1) 0s both; }
+    @keyframes z_06_lapo_meniu { 0%, 11.765% { transform: scale(1); } 18.235% { transform: scale(1.22); } 100% { transform: scale(1.22); } }
   `,
   '07-pervardyti': `
     .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
@@ -561,16 +739,16 @@ const TEMPLATE_ANIMATIONS = {
     @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
     @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
     .box.a { animation: slinktisIsKaires 0.6s var(--ease-spring) 4.0s both; }
-    .box.a .ren { animation: v_08_atsargiai_1 33s linear 0s both; }
-    @keyframes v_08_atsargiai_1 { 0%, 26.664% { opacity: 0; } 27.424% { opacity: 1; } 100% { opacity: 1; } }
+    .box.a .ren { animation: v_08_atsargiai_1 38s linear 0s both; }
+    @keyframes v_08_atsargiai_1 { 0%, 23.155% { opacity: 0; } 23.816% { opacity: 1; } 100% { opacity: 1; } }
     .box.b { animation: slinktisIsDesines 0.6s var(--ease-spring) 14.2s both; }
     .box.a .lock { animation: iconPulse 0.6s ease-in-out 5.6s both; }
-    .box.b .warn { animation: v_08_atsargiai_5 33s linear 0s both; }
-    @keyframes v_08_atsargiai_5 { 0%, 58.785% { opacity: 0; } 59.545% { opacity: 1; } 100% { opacity: 1; } }
-    .undo { animation: v_08_atsargiai_7 33s linear 0s both; }
-    @keyframes v_08_atsargiai_7 { 0%, 76.361% { opacity: 0; } 77.121% { opacity: 1; } 100% { opacity: 1; } }
-    .undo .later { animation: v_08_atsargiai_9 33s linear 0s both; }
-    @keyframes v_08_atsargiai_9 { 0%, 86.664% { opacity: 0; } 87.424% { opacity: 1; } 100% { opacity: 1; } }
+    .box.b .warn { animation: v_08_atsargiai_5 38s linear 0s both; }
+    @keyframes v_08_atsargiai_5 { 0%, 51.050% { opacity: 0; } 51.711% { opacity: 1; } 100% { opacity: 1; } }
+    .undo { animation: v_08_atsargiai_7 38s linear 0s both; }
+    @keyframes v_08_atsargiai_7 { 0%, 66.313% { opacity: 0; } 66.974% { opacity: 1; } 100% { opacity: 1; } }
+    .undo .later { animation: v_08_atsargiai_9 38s linear 0s both; }
+    @keyframes v_08_atsargiai_9 { 0%, 75.261% { opacity: 0; } 75.921% { opacity: 1; } 100% { opacity: 1; } }
   `,
   '09-zymos': `
     .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
@@ -580,36 +758,36 @@ const TEMPLATE_ANIMATIONS = {
     @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
     .mini { animation: slinktisIsKaires 0.6s var(--ease-spring) 0.4s both; }
     .site { animation: slinktisIsDesines 0.6s var(--ease-spring) 1.2s both; }
-    .hl0 { animation: v_09_zymos_2 18s linear 0s both; }
-    @keyframes v_09_zymos_2 { 0%, 26.661% { opacity: 0; } 28.056% { opacity: 1; } 34.167% { opacity: 1; } 35.278%, 100% { opacity: 0; } }
-    .hl1 { animation: v_09_zymos_4 18s linear 0s both; }
-    @keyframes v_09_zymos_4 { 0%, 34.439% { opacity: 0; } 35.833% { opacity: 1; } 41.944% { opacity: 1; } 43.056%, 100% { opacity: 0; } }
-    .hl2 { animation: v_09_zymos_6 18s linear 0s both; }
-    @keyframes v_09_zymos_6 { 0%, 42.217% { opacity: 0; } 43.611% { opacity: 1; } 54.167% { opacity: 1; } 55.278%, 100% { opacity: 0; } }
-    .hl3 { animation: v_09_zymos_8 18s linear 0s both; }
-    @keyframes v_09_zymos_8 { 0%, 54.439% { opacity: 0; } 55.833% { opacity: 1; } 73.056% { opacity: 1; } 74.167%, 100% { opacity: 0; } }
-    .hl4 { animation: v_09_zymos_10 18s linear 0s both; }
-    @keyframes v_09_zymos_10 { 0%, 73.328% { opacity: 0; } 74.722% { opacity: 1; } 88.889% { opacity: 1; } 90.000%, 100% { opacity: 0; } }
-    .mini .mrow.h2 { animation: dim_09_zymos_12 18s linear 0s both; }
-    @keyframes dim_09_zymos_12 { 0% { opacity: 1; } 26.667% { opacity: 1; } 28.333% { opacity: 1; } 34.444% { opacity: 1; } 36.111% { opacity: 0.28; } 42.222% { opacity: 0.28; } 43.889% { opacity: 0.28; } 54.444% { opacity: 0.28; } 56.111% { opacity: 0.28; } 73.333% { opacity: 0.28; } 75.000% { opacity: 0.28; } 88.889% { opacity: 0.28; } 90.556% { opacity: 1; } 100% { opacity: 1; } }
-    .site .s-h2 { animation: dim_09_zymos_14 18s linear 0s both; }
-    @keyframes dim_09_zymos_14 { 0% { opacity: 1; } 26.667% { opacity: 1; } 28.333% { opacity: 1; } 34.444% { opacity: 1; } 36.111% { opacity: 0.28; } 42.222% { opacity: 0.28; } 43.889% { opacity: 0.28; } 54.444% { opacity: 0.28; } 56.111% { opacity: 0.28; } 73.333% { opacity: 0.28; } 75.000% { opacity: 0.28; } 88.889% { opacity: 0.28; } 90.556% { opacity: 1; } 100% { opacity: 1; } }
-    .mini .mrow.h3 { animation: dim_09_zymos_16 18s linear 0s both; }
-    @keyframes dim_09_zymos_16 { 0% { opacity: 1; } 26.667% { opacity: 1; } 28.333% { opacity: 0.28; } 34.444% { opacity: 0.28; } 36.111% { opacity: 1; } 42.222% { opacity: 1; } 43.889% { opacity: 0.28; } 54.444% { opacity: 0.28; } 56.111% { opacity: 0.28; } 73.333% { opacity: 0.28; } 75.000% { opacity: 0.28; } 88.889% { opacity: 0.28; } 90.556% { opacity: 1; } 100% { opacity: 1; } }
-    .site .s-h3 { animation: dim_09_zymos_18 18s linear 0s both; }
-    @keyframes dim_09_zymos_18 { 0% { opacity: 1; } 26.667% { opacity: 1; } 28.333% { opacity: 0.28; } 34.444% { opacity: 0.28; } 36.111% { opacity: 1; } 42.222% { opacity: 1; } 43.889% { opacity: 0.28; } 54.444% { opacity: 0.28; } 56.111% { opacity: 0.28; } 73.333% { opacity: 0.28; } 75.000% { opacity: 0.28; } 88.889% { opacity: 0.28; } 90.556% { opacity: 1; } 100% { opacity: 1; } }
-    .mini .mrow.th { animation: dim_09_zymos_20 18s linear 0s both; }
-    @keyframes dim_09_zymos_20 { 0% { opacity: 1; } 26.667% { opacity: 1; } 28.333% { opacity: 0.28; } 34.444% { opacity: 0.28; } 36.111% { opacity: 0.28; } 42.222% { opacity: 0.28; } 43.889% { opacity: 1; } 54.444% { opacity: 1; } 56.111% { opacity: 0.28; } 73.333% { opacity: 0.28; } 75.000% { opacity: 0.28; } 88.889% { opacity: 0.28; } 90.556% { opacity: 1; } 100% { opacity: 1; } }
-    .site .s-th { animation: dim_09_zymos_22 18s linear 0s both; }
-    @keyframes dim_09_zymos_22 { 0% { opacity: 1; } 26.667% { opacity: 1; } 28.333% { opacity: 0.28; } 34.444% { opacity: 0.28; } 36.111% { opacity: 0.28; } 42.222% { opacity: 0.28; } 43.889% { opacity: 1; } 54.444% { opacity: 1; } 56.111% { opacity: 0.28; } 73.333% { opacity: 0.28; } 75.000% { opacity: 0.28; } 88.889% { opacity: 0.28; } 90.556% { opacity: 1; } 100% { opacity: 1; } }
-    .mini .mrow.data { animation: dim_09_zymos_24 18s linear 0s both; }
-    @keyframes dim_09_zymos_24 { 0% { opacity: 1; } 26.667% { opacity: 1; } 28.333% { opacity: 0.28; } 34.444% { opacity: 0.28; } 36.111% { opacity: 0.28; } 42.222% { opacity: 0.28; } 43.889% { opacity: 0.28; } 54.444% { opacity: 0.28; } 56.111% { opacity: 1; } 73.333% { opacity: 1; } 75.000% { opacity: 0.28; } 88.889% { opacity: 0.28; } 90.556% { opacity: 1; } 100% { opacity: 1; } }
-    .site .s-td { animation: dim_09_zymos_26 18s linear 0s both; }
-    @keyframes dim_09_zymos_26 { 0% { opacity: 1; } 26.667% { opacity: 1; } 28.333% { opacity: 0.28; } 34.444% { opacity: 0.28; } 36.111% { opacity: 0.28; } 42.222% { opacity: 0.28; } 43.889% { opacity: 0.28; } 54.444% { opacity: 0.28; } 56.111% { opacity: 1; } 73.333% { opacity: 1; } 75.000% { opacity: 0.28; } 88.889% { opacity: 0.28; } 90.556% { opacity: 1; } 100% { opacity: 1; } }
-    .mini .mrow.ign { animation: dim_09_zymos_28 18s linear 0s both; }
-    @keyframes dim_09_zymos_28 { 0% { opacity: 1; } 26.667% { opacity: 1; } 28.333% { opacity: 0.28; } 34.444% { opacity: 0.28; } 36.111% { opacity: 0.28; } 42.222% { opacity: 0.28; } 43.889% { opacity: 0.28; } 54.444% { opacity: 0.28; } 56.111% { opacity: 0.28; } 73.333% { opacity: 0.28; } 75.000% { opacity: 1; } 88.889% { opacity: 1; } 90.556% { opacity: 1; } 100% { opacity: 1; } }
-    .site .s-ign { animation: v_09_zymos_30 18s linear 0s both; }
-    @keyframes v_09_zymos_30 { 0%, 74.439% { opacity: 0; } 75.833% { opacity: 1; } 100% { opacity: 1; } }
+    .hl0 { animation: v_09_zymos_2 20s linear 0s both; }
+    @keyframes v_09_zymos_2 { 0%, 23.995% { opacity: 0; } 25.250% { opacity: 1; } 30.750% { opacity: 1; } 31.750%, 100% { opacity: 0; } }
+    .hl1 { animation: v_09_zymos_4 20s linear 0s both; }
+    @keyframes v_09_zymos_4 { 0%, 30.995% { opacity: 0; } 32.250% { opacity: 1; } 37.750% { opacity: 1; } 38.750%, 100% { opacity: 0; } }
+    .hl2 { animation: v_09_zymos_6 20s linear 0s both; }
+    @keyframes v_09_zymos_6 { 0%, 37.995% { opacity: 0; } 39.250% { opacity: 1; } 48.750% { opacity: 1; } 49.750%, 100% { opacity: 0; } }
+    .hl3 { animation: v_09_zymos_8 20s linear 0s both; }
+    @keyframes v_09_zymos_8 { 0%, 48.995% { opacity: 0; } 50.250% { opacity: 1; } 65.750% { opacity: 1; } 66.750%, 100% { opacity: 0; } }
+    .hl4 { animation: v_09_zymos_10 20s linear 0s both; }
+    @keyframes v_09_zymos_10 { 0%, 65.995% { opacity: 0; } 67.250% { opacity: 1; } 80.000% { opacity: 1; } 81.000%, 100% { opacity: 0; } }
+    .mini .mrow.h2 { animation: dim_09_zymos_12 20s linear 0s both; }
+    @keyframes dim_09_zymos_12 { 0% { opacity: 1; } 24.000% { opacity: 1; } 25.500% { opacity: 1; } 31.000% { opacity: 1; } 32.500% { opacity: 0.28; } 38.000% { opacity: 0.28; } 39.500% { opacity: 0.28; } 49.000% { opacity: 0.28; } 50.500% { opacity: 0.28; } 66.000% { opacity: 0.28; } 67.500% { opacity: 0.28; } 80.000% { opacity: 0.28; } 81.500% { opacity: 1; } 100% { opacity: 1; } }
+    .site .s-h2 { animation: dim_09_zymos_14 20s linear 0s both; }
+    @keyframes dim_09_zymos_14 { 0% { opacity: 1; } 24.000% { opacity: 1; } 25.500% { opacity: 1; } 31.000% { opacity: 1; } 32.500% { opacity: 0.28; } 38.000% { opacity: 0.28; } 39.500% { opacity: 0.28; } 49.000% { opacity: 0.28; } 50.500% { opacity: 0.28; } 66.000% { opacity: 0.28; } 67.500% { opacity: 0.28; } 80.000% { opacity: 0.28; } 81.500% { opacity: 1; } 100% { opacity: 1; } }
+    .mini .mrow.h3 { animation: dim_09_zymos_16 20s linear 0s both; }
+    @keyframes dim_09_zymos_16 { 0% { opacity: 1; } 24.000% { opacity: 1; } 25.500% { opacity: 0.28; } 31.000% { opacity: 0.28; } 32.500% { opacity: 1; } 38.000% { opacity: 1; } 39.500% { opacity: 0.28; } 49.000% { opacity: 0.28; } 50.500% { opacity: 0.28; } 66.000% { opacity: 0.28; } 67.500% { opacity: 0.28; } 80.000% { opacity: 0.28; } 81.500% { opacity: 1; } 100% { opacity: 1; } }
+    .site .s-h3 { animation: dim_09_zymos_18 20s linear 0s both; }
+    @keyframes dim_09_zymos_18 { 0% { opacity: 1; } 24.000% { opacity: 1; } 25.500% { opacity: 0.28; } 31.000% { opacity: 0.28; } 32.500% { opacity: 1; } 38.000% { opacity: 1; } 39.500% { opacity: 0.28; } 49.000% { opacity: 0.28; } 50.500% { opacity: 0.28; } 66.000% { opacity: 0.28; } 67.500% { opacity: 0.28; } 80.000% { opacity: 0.28; } 81.500% { opacity: 1; } 100% { opacity: 1; } }
+    .mini .mrow.th { animation: dim_09_zymos_20 20s linear 0s both; }
+    @keyframes dim_09_zymos_20 { 0% { opacity: 1; } 24.000% { opacity: 1; } 25.500% { opacity: 0.28; } 31.000% { opacity: 0.28; } 32.500% { opacity: 0.28; } 38.000% { opacity: 0.28; } 39.500% { opacity: 1; } 49.000% { opacity: 1; } 50.500% { opacity: 0.28; } 66.000% { opacity: 0.28; } 67.500% { opacity: 0.28; } 80.000% { opacity: 0.28; } 81.500% { opacity: 1; } 100% { opacity: 1; } }
+    .site .s-th { animation: dim_09_zymos_22 20s linear 0s both; }
+    @keyframes dim_09_zymos_22 { 0% { opacity: 1; } 24.000% { opacity: 1; } 25.500% { opacity: 0.28; } 31.000% { opacity: 0.28; } 32.500% { opacity: 0.28; } 38.000% { opacity: 0.28; } 39.500% { opacity: 1; } 49.000% { opacity: 1; } 50.500% { opacity: 0.28; } 66.000% { opacity: 0.28; } 67.500% { opacity: 0.28; } 80.000% { opacity: 0.28; } 81.500% { opacity: 1; } 100% { opacity: 1; } }
+    .mini .mrow.data { animation: dim_09_zymos_24 20s linear 0s both; }
+    @keyframes dim_09_zymos_24 { 0% { opacity: 1; } 24.000% { opacity: 1; } 25.500% { opacity: 0.28; } 31.000% { opacity: 0.28; } 32.500% { opacity: 0.28; } 38.000% { opacity: 0.28; } 39.500% { opacity: 0.28; } 49.000% { opacity: 0.28; } 50.500% { opacity: 1; } 66.000% { opacity: 1; } 67.500% { opacity: 0.28; } 80.000% { opacity: 0.28; } 81.500% { opacity: 1; } 100% { opacity: 1; } }
+    .site .s-td { animation: dim_09_zymos_26 20s linear 0s both; }
+    @keyframes dim_09_zymos_26 { 0% { opacity: 1; } 24.000% { opacity: 1; } 25.500% { opacity: 0.28; } 31.000% { opacity: 0.28; } 32.500% { opacity: 0.28; } 38.000% { opacity: 0.28; } 39.500% { opacity: 0.28; } 49.000% { opacity: 0.28; } 50.500% { opacity: 1; } 66.000% { opacity: 1; } 67.500% { opacity: 0.28; } 80.000% { opacity: 0.28; } 81.500% { opacity: 1; } 100% { opacity: 1; } }
+    .mini .mrow.ign { animation: dim_09_zymos_28 20s linear 0s both; }
+    @keyframes dim_09_zymos_28 { 0% { opacity: 1; } 24.000% { opacity: 1; } 25.500% { opacity: 0.28; } 31.000% { opacity: 0.28; } 32.500% { opacity: 0.28; } 38.000% { opacity: 0.28; } 39.500% { opacity: 0.28; } 49.000% { opacity: 0.28; } 50.500% { opacity: 0.28; } 66.000% { opacity: 0.28; } 67.500% { opacity: 1; } 80.000% { opacity: 1; } 81.500% { opacity: 1; } 100% { opacity: 1; } }
+    .site .s-ign { animation: v_09_zymos_30 20s linear 0s both; }
+    @keyframes v_09_zymos_30 { 0%, 66.995% { opacity: 0; } 68.250% { opacity: 1; } 100% { opacity: 1; } }
   `,
   '10-rasymas': `
     .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
@@ -637,16 +815,16 @@ const TEMPLATE_ANIMATIONS = {
     .tp-17 { animation: raideGS 0.01s steps(1,end) 5.93s both; }
     .tp-18 { animation: raideGS 0.01s steps(1,end) 6.02s both; }
     .rip19 { animation: ratilasGS 0.6s ease-out 2.4s forwards; }
-    .cursor-wrap { animation: k_10_rasymas 12s linear 0s both; }
-    @keyframes k_10_rasymas { 0% { transform: translate(673px, -389px); } 0.000% { transform: translate(673px, -389px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 8.333% { transform: translate(673px, -389px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 18.333% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100.000% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
-    .sel1 { animation: v_10_rasymas_22 12s linear 0s both; }
-    @keyframes v_10_rasymas_22 { 0%, 21.242% { opacity: 0; } 23.333% { opacity: 1; } 61.667% { opacity: 1; } 63.333%, 100% { opacity: 0; } }
-    .sel2 { animation: v_10_rasymas_24 12s linear 0s both; }
-    @keyframes v_10_rasymas_24 { 0%, 62.075% { opacity: 0; } 64.167% { opacity: 1; } 100% { opacity: 1; } }
-    .gs-saved { animation: v_10_rasymas_26 12s linear 0s both; }
-    @keyframes v_10_rasymas_26 { 0%, 63.325% { opacity: 0; } 65.417% { opacity: 1; } 83.333% { opacity: 1; } 85.000%, 100% { opacity: 0; } }
-    .stage { transform-origin: 30% 55%; animation: z_10_rasymas 12s cubic-bezier(.45,0,.2,1) 0s both; }
-    @keyframes z_10_rasymas { 0%, 10.000% { transform: scale(1); } 19.167% { transform: scale(1.3); } 81.667% { transform: scale(1.3); } 90.833%, 100% { transform: scale(1); } }
+    .cursor-wrap { animation: k_10_rasymas 14s linear 0s both; }
+    @keyframes k_10_rasymas { 0% { transform: translate(673px, -389px); } 0.000% { transform: translate(673px, -389px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 7.143% { transform: translate(673px, -389px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 15.714% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100.000% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
+    .sel1 { animation: v_10_rasymas_22 14s linear 0s both; }
+    @keyframes v_10_rasymas_22 { 0%, 18.207% { opacity: 0; } 20.000% { opacity: 1; } 52.857% { opacity: 1; } 54.286%, 100% { opacity: 0; } }
+    .sel2 { animation: v_10_rasymas_24 14s linear 0s both; }
+    @keyframes v_10_rasymas_24 { 0%, 53.207% { opacity: 0; } 55.000% { opacity: 1; } 100% { opacity: 1; } }
+    .gs-saved { animation: v_10_rasymas_26 14s linear 0s both; }
+    @keyframes v_10_rasymas_26 { 0%, 54.279% { opacity: 0; } 56.071% { opacity: 1; } 71.429% { opacity: 1; } 72.857%, 100% { opacity: 0; } }
+    .stage { transform-origin: 30% 55%; animation: z_10_rasymas 14s cubic-bezier(.45,0,.2,1) 0s both; }
+    @keyframes z_10_rasymas { 0%, 8.571% { transform: scale(1); } 16.429% { transform: scale(1.3); } 70.000% { transform: scale(1.3); } 77.857%, 100% { transform: scale(1); } }
   `,
   '11-akimirksniu': `
     .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
@@ -682,44 +860,44 @@ const TEMPLATE_ANIMATIONS = {
     .rip25 { animation: ratilasGS 0.6s ease-out 12.2s forwards; }
     .rip26 { animation: ratilasGS 0.6s ease-out 13.8s forwards; }
     .rip27 { animation: ratilasGS 0.6s ease-out 14.8s forwards; }
-    .cursor-wrap { animation: k_11_akimirksniu 20s linear 0s both; }
-    @keyframes k_11_akimirksniu { 0% { transform: translate(-50px, 233px); } 0.000% { transform: translate(-50px, 233px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 4.000% { transform: translate(-50px, 233px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 7.500% { transform: translate(-340px, -60px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 20.000% { transform: translate(-300px, 10px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 57.000% { transform: translate(-300px, 10px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 60.500% { transform: translate(-40px, -255px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 67.500% { transform: translate(-40px, -255px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 68.500% { transform: translate(-40px, -190px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 73.000% { transform: translate(-40px, -190px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 73.500% { transform: translate(-40px, -60px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100.000% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
+    .cursor-wrap { animation: k_11_akimirksniu 18s linear 0s both; }
+    @keyframes k_11_akimirksniu { 0% { transform: translate(-50px, 233px); } 0.000% { transform: translate(-50px, 233px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 4.444% { transform: translate(-50px, 233px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 8.333% { transform: translate(-340px, -60px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 22.222% { transform: translate(-300px, 10px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 63.333% { transform: translate(-300px, 10px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 67.222% { transform: translate(-40px, -255px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 75.000% { transform: translate(-40px, -255px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 76.111% { transform: translate(-40px, -190px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 81.111% { transform: translate(-40px, -190px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 81.667% { transform: translate(-40px, -60px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100.000% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
     .tb.sh { animation: slinktisIsKaires 0.5s var(--ease-spring) 0.2s both; }
     .tb.st { animation: slinktisIsDesines 0.5s var(--ease-spring) 0.4s both; }
-    .s1 { animation: v_11_akimirksniu_32 20s linear 0s both; }
-    @keyframes v_11_akimirksniu_32 { 0%, 8.245% { opacity: 0; } 9.500% { opacity: 1; } 17.500% { opacity: 1; } 18.500%, 100% { opacity: 0; } }
-    .old1 { animation: v_11_akimirksniu_34 20s linear 0s both; }
-    @keyframes v_11_akimirksniu_34 { 0%, 0.000% { opacity: 0; } 1.250% { opacity: 1; } 10.500% { opacity: 1; } 11.500%, 100% { opacity: 0; } }
-    .new1 { animation: v_11_akimirksniu_36 20s linear 0s both; }
-    @keyframes v_11_akimirksniu_36 { 0%, 10.745% { opacity: 0; } 12.000% { opacity: 1; } 100% { opacity: 1; } }
-    .en1 { animation: v_11_akimirksniu_38 20s linear 0s both; }
-    @keyframes v_11_akimirksniu_38 { 0%, 14.995% { opacity: 0; } 16.250% { opacity: 1; } 23.000% { opacity: 1; } 24.000%, 100% { opacity: 0; } }
-    .old1s { animation: v_11_akimirksniu_40 20s linear 0s both; }
-    @keyframes v_11_akimirksniu_40 { 0%, 0.000% { opacity: 0; } 1.250% { opacity: 1; } 18.000% { opacity: 1; } 19.000%, 100% { opacity: 0; } }
-    .new1s { animation: v_11_akimirksniu_42 20s linear 0s both; }
-    @keyframes v_11_akimirksniu_42 { 0%, 18.245% { opacity: 0; } 19.500% { opacity: 1; } 100% { opacity: 1; } }
-    .f1 { animation: v_11_akimirksniu_44 20s linear 0s both; }
-    @keyframes v_11_akimirksniu_44 { 0%, 18.245% { opacity: 0; } 19.500% { opacity: 1; } 25.000% { opacity: 1; } 26.000%, 100% { opacity: 0; } }
-    .rea { animation: v_11_akimirksniu_46 20s linear 0s both; }
-    @keyframes v_11_akimirksniu_46 { 0%, 43.995% { opacity: 0; } 45.250% { opacity: 1; } 58.000% { opacity: 1; } 59.000%, 100% { opacity: 0; } }
-    .reb { animation: v_11_akimirksniu_48 20s linear 0s both; }
-    @keyframes v_11_akimirksniu_48 { 0%, 43.995% { opacity: 0; } 45.250% { opacity: 1; } 58.000% { opacity: 1; } 59.000%, 100% { opacity: 0; } }
-    .tb .r:not(.e):not(.h) { animation: dim_11_akimirksniu_50 20s linear 0s both; }
-    @keyframes dim_11_akimirksniu_50 { 0% { opacity: 1; } 44.000% { opacity: 1; } 45.500% { opacity: 0.3; } 58.000% { opacity: 0.3; } 59.500% { opacity: 1; } 100% { opacity: 1; } }
-    .sh3 { animation: v_11_akimirksniu_52 20s linear 0s both; }
-    @keyframes v_11_akimirksniu_52 { 0%, 61.245% { opacity: 0; } 62.500% { opacity: 1; } 69.000% { opacity: 1; } 70.000%, 100% { opacity: 0; } }
-    .sk1 { animation: v_11_akimirksniu_54 20s linear 0s both; }
-    @keyframes v_11_akimirksniu_54 { 0%, 69.245% { opacity: 0; } 70.500% { opacity: 1; } 74.000% { opacity: 1; } 75.000%, 100% { opacity: 0; } }
-    .sk2 { animation: v_11_akimirksniu_56 20s linear 0s both; }
-    @keyframes v_11_akimirksniu_56 { 0%, 74.245% { opacity: 0; } 75.500% { opacity: 1; } 78.000% { opacity: 1; } 79.000%, 100% { opacity: 0; } }
-    .tb.st .c3 { animation: c3_11_akimirksniu 20s cubic-bezier(.4,0,.2,1) 0s both; }
-    @keyframes c3_11_akimirksniu { 0%, 78.500% { width: 0; } 82.000%, 100% { width: 180px; } }
-    .f3 { animation: v_11_akimirksniu_60 20s linear 0s both; }
-    @keyframes v_11_akimirksniu_60 { 0%, 80.995% { opacity: 0; } 82.250% { opacity: 1; } 87.000% { opacity: 1; } 88.000%, 100% { opacity: 0; } }
-    .rca { animation: v_11_akimirksniu_62 20s linear 0s both; }
-    @keyframes v_11_akimirksniu_62 { 0%, 84.995% { opacity: 0; } 86.250% { opacity: 1; } 100% { opacity: 1; } }
-    .rcb { animation: v_11_akimirksniu_64 20s linear 0s both; }
-    @keyframes v_11_akimirksniu_64 { 0%, 84.995% { opacity: 0; } 86.250% { opacity: 1; } 100% { opacity: 1; } }
+    .s1 { animation: v_11_akimirksniu_32 18s linear 0s both; }
+    @keyframes v_11_akimirksniu_32 { 0%, 9.161% { opacity: 0; } 10.556% { opacity: 1; } 19.444% { opacity: 1; } 20.556%, 100% { opacity: 0; } }
+    .old1 { animation: v_11_akimirksniu_34 18s linear 0s both; }
+    @keyframes v_11_akimirksniu_34 { 0%, 0.000% { opacity: 0; } 1.389% { opacity: 1; } 11.667% { opacity: 1; } 12.778%, 100% { opacity: 0; } }
+    .new1 { animation: v_11_akimirksniu_36 18s linear 0s both; }
+    @keyframes v_11_akimirksniu_36 { 0%, 11.939% { opacity: 0; } 13.333% { opacity: 1; } 100% { opacity: 1; } }
+    .en1 { animation: v_11_akimirksniu_38 18s linear 0s both; }
+    @keyframes v_11_akimirksniu_38 { 0%, 16.661% { opacity: 0; } 18.056% { opacity: 1; } 25.556% { opacity: 1; } 26.667%, 100% { opacity: 0; } }
+    .old1s { animation: v_11_akimirksniu_40 18s linear 0s both; }
+    @keyframes v_11_akimirksniu_40 { 0%, 0.000% { opacity: 0; } 1.389% { opacity: 1; } 20.000% { opacity: 1; } 21.111%, 100% { opacity: 0; } }
+    .new1s { animation: v_11_akimirksniu_42 18s linear 0s both; }
+    @keyframes v_11_akimirksniu_42 { 0%, 20.272% { opacity: 0; } 21.667% { opacity: 1; } 100% { opacity: 1; } }
+    .f1 { animation: v_11_akimirksniu_44 18s linear 0s both; }
+    @keyframes v_11_akimirksniu_44 { 0%, 20.272% { opacity: 0; } 21.667% { opacity: 1; } 27.778% { opacity: 1; } 28.889%, 100% { opacity: 0; } }
+    .rea { animation: v_11_akimirksniu_46 18s linear 0s both; }
+    @keyframes v_11_akimirksniu_46 { 0%, 48.883% { opacity: 0; } 50.278% { opacity: 1; } 64.444% { opacity: 1; } 65.556%, 100% { opacity: 0; } }
+    .reb { animation: v_11_akimirksniu_48 18s linear 0s both; }
+    @keyframes v_11_akimirksniu_48 { 0%, 48.883% { opacity: 0; } 50.278% { opacity: 1; } 64.444% { opacity: 1; } 65.556%, 100% { opacity: 0; } }
+    .tb .r:not(.e):not(.h) { animation: dim_11_akimirksniu_50 18s linear 0s both; }
+    @keyframes dim_11_akimirksniu_50 { 0% { opacity: 1; } 48.889% { opacity: 1; } 50.556% { opacity: 0.3; } 64.444% { opacity: 0.3; } 66.111% { opacity: 1; } 100% { opacity: 1; } }
+    .sh3 { animation: v_11_akimirksniu_52 18s linear 0s both; }
+    @keyframes v_11_akimirksniu_52 { 0%, 68.050% { opacity: 0; } 69.444% { opacity: 1; } 76.667% { opacity: 1; } 77.778%, 100% { opacity: 0; } }
+    .sk1 { animation: v_11_akimirksniu_54 18s linear 0s both; }
+    @keyframes v_11_akimirksniu_54 { 0%, 76.939% { opacity: 0; } 78.333% { opacity: 1; } 82.222% { opacity: 1; } 83.333%, 100% { opacity: 0; } }
+    .sk2 { animation: v_11_akimirksniu_56 18s linear 0s both; }
+    @keyframes v_11_akimirksniu_56 { 0%, 82.494% { opacity: 0; } 83.889% { opacity: 1; } 86.667% { opacity: 1; } 87.778%, 100% { opacity: 0; } }
+    .tb.st .c3 { animation: c3_11_akimirksniu 18s cubic-bezier(.4,0,.2,1) 0s both; }
+    @keyframes c3_11_akimirksniu { 0%, 87.222% { width: 0; } 91.111%, 100% { width: 180px; } }
+    .f3 { animation: v_11_akimirksniu_60 18s linear 0s both; }
+    @keyframes v_11_akimirksniu_60 { 0%, 89.994% { opacity: 0; } 91.389% { opacity: 1; } 96.667% { opacity: 1; } 97.778%, 100% { opacity: 0; } }
+    .rca { animation: v_11_akimirksniu_62 18s linear 0s both; }
+    @keyframes v_11_akimirksniu_62 { 0%, 94.439% { opacity: 0; } 95.833% { opacity: 1; } 100% { opacity: 1; } }
+    .rcb { animation: v_11_akimirksniu_64 18s linear 0s both; }
+    @keyframes v_11_akimirksniu_64 { 0%, 94.439% { opacity: 0; } 95.833% { opacity: 1; } 100% { opacity: 1; } }
   `,
   '12-viena-eilute': `
     .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
@@ -728,15 +906,15 @@ const TEMPLATE_ANIMATIONS = {
     @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
     @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
     .vs { animation: slinktisIsKaires 0.6s var(--ease-spring) 0.4s both; }
-    .ring-bad { animation: v_12_viena_eilute_1 16s linear 0s both; }
-    @keyframes v_12_viena_eilute_1 { 0%, 26.244% { opacity: 0; } 27.812% { opacity: 1; } 100% { opacity: 1; } }
+    .ring-bad { animation: v_12_viena_eilute_1 20s linear 0s both; }
+    @keyframes v_12_viena_eilute_1 { 0%, 20.995% { opacity: 0; } 22.250% { opacity: 1; } 100% { opacity: 1; } }
     .site { animation: slinktisIsDesines 0.6s var(--ease-spring) 5.0s both; }
-    .site .lost { animation: v_12_viena_eilute_4 16s linear 0s both; }
-    @keyframes v_12_viena_eilute_4 { 0%, 43.744% { opacity: 0; } 45.312% { opacity: 1; } 100% { opacity: 1; } }
-    .ok { animation: v_12_viena_eilute_6 16s linear 0s both; }
-    @keyframes v_12_viena_eilute_6 { 0%, 59.994% { opacity: 0; } 61.562% { opacity: 1; } 100% { opacity: 1; } }
-    .db { animation: v_12_viena_eilute_8 16s linear 0s both; }
-    @keyframes v_12_viena_eilute_8 { 0%, 74.369% { opacity: 0; } 75.938% { opacity: 1; } 100% { opacity: 1; } }
+    .site .lost { animation: v_12_viena_eilute_4 20s linear 0s both; }
+    @keyframes v_12_viena_eilute_4 { 0%, 34.995% { opacity: 0; } 36.250% { opacity: 1; } 100% { opacity: 1; } }
+    .ok { animation: v_12_viena_eilute_6 20s linear 0s both; }
+    @keyframes v_12_viena_eilute_6 { 0%, 47.995% { opacity: 0; } 49.250% { opacity: 1; } 100% { opacity: 1; } }
+    .db { animation: v_12_viena_eilute_8 20s linear 0s both; }
+    @keyframes v_12_viena_eilute_8 { 0%, 59.495% { opacity: 0; } 60.750% { opacity: 1; } 100% { opacity: 1; } }
   `,
   '13-is-word': `
     .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
@@ -745,28 +923,28 @@ const TEMPLATE_ANIMATIONS = {
     @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
     @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
     .rip0 { animation: ratilasGS 0.6s ease-out 7.0s forwards; }
-    .cursor-wrap { animation: k_13_is_word 17s linear 0s both; }
-    @keyframes k_13_is_word { 0% { transform: translate(-50px, -20px); } 0.000% { transform: translate(-50px, -20px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 32.941% { transform: translate(-50px, -20px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 40.000% { transform: translate(-1072px, -283px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 76.471% { transform: translate(-1072px, -283px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 83.529% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100.000% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
-    .fbar { animation: v_13_is_word_3 17s linear 0s both; }
-    @keyframes v_13_is_word_3 { 0%, 10.582% { opacity: 0; } 12.059% { opacity: 1; } 78.824% { opacity: 1; } 80.000%, 100% { opacity: 0; } }
-    .sA { animation: v_13_is_word_5 17s linear 0s both; }
-    @keyframes v_13_is_word_5 { 0%, 10.582% { opacity: 0; } 12.059% { opacity: 1; } 41.471% { opacity: 1; } 42.647%, 100% { opacity: 0; } }
-    .sB { animation: v_13_is_word_7 17s linear 0s both; }
-    @keyframes v_13_is_word_7 { 0%, 41.759% { opacity: 0; } 43.235% { opacity: 1; } 56.176% { opacity: 1; } 57.353%, 100% { opacity: 0; } }
-    .sC { animation: v_13_is_word_9 17s linear 0s both; }
-    @keyframes v_13_is_word_9 { 0%, 56.465% { opacity: 0; } 57.941% { opacity: 1; } 65.588% { opacity: 1; } 66.765%, 100% { opacity: 0; } }
-    .sD { animation: v_13_is_word_11 17s linear 0s both; }
-    @keyframes v_13_is_word_11 { 0%, 65.876% { opacity: 0; } 67.353% { opacity: 1; } 100% { opacity: 1; } }
-    .kb { animation: v_13_is_word_13 17s linear 0s both; }
-    @keyframes v_13_is_word_13 { 0%, 49.406% { opacity: 0; } 50.882% { opacity: 1; } 61.176% { opacity: 1; } 62.353%, 100% { opacity: 0; } }
-    .ke { animation: v_13_is_word_15 17s linear 0s both; }
-    @keyframes v_13_is_word_15 { 0%, 74.112% { opacity: 0; } 75.588% { opacity: 1; } 81.176% { opacity: 1; } 82.353%, 100% { opacity: 0; } }
-    .d5a { animation: v_13_is_word_17 17s linear 0s both; }
-    @keyframes v_13_is_word_17 { 0%, 0.000% { opacity: 0; } 1.471% { opacity: 1; } 78.824% { opacity: 1; } 80.000%, 100% { opacity: 0; } }
-    .d5b { animation: v_13_is_word_19 17s linear 0s both; }
-    @keyframes v_13_is_word_19 { 0%, 79.406% { opacity: 0; } 80.882% { opacity: 1; } 100% { opacity: 1; } }
-    .stage { transform-origin: 0% 10%; animation: z_13_is_word 17s cubic-bezier(.45,0,.2,1) 0s both; }
-    @keyframes z_13_is_word { 0%, 7.059% { transform: scale(1); } 13.529% { transform: scale(1.3); } 85.882% { transform: scale(1.3); } 92.353%, 100% { transform: scale(1); } }
+    .cursor-wrap { animation: k_13_is_word 21s linear 0s both; }
+    @keyframes k_13_is_word { 0% { transform: translate(-50px, -20px); } 0.000% { transform: translate(-50px, -20px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 26.667% { transform: translate(-50px, -20px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 32.381% { transform: translate(-1072px, -283px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 61.905% { transform: translate(-1072px, -283px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 67.619% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 80.952% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
+    .fbar { animation: v_13_is_word_3 21s linear 0s both; }
+    @keyframes v_13_is_word_3 { 0%, 8.567% { opacity: 0; } 9.762% { opacity: 1; } 63.810% { opacity: 1; } 64.762%, 100% { opacity: 0; } }
+    .sA { animation: v_13_is_word_5 21s linear 0s both; }
+    @keyframes v_13_is_word_5 { 0%, 8.567% { opacity: 0; } 9.762% { opacity: 1; } 33.571% { opacity: 1; } 34.524%, 100% { opacity: 0; } }
+    .sB { animation: v_13_is_word_7 21s linear 0s both; }
+    @keyframes v_13_is_word_7 { 0%, 33.805% { opacity: 0; } 35.000% { opacity: 1; } 45.476% { opacity: 1; } 46.429%, 100% { opacity: 0; } }
+    .sC { animation: v_13_is_word_9 21s linear 0s both; }
+    @keyframes v_13_is_word_9 { 0%, 45.710% { opacity: 0; } 46.905% { opacity: 1; } 53.095% { opacity: 1; } 54.048%, 100% { opacity: 0; } }
+    .sD { animation: v_13_is_word_11 21s linear 0s both; }
+    @keyframes v_13_is_word_11 { 0%, 53.329% { opacity: 0; } 54.524% { opacity: 1; } 100% { opacity: 1; } }
+    .kb { animation: v_13_is_word_13 21s linear 0s both; }
+    @keyframes v_13_is_word_13 { 0%, 39.995% { opacity: 0; } 41.190% { opacity: 1; } 49.524% { opacity: 1; } 50.476%, 100% { opacity: 0; } }
+    .ke { animation: v_13_is_word_15 21s linear 0s both; }
+    @keyframes v_13_is_word_15 { 0%, 59.995% { opacity: 0; } 61.190% { opacity: 1; } 65.714% { opacity: 1; } 66.667%, 100% { opacity: 0; } }
+    .d5a { animation: v_13_is_word_17 21s linear 0s both; }
+    @keyframes v_13_is_word_17 { 0%, 0.000% { opacity: 0; } 1.190% { opacity: 1; } 63.810% { opacity: 1; } 64.762%, 100% { opacity: 0; } }
+    .d5b { animation: v_13_is_word_19 21s linear 0s both; }
+    @keyframes v_13_is_word_19 { 0%, 64.281% { opacity: 0; } 65.476% { opacity: 1; } 100% { opacity: 1; } }
+    .stage { transform-origin: 0% 10%; animation: z_13_is_word 21s cubic-bezier(.45,0,.2,1) 0s both; }
+    @keyframes z_13_is_word { 0%, 5.714% { transform: scale(1); } 10.952% { transform: scale(1.3); } 69.524% { transform: scale(1.3); } 74.762%, 100% { transform: scale(1); } }
   `,
   '14-numeriai': `
     .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
@@ -867,55 +1045,55 @@ const TEMPLATE_ANIMATIONS = {
     .rip63 { animation: ratilasGS 0.6s ease-out 26.6s forwards; }
     .rip64 { animation: ratilasGS 0.6s ease-out 31.6s forwards; }
     .rip65 { animation: ratilasGS 0.6s ease-out 37.4s forwards; }
-    .cursor-wrap { animation: k_15_nauja_eilute 42s linear 0s both; }
-    @keyframes k_15_nauja_eilute { 0% { transform: translate(588px, -405px); } 0.000% { transform: translate(588px, -405px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 5.714% { transform: translate(588px, -405px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 8.810% { transform: translate(-281px, -122px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 14.762% { transform: translate(-281px, -122px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 16.667% { transform: translate(-92px, -33px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 20.476% { transform: translate(-92px, -33px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 23.333% { transform: translate(405px, -88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 25.000% { transform: translate(405px, -88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 29.524% { transform: translate(405px, -88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 30.476% { transform: translate(875px, -88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 45.000% { transform: translate(875px, -88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 47.381% { transform: translate(-30px, -54px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 47.857% { transform: translate(-30px, -54px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 50.238% { transform: translate(-30px, -20px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 51.429% { transform: translate(-30px, -20px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 53.333% { transform: translate(-30px, -69px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 55.714% { transform: translate(-30px, -69px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 57.857% { transform: translate(-30px, -103px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 60.952% { transform: translate(-30px, -103px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 63.095% { transform: translate(-30px, -20px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 70.952% { transform: translate(-10px, -10px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 75.000% { transform: translate(140px, -88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 75.476% { transform: translate(140px, -88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 77.381% { transform: translate(1160px, -20px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 77.857% { transform: translate(1160px, -20px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 79.286% { transform: translate(320px, -103px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 80.000% { transform: translate(320px, -103px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 82.143% { transform: translate(320px, -137px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 86.667% { transform: translate(320px, -137px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 88.810% { transform: translate(-30px, -20px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100.000% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
-    .cursor-wrap .c-arrow { animation: ka_15_nauja_eilute 42s steps(1,end) 0s both; }
-    @keyframes ka_15_nauja_eilute { 0% { opacity: 1; } 53.810% { opacity: 0; } 58.095% { opacity: 1; } 79.762% { opacity: 0; } 82.619% { opacity: 1; } 100% { opacity: 1; } }
-    .cursor-wrap .c-grab { animation: kg_15_nauja_eilute 42s steps(1,end) 0s both; }
-    @keyframes kg_15_nauja_eilute { 0% { opacity: 0; } 53.810% { opacity: 1; } 58.095% { opacity: 0; } 79.762% { opacity: 1; } 82.619% { opacity: 0; } 100% { opacity: 0; } }
-    .ctx { animation: v_15_nauja_eilute_72 42s linear 0s both; }
-    @keyframes v_15_nauja_eilute_72 { 0%, 9.879% { opacity: 0; } 10.476% { opacity: 1; } 19.286% { opacity: 1; } 19.762%, 100% { opacity: 0; } }
-    .ctx .ctx5 { animation: hl_15_nauja_eilute 42s steps(1,end) 0s both; }
-    @keyframes hl_15_nauja_eilute { 0%, 16.667% { background: transparent; } 16.690%, 19.286% { background: #e8eaed; } 19.310%, 100% { background: transparent; } }
-    .gs-row.ins { animation: v_15_nauja_eilute_76 42s linear 0s both; }
-    @keyframes v_15_nauja_eilute_76 { 0%, 19.640% { opacity: 0; } 20.238% { opacity: 1; } 100% { opacity: 1; } }
-    .gs-row[data-r="8"] { animation: eilSlenkaGS_15_nauja_eilute 42s cubic-bezier(.3,0,.2,1) 0s both; }
-    .gs-row[data-r="9"] { animation: eilSlenkaGS_15_nauja_eilute 42s cubic-bezier(.3,0,.2,1) 0s both; }
-    .gs-row[data-r="10"] { animation: eilSlenkaGS_15_nauja_eilute 42s cubic-bezier(.3,0,.2,1) 0s both; }
-    .gs-row[data-r="11"] { animation: eilSlenkaGS_15_nauja_eilute 42s cubic-bezier(.3,0,.2,1) 0s both; }
-    .gs-row[data-r="12"] { animation: eilSlenkaGS_15_nauja_eilute 42s cubic-bezier(.3,0,.2,1) 0s both; }
-    .gs-row[data-r="13"] { animation: eilSlenkaGS_15_nauja_eilute 42s cubic-bezier(.3,0,.2,1) 0s both; }
-    @keyframes eilSlenkaGS_15_nauja_eilute { 0%, 19.524% { transform: translateY(-34px); } 20.476%, 100% { transform: translateY(0); } }
-    .selc7 { animation: v_15_nauja_eilute_85 42s linear 0s both; }
-    @keyframes v_15_nauja_eilute_85 { 0%, 25.355% { opacity: 0; } 25.952% { opacity: 1; } 30.714% { opacity: 1; } 31.190%, 100% { opacity: 0; } }
-    .seld7 { animation: v_15_nauja_eilute_87 42s linear 0s both; }
-    @keyframes v_15_nauja_eilute_87 { 0%, 30.831% { opacity: 0; } 31.429% { opacity: 1; } 35.714% { opacity: 1; } 36.190%, 100% { opacity: 0; } }
-    .sele7 { animation: v_15_nauja_eilute_89 42s linear 0s both; }
-    @keyframes v_15_nauja_eilute_89 { 0%, 35.831% { opacity: 0; } 36.429% { opacity: 1; } 38.571% { opacity: 1; } 39.048%, 100% { opacity: 0; } }
-    .gap { animation: v_15_nauja_eilute_91 42s linear 0s both; }
-    @keyframes v_15_nauja_eilute_91 { 0%, 38.569% { opacity: 0; } 39.167% { opacity: 1; } 46.667% { opacity: 1; } 47.143%, 100% { opacity: 0; } }
-    .gs-row[data-r="8"] > span:nth-child(3), .gs-row[data-r="9"] > span:nth-child(3) { animation: bSlepti_15_nauja_eilute 42s steps(1,end) 0s both; }
-    @keyframes bSlepti_15_nauja_eilute { 0%, 47.595% { color: var(--gs-cell-text); } 47.619%, 100% { color: transparent; } }
-    .numcol { animation: numSlenka_15_nauja_eilute 42s cubic-bezier(.4,0,.2,1) 0s both; }
-    @keyframes numSlenka_15_nauja_eilute { 0%, 47.595% { opacity: 0; transform: translateY(34px); } 47.619%, 55.714% { opacity: 1; transform: translateY(34px); } 57.857%, 100% { opacity: 1; transform: translateY(0); } }
-    .selm { animation: selm_15_nauja_eilute 42s cubic-bezier(.4,0,.2,1) 0s both; }
-    @keyframes selm_15_nauja_eilute { 0%, 47.738% { opacity: 0; transform: translateY(34px); height: 35px; } 47.857% { opacity: 1; transform: translateY(34px); height: 35px; } 50.238% { opacity: 1; transform: translateY(34px); height: 69px; } 55.714% { opacity: 1; transform: translateY(34px); height: 69px; } 57.857% { opacity: 1; transform: translateY(0); height: 69px; } 63.095% { opacity: 1; transform: translateY(0); } 63.214%, 100% { opacity: 0; transform: translateY(0); } }
-    .gs-row[data-r="6"] > span:nth-child(4), .gs-row[data-r="6"] > span:nth-child(5), .gs-row[data-r="6"] > span:nth-child(6) { animation: perrasyti_15_nauja_eilute 42s steps(1,end) 0s both; }
-    @keyframes perrasyti_15_nauja_eilute { 0%, 82.119% { opacity: 1; } 82.143%, 100% { opacity: 0; } }
-    .gs-row[data-r="8"] > span:nth-child(4), .gs-row[data-r="8"] > span:nth-child(5), .gs-row[data-r="8"] > span:nth-child(6), .gs-row[data-r="9"] > span:nth-child(4), .gs-row[data-r="9"] > span:nth-child(5), .gs-row[data-r="9"] > span:nth-child(6), .newt { animation: perimti_15_nauja_eilute 42s steps(1,end) 0s both; }
-    @keyframes perimti_15_nauja_eilute { 0%, 75.214% { opacity: 1; } 75.238%, 100% { opacity: 0; } }
-    .pblk { animation: pblk_15_nauja_eilute 42s steps(1,end) 0s both; }
-    @keyframes pblk_15_nauja_eilute { 0%, 75.214% { opacity: 0; transform: translateY(0); } 75.238%, 82.119% { opacity: 1; transform: translateY(0); } 82.143%, 100% { opacity: 1; transform: translateY(-34px); } }
-    .selblk { animation: selblk_15_nauja_eilute 42s cubic-bezier(.4,0,.2,1) 0s both; }
-    @keyframes selblk_15_nauja_eilute { 0%, 75.333% { opacity: 0; transform: translateY(0); } 75.357%, 80.000% { opacity: 1; transform: translateY(0); } 82.143%, 87.619% { opacity: 1; transform: translateY(-34px); } 87.738%, 100% { opacity: 0; transform: translateY(-34px); } }
-    .selb9 { animation: v_15_nauja_eilute_107 42s linear 0s both; }
-    @keyframes v_15_nauja_eilute_107 { 0%, 89.164% { opacity: 0; } 89.762% { opacity: 1; } 95.238% { opacity: 1; } 95.714%, 100% { opacity: 0; } }
-    .kdel { animation: v_15_nauja_eilute_109 42s linear 0s both; }
-    @keyframes v_15_nauja_eilute_109 { 0%, 90.474% { opacity: 0; } 91.071% { opacity: 1; } 94.286% { opacity: 1; } 94.762%, 100% { opacity: 0; } }
-    .lastnr { animation: lastnr_15_nauja_eilute 42s steps(1,end) 0s both; }
-    @keyframes lastnr_15_nauja_eilute { 0%, 91.405% { opacity: 1; } 91.429%, 100% { opacity: 0; } }
-    .stage { transform-origin: 0% 55%; animation: z_15_nauja_eilute 42s cubic-bezier(.45,0,.2,1) 0s both; }
-    @keyframes z_15_nauja_eilute { 0%, 4.762% { transform: scale(1); } 7.381% { transform: scale(1.25); } 96.667% { transform: scale(1.25); } 99.286%, 100% { transform: scale(1); } }
+    .cursor-wrap { animation: k_15_nauja_eilute 51s linear 0s both; }
+    @keyframes k_15_nauja_eilute { 0% { transform: translate(588px, -405px); } 0.000% { transform: translate(588px, -405px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 4.706% { transform: translate(588px, -405px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 7.255% { transform: translate(-281px, -122px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 12.157% { transform: translate(-281px, -122px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 13.725% { transform: translate(-92px, -33px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 16.863% { transform: translate(-92px, -33px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 19.216% { transform: translate(405px, -88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 20.588% { transform: translate(405px, -88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 24.314% { transform: translate(405px, -88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 25.098% { transform: translate(875px, -88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 37.059% { transform: translate(875px, -88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 39.020% { transform: translate(-30px, -54px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 39.412% { transform: translate(-30px, -54px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 41.373% { transform: translate(-30px, -20px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 42.353% { transform: translate(-30px, -20px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 43.922% { transform: translate(-30px, -69px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 45.882% { transform: translate(-30px, -69px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 47.647% { transform: translate(-30px, -103px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 50.196% { transform: translate(-30px, -103px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 51.961% { transform: translate(-30px, -20px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 58.431% { transform: translate(-10px, -10px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 61.765% { transform: translate(140px, -88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 62.157% { transform: translate(140px, -88px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 63.725% { transform: translate(1160px, -20px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 64.118% { transform: translate(1160px, -20px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 65.294% { transform: translate(320px, -103px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 65.882% { transform: translate(320px, -103px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 67.647% { transform: translate(320px, -137px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 71.373% { transform: translate(320px, -137px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 73.137% { transform: translate(-30px, -20px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 82.353% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
+    .cursor-wrap .c-arrow { animation: ka_15_nauja_eilute 51s steps(1,end) 0s both; }
+    @keyframes ka_15_nauja_eilute { 0% { opacity: 1; } 44.314% { opacity: 0; } 47.843% { opacity: 1; } 65.686% { opacity: 0; } 68.039% { opacity: 1; } 100% { opacity: 1; } }
+    .cursor-wrap .c-grab { animation: kg_15_nauja_eilute 51s steps(1,end) 0s both; }
+    @keyframes kg_15_nauja_eilute { 0% { opacity: 0; } 44.314% { opacity: 1; } 47.843% { opacity: 0; } 65.686% { opacity: 1; } 68.039% { opacity: 0; } 100% { opacity: 0; } }
+    .ctx { animation: v_15_nauja_eilute_72 51s linear 0s both; }
+    @keyframes v_15_nauja_eilute_72 { 0%, 8.135% { opacity: 0; } 8.627% { opacity: 1; } 15.882% { opacity: 1; } 16.275%, 100% { opacity: 0; } }
+    .ctx .ctx5 { animation: hl_15_nauja_eilute 51s steps(1,end) 0s both; }
+    @keyframes hl_15_nauja_eilute { 0%, 13.725% { background: transparent; } 13.745%, 15.882% { background: #e8eaed; } 15.902%, 100% { background: transparent; } }
+    .gs-row.ins { animation: v_15_nauja_eilute_76 51s linear 0s both; }
+    @keyframes v_15_nauja_eilute_76 { 0%, 16.175% { opacity: 0; } 16.667% { opacity: 1; } 100% { opacity: 1; } }
+    .gs-row[data-r="8"] { animation: eilSlenkaGS_15_nauja_eilute 51s cubic-bezier(.3,0,.2,1) 0s both; }
+    .gs-row[data-r="9"] { animation: eilSlenkaGS_15_nauja_eilute 51s cubic-bezier(.3,0,.2,1) 0s both; }
+    .gs-row[data-r="10"] { animation: eilSlenkaGS_15_nauja_eilute 51s cubic-bezier(.3,0,.2,1) 0s both; }
+    .gs-row[data-r="11"] { animation: eilSlenkaGS_15_nauja_eilute 51s cubic-bezier(.3,0,.2,1) 0s both; }
+    .gs-row[data-r="12"] { animation: eilSlenkaGS_15_nauja_eilute 51s cubic-bezier(.3,0,.2,1) 0s both; }
+    .gs-row[data-r="13"] { animation: eilSlenkaGS_15_nauja_eilute 51s cubic-bezier(.3,0,.2,1) 0s both; }
+    @keyframes eilSlenkaGS_15_nauja_eilute { 0%, 16.078% { transform: translateY(-34px); } 16.863%, 100% { transform: translateY(0); } }
+    .selc7 { animation: v_15_nauja_eilute_85 51s linear 0s both; }
+    @keyframes v_15_nauja_eilute_85 { 0%, 20.880% { opacity: 0; } 21.373% { opacity: 1; } 25.294% { opacity: 1; } 25.686%, 100% { opacity: 0; } }
+    .seld7 { animation: v_15_nauja_eilute_87 51s linear 0s both; }
+    @keyframes v_15_nauja_eilute_87 { 0%, 25.390% { opacity: 0; } 25.882% { opacity: 1; } 29.412% { opacity: 1; } 29.804%, 100% { opacity: 0; } }
+    .sele7 { animation: v_15_nauja_eilute_89 51s linear 0s both; }
+    @keyframes v_15_nauja_eilute_89 { 0%, 29.508% { opacity: 0; } 30.000% { opacity: 1; } 31.765% { opacity: 1; } 32.157%, 100% { opacity: 0; } }
+    .gap { animation: v_15_nauja_eilute_91 51s linear 0s both; }
+    @keyframes v_15_nauja_eilute_91 { 0%, 31.763% { opacity: 0; } 32.255% { opacity: 1; } 38.431% { opacity: 1; } 38.824%, 100% { opacity: 0; } }
+    .gs-row[data-r="8"] > span:nth-child(3), .gs-row[data-r="9"] > span:nth-child(3) { animation: bSlepti_15_nauja_eilute 51s steps(1,end) 0s both; }
+    @keyframes bSlepti_15_nauja_eilute { 0%, 39.196% { color: var(--gs-cell-text); } 39.216%, 100% { color: transparent; } }
+    .numcol { animation: numSlenka_15_nauja_eilute 51s cubic-bezier(.4,0,.2,1) 0s both; }
+    @keyframes numSlenka_15_nauja_eilute { 0%, 39.196% { opacity: 0; transform: translateY(34px); } 39.216%, 45.882% { opacity: 1; transform: translateY(34px); } 47.647%, 100% { opacity: 1; transform: translateY(0); } }
+    .selm { animation: selm_15_nauja_eilute 51s cubic-bezier(.4,0,.2,1) 0s both; }
+    @keyframes selm_15_nauja_eilute { 0%, 39.314% { opacity: 0; transform: translateY(34px); height: 35px; } 39.412% { opacity: 1; transform: translateY(34px); height: 35px; } 41.373% { opacity: 1; transform: translateY(34px); height: 69px; } 45.882% { opacity: 1; transform: translateY(34px); height: 69px; } 47.647% { opacity: 1; transform: translateY(0); height: 69px; } 51.961% { opacity: 1; transform: translateY(0); } 52.059%, 100% { opacity: 0; transform: translateY(0); } }
+    .gs-row[data-r="6"] > span:nth-child(4), .gs-row[data-r="6"] > span:nth-child(5), .gs-row[data-r="6"] > span:nth-child(6) { animation: perrasyti_15_nauja_eilute 51s steps(1,end) 0s both; }
+    @keyframes perrasyti_15_nauja_eilute { 0%, 67.627% { opacity: 1; } 67.647%, 100% { opacity: 0; } }
+    .gs-row[data-r="8"] > span:nth-child(4), .gs-row[data-r="8"] > span:nth-child(5), .gs-row[data-r="8"] > span:nth-child(6), .gs-row[data-r="9"] > span:nth-child(4), .gs-row[data-r="9"] > span:nth-child(5), .gs-row[data-r="9"] > span:nth-child(6), .newt { animation: perimti_15_nauja_eilute 51s steps(1,end) 0s both; }
+    @keyframes perimti_15_nauja_eilute { 0%, 61.941% { opacity: 1; } 61.961%, 100% { opacity: 0; } }
+    .pblk { animation: pblk_15_nauja_eilute 51s steps(1,end) 0s both; }
+    @keyframes pblk_15_nauja_eilute { 0%, 61.941% { opacity: 0; transform: translateY(0); } 61.961%, 67.627% { opacity: 1; transform: translateY(0); } 67.647%, 100% { opacity: 1; transform: translateY(-34px); } }
+    .selblk { animation: selblk_15_nauja_eilute 51s cubic-bezier(.4,0,.2,1) 0s both; }
+    @keyframes selblk_15_nauja_eilute { 0%, 62.039% { opacity: 0; transform: translateY(0); } 62.059%, 65.882% { opacity: 1; transform: translateY(0); } 67.647%, 72.157% { opacity: 1; transform: translateY(-34px); } 72.255%, 100% { opacity: 0; transform: translateY(-34px); } }
+    .selb9 { animation: v_15_nauja_eilute_107 51s linear 0s both; }
+    @keyframes v_15_nauja_eilute_107 { 0%, 73.429% { opacity: 0; } 73.922% { opacity: 1; } 78.431% { opacity: 1; } 78.824%, 100% { opacity: 0; } }
+    .kdel { animation: v_15_nauja_eilute_109 51s linear 0s both; }
+    @keyframes v_15_nauja_eilute_109 { 0%, 74.508% { opacity: 0; } 75.000% { opacity: 1; } 77.647% { opacity: 1; } 78.039%, 100% { opacity: 0; } }
+    .lastnr { animation: lastnr_15_nauja_eilute 51s steps(1,end) 0s both; }
+    @keyframes lastnr_15_nauja_eilute { 0%, 75.275% { opacity: 1; } 75.294%, 100% { opacity: 0; } }
+    .stage { transform-origin: 0% 55%; animation: z_15_nauja_eilute 51s cubic-bezier(.45,0,.2,1) 0s both; }
+    @keyframes z_15_nauja_eilute { 0%, 3.922% { transform: scale(1); } 6.078% { transform: scale(1.25); } 79.608% { transform: scale(1.25); } 81.765%, 100% { transform: scale(1); } }
   `,
   '16-paruostukai': `
     .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
@@ -936,21 +1114,21 @@ const TEMPLATE_ANIMATIONS = {
     .rip0 { animation: ratilasGS 0.6s ease-out 7.8s forwards; }
     .rip1 { animation: ratilasGS 0.6s ease-out 10.6s forwards; }
     .rip2 { animation: ratilasGS 0.6s ease-out 12.8s forwards; }
-    .cursor-wrap { animation: k_17_spalvos 16s linear 0s both; }
-    @keyframes k_17_spalvos { 0% { transform: translate(330px, -41px); } 0.000% { transform: translate(330px, -41px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 41.250% { transform: translate(330px, -41px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 47.500% { transform: translate(-388px, -236px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 49.375% { transform: translate(-388px, -236px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 56.250% { transform: translate(980px, -197px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 60.000% { transform: translate(980px, -197px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 65.000% { transform: translate(-170px, -525px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 71.250% { transform: translate(-170px, -525px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 76.875% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100.000% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
-    .left1 { animation: v_17_spalvos_5 16s linear 0s both; }
-    @keyframes v_17_spalvos_5 { 0%, 9.994% { opacity: 0; } 11.562% { opacity: 1; } 47.500% { opacity: 1; } 48.750%, 100% { opacity: 0; } }
-    .selbox { animation: v_17_spalvos_7 16s linear 0s both; }
-    @keyframes v_17_spalvos_7 { 0%, 49.056% { opacity: 0; } 50.625% { opacity: 1; } 81.250% { opacity: 1; } 82.500%, 100% { opacity: 0; } }
+    .cursor-wrap { animation: k_17_spalvos 17s linear 0s both; }
+    @keyframes k_17_spalvos { 0% { transform: translate(330px, -41px); } 0.000% { transform: translate(330px, -41px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 38.824% { transform: translate(330px, -41px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 44.706% { transform: translate(-388px, -236px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 46.471% { transform: translate(-388px, -236px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 52.941% { transform: translate(980px, -197px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 56.471% { transform: translate(980px, -197px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 61.176% { transform: translate(-170px, -525px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 67.059% { transform: translate(-170px, -525px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 72.353% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 94.118% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
+    .left1 { animation: v_17_spalvos_5 17s linear 0s both; }
+    @keyframes v_17_spalvos_5 { 0%, 9.406% { opacity: 0; } 10.882% { opacity: 1; } 44.706% { opacity: 1; } 45.882%, 100% { opacity: 0; } }
+    .selbox { animation: v_17_spalvos_7 17s linear 0s both; }
+    @keyframes v_17_spalvos_7 { 0%, 46.171% { opacity: 0; } 47.647% { opacity: 1; } 76.471% { opacity: 1; } 77.647%, 100% { opacity: 0; } }
     .selbox { transform-origin: top left; }
-    .fmt { animation: v_17_spalvos_10 16s linear 0s both; }
-    @keyframes v_17_spalvos_10 { 0%, 67.181% { opacity: 0; } 68.750% { opacity: 1; } 80.625% { opacity: 1; } 81.875%, 100% { opacity: 0; } }
-    .fmt .f16 { animation: hl_17_spalvos 16s steps(1,end) 0s both; }
-    @keyframes hl_17_spalvos { 0%, 76.875% { background: transparent; } 76.938%, 100% { background: #e8eaed; } }
-    .grid-bad { animation: v_17_spalvos_14 16s linear 0s both; }
-    @keyframes v_17_spalvos_14 { 0%, 0.000% { opacity: 0; } 1.562% { opacity: 1; } 81.250% { opacity: 1; } 82.500%, 100% { opacity: 0; } }
-    .stage { transform-origin: 35% 40%; animation: z_17_spalvos 16s cubic-bezier(.45,0,.2,1) 0s both; }
-    @keyframes z_17_spalvos { 0%, 5.000% { transform: scale(1); } 11.875% { transform: scale(1.18); } 42.500% { transform: scale(1.18); } 49.375%, 100% { transform: scale(1); } }
+    .fmt { animation: v_17_spalvos_10 17s linear 0s both; }
+    @keyframes v_17_spalvos_10 { 0%, 63.229% { opacity: 0; } 64.706% { opacity: 1; } 75.882% { opacity: 1; } 77.059%, 100% { opacity: 0; } }
+    .fmt .f16 { animation: hl_17_spalvos 17s steps(1,end) 0s both; }
+    @keyframes hl_17_spalvos { 0%, 72.353% { background: transparent; } 72.412%, 100% { background: #e8eaed; } }
+    .grid-bad { animation: v_17_spalvos_14 17s linear 0s both; }
+    @keyframes v_17_spalvos_14 { 0%, 0.000% { opacity: 0; } 1.471% { opacity: 1; } 76.471% { opacity: 1; } 77.647%, 100% { opacity: 0; } }
+    .stage { transform-origin: 35% 40%; animation: z_17_spalvos 17s cubic-bezier(.45,0,.2,1) 0s both; }
+    @keyframes z_17_spalvos { 0%, 4.706% { transform: scale(1); } 11.176% { transform: scale(1.18); } 40.000% { transform: scale(1.18); } 46.471%, 100% { transform: scale(1); } }
   `,
   '18-th-spalva': `
     .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
@@ -963,30 +1141,30 @@ const TEMPLATE_ANIMATIONS = {
     .rip2 { animation: ratilasGS 0.6s ease-out 7.8s forwards; }
     .rip3 { animation: ratilasGS 0.6s ease-out 10.2s forwards; }
     .rip4 { animation: ratilasGS 0.6s ease-out 11.4s forwards; }
-    .cursor-wrap { animation: k_18_th_spalva 17s linear 0s both; }
-    @keyframes k_18_th_spalva { 0% { transform: translate(-406px, -171px); } 0.000% { transform: translate(-406px, -171px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 25.294% { transform: translate(-406px, -171px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 30.000% { transform: translate(-1224px, -60px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 32.941% { transform: translate(-1224px, -60px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 38.235% { transform: translate(-967px, -596px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 40.588% { transform: translate(-967px, -596px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 45.294% { transform: translate(-856px, -447px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 49.412% { transform: translate(-856px, -447px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 59.412% { transform: translate(-1319px, -596px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 61.765% { transform: translate(-1319px, -596px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 66.471% { transform: translate(-939px, -60px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 67.647% { transform: translate(-939px, -60px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 75.294% { transform: translate(-30px, -60px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100.000% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
-    .gs-row.th.nocolor > span:nth-child(3) { animation: thB_18_th_spalva 17s steps(1,end) 0s both; }
-    @keyframes thB_18_th_spalva { 0%, 48.824% { background: #fff; color: var(--gs-cell-text); font-weight: 400; } 48.882%, 100% { background: var(--gs-green-th-b); color: #fff; font-weight: 700; } }
-    .gs-row.th.nocolor > span:nth-child(4) { animation: thCE_18_th_spalva 17s steps(1,end) 0s both; }
-    .gs-row.th.nocolor > span:nth-child(5) { animation: thCE_18_th_spalva 17s steps(1,end) 0s both; }
-    .gs-row.th.nocolor > span:nth-child(6) { animation: thCE_18_th_spalva 17s steps(1,end) 0s both; }
-    @keyframes thCE_18_th_spalva { 0%, 76.471% { background: #fff; color: var(--gs-cell-text); font-weight: 400; } 76.529%, 100% { background: var(--gs-green-th); color: #fff; font-weight: 700; } }
-    .r13 { animation: v_18_th_spalva_13 17s linear 0s both; }
-    @keyframes v_18_th_spalva_13 { 0%, 7.053% { opacity: 0; } 8.529% { opacity: 1; } 27.059% { opacity: 1; } 28.235%, 100% { opacity: 0; } }
-    .selb { animation: v_18_th_spalva_15 17s linear 0s both; }
-    @keyframes v_18_th_spalva_15 { 0%, 30.876% { opacity: 0; } 32.353% { opacity: 1; } 60.000% { opacity: 1; } 61.176%, 100% { opacity: 0; } }
-    .pal { animation: v_18_th_spalva_17 17s linear 0s both; }
-    @keyframes v_18_th_spalva_17 { 0%, 39.700% { opacity: 0; } 41.176% { opacity: 1; } 48.824% { opacity: 1; } 50.000%, 100% { opacity: 0; } }
-    .bucket { animation: bk_18_th_spalva 17s steps(1,end) 0s both; }
-    @keyframes bk_18_th_spalva { 0%, 38.824% { background: var(--gs-toolbar); } 38.882%, 48.824% { background: #c2e7ff; } 48.882%, 100% { background: var(--gs-toolbar); } }
-    .antb { animation: v_18_th_spalva_21 17s linear 0s both; }
-    @keyframes v_18_th_spalva_21 { 0%, 60.288% { opacity: 0; } 61.765% { opacity: 1; } 76.471% { opacity: 1; } 77.647%, 100% { opacity: 0; } }
-    .roller { animation: rolGS_18_th_spalva 17s steps(1,end) 0s both; }
-    @keyframes rolGS_18_th_spalva { 0%, 60.000% { background: var(--gs-toolbar); } 60.059%, 76.471% { background: #c2e7ff; } 76.529%, 100% { background: var(--gs-toolbar); } }
-    .selce { animation: v_18_th_spalva_25 17s linear 0s both; }
-    @keyframes v_18_th_spalva_25 { 0%, 67.347% { opacity: 0; } 68.824% { opacity: 1; } 76.471% { opacity: 1; } 77.647%, 100% { opacity: 0; } }
-    .stage { transform-origin: 0% 45%; animation: z_18_th_spalva 17s cubic-bezier(.45,0,.2,1) 0s both; }
-    @keyframes z_18_th_spalva { 0%, 3.529% { transform: scale(1); } 10.000% { transform: scale(1.12); } 82.353% { transform: scale(1.12); } 88.824%, 100% { transform: scale(1); } }
+    .cursor-wrap { animation: k_18_th_spalva 22s linear 0s both; }
+    @keyframes k_18_th_spalva { 0% { transform: translate(-406px, -171px); } 0.000% { transform: translate(-406px, -171px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 19.545% { transform: translate(-406px, -171px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 23.182% { transform: translate(-1224px, -60px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 25.455% { transform: translate(-1224px, -60px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 29.545% { transform: translate(-967px, -596px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 31.364% { transform: translate(-967px, -596px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 35.000% { transform: translate(-856px, -447px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 38.182% { transform: translate(-856px, -447px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 45.909% { transform: translate(-1319px, -596px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 47.727% { transform: translate(-1319px, -596px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 51.364% { transform: translate(-939px, -60px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 52.273% { transform: translate(-939px, -60px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 58.182% { transform: translate(-30px, -60px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 77.273% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
+    .gs-row.th.nocolor > span:nth-child(3) { animation: thB_18_th_spalva 22s steps(1,end) 0s both; }
+    @keyframes thB_18_th_spalva { 0%, 37.727% { background: #fff; color: var(--gs-cell-text); font-weight: 400; } 37.773%, 100% { background: var(--gs-green-th-b); color: #fff; font-weight: 700; } }
+    .gs-row.th.nocolor > span:nth-child(4) { animation: thCE_18_th_spalva 22s steps(1,end) 0s both; }
+    .gs-row.th.nocolor > span:nth-child(5) { animation: thCE_18_th_spalva 22s steps(1,end) 0s both; }
+    .gs-row.th.nocolor > span:nth-child(6) { animation: thCE_18_th_spalva 22s steps(1,end) 0s both; }
+    @keyframes thCE_18_th_spalva { 0%, 59.091% { background: #fff; color: var(--gs-cell-text); font-weight: 400; } 59.136%, 100% { background: var(--gs-green-th); color: #fff; font-weight: 700; } }
+    .r13 { animation: v_18_th_spalva_13 22s linear 0s both; }
+    @keyframes v_18_th_spalva_13 { 0%, 5.450% { opacity: 0; } 6.591% { opacity: 1; } 20.909% { opacity: 1; } 21.818%, 100% { opacity: 0; } }
+    .selb { animation: v_18_th_spalva_15 22s linear 0s both; }
+    @keyframes v_18_th_spalva_15 { 0%, 23.859% { opacity: 0; } 25.000% { opacity: 1; } 46.364% { opacity: 1; } 47.273%, 100% { opacity: 0; } }
+    .pal { animation: v_18_th_spalva_17 22s linear 0s both; }
+    @keyframes v_18_th_spalva_17 { 0%, 30.677% { opacity: 0; } 31.818% { opacity: 1; } 37.727% { opacity: 1; } 38.636%, 100% { opacity: 0; } }
+    .bucket { animation: bk_18_th_spalva 22s steps(1,end) 0s both; }
+    @keyframes bk_18_th_spalva { 0%, 30.000% { background: var(--gs-toolbar); } 30.045%, 37.727% { background: #c2e7ff; } 37.773%, 100% { background: var(--gs-toolbar); } }
+    .antb { animation: v_18_th_spalva_21 22s linear 0s both; }
+    @keyframes v_18_th_spalva_21 { 0%, 46.586% { opacity: 0; } 47.727% { opacity: 1; } 59.091% { opacity: 1; } 60.000%, 100% { opacity: 0; } }
+    .roller { animation: rolGS_18_th_spalva 22s steps(1,end) 0s both; }
+    @keyframes rolGS_18_th_spalva { 0%, 46.364% { background: var(--gs-toolbar); } 46.409%, 59.091% { background: #c2e7ff; } 59.136%, 100% { background: var(--gs-toolbar); } }
+    .selce { animation: v_18_th_spalva_25 22s linear 0s both; }
+    @keyframes v_18_th_spalva_25 { 0%, 52.041% { opacity: 0; } 53.182% { opacity: 1; } 59.091% { opacity: 1; } 60.000%, 100% { opacity: 0; } }
+    .stage { transform-origin: 0% 45%; animation: z_18_th_spalva 22s cubic-bezier(.45,0,.2,1) 0s both; }
+    @keyframes z_18_th_spalva { 0%, 2.727% { transform: scale(1); } 7.727% { transform: scale(1.12); } 63.636% { transform: scale(1.12); } 68.636%, 100% { transform: scale(1); } }
   `,
   '19-versijos': `
     .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }
@@ -994,24 +1172,22 @@ const TEMPLATE_ANIMATIONS = {
     @keyframes ratilasGS { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
     @keyframes raideGS { from { opacity: 0; } to { opacity: 1; } }
     @keyframes tabPulseGS { 0%, 100% { background: var(--gs-tabbar); } 40%, 60% { background: #d3e3fd; } }
-    .rip0 { animation: ratilasGS 0.6s ease-out 5.8s forwards; }
-    .rip1 { animation: ratilasGS 0.6s ease-out 17.0s forwards; }
-    .rip2 { animation: ratilasGS 0.6s ease-out 22.0s forwards; }
-    .cursor-wrap { animation: k_19_versijos 35s linear 0s both; }
-    @keyframes k_19_versijos { 0% { transform: translate(700px, 434px); } 0.000% { transform: translate(700px, 434px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 14.286% { transform: translate(700px, 434px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 16.286% { transform: translate(-80px, -68px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 18.286% { transform: translate(-80px, -68px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 46.286% { transform: translate(1160px, 304px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 49.143% { transform: translate(1160px, 304px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 60.571% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 63.429% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100.000% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
-    .vpath { animation: v_19_versijos_5 35s linear 0s both; }
-    @keyframes v_19_versijos_5 { 0%, 3.997% { opacity: 0; } 4.714% { opacity: 1; } 32.571% { opacity: 1; } 33.143%, 100% { opacity: 0; } }
-    .vpanel { animation: v_19_versijos_7 35s linear 0s both; }
-    @keyframes v_19_versijos_7 { 0%, 33.140% { opacity: 0; } 33.857% { opacity: 1; } 100% { opacity: 1; } }
-    .vbtn { animation: v_19_versijos_9 35s linear 0s both; }
-    @keyframes v_19_versijos_9 { 0%, 58.854% { opacity: 0; } 59.571% { opacity: 1; } 100% { opacity: 1; } }
-    .gs-toolbar { animation: v_19_versijos_11 35s linear 0s both; }
-    @keyframes v_19_versijos_11 { 0%, 0.000% { opacity: 0; } 0.714% { opacity: 1; } 58.571% { opacity: 1; } 59.143%, 100% { opacity: 0; } }
-    .vsafe { animation: v_19_versijos_13 35s linear 0s both; }
-    @keyframes v_19_versijos_13 { 0%, 74.283% { opacity: 0; } 75.000% { opacity: 1; } 100% { opacity: 1; } }
-    .vsafe .vcell { animation: v_19_versijos_15 35s linear 0s both; }
-    @keyframes v_19_versijos_15 { 0%, 87.140% { opacity: 0; } 87.857% { opacity: 1; } 100% { opacity: 1; } }
-    .vit.pick { animation: iconPulse 0.6s ease-in-out 17.0s both; }
+    .rip0 { animation: ratilasGS 0.6s ease-out 6.0s forwards; }
+    .rip1 { animation: ratilasGS 0.6s ease-out 19.0s forwards; }
+    .rip2 { animation: ratilasGS 0.6s ease-out 25.2s forwards; }
+    .cursor-wrap { animation: k_19_versijos 40s linear 0s both; }
+    @keyframes k_19_versijos { 0% { transform: translate(340px, 508px); } 0.000% { transform: translate(340px, 508px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 13.000% { transform: translate(340px, 508px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 14.750% { transform: translate(774px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 16.500% { transform: translate(774px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 45.500% { transform: translate(800px, 322px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 48.000% { transform: translate(800px, 322px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 61.000% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 63.500% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 95.000% { transform: translate(0px, 0px); animation-timing-function: cubic-bezier(.35,.05,.25,1); } 100% { transform: translate(0, 0); } }
+    .vclock { animation: v_19_versijos_5 40s linear 0s both; }
+    @keyframes v_19_versijos_5 { 0%, 0.000% { opacity: 0; } 0.625% { opacity: 1; } 16.000% { opacity: 1; } 16.500%, 100% { opacity: 0; } }
+    .vpanel { animation: v_19_versijos_7 40s linear 0s both; }
+    @keyframes v_19_versijos_7 { 0%, 16.497% { opacity: 0; } 17.125% { opacity: 1; } 100% { opacity: 1; } }
+    .vbar { animation: v_19_versijos_9 40s linear 0s both; }
+    @keyframes v_19_versijos_9 { 0%, 16.497% { opacity: 0; } 17.125% { opacity: 1; } 100% { opacity: 1; } }
+    .vsafe { animation: v_19_versijos_11 40s linear 0s both; }
+    @keyframes v_19_versijos_11 { 0%, 72.497% { opacity: 0; } 73.125% { opacity: 1; } 100% { opacity: 1; } }
+    .vsafe .vcell { animation: v_19_versijos_13 40s linear 0s both; }
+    @keyframes v_19_versijos_13 { 0%, 83.998% { opacity: 0; } 84.625% { opacity: 1; } 100% { opacity: 1; } }
+    .vit.pick { animation: iconPulse 0.6s ease-in-out 19.0s both; }
   `,
   '20-nebijokite': `
     .card > .title { opacity: 0; animation: fadeUpHeavy 0.6s var(--ease-spring) 0.12s forwards; }

@@ -325,13 +325,38 @@ function paruostiMuzikosLova(musicPath, reikiaSek, tmpDir) {
 
   if (kunas >= reikiaSek) return { path: musicPath, trim: kunas };
 
-  const perEja = 2.0;
-  const kartu = Math.ceil((reikiaSek - kunas) / (kunas - perEja)) + 1;
+  // ⛔ Pirmiausia bandome tikrą miksą: takelio viduryje randama kilpa ir kartojama tiek,
+  // kiek reikia, o takelio pabaiga lieka filmuko gale (Eimantas 2026-09-19). Nepavykus —
+  // grįžtama prie seno būdo (visas takelis kartojamas su kryžmine perėja).
+  const lovaMix = path.join(tmpDir, 'muzikos-lova.wav');
+  try {
+    const out = execSync(
+      `python3 "${path.join(__dirname, 'muzikos-lova.py')}" "${musicPath}" ${reikiaSek.toFixed(2)} "${lovaMix}"`,
+      { encoding: 'utf-8', stdio: ['pipe', 'pipe', 'pipe'] }).trim();
+    const info = JSON.parse(out);
+    console.log(`  Muzikos miksas: ${info.bpm} BPM, kilpa ${info.kilpa[0]}–${info.kilpa[1]}s `
+      + `(${info.taktai} taktai) × ${info.kartojimu}, siūlė ${info.siules_tikslumas}, trukmė ${info.trukme}s`);
+    return { path: lovaMix, trim: null };
+  } catch (e) {
+    console.warn(`  ⛔ Miksas nepavyko (${String(e.message || e).split('\n')[0]}) — kartoju takelį senuoju būdu`);
+  }
+
+  // ⛔ 2026-09-19 (Eimantas: „glumina, kai pasibaigia muzika ir iš naujo prasideda“):
+  // kartojimas girdimas ne dėl perėjos ilgio, o dėl to, kad kiekvienas ratas prasidėdavo
+  // nuo to paties takelio pradžios. Dabar kiekvienas kitas ratas įeina vis kitoje takelio
+  // vietoje (0 s, 41 s, 82 s, 23 s…), o perėja pailginta iki 5 s — skamba kaip tęsinys, ne kaip restartas.
+  const perEja = 5.0;
+  const poslinkiai = [0, 41, 82, 23, 64, 105, 12, 53, 94, 33];
   const dalys = [];
   const filtrai = [];
-  for (let i = 0; i < kartu; i++) {
-    filtrai.push(`[0:a]atrim=0:${kunas.toFixed(2)},asetpts=N/SR/TB,aresample=44100[k${i}]`);
-    dalys.push(`[k${i}]`);
+  let sukaupta = 0, kartu = 0;
+  while (sukaupta < reikiaSek + perEja && kartu < 40) {
+    const off = kartu === 0 ? 0 : poslinkiai[kartu % poslinkiai.length] % Math.max(1, kunas - 30);
+    const ilgis = kunas - off;
+    filtrai.push(`[0:a]atrim=${off.toFixed(2)}:${kunas.toFixed(2)},asetpts=N/SR/TB,aresample=44100[k${kartu}]`);
+    dalys.push(`[k${kartu}]`);
+    sukaupta += kartu === 0 ? ilgis : ilgis - perEja;
+    kartu++;
   }
   let dabartinis = dalys[0];
   for (let i = 1; i < kartu; i++) {
@@ -346,7 +371,7 @@ function paruostiMuzikosLova(musicPath, reikiaSek, tmpDir) {
     '-map', '"[lova]"', '-t', (reikiaSek + 2).toFixed(2),
     '-c:a', 'pcm_s16le', `"${lova}"`,
   ].join(' '), { stdio: 'pipe' });
-  console.log(`  Muzikos lova: ${kartu} kartojimai po ${kunas.toFixed(0)}s, perėja ${perEja}s`);
+  console.log(`  Muzikos lova: ${kartu} ratai (kūnas ${kunas.toFixed(0)}s, įėjimai vis kitoje vietoje), perėja ${perEja}s`);
   return { path: lova, trim: null };
 }
 
@@ -744,14 +769,16 @@ function buildVideo(frames, durations, introClipPath, introPng, outroHeadPath) {
         if (zyma.at + it.duration > iki) {
           console.warn(`  ⛔ Balsas K${it.kadras}.${it.cue} (${it.duration}s nuo ${zyma.at}s) užlipa ant kitos žymos (${iki.toFixed(1)}s)`);
         }
-        voice.push({ file, at: kadroPradzia[it.kadras] + zyma.at });
+        voice.push({ file, at: kadroPradzia[it.kadras] + zyma.at,
+                     kadras: it.kadras, cue: it.cue, text: it.text, trukme: it.duration });
         continue;
       }
       const langas = kadroTrukme[it.kadras] - startIn - 0.5;
       if (it.duration > langas) {
         console.warn(`  ⛔ Balsas K${it.kadras} (${it.duration}s) netelpa į kadrą (${langas.toFixed(1)}s) — pailgink kadrą scenarijuje`);
       }
-      voice.push({ file, at: kadroPradzia[it.kadras] + startIn });
+      voice.push({ file, at: kadroPradzia[it.kadras] + startIn,
+                   kadras: it.kadras, cue: null, text: it.text, trukme: it.duration });
     }
     // ⛔ Balso garsumas suvienodinamas iki VOICE_TARGET_LUFS VIENU stiprinimu visiems kadrams —
     // taip išlieka natūralus garsumo skirtumas tarp sakinių. eleven_v3_dpo generuoja ~9 dB
@@ -775,6 +802,36 @@ function buildVideo(frames, durations, introClipPath, introPng, outroHeadPath) {
       console.warn('  ⛔ Balso garsumo išmatuoti nepavyko — įmaišoma be suvienodinimo');
       console.log(`  Balsas: ${voice.length} kadrai (${vm.model})`);
     }
+  }
+
+  // ⛔ Laiko juosta — vienintelis autoritetingas laiko šaltinis (2026-09-19).
+  // Kadrų pradžios čia IŠMATUOTOS iš sukonkatenuotų failų, o ne perskaičiuotos iš
+  // scenarijaus, todėl subtitrai ir YouTube žymos neturi kartoti TRANSITION konstantos.
+  {
+    const pavadinimai = {};
+    (scenarioOrder || []).forEach(it => { pavadinimai[it.kadrasNum] = it.title; });
+    const juosta = {
+      lesson: lessonSlug,
+      lang,
+      sukurta: new Date().toISOString(),
+      trukme: +totalDur.toFixed(3),
+      kadrai: Object.keys(kadroPradzia).map(Number).sort((a, b) => a - b).map(k => ({
+        kadras: k,
+        title: pavadinimai[k] || '',
+        pradzia: +kadroPradzia[k].toFixed(3),
+        trukme: +(kadroTrukme[k] || 0).toFixed(3),
+      })),
+      balsas: voice.map(v => ({
+        kadras: v.kadras ?? null,
+        cue: v.cue ?? null,
+        pradzia: +v.at.toFixed(3),
+        trukme: +(v.trukme || 0).toFixed(3),
+        tekstas: v.text || '',
+      })),
+    };
+    fs.writeFileSync(path.join(videoDir, `timeline-${lang}.json`),
+      JSON.stringify(juosta, null, 2) + '\n', 'utf-8');
+    console.log(`  Laiko juosta: timeline-${lang}.json (${juosta.kadrai.length} kadrai, ${juosta.balsas.length} balso ruožai)`);
   }
 
   const turiPlakima = hasOutro && outroSeconds > 0;
