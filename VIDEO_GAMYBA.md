@@ -206,6 +206,20 @@ ffmpeg -v info -i assets/video/autro.mp4 -af volumedetect -f null - 2>&1 | grep 
 | Netelpa | `generate-voice.js` baigiasi kodu 2 | kadras pailginamas scenarijuje, balsas nespraudžiamas |
 | Serveris užimtas | 429 `system_busy` arba 5xx — laukiama 20/45/90/180/300 s ir bandoma dar kartą (2026-09-19) | piko metu ElevenLabs atmeta užklausas; tai ne mūsų klaida, o be kartojimo visa eilė nutrūksta |
 
+⛔ **Prieš įgarsinant — kirčio patikra** (2026-09-20):
+
+```bash
+node kircio-patikra.js lessons/{slug}/video/balso-tekstas-lt.md
+```
+
+Parodo žodžius, kuriuose kirtis **gali būti ne vienas**, su variantais ir morfologine informacija
+(VDU „Kirčiuoklis“). Skriptas nieko netaiso pats — sprendimą priima Eimantas, nes variantą lemia
+sakinio prasmė. Pasirinktas kirtis įrašomas į `tarimo-zodynas/lt.json` **IPA pavidalu** (v3 kirčio
+ženklų nepaiso). Dažni žodžiai praleidžiami — jų balsas nesuklysta.
+
+⛔ Kirčiuoklis nėra paskelbtas API: naudojame jo vidinį galą retai (kartą pamokai) ir tik savo
+tekstams. Prieš nuolatinį naudojimą verta paklausti VDU leidimo.
+
 ⛔ **Prieš įgarsinant — patikrinti tylą** (`ANIMATION_PRINCIPLES.md` § „Tyla kadre“): tarpai tarp
 sakinių iki 3 s, kalbos dalis 70–80 %. Tyliame filmuke duobės nesimato, su balsu jos skamba kaip klaida.
 
