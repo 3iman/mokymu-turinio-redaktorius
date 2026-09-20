@@ -42,9 +42,17 @@ async function kviesti(veiksmas, laukas, reiksme, n) {
 
 /** Dažni žodžiai — jų kirčio netikriname: balsas juos taria teisingai, o sąrašas be jų perpus trumpesnis. */
 function dazni() {
+  const out = new Set();
   try {
-    return new Set(JSON.parse(fs.readFileSync(__dirname + '/tarimo-zodynas/dazni-lt.json', 'utf-8')).zodziai);
-  } catch (_) { return new Set(); }
+    for (const w of JSON.parse(fs.readFileSync(__dirname + '/tarimo-zodynas/dazni-lt.json', 'utf-8')).zodziai) out.add(w);
+  } catch (_) { /* sąrašo gali ir nebūti */ }
+  // ⛔ Eimanto perklausyti ir patvirtinti žodžiai — jų nebeklausiame antrą kartą (2026-09-20).
+  try {
+    const z = JSON.parse(fs.readFileSync(__dirname + '/tarimo-zodynas/lt.json', 'utf-8'));
+    for (const w of Object.keys(z.patvirtinti || {})) out.add(w.toLowerCase());
+    for (const w of Object.keys(z.zodziai || {})) out.add(w.toLowerCase());
+  } catch (_) { /* žodyno gali ir nebūti */ }
+  return out;
 }
 
 /** Tekste esantys žodžiai, kurių kirtis nevienareikšmis. */
@@ -57,7 +65,10 @@ async function abejotini(tekstas, n) {
   for (const eil of dalys) {
     for (const p of eil) {
       const w = p.string.toLowerCase();
-      if (p.type === 'WORD' && p.accentType !== 'ONE' && !DAZNI.has(w) && w.length > 3) out.set(w, p.accented);
+      const kirciuotas = /[\u0300\u0301\u0303\u0330àáãèéẽìíĩòóõùúũ]/.test(p.string);
+      const lietuviskas = /^[a-ząčęėįšųūž]+$/.test(w);
+      if (p.type === 'WORD' && p.accentType !== 'ONE' && !DAZNI.has(w)
+          && w.length > 3 && lietuviskas && !kirciuotas) out.set(w, p.accented);
     }
   }
   return out;
@@ -100,8 +111,9 @@ async function variantai(zodis, n) {
   console.log(`Žodžiai, kuriuose kirtis gali būti ne vienas (${abj.size}):\n`);
   for (const [zodis] of abj) {
     const v = await variantai(zodis, n);
+    if (!v.length) continue;                       // Kirčiuoklis žodžio nepažįsta (angliškas, tikrinis) — praleidžiam
     const eil = v.map(x => `${x.a} (${x.mi}${x.reiksme ? ', ' + x.reiksme : ''})`).join('  ·  ');
-    console.log(`  ${zodis}\n     ${eil || '—'}`);
+    console.log(`  ${zodis}\n     ${eil}`);
     await new Promise(r => setTimeout(r, 400));     // nespaudžiame svetimos paslaugos
   }
   console.log('\n⛔ Pasirink variantą pagal sakinio prasmę ir įrašyk į tarimo-zodynas/lt.json (IPA).');
