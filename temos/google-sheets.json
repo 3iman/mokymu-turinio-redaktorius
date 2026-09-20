@@ -1,0 +1,65 @@
+{
+  "_apie": "Vienos temos filmukų faktų registras. Etalonas – pamoka, kurios formuluotes laikome teisingomis; kiti tos temos filmukai negali sakyti kitaip. Patikra: python3 faktu-patikra.py temos/google-sheets.json",
+  "tema": "Google Sheets",
+  "etalonas": "google-sheets-pradziamokslis",
+  "filmukai": [
+    "google-sheets-pradziamokslis",
+    "google-sheets-integracija-explaineris"
+  ],
+  "faktai": [
+    {
+      "id": "GS-01",
+      "klausimas": "Kaip greitai pakeitimas matomas svetainėje?",
+      "etalonas": "Vos išėjus iš langelio, pakeitimas jau matyti svetainėje.",
+      "saltinis": "Eimantas 2026-09-17: „Akimirksniu, vos išėjus iš celės redagavimo.“",
+      "raktai": ["atsinaujin", "akimirksn", "kelias sekund", "kelių sekund", "matyti svetainėje", "matosi svetainėje"],
+      "draudziama": ["kelias sekundes", "kelių sekundžių", "per dieną"]
+    },
+    {
+      "id": "GS-02",
+      "klausimas": "Kodėl pirmo lapo negalima perkelti?",
+      "etalonas": "Pirmas lapas visada lieka pirmas, nes svetainė jį atpažįsta pagal vietą (gID 0).",
+      "saltinis": "TYRIMAS.md + publikuota pamoka: pirmasis lapas visada gID 0",
+      "raktai": ["pirmas lapas", "pirmasis lapas", "gID nulis", "gID 0", "numatytasis lapas"],
+      "draudziama": []
+    },
+    {
+      "id": "GS-03",
+      "klausimas": "Ar pirmą lapą galima pervadinti?",
+      "etalonas": "Pervadinti pirmą lapą galima; keisti reikia tik jo vietos.",
+      "saltinis": "Eimantas 2026-09-17: „Pirmas lapas lieka, reikia pasakyti, kad pervadinti į Mokyklos taryba galima.“",
+      "raktai": ["pervadin", "pervardy"],
+      "draudziama": ["pervadinus gali sutrikti", "nepervadinkite"]
+    },
+    {
+      "id": "GS-04",
+      "klausimas": "Kaip kalbame apie draudimus (sujungti langeliai, rikiavimas, formulės)?",
+      "etalonas": "Langelių geriau nejungti ir eilučių nerikiuoti; išbandyti galima, tik rezultatas ne visada toks, kokio tikitės.",
+      "saltinis": "Eimantas 2026-09-17: „gan stipriai skamba nekeičiate… švelniau, jie jautrūs“",
+      "raktai": ["sujungt", "nejungti", "rikiav", "formul", "neturi būti", "negalima"],
+      "draudziama": ["negalima", "draudžiama", "neturi būti"]
+    },
+    {
+      "id": "GS-05",
+      "klausimas": "Kas prijungia failą prie svetainės?",
+      "etalonas": "Prijungia, publikuoja ir lentelę į puslapį įdeda Cleverphant; mokykla pildo duomenis ir dalijasi prieiga.",
+      "saltinis": "Eimantas 2026-09-17: senoji eiga (mokykla kopijuoja šabloną) nebetaikoma",
+      "raktai": ["prijung", "publikuo", "šablono kopij", "pasidubliuo", "prieigos"],
+      "draudziama": ["pasidubliuokite", "susikurkite kopiją"]
+    },
+    {
+      "id": "GS-06",
+      "klausimas": "Kaip vadiname lentelės dalis?",
+      "etalonas": "Lapas, langelis, eilutė, stulpelis, lapų juosta.",
+      "saltinis": "mokytoju-turinys/references/zodynas.md",
+      "raktai": ["celė", "celės", "skiltis", "langelis", "lapas"],
+      "draudziama": ["celė", "celės", "celių", "skiltis"]
+    }
+  ],
+  "terminai": {
+    "langelis": ["celė", "celės", "celių", "narvelis"],
+    "lapas": ["skiltis", "tabas"],
+    "lapų juosta": ["lapų meniu", "apatinė juosta"],
+    "prieiga": ["priėjimas"]
+  }
+}

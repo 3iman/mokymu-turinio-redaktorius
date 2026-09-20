@@ -206,6 +206,24 @@ ffmpeg -v info -i assets/video/autro.mp4 -af volumedetect -f null - 2>&1 | grep 
 | Netelpa | `generate-voice.js` baigiasi kodu 2 | kadras pailginamas scenarijuje, balsas nespraudžiamas |
 | Serveris užimtas | 429 `system_busy` arba 5xx — laukiama 20/45/90/180/300 s ir bandoma dar kartą (2026-09-19) | piko metu ElevenLabs atmeta užklausas; tai ne mūsų klaida, o be kartojimo visa eilė nutrūksta |
 
+⛔ **Tos pačios temos filmukai negali sakyti skirtingai** (Eimantas 2026-09-20):
+
+```bash
+python3 faktu-patikra.py temos/google-sheets.json            # visi faktai greta
+python3 faktu-patikra.py temos/google-sheets.json --tik-klaidos
+```
+
+Temos faile nurodomas **etalonas** (filmukas, kurio formuluotes laikome teisingomis) ir faktų
+sąrašas: klausimas, etaloninis atsakymas, raktažodžiai ir draudžiamos formuluotės. Patikra veikia
+dviem lygiais:
+
+| Lygis | Ką daro |
+|---|---|
+| **kieta** | draudžiamos formuluotės ir terminų dubletai („celė“ vietoj „langelis“) — klaida |
+| **minkšta** | surenka visų filmukų sakinius apie tą patį faktą ir pastato greta — sprendžia žmogus |
+
+`build_scenes.py` kietą patikrą paleidžia pats ir išveda eilutę `faktai: …`.
+
 ⛔ **Prieš įgarsinant — kirčio patikra** (2026-09-20):
 
 ```bash

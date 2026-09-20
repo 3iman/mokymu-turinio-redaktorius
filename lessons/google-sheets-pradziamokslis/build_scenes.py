@@ -14,7 +14,7 @@ Dariaus balsas negeneruojamas be Eimanto žinios (2026-09-17).
 
 Paleidimas: python3 build_scenes.py
 """
-import json, os, re
+import glob, json, os, re
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ILL = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -1595,6 +1595,15 @@ def main():
         eilute = [l for l in p.stdout.split('\n') if 'Iš viso' in l]
         if eilute:
             print('redaktorius: ' + re.sub(r'\x1b\[[0-9;]*m', '', eilute[0]).replace('Iš viso:', '').strip())
+
+    # ⛔ Tos pačios temos filmukai negali sakyti skirtingai (Eimantas 2026-09-20).
+    for temos in glob.glob(os.path.join(ILL, 'temos', '*.json')):
+        if os.path.basename(HERE) in open(temos, encoding='utf-8').read():
+            f = subprocess.run(['python3', os.path.join(ILL, 'faktu-patikra.py'), temos, '--tik-klaidos'],
+                               capture_output=True, text=True)
+            eil = [l for l in f.stdout.split('\n') if 'Neatitikimų' in l or 'Kietų neatitikimų' in l]
+            if eil:
+                print('faktai: ' + re.sub(r'\x1b\[[0-9;]*m', '', eil[0]).replace('⛔ ', '').replace('✅ ', '').strip())
 
     print(f"scenos: {len(SCENES)} | trukmė {total}s (~{full // 60}:{full % 60:02d}) | balso rizikos: {problems or 'nėra'}")
 

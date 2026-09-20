@@ -11,7 +11,7 @@ nes integraciją daro Cleverphant.
 
 Paleidimas: python3 build_scenes.py
 """
-import json, os, re, sys
+import glob, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ILL = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -303,7 +303,7 @@ for i, (h, p, cls) in enumerate(kor):
              f'<div class="h kodas"><span class="pill {cls}">{s.t("uh%d" % i, h)}</span></div>'
              f'<div class="p" style="margin-top:16px">{s.t("up%d" % i, p)}</div></div>')
 body += (f'<div class="kort" style="left:140px; top:520px; width:1300px; padding:24px 30px">'
-         f'<div class="p">{s.t("uz", "Pirmasis lapas visada turi gID 0. Tai numatytasis lapas – jo vietos keisti negalima.")}</div></div>')
+         f'<div class="p">{s.t("uz", "Pirmasis lapas visada turi gID 0. Tai numatytasis lapas – jo vietos keisti nereikėtų.")}</div></div>')
 add(s, page(s, body))
 s.appear('.urlbar', 0.8, 'fadeUpMedium', 0.5)
 s.css.append(f".u_f {{ animation: iconPulse 0.7s ease-in-out 5.2s both; }}")
@@ -429,14 +429,14 @@ s.ekrane = 'Modulio lentelė su trimis prijungtais failais: ID, pavadinimas ir �
 s.komentaras = 'Publikuota pamoka § „Kaip atrodo lentelių modulis TVS“.'
 
 # ================================================================ 8. Atsinaujinimas
-s = Scene('07-atsinaujinimas', 'Kaip greitai atsinaujina', 'Pakeitimas svetainėje – per kelias sekundes', 20)
+s = Scene('07-atsinaujinimas', 'Kaip greitai atsinaujina', 'Pakeitimas svetainėje – akimirksniu', 20)
 body = (f'<div class="kort a0" style="left:150px; top:80px; width:560px; height:220px; padding:30px 34px">'
         f'<div class="zyme">{s.t("a_z1", "Lentelėje")}</div>'
         f'<div class="h" style="margin-top:18px">{s.t("a_t1", "Pataisote langelį")}</div></div>'
         f'<div class="rodykle" style="left:730px; top:180px; width:180px"></div>'
         f'<div class="kort a1" style="left:940px; top:80px; width:560px; height:220px; padding:30px 34px">'
         f'<div class="zyme">{s.t("a_z2", "Svetainėje")}</div>'
-        f'<div class="h" style="margin-top:18px; color:var(--gs-green-th,#1c8d1f)">{s.t("a_t2", "Matyti po kelių sekundžių")}</div></div>')
+        f'<div class="h" style="margin-top:18px; color:var(--gs-green-th,#1c8d1f)">{s.t("a_t2", "Matyti iš karto")}</div></div>')
 tikr = [('Ar ta pati lentelė?', 'gal redaguojate kitą failą ar lapą'),
         ('Ar išėjote iš langelio?', 'atnaujinimas išsiunčiamas baigus redaguoti')]
 for i, (h, p) in enumerate(tikr):
@@ -449,11 +449,11 @@ s.appear('.a1', 4.4, 'slinktisIsDesines', 0.5)
 s.appear('.t0', 10.0, 'fadeUpLight', 0.5)
 s.appear('.t1', 14.2, 'fadeUpLight', 0.5)
 s.voice(1.0, 'Pataisius langelį, svetainė atsinaujina pati.')
-s.voice(5.0, 'Dažniausiai tai trunka kelias sekundes.')
+s.voice(5.0, 'Pakeitimas matyti akimirksniu, vos išėjus iš langelio.')
 s.voice(9.0, 'Jei pakeitimo nematyti, tikrinkite du dalykus.')
 s.voice(12.9, 'Ar redaguojate tą pačią prijungtą lentelę.')
 s.voice(16.5, 'Ir ar tikrai išėjote iš langelio.')
-s.ekrane = 'Dvi kortelės su rodykle: „Pataisote langelį“ → „Matyti po kelių sekundžių“. Žemiau dvi patikros.'
+s.ekrane = 'Dvi kortelės su rodykle: „Pataisote langelį“ → „Matyti iš karto“. Žemiau dvi patikros.'
 s.komentaras = 'Publikuota pamoka § „Kaip greitai veikia duomenų atsinaujinimas“.'
 
 # ================================================================ 9. Taisyklės lapui
@@ -477,7 +477,7 @@ for j in range(2):
     for i in range(3):
         s.visible('.d%di%d' % (j, i), (2.4 if j == 0 else 12.4) + i * 2.4)
 s.voice(1.0, 'Lentelė čia veikia kaip duomenų bazė – svarbiausia tvarka, ne stilius.')
-s.voice(6.4, 'Langelyje neturi būti nei perkėlimo į naują eilutę, nei formulių, nei sujungtų langelių.')
+s.voice(6.4, 'Langelyje geriau nerašyti kelių eilučių, nenaudoti formulių ir nejungti langelių.')
 s.voice(13.5, 'Tinka tai, kas paruošta: A stulpelio žymos ir vienas formatas vienai eilutei.')
 s.voice(20.3, 'Sudėtingesnis formatavimas svetainėje nesimato.')
 s.voice(24.2, 'Todėl šabloną verta palikti tokį, koks yra.')
@@ -677,6 +677,15 @@ def main():
             print('redaktorius: ' + re.sub(r'\x1b\[[0-9;]*m', '', eilute[0]).replace('Iš viso:', '').strip())
         if p.returncode == 1 and '--tyliai' not in sys.argv:
             print('  (detaliau: python3 $R ' + os.path.relpath(HERE, ILL) + ')')
+
+    # ⛔ Tos pačios temos filmukai negali sakyti skirtingai (Eimantas 2026-09-20).
+    for temos in glob.glob(os.path.join(ILL, 'temos', '*.json')):
+        if os.path.basename(HERE) in open(temos, encoding='utf-8').read():
+            f = subprocess.run(['python3', os.path.join(ILL, 'faktu-patikra.py'), temos, '--tik-klaidos'],
+                               capture_output=True, text=True)
+            eil = [l for l in f.stdout.split('\n') if 'Neatitikimų' in l or 'Kietų neatitikimų' in l]
+            if eil:
+                print('faktai: ' + re.sub(r'\x1b\[[0-9;]*m', '', eil[0]).replace('⛔ ', '').replace('✅ ', '').strip())
 
     print(f"scenos: {len(SCENES)} | trukmė {total}s (~{full // 60}:{full % 60:02d}) | balso rizikos: {problems or 'nėra'}")
 

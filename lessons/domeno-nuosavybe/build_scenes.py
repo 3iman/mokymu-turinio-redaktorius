@@ -15,7 +15,7 @@ Rašo:
 ⛔ Balsas SUPLANUOTAS, NESUGENERUOTAS (Eimantas 2026-09-18: „Tik negarsink“).
 ⛔ Nejudantis kadras rodo galutinę būseną (ANIMATION_PRINCIPLES §14).
 """
-import json, os, re, sys
+import glob, json, os, re, sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 ILL = os.path.abspath(os.path.join(HERE, '..', '..'))
@@ -718,6 +718,15 @@ def main():
             print('redaktorius: ' + re.sub(r'\x1b\[[0-9;]*m', '', eilute[0]).replace('Iš viso:', '').strip())
         if p.returncode == 1 and '--tyliai' not in sys.argv:
             print('  (detaliau: python3 $R ' + os.path.relpath(HERE, ILL) + ')')
+
+    # ⛔ Tos pačios temos filmukai negali sakyti skirtingai (Eimantas 2026-09-20).
+    for temos in glob.glob(os.path.join(ILL, 'temos', '*.json')):
+        if os.path.basename(HERE) in open(temos, encoding='utf-8').read():
+            f = subprocess.run(['python3', os.path.join(ILL, 'faktu-patikra.py'), temos, '--tik-klaidos'],
+                               capture_output=True, text=True)
+            eil = [l for l in f.stdout.split('\n') if 'Neatitikimų' in l or 'Kietų neatitikimų' in l]
+            if eil:
+                print('faktai: ' + re.sub(r'\x1b\[[0-9;]*m', '', eil[0]).replace('⛔ ', '').replace('✅ ', '').strip())
 
     print(f"scenos: {len(SCENES)} | trukmė {total}s (~{full // 60}:{full % 60:02d}) | balso rizikos: {problems or 'nėra'}")
 
