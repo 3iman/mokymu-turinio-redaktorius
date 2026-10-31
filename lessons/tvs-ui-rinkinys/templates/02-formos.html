@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  .title { font-size: 44px; margin-bottom: 30px; }
+  .board { display: flex; gap: 40px; align-items: flex-start; }
+  .board > .tvs-window { flex: 0 0 1100px; height: 830px; }
+  .tvs-window .tvs-main { gap: 16px; }
+  .col { flex: 1; display: flex; flex-direction: column; gap: 26px; }
+  .lbl { font-size: 17px; text-transform: uppercase; letter-spacing: .8px; color: var(--c-text-faint); margin-bottom: 12px; }
+  .tvs-modal.is-static { width: 100%; }
+  .tree-bg { background: var(--tvs-page); padding: 16px; border-radius: 10px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="board">
+      <div class="tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder">{{search_ph}}</div></div>
+        <div class="tvs-side"><i></i><i></i><i class="is-bars is-on"></i><i></i><i></i></div>
+        <div class="tvs-subnav"><span>{{sub_menu}}</span><span class="is-on">{{sub_links}}</span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">{{crumb}}</div>
+          <div><span class="tvs-btn is-small"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>{{btn_new_link}}</span></div>
+          <div>
+            <div class="tvs-tabs"><div class="tvs-tab is-on">{{tab_main}}</div><div class="tvs-tab">{{tab_opts}}</div></div>
+            <div class="tvs-form">
+              <div class="tvs-field"><div class="tvs-label">{{f_title}}</div><div class="tvs-help">{{f_title_help}}</div><div class="tvs-input is-focus">{{v_title}}<span class="tvs-caret"></span></div></div>
+              <div class="tvs-field"><div class="tvs-label">{{f_page}}<span class="tvs-req">*</span></div><div class="tvs-help">{{f_page_help}}</div>
+                <div><span class="tvs-btn is-tiny"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><circle cx="10" cy="10" r="6"/><path d="M15 15l6 6" stroke-linecap="round"/></svg>{{btn_pick}}</span></div>
+                <div class="tvs-picked"><span>{{v_page}}</span><span class="tvs-path">{{v_path}}</span><span class="tvs-btn is-tiny is-pink"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6"><circle cx="12" cy="12" r="8.5"/><path d="M6 18L18 6"/></svg>{{btn_remove}}</span></div></div>
+            </div>
+          </div>
+          <div class="tvs-form-foot"><span class="tvs-btn is-tiny"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>{{btn_update}}</span><span class="tvs-btn is-tiny"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>{{btn_save_exit}}</span><span class="tvs-sp"></span><span class="tvs-btn is-tiny is-grey-dark">{{btn_cancel}}</span></div>
+        </div>
+      </div>
+      <div class="col">
+        <div>
+          <div class="lbl">{{l_modal}}</div>
+          <div class="tvs-modal is-static">
+            <div class="tvs-modal-h"><span>{{modal_h}}</span><span class="tvs-x">×</span></div>
+            <div class="tvs-modal-b"><div class="tvs-input is-placeholder">{{modal_search}}</div>
+              <div class="tvs-opt is-hover">{{opt_page}}</div><div class="tvs-opt">{{opt_url}}</div></div>
+          </div>
+        </div>
+        <div>
+          <div class="lbl">{{l_tree}}</div>
+          <div class="tree-bg tvs-tree">
+            <div class="tvs-node"><div class="tvs-node-handle"></div>{{n_1}}<span class="tvs-tag">{{t_page}}</span></div>
+            <div class="tvs-node is-l2"><div class="tvs-node-handle"></div>{{n_2}}<span class="tvs-tag">{{t_page}}</span></div>
+            <div class="tvs-node"><div class="tvs-node-handle"></div>{{n_3}}<span class="tvs-tag">{{t_url}}</span><svg class="tvs-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7M21 3l-9 9"/><path d="M19 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></svg></div>
+            <div class="tvs-node is-new"><div class="tvs-node-handle"></div>{{n_4}}<span class="tvs-tag">{{t_page}}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

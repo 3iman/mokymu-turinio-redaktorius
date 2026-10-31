@@ -121,3 +121,131 @@
    Tekstas iš TVS branduolio vertimo, pvz. „:count eil. perrikiuotos sėkmingai“ */
 .tvs-alert { background: var(--tvs-green); color: #fff; padding: 16px 26px; font-size: 23px; line-height: 1.3;
   border-radius: 2px; box-shadow: 1px 1px 0 rgba(66, 66, 66, .1); overflow: hidden; }
+
+/* =====================================================================
+ * 2026-10-31 — navigacijų ir formų komponentai.
+ * Spalvos išmatuotos iš senų įrašų kadrų (mokymų platforma, scenos 826–835):
+ * rožinė #fc2a62 („Šalinti“, išorinės nuorodos ikona, privalomo lauko „*“),
+ * skirtukų juosta #e1e3e3, pasirinkto įrašo fonas #f2f2f2, modalinio lango fonas
+ * ≈ 69 % juodos, išskleidžiamo sąrašo grupės antraštė #969497, rankenėlė #eceeef.
+ * ===================================================================== */
+:root {
+  --tvs-pink:      #fc2a62;
+  --tvs-tabs:      #e1e3e3;
+  --tvs-picked:    #f2f2f2;
+  --tvs-dd-head:   #969497;
+  --tvs-dd-active: #f6f6f6;
+  --tvs-handle:    #eceeef;
+  --tvs-node-line: #dfdfdf;
+  --tvs-overlay:   rgba(0, 0, 0, .69);
+  --tvs-modal-x:   #51709c;
+}
+.tvs-btn.is-pink { background: var(--tvs-pink); }
+.tvs-btn.is-tiny { height: 34px; padding: 0 12px; font-size: 17px; gap: 6px; }
+.tvs-btn.is-tiny svg { width: 15px; height: 15px; }
+.tvs-btn.is-grey-dark { background: var(--tvs-grey-btn); color: var(--tvs-text); }
+
+/* ---- Viršutinė paieška su tekstu („Type to search…“ / „navi“) ---- */
+.tvs-top .tvs-searchbar.is-text { height: auto; max-width: none; background: none; border-radius: 0;
+  font-size: 22px; color: var(--tvs-text); display: flex; align-items: center; }
+.tvs-top .tvs-searchbar.is-placeholder { color: #9aa0a6; }
+.tvs-caret { display: inline-block; width: 2px; height: 26px; background: var(--tvs-text); margin-left: 2px; }
+
+/* ---- Išskleidžiamas sąrašas su grupių antraštėmis (paieška viršuje) ----
+   Kadras 826: „Navigation“ (antraštė) → „Navigacijos“ (pažymėtas) → „Links“ (antraštė) */
+.tvs-dropdown { position: absolute; z-index: 25; min-width: 340px; background: #fff; border: 1px solid #e3e3e3;
+  border-radius: 4px; box-shadow: 0 10px 28px rgba(0,0,0,.14); padding: 10px 0; font-family: var(--tvs-font); }
+.tvs-dd-h { padding: 8px 26px 4px; font: 600 19px/1.3 var(--tvs-font); color: var(--tvs-dd-head); }
+.tvs-dd-i { padding: 10px 26px; font-size: 22px; color: var(--tvs-text); }
+.tvs-dd-i.is-active { background: var(--tvs-dd-active); }
+
+/* ---- Išskleista šoninė juosta (☰): ikona + užrašas ---- */
+.tvs-side.is-expanded { position: absolute; left: 0; top: 76px; bottom: 0; width: 320px; z-index: 6;
+  align-items: stretch; gap: 0; padding-top: 18px; box-shadow: 8px 0 24px rgba(0,0,0,.18); }
+.tvs-side-item { display: flex; align-items: center; gap: 20px; padding: 13px 25px; color: rgba(255,255,255,.55);
+  font-size: 22px; position: relative; white-space: nowrap; }
+.tvs-side-item i { flex: 0 0 26px; }
+.tvs-side-item.is-on { color: #fff; }
+.tvs-side-item.is-on::before { content: ""; position: absolute; left: 0; top: 8px; bottom: 8px; width: 5px; background: var(--tvs-accent); }
+/* „≡“ ikona (Navigacijos) — tokia pat darbalaukyje ir meniu */
+.tvs-side i.is-bars, .tvs-ico-bars { background: none !important; border-top: 3px solid currentColor; border-bottom: 3px solid currentColor; height: 16px; width: 22px; position: relative; color: #9b9fa3; }
+.tvs-side i.is-bars::after, .tvs-ico-bars::after { content: ""; position: absolute; left: 0; right: 0; top: 3.5px; height: 3px; background: currentColor; }
+.tvs-side-item.is-on i.is-bars { color: #fff; }
+
+/* ---- Darbalaukis: modulių sąrašas dviem stulpeliais („Įrankiai“) ---- */
+.tvs-dash { background: #fff; border-radius: var(--tvs-radius); padding: 22px 28px; }
+.tvs-dash-h { font-size: 22px; font-weight: 600; }
+.tvs-dash-sub { font-size: 16px; color: var(--tvs-text-muted); margin: 2px 0 10px; }
+.tvs-dash-grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 34px; }
+.tvs-dash-i { display: flex; align-items: center; gap: 16px; padding: 14px 4px; border-bottom: 1px solid var(--tvs-line);
+  font-size: 24px; color: var(--tvs-text); }
+.tvs-dash-i i { flex: 0 0 24px; height: 22px; border-radius: 4px; background: #3d4246; display: block; }
+.tvs-dash-i i.tvs-ico-bars { color: #3d4246; }
+
+/* ---- Lentelė „Vardas · Aprašymas“ (navigacijų grupės) ---- */
+.tvs-table.is-menu .tvs-th, .tvs-table.is-menu .tvs-row { grid-template-columns: 30px 170px 1fr 250px; }
+.tvs-row .tvs-desc { font-size: 20px; color: var(--tvs-text); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tvs-table.is-menu .tvs-row { height: 70px; font-size: 22px; }
+.tvs-row.is-row-hover { background: #f7f9fa; }
+
+/* ---- Nuorodų medis: rankenėlė, pavadinimas, tipo žymeklis, išorinės nuorodos ikona ----
+   Kadras 828: eilutės baltos, tarpai tarp jų — puslapio fonas, pilka kvadratinė rankenėlė „≡“ */
+.tvs-tree { display: flex; flex-direction: column; gap: 9px; }
+.tvs-node { display: flex; align-items: center; gap: 16px; background: #fff; border: 1px solid var(--tvs-node-line);
+  border-radius: 2px; height: 56px; padding-right: 18px; font-size: 22px; color: var(--tvs-text); position: relative; }
+.tvs-node.is-l2 { margin-left: 46px; }
+.tvs-node.is-new { background: var(--tvs-new); }
+.tvs-node-handle { width: 46px; align-self: stretch; background: var(--tvs-handle); display: flex; align-items: center; justify-content: center; }
+.tvs-node-handle::before { content: ""; width: 16px; height: 10px; border-top: 2px solid #bebec6; border-bottom: 2px solid #bebec6; }
+.tvs-tag { font-size: 16px; color: var(--tvs-text); margin-left: -4px; }
+.tvs-ext { width: 22px; height: 22px; color: var(--tvs-pink); margin-left: 10px; }
+
+/* ---- Modalinis langas (kadras 829: „Kokio tipo linką norite sukurti?“) ---- */
+.tvs-overlay { position: absolute; inset: 0; background: var(--tvs-overlay); z-index: 30; }
+.tvs-modal { position: absolute; z-index: 31; width: 700px; background: #fff; border-radius: 5px;
+  box-shadow: 0 20px 50px rgba(0,0,0,.3); font-family: var(--tvs-font); color: var(--tvs-text); }
+.tvs-modal.is-static { position: relative; }
+.tvs-modal-h { display: flex; align-items: center; justify-content: space-between; padding: 24px 26px 18px; font-size: 27px; font-weight: 500; }
+.tvs-modal-h .tvs-x { font-size: 34px; line-height: 1; color: var(--tvs-modal-x); font-weight: 400; }
+.tvs-modal-b { padding: 0 26px 22px; display: flex; flex-direction: column; gap: 6px; }
+.tvs-modal-b > .tvs-input { margin-bottom: 10px; }
+.tvs-opt { padding: 14px 18px; border-radius: 3px; font-size: 24px; font-weight: 700; }
+.tvs-opt.is-hover { background: var(--tvs-dd-active); }
+.tvs-modal .tvs-table { border: 1px solid var(--tvs-line); }
+
+/* ---- Formos skirtukai („Pagrindinis“ / „Parinktys“) ---- */
+.tvs-tabs { display: flex; background: var(--tvs-tabs); border-radius: 3px 3px 0 0; }
+.tvs-tab { padding: 16px 34px; font-size: 21px; color: var(--tvs-text-muted); }
+.tvs-tab.is-on { background: #fff; color: var(--tvs-text); }
+
+/* ---- Formos laukai: pavadinimas, „*“, pagalbinis tekstas, laukas ---- */
+.tvs-form { background: #fff; padding: 0 28px; border-radius: 0 0 3px 3px; }
+.tvs-field { padding: 22px 0; display: flex; flex-direction: column; gap: 8px; }
+.tvs-field + .tvs-field { border-top: 1px solid var(--tvs-line); }
+.tvs-label { font-size: 21px; font-weight: 700; color: var(--tvs-text); }
+.tvs-req { color: var(--tvs-pink); margin-left: 4px; }
+.tvs-help { font-size: 18px; color: var(--tvs-text-muted); }
+.tvs-field .tvs-input { color: var(--tvs-text); }
+.tvs-input.is-placeholder { color: #9aa0a6; }
+.tvs-input.is-selected span { background: #b4d7ff; }
+/* Pasirinktas įrašas (laukas „Page“ po „Pažymėti“) */
+.tvs-picked { display: flex; align-items: center; gap: 26px; background: var(--tvs-picked); padding: 14px 16px; font-size: 21px; }
+.tvs-picked .tvs-path { flex: 1; color: var(--tvs-text); }
+/* Formos apačia: „Atnaujinti“ / „Išsaugoti ir išeiti“ … „Atšaukti“ */
+.tvs-form-foot { display: flex; gap: 8px; align-items: center; background: #fff; padding: 16px 28px; margin-top: 14px; border-radius: 3px; }
+.tvs-form-foot .tvs-sp { flex: 1; }
+
+/* ---- Svetainė: juodasis šoninis meniu (mokyklos titulinis) ---- */
+.tvs-site-menu { width: 420px; background: #3a3a3a; font-family: var(--tvs-font); }
+.tvs-site-menu div { display: flex; align-items: center; gap: 18px; padding: 18px 26px; color: #fff; font-size: 19px;
+  font-weight: 500; letter-spacing: .4px; text-transform: uppercase; border-bottom: 1px solid rgba(255,255,255,.12); }
+.tvs-site-menu div.is-head { justify-content: center; }
+.tvs-site-menu i { width: 24px; height: 22px; border: 2.5px solid #fff; border-radius: 4px; display: block; flex-shrink: 0; }
+.tvs-side i.is-bars.is-on { color: #fff; }
+/* išskleista juosta išimta iš tinklelio — turinys lieka savo stulpelyje */
+.tvs-window.is-nosubnav > .tvs-main { grid-column: 2; grid-row: 2; }
+.tvs-window > .tvs-subnav { grid-column: 2; grid-row: 2; }
+.tvs-window > .tvs-subnav + .tvs-main { grid-column: 3; grid-row: 2; }
+.tvs-picked .tvs-path { font-size: 19px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.tvs-modal .tvs-filter .tvs-input { min-width: 340px; }
+.tvs-input.is-typed { color: var(--tvs-text); }
