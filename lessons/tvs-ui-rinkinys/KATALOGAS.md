@@ -33,10 +33,10 @@ Būsena: ✅ — yra `tokens/tvs.css` ir rinkinio lentose `templates/01–03`; *
 
 | Komponentas | Būsena | Epizodų | Žymos kortelėse | Epizodai |
 |---|---|---|---|---|
-| Slapukų juosta ir nustatymai | kadro nėra | 3 | slapukų jungikliai; slapukų juosta | ep_1765_04_1, ep_1765_04_2, ep_1765_04_3 |
+| Slapukų juosta ir nustatymai | kadrai yra: `assets/slapukai-mygtukai.png`, `slapukai-nustatymai.png`, `slapukai-poraste.png` | 3 | slapukų jungikliai; slapukų juosta | ep_1765_04_1, ep_1765_04_2, ep_1765_04_3 |
 | Pranešimų juostelė | reikia kadrų | 2 | svetainės pranešimų juostelė; svetainės pranešimų juostelė su uždarymo kryželiu | ep_684_08_1, ep_702_01_1 |
 | Redagavimo pieštukas svetainėje | reikia kadrų | 2 | pieštuko ikona prie antraštės svetainėje; pieštuko ikona prie vardo svetainėje | ep_693_04_1, ep_706_01_1 |
-| Poraštė | kadro nėra | 1 | svetainės poraštė | ep_1765_04_4 |
+| Poraštė | kadrai yra: `assets/slapukai-mygtukai.png`, `slapukai-nustatymai.png`, `slapukai-poraste.png` | 1 | svetainės poraštė | ep_1765_04_4 |
 | Svetainės dokumentų lentelė su metų grupėmis | reikia kadrų | 1 | svetainės dokumentų lentelė su metų grupėmis | ep_690_03_2 |
 | Svetainės subpuslapių sąrašas | reikia kadrų | 1 | svetainės subpuslapių sąrašas | ep_693_04_4 |
 | Svetainės naujienos turinys su paveikslėliais | reikia kadrų | 1 | svetainės naujienos turinys su paveikslėliais | ep_692_04_3 |
