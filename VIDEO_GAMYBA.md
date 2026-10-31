@@ -411,3 +411,28 @@ node make-yt-meta.js --lesson {slug} --lang lt
 
 ⛔ Nauja kalba ar rinka pridedama tik JSON failuose. Jei tam prireikė keisti kodą — kažkas
 padaryta ne ten.
+
+---
+
+## Platformos epizodai — po vieną klipą kadrui (nuo 2026-10-31)
+
+Mokymų platformai (`clv-mokymu-platformos-redisign-html`) filmas yra **pamokos dalies esmės sluoksnis**, ne YouTube filmukas. Eimantas 2026-10-15: **platformai be intro ir outro**.
+
+```bash
+node build-video.js --lesson {slug} --lang lt --platforma          # = node build-platform-clips.js …
+node build-video.js --lesson {slug} --lang lt --platforma --kadras 5,6   # tik nurodyti kadrai
+```
+
+| Kas | Kaip |
+|---|---|
+| Vienetas | **kiekvienas scenarijaus kadras — atskiras failas**; intro / outro eilutės praleidžiamos, skirtukų nėra |
+| Vaizdas | kaip YouTube filmuke: `output/{lang}/clips/{Failas}.mp4` + stop kadras iš PNG iki scenarijaus trukmės |
+| Balsas | ties laiko žymomis, **vienas stiprinimas visai pamokai** iki −19 LUFS (tas pats kaip §7) |
+| Garsai | `assets/video/sfx/` su `garsumas.json`, ties žymomis |
+| Muzika | **nėra** (`--muzika` — jei prireiktų, 25 % garsumo) |
+| Subtitrai | `.vtt` iš **scenarijaus** teksto — ne iš balso manifesto, kur santrumpos ir kirčiai pakeisti IPA |
+| Vardas | epizodo id iš `lessons/{slug}/epizodai.json` (jį atneša platformos `turinys/explaineriai/{slug}/`); be jo — `k{NN}-{Failas}` |
+| Rezultatas | `video/platforma-{lang}/{id}.mp4` + `.vtt` + `.jpg` (viršelis — paskutinis kadras) + `index.json` |
+| Įspėjimai | kadras > 15 s, balsas užlipa ant kitos žymos ar už kadro ribų, trūksta PNG / klipo / garso |
+
+⛔ Prieš `--platforma` — tie patys žingsniai kaip YouTube filmukui: `generate.js --png`, `generate-video-clips.js`, `generate-voice.js`. Montažas ranka nedaromas.

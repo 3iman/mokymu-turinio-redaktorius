@@ -28,3 +28,8 @@ lessons/*/video/intro.png
 # Subtitrai ir laiko juosta — gaminys, atkuriami iš scenarijaus ir balso
 lessons/*/video/timeline-*.json
 lessons/*/video/subtitles/
+
+# Platformos klipai (build-platform-clips.js) — gaminys; index.json ir .vtt lieka
+lessons/*/video/platforma-*/*.mp4
+lessons/*/video/platforma-*/*.jpg
+lessons/*/video/platforma-*/_tmp/

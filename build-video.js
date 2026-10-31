@@ -44,6 +44,14 @@ if (!lessonSlug) {
   process.exit(1);
 }
 
+// --platforma: mokymų platformos epizodai — po vieną klipą kadrui, be intro / outro / skirtukų / muzikos
+// (Eimantas 2026-10-15). Visa logika — build-platform-clips.js.
+if (args.includes('--platforma')) {
+  require('child_process').execFileSync(process.execPath,
+    [path.join(__dirname, 'build-platform-clips.js'), ...args.filter(a => a !== '--platforma')], { stdio: 'inherit' });
+  process.exit(0);
+}
+
 // ---- Paths ----
 const lessonDir = path.join(LESSONS_DIR, lessonSlug);
 const outputDir = path.join(lessonDir, 'output', lang);
