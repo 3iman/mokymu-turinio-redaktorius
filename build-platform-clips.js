@@ -58,7 +58,7 @@ const musicPath = path.join(ROOT, 'assets', 'video', 'jiglr-malibu_cleverphant-m
 const WIDTH = 1920, HEIGHT = 1080, FPS = 30;
 const BG_COLOR = isDark ? '#151b2b' : '#f8f9fb';      // kaip build-video.js
 const VOICE_TARGET_LUFS = -19;                           // VIDEO_GAMYBA.md §7 „Balsas“
-const PLATFORM_MAX_S = 15;                               // platformos epizodo riba
+const PLATFORM_MAX_S = 20;                               // platformos epizodo riba (tikslas ≤ 15 s; Eimantas 2026-10-31)
 
 const sh = (cmd) => execSync(cmd, { stdio: 'pipe', encoding: 'utf-8', maxBuffer: 64 * 1024 * 1024 });
 const q = (p) => `"${p.replace(/"/g, '\\"')}"`;

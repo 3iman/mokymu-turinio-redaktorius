@@ -433,6 +433,6 @@ node build-video.js --lesson {slug} --lang lt --platforma --kadras 5,6   # tik n
 | Subtitrai | `.vtt` iš **scenarijaus** teksto — ne iš balso manifesto, kur santrumpos ir kirčiai pakeisti IPA |
 | Vardas | epizodo id iš `lessons/{slug}/epizodai.json` (jį atneša platformos `turinys/explaineriai/{slug}/`); be jo — `k{NN}-{Failas}` |
 | Rezultatas | `video/platforma-{lang}/{id}.mp4` + `.vtt` + `.jpg` (viršelis — paskutinis kadras) + `index.json` |
-| Įspėjimai | kadras > 15 s, balsas užlipa ant kitos žymos ar už kadro ribų, trūksta PNG / klipo / garso |
+| Įspėjimai | kadras > 20 s (tikslas ≤ 15 s), balsas užlipa ant kitos žymos ar už kadro ribų, trūksta PNG / klipo / garso |
 
 ⛔ Prieš `--platforma` — tie patys žingsniai kaip YouTube filmukui: `generate.js --png`, `generate-video-clips.js`, `generate-voice.js`. Montažas ranka nedaromas.
