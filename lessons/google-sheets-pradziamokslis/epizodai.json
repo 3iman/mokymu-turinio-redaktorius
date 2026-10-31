@@ -51,6 +51,12 @@
    "failas": "07-pervardyti"
   },
   {
+   "kadras": 9,
+   "epizodas": "ep_1845_07_1",
+   "trukme_s": 38,
+   "failas": "08-atsargiai"
+  },
+  {
    "kadras": 10,
    "epizodas": "viz_1845_08",
    "trukme_s": 20,
@@ -63,10 +69,22 @@
    "failas": "10-rasymas"
   },
   {
+   "kadras": 12,
+   "epizodas": "ep_1845_09_2",
+   "trukme_s": 18,
+   "failas": "11-akimirksniu"
+  },
+  {
    "kadras": 13,
    "epizodas": "ep_1845_10_1",
    "trukme_s": 20,
    "failas": "12-viena-eilute"
+  },
+  {
+   "kadras": 14,
+   "epizodas": "ep_1845_10_2",
+   "trukme_s": 21,
+   "failas": "13-is-word"
   },
   {
    "kadras": 15,
@@ -79,6 +97,12 @@
    "epizodas": "ep_1845_11_1",
    "trukme_s": 51,
    "failas": "15-nauja-eilute"
+  },
+  {
+   "kadras": 17,
+   "epizodas": "ep_1845_12_3",
+   "trukme_s": 17,
+   "failas": "16-paruostukai"
   },
   {
    "kadras": 18,
