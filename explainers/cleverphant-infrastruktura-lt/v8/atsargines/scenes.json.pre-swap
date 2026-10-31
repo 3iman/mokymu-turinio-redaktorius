@@ -1,0 +1,323 @@
+[
+ {
+  "n": 1,
+  "title": "Fair warning",
+  "voice": "Įspėjame iš anksto: dramblio greitai neparduosi. Drambliai neskuba. Šis filmukas irgi: apie aštuonias minutes. Taip, aštuonias. Įsipilkite kavos. Gal net du puodelius. Dramblio nepaskubinsi. Patikėkite, bandėme. Pažadame, kad dramblys to vertas.",
+  "kw": {
+   "selling": "dramblio greitai",
+   "take their time": "Drambliai neskuba",
+   "So does": "Šis filmukas irgi",
+   "coffee": "kavos",
+   "Maybe two": "Gal net du",
+   "rush": "nepaskubinsi",
+   "tried": "bandėme",
+   "worth it": "to vertas",
+   "about seven": "apie aštuonias",
+   "Yes, seven": "Taip, aštuonias"
+  },
+  "screen_en": "Fair warning. → Selling an elephant takes time. → Almost 6 minutes. (☕ ☕) → You can't rush an elephant. → Worth it."
+ },
+ {
+  "n": 2,
+  "title": "Details",
+  "voice": "Štai dvylika klaidų, kurios labiausiai krenta į akį. Kiekviena klaida atrodo kaip smulkmena. Kartu jos gerą mokyklą parodo prastesnę, nei ji yra. O dabar padauginkite iš šimto mokyklų. Dviejų šimtų. Penkių šimtų… ir daugiau.",
+  "kw": {
+   "Here are": "Štai dvylika",
+   "Each mistake": "Kiekviena klaida",
+   "Together": "Kartu jos",
+   "hundred": "šimto mokyklų",
+   "Two hundred": "Dviejų šimtų",
+   "Five hundred": "Penkių šimtų",
+   "and more": "ir daugiau"
+  },
+  "screen_en": "(All-caps headings · Walls of text · Posters screen readers can't read · Naked links · Random fonts and colours · Staff who left years ago) → Each one looks like a detail. → Together, they make a good school look worse than it is. → Now multiply it. ×100 ×200 ×500 ×1 000"
+ },
+ {
+  "n": 3,
+  "title": "The only channel you control",
+  "voice": "Lietuvoje mokyklų svetainės privalomos. Bet ir ten, kur jų niekas nereikalauja, jos vis tiek svarbios. Svetainė – vienintelis kanalas, kurį mokykla valdo pati. Ją skaito paieškos sistemos. Iš jos kuriami dirbtinio intelekto atsakymai. Pagal ją veiks agentai. Svarbu ne tai, kaip ji atrodo, o ar ji aktuali.",
+  "kw": {
+   "mandatory": "privalomos",
+   "matter anyway": "vis tiek svarbios",
+   "only channel": "vienintelis kanalas",
+   "Search engines": "paieškos sistemos",
+   "AI answers": "dirbtinio intelekto",
+   "Agents": "agentai",
+   "looks": "atrodo",
+   "current": "aktuali"
+  },
+  "screen_en": "Not mandatory where you are? → The only channel a school controls. → Not image. Relevance."
+ },
+ {
+  "n": 4,
+  "title": "Each school alone",
+  "voice": "Pakalbėkime apie dramblį kambaryje. Visos mokyklos turi tas pačias pareigas: prieinamumą, duomenų apsaugą, saugumą ir vis besikeičiančias taisykles. Dauguma su jomis grumiasi vienos, su savo biudžetu ir savo rangovu. Todėl kokybė priklauso nuo atsitiktinumo.",
+  "kw": {
+   "elephant in the room": "dramblį kambaryje",
+   "Every school": "Visos mokyklos",
+   "accessibility": "prieinamumą",
+   "data protection": "duomenų apsaugą",
+   "security": "saugumą",
+   "rules": "taisykles",
+   "alone": "vienos",
+   "budget": "biudžetu",
+   "chance": "atsitiktinumo"
+  },
+  "screen_en": "The elephant in the room. → Same duties. Each school alone. → Quality becomes a matter of chance."
+ },
+ {
+  "n": 5,
+  "title": "Stumps",
+  "voice": "O kas kelerius metus – naujas konkursas, nauja svetainė. Medis nupjaunamas iki kelmo ir sodinamas iš naujo. Ir vėl. Kaskart prarandamas tęstinumas. Mūsų medis niekada nepjaunamas. Jį lenkė vėjai, merkė lietūs, keitė metų laikai: naujos taisyklės, naujos technologijos, lankytojai, kurie kasmet tikisi daugiau. Jis tik stiprėjo. Ir dabar jau niekas nesiginčija, kad tai gerai.",
+  "kw": {
+   "new tender": "naujas konkursas",
+   "stump": "kelmo",
+   "And again": "Ir vėl",
+   "continuity": "tęstinumas",
+   "Ours": "Mūsų medis",
+   "stronger": "stiprėjo",
+   "Wind": "lenkė vėjai",
+   "rain": "merkė lietūs",
+   "nobody argues": "niekas nesiginčija",
+   "seasons": "keitė metų laikai",
+   "new rules": "naujos taisyklės",
+   "new technology": "naujos technologijos",
+   "visitors": "lankytojai, kurie"
+  },
+  "screen_en": "A new website every few years? → continuity lost → Stop replacing. Start growing."
+ },
+ {
+  "n": 6,
+  "title": "Only the surface",
+  "voice": "Cleverphant – tai bendra skaitmeninė mokyklų infrastruktūra. Žmonės mato svetainę. Po ja – viskas, kas palaiko ją tvarkingą: nuo vienos dizaino sistemos iki atitikties ir pagalbos, bendra visoms mokykloms. Nauja mokykla tiesiog prisijungia.",
+  "kw": {
+   "website": "svetainę",
+   "Underneath": "Po ja",
+   "design system": "dizaino sistemos",
+   "compliance": "atitikties",
+   "shared by": "bendra visoms",
+   "plugs": "prisijungia",
+   "support": "pagalbos"
+  },
+  "screen_en": "Shared digital infrastructure for schools. → The website is only the surface."
+ },
+ {
+  "n": 7,
+  "title": "Design system",
+  "voice": "Kas yra dizaino sistema? Paruoštų detalių rinkinys. Iš spalvų, šriftų ir mygtukų sudedami blokai: paieškos laukelis, darbuotojo kortelė. Iš blokų – skiltys, iš skilčių – puslapiai. Kiekvienas kiekvienos mokyklos puslapis sudėtas iš tų pačių detalių, o kiekviena detalė jau atitinka prieinamumo reikalavimus: kontrastas, antraštės, klaviatūra. Patobulinus vieną detalę, ji patobulėja visur.",
+  "kw": {
+   "What is": "Kas yra",
+   "ready-made parts": "Paruoštų detalių",
+   "Colours": "Iš spalvų",
+   "blocks": "blokai",
+   "search field": "paieškos laukelis",
+   "staff card": "darbuotojo kortelė",
+   "Blocks make sections": "Iš blokų",
+   "pages": "puslapiai",
+   "same parts": "tų pačių detalių",
+   "accessibility": "prieinamumo",
+   "Improve one part": "Patobulinus vieną",
+   "everywhere": "visur"
+  }
+ },
+ {
+  "n": 8,
+  "title": "No blank page",
+  "voice": "Mus kartais laiko agentūra. Kartais – dar vienu „pasidaryk pats“ svetainių konstruktoriumi. Nei viena, nei kita: tai platforma su žmogaus prisilietimu. Niekas nepradeda nuo tuščio lapo: senąją svetainę perkeliame mes – puslapius, dokumentus ir darbuotojų profilius, pakeliui juos sutvarkydami. Mokyklos paklausiame kelių tikslinamųjų klausimų ir paprašome papildyti, ko trūksta. Darbo nedaug, bet be mokyklos neapsieisime. Mokykla patikrina, ir nauja svetainė paleidžiama.",
+  "kw": {
+   "agency": "agentūra",
+   "website builder": "konstruktoriumi",
+   "human touch": "žmogaus prisilietimu",
+   "blank page": "tuščio lapo",
+   "old website": "senąją svetainę",
+   "pages": "puslapius",
+   "documents": "dokumentus",
+   "staff profiles": "darbuotojų profilius",
+   "cleaned up": "sutvarkydami",
+   "questions": "tikslinamųjų klausimų",
+   "fill in": "papildyti",
+   "checks": "Mokykla patikrina",
+   "goes live": "paleidžiama"
+  },
+  "screen_en": "Not an agency. Not a builder. Software with a human touch. → No blank page. We move it, and clean it on the way."
+ },
+ {
+  "n": 9,
+  "title": "One notices",
+  "voice": "Kadangi visos mokyklos veikia ta pačia sistema, jos gauna tą pačią naudą... Ir taip... tas pačias klaidas. Pasitaiko. Bet užtenka, kad pastebėtų viena mokykla. Pataisyta kartą – pataisyta visoms. Taip pat ir su žiniomis. Kai viena mokykla užduoda klausimą, atsakymas tampa pamoka, filmuku ir naujienlaiškiu visoms mokykloms.",
+  "kw": {
+   "benefits": "naudą",
+   "bugs": "klaidas",
+   "It happens": "Pasitaiko",
+   "one school": "viena mokykla",
+   "Fixed once": "Pataisyta kartą",
+   "knowledge": "žiniomis",
+   "asks": "užduoda klausimą",
+   "lesson": "pamoka",
+   "video": "filmuku",
+   "newsletter": "naujienlaiškiu"
+  },
+  "screen_en": "Same benefit. Same bug. (it happens) → One school notices. Every school is fixed. → Knowledge travels the same way. (Lesson · Video · Newsletter)"
+ },
+ {
+  "n": 10,
+  "title": "Pilot → standard",
+  "voice": "Idėjos keliauja taip pat. Inovatyvus mokyklos vadovas atneša poreikį. Jo mokykla tampa pilotine. Pilotas sukasi ratu: poreikis, analizė ir dizainas, įgyvendinimas, testavimas, vertinimas – ir vėl iš naujo. Lėtai. Labai lėtai. Tada duomenys parodo, kad veikia, ir iš karto tai turi visos mokyklos.",
+  "kw": {
+   "pilot": "pilotine",
+   "Slow": "Lėtai",
+   "Very slow": "Labai lėtai",
+   "data shows": "duomenys parodo",
+   "at once": "iš karto",
+   "innovative": "Inovatyvus",
+   "runs in a loop": "sukasi ratu",
+   "loop: need": "poreikis,",
+   "analysis": "analizė ir",
+   "build": "įgyvendinimas",
+   "testing": "testavimas",
+   "evaluation": "vertinimas",
+   "round again": "vėl iš naujo"
+  },
+  "screen_en": "Ideas travel the same way. → Pilot: slow. Standard: everyone, at once."
+ },
+ {
+  "n": 11,
+  "title": "Publish once",
+  "voice": "Tai gali veikti ir iš viršaus. Kas bendra visoms mokykloms, atnaujinama vieną kartą: prieinamumas, atnaujinimų prenumerata, slapukai. Tuo pačiu metu tai atsiranda visų mokyklų svetainėse. Jokių laiškų. Jokių priminimų. Nė vienos pamirštos. Platinimas jau išspręstas. Todėl didelis tinklas gali sau leisti dideles idėjas: tai, ko viena mokykla niekada nesukurtų, sukuriama vieną kartą visoms.",
+  "kw": {
+   "from the top": "iš viršaus",
+   "common to": "Kas bendra",
+   "updated once": "atnaujinama vieną kartą",
+   "accessibility": "prieinamumas",
+   "update subscriptions": "atnaujinimų prenumerata",
+   "cookies": "slapukai",
+   "every school website": "visų mokyklų svetainėse",
+   "No emails": "Jokių laiškų",
+   "No reminders": "Jokių priminimų",
+   "None left out": "Nė vienos pamirštos",
+   "Distribution": "Platinimas",
+   "big ideas": "dideles idėjas",
+   "no single school": "ko viena mokykla",
+   "shared by all": "kartą visoms"
+  },
+  "screen_en": "Publish once. → Reach every school. (No emails · No reminders · No school left behind) → A big network can afford big ideas."
+ },
+ {
+  "n": 12,
+  "title": "Equally good",
+  "voice": "Maža kaimo mokykla gauna tą patį, ką didelė miesto mokykla. Apačioje – viena dizaino sistema, o veidas lieka mokyklos. Ne vienodos. Vienodai geros.",
+  "kw": {
+   "village": "kaimo",
+   "large city": "didelė miesto",
+   "design system": "dizaino sistema",
+   "face": "veidas",
+   "Not identical": "Ne vienodos"
+  },
+  "screen_en": "Quality shouldn't depend on size. → Not identical. Equally good."
+ },
+ {
+  "n": 13,
+  "title": "Trojan elephant",
+  "voice": "Pokyčiai prasideda nuo smulkmenų. Būti mažam – ne priežastis jų nepastebėti. Drambliai lėti. Labai lėti. Tokie lėti, kad pokyčio niekas nepastebi, kol jis jau visur. Tai mūsų Trojos dramblys. Kartu tai ir didžiausias darbas: šimtai mokyklų svetainių turi būti prieinamos, aktualios ir stabilios. Kaip suvalgyti tokį dramblį? Po kąsnelį, nuolat. Smulkūs patobulinimai, kosmetiniai pataisymai, klaidų taisymai keliauja reguliariai ir nuosekliai, visoms mokykloms. Tai mūsų stiprybė: kuo didesnis tinklas, tuo daugiau akių pastebi ir tuo daugiau mokyklų laimi iš kiekvieno patobulinimo ir kiekvieno papildomo prisilietimo. Ir kiekvienas kitas žingsnis pasiekia visas mokyklas: gyvos lentelės, pranešėjų kanalai, registracija į konsultacijas, apklausos, renginių kalendoriai, savaitinės atnaujinimų santraukos.",
+  "kw": {
+   "Being small": "Būti mažam",
+   "Elephants": "Drambliai lėti",
+   "Very slow": "Labai lėti",
+   "So slow": "Tokie lėti",
+   "everywhere": "jau visur",
+   "Trojan": "Trojos",
+   "eat an elephant": "suvalgyti tokį dramblį",
+   "One bite": "Po kąsnelį",
+   "every next step": "kiekvienas kitas žingsnis",
+   "live tables": "gyvos lentelės",
+   "whistleblower": "pranešėjų kanalai",
+   "consultation": "registracija į konsultacijas",
+   "surveys": "apklausos",
+   "event calendars": "renginių kalendoriai",
+   "weekly update digests": "savaitinės atnaujinimų santraukos",
+   "biggest job": "didžiausias darbas",
+   "Small improvements": "Smulkūs patobulinimai",
+   "ship regularly": "keliauja reguliariai",
+   "to all schools": "nuosekliai, visoms",
+   "our strength": "mūsų stiprybė",
+   "more eyes": "daugiau akių",
+   "every improvement": "kiekvieno patobulinimo"
+  },
+  "screen_en": "Change starts with details. → One bite at a time. → Every step lands on every school."
+ },
+ {
+  "n": 14,
+  "title": "What if…",
+  "voice": "Ir mes vis klausiame: o kas, jeigu? Kas, jeigu mokytojo Word failas virstų baigtu straipsniu? Kas, jeigu dokumentai patys pasivadintų ir susidėliotų į vietas? Kas, jeigu pataisymas būtų paruoštas dar prieš jums pastebint problemą? Tam nereikia naujos svetainės. Kiekviena idėja – programėlė ant to paties pamato. Viena mokykla išbando, visos mokyklos gauna.",
+  "kw": {
+   "what if?": "o kas, jeigu?",
+   "Word file": "Word failas",
+   "documents": "dokumentai patys",
+   "fix was ready": "pataisymas būtų",
+   "None of this": "Tam nereikia",
+   "Each idea": "Kiekviena idėja",
+   "One school pilots": "Viena mokykla išbando"
+  },
+  "screen_en": "What if…? → One school pilots it. Every school gets it."
+ },
+ {
+  "n": 15,
+  "title": "And AI?",
+  "voice": "O dirbtinis intelektas? Ne dar vienas pokalbių robotas. Dirbtinis intelektas, kuris tyliai palaiko tvarką. Nes dirbtinis intelektas mėgsta tvarką.",
+  "kw": {
+   "And AI": "O dirbtinis intelektas",
+   "chatbot": "pokalbių robotas",
+   "quietly": "tyliai",
+   "loves order": "mėgsta tvarką"
+  },
+  "screen_en": "And AI? → AI loves order."
+ },
+ {
+  "n": 16,
+  "title": "The logic of scale",
+  "voice": "Kas veikia vienoje mokykloje, veikia savivaldybėje, regione, visoje šalyje. Mokyklas galima prijungti greitai, o kaštai auga daug lėčiau. Ne pažadas, kad bus pigu. Mastelio logika.",
+  "kw": {
+   "municipality": "savivaldybėje",
+   "region": "regione",
+   "whole country": "visoje šalyje",
+   "added": "prijungti",
+   "costs": "kaštai",
+   "Not a promise": "Ne pažadas",
+   "logic": "Mastelio logika"
+  },
+  "screen_en": "What works in one school works everywhere. → Not a promise of cheap. The logic of scale."
+ },
+ {
+  "n": 17,
+  "title": "Walked this road",
+  "voice": "Šiuo keliu einame penkiolika metų. Pirmieji dešimt? Lėti. Labai lėti. Tokie lėti. Pokyčiai mokyklose užtrunka. Tada tinklas ėmė augti pats. Šiandien – beveik trys šimtai įstaigų pagal vieną standartą, ir bent vieną klientą turime aštuoniasdešimt penkiuose procentuose Lietuvos savivaldybių. Jums nereikia pradėti nuo lėtosios dalies. Auditai, įdiegimas ir mokymai jau paruošti. O dramblys niekada nepamiršta: keičiasi darbuotojai, žinios lieka. Tikslas niekada nebuvo svetainės. Tikslas – grąžinti mokytoją pas vaikus. Sukurta Lietuvoje, kartu su jumis. Ir jau tinka kitoms šalims. Visoje Europos Sąjungoje viešosioms įstaigoms galioja tos pačios taisyklės: svetainių prieinamumas, duomenų apsauga, pranešėjų apsauga. Sukurta vienai šaliai, tinka visoms. Dar ne mūsų klientas? Kviečiame į produkto pristatymą. Ateisime pasiruošę.",
+  "kw": {
+   "fifteen": "penkiolika",
+   "first ten": "Pirmieji dešimt",
+   "Very slow": "Labai lėti",
+   "So slow": "Tokie lėti",
+   "Change in schools": "Pokyčiai mokyklose",
+   "grow by itself": "augti pats",
+   "three hundred": "trys šimtai",
+   "slow part": "lėtosios dalies",
+   "Audits": "Auditai",
+   "onboarding": "įdiegimas",
+   "training": "mokymai",
+   "never forgets": "niekada nepamiršta",
+   "knowledge stays": "žinios lieka",
+   "goal": "Tikslas niekada",
+   "teachers back": "grąžinti mokytoją",
+   "small country": "Sukurta Lietuvoje",
+   "Ready": "jau tinka",
+   "European Union": "Europos Sąjungoje",
+   "web accessibility": "svetainių prieinamumas",
+   "data protection": "duomenų apsauga",
+   "whistleblower protection": "pranešėjų apsauga",
+   "Built for one": "Sukurta vienai",
+   "talk": "Dar ne mūsų",
+   "prepared": "Ateisime pasiruošę",
+   "eighty-five": "aštuoniasdešimt penkiuose"
+  },
+  "screen_en": "15 years. The first ten? Slow. → Skip the slow part. → The goal: giving teachers back to their students. → almost 300 institutions · 51 of 60 municipalities → Built in Lithuania. Ready for yours. → Same rules across the EU. Built for one, ready for all."
+ }
+]

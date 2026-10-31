@@ -44,7 +44,12 @@ const crypto = require('crypto');
 const { execFileSync } = require('child_process');
 const { parseCues } = require('./scenarijaus-zymos');
 
-const VOICE_ID = 'eqJHjeWMPGJFD6VBf1J2';   // „Darius Cleverphant“, greitasis klonas
+// „Darius Cleverphant“, greitasis klonas (lt). Kitą balsą galima nurodyti `--voice <id>`;
+// jis įeina į kešo maišą, tad pakeitus balsą įrašas pergeneruojamas automatiškai.
+// Žinomi: eqJHjeWMPGJFD6VBf1J2 = Darius lt (cloned), Go4Ty1auIuvGn63I6XUi = Darius en (professional).
+const VOICE_ID = (process.argv.includes('--voice')
+  ? process.argv[process.argv.indexOf('--voice') + 1]
+  : 'eqJHjeWMPGJFD6VBf1J2');
 const MODEL = 'eleven_v3_dpo_20260217';
 const SPEED = 0.9;
 const START_IN_FRAME = 0.6;   // balsas prasideda, kai kadro antraštė jau pasirodžiusi
@@ -292,7 +297,7 @@ function previewTrack(dir, items) {
 }
 
 function setScenarioSeed(content, seed) {
-  const line = `**Balso seed:** ${seed} — įrašomas automatiškai; pakeitus tekstą balsas generuojamas iš naujo`;
+  const line = `**Balso seed:** ${seed} – įrašomas automatiškai; pakeitus tekstą balsas generuojamas iš naujo`;
   if (/^\*\*Balso seed:\*\*.*$/m.test(content)) return content.replace(/^\*\*Balso seed:\*\*.*$/m, line);
   if (/^\*\*Balsas:\*\*.*$/m.test(content)) return content.replace(/^(\*\*Balsas:\*\*.*)$/m, `$1\n${line}`);
   return content.replace(/^(# .*\n)/, `$1\n${line}\n`);

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .card { padding: 40px 120px 56px; }
+  .title { margin-bottom: 40px; }
+  .pair { display: grid; grid-template-columns: 640px 1fr; gap: 40px; align-items: stretch; }
+  .pan { border-radius: 20px; padding: 30px 36px; box-shadow: var(--c-shadow-card); }
+  .pan-l { background: var(--c-surface); border: 1.5px solid var(--c-border); display: flex; flex-direction: column; }
+  .pan-r { background: #1e293b; }
+  .lbl { font-size: 26px; font-weight: 700; color: var(--c-text-secondary); margin-bottom: 24px; }
+  .pan-r .lbl { color: #cbd5e1; }
+  .see { flex: 1; display: flex; align-items: center; }
+  .w-see { font-family: Calibri, 'Times New Roman', serif; font-size: 34px; line-height: 1.4; color: #000; }
+  .code { font-family: 'SF Mono', Menlo, monospace; font-size: 22px; line-height: 1.5; color: #e2e8f0; }
+  .tg { color: #93c5fd; } .tx { color: #f8fafc; font-weight: 600; }
+  .hl { border-radius: 4px; padding: 0 4px; color: #fde68a; }
+  .hl-f { background: rgba(167, 139, 250, .35); } .hl-s { background: rgba(52, 211, 153, .32); } .hl-c { background: rgba(251, 146, 60, .38); }
+  .chips { display: flex; gap: 16px; margin-top: 26px; }
+  .ch { font-size: 26px; font-weight: 700; padding: 8px 18px; border-radius: 10px; color: #0f172a; }
+  .ch-f { background: #c4b5fd; } .ch-s { background: #6ee7b7; } .ch-c { background: #fdba74; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="pair">
+      <div class="pan pan-l"><div class="lbl">{{l_lbl}}</div>
+        <div class="see"><p class="w-see"><b style="color:#1F3864">{{w_lead}}</b> {{w_text}}</p></div></div>
+      <div class="pan pan-r"><div class="lbl">{{r_lbl}}</div>
+        <div class="code"><div class="ln ln0"><span class="tg">&lt;p></span></div><div class="ln ln1">&nbsp;&nbsp;<span class="tg">&lt;strong></span></div><div class="ln ln2">&nbsp;&nbsp;&nbsp;&nbsp;<span class="tg">&lt;span style="</span><span class="hl hl-c">color:#1f3864</span><span class="tg">"></span></div><div class="ln ln3">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tg">&lt;span style="</span><span class="hl hl-s">font-size:11.0pt</span><span class="tg">"></span></div><div class="ln ln4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tg">&lt;span style="</span><span class="hl hl-f">font-family:Calibri</span><span class="tg">"></span></div><div class="ln ln5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tx">Svarbu:</span></div><div class="ln ln6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tg">&lt;/span></span></div><div class="ln ln7">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tg">&lt;/span></span></div><div class="ln ln8">&nbsp;&nbsp;&nbsp;&nbsp;<span class="tg">&lt;/span></span></div><div class="ln ln9">&nbsp;&nbsp;<span class="tg">&lt;/strong></span></div><div class="ln ln10">&nbsp;&nbsp;<span class="tg">&lt;span style="</span><span class="hl hl-s">font-size:11.0pt</span><span class="tg">"></span></div><div class="ln ln11">&nbsp;&nbsp;&nbsp;&nbsp;<span class="tg">&lt;span style="</span><span class="hl hl-f">font-family:Calibri</span><span class="tg">"></span></div><div class="ln ln12">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="tx">per atostogas biblioteka dirba trumpiau.</span></div><div class="ln ln13">&nbsp;&nbsp;&nbsp;&nbsp;<span class="tg">&lt;/span></span></div><div class="ln ln14">&nbsp;&nbsp;<span class="tg">&lt;/span></span></div><div class="ln ln15"><span class="tg">&lt;/p></span></div></div>
+        <div class="chips"><span class="ch ch-f">{{c_f}}</span><span class="ch ch-s">{{c_s}}</span><span class="ch ch-c">{{c_c}}</span></div></div>
+    </div>
+  </div>
+</body>
+</html>

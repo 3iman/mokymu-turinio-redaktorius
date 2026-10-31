@@ -36,7 +36,7 @@
     "up0": "pats failas – visoms jo lentelėms vienodas",
     "uh1": "gID",
     "up1": "konkretus lapas; nesikeičia net pervadinus",
-    "uz": "Pirmasis lapas visada turi gID 0. Tai numatytasis lapas – jo vietos keisti negalima."
+    "uz": "Pirmasis lapas visada turi gID 0. Tai numatytasis lapas – jo vietos keisti nereikėtų."
   },
   "03_kas_ka_daro": {
     "title": "Prijungiame mes – pildote jūs",
@@ -87,11 +87,11 @@
     "mz": "ID sistema priskiria pati – būtent jį puslapis naudoja lentelei rasti. „Enabled“ rodo, ar failas veikia."
   },
   "07_atsinaujinimas": {
-    "title": "Pakeitimas svetainėje – per kelias sekundes",
+    "title": "Pakeitimas svetainėje – akimirksniu",
     "a_z1": "Lentelėje",
     "a_t1": "Pataisote langelį",
     "a_z2": "Svetainėje",
-    "a_t2": "Matyti po kelių sekundžių",
+    "a_t2": "Matyti iš karto",
     "th0": "Ar ta pati lentelė?",
     "tp0": "gal redaguojate kitą failą ar lapą",
     "th1": "Ar išėjote iš langelio?",

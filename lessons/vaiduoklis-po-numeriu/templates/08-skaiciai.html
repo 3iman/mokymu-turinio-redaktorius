@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .card { padding: 46px 110px 56px; }
+  .title { margin-bottom: 36px; }
+  .cur { position: absolute; left: 0; top: 0; z-index: 9; width: 46px; height: 58px; }
+  .cur svg { width: 46px; height: 58px; }
+  .rip { position: absolute; z-index: 8; width: 70px; height: 70px; margin: -35px 0 0 -35px; border-radius: 50%;
+         background: rgba(124, 58, 237, .40); opacity: 0; }
+  @keyframes ratilas { from { opacity: .85; transform: scale(.3); } to { opacity: 0; transform: scale(1.7); } }
+
+  .card { padding: 120px 110px 110px; }
+  .title { margin-bottom: 56px; color: var(--c-text-secondary); }
+  .txt { width: 1320px; margin: 0 auto; text-align: center; }
+  .txt p { font-size: 46px; line-height: 1.5; color: var(--c-text); }
+  .txt p b { font-weight: 800; color: var(--c-purple-text); font-variant-numeric: tabular-nums; }
+  .p2, .p3 { margin-top: 26px; }
+  .det { display: flex; justify-content: center; align-items: center; gap: 20px; margin-top: 70px;
+         padding-top: 34px; border-top: 1px solid var(--c-line); width: 1320px; margin-left: auto;
+         margin-right: auto; font-size: 24px; color: var(--c-text-faint); }
+  .det .dot { color: var(--c-text-faint); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="txt">
+      <p class="p1">{{s1}} <b>{{n1}}</b> {{s2}}</p>
+      <p class="p2">{{s3}} <b>{{n2}}</b> {{s4}} <b>{{n3}}</b> {{s5}}</p>
+      <p class="p3">{{s6}}</p>
+    </div>
+    <div class="det"><span class="e1">{{d1}}</span><span class="dot">·</span>
+      <span class="e2">{{d2}}</span><span class="dot">·</span><span class="e3">{{d3}}</span></div>
+  </div>
+</body>
+</html>

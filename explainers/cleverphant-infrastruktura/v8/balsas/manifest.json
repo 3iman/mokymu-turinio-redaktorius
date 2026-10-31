@@ -1,0 +1,1040 @@
+[
+ {
+  "n": 1,
+  "i": 0,
+  "j": 252,
+  "v0": 0.0,
+  "v1": 16.463,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 3.1,
+    "text": "Fair warning: selling an elephant is not a quick business.",
+    "rel": 0.0
+   },
+   {
+    "t": 3.286,
+    "end": 4.667,
+    "text": "Elephants take their time.",
+    "rel": 3.286
+   },
+   {
+    "t": 4.923,
+    "end": 7.465,
+    "text": "So does this video: almost eight minutes.",
+    "rel": 4.923
+   },
+   {
+    "t": 7.721,
+    "end": 8.707,
+    "text": "Yes, eight.",
+    "rel": 7.721
+   },
+   {
+    "t": 9.172,
+    "end": 10.008,
+    "text": "Grab a coffee.",
+    "rel": 9.172
+   },
+   {
+    "t": 10.228,
+    "end": 11.029,
+    "text": "Maybe two.",
+    "rel": 10.228
+   },
+   {
+    "t": 11.564,
+    "end": 12.91,
+    "text": "You can't rush an elephant.",
+    "rel": 11.564
+   },
+   {
+    "t": 13.131,
+    "end": 14.385,
+    "text": "Believe us, we tried.",
+    "rel": 13.131
+   },
+   {
+    "t": 14.721,
+    "end": 16.463,
+    "text": "We promise the elephant is worth it.",
+    "rel": 14.721
+   }
+  ],
+  "clip": "k01.wav",
+  "clip_start": 0,
+  "dur": 16.763
+ },
+ {
+  "n": 2,
+  "i": 0,
+  "j": 263,
+  "v0": 0.0,
+  "v1": 16.905,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 2.368,
+    "text": "Maybe websites aren't mandatory where you are.",
+    "rel": 0.0
+   },
+   {
+    "t": 2.554,
+    "end": 3.924,
+    "text": "They will matter anyway.",
+    "rel": 2.554
+   },
+   {
+    "t": 4.11,
+    "end": 7.361,
+    "text": "A website is the only channel a school fully controls.",
+    "rel": 4.11
+   },
+   {
+    "t": 7.825,
+    "end": 9.183,
+    "text": "Search engines read it.",
+    "rel": 7.825
+   },
+   {
+    "t": 9.915,
+    "end": 11.656,
+    "text": "AI answers are built from it.",
+    "rel": 9.915
+   },
+   {
+    "t": 11.819,
+    "end": 13.259,
+    "text": "Agents will act on it.",
+    "rel": 11.819
+   },
+   {
+    "t": 13.898,
+    "end": 16.905,
+    "text": "What matters is not how it looks, but whether it's current.",
+    "rel": 13.898
+   }
+  ],
+  "clip": "k02.wav",
+  "clip_start": 0,
+  "dur": 17.205
+ },
+ {
+  "n": 3,
+  "i": 0,
+  "j": 846,
+  "v0": 0.0,
+  "v1": 54.694,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 2.403,
+    "text": "We often hear: you're offering a template.",
+    "rel": 0.0
+   },
+   {
+    "t": 2.74,
+    "end": 4.888,
+    "text": "The alternative is a unique design.",
+    "rel": 2.74
+   },
+   {
+    "t": 5.224,
+    "end": 9.613,
+    "text": "But nothing is entirely unique, and a design starts to age from day one.",
+    "rel": 5.224
+   },
+   {
+    "t": 10.344,
+    "end": 12.98,
+    "text": "In the mock-up, made-up content looks great.",
+    "rel": 10.344
+   },
+   {
+    "t": 13.27,
+    "end": 15.754,
+    "text": "Real content is added by the school itself.",
+    "rel": 13.27
+   },
+   {
+    "t": 16.219,
+    "end": 19.713,
+    "text": "One colleague prepared a text, another pasted it as it came.",
+    "rel": 16.219
+   },
+   {
+    "t": 20.178,
+    "end": 22.941,
+    "text": "The head got an email and asked to change the menu.",
+    "rel": 20.178
+   },
+   {
+    "t": 23.475,
+    "end": 26.401,
+    "text": "Parents missed a document, so it was moved “higher”.",
+    "rel": 23.475
+   },
+   {
+    "t": 26.865,
+    "end": 28.247,
+    "text": "Nobody means any harm.",
+    "rel": 26.865
+   },
+   {
+    "t": 28.584,
+    "end": 31.358,
+    "text": "The website simply becomes everyone's, and no one's.",
+    "rel": 28.584
+   },
+   {
+    "t": 31.823,
+    "end": 35.259,
+    "text": "That's how the twelve mistakes that catch the eye the most are born.",
+    "rel": 31.823
+   },
+   {
+    "t": 35.898,
+    "end": 37.674,
+    "text": "Each mistake looks like a detail.",
+    "rel": 35.898
+   },
+   {
+    "t": 37.813,
+    "end": 40.576,
+    "text": "Together, they make a good school look worse than it is.",
+    "rel": 37.813
+   },
+   {
+    "t": 41.308,
+    "end": 43.386,
+    "text": "Now multiply it by a hundred schools.",
+    "rel": 41.308
+   },
+   {
+    "t": 44.024,
+    "end": 45.696,
+    "text": "Five hundred… and more.",
+    "rel": 44.024
+   },
+   {
+    "t": 46.033,
+    "end": 47.473,
+    "text": "Schools learn from each other.",
+    "rel": 46.033
+   },
+   {
+    "t": 47.879,
+    "end": 50.015,
+    "text": "Sadly, mistakes travel that way too.",
+    "rel": 47.879
+   },
+   {
+    "t": 50.549,
+    "end": 52.918,
+    "text": "The same mistakes, thousands of times.",
+    "rel": 50.549
+   },
+   {
+    "t": 53.103,
+    "end": 54.694,
+    "text": "That's how the whole system looks.",
+    "rel": 53.103
+   }
+  ],
+  "clip": "k03.wav",
+  "clip_start": 0,
+  "dur": 54.994
+ },
+ {
+  "n": 4,
+  "i": 0,
+  "j": 248,
+  "v0": 0.0,
+  "v1": 15.987,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 1.916,
+    "text": "Let's address the elephant in the room.",
+    "rel": 0.0
+   },
+   {
+    "t": 2.171,
+    "end": 9.114,
+    "text": "Every school has the same duties: accessibility, data protection, security, and rules that keep changing.",
+    "rel": 2.171
+   },
+   {
+    "t": 9.845,
+    "end": 13.676,
+    "text": "Most face them alone, with their own budget and their own contractor.",
+    "rel": 9.845
+   },
+   {
+    "t": 14.141,
+    "end": 15.987,
+    "text": "So quality comes down to chance.",
+    "rel": 14.141
+   }
+  ],
+  "clip": "k04.wav",
+  "clip_start": 0,
+  "dur": 16.212
+ },
+ {
+  "n": 5,
+  "i": 0,
+  "j": 347,
+  "v0": 0.0,
+  "v1": 25.09,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 3.39,
+    "text": "And every few years: a new tender, a new website.",
+    "rel": 0.0
+   },
+   {
+    "t": 3.796,
+    "end": 6.734,
+    "text": "The tree is cut back to a stump and planted again.",
+    "rel": 3.796
+   },
+   {
+    "t": 7.07,
+    "end": 7.848,
+    "text": "And again.",
+    "rel": 7.07
+   },
+   {
+    "t": 8.255,
+    "end": 10.426,
+    "text": "Each time, continuity is lost.",
+    "rel": 8.255
+   },
+   {
+    "t": 10.646,
+    "end": 12.33,
+    "text": "Ours is never cut down.",
+    "rel": 10.646
+   },
+   {
+    "t": 12.794,
+    "end": 20.713,
+    "text": "Wind bent it, rain soaked it, seasons changed it: new rules, new technology, visitors who expect more every year.",
+    "rel": 12.794
+   },
+   {
+    "t": 21.177,
+    "end": 22.419,
+    "text": "It only grew stronger.",
+    "rel": 21.177
+   },
+   {
+    "t": 22.675,
+    "end": 25.09,
+    "text": "And now nobody argues that it was worth it.",
+    "rel": 22.675
+   }
+  ],
+  "clip": "k05.wav",
+  "clip_start": 0,
+  "dur": 25.39
+ },
+ {
+  "n": 6,
+  "i": 672,
+  "j": 911,
+  "v0": 44.965,
+  "v1": 59.849,
+  "sent": [
+   {
+    "t": 44.965,
+    "end": 48.065,
+    "text": "Cleverphant is shared digital infrastructure for schools.",
+    "rel": 0.05
+   },
+   {
+    "t": 48.599,
+    "end": 50.468,
+    "text": "What people see is the website.",
+    "rel": 3.684
+   },
+   {
+    "t": 50.724,
+    "end": 57.771,
+    "text": "Underneath is everything that keeps it right, from one design system to compliance and support, shared by every school.",
+    "rel": 5.809
+   },
+   {
+    "t": 57.933,
+    "end": 59.849,
+    "text": "A new school simply plugs in.",
+    "rel": 13.018
+   }
+  ],
+  "clip": "k06.wav",
+  "clip_start": 44.915000000000006,
+  "dur": 15.234
+ },
+ {
+  "n": 7,
+  "i": 0,
+  "j": 352,
+  "v0": 0.0,
+  "v1": 23.29,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 1.44,
+    "text": "What is a design system?",
+    "rel": 0.0
+   },
+   {
+    "t": 1.567,
+    "end": 3.123,
+    "text": "A set of ready-made parts.",
+    "rel": 1.567
+   },
+   {
+    "t": 3.344,
+    "end": 7.86,
+    "text": "Colours, fonts and buttons make blocks: a search field, a staff card.",
+    "rel": 3.344
+   },
+   {
+    "t": 8.324,
+    "end": 11.064,
+    "text": "Blocks make sections, sections make pages.",
+    "rel": 8.324
+   },
+   {
+    "t": 11.598,
+    "end": 19.912,
+    "text": "Every page of every school is built from the same parts, and every part already meets accessibility rules: contrast, headings, keyboard.",
+    "rel": 11.598
+   },
+   {
+    "t": 20.167,
+    "end": 23.29,
+    "text": "Improve one part once, and it improves everywhere.",
+    "rel": 20.167
+   }
+  ],
+  "clip": "k07.wav",
+  "clip_start": 0,
+  "dur": 23.59
+ },
+ {
+  "n": 8,
+  "i": 0,
+  "j": 444,
+  "v0": 0.0,
+  "v1": 29.246,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 1.718,
+    "text": "Some see us as an agency.",
+    "rel": 0.0
+   },
+   {
+    "t": 1.881,
+    "end": 5.132,
+    "text": "Others, as yet another do-it-yourself website builder.",
+    "rel": 1.881
+   },
+   {
+    "t": 5.596,
+    "end": 8.998,
+    "text": "We are neither: we are a platform with a human touch.",
+    "rel": 5.596
+   },
+   {
+    "t": 9.253,
+    "end": 18.193,
+    "text": "Nobody starts from a blank page: we move the old website for the school, its pages, documents and staff profiles, cleaned up on the way.",
+    "rel": 9.253
+   },
+   {
+    "t": 18.658,
+    "end": 23.046,
+    "text": "We ask the school a few clarifying questions and to fill in what is missing.",
+    "rel": 18.658
+   },
+   {
+    "t": 23.51,
+    "end": 26.123,
+    "text": "Not much work, but the school's part matters.",
+    "rel": 23.51
+   },
+   {
+    "t": 26.587,
+    "end": 29.246,
+    "text": "The school checks, and the new website goes live.",
+    "rel": 26.587
+   }
+  ],
+  "clip": "k08.wav",
+  "clip_start": 0,
+  "dur": 29.437
+ },
+ {
+  "n": 9,
+  "i": 0,
+  "j": 318,
+  "v0": 0.0,
+  "v1": 22.195,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 4.11,
+    "text": "Because every school runs on the same system, they all get the same benefits.",
+    "rel": 0.0
+   },
+   {
+    "t": 5.08,
+    "end": 5.788,
+    "text": "And yes.",
+    "rel": 5.08
+   },
+   {
+    "t": 6.546,
+    "end": 7.637,
+    "text": "the same bugs.",
+    "rel": 6.546
+   },
+   {
+    "t": 8.368,
+    "end": 9.181,
+    "text": "It happens.",
+    "rel": 8.368
+   },
+   {
+    "t": 9.402,
+    "end": 11.619,
+    "text": "But it takes just one school to notice.",
+    "rel": 9.402
+   },
+   {
+    "t": 12.258,
+    "end": 14.22,
+    "text": "Fixed once, fixed for all.",
+    "rel": 12.258
+   },
+   {
+    "t": 14.858,
+    "end": 16.239,
+    "text": "The same goes for knowledge.",
+    "rel": 14.858
+   },
+   {
+    "t": 16.495,
+    "end": 22.195,
+    "text": "When one school asks a question, the answer becomes a lesson, a video and a newsletter for every school.",
+    "rel": 16.495
+   }
+  ],
+  "clip": "k09.wav",
+  "clip_start": 0,
+  "dur": 22.495
+ },
+ {
+  "n": 10,
+  "i": 0,
+  "j": 356,
+  "v0": 0.0,
+  "v1": 24.869,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 1.869,
+    "text": "Ideas travel the same way.",
+    "rel": 0.0
+   },
+   {
+    "t": 2.032,
+    "end": 4.319,
+    "text": "An innovative school leader brings a need.",
+    "rel": 2.032
+   },
+   {
+    "t": 4.54,
+    "end": 6.223,
+    "text": "Their school becomes the pilot.",
+    "rel": 4.54
+   },
+   {
+    "t": 6.861,
+    "end": 13.897,
+    "text": "The pilot runs in a loop: need, analysis and design, build, testing, evaluation, and round again.",
+    "rel": 6.861
+   },
+   {
+    "t": 14.536,
+    "end": 15.14,
+    "text": "Slow.",
+    "rel": 14.536
+   },
+   {
+    "t": 15.302,
+    "end": 16.161,
+    "text": "Very slow.",
+    "rel": 15.302
+   },
+   {
+    "t": 16.626,
+    "end": 19.9,
+    "text": "Then the data shows it works, and every school has it at once.",
+    "rel": 16.626
+   },
+   {
+    "t": 20.306,
+    "end": 22.233,
+    "text": "Schools learn from each other anyway.",
+    "rel": 20.306
+   },
+   {
+    "t": 22.698,
+    "end": 24.869,
+    "text": "Here, they adopt what has been tested.",
+    "rel": 22.698
+   }
+  ],
+  "clip": "k10.wav",
+  "clip_start": 0,
+  "dur": 25.169
+ },
+ {
+  "n": 11,
+  "i": 0,
+  "j": 370,
+  "v0": 0.0,
+  "v1": 26.134,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 1.765,
+    "text": "And it can work from the top, too.",
+    "rel": 0.0
+   },
+   {
+    "t": 2.229,
+    "end": 8.824,
+    "text": "What is common to every school is updated once: accessibility, update subscriptions, cookies.",
+    "rel": 2.229
+   },
+   {
+    "t": 9.462,
+    "end": 12.353,
+    "text": "It appears on every school website at the same time.",
+    "rel": 9.462
+   },
+   {
+    "t": 12.759,
+    "end": 13.619,
+    "text": "No emails.",
+    "rel": 12.759
+   },
+   {
+    "t": 13.805,
+    "end": 14.745,
+    "text": "No reminders.",
+    "rel": 13.805
+   },
+   {
+    "t": 14.966,
+    "end": 15.941,
+    "text": "None left out.",
+    "rel": 14.966
+   },
+   {
+    "t": 16.278,
+    "end": 18.065,
+    "text": "Distribution is already solved.",
+    "rel": 16.278
+   },
+   {
+    "t": 18.251,
+    "end": 26.134,
+    "text": "So a big network can afford big ideas: things no single school could ever build alone, built once and shared by all.",
+    "rel": 18.251
+   }
+  ],
+  "clip": "k11.wav",
+  "clip_start": 0,
+  "dur": 26.434
+ },
+ {
+  "n": 12,
+  "i": 0,
+  "j": 220,
+  "v0": 0.0,
+  "v1": 15.058,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 3.344,
+    "text": "A small village school gets what a large city school gets.",
+    "rel": 0.0
+   },
+   {
+    "t": 3.808,
+    "end": 7.895,
+    "text": "One design system underneath; the face stays the school's own.",
+    "rel": 3.808
+   },
+   {
+    "t": 8.359,
+    "end": 12.48,
+    "text": "Not a template: a model on working infrastructure, with your content.",
+    "rel": 8.359
+   },
+   {
+    "t": 13.014,
+    "end": 13.967,
+    "text": "Not identical.",
+    "rel": 13.014
+   },
+   {
+    "t": 14.187,
+    "end": 15.058,
+    "text": "Equally good.",
+    "rel": 14.187
+   }
+  ],
+  "clip": "k12.wav",
+  "clip_start": 0,
+  "dur": 15.358
+ },
+ {
+  "n": 13,
+  "i": 0,
+  "j": 774,
+  "v0": 0.0,
+  "v1": 51.096,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 1.753,
+    "text": "Change starts with details.",
+    "rel": 0.0
+   },
+   {
+    "t": 1.939,
+    "end": 4.319,
+    "text": "Being small is no excuse to look away.",
+    "rel": 1.939
+   },
+   {
+    "t": 4.656,
+    "end": 5.782,
+    "text": "Elephants are slow.",
+    "rel": 4.656
+   },
+   {
+    "t": 6.118,
+    "end": 6.978,
+    "text": "Very slow.",
+    "rel": 6.118
+   },
+   {
+    "t": 7.384,
+    "end": 10.867,
+    "text": "So slow that nobody notices the change, until it's everywhere.",
+    "rel": 7.384
+   },
+   {
+    "t": 11.331,
+    "end": 12.876,
+    "text": "That's our Trojan elephant.",
+    "rel": 11.331
+   },
+   {
+    "t": 13.131,
+    "end": 18.623,
+    "text": "It is also the biggest job: hundreds of school websites have to stay accessible, current and stable.",
+    "rel": 13.131
+   },
+   {
+    "t": 19.087,
+    "end": 20.852,
+    "text": "How do you eat an elephant like that?",
+    "rel": 19.087
+   },
+   {
+    "t": 21.316,
+    "end": 23.487,
+    "text": "One bite at a time, continuously.",
+    "rel": 21.316
+   },
+   {
+    "t": 23.952,
+    "end": 30.0,
+    "text": "Small improvements, cosmetic fixes and bug fixes ship regularly and consistently, to all schools.",
+    "rel": 23.952
+   },
+   {
+    "t": 30.465,
+    "end": 38.325,
+    "text": "That is our strength: the bigger the network, the more eyes notice, and the more schools gain from every improvement and every extra touch.",
+    "rel": 30.465
+   },
+   {
+    "t": 38.789,
+    "end": 51.096,
+    "text": "And every next step lands on every school: live tables, whistleblower channels, consultation booking, individual education plan forms, event calendars, weekly update digests.",
+    "rel": 38.789
+   }
+  ],
+  "clip": "k13.wav",
+  "clip_start": 0,
+  "dur": 51.396
+ },
+ {
+  "n": 14,
+  "i": 1909,
+  "j": 2214,
+  "v0": 126.28,
+  "v1": 145.959,
+  "sent": [
+   {
+    "t": 126.28,
+    "end": 127.975,
+    "text": "And we keep asking: what if?",
+    "rel": 0.05
+   },
+   {
+    "t": 128.614,
+    "end": 131.551,
+    "text": "What if a teacher's Word file became a finished article?",
+    "rel": 2.384
+   },
+   {
+    "t": 131.888,
+    "end": 134.488,
+    "text": "What if documents named and filed themselves?",
+    "rel": 5.658
+   },
+   {
+    "t": 135.022,
+    "end": 137.541,
+    "text": "What if a fix was ready before you saw the problem?",
+    "rel": 8.792
+   },
+   {
+    "t": 138.273,
+    "end": 139.945,
+    "text": "None of this needs a new website.",
+    "rel": 12.043
+   },
+   {
+    "t": 140.13,
+    "end": 142.627,
+    "text": "Each idea is an app on the same foundation.",
+    "rel": 13.9
+   },
+   {
+    "t": 143.161,
+    "end": 145.959,
+    "text": "One school pilots it, every school gets it.",
+    "rel": 16.931
+   }
+  ],
+  "clip": "k14.wav",
+  "clip_start": 126.23,
+  "dur": 19.897
+ },
+ {
+  "n": 15,
+  "i": 2216,
+  "j": 2307,
+  "v0": 146.295,
+  "v1": 153.064,
+  "sent": [
+   {
+    "t": 146.295,
+    "end": 147.131,
+    "text": "And AI?",
+    "rel": 0.05
+   },
+   {
+    "t": 147.317,
+    "end": 148.513,
+    "text": "Not another chatbot.",
+    "rel": 1.072
+   },
+   {
+    "t": 148.977,
+    "end": 151.207,
+    "text": "AI that quietly keeps things in order.",
+    "rel": 2.732
+   },
+   {
+    "t": 151.369,
+    "end": 153.064,
+    "text": "Because AI loves order.",
+    "rel": 5.124
+   }
+  ],
+  "clip": "k15.wav",
+  "clip_start": 146.24499999999998,
+  "dur": 7.023
+ },
+ {
+  "n": 16,
+  "i": 2309,
+  "j": 2493,
+  "v0": 153.471,
+  "v1": 165.94,
+  "sent": [
+   {
+    "t": 153.471,
+    "end": 158.15,
+    "text": "What works in one school works in a municipality, a region, a whole country.",
+    "rel": 0.05
+   },
+   {
+    "t": 158.788,
+    "end": 162.561,
+    "text": "Schools can be added quickly, while costs grow far more slowly.",
+    "rel": 5.367
+   },
+   {
+    "t": 162.968,
+    "end": 164.222,
+    "text": "Not a promise of cheap.",
+    "rel": 9.547
+   },
+   {
+    "t": 164.686,
+    "end": 165.94,
+    "text": "The logic of scale.",
+    "rel": 11.265
+   }
+  ],
+  "clip": "k16.wav",
+  "clip_start": 153.421,
+  "dur": 12.819
+ },
+ {
+  "n": 17,
+  "i": 0,
+  "j": 766,
+  "v0": 0.0,
+  "v1": 52.918,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 2.485,
+    "text": "We have walked this road for fifteen years.",
+    "rel": 0.0
+   },
+   {
+    "t": 2.821,
+    "end": 3.843,
+    "text": "The first ten?",
+    "rel": 2.821
+   },
+   {
+    "t": 4.377,
+    "end": 5.143,
+    "text": "Slow.",
+    "rel": 4.377
+   },
+   {
+    "t": 5.48,
+    "end": 6.327,
+    "text": "Very slow.",
+    "rel": 5.48
+   },
+   {
+    "t": 6.792,
+    "end": 7.628,
+    "text": "So slow.",
+    "rel": 6.792
+   },
+   {
+    "t": 8.034,
+    "end": 9.915,
+    "text": "Change in schools takes time.",
+    "rel": 8.034
+   },
+   {
+    "t": 10.321,
+    "end": 12.736,
+    "text": "Then the network started to grow by itself.",
+    "rel": 10.321
+   },
+   {
+    "t": 13.201,
+    "end": 21.177,
+    "text": "Today: almost three hundred institutions on one standard, with at least one client in eighty-five percent of Lithuania's municipalities.",
+    "rel": 13.201
+   },
+   {
+    "t": 21.641,
+    "end": 23.638,
+    "text": "You don't have to start from the slow part.",
+    "rel": 21.641
+   },
+   {
+    "t": 23.859,
+    "end": 26.355,
+    "text": "Audits, onboarding and training are ready.",
+    "rel": 23.859
+   },
+   {
+    "t": 26.761,
+    "end": 31.382,
+    "text": "And an elephant never forgets: when staff change, the knowledge stays.",
+    "rel": 26.761
+   },
+   {
+    "t": 31.847,
+    "end": 33.576,
+    "text": "The goal was never the websites.",
+    "rel": 31.847
+   },
+   {
+    "t": 33.762,
+    "end": 35.991,
+    "text": "It is giving teachers back to their students.",
+    "rel": 33.762
+   },
+   {
+    "t": 36.212,
+    "end": 37.733,
+    "text": "Built in a small country.",
+    "rel": 36.212
+   },
+   {
+    "t": 38.069,
+    "end": 39.138,
+    "text": "Ready for yours.",
+    "rel": 38.069
+   },
+   {
+    "t": 39.869,
+    "end": 48.391,
+    "text": "Across the European Union, public institutions share the same rules: web accessibility, data protection, whistleblower protection.",
+    "rel": 39.869
+   },
+   {
+    "t": 48.797,
+    "end": 50.736,
+    "text": "Built for one, ready for all.",
+    "rel": 48.797
+   },
+   {
+    "t": 51.467,
+    "end": 52.918,
+    "text": "Let's talk about your region.",
+    "rel": 51.467
+   }
+  ],
+  "clip": "k17.wav",
+  "clip_start": 0,
+  "dur": 53.016
+ }
+]

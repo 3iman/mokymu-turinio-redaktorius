@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+  .card { padding: 40px 120px 56px; }
+  .title { margin-bottom: 30px; }
+  .bw-wrap { position: relative; width: 1500px; margin: 0 auto; }
+  .bw { position: relative; width: 1500px; height: 800px; border-radius: 18px;
+         overflow: hidden; background: #fff; box-shadow: var(--c-shadow-card), 0 0 0 1.5px var(--c-border); }
+  .bw-bar { height: 52px; background: #eef1f6; display: flex; align-items: center; gap: 10px; padding: 0 20px;
+             border-bottom: 1.5px solid var(--c-border); }
+  .bw-bar i { width: 14px; height: 14px; border-radius: 50%; background: #cbd5e1; }
+  .bw-url { margin-left: 16px; flex: 1; height: 32px; border-radius: 8px; background: #fff; font-size: 20px;
+             color: var(--c-text-muted); display: flex; align-items: center; padding: 0 16px; }
+
+  .site { position: absolute; left: 0; top: 52px; width: 1500px; height: 748px; overflow: hidden;
+           font-family: 'Roboto', sans-serif; background: #f2f2f2; }
+  .s-scroll { position: absolute; left: 0; top: 0; width: 100%; height: 100%; }
+  .s-head { position: absolute; left: 0; top: 0; width: 100%; }
+  .s-head img { position: absolute; left: 0; top: 0; width: 100%; height: auto; opacity: 0; }
+  .s-page { position: absolute; left: 0; top: 222.65625px; width: 100%; height: 1000px; background: #f2f2f2; }
+  .s-h1 { position: absolute; left: 58.59375px; top: 24px; font-size: 36px; font-weight: 700; color: #373737; }
+  .s-card { position: absolute; left: 58.59375px; top: 84px; width: 1031.25px; height: 700px; background: #fff;
+             padding: 44px 50px; border: 1px solid #ddd; }
+  .s-p { position: relative; font-size: 22px; line-height: 1.6; color: #5f5f5f; margin-bottom: 22px; }
+  .s-side { position: absolute; left: 1113.28125px; top: 84px; width: 328.125px; }
+  .s-side div { height: 62px; background: #373737; border-bottom: 1px solid #555; display: flex; align-items: center;
+                 gap: 16px; padding-left: 18px; }
+  .s-side div::before { content: ''; width: 26px; height: 26px; border: 2.5px solid #fff; border-radius: 4px; }
+  .s-side div::after { content: ''; width: 120px; height: 10px; border-radius: 5px; background: #fff; opacity: .8; }
+
+  /* Įklijuota iš Word — stiliai „įsiūti“ į pačius elementus, todėl režimas ir dydis jų nepakeičia */
+  .w-p { position: relative; font-family: Calibri, 'Times New Roman', serif; font-size: 22px; line-height: 1.35; margin-bottom: 26px; }
+  .w-t { position: relative; border-collapse: collapse; font-family: Calibri, 'Times New Roman', serif; font-size: 21px; }
+  .w-t td { border: 1px solid #000; padding: 8px 18px; color: #000; }
+  .w-t tr:first-child td { background: #D9E2F3; font-weight: 700; }
+  .w-target { z-index: 7; }
+
+  /* Skydelis */
+  .acc { position: absolute; left: 0; top: 402px; width: 62px; z-index: 4; }
+  .acc img { position: absolute; left: 0; top: 0; width: 62px; opacity: 0; }
+  .tip { position: absolute; left: 74px; z-index: 8; background: #222; color: #fff; opacity: 0;
+          font-family: 'Roboto', sans-serif; font-size: 22px; padding: 9px 16px; border-radius: 6px; white-space: nowrap; }
+  .tip::before { content: ''; position: absolute; left: -8px; top: 50%; margin-top: -8px;
+                  border: 8px solid transparent; border-left: 0; border-right-color: #222; }
+
+  .dim { position: absolute; inset: 0; background: rgba(12, 16, 26, .62); z-index: 5; }
+  .mark { position: absolute; z-index: 6; border: 4px solid var(--c-red-solid); border-radius: 10px; background: #373737; }
+  .say { position: absolute; z-index: 9; background: var(--c-surface); color: var(--c-red-text);
+          font-family: 'Inter', sans-serif; font-size: 26px; font-weight: 700; padding: 12px 20px; border-radius: 12px;
+          box-shadow: var(--c-shadow-card); white-space: nowrap; }
+
+  .cursor-wrap { position: absolute; left: 0; top: 0; z-index: 9; width: 44px; height: 56px; pointer-events: none; }
+  .cursor-wrap svg { width: 44px; height: 56px; }
+  .rip { position: absolute; z-index: 8; width: 64px; height: 64px; margin: -32px 0 0 -32px; border-radius: 50%;
+          background: rgba(66, 133, 244, .45); opacity: 0; }
+
+  .s-head .h-s2, .acc .a-s2 { opacity: 1; }
+  .s-page { top: 270.703125px; }
+  .s-scroll { transform: translateY(-0px); }
+  .s-p { font-size: 25.67px; }
+  .s-h1 { font-size: 42.00px; }
+  /* žymos kairėje: žalia — prisitaiko, raudona — ne */
+  .s-p::before, .w-p::before, .w-t::before { content: ''; position: absolute; left: -28px; top: 4px; bottom: 4px;
+      width: 8px; border-radius: 4px; }
+  .s-p::before { background: var(--c-green-solid); }
+  .w-p::before, .w-t::before { background: var(--c-red-solid); }
+  .legend { position: absolute; left: 1113.28125px; top: 618.703125px; z-index: 9;
+             display: flex; flex-direction: column; align-items: flex-start; gap: 10px; }
+  .lg { display: inline-flex; align-items: center; gap: 14px; background: var(--c-surface); border-radius: 12px;
+         box-shadow: var(--c-shadow-card); padding: 10px 18px; font-family: 'Inter', sans-serif; font-size: 24px; font-weight: 700; white-space: nowrap; }
+  .lg i { width: 8px; height: 30px; border-radius: 4px; }
+  .lg-grow { color: var(--c-green-text); } .lg-grow i { background: var(--c-green-solid); }
+  .lg-stay { color: var(--c-red-text); } .lg-stay i { background: var(--c-red-solid); }
+  .cursor-wrap { transform: translate(1000px, 700px); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="bw-wrap">
+    <div class="bw">
+      <div class="bw-bar"><i></i><i></i><i></i><div class="bw-url">{{url}}</div></div>
+      <div class="site">
+        <div class="s-scroll">
+        <div class="s-head"><img class="h-n" src="assets/iklijuotas-antraste-normalus.png"><img class="h-b" src="assets/iklijuotas-antraste-juodai-ant-balto.png"><img class="h-d" src="assets/iklijuotas-antraste-baltai-ant-juodo.png"><img class="h-s1" src="assets/iklijuotas-antraste-dydis-1.png"><img class="h-s2" src="assets/iklijuotas-antraste-dydis-2.png"></div>
+        <div class="s-page">
+          <div class="s-h1">{{h1}}</div>
+          <div class="s-card">
+            <p class="s-p">{{p_editor}}</p>
+            <p class="w-p w-target" style="color:#000000"><span style="color:#1F3864; font-weight:700">{{w_lead}}</span> {{w_text}}</p>
+            <table class="w-t w-target">
+              <tr><td>{{t_h1}}</td><td>{{t_h2}}</td></tr>
+              <tr><td>{{t_r1a}}</td><td>{{t_r1b}}</td></tr>
+              <tr><td>{{t_r2a}}</td><td>{{t_r2b}}</td></tr>
+            </table>
+          </div>
+          <div class="s-side"><div></div><div></div><div></div><div></div></div>
+        </div>
+        </div>
+        <div class="acc"><img class="a-n" src="assets/iklijuotas-kontrastas-normalus.png"><img class="a-b" src="assets/iklijuotas-kontrastas-juodai-ant-balto.png"><img class="a-d" src="assets/iklijuotas-kontrastas-baltai-ant-juodo.png"><img class="a-s1" src="assets/iklijuotas-kontrastas-dydis-1.png"><img class="a-s2" src="assets/iklijuotas-kontrastas-dydis-2.png"></div>
+        <div class="tip tip-1" style="top:474.3359375px">{{tip_1}}</div><div class="tip tip-2" style="top:474.3359375px">{{tip_2}}</div><div class="rip r1" style="left:31.0px; top:496.3359375px"></div><div class="rip r2" style="left:31.0px; top:496.3359375px"></div><div class="legend"><span class="lg lg-grow"><i></i>{{lg_grow}}</span><span class="lg lg-stay"><i></i>{{lg_stay}}</span></div>
+      </div>
+    </div><div class="cursor-wrap"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+  </div>
+</body>
+</html>

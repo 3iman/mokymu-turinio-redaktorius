@@ -1,0 +1,15 @@
+ ('<div class="h" id="c11b">',
+  '<div class="h" id="c11n">Nė vienas kąsnelis – <em>ne reforma</em>.</div>\n    <div class="h" id="c11y">Po metų mokykla – <em>jau kita</em>.</div>\n    <div id="c11bites"></div>\n    <div class="h" id="c11b">'),
+ ('transform:scale(0)"></div></div>',
+  'transform:scale(0)"></div><div class="bite" style="position:absolute;left:226px;top:196px;width:84px;height:84px;border-radius:50%;background:#f3f5fa;transform:scale(0)"></div></div>'),
+ ('  head("#c11m", w(11, "eat an elephant") - 0.1, w(11, "every next step") - 0.5);',
+  '  head("#c11m", w(11, "eat an elephant") - 0.1, w(11, "no reform") - 0.6);\n  head("#c11n", w(11, "no reform") - 0.1, w(11, "a year") - 0.6);\n  head("#c11y", w(11, "a year") - 0.1, w(11, "every next step") - 0.5);'),
+ ('  document.querySelectorAll("#c11eat .bite").forEach((b, k) => tl.to(b, { scale: 1, duration: 0.25, ease: "back.out(2)" }, w(11, "One bite") + k * 0.45));',
+  '  // po kąsnelį: kiekvienas kąsnis — viena sutvarkyta smulkmena; po metų dramblys suvalgytas\n'
+  '  const BK = ["bite1", "bite2", "bite3"], BN = ["antraštės", "slapukų juosta", "dokumentų pavadinimai"];\n'
+  '  document.querySelectorAll("#c11eat .bite").forEach((b, k) => tl.to(b, { scale: 1, duration: 0.25, ease: "back.out(2)" }, w(11, BK[k]) - 0.05));\n'
+  '  BN.forEach((nm, k) => { const c = el("div", "chip", `left:1200px;top:${400 + k * 96}px;font-size:28px;padding:14px 26px`, $("#c11bites"), `<i style="background:var(--teal)"></i>${nm}`);\n'
+  '    tl.fromTo(c, { opacity: 0, x: -30 }, { opacity: 1, x: 0, duration: 0.4, ease: E }, w(11, BK[k])); });\n'
+  '  tl.to("#c11eat", { scale: 0.5, opacity: 0, rotation: -8, duration: 1.0, ease: "power2.in" }, w(11, "a year"));\n'
+  '  tl.to("#c11bites", { x: -240, duration: 1.0, ease: EIO }, w(11, "a year") + 0.2);\n'
+  '  tl.to("#c11bites", { opacity: 0, duration: 0.5 }, w(11, "every next step") - 0.5);'),

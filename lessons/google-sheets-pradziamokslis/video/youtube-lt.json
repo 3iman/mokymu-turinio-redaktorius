@@ -1,0 +1,26 @@
+{
+  "slug": "google-sheets-pradziamokslis",
+  "source_language": "lt",
+  "audio_language": "lt",
+  "channel": "cleverphant-lt",
+  "category_id": "27",
+  "made_for_kids": false,
+  "privacy": "private",
+  "publish_at": null,
+  "related_url": "https://mokymai.cleverphant.lt/?post_type=kursai&p=1845",
+  "variant_of": null,
+  "video": "google-sheets-pradziamokslis-lt.mp4",
+  "localizations": {
+    "lt": {
+      "title": "Google Sheets pradžiamokslis: kaip tvarkyti mokyklos lenteles",
+      "description": "Mokyklos svetainės lentelės gyvena „Google Sheets“ failuose: kiekvienas lapas apačioje yra atskira lentelė svetainėje. Prisijungti prie sistemos nereikia – dirbate tiesiog naršyklėje.\n\nŠioje pamokoje: kaip gauti prieigą ir ja pasidalyti, kaip veikia lapai ir A stulpelio žymos, kaip įterpti žmogų nesugadinant numeracijos ir kaip susigrąžinti vakarykštę lentelę.\n\n📋 SKYRIAI\n\n0:00 Įvadas. Kas yra Google Sheets\n0:26 Pirmiausia – prieiga\n1:01 Kokia paskyra geriausia\n1:24 Pažinkime langą\n1:44 Vaikščiojimas per lapus\n2:05 Visų lapų sąrašas\n2:22 Lapo meniu\n2:42 Pervardyti lapą\n2:59 Pirmas lapas ir trynimas\n3:40 Pirmo stulpelio žymos\n4:04 Rašymas langelyje\n4:21 Svetainėje – akimirksniu\n4:42 Vienas langelis – viena eilutė\n5:05 Tekstas iš Word\n5:29 Eilės numeriai\n5:46 Nauja ir išimta eilutė\n6:41 Paruošti pavyzdžiai\n7:01 Kai liko šablono spalva\n7:21 Kai antraštė liko be spalvos\n7:46 Versijų istorija\n8:29 Klysti nebaisu\n8:45 Outro\n\n—\nCleverphant mokymai mokyklų svetainių administratoriams\nhttps://mokymai.cleverphant.lt",
+      "tags": [
+        "mokyklos svetainė",
+        "Cleverphant",
+        "TVS",
+        "mokyklų svetainės",
+        "švietimas"
+      ]
+    }
+  }
+}

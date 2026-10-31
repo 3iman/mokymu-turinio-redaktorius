@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .card { padding: 60px 110px; }
+  .card.dark { background: #0f172a; }
+  .card.dark .title { color: #fff; }
+
+  .card { padding: 56px 110px 56px; }
+  .title { margin-bottom: 46px; }
+  .steps { width: 1200px; margin: 0 auto; }
+  .st { display: flex; align-items: center; gap: 26px; background: var(--c-green-bg);
+        border: 1.5px solid var(--c-green-border); border-radius: 18px; padding: 22px 32px; margin-bottom: 18px; }
+  .st .n { width: 50px; height: 50px; flex: none; border-radius: 50%; background: #fff;
+           border: 1.5px solid var(--c-green-border); color: var(--c-green-text); font-size: 25px;
+           font-weight: 800; display: flex; align-items: center; justify-content: center; }
+  .st .i svg { width: 30px; height: 30px; display: block; }
+  .st .t { font-size: 33px; color: var(--c-text); }
+  .cap { text-align: center; font-size: 29px; font-weight: 700; color: #3464ad; margin-top: 40px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="steps"><div class="st r0"><span class="n">1</span><span class="i"><svg viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5.5 5.5L20 6.5"/></svg></span><span class="t">Issue identified</span></div><div class="st r1"><span class="n">2</span><span class="i"><svg viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5.5 5.5L20 6.5"/></svg></span><span class="t">Execution plan formulated</span></div><div class="st r2"><span class="n">3</span><span class="i"><svg viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5.5 5.5L20 6.5"/></svg></span><span class="t">Centralized update deployed</span></div><div class="st r3"><span class="n">4</span><span class="i"><svg viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5.5 5.5L20 6.5"/></svg></span><span class="t">Clients informed and educated</span></div></div>
+    <div class="cap">{{cap}}</div>
+  </div>
+</body>
+</html>

@@ -2,6 +2,7 @@
 
 **Formatas:** Lietuviškai, su balsu — iliustracijos + tekstas ekrane + balsas + foninė muzika
 **Balsas:** ElevenLabs `eleven_v3_dpo_20260217`, balsas `eqJHjeWMPGJFD6VBf1J2`, greitis 0.9 — `node generate-voice.js --lesson navigacijos-nuoseklumas --lang lt`
+**Balso seed:** 3537359918 — įrašomas automatiškai; pakeitus tekstą balsas generuojamas iš naujo
 **Balso tekstas:** atsirenkamas iš pamokos, ne rašomas iš naujo
 **Trukmė:** 191 sek. be skirtukų (~3:55 su skirtukais)
 **Foninė muzika:** `jiglr-malibu_cleverphant-mokymu-fonas.mp3` — kartojama su kryžmine perėja, takelio uodegos tyla nukerpama
@@ -13,20 +14,20 @@
 | Kadras | Trukmė | Failas | Balsas |
 |---|---|---|---|
 | 0 Intro | 5 sek. | intro | — |
-| 1 Šešios durys | 13 sek. | 00-sesios-durys | Paruošėme palyginimą. Įsivaizduokite, kad mokyklos svetainė yra pastatas, o pagrindinis meniu – jo paradinės durys. Jų šešerios, ir visose mūsų svetainėse jos tos pačios. |
+| 1 Šešios durys | 13 sek. | 00-sesios-durys | Įsivaizduokite, kad mokyklos svetainė yra pastatas, o pagrindinis meniu – jo paradinės durys. Jų šešerios, ir visose mūsų svetainėse jos tos pačios. |
 | 2 Įprotis formuojamas metų metus | 11 sek. | 01-iprotis | Įprotis formuojamas metų metus. Žmogus žino, pro kurias duris eiti. O kai durys perstatomos, ištinka nuostaba ir erzelis. |
-| 3 Nekaltas prašymas vis užauga | 12 sek. | 02-prasymas | Prašo direktorė, pavaduotoja, savivaldybė. Kažkas atsiuntė pageidavimą, persiuntus jis tapo prašymu, o iki mūsų ateina jau kaip reikalavimas. Tik niekas nepasako, vietoj ko. |
+| 3 Nekaltas prašymas vis užauga | 13 sek. | 02-prasymas | Prašo direktorė, pavaduotoja, savivaldybė. Niekas iš jų nemato visos juostos iš karto, todėl kaina lieka nematoma – ji sumokama kitų meniu punktų sąskaita. |
 | 4 Kiek vietos yra | 11 sek. | 03-kiek-vietos | Meniu juosta platesnė nebūna, o punktai ją užpildo beveik iki galo. Laisvos vietos lieka mažiau nei vienai raidei. |
-| 5 Kaip gimsta dviaukštis meniu | 10 sek. | 04-du-aukstai | Pridėjus septintas duris, meniu persilaužia į du aukštus. Arba iškrenta kitas punktas, dažniausiai pagalba mokiniams ir tėvams. |
+| 5 Kaip gimsta dviaukštis meniu | 11 sek. | 04-du-aukstai | Pridėjus septintas duris, meniu persilaužia į du aukštus. Arba iškrenta kitas punktas, dažniausiai pagalba mokiniams ir tėvams. |
 | 6 Reguliacinis vėjas | 11 sek. | 05-reguliacinis-vejas | Kai pučia reguliacinis vėjas, duris nupučia kartu. Į jų vietą sulipa privalomos temos, ir ta eilė nesibaigia niekada. |
-| 7 Jau buvo kartą | 12 sek. | 06-es-logotipas | Kartą visiems reikėjo Europos Sąjungos logotipo svetainės viršuje. Kol prašymas atėjo pas mus, jis jau buvo šalia mokyklos ženklo. O tikrasis reikalavimas visai kitas. |
+| 7 Jau buvo kartą | 13 sek. | 06-es-logotipas | Kartą visiems reikėjo Europos Sąjungos logotipo svetainės viršuje. Kol prašymas atėjo pas mus, jis jau buvo šalia mokyklos ženklo. O tikrasis reikalavimas visai kitas. |
 | 8 Nenorime būti kaip visi | 13 sek. | 07-kitokie | Kartais sakoma: nenorime būti kaip visi. Bet bendruomenė ateina ne grožėtis meniu, o kažko rasti. Kitokie būkite tuo, ką darote, o ne tuo, kur padėjote duris. |
-| 9 Kas nusipelno durų? | 13 sek. | 08-kriterijus | Durų nusipelno tai, kas duoda vertę bendruomenei. Projektai reiškia papildomas lėšas vaikų ugdymui, inžinerinis ugdymas pasako, kuo mokykla stipri. O ką bendruomenei sako korupcijos prevencija? |
+| 9 Kas nusipelno durų? | 15 sek. | 08-kriterijus | Durų nusipelno tai, kas duoda vertę bendruomenei. Projektai reiškia papildomas lėšas vaikų ugdymui. Inžinerinis ugdymas pasako, kuo mokykla stipri. O ką bendruomenei sako korupcijos prevencija? |
 | 10 Bet tai jie ir svarbūs | 14 sek. | 09-porastes-informacija | Tai nereiškia, kad jie nesvarbūs. Žvilgsnis puslapiu nubėga iki pat apačios, o ten, kaip mokyklos fojė, kabo informacijos stendas. Jūsų svetainėje taisyti nieko nereikia. |
-| 11 Visada bus tokių, kurie parašys | 13 sek. | 10-neranda | Kartais parašo, kad nerado. Taip bus visada. Viršuje yra paieška, apačioje svetainės medis, o greičiausias atsakymas yra viena nuoroda laiške. Nusiuntėte ir klausimas uždarytas. |
-| 12 O galima mainyti? | 12 sek. | 11-mainai | Todėl darome mainus. Inžinerinio ugdymo kryptis stoja prie kitų ugdymo paslaugų po Ugdymu, o į atsilaisvinusią vietą ateina tai, kas mokyklai svarbiau. |
-| 13 O galima trumpinti? | 9 sek. | 12-trumpinam | Sutrumpinus Pagalba mokiniams ir tėvams iki Švietimo pagalba, atsilaisvina maždaug tiek, kiek užima vienas trumpas žodis. |
-| 14 Kaip kitaip pasiekti bendruomenę? | 14 sek. | 13-naujiena-ir-savivaldybe | Kad bendruomenė pamatytų, tinka straipsnis arba žinutė el. dienyne. Straipsnis dar patenka į savaitinę santrauką. O savivaldybės straipsnį galime centralizuotai paskelbti visoms jos mokykloms. |
+| 11 Visada bus tokių, kurie parašys | 16 sek. | 10-neranda | Kartais parašo, kad nerado. Taip bus visada. Viršuje yra paieška, apačioje svetainės medis, o greičiausias atsakymas yra viena nuoroda laiške. Nusiuntėte ir klausimas uždarytas. |
+| 12 O galima mainyti? | 14 sek. | 11-mainai | Todėl darome mainus. Inžinerinio ugdymo kryptis stoja prie kitų ugdymo paslaugų po Ugdymu, o į atsilaisvinusią vietą ateina tai, kas mokyklai svarbiau. |
+| 13 O galima trumpinti? | 11 sek. | 12-trumpinam | Sutrumpinus Pagalba mokiniams ir tėvams iki Švietimo pagalba, atsilaisvina maždaug tiek, kiek užima vienas trumpas žodis. |
+| 14 Kaip kitaip pasiekti bendruomenę? | 15 sek. | 13-naujiena-ir-savivaldybe | Kad bendruomenė pamatytų, tinka straipsnis arba žinutė el. dienyne. Straipsnis dar patenka į savaitinę santrauką. O savivaldybės straipsnį galime centralizuotai paskelbti visoms jos mokykloms. |
 | 15 Ar galime sutarti? | 13 sek. | 14-musu-pastatas | Nesinori ginčytis nei su institucija, nei juo labiau su žmogumi. Bet gal galime sutarti, kad verta pasaugoti suformuotą nuoseklumą bei įprotį? |
 | 16 Outro | 5 sek. | autro | — |
 

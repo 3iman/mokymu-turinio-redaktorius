@@ -1,0 +1,330 @@
+[
+ {
+  "n": 1,
+  "v0": 0.0,
+  "v1": 6.13,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 1.997,
+    "text": "All caps on a school website.",
+    "rel": 0.0
+   },
+   {
+    "t": 2.531,
+    "end": 3.692,
+    "text": "Looks like a detail.",
+    "rel": 2.531
+   },
+   {
+    "t": 3.878,
+    "end": 6.13,
+    "text": "Now multiply it by a thousand schools.",
+    "rel": 3.878
+   }
+  ],
+  "clip": "k01.wav",
+  "clip_start": 0,
+  "dur": 6.43
+ },
+ {
+  "n": 2,
+  "v0": 6.989,
+  "v1": 20.26,
+  "sent": [
+   {
+    "t": 6.989,
+    "end": 13.653,
+    "text": "Every school has the same duties: accessibility, data protection, security, and rules that keep changing.",
+    "rel": 0.05
+   },
+   {
+    "t": 14.385,
+    "end": 18.1,
+    "text": "Most face them alone, with their own budget and their own contractor.",
+    "rel": 7.446
+   },
+   {
+    "t": 18.356,
+    "end": 20.26,
+    "text": "So quality comes down to chance.",
+    "rel": 11.417
+   }
+  ],
+  "clip": "k02.wav",
+  "clip_start": 6.939,
+  "dur": 13.466
+ },
+ {
+  "n": 3,
+  "v0": 20.55,
+  "v1": 33.146,
+  "sent": [
+   {
+    "t": 20.55,
+    "end": 23.696,
+    "text": "Cleverphant is shared digital infrastructure for schools.",
+    "rel": 0.05
+   },
+   {
+    "t": 24.033,
+    "end": 26.088,
+    "text": "What people see is the website.",
+    "rel": 3.533
+   },
+   {
+    "t": 26.622,
+    "end": 33.146,
+    "text": "Underneath is what keeps it right: compliance, training, support, and a network that connects every school.",
+    "rel": 6.122
+   }
+  ],
+  "clip": "k03.wav",
+  "clip_start": 20.5,
+  "dur": 12.849
+ },
+ {
+  "n": 4,
+  "v0": 33.553,
+  "v1": 43.514,
+  "sent": [
+   {
+    "t": 33.553,
+    "end": 38.615,
+    "text": "Because every school runs on the same system, they all get the same benefits, and the same bugs.",
+    "rel": 0.05
+   },
+   {
+    "t": 39.253,
+    "end": 41.343,
+    "text": "But it takes just one school to notice.",
+    "rel": 5.75
+   },
+   {
+    "t": 41.529,
+    "end": 43.514,
+    "text": "Fixed once, fixed for all.",
+    "rel": 8.026
+   }
+  ],
+  "clip": "k04.wav",
+  "clip_start": 33.503,
+  "dur": 10.278
+ },
+ {
+  "n": 5,
+  "v0": 44.048,
+  "v1": 54.474,
+  "sent": [
+   {
+    "t": 44.048,
+    "end": 45.825,
+    "text": "Ideas travel the same way.",
+    "rel": 0.05
+   },
+   {
+    "t": 46.01,
+    "end": 48.181,
+    "text": "A curious school leader brings a need.",
+    "rel": 2.012
+   },
+   {
+    "t": 48.646,
+    "end": 50.306,
+    "text": "Their school becomes the pilot.",
+    "rel": 4.648
+   },
+   {
+    "t": 50.771,
+    "end": 54.474,
+    "text": "When the data shows it works, it becomes the standard for every school.",
+    "rel": 6.773
+   }
+  ],
+  "clip": "k05.wav",
+  "clip_start": 43.998000000000005,
+  "dur": 10.644
+ },
+ {
+  "n": 6,
+  "v0": 54.811,
+  "v1": 64.714,
+  "sent": [
+   {
+    "t": 54.811,
+    "end": 56.459,
+    "text": "And it works from the top, too.",
+    "rel": 0.05
+   },
+   {
+    "t": 56.866,
+    "end": 64.714,
+    "text": "A municipality or a ministry publishes a new rule or a campaign once, and it appears on every school website at the same time.",
+    "rel": 2.105
+   }
+  ],
+  "clip": "k06.wav",
+  "clip_start": 54.761,
+  "dur": 10.186
+ },
+ {
+  "n": 7,
+  "v0": 65.179,
+  "v1": 79.099,
+  "sent": [
+   {
+    "t": 65.179,
+    "end": 68.72,
+    "text": "A small village school gets what a large city school gets.",
+    "rel": 0.05
+   },
+   {
+    "t": 69.254,
+    "end": 72.249,
+    "text": "A family changing schools finds a familiar place.",
+    "rel": 4.125
+   },
+   {
+    "t": 72.888,
+    "end": 76.545,
+    "text": "The foundation is shared; the face stays the school's own.",
+    "rel": 7.759
+   },
+   {
+    "t": 77.079,
+    "end": 77.996,
+    "text": "Not identical.",
+    "rel": 11.95
+   },
+   {
+    "t": 78.158,
+    "end": 79.099,
+    "text": "Equally good.",
+    "rel": 13.029
+   }
+  ],
+  "clip": "k07.wav",
+  "clip_start": 65.129,
+  "dur": 14.237
+ },
+ {
+  "n": 8,
+  "v0": 79.633,
+  "v1": 104.676,
+  "sent": [
+   {
+    "t": 79.633,
+    "end": 81.27,
+    "text": "Change starts with details.",
+    "rel": 0.05
+   },
+   {
+    "t": 81.456,
+    "end": 83.743,
+    "text": "Being small is no excuse to look away.",
+    "rel": 1.873
+   },
+   {
+    "t": 84.277,
+    "end": 91.069,
+    "text": "Stop writing in capitals, stop stretching text, stop hiding information in images, get cookie consent right.",
+    "rel": 4.694
+   },
+   {
+    "t": 91.359,
+    "end": 93.554,
+    "text": "That's our Trojan elephant, in the good sense.",
+    "rel": 11.776
+   },
+   {
+    "t": 94.192,
+    "end": 102.087,
+    "text": "Once it works everywhere, we go further: a document bank, whistleblower protection, bookings, and next, AI integrations.",
+    "rel": 14.609
+   },
+   {
+    "t": 102.621,
+    "end": 104.676,
+    "text": "Because AI can't work in chaos.",
+    "rel": 23.038
+   }
+  ],
+  "clip": "k08.wav",
+  "clip_start": 79.583,
+  "dur": 25.36
+ },
+ {
+  "n": 9,
+  "v0": 105.21,
+  "v1": 117.807,
+  "sent": [
+   {
+    "t": 105.21,
+    "end": 109.936,
+    "text": "What works in one school works in a municipality, a region, a whole country.",
+    "rel": 0.05
+   },
+   {
+    "t": 110.574,
+    "end": 114.324,
+    "text": "Schools can be added quickly, while costs grow far more slowly.",
+    "rel": 5.414
+   },
+   {
+    "t": 114.58,
+    "end": 115.834,
+    "text": "Not a promise of cheap.",
+    "rel": 9.42
+   },
+   {
+    "t": 116.565,
+    "end": 117.807,
+    "text": "The logic of scale.",
+    "rel": 11.405
+   }
+  ],
+  "clip": "k09.wav",
+  "clip_start": 105.16,
+  "dur": 12.914
+ },
+ {
+  "n": 10,
+  "v0": 118.341,
+  "v1": 133.713,
+  "sent": [
+   {
+    "t": 118.341,
+    "end": 120.64,
+    "text": "We have walked this road for fifteen years.",
+    "rel": 0.05
+   },
+   {
+    "t": 120.826,
+    "end": 128.257,
+    "text": "Hundreds of institutions, whole municipalities on one standard, with content audits, proven onboarding and a training platform.",
+    "rel": 2.535
+   },
+   {
+    "t": 128.721,
+    "end": 130.219,
+    "text": "Built in a small country.",
+    "rel": 10.43
+   },
+   {
+    "t": 130.683,
+    "end": 131.716,
+    "text": "Ready for yours.",
+    "rel": 12.392
+   },
+   {
+    "t": 132.25,
+    "end": 133.713,
+    "text": "Let's talk about your region.",
+    "rel": 13.959
+   }
+  ],
+  "clip": "k10.wav",
+  "clip_start": 118.291,
+  "dur": 15.722
+ }
+]

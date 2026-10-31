@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .card { padding: 46px 110px 56px; }
+  .title { margin-bottom: 36px; }
+  .cur { position: absolute; left: 0; top: 0; z-index: 9; width: 46px; height: 58px; }
+  .cur svg { width: 46px; height: 58px; }
+  .rip { position: absolute; z-index: 8; width: 70px; height: 70px; margin: -35px 0 0 -35px; border-radius: 50%;
+         background: rgba(124, 58, 237, .40); opacity: 0; }
+  @keyframes ratilas { from { opacity: .85; transform: scale(.3); } to { opacity: 0; transform: scale(1.7); } }
+
+  .ph { width: 430px; height: 840px; border-radius: 52px; background: #111827; padding: 16px;
+        box-shadow: 0 30px 70px rgba(15, 23, 42, .28); position: relative; }
+  .ph-in { width: 100%; height: 100%; border-radius: 38px; background: #f7f8fa; overflow: hidden; position: relative;
+           display: flex; flex-direction: column; }
+  .ph-top { height: 56px; background: #111827; }
+  .dial { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px;
+          background: #1f2937; }
+  .dial-lbl { font-size: 26px; color: #9ca3af; letter-spacing: 1px; }
+  .dial-num { font-size: 46px; font-weight: 700; color: #fff; }
+  .dial-ico { width: 104px; height: 104px; border-radius: 50%; background: var(--c-green-solid);
+              display: flex; align-items: center; justify-content: center; margin-top: 14px; }
+  .dial-ico svg { width: 52px; height: 52px; }
+
+  .duo { display: flex; align-items: center; justify-content: center; gap: 90px; }
+  .left { width: 760px; }
+  .st { display: flex; align-items: center; gap: 24px; background: var(--c-surface); border: 1.5px solid var(--c-border);
+        border-radius: 16px; padding: 22px 28px; margin-bottom: 20px; box-shadow: 0 8px 22px rgba(15,23,42,.06); }
+  .st-n { width: 54px; height: 54px; flex: none; border-radius: 50%; background: var(--c-purple-bg);
+          color: var(--c-purple-text); font-size: 28px; font-weight: 800;
+          display: flex; align-items: center; justify-content: center; }
+  .st-t { font-size: 29px; color: var(--c-text); }
+  .cta { margin-top: 34px; font-size: 40px; font-weight: 800; color: var(--c-green-text); }
+  .ph { position: relative; }
+  .dial-num { font-size: 40px; }
+  .tick { position: absolute; right: -26px; bottom: 78px; width: 96px; height: 96px; border-radius: 50%;
+          background: #fff; border: 3px solid var(--c-green-border); display: flex; align-items: center;
+          justify-content: center; box-shadow: 0 12px 30px rgba(15,23,42,.14); }
+  .tick svg { width: 50px; height: 50px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="duo">
+      <div class="left"><div class="st s0"><span class="st-n">1</span><span class="st-t">{{s1}}</span></div><div class="st s1"><span class="st-n">2</span><span class="st-t">{{s2}}</span></div><div class="st s2"><span class="st-n">3</span><span class="st-t">{{s3}}</span></div>
+        <div class="cta">{{cta}}</div></div>
+      <div class="ph"><div class="ph-in"><div class="ph-top"></div>
+        <div class="dial"><div class="dial-lbl">{{dial_lbl}}</div><div class="dial-num">{{dial_num}}</div>
+          <div class="dial-ico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M6.6 3.5h3.1l1.6 4-2 1.3a12 12 0 0 0 5.9 5.9l1.3-2 4 1.6v3.1a1.5 1.5 0 0 1-1.7 1.5A17 17 0 0 1 5.1 5.2 1.5 1.5 0 0 1 6.6 3.5z"/></svg></div></div></div>
+        <div class="tick"><svg viewBox="0 0 24 24" fill="none" stroke="#16a34a" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5l5.5 5.5L20 6.5"/></svg></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

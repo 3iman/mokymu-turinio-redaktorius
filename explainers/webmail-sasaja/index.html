@@ -1,0 +1,414 @@
+<!doctype html>
+<html lang="lt" data-resolution="landscape">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<!--
+  Webmail (Roundcube): kaip pakeisti sąsają iš Larry į Elastic. Be balso ir be užrašų — tik kursorius,
+  paspaudimai ir žingsnių numeriai (Eimantas 2026-10-14: „Nereikia nieko aiškinti, vizualiai parodyti“).
+  Larry atkurtas pagal roundcube.net/screens (settings_preferences, mailbox_desktop) ir larry/styles.css;
+  Elastic — pagal Eimanto nuotrauką (Settings → Preferences → User Interface).
+  Laikai — konstanta K žemiau; garsas: garsas/build_audio.py (tie patys laikai).
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Arimo:wght@400;700&family=Roboto:wght@400;500;700&display=block" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+  :root { --blue:#3363ab; --rc:#37beff; --rcsel:#e6f6fe; --side:#2f3a3f; --line:#e3e7ea; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:#f4f6fa; }
+  #root { position:relative; width:1920px; height:1080px; font-family:Inter, system-ui, sans-serif; color:#1a1a2e; overflow:hidden; }
+  #bg { position:absolute; inset:0; background:
+      radial-gradient(circle 430px at 88% 6%, rgba(255,255,255,.85) 0 99%, rgba(255,255,255,0) 100%),
+      radial-gradient(circle 190px at 3% 95%, rgba(199,185,219,.34) 0 99%, rgba(199,185,219,0) 100%),
+      linear-gradient(160deg, #eef1f8 0%, #f4f6fa 42%, #faf9fb 100%); }
+  .abs { position:absolute; }
+  #drift, #cam { position:absolute; left:0; top:0; width:1920px; height:1080px; }
+  #cam { transform-origin:0 0; }
+  /* naršyklės langas */
+  #win { position:absolute; left:120px; top:40px; width:1680px; height:960px; border-radius:14px; overflow:hidden; background:#fff;
+         box-shadow:0 2px 6px rgba(0,0,0,.06), 0 28px 80px rgba(30,40,80,.18); }
+  #bar { position:absolute; left:0; top:0; width:1680px; height:64px; background:#e9edf1; border-bottom:1px solid #d5dbe1; }
+  .dot3 { position:absolute; top:26px; width:13px; height:13px; border-radius:50%; }
+  #url { position:absolute; left:220px; top:13px; width:1240px; height:38px; border-radius:19px; background:#fff; font:500 19px/38px Inter, sans-serif; color:#334155; padding-left:48px; }
+  #rl { position:absolute; left:170px; top:20px; width:24px; height:24px; }
+  #content { position:absolute; left:0; top:64px; width:1680px; height:896px; overflow:hidden; background:#cad2d9; }
+  #flash { position:absolute; left:0; top:64px; width:1680px; height:896px; background:#fff; opacity:0; }
+
+  /* ---------- Roundcube Larry (vietiniai px; mastelis Z = 1.4) ---------- */
+  #lv { position:absolute; left:0; top:0; width:1200px; height:640px; transform:scale(1.4); transform-origin:0 0; background:#cad2d9;
+        font-family:Arimo, Arial, Helvetica, sans-serif; font-size:11px; color:#333; }
+  #topline { position:absolute; left:0; top:0; width:1200px; height:23px; background:#333; color:#99a7ac; font-size:11px; line-height:22px; }
+  #lhead { position:absolute; left:0; top:23px; width:1200px; height:46px; background:#1c1c1c; }
+  .tb { position:absolute; top:0; height:46px; color:#ddd; font-size:12.5px; line-height:46px; padding-left:36px; }
+  .tb svg { position:absolute; left:8px; top:12px; width:22px; height:22px; }
+  .tb.on { background:#2c2c2c; color:#20a6fb; }
+  .lbox { position:absolute; background:#d9ecf4; border-radius:4px; overflow:hidden; box-shadow:0 0 2px rgba(0,0,0,.2); }
+  .lhd { height:34px; background:#b0ccd7; color:#0c4d65; font-size:12px; font-weight:bold; line-height:34px; padding-left:9px; }
+  .lr { position:relative; height:28px; border-bottom:1px solid #c7e3ef; color:#2d718f; line-height:28px; padding-left:37px; white-space:nowrap; }
+  .lr svg { position:absolute; left:9px; top:5px; width:18px; height:18px; }
+  .lr.sel { background:#c7e3ef; color:#0c4d65; font-weight:bold; }
+  .lr .bdg { position:absolute; right:7px; top:7px; height:15px; min-width:28px; border-radius:8px; background:#6b919c; color:#fff; font-size:10px; font-weight:bold; line-height:15px; text-align:center; }
+  .tbtn { position:absolute; top:69px; width:60px; height:58px; text-align:center; color:#555; font-size:11px; }
+  .tbtn svg { display:block; margin:12px auto 4px; width:26px; height:24px; }
+  .mrow { position:relative; height:23px; border-bottom:1px solid #eee; background:#fff; line-height:23px; color:#333; white-space:nowrap; }
+  .mrow b { font-weight:bold; }
+  .mrow span { position:absolute; top:0; }
+  .mrow.sel { background:#017db6; color:#fff; }
+  .frow { position:absolute; left:13px; width:670px; height:26px; background:#eee; line-height:26px; padding-left:10px; color:#333; }
+  .fsel { position:absolute; top:5px; left:320px; height:17px; border:1px solid #a4a4a4; border-radius:2px; background:#fff; font-size:11px; line-height:15px; padding-left:4px; }
+  .fsel:after { content:""; position:absolute; right:4px; top:5px; border:4px solid transparent; border-top:5px solid #333; }
+  .fchk { position:absolute; top:7px; left:320px; width:13px; height:13px; border:1px solid #8a8a8a; border-radius:2px; background:#fff; }
+  .fchk.on { background:#1e88e5; border-color:#1e88e5; }
+  .fchk.on:after { content:""; position:absolute; left:3px; top:0; width:4px; height:8px; border:solid #fff; border-width:0 2px 2px 0; transform:rotate(45deg); }
+  .leg { position:absolute; left:15px; font-size:14px; font-weight:bold; color:#333; }
+  .lrad { position:absolute; left:10px; width:14px; height:14px; border-radius:50%; border:1px solid #8a8a8a; background:#fff; }
+  .lrad i { position:absolute; left:3px; top:3px; width:6px; height:6px; border-radius:50%; background:#1e88e5; }
+  .lthumb { position:absolute; left:34px; width:64px; height:64px; border:1px solid #bbb; overflow:hidden; background:#fff; }
+  .lskin { position:absolute; left:112px; font-size:11px; line-height:16px; color:#333; }
+  .lskin b { font-size:12px; } .lskin a { color:#0069a6; }
+  #lsave { position:absolute; left:15px; width:56px; height:24px; border:1px solid #1f262c; border-radius:4px; background:#2c2f33; color:#ededed; font-size:12px; font-weight:bold; line-height:22px; text-align:center; }
+  #lmsg { position:absolute; right:14px; bottom:22px; width:282px; padding:8px 10px 7px 30px; border-radius:4px; border:1px solid #444; font-size:12px; font-weight:bold;
+          color:#00e05a; background:linear-gradient(to bottom, rgba(64,64,64,.85) 0%, rgba(48,48,48,.9) 100%); opacity:0; }
+  #lmsg svg { position:absolute; left:8px; top:7px; width:15px; height:15px; }
+
+  /* ---------- Roundcube Elastic (vietiniai px; mastelis 1.05) ---------- */
+  #ev { position:absolute; left:0; top:0; width:1600px; height:854px; transform:scale(1.05); transform-origin:0 0; background:#fff; opacity:0;
+        font-family:Roboto, Arial, sans-serif; color:#2c363a; }
+  #side { position:absolute; left:0; top:0; width:70px; height:854px; background:var(--side); }
+  .si { position:absolute; left:0; width:70px; height:64px; text-align:center; color:#fff; font-size:13px; }
+  .si b { display:block; margin:12px auto 5px; width:22px; height:18px; border-radius:4px; background:#fff; opacity:.95; }
+  .si.comp { color:var(--rc); } .si.comp b { background:var(--rc); }
+  .col { position:absolute; top:0; height:854px; border-right:1px solid var(--line); }
+  .ch { height:52px; border-bottom:1px solid var(--line); background:#f7f8f9; font-weight:700; font-size:16px; text-align:center; line-height:52px; }
+  .row { position:relative; height:38px; border-bottom:1px solid #eef1f3; font-size:16px; line-height:38px; padding-left:46px; white-space:nowrap; }
+  .row i { position:absolute; left:14px; top:11px; width:18px; height:16px; border-radius:3px; background:#2c363a; opacity:.85; }
+  .row.sel { background:var(--rcsel); }
+  .ml { position:relative; height:62px; border-bottom:1px solid #eef1f3; }
+  .ml span { position:absolute; left:20px; height:10px; border-radius:3px; background:#cfd6db; }
+  .sel-box { position:absolute; height:34px; border:1px solid #c7d0d6; border-radius:4px; font-size:15px; line-height:32px; padding-left:10px; background:#fff; }
+  .tg { position:absolute; width:28px; height:16px; border-radius:8px; background:var(--rc); }
+  .tg:after { content:""; position:absolute; right:2px; top:2px; width:12px; height:12px; border-radius:50%; background:#fff; }
+  .lab { position:absolute; font-size:15px; }
+  .sec { position:absolute; font-size:19px; font-weight:700; }
+  .radio { position:absolute; width:18px; height:18px; border-radius:50%; border:2px solid #9aa5ab; background:#fff; }
+  .radio .dot { position:absolute; left:3px; top:3px; width:8px; height:8px; border-radius:50%; background:var(--rc); }
+  .thumb { position:absolute; width:58px; height:58px; border-radius:4px; border:1px solid #d5dce0; overflow:hidden; background:#fff; }
+  .skin b { font-size:15px; } .skin { position:absolute; font-size:13px; line-height:1.6; }
+  .skin a { color:var(--rc); font-style:italic; }
+  #esave { position:absolute; width:80px; height:38px; border-radius:4px; background:var(--rc); color:#fff; font-size:15px; font-weight:500; line-height:38px; text-align:center; }
+
+  /* kursorius, paspaudimai, žingsnių numeriai */
+  #ring { position:absolute; border:4px solid var(--blue); border-radius:12px; opacity:0; box-shadow:0 0 0 6px rgba(51,99,171,.18); }
+  #cur { position:absolute; left:0; top:0; width:34px; height:46px; opacity:0; z-index:20; }
+  .clk { position:absolute; width:56px; height:56px; margin:-28px 0 0 -28px; border-radius:50%; border:4px solid var(--blue); opacity:0; z-index:19; }
+  .nr { position:absolute; width:44px; height:44px; margin:-22px 0 0 -22px; border-radius:50%; background:var(--blue); color:#fff; font:700 26px/44px Inter, sans-serif;
+        text-align:center; opacity:0; z-index:18; box-shadow:0 6px 16px rgba(51,99,171,.35); }
+  .nr.ok { background:#22b573; box-shadow:0 6px 16px rgba(34,181,115,.35); }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="24" data-width="1920" data-height="1080">
+  <div id="bg" class="clip" data-start="0" data-duration="24" data-track-index="0"></div>
+  <audio id="au" class="clip" src="garsas/mix.wav" data-start="0" data-duration="24" data-track-index="2"></audio>
+  <img id="wm" class="clip" src="assets/cleverphant-zodis.svg" alt="Cleverphant" data-start="0" data-duration="24" data-track-index="3" style="position:absolute;left:64px;top:1030px;width:150px;height:auto;opacity:0;z-index:5">
+
+  <section id="s1" class="clip" data-start="0" data-duration="24" data-track-index="1" style="position:absolute;left:0;top:0;width:1920px;height:1080px">
+  <div id="drift"><div id="cam">
+    <div id="win">
+      <div id="bar">
+        <div class="dot3" style="left:24px;background:#ff5f57"></div><div class="dot3" style="left:46px;background:#febc2e"></div><div class="dot3" style="left:68px;background:#28c840"></div>
+        <svg id="rl" viewBox="0 0 24 24"><path d="M19 12a7 7 0 1 1-2.05-4.95" fill="none" stroke="#64748b" stroke-width="2.4" stroke-linecap="round"/><path d="M19.5 3.5v5h-5" fill="none" stroke="#64748b" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <div id="url"><svg class="abs" style="left:18px;top:10px" width="16" height="18" viewBox="0 0 16 18"><rect x="1.5" y="7.5" width="13" height="9.5" rx="2" fill="#64748b"/><path d="M4.5 7.5V5a3.5 3.5 0 0 1 7 0v2.5" fill="none" stroke="#64748b" stroke-width="2"/></svg>webmail.mokykla.lt</div>
+      </div>
+      <div id="content">
+
+        <!-- ===== Larry ===== -->
+        <div id="lv">
+          <div id="topline"><span class="abs" style="left:10px">About</span><span class="abs" style="right:90px">info@mokykla.lt</span>
+            <span class="abs" style="right:10px;color:#ddd"><svg width="10" height="10" viewBox="0 0 10 10" style="vertical-align:-1px;margin-right:4px"><path d="M3 2.2A3.6 3.6 0 1 0 7 2.2M5 .5v4" fill="none" stroke="#ddd" stroke-width="1.5" stroke-linecap="round"/></svg>Logout</span></div>
+          <div id="lhead">
+            <div class="abs" style="left:10px;top:9px;color:#fff;font:400 25px/26px Arimo, Arial, sans-serif;letter-spacing:.6px">roundcube</div>
+            <svg class="abs" style="left:132px;top:2px" width="54" height="46" viewBox="0 0 54 46"><path d="M4 25 L27 14 L50 25 L27 37 Z" fill="#3e98cf"/><path d="M4 25 L4 31 L27 43 L27 37 Z" fill="#1f6a99"/><path d="M50 25 L50 31 L27 43 L27 37 Z" fill="#2b80b6"/>
+              <defs><radialGradient id="sph" cx=".38" cy=".32" r=".7"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#cfd5da"/><stop offset="1" stop-color="#8e979e"/></radialGradient></defs><circle cx="27" cy="16" r="12" fill="url(#sph)"/></svg>
+            <div class="tb on" id="tbMail" style="left:920px;width:73px"><svg viewBox="0 0 22 22"><path d="M2 5h18v12H2z M2 5l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>Mail</div>
+            <div class="tb" style="left:993px;width:93px"><svg viewBox="0 0 22 22"><circle cx="11" cy="7" r="4.5" fill="currentColor"/><path d="M2.5 20c0-5 4-8 8.5-8s8.5 3 8.5 8z" fill="currentColor"/></svg>Contacts</div>
+            <div class="tb" id="tbSet" style="left:1086px;width:92px"><svg viewBox="0 0 22 22"><path fill="currentColor" d="M9.3 1h3.4l.5 2.8 2 .9 2.4-1.6 2.4 2.4-1.6 2.4.9 2 2.8.5v3.4l-2.8.5-.9 2 1.6 2.4-2.4 2.4-2.4-1.6-2 .9-.5 2.8H9.3l-.5-2.8-2-.9-2.4 1.6-2.4-2.4 1.6-2.4-.9-2L0 12.7V9.3l2.8-.5.9-2-1.6-2.4 2.4-2.4 2.4 1.6 2-.9z"/><circle cx="11" cy="11" r="3.4" fill="#1c1c1c"/></svg>Settings</div>
+            <div class="abs" style="left:1180px;top:0;width:20px;height:46px;border-left:1px solid #000"><div class="abs" style="left:6px;top:20px;border:4px solid transparent;border-bottom:5px solid #999"></div></div>
+          </div>
+
+          <!-- pašto vaizdas -->
+          <div id="lMail" class="abs" style="left:0;top:0;width:1200px;height:640px">
+            <div id="ltools"></div>
+            <div class="abs" style="left:838px;top:89px;width:88px;height:24px;border:1px solid #b2b2b2;border-radius:4px;background:#f3f3f3;line-height:22px;padding-left:7px">All</div>
+            <div class="abs" style="left:940px;top:89px;width:250px;height:24px;border:1px solid #b2b2b2;border-radius:4px;background:#f3f3f3;line-height:22px;padding-left:28px;color:#999;font-weight:bold">Search...</div>
+            <div class="lbox" id="lfold" style="left:10px;top:132px;width:201px;height:498px"></div>
+            <div class="lbox" style="left:222px;top:132px;width:968px;height:268px;background:#fff">
+              <div style="height:25px;background:#d6eaf3;color:#4d7d8f;font-weight:bold;line-height:25px;position:relative"><span class="abs" style="left:42px">Subject</span><span class="abs" style="left:560px">From</span><span class="abs" style="left:760px;color:#0c4d65;text-decoration:underline">Date</span><span class="abs" style="left:900px">Size</span></div>
+              <div id="lmsgs"></div>
+              <div class="abs" style="left:0;bottom:0;width:968px;height:32px;background:#d6eaf3;line-height:32px;color:#333"><span class="abs" style="left:280px">Messages 1 to 50 of 128</span></div>
+            </div>
+            <div class="lbox" style="left:222px;top:410px;width:968px;height:220px;background:#c6e6f4">
+              <div style="height:52px;background:#f4f4f4;border-bottom:1px solid #ddd;position:relative">
+                <div class="abs" style="left:18px;top:9px;font-size:13px;font-weight:bold;color:#333">Ugdymo planas 2026–2027</div>
+                <div class="abs" style="left:18px;top:30px;color:#999">From <b style="color:#333;margin:0 18px 0 6px">Direktoriaus pavaduotoja</b> Date <b style="color:#333;margin-left:6px">Today 12:59</b></div></div>
+              <div class="abs" style="left:20px;top:66px;width:928px;height:160px;background:#fff">
+                <div class="abs" style="left:24px;top:24px;width:520px;height:7px;border-radius:2px;background:#d5dbe0"></div>
+                <div class="abs" style="left:24px;top:44px;width:680px;height:7px;border-radius:2px;background:#d5dbe0"></div>
+                <div class="abs" style="left:24px;top:64px;width:610px;height:7px;border-radius:2px;background:#d5dbe0"></div>
+                <div class="abs" style="left:24px;top:84px;width:420px;height:7px;border-radius:2px;background:#d5dbe0"></div></div>
+            </div>
+          </div>
+
+          <!-- nustatymų vaizdas -->
+          <div id="lSet" class="abs" style="left:0;top:69px;width:1200px;height:571px;opacity:0;background:#cad2d9">
+            <div class="lbox" id="lsetbox" style="left:10px;top:63px;width:201px;height:498px"><div class="lhd">Settings</div></div>
+            <div class="lbox" id="lsecbox" style="left:222px;top:63px;width:261px;height:498px"><div class="lhd">Section</div></div>
+            <div class="lbox" style="left:494px;top:63px;width:696px;height:498px;background:#fff">
+              <div style="height:34px;background:#efefef;border-bottom:1px solid #ddd;color:#777;font-size:12px;font-weight:bold;line-height:34px;padding-left:9px"><span id="lpt" style="opacity:0">User Interface</span></div>
+              <div class="abs" style="left:0;top:34px;width:696px;height:464px;overflow:hidden">
+                <div id="lform" class="abs" style="left:0;top:0;width:696px;height:640px;opacity:0">
+                  <div class="leg" style="top:16px">Main Options</div>
+                  <div id="lrows"></div>
+                  <div class="leg" style="top:256px">Interface skin</div>
+                  <div class="frow" style="top:282px;height:82px">
+                    <div class="lrad" id="lrE" style="top:34px"><i id="ldE" style="opacity:0"></i></div>
+                    <div class="lthumb" style="top:9px"><div class="abs" style="left:0;top:0;width:11px;height:64px;background:#2f3a3f"></div><div class="abs" style="left:11px;top:0;width:18px;height:64px;background:#f4f6f7;border-right:1px solid #dde3e6"></div>
+                      <div class="abs" style="left:32px;top:8px;width:26px;height:4px;background:#37beff"></div><div class="abs" style="left:32px;top:18px;width:24px;height:3px;background:#cfd6db"></div><div class="abs" style="left:32px;top:26px;width:20px;height:3px;background:#cfd6db"></div><div class="abs" style="left:32px;top:34px;width:24px;height:3px;background:#cfd6db"></div></div>
+                    <div class="lskin" style="top:14px"><b>Elastic</b><br>by Aleksander Machniak<br>License: <a>Creative Commons Attribution-ShareAlike</a></div>
+                  </div>
+                  <div class="frow" style="top:367px;height:82px">
+                    <div class="lrad" id="lrL" style="top:34px"><i id="ldL"></i></div>
+                    <div class="lthumb" style="top:9px"><div class="abs" style="left:0;top:0;width:64px;height:12px;background:#1c1c1c"></div><div class="abs" style="left:0;top:12px;width:64px;height:52px;background:#cad2d9"></div>
+                      <div class="abs" style="left:3px;top:16px;width:15px;height:44px;background:#d9ecf4"></div><div class="abs" style="left:21px;top:16px;width:40px;height:20px;background:#fff"></div><div class="abs" style="left:21px;top:39px;width:40px;height:21px;background:#c6e6f4"></div></div>
+                    <div class="lskin" style="top:14px"><b>Larry</b><br>by FLINT / Büro für Gestaltung, Switzerland<br>License: <a>Creative Commons Attribution-ShareAlike</a></div>
+                  </div>
+                  <div class="leg" style="top:470px">Browser Options</div>
+                  <div class="frow" style="top:496px">Handle popups as standard windows<div class="fchk"></div></div>
+                  <div id="lsave" style="top:546px">Save</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="lmsg"><svg viewBox="0 0 15 15"><circle cx="7.5" cy="7.5" r="7" fill="#00c050"/><path d="M4 7.8l2.4 2.3L11 5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Successfully saved</div>
+        </div>
+
+        <!-- ===== Elastic ===== -->
+        <div id="ev">
+          <div id="side">
+            <div class="abs" style="left:17px;top:12px;width:36px;height:36px;border-radius:50%;background:#e8eef2"></div>
+            <div class="si comp" style="top:60px"><b></b>Compose</div>
+            <div class="si" id="siMail" style="top:124px"><b></b>Mail</div>
+            <div class="si" style="top:188px"><b></b>Contacts</div>
+            <div class="si" id="siSet" style="top:252px;background:#3d4a50"><b></b>Settings</div>
+          </div>
+          <div id="vMail" class="abs" style="left:70px;top:0;width:1530px;height:854px;opacity:0;background:#fff">
+            <div class="col" style="left:0;width:260px"><div class="ch">Mail</div>
+              <div class="row sel"><i></i>Inbox</div><div class="row"><i></i>Drafts</div><div class="row"><i></i>Sent</div><div class="row"><i></i>Junk</div><div class="row"><i></i>Trash</div><div class="row"><i></i>Archive</div></div>
+            <div class="col" id="mlist" style="left:260px;width:570px"><div class="ch">Inbox</div></div>
+            <div class="abs" style="left:830px;top:0;width:700px;height:854px;background:#fafbfc"><div class="ch"></div>
+              <div class="abs" style="left:0;right:0;top:400px;text-align:center;color:#9aa5ab;font-size:16px">Select a message</div></div>
+          </div>
+          <div id="vSet" class="abs" style="left:70px;top:0;width:1530px;height:854px;background:#fff">
+            <div class="col" style="left:0;width:280px"><div class="ch">Settings</div>
+              <div class="row sel"><i></i>Preferences</div><div class="row"><i></i>Folders</div><div class="row"><i></i>Identities</div><div class="row"><i></i>Responses</div><div class="row"><i></i>Password</div></div>
+            <div class="col" style="left:280px;width:420px"><div class="ch"></div>
+              <div class="row sel"><i></i>User Interface</div><div class="row"><i></i>Mailbox View</div><div class="row"><i></i>Displaying Messages</div><div class="row"><i></i>Composing Messages</div>
+              <div class="row"><i></i>Contacts</div><div class="row"><i></i>Special Folders</div><div class="row"><i></i>Server Settings</div><div class="row"><i></i>Encryption</div></div>
+            <div class="abs" style="left:700px;top:0;width:830px;height:52px;border-bottom:1px solid var(--line);background:#f7f8f9;font-weight:700;font-size:16px;line-height:52px;padding-left:16px">User Interface</div>
+            <div class="abs" style="left:700px;top:52px;width:830px;height:802px">
+              <div class="sec" style="left:16px;top:22px">Main Options</div>
+              <div class="lab" style="left:16px;top:66px">Language</div><div class="sel-box" style="left:420px;top:58px;width:390px">English (US)</div>
+              <div class="lab" style="left:16px;top:106px">Time zone</div><div class="sel-box" style="left:420px;top:98px;width:390px">Auto</div>
+              <div class="lab" style="left:16px;top:146px">Time format</div><div class="sel-box" style="left:420px;top:138px;width:390px">07:30</div>
+              <div class="lab" style="left:16px;top:186px">Date format</div><div class="sel-box" style="left:420px;top:178px;width:390px">2026-10-14</div>
+              <div class="lab" style="left:16px;top:224px">Pretty dates</div><div class="tg" style="left:420px;top:226px"></div>
+              <div class="lab" style="left:16px;top:258px">Display next list entry after delete/move</div><div class="tg" style="left:420px;top:260px"></div>
+              <div class="lab" style="left:16px;top:294px">Refresh (check for new messages, etc.)</div><div class="sel-box" style="left:420px;top:286px;width:390px">every 1 minute(s)</div>
+              <div class="sec" style="left:16px;top:350px">Interface skin</div>
+              <div class="radio" style="left:22px;top:418px"><div class="dot"></div></div>
+              <div class="thumb" style="left:52px;top:398px"><div class="abs" style="left:0;top:0;width:10px;height:58px;background:#2f3a3f"></div><div class="abs" style="left:10px;top:0;width:16px;height:58px;background:#f4f6f7"></div><div class="abs" style="left:29px;top:8px;width:24px;height:4px;background:#37beff"></div><div class="abs" style="left:29px;top:18px;width:22px;height:3px;background:#cfd6db"></div><div class="abs" style="left:29px;top:26px;width:18px;height:3px;background:#cfd6db"></div></div>
+              <div class="skin" style="left:126px;top:396px"><b>Elastic</b><br>by Aleksander Machniak<br><i>License:</i> <a>Creative Commons Attribution-ShareAlike</a></div>
+              <div class="radio" style="left:22px;top:494px"></div>
+              <div class="thumb" style="left:52px;top:474px"><div class="abs" style="left:0;top:0;width:58px;height:11px;background:#1c1c1c"></div><div class="abs" style="left:0;top:11px;width:58px;height:47px;background:#cad2d9"></div><div class="abs" style="left:3px;top:15px;width:13px;height:40px;background:#d9ecf4"></div><div class="abs" style="left:19px;top:15px;width:36px;height:18px;background:#fff"></div></div>
+              <div class="skin" style="left:126px;top:472px"><b>Larry</b><br>by FLINT / Büro für Gestaltung, Switzerland<br><i>License:</i> <a>Creative Commons Attribution-ShareAlike</a></div>
+              <div class="sec" style="left:16px;top:566px">Browser Options</div>
+              <div class="lab" style="left:16px;top:606px">Handle popups as standard windows</div><div class="tg" style="left:420px;top:608px;background:#cbd2d6"></div>
+              <div id="esave" style="left:16px;top:660px">✓ Save</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="flash"></div>
+    </div>
+    <div id="ring"></div>
+    <div class="clk" id="k1"></div><div class="clk" id="k2"></div><div class="clk" id="k3"></div><div class="clk" id="k4"></div><div class="clk" id="k5"></div><div class="clk" id="k6"></div>
+    <div class="nr" id="n1">1</div><div class="nr" id="n2">2</div><div class="nr" id="n3">3</div><div class="nr" id="n4">4</div><div class="nr" id="n5">5</div>
+    <div class="nr ok" id="nok"><svg width="44" height="44" viewBox="0 0 44 44"><path d="M13 22.5l6 6 12-13" fill="none" stroke="#fff" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <svg id="cur" viewBox="0 0 34 46"><path d="M3 2 L3 38 L12 30 L18 44 L24 41 L18 28 L30 28 Z" fill="#fff" stroke="#1a1a2e" stroke-width="3" stroke-linejoin="round"/></svg>
+  </div></div>
+  </section>
+</div>
+
+<script>
+(function () {
+  const $ = (q) => document.querySelector(q);
+  const mk = (tag, cls, css, parent, html) => { const e = document.createElement(tag); if (cls) e.className = cls; if (css) e.style.cssText = css; if (html) e.innerHTML = html; parent.appendChild(e); return e; };
+  const E = "power2.out", EIO = "power2.inOut", TOTAL = 24;
+  const tl = gsap.timeline({ paused: true });
+  // laikai (sekundės) — tie patys garsas/build_audio.py
+  const K = { k1: 3.1, set: 3.25, k2: 5.2, k3: 6.9, scroll: 8.7, k4: 11.0, k5: 12.6, msg: 12.9, reload: 15.0, elastic: 15.5, ok: 16.6, k6: 19.6 };
+
+  // ---------- Larry turinys
+  const IC = {
+    mon: '<rect x="2" y="3" width="14" height="10" rx="1" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M6 16h6M9 13v3" stroke="currentColor" stroke-width="1.8"/>',
+    fold: '<path d="M1.5 4.5h5.5l1.5 1.8h8v9.2h-15z" fill="currentColor"/>',
+    pers: '<circle cx="9" cy="5.5" r="3.5" fill="currentColor"/><path d="M2.5 17c0-4 3-6.5 6.5-6.5s6.5 2.5 6.5 6.5z" fill="currentColor"/>',
+    doc: '<path d="M4 1.5h7l3.5 3.5v11.5H4z" fill="currentColor"/>',
+    key: '<rect x="1.5" y="5" width="15" height="8" rx="1" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="6" cy="9" r="1.4" fill="currentColor"/><circle cx="10" cy="9" r="1.4" fill="currentColor"/>',
+    list: '<path d="M2 3.5h3v3H2zM7 3.5h9v3H7zM2 8h3v3H2zM7 8h9v3H7zM2 12.5h3v3H2zM7 12.5h9v3H7z" fill="currentColor"/>',
+    msg: '<rect x="2" y="2" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M5 6h8M5 9h8M5 12h5" stroke="currentColor" stroke-width="1.6"/>',
+    env: '<path d="M1.5 4h15v10.5h-15z M1.5 4L9 10l7.5-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>',
+    card: '<rect x="2.5" y="1.5" width="12" height="15" rx="1" fill="currentColor"/><circle cx="8.5" cy="7" r="2.2" fill="#d9ecf4"/><path d="M5 13c0-2 1.6-3.2 3.5-3.2S12 11 12 13z" fill="#d9ecf4"/>',
+    srv: '<rect x="1.5" y="3" width="15" height="5" rx="1" fill="currentColor"/><rect x="1.5" y="10" width="15" height="5" rx="1" fill="currentColor"/>',
+    lock: '<rect x="3" y="8" width="12" height="9" rx="1.5" fill="currentColor"/><path d="M5.5 8V5.5a3.5 3.5 0 0 1 7 0V8" fill="none" stroke="currentColor" stroke-width="1.8"/>',
+    inbox: '<path d="M1.5 9.5L4 3h10l2.5 6.5v6h-15z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M1.5 9.5h4.5l1 2h4l1-2h4.5" fill="none" stroke="currentColor" stroke-width="1.6"/>',
+    pen: '<path d="M3 15l1-4 8.5-8.5 3 3L7 14z" fill="currentColor"/>',
+    trash: '<path d="M3.5 5h11l-1 11.5h-9z M2.5 3.5h13M7 1.5h4" fill="currentColor" stroke="currentColor" stroke-width="1.4"/>',
+    box: '<rect x="1.5" y="3" width="15" height="4" fill="currentColor"/><path d="M2.5 8h13v8h-13z" fill="currentColor"/><path d="M7 10.5h4" stroke="#d9ecf4" stroke-width="1.6"/>',
+  };
+  const svg = (k) => `<svg viewBox="0 0 18 18" style="color:#5f8ea2">${IC[k]}</svg>`;
+  const SETR = [["Preferences", "mon", 1], ["Folders", "fold"], ["Identities", "pers"], ["Responses", "doc"], ["Password", "key"]];
+  SETR.forEach(([t, ic, s], i) => mk("div", "lr" + (s ? " sel" : ""), "", $("#lsetbox"), svg(ic) + t).id = "lsr" + i);
+  const SECR = [["User Interface", "mon"], ["Mailbox View", "list"], ["Displaying Messages", "msg"], ["Composing Messages", "env"], ["Contacts", "card"], ["Special Folders", "fold"], ["Server Settings", "srv"], ["Encryption", "lock"]];
+  SECR.forEach(([t, ic], i) => mk("div", "lr", "", $("#lsecbox"), svg(ic) + t).id = "lsc" + i);
+  const FOLD = [["Inbox", "inbox", "3", 1], ["Drafts", "pen"], ["Sent", "env"], ["Junk", "fold", "7"], ["Trash", "trash"], ["Archive", "box"], ["Tėvų komitetas", "fold"], ["Projektai", "fold"]];
+  FOLD.forEach(([t, ic, b, s]) => { const r = mk("div", "lr" + (s ? " sel" : ""), "", $("#lfold"), svg(ic) + (b ? `<b style="font-weight:bold">${t}</b>` : t)); if (b) mk("span", "bdg", s ? "background:#0c4d65" : "", r, b); });
+  const MSG = [["Tėvų susirinkimas ketvirtadienį", "Raštinė", "Today 13:21", "12 KB", 1], ["Ugdymo planas 2026–2027", "Direktoriaus pavaduotoja", "Today 12:59", "48 KB", 0, 1],
+    ["Valgiaraštis spaliui", "Valgykla", "Today 10:45", "18 KB", 1], ["Pamokų tvarkaraščio pakeitimai", "Raštinė", "Today 09:27", "23 KB"],
+    ["Dėl ekskursijos į Trakus", "Klasės vadovė", "Yesterday 16:02", "9 KB"], ["Mokytojų tarybos posėdis", "Direktorius", "Yesterday 11:40", "31 KB"],
+    ["Bibliotekos naujienos", "Biblioteka", "Mon 14:08", "15 KB"], ["Konkursas „Mano mokykla“", "Švietimo skyrius", "Mon 09:15", "70 KB"], ["Atnaujinti dokumentai", "Raštinė", "Fri 15:30", "38 KB"]];
+  MSG.forEach(([s, f, d, z, u, sel]) => mk("div", "mrow" + (sel ? " sel" : ""), "", $("#lmsgs"),
+    `<span style="left:30px;color:${sel ? "#fff" : "#bbb"}">•</span><span style="left:42px">${u ? `<b>${s}</b>` : s}</span><span style="left:560px">${u ? `<b>${f}</b>` : f}</span><span style="left:760px">${u ? `<b>${d}</b>` : d}</span><span style="left:900px">${z}</span>`));
+  const TB = [["Refresh", 8, '<path d="M4 8h15l-4-4M22 16H7l4 4" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>'],
+    ["Compose", 70, '<path d="M2 7h17v13H2z M2 7l8.5 7L19 7" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M21 1v7M17.5 4.5h7" stroke="currentColor" stroke-width="2.2"/>'],
+    ["Reply", 158, '<circle cx="15" cy="7" r="4.5" fill="currentColor"/><path d="M7 23c0-5 3.5-8 8-8s8 3 8 8z" fill="currentColor"/><path d="M8 3L3 7l5 4" fill="none" stroke="currentColor" stroke-width="2.2"/>'],
+    ["Reply all", 222, '<circle cx="10" cy="7" r="4" fill="currentColor"/><circle cx="18" cy="8" r="3.5" fill="currentColor"/><path d="M3 23c0-5 3-8 7-8s7 3 7 8zM14 23c0-4 2-7 5-7s5 3 5 7z" fill="currentColor"/>'],
+    ["Forward", 289, '<path d="M2 8h16v13H2z M2 8l8 6.5L18 8" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/><path d="M15 4h9l-3-3m3 3l-3 3" fill="none" stroke="currentColor" stroke-width="2.2"/>'],
+    ["Delete", 353, '<path d="M5 7h14l-1.5 16h-11z M3 5h18M9 2h6" fill="currentColor" stroke="currentColor" stroke-width="2"/>'],
+    ["Junk", 414, '<path d="M2 6h7l2 2h11v14H2z" fill="currentColor"/>'],
+    ["Archive", 475, '<rect x="2" y="3" width="20" height="5" fill="currentColor"/><path d="M3.5 9.5h17V22h-17z" fill="currentColor"/>'],
+    ["Mark", 536, '<path d="M3 22l1.5-5 12-12 3.5 3.5-12 12z" fill="currentColor"/>'],
+    ["More", 597, '<circle cx="4" cy="14" r="2.6" fill="currentColor"/><circle cx="12" cy="14" r="2.6" fill="currentColor"/><circle cx="20" cy="14" r="2.6" fill="currentColor"/>']];
+  TB.forEach(([t, x, p]) => mk("div", "tbtn", `left:${x}px`, $("#ltools"), `<svg viewBox="0 0 24 24" style="color:#6d7b83">${p}</svg>${t}`));
+  const FR = [["Language", "s", "English (US)", 225], ["Time zone", "s", "Auto", 225], ["Time format", "s", "07:30", 110], ["Date format", "s", "2026-10-14", 110],
+    ["Pretty dates", "c"], ["Display next list entry after delete/move", "c"], ["Refresh (check for new messages, etc.)", "s", "every 1 minute(s)", 140]];
+  FR.forEach(([t, k, v, wd], i) => mk("div", "frow", `top:${40 + i * 29}px`, $("#lrows"), t + (k === "s" ? `<div class="fsel" style="width:${wd}px">${v}</div>` : '<div class="fchk on"></div>')));
+  // Elastic ikonos
+  const EIC = { Inbox: "inbox", Drafts: "pen", Sent: "env", Junk: "fold", Trash: "trash", Archive: "box", Preferences: "mon", Folders: "fold", Identities: "pers", Responses: "doc",
+    Password: "key", "User Interface": "mon", "Mailbox View": "list", "Displaying Messages": "msg", "Composing Messages": "env", Contacts: "card", "Special Folders": "fold", "Server Settings": "srv", Encryption: "lock" };
+  document.querySelectorAll("#ev .row").forEach((r) => { const k = EIC[r.textContent.trim()]; if (k) r.querySelector("i").outerHTML = `<svg viewBox="0 0 18 18" style="position:absolute;left:14px;top:10px;width:18px;height:18px;color:#45535a">${IC[k].replace(/#d9ecf4/g, "#fff")}</svg>`; });
+  const SB = { Compose: '<path d="M4 18l1.3-4.6L15.5 3.2l3.3 3.3L8.6 16.7z" fill="currentColor"/><path d="M3 20.5h16" stroke="currentColor" stroke-width="1.8"/>',
+    Mail: '<path d="M2 5h18v12H2z M2 5l9 7 9-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>',
+    Contacts: '<rect x="4" y="2" width="15" height="18" rx="1.5" fill="currentColor"/><circle cx="11.5" cy="9" r="2.6" fill="#2f3a3f"/><path d="M7.5 16c0-2.4 1.8-3.8 4-3.8s4 1.4 4 3.8z" fill="#2f3a3f"/>',
+    Settings: '<path fill="currentColor" d="M9.3 1h3.4l.5 2.8 2 .9 2.4-1.6 2.4 2.4-1.6 2.4.9 2 2.8.5v3.4l-2.8.5-.9 2 1.6 2.4-2.4 2.4-2.4-1.6-2 .9-.5 2.8H9.3l-.5-2.8-2-.9-2.4 1.6-2.4-2.4 1.6-2.4-.9-2L0 12.7V9.3l2.8-.5.9-2-1.6-2.4 2.4-2.4 2.4 1.6 2-.9z"/><circle cx="11" cy="11" r="3.4" fill="#2f3a3f"/>' };
+  document.querySelectorAll("#ev .si").forEach((r) => { const k = SB[r.textContent.trim()]; r.querySelector("b").outerHTML = `<svg viewBox="0 0 22 22" style="display:block;margin:11px auto 5px;width:24px;height:24px">${k}</svg>`; });
+  // Elastic pašto sąrašas
+  for (let i = 0; i < 12; i++) mk("div", "ml", "", $("#mlist"), `<span style="top:16px;width:${140 + (i * 37) % 120}px;background:#9aa5ab"></span><span style="top:36px;width:${260 + (i * 53) % 200}px"></span>`);
+
+  // ---------- koordinatės: L — Larry vietiniai px, EL — Elastic vietiniai px → kadro taškai (kamera 1:1)
+  const L = (x, y) => [120 + 1.4 * x, 104 + 1.4 * y];
+  const EL = (x, y) => [120 + 1.05 * x, 104 + 1.05 * y];
+  // kamera: s — mastelis, f — taškas, kuris atsiduria kadro centre; langas niekada nesitraukia nuo kraštų
+  const cam = (s, f, at, d) => { const cl = (v, a, b) => Math.max(a, Math.min(b, v));
+    tl.to("#cam", { scale: s, x: cl(960 - s * f[0], 1800 - 1800 * s, 120 - 120 * s), y: cl(540 - s * f[1], 1000 - 1000 * s, 40 - 40 * s), duration: d || 1.2, ease: EIO }, at); };
+  const cur = $("#cur");
+  const move = (p, at, d) => tl.to(cur, { x: p[0] - 3, y: p[1] - 2, duration: d || 1.0, ease: EIO }, at);
+  const click = (id, p, at) => { tl.set(id, { left: p[0], top: p[1] }, 0);
+    tl.fromTo(id, { opacity: 0.9, scale: 0.4 }, { opacity: 0, scale: 1.6, duration: 0.5, ease: "power1.out", immediateRender: false }, at);
+    tl.to(cur, { scale: 0.86, duration: 0.08, yoyo: true, repeat: 1 }, at); };
+  const badge = (id, p, at, out) => { tl.set(id, { left: p[0], top: p[1] }, 0);
+    tl.fromTo(id, { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.35, ease: "back.out(2)", immediateRender: false }, at + 0.05);
+    tl.to(id, { opacity: 0, scale: 0.8, duration: 0.3 }, out); };
+
+  tl.set("#cam", { scale: 1, x: 0, y: 0 }, 0);
+  tl.fromTo("#bg", { scale: 1.0 }, { scale: 1.03, duration: TOTAL, ease: "none" }, 0);
+  tl.fromTo("#drift", { scale: 1.0 }, { scale: 1.012, duration: TOTAL, ease: "none", transformOrigin: "50% 50%" }, 0);
+  tl.fromTo("#win", { opacity: 0, y: 36 }, { opacity: 1, y: 0, duration: 0.8, ease: E }, 0.15);
+  tl.fromTo("#wm", { opacity: 0 }, { opacity: 0.9, duration: 0.6, ease: E }, 0.3);
+  tl.to("#wm", { opacity: 0, duration: 0.4 }, 1.3);
+  tl.to("#wm", { opacity: 0.9, duration: 0.6 }, 14.8);
+  tl.to("#wm", { opacity: 0, duration: 0.5 }, TOTAL - 0.8);
+  tl.set(cur, { x: 960, y: 640 }, 0);
+  tl.fromTo(cur, { opacity: 0 }, { opacity: 1, duration: 0.4, immediateRender: false }, 1.0);
+
+  // 1 — viršuje dešinėje „Settings“
+  const pSet = L(1124, 46);
+  cam(1.32, L(980, 120), 1.3, 1.4);
+  move(pSet, 1.5, 1.4); click("#k1", pSet, K.k1); badge("#n1", [pSet[0] - 70, pSet[1] + 54], K.k1, K.k2);
+  tl.to("#tbMail", { backgroundColor: "rgba(44,44,44,0)", color: "#dddddd", duration: 0.12 }, K.set);
+  tl.to("#tbSet", { backgroundColor: "#2c2c2c", color: "#20a6fb", duration: 0.12 }, K.set);
+  tl.to("#lMail", { opacity: 0, duration: 0.25 }, K.set); tl.to("#lSet", { opacity: 1, duration: 0.25 }, K.set);
+  cam(1.18, L(330, 260), 3.6, 1.3);
+
+  // 2 — „Preferences“
+  const pPref = L(80, 69 + 63 + 34 + 14);
+  move(pPref, 3.9, 1.1); click("#k2", pPref, K.k2); badge("#n2", [L(190, 0)[0], pPref[1]], K.k2, K.k3);
+  tl.to("#lsr0", { backgroundColor: "#b6d9e8", duration: 0.12, yoyo: true, repeat: 1 }, K.k2);
+
+  // 3 — „User Interface“
+  const pUI = L(300, 69 + 63 + 34 + 14);
+  move(pUI, 5.6, 1.0); click("#k3", pUI, K.k3); badge("#n3", [L(462, 0)[0], pUI[1]], K.k3, K.k4);
+  tl.to("#lsc0", { backgroundColor: "#c7e3ef", color: "#0c4d65", fontWeight: "bold", boxShadow: "inset 3px 0 0 #4f8aa3", duration: 0.15 }, K.k3 + 0.05);
+  tl.to("#lpt", { opacity: 1, duration: 0.2 }, K.k3 + 0.2);
+  tl.fromTo("#lform", { opacity: 0 }, { opacity: 1, duration: 0.35, ease: E }, K.k3 + 0.25);
+
+  // pereinam prie „Interface skin“: kamera į turinio sritį, turinys nuslenka žemyn
+  cam(1.45, L(800, 470), 7.8, 1.5);
+  move(L(760, 330), 7.9, 0.8);
+  tl.to("#lform", { y: -170, duration: 0.9, ease: EIO }, K.scroll);
+
+  // 4 — „Elastic“
+  const pE = L(494 + 23 + 7, 69 + 63 + 34 + 282 + 41 - 170);
+  move(pE, 9.7, 1.1); click("#k4", pE, K.k4); badge("#n4", L(494 + 13 + 420, 166 + 282 + 41 - 170), K.k4, K.k5);
+  tl.to("#ldL", { opacity: 0, duration: 0.1 }, K.k4 + 0.05); tl.to("#ldE", { opacity: 1, duration: 0.1 }, K.k4 + 0.05);
+
+  // 5 — „Save“
+  const pS = L(494 + 15 + 28, 69 + 63 + 34 + 546 + 12 - 170);
+  move(pS, 11.4, 1.0); click("#k5", pS, K.k5); badge("#n5", [pS[0] + 82, pS[1]], K.k5, K.reload);
+  tl.to("#lsave", { backgroundColor: "#505050", duration: 0.1, yoyo: true, repeat: 1 }, K.k5);
+  tl.fromTo("#lmsg", { opacity: 0, y: 8 }, { opacity: 1, y: 0, duration: 0.3, ease: E }, K.msg);
+  cam(1.0, [960, 540], 13.4, 1.3);
+
+  // persikrovimas į Elastic
+  tl.to("#rl", { rotation: 360, duration: 0.9, ease: "power1.inOut", transformOrigin: "50% 50%" }, K.reload - 0.2);
+  tl.to("#flash", { opacity: 1, duration: 0.3, ease: "power1.in" }, K.reload);
+  tl.set("#lv", { opacity: 0 }, K.reload + 0.32); tl.set("#ev", { opacity: 1 }, K.reload + 0.32);
+  tl.to("#flash", { opacity: 0, duration: 0.45, ease: "power1.out" }, K.elastic);
+  tl.set(cur, { x: EL(1000, 600)[0], y: EL(1000, 600)[1] }, K.reload + 0.3);
+
+  // patvirtinimas: pasirinkta „Elastic“
+  const rg = EL(70 + 700 + 6, 52 + 386);
+  tl.set("#ring", { left: rg[0], top: rg[1], width: 610 * 1.05, height: 74 * 1.05 }, 0);
+  tl.fromTo("#ring", { opacity: 0, scale: 1.04 }, { opacity: 1, scale: 1, duration: 0.5, ease: E, immediateRender: false }, K.ok);
+  tl.to("#ring", { opacity: 0, duration: 0.4 }, K.ok + 2.4);
+  const pOk = EL(70 + 700 + 610 + 36, 52 + 386 + 37);
+  tl.set("#nok", { left: pOk[0], top: pOk[1] }, 0);
+  tl.fromTo("#nok", { opacity: 0, scale: 0.4 }, { opacity: 1, scale: 1, duration: 0.4, ease: "back.out(2)", immediateRender: false }, K.ok + 0.3);
+  tl.to("#nok", { opacity: 0, duration: 0.3 }, K.ok + 2.4);
+
+  // pabaiga: atidarom paštą naujame vaizde
+  const pMail = EL(35, 124 + 32);
+  move(pMail, 17.9, 1.4); click("#k6", pMail, K.k6);
+  tl.to("#siSet", { backgroundColor: "rgba(61,74,80,0)", duration: 0.12 }, K.k6 + 0.1); tl.to("#siMail", { backgroundColor: "#3d4a50", duration: 0.12 }, K.k6 + 0.1);
+  tl.to("#vSet", { opacity: 0, duration: 0.3 }, K.k6 + 0.15); tl.to("#vMail", { opacity: 1, duration: 0.3 }, K.k6 + 0.15);
+  move(EL(900, 560), K.k6 + 0.6, 1.6);
+  tl.to(cur, { opacity: 0, duration: 0.4 }, 22.4);
+  tl.to("#win", { opacity: 0, y: -10, duration: 0.6, ease: "power1.in" }, TOTAL - 0.7);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["main"] = tl;
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,199 @@
+1
+00:00:00,600 --> 00:00:02,847
+All caps on a school website.
+
+2
+00:00:03,131 --> 00:00:04,428
+Looks like a detail.
+
+3
+00:00:04,478 --> 00:00:06,980
+Now multiply it by a thousand schools.
+
+4
+00:00:09,650 --> 00:00:16,564
+Every school has the same duties: accessibility, data protection, security, and rules that keep changing.
+
+5
+00:00:17,046 --> 00:00:20,967
+Most face them alone, with their own budget and their own contractor.
+
+6
+00:00:21,017 --> 00:00:23,089
+So quality comes down to chance.
+
+7
+00:00:25,650 --> 00:00:28,965
+Cleverphant is shared digital infrastructure for schools.
+
+8
+00:00:29,121 --> 00:00:31,357
+What people see is the website.
+
+9
+00:00:31,641 --> 00:00:38,313
+Underneath is everything that keeps it right, from one design system to compliance and support, shared by every school.
+
+10
+00:00:38,363 --> 00:00:40,447
+A new school simply plugs in.
+
+11
+00:00:43,150 --> 00:00:48,543
+Because every school runs on the same system, they all get the same benefits, and the same bugs.
+
+12
+00:00:48,699 --> 00:00:51,041
+But it takes just one school to notice.
+
+13
+00:00:51,091 --> 00:00:53,187
+Fixed once, fixed for all.
+
+14
+00:00:55,650 --> 00:00:57,723
+Ideas travel the same way.
+
+15
+00:00:57,810 --> 00:01:00,314
+A curious school leader brings a need.
+
+16
+00:01:00,364 --> 00:01:02,402
+Their school becomes the pilot.
+
+17
+00:01:02,791 --> 00:01:06,988
+When the data shows it works, it becomes the standard for every school.
+
+18
+00:01:09,650 --> 00:01:11,665
+And it works from the top, too.
+
+19
+00:01:11,880 --> 00:01:20,013
+A municipality or a ministry publishes a new rule or a campaign once, and it appears on every school website at the same time.
+
+20
+00:01:22,650 --> 00:01:26,336
+A small village school gets what a large city school gets.
+
+21
+00:01:26,551 --> 00:01:29,749
+A family changing schools finds a familiar place.
+
+22
+00:01:30,138 --> 00:01:34,174
+One design system underneath; the face stays the school's own.
+
+23
+00:01:34,224 --> 00:01:35,289
+Not identical.
+
+24
+00:01:35,339 --> 00:01:36,460
+Equally good.
+
+25
+00:01:39,150 --> 00:01:41,120
+Change starts with details.
+
+26
+00:01:41,170 --> 00:01:43,824
+Being small is no excuse to look away.
+
+27
+00:01:44,038 --> 00:01:51,149
+Stop writing in capitals, stop stretching text, stop hiding information in images, get cookie consent right.
+
+28
+00:01:51,236 --> 00:01:53,634
+That's our Trojan elephant, in the good sense.
+
+29
+00:01:53,790 --> 00:02:05,151
+Once it works everywhere, every next step lands on every school: live tables, whistleblower channels, consultation booking, surveys, event calendars, update subscriptions.
+
+30
+00:02:07,650 --> 00:02:09,827
+And we keep asking: what if?
+
+31
+00:02:09,983 --> 00:02:14,808
+What if a teacher's Word file became a finished article, and she just clicked approve?
+
+32
+00:02:15,289 --> 00:02:18,639
+What if documents named, dated and filed themselves?
+
+33
+00:02:18,923 --> 00:02:23,039
+What if the website noticed what's outdated, and asked you once a month?
+
+34
+00:02:23,254 --> 00:02:26,046
+What if a fix was ready before you saw the problem?
+
+35
+00:02:26,435 --> 00:02:28,428
+None of this needs a new website.
+
+36
+00:02:28,478 --> 00:02:31,294
+Each idea is an app on the same foundation.
+
+37
+00:02:31,508 --> 00:02:34,545
+One school pilots it, every school gets it.
+
+38
+00:02:37,150 --> 00:02:38,295
+And AI?
+
+39
+00:02:38,345 --> 00:02:39,791
+Not another chatbot.
+
+40
+00:02:40,006 --> 00:02:42,312
+AI that quietly keeps things in order.
+
+41
+00:02:42,362 --> 00:02:44,319
+Because AI loves order.
+
+42
+00:02:46,650 --> 00:02:51,845
+What works in one school works in a municipality, a region, a whole country.
+
+43
+00:02:52,129 --> 00:02:56,245
+Schools can be added quickly, while costs grow far more slowly.
+
+44
+00:02:56,460 --> 00:02:57,952
+Not a promise of cheap.
+
+45
+00:02:58,108 --> 00:02:59,600
+The logic of scale.
+
+46
+00:03:02,150 --> 00:03:04,677
+We have walked this road for fifteen years.
+
+47
+00:03:04,727 --> 00:03:12,674
+Hundreds of institutions, whole municipalities on one standard, with content audits, proven onboarding and a training platform.
+
+48
+00:03:13,156 --> 00:03:14,845
+Built in a small country.
+
+49
+00:03:15,129 --> 00:03:16,343
+Ready for yours.
+
+50
+00:03:16,732 --> 00:03:18,444
+Let's talk about your region.

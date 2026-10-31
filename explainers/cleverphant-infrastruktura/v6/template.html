@@ -1,0 +1,526 @@
+<!doctype html>
+<html lang="en" data-resolution="landscape">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<!--
+  Cleverphant explainer v6 (EN). GENERUOJAMA iš v6/template.html per v6/build.py — taisyti šabloną, ne v6.html.
+  Ašis (Eimantas 2026-10-12): parodyti, kaip lengvai viskas plečiasi — banga „viena → visos“ kartojasi per visą filmą.
+  Tonas „Ramybė“: be atšokimų, lengvumas = jokio darbo kiekvienoje mokykloje atskirai, ne greitis.
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=block" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+  :root { --blue:#3363ab; --teal:#3ab0b0; --pink:#f3a8c4; --lav:#c6b8db; --sky:#d0deec; --text:#1a1a2e; --text2:#475569; --red:#ef4444; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:#f4f6fa; }
+  #root { position:relative; width:1920px; height:1080px; font-family:Inter, system-ui, sans-serif; color:var(--text); overflow:hidden; }
+  #bg { position:absolute; left:-40px; top:-40px; width:2000px; height:1160px; background:
+      radial-gradient(circle 430px at 88% 6%, rgba(255,255,255,.85) 0 99%, rgba(255,255,255,0) 100%),
+      radial-gradient(circle 190px at 3% 95%, rgba(199,185,219,.34) 0 99%, rgba(199,185,219,0) 100%),
+      radial-gradient(circle 78px at 93% 88%, rgba(243,168,196,.50) 0 99%, rgba(243,168,196,0) 100%),
+      linear-gradient(160deg, #eef1f8 0%, #f4f6fa 42%, #faf9fb 100%); }
+  .scene { position:absolute; left:0; top:0; width:1920px; height:1080px; opacity:0; }
+  .abs { position:absolute; }
+  .h { position:absolute; left:120px; right:120px; top:92px; text-align:center; font-size:60px; font-weight:700; letter-spacing:-1.4px; line-height:1.12; opacity:0; }
+  .h em { font-style:normal; color:var(--blue); }
+  .site { position:absolute; background:#fff; border-radius:14px; overflow:hidden; box-shadow:0 1px 3px rgba(0,0,0,.05), 0 10px 32px rgba(30,40,80,.10); border:3px solid rgba(0,0,0,0); }
+  .site .nav { height:14%; }
+  .site .hd { height:9%; width:58%; margin:9% 0 0 9%; border-radius:4px; background:#2b3245; opacity:.85; }
+  .site .ln { height:5%; margin:6% 0 0 9%; border-radius:3px; background:#e2e8f0; }
+  .badge { position:absolute; width:40px; height:40px; border-radius:50%; color:#fff; font:800 24px/40px Inter, sans-serif; text-align:center; top:-14px; right:-14px; opacity:0; box-shadow:0 3px 10px rgba(0,0,0,.15); }
+  .badge.err { background:var(--red); } .badge.ok { background:var(--teal); }
+  .wrap { position:absolute; }
+  .chip { position:absolute; padding:18px 30px; border-radius:999px; background:#fff; font-size:30px; font-weight:600; box-shadow:0 1px 3px rgba(0,0,0,.05), 0 8px 24px rgba(30,40,80,.08); white-space:nowrap; opacity:0; }
+  .chip i { display:inline-block; width:16px; height:16px; border-radius:50%; margin-right:14px; vertical-align:2px; }
+  .foot { position:absolute; left:0; right:0; text-align:center; font-size:34px; color:var(--text2); font-weight:500; opacity:0; }
+  .browser { position:absolute; background:#fff; border-radius:22px; overflow:hidden; box-shadow:0 2px 6px rgba(0,0,0,.05), 0 24px 70px rgba(30,40,80,.14); }
+  .browser .bar { height:54px; background:#f1f5f9; display:flex; align-items:center; gap:12px; padding:0 24px; font-size:22px; font-weight:600; color:#64748b; }
+  .browser .bar b { width:15px; height:15px; border-radius:50%; background:#cbd5e1; display:block; }
+  .browser .navb { height:22px; background:var(--blue); }
+  .tile { position:absolute; width:50px; height:32px; background:#fff; border-radius:6px; opacity:0; box-shadow:0 1px 4px rgba(30,40,80,.10); }
+  .tile i { position:absolute; left:7px; top:9px; width:28px; height:6px; border-radius:2px; background:var(--red); }
+  .sym { position:absolute; opacity:0; }
+  .node { position:absolute; width:56px; height:38px; margin:-19px 0 0 -28px; background:#fff; border-radius:8px; border:3px solid #e2e8f0; box-shadow:0 2px 8px rgba(30,40,80,.10); opacity:0; }
+  .node:before { content:""; position:absolute; left:0; right:0; top:0; height:8px; background:var(--sky); border-radius:5px 5px 0 0; }
+  .step { position:absolute; bottom:120px; width:300px; border-radius:18px 18px 0 0; transform-origin:50% 100%; opacity:0; }
+  .step span { position:absolute; left:0; right:0; top:22px; text-align:center; font-size:27px; font-weight:700; color:#fff; padding:0 14px; line-height:1.2; }
+  .tag { display:inline-block; margin-top:10px; font-size:18px; font-weight:700; letter-spacing:.08em; text-transform:uppercase; padding:6px 14px; border-radius:999px; background:#eef3fb; color:var(--blue); font-style:normal; }
+  .cta { position:absolute; left:960px; padding:26px 56px; border-radius:999px; background:var(--blue); color:#fff; font-size:38px; font-weight:700; white-space:nowrap; opacity:0; box-shadow:0 12px 30px rgba(51,99,171,.30); }
+  .slab { position:absolute; left:550px; width:820px; height:66px; border-radius:16px; background:#fff; box-shadow:0 1px 3px rgba(0,0,0,.05), 0 8px 24px rgba(30,40,80,.08); font-size:30px; font-weight:600; display:flex; align-items:center; padding-left:32px; opacity:0; }
+  .slab i { width:18px; height:18px; border-radius:50%; margin-right:18px; display:block; }
+  .mini { position:absolute; width:150px; height:100px; background:#fff; border-radius:12px; box-shadow:0 1px 3px rgba(0,0,0,.05), 0 8px 22px rgba(30,40,80,.09); overflow:hidden; opacity:0; }
+  .mini .nav { height:16px; background:var(--sky); }
+  .mini .ban { position:absolute; left:0; right:0; top:16px; height:24px; background:var(--pink); opacity:0; }
+  .mini .l1 { position:absolute; left:14px; top:52px; width:90px; height:9px; border-radius:3px; background:#2b3245; opacity:.8; }
+  .mini .l2 { position:absolute; left:14px; top:72px; width:110px; height:7px; border-radius:3px; background:#e2e8f0; }
+  .lbl { position:absolute; font-size:28px; font-weight:600; color:var(--text2); white-space:nowrap; opacity:0; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="__TOTAL__" data-width="1920" data-height="1080">
+  <div id="bg" class="clip" data-start="0" data-duration="__TOTAL__" data-track-index="0"></div>
+  <audio id="vo" class="clip" src="v6/balsas/vo.wav" data-start="0" data-duration="__TOTAL__" data-track-index="2"></audio>
+
+  <!-- 0 Just a detail -->
+  <section id="c0" class="scene clip" data-start="__S0__" data-duration="__D0__" data-track-index="1">
+    <div class="h" id="c0a">Just a detail.</div>
+    <div class="h" id="c0b">Now multiply it by a <em>thousand</em>.</div>
+    <div id="c0grid" class="abs" style="left:0;top:0;width:1920px;height:1080px"></div>
+    <div class="browser" id="c0site" style="left:410px;top:270px;width:1100px;height:660px;opacity:0">
+      <div class="bar"><b></b><b></b><b></b>&nbsp;school.edu</div><div class="navb"></div>
+      <div style="padding:56px 70px 0">
+        <div style="position:relative;display:inline-block;font-size:52px;font-weight:800;letter-spacing:1px;padding:10px 18px;margin-left:-18px">
+          SCHOOL NEWS AND EVENTS
+          <div id="c0mark" style="position:absolute;left:-6px;top:-6px;right:-6px;bottom:-6px;border:5px solid var(--red);border-radius:14px;opacity:0"></div>
+        </div>
+        <div style="margin-top:40px">
+          <div style="height:18px;width:92%;background:#e2e8f0;border-radius:4px;margin-bottom:22px"></div>
+          <div style="height:18px;width:86%;background:#e2e8f0;border-radius:4px;margin-bottom:22px"></div>
+          <div style="height:18px;width:90%;background:#e2e8f0;border-radius:4px;margin-bottom:22px"></div>
+          <div style="height:18px;width:60%;background:#e2e8f0;border-radius:4px"></div>
+        </div>
+        <div style="display:flex;gap:28px;margin-top:44px">
+          <div style="width:300px;height:150px;border-radius:12px;background:var(--sky)"></div>
+          <div style="width:300px;height:150px;border-radius:12px;background:#ebe6f3"></div>
+          <div style="width:300px;height:150px;border-radius:12px;background:#fde7ef"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 1 Each school alone -->
+  <section id="c1" class="scene clip" data-start="__S1__" data-duration="__D1__" data-track-index="1">
+    <div class="h" id="c1a">Same duties. Each school <em>alone</em>.</div>
+    <div class="h" id="c1b">Quality becomes a matter of <em>chance</em>.</div>
+    <svg id="c1lines" class="abs" width="1920" height="1080" style="left:0;top:0"></svg>
+    <div id="c1chips"></div><div id="c1sites"></div>
+    <div class="foot" id="c1foot" style="top:960px">own budget · own contractor · own result</div>
+  </section>
+
+  <!-- 2 Only the surface -->
+  <section id="c2" class="scene clip" data-start="__S2__" data-duration="__D2__" data-track-index="1">
+    <div class="h" id="c2a">Shared digital <em>infrastructure</em> for schools.</div>
+    <div class="h" id="c2b">The website is only the <em>surface</em>.</div>
+    <div id="c2ring" class="abs" style="left:0;top:0;width:1920px;height:1080px">
+      <svg id="c2lines" class="abs" width="1920" height="1080" style="left:0;top:0"></svg>
+      <div id="c2sites"></div>
+    </div>
+    <div id="c2card" class="site" style="left:610px;top:250px;width:700px;height:190px;opacity:0"><div class="nav" style="background:var(--blue)"></div><div class="hd"></div><div class="ln" style="width:70%"></div><div class="ln" style="width:50%"></div></div>
+    <div id="c2surf" class="lbl" style="left:1340px;top:320px">what people see</div>
+    <div id="c2slabs"></div>
+    <img class="sym" id="c2sym" src="assets/simbolis.svg" alt="" style="left:860px;top:450px;width:200px">
+  </section>
+
+  <!-- 3 One notices -->
+  <section id="c3" class="scene clip" data-start="__S3__" data-duration="__D3__" data-track-index="1">
+    <div class="h" id="c3a">Same benefit. Same <em>bug</em>.</div>
+    <div class="h" id="c3b">One school notices. Every school is <em>fixed</em>.</div>
+    <svg id="c3net" class="abs" width="1920" height="1080" style="left:0;top:0;opacity:0"></svg>
+    <div id="c3nodes"></div>
+    <img class="sym" id="c3sym" src="assets/simbolis.svg" alt="" style="left:895px;top:543px;width:130px">
+  </section>
+
+  <!-- 4 Pilot → standard -->
+  <section id="c4" class="scene clip" data-start="__S4__" data-duration="__D4__" data-track-index="1">
+    <div class="h" id="c4a">Ideas travel the <em>same way</em>.</div>
+    <div class="h" id="c4b">Pilot. Data. <em>Standard.</em></div>
+    <svg id="c4net" class="abs" width="1920" height="1080" style="left:0;top:0;opacity:0"></svg>
+    <div id="c4nodes"></div><div id="c4ui"></div>
+    <img class="sym" id="c4sym" src="assets/simbolis.svg" alt="" style="left:895px;top:543px;width:130px">
+  </section>
+
+  <!-- 5 Publish once -->
+  <section id="c5" class="scene clip" data-start="__S5__" data-duration="__D5__" data-track-index="1">
+    <div class="h" id="c5a">Publish <em>once</em>.</div>
+    <div class="h" id="c5b">Reach <em>every school</em>.</div>
+    <div id="c5pill" class="chip" style="left:960px;top:250px;font-size:32px"><i style="background:var(--blue)"></i>Municipality / Ministry</div>
+    <div id="c5doc" class="abs" style="left:900px;top:300px;width:120px;height:86px;background:#fff;border-radius:10px;box-shadow:0 8px 20px rgba(30,40,80,.14);opacity:0">
+      <div style="height:20px;background:var(--pink);border-radius:10px 10px 0 0"></div>
+      <div style="margin:14px 14px 0;height:8px;background:#2b3245;opacity:.8;border-radius:3px;width:70px"></div>
+      <div style="margin:10px 14px 0;height:6px;background:#e2e8f0;border-radius:3px"></div></div>
+    <div id="c5bus" class="abs" style="left:240px;top:470px;width:1440px;height:4px;background:var(--pink);border-radius:2px;transform-origin:50% 50%;opacity:0"></div>
+    <div id="c5sites"></div>
+  </section>
+
+  <!-- 6 Equally good -->
+  <section id="c6" class="scene clip" data-start="__S6__" data-duration="__D6__" data-track-index="1">
+    <div class="h" id="c6a">Quality shouldn't depend on <em>size</em>.</div>
+    <div class="h" id="c6b">Not identical. <em>Equally good.</em></div>
+    <div id="c6line" class="abs" style="left:150px;top:840px;width:1620px;height:0;border-top:4px dashed var(--blue);transform-origin:0 50%;opacity:0"></div>
+    <div id="c6lab" class="abs" style="left:1520px;top:862px;font-size:26px;font-weight:600;color:var(--blue);opacity:0">shared standard</div>
+    <div id="c6sites"></div>
+    <svg id="c6fam" class="abs" width="90" height="90" viewBox="0 0 90 90" style="left:0;top:0;opacity:0">
+      <circle cx="30" cy="22" r="13" fill="#3363ab"/><rect x="12" y="38" width="36" height="44" rx="16" fill="#3363ab"/>
+      <circle cx="66" cy="40" r="10" fill="#3ab0b0"/><rect x="52" y="53" width="28" height="31" rx="12" fill="#3ab0b0"/></svg>
+  </section>
+
+  <!-- 7 Trojan elephant -->
+  <section id="c7" class="scene clip" data-start="__S7__" data-duration="__D7__" data-track-index="1">
+    <div class="h" id="c7a">Change starts with <em>details</em>.</div>
+    <div class="h" id="c7b">Every step opens the <em>next</em>.</div>
+    <div class="browser" id="c7site" style="left:360px;top:240px;width:1200px;height:660px;opacity:0">
+      <div class="bar"><b></b><b></b><b></b>&nbsp;school.edu</div><div class="navb"></div>
+      <div style="position:relative;padding:40px 64px 0;height:584px">
+        <div style="position:relative;height:70px">
+          <div id="c7capA" class="abs" style="font-size:46px;font-weight:800;letter-spacing:2px">OUR SCHOOL HISTORY</div>
+          <div id="c7capB" class="abs" style="font-size:46px;font-weight:700;opacity:0">Our school history</div>
+        </div>
+        <div style="display:flex;gap:48px;margin-top:24px">
+          <div style="position:relative;width:520px;height:250px">
+            <p id="c7jA" class="abs" style="width:330px;font-size:26px;line-height:1.55;text-align:justify;word-spacing:18px;color:#475569">The school was founded a hundred years ago and has grown together with its community.</p>
+            <p id="c7jB" class="abs" style="width:500px;font-size:26px;line-height:1.55;color:#475569;opacity:0">The school was founded a hundred years ago and has grown together with its community.</p>
+          </div>
+          <div style="position:relative;width:500px;height:250px">
+            <div id="c7imgA" class="abs" style="left:0;top:0;width:500px;height:250px;border-radius:14px;background:linear-gradient(135deg,#f3a8c4,#c6b8db);display:flex;align-items:center;justify-content:center;flex-direction:column">
+              <div style="font-size:40px;font-weight:800;color:#fff;filter:blur(.6px);transform:rotate(-3deg)">OPEN DAY</div>
+              <div style="font-size:26px;font-weight:700;color:#fff;filter:blur(.6px);transform:rotate(-3deg)">Sept 1 · 9:00 · yard</div></div>
+            <div id="c7imgB" class="abs" style="left:0;top:0;width:500px;height:250px;opacity:0">
+              <div style="height:150px;border-radius:14px;background:linear-gradient(135deg,#f3a8c4,#c6b8db)"></div>
+              <div style="margin-top:16px;font-size:28px;font-weight:700">Open day</div>
+              <div style="font-size:24px;color:#475569">September 1, 9:00, in the school yard</div></div>
+          </div>
+        </div>
+        <div id="c7cookie" class="abs" style="left:40px;right:40px;bottom:28px;background:#fff;border:2px solid #e2e8f0;border-radius:16px;padding:20px 26px;box-shadow:0 10px 30px rgba(15,23,42,.16);display:flex;align-items:center;gap:20px;opacity:0">
+          <div style="flex:1;font-size:24px;font-weight:600">This website uses cookies</div>
+          <div style="border:2px solid #1a1a2e;border-radius:8px;padding:12px 22px;font:700 18px Inter, sans-serif;letter-spacing:.04em">SETTINGS</div>
+          <div style="background:#1a1a2e;color:#fff;border-radius:8px;padding:14px 24px;font:700 18px Inter, sans-serif;letter-spacing:.04em">DECLINE</div>
+          <div style="background:#1a1a2e;color:#fff;border-radius:8px;padding:14px 24px;font:700 18px Inter, sans-serif;letter-spacing:.04em">ACCEPT</div>
+        </div>
+      </div>
+    </div>
+    <div id="c7troj" class="chip" style="left:960px;top:948px"><i style="background:var(--teal)"></i>Trojan elephant · in the good sense</div>
+    <div id="c7strip"></div><div id="c7steps"></div>
+    <img class="sym" id="c7sym" src="assets/simbolis.svg" alt="" style="left:0;top:0;width:130px">
+  </section>
+
+  <!-- 8 The logic of scale -->
+  <section id="c8" class="scene clip" data-start="__S8__" data-duration="__D8__" data-track-index="1">
+    <div class="h" id="c8a">What works in one school works <em>everywhere</em>.</div>
+    <div class="h" id="c8b">Not a promise of cheap. The logic of <em>scale</em>.</div>
+    <svg id="c8rings" class="abs" width="1920" height="1080" style="left:0;top:0"></svg>
+    <div id="c8labels"></div>
+    <svg id="c8chart" class="abs" width="1920" height="1080" style="left:0;top:0"></svg>
+    <div id="c8cl1" class="lbl" style="left:1590px;top:338px;color:var(--blue)">schools</div>
+    <div id="c8cl2" class="lbl" style="left:1590px;top:742px;color:var(--teal)">costs</div>
+  </section>
+
+  <!-- 9 Walked this road -->
+  <section id="c9" class="scene clip" data-start="__S9__" data-duration="__D9__" data-track-index="1">
+    <div class="h" id="c9a">15 years. Hundreds of <em>institutions</em>.</div>
+    <div class="h" id="c9b">Built in a small country. Ready for <em>yours</em>.</div>
+    <svg id="c9time" class="abs" width="1920" height="1080" style="left:0;top:0"></svg>
+    <div id="c9marks"></div>
+    <div id="c9grid" class="abs" style="left:0;top:0;width:1920px;height:1080px"></div>
+    <div id="c9end" class="abs" style="left:0;top:0;width:1920px;height:1080px;opacity:0">
+      <img id="c9sym" src="assets/simbolis.svg" alt="" style="position:absolute;left:850px;top:230px;width:220px">
+      <div id="c9name" style="position:absolute;left:0;right:0;top:500px;text-align:center;font-size:84px;font-weight:800;color:var(--blue);letter-spacing:-2px">Cleverphant</div>
+      <div id="c9tag" style="position:absolute;left:0;right:0;top:616px;text-align:center;font-size:42px;font-weight:500;color:var(--text2)">Shared digital infrastructure for schools.</div>
+    </div>
+    <div class="cta" id="c9cta" style="top:760px">Let's talk about your region</div>
+  </section>
+</div>
+
+<script>
+(function () {
+  /*__T__*/
+  const E = "expo.out", EIO = "power2.inOut";
+  const $ = (s) => document.querySelector(s);
+  const el = (tag, cls, css, parent, html) => { const e = document.createElement(tag); if (cls) e.className = cls;
+    if (css) e.style.cssText = css; if (html) e.innerHTML = html; parent.appendChild(e); return e; };
+  const NS = "http://www.w3.org/2000/svg";
+  const svgEl = (tag, attrs, parent) => { const e = document.createElementNS(NS, tag); for (const k in attrs) e.setAttribute(k, attrs[k]); parent.appendChild(e); return e; };
+  let seed = 7; const rnd = () => (seed = (seed * 16807) % 2147483647) / 2147483647;
+  const site = (parent, x, y, w, h, color) => { const s = el("div", "site", `left:${x}px;top:${y}px;width:${w}px;height:${h}px`, parent);
+    el("div", "nav", `background:${color}`, s); el("div", "hd", "", s); el("div", "ln", "width:76%", s); el("div", "ln", "width:68%", s); el("div", "ln", "width:52%", s); return s; };
+  const badge = (parent, kind) => el("div", "badge " + kind, "", parent, kind === "err" ? "!" : "✓");
+
+  const tl = gsap.timeline({ paused: true });
+  const t = (i, x) => T.S[i] + x;                         // scenos laikas
+  const w = (i, k) => T.S[i] + T.OFF + T.W[i][k];         // žodžio pradžia balse
+  const sent = (i, k) => T.S[i] + T.OFF + T.SENT[i][k];   // sakinio pradžia balse
+  const scene = (i) => { tl.fromTo("#c" + i, { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, t(i, 0));
+                         tl.to("#c" + i, { opacity: 0, duration: 0.5, ease: "power1.in" }, t(i, T.D[i] - 0.5)); };
+  const head = (id, at, out) => { tl.fromTo(id, { opacity: 0, y: 22 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, at);
+                                  if (out != null) tl.to(id, { opacity: 0, y: -14, duration: 0.45, ease: "power1.in" }, out); };
+  const pop = (target, at, d) => tl.fromTo(target, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: d || 0.45, ease: E }, at);
+  tl.fromTo("#bg", { x: -18, y: 0 }, { x: 18, y: -10, duration: T.TOTAL, ease: "none" }, 0);
+
+  // tūkstančio langelių tinklelis (0 ir 9 scenos)
+  function grid(parent) { const cols = 26, rows = 13, gx = 66, gy = 52, ox = 960 - (cols - 1) * gx / 2, oy = 620 - (rows - 1) * gy / 2, out = [];
+    for (let r = 0; r < rows; r++) for (let c = 0; c < cols; c++) { const x = ox + c * gx, y = oy + r * gy;
+      const tile = el("div", "tile", `left:${x - 25}px;top:${y - 16}px`, parent); const bar = el("i", "", "", tile);
+      out.push({ tile, bar, d: Math.hypot((x - 960) / gx, (y - 620) / gy) }); } return out; }
+
+  // tinklas (3 ir 4 scenos)
+  function network(svgSel, nodesSel) { const C = [960, 608], nodes = [], NET = $(svgSel);
+    [[10, 250, 150], [18, 470, 290]].forEach(([n, rx, ry], ri) => { for (let i = 0; i < n; i++) {
+      const a = -Math.PI / 2 + (i + ri * 0.5) * 2 * Math.PI / n, x = C[0] + rx * Math.cos(a), y = C[1] + ry * Math.sin(a);
+      svgEl("line", { x1: C[0], y1: C[1], x2: x, y2: y, stroke: "#cbd5e1", "stroke-width": 2 }, NET);
+      nodes.push({ nd: el("div", "node", `left:${x}px;top:${y}px`, $(nodesSel)), x, y, d: ri }); } });
+    nodes.forEach((n) => { n.dot = svgEl("circle", { cx: C[0], cy: C[1], r: 9, fill: "#3ab0b0", opacity: 0 }, NET); });
+    return { C, nodes, NET }; }
+
+  /* ===== 0 Just a detail ===== */
+  scene(0);
+  head("#c0a", t(0, 0.3), w(0, "multiply") - 0.5);
+  tl.fromTo("#c0site", { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.7, ease: E }, t(0, 0.2));
+  tl.fromTo("#c0mark", { opacity: 0, scale: 1.08 }, { opacity: 1, scale: 1, duration: 0.6, ease: E }, w(0, "caps") + 0.9);
+  tl.to("#c0site", { scale: 0.046, y: 25, duration: 1.1, ease: EIO, transformOrigin: "50% 50%" }, w(0, "multiply"));
+  tl.to("#c0site", { opacity: 0, duration: 0.3 }, w(0, "multiply") + 1.0);
+  grid($("#c0grid")).forEach((g) => tl.fromTo(g.tile, { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.5, ease: E }, w(0, "multiply") + 0.8 + g.d * 0.07));
+  head("#c0b", w(0, "multiply") - 0.1);
+
+  /* ===== 1 Each school alone ===== */
+  scene(1);
+  head("#c1a", t(1, 0.3), sent(1, 2) - 0.5);
+  const duties = [["Accessibility", "var(--blue)", "accessibility"], ["Data protection", "var(--teal)", "data protection"], ["Security", "var(--lav)", "security"], ["Changing rules", "var(--pink)", "rules"]];
+  const chipX = [330, 760, 1160, 1590], chipY = 260;
+  duties.forEach((d, i) => { const c = el("div", "chip", `left:${chipX[i]}px;top:${chipY}px`, $("#c1chips"), `<i style="background:${d[1]}"></i>${d[0]}`);
+    tl.set(c, { xPercent: -50 }, 0); pop(c, w(1, d[2]) - 0.1); });
+  const s1d = [[120, 630, 230, 190, "#3363ab"], [400, 600, 260, 220, "#3ab0b0"], [710, 650, 210, 170, "#f3a8c4"], [970, 610, 270, 210, "#c6b8db"], [1290, 640, 220, 180, "#8fb3d9"], [1560, 600, 250, 220, "#7cc7c7"]];
+  const s1 = s1d.map((d, i) => { const wr = el("div", "wrap", `left:${d[0]}px;top:${d[1]}px;width:${d[2]}px;height:${d[3]}px`, $("#c1sites"));
+    const st = site(wr, 0, 0, d[2], d[3], d[4]); const b = badge(wr, "err");
+    tl.fromTo(wr, { opacity: 0, y: 20 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, t(1, 0.9 + i * 0.14));
+    return { st, b, cx: d[0] + d[2] / 2, top: d[1] }; });
+  duties.forEach((d, i) => s1.forEach((s, j) => { const x1 = chipX[i], y1 = chipY + 72, x2 = s.cx, y2 = s.top - 6;
+    const p = svgEl("path", { d: `M${x1},${y1} C${x1},${y1 + 140} ${x2},${y2 - 140} ${x2},${y2}`, fill: "none", stroke: ["#3363ab", "#3ab0b0", "#b3a3cf", "#ec8fb3"][i], "stroke-width": 2.5, opacity: 0.55 }, $("#c1lines"));
+    const len = p.getTotalLength(); p.style.strokeDasharray = len; p.style.strokeDashoffset = len;
+    tl.to(p, { strokeDashoffset: 0, duration: 0.9, ease: EIO }, w(1, d[2]) + 0.3 + j * 0.05); }));
+  [0, 2, 3, 5].forEach((j, k) => { const at = w(1, "alone") + k * 0.4;
+    tl.fromTo(s1[j].b, { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.4, ease: E }, at);
+    tl.to(s1[j].st, { borderColor: "#ef4444", duration: 0.4 }, at); });
+  pop("#c1foot", w(1, "budget") - 0.2, 0.5);
+  head("#c1b", sent(1, 2));
+
+  /* ===== 2 Only the surface ===== */
+  scene(2);
+  head("#c2a", t(2, 0.3), w(2, "website") - 0.6);
+  const scat = [[170, 330], [1590, 300], [300, 770], [1500, 780], [760, 840], [1180, 330], [520, 300], [1680, 560]];
+  for (let i = 0; i < 8; i++) { const a = -Math.PI / 2 + i * Math.PI / 4, tx = 960 + 520 * Math.cos(a), ty = 560 + 250 * Math.sin(a);
+    const wr = el("div", "wrap", "left:0;top:0;width:150px;height:110px", $("#c2sites")); site(wr, 0, 0, 150, 110, ["#3363ab", "#3ab0b0", "#f3a8c4", "#c6b8db"][i % 4]);
+    tl.set(wr, { x: scat[i][0] - 75, y: scat[i][1] - 55, rotation: i % 2 ? 4 : -4, opacity: 0 }, 0);
+    tl.to(wr, { opacity: 1, duration: 0.5 }, t(2, 0.6 + i * 0.06));
+    tl.to(wr, { x: tx - 75, y: ty - 55, rotation: 0, duration: 1.4, ease: EIO }, t(2, 1.6 + i * 0.05));
+    const ln = svgEl("line", { x1: 960, y1: 560, x2: tx, y2: ty, stroke: "#3363ab", "stroke-width": 3, opacity: 0.35 }, $("#c2lines"));
+    const len = Math.hypot(tx - 960, ty - 560); ln.style.strokeDasharray = len; ln.style.strokeDashoffset = len;
+    tl.to(ln, { strokeDashoffset: 0, duration: 0.6, ease: E }, t(2, 3.4 + i * 0.07)); }
+  tl.fromTo("#c2sym", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.8, ease: E }, t(2, 2.8));
+  // paviršius ir sluoksniai po juo
+  tl.to("#c2ring", { opacity: 0, duration: 0.5 }, w(2, "website") - 0.7);
+  tl.to("#c2sym", { x: 30, y: 420, scale: 0.55, duration: 1.0, ease: EIO }, w(2, "website") - 0.6);
+  pop("#c2card", w(2, "website") - 0.2, 0.6);
+  head("#c2b", w(2, "website") - 0.1);
+  tl.fromTo("#c2surf", { opacity: 0, x: -10 }, { opacity: 1, x: 0, duration: 0.5, ease: E }, w(2, "website") + 0.4);
+  tl.to(["#c2card", "#c2surf"], { y: -16, duration: 0.8, ease: EIO }, w(2, "Underneath"));
+  [["Compliance", "var(--blue)", "compliance"], ["Training", "var(--teal)", "training"], ["Support", "var(--lav)", "support"], ["Network", "var(--pink)", "network"]].forEach((s, i) => {
+    const sl = el("div", "slab", `top:${480 + i * 84}px`, $("#c2slabs"), `<i style="background:${s[1]}"></i>${s[0]}`);
+    tl.fromTo(sl, { opacity: 0, y: -14 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, w(2, s[2]) - 0.1); });
+
+  /* ===== 3 One notices ===== */
+  scene(3);
+  head("#c3a", t(3, 0.3), w(3, "one school") - 0.6);
+  const N3 = network("#c3net", "#c3nodes");
+  tl.to("#c3net", { opacity: 1, duration: 0.6 }, t(3, 0.5));
+  tl.fromTo("#c3sym", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.6, ease: E }, t(3, 0.5));
+  N3.nodes.forEach((n) => tl.fromTo(n.nd, { opacity: 0 }, { opacity: 1, duration: 0.4 }, t(3, 0.7 + n.d * 0.25)));
+  const pulse = (N, t0, color, border, bg) => N.nodes.forEach((n) => { const at = t0 + n.d * 0.35;
+    tl.set(n.dot, { attr: { cx: N.C[0], cy: N.C[1], fill: color }, opacity: 1 }, at);
+    tl.to(n.dot, { attr: { cx: n.x, cy: n.y }, duration: 0.9, ease: "power2.out" }, at);
+    tl.to(n.dot, { opacity: 0, duration: 0.25 }, at + 0.8);
+    tl.to(n.nd, { borderColor: border, backgroundColor: bg, duration: 0.3 }, at + 0.8); });
+  pulse(N3, w(3, "benefits") - 0.4, "#3ab0b0", "#3ab0b0", "#ffffff");
+  N3.nodes.forEach((n) => tl.to(n.nd, { borderColor: "#e2e8f0", duration: 0.4 }, w(3, "bugs") - 0.4 + n.d * 0.2));
+  pulse(N3, w(3, "bugs") - 0.1, "#ef4444", "#ef4444", "#fef2f2");
+  const spot3 = N3.nodes[14];
+  const ring3 = svgEl("circle", { cx: spot3.x, cy: spot3.y, r: 46, fill: "none", stroke: "#3363ab", "stroke-width": 5, opacity: 0 }, N3.NET);
+  tl.fromTo(ring3, { opacity: 0, attr: { r: 70 } }, { opacity: 1, attr: { r: 46 }, duration: 0.6, ease: E }, w(3, "one school"));
+  head("#c3b", w(3, "one school") - 0.1);
+  const sig = svgEl("circle", { cx: spot3.x, cy: spot3.y, r: 10, fill: "#3363ab", opacity: 0 }, N3.NET);
+  tl.set(sig, { opacity: 1 }, w(3, "one school") + 0.6);
+  tl.to(sig, { attr: { cx: N3.C[0], cy: N3.C[1] }, duration: 0.9, ease: EIO }, w(3, "one school") + 0.6);
+  tl.to(sig, { opacity: 0, duration: 0.2 }, w(3, "one school") + 1.45);
+  const wave3 = svgEl("circle", { cx: N3.C[0], cy: N3.C[1], r: 60, fill: "none", stroke: "#3ab0b0", "stroke-width": 6, opacity: 0 }, N3.NET);
+  tl.fromTo(wave3, { opacity: 0.9, attr: { r: 60 } }, { opacity: 0, attr: { r: 560 }, duration: 1.8, ease: "power1.out" }, w(3, "Fixed once"));
+  N3.nodes.forEach((n) => tl.to(n.nd, { borderColor: "#3ab0b0", backgroundColor: "#ffffff", duration: 0.4 }, w(3, "Fixed once") + 0.2 + n.d * 0.5));
+  tl.to(ring3, { attr: { stroke: "#3ab0b0" }, duration: 0.4 }, w(3, "Fixed once") + 0.7);
+
+  /* ===== 4 Pilot → standard ===== */
+  scene(4);
+  head("#c4a", t(4, 0.3), w(4, "standard") - 0.6);
+  const N4 = network("#c4net", "#c4nodes");
+  tl.to("#c4net", { opacity: 1, duration: 0.5 }, t(4, 0.4));
+  tl.fromTo("#c4sym", { opacity: 0 }, { opacity: 1, duration: 0.5 }, t(4, 0.4));
+  N4.nodes.forEach((n) => tl.fromTo(n.nd, { opacity: 0 }, { opacity: 1, duration: 0.35 }, t(4, 0.5)));
+  const sp = N4.nodes[10 + 13];                         // kairėje apačioje
+  const ring4 = svgEl("circle", { cx: sp.x, cy: sp.y, r: 46, fill: "none", stroke: "#3363ab", "stroke-width": 5, opacity: 0 }, N4.NET);
+  tl.fromTo(ring4, { opacity: 0, attr: { r: 70 } }, { opacity: 1, attr: { r: 46 }, duration: 0.6, ease: E }, w(4, "curious"));
+  tl.to(sp.nd, { borderColor: "#3363ab", duration: 0.4 }, w(4, "curious"));
+  const UI = $("#c4ui"), ux = sp.x - 330, uy = sp.y - 300;
+  const pil = el("div", "chip", `left:${ux}px;top:${uy}px;font-size:26px;padding:12px 22px`, UI, `<i style="background:var(--blue)"></i>Pilot`);
+  pop(pil, w(4, "pilot") - 0.1);
+  const bars = [[40, 70], [86, 110], [132, 150]].map(([dx, h], k) => { const b = el("div", "abs", `left:${ux + dx}px;top:${uy + 230 - h}px;width:30px;height:${h}px;border-radius:6px 6px 0 0;background:var(--teal);transform-origin:50% 100%;opacity:0`, UI);
+    tl.fromTo(b, { opacity: 0, scaleY: 0 }, { opacity: 1, scaleY: 1, duration: 0.6, ease: E }, w(4, "data") + k * 0.18); return b; });
+  const dl = el("div", "lbl", `left:${ux + 62}px;top:${uy + 242}px;font-size:24px`, UI, "data");
+  tl.fromTo(dl, { opacity: 0 }, { opacity: 1, duration: 0.4 }, w(4, "data") + 0.5);
+  head("#c4b", w(4, "standard") - 0.1);
+  const wave4 = svgEl("circle", { cx: sp.x, cy: sp.y, r: 50, fill: "none", stroke: "#3363ab", "stroke-width": 6, opacity: 0 }, N4.NET);
+  tl.fromTo(wave4, { opacity: 0.85, attr: { r: 50 } }, { opacity: 0, attr: { r: 1300 }, duration: 2.6, ease: "power1.out" }, w(4, "standard"));
+  N4.nodes.forEach((n) => tl.to(n.nd, { borderColor: "#3363ab", duration: 0.4 }, w(4, "standard") + 0.15 + Math.hypot(n.x - sp.x, n.y - sp.y) / 1300 * 2.2));
+
+  /* ===== 5 Publish once ===== */
+  scene(5);
+  head("#c5a", t(5, 0.3), w(5, "every school") - 0.6);
+  tl.set("#c5pill", { xPercent: -50 }, 0);
+  const minis = [];
+  for (let r = 0; r < 3; r++) for (let c = 0; c < 8; c++) { const x = 290 + c * 192, y = 560 + r * 140;
+    const m = el("div", "mini", `left:${x - 75}px;top:${y - 50}px`, $("#c5sites")); el("div", "nav", "", m); const ban = el("div", "ban", "", m); el("div", "l1", "", m); el("div", "l2", "", m);
+    minis.push({ m, ban, d: Math.abs(x - 960) });
+    tl.fromTo(m, { opacity: 0 }, { opacity: 1, duration: 0.4 }, t(5, 0.5 + (r * 8 + c) * 0.02)); }
+  pop("#c5pill", w(5, "municipality") - 0.1, 0.5);
+  tl.fromTo("#c5doc", { opacity: 0, y: 0, scale: 0.7 }, { opacity: 1, y: 40, scale: 1, duration: 0.6, ease: E }, w(5, "publishes"));
+  tl.to("#c5doc", { y: 110, opacity: 0, duration: 0.6, ease: "power2.in" }, w(5, "once") - 0.5);
+  const v5 = el("div", "abs", "left:958px;top:330px;width:4px;height:140px;background:var(--pink);transform-origin:50% 0;opacity:0", $("#c5sites"));
+  tl.fromTo(v5, { opacity: 1, scaleY: 0 }, { opacity: 1, scaleY: 1, duration: 0.5, ease: EIO, immediateRender: false }, w(5, "once") - 0.6);
+  tl.fromTo("#c5bus", { opacity: 1, scaleX: 0 }, { opacity: 1, scaleX: 1, duration: 0.7, ease: EIO, immediateRender: false }, w(5, "once") - 0.1);
+  minis.forEach((m) => tl.to(m.ban, { opacity: 1, duration: 0.35 }, w(5, "once") + 0.3 + m.d / 700 * 0.8));
+  head("#c5b", w(5, "every school") - 0.1);
+
+  /* ===== 6 Equally good ===== */
+  scene(6);
+  head("#c6a", t(6, 0.3), w(6, "Not identical") - 0.6);
+  const s6d = [[230, 200, 160, "#3363ab", 700, 1], [520, 300, 230, "#f3a8c4", 560, 0], [890, 250, 190, "#3ab0b0", 930, 1], [1230, 340, 260, "#c6b8db", 520, 0], [1620, 180, 140, "#8fb3d9", 760, 1]];
+  const cards = s6d.map((d, i) => { const [x, cw, ch, col, y0, bad] = d;
+    const wr = el("div", "wrap", `left:${x - cw / 2}px;top:0;width:${cw}px;height:${ch}px`, $("#c6sites"));
+    const st = site(wr, 0, 0, cw, ch, col); const b = badge(wr, "err"), ok = badge(wr, "ok");
+    const dot = el("div", "abs", `right:10px;top:${ch * 0.025}px;width:${ch * 0.09}px;height:${ch * 0.09}px;border-radius:50%;background:#fff;opacity:.9`, st);
+    tl.set(wr, { y: y0 - ch, opacity: 0 }, 0);
+    tl.to(wr, { opacity: 1, duration: 0.5 }, t(6, 0.6 + i * 0.1));
+    if (bad) { tl.set(b, { opacity: 1 }, 0); tl.set(st, { borderColor: "#ef4444" }, 0); }
+    tl.to(wr, { y: 840 - ch - 2, duration: 1.2, ease: EIO }, w(6, "village") + 0.5 + i * 0.16);
+    if (bad) { tl.to(b, { opacity: 0, scale: 0.6, duration: 0.35 }, w(6, "large city") + 0.5 + i * 0.08); tl.to(st, { borderColor: "rgba(0,0,0,0)", duration: 0.4 }, w(6, "large city") + 0.5 + i * 0.08); }
+    tl.fromTo(ok, { opacity: 0, scale: 0.6 }, { opacity: 1, scale: 1, duration: 0.4, ease: E }, w(6, "face") + i * 0.12);
+    return { x, cw, ch, top: 840 - ch - 2, dot }; });
+  tl.fromTo("#c6line", { opacity: 1, scaleX: 0 }, { opacity: 1, scaleX: 1, duration: 1.0, ease: EIO, immediateRender: false }, t(6, 0.7));
+  tl.fromTo("#c6lab", { opacity: 0 }, { opacity: 1, duration: 0.4 }, t(6, 1.5));
+  // šeima pereina iš vienos mokyklos į kitą — ta pati vieta abiejose
+  const A6 = cards[0], B6 = cards[3];
+  tl.set("#c6fam", { x: A6.x - 45, y: A6.top - 110 }, 0);
+  tl.to("#c6fam", { opacity: 1, duration: 0.4 }, w(6, "family") - 0.2);
+  tl.to("#c6fam", { x: B6.x - 45, duration: 1.4, ease: EIO }, w(6, "family") + 0.4);
+  tl.to("#c6fam", { y: A6.top - 230, duration: 0.7, ease: "power2.out" }, w(6, "family") + 0.4);
+  tl.to("#c6fam", { y: B6.top - 110, duration: 0.7, ease: "power2.in" }, w(6, "family") + 1.1);
+  [A6, B6].forEach((c, k) => { tl.to(c.dot, { backgroundColor: "#f3a8c4", scale: 1.6, duration: 0.4 }, w(6, "familiar") + k * 0.35);
+                               tl.to(c.dot, { scale: 1, duration: 0.4 }, w(6, "familiar") + 0.5 + k * 0.35); });
+  tl.to("#c6fam", { opacity: 0, duration: 0.4 }, w(6, "foundation") + 0.6);
+  head("#c6b", w(6, "Not identical") - 0.1);
+
+  /* ===== 7 Trojan elephant ===== */
+  scene(7);
+  head("#c7a", t(7, 0.3), w(7, "further") - 0.7);
+  tl.fromTo("#c7site", { opacity: 0, y: 24 }, { opacity: 1, y: 0, duration: 0.7, ease: E }, t(7, 0.4));
+  const walk0 = w(7, "capitals") - 1.4, walk1 = w(7, "cookie") + 1.3;
+  tl.set("#c7sym", { x: -200, y: 800, opacity: 0, rotation: 0 }, 0);
+  tl.set("#c7sym", { opacity: 1 }, walk0);
+  tl.to("#c7sym", { x: 1960, duration: walk1 - walk0, ease: "none" }, walk0);
+  for (let k = 0; k < Math.floor((walk1 - walk0) / 0.7); k++) tl.to("#c7sym", { rotation: k % 2 ? -3 : 3, duration: 0.7, ease: "sine.inOut" }, walk0 + k * 0.7);
+  const swap = (a, b, at) => { tl.to(a, { opacity: 0, duration: 0.4 }, at); tl.to(b, { opacity: 1, duration: 0.5 }, at + 0.1); };
+  swap("#c7capA", "#c7capB", w(7, "capitals") + 0.2);
+  swap("#c7jA", "#c7jB", w(7, "stretching") + 0.2);
+  swap("#c7imgA", "#c7imgB", w(7, "images") + 0.1);
+  tl.fromTo("#c7cookie", { opacity: 0, y: 40 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, w(7, "cookie") + 0.1);
+  tl.set("#c7sym", { opacity: 0, rotation: 0 }, walk1);
+  tl.set("#c7troj", { xPercent: -50 }, 0);
+  pop("#c7troj", w(7, "Trojan") - 0.1, 0.5);
+  tl.to(["#c7site", "#c7troj"], { opacity: 0, y: -20, duration: 0.5, ease: "power1.in" }, w(7, "further") - 0.7);
+  head("#c7b", w(7, "further") - 0.1);
+  // juosta mokyklų — kiekviena pakopa atsiranda visose iš karto
+  const strip = []; for (let i = 0; i < 16; i++) { const m = el("div", "mini", `left:${190 + i * 96}px;top:236px;width:80px;height:54px;border-radius:8px`, $("#c7strip"));
+    el("div", "nav", "height:10px", m); strip.push(m); tl.fromTo(m, { opacity: 0 }, { opacity: 1, duration: 0.4 }, w(7, "further") + i * 0.02); }
+  const steps = [["Digital hygiene", "#3363ab", 110, "further"], ["Document bank", "#3ab0b0", 190, "document bank"], ["Whistleblower protection", "#9f8fc4", 270, "whistleblower"], ["Bookings", "#e58fb2", 350, "bookings"], ["AI integrations", "#ffffff", 430, "AI integrations"]];
+  const stepX = [170, 490, 810, 1130, 1450], col = ["#3363ab", "#3ab0b0", "#9f8fc4", "#e58fb2", "#3363ab"];
+  steps.forEach((s, i) => { const last = i === 4;
+    const st = el("div", "step", `left:${stepX[i]}px;height:${s[2]}px;background:${s[1]};${last ? "border:4px dashed #3363ab;border-bottom:0;" : ""}`, $("#c7steps"),
+      `<span style="${last ? "color:#3363ab" : ""}">${s[0]}${last ? '<br><em class="tag">in progress</em>' : ""}</span>`);
+    const at = w(7, s[3]) + (i === 0 ? 0.2 : -0.1);
+    tl.fromTo(st, { opacity: 0, scaleY: 0.2 }, { opacity: 1, scaleY: 1, duration: 0.7, ease: E }, at);
+    strip.forEach((m, k) => { tl.to(m, { borderColor: col[i], boxShadow: `0 0 0 4px ${col[i]}55, 0 8px 22px rgba(30,40,80,.09)`, duration: 0.25 }, at + 0.5 + k * 0.05);
+                              tl.to(m, { boxShadow: "0 1px 3px rgba(0,0,0,.05), 0 8px 22px rgba(30,40,80,.09)", duration: 0.4 }, at + 0.8 + k * 0.05); }); });
+  const top = (i) => 1080 - 120 - steps[i][2] - 130;
+  tl.set("#c7sym", { x: stepX[0] + 85, y: top(0) }, w(7, "further") + 0.4);
+  tl.to("#c7sym", { opacity: 1, duration: 0.4 }, w(7, "further") + 0.5);
+  for (let i = 1; i < 5; i++) { const at = w(7, steps[i][3]) + 0.3;
+    tl.to("#c7sym", { y: top(i) - 40, duration: 0.5, ease: "power2.out" }, at);
+    tl.to("#c7sym", { x: stepX[i] + 85, duration: 0.9, ease: EIO }, at);
+    tl.to("#c7sym", { y: top(i), duration: 0.4, ease: "power2.inOut" }, at + 0.5); }
+  // AI negali veikti chaose: chaotiški blokai susitvarko į tinklelį
+  const S5 = $("#c7steps").children[4];
+  for (let k = 0; k < 8; k++) { const gx = 54 + (k % 4) * 52, gy = 150 + Math.floor(k / 4) * 52;
+    const b = el("div", "abs", `left:${gx}px;top:${gy}px;width:40px;height:40px;border-radius:8px;background:${["#3363ab", "#3ab0b0", "#c6b8db", "#f3a8c4"][k % 4]};opacity:0`, S5);
+    tl.set(b, { x: (rnd() - 0.5) * 120, y: (rnd() - 0.5) * 90, rotation: (rnd() - 0.5) * 70 }, 0);
+    tl.to(b, { opacity: 1, duration: 0.4 }, w(7, "AI integrations") + 0.8 + k * 0.05);
+    tl.to(b, { x: 0, y: 0, rotation: 0, duration: 1.0, ease: EIO }, w(7, "chaos") + k * 0.04); }
+
+  /* ===== 8 The logic of scale ===== */
+  scene(8);
+  head("#c8a", t(8, 0.3), w(8, "Not a promise") - 0.6);
+  const R = $("#c8rings"), RC = [560, 650];
+  const lvl = [["School", 0, 0.7], ["Municipality", 100, w(8, "municipality") - T.S[8]], ["Region", 190, w(8, "region") - T.S[8]], ["Country", 280, w(8, "whole country") - T.S[8]], ["∞", 370, w(8, "whole country") - T.S[8] + 1.0]];
+  lvl.forEach(([name, r, at], i) => {
+    if (r) { const c = svgEl("circle", { cx: RC[0], cy: RC[1], r, fill: "none", stroke: i === 4 ? "#94a3b8" : "#3363ab", "stroke-width": 3, "stroke-dasharray": i === 4 ? "10 10" : "none", opacity: 0 }, R);
+      tl.fromTo(c, { opacity: 0, attr: { r: r * 0.7 } }, { opacity: i === 4 ? 0.7 : 0.45, attr: { r }, duration: 0.8, ease: E }, t(8, at));
+      const n = i * 8; for (let k = 0; k < n && i < 4; k++) { const a = k / n * 2 * Math.PI + i, rr = r - 30 + (k % 2) * 16;
+        const d = svgEl("circle", { cx: RC[0] + rr * Math.cos(a), cy: RC[1] + rr * Math.sin(a), r: 7, fill: "#3ab0b0", opacity: 0 }, R);
+        tl.to(d, { opacity: 1, duration: 0.3 }, t(8, at) + 0.2 + k * 0.015); } }
+    else { const d = svgEl("circle", { cx: RC[0], cy: RC[1], r: 14, fill: "#3363ab", opacity: 0 }, R); tl.to(d, { opacity: 1, duration: 0.4 }, t(8, at)); }
+    const lb = el("div", "lbl", `left:${RC[0] - 60}px;top:${RC[1] - (r ? r : 0) - (r ? 42 : -26)}px;width:120px;text-align:center;font-size:${i === 4 ? 40 : 24}px;background:${r ? 'rgba(244,246,250,.92)' : 'none'};border-radius:8px`, $("#c8labels"), name);
+    tl.fromTo(lb, { opacity: 0 }, { opacity: 1, duration: 0.4 }, t(8, at) + 0.2); });
+  const CH = $("#c8chart");
+  svgEl("line", { x1: 1080, y1: 860, x2: 1580, y2: 860, stroke: "#94a3b8", "stroke-width": 3 }, CH);
+  svgEl("line", { x1: 1080, y1: 860, x2: 1080, y2: 330, stroke: "#94a3b8", "stroke-width": 3 }, CH);
+  const curve = (d, color, at) => { const p = svgEl("path", { d, fill: "none", stroke: color, "stroke-width": 7, "stroke-linecap": "round" }, CH);
+    const len = p.getTotalLength(); p.style.strokeDasharray = len; p.style.strokeDashoffset = len; tl.to(p, { strokeDashoffset: 0, duration: 1.3, ease: EIO }, at); };
+  tl.fromTo("#c8chart", { opacity: 0 }, { opacity: 1, duration: 0.4 }, w(8, "added") - 0.4);
+  curve("M1090,850 C1250,820 1400,640 1570,360", "#3363ab", w(8, "added"));
+  curve("M1090,850 C1250,820 1400,790 1570,760", "#3ab0b0", w(8, "costs"));
+  tl.fromTo("#c8cl1", { opacity: 0 }, { opacity: 1, duration: 0.4 }, w(8, "added") + 1.1);
+  tl.fromTo("#c8cl2", { opacity: 0 }, { opacity: 1, duration: 0.4 }, w(8, "costs") + 1.1);
+  head("#c8b", w(8, "Not a promise") - 0.1);
+
+  /* ===== 9 Walked this road ===== */
+  scene(9);
+  head("#c9a", t(9, 0.3), w(9, "small country") - 0.6);
+  const TL9 = $("#c9time");
+  const line9 = svgEl("line", { x1: 300, y1: 600, x2: 1620, y2: 600, stroke: "#3363ab", "stroke-width": 5, "stroke-linecap": "round" }, TL9);
+  line9.style.strokeDasharray = 1320; line9.style.strokeDashoffset = 1320;
+  tl.to(line9, { strokeDashoffset: 0, duration: 1.6, ease: EIO }, w(9, "fifteen"));
+  [["Content audit", 560, "content audits"], ["Onboarding", 960, "onboarding"], ["Training platform", 1360, "training platform"]].forEach(([name, x, k]) => {
+    const dot = svgEl("circle", { cx: x, cy: 600, r: 18, fill: "#fff", stroke: "#3ab0b0", "stroke-width": 6, opacity: 0 }, TL9);
+    tl.fromTo(dot, { opacity: 0, attr: { r: 8 } }, { opacity: 1, attr: { r: 18 }, duration: 0.5, ease: E }, w(9, k) - 0.1);
+    const lb = el("div", "lbl", `left:${x}px;top:650px;font-size:32px;color:var(--text)`, $("#c9marks"), name);
+    tl.set(lb, { xPercent: -50 }, 0); tl.fromTo(lb, { opacity: 0, y: 10 }, { opacity: 1, y: 0, duration: 0.45, ease: E }, w(9, k)); });
+  for (let k = 0; k < 120; k++) { const x = 320 + (k % 40) * 33 + (rnd() - 0.5) * 8, y = 540 - Math.floor(k / 40) * 34 - (rnd() * 6);
+    const d = svgEl("circle", { cx: x, cy: y, r: 9, fill: ["#3363ab", "#3ab0b0", "#c6b8db", "#f3a8c4"][k % 4], opacity: 0 }, TL9);
+    tl.to(d, { opacity: 0.9, duration: 0.3 }, w(9, "fifteen") + 0.4 + (x - 320) / 1300 * 2.6 + Math.floor(k / 40) * 0.5); }
+  tl.to(["#c9time", "#c9marks"], { opacity: 0, duration: 0.5 }, w(9, "small country") - 0.6);
+  // grįžta pirmosios scenos tūkstantis langelių — ir viena banga juos sutvarko
+  const G9 = grid($("#c9grid"));
+  G9.forEach((g) => { tl.fromTo(g.tile, { opacity: 0 }, { opacity: 1, duration: 0.4 }, w(9, "small country") - 0.1 + g.d * 0.025);
+                      tl.to(g.bar, { backgroundColor: "#3ab0b0", duration: 0.3 }, w(9, "Ready") + g.d * 0.06); });
+  head("#c9b", w(9, "small country") - 0.1, w(9, "talk") - 0.6);
+  tl.to("#c9grid", { opacity: 0, duration: 0.6 }, w(9, "talk") - 0.6);
+  tl.set("#c9end", { opacity: 1 }, w(9, "talk") - 0.1);
+  tl.fromTo("#c9sym", { opacity: 0, scale: 0.85 }, { opacity: 1, scale: 1, duration: 0.8, ease: E }, w(9, "talk") - 0.1);
+  tl.fromTo("#c9name", { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, w(9, "talk") + 0.3);
+  tl.fromTo("#c9tag", { opacity: 0, y: 14 }, { opacity: 1, y: 0, duration: 0.5, ease: E }, w(9, "talk") + 0.6);
+  tl.set("#c9cta", { xPercent: -50 }, 0);
+  tl.fromTo("#c9cta", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, w(9, "talk") + 1.0);
+
+  window.__timelines = window.__timelines || {};
+  window.__timelines["main"] = tl;
+  tl.seek(0);
+})();
+</script>
+</body>
+</html>

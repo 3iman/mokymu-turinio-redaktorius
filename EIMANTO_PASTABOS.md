@@ -7,6 +7,28 @@ Jos būdavo pritaikomos tam tekstui ir dingdavo. Šis failas tą spragą uždaro
 ⛔ Įrašas daromas **tą akimirką**, kai pastaba pasakoma, ne sesijos gale.
 Kiekvienas įrašas: data, tiksli citata arba esmė, ir ką daryti kitą kartą.
 
+
+## Greitasis sąrašas: explainerio pasakojimas
+
+⛔ Perskaityti **prieš rašant scenarijų**. Failas chronologinis ir ilgas; čia – vartai.
+Kiekviena eilutė turi savo įrašą su data ir citata žemiau.
+
+| | Taisyklė |
+|---|---|
+| **forma** | Explaineris = animuotas filmukas namų grandine, ne interaktyvus puslapis |
+| **pradžia** | Pirmas kadras rodo, ką pamatėme savo akimis; faktai – antri; mechanizmas – tik po to |
+| **tėkmė** | pastebėjome → pasitikrinome → peržiūrėjome → radome daugiau → kaip tai galėjo nutikti |
+| **jungtys** | „štai dar viena situacija“, „o kai kur būta ir taip“ – ne „pirmas / antras kelias“ |
+| **ekranas** | Mūsų svetainių detalės, pirmiausia poraštės rekvizitai su Cleverphant ženklu; ne abstrakcijos |
+| **žodynas** | „svetainė“, „administratorius“, „įstaiga“ – ne „mokykla, mokykla“ |
+| **skirtukai** | Skirtuko antraštė trumpesnė ir kitokia nei kadro; lūžis nurodomas lentelėje `## Skirtukai` |
+| **mechanika** | Nesiaiškiname savo vidinės virtuvės. Administratoriui svarbu: matomo teksto nelietėme |
+| **statistika** | Pačioje pabaigoje ir lyg tarp kitko. Jokių skaičių plytelių |
+| **mūsų klaidos** | Į pasakojimą neeina. Taisomos tyliai |
+| **marketingas** | Rodome veiksmą. Rinkodaros sakinys iš balso išimamas |
+| **pabaiga** | Pasidžiaugti ir pažadėti grįžti – ne instrukcija, o santykis |
+| **kalba** | `redaktorius.py` ir scenarijui, ir `content/{lang}.json` prieš įgarsinant |
+
 ---
 
 ## Turinys
@@ -644,3 +666,317 @@ Raudona lieka tik tam, kas iš tikrųjų lūžta (pvz., dingusi eilutė svetain�
 > „Dienos ritmas mes tikrai ten palikę nereikalingą stulpelį?“ — ne: šablone A žyma, B laikas, C veikla. Tuščią B
 > stulpelį nupiešiau aš, nepažiūrėjęs lapo. ⛔ Lentelės sandarą piešti tik perskaičius tikrą lapą (gviz CSV skaitymui).
 
+
+## 2026-10-11 — TVS redaktorių rodyti tokį, koks yra
+
+> „Editorius pas mus yra štai toks ir svarbu jį parodyti taip kaip yra.“ (atsiuntė ekrano nuotrauką: CKEditor su
+> trimis įrankių eilėmis — Source, iškarpinė, B I U S, „Tx“ (Iₓ), sąrašai, lygiavimas, nuorodos, lentelė, Ω;
+> Styles / Format / Font / Size, spalvos, raidžių dydžio keitimas. Virš lauko užuomina „Ctrl+Shift+V“.)
+
+- Redaktoriaus juostos **nesupaprastinti** iki B I U Tx (taip nupiešta lentelių pamokoje). Rodyti tikrą juostą.
+- Nuoroda: `lessons/formatavimo-pradziamokslis/tyrimas/tvs-redaktorius-tikras.webp`.
+
+## 2026-10-11 — Svetainės antraštė tiksli; „Miesto gimnazija“; jokių simbolių herbe
+
+> „Mes kažkur jau naudojome pavadinimą Miesto gimnazija … Ir būtina tiksliai pavaizduoti headerį, nes tai mūsų
+> dizaino sistemos išskirtinumas. Turi būti ir paieška ir ikonos virš jų.“
+> „penkiakampės žvaigždės nereikia, tai yra sovietinis simbolis. Nieko nedėk“
+
+- Pramanyta mokykla filmukuose — **„Miesto gimnazija“** (kaip Google Sheets pradžiamokslyje ir domeno filmuke).
+- Svetainės antraštė — **tiksli**: herbas, pavadinimas su pabraukimu, viršutinis meniu, keturios ikonos (svetainės medis,
+  gestų kalba, lengvai suprantama kalba, įkelti naujieną) virš paieškos „Paieškos raktažodžiai“, meniu juosta su namelio
+  ir ⋮ ženklais. Geriausia — tikros temos nuotrauka (`lessons/kas-slypi-po-iklijuotu-tekstu/capture_header.js`).
+- Herbo vietoje — **tuščias skydas**, jokių simbolių (ypač ne penkiakampė žvaigždė).
+
+## 2026-10-11 — Ne darbo grafikas; pabraukimas; savadarbiai sąrašai
+
+> „Viena faktinė klaida pasirenkant turinį, kurį vaizduojame redaguoti. Nes būtent darbo grafikams mes leidžiame dėti
+> strong vietoje TH.“
+
+- Lentelės pavyzdys, kurį „taisome“, **negali būti darbo grafikas** — jiems `<strong>` vietoje `<th>` leidžiamas.
+  Pakeista renginių lentele (Data | Renginys). Recepto prieštara užregistruota S-1415.
+- Pabraukimas iš nežinojimo („papildoma dekoracija“) — lankytojas jį laiko nuoroda. Rodyti filmuke.
+- Mokytojų pačių sukurti sąrašai (brūkšneliai, žvaigždutės) — ne sąrašai; rodyti (telefone matyti aiškiausiai).
+
+### 2026-10-30 · Explaineris yra animuotas filmukas, ne interaktyvus puslapis
+
+> „Mes kuriame animuotu video, Youtube. Pasižiūrėk kitus mūsų kurtus video.“
+
+**Kodėl:** buvo padarytas interaktyvus HTML puslapis. Namų formatas yra vienas – piešti kadrai,
+Dariaus balsas, skirtukai, vinjetė.
+
+**Kitą kartą:** paprašius „explainerio“ – pirmiausia `VIDEO_GAMYBA.md` ir artimiausia pamoka
+`lessons/`, tada `build_scenes.py`. Interaktyvus puslapis daromas tik tada, kai jo prašoma vardu.
+
+### 2026-10-30 · Pasakojimas prasideda nuo to, kas atsitiko
+
+> „Trūksta istorijos pradžios ir esmės… Keletoje mokyklų pastebėjome, kad telefono numeriai vis
+> dar rašomi su 8. Tada pasitikrinome faktus ar tikrai 8 jau negalioja ir sužinojome, kad tikrai.
+> Tada patyrinėjome atidžiau ir supratome, kad metas vaiduoklių medžioklei.“
+
+Jo paties surašyta tėkmė: **pastebėjome → pasitikrinome → peržiūrėjome, kas vyksta tinkle →
+suradome daugiau, nei tikėjomės → štai kaip tai galėjo nutikti.**
+
+**Kodėl:** filmukas, prasidedantis nuo mechanizmo, yra paskaita. Prasidedantis nuo radinio –
+istorija, ir žiūrovas pats nori sužinoti, kodėl taip.
+
+**Kitą kartą:** pirmas kadras rodo, ką pamatėme savo akimis. Faktai – antras. Mechanizmas – tik
+po to, kai jau aišku, kodėl jo prireikė. Faktus galima surašyti ekrane su šaltiniu.
+
+### 2026-10-30 · Ekrane – mūsų svetainių detalės, pirmiausia poraštės rekvizitai
+
+> „Filmukuose noriu kur galima rodyti mūsų svetaines primenančias detales, ne tik abstrakčias
+> animacijas.“ · „Aš akcentuočiau labiau ne Kontaktai, o Footeryje esančius rekvizitus.
+> Jau esi juos piešęs. Su cleverphant logotipu apačioje.“
+
+**Kitą kartą:** prieš piešiant „svetainę“ – atsidaryti gyvą kliento puslapį ir perpiešti tikras
+detales: antraštę su logotipu, prieinamumo mygtukus, „Titulinis“ takelį, šoninį meniu, poraštės
+rekvizitų stulpelį su įmonės kodu ir Cleverphant ženklą apačioje dešinėje. Rekvizitai yra
+oficialiausia kontakto vieta – ten radinys sveria daugiausia. Tikros mokyklos duomenys
+neperkeliami (žr. 2026-09-13 įrašą).
+
+### 2026-10-30 · Savo klaidų į filmuką nededame
+
+> „Nereikia minėti tų 16 su demo numeriais, čia realiai yra klaida…“
+
+**Kodėl:** šešiolika nuorodų į demonstracinį šablono numerį – mūsų pačių klaida. Filmukas kalba
+apie tendenciją, ne apie kaltę, tad mūsų klaida jame skambėtų kaip svetima.
+
+**Kitą kartą:** radinys, kurio šaltinis esame mes, į pasakojimą neeina. Jis taisomas tyliai.
+
+### 2026-10-30 · Tikslas, auditorija ir marketingo riba
+
+> „Filmuko tikslas per kolektyvinę peržiūrą suprasti daromas klaidas, perteikti jų atsiradimo
+> priežastis ir techniškai paaiškinti kaip tai atsiranda. Paskutinis sluoksnis pateikti rezultatą,
+> leidžiantį nusiraminti, kad tai nėra konkrečios mokyklos daroma klaida… Tai tiesiog negera
+> tendencija į kurią norime atkreipti dėmesį.“
+> „Filmukas skirtas administratoriams ir savireklamai, žinomumo didinimui. Tai nepersistenkime
+> su įvairių marketingo žinučių implementavimu. Rodykime veiksmą.“
+
+**Kitą kartą:** keturi sluoksniai iš eilės – kokia klaida, kodėl ji atsiranda, kaip veikia,
+ir kad niekas nekaltas. Rinkodaros sakinys („pamatėme tik todėl, kad žiūrime į visas iš karto“)
+iš balso išimamas: tą patį pasako veiksmo kadras.
+
+### 2026-10-30 · Nerašome „mokykla, mokykla“
+
+> „Venkime rašyti visur mokykla, mokykla – nes turime ne tik mokykla, o dirba ne įstaiga,
+> dirba svetainės administratoriai.“
+
+**Kitą kartą:** „svetainė“, „administratorius“, „įstaiga“. Veiksmą atlieka žmogus, ne įstaiga:
+ne „mokykla taiso“, o „administratorius taiso“.
+
+### 2026-10-30 · Skirtuko antraštė nekartoja kadro antraštės
+
+> „Man regis jau esame su tavimi kalbėję apie tai, kad skirtukų ir pirmo kadro po juo antraštės
+> turi būti skirtingos. Skirtuke pageidautina trumpesnės formuluotės ir teisingai vizualiai.
+> Dabar breikas įvyksta ties paskutine dalimi.“
+
+**Kodėl blogai:** `generate-video-clips.js` ėmė tą patį pavadinimą iš lentelės ir laužė jį
+spėdamas – paskutinius 1–2 žodžius į antrą eilutę.
+
+**Kitą kartą:** scenarijuje pildoma lentelė `## Skirtukai`; lūžis nurodomas pasviruoju brūkšniu
+(`Du / sluoksniai`). Be jos veikia senas spėjimas.
+
+### 2026-10-30 · Nesiaiškiname, kokį sluoksnį taisėme
+
+> „Siūlau nesiaiškinti kokį sluoksnį mes ten taisėme.“
+
+**Kitą kartą:** administratoriui svarbu viena – matomo teksto nelietėme. Vidinė darbo mechanika
+į filmuką neeina. Mechanizmas aiškinamas tik tiek, kiek reikia suprasti, kaip klaida atsiranda.
+
+### 2026-10-30 · Pabaiga – pasidžiaugti ir pažadėti grįžti
+
+> „Kažkaip gale reikia pasidžiaugti, kad pažiūrėjome, pasitikslinome, grįšime su naujais
+> atradimais. Galimais ne tokiais smulkiais, kaip šis ;)“
+
+**Kitą kartą:** uždarymo kadras: trys varnelės (pažiūrėjome, pasitikslinome, sutvarkėme),
+tada „Grįšime su naujais radiniais“ ir lengvas priedas. Filmukas baigiasi ne instrukcija,
+o santykiu.
+
+### 2026-10-30 · Statistika – pačioje pabaigoje ir lyg tarp kitko
+
+> „Statistiką reikia pateikti pačioje pabaigoje. Priekyje tik pasakyti, kad pasitikrinome
+> ir gal tam nereikia atskiro lapo.“ · „Statistika lyg tarp kitko.“
+
+**Kodėl blogai:** skaičių plytelės viduryje filmuko atrodo kaip ataskaita ir nutraukia istoriją.
+
+**Kitą kartą:** jokių didelių plytelių. Trys trumpos eilutės paprastu tekstu su paryškintais
+skaičiais, antraštė „Beje, skaičiai“, po brūkšniu – plona eilutė su skaidymu. „Pasitikrinome“
+atskiro lapo nereikalauja: tai pasako veiksmo kadras.
+
+### 2026-10-30 · Ne „pirmas / antras kelias“, o „štai dar viena situacija“
+
+> „Ten kur sakome Antras kelias… tai čia ne kelias. Mes pasakojame apie tai, kaip nagrinėdami
+> svetaines suradome keletą tos pačios kilmės netikslumų. Ir geriau būtų jungti istoriją per
+> Štai dar viena situacija, O taip pat kaikur būta ir taip.“
+
+**Kodėl blogai:** numeruoti „keliai“ paverčia pasakojimą klasifikacija. Mes nerašome tipologijos –
+pasakojame, ką radome.
+
+**Kitą kartą:** kadrai jungiami pasakojimo žodžiais: „štai dar viena situacija“, „o kai kur
+būta ir taip“. Tai galioja ir straipsniams.
+
+### 2026-10-30 · Scenarijaus tekstai praleidžiami per redaktorių
+
+> „Scenarijaus tekstus ar praleidai per mūsų taisyklingos kalbos skillą?“
+
+Nebuvau. Patikra rado keturis ilguosius brūkšnius pačiuose ekrano užrašuose.
+
+**Kitą kartą:** prieš įgarsinant – `redaktorius.py` ir scenarijui, ir `content/{lang}.json`.
+Ekrano tekstai yra tokie pat mūsų tekstai kaip straipsnis.
+
+### 2026-10-30 · Naujo webo elementai pernaudojami filmukuose
+
+> „Mūsų naujame webe bus tokia skiltis, gal reikia pernaudoti kažką iš to ir video?“
+
+Skiltis „Prižiūrime už jus“ (SMULKMENOS): kortelės su chipu, pavadinimu ir būsenos eilute.
+
+**Kitą kartą:** kai filmukui reikia parodyti, ką nuolat tikriname, imama ta pati kortelių juosta –
+žiūrovas tą patį elementą pamato ir svetainėje, ir filmuke.
+
+### 2026-10-30 · „+370“ tariamas skaitmenimis
+
+> „Dariaus balsas sako +370 kaip bendrą skaičių. Mes taip nesakome. Sakome plius trys, septyni nulis.“
+
+**Kitą kartą:** scenarijuje rašoma **„plius trys, septyni nulis“**, ne „plius trys šimtai
+septyniasdešimt“. Tas pats principas galioja ir kitiems kodams – jie skaitomi skaitmenimis.
+
+### 2026-10-30 · „Source“ parodo tai, ko redaktorius neparodo
+
+> „Redaktorius viršutinio sluoksnio neparodo, bet paspaudus Source – parodo.
+> Gal ir tai reikia parodyti…“
+
+**Kitą kartą:** kai filmukas sako „to nematyti“, reikia parodyti ir vietą, kur **pamatyti galima**.
+Kitaip žiūrovas lieka su problema be įrankio. Tikros TVS juostoje „Source“ yra kairiajame kampe.
+
+### 2026-10-30 · Savo planų filmuke nerodome
+
+> „Video rodome mūsų kitus planus, tai nerodykime.“
+
+**Kodėl blogai:** kortelių juosta su būsimais darbais („Planuojama“, „Bus skaičiuojama“) yra
+vidinė informacija. Filmuke matosi tik tai, kas jau padaryta.
+
+### 2026-10-30 · Brand vizualika, ne generatyvumas
+
+> „Panagrinėk dizainą ir gal galėtume skirti daugiau dėmesio dizainui. Norisi pabėgti šiek tiek
+> nuo generatyvumo, o labiau brand vizualika kalbėti. Gal iš čia pynią galima kažkur panaudoti
+> ar dramblį kokį?“ · „Kai daviau dizainą pažiūrėti norėjau, kad patį pateikimą perimtum
+> kortelinį prieš ir po per judesį.“
+
+Šaltinis: `design.webas.lt/clvweb/lt/index.html` ir `begalinis-ciklas.html`.
+
+| Elementas | Kur svetainėje | Kaip panaudota filmuke |
+|---|---|---|
+| **Pynė** per simbolio arteriją | hero „Standartas“ | 3 kadras: susivėlusios juostos įeina, pereina pro Cleverphant simbolį (vartai „Patikra“), dešinėje ištiesėja |
+| **„Prieš ir po“ kortelė** su judesiu | ∞ ciklas, `.hb-card` + `.ba` | 12 kadras: chipas, pavadinimas, perbraukiamas senas numeris, rodyklė, naujas numeris, būsenos eilutė |
+| **Paletė** | `--clv-*` | navy `#3464ad`, teal `#3ab0b0`, pink `#f3a8c4`, lavanda `#c6b8db`, pilka `#646b77` |
+
+**Kitą kartą:** prieš piešiant naują kadrą – pažiūrėti, ar tokį pateikimą jau turi svetainė.
+Brand elementas atpažįstamas ir nieko nekainuoja; nauja abstrakcija kainuoja ir atrodo svetima.
+
+⛔ **Techninė pastaba:** juostų „piešimo“ animacijai `stroke-dasharray` privalo būti **ilgesnis
+už patį kelią** (6 % atsargos). Kai jis lygus keliui, pradinis `stroke-dashoffset` palieka kelio
+gale matomą atkarpėlę arba – su `stroke-linecap: round` – apvalų tašką, ir „dar nenupieštos“
+juostos rodosi nuo pirmos sekundės. `calc(var(--len) + 9px)` čia **neveikia**: `--len` yra
+skaičius, ne ilgis, tad deklaracija atmetama tyliai.
+
+### 2026-10-30 · Nuraminimas nereikalauja atskiro kadro
+
+> „Kaip tik dešimtą norėjau išmesti, nes ji beprasmiška.“
+
+Kadras „Tai ne vienos svetainės istorija“ (255 plytelių tinklelis, kuris nusidažo žaliai,
+ir trys žymės su priežastimis) kartojo tai, ką žiūrovas jau suprato.
+
+**Kitą kartą:** nuraminimo sluoksnis reikalingas, bet jam užtenka **vienos eilutės uždaryme**
+(„Ir čia niekas nesuklydo – aštuonetą rašėme visi“). Atskiras kadras tą pačią mintį
+paverčia morale.
+
+### 2026-10-30 · Dramblys yra simbolis; antro nėra
+
+> „Gal iš čia pynią galima kažkur panaudoti ar dramblį kokį?“
+
+Atskiro dramblio piešinio neturime: `cleverphant-simbolis-spalvotas.svg` **ir yra** dramblys
+(žiedas – galva, taškas – akis, lenkta forma – straublys). Filmuke jis panaudotas dukart:
+pynės vartuose (3 kadras) ir prie pažado grįžti (uždarymas).
+
+**Kitą kartą:** trečias to paties ženklo pasirodymas būtų puošmena. Jei reikia dramblio kaip
+veikėjo, jį pirma reikia nupiešti – tai atskiras darbas, ne kadro detalė.
+
+### 2026-10-30 · Radinį įvardijame, o ne sakome „neieškojome“
+
+> „Kažkas negerai „radome dalyką, kurio net neieškojome“ – čia mes norėjome pasakyti, kad
+> radome ne tik akivaizdžią 8 problemą, bet ir nematomų pakeitimų, kurie iš pirmo žvilgsnio
+> atrodo teisingi.“
+
+**Kitą kartą:** perėjimas į mechanizmą daromas per **kontrastą tarp matomo ir nematomo**, ne per
+„netikėtumą“: „Aštuonetą pamatyti lengva. Bet radome ir tokių vietų, kurios iš pirmo žvilgsnio
+atrodo visiškai teisingos.“ Tai iškart pasako, ko ieškoti toliau.
+
+### 2026-10-30 · Antrąjį sluoksnį reikia PARODYTI, ne tik pasakyti
+
+> „Kadre kur rodome Source paspaudimą, reikia rodyti juodą foną redaktoriuje su tikru HTML kodu,
+> tai žmonės supras, kur tas antras sluoksnis. Ir gal reikia ir paminėti, kad antras sluoksnis
+> yra kodo eilutės?“
+
+**Kitą kartą:** paspaudus kodo peržiūros mygtuką redaktoriaus laukas virsta **tamsiu kodo
+rodiniu su tikru HTML**, o balsas įvardija: „antrą sluoksnį – kodo eilutes“. Išblukęs kodas po
+redaktoriumi to nepadaro: žmogus nemato, kad tai ta pati vieta.
+
+### 2026-10-30 · Klaidą rodome per veiksmą, ne per rezultatą
+
+> „Administratorius taiso nupiešėme kaip į pastinai numerį. Turėtume rodyti, kaip vieną numerį
+> pažymi kursoriumi ir perrašo į kitą. Nes taip atsiranda ta klaida.“
+> „Ir tikriausiai 05–06 kadrus reikia apjungti į vieną istoriją.“
+
+**Kitą kartą:** jei kadras aiškina, **kaip** kažkas atsitinka, ekrane turi vykti tas pats judesys:
+pažymėjimas, perrašymas, paspaudimas. Numeris, kuris „persimaino“ savaime, mechanizmo nepaaiškina.
+To paties įvykio pradžia ir pabaiga priklauso vienam kadrui – skaidyti į du reiškia pasakoti dukart.
+
+### 2026-10-30 · Skirtukas gali klausti
+
+> „07 Kas čia nutinka? klauskime skirtuke, o po skirtuko jau sakykime, kad taip netyčiomis galima
+> pasiskambinti ir ne ten.“
+
+**Kitą kartą:** skirtuke galima užduoti klausimą, į kurį kadras atsako. Tai stipresnis perėjimas
+nei pavadinimas, ir tuo pačiu panaikina antraščių kartojimąsi.
+
+### 2026-10-30 · Kopijavimą rodome žingsniais
+
+> „08 parodykime detaliau, kaip pažymėjo, kaip ctrl+v ir kaip tik perrašė.“
+
+**Kitą kartą:** pažymėjimas (mėlynas), klavišų žymė „Ctrl + C“, blokas keliauja, „Ctrl + V“,
+tada pažymimas matomas numeris ir perrašomas. Blokas, kuris tiesiog „nuskrenda“, nepaaiškina,
+kodėl nuoroda atkeliavo kartu.
+
+### 2026-10-30 · Skirtukas niekada nekartoja kadro antraštės — ir atvirkščiai
+
+> „10 skirtukas ir dėstymas sako tą patį.“
+
+Tai antras kartas, kai ta pati klaida grįžta (plg. ankstesnį įrašą apie skirtukų antraštes).
+Dabar tikrinamos **abi** pusės: skirtukas vs kadro antraštė, ir kadro antraštė vs tekstas kadre.
+
+**Kitą kartą:** surašius lentelę – perbėgti porą „skirtukas ↔ antraštė“ ir pakeisti tą, kuri
+kartoja. Pvz. „Dešimt sekundžių“ ↔ „Patikra trunka dešimt sekundžių“ → skirtukas tapo „Jūsų eilė“.
+
+### 2026-10-30 · Vinjetė nekeičiama
+
+> „Ačiū, kad skyrėte laiko ir niekada to nekeiskime.“
+
+Buvau įdėjęs galimybę vinjetės tekstą perrašyti iš scenarijaus. Ji išimta visai – lieka viena
+konstanta `OUTRO_THANKS` su ⛔ komentaru. Kitą kartą vinjetės teksto neliesti ir nesiūlyti.
+
+### 2026-10-30 · ⛔ Du techniniai spąstai klipų animacijoje
+
+> „05 dingo natūrali naršyklės būsena, rodoma iš karto kodo imitacija…“
+
+**1. `display` @keyframes animacijose šioje grandinėje NEVEIKIA.** Kadras rodomas su pauzuotomis
+animacijomis ir nustatytu `currentTime`; diskrečios savybės tada neperskaičiuojamos, tad elementas
+lieka bazinės (galinės) būsenos. Dėl to redaktorius iš karto rodė kodo peržiūrą, o kopijavimo kadre
+įklijuotas svetimas numeris apskritai nepasirodė.
+**Sprendimas:** du vaizdai dedami vienas ant kito (`position: absolute; inset: 0`) ir perjungiami
+`opacity`. Eilutėje – `position: relative` apvalkalas, antras variantas `absolute` viršuje.
+
+**2. Du `timeline()` tam pačiam selektoriui tyliai nustumia vienas kitą.** Kiekvienas rašo savo
+`animation` deklaraciją, ir CSS kaskadoje lieka tik paskutinė. Taip dingo pažymėjimo spalva.
+**Sprendimas:** `timelines(a, prefix, D, sel, [(prop, steps), …])` – viena deklaracija su keliomis
+animacijomis. Tas pats pavojus jau buvo sugavęs kortelę 3 kadre (atskira `.dc.on` taisyklė).

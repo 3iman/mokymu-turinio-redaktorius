@@ -1,0 +1,163 @@
+{
+  "_komentaras": "Įrankio atmintis. Nekeisti ranka, kol nesupranti, ką darai: video_id buvimas draudžia pakartotinį įkėlimą.",
+  "atnaujinta": "2026-10-30T19:48:56+03:00",
+  "uploads": {
+    "ka-atsakyti-kai-paklausia-apie-slapukus::lt": {
+      "slug": "ka-atsakyti-kai-paklausia-apie-slapukus",
+      "lang": "lt",
+      "status": "done",
+      "channel": "cleverphant-lt",
+      "failo_dydis": 9580304,
+      "failo_mtime": 1789479381,
+      "resumable_uri": null,
+      "video_id": "_XwJGTgGSWU",
+      "url": "https://youtu.be/_XwJGTgGSWU",
+      "privacy": "private",
+      "publish_at": null,
+      "title": "Ką atsakyti, kai paklausia apie slapukus",
+      "localizations_sent": [
+        "lt"
+      ],
+      "subtitles_sent": [],
+      "playlist_id": "PLZz7MU8o0jMQ",
+      "variant_of": null,
+      "related_url": "https://mokymai.cleverphant.lt/?post_type=kursai&p=1765",
+      "warnings": [
+        "lt: nėra subtitrų failo",
+        "nėra miniatiūros — YouTube parinks kadrą pats"
+      ],
+      "uploaded_at": "2026-09-20T15:31:30+03:00"
+    },
+    "google-sheets-integracija-explaineris::lt": {
+      "slug": "google-sheets-integracija-explaineris",
+      "lang": "lt",
+      "status": "done",
+      "channel": "cleverphant-lt",
+      "failo_dydis": 22718688,
+      "failo_mtime": 1789905478,
+      "resumable_uri": null,
+      "video_id": "rMcEOXfk-5w",
+      "url": "https://youtu.be/rMcEOXfk-5w",
+      "privacy": "private",
+      "publish_at": null,
+      "title": "„Google Sheets“ integracija: kaip lentelė atsiranda svetainėje",
+      "localizations_sent": [
+        "lt"
+      ],
+      "subtitles_sent": [
+        "lt"
+      ],
+      "playlist_id": "PLZz7MU8o0jMQ",
+      "variant_of": null,
+      "related_url": null,
+      "warnings": [
+        "nėra miniatiūros — YouTube parinks kadrą pats"
+      ],
+      "uploaded_at": "2026-09-20T15:31:51+03:00"
+    },
+    "google-sheets-pradziamokslis::lt": {
+      "slug": "google-sheets-pradziamokslis",
+      "lang": "lt",
+      "status": "done",
+      "channel": "cleverphant-lt",
+      "failo_dydis": 57917493,
+      "failo_mtime": 1789851550,
+      "resumable_uri": null,
+      "video_id": "qijtDZxoNo8",
+      "url": "https://youtu.be/qijtDZxoNo8",
+      "privacy": "private",
+      "publish_at": null,
+      "title": "Google Sheets pradžiamokslis: kaip tvarkyti mokyklos lenteles",
+      "localizations_sent": [
+        "lt"
+      ],
+      "subtitles_sent": [
+        "lt"
+      ],
+      "playlist_id": "PLZz7MU8o0jMQ",
+      "variant_of": null,
+      "related_url": null,
+      "warnings": [],
+      "uploaded_at": "2026-09-20T15:32:33+03:00",
+      "updated_at": "2026-09-20T20:10:53+03:00"
+    },
+    "domeno-nuosavybe::lt": {
+      "slug": "domeno-nuosavybe",
+      "lang": "lt",
+      "status": "done",
+      "channel": "cleverphant-lt",
+      "failo_dydis": 28122723,
+      "failo_mtime": 1789913731,
+      "resumable_uri": null,
+      "video_id": "6jHrRejj5jE",
+      "url": "https://youtu.be/6jHrRejj5jE",
+      "privacy": "private",
+      "publish_at": null,
+      "title": "Domeno nuosavybė: kad mokykla jo neprarastų",
+      "localizations_sent": [
+        "lt"
+      ],
+      "subtitles_sent": [
+        "lt"
+      ],
+      "playlist_id": "PLZz7MU8o0jMQ",
+      "variant_of": null,
+      "related_url": null,
+      "warnings": [],
+      "uploaded_at": "2026-09-20T17:17:47+03:00",
+      "updated_at": "2026-09-20T18:25:14+03:00"
+    },
+    "navigacijos-nuoseklumas::lt": {
+      "slug": "navigacijos-nuoseklumas",
+      "lang": "lt",
+      "status": "done",
+      "channel": "cleverphant-lt",
+      "failo_dydis": 18675449,
+      "failo_mtime": 1789915632,
+      "resumable_uri": null,
+      "video_id": "ag6oEhIq-LI",
+      "url": "https://youtu.be/ag6oEhIq-LI",
+      "privacy": "private",
+      "publish_at": null,
+      "title": "Kodėl pagrindinis meniu nesikeičia pagal kiekvieną prašymą",
+      "localizations_sent": [
+        "lt"
+      ],
+      "subtitles_sent": [
+        "lt"
+      ],
+      "playlist_id": "PLZz7MU8o0jMQ",
+      "variant_of": null,
+      "related_url": null,
+      "warnings": [
+        "nėra miniatiūros — YouTube parinks kadrą pats"
+      ],
+      "uploaded_at": "2026-09-20T17:48:01+03:00"
+    },
+    "vaiduoklis-po-numeriu::lt": {
+      "slug": "vaiduoklis-po-numeriu",
+      "lang": "lt",
+      "status": "done",
+      "channel": "cleverphant-lt",
+      "failo_dydis": 17377886,
+      "failo_mtime": 1793376262,
+      "resumable_uri": null,
+      "video_id": "4SMXlulG-K8",
+      "url": "https://youtu.be/4SMXlulG-K8",
+      "privacy": "private",
+      "publish_at": null,
+      "title": "Vaiduoklis po numeriu: kodėl paspaudus skambutis iškeliauja ne ten",
+      "localizations_sent": [
+        "lt"
+      ],
+      "subtitles_sent": [
+        "lt"
+      ],
+      "playlist_id": "PLZz7MU8o0jMQ",
+      "variant_of": null,
+      "related_url": "https://cleverphant.lt/tinklarastis",
+      "warnings": [],
+      "uploaded_at": "2026-10-30T19:48:56+03:00"
+    }
+  }
+}

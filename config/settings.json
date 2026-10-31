@@ -1,0 +1,53 @@
+{
+  "_komentaras": "Kalba yra duomenys, ne logika. Nauja rinka pridedama ČIA ir channels.json — kode nekeičiama nieko.",
+
+  "kalbos": {
+    "lt": { "vardas": "lietuvių", "kanalas": "cleverphant-lt" },
+    "pl": { "vardas": "lenkų",    "kanalas": "cleverphant-pl" },
+    "lv": { "vardas": "latvių",   "kanalas": null },
+    "et": { "vardas": "estų",     "kanalas": null },
+    "en": { "vardas": "anglų",    "kanalas": null },
+    "de": { "vardas": "vokiečių", "kanalas": null }
+  },
+
+  "numatyta": {
+    "category_id": "27",
+    "made_for_kids": false,
+    "privacy": "private",
+    "embeddable": true
+  },
+
+  "tagai": {
+    "_komentaras": "Bendras pagrindas visiems filmukams; pamokos papildomi tagai imami iš scenarijaus antraštės lauko „Tagai:“ arba rašomi ranka į meta.json.",
+    "lt": ["mokyklos svetainė", "Cleverphant", "TVS", "mokyklų svetainės", "švietimas"],
+    "pl": ["strona szkoły", "Cleverphant", "CMS", "edukacja"]
+  },
+
+  "kvota": {
+    "_komentaras": "⛔ Tikroji videos.insert kaina tikrinama Google Cloud Console → IAM & Admin → Quotas. Dokumentacijoje nurodoma ir 100, ir 1600 — čia rašoma ta, kurią matai konsolėje.",
+    "paros_limitas": 10000,
+    "upload_kaina": 1600,
+    "captions_kaina": 400,
+    "playlist_kaina": 50,
+    "update_kaina": 50,
+    "atsinaujina": "apie 10:00 Vilniaus laiku (vidurnaktis PT)"
+  },
+
+  "ribos": {
+    "title": 100,
+    "description": 5000,
+    "tags_viso": 500,
+    "thumbnail_baitai": 2097152
+  },
+
+  "keliai": {
+    "lessons": "lessons",
+    "log": "uploads-log.json"
+  },
+
+  "tinklas": {
+    "bandymai": 3,
+    "pauze_sek": [2, 8, 30],
+    "gabalas_baitai": 8388608
+  }
+}

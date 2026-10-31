@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="lt" data-resolution="landscape">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=1920, height=1080" />
+<!--
+  Webmail (Roundcube): kaip pakeisti sąsają Elastic → Larry. Be balso, lietuviški žingsnių užrašai.
+  Ekranas atkurtas pagal Eimanto nuotrauką (Settings → Preferences → User Interface), 2026-10-14.
+  Laikai — konstanta K žemiau; garsas: garsas/build_audio.py (tie patys laikai).
+-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&family=Roboto:wght@400;500;700&display=block" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.14.2/dist/gsap.min.js"></script>
+<style>
+  :root { --blue:#3363ab; --teal:#3ab0b0; --rc:#37beff; --rcsel:#e6f6fe; --side:#2f3a3f; --line:#e3e7ea; --text:#1a1a2e; --text2:#475569; }
+  * { margin:0; padding:0; box-sizing:border-box; }
+  html, body { width:1920px; height:1080px; overflow:hidden; background:#f4f6fa; }
+  #root { position:relative; width:1920px; height:1080px; font-family:Inter, system-ui, sans-serif; color:var(--text); overflow:hidden; }
+  #bg { position:absolute; inset:0; background:
+      radial-gradient(circle 430px at 88% 6%, rgba(255,255,255,.85) 0 99%, rgba(255,255,255,0) 100%),
+      radial-gradient(circle 190px at 3% 95%, rgba(199,185,219,.34) 0 99%, rgba(199,185,219,0) 100%),
+      linear-gradient(160deg, #eef1f8 0%, #f4f6fa 42%, #faf9fb 100%); }
+  .scene { position:absolute; left:0; top:0; width:1920px; height:1080px; opacity:0; }
+  .abs { position:absolute; }
+  .h { position:absolute; left:120px; right:120px; text-align:center; font-size:60px; font-weight:700; letter-spacing:-1.4px; line-height:1.12; }
+  .h em { font-style:normal; color:var(--blue); }
+  /* Roundcube Elastic */
+  #ui { position:absolute; left:160px; top:56px; width:1600px; height:840px; background:#fff; border-radius:16px; overflow:hidden;
+        box-shadow:0 2px 6px rgba(0,0,0,.05), 0 24px 70px rgba(30,40,80,.14); font-family:Roboto, Inter, sans-serif; color:#2c363a; }
+  #side { position:absolute; left:0; top:0; width:70px; height:840px; background:var(--side); }
+  .si { position:absolute; left:0; width:70px; height:64px; text-align:center; color:#fff; font-size:13px; }
+  .si b { display:block; margin:12px auto 5px; width:22px; height:18px; border-radius:4px; background:#fff; opacity:.95; }
+  .si.on { background:#3d4a50; }
+  .si.comp { color:var(--rc); } .si.comp b { background:var(--rc); }
+  .col { position:absolute; top:0; height:840px; border-right:1px solid var(--line); }
+  .ch { height:52px; border-bottom:1px solid var(--line); background:#f7f8f9; font-weight:700; font-size:16px; text-align:center; line-height:52px; }
+  .row { position:relative; height:38px; border-bottom:1px solid #eef1f3; font-size:16px; line-height:38px; padding-left:46px; white-space:nowrap; }
+  .row i { position:absolute; left:14px; top:11px; width:18px; height:16px; border-radius:3px; background:#2c363a; opacity:.85; }
+  .row.sel { background:var(--rcsel); }
+  .ml { position:relative; height:62px; border-bottom:1px solid #eef1f3; }
+  .ml span { position:absolute; left:20px; height:10px; border-radius:3px; background:#cfd6db; }
+  .fld { font-size:16px; color:#2c363a; }
+  .sel-box { position:absolute; height:34px; border:1px solid #c7d0d6; border-radius:4px; font-size:15px; line-height:32px; padding-left:10px; background:#fff; }
+  .tg { position:absolute; width:28px; height:16px; border-radius:8px; background:var(--rc); }
+  .tg:after { content:""; position:absolute; right:2px; top:2px; width:12px; height:12px; border-radius:50%; background:#fff; }
+  .lab { position:absolute; font-size:15px; }
+  .sec { position:absolute; font-size:19px; font-weight:700; }
+  .radio { position:absolute; width:18px; height:18px; border-radius:50%; border:2px solid #9aa5ab; background:#fff; }
+  .radio .dot { position:absolute; left:3px; top:3px; width:8px; height:8px; border-radius:50%; background:var(--rc); }
+  .thumb { position:absolute; width:58px; height:58px; border-radius:4px; border:1px solid #d5dce0; overflow:hidden; background:#fff; }
+  .skin b { font-size:15px; } .skin { position:absolute; font-size:13px; line-height:1.6; }
+  .skin a { color:var(--rc); font-style:italic; }
+  #save { position:absolute; width:80px; height:38px; border-radius:4px; background:var(--rc); color:#fff; font-size:15px; font-weight:500; line-height:38px; text-align:center; }
+  #toast { position:absolute; right:24px; bottom:24px; padding:14px 22px; border-radius:6px; background:#41b849; color:#fff; font-size:16px; opacity:0; box-shadow:0 6px 18px rgba(0,0,0,.18); }
+  #ring { position:absolute; border:4px solid var(--blue); border-radius:12px; opacity:0; box-shadow:0 0 0 6px rgba(51,99,171,.18); }
+  /* kursorius ir paspaudimas */
+  #cur { position:absolute; left:0; top:0; width:34px; height:46px; opacity:0; z-index:20; }
+  .clk { position:absolute; width:56px; height:56px; margin:-28px 0 0 -28px; border-radius:50%; border:4px solid var(--blue); opacity:0; z-index:19; }
+  /* užrašai — Kvietimas 40/700 */
+  .cap { position:absolute; left:960px; top:930px; padding:20px 40px; border-radius:999px; background:#fff; font-size:40px; font-weight:700; white-space:nowrap;
+         box-shadow:0 1px 3px rgba(0,0,0,.05), 0 10px 28px rgba(30,40,80,.10); opacity:0; }
+  .cap i { display:inline-block; width:44px; height:44px; border-radius:50%; background:var(--blue); color:#fff; font:700 26px/44px Inter, sans-serif; text-align:center; font-style:normal; margin-right:18px; vertical-align:4px; }
+  .lbl { position:absolute; font-size:30px; font-weight:600; color:var(--text2); white-space:nowrap; }
+</style>
+</head>
+<body>
+<div id="root" data-composition-id="main" data-start="0" data-duration="34" data-width="1920" data-height="1080">
+  <div id="bg" class="clip" data-start="0" data-duration="34" data-track-index="0"></div>
+  <img id="wm" class="clip" src="assets/cleverphant-zodis.svg" alt="Cleverphant" data-start="0" data-duration="34" data-track-index="3" style="position:absolute;left:64px;top:1000px;width:196px;height:auto;opacity:0;z-index:5">
+  <audio id="au" class="clip" src="garsas/mix.wav" data-start="0" data-duration="34" data-track-index="2"></audio>
+
+  <!-- 0 Pavadinimas -->
+  <section id="s0" class="scene clip" data-start="0" data-duration="3.4" data-track-index="1">
+    <div class="h" style="top:380px">Kaip pakeisti <em>pašto vaizdą</em></div>
+    <div class="lbl" id="s0sub" style="left:960px;top:500px">Webmail · iš Elastic į Larry · keturi žingsniai</div>
+  </section>
+
+  <!-- 1 Žingsniai -->
+  <section id="s1" class="scene clip" data-start="3" data-duration="19.4" data-track-index="1">
+    <div id="ui">
+      <div id="side">
+        <div class="abs" style="left:17px;top:12px;width:36px;height:36px;border-radius:50%;background:#e8eef2"></div>
+        <div class="si comp" style="top:60px"><b></b>Compose</div>
+        <div class="si" id="siMail" style="top:124px"><b></b>Mail</div>
+        <div class="si" style="top:188px"><b></b>Contacts</div>
+        <div class="si" id="siSet" style="top:252px"><b></b>Settings</div>
+      </div>
+      <!-- pašto vaizdas -->
+      <div id="vMail" class="abs" style="left:70px;top:0;width:1530px;height:840px">
+        <div class="col" style="left:0;width:260px"><div class="ch">Mail</div>
+          <div class="row sel"><i></i>Inbox</div><div class="row"><i></i>Drafts</div><div class="row"><i></i>Sent</div><div class="row"><i></i>Junk</div><div class="row"><i></i>Trash</div></div>
+        <div class="col" id="mlist" style="left:260px;width:570px"><div class="ch">Inbox</div></div>
+        <div class="abs" style="left:830px;top:0;width:700px;height:840px;background:#fafbfc"><div class="ch" style="background:#f7f8f9"></div>
+          <div class="abs" style="left:0;right:0;top:390px;text-align:center;color:#9aa5ab;font-size:16px">Select a message</div></div>
+      </div>
+      <!-- nustatymų vaizdas -->
+      <div id="vSet" class="abs" style="left:70px;top:0;width:1530px;height:840px;opacity:0;background:#fff">
+        <div class="col" style="left:0;width:280px"><div class="ch">Settings</div>
+          <div class="row sel" id="rPref"><i></i>Preferences</div><div class="row"><i></i>Folders</div><div class="row"><i></i>Identities</div><div class="row"><i></i>Responses</div><div class="row"><i></i>Password</div></div>
+        <div class="col" style="left:280px;width:420px"><div class="ch"></div>
+          <div class="row" id="rUI"><i></i>User Interface</div><div class="row"><i></i>Mailbox View</div><div class="row"><i></i>Displaying Messages</div><div class="row"><i></i>Composing Messages</div>
+          <div class="row"><i></i>Contacts</div><div class="row"><i></i>Special Folders</div><div class="row"><i></i>Server Settings</div><div class="row"><i></i>Encryption</div></div>
+        <div class="abs" style="left:700px;top:0;width:830px;height:52px;border-bottom:1px solid var(--line);background:#f7f8f9"></div>
+        <div id="pane" class="abs" style="left:700px;top:52px;width:830px;height:788px;opacity:0">
+          <div class="sec" style="left:16px;top:22px">Main Options</div>
+          <div class="lab" style="left:16px;top:66px">Language</div><div class="sel-box" style="left:420px;top:58px;width:390px">English (GB)</div>
+          <div class="lab" style="left:16px;top:106px">Time zone</div><div class="sel-box" style="left:420px;top:98px;width:390px">Auto</div>
+          <div class="lab" style="left:16px;top:146px">Time format</div><div class="sel-box" style="left:420px;top:138px;width:390px">07:30</div>
+          <div class="lab" style="left:16px;top:186px">Date format</div><div class="sel-box" style="left:420px;top:178px;width:390px">2026-10-14</div>
+          <div class="lab" style="left:16px;top:224px">Pretty dates</div><div class="tg" style="left:420px;top:226px"></div>
+          <div class="lab" style="left:16px;top:258px">Display next list entry after delete/move</div><div class="tg" style="left:420px;top:260px"></div>
+          <div class="lab" style="left:16px;top:294px">Update (check for new messages, etc.)</div><div class="sel-box" style="left:420px;top:286px;width:390px">every 1 minute(s)</div>
+          <div class="sec" style="left:16px;top:350px">Interface skin</div>
+          <div class="radio" id="rE" style="left:22px;top:418px"><div class="dot" id="dE"></div></div>
+          <div class="thumb" style="left:52px;top:398px"><div class="abs" style="left:10px;top:10px;width:38px;height:28px;border:3px solid #2c363a;border-radius:3px"></div><div class="abs" style="left:6px;top:30px;width:14px;height:22px;border:3px solid #2c363a;border-radius:3px;background:#fff"></div></div>
+          <div class="skin" style="left:126px;top:396px"><b>Elastic</b><br>by Aleksander Machniak<br><i>Licence:</i> <a>Creative Commons Attribution-ShareAlike</a></div>
+          <div class="radio" id="rL" style="left:22px;top:494px"><div class="dot" id="dL" style="opacity:0"></div></div>
+          <div class="thumb" style="left:52px;top:474px"><div class="abs" style="left:0;top:0;width:58px;height:28px;background:#1d2a33"></div><div class="abs" style="left:8px;top:8px;width:16px;height:12px;background:#37beff;border-radius:2px"></div><div class="abs" style="left:28px;top:9px;font:700 10px Roboto, sans-serif;color:#37beff">Mail</div><div class="abs" style="left:0;top:28px;width:58px;height:30px;background:#c9d3d9"></div></div>
+          <div class="skin" style="left:126px;top:472px"><b>Larry</b><br>by FLINT / Büro für Gestaltung, Switzerland<br><i>Licence:</i> <a>Creative Commons Attribution-ShareAlike</a></div>
+          <div class="sec" style="left:16px;top:566px">Browser Options</div>
+          <div class="lab" style="left:16px;top:606px">Handle popups as standard windows</div><div class="tg" style="left:420px;top:608px;background:#cbd2d6"></div>
+          <div id="save" style="left:16px;top:660px">✓ Save</div>
+        </div>
+        <div id="toast">Successfully saved</div>
+      </div>
+      <div id="ring"></div>
+    </div>
+    <div class="cap" id="c1"><i>1</i>Kairėje spauskite „Settings“</div>
+    <div class="cap" id="c2"><i>2</i>„Preferences“ → „User Interface“</div>
+    <div class="cap" id="c3"><i>3</i>Skiltyje „Interface skin“ pažymėkite „Larry“</div>
+    <div class="cap" id="c4"><i>4</i>Spauskite „Save“</div>
+    <div class="clk" id="k1"></div><div class="clk" id="k2"></div><div class="clk" id="k3"></div><div class="clk" id="k4"></div>
+    <svg id="cur" viewBox="0 0 34 46"><path d="M3 2 L3 38 L12 30 L18 44 L24 41 L18 28 L30 28 Z" fill="#fff" stroke="#1a1a2e" stroke-width="3" stroke-linejoin="round"/></svg>
+  </section>
+
+  <!-- 2 Rezultatas ir kelias atgal -->
+  <section id="s2" class="scene clip" data-start="22" data-duration="12" data-track-index="1">
+    <div class="h" id="r1" style="top:92px;opacity:0">Paštas persikraus <em>nauju vaizdu</em>.</div>
+    <div class="h" id="r2" style="top:92px;opacity:0">Norite grįžti? Tas pats kelias – <em>„Elastic“</em>.</div>
+    <div id="bigE" class="abs" style="left:420px;top:300px;width:420px;height:420px;border-radius:18px;background:#fff;box-shadow:0 24px 70px rgba(30,40,80,.14);opacity:0">
+      <div class="abs" style="left:70px;top:70px;width:280px;height:200px;border:16px solid #2c363a;border-radius:12px"></div>
+      <div class="abs" style="left:40px;top:210px;width:100px;height:160px;border:16px solid #2c363a;border-radius:12px;background:#fff"></div>
+    </div>
+    <div class="lbl" id="lE" style="left:630px;top:744px;opacity:0">Elastic</div>
+    <div id="bigL" class="abs" style="left:1080px;top:300px;width:420px;height:420px;border-radius:18px;background:#fff;overflow:hidden;box-shadow:0 24px 70px rgba(30,40,80,.14);opacity:0">
+      <div class="abs" style="left:0;top:0;width:420px;height:200px;background:#1d2a33"></div>
+      <div class="abs" style="left:56px;top:62px;width:110px;height:80px;background:#37beff;border-radius:8px"></div>
+      <div class="abs" style="left:196px;top:66px;font:700 64px Roboto, sans-serif;color:#37beff">Mail</div>
+      <div class="abs" style="left:0;top:200px;width:420px;height:220px;background:#c9d3d9"></div>
+      <div class="abs" style="left:56px;top:262px;width:308px;height:22px;border-radius:6px;background:#eef2f4"></div>
+      <div class="abs" style="left:56px;top:306px;width:240px;height:22px;border-radius:6px;background:#eef2f4"></div>
+    </div>
+    <div class="lbl" id="lL" style="left:1290px;top:744px;opacity:0">Larry</div>
+    <svg id="arr" class="abs" width="200" height="60" viewBox="0 0 200 60" style="left:860px;top:480px;opacity:0"><path d="M10 30 H180 M156 10 L184 30 L156 50" fill="none" stroke="#8fb3d9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </section>
+</div>
+
+<script>
+(function () {
+  const $ = (q) => document.querySelector(q);
+  const E = "power2.out", EIO = "power2.inOut";
+  const tl = gsap.timeline({ paused: true });
+  // laikai (sekundės filmo laike) — tie patys garsas/build_audio.py
+  const K = { c1: 3.6, k1: 6.2, c2: 7.4, kp: 8.9, k2: 10.6, c3: 12.2, k3: 15.0, c4: 16.6, k4: 18.4, toast: 18.7, r1: 22.4, r2: 27.0 };
+  const scene = (id, a, d) => { tl.fromTo(id, { opacity: 0 }, { opacity: 1, duration: 0.5, ease: "power1.out" }, a); tl.to(id, { opacity: 0, duration: 0.5, ease: "power1.in" }, a + d - 0.5); };
+  scene("#s0", 0, 3.4); scene("#s1", 3, 19.4); scene("#s2", 22, 12);
+  tl.fromTo("#bg", { scale: 1.0 }, { scale: 1.03, duration: 34, ease: "none" }, 0);
+  tl.fromTo("#wm", { opacity: 0 }, { opacity: 0.9, duration: 1.0, ease: E }, 0.4);
+  tl.to("#wm", { opacity: 0, duration: 0.5 }, 33.2);
+  // pavadinimas
+  tl.set("#s0sub", { xPercent: -50 }, 0);
+  tl.fromTo("#s0 .h", { opacity: 0, y: 22 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, 0.3);
+  tl.fromTo("#s0sub", { opacity: 0 }, { opacity: 1, duration: 0.5 }, 0.9);
+  // pašto sąrašas
+  for (let i = 0; i < 11; i++) { const r = document.createElement("div"); r.className = "ml";
+    r.innerHTML = `<span style="top:16px;width:${140 + (i * 37) % 120}px;background:#9aa5ab"></span><span style="top:36px;width:${260 + (i * 53) % 200}px"></span>`; $("#mlist").appendChild(r); }
+  // kursorius: x, y — ekrano taškai (UI kairys viršus 160, 56)
+  const U = (x, y) => [160 + x, 56 + y];
+  const cur = $("#cur");
+  const move = (xy, at, d) => tl.to(cur, { x: xy[0] - 3, y: xy[1] - 2, duration: d || 1.0, ease: EIO }, at);
+  const click = (id, xy, at) => { tl.set(id, { left: xy[0], top: xy[1] }, 0);
+    tl.fromTo(id, { opacity: 0.9, scale: 0.4 }, { opacity: 0, scale: 1.6, duration: 0.5, ease: "power1.out" }, at);
+    tl.to(cur, { scale: 0.86, duration: 0.08, yoyo: true, repeat: 1 }, at); };
+  const cap = (id, a, b) => { tl.set(id, { xPercent: -50 }, 0); tl.fromTo(id, { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.45, ease: E }, a); tl.to(id, { opacity: 0, duration: 0.35 }, b); };
+  tl.set(cur, { x: 1000, y: 620 }, 0);
+  tl.fromTo(cur, { opacity: 0 }, { opacity: 1, duration: 0.4 }, 3.8);
+  // 1 Settings
+  cap("#c1", K.c1, K.c2 - 0.4);
+  const pSet = U(35, 282); move(pSet, 4.6, 1.4); click("#k1", pSet, K.k1);
+  tl.to("#siMail", { background: "rgba(0,0,0,0)", duration: 0.1 }, K.k1 + 0.1); tl.to("#siSet", { backgroundColor: "#3d4a50", duration: 0.2 }, K.k1 + 0.1);
+  tl.to("#vSet", { opacity: 1, duration: 0.35 }, K.k1 + 0.15);
+  // 2 Preferences → User Interface
+  cap("#c2", K.c2, K.c3 - 0.4);
+  const pPref = U(70 + 140, 52 + 19); move(pPref, K.c2 + 0.3, 1.1); click("#k2", pPref, K.kp);
+  tl.to("#rPref", { backgroundColor: "#cdeefd", duration: 0.15, yoyo: true, repeat: 1 }, K.kp);
+  const pUI = U(70 + 280 + 130, 52 + 19); move(pUI, K.kp + 0.3, 1.0); click("#k3", pUI, K.k2);
+  tl.to("#rUI", { backgroundColor: "#e6f6fe", duration: 0.2 }, K.k2 + 0.05);
+  tl.fromTo("#pane", { opacity: 0, x: 20 }, { opacity: 1, x: 0, duration: 0.45, ease: E }, K.k2 + 0.15);
+  // 3 Interface skin → Larry
+  cap("#c3", K.c3, K.c4 - 0.4);
+  tl.set("#ring", { left: 70 + 700 + 6, top: 52 + 340, width: 600, height: 196 }, 0);
+  tl.fromTo("#ring", { opacity: 0, scale: 1.04 }, { opacity: 1, scale: 1, duration: 0.5, ease: E }, K.c3 + 0.3);
+  tl.to("#ring", { opacity: 0, duration: 0.4 }, K.k3 + 0.6);
+  const pL = U(70 + 700 + 32, 52 + 504); move(pL, K.c3 + 1.0, 1.4); click("#k4", pL, K.k3);
+  tl.to("#dE", { opacity: 0, duration: 0.12 }, K.k3 + 0.05); tl.to("#dL", { opacity: 1, duration: 0.12 }, K.k3 + 0.05);
+  tl.to("#rL", { borderColor: "#37beff", duration: 0.12 }, K.k3 + 0.05); tl.to("#rE", { borderColor: "#9aa5ab", duration: 0.12 }, K.k3 + 0.05);
+  // 4 Save
+  cap("#c4", K.c4, 21.6);
+  const pS = U(70 + 700 + 56, 52 + 679); move(pS, K.c4 + 0.3, 1.2);
+  const k5 = document.createElement("div"); k5.className = "clk"; k5.id = "k5"; $("#s1").appendChild(k5); click("#k5", pS, K.k4);
+  tl.to("#save", { backgroundColor: "#1aa6ea", duration: 0.12, yoyo: true, repeat: 1 }, K.k4);
+  tl.fromTo("#toast", { opacity: 0, y: 12 }, { opacity: 1, y: 0, duration: 0.35, ease: E }, K.toast);
+  tl.to(cur, { opacity: 0, duration: 0.3 }, 21.4);
+  // rezultatas ir kelias atgal
+  tl.fromTo("#r1", { opacity: 0, y: 22 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, K.r1);
+  tl.to("#r1", { opacity: 0, y: -14, duration: 0.45 }, K.r2 - 0.5);
+  tl.set(["#lE", "#lL"], { xPercent: -50 }, 0);
+  tl.fromTo("#bigL", { opacity: 0, x: -330, scale: 0.85 }, { opacity: 1, x: -330, scale: 1, duration: 0.7, ease: E }, K.r1 + 0.3);
+  tl.fromTo("#lL", { opacity: 0, x: -330 }, { opacity: 1, x: -330, duration: 0.4 }, K.r1 + 0.8);
+  tl.to(["#bigL", "#lL"], { x: 0, duration: 0.8, ease: EIO }, K.r2 - 0.4);
+  tl.fromTo("#r2", { opacity: 0, y: 22 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, K.r2);
+  tl.fromTo(["#bigE", "#lE"], { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.6, ease: E }, K.r2 + 0.4);
+  tl.fromTo("#arr", { opacity: 0, scaleX: 0.4 }, { opacity: 1, scaleX: -1, duration: 0.5, ease: E }, K.r2 + 1.0);
+  tl.to("#bigE", { boxShadow: "0 0 0 8px rgba(55,190,255,.45), 0 24px 70px rgba(30,40,80,.14)", duration: 0.4, yoyo: true, repeat: 3 }, K.r2 + 1.6);
+  window.__timelines = window.__timelines || {};
+  window.__timelines["main"] = tl;
+})();
+</script>
+</body>
+</html>

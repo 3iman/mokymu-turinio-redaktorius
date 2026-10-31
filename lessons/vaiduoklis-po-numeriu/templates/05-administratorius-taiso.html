@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .card { padding: 46px 110px 56px; }
+  .title { margin-bottom: 36px; }
+  .cur { position: absolute; left: 0; top: 0; z-index: 9; width: 46px; height: 58px; }
+  .cur svg { width: 46px; height: 58px; }
+  .rip { position: absolute; z-index: 8; width: 70px; height: 70px; margin: -35px 0 0 -35px; border-radius: 50%;
+         background: rgba(124, 58, 237, .40); opacity: 0; }
+  @keyframes ratilas { from { opacity: .85; transform: scale(.3); } to { opacity: 0; transform: scale(1.7); } }
+
+  .lay { width: 1480px; margin: 0 auto; display: grid; gap: 28px; position: relative; }
+  .pan { border-radius: 20px; padding: 28px 40px 30px; box-shadow: var(--c-shadow-card); position: relative; }
+  .pan-t { background: var(--c-surface); border: 1.5px solid var(--c-border); }
+  .pan-b { background: #1e293b; }
+  .lbl { font-size: 25px; font-weight: 700; color: var(--c-text-secondary); margin-bottom: 16px; }
+  .pan-b .lbl { color: #cbd5e1; }
+  .num { font-size: 64px; font-weight: 700; color: var(--c-text); letter-spacing: 1px; }
+  .num.link { color: #2563eb; text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 11px; }
+  .code { font-family: 'SF Mono', Menlo, monospace; font-size: 36px; line-height: 1.45; color: #e2e8f0; white-space: nowrap; }
+  .tg { color: #93c5fd; }
+  .hl { border-radius: 6px; padding: 2px 9px; }
+  .hl-h { background: rgba(167,139,250,.38); color: #ede9fe; }
+  .hl-t { background: rgba(110,231,183,.26); color: #d1fae5; }
+  .note { font-size: 26px; font-weight: 600; margin-top: 16px; }
+  .pan-t .note { color: var(--c-green-text); }
+  .pan-b .note { color: #c4b5fd; }
+
+  .card { padding: 44px 110px 48px; }
+  .wrap { position: relative; width: 1500px; margin: 0 auto; }
+  .ed-lbl { position: relative; height: 32px; font-size: 25px; font-weight: 700;
+            color: var(--c-text-secondary); margin-bottom: 12px; }
+  .e-a, .e-b { position: absolute; left: 0; top: 0; }
+  .e-a { opacity: 0; }
+  .ed-stack { position: relative; height: 190px; }
+  .ed { background: #fff; box-shadow: var(--c-shadow-card); }
+  .ed img { display: block; }
+  .ed-body { position: absolute; inset: 0; border-left: 1px solid #b7b7b7; border-right: 1px solid #b7b7b7;
+             background: #fff; padding: 34px 38px; font-family: 'Times New Roman', Times, serif; font-size: 36px;
+             line-height: 1.5; color: #000; opacity: 0; }
+  .sel { border-radius: 3px; position: relative; display: inline-block; }
+  .t-old, .t-new { color: #2563eb; text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 7px; }
+  .t-new { position: absolute; left: 0; top: 0; white-space: nowrap; }
+  .t-old { opacity: 0; }
+  .ed-src { position: absolute; inset: 0; background: #0f172a; padding: 38px; display: flex; align-items: center; }
+  .ed-src .code { font-size: 31px; white-space: nowrap; }
+  .hl-a { background: rgba(245,158,11,.34); color: #fde68a; }
+  .cur { transform: translate(1240px, 660px); }
+  .caret { display: inline-block; width: 3px; height: 38px; background: #111827; vertical-align: -7px; margin-left: 3px; opacity: 0; }
+  .chip { width: fit-content; margin: 30px auto 0; background: var(--c-amber-bg); border: 2px solid var(--c-amber-border);
+          color: var(--c-amber-text); font-size: 28px; font-weight: 700; padding: 10px 30px; border-radius: 999px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="wrap">
+      <div class="ed-lbl"><span class="e-a">{{ed_lbl}}</span><span class="e-b">{{src_lbl}}</span></div>
+      <div class="ed">
+        <img src="assets/iklijuotas-redaktorius-juosta.png" style="width:1500px">
+        <div class="ed-stack">
+          <div class="ed-body">
+            <p>Telefonas <span class="sel"><span class="t-old">{{old}}</span><span class="t-new">{{new}}</span></span><span class="caret"></span></p>
+          </div>
+          <div class="ed-src"><div class="code"><span class="tg">&lt;p&gt;</span>Telefonas <span class="tg">&lt;a href="</span><span class="hl hl-a">tel:+37046497915</span><span class="tg">"&gt;</span><span class="hl hl-t">+370 686 18256</span><span class="tg">&lt;/a&gt;</span><span class="tg">&lt;/p&gt;</span></div></div>
+        </div>
+        <img src="assets/iklijuotas-redaktorius-apacia.png" style="width:1500px">
+      </div>
+      <div class="chip">{{mism}}</div>
+      <div class="rip r-src" style="left:48px; top:70px"></div>
+      <div class="cur"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,32 @@
+Mokyklos svetainės lentelės gyvena „Google Sheets“ failuose: kiekvienas lapas apačioje yra atskira lentelė svetainėje. Prisijungti prie sistemos nereikia – dirbate tiesiog naršyklėje.
+
+Šioje pamokoje: kaip gauti prieigą ir ja pasidalyti, kaip veikia lapai ir A stulpelio žymos, kaip įterpti žmogų nesugadinant numeracijos ir kaip susigrąžinti vakarykštę lentelę.
+
+📋 SKYRIAI
+
+0:00 Įvadas. Kas yra Google Sheets
+0:26 Pirmiausia – prieiga
+1:01 Kokia paskyra geriausia
+1:24 Pažinkime langą
+1:44 Vaikščiojimas per lapus
+2:05 Visų lapų sąrašas
+2:22 Lapo meniu
+2:42 Pervardyti lapą
+2:59 Pirmas lapas ir trynimas
+3:40 Pirmo stulpelio žymos
+4:04 Rašymas langelyje
+4:21 Svetainėje – akimirksniu
+4:42 Vienas langelis – viena eilutė
+5:05 Tekstas iš Word
+5:29 Eilės numeriai
+5:46 Nauja ir išimta eilutė
+6:41 Paruošti pavyzdžiai
+7:01 Kai liko šablono spalva
+7:21 Kai antraštė liko be spalvos
+7:46 Versijų istorija
+8:29 Klysti nebaisu
+8:45 Outro
+
+—
+Cleverphant mokymai mokyklų svetainių administratoriams
+https://mokymai.cleverphant.lt

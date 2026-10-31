@@ -3,7 +3,7 @@
   "file": "00-kodel",
   "title": "Kodėl tai naudinga",
   "h1": "Visos lentelės – vienoje vietoje",
-  "D": 23,
+  "D": 24,
   "ekrane": "Kairėje – žalias „Google Sheets“ failas su trimis lapais („Taryba“, „Mokytojai“, „Atlyginimai“). Dešinėje viena po kitos atslenka keturios naudos kortelės.",
   "komentaras": "Turinys iš publikuotos pamokos § „Kodėl tai naudinga“.",
   "cues": [
@@ -13,22 +13,22 @@
     "Mokyklos lentelės gali gyventi ne svetainėje, o „Google Sheets“ failuose."
    ],
    [
-    6.1,
+    6.7,
     "balsas",
     "Lentelei pakeisti nebereikia jungtis prie turinio valdymo sistemos."
    ],
    [
-    10.6,
+    11.5,
     "balsas",
     "Šablonai jau paruošti – užpildote tik duomenis."
    ],
    [
-    14.5,
+    15.5,
     "balsas",
     "Prieigą gali turėti keli darbuotojai, tad atsakomybes galima pasidalyti."
    ],
    [
-    20.1,
+    21,
     "balsas",
     "O suintegruojama vieną kartą."
    ]
@@ -63,7 +63,7 @@
     "Prijungtam failui sistema suteikia savo numerį, o kiekvienas lapas turi savo gID."
    ],
    [
-    22.6,
+    23.2,
     "balsas",
     "Pagal juos puslapis ir žino, kurią lentelę imti."
    ]
@@ -93,7 +93,7 @@
     "O gID rodo konkretų lapą. Jis nesikeičia net tada, kai lapą pervadinate."
    ],
    [
-    17.4,
+    18,
     "balsas",
     "Pirmasis lapas visada turi gID nulis – tai numatytasis lapas."
    ]
@@ -118,7 +118,7 @@
     "Jums lieka svarbiausia dalis: duomenys."
    ],
    [
-    10.3,
+    10.6,
     "balsas",
     "Jūs pildote lenteles, dalijatės prieiga su kolegomis"
    ],
@@ -148,7 +148,7 @@
     "Kad svetainė galėtų perskaityti lentelę, failas turi būti atidarytas skaitymui."
    ],
    [
-    6.6,
+    6.7,
     "balsas",
     "Bendrojoje prieigoje pasirenkama „Visi, turintys nuorodą“."
    ],
@@ -193,7 +193,7 @@
     "Jums šios eilutės rašyti nereikia – ją įdedame prijungdami lentelę."
    ],
    [
-    20.9,
+    22.1,
     "balsas",
     "Vėliau keičiasi tik duomenys faile."
    ]
@@ -203,7 +203,7 @@
   "file": "06-tvs-modulis",
   "title": "Modulis sistemoje",
   "h1": "Prijungti failai turi savo sąrašą",
-  "D": 24,
+  "D": 25,
   "ekrane": "Modulio lentelė su trimis prijungtais failais: ID, pavadinimas ir „Enabled“ varnelė; trečias išjungtas.",
   "komentaras": "Publikuota pamoka § „Kaip atrodo lentelių modulis TVS“.",
   "cues": [
@@ -228,7 +228,7 @@
     "O žyma „Enabled“ rodo, ar failas veikia."
    ],
    [
-    19.9,
+    20.1,
     "balsas",
     "Išjungto failo lentelės nematyti."
    ]
@@ -237,9 +237,9 @@
  {
   "file": "07-atsinaujinimas",
   "title": "Kaip greitai atsinaujina",
-  "h1": "Pakeitimas svetainėje – per kelias sekundes",
-  "D": 20,
-  "ekrane": "Dvi kortelės su rodykle: „Pataisote langelį“ → „Matyti po kelių sekundžių“. Žemiau dvi patikros.",
+  "h1": "Pakeitimas svetainėje – akimirksniu",
+  "D": 21,
+  "ekrane": "Dvi kortelės su rodykle: „Pataisote langelį“ → „Matyti iš karto“. Žemiau dvi patikros.",
   "komentaras": "Publikuota pamoka § „Kaip greitai veikia duomenų atsinaujinimas“.",
   "cues": [
    [
@@ -250,20 +250,20 @@
    [
     5.0,
     "balsas",
-    "Dažniausiai tai trunka kelias sekundes."
+    "Pakeitimas matyti akimirksniu, vos išėjus iš langelio."
    ],
    [
-    9.0,
+    9.6,
     "balsas",
     "Jei pakeitimo nematyti, tikrinkite du dalykus."
    ],
    [
-    12.9,
+    13.2,
     "balsas",
     "Ar redaguojate tą pačią prijungtą lentelę."
    ],
    [
-    16.5,
+    16.8,
     "balsas",
     "Ir ar tikrai išėjote iš langelio."
    ]
@@ -283,9 +283,9 @@
     "Lentelė čia veikia kaip duomenų bazė – svarbiausia tvarka, ne stilius."
    ],
    [
-    6.4,
+    7,
     "balsas",
-    "Langelyje neturi būti nei perkėlimo į naują eilutę, nei formulių, nei sujungtų langelių."
+    "Langelyje geriau nerašyti kelių eilučių, nenaudoti formulių ir nejungti langelių."
    ],
    [
     13.5,
@@ -348,7 +348,7 @@
     "Visas lenteles galima sudėti į vieną failą, bet patogiau skaidyti pagal atsakomybes."
    ],
    [
-    7.4,
+    7.7,
     "balsas",
     "Pavyzdžiui, administracijos ir ugdymo lentelės gyvena atskirai."
    ],
@@ -358,12 +358,12 @@
     "Taip aišku, kuris failas kam priklauso,"
    ],
    [
-    15.8,
+    15.9,
     "balsas",
     "klaida paliečia tik vieną failą,"
    ],
    [
-    18.3,
+    18.4,
     "balsas",
     "o skirtingi žmonės dirba vienas kitam netrukdydami."
    ]
@@ -383,17 +383,17 @@
     "Atidarę failą matote, kad darbas jau pradėtas."
    ],
    [
-    5.0,
+    5.1,
     "balsas",
     "Lapai paruošti dažniausioms lentelėms: taryba, komisijos, darbo užmokestis."
    ],
    [
-    11.0,
+    11.4,
     "balsas",
     "Antraštės ir stulpeliai jau sudėlioti – lieka duomenys."
    ],
    [
-    15.7,
+    16.2,
     "balsas",
     "O jei kurios nors lentelės nereikia, tiesiog jos nepildote."
    ]

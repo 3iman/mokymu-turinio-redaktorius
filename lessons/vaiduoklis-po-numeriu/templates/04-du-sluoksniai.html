@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .card { padding: 46px 110px 56px; }
+  .title { margin-bottom: 36px; }
+  .cur { position: absolute; left: 0; top: 0; z-index: 9; width: 46px; height: 58px; }
+  .cur svg { width: 46px; height: 58px; }
+  .rip { position: absolute; z-index: 8; width: 70px; height: 70px; margin: -35px 0 0 -35px; border-radius: 50%;
+         background: rgba(124, 58, 237, .40); opacity: 0; }
+  @keyframes ratilas { from { opacity: .85; transform: scale(.3); } to { opacity: 0; transform: scale(1.7); } }
+
+  .lay { width: 1480px; margin: 0 auto; display: grid; gap: 28px; position: relative; }
+  .pan { border-radius: 20px; padding: 28px 40px 30px; box-shadow: var(--c-shadow-card); position: relative; }
+  .pan-t { background: var(--c-surface); border: 1.5px solid var(--c-border); }
+  .pan-b { background: #1e293b; }
+  .lbl { font-size: 25px; font-weight: 700; color: var(--c-text-secondary); margin-bottom: 16px; }
+  .pan-b .lbl { color: #cbd5e1; }
+  .num { font-size: 64px; font-weight: 700; color: var(--c-text); letter-spacing: 1px; }
+  .num.link { color: #2563eb; text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 11px; }
+  .code { font-family: 'SF Mono', Menlo, monospace; font-size: 36px; line-height: 1.45; color: #e2e8f0; white-space: nowrap; }
+  .tg { color: #93c5fd; }
+  .hl { border-radius: 6px; padding: 2px 9px; }
+  .hl-h { background: rgba(167,139,250,.38); color: #ede9fe; }
+  .hl-t { background: rgba(110,231,183,.26); color: #d1fae5; }
+  .note { font-size: 26px; font-weight: 600; margin-top: 16px; }
+  .pan-t .note { color: var(--c-green-text); }
+  .pan-b .note { color: #c4b5fd; }
+
+  .pan-b { transform-origin: 50% 0; }
+  .row { display: flex; align-items: center; gap: 34px; }
+  .fix { background: var(--c-green-bg); border: 2px solid var(--c-green-border); color: var(--c-green-text);
+         font-size: 23px; font-weight: 700; padding: 6px 20px; border-radius: 999px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="lay">
+      <div class="pan pan-t"><div class="lbl">{{t_lbl}}</div>
+        <div class="row"><span class="num link">{{num}}</span><span class="fix">{{fix}}</span></div>
+        <div class="note n-t">{{t_note}}</div></div>
+      <div class="pan pan-b"><div class="lbl">{{b_lbl}}</div>
+        <div class="code"><span class="tg">&lt;a href="</span><span class="hl hl-h">tel:+37046497915</span><span class="tg">"&gt;</span><span class="hl hl-t">+370 46 497 915</span><span class="tg">&lt;/a&gt;</span></div>
+        <div class="note n-b">{{b_note}}</div></div>
+    </div>
+  </div>
+</body>
+</html>

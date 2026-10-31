@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .card { padding: 40px 120px 56px; }
+  .title { margin-bottom: 34px; }
+  .panel { width: fit-content; margin: 0 auto; background: #fff; border-radius: 18px; padding: 26px 30px; box-shadow: var(--c-shadow-card); }
+  .ed-wrap { position: relative; margin: 0 auto; }
+  .ed-zyme { display: block; margin-bottom: 8px; }
+  .ed { position: relative; background: #fff; }
+  .ed img { display: block; }
+  .ed-body { border-left: 1px solid #b7b7b7; border-right: 1px solid #b7b7b7; background: #fff; padding: 22px 26px;
+             font-family: 'Times New Roman', Times, serif; font-size: 28px; line-height: 1.45; color: #000; overflow: hidden; }
+  .ed-body p { margin: 0 0 14px; }
+  .kbd { display: inline-flex; align-items: center; justify-content: center; min-width: 74px; height: 64px; padding: 0 18px;
+         background: var(--c-surface); border: 2px solid #cbd5e1; border-bottom-width: 6px; border-radius: 12px;
+         font-family: 'Inter', sans-serif; font-size: 28px; font-weight: 700; color: var(--c-text); }
+  .plus { font-family: 'Inter', sans-serif; font-size: 30px; font-weight: 700; color: var(--c-text-faint); margin: 0 12px; }
+  .keys { display: flex; align-items: center; }
+  .spot { position: absolute; z-index: 6; border: 4px solid var(--c-blue-solid); border-radius: 10px;
+          box-shadow: 0 0 0 9999px rgba(15, 23, 42, .5); pointer-events: none; }
+  .ring { position: absolute; z-index: 7; border: 4px solid var(--c-blue-solid); border-radius: 10px; pointer-events: none; }
+  .cur { position: absolute; left: 0; top: 0; z-index: 9; width: 44px; height: 56px; }
+  .cur svg { width: 44px; height: 56px; }
+  .rip { position: absolute; z-index: 8; width: 64px; height: 64px; margin: -32px 0 0 -32px; border-radius: 50%;
+         background: rgba(66, 133, 244, .45); opacity: 0; }
+  .sel { background-color: rgba(59, 130, 246, .28); }
+
+  .card { padding: 34px 120px 40px; }
+  .title { margin-bottom: 26px; font-size: 48px; }
+  .top { display: flex; align-items: center; justify-content: center; gap: 36px; margin-bottom: 26px; }
+  .lng { display: flex; align-items: center; gap: 22px; background: var(--c-surface); border-radius: 16px; padding: 16px 24px;
+         box-shadow: var(--c-shadow-card); font-family: 'Inter', sans-serif; font-size: 28px; font-weight: 700; color: var(--c-text); }
+  .lt { display: grid; gap: 5px; width: 120px; }
+  .lt i { height: 8px; border-radius: 4px; background: #cbd5e1; } .lt i:first-child { background: #94a3b8; }
+  .arr { width: 160px; height: 40px; }
+  .gs { display: flex; align-items: center; gap: 16px; font-family: 'Inter', sans-serif; font-size: 30px; font-weight: 700; color: #0f5132; }
+  .gs svg { width: 54px; height: 72px; }
+  .row { display: flex; justify-content: center; margin-top: 22px; }
+  .st { border-collapse: collapse; font-size: 26px; }
+  .st td { border: 1px solid #000; padding: 6px 16px; }
+  .cur { transform: translate(1100px, 300px); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="top">
+      <div class="lng"><div class="lt"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><span>{{long}}</span></div>
+      <svg class="arr" viewBox="0 0 160 40"><path d="M4 20h140M128 6l16 14-16 14" fill="none" stroke="#0f9d58" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <div class="gs"><svg viewBox="0 0 48 64"><path d="M4 2h28l12 12v46a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z" fill="#0f9d58"/><path d="M32 2v12h12z" fill="#87ceac"/><rect x="11" y="28" width="26" height="22" rx="1" fill="#fff"/><path d="M11 35.5h26M11 43h26M22 28v22" stroke="#0f9d58" stroke-width="2"/></svg><span>{{gs}}</span></div>
+    </div>
+    <div class="panel"><div class="ed-wrap zoom" style="width:1500px"><div class="ed" style="width:1500px"><img src="assets/iklijuotas-redaktorius-juosta.png" style="width:1500px"><div class="ed-body" style="height:200px"><table class="st"><tr><td>{{t_h1}}</td><td>{{t_h2}}</td></tr><tr><td>{{t_r1a}}</td><td>{{t_r1b}}</td></tr><tr><td>{{t_r2a}}</td><td>{{t_r2b}}</td></tr></table></div><img src="assets/iklijuotas-redaktorius-apacia.png" style="width:1500px"></div>
+      <div class="rip r1" style="left:613px; top:22px"></div>
+      <div class="cur"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div>
+    </div></div>
+    <div class="row"><div class="keys kt"><span class="kbd kt-k0">{{k1}}</span><span class="plus kt-p1">+</span><span class="kbd kt-k1">{{k2}}</span></div></div>
+  </div>
+</body>
+</html>

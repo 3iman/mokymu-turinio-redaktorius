@@ -27,6 +27,9 @@ function getArg(name, def) {
 
 const lessonSlug = getArg('--lesson');
 const lang = getArg('--lang', 'lt');
+// ⛔ Ne kiekvienas filmukas turi pamoką WP (2026-09-20: iš 8 sumontuotų ją turėjo 2).
+// Be WP aprašymas vis tiek gimsta — tik be įvado ir susijusių pamokų nuorodų.
+const noWp = args.includes('--no-wp');
 
 if (!lessonSlug) {
   console.error('Usage: node generate-youtube-description.js --lesson <slug> [--lang lt]');
@@ -41,12 +44,12 @@ const outputPath = path.join(lessonDir, 'video', `youtube-${lang}.txt`);
 const envPath = path.join(__dirname, '.env');
 
 // ---- Load .env ----
-if (!fs.existsSync(envPath)) {
+if (!fs.existsSync(envPath) && !noWp) {
   console.error(`No .env at ${envPath}`);
   process.exit(1);
 }
 const env = {};
-fs.readFileSync(envPath, 'utf-8').split('\n').forEach(line => {
+(fs.existsSync(envPath) ? fs.readFileSync(envPath, 'utf-8') : '').split('\n').forEach(line => {
   const idx = line.indexOf('=');
   if (idx > 0) {
     env[line.slice(0, idx).trim()] = line.slice(idx + 1).trim();
@@ -157,26 +160,30 @@ function htmlToPlain(html) {
 
 // ---- Main ----
 (async () => {
-  const auth = Buffer.from(`${env.WP_USER}:${env.WP_APP_PASSWORD}`).toString('base64');
-  const headers = { Authorization: `Basic ${auth}` };
+  let le_intro = '';
+  let wpSkipped = noWp ? 'praleista (--no-wp)' : null;
 
-  // Surasti post ID pagal slug
-  const searchData = await httpJson(
-    `${env.WP_URL}/wp-json/wp/v2/kursai?slug=${encodeURIComponent(lessonSlug)}&status=any`,
-    headers
-  );
-  if (!searchData.length) {
-    console.error(`Lesson "${lessonSlug}" not found in WP`);
-    process.exit(1);
+  if (!noWp) {
+    try {
+      const auth = Buffer.from(`${env.WP_USER}:${env.WP_APP_PASSWORD}`).toString('base64');
+      const headers = { Authorization: `Basic ${auth}` };
+      const searchData = await httpJson(
+        `${env.WP_URL}/wp-json/wp/v2/kursai?slug=${encodeURIComponent(lessonSlug)}&status=any`,
+        headers
+      );
+      if (!searchData.length) {
+        wpSkipped = 'WP neturi tokios pamokos';
+      } else {
+        const post = await httpJson(
+          `${env.WP_URL}/wp-json/wp/v2/kursai/${searchData[0].id}?context=edit`,
+          headers
+        );
+        le_intro = post.meta_box?.le_intro || '';
+      }
+    } catch (e) {
+      wpSkipped = `WP neatsakė (${e.message})`;
+    }
   }
-  const postId = searchData[0].id;
-
-  // Gauti pilną post'ą su meta_box
-  const post = await httpJson(
-    `${env.WP_URL}/wp-json/wp/v2/kursai/${postId}?context=edit`,
-    headers
-  );
-  const le_intro = post.meta_box?.le_intro || '';
 
   const links = extractLinks(le_intro);
   const plainIntro = htmlToPlain(le_intro);
@@ -213,6 +220,11 @@ function htmlToPlain(html) {
   console.log(`  Chapters: ${chapters.length}`);
   console.log(`  Related lessons: ${links.length}`);
   console.log(`  Intro: ${plainIntro ? 'yes' : 'no'}`);
+  if (wpSkipped) {
+    console.log(`  ⚠ Įvadas be WP — ${wpSkipped}.`);
+    console.log(`    Faile yra tik skyriai ir parašas; pirmas pastraipas įrašyk ranka`);
+    console.log(`    arba per meta: lessons/${lessonSlug}/video/youtube-${lang}.json`);
+  }
 })().catch(err => {
   console.error(err.message);
   process.exit(1);

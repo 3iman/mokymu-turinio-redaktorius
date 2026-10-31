@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .card { padding: 46px 110px 56px; }
+  .title { margin-bottom: 36px; }
+  .cur { position: absolute; left: 0; top: 0; z-index: 9; width: 46px; height: 58px; }
+  .cur svg { width: 46px; height: 58px; }
+  .rip { position: absolute; z-index: 8; width: 70px; height: 70px; margin: -35px 0 0 -35px; border-radius: 50%;
+         background: rgba(124, 58, 237, .40); opacity: 0; }
+  @keyframes ratilas { from { opacity: .85; transform: scale(.3); } to { opacity: 0; transform: scale(1.7); } }
+
+  .tl { position: relative; width: 1540px; margin: 10px auto 70px; display: flex; align-items: flex-start;
+        justify-content: space-between; }
+  .tl-rail { position: absolute; left: 215px; right: 215px; top: 15px; height: 4px; border-radius: 2px;
+             background: var(--c-line); }
+  .tn { width: 470px; text-align: center; position: relative; }
+  .tm { width: 420px; text-align: center; padding-top: 44px; font-size: 25px; color: var(--c-text-muted); }
+  .dot { display: block; width: 34px; height: 34px; border-radius: 50%; margin: 0 auto 22px;
+         background: var(--c-amber-solid); box-shadow: 0 0 0 7px var(--c-amber-bg); }
+  .dot-off { background: #475569; box-shadow: 0 0 0 7px #e4e8ee; }
+  .tn b { display: block; font-size: 32px; font-weight: 800; color: var(--c-text); margin-bottom: 10px; }
+  .tn i { display: block; font-style: normal; font-size: 26px; color: var(--c-text-muted); }
+  .duo { display: flex; gap: 46px; justify-content: center; }
+  .cc { width: 640px; border-radius: 20px; padding: 28px 36px 32px; box-shadow: var(--c-shadow-card); }
+  .c-bad { background: var(--c-amber-bg); border: 2px solid var(--c-amber-border); }
+  .c-good { background: var(--c-green-bg); border: 2px solid var(--c-green-border); }
+  .cc-l { font-size: 26px; font-weight: 700; margin-bottom: 14px; }
+  .c-bad .cc-l { color: var(--c-amber-text); }
+  .c-good .cc-l { color: var(--c-green-text); }
+  .cc-n { font-size: 52px; font-weight: 800; color: var(--c-text); letter-spacing: 1px; }
+  .cc-n2 { font-size: 36px; font-weight: 700; color: var(--c-text-secondary); margin-top: 10px; }
+  .c-bad .cc-n { text-decoration: line-through; text-decoration-thickness: 4px; color: var(--c-text-muted); }
+  .src { text-align: center; font-size: 23px; color: var(--c-text-faint); margin-top: 34px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="tl">
+      <div class="tl-rail"></div>
+      <div class="tn na"><span class="dot"></span><b>{{d1}}</b><i>{{t1}}</i></div>
+      <div class="tm">{{mid}}</div>
+      <div class="tn nb"><span class="dot dot-off"></span><b>{{d2}}</b><i>{{t2}}</i></div>
+    </div>
+    <div class="duo">
+      <div class="cc c-bad"><div class="cc-l">{{bad_l}}</div><div class="cc-n">{{bad_n}}</div></div>
+      <div class="cc c-good"><div class="cc-l">{{good_l}}</div><div class="cc-n">{{good_n}}</div>
+        <div class="cc-n2">{{good_n2}}</div></div>
+    </div>
+    <div class="src">{{src}}</div>
+  </div>
+</body>
+</html>

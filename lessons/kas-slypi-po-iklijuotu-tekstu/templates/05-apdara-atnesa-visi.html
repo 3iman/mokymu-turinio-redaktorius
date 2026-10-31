@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .card { padding: 40px 120px 56px; }
+  .stage { position: relative; width: 1680px; height: 700px; margin: 0 auto; }
+  .src { position: absolute; left: 60px; width: 420px; height: 104px; background: var(--c-surface); border-radius: 18px;
+          border: 1.5px solid var(--c-border); box-shadow: var(--c-shadow-card); display: flex; align-items: center; gap: 22px;
+          padding: 0 28px; font-size: 32px; font-weight: 700; color: var(--c-text); }
+  .src svg { width: 56px; height: 56px; flex: none; }
+  .tgt { position: absolute; background: var(--c-surface); border-radius: 22px; border: 1.5px solid var(--c-border);
+          box-shadow: var(--c-shadow-card); overflow: hidden; }
+  .tgt-bar { height: 52px; background: #eef1f6; display: flex; gap: 10px; align-items: center; padding: 0 20px; border-bottom: 1.5px solid var(--c-border); }
+  .tgt-bar i { width: 14px; height: 14px; border-radius: 50%; background: #cbd5e1; }
+  .tgt-name { font-size: 40px; font-weight: 700; color: var(--c-text); padding: 34px 40px 20px; }
+  .tgt-lines { padding: 0 40px; display: grid; gap: 16px; }
+  .tgt-lines i { height: 16px; border-radius: 8px; background: #e2e8f0; }
+  .tgt-lines i:nth-child(2) { width: 86%; } .tgt-lines i:nth-child(4) { width: 62%; }
+  .bag { position: absolute; left: 0; top: 0; width: 96px; height: 84px; }
+  .bag svg { width: 96px; height: 84px; }
+  .bag0 { transform: translate(1050px, 520px) rotate(-6deg); }
+  .bag1 { transform: translate(1170px, 520px) rotate(4deg); }
+  .bag2 { transform: translate(1290px, 520px) rotate(-2deg); }
+  .bag3 { transform: translate(1410px, 520px) rotate(7deg); }
+  .bag4 { transform: translate(1530px, 520px) rotate(-4deg); }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="stage">
+      <div class="src src0" style="top:40px"><svg viewBox="0 0 40 40"><rect x="7" y="3" width="26" height="34" rx="3" fill="#dbeafe" stroke="#2563eb" stroke-width="2.4"/><path d="M12 13h16M12 19h16M12 25h11" stroke="#2563eb" stroke-width="2.4" stroke-linecap="round"/></svg><span>{{s_word}}</span></div><div class="src src1" style="top:164px"><svg viewBox="0 0 40 40"><rect x="4" y="9" width="32" height="23" rx="3" fill="#fef3c7" stroke="#b45309" stroke-width="2.4"/><path d="M5 11l15 11 15-11" fill="none" stroke="#b45309" stroke-width="2.4"/></svg><span>{{s_mail}}</span></div><div class="src src2" style="top:288px"><svg viewBox="0 0 40 40"><rect x="4" y="5" width="32" height="30" rx="5" fill="#e0e7ff" stroke="#4f46e5" stroke-width="2.4"/><circle cx="12" cy="13" r="3" fill="#4f46e5"/><path d="M18 12h12M10 21h20M10 27h14" stroke="#4f46e5" stroke-width="2.4" stroke-linecap="round"/></svg><span>{{s_fb}}</span></div><div class="src src3" style="top:412px"><svg viewBox="0 0 40 40"><path d="M9 3h16l7 7v27H9z" fill="#fee2e2" stroke="#dc2626" stroke-width="2.4" stroke-linejoin="round"/><path d="M25 3v7h7" fill="none" stroke="#dc2626" stroke-width="2.4"/><path d="M14 22h12M14 28h8" stroke="#dc2626" stroke-width="2.4" stroke-linecap="round"/></svg><span>{{s_pdf}}</span></div><div class="src src4" style="top:536px"><svg viewBox="0 0 40 40"><rect x="3" y="6" width="34" height="28" rx="3" fill="#dcfce7" stroke="#16a34a" stroke-width="2.4"/><path d="M3 13h34" stroke="#16a34a" stroke-width="2.4"/><circle cx="8" cy="9.5" r="1.4" fill="#16a34a"/><circle cx="12.5" cy="9.5" r="1.4" fill="#16a34a"/></svg><span>{{s_web}}</span></div>
+      <div class="tgt" style="left:980px; top:120px; width:700px; height:520px">
+        <div class="tgt-bar"><i></i><i></i><i></i></div>
+        <div class="tgt-name">{{site}}</div>
+        <div class="tgt-lines"><i></i><i></i><i></i><i></i></div>
+      </div>
+      <div class="bag bag0"><svg viewBox="0 0 64 56"><rect x="22" y="3" width="20" height="10" rx="3" fill="none" stroke="#7c2d12" stroke-width="3.2"/><rect x="4" y="12" width="56" height="40" rx="7" fill="#f59e0b" stroke="#7c2d12" stroke-width="3.2"/><path d="M4 28h56" stroke="#7c2d12" stroke-width="3.2"/><rect x="27" y="23" width="10" height="10" rx="2" fill="#7c2d12"/></svg></div><div class="bag bag1"><svg viewBox="0 0 64 56"><rect x="22" y="3" width="20" height="10" rx="3" fill="none" stroke="#7c2d12" stroke-width="3.2"/><rect x="4" y="12" width="56" height="40" rx="7" fill="#f59e0b" stroke="#7c2d12" stroke-width="3.2"/><path d="M4 28h56" stroke="#7c2d12" stroke-width="3.2"/><rect x="27" y="23" width="10" height="10" rx="2" fill="#7c2d12"/></svg></div><div class="bag bag2"><svg viewBox="0 0 64 56"><rect x="22" y="3" width="20" height="10" rx="3" fill="none" stroke="#7c2d12" stroke-width="3.2"/><rect x="4" y="12" width="56" height="40" rx="7" fill="#f59e0b" stroke="#7c2d12" stroke-width="3.2"/><path d="M4 28h56" stroke="#7c2d12" stroke-width="3.2"/><rect x="27" y="23" width="10" height="10" rx="2" fill="#7c2d12"/></svg></div><div class="bag bag3"><svg viewBox="0 0 64 56"><rect x="22" y="3" width="20" height="10" rx="3" fill="none" stroke="#7c2d12" stroke-width="3.2"/><rect x="4" y="12" width="56" height="40" rx="7" fill="#f59e0b" stroke="#7c2d12" stroke-width="3.2"/><path d="M4 28h56" stroke="#7c2d12" stroke-width="3.2"/><rect x="27" y="23" width="10" height="10" rx="2" fill="#7c2d12"/></svg></div><div class="bag bag4"><svg viewBox="0 0 64 56"><rect x="22" y="3" width="20" height="10" rx="3" fill="none" stroke="#7c2d12" stroke-width="3.2"/><rect x="4" y="12" width="56" height="40" rx="7" fill="#f59e0b" stroke="#7c2d12" stroke-width="3.2"/><path d="M4 28h56" stroke="#7c2d12" stroke-width="3.2"/><rect x="27" y="23" width="10" height="10" rx="2" fill="#7c2d12"/></svg></div>
+    </div>
+  </div>
+</body>
+</html>

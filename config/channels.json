@@ -1,0 +1,21 @@
+{
+  "_komentaras": "Kanalas rinkai. YOUTUBE_STRATEGY.md §145: kiekviena rinka turi savo kanalą, todėl lenkiškas filmukas yra ATSKIRAS įkėlimas, ne lietuviško lokalizacija.",
+  "channels": {
+    "cleverphant-lt": {
+      "pavadinimas": "Cleverphant (LT)",
+      "kalbos": ["lt"],
+      "token": ".secrets/yt-cleverphant-lt.json",
+      "client_secret": ".secrets/oauth-cleverphant-lt.json",
+      "numatytasis_playlist": "Cleverphant mokymai",
+      "aktyvus": true
+    },
+    "cleverphant-pl": {
+      "pavadinimas": "Cleverphant (PL)",
+      "kalbos": ["pl"],
+      "token": ".secrets/yt-cleverphant-pl.json",
+      "client_secret": ".secrets/oauth-cleverphant-pl.json",
+      "numatytasis_playlist": "Szkolenia Cleverphant",
+      "aktyvus": false
+    }
+  }
+}

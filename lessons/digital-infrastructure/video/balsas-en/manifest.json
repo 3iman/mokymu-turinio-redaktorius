@@ -1,0 +1,63 @@
+{
+  "hash": "f30925f893d44cf4537cace414332b3e1913c5963db73ee0464cf1c13dc81576",
+  "voice_id": "onwK4e9ZLuTAKqWW03F9",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "en",
+  "seed": 1173898784,
+  "characters": 875,
+  "start_in_frame": 0.6,
+  "created": "2026-10-30T15:53:19.158Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": null,
+      "title": "Hook",
+      "text": "Imagine noticing a legacy code snippet buried under the surface — one that repeats across more than two hundred public sector websites.",
+      "file": "k01.wav",
+      "duration": 8.99,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 2,
+      "cue": null,
+      "title": "Contrast",
+      "text": "In a traditional agency model, this means weeks of chaos: hundreds of emails to local administrators, manual fixes, and guaranteed human error.",
+      "file": "k02.wav",
+      "duration": 10.89,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": null,
+      "title": "Solution",
+      "text": "Our infrastructure works differently. Modern architecture enables smart AI and MCP automation to scan, identify, and resolve the issue across the entire network instantly.",
+      "file": "k03.wav",
+      "duration": 13.45,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 4,
+      "cue": null,
+      "title": "Lifecycle",
+      "text": "But automation is just a tool. True value comes from full governance — from formulating a clear plan to informing clients and creating educational content.",
+      "file": "k04.wav",
+      "duration": 11.37,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 5,
+      "cue": null,
+      "title": "Call to action",
+      "text": "Today it is a legacy phone link. Tomorrow it is a new accessibility mandate or a security standard. Centralized infrastructure ensures public sector networks never go obsolete. Scale proven GovTech infrastructure with us as a Master Partner.",
+      "file": "k05.wav",
+      "duration": 17.69,
+      "fits": false,
+      "reikia_sek": 19
+    }
+  ]
+}

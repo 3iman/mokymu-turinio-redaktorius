@@ -1,0 +1,163 @@
+{
+  "hash": "b5e6c6c7f18681e318819840089ed944a754b7ed735874a4f7553612a303376e",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 3537359918,
+  "characters": 2317,
+  "start_in_frame": 0.6,
+  "created": "2026-09-20T14:36:32.922Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": null,
+      "title": "Šešios durys",
+      "text": "Įsivaizduokite, kad mokyklos svetainė yra pastatas, o pagrindinis meniu – jo paradinės durys. Jų šešerios, ir visose mūsų svetainėse jos tos pačios.",
+      "file": "k01.wav",
+      "duration": 10.67,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": null,
+      "title": "Įprotis formuojamas metų metus",
+      "text": "Įprotis formuojamas metų metus. Žmogus žino, pro kurias duris eiti. O kai durys perstatomos, ištinka nuostaba ir erzelis.",
+      "file": "k02.wav",
+      "duration": 8.73,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 3,
+      "cue": null,
+      "title": "Nekaltas prašymas vis užauga",
+      "text": "Prašo direktorė, pavaduotoja, savivaldybė. Niekas iš jų nemato visos juostos iš karto, todėl kaina lieka nematoma – ji sumokama kitų meniu punktų sąskaita.",
+      "file": "k03.wav",
+      "duration": 11.31,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 4,
+      "cue": null,
+      "title": "Kiek vietos yra",
+      "text": "Meniu juosta platesnė nebūna, o punktai ją užpildo beveik iki galo. Laisvos vietos lieka mažiau nei vienai raidei.",
+      "file": "k04.wav",
+      "duration": 7.77,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 5,
+      "cue": null,
+      "title": "Kaip gimsta dviaukštis meniu",
+      "text": "Pridėjus septintas duris, meniu persilaužia į du aukštus. Arba iškrenta kitas punktas, dažniausiai pagalba mokiniams ir tėvams.",
+      "file": "k05.wav",
+      "duration": 9.55,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 6,
+      "cue": null,
+      "title": "Reguliacinis vėjas",
+      "text": "Kai pučia reguliacinis vėjas, duris nupučia kartu. Į jų vietą sulipa privalomos temos, ir ta eilė nesibaigia niekada.",
+      "file": "k06.wav",
+      "duration": 8.19,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 7,
+      "cue": null,
+      "title": "Jau buvo kartą",
+      "text": "Kartą visiems reikėjo Europos Sąjungos logotipo svetainės viršuje. Kol prašymas atėjo pas mus, jis jau buvo šalia mokyklos ženklo. O tikrasis reikalavimas visai kitas.",
+      "file": "k07.wav",
+      "duration": 11.05,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 8,
+      "cue": null,
+      "title": "Nenorime būti kaip visi",
+      "text": "Kartais sakoma: nenorime būti kaip visi. Bet bendruomenė ateina ne grožėtis meniu, o kažko rasti. Kitokie būkite tuo, ką darote, o ne tuo, kur padėjote duris.",
+      "file": "k08.wav",
+      "duration": 11.05,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 9,
+      "cue": null,
+      "title": "Kas nusipelno durų?",
+      "text": "Durų nusipelno tai, kas duoda vertę bendruomenei. Projektai reiškia papildomas lėšas vaikų ugdymui. Inžinerinis ugdymas pasako, kuo mokykla stipri. O ką bendruomenei sako korupcijos prevencija?",
+      "file": "k09.wav",
+      "duration": 13.05,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 10,
+      "cue": null,
+      "title": "Bet tai jie ir svarbūs",
+      "text": "Tai nereiškia, kad jie nesvarbūs. Žvilgsnis puslapiu nubėga iki pat apačios, o ten, kaip mokyklos fojė, kabo informacijos stendas. Jūsų svetainėje taisyti nieko nereikia.",
+      "file": "k10.wav",
+      "duration": 12.73,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 11,
+      "cue": null,
+      "title": "Visada bus tokių, kurie parašys",
+      "text": "Kartais parašo, kad nerado. Taip bus visada. Viršuje yra paieška, apačioje svetainės medis, o greičiausias atsakymas yra viena nuoroda laiške. Nusiuntėte ir klausimas uždarytas.",
+      "file": "k11.wav",
+      "duration": 14.27,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 12,
+      "cue": null,
+      "title": "O galima mainyti?",
+      "text": "Todėl darome mainus. Inžinerinio ugdymo kryptis stoja prie kitų ugdymo paslaugų po Ugdymu, o į atsilaisvinusią vietą ateina tai, kas mokyklai svarbiau.",
+      "file": "k12.wav",
+      "duration": 11.93,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 13,
+      "cue": null,
+      "title": "O galima trumpinti?",
+      "text": "Sutrumpinus Pagalba mokiniams ir tėvams iki Švietimo pagalba, atsilaisvina maždaug tiek, kiek užima vienas trumpas žodis.",
+      "file": "k13.wav",
+      "duration": 9.15,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 14,
+      "cue": null,
+      "title": "Kaip kitaip pasiekti bendruomenę?",
+      "text": "Kad bendruomenė pamatytų, tinka straipsnis arba žinutė el. dienyne. Straipsnis dar patenka į savaitinę santrauką. O savivaldybės straipsnį galime centralizuotai paskelbti visoms jos mokykloms.",
+      "file": "k14.wav",
+      "duration": 13.53,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 15,
+      "cue": null,
+      "title": "Ar galime sutarti?",
+      "text": "Nesinori ginčytis nei su institucija, nei juo labiau su žmogumi. Bet gal galime sutarti, kad verta pasaugoti suformuotą nuoseklumą bei įprotį?",
+      "file": "k15.wav",
+      "duration": 10.91,
+      "fits": true,
+      "reikia_sek": 13
+    }
+  ]
+}

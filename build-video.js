@@ -66,8 +66,19 @@ const FPS = 1; // for static frames, 1 fps is enough (duration controlled per fr
 const BG_COLOR = isDark ? '#151b2b' : '#f8f9fb';
 const VOICE_TARGET_LUFS = -19; // balso garsumas montaže (VIDEO_GAMYBA.md §7 „Balsas“)
 // Vinjetės pradžia iš templates/video-outro.html; kalboms be teksto lieka visas senas autro.mp4
+// ⛔ NEKEIČIAMA (Eimantas, 2026-10-30: „Ačiū, kad skyrėte laiko ir niekada to nekeiskime“).
 const OUTRO_THANKS = { lt: 'Ačiū, kad skyrėte laiko' };
 const OUTRO_HEAD_SECONDS = 4.0; // autro.mp4: 4,0–4,24 s tuščias #dfecf3, logotipas atsiranda 4,24 s
+
+// Scenarijaus jungikliai: `**Intro:** ne`, `**Skirtukai:** ne`, `**Vinjetė:** ne`.
+// Naudoja trumpi filmukai (pvz. LinkedIn), kuriems intro, skirtukų ar vinjetės nereikia.
+function scenarioOff(name) {
+  try {
+    const t = fs.readFileSync(scenarioPath, 'utf-8');
+    const m = t.match(new RegExp('^\\*\\*' + name + ':\\*\\*\\s*(.+?)\\s*$', 'm'));
+    return !!m && /^(ne|nėra|no|none)$/i.test(m[1].trim());
+  } catch (e) { return false; }
+}
 
 // ---- Parse scenario order (file → kadras mapping) ----
 function parseScenarioOrder() {
@@ -443,7 +454,9 @@ function buildVideo(frames, durations, introClipPath, introPng, outroHeadPath) {
   // Build frame list: intro + illustrations (in scenario order)
   const allFrames = [];
 
-  if (introClipPath) {
+  if (scenarioOff('Intro')) {
+    console.log('  Intro: praleistas (scenarijaus jungiklis)');
+  } else if (introClipPath) {
     allFrames.push({ name: 'intro', path: introPng, duration: durations[0] || 5, animatedClip: introClipPath });
   } else if (introPng) {
     allFrames.push({ name: 'intro', path: introPng, duration: durations[0] || 5 });
@@ -483,7 +496,7 @@ function buildVideo(frames, durations, introClipPath, introPng, outroHeadPath) {
 
   // Check for outro
   const outroPath = path.join(VIDEO_ASSETS_DIR, 'autro.mp4');
-  const hasOutro = fs.existsSync(outroPath);
+  const hasOutro = fs.existsSync(outroPath) && !scenarioOff('Vinjetė');
 
   // Check for background music
   const musicPath = path.join(VIDEO_ASSETS_DIR, 'jiglr-malibu_cleverphant-mokymu-fonas.mp3');
@@ -608,7 +621,7 @@ function buildVideo(frames, durations, introClipPath, introPng, outroHeadPath) {
 
   // Step 1b: Check for transition clips
   const transDir = path.join(animClipsDir, 'transitions');
-  const hasTransitions = fs.existsSync(transDir);
+  const hasTransitions = fs.existsSync(transDir) && !scenarioOff('Skirtukai');
   if (hasTransitions) {
     console.log(`  Transition clips found in ${transDir}`);
   }
@@ -916,6 +929,17 @@ function buildVideo(frames, durations, introClipPath, introPng, outroHeadPath) {
       filtrai.push(`[pagrindas]${sfx.map((_, j) => `[g${j}]`).join('')}amix=inputs=${sfx.length + 1}:normalize=0:duration=first,alimiter=limit=0.9:level=false[aout]`);
     }
 
+    // ⛔ Filmuko trukmę lemia VAIZDAS, ne garsas (2026-09-20).
+    // Muzikos lova surenkama iš sveikų taktų, tad kartais baigiasi anksčiau už vaizdą
+    // (pradžiamokslis: 528,75 s prieš 530,00 s). Su `-shortest` tada nukrisdavo filmuko
+    // galas — kartu su vinjetės uodega — ir laiko juosta, rašanti tikrąją trukmę,
+    // atrodydavo klaidinga. Todėl garsas pailginamas tyla, o išvestis kerpama ties totalDur.
+    {
+      const i = filtrai.length - 1;
+      filtrai[i] = filtrai[i].replace(/\[aout\]$/, '[aoutRaw]');
+      filtrai.push(`[aoutRaw]apad,atrim=0:${totalDur.toFixed(3)},asetpts=N/SR/TB[aout]`);
+    }
+
     execSync([
       'ffmpeg', '-y',
       ...ivestys,
@@ -925,7 +949,7 @@ function buildVideo(frames, durations, introClipPath, introPng, outroHeadPath) {
       '-c:v', 'copy',
       '-c:a', 'aac',
       '-b:a', '192k',
-      '-shortest',
+      '-t', totalDur.toFixed(3),
       `"${videoOut}"`,
     ].join(' '), { stdio: 'pipe' });
     if (turiPlakima) {

@@ -1,0 +1,4 @@
+ ('<div class="cta" id="c15cta" style="top:760px">',
+  '<div id="c15q" class="lbl" style="left:960px;top:704px;font-size:36px;font-weight:700;color:#1e293b">Dar ne mūsų klientas?</div>\n    <div id="c15note" class="lbl" style="left:960px;top:882px;font-size:28px;color:var(--teal)">Ateisime pasiruošę.</div>\n    <div class="cta" id="c15cta" style="top:778px">'),
+ ('  tl.fromTo("#c15cta", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, w(15, "talk") + 2.6);',
+  '  tl.fromTo("#c15cta", { opacity: 0, y: 16 }, { opacity: 1, y: 0, duration: 0.6, ease: E }, w(15, "talk") + 2.6);\n  tl.set(["#c15q", "#c15note"], { xPercent: -50 }, 0);\n  pop("#c15q", w(15, "talk") + 2.2);\n  pop("#c15note", w(15, "prepared"));'),

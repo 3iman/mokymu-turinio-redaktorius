@@ -1,0 +1,20 @@
+📋 SKYRIAI
+
+0:00 Įvadas. Kodėl tai naudinga
+0:32 Kaip tai veikia
+1:02 Failo ir lapo numeriai
+1:29 Kas ką daro
+1:54 Publikavimas
+2:20 Lentelė puslapyje
+2:48 Modulis sistemoje
+3:16 Kaip greitai atsinaujina
+3:40 Lentelė yra duomenų bazė
+4:12 Lapų tvarka
+4:36 Keli failai pagal atsakomybes
+5:03 Ką matote atidarę
+5:27 Kur toliau
+5:46 Outro
+
+—
+Cleverphant mokymai mokyklų svetainių administratoriams
+https://mokymai.cleverphant.lt

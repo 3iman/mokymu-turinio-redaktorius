@@ -1,0 +1,83 @@
+{
+ "1": {
+  "caps": 0.31,
+  "multiply": 4.14
+ },
+ "2": {
+  "accessibility": 2.07,
+  "data protection": 3.26,
+  "security": 4.43,
+  "rules": 5.3,
+  "alone": 8.22,
+  "budget": 9.44,
+  "contractor": 10.35
+ },
+ "3": {
+  "website": 4.84,
+  "Underneath": 6.12,
+  "compliance": 8.12,
+  "training": 8.95,
+  "support": 9.57,
+  "network": 10.67
+ },
+ "4": {
+  "benefits": 3.31,
+  "bugs": 4.48,
+  "one school": 6.6,
+  "Fixed once": 8.03
+ },
+ "5": {
+  "curious": 2.17,
+  "pilot": 5.68,
+  "data": 7.1,
+  "standard": 9.01
+ },
+ "6": {
+  "municipality": 2.26,
+  "publishes": 4.12,
+  "once": 6.16,
+  "every school": 7.74
+ },
+ "7": {
+  "village": 0.55,
+  "large city": 2.05,
+  "family": 4.3,
+  "familiar": 6.06,
+  "foundation": 7.93,
+  "face": 9.56,
+  "Not identical": 11.95,
+  "Equally": 13.03
+ },
+ "8": {
+  "capitals": 5.5,
+  "stretching": 6.64,
+  "images": 9.22,
+  "cookie": 10.28,
+  "Trojan": 12.24,
+  "further": 16.17,
+  "document bank": 17.05,
+  "whistleblower": 18.21,
+  "bookings": 19.59,
+  "AI integrations": 21.15,
+  "chaos": 24.43
+ },
+ "9": {
+  "municipality": 1.99,
+  "region": 3.23,
+  "whole country": 3.88,
+  "added": 6.13,
+  "costs": 7.35,
+  "Not a promise": 9.42,
+  "logic": 11.59
+ },
+ "10": {
+  "fifteen": 1.3,
+  "Hundreds": 2.53,
+  "content audits": 6.65,
+  "onboarding": 8.09,
+  "training platform": 8.94,
+  "small country": 10.95,
+  "Ready": 12.39,
+  "talk": 14.24
+ }
+}

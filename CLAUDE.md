@@ -527,3 +527,4 @@ Agentas pats nueina į `wp-admin`, peržiūri kaip sukurtas Kursai post type —
 | `COMPOSITION_PRINCIPLES.md` | **Prieš kiekvieną iliustraciją** — hierarchija, balansas, erdvė, proporcijos | Taip |
 | `ANIMATION_PRINCIPLES.md` | **Prieš animuotus klipus** — timing, easing, staging, gradual reveal | Taip |
 | `VIDEO_GAMYBA.md` | **Prieš kiekvieną video** — visa grandinė, konstantos, spąstai, priėmimo patikra | Taip |
+| `AI_VIDEO_GENERAVIMAS.md` | **Prieš bet kokį AI generuotą kadrą ar klipą** (Veo, Kling, Higgsfield ir kt.) — įrankiai ir prieiga (MCP/API), kainos, nuoseklaus personažo procesas, taisyklės prieš leidžiant kreditus | Kai naudojami AI generatoriai |

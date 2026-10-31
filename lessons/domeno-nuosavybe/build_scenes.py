@@ -613,9 +613,27 @@ s.ekrane = 'Kortelė su užrašu „Tai ne teisinė konsultacija“ ir paaiškin
 s.komentaras = 'Eimantas 2026-09-19: gale reikia disclaimerio — analitinis vertinimas, ne teisiniai patarimai.'
 
 
+def tikros_trukmes():
+    """Sugeneruoto balso trukmės pagal tekstą: {sakinys: sekundės}.
+
+    ⛔ Spėjimas `len(txt)/CPS` sistemingai per trumpas — ElevenLabs kalba lėčiau,
+    todėl sakiniai užlipdavo vienas ant kito ir tai paaiškėdavo tik sugeneravus
+    balsą (domeno-nuosavybė 2026-09-20: 14 žymų iš 57). Kai manifestas jau yra,
+    dėliojama pagal jį, ne pagal formulę."""
+    man = os.path.join(HERE, 'video', 'balsas-lt', 'manifest.json')
+    if not os.path.exists(man):
+        return {}
+    try:
+        d = json.load(open(man, encoding='utf-8'))
+    except (OSError, ValueError):
+        return {}
+    return {i['text']: i['duration'] for i in d.get('items', []) if i.get('text')}
+
+
 def sutvarkyti_balsa():
     """Balso sakiniai neturi lipti vienas ant kito: kiekvienam paliekamas jo ilgis + 0,7 s,
     o kadras pailginamas, kad paskutinis tilptų (VIDEO_GAMYBA §2)."""
+    tikros = tikros_trukmes()
     for s, _ in SCENES:
         voices = sorted([c for c in s.cues if c[1] == 'balsas'])
         kiti = [c for c in s.cues if c[1] != 'balsas']
@@ -623,10 +641,12 @@ def sutvarkyti_balsa():
         for t, _k, txt in voices:
             t = max(t, pabaiga)
             nauji.append((round(t, 1), 'balsas', txt))
-            pabaiga = t + len(txt) / CPS + 0.7
+            pabaiga = t + tikros.get(txt, len(txt) / CPS) + 0.7
         s.cues = kiti + nauji
-        if pabaiga + 0.6 > s.D:
-            print(f'⛔ {s.file}: balsas netelpa, reikia D={int(pabaiga + 1.0 + 0.999)} (dabar {s.D})')
+        reikia = int(pabaiga + 1.0 + 0.999)
+        if reikia > s.D:
+            print(f'   {s.file}: kadras {s.D} → {reikia} s (balsas netilpo)')
+            s.D = reikia
 
 
 def main():
@@ -661,7 +681,7 @@ def main():
     # scenarijus
     total = sum(s.D for s, _ in SCENES)
     full = total + 10 + int((len(SCENES) - 1) * 3.2)
-    md = [f"# Video scenarijus: Domeno nuosavybė: kaip tvarkyti mokyklos lenteles", "",
+    md = [f"# Video scenarijus: Domeno nuosavybė: kad mokykla jo neprarastų", "",
           "**Formatas:** „kur spausti“ filmukas, balsas sakiniais su laiko žymomis, garsai, foninė muzika",
           "**Balsas:** ElevenLabs `eleven_v3_dpo_20260217`, balsas `eqJHjeWMPGJFD6VBf1J2`, greitis 0.9",
           "⛔ **Balsas SUPLANUOTAS, NESUGENERUOTAS.** Dariaus balso be Eimanto žinios nenaudojame (2026-09-17).",

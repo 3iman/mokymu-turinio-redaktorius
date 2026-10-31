@@ -1,0 +1,113 @@
+{
+  "hash": "444220b6b8c0d07992d7a035087ae576609e78b1a3ff5dee574e8b3095d157c0",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 1185143908,
+  "characters": 2289,
+  "start_in_frame": 0.6,
+  "created": "2026-10-30T15:13:37.216Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": null,
+      "title": "Pamatėme aštuonetą",
+      "text": "Vienos svetainės poraštėje pamatėme telefono numerį su aštuonetu. Niekam neužkliūva – taip rašėme dešimtmečius. Nusprendėme pasitikrinti, ar aštuonetas dar galioja.",
+      "file": "k01.wav",
+      "duration": 11.55,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": null,
+      "title": "Ar aštuonetas dar galioja?",
+      "text": "Nebegalioja, ir jau senokai. Nuo du tūkstančiai dvidešimt ketvirtų metų kovo pirmosios šalia aštuoneto pradėjo veikti nulis, ir metus laiko galiojo abu atskirai. Nuo du tūkstančiai dvidešimt penktų kovo pirmosios aštuonetas išjungtas – numeris su juo nebesujungia. Lieka nulis arba plius trys, septyni nulis.",
+      "file": "k02.wav",
+      "duration": 21.45,
+      "fits": true,
+      "reikia_sek": 23
+    },
+    {
+      "kadras": 3,
+      "cue": null,
+      "title": "Peržiūrėjome, kas vyksta tinkle",
+      "text": "Metas vaiduoklių medžioklei. Peržiūrėjome visas savo svetaines – du šimtus penkiasdešimt penkias, viena patikra. Aštuonetą pamatyti lengva. Bet radome ir tokių vietų, kurios iš pirmo žvilgsnio atrodo visiškai teisingos.",
+      "file": "k03.wav",
+      "duration": 15.01,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 4,
+      "cue": null,
+      "title": "Numeris puslapyje yra du dalykai",
+      "text": "Puslapyje esantis numeris iš tiesų susideda iš dviejų sluoksnių. Viršuje – tekstas, kurį skaito žmogus. Po juo – nuoroda, kurią surenka telefonas. Redaktoriuje matote tik viršutinį.",
+      "file": "k04.wav",
+      "duration": 12.93,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 5,
+      "cue": null,
+      "title": "Administratorius taiso tai, ką mato",
+      "text": "Pasikeitus numeriui administratorius pažymi seną numerį ir vietoj jo užrašo naują. Taip ir turi būti – daugiau redaktorius nieko neparodo. Bet paspaudus kodo peržiūros mygtuką pamatome antrą sluoksnį – kodo eilutes. Viršuje tekstas jau naujas, o nuoroda po juo liko sena.",
+      "file": "k05.wav",
+      "duration": 19.17,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 6,
+      "cue": null,
+      "title": "Paspaudus renka kitą numerį",
+      "text": "Poraštėje viskas atrodo teisingai. Bet paspaudus telefonas renka senąjį numerį – ir skambutis iškeliauja visai ne ten. Štai ir vaiduoklis.",
+      "file": "k06.wav",
+      "duration": 10.09,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": null,
+      "title": "Štai dar viena situacija",
+      "text": "O kai kur būta ir taip. Kontaktų blokas pažymimas, nukopijuojamas ir įklijuojamas į kitą puslapį. Matomas numeris perrašomas savu, o svetima nuoroda atkeliauja kartu ir lieka po juo.",
+      "file": "k07.wav",
+      "duration": 13.143,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 8,
+      "cue": null,
+      "title": "Šiek tiek statistikos",
+      "text": "Šiek tiek statistikos iš mūsų radinių. Peržiūrėjome du šimtus penkiasdešimt penkias svetaines. Taisyti reikėjo tris šimtus keturiasdešimt vieną vietą šimte trisdešimt septyniose. O dešimtyje jų nuoroda vedė visai į kitą numerį, nei parašyta ekrane.",
+      "file": "k08.wav",
+      "duration": 16.59,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 9,
+      "cue": null,
+      "title": "Patikra trunka dešimt sekundžių",
+      "text": "Pasitikrinti galite ir patys. Atsidarote savo svetainę telefone ir paspaudžiate savo numerį. Ne pažiūrite – paspaudžiate.",
+      "file": "k09.wav",
+      "duration": 8.65,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 10,
+      "cue": null,
+      "title": "Grįšime",
+      "text": "Pažiūrėjome, pasitikslinome ir sutvarkėme. Matomo teksto nelietėme, nes čia niekas nesuklydo – aštuonetą rašėme visi ir dešimtmečius. Šis aštuonetas – tik pirmasis, pats smulkiausias vaiduoklis, kurį iškėlėme į šviesą šią savaitę. Kodo sluoksniuose aptikome ir daugiau senų šešėlių, kurių nemato akis, bet kurie tyliai daro įtaką svetainės veikimui. Netrukus grįšime su kita serija ir naujais radiniais.",
+      "file": "k10.wav",
+      "duration": 27.57,
+      "fits": true,
+      "reikia_sek": 30
+    }
+  ]
+}

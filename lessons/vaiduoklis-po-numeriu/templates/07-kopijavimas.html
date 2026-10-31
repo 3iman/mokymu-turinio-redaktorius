@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .card { padding: 46px 110px 56px; }
+  .title { margin-bottom: 36px; }
+  .cur { position: absolute; left: 0; top: 0; z-index: 9; width: 46px; height: 58px; }
+  .cur svg { width: 46px; height: 58px; }
+  .rip { position: absolute; z-index: 8; width: 70px; height: 70px; margin: -35px 0 0 -35px; border-radius: 50%;
+         background: rgba(124, 58, 237, .40); opacity: 0; }
+  @keyframes ratilas { from { opacity: .85; transform: scale(.3); } to { opacity: 0; transform: scale(1.7); } }
+
+  .card { --mok: #1f5a63; --mok-d: #17474f; }
+
+  .bw { position: relative; border-radius: 16px; overflow: hidden; background: #fff;
+        box-shadow: 0 26px 60px rgba(15, 23, 42, .16); border: 1px solid var(--c-border); }
+  .bw-bar { height: 50px; background: #e9edf3; display: flex; align-items: center; padding: 0 18px; gap: 9px; }
+  .bw-bar .d { width: 12px; height: 12px; border-radius: 50%; background: #c6ccd6; }
+  .bw-url { flex: 1; margin-left: 14px; height: 30px; border-radius: 15px; background: #fff; border: 1px solid #d6dbe3;
+            display: flex; align-items: center; padding: 0 14px; font-size: 18px; color: var(--c-text-muted); }
+  .bw-head { height: 44px; background: var(--mok); display: flex; align-items: center; gap: 12px; padding: 0 16px; }
+  .bw-head .lg { width: 26px; height: 26px; border-radius: 50%; background: rgba(255,255,255,.22);
+                 border: 1.5px solid rgba(255,255,255,.45); }
+  .bw-head i { display: block; height: 8px; border-radius: 4px; background: rgba(255,255,255,.32); }
+  .bw-page { background: #fff; padding: 26px 30px; }
+  .s-card { background: #fff; border: 1px solid var(--c-border); border-radius: 12px; padding: 22px 26px; }
+  .s-h { font-size: 30px; font-weight: 700; color: #2a2a2a; margin-bottom: 16px; }
+  .s-row { display: flex; align-items: baseline; gap: 16px; margin-bottom: 12px; font-size: 26px; color: #5f5f5f; }
+  .s-tel { color: var(--mok); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; }
+
+  .lay { width: 1480px; margin: 0 auto; display: grid; gap: 28px; position: relative; }
+  .pan { border-radius: 20px; padding: 28px 40px 30px; box-shadow: var(--c-shadow-card); position: relative; }
+  .pan-t { background: var(--c-surface); border: 1.5px solid var(--c-border); }
+  .pan-b { background: #1e293b; }
+  .lbl { font-size: 25px; font-weight: 700; color: var(--c-text-secondary); margin-bottom: 16px; }
+  .pan-b .lbl { color: #cbd5e1; }
+  .num { font-size: 64px; font-weight: 700; color: var(--c-text); letter-spacing: 1px; }
+  .num.link { color: #2563eb; text-decoration: underline; text-decoration-thickness: 3px; text-underline-offset: 11px; }
+  .code { font-family: 'SF Mono', Menlo, monospace; font-size: 36px; line-height: 1.45; color: #e2e8f0; white-space: nowrap; }
+  .tg { color: #93c5fd; }
+  .hl { border-radius: 6px; padding: 2px 9px; }
+  .hl-h { background: rgba(167,139,250,.38); color: #ede9fe; }
+  .hl-t { background: rgba(110,231,183,.26); color: #d1fae5; }
+  .note { font-size: 26px; font-weight: 600; margin-top: 16px; }
+  .pan-t .note { color: var(--c-green-text); }
+  .pan-b .note { color: #c4b5fd; }
+
+  .duo { display: flex; align-items: flex-start; justify-content: center; gap: 70px; position: relative; }
+  .col-lbl { font-size: 25px; font-weight: 700; color: var(--c-text-secondary); margin-bottom: 14px; }
+  .fly { position: absolute; left: 100px; top: 185px; opacity: 0; z-index: 5; }
+  .strip { width: 1400px; margin: 44px auto 0; background: #1e293b; border-radius: 18px; padding: 24px 36px;
+           display: flex; align-items: center; gap: 30px; box-shadow: var(--c-shadow-card); }
+  .strip-lbl { font-size: 25px; font-weight: 700; color: #cbd5e1; white-space: nowrap; }
+  .strip .code { font-size: 30px; }
+  .swap { position: relative; display: inline-block; }
+  .b-num { position: absolute; left: 0; top: 0; white-space: nowrap; }
+  .b-old { opacity: 0; }
+  .kc { position: absolute; z-index: 6; background: #1e293b; color: #e2e8f0; font-size: 24px; font-weight: 700;
+        padding: 9px 22px; border-radius: 10px; box-shadow: 0 10px 24px rgba(15,23,42,.22); opacity: 0;
+        font-family: 'SF Mono', Menlo, monospace; }
+  .kc1 { left: 300px; top: 470px; }
+  .kc2 { right: 300px; top: 470px; }
+  .blk-a, .b-old { border-radius: 6px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="duo">
+      <div class="col">
+        <div class="col-lbl">{{a_lbl}}</div>
+        <div class="bw" style="width:620px">
+          <div class="bw-bar"><span class="d"></span><span class="d"></span><span class="d"></span>
+            <div class="bw-url">{{a_url}}</div></div><div class="bw-head"><span class="lg"></span><i style="width:120px"></i><i style="width:78px"></i><i style="width:96px"></i></div>
+          <div class="bw-page" style="height:280px">
+            <div class="s-card blk-a"><div class="s-h">{{blk}}</div>
+              <div class="s-row"><a class="s-tel" href="#">{{a_num}}</a></div></div>
+          </div></div>
+      </div>
+      <div class="fly"><div class="s-card" style="padding:16px 22px; box-shadow:0 18px 40px rgba(15,23,42,.22)">
+        <div class="s-row" style="margin:0; font-size:24px"><a class="s-tel" href="#">{{a_num}}</a></div></div></div>
+      <div class="col">
+        <div class="col-lbl">{{b_lbl}}</div>
+        <div class="bw" style="width:620px">
+          <div class="bw-bar"><span class="d"></span><span class="d"></span><span class="d"></span>
+            <div class="bw-url">{{b_url}}</div></div><div class="bw-head"><span class="lg"></span><i style="width:120px"></i><i style="width:78px"></i><i style="width:96px"></i></div>
+          <div class="bw-page" style="height:280px">
+            <div class="s-card blk-b"><div class="s-h">{{blk}}</div>
+              <div class="s-row"><span class="swap"><a class="s-tel b-old" href="#">{{a_num}}</a><a class="s-tel b-num" href="#">{{b_num}}</a></span></div></div>
+          </div></div>
+      </div>
+    </div>
+    <span class="kc kc1">{{k1}}</span><span class="kc kc2">{{k2}}</span>
+    <div class="strip"><span class="strip-lbl">{{code_lbl}}</span>
+      <span class="code"><span class="tg">&lt;a href="</span><span class="hl hl-h">tel:+37042142435</span><span class="tg">"&gt;</span><span class="hl hl-t">+370 687 85572</span><span class="tg">&lt;/a&gt;</span></span></div>
+  </div>
+</body>
+</html>

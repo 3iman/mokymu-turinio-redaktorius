@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .card { padding: 60px 110px; }
+  .card.dark { background: #0f172a; }
+  .card.dark .title { color: #fff; }
+
+  .card { display: flex; align-items: center; justify-content: center; }
+  .cta { text-align: center; width: 1300px; }
+  .logo { height: 86px; display: block; margin: 0 auto 54px; }
+  .lead { font-size: 40px; line-height: 1.4; color: #cbd5e1; }
+  .tag { font-size: 29px; letter-spacing: .14em; text-transform: uppercase; color: #64748b; margin-top: 40px; }
+  .btn { display: inline-block; margin-top: 46px; background: #fff; color: #0f172a;
+         font-size: 34px; font-weight: 700; padding: 20px 46px; border-radius: 12px; }
+  .sub { font-size: 30px; font-weight: 700; color: #3ab0b0; margin-top: 30px; }
+</style>
+</head>
+<body>
+  <div class="card dark">
+    <div class="cta">
+      <img class="logo" src="assets/cleverphant-baltas.png" alt="Cleverphant">
+      <div class="lead">{{lead}}</div>
+      <div class="tag">{{tag}}</div>
+      <div class="btn">{{btn}}</div>
+      <div class="sub">{{sub}}</div>
+    </div>
+  </div>
+</body>
+</html>

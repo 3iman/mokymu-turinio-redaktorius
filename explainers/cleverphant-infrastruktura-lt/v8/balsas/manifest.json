@@ -1,0 +1,1052 @@
+[
+ {
+  "n": 1,
+  "i": 0,
+  "j": 245,
+  "v0": 0.0,
+  "v1": 19.84,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 3.84,
+    "text": "Įspėjame iš anksto: dramblio greitai neparduosi.",
+    "rel": 0.0
+   },
+   {
+    "t": 3.92,
+    "end": 5.28,
+    "text": "Drambliai neskuba.",
+    "rel": 3.92
+   },
+   {
+    "t": 5.32,
+    "end": 8.8,
+    "text": "Šis filmukas irgi: beveik devynios minutės.",
+    "rel": 5.32
+   },
+   {
+    "t": 8.88,
+    "end": 10.48,
+    "text": "Taip, devynios.",
+    "rel": 8.88
+   },
+   {
+    "t": 10.52,
+    "end": 11.84,
+    "text": "Įsipilkite kavos.",
+    "rel": 10.52
+   },
+   {
+    "t": 11.96,
+    "end": 13.44,
+    "text": "Gal net du puodelius.",
+    "rel": 11.96
+   },
+   {
+    "t": 13.48,
+    "end": 15.2,
+    "text": "Dramblio nepaskubinsi.",
+    "rel": 13.48
+   },
+   {
+    "t": 15.28,
+    "end": 17.12,
+    "text": "Patikėkite, bandėme.",
+    "rel": 15.28
+   },
+   {
+    "t": 17.16,
+    "end": 19.84,
+    "text": "Pažadame, kad dramblys to vertas.",
+    "rel": 17.16
+   }
+  ],
+  "clip": "k01.wav",
+  "clip_start": 0,
+  "dur": 19.863
+ },
+ {
+  "n": 2,
+  "i": 0,
+  "j": 306,
+  "v0": 0.0,
+  "v1": 22.32,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 2.84,
+    "text": "Lietuvoje mokyklų svetainės privalomos.",
+    "rel": 0.0
+   },
+   {
+    "t": 3.04,
+    "end": 6.88,
+    "text": "Bet ir ten, kur jų niekas nereikalauja, jos vis tiek svarbios.",
+    "rel": 3.04
+   },
+   {
+    "t": 7.36,
+    "end": 11.36,
+    "text": "Svetainė – vienintelis kanalas, kurį mokykla valdo pati.",
+    "rel": 7.36
+   },
+   {
+    "t": 11.44,
+    "end": 13.2,
+    "text": "Ją skaito paieškos sistemos.",
+    "rel": 11.44
+   },
+   {
+    "t": 13.52,
+    "end": 16.48,
+    "text": "Iš jos kuriami dirbtinio intelekto atsakymai.",
+    "rel": 13.52
+   },
+   {
+    "t": 16.56,
+    "end": 18.56,
+    "text": "Pagal ją veiks agentai.",
+    "rel": 16.56
+   },
+   {
+    "t": 18.6,
+    "end": 22.32,
+    "text": "Svarbu ne tai, kaip ji atrodo, o ar ji aktuali.",
+    "rel": 18.6
+   }
+  ],
+  "clip": "k02.wav",
+  "clip_start": 0,
+  "dur": 22.36
+ },
+ {
+  "n": 3,
+  "i": 308,
+  "j": 1082,
+  "v0": 22.4,
+  "v1": 79.92,
+  "sent": [
+   {
+    "t": 22.4,
+    "end": 25.36,
+    "text": "Dažnai išgirstame: jūs siūlote šabloną.",
+    "rel": 0.05
+   },
+   {
+    "t": 25.6,
+    "end": 27.92,
+    "text": "Alternatyva – unikalus dizainas.",
+    "rel": 3.25
+   },
+   {
+    "t": 28.32,
+    "end": 33.04,
+    "text": "Tik visiško unikalumo nebūna, o dizainas pradeda senti nuo pirmos dienos.",
+    "rel": 5.97
+   },
+   {
+    "t": 33.52,
+    "end": 36.52,
+    "text": "Makete gražiai atrodo išgalvotas turinys.",
+    "rel": 11.17
+   },
+   {
+    "t": 36.72,
+    "end": 38.76,
+    "text": "Tikrą turinį sudeda patys.",
+    "rel": 14.37
+   },
+   {
+    "t": 39.04,
+    "end": 42.72,
+    "text": "Vienas kolega paruošė tekstą, kitas įdėjo, kaip gavo.",
+    "rel": 16.69
+   },
+   {
+    "t": 42.76,
+    "end": 45.84,
+    "text": "Vadovas gavo laišką ir liepė pakeisti meniu.",
+    "rel": 20.41
+   },
+   {
+    "t": 45.88,
+    "end": 49.52,
+    "text": "Tėvai pasigedo dokumento, ir jį iškėlė „aukščiau“.",
+    "rel": 23.53
+   },
+   {
+    "t": 49.6,
+    "end": 51.12,
+    "text": "Niekas nenori blogo.",
+    "rel": 27.25
+   },
+   {
+    "t": 51.173,
+    "end": 54.32,
+    "text": "Tiesiog svetainė tampa visų ir niekieno.",
+    "rel": 28.823
+   },
+   {
+    "t": 54.36,
+    "end": 58.32,
+    "text": "Taip gimsta dvylika klaidų, kurios labiausiai krenta į akį.",
+    "rel": 32.01
+   },
+   {
+    "t": 58.373,
+    "end": 60.88,
+    "text": "Kiekviena klaida atrodo kaip smulkmena.",
+    "rel": 36.023
+   },
+   {
+    "t": 60.987,
+    "end": 64.8,
+    "text": "Kartu jos gerą mokyklą parodo prastesnę, nei ji yra.",
+    "rel": 38.637
+   },
+   {
+    "t": 64.84,
+    "end": 67.76,
+    "text": "O dabar padauginkite iš šimto mokyklų.",
+    "rel": 42.49
+   },
+   {
+    "t": 67.84,
+    "end": 69.92,
+    "text": "Penkių šimtų… ir daugiau.",
+    "rel": 45.49
+   },
+   {
+    "t": 69.96,
+    "end": 72.4,
+    "text": "Mokyklos mokosi viena iš kitos.",
+    "rel": 47.61
+   },
+   {
+    "t": 72.48,
+    "end": 74.88,
+    "text": "Deja, taip keliauja ir klaidos.",
+    "rel": 50.13
+   },
+   {
+    "t": 74.96,
+    "end": 77.76,
+    "text": "Tos pačios klaidos, tūkstančius kartų.",
+    "rel": 52.61
+   },
+   {
+    "t": 77.8,
+    "end": 79.92,
+    "text": "Taip atrodo visa sistema.",
+    "rel": 55.45
+   }
+  ],
+  "clip": "k03.wav",
+  "clip_start": 22.349999999999998,
+  "dur": 57.59
+ },
+ {
+  "n": 4,
+  "i": 1084,
+  "j": 1342,
+  "v0": 79.96,
+  "v1": 98.08,
+  "sent": [
+   {
+    "t": 79.96,
+    "end": 82.4,
+    "text": "Pakalbėkime apie dramblį kambaryje.",
+    "rel": 0.05
+   },
+   {
+    "t": 82.52,
+    "end": 90.4,
+    "text": "Visos mokyklos turi tas pačias pareigas: prieinamumą, duomenų apsaugą, saugumą ir vis besikeičiančias taisykles.",
+    "rel": 2.61
+   },
+   {
+    "t": 90.44,
+    "end": 94.96,
+    "text": "Dauguma su jomis grumiasi vienos, su savo biudžetu ir savo rangovu.",
+    "rel": 10.53
+   },
+   {
+    "t": 95.013,
+    "end": 98.08,
+    "text": "Todėl kokybė priklauso nuo atsitiktinumo.",
+    "rel": 15.103
+   }
+  ],
+  "clip": "k04.wav",
+  "clip_start": 79.91,
+  "dur": 18.22
+ },
+ {
+  "n": 5,
+  "i": 0,
+  "j": 375,
+  "v0": 0.0,
+  "v1": 28.48,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 4.24,
+    "text": "O kas kelerius metus – naujas konkursas, nauja svetainė.",
+    "rel": 0.0
+   },
+   {
+    "t": 4.32,
+    "end": 7.84,
+    "text": "Medis nupjaunamas iki kelmo ir sodinamas iš naujo.",
+    "rel": 4.32
+   },
+   {
+    "t": 7.92,
+    "end": 8.72,
+    "text": "Ir vėl.",
+    "rel": 7.92
+   },
+   {
+    "t": 8.76,
+    "end": 11.44,
+    "text": "Kaskart prarandamas tęstinumas.",
+    "rel": 8.76
+   },
+   {
+    "t": 11.48,
+    "end": 14.16,
+    "text": "Mūsų medis niekada nepjaunamas.",
+    "rel": 11.48
+   },
+   {
+    "t": 14.24,
+    "end": 23.52,
+    "text": "Jį lenkė vėjai, merkė lietūs, keitė metų laikai: naujos taisyklės, naujos technologijos, lankytojai, kurie kasmet tikisi daugiau.",
+    "rel": 14.24
+   },
+   {
+    "t": 23.6,
+    "end": 25.12,
+    "text": "Jis tik stiprėjo.",
+    "rel": 23.6
+   },
+   {
+    "t": 25.2,
+    "end": 28.48,
+    "text": "Ir dabar jau niekas nesiginčija, kad tai gerai.",
+    "rel": 25.2
+   }
+  ],
+  "clip": "k05.wav",
+  "clip_start": 0,
+  "dur": 28.5
+ },
+ {
+  "n": 6,
+  "i": 377,
+  "j": 617,
+  "v0": 28.52,
+  "v1": 45.96,
+  "sent": [
+   {
+    "t": 28.52,
+    "end": 32.64,
+    "text": "Cleverphant – tai bendra skaitmeninė mokyklų infrastruktūra.",
+    "rel": 0.05
+   },
+   {
+    "t": 32.72,
+    "end": 34.48,
+    "text": "Žmonės mato svetainę.",
+    "rel": 4.25
+   },
+   {
+    "t": 34.56,
+    "end": 43.36,
+    "text": "Po ja – viskas, kas palaiko ją tvarkingą: nuo vienos dizaino sistemos iki atitikties ir pagalbos, bendra visoms mokykloms.",
+    "rel": 6.09
+   },
+   {
+    "t": 43.4,
+    "end": 45.96,
+    "text": "Nauja mokykla tiesiog prisijungia.",
+    "rel": 14.93
+   }
+  ],
+  "clip": "k06.wav",
+  "clip_start": 28.47,
+  "dur": 17.71
+ },
+ {
+  "n": 7,
+  "i": 619,
+  "j": 1008,
+  "v0": 46.4,
+  "v1": 75.92,
+  "sent": [
+   {
+    "t": 46.4,
+    "end": 48.48,
+    "text": "Kas yra dizaino sistema?",
+    "rel": 0.05
+   },
+   {
+    "t": 48.56,
+    "end": 50.56,
+    "text": "Paruoštų detalių rinkinys.",
+    "rel": 2.21
+   },
+   {
+    "t": 50.6,
+    "end": 57.04,
+    "text": "Iš spalvų, šriftų ir mygtukų sudedami blokai: paieškos laukelis, darbuotojo kortelė.",
+    "rel": 4.25
+   },
+   {
+    "t": 57.08,
+    "end": 60.72,
+    "text": "Iš blokų – skiltys, iš skilčių – puslapiai.",
+    "rel": 10.73
+   },
+   {
+    "t": 60.8,
+    "end": 71.84,
+    "text": "Kiekvienas kiekvienos mokyklos puslapis sudėtas iš tų pačių detalių, o kiekviena detalė jau atitinka prieinamumo reikalavimus: kontrastas, antraštės, klaviatūra.",
+    "rel": 14.45
+   },
+   {
+    "t": 71.96,
+    "end": 75.92,
+    "text": "Patobulinus vieną detalę, ji patobulėja visur.",
+    "rel": 25.61
+   }
+  ],
+  "clip": "k07.wav",
+  "clip_start": 46.35,
+  "dur": 29.63
+ },
+ {
+  "n": 8,
+  "i": 1010,
+  "j": 1482,
+  "v0": 76.04,
+  "v1": 108.08,
+  "sent": [
+   {
+    "t": 76.04,
+    "end": 78.0,
+    "text": "Mus kartais laiko agentūra.",
+    "rel": 0.05
+   },
+   {
+    "t": 78.08,
+    "end": 82.0,
+    "text": "Kartais – dar vienu „pasidaryk pats“ svetainių konstruktoriumi.",
+    "rel": 2.09
+   },
+   {
+    "t": 82.08,
+    "end": 86.08,
+    "text": "Nei viena, nei kita: tai platforma su žmogaus prisilietimu.",
+    "rel": 6.09
+   },
+   {
+    "t": 86.12,
+    "end": 95.76,
+    "text": "Niekas nepradeda nuo tuščio lapo: senąją svetainę perkeliame mes – puslapius, dokumentus ir darbuotojų profilius, pakeliui juos sutvarkydami.",
+    "rel": 10.13
+   },
+   {
+    "t": 95.84,
+    "end": 101.36,
+    "text": "Mokyklos paklausiame kelių tikslinamųjų klausimų ir paprašome papildyti, ko trūksta.",
+    "rel": 19.85
+   },
+   {
+    "t": 101.48,
+    "end": 104.56,
+    "text": "Darbo nedaug, bet be mokyklos neapsieisime.",
+    "rel": 25.49
+   },
+   {
+    "t": 104.6,
+    "end": 108.08,
+    "text": "Mokykla patikrina, ir nauja svetainė paleidžiama.",
+    "rel": 28.61
+   }
+  ],
+  "clip": "k08.wav",
+  "clip_start": 75.99000000000001,
+  "dur": 32.14
+ },
+ {
+  "n": 9,
+  "i": 0,
+  "j": 324,
+  "v0": 0.0,
+  "v1": 24.8,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 4.933,
+    "text": "Kadangi visos mokyklos veikia ta pačia sistema, jos gauna tą pačią naudą.",
+    "rel": 0.0
+   },
+   {
+    "t": 6.1,
+    "end": 6.793,
+    "text": "Ir taip.",
+    "rel": 6.1
+   },
+   {
+    "t": 7.76,
+    "end": 8.92,
+    "text": "tas pačias klaidas.",
+    "rel": 7.76
+   },
+   {
+    "t": 9.12,
+    "end": 10.32,
+    "text": "Pasitaiko.",
+    "rel": 9.12
+   },
+   {
+    "t": 10.4,
+    "end": 13.12,
+    "text": "Bet užtenka, kad pastebėtų viena mokykla.",
+    "rel": 10.4
+   },
+   {
+    "t": 13.173,
+    "end": 16.08,
+    "text": "Pataisyta kartą – pataisyta visoms.",
+    "rel": 13.173
+   },
+   {
+    "t": 16.12,
+    "end": 17.68,
+    "text": "Taip pat ir su žiniomis.",
+    "rel": 16.12
+   },
+   {
+    "t": 17.707,
+    "end": 24.8,
+    "text": "Kai viena mokykla užduoda klausimą, atsakymas tampa pamoka, filmuku ir naujienlaiškiu visoms mokykloms.",
+    "rel": 17.707
+   }
+  ],
+  "clip": "k09.wav",
+  "clip_start": 0,
+  "dur": 24.86
+ },
+ {
+  "n": 10,
+  "i": 326,
+  "j": 698,
+  "v0": 24.92,
+  "v1": 53.28,
+  "sent": [
+   {
+    "t": 24.92,
+    "end": 26.64,
+    "text": "Idėjos keliauja taip pat.",
+    "rel": 0.05
+   },
+   {
+    "t": 26.72,
+    "end": 29.8,
+    "text": "Inovatyvus mokyklos vadovas atneša poreikį.",
+    "rel": 1.85
+   },
+   {
+    "t": 29.84,
+    "end": 31.92,
+    "text": "Jo mokykla tampa pilotine.",
+    "rel": 4.97
+   },
+   {
+    "t": 32.027,
+    "end": 40.72,
+    "text": "Pilotas sukasi ratu: poreikis, analizė ir dizainas, įgyvendinimas, testavimas, vertinimas – ir vėl iš naujo.",
+    "rel": 7.157
+   },
+   {
+    "t": 40.8,
+    "end": 41.68,
+    "text": "Lėtai.",
+    "rel": 15.93
+   },
+   {
+    "t": 41.76,
+    "end": 43.2,
+    "text": "Labai lėtai.",
+    "rel": 16.89
+   },
+   {
+    "t": 43.24,
+    "end": 47.92,
+    "text": "Tada duomenys parodo, kad veikia, ir iš karto tai turi visos mokyklos.",
+    "rel": 18.37
+   },
+   {
+    "t": 47.96,
+    "end": 50.72,
+    "text": "Mokyklos ir taip mokosi viena iš kitos.",
+    "rel": 23.09
+   },
+   {
+    "t": 50.76,
+    "end": 53.28,
+    "text": "Čia jos perima tai, kas patikrinta.",
+    "rel": 25.89
+   }
+  ],
+  "clip": "k10.wav",
+  "clip_start": 24.87,
+  "dur": 28.45
+ },
+ {
+  "n": 11,
+  "i": 700,
+  "j": 1091,
+  "v0": 53.36,
+  "v1": 82.48,
+  "sent": [
+   {
+    "t": 53.36,
+    "end": 55.6,
+    "text": "Tai gali veikti ir iš viršaus.",
+    "rel": 0.05
+   },
+   {
+    "t": 55.653,
+    "end": 63.2,
+    "text": "Kas bendra visoms mokykloms, atnaujinama vieną kartą: prieinamumas, atnaujinimų prenumerata, slapukai.",
+    "rel": 2.343
+   },
+   {
+    "t": 63.227,
+    "end": 66.88,
+    "text": "Tuo pačiu metu tai atsiranda visų mokyklų svetainėse.",
+    "rel": 9.917
+   },
+   {
+    "t": 66.92,
+    "end": 68.08,
+    "text": "Jokių laiškų.",
+    "rel": 13.61
+   },
+   {
+    "t": 68.12,
+    "end": 69.44,
+    "text": "Jokių priminimų.",
+    "rel": 14.81
+   },
+   {
+    "t": 69.52,
+    "end": 71.12,
+    "text": "Nė vienos pamirštos.",
+    "rel": 16.21
+   },
+   {
+    "t": 71.2,
+    "end": 73.36,
+    "text": "Platinimas jau išspręstas.",
+    "rel": 17.89
+   },
+   {
+    "t": 73.4,
+    "end": 82.48,
+    "text": "Todėl didelis tinklas gali sau leisti dideles idėjas: tai, ko viena mokykla niekada nesukurtų, sukuriama vieną kartą visoms.",
+    "rel": 20.09
+   }
+  ],
+  "clip": "k11.wav",
+  "clip_start": 53.31,
+  "dur": 29.21
+ },
+ {
+  "n": 12,
+  "i": 1093,
+  "j": 1312,
+  "v0": 82.56,
+  "v1": 100.08,
+  "sent": [
+   {
+    "t": 82.56,
+    "end": 86.96,
+    "text": "Maža kaimo mokykla gauna tą patį, ką didelė miesto mokykla.",
+    "rel": 0.05
+   },
+   {
+    "t": 87.0,
+    "end": 91.6,
+    "text": "Apačioje – viena dizaino sistema, o veidas lieka mokyklos.",
+    "rel": 4.49
+   },
+   {
+    "t": 91.68,
+    "end": 97.12,
+    "text": "Ne šablonas, o modelis veikiančioje infrastruktūroje – su jūsų turiniu.",
+    "rel": 9.17
+   },
+   {
+    "t": 97.2,
+    "end": 98.24,
+    "text": "Ne vienodos.",
+    "rel": 14.69
+   },
+   {
+    "t": 98.4,
+    "end": 100.08,
+    "text": "Vienodai geros.",
+    "rel": 15.89
+   }
+  ],
+  "clip": "k12.wav",
+  "clip_start": 82.51,
+  "dur": 17.593
+ },
+ {
+  "n": 13,
+  "i": 0,
+  "j": 829,
+  "v0": 0.0,
+  "v1": 58.56,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 2.56,
+    "text": "Pokyčiai prasideda nuo smulkmenų.",
+    "rel": 0.0
+   },
+   {
+    "t": 2.6,
+    "end": 5.76,
+    "text": "Būti mažam – ne priežastis jų nepastebėti.",
+    "rel": 2.6
+   },
+   {
+    "t": 6.08,
+    "end": 7.36,
+    "text": "Drambliai lėti.",
+    "rel": 6.08
+   },
+   {
+    "t": 7.84,
+    "end": 8.96,
+    "text": "Labai lėti.",
+    "rel": 7.84
+   },
+   {
+    "t": 9.2,
+    "end": 13.52,
+    "text": "Tokie lėti, kad pokyčio niekas nepastebi, kol jis jau visur.",
+    "rel": 9.2
+   },
+   {
+    "t": 13.6,
+    "end": 15.48,
+    "text": "Tai mūsų Trojos dramblys.",
+    "rel": 13.6
+   },
+   {
+    "t": 15.68,
+    "end": 22.8,
+    "text": "Kartu tai ir didžiausias darbas: šimtai mokyklų svetainių turi būti prieinamos, aktualios ir stabilios.",
+    "rel": 15.68
+   },
+   {
+    "t": 22.84,
+    "end": 24.72,
+    "text": "Kaip suvalgyti tokį dramblį?",
+    "rel": 22.84
+   },
+   {
+    "t": 24.8,
+    "end": 26.64,
+    "text": "Po kąsnelį, nuolat.",
+    "rel": 24.8
+   },
+   {
+    "t": 26.88,
+    "end": 34.48,
+    "text": "Smulkūs patobulinimai, kosmetiniai pataisymai, klaidų taisymai keliauja reguliariai ir nuosekliai, visoms mokykloms.",
+    "rel": 26.88
+   },
+   {
+    "t": 34.6,
+    "end": 44.72,
+    "text": "Tai mūsų stiprybė: kuo didesnis tinklas, tuo daugiau akių pastebi ir tuo daugiau mokyklų laimi iš kiekvieno patobulinimo ir kiekvieno papildomo prisilietimo.",
+    "rel": 34.6
+   },
+   {
+    "t": 44.76,
+    "end": 58.56,
+    "text": "Ir kiekvienas kitas žingsnis pasiekia visas mokyklas: gyvos lentelės, pranešėjų kanalai, registracija į konsultacijas, individualaus ugdymo plano forma, renginių kalendoriai, savaitinės atnaujinimų santraukos.",
+    "rel": 44.76
+   }
+  ],
+  "clip": "k13.wav",
+  "clip_start": 0,
+  "dur": 58.6
+ },
+ {
+  "n": 14,
+  "i": 831,
+  "j": 1188,
+  "v0": 58.64,
+  "v1": 82.64,
+  "sent": [
+   {
+    "t": 58.64,
+    "end": 61.36,
+    "text": "Ir mes vis klausiame: o kas, jeigu?",
+    "rel": 0.05
+   },
+   {
+    "t": 61.413,
+    "end": 65.12,
+    "text": "Kas, jeigu mokytojo Word failas virstų baigtu straipsniu?",
+    "rel": 2.823
+   },
+   {
+    "t": 65.16,
+    "end": 69.28,
+    "text": "Kas, jeigu dokumentai patys pasivadintų ir susidėliotų į vietas?",
+    "rel": 6.57
+   },
+   {
+    "t": 69.36,
+    "end": 73.68,
+    "text": "Kas, jeigu pataisymas būtų paruoštas dar prieš jums pastebint problemą?",
+    "rel": 10.77
+   },
+   {
+    "t": 73.8,
+    "end": 75.68,
+    "text": "Tam nereikia naujos svetainės.",
+    "rel": 15.21
+   },
+   {
+    "t": 75.72,
+    "end": 79.2,
+    "text": "Kiekviena idėja – programėlė ant to paties pamato.",
+    "rel": 17.13
+   },
+   {
+    "t": 79.28,
+    "end": 82.64,
+    "text": "Viena mokykla išbando, visos mokyklos gauna.",
+    "rel": 20.69
+   }
+  ],
+  "clip": "k14.wav",
+  "clip_start": 58.59,
+  "dur": 24.07
+ },
+ {
+  "n": 15,
+  "i": 1190,
+  "j": 1336,
+  "v0": 82.68,
+  "v1": 93.04,
+  "sent": [
+   {
+    "t": 82.68,
+    "end": 84.32,
+    "text": "O dirbtinis intelektas?",
+    "rel": 0.05
+   },
+   {
+    "t": 84.4,
+    "end": 86.48,
+    "text": "Ne dar vienas pokalbių robotas.",
+    "rel": 1.77
+   },
+   {
+    "t": 86.56,
+    "end": 89.92,
+    "text": "Dirbtinis intelektas, kuris tyliai palaiko tvarką.",
+    "rel": 3.93
+   },
+   {
+    "t": 89.96,
+    "end": 93.04,
+    "text": "Nes dirbtinis intelektas mėgsta tvarką.",
+    "rel": 7.33
+   }
+  ],
+  "clip": "k15.wav",
+  "clip_start": 82.63000000000001,
+  "dur": 10.433
+ },
+ {
+  "n": 16,
+  "i": 0,
+  "j": 180,
+  "v0": 0.0,
+  "v1": 13.84,
+  "sent": [
+   {
+    "t": 0.0,
+    "end": 5.44,
+    "text": "Kas veikia vienoje mokykloje, veikia savivaldybėje, regione, visoje šalyje.",
+    "rel": 0.0
+   },
+   {
+    "t": 5.76,
+    "end": 10.4,
+    "text": "Mokyklas galima prijungti greitai, o kaštai auga daug lėčiau.",
+    "rel": 5.76
+   },
+   {
+    "t": 10.48,
+    "end": 12.2,
+    "text": "Ne pažadas, kad bus pigu.",
+    "rel": 10.48
+   },
+   {
+    "t": 12.48,
+    "end": 13.84,
+    "text": "Mastelio logika.",
+    "rel": 12.48
+   }
+  ],
+  "clip": "k16.wav",
+  "clip_start": 0,
+  "dur": 13.88
+ },
+ {
+  "n": 17,
+  "i": 182,
+  "j": 1011,
+  "v0": 13.92,
+  "v1": 75.6,
+  "sent": [
+   {
+    "t": 13.92,
+    "end": 16.32,
+    "text": "Šiuo keliu einame penkiolika metų.",
+    "rel": 0.05
+   },
+   {
+    "t": 16.36,
+    "end": 17.6,
+    "text": "Pirmieji dešimt?",
+    "rel": 2.49
+   },
+   {
+    "t": 17.68,
+    "end": 18.4,
+    "text": "Lėti.",
+    "rel": 3.81
+   },
+   {
+    "t": 18.64,
+    "end": 19.92,
+    "text": "Labai lėti.",
+    "rel": 4.77
+   },
+   {
+    "t": 20.0,
+    "end": 21.2,
+    "text": "Tokie lėti.",
+    "rel": 6.13
+   },
+   {
+    "t": 21.52,
+    "end": 23.6,
+    "text": "Pokyčiai mokyklose užtrunka.",
+    "rel": 7.65
+   },
+   {
+    "t": 23.64,
+    "end": 26.0,
+    "text": "Tada tinklas ėmė augti pats.",
+    "rel": 9.77
+   },
+   {
+    "t": 26.04,
+    "end": 35.44,
+    "text": "Šiandien – beveik trys šimtai įstaigų pagal vieną standartą, ir bent vieną klientą turime aštuoniasdešimt penkiuose procentuose Lietuvos savivaldybių.",
+    "rel": 12.17
+   },
+   {
+    "t": 35.52,
+    "end": 38.24,
+    "text": "Jums nereikia pradėti nuo lėtosios dalies.",
+    "rel": 21.65
+   },
+   {
+    "t": 38.44,
+    "end": 41.76,
+    "text": "Auditai, įdiegimas ir mokymai jau paruošti.",
+    "rel": 24.57
+   },
+   {
+    "t": 41.84,
+    "end": 47.2,
+    "text": "O dramblys niekada nepamiršta: keičiasi darbuotojai, žinios lieka.",
+    "rel": 27.97
+   },
+   {
+    "t": 47.253,
+    "end": 49.76,
+    "text": "Tikslas niekada nebuvo svetainės.",
+    "rel": 33.383
+   },
+   {
+    "t": 49.813,
+    "end": 52.88,
+    "text": "Tikslas – grąžinti mokytoją pas vaikus.",
+    "rel": 35.943
+   },
+   {
+    "t": 52.92,
+    "end": 55.76,
+    "text": "Sukurta Lietuvoje, kartu su jumis.",
+    "rel": 39.05
+   },
+   {
+    "t": 55.84,
+    "end": 57.76,
+    "text": "Ir jau tinka kitoms šalims.",
+    "rel": 41.97
+   },
+   {
+    "t": 57.84,
+    "end": 67.04,
+    "text": "Visoje Europos Sąjungoje viešosioms įstaigoms galioja tos pačios taisyklės: svetainių prieinamumas, duomenų apsauga, pranešėjų apsauga.",
+    "rel": 43.97
+   },
+   {
+    "t": 67.12,
+    "end": 70.0,
+    "text": "Sukurta vienai šaliai, tinka visoms.",
+    "rel": 53.25
+   },
+   {
+    "t": 70.08,
+    "end": 71.68,
+    "text": "Dar ne mūsų klientas?",
+    "rel": 56.21
+   },
+   {
+    "t": 71.733,
+    "end": 73.76,
+    "text": "Kviečiame į produkto pristatymą.",
+    "rel": 57.863
+   },
+   {
+    "t": 73.84,
+    "end": 75.6,
+    "text": "Ateisime pasiruošę.",
+    "rel": 59.97
+   }
+  ],
+  "clip": "k17.wav",
+  "clip_start": 13.87,
+  "dur": 61.753
+ }
+]

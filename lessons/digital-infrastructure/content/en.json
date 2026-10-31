@@ -1,0 +1,33 @@
+{
+  "lang": "en",
+  "01_hook": {
+    "title": "One snippet. Two hundred and fifty websites.",
+    "big": "255",
+    "k1": "1 hidden code ghost",
+    "k2": "255 website network",
+    "k3": "341 code locations",
+    "foot": "Public and educational sector"
+  },
+  "02_contrast": {
+    "title": "Two ways to fix the same line",
+    "l_h": "Traditional agency model",
+    "l_s": "255 emails · weeks of manual work",
+    "r_h": "Centralized infrastructure",
+    "r_s": "One pass through one standard"
+  },
+  "03_solution": {
+    "title": "One pulse across the whole network",
+    "chip": "AI and MCP automation",
+    "cap": "255 websites · 341 locations · one deployment"
+  },
+  "04_lifecycle": {
+    "title": "From code inspection to client education",
+    "cap": "Automation is the tool. Governance is the value."
+  },
+  "05_cta": {
+    "lead": "Today a legacy phone link. Tomorrow an accessibility mandate or a security standard.",
+    "tag": "Digital infrastructure for the public and educational sector",
+    "btn": "cleverphant.com/partners",
+    "sub": "Become a Master Partner"
+  }
+}

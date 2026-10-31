@@ -234,7 +234,7 @@ def page(s, body, own_css=''):
 
 
 # ================================================================ 1. Kodėl tai naudinga
-s = Scene('00-kodel', 'Kodėl tai naudinga', 'Visos lentelės – vienoje vietoje', 23)
+s = Scene('00-kodel', 'Kodėl tai naudinga', 'Visos lentelės – vienoje vietoje', 24)
 nauda = [('Nereikia jungtis prie TVS', 'lenteles tvarkote naršyklėje'),
          ('Šablonai jau paruošti', 'užpildote tik duomenis'),
          ('Prieigą gali turėti keli žmonės', 'atsakomybes galima pasidalyti'),
@@ -252,10 +252,10 @@ s.appear('.failas', 0.6, 'fadeUpMedium', 0.6)
 for i in range(4):
     s.appear('.n%d' % i, 5.0 + i * 3.6, 'slinktisIsDesines', 0.5)
 s.voice(1.0, 'Mokyklos lentelės gali gyventi ne svetainėje, o „Google Sheets“ failuose.')
-s.voice(6.1, 'Lentelei pakeisti nebereikia jungtis prie turinio valdymo sistemos.')
-s.voice(10.6, 'Šablonai jau paruošti – užpildote tik duomenis.')
-s.voice(14.5, 'Prieigą gali turėti keli darbuotojai, tad atsakomybes galima pasidalyti.')
-s.voice(20.1, 'O suintegruojama vieną kartą.')
+s.voice(6.7, 'Lentelei pakeisti nebereikia jungtis prie turinio valdymo sistemos.')
+s.voice(11.5, 'Šablonai jau paruošti – užpildote tik duomenis.')
+s.voice(15.5, 'Prieigą gali turėti keli darbuotojai, tad atsakomybes galima pasidalyti.')
+s.voice(21, 'O suintegruojama vieną kartą.')
 s.ekrane = ('Kairėje – žalias „Google Sheets“ failas su trimis lapais („Taryba“, „Mokytojai“, „Atlyginimai“). '
             'Dešinėje viena po kitos atslenka keturios naudos kortelės.')
 s.komentaras = 'Turinys iš publikuotos pamokos § „Kodėl tai naudinga“.'
@@ -284,7 +284,7 @@ s.voice(1.0, 'Duomenys gyvena „Google Sheets“ faile.')
 s.voice(5.0, 'Failas prijungiamas prie turinio valdymo sistemos – ten tam yra modulis „Google Sheets Lentelės“.')
 s.voice(11.6, 'O svetainės puslapis lentelę tiesiog parodo lankytojui.')
 s.voice(17.0, 'Prijungtam failui sistema suteikia savo numerį, o kiekvienas lapas turi savo gID.')
-s.voice(22.6, 'Pagal juos puslapis ir žino, kurią lentelę imti.')
+s.voice(23.2, 'Pagal juos puslapis ir žino, kurią lentelę imti.')
 s.ekrane = 'Trys kortelės iš kairės į dešinę su rodyklėmis: failas → turinio valdymo sistema → svetainės puslapis. Apačioje – paaiškinimas apie ID ir gID.'
 s.komentaras = 'Publikuota pamoka § „Kaip tai veikia“. Sintaksė rodoma atskirame kadre.'
 
@@ -313,7 +313,7 @@ s.appear('.u1', 11.2, 'fadeUpLight', 0.5)
 s.voice(1.0, 'Abu numerius matote to paties failo adrese.')
 s.voice(5.2, 'Failo numeris rodo patį failą – visoms jo lentelėms jis vienodas.')
 s.voice(11.0, 'O gID rodo konkretų lapą. Jis nesikeičia net tada, kai lapą pervadinate.')
-s.voice(17.4, 'Pirmasis lapas visada turi gID nulis – tai numatytasis lapas.')
+s.voice(18, 'Pirmasis lapas visada turi gID nulis – tai numatytasis lapas.')
 s.ekrane = 'Adreso juosta su geltonai pažymėtu FAILO_ID ir violetiniu gID; po ja dvi kortelės ir pastaba apie pirmąjį lapą.'
 s.komentaras = 'Publikuota pamoka § „Failo struktūra ir URL anatomija“ ir § „Apie lapų tvarką ir gID reikšmes“.'
 
@@ -339,7 +339,7 @@ for j in range(2):
         s.visible('.k%di%d' % (j, i), (2.0 if j == 0 else 9.6) + i * 2.1)
 s.voice(1.0, 'Prijungimą, publikavimą ir lentelės įdėjimą į puslapį padarome mes.')
 s.voice(7.0, 'Jums lieka svarbiausia dalis: duomenys.')
-s.voice(10.3, 'Jūs pildote lenteles, dalijatės prieiga su kolegomis')
+s.voice(10.6, 'Jūs pildote lenteles, dalijatės prieiga su kolegomis')
 s.voice(15.0, 'ir parašote mums tada, kai kas nors nepavyksta.')
 s.voice(18.7, 'Šablono kopijuoti patiems nebereikia.')
 s.ekrane = 'Dvi kortelės: mėlyna „Cleverphant“ su trimis darbais ir žalia „Mokykla“ su trimis. Apačioje – pastaba apie seną eigą.'
@@ -361,7 +361,7 @@ s.appear('.dlg', 0.8, 'fadeUpMedium', 0.5)
 s.visible('.sel', 6.0)
 s.visible('.rol', 12.0)
 s.voice(1.0, 'Kad svetainė galėtų perskaityti lentelę, failas turi būti atidarytas skaitymui.')
-s.voice(6.6, 'Bendrojoje prieigoje pasirenkama „Visi, turintys nuorodą“.')
+s.voice(6.7, 'Bendrojoje prieigoje pasirenkama „Visi, turintys nuorodą“.')
 s.voice(12.0, 'Rolės „Žiūrintysis“ visiškai pakanka – redaguoti svetainei nereikia.')
 s.voice(18.0, 'Tai padarome prijungdami failą.')
 s.ekrane = 'Bendrinimo lango kortelė: „Bendroji prieiga“ → „Visi, turintys nuorodą“, žemiau žalia juosta „Rolė: Žiūrintysis – to pakanka“.'
@@ -392,13 +392,13 @@ s.voice(1.0, 'Puslapyje lentelė įrašoma viena eilute.')
 s.voice(5.0, 'Pirmas skaičius – failo numeris sistemoje, antras – lapo gID.')
 s.voice(10.6, 'Išsaugojus puslapį, lankytojas mato jau sutvarkytą lentelę.')
 s.voice(16.0, 'Jums šios eilutės rašyti nereikia – ją įdedame prijungdami lentelę.')
-s.voice(20.9, 'Vėliau keičiasi tik duomenys faile.')
+s.voice(22.1, 'Vėliau keičiasi tik duomenys faile.')
 s.ekrane = 'Kairėje kortelė su kodu {{google_sheet(1, {\'tab\':\'0\'})}}, dešinėje – kaip ta pati lentelė atrodo svetainėje.'
 s.komentaras = 'Publikuota pamoka § „Kaip įterpti lentelę į puslapį“. Sintaksė rodoma kaip paaiškinimas, ne kaip užduotis (Eimantas 2026-09-19).'
 
 
 # ================================================================ 7. TVS modulis
-s = Scene('06-tvs-modulis', 'Modulis sistemoje', 'Prijungti failai turi savo sąrašą', 24)
+s = Scene('06-tvs-modulis', 'Modulis sistemoje', 'Prijungti failai turi savo sąrašą', 25)
 eil = [('1', 'Administracija – TABLE', True), ('2', 'Ugdymas – TABLE', True), ('3', 'Archyvas – TABLE', False)]
 lenta = (f'<div class="kort mod" style="left:150px; top:70px; width:1380px; padding:30px 34px">'
          f'<div class="h">{s.t("m_h", "„Google Sheets“ lentelės")}</div>'
@@ -424,12 +424,12 @@ s.voice(1.0, 'Turinio valdymo sistemoje prijungti failai turi savo sąrašą.')
 s.voice(5.7, 'Kiekvienas atpažįstamas pagal pavadinimą, kurį suteikiame patys.')
 s.voice(10.6, 'Numerį sistema priskiria pati – būtent jį puslapis naudoja lentelei rasti.')
 s.voice(16.4, 'O žyma „Enabled“ rodo, ar failas veikia.')
-s.voice(19.9, 'Išjungto failo lentelės nematyti.')
+s.voice(20.1, 'Išjungto failo lentelės nematyti.')
 s.ekrane = 'Modulio lentelė su trimis prijungtais failais: ID, pavadinimas ir „Enabled“ varnelė; trečias išjungtas.'
 s.komentaras = 'Publikuota pamoka § „Kaip atrodo lentelių modulis TVS“.'
 
 # ================================================================ 8. Atsinaujinimas
-s = Scene('07-atsinaujinimas', 'Kaip greitai atsinaujina', 'Pakeitimas svetainėje – akimirksniu', 20)
+s = Scene('07-atsinaujinimas', 'Kaip greitai atsinaujina', 'Pakeitimas svetainėje – akimirksniu', 21)
 body = (f'<div class="kort a0" style="left:150px; top:80px; width:560px; height:220px; padding:30px 34px">'
         f'<div class="zyme">{s.t("a_z1", "Lentelėje")}</div>'
         f'<div class="h" style="margin-top:18px">{s.t("a_t1", "Pataisote langelį")}</div></div>'
@@ -450,9 +450,9 @@ s.appear('.t0', 10.0, 'fadeUpLight', 0.5)
 s.appear('.t1', 14.2, 'fadeUpLight', 0.5)
 s.voice(1.0, 'Pataisius langelį, svetainė atsinaujina pati.')
 s.voice(5.0, 'Pakeitimas matyti akimirksniu, vos išėjus iš langelio.')
-s.voice(9.0, 'Jei pakeitimo nematyti, tikrinkite du dalykus.')
-s.voice(12.9, 'Ar redaguojate tą pačią prijungtą lentelę.')
-s.voice(16.5, 'Ir ar tikrai išėjote iš langelio.')
+s.voice(9.6, 'Jei pakeitimo nematyti, tikrinkite du dalykus.')
+s.voice(13.2, 'Ar redaguojate tą pačią prijungtą lentelę.')
+s.voice(16.8, 'Ir ar tikrai išėjote iš langelio.')
 s.ekrane = 'Dvi kortelės su rodykle: „Pataisote langelį“ → „Matyti iš karto“. Žemiau dvi patikros.'
 s.komentaras = 'Publikuota pamoka § „Kaip greitai veikia duomenų atsinaujinimas“.'
 
@@ -477,7 +477,7 @@ for j in range(2):
     for i in range(3):
         s.visible('.d%di%d' % (j, i), (2.4 if j == 0 else 12.4) + i * 2.4)
 s.voice(1.0, 'Lentelė čia veikia kaip duomenų bazė – svarbiausia tvarka, ne stilius.')
-s.voice(6.4, 'Langelyje geriau nerašyti kelių eilučių, nenaudoti formulių ir nejungti langelių.')
+s.voice(7, 'Langelyje geriau nerašyti kelių eilučių, nenaudoti formulių ir nejungti langelių.')
 s.voice(13.5, 'Tinka tai, kas paruošta: A stulpelio žymos ir vienas formatas vienai eilutei.')
 s.voice(20.3, 'Sudėtingesnis formatavimas svetainėje nesimato.')
 s.voice(24.2, 'Todėl šabloną verta palikti tokį, koks yra.')
@@ -533,10 +533,10 @@ s.appear('.f1', 4.6, 'slinktisIsDesines', 0.5)
 for i in range(3):
     s.appear('.p%d' % i, 10.0 + i * 3.0, 'fadeUpLight', 0.5)
 s.voice(1.0, 'Visas lenteles galima sudėti į vieną failą, bet patogiau skaidyti pagal atsakomybes.')
-s.voice(7.4, 'Pavyzdžiui, administracijos ir ugdymo lentelės gyvena atskirai.')
+s.voice(7.7, 'Pavyzdžiui, administracijos ir ugdymo lentelės gyvena atskirai.')
 s.voice(12.6, 'Taip aišku, kuris failas kam priklauso,')
-s.voice(15.8, 'klaida paliečia tik vieną failą,')
-s.voice(18.3, 'o skirtingi žmonės dirba vienas kitam netrukdydami.')
+s.voice(15.9, 'klaida paliečia tik vieną failą,')
+s.voice(18.4, 'o skirtingi žmonės dirba vienas kitam netrukdydami.')
 s.ekrane = 'Du failai – „Administracija“ ir „Ugdymas“ – su savo lentelių sąrašais; apačioje trys privalumai.'
 s.komentaras = 'Publikuota pamoka § „Kaip organizuoti failus“. Sutampa su pradžiamokslio žinute, kad atsakomybėmis galima dalytis.'
 
@@ -561,9 +561,9 @@ for i in range(3):
     s.appear('.r%d' % i, 4.6 + i * 3.4, 'slinktisIsDesines', 0.5)
 s.visible('.kort:last-child', 15.0)
 s.voice(1.0, 'Atidarę failą matote, kad darbas jau pradėtas.')
-s.voice(5.0, 'Lapai paruošti dažniausioms lentelėms: taryba, komisijos, darbo užmokestis.')
-s.voice(11.0, 'Antraštės ir stulpeliai jau sudėlioti – lieka duomenys.')
-s.voice(15.7, 'O jei kurios nors lentelės nereikia, tiesiog jos nepildote.')
+s.voice(5.1, 'Lapai paruošti dažniausioms lentelėms: taryba, komisijos, darbo užmokestis.')
+s.voice(11.4, 'Antraštės ir stulpeliai jau sudėlioti – lieka duomenys.')
+s.voice(16.2, 'O jei kurios nors lentelės nereikia, tiesiog jos nepildote.')
 s.ekrane = 'Paruoštas failas su trimis lapais; dešinėje trys kortelės apie tai, kas jau padaryta.'
 s.komentaras = 'Publikuota pamoka § „Ką matote atidarę šabloną“.'
 

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<style>
+  .card { padding: 60px 110px; }
+  .card.dark { background: #0f172a; }
+  .card.dark .title { color: #fff; }
+
+  .card { display: flex; align-items: center; justify-content: center; }
+  .hook { text-align: center; position: relative; z-index: 2; }
+  .big { font-size: 280px; font-weight: 800; line-height: 1; letter-spacing: -8px; color: #fff; }
+  .keys { display: flex; align-items: center; justify-content: center; gap: 22px; margin-top: 40px; }
+  .kk { font-size: 34px; font-weight: 600; color: #cbd5e1; }
+  .kk.a1 { color: var(--c-amber-solid); }
+  .dot { font-size: 34px; color: #475569; }
+  .foot { margin-top: 44px; font-size: 26px; letter-spacing: .18em; text-transform: uppercase; color: #64748b; }
+  .flash { position: absolute; inset: 0; background: var(--c-amber-solid); opacity: 0; z-index: 1; }
+</style>
+</head>
+<body>
+  <div class="card dark">
+    <div class="hook">
+      <div class="big">{{big}}</div>
+      <div class="keys"><span class="kk a1">{{k1}}</span><span class="dot d1">·</span>
+        <span class="kk a2">{{k2}}</span><span class="dot d2">·</span>
+        <span class="kk a3">{{k3}}</span></div>
+      <div class="foot">{{foot}}</div>
+    </div>
+    <div class="flash"></div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,563 @@
+{
+  "hash": "1187e298a6c50e9068dd11dec23f7826e6bc58e60851fdff710adad77f0dd627",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 290295661,
+  "characters": 3736,
+  "start_in_frame": 0.6,
+  "created": "2026-09-20T13:58:19.731Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Domenas yra turtas",
+      "text": "Domenas nėra svetainės dalis. Tai įstaigos skaitmeninis turtas.",
+      "file": "k01-1.wav",
+      "duration": 4.51,
+      "fits": true,
+      "reikia_sek": 19
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Domenas yra turtas",
+      "text": "Prie jo prikabinta svetainė, darbuotojų paštas, nuorodos ir paieškos istorija.",
+      "file": "k01-2.wav",
+      "duration": 5.71,
+      "fits": true,
+      "reikia_sek": 19
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Domenas yra turtas",
+      "text": "Prarandamas ne puslapis, o visa tai iš karto.",
+      "file": "k01-3.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 19
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Kaip atrodo tvarkingas įrašas",
+      "text": "Registro įraše svarbiausia viena dalis – domeno turėtojas.",
+      "file": "k02-1.wav",
+      "duration": 4.17,
+      "fits": true,
+      "reikia_sek": 19
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Kaip atrodo tvarkingas įrašas",
+      "text": "Ten turi būti įstaigos pavadinimas: mokykla, gimnazija, lopšelis-darželis.",
+      "file": "k02-2.wav",
+      "duration": 5.71,
+      "fits": true,
+      "reikia_sek": 19
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Kaip atrodo tvarkingas įrašas",
+      "text": "Tiekėjas gali būti įrašytas kaip techninis kontaktas. Tai normalu.",
+      "file": "k02-3.wav",
+      "duration": 5.07,
+      "fits": true,
+      "reikia_sek": 19
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Trys atvejai, dėl kurių verta sunerimti",
+      "text": "Trys atvejai, kai domenas įstaigai nepriklauso.",
+      "file": "k03-1.wav",
+      "duration": 3.61,
+      "fits": true,
+      "reikia_sek": 26
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Trys atvejai, dėl kurių verta sunerimti",
+      "text": "Pirmas: turėtoju įrašyta tiekėjo įmonė.",
+      "file": "k03-2.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 26
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Trys atvejai, dėl kurių verta sunerimti",
+      "text": "Antras: pavadinimas įstaigos, bet adresas, telefonas ir paštas – tiekėjo. Perregistruota ne iki galo.",
+      "file": "k03-3.wav",
+      "duration": 8.57,
+      "fits": true,
+      "reikia_sek": 26
+    },
+    {
+      "kadras": 3,
+      "cue": 4,
+      "title": "Trys atvejai, dėl kurių verta sunerimti",
+      "text": "Trečias: fizinis asmuo. Adresas priklauso nuo vieno žmogaus.",
+      "file": "k03-4.wav",
+      "duration": 5.39,
+      "fits": true,
+      "reikia_sek": 26
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Kieno paštas įrašytas",
+      "text": "Antras dalykas registre – koks el. paštas įrašytas prie turėtojo.",
+      "file": "k04-1.wav",
+      "duration": 5.15,
+      "fits": true,
+      "reikia_sek": 23
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Kieno paštas įrašytas",
+      "text": "Jei ten tiekėjo adresas, visi pranešimai eina jam: apie galiojimą, apie duomenų patvirtinimą, apie perdavimą.",
+      "file": "k04-2.wav",
+      "duration": 8.09,
+      "fits": true,
+      "reikia_sek": 23
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Kieno paštas įrašytas",
+      "text": "Įstaiga apie savo domeną nesužino nieko. Taip tyliai gimsta priklausomybė.",
+      "file": "k04-3.wav",
+      "duration": 6.03,
+      "fits": true,
+      "reikia_sek": 23
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Įkūrimo data",
+      "text": "Registre yra eilutė „Įkurtas“. Ji rodo ne domeno amžių.",
+      "file": "k05-1.wav",
+      "duration": 5.37,
+      "fits": false,
+      "reikia_sek": 23
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Įkūrimo data",
+      "text": "Perregistravus domeną naujam turėtojui, ta data pradedama skaičiuoti iš naujo.",
+      "file": "k05-2.wav",
+      "duration": 5.21,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Įkūrimo data",
+      "text": "Jei interneto archyve ta pati svetainė matoma anksčiau, domenas buvo kažkieno kito. Greičiausiai – įstaigos.",
+      "file": "k05-3.wav",
+      "duration": 8.43,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Kodėl to nepastebime",
+      "text": "Metai bėga, svetainė veikia, sąskaitos apmokamos.",
+      "file": "k06-1.wav",
+      "duration": 4.25,
+      "fits": false,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Kodėl to nepastebime",
+      "text": "Niekas neturi priežasties tikrinti, kam domenas registruotas.",
+      "file": "k06-2.wav",
+      "duration": 4.49,
+      "fits": false,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Kodėl to nepastebime",
+      "text": "Bet veikianti svetainė nėra įrodymas, kad domenas jūsų.",
+      "file": "k06-3.wav",
+      "duration": 4.09,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Kada paaiškėja",
+      "text": "Klausimas iškyla vieną kartą – kai įstaiga nori keisti tiekėją.",
+      "file": "k07-1.wav",
+      "duration": 4.81,
+      "fits": true,
+      "reikia_sek": 21
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Kada paaiškėja",
+      "text": "Atsakymai būna įvairūs: palaukite, sumokėkite, pasirašykite.",
+      "file": "k07-2.wav",
+      "duration": 6.03,
+      "fits": false,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Kada paaiškėja",
+      "text": "Keturi šimtai eurų už nuosavą adresą – tikras pavyzdys.",
+      "file": "k07-3.wav",
+      "duration": 4.11,
+      "fits": true,
+      "reikia_sek": 21
+    },
+    {
+      "kadras": 7,
+      "cue": 4,
+      "title": "Kada paaiškėja",
+      "text": "Iki tol viskas atrodė tvarkoje.",
+      "file": "k07-4.wav",
+      "duration": 2.25,
+      "fits": true,
+      "reikia_sek": 21
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Kieno pusėje įrodymai",
+      "text": "Registras remiasi savo istorija – ji viešai nematoma, bet saugoma.",
+      "file": "k08-1.wav",
+      "duration": 4.59,
+      "fits": true,
+      "reikia_sek": 24
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Kieno pusėje įrodymai",
+      "text": "Jei jūsų įstaiga joje kada nors buvo turėtoja, užtenka pareiškimo, kad domeno niekam neperleidote.",
+      "file": "k08-2.wav",
+      "duration": 6.57,
+      "fits": true,
+      "reikia_sek": 24
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Kieno pusėje įrodymai",
+      "text": "Perleidimą turi pagrįsti tas, kas domeną laiko dabar. Jei perdavimo nebuvo, dokumento jis neturi.",
+      "file": "k08-3.wav",
+      "duration": 6.75,
+      "fits": true,
+      "reikia_sek": 24
+    },
+    {
+      "kadras": 9,
+      "cue": 1,
+      "title": "Jei istorijoje įstaigos nėra",
+      "text": "Viskas priklauso nuo vieno dalyko: ar įstaiga registre kada nors buvo turėtoja.",
+      "file": "k09-1.wav",
+      "duration": 5.21,
+      "fits": true,
+      "reikia_sek": 28
+    },
+    {
+      "kadras": 9,
+      "cue": 2,
+      "title": "Jei istorijoje įstaigos nėra",
+      "text": "Jei buvo – užtenka pasakyti, kad domeno niekam neperleidote.",
+      "file": "k09-2.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 28
+    },
+    {
+      "kadras": 9,
+      "cue": 3,
+      "title": "Jei istorijoje įstaigos nėra",
+      "text": "Jei nebuvo – ginčui pagrindo nėra: domenas nuo pradžių registruotas ne jūsų vardu.",
+      "file": "k09-3.wav",
+      "duration": 5.77,
+      "fits": true,
+      "reikia_sek": 28
+    },
+    {
+      "kadras": 9,
+      "cue": 4,
+      "title": "Jei istorijoje įstaigos nėra",
+      "text": "Tada lieka du keliai: derėtis arba registruoti naują domeną ir persikelti.",
+      "file": "k09-4.wav",
+      "duration": 5.71,
+      "fits": true,
+      "reikia_sek": 28
+    },
+    {
+      "kadras": 10,
+      "cue": 1,
+      "title": "Ką daryti",
+      "text": "Jei pasitikrinę radote svetimą pavadinimą, kelias yra.",
+      "file": "k10-1.wav",
+      "duration": 4.09,
+      "fits": true,
+      "reikia_sek": 32
+    },
+    {
+      "kadras": 10,
+      "cue": 2,
+      "title": "Ką daryti",
+      "text": "Pirmiausia pasitikrinate registre, kas įrašytas turėtoju.",
+      "file": "k10-2.wav",
+      "duration": 3.85,
+      "fits": true,
+      "reikia_sek": 32
+    },
+    {
+      "kadras": 10,
+      "cue": 3,
+      "title": "Ką daryti",
+      "text": "Tada raštu paprašote perrašyti domeną įstaigos vardu – net jei senų dokumentų nebėra.",
+      "file": "k10-3.wav",
+      "duration": 6.49,
+      "fits": true,
+      "reikia_sek": 32
+    },
+    {
+      "kadras": 10,
+      "cue": 4,
+      "title": "Ką daryti",
+      "text": "Jei nepavyksta, rašote registrui. Dažnai pakanka kelių laiškų.",
+      "file": "k10-4.wav",
+      "duration": 4.81,
+      "fits": true,
+      "reikia_sek": 32
+    },
+    {
+      "kadras": 10,
+      "cue": 5,
+      "title": "Ką daryti",
+      "text": "Jei ir tai nepadeda, praktikoje dažniau renkamasi naują domeną, nes teisinis kelias ilgas.",
+      "file": "k10-5.wav",
+      "duration": 6.27,
+      "fits": true,
+      "reikia_sek": 32
+    },
+    {
+      "kadras": 11,
+      "cue": 1,
+      "title": "Kas su paieška",
+      "text": "Dažnas klausimas: kaip greitai svetainė vėl bus randama paieškoje.",
+      "file": "k11-1.wav",
+      "duration": 4.97,
+      "fits": true,
+      "reikia_sek": 21
+    },
+    {
+      "kadras": 11,
+      "cue": 2,
+      "title": "Kas su paieška",
+      "text": "Garantijų nėra – terminai būna labai skirtingi.",
+      "file": "k11-2.wav",
+      "duration": 3.45,
+      "fits": true,
+      "reikia_sek": 21
+    },
+    {
+      "kadras": 11,
+      "cue": 3,
+      "title": "Kas su paieška",
+      "text": "Bet su nukreipimais, svetainės žemėlapiu ir atnaujintomis nuorodomis paieška vienaip ar kitaip susitvarko.",
+      "file": "k11-3.wav",
+      "duration": 6.81,
+      "fits": true,
+      "reikia_sek": 21
+    },
+    {
+      "kadras": 12,
+      "cue": 1,
+      "title": "Prieš startą",
+      "text": "Klaida dažniausiai padaroma ne dėl aplaidumo, o dėl nežinojimo.",
+      "file": "k12-1.wav",
+      "duration": 4.81,
+      "fits": true,
+      "reikia_sek": 31
+    },
+    {
+      "kadras": 12,
+      "cue": 2,
+      "title": "Prieš startą",
+      "text": "Įstaiga laukia naujos svetainės, o domeno klausimas iškyla paskutinę savaitę.",
+      "file": "k12-2.wav",
+      "duration": 4.97,
+      "fits": true,
+      "reikia_sek": 31
+    },
+    {
+      "kadras": 12,
+      "cue": 3,
+      "title": "Prieš startą",
+      "text": "Profesionalus tiekėjas tada paaiškina. Kitas pasiūlo viskuo pasirūpinti ir įrašo save.",
+      "file": "k12-3.wav",
+      "duration": 6.17,
+      "fits": true,
+      "reikia_sek": 31
+    },
+    {
+      "kadras": 12,
+      "cue": 4,
+      "title": "Prieš startą",
+      "text": "Mes domeną registruojame įstaigos vardu, o sąskaitą už jį gauna pati įstaiga. Ta sąskaita ir yra saugiklis.",
+      "file": "k12-4.wav",
+      "duration": 8.67,
+      "fits": true,
+      "reikia_sek": 31
+    },
+    {
+      "kadras": 13,
+      "cue": 1,
+      "title": "Penkių minučių patikra",
+      "text": "Penki klausimai, kuriuos verta užduoti šiandien.",
+      "file": "k13-1.wav",
+      "duration": 3.23,
+      "fits": true,
+      "reikia_sek": 31
+    },
+    {
+      "kadras": 13,
+      "cue": 2,
+      "title": "Penkių minučių patikra",
+      "text": "Kam registruotas mūsų domenas.",
+      "file": "k13-2.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 31
+    },
+    {
+      "kadras": 13,
+      "cue": 3,
+      "title": "Penkių minučių patikra",
+      "text": "Ar turėtojo duomenys – įstaigos, ne tiekėjo.",
+      "file": "k13-3.wav",
+      "duration": 3.63,
+      "fits": true,
+      "reikia_sek": 31
+    },
+    {
+      "kadras": 13,
+      "cue": 4,
+      "title": "Penkių minučių patikra",
+      "text": "Kada domenas įkurtas registre.",
+      "file": "k13-4.wav",
+      "duration": 2.87,
+      "fits": true,
+      "reikia_sek": 31
+    },
+    {
+      "kadras": 13,
+      "cue": 5,
+      "title": "Penkių minučių patikra",
+      "text": "Ar rytoj galėtume pakeisti tiekėją be jo leidimo.",
+      "file": "k13-5.wav",
+      "duration": 3.63,
+      "fits": true,
+      "reikia_sek": 31
+    },
+    {
+      "kadras": 13,
+      "cue": 6,
+      "title": "Penkių minučių patikra",
+      "text": "Ar sutartyje parašyta, kam priklauso domenas.",
+      "file": "k13-6.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 31
+    },
+    {
+      "kadras": 13,
+      "cue": 7,
+      "title": "Penkių minučių patikra",
+      "text": "Jei bent į vieną atsakymas – nežinome, verta pasitikrinti.",
+      "file": "k13-7.wav",
+      "duration": 3.87,
+      "fits": true,
+      "reikia_sek": 31
+    },
+    {
+      "kadras": 14,
+      "cue": 1,
+      "title": "Kaip yra pas mus",
+      "text": "Mūsų klientų domenai registruoti įstaigos vardu.",
+      "file": "k14-1.wav",
+      "duration": 3.29,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 14,
+      "cue": 2,
+      "title": "Kaip yra pas mus",
+      "text": "Tai matyti viešai, bet kada, be mūsų.",
+      "file": "k14-2.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 14,
+      "cue": 3,
+      "title": "Kaip yra pas mus",
+      "text": "Administruoti – paslauga. Turėti adresą turi pati įstaiga.",
+      "file": "k14-3.wav",
+      "duration": 4.49,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 15,
+      "cue": 1,
+      "title": "Kas tai yra ir kas ne",
+      "text": "Tai ne teisinė konsultacija.",
+      "file": "k15-1.wav",
+      "duration": 2.27,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 15,
+      "cue": 2,
+      "title": "Kas tai yra ir kas ne",
+      "text": "Remiamės savo praktika ir viešai prieinamais registro duomenimis nuo dviejų tūkstančių vienuoliktųjų iki šių metų rugsėjo.",
+      "file": "k15-2.wav",
+      "duration": 7.69,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 15,
+      "cue": 3,
+      "title": "Kas tai yra ir kas ne",
+      "text": "Kiekvienas atvejis skiriasi.",
+      "file": "k15-3.wav",
+      "duration": 2.33,
+      "fits": true,
+      "reikia_sek": 17
+    }
+  ]
+}
