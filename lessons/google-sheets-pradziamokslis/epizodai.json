@@ -1,0 +1,108 @@
+{
+ "pamokos_slug": "google-sheets-pradziamokslis",
+ "pastaba": "platformos epizodai iš įgarsinto explainerio (Eimantas 2026-10-31); generuoja platformos scripts/perimti-explaineri.py",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_1845_01",
+   "trukme_s": 18,
+   "failas": "00-kas-yra-sheets"
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_1845_02_1",
+   "trukme_s": 32,
+   "failas": "01-prieiga"
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_1845_03",
+   "trukme_s": 20,
+   "failas": "02-paskyra"
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_1845_04",
+   "trukme_s": 17,
+   "failas": "03-langas"
+  },
+  {
+   "kadras": 5,
+   "epizodas": "ep_1845_05_1",
+   "trukme_s": 17,
+   "failas": "04-lapai"
+  },
+  {
+   "kadras": 6,
+   "epizodas": "ep_1845_05_3",
+   "trukme_s": 14,
+   "failas": "05-visi-lapai"
+  },
+  {
+   "kadras": 7,
+   "epizodas": "ep_1845_06_2",
+   "trukme_s": 17,
+   "failas": "06-lapo-meniu"
+  },
+  {
+   "kadras": 8,
+   "epizodas": "ep_1845_06_1",
+   "trukme_s": 14,
+   "failas": "07-pervardyti"
+  },
+  {
+   "kadras": 10,
+   "epizodas": "viz_1845_08",
+   "trukme_s": 20,
+   "failas": "09-zymos"
+  },
+  {
+   "kadras": 11,
+   "epizodas": "ep_1845_09_1",
+   "trukme_s": 14,
+   "failas": "10-rasymas"
+  },
+  {
+   "kadras": 13,
+   "epizodas": "ep_1845_10_1",
+   "trukme_s": 20,
+   "failas": "12-viena-eilute"
+  },
+  {
+   "kadras": 15,
+   "epizodas": "ep_1845_11_2",
+   "trukme_s": 14,
+   "failas": "14-numeriai"
+  },
+  {
+   "kadras": 16,
+   "epizodas": "ep_1845_11_1",
+   "trukme_s": 51,
+   "failas": "15-nauja-eilute"
+  },
+  {
+   "kadras": 18,
+   "epizodas": "ep_1845_12_1",
+   "trukme_s": 17,
+   "failas": "17-spalvos"
+  },
+  {
+   "kadras": 19,
+   "epizodas": "ep_1845_12_2",
+   "trukme_s": 22,
+   "failas": "18-th-spalva"
+  },
+  {
+   "kadras": 20,
+   "epizodas": "ep_1845_13_1",
+   "trukme_s": 40,
+   "failas": "19-versijos"
+  },
+  {
+   "kadras": 21,
+   "epizodas": "viz_1845_14",
+   "trukme_s": 12,
+   "failas": "20-nebijokite"
+  }
+ ]
+}

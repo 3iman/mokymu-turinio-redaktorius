@@ -1,0 +1,84 @@
+{
+ "pamokos_slug": "google-sheets-integracija-explaineris",
+ "pastaba": "platformos epizodai iš įgarsinto explainerio (Eimantas 2026-10-31); generuoja platformos scripts/perimti-explaineri.py",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_1654_01",
+   "trukme_s": 23,
+   "failas": "00-kodel"
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_1654_02",
+   "trukme_s": 27,
+   "failas": "01-kaip-veikia"
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_1654_04",
+   "trukme_s": 24,
+   "failas": "02-url"
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_1654_03",
+   "trukme_s": 22,
+   "failas": "03-kas-ka-daro"
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_1654_06",
+   "trukme_s": 22,
+   "failas": "04-publikavimas"
+  },
+  {
+   "kadras": 6,
+   "epizodas": "viz_1654_09",
+   "trukme_s": 25,
+   "failas": "05-kodas"
+  },
+  {
+   "kadras": 7,
+   "epizodas": "viz_1654_12",
+   "trukme_s": 24,
+   "failas": "06-tvs-modulis"
+  },
+  {
+   "kadras": 8,
+   "epizodas": "viz_1654_10",
+   "trukme_s": 20,
+   "failas": "07-atsinaujinimas"
+  },
+  {
+   "kadras": 9,
+   "epizodas": "viz_1654_07",
+   "trukme_s": 29,
+   "failas": "08-duomenu-baze"
+  },
+  {
+   "kadras": 10,
+   "epizodas": "viz_1654_08",
+   "trukme_s": 21,
+   "failas": "09-lapu-tvarka"
+  },
+  {
+   "kadras": 11,
+   "epizodas": "viz_1654_13",
+   "trukme_s": 23,
+   "failas": "10-organizavimas"
+  },
+  {
+   "kadras": 12,
+   "epizodas": "viz_1654_11",
+   "trukme_s": 21,
+   "failas": "11-sablonas"
+  },
+  {
+   "kadras": 13,
+   "epizodas": "viz_1654_14",
+   "trukme_s": 16,
+   "failas": "12-kur-toliau"
+  }
+ ]
+}
