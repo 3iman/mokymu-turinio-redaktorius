@@ -26,7 +26,7 @@
     "tag_paprastai": "Paprasta struktūra"
   },
   "04_spalvota_kepure": {
-    "title": "Nuspalvinkite pirmą lentelės eilutę",
+    "title": "Nuspalvinate pirmą lentelės eilutę",
     "before_label": "Be kepurės",
     "after_label": "Su kepure",
     "col_nr": "Eil. Nr.",
@@ -47,7 +47,7 @@
     "spec_text_desc": "Baltas"
   },
   "03_paprastumas": {
-    "title": "Nepersistenkite su lentelių įmantrumu",
+    "title": "Nepersistengiate su lentelių įmantrumu",
     "do_title": "Paprasta",
     "do_subtitle": "Vienas antraščių lygis, vienodos eilutės",
     "dont_title": "Įmantru",
@@ -67,7 +67,7 @@
     "summary": "Vartotojai vertina skaitomumą, ne išvaizdą"
   },
   "02_nestilizuokite_lenteliu": {
-    "title": "Nestilizuokite lentelių",
+    "title": "Nestilizuojate lentelių",
     "do_title": "Švari lentelė",
     "dont_title": "Stilizuota lentelė",
     "col_name": "Vardas, pavardė",
@@ -87,7 +87,7 @@
     "problem_3_desc": "Tamsiuoju režimu spalvos nekinta – tekstas tampa neįskaitomas"
   },
   "01_lygiavimas_kaire": {
-    "title": "Lygiuokite lentelės turinį pagal kairę",
+    "title": "Lygiuojate lentelės turinį pagal kairę",
     "do_title": "Taisyklingai",
     "do_subtitle": "Lygiuota kairėn",
     "dont_title": "Netaisyklingai",
@@ -104,7 +104,7 @@
     "note_bad": "Tekstas šokinėja – akis negali rasti bendros linijos"
   },
   "00_kurkite_kur_gebate": {
-    "title": "Kurkite lenteles ten kur gebate",
+    "title": "Kuriate lenteles ten, kur gebate",
     "path_direct_label": "Tiesiogiai",
     "path_html_label": "Per HTML",
     "word_label": "Word",
