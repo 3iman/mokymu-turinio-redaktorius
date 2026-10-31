@@ -97,10 +97,10 @@
     "col_nr": "Eil. Nr.",
     "col_name": "Vardas, pavardė",
     "col_role": "Atstovavimas",
-    "row1_name": "Jolanta Kazlauskienė",
+    "row1_name": "Marija Pečkauskaitė",
     "row1_role": "Mokytojų atstovė",
-    "row2_name_editing": "Rasa Petrait",
-    "row2_name_done": "Rasa Petraitienė",
+    "row2_name_editing": "Julija Žymant",
+    "row2_name_done": "Julija Žymantienė",
     "row2_role": "Tėvų atstovė",
     "status_waiting": "Pakeitimai dar nesiunčiami – kol esate celėje, sistema laukia",
     "status_synced": "Duomenys išsiųsti – svetainė atsinaujins per kelias sekundes",
@@ -186,10 +186,10 @@
     "table_header_2": "Vardas, pavardė",
     "table_header_3": "Atstovavimas",
     "table_r1_c1": "1.",
-    "table_r1_c2": "Jolanta Kazlauskienė",
+    "table_r1_c2": "Marija Pečkauskaitė",
     "table_r1_c3": "Mokytojų atstovė",
     "table_r2_c1": "2.",
-    "table_r2_c2": "Rasa Petraitienė",
+    "table_r2_c2": "Julija Žymantienė",
     "table_r2_c3": "Tėvų atstovė"
   }
 }
