@@ -59,8 +59,30 @@ function dazni() {
 const DAZNI = dazni();
 
 
+/** Tekstas dalimis iki ~4000 ženklų, kerpant po sakinio — Kirčiuoklis ilgesnio vienu kartu nepriima
+ *  (anksčiau viskas po 4000-ojo ženklo tyliai nukrisdavo; platformos balso tekstai ~50 tūkst. ženklų). */
+function dalimis(tekstas, max = 4000) {
+  const out = [];
+  let likutis = tekstas.trim();
+  while (likutis.length > max) {
+    let i = likutis.lastIndexOf('. ', max);
+    if (i < max / 2) i = likutis.lastIndexOf(' ', max);
+    if (i <= 0) i = max;
+    out.push(likutis.slice(0, i + 1));
+    likutis = likutis.slice(i + 1).trim();
+  }
+  if (likutis) out.push(likutis);
+  return out;
+}
+
 async function abejotini(tekstas, n) {
-  const dalys = await kviesti('text_accents', 'body', tekstas.slice(0, 4000), n);
+  const dalys = [];
+  const gabalai = dalimis(tekstas);
+  for (const [i, g] of gabalai.entries()) {
+    dalys.push(...await kviesti('text_accents', 'body', g, n));
+    if (i + 1 < gabalai.length) await new Promise(r => setTimeout(r, 400));   // nespaudžiame svetimos paslaugos
+  }
+  if (gabalai.length > 1) console.log(`(tekstas tikrintas ${gabalai.length} dalimis)`);
   const out = new Map();
   for (const eil of dalys) {
     for (const p of eil) {
