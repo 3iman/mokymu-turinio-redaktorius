@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  .title { font-size: 44px; margin-bottom: 30px; }
+  .lbl { font-size: 17px; text-transform: uppercase; letter-spacing: .8px; color: var(--c-text-faint); margin-bottom: 12px; }
+  .board { display: flex; gap: 40px; align-items: flex-start; }
+  .board > div { display: flex; flex-direction: column; }
+  .l { flex: 0 0 760px; }
+  .r { flex: 1; }
+  .sh { border-radius: 12px; overflow: hidden; border: 1px solid #dfe3ea; box-shadow: 0 24px 60px rgba(30, 40, 70, .10); }
+  .tvs-player { width: 560px; }
+  .tvs-rep .tvs-input { background: #fff; }
+  .tvs-rep .tvs-input.is-focus { border-color: #61a9c6; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="board">
+      <div class="l">
+        <div class="lbl">{{l_rep}}</div>
+        <div class="sh"><div class="tvs-rep">
+          <div class="tvs-rep-bar"><span class="tvs-check"></span>Video<span class="tvs-sp"></span><svg viewBox="0 0 24 24" fill="#fff"><path fill-rule="evenodd" d="M10.3 2h3.4l.5 2.6 1.7.8 2.2-1.5 2.4 2.4-1.5 2.2.8 1.7 2.6.5v3.4l-2.6.5-.8 1.7 1.5 2.2-2.4 2.4-2.2-1.5-1.7.8-.5 2.6h-3.4l-.5-2.6-1.7-.8-2.2 1.5-2.4-2.4 1.5-2.2-.8-1.7L2 13.7v-3.4l2.6-.5.8-1.7-1.5-2.2 2.4-2.4 2.2 1.5 1.7-.8zM12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7z"/></svg><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 1l4 4h-3v6h6V8l4 4-4 4v-3h-6v6h3l-4 4-4-4h3v-6H5v3l-4-4 4-4v3h6V5H8z"/></svg></div>
+          <div class="tvs-rep-body">
+            <div class="tvs-field"><div class="tvs-label">Video</div><div class="tvs-input is-focus is-value">{{v_path}}</div></div>
+            <div class="tvs-player"><span class="tvs-player-play"></span><div class="tvs-player-bar"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6 4l14 8-14 8z"/></svg><span class="tvs-player-track"></span><span>00:00</span><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 9h4l5-4v14l-5-4H3z"/><path d="M15.5 8.5a5 5 0 0 1 0 7M18 6a8.5 8.5 0 0 1 0 12" stroke="#fff" stroke-width="2" fill="none"/></svg><span class="tvs-player-vol"></span><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M14 4h6v6M10 20H4v-6M20 4l-7 7M4 20l7-7"/></svg></div></div>
+          </div>
+        </div></div>
+      </div>
+      <div class="r">
+        <div class="lbl">{{l_prof}}</div>
+        <div class="sh"><div class="tvs-sprof">
+          <div class="tvs-sprof-photo"></div>
+          <div class="tvs-sprof-b">
+            <div class="tvs-sprof-name"><svg class="tvs-edit-pen" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M3 21l1.2-5L16 4.2l3.8 3.8L8 19.8z"/><path d="M14 6.2l3.8 3.8M4.2 16l3.8 3.8"/></svg>{{p_name}}</div>
+            <div class="tvs-sprof-pos">{{p_pos}}</div>
+            <div class="tvs-sprof-sec"><span class="tvs-sprof-doc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v11M7.5 10l4.5 4.5 4.5-4.5M3.5 15v5.5h17V15"/></svg>CV</span><span class="tvs-sprof-doc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v11M7.5 10l4.5 4.5 4.5-4.5M3.5 15v5.5h17V15"/></svg>{{p_doc_1}}</span><br><span class="tvs-sprof-doc"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 3v11M7.5 10l4.5 4.5 4.5-4.5M3.5 15v5.5h17V15"/></svg>{{p_doc_2}}</span></div>
+            <div class="tvs-sprof-sec tvs-sprof-muted">{{p_room}}</div>
+            <div class="tvs-sprof-h">{{p_hours}}</div>
+            <div class="tvs-sprof-tab">
+              <div class="tvs-sprof-tr is-th"><span>{{th_day}}</span><span>{{th_work}}</span><span>{{th_lunch}}</span><span>{{th_rcv}}</span></div>
+              <div class="tvs-sprof-tr"><span>{{day_1}}</span><span>8.00–16.30</span><span>12.00–12.30</span><span>{{rcv_1}}</span></div>
+              <div class="tvs-sprof-tr"><span>{{day_2}}</span><span>8.00–16.30</span><span>12.00–12.30</span><span>{{rcv_2}}</span></div>
+              <div class="tvs-sprof-tr"><span>{{day_3}}</span><span>8.00–16.30</span><span>12.00–12.30</span><span>{{rcv_3}}</span></div>
+            </div>
+          </div>
+        </div></div>
+      </div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

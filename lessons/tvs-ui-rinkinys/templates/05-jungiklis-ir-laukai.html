@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  .title { font-size: 44px; margin-bottom: 30px; }
+  .lbl { font-size: 17px; text-transform: uppercase; letter-spacing: .8px; color: var(--c-text-faint); margin-bottom: 12px; }
+  .board { display: flex; gap: 40px; align-items: flex-start; font-family: var(--tvs-font); }
+  .bg { background: var(--tvs-page); border-radius: 14px; padding: 22px; box-shadow: 0 24px 60px rgba(30, 40, 70, .10); border: 1px solid #dfe3ea; }
+  .left { flex: 0 0 860px; }
+  .right { flex: 1; display: flex; flex-direction: column; gap: 26px; }
+  .tvs-form { border-radius: 3px; }
+  .sw-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px 30px; background: #fff; padding: 20px 24px; border-radius: 3px; }
+  .sw-grid > div { display: flex; align-items: center; gap: 18px; font-size: 20px; color: var(--tvs-text); }
+  .opened { position: relative; }
+  .opened .tvs-select-list { margin-top: -7px; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="board">
+      <div class="bg left">
+        <div class="tvs-form">
+          <div class="tvs-field"><div class="tvs-label">{{f_view}}</div><div class="tvs-select">{{v_choose_opt}}</div></div>
+          <div class="tvs-field"><div class="tvs-label">{{f_enabled}}</div><div><span class="tvs-switch is-yes"><span>Yes</span><span></span></span></div></div>
+          <div class="tvs-field opened"><div class="tvs-label">{{f_cat}}</div>
+            <div class="tvs-select is-open">{{v_choose}}</div>
+            <div class="tvs-select-list">
+              <div class="tvs-select-opt">{{v_choose}}</div>
+              <div class="tvs-select-opt is-hl">{{o_1}}</div>
+              <div class="tvs-select-opt">{{o_2}}</div>
+              <div class="tvs-select-opt">{{o_3}}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="right">
+        <div>
+          <div class="lbl">{{l_switch}}</div>
+          <div class="sw-grid">
+            <div><span class="tvs-switch is-yes"><span>Yes</span><span></span></span>{{l_yes}}</div>
+            <div><span class="tvs-switch is-no"><span></span><span>No</span></span>{{l_no}}</div>
+          </div>
+        </div>
+        <div>
+          <div class="lbl">{{l_tags}}</div>
+          <div class="tvs-form"><div class="tvs-field">
+            <div class="tvs-label">{{f_cats}}</div>
+            <div class="tvs-tags"><span class="tvs-chip">{{tag_1}}<span class="tvs-chip-x">×</span></span><span class="tvs-chip">{{tag_2}}<span class="tvs-chip-x">×</span></span></div>
+            <div class="tvs-help">{{tags_help}}</div>
+          </div></div>
+        </div>
+        <div>
+          <div class="lbl">{{l_date}}</div>
+          <div class="tvs-form"><div class="tvs-field">
+            <div class="tvs-label">{{f_date}}</div>
+            <div class="tvs-date"><span class="tvs-date-x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></span><span class="tvs-date-v">{{v_date}}</span><span class="tvs-date-tz">Europe/Vilnius</span></div>
+          </div></div>
+        </div>
+      </div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

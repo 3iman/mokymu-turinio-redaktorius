@@ -249,3 +249,314 @@
 .tvs-picked .tvs-path { font-size: 19px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
 .tvs-modal .tvs-filter .tvs-input { min-width: 340px; }
 .tvs-input.is-typed { color: var(--tvs-text); }
+
+/* =====================================================================
+ * 2026-11-01 — turinio redaktorius, jungiklis, pasirinkimai, failai, svetainė.
+ * Išmatuota iš kadrų pikselių (pilna raiška, 1920 px):
+ *   redaktorius — 799 / 800 (CKEditor 4, „moono“) ir assets/iklijuotas-redaktorius-juosta.png;
+ *   jungiklis — 821 sc02, 854 sc04; select — 821 sc05, media/824; žymos, data, failas — 816 sc03;
+ *   galerija, įkėlimo langas, naršyklė — 878; svetainė — media/885, 887, 923, assets/slapukai-*.png.
+ * Dydžiai — ~1,4 karto TVS (kaip visas rinkinys).
+ * ===================================================================== */
+:root {
+  --tvs-cke-line:      #b4b4b4;   /* redaktoriaus rėmas, juostos apačia */
+  --tvs-cke-top-a:     #f5f5f5;   /* įrankių juostos gradientas */
+  --tvs-cke-top-b:     #cfd1cf;
+  --tvs-cke-g-line:    #b3b3b3;   /* mygtukų grupės kraštas */
+  --tvs-cke-g-bottom:  #9e9e9e;
+  --tvs-cke-g-b:       #e6e6e6;   /* grupės gradiento apačia */
+  --tvs-cke-ico:       #333333;
+  --tvs-cke-off:       #adadad;   /* neaktyvi ikona (Cut, Copy, Undo…) */
+  --tvs-cke-label:     #474747;   /* „Source“, „Styles“, „Normal“ */
+  --tvs-cke-sep:       #bebebe;
+  --tvs-cke-sel:       #3669d0;   /* pažymėtas tekstas (Windows) */
+  --tvs-cke-path:      #484848;
+  --tvs-switch-yes:    #50d06c;   /* „Yes“ — kiek kitokia nei mygtukų žalia */
+  --tvs-switch-line:   #cecece;
+  --tvs-field-line:    #d9d9d9;
+  --tvs-focus:         #57a8e3;   /* fokusuotas select */
+  --tvs-native-line:   #7a7a7a;   /* naršyklės select sąrašo rėmas */
+  --tvs-native-hl:     #2993fb;   /* naršyklės select pažymėta eilutė */
+  --tvs-addon:         #ebecef;   /* datos lauko × ir laiko juosta */
+  --tvs-addon-text:    #55595c;
+  --tvs-file-red:      #fe5740;   /* PDF / video plytelė */
+  --tvs-row-alt:       #f2f2f2;   /* galerijos eilučių kaita */
+  --tvs-dz-line:       #dedede;   /* „Click or drop files here…“ */
+  --tvs-dz-drag:       #585858;   /* tas pats, kai tempiamas failas */
+  --tvs-chrome-omni:   #e8e9ec;   /* naršyklės adreso laukas */
+  --tvs-chrome-ico:    #5f6368;
+  --tvs-chrome-off:    #bbbbbb;
+  --tvs-site-font:     Roboto, "Helvetica Neue", Arial, sans-serif;
+  --tvs-site-dark:     #373737;   /* slapukų mygtukai */
+  --tvs-site-radio:    #767676;
+  --tvs-site-foot:     #e4e3e3;   /* poraštės fonas */
+  --tvs-site-foot-tx:  #666666;
+  --tvs-site-foot-mut: #999999;
+  --tvs-site-foot-ln:  #d0d0d0;
+  --tvs-site-foot-btn: #adadad;
+  --tvs-site-foot-up:  #727171;
+  --tvs-site-link:     #1c8d1f;   /* poraštės nuoroda (mokyklos temos spalva) */
+  --tvs-site-note:     #e39d24;   /* pranešimų juostelė (mokyklos temos spalva) */
+  --tvs-site-th:       #07453a;   /* dokumentų lentelės antraštė (temos spalva) */
+  --tvs-site-cell:     #dfdfdf;
+  --tvs-site-group:    #f1f1f1;
+}
+
+/* ---- Turinio redaktorius (CKEditor 4): rėmas, įrankių juosta, turinys, apačia ---- */
+.tvs-cke { background: #fff; border: 1px solid var(--tvs-cke-line); font-family: var(--tvs-font);
+  box-shadow: 0 0 3px rgba(0,0,0,.15); }
+.tvs-cke-top { background: linear-gradient(var(--tvs-cke-top-a), var(--tvs-cke-top-b));
+  border-bottom: 1px solid var(--tvs-cke-line); padding: 10px 12px 1px; }
+.tvs-cke-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 9px; }
+.tvs-cke-g { display: flex; align-items: center; height: 36px; padding: 0 1px; border: 1px solid var(--tvs-cke-g-line);
+  border-bottom-color: var(--tvs-cke-g-bottom); border-radius: 4px; background: linear-gradient(#fff, var(--tvs-cke-g-b));
+  box-shadow: 0 1px 0 rgba(255,255,255,.5); }
+.tvs-cke-b { width: 38px; height: 34px; display: flex; align-items: center; justify-content: center; gap: 4px;
+  color: var(--tvs-cke-ico); border-radius: 3px; position: relative; }
+.tvs-cke-b.is-off { color: var(--tvs-cke-off); }
+.tvs-cke-b.is-on { background: linear-gradient(#a6a6a6, #b6b6b6); box-shadow: inset 0 1px 6px rgba(0,0,0,.55); }
+.tvs-cke-b.is-hover { background: linear-gradient(#f2f2f2, #cccccc); box-shadow: inset 0 0 1px rgba(0,0,0,.35); }
+.tvs-cke-b.is-label { width: auto; padding: 0 10px; gap: 8px; font-size: 18px; color: var(--tvs-cke-label); }
+.tvs-cke-b.is-arrow { width: 46px; }
+.tvs-cke-b.is-arrow::after { content: ""; border: 4px solid transparent; border-top: 4px solid var(--tvs-cke-ico); margin-top: 5px; }
+.tvs-cke-i { width: 22px; height: 22px; flex: 0 0 22px; display: block; background: currentColor;
+  -webkit-mask: var(--i) center / contain no-repeat; mask: var(--i) center / contain no-repeat; }
+.tvs-cke-sep { width: 1px; height: 22px; background: var(--tvs-cke-sep); margin: 0 3px; }
+/* Išskleidžiamas laukas: Styles · Normal / Format · Font · Size */
+.tvs-cke-combo { display: flex; align-items: center; justify-content: space-between; height: 36px; width: 124px;
+  padding: 0 10px 0 14px; border: 1px solid var(--tvs-cke-g-line); border-bottom-color: var(--tvs-cke-g-bottom);
+  border-radius: 4px; background: linear-gradient(#fff, var(--tvs-cke-g-b)); font-size: 18px; color: var(--tvs-cke-label); }
+.tvs-cke-combo::after { content: ""; border: 4px solid transparent; border-top: 5px solid var(--tvs-cke-label); margin-top: 5px; }
+.tvs-cke-combo.is-short { width: 84px; }
+.tvs-cke-combo.is-open { background: linear-gradient(#e6e6e6, #fff); }
+/* Turinys — redaktorius rodo tekstą serifiniu šriftu (kadras 800) */
+.tvs-cke-body { padding: 16px 20px; font: 22px/1.45 "Times New Roman", Times, serif; color: #000; }
+.tvs-cke-body h3 { font-size: 24px; font-weight: 700; margin: 0 0 12px; }
+.tvs-cke-body p { margin: 0 0 12px; }
+.tvs-cke-sel { background: var(--tvs-cke-sel); color: #fff; }
+.tvs-cke-bot { position: relative; height: 32px; display: flex; align-items: center; gap: 14px; padding: 0 12px;
+  background: linear-gradient(#ebebeb, var(--tvs-cke-top-b)); border-top: 1px solid #cfcfcf;
+  font: 700 16px var(--tvs-font); color: var(--tvs-cke-path); }
+.tvs-cke-bot::after { content: ""; position: absolute; right: 6px; bottom: 6px; border-style: solid;
+  border-width: 0 0 12px 12px; border-color: transparent transparent #5a5a5a transparent; }
+
+/* ---- Jungiklis „Yes / No“ ---- */
+.tvs-switch { display: inline-flex; width: 106px; height: 42px; border: 1px solid var(--tvs-switch-line); border-radius: 4px;
+  overflow: hidden; background: #fff; font: 500 17px/1 var(--tvs-font); color: #fff; vertical-align: middle; flex-shrink: 0; }
+.tvs-switch > span { flex: 1; display: flex; align-items: center; justify-content: center; }
+.tvs-switch.is-yes > span:first-child { background: var(--tvs-switch-yes); }
+.tvs-switch.is-no > span:last-child { background: var(--tvs-pink); }
+
+/* ---- Pasirinkimo laukas (select) ir naršyklės sąrašas ---- */
+.tvs-select { height: 52px; display: flex; align-items: center; padding: 0 18px; background: #fff;
+  border: 1px solid var(--tvs-field-line); font-size: 21px; color: var(--tvs-text); }
+.tvs-select.is-open { border-color: var(--tvs-focus); }
+.tvs-select-list { background: #fff; border: 1px solid var(--tvs-native-line); padding: 2px 0; }
+.tvs-select-opt { height: 30px; display: flex; align-items: center; padding: 0 18px; font-size: 21px; color: #000; }
+.tvs-select-opt.is-hl { background: var(--tvs-native-hl); color: #fff; }
+
+/* ---- Žymos lauke su × (kategorijos) ---- */
+.tvs-tags { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; min-height: 66px; padding: 10px 12px;
+  background: #fff; border: 1px solid var(--tvs-dz-line); }
+.tvs-chip { display: inline-flex; align-items: center; height: 40px; padding-left: 14px; border-radius: 3px;
+  background: var(--tvs-info); color: #fff; font: 600 17px/1 var(--tvs-font); box-shadow: 0 1px 0 rgba(0,0,0,.4); white-space: nowrap; }
+.tvs-chip-x { align-self: stretch; display: flex; align-items: center; margin-left: 14px; padding: 0 12px;
+  border-left: 1px solid rgba(255,255,255,.35); font-weight: 400; font-size: 22px; }
+.tvs-chip-x.is-hover { background: rgba(0,0,0,.08); }
+
+/* ---- Datos ir laiko laukas (× · reikšmė · laiko juosta) ---- */
+.tvs-date { display: flex; height: 52px; background: #fff; border: 1px solid var(--tvs-field-line); font-size: 21px; }
+.tvs-date-x { width: 52px; flex: 0 0 52px; display: flex; align-items: center; justify-content: center;
+  background: var(--tvs-addon); border-right: 1px solid var(--tvs-field-line); color: var(--tvs-addon-text); }
+.tvs-date-x svg { width: 18px; height: 18px; }
+.tvs-date-v { flex: 1; display: flex; align-items: center; padding: 0 16px; color: #999; }
+.tvs-date-v.is-value { color: var(--tvs-text); }
+.tvs-date-tz { display: flex; align-items: center; padding: 0 18px; background: var(--tvs-addon);
+  border-left: 1px solid var(--tvs-field-line); color: var(--tvs-addon-text); }
+
+/* ---- Failo laukas ir galerijos eilutė („Select File“ / „Upload“, failo eilutė) ---- */
+.tvs-frow { display: flex; align-items: center; gap: 22px; padding: 12px 14px; background: #fff; font-size: 21px; color: var(--tvs-text); }
+.tvs-frow.is-alt { background: var(--tvs-row-alt); }
+.tvs-frow .tvs-fmeta { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.tvs-fname { font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tvs-fpath { font-size: 17px; color: var(--tvs-text-muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tvs-fcol { white-space: nowrap; }
+.tvs-frow .tvs-actions { display: flex; gap: 6px; }
+.tvs-fico { width: 64px; height: 86px; flex: 0 0 64px; background: var(--tvs-file-red); display: flex; align-items: center; justify-content: center;
+  clip-path: polygon(0 0, 72% 0, 100% 22%, 100% 100%, 0 100%); }
+.tvs-fico svg { width: 36px; height: 36px; }
+.tvs-thumb { width: 90px; height: 120px; flex: 0 0 90px; background: linear-gradient(160deg, #c9d3dc, #8e9aa6); position: relative; overflow: hidden; }
+.tvs-thumb.is-wide { height: 68px; }
+/* vietoj nuotraukos — siluetas (tikrų žmonių nuotraukų rinkinyje nėra) */
+.tvs-thumb::before, .tvs-thumb::after { content: ""; position: absolute; left: 50%; transform: translateX(-50%); background: rgba(255,255,255,.55); }
+.tvs-thumb::before { top: 20%; height: 28%; aspect-ratio: 1; border-radius: 50%; }
+.tvs-thumb::after { bottom: 0; height: 40%; aspect-ratio: 1.5; border-radius: 50% 50% 0 0; }
+.tvs-badge { align-self: flex-start; padding: 3px 8px; border-radius: 2px; background: var(--tvs-info); color: #fff; font: 700 15px/1.2 var(--tvs-font); }
+.tvs-move { width: 22px; height: 22px; flex: 0 0 22px; color: var(--tvs-text); }
+
+/* ---- Įkėlimo langas: punktyrinis laukas ir įkeltų failų lentelė ---- */
+.tvs-dz { height: 180px; display: flex; align-items: center; justify-content: center; gap: 10px;
+  border: 2px dashed var(--tvs-dz-line); border-radius: 3px; font-size: 21px; color: var(--tvs-text); }
+.tvs-dz.is-drag { border-color: var(--tvs-dz-drag); }
+.tvs-dz svg { width: 20px; height: 20px; }
+.tvs-modal-b .tvs-dz { margin-top: 18px; }
+.tvs-modal-h .tvs-x.is-dark { color: #555; font-size: 30px; }   /* įkėlimo langas (878) — × pilkas */
+.tvs-up-th, .tvs-up-row { display: grid; grid-template-columns: 1.1fr 2.2fr 1fr 1.4fr 1.4fr 120px; align-items: center; column-gap: 16px; padding: 0 16px; }
+.tvs-up-th { height: 64px; font-weight: 700; font-size: 20px; border-top: 1px solid var(--tvs-line); border-bottom: 1px solid var(--tvs-line); }
+.tvs-up-row { min-height: 120px; font-size: 21px; border-bottom: 1px solid var(--tvs-line); }
+.tvs-up-row .tvs-btn { justify-self: end; }
+
+/* ---- Naršyklės adreso juosta (Chrome) ---- */
+.tvs-chrome { display: flex; align-items: center; gap: 26px; height: 60px; padding: 0 22px; background: #fff;
+  border-bottom: 1px solid #dadce0; font-family: var(--tvs-font); }
+.tvs-chrome > svg { width: 24px; height: 24px; flex: 0 0 24px; color: var(--tvs-chrome-ico); }
+.tvs-chrome > svg.is-off { color: var(--tvs-chrome-off); }
+.tvs-omni { flex: 1; display: flex; align-items: center; gap: 14px; height: 42px; padding: 0 20px; border-radius: 21px;
+  background: var(--tvs-chrome-omni); font-size: 20px; color: #202124; white-space: nowrap; overflow: hidden; }
+.tvs-omni svg { width: 18px; height: 18px; flex: 0 0 18px; color: var(--tvs-chrome-ico); }
+.tvs-omni .is-dim { color: #6f7378; }
+.tvs-omni .is-mark { background: #b4d7ff; }
+
+/* ---- Svetainė: slapukų mygtukai ir nustatymai (radijo mygtukai, ne jungikliai) ---- */
+.tvs-cookie-btns { display: flex; gap: 18px; font-family: var(--tvs-site-font); }
+.tvs-cookie-btn { display: inline-flex; align-items: center; justify-content: center; min-width: 190px; height: 54px; padding: 0 26px;
+  border: 2px solid var(--tvs-site-dark); background: var(--tvs-site-dark); color: #fff; font-size: 22px; font-stretch: condensed;
+  text-transform: uppercase; letter-spacing: .2px; }
+.tvs-cookie-btn.is-outline { background: #fff; color: var(--tvs-site-dark); }
+.tvs-cookie-q { font: 500 22px/1.4 var(--tvs-site-font); color: #0a0a0a; margin-bottom: 18px; }
+.tvs-radio { display: flex; align-items: center; gap: 18px; padding: 8px 0; font: 22px var(--tvs-site-font); color: #0a0a0a; }
+.tvs-radio::before { content: ""; width: 18px; height: 18px; flex: 0 0 18px; border: 2px solid var(--tvs-site-radio); border-radius: 50%; background: #fff; }
+.tvs-radio.is-on::before { background: radial-gradient(circle, var(--tvs-site-radio) 0 4px, #fff 5px); }
+
+/* ---- Svetainė: poraštė ---- */
+.tvs-sfoot { background: var(--tvs-site-foot); color: var(--tvs-site-foot-tx); font: 17px/1.45 var(--tvs-site-font); padding: 16px 18px 22px; }
+.tvs-sfoot-cols { display: grid; grid-template-columns: repeat(4, 1fr); }
+.tvs-sfoot-col { padding: 10px 30px; min-height: 200px; display: flex; flex-direction: column; justify-content: center; gap: 8px; }
+.tvs-sfoot-col + .tvs-sfoot-col { border-left: 1px solid var(--tvs-site-foot-ln); }
+.tvs-sfoot-h { font-size: 21px; font-weight: 700; }
+.tvs-sfoot-btn { display: inline-flex; align-items: center; justify-content: space-between; gap: 30px; width: 176px; height: 48px; padding: 0 18px;
+  margin-top: 8px; background: var(--tvs-site-foot-btn); color: #fff; text-transform: uppercase; font-stretch: condensed; font-size: 17px; }
+.tvs-sfoot-btn svg { width: 26px; height: 14px; }
+.tvs-social { display: flex; gap: 12px; }
+.tvs-social i { width: 44px; height: 44px; display: flex; align-items: center; justify-content: center; color: #fff;
+  font: 700 18px/1 var(--tvs-site-font); font-style: normal; }
+.tvs-crest { width: 64px; height: 76px; flex: 0 0 64px; background: #b9b9b9; clip-path: polygon(0 0, 100% 0, 100% 62%, 50% 100%, 0 62%); }
+.tvs-sfoot-a { color: var(--tvs-site-link); }
+.tvs-sfoot-bot { display: flex; align-items: center; gap: 30px; margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--tvs-site-foot-ln); }
+.tvs-sfoot-copy { flex: 1.3; font-size: 14px; color: var(--tvs-site-foot-mut); }
+.tvs-sfoot-links { flex: 1; display: flex; gap: 16px; font-size: 16px; }
+.tvs-sfoot-brand { font-size: 14px; color: var(--tvs-site-foot-mut); text-align: right; }
+.tvs-sfoot-up { width: 38px; height: 38px; flex: 0 0 38px; border-radius: 50%; background: var(--tvs-site-foot-up); display: flex; align-items: center; justify-content: center; }
+.tvs-sfoot-up svg { width: 16px; height: 16px; }
+
+/* ---- Svetainė: pranešimų juostelė ---- */
+.tvs-note-bar { display: flex; align-items: center; justify-content: center; gap: 18px; height: 72px; padding: 0 70px; position: relative;
+  background: var(--tvs-site-note); color: #fff; font: 20px var(--tvs-site-font); }
+.tvs-note-bar > svg { width: 28px; height: 16px; flex: 0 0 28px; }
+.tvs-note-bar .tvs-note-x { position: absolute; right: 30px; top: 50%; width: 26px; height: 26px; margin-top: -13px; }
+
+/* ---- Svetainė: dokumentų lentelė (grupės eilutė, atsisiuntimas, pieštukas) ---- */
+.tvs-sdocs { background: #fff; font: 19px var(--tvs-site-font); color: #333; border: 1px solid var(--tvs-site-cell); border-top: 0; }
+.tvs-sdocs-th, .tvs-sdocs-tr { display: grid; grid-template-columns: 60px 60px 1fr 220px 140px; align-items: center; }
+.tvs-sdocs-th { min-height: 62px; background: var(--tvs-site-th); color: #fff; font-weight: 700; }
+.tvs-sdocs-th > span:first-child { grid-column: 1 / 4; padding: 0 22px; }
+.tvs-sdocs-tr { min-height: 58px; border-top: 1px solid var(--tvs-site-cell); }
+.tvs-sdocs-th > span, .tvs-sdocs-tr > span { padding: 0 14px; align-self: stretch; display: flex; align-items: center; }
+.tvs-sdocs-th > span + span, .tvs-sdocs-tr > span + span { border-left: 1px solid var(--tvs-site-cell); }
+.tvs-sdocs-th > span + span { border-left-color: rgba(255,255,255,.18); }
+.tvs-sdocs-tr > span.is-ico { justify-content: center; padding: 0; color: #555; }
+.tvs-sdocs-tr > span.is-ico svg { width: 20px; height: 20px; }
+.tvs-sdocs-tr .is-date, .tvs-sdocs-tr .is-size { font-size: 17px; color: #555; }
+.tvs-sdocs-tr.is-group { background: var(--tvs-site-group); font-size: 16px; font-weight: 700; color: #484f48; }
+.tvs-sdocs-tr.is-group > span:first-child { grid-column: 1 / 4; padding: 0 14px; }
+
+/* ---- Kartotinio bloko juosta (repeater: „■ Video“ … ⚙ ✣) ir bloko turinys ---- */
+.tvs-rep { background: #f6f6f6; font-family: var(--tvs-font); }
+.tvs-rep-bar { display: flex; align-items: center; gap: 14px; height: 56px; padding: 0 22px; background: #424242; color: #fff; font-size: 22px; }
+.tvs-rep-bar .tvs-check { border-color: #fff; border-radius: 3px; width: 20px; height: 20px; }
+.tvs-rep-bar .tvs-sp { flex: 1; }
+.tvs-rep-bar svg { width: 22px; height: 22px; }
+.tvs-rep-body { padding: 4px 22px 22px; }
+.tvs-rep-body .tvs-field { padding: 18px 0; }
+
+/* ---- Video grotuvas (TVS formoje ir svetainėje: juodas, mėlynas paleidimo mygtukas) ---- */
+.tvs-player { position: relative; background: #040404; aspect-ratio: 16 / 9; width: 100%; }
+.tvs-player-play { position: absolute; left: 50%; top: 50%; width: 64px; height: 64px; margin: -32px 0 0 -32px; border-radius: 50%;
+  background: #3d98d7; border: 3px solid #fff; display: flex; align-items: center; justify-content: center; }
+.tvs-player-play::after { content: ""; margin-left: 6px; border-style: solid; border-width: 13px 0 13px 22px; border-color: transparent transparent transparent #fff; }
+.tvs-player-bar { position: absolute; left: 0; right: 0; bottom: 0; height: 52px; display: flex; align-items: center; gap: 16px; padding: 0 18px; color: #fff; font: 17px var(--tvs-font); }
+.tvs-player-bar svg { width: 22px; height: 22px; flex: 0 0 22px; }
+.tvs-player-track { flex: 1; height: 8px; border-radius: 4px; background: #434343; position: relative; }
+.tvs-player-track::before { content: ""; position: absolute; left: 0; top: 50%; width: 18px; height: 18px; margin-top: -9px; border-radius: 50%; background: #fff; }
+.tvs-player-vol { width: 120px; height: 8px; border-radius: 4px; background: #3d98d7; position: relative; }
+.tvs-player-vol::after { content: ""; position: absolute; right: -2px; top: 50%; width: 18px; height: 18px; margin-top: -9px; border-radius: 50%; background: #fff; }
+
+/* ---- Svetainė: darbuotojo profilio kortelė (siluetas, pareigos, dokumentai, darbo laikas) ---- */
+.tvs-sprof { display: flex; gap: 36px; background: #fff; padding: 28px 30px; font: 19px/1.4 var(--tvs-site-font); color: #333; }
+.tvs-sprof-photo { width: 200px; height: 240px; flex: 0 0 200px; background: linear-gradient(170deg, #e9edf1, #c9d1d9); position: relative; overflow: hidden; }
+.tvs-sprof-photo::before, .tvs-sprof-photo::after { content: ""; position: absolute; left: 50%; transform: translateX(-50%); background: #9aa6b2; }
+.tvs-sprof-photo::before { top: 18%; width: 34%; aspect-ratio: 1; border-radius: 50%; }
+.tvs-sprof-photo::after { bottom: 0; width: 76%; height: 36%; border-radius: 50% 50% 0 0; }
+.tvs-sprof-b { flex: 1; min-width: 0; }
+.tvs-sprof-name { font-size: 22px; font-weight: 700; color: #111; }
+.tvs-sprof-pos { color: #666; margin-top: 2px; }
+.tvs-sprof-sec { border-top: 1px solid #e0e0e0; margin-top: 14px; padding-top: 14px; }
+.tvs-sprof-doc { display: inline-flex; align-items: center; gap: 10px; margin: 0 28px 6px 0; }
+.tvs-sprof-doc svg { width: 20px; height: 20px; color: #555; }
+.tvs-sprof-muted { color: #666; }
+.tvs-sprof-h { font-weight: 700; color: #555; margin: 20px 0 12px; }
+.tvs-sprof-tab { border: 1px solid #dfdfdf; font-size: 16px; color: #555; }
+.tvs-sprof-tr { display: grid; grid-template-columns: 1.3fr 1.1fr 1fr 1.6fr; min-height: 48px; white-space: nowrap; }
+.tvs-sprof-tr:nth-child(odd) { background: #f1f1f1; }
+.tvs-sprof-tr + .tvs-sprof-tr { border-top: 1px solid #dfdfdf; }
+.tvs-sprof-tr > span { display: flex; align-items: center; padding: 0 10px; }
+.tvs-sprof-tr > span + span { border-left: 1px solid #dfdfdf; }
+.tvs-sprof-tr.is-th { font-weight: 700; }
+/* Redagavimo pieštukas svetainėje (prisijungus) — prieš antraštę ar vardą, teksto spalvos (kadras 847) */
+.tvs-edit-pen { display: inline-block; width: .9em; height: .9em; margin-right: 2px; vertical-align: -.08em; }
+/* Redaktoriaus ikonos — CKEditor 4 „moono“ piešiniai perpiešti supaprastintai (16×16), naudojamos kaukėmis:
+   <span class="tvs-cke-b"><i class="tvs-cke-i is-bold"></i></span>. Spalva — currentColor. */
+.tvs-cke-i.is-source { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M3 1.5h6.5l3.5 3.5v9.5H3z' stroke='%23000' fill='none' stroke-width='1.3'/%3E%3Cpath d='M7 7.2L5.4 9.3 7 11.4M9 7.2l1.6 2.1L9 11.4' stroke='%23000' fill='none' stroke-width='1.3'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-cut { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='4.5' cy='12' r='2.3' stroke='%23000' fill='none' stroke-width='1.4'/%3E%3Ccircle cx='11.5' cy='12' r='2.3' stroke='%23000' fill='none' stroke-width='1.4'/%3E%3Cpath d='M5.9 10.2L11.2 1.5M10.1 10.2L4.8 1.5' stroke='%23000' fill='none' stroke-width='1.4'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-copy { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M9.5 4.5v-1l-2-2h-5v9h3' stroke='%23000' fill='none' stroke-width='1.2'/%3E%3Cpath d='M6.5 5.5h5l2 2v7h-7z' stroke='%23000' fill='none' stroke-width='1.2'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-paste { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='2.5' y='3' width='11' height='12' rx='1.2' stroke='%23000' fill='none' stroke-width='1.3'/%3E%3Crect x='5.2' y='1.3' width='5.6' height='3.2' rx='.8'/%3E%3Cpath d='M5.5 8h5M5.5 10.3h5M5.5 12.6h5' stroke='%23000' fill='none' stroke-width='1.1'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-pastetext { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='2.5' y='3' width='11' height='12' rx='1.2' stroke='%23000' fill='none' stroke-width='1.3'/%3E%3Crect x='5.2' y='1.3' width='5.6' height='3.2' rx='.8'/%3E%3Crect x='5' y='7' width='6' height='6.5' stroke='%23000' fill='none' stroke-width='.9'/%3E%3Cpath d='M6.3 8.6h3.4M8 8.6v3.8' stroke='%23000' fill='none' stroke-width='1.1'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-pasteword { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='2.5' y='3' width='11' height='12' rx='1.2' stroke='%23000' fill='none' stroke-width='1.3'/%3E%3Crect x='5.2' y='1.3' width='5.6' height='3.2' rx='.8'/%3E%3Crect x='5' y='7' width='6' height='6.5' stroke='%23000' fill='none' stroke-width='.9'/%3E%3Cpath d='M5.9 8.2l.9 4 1.2-3 1.2 3 .9-4' stroke='%23000' fill='none' stroke-width='1'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-undo { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M6.2 3.5L2 7.5l4.2 4V9c3.3 0 5.6.8 7.8 3.6C13.4 8.7 10.6 6 6.2 6z'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-redo { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M9.8 3.5L14 7.5l-4.2 4V9C6.5 9 4.2 9.8 2 12.6 2.6 8.7 5.4 6 9.8 6z'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-replace { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='0' y='8' font-family='Arial,Helvetica,sans-serif' font-size='9.5' font-weight='700'%3Eb%3C/text%3E%3Ctext x='7.8' y='15.6' font-family='Arial,Helvetica,sans-serif' font-size='10.5' font-weight='700'%3Ea%3C/text%3E%3Cpath d='M8 3.2h4.5l-1.6-1.4M8.5 11.5H4l1.4 1.5' stroke='%23000' fill='none' stroke-width='1.1'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-selectall { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M2 1h12v10H2zM3.5 2.6h9v1h-9zM3.5 4.8h9v1h-9zM3.5 7h9v1h-9z'/%3E%3Cpath d='M6 12.3h4M8 12.3v2.6M6 14.9h4' stroke='%23000' fill='none' stroke-width='1.1'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-bold { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='8' y='13.6' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='15' font-weight='700'%3EB%3C/text%3E%3C/svg%3E"); }
+.tvs-cke-i.is-italic { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='8' y='13' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='15.5' font-weight='700'%3EI%3C/text%3E%3C/svg%3E"); }
+.tvs-cke-i.is-underline { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='8' y='11.8' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='13.5' font-weight='700'%3EU%3C/text%3E%3Crect x='3' y='13.4' width='10' height='1.6'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-strike { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='8' y='13.6' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='15' font-weight='700'%3ES%3C/text%3E%3Crect x='1.5' y='8' width='13' height='1.6'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-subscript { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='0' y='12' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='700'%3Ex%3C/text%3E%3Ctext x='9.6' y='15.6' font-family='Arial,Helvetica,sans-serif' font-size='7.5' font-weight='700'%3E2%3C/text%3E%3C/svg%3E"); }
+.tvs-cke-i.is-superscript { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='0' y='14' font-family='Arial,Helvetica,sans-serif' font-size='14' font-weight='700'%3Ex%3C/text%3E%3Ctext x='9.6' y='7' font-family='Arial,Helvetica,sans-serif' font-size='7.5' font-weight='700'%3E2%3C/text%3E%3C/svg%3E"); }
+.tvs-cke-i.is-copyformatting { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M10.6 1.2l4.2 4.2-3.6 3.6-4.2-4.2z'/%3E%3Cpath d='M6.6 5.2L2.4 9.6c-.6.6-1 1.4-.9 2.4.1 1 .6 1.8 1.5 2.4.9.6 1.9.6 2.7-.2L10 9.6z'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-removeformat { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='6.5' y='12' text-anchor='middle' font-family='Georgia,serif' font-style='italic' font-size='12.5' font-weight='700'%3ET%3C/text%3E%3Crect x='2' y='13.4' width='8' height='1.3'/%3E%3Cpath d='M10.5 10.5l4 4M14.5 10.5l-4 4' stroke='%23000' fill='none' stroke-width='1.4'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-numberedlist { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='0' y='7.4' font-family='Arial,Helvetica,sans-serif' font-size='7.6' font-weight='700'%3E1%3C/text%3E%3Ctext x='0' y='15.4' font-family='Arial,Helvetica,sans-serif' font-size='7.6' font-weight='700'%3E2%3C/text%3E%3Crect x='6' y='2.5' width='9' height='1.6'/%3E%3Crect x='6' y='5.5' width='9' height='1.6'/%3E%3Crect x='6' y='10' width='9' height='1.6'/%3E%3Crect x='6' y='13' width='9' height='1.6'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-bulletedlist { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='2.8' cy='4.5' r='2'/%3E%3Ccircle cx='2.8' cy='11.5' r='2'/%3E%3Crect x='6.5' y='3.2' width='8.5' height='1.8'/%3E%3Crect x='6.5' y='10.2' width='8.5' height='1.8'/%3E%3Crect x='6.5' y='6' width='8.5' height='1.4'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-outdent { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='7' y='2' width='8' height='1.2'/%3E%3Crect x='7' y='5' width='8' height='1.2'/%3E%3Crect x='7' y='8' width='8' height='1.2'/%3E%3Crect x='7' y='11' width='8' height='1.2'/%3E%3Crect x='7' y='14' width='8' height='1.2'/%3E%3Cpath d='M1 8.5l3-2.5v5z'/%3E%3Crect x='5.2' y='1' width='.9' height='14'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-indent { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='7' y='2' width='8' height='1.2'/%3E%3Crect x='7' y='5' width='8' height='1.2'/%3E%3Crect x='7' y='8' width='8' height='1.2'/%3E%3Crect x='7' y='11' width='8' height='1.2'/%3E%3Crect x='7' y='14' width='8' height='1.2'/%3E%3Cpath d='M5 8.5L2 6v5z'/%3E%3Crect x='.8' y='1' width='.9' height='14'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-blockquote { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 7.6a3 3 0 1 1 5.6 1.6L5 13.6H3.2l1.7-3.3A3 3 0 0 1 1.5 7.6zM8.7 7.6a3 3 0 1 1 5.6 1.6l-2.1 4.4h-1.8l1.7-3.3a3 3 0 0 1-3.4-2.7z'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-creatediv { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='8' y='6.6' text-anchor='middle' font-family='Courier New,monospace' font-size='6.4' font-weight='700'%3EDIV%3C/text%3E%3Cpath d='M4.6 9.2L2.4 11.6l2.2 2.4M11.4 9.2l2.2 2.4-2.2 2.4M9.2 8.8l-2.4 5.8' stroke='%23000' fill='none' stroke-width='1.3'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-justifyleft { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1' y='2.5' width='9' height='1.6'/%3E%3Crect x='1' y='5.7' width='14' height='1.6'/%3E%3Crect x='1' y='8.9' width='9' height='1.6'/%3E%3Crect x='1' y='12.1' width='14' height='1.6'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-justifycenter { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='3.5' y='2.5' width='9' height='1.6'/%3E%3Crect x='1' y='5.7' width='14' height='1.6'/%3E%3Crect x='3.5' y='8.9' width='9' height='1.6'/%3E%3Crect x='1' y='12.1' width='14' height='1.6'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-justifyright { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='6' y='2.5' width='9' height='1.6'/%3E%3Crect x='1' y='5.7' width='14' height='1.6'/%3E%3Crect x='6' y='8.9' width='9' height='1.6'/%3E%3Crect x='1' y='12.1' width='14' height='1.6'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-justifyblock { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1' y='2.5' width='14' height='1.6'/%3E%3Crect x='1' y='5.7' width='14' height='1.6'/%3E%3Crect x='1' y='8.9' width='14' height='1.6'/%3E%3Crect x='1' y='12.1' width='14' height='1.6'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-link { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1.2' y='5' width='8.3' height='6' rx='3' stroke='%23000' fill='none' stroke-width='1.6'/%3E%3Crect x='6.5' y='5' width='8.3' height='6' rx='3' stroke='%23000' fill='none' stroke-width='1.6'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-unlink { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1.2' y='3.5' width='8' height='5.6' rx='2.8' stroke='%23000' fill='none' stroke-width='1.5'/%3E%3Crect x='5.8' y='3.5' width='8' height='5.6' rx='2.8' stroke='%23000' fill='none' stroke-width='1.5'/%3E%3Cpath d='M10 10.5l4.5 4.5M14.5 10.5L10 15' stroke='%23000' fill='none' stroke-width='1.5'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-anchor { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='2.2' y='1.5' width='1.3' height='13.5'/%3E%3Cpath d='M4.2 2.2c2.4-1 4.4 1 6.4.2 1.2-.5 2.4-.7 3.6-.4v6.6c-1.2-.3-2.4-.1-3.6.4-2 .8-4-1.2-6.4-.2z'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-table { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1.5' y='2' width='13' height='12' stroke='%23000' fill='none' stroke-width='1.3'/%3E%3Crect x='1.5' y='2' width='13' height='3'/%3E%3Cpath d='M1.5 9.3h13M6 5v9M10.3 5v9' stroke='%23000' fill='none' stroke-width='1.1'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-horizontalrule { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1' y='1.5' width='14' height='1'/%3E%3Crect x='1' y='4' width='14' height='1'/%3E%3Crect x='1' y='7' width='14' height='2.2'/%3E%3Crect x='1' y='11' width='14' height='1'/%3E%3Crect x='1' y='13.5' width='14' height='1'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-specialchar { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='8' y='14' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='16' font-weight='700'%3E%CE%A9%3C/text%3E%3C/svg%3E"); }
+.tvs-cke-i.is-pagebreak { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1 5.2l3.4 2.8L1 10.8z'/%3E%3Crect x='6' y='3.2' width='9' height='1.6'/%3E%3Crect x='6' y='7.2' width='2.4' height='1.6'/%3E%3Crect x='9.4' y='7.2' width='2.4' height='1.6'/%3E%3Crect x='12.6' y='7.2' width='2.4' height='1.6'/%3E%3Crect x='6' y='11.2' width='9' height='1.6'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-iframe { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ccircle cx='8' cy='8' r='6.6' stroke='%23000' fill='none' stroke-width='1.3'/%3E%3Cpath d='M5 3.4c1 1.6.4 2.6 1.6 3.4 1.4 1 .4 2.4 1.4 3.2.8.6.4 2 .2 3.2M10.6 2.8c-.6 1.2.2 2 1.2 2.2 1 .2 1.4 1.4 1.4 2.4' stroke='%23000' fill='none' stroke-width='1.1'/%3E%3Cpath d='M3.2 7.2c1 .2 1.6 1 1.4 2.2l-.4 2.2' stroke='%23000' fill='none' stroke-width='1.1'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-textcolor { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='8' y='11.6' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='12.5' font-weight='700'%3EA%3C/text%3E%3Crect x='1.5' y='13' width='13' height='2.2' opacity='.55'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-bgcolor { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1.5 1.5h13v13h-13zM7.1 3.6h1.8l3.3 8.8h-1.9l-.8-2.2H6.5l-.8 2.2H3.8zM7.1 8.7h1.8L8 6.1z'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-maximize { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 1.5h5L4.8 3.2l2.4 2.4-1.6 1.6-2.4-2.4L1.5 6.5zM14.5 1.5v5l-1.7-1.7-2.4 2.4-1.6-1.6 2.4-2.4-1.7-1.7zM1.5 14.5v-5l1.7 1.7 2.4-2.4 1.6 1.6-2.4 2.4 1.7 1.7zM14.5 14.5h-5l1.7-1.7-2.4-2.4 1.6-1.6 2.4 2.4 1.7-1.7z'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-showblocks { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='1.5' y='1.5' width='8' height='12.5' stroke='%23000' fill='none' stroke-width='1.1' stroke-dasharray='1.4 1.2'/%3E%3Crect x='10.8' y='1.5' width='3.7' height='13' rx='1.5' stroke='%23000' fill='none' stroke-width='1.2'/%3E%3Crect x='3.5' y='11' width='5' height='2.6' rx='1.3'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-casechange { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='0' y='8' font-family='Arial,Helvetica,sans-serif' font-size='9.5' font-weight='700'%3EA%3C/text%3E%3Ctext x='7.8' y='15.6' font-family='Arial,Helvetica,sans-serif' font-size='10.5' font-weight='700'%3Ea%3C/text%3E%3Cpath d='M8.6 2.6h4.6l-1.4-1.4M7.5 10.2H3l1.4 1.4' stroke='%23000' fill='none' stroke-width='1.1'/%3E%3C/svg%3E"); }
+.tvs-cke-i.is-lowercase { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='8' y='12.6' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='12.5' font-weight='700'%3Eaa%3C/text%3E%3C/svg%3E"); }
+.tvs-cke-i.is-uppercase { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='8' y='11.8' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='9' font-weight='700' letter-spacing='.3'%3EAA%3C/text%3E%3C/svg%3E"); }
+.tvs-cke-i.is-capitalize { --i: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Ctext x='8' y='12' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='11' font-weight='700'%3EAa%3C/text%3E%3C/svg%3E"); }

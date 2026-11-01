@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  .title { font-size: 44px; margin-bottom: 30px; }
+  .lbl { font-size: 17px; text-transform: uppercase; letter-spacing: .8px; color: var(--c-text-faint); margin-bottom: 12px; }
+  .board { display: flex; flex-direction: column; gap: 26px; }
+  .win { border-radius: 12px; overflow: hidden; border: 1px solid #dfe3ea; box-shadow: 0 24px 60px rgba(30, 40, 70, .10); background: #f1f1f1; }
+  .row2 { display: flex; gap: 40px; align-items: flex-start; }
+  .row2 > div { flex: 0 0 1200px; }
+  .pg { padding: 24px 30px; background: #f1f1f1; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="board">
+      <div>
+        <div class="lbl">{{l_chrome}}</div>
+        <div class="win"><div class="tvs-chrome"><svg class="is-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 12H5M11 5l-7 7 7 7"/></svg><svg class="is-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 12h15M13 5l7 7-7 7"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3"/><path d="M19.5 3.5v5h-5" stroke-linejoin="round"/></svg><div class="tvs-omni"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 10V7.5a5 5 0 0 1 10 0V10h1.5v12h-13V10zm2.5 0h5V7.5a2.5 2.5 0 0 0-5 0z"/></svg><span><span class="is-dim">https://</span>demo.lt<span class="is-dim">/files/naujienos/</span><span class="is-mark">rugsejo-1.mp4</span></span></div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><path d="M12 3l2.7 5.6 6.1.8-4.5 4.2 1.1 6.1L12 16.8l-5.4 2.9 1.1-6.1-4.5-4.2 6.1-.8z"/></svg></div></div>
+      </div>
+      <div>
+        <div class="lbl">{{l_note}}</div>
+        <div class="win"><div class="pg"><div class="tvs-note-bar"><svg viewBox="0 0 28 16" fill="none" stroke="#fff" stroke-width="1.6"><path d="M0 8h26M19 1l7 7-7 7"/></svg>{{note}}<svg class="tvs-note-x" viewBox="0 0 26 26" fill="none" stroke="#fff" stroke-width="1.4"><circle cx="13" cy="13" r="11.5"/><path d="M9 9l8 8M17 9l-8 8"/></svg></div></div></div>
+      </div>
+      <div class="row2">
+        <div>
+          <div class="lbl">{{l_docs}}</div>
+          <div class="tvs-sdocs">
+            <div class="tvs-sdocs-th"><span>{{th_cat}}</span><span>{{th_upd}}</span><span>{{th_size}}</span></div>
+            <div class="tvs-sdocs-tr"><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v11M7.5 10l4.5 4.5 4.5-4.5M3.5 15v5.5h17V15"/></svg></span><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 20l1-4.5L16 4.5l3.5 3.5-11 11z"/><path d="M14 7l3 3"/></svg></span><span>{{d1}}</span><span class="is-date">{{d1_date}}</span><span class="is-size">{{d1_size}}</span></div>
+            <div class="tvs-sdocs-tr"><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v11M7.5 10l4.5 4.5 4.5-4.5M3.5 15v5.5h17V15"/></svg></span><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 20l1-4.5L16 4.5l3.5 3.5-11 11z"/><path d="M14 7l3 3"/></svg></span><span>{{d2}}</span><span class="is-date">{{d2_date}}</span><span class="is-size">{{d2_size}}</span></div>
+            <div class="tvs-sdocs-tr is-group"><span>{{grp}}</span><span></span><span></span></div>
+            <div class="tvs-sdocs-tr"><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v11M7.5 10l4.5 4.5 4.5-4.5M3.5 15v5.5h17V15"/></svg></span><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 20l1-4.5L16 4.5l3.5 3.5-11 11z"/><path d="M14 7l3 3"/></svg></span><span>{{d3}}</span><span class="is-date">{{d3_date}}</span><span class="is-size">{{d3_size}}</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

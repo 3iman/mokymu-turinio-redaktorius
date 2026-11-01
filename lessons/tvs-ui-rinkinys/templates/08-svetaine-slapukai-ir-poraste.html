@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  .title { font-size: 44px; margin-bottom: 30px; }
+  .lbl { font-size: 17px; text-transform: uppercase; letter-spacing: .8px; color: var(--c-text-faint); margin-bottom: 12px; }
+  .board { display: flex; flex-direction: column; gap: 30px; }
+  .top { display: flex; gap: 40px; align-items: flex-start; }
+  .site { background: #fff; border-radius: 14px; border: 1px solid #dfe3ea; padding: 30px 34px; box-shadow: 0 24px 60px rgba(30, 40, 70, .10); }
+  .q { flex: 1; }
+  .foot-wrap { border-radius: 14px; overflow: hidden; border: 1px solid #dfe3ea; box-shadow: 0 24px 60px rgba(30, 40, 70, .10); }
+  .tvs-social i.is-fb { background: #395aa1; } .tvs-social i.is-yt { background: #bf221f; } .tvs-social i.is-ig { background: #6a453b; }
+  .tvs-social i.is-mail { background: #426a3b; } .tvs-social i.is-in { background: #0073b1; }
+  .tvs-social svg { width: 24px; height: 24px; }
+  .steig { flex-direction: row; align-items: center; gap: 22px; justify-content: flex-start; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="board">
+      <div class="top">
+        <div>
+          <div class="lbl">{{l_btns}}</div>
+          <div class="site"><div class="tvs-cookie-btns"><span class="tvs-cookie-btn is-outline">{{btn_settings}}</span><span class="tvs-cookie-btn">{{btn_decline}}</span><span class="tvs-cookie-btn">{{btn_accept}}</span></div></div>
+        </div>
+        <div class="q">
+          <div class="lbl">{{l_settings}}</div>
+          <div class="site"><div class="tvs-cookie-q">{{q}}</div><div class="tvs-radio">{{opt_yes}}</div><div class="tvs-radio">{{opt_no}}</div></div>
+        </div>
+      </div>
+      <div>
+        <div class="lbl">{{l_foot}}</div>
+        <div class="foot-wrap"><div class="tvs-sfoot">
+          <div class="tvs-sfoot-cols">
+            <div class="tvs-sfoot-col"><div class="tvs-sfoot-h">{{f_err_h}}</div><div>{{f_err_sub}}</div><span class="tvs-sfoot-btn">{{f_write}}<svg viewBox="0 0 26 14" fill="none" stroke="#fff" stroke-width="1.6"><path d="M0 7h24M18 1l6 6-6 6"/></svg></span></div>
+            <div class="tvs-sfoot-col"><div class="tvs-sfoot-h">{{f_social}}</div><div class="tvs-social"><i class="is-fb"><svg viewBox="0 0 24 24" fill="#fff"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.3H7.4V14h2.8v8z"/></svg></i><i class="is-yt"><svg viewBox="0 0 24 24" fill="#fff"><rect x="4" y="6.5" width="16" height="11" rx="3"/><path d="M10.5 9.5v5l4.3-2.5z" fill="#bf221f"/></svg></i><i class="is-ig"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="4.5" y="4.5" width="15" height="15" rx="3"/><circle cx="12" cy="12.5" r="3.4"/><path d="M4.5 9.5h4.2M15.3 9.5h4.2"/></svg></i><i class="is-mail"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.8"><rect x="3.5" y="5.5" width="17" height="13"/><path d="M3.5 5.5l8.5 7 8.5-7M3.5 18.5l6.5-6.5M20.5 18.5L14 12"/></svg></i><i class="is-in"><svg viewBox="0 0 24 24" fill="#fff"><rect x="4" y="9" width="3.4" height="11"/><circle cx="5.7" cy="5.6" r="2"/><path d="M10 9h3.2v1.6c.6-1 1.8-1.9 3.6-1.9 3.2 0 3.7 2.1 3.7 4.8V20h-3.4v-5.6c0-1.4-.1-2.9-1.9-2.9s-2 1.3-2 2.8V20H10z"/></svg></i></div></div>
+            <div class="tvs-sfoot-col steig"><span class="tvs-crest"></span><div><div class="tvs-sfoot-h">{{f_owner_h}}</div><div>{{f_owner}}</div></div></div>
+            <div class="tvs-sfoot-col"><div>{{f_name}}<br>{{f_type}}<br>{{f_addr}}<br>{{f_tel}} <span class="tvs-sfoot-a">{{f_tel_v}}</span><br>{{f_mail}} <span class="tvs-sfoot-a">{{f_mail_v}}</span><br>{{f_code}}</div><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="var(--tvs-site-link)" stroke-width="1.8"><rect x="8" y="3" width="11" height="14" rx="1.5"/><path d="M5 7v12.5A1.5 1.5 0 0 0 6.5 21H15"/></svg></div>
+          </div>
+          <div class="tvs-sfoot-bot">
+            <div class="tvs-sfoot-copy">{{f_copy_1}}<br>{{f_copy_2}}</div>
+            <div class="tvs-sfoot-links"><span>{{f_link_1}}</span><span>{{f_link_2}}</span></div>
+            <div class="tvs-sfoot-brand">{{f_brand_1}}<br>{{f_brand_2}}</div>
+            <span class="tvs-sfoot-up"><svg viewBox="0 0 16 16" fill="none" stroke="#fff" stroke-width="1.8"><path d="M8 14V2M3 7l5-5 5 5"/></svg></span>
+          </div>
+        </div></div>
+      </div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

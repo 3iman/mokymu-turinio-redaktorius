@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  .title { font-size: 44px; margin-bottom: 30px; }
+  .lbl { font-size: 17px; text-transform: uppercase; letter-spacing: .8px; color: var(--c-text-faint); margin-bottom: 12px; }
+  .bg { background: var(--tvs-page); border-radius: 14px; padding: 22px; box-shadow: 0 24px 60px rgba(30, 40, 70, .10); border: 1px solid #dfe3ea; font-family: var(--tvs-font); }
+  .tvs-form { border-radius: 3px; }
+  .tvs-field { gap: 12px; }
+  .btns { display: flex; gap: 6px; }
+  .tvs-fcol.is-size { width: 120px; } .tvs-fcol.is-mime { width: 150px; } .tvs-fcol.is-dir { width: 180px; }
+  .tvs-frow .tvs-fmeta { gap: 8px; }
+  .tvs-frow { padding: 10px 0 10px 8px; }
+  .gal .tvs-frow { padding: 12px 0 12px 8px; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="title">{{title}}</div>
+    <div class="bg">
+      <div class="tvs-form">
+        <div class="tvs-field">
+          <div class="tvs-label">{{f_file}}</div>
+          <div class="btns"><span class="tvs-btn is-tiny is-info">Select File</span><span class="tvs-btn is-tiny">Upload</span></div>
+          <div class="tvs-frow"><span class="tvs-fico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><path d="M7 3c-1.5 5 1 10 5 12s8 2 9 4c-3-1-8-1-12 1S2 21 3 19s5-6 6-10S8 3 7 3z" stroke-linejoin="round"/></svg></span><div class="tvs-fmeta"><span class="tvs-fname">{{file_name}}</span><span class="tvs-fpath">{{file_path}}</span></div><span class="tvs-fcol is-size">{{file_size}}</span><span class="tvs-fcol is-mime">application/pdf</span><span class="tvs-fcol is-dir">{{dir_docs}}</span><div class="tvs-actions"><span class="tvs-btn is-tiny is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>{{btn_edit}}</span><span class="tvs-btn is-tiny is-info"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3" fill="#fff"/></svg>{{btn_view}}</span><span class="tvs-btn is-tiny is-pink"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6"><circle cx="12" cy="12" r="8.5"/><path d="M6 18L18 6"/></svg>{{btn_remove}}</span></div></div>
+        </div>
+        <div class="tvs-field gal">
+          <div class="tvs-label">{{f_gallery}}</div>
+          <div class="btns"><span class="tvs-btn is-tiny is-info">Select File</span><span class="tvs-btn is-tiny">Upload</span></div>
+          <div>
+            <div class="tvs-frow is-alt"><svg class="tvs-move" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l4 4h-3v6h6V8l4 4-4 4v-3h-6v6h3l-4 4-4-4h3v-6H5v3l-4-4 4-4v3h6V5H8z"/></svg><span class="tvs-thumb"></span><div class="tvs-fmeta"><span class="tvs-fname">{{g1_name}}</span><span class="tvs-fpath">{{g1_path}}</span><span class="tvs-badge">{{g1_dim}}</span></div><span class="tvs-fcol is-size">{{g1_size}}</span><span class="tvs-fcol is-mime">image/jpeg</span><span class="tvs-fcol is-dir">{{dir_news}}</span><div class="tvs-actions"><span class="tvs-btn is-tiny is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>{{btn_edit}}</span><span class="tvs-btn is-tiny is-info"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3" fill="#fff"/></svg>{{btn_view}}</span><span class="tvs-btn is-tiny is-pink"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6"><circle cx="12" cy="12" r="8.5"/><path d="M6 18L18 6"/></svg>{{btn_remove}}</span></div></div>
+            <div class="tvs-frow"><svg class="tvs-move" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l4 4h-3v6h6V8l4 4-4 4v-3h-6v6h3l-4 4-4-4h3v-6H5v3l-4-4 4-4v3h6V5H8z"/></svg><span class="tvs-thumb is-wide"></span><div class="tvs-fmeta"><span class="tvs-fname">{{g2_name}}</span><span class="tvs-fpath">{{g2_path}}</span><span class="tvs-badge">{{g2_dim}}</span></div><span class="tvs-fcol is-size">{{g2_size}}</span><span class="tvs-fcol is-mime">image/jpeg</span><span class="tvs-fcol is-dir">{{dir_news}}</span><div class="tvs-actions"><span class="tvs-btn is-tiny is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>{{btn_edit}}</span><span class="tvs-btn is-tiny is-info"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3" fill="#fff"/></svg>{{btn_view}}</span><span class="tvs-btn is-tiny is-pink"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6"><circle cx="12" cy="12" r="8.5"/><path d="M6 18L18 6"/></svg>{{btn_remove}}</span></div></div>
+            <div class="tvs-frow is-alt"><svg class="tvs-move" viewBox="0 0 24 24" fill="currentColor"><path d="M12 1l4 4h-3v6h6V8l4 4-4 4v-3h-6v6h3l-4 4-4-4h3v-6H5v3l-4-4 4-4v3h6V5H8z"/></svg><span class="tvs-thumb"></span><div class="tvs-fmeta"><span class="tvs-fname">{{g3_name}}</span><span class="tvs-fpath">{{g3_path}}</span><span class="tvs-badge">{{g3_dim}}</span></div><span class="tvs-fcol is-size">{{g3_size}}</span><span class="tvs-fcol is-mime">image/jpeg</span><span class="tvs-fcol is-dir">{{dir_news}}</span><div class="tvs-actions"><span class="tvs-btn is-tiny is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>{{btn_edit}}</span><span class="tvs-btn is-tiny is-info"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M2 12s3.6-7 10-7 10 7 10 7-3.6 7-10 7S2 12 2 12z"/><circle cx="12" cy="12" r="3" fill="#fff"/></svg>{{btn_view}}</span><span class="tvs-btn is-tiny is-pink"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6"><circle cx="12" cy="12" r="8.5"/><path d="M6 18L18 6"/></svg>{{btn_remove}}</span></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>
