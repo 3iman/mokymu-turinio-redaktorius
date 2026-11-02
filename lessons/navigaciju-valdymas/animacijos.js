@@ -55,7 +55,7 @@ const entries = {};
 {
   const D = 13, m = M['05-kur-rasti-navigacijas'];
   const burger = c(m.burger), dd = { x: m.ddnav.x + 60, y: c(m.ddnav).y };
-  const search = { x: m.search.x + 150, y: c(m.search).y };
+  const search = { x: m.search.x + 250, y: c(m.search).y };   // už placeholderio, kad kursorius neuždengtų „navi“
   const searchHole = { x: m.search.x - 10, y: m.search.y - 12, w: 330, h: 50 };
   const ddHole = { x: m.search.x - 10, y: m.search.y - 12, w: 360, h: m.ddnav.y + m.ddnav.h + 44 - (m.search.y - 12) };   // paieška + išskleistas sąrašas
   const sideHole = { x: m.sidebars.x - 14, y: m.sidebars.y - 14, w: m.sidebars.w + 28, h: m.sidebars.h + 28 };
@@ -93,10 +93,11 @@ ${RATILAS}
     ${kf('k5caret', D, [[0, 'opacity: 0;'], [6.85, 'opacity: 0;'], [6.9, 'opacity: 1;'], [10.6, 'opacity: 1;'], [10.65, 'opacity: 0;'], [D, 'opacity: 0;']])}
     .ph { animation: k5ph 0.05s linear 7.85s both; }
     @keyframes k5ph { from { opacity: 1; } to { opacity: 0; } }
-    .typed .l1 { animation: fadeIn 0.01s linear 7.9s both; }
-    .typed .l2 { animation: fadeIn 0.01s linear 8.1s both; }
-    .typed .l3 { animation: fadeIn 0.01s linear 8.3s both; }
-    .typed .l4 { animation: fadeIn 0.01s linear 8.5s both; }
+    @keyframes k5raide { from { max-width: 0; } to { max-width: 1.2em; } }
+    .typed .l1 { animation: k5raide 0.01s step-end 7.9s both; }
+    .typed .l2 { animation: k5raide 0.01s step-end 8.1s both; }
+    .typed .l3 { animation: k5raide 0.01s step-end 8.3s both; }
+    .typed .l4 { animation: k5raide 0.01s step-end 8.5s both; }
     .dd { animation: k5dd ${D}s linear 0s both; }
     ${kf('k5dd', D, [[0, 'opacity: 0; transform: translateY(8px);'], [8.8, 'opacity: 0; transform: translateY(8px);', SPRING], [9.1, 'opacity: 1; transform: translateY(0);'],
       [10.6, 'opacity: 1; transform: translateY(0);'], [10.9, 'opacity: 0; transform: translateY(0);'], [D, 'opacity: 0; transform: translateY(0);']])}
@@ -201,14 +202,17 @@ ${fade('.scr2', 0, 1, 4.5, 4.8, D, 'k7forma')}
     ${kf('k7caret', D, [[0, 'opacity: 0;'], [7.6, 'opacity: 0;'], [7.65, 'opacity: 1;'], [9.1, 'opacity: 1;'], [9.15, 'opacity: 0;'], [D, 'opacity: 0;']])}
     .ph2 { animation: k7ph 0.05s linear 7.85s both; }
     @keyframes k7ph { from { opacity: 1; } to { opacity: 0; } }
-    .typed .l1 { animation: fadeIn 0.01s linear 7.9s both; }
-    .typed .l2 { animation: fadeIn 0.01s linear 8.1s both; }
-    .typed .l3 { animation: fadeIn 0.01s linear 8.3s both; }
-    .typed .l4 { animation: fadeIn 0.01s linear 8.5s both; }
+    @keyframes k7raide { from { max-width: 0; } to { max-width: 1.2em; } }
+    .typed .l1 { animation: k7raide 0.01s step-end 7.9s both; }
+    .typed .l2 { animation: k7raide 0.01s step-end 8.1s both; }
+    .typed .l3 { animation: k7raide 0.01s step-end 8.3s both; }
+    .typed .l4 { animation: k7raide 0.01s step-end 8.5s both; }
 ${fade('.list-all', 1, 0, 8.7, 8.85, D, 'k7visi')}
 ${fade('.list-one', 0, 1, 8.75, 8.95, D, 'k7vienas')}
     /* Pasirinktas puslapis atsiranda lauke „Page“ */
     .picked-row { animation: fadeUpLight 0.35s ${SPRING} 9.3s both; }
+    /* „Title“ užsipildo iš pasirinkto puslapio (ne rašoma ranka) */
+    .title-val { animation: fadeIn 0.3s linear 9.4s both; }
     /* Po „Išsaugoti“ — medis su nauja eilute apačioje, žalias blyksnis ties garsu „patvirtinimas“ */
 ${fade('.scr3', 0, 1, 12.4, 12.7, D, 'k7medis')}
     .node-new { animation: fadeUpLight 0.4s ${SPRING} 12.6s both, blyksnis 0.7s ease-out 13.7s both; }

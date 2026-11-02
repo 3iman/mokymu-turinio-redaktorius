@@ -4,7 +4,7 @@
 **Kalba:** lt — ekrano užrašai ir TVS komponentai lieka originalo kalba (§7.3)
 **Balsas:** ElevenLabs, „Darius Cleverphant“ — modelis ir nustatymai pagal `VIDEO_GAMYBA.md` §7
 **Balso seed:** 989646156 – įrašomas automatiškai; pakeitus tekstą balsas generuojamas iš naujo
-**Trukmė:** 173 sek. (13 epizodai)
+**Trukmė:** 176 sek. (13 epizodai)
 **Šaltinis:** `clv-mokymu-platformos-redisign-html/turinys/adaptuota/kursai/*.json` › `explaineris` — generuoja `scripts/epizodai-i-scenarijus.py`; ranka neredaguoti.
 **Pamoka platformoje:** `pam_705` · senoji WP pamoka `navigaciju-valdymas`
 **Išvestis platformai:** kiekvienas kadras — atskiras klipas `{epizodo id}.mp4` + `.vtt` (subtitrai iš balso); YouTube rinkiniui — su intro / outro
@@ -23,9 +23,9 @@
 | 8 Meniu vardas gali skirtis | 13 sek. | 06-skirtingi-pavadinimai | Lauke „Title“ įrašote, kaip nuoroda vadinsis meniu. Priskirtas puslapis gali vadintis kitaip. Meniu lieka trumpas pavadinimas. |
 | 9 Atidarote nuorodos parinktis | 14 sek. | 07-juodojo-meniu-parinktys | Prie grupės „Black“ spaudžiate „Linkai“. Atidarote nuorodą, kuriai norite ikonėlės. Skirtuke „Parinktys“ laukas „Class“ kol kas tuščias. |
 | 10 Nukopijuojate ikonėlės kodą | 15 sek. | 07-fontawesome-kodas | Fontawesome paieškoje įrašote ikonos vardą. Pasirenkate tinkamą ikoną. Stilių renkatės „Light“ ir nukopijuojate HTML kodą. |
-| 11 Įklijuojate ikonėlės klasę | 15 sek. | 07-ikonos-klase | Lauke „Class“ įklijuojate nukopijuotą kodą. Paliekate tik klasę – HTML dalis ištrinate. Spaudžiate „Atnaujinti“ ir ikonėlė atsiranda meniu. |
-| 12 Atidarote keturių ikonų nuorodas | 14 sek. | 08-keturios-ikonos | Paieškoje pasirenkate „Navigacijos“. Prie grupės „4 ikonos“ spaudžiate „Linkai“. Matote keturias titulinio puslapio nuorodas. |
-| 13 Pakeičiate el. dienyno adresą | 13 sek. | 08-dienyno-adresas | Sąraše spaudžiate „Elektroninis dienynas“. Lauke „URL“ įrašote naują dienyno adresą. Spaudžiate „Atnaujinti“ – nuoroda išsaugota. |
+| 11 Įklijuojate ikonėlės klasę | 16 sek. | 07-ikonos-klase | Lauke „Class“ įklijuojate nukopijuotą kodą. Paliekate tik klasę – HTML dalis ištrinate. Spaudžiate „Atnaujinti“ ir ikonėlė atsiranda meniu. |
+| 12 Atidarote keturių ikonų nuorodas | 15 sek. | 08-keturios-ikonos | Paieškoje pasirenkate „Navigacijos“. Prie grupės „4 ikonos“ spaudžiate „Linkai“. Matote keturias titulinio puslapio nuorodas. |
+| 13 Pakeičiate el. dienyno adresą | 14 sek. | 08-dienyno-adresas | Sąraše spaudžiate „Elektroninis dienynas“. Lauke „URL“ įrašote naują dienyno adresą. Spaudžiate „Atnaujinti“ – nuoroda išsaugota. |
 
 ---
 
@@ -150,13 +150,13 @@
 
 ### KADRAS 7: Puslapį pridedate į meniu (17 sek.) — epizodas
 **Failas:** `05-nauja-nuoroda.png`
-**Ekrane:** Grupės „Main“ nuorodų medis; kursorius spaudžia „Naujas linkas“, lange pasirenka „Page“. Formoje lauke „Title“ jau įrašyta „Logopedas“, lauke „Page“ — „Pažymėti“, paieškoje įrašoma „logo“, prie „Logopedas“ — „Pažymėti“, tada „Išsaugoti“.
+**Ekrane:** Grupės „Main“ nuorodų medis; kursorius spaudžia „Naujas linkas“, lange pasirenka „Page“. Formoje lauke „Page“ — „Pažymėti“, paieškoje įrašoma „logo“, prie „Logopedas“ — „Pažymėti“; „Title“ užsipildo „Logopedas“ iš priskirto puslapio, tada „Išsaugoti“.
 **Ekrano užrašai (tiksliai):** „Title“, „Naujas linkas“, „Page“, „URL“, „Pažymėti“, „Logopedas“, „Išsaugoti“
 **TVS UI komponentai:** tvs-row, tvs-btn, tvs-input, tvs-cursor, tvs-ripple, naujas: modalinis langas su pasirinkimu (Page / URL)
 **Demo duomenys:** puslapis: Logopedas
 **Tarimo kandidatai:** Page, Logopedas (tikrinti `kircio-patikra.js`)
 **Nuorodos (senas įrašas):** `nuorodos/05-nauja-nuoroda--klik03_011.6.jpg`, `nuorodos/05-nauja-nuoroda--sc05_016.2.jpg`, `nuorodos/05-nauja-nuoroda--sc07_019.3.jpg`, `nuorodos/05-nauja-nuoroda--sc09_026.8.jpg`
-**Komentaras:** epizodas `ep_705_05_2` · dalis `dal_705_05` „Navigacijų nuorodos (linko) pridėjimas“ · prioritetas 2 · pagrindas: dal_705_05 paaiškinimas („Logopedas“, pagrindinė navigacija); scenos 835: 3–6; Eimantas 2026-10-31: lauke „Title“ — „Logopedas“
+**Komentaras:** epizodas `ep_705_05_2` · dalis `dal_705_05` „Navigacijų nuorodos (linko) pridėjimas“ · prioritetas 2 · pagrindas: dal_705_05 paaiškinimas („Logopedas“, pagrindinė navigacija); scenos 835: 3–6; Eimantas 2026-11-02: „Title“ ranka nerašomas — užsipildo iš priskirto puslapio („Logopedas“)
 
 **Laiko žymos:**
 
@@ -233,7 +233,7 @@
 | 8.4 | balsas | Stilių renkatės „Light“ ir nukopijuojate HTML kodą. |
 | 11.0 | garsas | patvirtinimas |
 
-### KADRAS 11: Įklijuojate ikonėlės klasę (15 sek.) — epizodas
+### KADRAS 11: Įklijuojate ikonėlės klasę (16 sek.) — epizodas
 **Failas:** `07-ikonos-klase.png`
 **Ekrane:** TVS skirtukas „Parinktys“; į lauką „Class“ įklijuojamas kodas, iš jo ištrinamos HTML dalys ir lieka tik klasė. Spaudžiama „Atnaujinti“, ekranas persijungia į svetainės juodąjį meniu, kuriame atsiranda ikonėlė.
 **Ekrano užrašai (tiksliai):** „Class“, „fal fa-list-ol“, „Atnaujinti“
@@ -251,11 +251,11 @@
 | 2.6 | garsas | rasymas |
 | 5.0 | balsas | Paliekate tik klasę – HTML dalis ištrinate. |
 | 7.2 | garsas | rasymas |
-| 9.0 | balsas | Spaudžiate „Atnaujinti“ ir ikonėlė atsiranda meniu. |
-| 10.4 | garsas | spustelejimas |
-| 12.2 | garsas | patvirtinimas |
+| 9.1 | balsas | Spaudžiate „Atnaujinti“ ir ikonėlė atsiranda meniu. |
+| 10.5 | garsas | spustelejimas |
+| 12.3 | garsas | patvirtinimas |
 
-### KADRAS 12: Atidarote keturių ikonų nuorodas (14 sek.) — epizodas
+### KADRAS 12: Atidarote keturių ikonų nuorodas (15 sek.) — epizodas
 **Failas:** `08-keturios-ikonos.png`
 **Ekrane:** TVS darbalaukis; paieškoje įrašoma „navi“ ir pasirenkama „Navigacijos“, grupių sąraše prie „4 ikonos“ spaudžiama „Linkai“ ir pasirodo keturios titulinio puslapio nuorodos: „Elektroninis dienynas“, „Tėvams“, „Mokiniams“, „Mokytojams“.
 **Ekrano užrašai (tiksliai):** „navi“, „Navigacijos“, „4 ikonos“, „Linkai“, „Elektroninis dienynas“, „Tėvams“, „Mokiniams“, „Mokytojams“
@@ -274,9 +274,9 @@
 | 3.0 | garsas | spustelejimas |
 | 4.6 | balsas | Prie grupės „4 ikonos“ spaudžiate „Linkai“. |
 | 5.8 | garsas | spustelejimas |
-| 8.2 | balsas | Matote keturias titulinio puslapio nuorodas. |
+| 8.7 | balsas | Matote keturias titulinio puslapio nuorodas. |
 
-### KADRAS 13: Pakeičiate el. dienyno adresą (13 sek.) — epizodas
+### KADRAS 13: Pakeičiate el. dienyno adresą (14 sek.) — epizodas
 **Failas:** `08-dienyno-adresas.png`
 **Ekrane:** Nuorodų sąrašas; spaudžiama „Elektroninis dienynas“, atsiveria forma. Lauke „URL“ senas adresas pažymimas ir pakeičiamas nauju, spaudžiama „Atnaujinti“.
 **Ekrano užrašai (tiksliai):** „Elektroninis dienynas“, „Title“, „URL“, „Atnaujinti“
@@ -294,6 +294,6 @@
 | 2.4 | garsas | spustelejimas |
 | 4.7 | balsas | Lauke „URL“ įrašote naują dienyno adresą. |
 | 6.1 | garsas | rasymas |
-| 8.3 | balsas | Spaudžiate „Atnaujinti“ – nuoroda išsaugota. |
-| 9.3 | garsas | spustelejimas |
-| 9.7 | garsas | patvirtinimas |
+| 8.4 | balsas | Spaudžiate „Atnaujinti“ – nuoroda išsaugota. |
+| 9.4 | garsas | spustelejimas |
+| 9.8 | garsas | patvirtinimas |

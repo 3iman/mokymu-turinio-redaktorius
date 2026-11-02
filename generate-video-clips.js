@@ -3228,8 +3228,8 @@ const TEMPLATE_ANIMATIONS = {
       30% { transform: translate(1346.0px, 637.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
       34.615% { transform: translate(108.0px, 35.5px); }
       48.462% { transform: translate(108.0px, 35.5px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
-      53.077% { transform: translate(293.0px, 35.5px); }
-      73.846% { transform: translate(293.0px, 35.5px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      53.077% { transform: translate(393.0px, 35.5px); }
+      73.846% { transform: translate(393.0px, 35.5px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
       78.462% { transform: translate(204.0px, 138.7px); }
       83.846% { transform: translate(204.0px, 138.7px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
       90.769% { transform: translate(1200.0px, 700.0px); }
@@ -3260,10 +3260,11 @@ const TEMPLATE_ANIMATIONS = {
     }
     .ph { animation: k5ph 0.05s linear 7.85s both; }
     @keyframes k5ph { from { opacity: 1; } to { opacity: 0; } }
-    .typed .l1 { animation: fadeIn 0.01s linear 7.9s both; }
-    .typed .l2 { animation: fadeIn 0.01s linear 8.1s both; }
-    .typed .l3 { animation: fadeIn 0.01s linear 8.3s both; }
-    .typed .l4 { animation: fadeIn 0.01s linear 8.5s both; }
+    @keyframes k5raide { from { max-width: 0; } to { max-width: 1.2em; } }
+    .typed .l1 { animation: k5raide 0.01s step-end 7.9s both; }
+    .typed .l2 { animation: k5raide 0.01s step-end 8.1s both; }
+    .typed .l3 { animation: k5raide 0.01s step-end 8.3s both; }
+    .typed .l4 { animation: k5raide 0.01s step-end 8.5s both; }
     .dd { animation: k5dd 13s linear 0s both; }
     @keyframes k5dd {
       0% { opacity: 0; transform: translateY(8px); }
@@ -3438,10 +3439,11 @@ const TEMPLATE_ANIMATIONS = {
     }
     .ph2 { animation: k7ph 0.05s linear 7.85s both; }
     @keyframes k7ph { from { opacity: 1; } to { opacity: 0; } }
-    .typed .l1 { animation: fadeIn 0.01s linear 7.9s both; }
-    .typed .l2 { animation: fadeIn 0.01s linear 8.1s both; }
-    .typed .l3 { animation: fadeIn 0.01s linear 8.3s both; }
-    .typed .l4 { animation: fadeIn 0.01s linear 8.5s both; }
+    @keyframes k7raide { from { max-width: 0; } to { max-width: 1.2em; } }
+    .typed .l1 { animation: k7raide 0.01s step-end 7.9s both; }
+    .typed .l2 { animation: k7raide 0.01s step-end 8.1s both; }
+    .typed .l3 { animation: k7raide 0.01s step-end 8.3s both; }
+    .typed .l4 { animation: k7raide 0.01s step-end 8.5s both; }
     .list-all { animation: k7visi 17s linear 0s both; }
     @keyframes k7visi {
       0% { opacity: 1; }
@@ -3458,6 +3460,8 @@ const TEMPLATE_ANIMATIONS = {
     }
     /* Pasirinktas puslapis atsiranda lauke „Page“ */
     .picked-row { animation: fadeUpLight 0.35s cubic-bezier(0.16, 1, 0.3, 1) 9.3s both; }
+    /* „Title“ užsipildo iš pasirinkto puslapio (ne rašoma ranka) */
+    .title-val { animation: fadeIn 0.3s linear 9.4s both; }
     /* Po „Išsaugoti“ — medis su nauja eilute apačioje, žalias blyksnis ties garsu „patvirtinimas“ */
     .scr3 { animation: k7medis 17s linear 0s both; }
     @keyframes k7medis {

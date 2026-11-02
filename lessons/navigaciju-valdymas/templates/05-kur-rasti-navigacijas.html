@@ -14,8 +14,6 @@
   /* bazinė būsena = galutinė (PNG rodo rezultatą): grupių sąrašas viršuje, kursorius ramybėje */
   .tvs-dash { width: 820px; }
   .tvs-top .tvs-searchbar.is-text { position: relative; }
-  .typed { color: var(--tvs-text); }
-  .typed .l { opacity: 1; }
   .caret { opacity: 0; }
   .side-x { clip-path: inset(0 100% 0 0); }
   .dd { left: 146px; top: 70px; opacity: 0; }
@@ -36,7 +34,7 @@
         <div class="tvs-top">
           <div class="tvs-logo"><i></i></div>
           <div class="tvs-burger" data-t="burger"></div>
-          <div class="tvs-searchbar is-text" data-t="search"><span class="ph is-placeholder" style="color:#9aa0a6">{{search_ph}}</span><span class="typed"><span class="l l1">{{typed_1}}</span><span class="l l2">{{typed_2}}</span><span class="l l3">{{typed_3}}</span><span class="l l4">{{typed_4}}</span></span><span class="tvs-caret caret"></span></div>
+          <div class="tvs-searchbar is-text" data-t="search"><span class="tvs-ph ph">{{search_ph}}</span><span class="tvs-typed typed"><span class="l l1">{{typed_1}}</span><span class="l l2">{{typed_2}}</span><span class="l l3">{{typed_3}}</span><span class="l l4">{{typed_4}}</span></span><span class="tvs-caret caret"></span></div>
         </div>
         <div class="tvs-side"><i class="is-on"></i><i></i><i class="is-bars" data-t="sidebars"></i><i></i><i></i><i></i></div>
         <div class="tvs-subnav"><span class="is-on">{{sub_dash}}</span><span>{{sub_addons}}</span></div>

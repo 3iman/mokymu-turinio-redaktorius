@@ -21,9 +21,8 @@
   .modal-pick .tvs-filter .tvs-input { position: relative; }
   .modal-pick .list-wrap { position: relative; }
   .modal-pick .list-one { position: absolute; left: 0; top: 0; right: 0; opacity: 0; }
-  .typed { color: var(--tvs-text); }
-  .typed .l { opacity: 1; }
-  .ph2 { color: #9aa0a6; position: absolute; left: 18px; }
+  /* „Title“ užsipildo iš priskirto puslapio (Eimantas 2026-11-02) — bazėje matomas */
+  .title-val { opacity: 1; }
   .caret { opacity: 0; }
   .tvs-form .desc-box { height: 90px; align-items: flex-start; }
   .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
@@ -74,7 +73,7 @@
           <div class="tvs-crumb">{{crumb_form}}</div>
           <div><span class="tvs-btn is-small"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>{{btn_new_link}}</span></div>
           <div class="tvs-form">
-            <div class="tvs-field"><div class="tvs-label">{{f_title}}</div><div class="tvs-help">{{f_title_help}}</div><div class="tvs-input is-value">{{v_title}}</div></div>
+            <div class="tvs-field"><div class="tvs-label">{{f_title}}</div><div class="tvs-help">{{f_title_help}}</div><div class="tvs-input is-value"><span class="title-val">{{v_title}}</span></div></div>
             <div class="tvs-field" data-t="pagefield"><div class="tvs-label">{{f_page}}<span class="tvs-req">*</span></div><div class="tvs-help">{{f_page_help}}</div>
               <div><span class="tvs-btn is-tiny" data-t="pickbtn"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3"><circle cx="10" cy="10" r="6"/><path d="M15 15l6 6" stroke-linecap="round"/></svg>{{btn_pick}}</span></div>
               <div class="tvs-picked picked-row"><span>{{v_page}}</span><span class="tvs-path">{{v_path}}</span><span class="tvs-btn is-tiny is-pink"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.6"><circle cx="12" cy="12" r="8.5"/><path d="M6 18L18 6"/></svg>{{btn_remove}}</span></div></div>
@@ -87,7 +86,7 @@
         <div class="tvs-modal modal-pick">
           <div class="tvs-modal-h"><span>{{choose_h}}</span><span class="tvs-x">×</span></div>
           <div class="tvs-modal-b">
-            <div class="tvs-filter"><div class="tvs-input is-focus" data-t="msearch"><span class="ph2">{{search_ph_lt}}</span><span class="typed"><span class="l l1">{{typed_1}}</span><span class="l l2">{{typed_2}}</span><span class="l l3">{{typed_3}}</span><span class="l l4">{{typed_4}}</span></span><span class="tvs-caret caret"></span></div><span class="tvs-btn is-small">{{btn_filter}}</span><span class="tvs-btn is-small is-grey">{{btn_clear}}</span></div>
+            <div class="tvs-filter"><div class="tvs-input is-focus" data-t="msearch"><span class="tvs-ph ph2">{{search_ph_lt}}</span><span class="tvs-typed typed"><span class="l l1">{{typed_1}}</span><span class="l l2">{{typed_2}}</span><span class="l l3">{{typed_3}}</span><span class="l l4">{{typed_4}}</span></span><span class="tvs-caret caret"></span></div><span class="tvs-btn is-small">{{btn_filter}}</span><span class="tvs-btn is-small is-grey">{{btn_clear}}</span></div>
             <div class="list-wrap">
               <div class="tvs-table list-all">
                 <div class="tvs-th"><span>{{th_title}}</span><span>{{th_path}}</span><span></span></div>

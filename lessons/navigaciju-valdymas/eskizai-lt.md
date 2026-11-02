@@ -182,7 +182,7 @@ Iki galo nueinamas tik vienas kelias (paieška). Darbalaukis ir meniu parodomi f
 **Ekranai (4):** (užrašai iš scenų 3–6, `turinys/adaptuota/scenos/835.json`)
 1. **Nuorodų medis „Main“** — kaip kadro 6 pabaigoje (tęstinumas).
 2. **Langas „Kokio tipo linką norite sukurti?“** — du pasirinkimai „Page“ ir „URL“ (aprašų smulkiu šriftu nepiešti); fonas pritemęs.
-3. **Nuorodos forma** — laukai „Title“ (jau įrašyta **„Logopedas“**, nefokusuojama), **„Page“** su žaliu „Pažymėti“, „Description“; apačioje žali „Išsaugoti“ ir „Išsaugoti ir kurti kitą“, pilkas „Atšaukti“. Skirtukų „Pagrindinis / Parinktys“ — nepiešti.
+3. **Nuorodos forma** — laukai „Title“ (iš pradžių tuščias — pavadinimas imamas iš priskirto puslapio, Eimantas 2026-11-02), **„Page“** su žaliu „Pažymėti“, „Description“; apačioje žali „Išsaugoti“ ir „Išsaugoti ir kurti kitą“, pilkas „Atšaukti“. Skirtukų „Pagrindinis / Parinktys“ — nepiešti.
    *Patikslinimas pagal kadrą 831 (2026-10-31, koncepcijos nekeičia):* po kiekvieno lauko pavadinimo — pilkas pagalbinis tekstas („Enter the link title.“, „Choose the page this link should point to.“); „Page“ pažymėtas raudona `*`; mygtukas „Pažymėti“ — mažas, žalias, su lupa. Pasirinktas puslapis rodomas pilka eilute „Logopedas  /logopedas“ su rožiniu „Šalinti“ dešinėje.
 4. **Langas „Choose an entry.“** — paieškos laukas, žalias „Filtruoti“, lentelė „Pavadinimas · Kelias“; po įvedimo lieka viena eilutė **„Logopedas“** su žaliu „Pažymėti“.
 
@@ -198,7 +198,7 @@ Iki galo nueinamas tik vienas kelias (paieška). Darbalaukis ir meniu parodomi f
 | 6,8 | — | „Lauke „Page“ susirandate puslapį „Logopedas“.“ |
 | 7,2 | spustelėjimas „Pažymėti“ → langas „Choose an entry.“ | spustelejimas |
 | 7,9 | paieškoje rašoma „logo“, sąrašas susitraukia iki „Logopedas“ | rasymas |
-| 9,1 | spustelėjimas „Pažymėti“ → forma, lauke „Page“ — „Logopedas“ | spustelejimas |
+| 9,1 | spustelėjimas „Pažymėti“ → forma, lauke „Page“ — „Logopedas“; „Title“ užsipildo **„Logopedas“** | spustelejimas |
 | 9,5–10,7 | kamera atsitraukia, fokusas ant „Išsaugoti“ | — |
 | 10,9 | — | „Spaudžiate „Išsaugoti“ – nuoroda atsiranda medžio apačioje.“ |
 | 12,3 | spustelėjimas → medis; nauja eilutė „Logopedas · Page“ apačioje (būsena „nauja“ iš `tvs-ui-rinkinys`) | spustelejimas |
