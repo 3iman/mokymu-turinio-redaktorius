@@ -374,7 +374,7 @@ Pranešimo juostos po „Atnaujinti“ nepiešiame — jos teksto nė viename į
 
 **Priimti (kadrai 5–7):**
 1. Rodomi trys keliai (darbalaukis, kairysis meniu, paieška); senas K5 padalintas į kadrus 5 ir 6.
-2. Kadro 7 laukas „Title“ — „Logopedas“, balsas jo nemini, fokuso nėra.
+2. ~~Kadro 7 laukas „Title“ — „Logopedas“~~ — **pakeista 2026-11-02 (Eimantas):** „Title“ nerašomas ir neužsipildo, užtenka prisegti puslapį; balsas jo nemini, fokuso nėra.
 3. Kadras 6 be „patvirtinimas“; kadro 7 antras sakinys 5,9 s, spustelėjimas „Pažymėti“ 6,3 s.
 4. Kairysis meniu — vienas kelias dviem būsenomis: suskleistas (ikona) ir išskleistas per „☰“ (ikona su užrašu).
 

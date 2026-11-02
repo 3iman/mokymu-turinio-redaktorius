@@ -3212,10 +3212,10 @@ const TEMPLATE_ANIMATIONS = {
       38.462% { left: 14.0px; top: 189.0px; width: 50.0px; height: 44.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
       41.538% { left: -3.0px; top: 247.0px; width: 328.0px; height: 60.0px; opacity: 1; }
       48.462% { left: -3.0px; top: 247.0px; width: 328.0px; height: 60.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
-      52.308% { left: 137.0px; top: 13.5px; width: 330.0px; height: 50.0px; opacity: 1; }
-      67.692% { left: 137.0px; top: 13.5px; width: 330.0px; height: 50.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
-      70% { left: 137.0px; top: 13.5px; width: 360.0px; height: 195.2px; opacity: 1; }
-      73.846% { left: 137.0px; top: 13.5px; width: 360.0px; height: 195.2px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      52.308% { left: 137.0px; top: 13.3px; width: 330.0px; height: 50.0px; opacity: 1; }
+      67.692% { left: 137.0px; top: 13.3px; width: 330.0px; height: 50.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      70% { left: 137.0px; top: 13.3px; width: 360.0px; height: 195.4px; opacity: 1; }
+      73.846% { left: 137.0px; top: 13.3px; width: 360.0px; height: 195.4px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
       77.692% { left: 140.0px; top: 110.7px; width: 354.0px; height: 62.0px; opacity: 1; }
       81.538% { left: 140.0px; top: 110.7px; width: 354.0px; height: 62.0px; opacity: 1; }
       84.615% { left: 140.0px; top: 110.7px; width: 354.0px; height: 62.0px; opacity: 0; }
@@ -3469,6 +3469,761 @@ const TEMPLATE_ANIMATIONS = {
       100% { opacity: 1; }
     }
     .node-new { animation: fadeUpLight 0.4s cubic-bezier(0.16, 1, 0.3, 1) 12.6s both, blyksnis 0.7s ease-out 13.7s both; }
+    @keyframes blyksnis { 0% { box-shadow: 0 0 0 0 rgba(71,209,101,0); } 30% { box-shadow: 0 0 0 5px rgba(71,209,101,.9); } 100% { box-shadow: 0 0 0 0 rgba(71,209,101,0); } }
+  `,
+  '01-navigaciju-grupes': `
+    .stage { animation: k1kamera 13s linear 0s both; }
+    @keyframes k1kamera {
+      0% { transform: scale(1); }
+      6.154% { transform: scale(1); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      10.769% { transform: scale(1.15); }
+      75.385% { transform: scale(1.15); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      81.538% { transform: scale(1); }
+      100% { transform: scale(1); }
+    }
+    .spot { animation: k1spot 13s linear 0s both; }
+    @keyframes k1spot {
+      0% { left: 391.0px; top: 371.0px; width: 190.0px; height: 44.0px; opacity: 0; }
+      3.077% { left: 391.0px; top: 371.0px; width: 190.0px; height: 44.0px; opacity: 1; }
+      9.231% { left: 391.0px; top: 371.0px; width: 190.0px; height: 44.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      12.308% { left: 391.0px; top: 437.5px; width: 190.0px; height: 46.0px; opacity: 1; }
+      13.846% { left: 391.0px; top: 437.5px; width: 190.0px; height: 46.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      16.923% { left: 391.0px; top: 507.5px; width: 190.0px; height: 46.0px; opacity: 1; }
+      18.462% { left: 391.0px; top: 507.5px; width: 190.0px; height: 46.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      21.538% { left: 391.0px; top: 577.5px; width: 190.0px; height: 46.0px; opacity: 1; }
+      23.077% { left: 391.0px; top: 577.5px; width: 190.0px; height: 46.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      26.154% { left: 391.0px; top: 717.5px; width: 190.0px; height: 46.0px; opacity: 1; }
+      33.846% { left: 391.0px; top: 717.5px; width: 190.0px; height: 46.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      37.692% { left: 573.0px; top: 433.0px; width: 804.0px; height: 405.0px; opacity: 1; }
+      70.769% { left: 573.0px; top: 433.0px; width: 804.0px; height: 405.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      74.615% { left: 331.0px; top: 699.0px; width: 1324.0px; height: 82.0px; opacity: 1; }
+      80% { left: 331.0px; top: 699.0px; width: 1324.0px; height: 82.0px; opacity: 1; }
+      83.846% { left: 331.0px; top: 699.0px; width: 1324.0px; height: 82.0px; opacity: 0; }
+      100% { left: 331.0px; top: 699.0px; width: 1324.0px; height: 82.0px; opacity: 0; }
+    }
+    /* Aprašymai šviesėja iš viršaus po vieną */
+    @keyframes k1desc { from { opacity: .3; } to { opacity: 1; } }
+    .tvs-row:nth-child(2) .tvs-desc { animation: k1desc 0.4s linear 4.6s both; }
+    .tvs-row:nth-child(3) .tvs-desc { animation: k1desc 0.4s linear 4.9s both; }
+    .tvs-row:nth-child(4) .tvs-desc { animation: k1desc 0.4s linear 5.2s both; }
+    .tvs-row:nth-child(5) .tvs-desc { animation: k1desc 0.4s linear 5.5s both; }
+    .tvs-row:nth-child(6) .tvs-desc { animation: k1desc 0.4s linear 5.8s both; }
+    .tvs-row:nth-child(7) .tvs-desc { animation: k1desc 0.4s linear 6.1s both; }
+    /* Kursorius užeina ant „Main“ — eilutė pašviesėja */
+    @keyframes k1hover { from { background: #fff; } to { background: #f7f9fa; } }
+    .row-main { animation: k1hover 0.3s linear 9.6s both; }
+    .cursor-wrap { animation: k1kursorius 13s linear 0s both; }
+    @keyframes k1kursorius {
+      0% { transform: translate(1496.0px, 867.0px); }
+      70.769% { transform: translate(1496.0px, 867.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      75.385% { transform: translate(896.0px, 745.0px); }
+      100% { transform: translate(896.0px, 745.0px); }
+    }
+  `,
+  '02-nauja-grupe': `
+    .stage { animation: k2kamera 14s linear 0s both; }
+    @keyframes k2kamera {
+      0% { transform: scale(1); }
+      33.571% { transform: scale(1); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      37.857% { transform: scale(1.25); }
+      67.143% { transform: scale(1.25); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      72.857% { transform: scale(1); }
+      100% { transform: scale(1); }
+    }
+    .spot { animation: k2spot 14s linear 0s both; }
+    @keyframes k2spot {
+      0% { left: 329.0px; top: 140.0px; width: 199.1px; height: 58.0px; opacity: 0; }
+      2.143% { left: 329.0px; top: 140.0px; width: 199.1px; height: 58.0px; opacity: 0; }
+      5% { left: 329.0px; top: 140.0px; width: 199.1px; height: 58.0px; opacity: 1; }
+      18.571% { left: 329.0px; top: 140.0px; width: 199.1px; height: 58.0px; opacity: 1; }
+      20.714% { left: 329.0px; top: 140.0px; width: 199.1px; height: 58.0px; opacity: 0; }
+      36.429% { left: 357.0px; top: 258.0px; width: 1272.0px; height: 68.0px; opacity: 0; }
+      39.286% { left: 357.0px; top: 258.0px; width: 1272.0px; height: 68.0px; opacity: 1; }
+      60.714% { left: 357.0px; top: 258.0px; width: 1272.0px; height: 68.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      63.571% { left: 357.0px; top: 387.0px; width: 1272.0px; height: 68.0px; opacity: 1; }
+      68.571% { left: 357.0px; top: 387.0px; width: 1272.0px; height: 68.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      72.143% { left: 357.0px; top: 700.0px; width: 131.5px; height: 50.0px; opacity: 1; }
+      77.857% { left: 357.0px; top: 700.0px; width: 131.5px; height: 50.0px; opacity: 1; }
+      80% { left: 357.0px; top: 700.0px; width: 131.5px; height: 50.0px; opacity: 0; }
+      100% { left: 357.0px; top: 700.0px; width: 131.5px; height: 50.0px; opacity: 0; }
+    }
+    .cursor-wrap { animation: k2kursorius 14s linear 0s both; }
+    @keyframes k2kursorius {
+      0% { transform: translate(1246.0px, 777.0px); }
+      10% { transform: translate(1246.0px, 777.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      14.286% { transform: translate(424.6px, 166.0px); }
+      22.857% { transform: translate(424.6px, 166.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      27.143% { transform: translate(781.0px, 289.0px); }
+      64.286% { transform: translate(781.0px, 289.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      68.571% { transform: translate(418.8px, 722.0px); }
+      82.857% { transform: translate(418.8px, 722.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      88.571% { transform: translate(1246.0px, 867.0px); }
+      100% { transform: translate(1246.0px, 867.0px); }
+    }
+    .rp1 { left: 428.6px; top: 169.0px; animation: ratilas 0.6s ease-out 2.6s forwards; }
+    .rp2 { left: 422.8px; top: 725.0px; animation: ratilas 0.6s ease-out 10.9s forwards; }
+    @keyframes ratilas { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    /* Ekranai: sąrašas → forma (įslenka) → sąrašas su nauja eilute */
+    .scr1 { animation: k2sarasas 14s linear 0s both; }
+    @keyframes k2sarasas {
+      0% { opacity: 1; }
+      19.286% { opacity: 1; }
+      21.429% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .scr2 { animation: k2forma 14s linear 0s both; }
+    @keyframes k2forma {
+      0% { opacity: 0; transform: translateX(60px); }
+      19.286% { opacity: 0; transform: translateX(60px); animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      22.143% { opacity: 1; transform: translateX(0); }
+      78.571% { opacity: 1; transform: translateX(0); }
+      80.714% { opacity: 0; transform: translateX(0); }
+      100% { opacity: 0; transform: translateX(0); }
+    }
+    .scr3 { animation: k2naujas 14s linear 0s both; }
+    @keyframes k2naujas {
+      0% { opacity: 0; }
+      78.571% { opacity: 0; }
+      80.714% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+    .row-new { animation: fadeUpLight 0.4s cubic-bezier(0.16, 1, 0.3, 1) 11.2s both, blyksnis 0.7s ease-out 11.4s both; }
+    @keyframes blyksnis { 0% { box-shadow: 0 0 0 0 rgba(71,209,101,0); } 30% { box-shadow: 0 0 0 5px rgba(71,209,101,.9); } 100% { box-shadow: 0 0 0 0 rgba(71,209,101,0); } }
+    /* Rašymas: „Vardas“ po raidę, „Slug“ pildosi kartu */
+    .caret { animation: k2caret 14s linear 0s both; }
+    @keyframes k2caret {
+      0% { opacity: 0; }
+      37.143% { opacity: 0; }
+      37.5% { opacity: 1; }
+      77.143% { opacity: 1; }
+      77.5% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    @keyframes k2raide { from { max-width: 0; } to { max-width: 1.2em; } }
+    .l1 { animation: k2raide 0.01s step-end 6.50s both; }
+    .l2 { animation: k2raide 0.01s step-end 6.60s both; }
+    .l3 { animation: k2raide 0.01s step-end 6.70s both; }
+    .l4 { animation: k2raide 0.01s step-end 6.80s both; }
+    .l5 { animation: k2raide 0.01s step-end 6.90s both; }
+    .l6 { animation: k2raide 0.01s step-end 7.00s both; }
+    .l7 { animation: k2raide 0.01s step-end 7.10s both; }
+    .l8 { animation: k2raide 0.01s step-end 7.20s both; }
+    .l9 { animation: k2raide 0.01s step-end 7.30s both; }
+    .l10 { animation: k2raide 0.01s step-end 7.40s both; }
+    .l11 { animation: k2raide 0.01s step-end 7.50s both; }
+    .l12 { animation: k2raide 0.01s step-end 7.60s both; }
+    .l13 { animation: k2raide 0.01s step-end 7.70s both; }
+    .l14 { animation: k2raide 0.01s step-end 7.80s both; }
+    .l15 { animation: k2raide 0.01s step-end 7.90s both; }
+    .l16 { animation: k2raide 0.01s step-end 8.00s both; }
+    .l17 { animation: k2raide 0.01s step-end 8.10s both; }
+    @keyframes k2slug { from { max-width: 0; } to { max-width: 1.2em; } }
+    .s1 { animation: k2slug 0.01s step-end 6.55s both; }
+    .s2 { animation: k2slug 0.01s step-end 6.65s both; }
+    .s3 { animation: k2slug 0.01s step-end 6.75s both; }
+    .s4 { animation: k2slug 0.01s step-end 6.85s both; }
+    .s5 { animation: k2slug 0.01s step-end 6.95s both; }
+    .s6 { animation: k2slug 0.01s step-end 7.05s both; }
+    .s7 { animation: k2slug 0.01s step-end 7.15s both; }
+    .s8 { animation: k2slug 0.01s step-end 7.25s both; }
+    .s9 { animation: k2slug 0.01s step-end 7.35s both; }
+    .s10 { animation: k2slug 0.01s step-end 7.45s both; }
+    .s11 { animation: k2slug 0.01s step-end 7.55s both; }
+    .s12 { animation: k2slug 0.01s step-end 7.65s both; }
+    .s13 { animation: k2slug 0.01s step-end 7.75s both; }
+    .s14 { animation: k2slug 0.01s step-end 7.85s both; }
+    .s15 { animation: k2slug 0.01s step-end 7.95s both; }
+    .s16 { animation: k2slug 0.01s step-end 8.05s both; }
+    .s17 { animation: k2slug 0.01s step-end 8.15s both; }
+  `,
+  '03-isorine-nuoroda': `
+    .stage { animation: k3kamera 11s linear 0s both; }
+    @keyframes k3kamera {
+      0% { transform: scale(1); }
+      9.091% { transform: scale(1); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      17.273% { transform: scale(1.6); }
+      63.636% { transform: scale(1.6); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      71.818% { transform: scale(1); }
+      100% { transform: scale(1); }
+    }
+    .spot { animation: k3spot 11s linear 0s both; }
+    @keyframes k3spot {
+      0% { left: 331.0px; top: 466.0px; width: 1324.0px; height: 68.0px; opacity: 0; }
+      10.909% { left: 331.0px; top: 466.0px; width: 1324.0px; height: 68.0px; opacity: 0; }
+      14.545% { left: 331.0px; top: 466.0px; width: 1324.0px; height: 68.0px; opacity: 1; }
+      41.818% { left: 331.0px; top: 466.0px; width: 1324.0px; height: 68.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      46.364% { left: 557.9px; top: 479.0px; width: 98.4px; height: 42.0px; opacity: 1; }
+      63.636% { left: 557.9px; top: 479.0px; width: 98.4px; height: 42.0px; opacity: 1; }
+      68.182% { left: 557.9px; top: 479.0px; width: 98.4px; height: 42.0px; opacity: 0; }
+      100% { left: 557.9px; top: 479.0px; width: 98.4px; height: 42.0px; opacity: 0; }
+    }
+    /* Strėlytė sumirksi du kartus */
+    @keyframes k3pulse { 0% { transform: scale(1); } 50% { transform: scale(1.3); } 100% { transform: scale(1); } }
+    .tvs-ext { animation: k3pulse 0.5s ease-in-out 3.0s 2; }
+    .cursor-wrap { animation: k3kursorius 11s linear 0s both; }
+    @keyframes k3kursorius {
+      0% { transform: translate(1246.0px, 817.0px); }
+      100% { transform: translate(1246.0px, 817.0px); }
+    }
+  `,
+  '04-nuorodos-tipas': `
+    .spot { animation: k4spot 12s linear 0s both; }
+    @keyframes k4spot {
+      0% { left: 505.0px; top: 164.0px; width: 380.7px; height: 56.0px; opacity: 0; }
+      10% { left: 505.0px; top: 164.0px; width: 380.7px; height: 56.0px; opacity: 0; }
+      13.333% { left: 505.0px; top: 164.0px; width: 380.7px; height: 56.0px; opacity: 1; }
+      43.333% { left: 505.0px; top: 164.0px; width: 380.7px; height: 56.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      47.5% { left: 511.0px; top: 289.0px; width: 660.0px; height: 68.0px; opacity: 1; }
+      74.167% { left: 511.0px; top: 289.0px; width: 660.0px; height: 68.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      78.333% { left: 511.0px; top: 351.0px; width: 660.0px; height: 68.0px; opacity: 1; }
+      85.833% { left: 511.0px; top: 351.0px; width: 660.0px; height: 68.0px; opacity: 1; }
+      88.333% { left: 511.0px; top: 351.0px; width: 660.0px; height: 68.0px; opacity: 0; }
+      100% { left: 511.0px; top: 351.0px; width: 660.0px; height: 68.0px; opacity: 0; }
+    }
+    .cursor-wrap { animation: k4kursorius 12s linear 0s both; }
+    @keyframes k4kursorius {
+      0% { transform: translate(1246.0px, 777.0px); }
+      43.333% { transform: translate(1246.0px, 777.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      48.333% { transform: translate(633.0px, 326.0px); }
+      74.167% { transform: translate(633.0px, 326.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      78.333% { transform: translate(633.0px, 388.0px); }
+      90% { transform: translate(633.0px, 388.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      95% { transform: translate(1246.0px, 817.0px); }
+      100% { transform: translate(1246.0px, 817.0px); }
+    }
+    .rp1 { left: 637.0px; top: 391.0px; animation: ratilas 0.6s ease-out 10.3s forwards; }
+    @keyframes ratilas { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    /* Langas virš medžio — iki spustelėjimo; tada forma „URL“ */
+    .scr1 { animation: k4medis 12s linear 0s both; }
+    @keyframes k4medis {
+      0% { opacity: 1; }
+      86.667% { opacity: 1; }
+      89.167% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .scr2 { animation: k4forma 12s linear 0s both; }
+    @keyframes k4forma {
+      0% { opacity: 0; }
+      86.667% { opacity: 0; }
+      89.167% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+    .caret2 { animation: k4caret 12s linear 0s both; }
+    @keyframes k4caret {
+      0% { opacity: 0; }
+      89.167% { opacity: 0; }
+      89.583% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+  `,
+  '06-skirtingi-pavadinimai': `
+    .stage { animation: k8kamera 13s linear 0s both; }
+    @keyframes k8kamera {
+      0% { transform: scale(1); }
+      7.692% { transform: scale(1); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      13.077% { transform: scale(1.3); }
+      80% { transform: scale(1.3); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      86.154% { transform: scale(1); }
+      100% { transform: scale(1); }
+    }
+    .spot { animation: k8spot 13s linear 0s both; }
+    @keyframes k8spot {
+      0% { left: 357.0px; top: 365.0px; width: 1272.0px; height: 68.0px; opacity: 0; }
+      9.231% { left: 357.0px; top: 365.0px; width: 1272.0px; height: 68.0px; opacity: 0; }
+      12.308% { left: 357.0px; top: 365.0px; width: 1272.0px; height: 68.0px; opacity: 1; }
+      41.538% { left: 357.0px; top: 365.0px; width: 1272.0px; height: 68.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      45.385% { left: 357.0px; top: 565.0px; width: 1272.0px; height: 78.0px; opacity: 1; }
+      67.692% { left: 357.0px; top: 565.0px; width: 1272.0px; height: 78.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      71.538% { left: 355.0px; top: 363.0px; width: 1276.0px; height: 282.0px; opacity: 1; }
+      80% { left: 355.0px; top: 363.0px; width: 1276.0px; height: 282.0px; opacity: 1; }
+      83.846% { left: 355.0px; top: 363.0px; width: 1276.0px; height: 282.0px; opacity: 0; }
+      100% { left: 355.0px; top: 363.0px; width: 1276.0px; height: 282.0px; opacity: 0; }
+    }
+    @keyframes k8blink { 0% { opacity: 1; } 50% { opacity: .3; } 100% { opacity: 1; } }
+    .blink { animation: k8blink 0.55s ease-in-out 9.2s 2; }
+    .cursor-wrap { animation: k8kursorius 13s linear 0s both; }
+    @keyframes k8kursorius {
+      0% { transform: translate(1246.0px, 837.0px); }
+      100% { transform: translate(1246.0px, 837.0px); }
+    }
+  `,
+  '07-juodojo-meniu-parinktys': `
+    .stage { animation: k9kamera 14s linear 0s both; }
+    @keyframes k9kamera {
+      0% { transform: scale(1); }
+      5.714% { transform: scale(1); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      10% { transform: scale(1.15); }
+      20% { transform: scale(1.15); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      25.714% { transform: scale(1); }
+      57.143% { transform: scale(1); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      61.429% { transform: scale(1.25); }
+      82.857% { transform: scale(1.25); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      88.571% { transform: scale(1); }
+      100% { transform: scale(1); }
+    }
+    .spot { animation: k9spot 14s linear 0s both; }
+    @keyframes k9spot {
+      0% { left: 331.0px; top: 489.0px; width: 1324.0px; height: 82.0px; opacity: 0; }
+      2.143% { left: 331.0px; top: 489.0px; width: 1324.0px; height: 82.0px; opacity: 0; }
+      5% { left: 331.0px; top: 489.0px; width: 1324.0px; height: 82.0px; opacity: 1; }
+      10% { left: 331.0px; top: 489.0px; width: 1324.0px; height: 82.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      12.857% { left: 1530.9px; top: 505.5px; width: 106.1px; height: 50.0px; opacity: 1; }
+      18.571% { left: 1530.9px; top: 505.5px; width: 106.1px; height: 50.0px; opacity: 1; }
+      20.714% { left: 1530.9px; top: 505.5px; width: 106.1px; height: 50.0px; opacity: 0; }
+      23.571% { left: 331.0px; top: 206.0px; width: 1324.0px; height: 68.0px; opacity: 0; }
+      26.429% { left: 331.0px; top: 206.0px; width: 1324.0px; height: 68.0px; opacity: 1; }
+      42.143% { left: 331.0px; top: 206.0px; width: 1324.0px; height: 68.0px; opacity: 1; }
+      44.286% { left: 331.0px; top: 206.0px; width: 1324.0px; height: 68.0px; opacity: 0; }
+      58.571% { left: 499.4px; top: 206.0px; width: 163.7px; height: 68.0px; opacity: 0; }
+      61.429% { left: 499.4px; top: 206.0px; width: 163.7px; height: 68.0px; opacity: 1; }
+      66.429% { left: 499.4px; top: 206.0px; width: 163.7px; height: 68.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      69.286% { left: 357.0px; top: 523.0px; width: 1272.0px; height: 68.0px; opacity: 1; }
+      82.857% { left: 357.0px; top: 523.0px; width: 1272.0px; height: 68.0px; opacity: 1; }
+      86.429% { left: 357.0px; top: 523.0px; width: 1272.0px; height: 68.0px; opacity: 0; }
+      100% { left: 357.0px; top: 523.0px; width: 1272.0px; height: 68.0px; opacity: 0; }
+    }
+    .cursor-wrap { animation: k9kursorius 14s linear 0s both; }
+    @keyframes k9kursorius {
+      0% { transform: translate(1246.0px, 777.0px); }
+      10% { transform: translate(1246.0px, 777.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      14.286% { transform: translate(1580.0px, 527.5px); }
+      25.714% { transform: translate(1580.0px, 527.5px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      31.429% { transform: translate(553.0px, 237.0px); }
+      47.143% { transform: translate(553.0px, 237.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      52.857% { transform: translate(577.3px, 237.0px); }
+      68.571% { transform: translate(577.3px, 237.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      72.857% { transform: translate(881.0px, 558.0px); }
+      84.286% { transform: translate(881.0px, 558.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      90% { transform: translate(1246.0px, 837.0px); }
+      100% { transform: translate(1246.0px, 837.0px); }
+    }
+    .rp1 { left: 1584.0px; top: 530.5px; animation: ratilas 0.6s ease-out 2.6s forwards; }
+    .rp2 { left: 557.0px; top: 240.0px; animation: ratilas 0.6s ease-out 5.9s forwards; }
+    .rp3 { left: 581.3px; top: 240.0px; animation: ratilas 0.6s ease-out 9s forwards; }
+    @keyframes ratilas { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    /* Ekranai: sąrašas → medis → forma „Pagrindinis“ → „Parinktys“ */
+    .scr1 { animation: k9sarasas 14s linear 0s both; }
+    @keyframes k9sarasas {
+      0% { opacity: 1; }
+      19.286% { opacity: 1; }
+      21.429% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .scr2 { animation: k9medis 14s linear 0s both; }
+    @keyframes k9medis {
+      0% { opacity: 0; }
+      19.286% { opacity: 0; }
+      21.429% { opacity: 1; }
+      42.857% { opacity: 1; }
+      45% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .scr3 { animation: k9forma 14s linear 0s both; }
+    @keyframes k9forma {
+      0% { opacity: 0; }
+      42.857% { opacity: 0; }
+      45% { opacity: 1; }
+      65% { opacity: 1; }
+      66.429% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .scr4 { animation: k9parinktys 14s linear 0s both; }
+    @keyframes k9parinktys {
+      0% { opacity: 0; }
+      65% { opacity: 0; }
+      66.429% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+    .caret { animation: k9caret 14s linear 0s both; }
+    @keyframes k9caret {
+      0% { opacity: 0; }
+      67.143% { opacity: 0; }
+      67.5% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+  `,
+  '07-fontawesome-kodas': `
+    .spot { animation: k10spot 15s linear 0s both; }
+    @keyframes k10spot {
+      0% { left: 380.0px; top: 97.0px; width: 920.0px; height: 86.0px; opacity: 0; }
+      9.333% { left: 380.0px; top: 97.0px; width: 920.0px; height: 86.0px; opacity: 0; }
+      12% { left: 380.0px; top: 97.0px; width: 920.0px; height: 86.0px; opacity: 1; }
+      33.333% { left: 380.0px; top: 97.0px; width: 920.0px; height: 86.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      36.667% { left: 497.0px; top: 193.0px; width: 230.0px; height: 144.0px; opacity: 1; }
+      41.333% { left: 497.0px; top: 193.0px; width: 230.0px; height: 144.0px; opacity: 1; }
+      43.333% { left: 497.0px; top: 193.0px; width: 230.0px; height: 144.0px; opacity: 0; }
+      56% { left: 591.9px; top: 169.0px; width: 129.9px; height: 60.0px; opacity: 0; }
+      58.667% { left: 591.9px; top: 169.0px; width: 129.9px; height: 60.0px; opacity: 1; }
+      64% { left: 591.9px; top: 169.0px; width: 129.9px; height: 60.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      67.333% { left: 655.0px; top: 288.0px; width: 702.0px; height: 137.6px; opacity: 1; }
+      77.333% { left: 655.0px; top: 288.0px; width: 702.0px; height: 137.6px; opacity: 1; }
+      80.667% { left: 655.0px; top: 288.0px; width: 702.0px; height: 137.6px; opacity: 0; }
+      100% { left: 655.0px; top: 288.0px; width: 702.0px; height: 137.6px; opacity: 0; }
+    }
+    .cursor-wrap { animation: k10kursorius 15s linear 0s both; }
+    @keyframes k10kursorius {
+      0% { transform: translate(1246.0px, 817.0px); }
+      9.333% { transform: translate(1246.0px, 817.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      13.333% { transform: translate(806.0px, 137.0px); }
+      30.667% { transform: translate(806.0px, 137.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      34.667% { transform: translate(608.0px, 262.0px); }
+      56% { transform: translate(608.0px, 262.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      59.333% { transform: translate(652.9px, 196.0px); }
+      66.667% { transform: translate(652.9px, 196.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      70.667% { transform: translate(1299.0px, 335.0px); }
+      100% { transform: translate(1299.0px, 335.0px); }
+    }
+    .rp1 { left: 612.0px; top: 265.0px; animation: ratilas 0.6s ease-out 6.2s forwards; }
+    @keyframes ratilas { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    /* Paieška: žymeklis, placeholderis dingsta, „list“ po raidę, tinklelis persitvarko */
+    .caret { animation: k10caret 15s linear 0s both; }
+    @keyframes k10caret {
+      0% { opacity: 0; }
+      10.667% { opacity: 0; }
+      11% { opacity: 1; }
+      41.333% { opacity: 1; }
+      41.667% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .ph { animation: k10ph 15s linear 0s both; }
+    @keyframes k10ph {
+      0% { opacity: 1; }
+      18.333% { opacity: 1; }
+      18.667% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    @keyframes k10raide { from { max-width: 0; } to { max-width: 1.2em; } }
+    .l1 { animation: k10raide 0.01s step-end 2.80s both; }
+    .l2 { animation: k10raide 0.01s step-end 3.00s both; }
+    .l3 { animation: k10raide 0.01s step-end 3.20s both; }
+    .l4 { animation: k10raide 0.01s step-end 3.40s both; }
+    .grid-all { animation: k10visi 15s linear 0s both; }
+    @keyframes k10visi {
+      0% { opacity: 1; }
+      23.333% { opacity: 1; }
+      25.333% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .grid-list { animation: k10list 15s linear 0s both; }
+    @keyframes k10list {
+      0% { opacity: 0; }
+      24% { opacity: 0; }
+      26.333% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+    /* Ikonos langas; „Light“ pasižymi; kodo blokas pašviesėja ties „patvirtinimas“ */
+    .ov1 { animation: k10ov 15s linear 0s both; }
+    @keyframes k10ov {
+      0% { opacity: 0; }
+      42% { opacity: 0; }
+      44% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+    .fa-modal { animation: k10modal 15s linear 0s both; }
+    @keyframes k10modal {
+      0% { opacity: 0; transform: scale(.94); }
+      42% { opacity: 0; transform: scale(.94); animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      44.667% { opacity: 1; transform: scale(1); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .chip-light { font-weight: 500; animation: k10chip 15s linear 0s both; }
+    @keyframes k10chip {
+      0% { background: #eef1f6; border-color: transparent; }
+      59.667% { background: #eef1f6; border-color: transparent; }
+      61% { background: #fff; border-color: #183153; }
+      100% { background: #fff; border-color: #183153; }
+    }
+    @keyframes k10flash { 0% { background: #2c3e5c; } 40% { background: #4f6a9a; } 100% { background: #2c3e5c; } }
+    .code-box { animation: k10flash 0.7s ease-out 10.9s both; }
+  `,
+  '07-ikonos-klase': `
+    .stage { animation: k11kamera 16s linear 0s both; }
+    @keyframes k11kamera {
+      0% { transform: scale(1); }
+      6.25% { transform: scale(1); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      10% { transform: scale(1.3); }
+      53.75% { transform: scale(1.3); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      58.75% { transform: scale(1); }
+      100% { transform: scale(1); }
+    }
+    .spot { animation: k11spot 16s linear 0s both; }
+    @keyframes k11spot {
+      0% { left: 357.0px; top: 523.0px; width: 1272.0px; height: 68.0px; opacity: 0; }
+      1.875% { left: 357.0px; top: 523.0px; width: 1272.0px; height: 68.0px; opacity: 0; }
+      4.375% { left: 357.0px; top: 523.0px; width: 1272.0px; height: 68.0px; opacity: 1; }
+      56.25% { left: 357.0px; top: 523.0px; width: 1272.0px; height: 68.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      59.375% { left: 357.0px; top: 807.0px; width: 134.3px; height: 50.0px; opacity: 1; }
+      65.625% { left: 357.0px; top: 807.0px; width: 134.3px; height: 50.0px; opacity: 1; }
+      67.5% { left: 357.0px; top: 807.0px; width: 134.3px; height: 50.0px; opacity: 0; }
+      75% { left: 1203.0px; top: 281.0px; width: 432.0px; height: 77.0px; opacity: 0; }
+      77.5% { left: 1203.0px; top: 281.0px; width: 432.0px; height: 77.0px; opacity: 1; }
+      83.75% { left: 1203.0px; top: 281.0px; width: 432.0px; height: 77.0px; opacity: 1; }
+      86.875% { left: 1203.0px; top: 281.0px; width: 432.0px; height: 77.0px; opacity: 0; }
+      100% { left: 1203.0px; top: 281.0px; width: 432.0px; height: 77.0px; opacity: 0; }
+    }
+    .cursor-wrap { animation: k11kursorius 16s linear 0s both; }
+    @keyframes k11kursorius {
+      0% { transform: translate(1246.0px, 777.0px); }
+      8.75% { transform: translate(1246.0px, 777.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      12.5% { transform: translate(921.0px, 558.0px); }
+      56.875% { transform: translate(921.0px, 558.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      60.625% { transform: translate(420.1px, 829.0px); }
+      72.5% { transform: translate(420.1px, 829.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      77.5% { transform: translate(996.0px, 817.0px); }
+      100% { transform: translate(996.0px, 817.0px); }
+    }
+    .rp1 { left: 424.1px; top: 832.0px; animation: ratilas 0.6s ease-out 10.5s forwards; }
+    @keyframes ratilas { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    /* Laukas „Class“: įklijuojama iš karto, HTML dalys pasižymi mėlynai ir dingsta, lieka „fal fa-list-ol“ */
+    .caret { animation: k11caret 16s linear 0s both; }
+    @keyframes k11caret {
+      0% { opacity: 0; }
+      10% { opacity: 0; }
+      10.313% { opacity: 1; }
+      65% { opacity: 1; }
+      65.313% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .code .keep { animation: k11keep 16s linear 0s both; }
+    @keyframes k11keep {
+      0% { max-width: 0; }
+      16.25% { max-width: 0; }
+      16.313% { max-width: 20em; }
+      100% { max-width: 20em; }
+    }
+    .code .sel { animation: k11sel 16s linear 0s both; }
+    @keyframes k11sel {
+      0% { max-width: 0; background: transparent; }
+      16.25% { max-width: 0; background: transparent; }
+      16.313% { max-width: 12em; background: transparent; }
+      31.25% { max-width: 12em; background: transparent; }
+      33.125% { max-width: 12em; background: #b4d7ff; }
+      45% { max-width: 12em; background: #b4d7ff; }
+      45.063% { max-width: 0; background: #b4d7ff; }
+      100% { max-width: 0; background: #b4d7ff; }
+    }
+    /* Po „Atnaujinti“ — kryžminis perėjimas į svetainę; ikonėlė išnyra ties „patvirtinimas“ */
+    .scr1 { animation: k11tvs 16s linear 0s both; }
+    @keyframes k11tvs {
+      0% { opacity: 1; }
+      66.25% { opacity: 1; }
+      68.75% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .scr2 { animation: k11svetaine 16s linear 0s both; }
+    @keyframes k11svetaine {
+      0% { opacity: 0; }
+      66.25% { opacity: 0; }
+      68.75% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+    .ico-new { animation: fadeUpLight 0.4s cubic-bezier(0.16, 1, 0.3, 1) 12.2s both; }
+    .menu-new { animation: blyksnis 0.7s ease-out 12.4s both; }
+    @keyframes blyksnis { 0% { box-shadow: 0 0 0 0 rgba(71,209,101,0); } 30% { box-shadow: 0 0 0 5px rgba(71,209,101,.9); } 100% { box-shadow: 0 0 0 0 rgba(71,209,101,0); } }
+  `,
+  '08-keturios-ikonos': `
+    .stage { animation: k12kamera 15s linear 0s both; }
+    @keyframes k12kamera {
+      0% { transform: scale(1); }
+      5.333% { transform: scale(1); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      9.333% { transform: scale(1.3); }
+      21.333% { transform: scale(1.3); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      26.667% { transform: scale(1); }
+      100% { transform: scale(1); }
+    }
+    .spot { animation: k12spot 15s linear 0s both; }
+    @keyframes k12spot {
+      0% { left: 137.0px; top: 13.3px; width: 330.0px; height: 50.0px; opacity: 0; }
+      8% { left: 137.0px; top: 13.3px; width: 330.0px; height: 50.0px; opacity: 0; }
+      10.667% { left: 137.0px; top: 13.3px; width: 330.0px; height: 50.0px; opacity: 1; }
+      17.333% { left: 137.0px; top: 13.3px; width: 330.0px; height: 50.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      19.333% { left: 137.0px; top: 13.3px; width: 360.0px; height: 195.4px; opacity: 1; }
+      20% { left: 137.0px; top: 13.3px; width: 360.0px; height: 195.4px; opacity: 1; }
+      22% { left: 137.0px; top: 13.3px; width: 360.0px; height: 195.4px; opacity: 0; }
+      24.667% { left: 331.0px; top: 342.0px; width: 1324.0px; height: 82.0px; opacity: 0; }
+      27.333% { left: 331.0px; top: 342.0px; width: 1324.0px; height: 82.0px; opacity: 1; }
+      30.667% { left: 331.0px; top: 342.0px; width: 1324.0px; height: 82.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      33.333% { left: 1530.9px; top: 358.5px; width: 106.1px; height: 50.0px; opacity: 1; }
+      38.667% { left: 1530.9px; top: 358.5px; width: 106.1px; height: 50.0px; opacity: 1; }
+      40.667% { left: 1530.9px; top: 358.5px; width: 106.1px; height: 50.0px; opacity: 0; }
+      58% { left: 327.0px; top: 202.0px; width: 1332.0px; height: 271.0px; opacity: 0; }
+      60.667% { left: 327.0px; top: 202.0px; width: 1332.0px; height: 271.0px; opacity: 1; }
+      73.333% { left: 327.0px; top: 202.0px; width: 1332.0px; height: 271.0px; opacity: 1; }
+      76.667% { left: 327.0px; top: 202.0px; width: 1332.0px; height: 271.0px; opacity: 0; }
+      100% { left: 327.0px; top: 202.0px; width: 1332.0px; height: 271.0px; opacity: 0; }
+    }
+    .cursor-wrap { animation: k12kursorius 15s linear 0s both; }
+    @keyframes k12kursorius {
+      0% { transform: translate(1246.0px, 777.0px); }
+      6.667% { transform: translate(1246.0px, 777.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      10.667% { transform: translate(393.0px, 35.5px); }
+      16.667% { transform: translate(393.0px, 35.5px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      19.333% { transform: translate(204.0px, 138.7px); }
+      28% { transform: translate(204.0px, 138.7px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      32.667% { transform: translate(1580.0px, 380.5px); }
+      44% { transform: translate(1580.0px, 380.5px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      49.333% { transform: translate(1246.0px, 697.0px); }
+      100% { transform: translate(1246.0px, 697.0px); }
+    }
+    .rp1 { left: 208.0px; top: 141.7px; animation: ratilas 0.6s ease-out 3s forwards; }
+    .rp2 { left: 1584.0px; top: 383.5px; animation: ratilas 0.6s ease-out 5.8s forwards; }
+    @keyframes ratilas { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    /* Paieška „navi“ ir išskleidžiamas sąrašas */
+    .caret { animation: k12caret 15s linear 0s both; }
+    @keyframes k12caret {
+      0% { opacity: 0; }
+      8.667% { opacity: 0; }
+      9% { opacity: 1; }
+      20% { opacity: 1; }
+      20.333% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .ph { animation: k12ph 0.05s linear 1.75s both; }
+    @keyframes k12ph { from { opacity: 1; } to { opacity: 0; } }
+    @keyframes k12raide { from { max-width: 0; } to { max-width: 1.2em; } }
+    .l1 { animation: k12raide 0.01s step-end 1.80s both; }
+    .l2 { animation: k12raide 0.01s step-end 2.00s both; }
+    .l3 { animation: k12raide 0.01s step-end 2.20s both; }
+    .l4 { animation: k12raide 0.01s step-end 2.40s both; }
+    .dd { animation: k12dd 15s linear 0s both; }
+    @keyframes k12dd {
+      0% { opacity: 0; transform: translateY(8px); }
+      16.667% { opacity: 0; transform: translateY(8px); animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      18.667% { opacity: 1; transform: translateY(0); }
+      20% { opacity: 1; transform: translateY(0); }
+      22% { opacity: 0; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(0); }
+    }
+    /* Ekranai: darbalaukis → grupių sąrašas (įslenka) → medis „4 ikonos“ */
+    .scr1 { animation: k12dash 15s linear 0s both; }
+    @keyframes k12dash {
+      0% { opacity: 1; }
+      20.667% { opacity: 1; }
+      23.333% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .scr2 { animation: k12sarasas 15s linear 0s both; }
+    @keyframes k12sarasas {
+      0% { opacity: 0; transform: translateX(60px); }
+      20.667% { opacity: 0; transform: translateX(60px); animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      24% { opacity: 1; transform: translateX(0); }
+      39.333% { opacity: 1; transform: translateX(0); }
+      41.333% { opacity: 0; transform: translateX(0); }
+      100% { opacity: 0; transform: translateX(0); }
+    }
+    .scr3 { animation: k12medis 15s linear 0s both; }
+    @keyframes k12medis {
+      0% { opacity: 0; }
+      39.333% { opacity: 0; }
+      41.333% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+    .scr3 .tvs-node:nth-child(1) { animation: fadeUpLight 0.35s cubic-bezier(0.16, 1, 0.3, 1) 6.00s both; }
+    .scr3 .tvs-node:nth-child(2) { animation: fadeUpLight 0.35s cubic-bezier(0.16, 1, 0.3, 1) 6.15s both; }
+    .scr3 .tvs-node:nth-child(3) { animation: fadeUpLight 0.35s cubic-bezier(0.16, 1, 0.3, 1) 6.30s both; }
+    .scr3 .tvs-node:nth-child(4) { animation: fadeUpLight 0.35s cubic-bezier(0.16, 1, 0.3, 1) 6.45s both; }
+  `,
+  '08-dienyno-adresas': `
+    .stage { animation: k13kamera 14s linear 0s both; }
+    @keyframes k13kamera {
+      0% { transform: scale(1); }
+      30.714% { transform: scale(1); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      35% { transform: scale(1.3); }
+      58.571% { transform: scale(1.3); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      62.857% { transform: scale(1); }
+      100% { transform: scale(1); }
+    }
+    .spot { animation: k13spot 14s linear 0s both; }
+    @keyframes k13spot {
+      0% { left: 331.0px; top: 206.0px; width: 1324.0px; height: 68.0px; opacity: 0; }
+      2.143% { left: 331.0px; top: 206.0px; width: 1324.0px; height: 68.0px; opacity: 0; }
+      5% { left: 331.0px; top: 206.0px; width: 1324.0px; height: 68.0px; opacity: 1; }
+      17.143% { left: 331.0px; top: 206.0px; width: 1324.0px; height: 68.0px; opacity: 1; }
+      19.286% { left: 331.0px; top: 206.0px; width: 1324.0px; height: 68.0px; opacity: 0; }
+      33.571% { left: 357.0px; top: 523.0px; width: 1272.0px; height: 68.0px; opacity: 0; }
+      36.429% { left: 357.0px; top: 523.0px; width: 1272.0px; height: 68.0px; opacity: 1; }
+      62.857% { left: 357.0px; top: 523.0px; width: 1272.0px; height: 68.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      66.429% { left: 357.0px; top: 865.0px; width: 134.3px; height: 50.0px; opacity: 1; }
+      70% { left: 357.0px; top: 865.0px; width: 134.3px; height: 50.0px; opacity: 1; }
+      72.143% { left: 357.0px; top: 865.0px; width: 134.3px; height: 50.0px; opacity: 0; }
+      100% { left: 357.0px; top: 865.0px; width: 134.3px; height: 50.0px; opacity: 0; }
+    }
+    .cursor-wrap { animation: k13kursorius 14s linear 0s both; }
+    @keyframes k13kursorius {
+      0% { transform: translate(1246.0px, 777.0px); }
+      8.571% { transform: translate(1246.0px, 777.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      12.857% { transform: translate(633.0px, 237.0px); }
+      24.286% { transform: translate(633.0px, 237.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      28.571% { transform: translate(1361.0px, 558.0px); }
+      60% { transform: translate(1361.0px, 558.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      64.286% { transform: translate(420.1px, 887.0px); }
+      78.571% { transform: translate(420.1px, 887.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      84.286% { transform: translate(1246.0px, 837.0px); }
+      100% { transform: translate(1246.0px, 837.0px); }
+    }
+    .rp1 { left: 637.0px; top: 240.0px; animation: ratilas 0.6s ease-out 2.4s forwards; }
+    .rp2 { left: 424.1px; top: 890.0px; animation: ratilas 0.6s ease-out 9.8s forwards; }
+    @keyframes ratilas { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    .scr1 { animation: k13medis 14s linear 0s both; }
+    @keyframes k13medis {
+      0% { opacity: 1; }
+      17.857% { opacity: 1; }
+      20% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .scr2 { animation: k13forma 14s linear 0s both; }
+    @keyframes k13forma {
+      0% { opacity: 0; }
+      17.857% { opacity: 0; }
+      20% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+    /* „URL“: senas adresas pasižymi, dingsta, naujas po raidę; po „Atnaujinti“ — žalias blyksnis */
+    .caret { animation: k13caret 14s linear 0s both; }
+    @keyframes k13caret {
+      0% { opacity: 0; }
+      35% { opacity: 0; }
+      35.357% { opacity: 1; }
+      70% { opacity: 1; }
+      70.357% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .old { animation: k13senas 14s linear 0s both; }
+    @keyframes k13senas {
+      0% { max-width: 30em; background: transparent; }
+      35% { max-width: 30em; background: transparent; }
+      37.143% { max-width: 30em; background: #b4d7ff; }
+      43.571% { max-width: 30em; background: #b4d7ff; }
+      43.643% { max-width: 0; background: #b4d7ff; }
+      100% { max-width: 0; background: #b4d7ff; }
+    }
+    @keyframes k13raide { from { max-width: 0; } to { max-width: 1.2em; } }
+    .l1 { animation: k13raide 0.01s step-end 6.10s both; }
+    .l2 { animation: k13raide 0.01s step-end 6.17s both; }
+    .l3 { animation: k13raide 0.01s step-end 6.24s both; }
+    .l4 { animation: k13raide 0.01s step-end 6.31s both; }
+    .l5 { animation: k13raide 0.01s step-end 6.38s both; }
+    .l6 { animation: k13raide 0.01s step-end 6.45s both; }
+    .l7 { animation: k13raide 0.01s step-end 6.52s both; }
+    .l8 { animation: k13raide 0.01s step-end 6.59s both; }
+    .l9 { animation: k13raide 0.01s step-end 6.66s both; }
+    .l10 { animation: k13raide 0.01s step-end 6.73s both; }
+    .l11 { animation: k13raide 0.01s step-end 6.80s both; }
+    .l12 { animation: k13raide 0.01s step-end 6.87s both; }
+    .l13 { animation: k13raide 0.01s step-end 6.94s both; }
+    .l14 { animation: k13raide 0.01s step-end 7.01s both; }
+    .l15 { animation: k13raide 0.01s step-end 7.08s both; }
+    .l16 { animation: k13raide 0.01s step-end 7.15s both; }
+    .l17 { animation: k13raide 0.01s step-end 7.22s both; }
+    .l18 { animation: k13raide 0.01s step-end 7.29s both; }
+    .l19 { animation: k13raide 0.01s step-end 7.36s both; }
+    .l20 { animation: k13raide 0.01s step-end 7.43s both; }
+    .l21 { animation: k13raide 0.01s step-end 7.50s both; }
+    .l22 { animation: k13raide 0.01s step-end 7.57s both; }
+    .l23 { animation: k13raide 0.01s step-end 7.64s both; }
+    .l24 { animation: k13raide 0.01s step-end 7.71s both; }
+    .l25 { animation: k13raide 0.01s step-end 7.78s both; }
+    .url-in { animation: blyksnis 0.7s ease-out 10.2s both; }
     @keyframes blyksnis { 0% { box-shadow: 0 0 0 0 rgba(71,209,101,0); } 30% { box-shadow: 0 0 0 5px rgba(71,209,101,.9); } 100% { box-shadow: 0 0 0 0 rgba(71,209,101,0); } }
   `,
   // <<< NAVIGACIJU-VALDYMAS

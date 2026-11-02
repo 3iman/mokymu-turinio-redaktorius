@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* Kadras 13 — „Pakeičiate el. dienyno adresą“: medis → forma; lauke „URL“ senas adresas pažymimas ir pakeičiamas nauju; galutinė — forma su nauju adresu.
+     Generuoja sablonai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 0 0; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .caret { opacity: 0; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none;
+                 transform: translate(1250px, 780px); }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  .stage { transform-origin: 30% 50%; }
+  .scr1 { opacity: 0; }
+  .old { display: inline-block; max-width: 0; overflow: hidden; white-space: pre; vertical-align: top; line-height: 1.2; }   /* galutinė: senas adresas ištrintas */
+  .old span { padding: 2px 0; }
+  .url-in { position: relative; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder">{{search_ph}}</div></div>
+        <div class="tvs-side"><i></i><i></i><i class="is-bars is-on"></i><i></i><i></i><i></i></div>
+        <div class="tvs-subnav"><span>{{sub_menu}}</span><span class="is-on">{{sub_links}}</span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">{{crumb_four}}</div>
+          <div><span class="tvs-btn is-small"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>{{btn_new_link}}</span></div>
+          <div class="tvs-tree">
+            <div class="tvs-node" data-t="k1"><div class="tvs-node-handle"></div>{{k_1}}<span class="tvs-tag">{{t_url}}</span><svg class="tvs-ext" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3h7v7M21 3l-9 9"/><path d="M19 14v5a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h5"/></svg></div>
+            <div class="tvs-node" data-t="k2"><div class="tvs-node-handle"></div>{{k_2}}<span class="tvs-tag">{{t_url}}</span></div>
+            <div class="tvs-node" data-t="k3"><div class="tvs-node-handle"></div>{{k_3}}<span class="tvs-tag">{{t_url}}</span></div>
+            <div class="tvs-node" data-t="k4"><div class="tvs-node-handle"></div>{{k_4}}<span class="tvs-tag">{{t_url}}</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="scr scr2 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder">{{search_ph}}</div></div>
+        <div class="tvs-side"><i></i><i></i><i class="is-bars is-on"></i><i></i><i></i><i></i></div>
+        <div class="tvs-subnav"><span>{{sub_menu}}</span><span class="is-on">{{sub_links}}</span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">{{crumb_edit}}</div>
+          <div><span class="tvs-btn is-small"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>{{btn_new_link}}</span></div>
+          <div class="tvs-tabs"><div class="tvs-tab is-on">{{tab_main}}</div><div class="tvs-tab">{{tab_opts}}</div></div>
+          <div class="tvs-form">
+            <div class="tvs-field"><div class="tvs-label">{{f_title}}<span class="tvs-req">*</span></div><div class="tvs-help">{{f_title_help}}</div><div class="tvs-input is-value">{{v_title}}</div></div>
+            <div class="tvs-field" data-t="furl"><div class="tvs-label">{{f_url}}<span class="tvs-req">*</span></div><div class="tvs-help">{{f_url_help}}</div><div class="tvs-input is-value is-focus url-in" data-t="urlin"><span class="old"><span>{{v_url_old}}</span></span><span class="tvs-typed typed"><span class="l l1">{{u_1}}</span><span class="l l2">{{u_2}}</span><span class="l l3">{{u_3}}</span><span class="l l4">{{u_4}}</span><span class="l l5">{{u_5}}</span><span class="l l6">{{u_6}}</span><span class="l l7">{{u_7}}</span><span class="l l8">{{u_8}}</span><span class="l l9">{{u_9}}</span><span class="l l10">{{u_10}}</span><span class="l l11">{{u_11}}</span><span class="l l12">{{u_12}}</span><span class="l l13">{{u_13}}</span><span class="l l14">{{u_14}}</span><span class="l l15">{{u_15}}</span><span class="l l16">{{u_16}}</span><span class="l l17">{{u_17}}</span><span class="l l18">{{u_18}}</span><span class="l l19">{{u_19}}</span><span class="l l20">{{u_20}}</span><span class="l l21">{{u_21}}</span><span class="l l22">{{u_22}}</span><span class="l l23">{{u_23}}</span><span class="l l24">{{u_24}}</span><span class="l l25">{{u_25}}</span></span><span class="tvs-caret caret"></span></div></div>
+            <div class="tvs-field"><div class="tvs-label">{{f_desc}}</div><div class="tvs-help">{{f_desc_help}}</div><div class="tvs-input is-area"></div></div>
+          </div>
+          <div class="tvs-form-foot"><span class="tvs-btn is-tiny" data-t="update"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>{{btn_update}}</span><span class="tvs-btn is-tiny"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>{{btn_save_exit}}</span><span class="tvs-sp"></span><span class="tvs-btn is-tiny is-grey-dark">{{btn_cancel}}</span></div>
+        </div>
+      </div>
+      <div class="spot"></div>
+      <div class="tvs-ripple rp rp1"></div>
+      <div class="tvs-ripple rp rp2"></div>
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

@@ -1,10 +1,148 @@
 {
   "pamoka": "navigaciju-valdymas",
   "lang": "lt",
-  "sugeneruota": "2026-11-02T20:51:42.352Z",
+  "sugeneruota": "2026-11-02T21:25:50.638Z",
   "balso_stiprinimas_db": 5.9,
   "muzika": false,
   "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_705_01_1",
+      "failas": "01-navigaciju-grupes",
+      "pavadinimas": "Grupės jau sukurtos",
+      "trukme_s": 13,
+      "mp4": "ep_705_01_1.mp4",
+      "vtt": "ep_705_01_1.vtt",
+      "poster": "ep_705_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.16,
+          "tekstas": "Navigacijų sąraše grupės jau sukurtos."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 8.4,
+          "tekstas": "Prie kiekvienos matote aprašymą, kurioje vietoje ji rodoma."
+        },
+        {
+          "nuo_s": 9.2,
+          "iki_s": 11.45,
+          "tekstas": "Jums belieka pasirinkti reikiamą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_705_02_1",
+      "failas": "02-nauja-grupe",
+      "pavadinimas": "Sukuriate naują grupę",
+      "trukme_s": 14,
+      "mp4": "ep_705_02_1.mp4",
+      "vtt": "ep_705_02_1.vtt",
+      "poster": "ep_705_02_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.93,
+          "tekstas": "Naują grupę pradedate mygtuku „Naujas meniu“."
+        },
+        {
+          "nuo_s": 5.1,
+          "iki_s": 8.47,
+          "tekstas": "Lauke „Vardas“ įrašote grupės pavadinimą."
+        },
+        {
+          "nuo_s": 8.5,
+          "iki_s": 12.92,
+          "tekstas": "Laukas „Slug“ užsipildo pats – patikrinate ir išsaugote."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.5,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 10.9,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 11.4,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_705_03_1",
+      "failas": "03-isorine-nuoroda",
+      "pavadinimas": "Atpažįstate išorinę nuorodą",
+      "trukme_s": 11,
+      "mp4": "ep_705_03_1.mp4",
+      "vtt": "ep_705_03_1.vtt",
+      "poster": "ep_705_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.84,
+          "tekstas": "Prie nuorodos matote raudoną strėlytę."
+        },
+        {
+          "nuo_s": 4.6,
+          "iki_s": 6.73,
+          "tekstas": "Ji reiškia išorinę nuorodą."
+        },
+        {
+          "nuo_s": 7,
+          "iki_s": 9.93,
+          "tekstas": "Lankytoją ji išves už svetainės ribų."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "ep_705_04_1",
+      "failas": "04-nuorodos-tipas",
+      "pavadinimas": "Pasirenkate nuorodos tipą",
+      "trukme_s": 12,
+      "mp4": "ep_705_04_1.mp4",
+      "vtt": "ep_705_04_1.vtt",
+      "poster": "ep_705_04_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.58,
+          "tekstas": "Kurdami nuorodą pirmiausia pasirenkate jos tipą."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 8.22,
+          "tekstas": "„Page“ priskiria puslapį iš svetainės medžio."
+        },
+        {
+          "nuo_s": 8.9,
+          "iki_s": 11.87,
+          "tekstas": "„URL“ veda į išorinę nuorodą."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 10.3,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
     {
       "kadras": 5,
       "epizodas": "ep_705_05_4",
@@ -134,6 +272,253 @@
         },
         {
           "ties_s": 13.7,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "ep_705_06_1",
+      "failas": "06-skirtingi-pavadinimai",
+      "pavadinimas": "Meniu vardas gali skirtis",
+      "trukme_s": 13,
+      "mp4": "ep_705_06_1.mp4",
+      "vtt": "ep_705_06_1.vtt",
+      "poster": "ep_705_06_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.97,
+          "tekstas": "Lauke „Title“ įrašote, kaip nuoroda vadinsis meniu."
+        },
+        {
+          "nuo_s": 5.4,
+          "iki_s": 8.09,
+          "tekstas": "Priskirtas puslapis gali vadintis kitaip."
+        },
+        {
+          "nuo_s": 8.8,
+          "iki_s": 11.29,
+          "tekstas": "Meniu lieka trumpas pavadinimas."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 9,
+      "epizodas": "ep_705_07_1",
+      "failas": "07-juodojo-meniu-parinktys",
+      "pavadinimas": "Atidarote nuorodos parinktis",
+      "trukme_s": 14,
+      "mp4": "ep_705_07_1.mp4",
+      "vtt": "ep_705_07_1.vtt",
+      "poster": "ep_705_07_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.29,
+          "tekstas": "Prie grupės „Black“ spaudžiate „Linkai“."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 7.67,
+          "tekstas": "Atidarote nuorodą, kuriai norite ikonėlės."
+        },
+        {
+          "nuo_s": 8.2,
+          "iki_s": 12.29,
+          "tekstas": "Skirtuke „Parinktys“ laukas „Class“ kol kas tuščias."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.9,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 9,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 10,
+      "epizodas": "ep_705_07_2",
+      "failas": "07-fontawesome-kodas",
+      "pavadinimas": "Nukopijuojate ikonėlės kodą",
+      "trukme_s": 15,
+      "mp4": "ep_705_07_2.mp4",
+      "vtt": "ep_705_07_2.vtt",
+      "poster": "ep_705_07_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.61,
+          "tekstas": "Fontawesome paieškoje įrašote ikonos vardą."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 7.09,
+          "tekstas": "Pasirenkate tinkamą ikoną."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 12.57,
+          "tekstas": "Stilių renkatės „Light“ ir nukopijuojate HTML kodą."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 6.2,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 11,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 11,
+      "epizodas": "ep_705_07_3",
+      "failas": "07-ikonos-klase",
+      "pavadinimas": "Įklijuojate ikonėlės klasę",
+      "trukme_s": 16,
+      "mp4": "ep_705_07_3.mp4",
+      "vtt": "ep_705_07_3.vtt",
+      "poster": "ep_705_07_3.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.61,
+          "tekstas": "Lauke „Class“ įklijuojate nukopijuotą kodą."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 8.8,
+          "tekstas": "Paliekate tik klasę – HTML dalis ištrinate."
+        },
+        {
+          "nuo_s": 9.1,
+          "iki_s": 12.97,
+          "tekstas": "Spaudžiate „Atnaujinti“ ir ikonėlė atsiranda meniu."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 7.2,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 10.5,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 12.3,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 12,
+      "epizodas": "ep_705_08_1",
+      "failas": "08-keturios-ikonos",
+      "pavadinimas": "Atidarote keturių ikonų nuorodas",
+      "trukme_s": 15,
+      "mp4": "ep_705_08_1.mp4",
+      "vtt": "ep_705_08_1.vtt",
+      "poster": "ep_705_08_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.01,
+          "tekstas": "Paieškoje pasirenkate „Navigacijos“."
+        },
+        {
+          "nuo_s": 4.6,
+          "iki_s": 8.37,
+          "tekstas": "Prie grupės „4 ikonos“ spaudžiate „Linkai“."
+        },
+        {
+          "nuo_s": 8.7,
+          "iki_s": 11.75,
+          "tekstas": "Matote keturias titulinio puslapio nuorodas."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 1.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 3,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.8,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 13,
+      "epizodas": "ep_705_08_2",
+      "failas": "08-dienyno-adresas",
+      "pavadinimas": "Pakeičiate el. dienyno adresą",
+      "trukme_s": 14,
+      "mp4": "ep_705_08_2.mp4",
+      "vtt": "ep_705_08_2.vtt",
+      "poster": "ep_705_08_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.45,
+          "tekstas": "Sąraše spaudžiate „Elektroninis dienynas“."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 8.67,
+          "tekstas": "Lauke „URL“ įrašote naują dienyno adresą."
+        },
+        {
+          "nuo_s": 8.8,
+          "iki_s": 12.41,
+          "tekstas": "Spaudžiate „Atnaujinti“ – nuoroda išsaugota."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.1,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 9.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 10.2,
           "garsas": "patvirtinimas"
         }
       ],

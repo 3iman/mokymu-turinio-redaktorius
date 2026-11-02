@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* Kadras 11 — „Įklijuojate ikonėlės klasę“: TVS „Parinktys“ → svetainės titulinis su juoduoju meniu; galutinė — meniu su ikonėle.
+     Generuoja sablonai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 0 0; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .caret { opacity: 0; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none;
+                 transform: translate(1250px, 780px); }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  .stage { transform-origin: 30% 42%; }
+  .scr1 { opacity: 0; }
+  .code .sel { display: inline-block; max-width: 0; overflow: hidden; white-space: pre; vertical-align: top; }   /* galutinė: HTML dalys ištrintos */
+  .code .keep { display: inline-block; max-width: 20em; overflow: hidden; white-space: pre; vertical-align: top; }
+  .code .sel span { padding: 2px 0; }
+  .ico-new { opacity: 1; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder">{{search_ph}}</div></div>
+        <div class="tvs-side"><i></i><i></i><i class="is-bars is-on"></i><i></i><i></i><i></i></div>
+        <div class="tvs-subnav"><span>{{sub_menu}}</span><span class="is-on">{{sub_links}}</span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">{{crumb_edit}}</div>
+          <div><span class="tvs-btn is-small"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>{{btn_new_link}}</span></div>
+          <div class="tvs-tabs"><div class="tvs-tab">{{tab_main}}</div><div class="tvs-tab is-on">{{tab_opts}}</div></div>
+          <div class="tvs-form">
+            <div class="tvs-field"><div class="tvs-label">{{f_target}}<span class="tvs-req">*</span></div><div class="tvs-help">{{f_target_help}}</div><div class="tvs-input is-value">{{v_target}}</div></div>
+            <div class="tvs-field" data-t="fclass"><div class="tvs-label">{{f_class}}</div><div class="tvs-help">{{f_class_help}}</div><div class="tvs-input is-value is-focus" data-t="classin"><span class="code"><span class="sel sel1"><span>{{c_open}}</span></span><span class="keep">{{c_keep}}</span><span class="sel sel2"><span>{{c_close}}</span></span></span><span class="tvs-caret caret"></span></div></div>
+            <div class="tvs-field"><div class="tvs-label">{{f_roles}}</div><div class="tvs-help">{{f_roles_help}}</div><div class="tvs-input"></div></div>
+          </div>
+          <div class="tvs-form-foot"><span class="tvs-btn is-tiny" data-t="update"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>{{btn_update}}</span><span class="tvs-btn is-tiny"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>{{btn_save_exit}}</span><span class="tvs-sp"></span><span class="tvs-btn is-tiny is-grey-dark">{{btn_cancel}}</span></div>
+        </div>
+      </div>
+      <div class="scr scr2 tvs-spage">
+        <div class="tvs-spage-band"></div>
+        <div class="tvs-spage-body">
+          <div><div class="tvs-spage-h">{{site_news}}</div><div class="tvs-spage-cards"><div class="tvs-spage-card"><i></i><b></b><s></s></div><div class="tvs-spage-card"><i></i><b></b><s></s></div><div class="tvs-spage-card"><i></i><b></b><s></s></div></div></div>
+          <div class="tvs-site-menu">
+            <div class="is-head menu-new" data-t="menu1"><span class="ico-new"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6h11M10 12h11M10 18h11"/><path d="M3 4.5l1.5-1v4.5M3 10.5c0-1 2.5-1.3 2.5 0 0 .9-2.5 1.8-2.5 3h2.6M3 15.8c1.6-.6 2.8.4 1.8 1.5 1.3 1 0 2.6-1.9 1.7"/></svg></span>{{s_1}}</div>
+            <div><i></i>{{s_2}}</div>
+            <div><i></i>{{s_3}}</div>
+            <div><i></i>{{s_4}}</div>
+            <div><i></i>{{s_5}}</div>
+          </div>
+        </div>
+      </div>
+      <div class="spot"></div>
+      <div class="tvs-ripple rp rp1"></div>
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

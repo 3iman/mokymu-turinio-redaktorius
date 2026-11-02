@@ -294,6 +294,6 @@
 | 2.4 | garsas | spustelejimas |
 | 4.7 | balsas | Lauke „URL“ įrašote naują dienyno adresą. |
 | 6.1 | garsas | rasymas |
-| 8.4 | balsas | Spaudžiate „Atnaujinti“ – nuoroda išsaugota. |
-| 9.4 | garsas | spustelejimas |
-| 9.8 | garsas | patvirtinimas |
+| 8.8 | balsas | Spaudžiate „Atnaujinti“ – nuoroda išsaugota. |
+| 9.8 | garsas | spustelejimas |
+| 10.2 | garsas | patvirtinimas |

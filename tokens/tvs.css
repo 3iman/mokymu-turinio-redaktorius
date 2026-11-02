@@ -570,3 +570,81 @@
 .tvs-input .tvs-ph { left: 18px; }
 .tvs-typed { color: var(--tvs-text); white-space: pre; line-height: 1.2; }
 .tvs-typed .l { display: inline-block; max-width: 1.2em; overflow: hidden; vertical-align: top; line-height: 1.2; }
+
+/* =====================================================================
+ * 2026-11-02 — „Navigacijų valdymas“ likę kadrai: skirtukai „Visi / Šiukšlės“, teksto laukas,
+ * Fontawesome schema (kadras 834 sc08–sc09, v5.15.4), svetainės puslapis su juoduoju meniu (834 sc10).
+ * ===================================================================== */
+:root {
+  --tvs-fa-ink:    #183153;   /* Fontawesome tamsiai mėlyna (ikonos, kodo blokas) */
+  --tvs-fa-bg:     #f5f6fa;
+  --tvs-fa-card:   #ffffff;
+  --tvs-fa-line:   #e3e6ec;
+  --tvs-fa-sel:    #dfe6f2;   /* pažymėta ikonos kortelė */
+  --tvs-fa-code:   #2c3e5c;
+  --tvs-fa-green:  #5fcf80;   /* kodo tekstas */
+  --tvs-fa-chip:   #eef1f6;
+  --tvs-spage-bg:  #f4f4f4;
+  --tvs-spage-band:#c9d3dc;   /* neutralus laukas vietoje nuotraukos */
+}
+/* ---- Sąrašo skirtukai „Visi“ / „Šiukšlės“ (kadras 826) ---- */
+.tvs-skirt { display: flex; gap: 26px; background: #fff; padding: 16px 20px; font-size: 20px; border-radius: 3px; color: var(--tvs-text); }
+.tvs-skirt span + span { color: #c9ccd0; }
+/* ---- Teksto laukas (Description / Aprašymas) ---- */
+.tvs-input.is-area { height: 110px; align-items: flex-start; padding-top: 12px; }
+/* ---- Fontawesome paieškos puslapis — schematiškai, be reklamos ir prekių ženklo ---- */
+.tvs-fa { position: relative; background: var(--tvs-fa-bg); border-radius: 14px; border: 1px solid #dfe3ea; overflow: hidden;
+  font-family: var(--tvs-font); color: var(--tvs-fa-ink); box-shadow: 0 24px 60px rgba(30, 40, 70, .12); }
+.tvs-fa-top { display: flex; align-items: center; gap: 36px; height: 72px; padding: 0 40px; background: #fff; border-bottom: 1px solid var(--tvs-fa-line); font-size: 19px; }
+.tvs-fa-top .tvs-fa-flag { width: 26px; height: 26px; color: var(--tvs-fa-ink); }
+.tvs-fa-top span.is-on { font-weight: 700; }
+.tvs-fa-search { display: flex; align-items: center; gap: 18px; width: 900px; height: 66px; margin: 34px auto 28px; padding: 0 26px; background: #fff;
+  border: 2px solid var(--tvs-fa-ink); border-radius: 33px; font-size: 23px; color: var(--tvs-fa-ink); position: relative; }
+.tvs-fa-search { gap: 0; }
+.tvs-fa-search > svg { width: 24px; height: 24px; flex: 0 0 24px; margin-right: 18px; }
+.tvs-fa-search .tvs-ph { left: 68px; color: #9aa0a6; }
+.tvs-fa-search .tvs-typed { color: var(--tvs-fa-ink); }
+.tvs-fa-search .tvs-caret { background: var(--tvs-fa-ink); }
+.tvs-fa-body { display: grid; grid-template-columns: 200px 1fr; gap: 34px; padding: 0 40px 30px; }
+.tvs-fa-side { font-size: 17px; color: #6b7280; }
+.tvs-fa-side .is-h { font-size: 13px; letter-spacing: 1.5px; text-transform: uppercase; color: #9aa0a6; margin: 10px 0 12px; }
+.tvs-fa-side div { display: flex; align-items: center; gap: 12px; padding: 7px 0; }
+.tvs-fa-side div i { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #6b7280; display: block; }
+.tvs-fa-grid { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; }
+.tvs-fa-card { height: 128px; background: var(--tvs-fa-card); border: 1px solid var(--tvs-fa-line); border-radius: 8px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 12px; font-size: 15px; color: #6b7280; }
+.tvs-fa-card svg { width: 40px; height: 40px; color: var(--tvs-fa-ink); }
+.tvs-fa-card.is-sel { background: var(--tvs-fa-sel); border-color: #b9c6dc; }
+/* Ikonos langas: stiliai, didelė ikona, kodo blokas „HTML“ su kopijavimo mygtuku */
+.tvs-fa-modal { position: absolute; z-index: 31; width: 1080px; background: #fff; border-radius: 10px; box-shadow: 0 20px 50px rgba(0,0,0,.3);
+  padding: 26px 34px 34px; font-family: var(--tvs-font); color: var(--tvs-fa-ink); }
+.tvs-fa-styles { display: flex; gap: 12px; margin-bottom: 22px; }
+.tvs-fa-chip { display: inline-flex; align-items: center; gap: 10px; height: 44px; padding: 0 18px; border-radius: 22px; background: var(--tvs-fa-chip);
+  font-size: 18px; color: var(--tvs-fa-ink); border: 2px solid transparent; }
+.tvs-fa-chip svg { width: 20px; height: 20px; }
+.tvs-fa-chip.is-on { background: #fff; border-color: var(--tvs-fa-ink); font-weight: 700; }
+.tvs-fa-name { font-size: 30px; font-weight: 700; margin-bottom: 20px; }
+.tvs-fa-row { display: grid; grid-template-columns: 300px 1fr; gap: 30px; align-items: start; }
+.tvs-fa-big { height: 300px; background: #fff; border: 1px solid var(--tvs-fa-line); border-radius: 8px; display: flex; align-items: center; justify-content: center; }
+.tvs-fa-big svg { width: 200px; height: 200px; color: var(--tvs-fa-ink); }
+.tvs-fa-code { background: var(--tvs-fa-code); border-radius: 8px; padding: 22px 26px; color: #fff; position: relative; }
+.tvs-fa-code .is-tabs { display: flex; gap: 22px; font-size: 16px; color: rgba(255,255,255,.6); margin-bottom: 22px; }
+.tvs-fa-code .is-tabs span.is-on { color: #fff; font-weight: 700; }
+.tvs-fa-code code { display: block; font: 24px/1.4 "SF Mono", Menlo, Consolas, monospace; color: var(--tvs-fa-green); white-space: pre; }
+.tvs-fa-copy { position: absolute; right: 22px; top: 18px; width: 44px; height: 44px; border-radius: 8px; background: rgba(255,255,255,.12);
+  display: flex; align-items: center; justify-content: center; }
+.tvs-fa-copy svg { width: 22px; height: 22px; color: #fff; }
+.tvs-fa-code.is-flash { background: #3f5680; }
+/* ---- Svetainė: titulinis su juoduoju šoniniu meniu (kadras 834 sc10) ---- */
+.tvs-spage { position: relative; background: var(--tvs-spage-bg); border-radius: 14px; border: 1px solid #dfe3ea; overflow: hidden;
+  font-family: var(--tvs-site-font); box-shadow: 0 24px 60px rgba(30, 40, 70, .12); }
+.tvs-spage-band { height: 250px; background: linear-gradient(160deg, #d6dde5, var(--tvs-spage-band)); }
+.tvs-spage-body { display: grid; grid-template-columns: 1fr 420px; gap: 40px; padding: 36px 50px; }
+.tvs-spage-h { font-size: 26px; font-weight: 700; color: #333; margin-bottom: 20px; }
+.tvs-spage-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.tvs-spage-card { background: #fff; height: 300px; border-radius: 3px; overflow: hidden; }
+.tvs-spage-card i { display: block; height: 150px; background: #dfe4ea; }
+.tvs-spage-card b { display: block; margin: 18px 18px 8px; height: 16px; width: 70%; background: #cfd4da; border-radius: 3px; }
+.tvs-spage-card s { display: block; margin: 0 18px; height: 12px; width: 45%; background: #e6e9ed; border-radius: 3px; text-decoration: none; }
+.tvs-site-menu svg { width: 26px; height: 24px; flex: 0 0 26px; color: #fff; }
+.tvs-site-menu div.is-head { justify-content: flex-start; padding-left: 70px; }
