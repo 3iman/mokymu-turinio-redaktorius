@@ -1,0 +1,143 @@
+{
+  "pamoka": "navigaciju-valdymas",
+  "lang": "lt",
+  "sugeneruota": "2026-11-02T18:40:14.410Z",
+  "balso_stiprinimas_db": 5.9,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 5,
+      "epizodas": "ep_705_05_4",
+      "failas": "05-kur-rasti-navigacijas",
+      "pavadinimas": "Kur rasti „Navigacijos“",
+      "trukme_s": 13,
+      "mp4": "ep_705_05_4.mp4",
+      "vtt": "ep_705_05_4.vtt",
+      "poster": "ep_705_05_4.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1,
+          "iki_s": 3.46,
+          "tekstas": "„Navigacijos“ rasite darbalaukyje."
+        },
+        {
+          "nuo_s": 3.9,
+          "iki_s": 5.59,
+          "tekstas": "Arba kairiajame meniu."
+        },
+        {
+          "nuo_s": 6.3,
+          "iki_s": 9.31,
+          "tekstas": "Greičiausia – paieškoje įrašyti „navi“."
+        },
+        {
+          "nuo_s": 9.6,
+          "iki_s": 11.94,
+          "tekstas": "Ir pasirenkate „Navigacijos“."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 4.7,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 7.9,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 10.6,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "ep_705_05_1",
+      "failas": "05-nuorodu-medis",
+      "pavadinimas": "Atidarote nuorodų medį",
+      "trukme_s": 9,
+      "mp4": "ep_705_05_1.mp4",
+      "vtt": "ep_705_05_1.vtt",
+      "poster": "ep_705_05_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1,
+          "iki_s": 4,
+          "tekstas": "Prie grupės „Main“ spaudžiate „Linkai“."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 7.29,
+          "tekstas": "Atsiveria pagrindinės navigacijos medis."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "ep_705_05_2",
+      "failas": "05-nauja-nuoroda",
+      "pavadinimas": "Puslapį pridedate į meniu",
+      "trukme_s": 17,
+      "mp4": "ep_705_05_2.mp4",
+      "vtt": "ep_705_05_2.vtt",
+      "poster": "ep_705_05_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.6,
+          "iki_s": 6.21,
+          "tekstas": "Nuorodų medyje spaudžiate „Naujas linkas“ ir pasirenkate „Page“."
+        },
+        {
+          "nuo_s": 6.8,
+          "iki_s": 10.25,
+          "tekstas": "Lauke „Page“ susirandate puslapį „Logopedas“."
+        },
+        {
+          "nuo_s": 10.9,
+          "iki_s": 15.07,
+          "tekstas": "Spaudžiate „Išsaugoti“ – nuoroda atsiranda medžio apačioje."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 4.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 7.2,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 7.9,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 9.1,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 12.3,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 13.7,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

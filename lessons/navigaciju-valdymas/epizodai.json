@@ -1,0 +1,420 @@
+{
+ "pamokos_slug": "navigaciju-valdymas",
+ "pamoka_id": "pam_705",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_705_01_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_705_01",
+   "pamoka": "pam_705",
+   "failas": "01-navigaciju-grupes",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Vardas",
+    "Aprašymas",
+    "4 ikonos",
+    "Black",
+    "Main"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-cursor"
+   ],
+   "tarimo_kandidatai": [
+    "Footer"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_705_02_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_705_02",
+   "pamoka": "pam_705",
+   "failas": "02-nauja-grupe",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Naujas meniu",
+    "Vardas",
+    "Slug",
+    "Išsaugoti"
+   ],
+   "tvs_ui": [
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "Slug"
+   ],
+   "demo_duomenys": {
+    "grupe": "Pagalba mokiniams",
+    "slug": "pagalba-mokiniams"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_705_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_705_03",
+   "pamoka": "pam_705",
+   "failas": "03-isorine-nuoroda",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Youtube kanalas",
+    "URL"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-cursor",
+    "naujas: raudona išorinės nuorodos strėlytės ikonėlė"
+   ],
+   "tarimo_kandidatai": [
+    "Youtube"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "ep_705_04_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_705_04",
+   "pamoka": "pam_705",
+   "failas": "04-nuorodos-tipas",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Kokio tipo linką norite sukurti?",
+    "Page",
+    "URL"
+   ],
+   "tvs_ui": [
+    "tvs-btn",
+    "tvs-cursor",
+    "naujas: modalinis langas su pasirinkimu (Page / URL)"
+   ],
+   "tarimo_kandidatai": [
+    "Page",
+    "URL"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "ep_705_05_4",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_705_05",
+   "pamoka": "pam_705",
+   "failas": "05-kur-rasti-navigacijas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Darbalaukiai",
+    "Įrankiai",
+    "Puslapiai",
+    "Navigacijos",
+    "Type to search…",
+    "navi",
+    "Navigation",
+    "Links"
+   ],
+   "tvs_ui": [
+    "tvs-window",
+    "tvs-side",
+    "tvs-burger",
+    "tvs-searchbar",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: išskleista šoninė juosta (ikona + užrašas)",
+    "naujas: paieškos išskleidžiamas sąrašas su grupės antrašte"
+   ],
+   "tarimo_kandidatai": [
+    "navi"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "ep_705_05_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_705_05",
+   "pamoka": "pam_705",
+   "failas": "05-nuorodu-medis",
+   "trukme_s": 9,
+   "ekrano_tekstai": [
+    "Main",
+    "Linkai",
+    "Redaguoti",
+    "Vardas",
+    "Aprašymas",
+    "Naujas linkas",
+    "Page",
+    "URL"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "Main"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": [
+    "dal_693_01"
+   ]
+  },
+  {
+   "kadras": 7,
+   "epizodas": "ep_705_05_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_705_05",
+   "pamoka": "pam_705",
+   "failas": "05-nauja-nuoroda",
+   "trukme_s": 17,
+   "ekrano_tekstai": [
+    "Title",
+    "Naujas linkas",
+    "Page",
+    "URL",
+    "Pažymėti",
+    "Logopedas",
+    "Išsaugoti"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: modalinis langas su pasirinkimu (Page / URL)"
+   ],
+   "tarimo_kandidatai": [
+    "Page",
+    "Logopedas"
+   ],
+   "demo_duomenys": {
+    "puslapis": "Logopedas"
+   },
+   "naudoja_ir": [
+    "dal_693_01",
+    "dal_693_90",
+    "dal_705_90"
+   ]
+  },
+  {
+   "kadras": 8,
+   "epizodas": "ep_705_06_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_705_06",
+   "pamoka": "pam_705",
+   "failas": "06-skirtingi-pavadinimai",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Title",
+    "Projektai",
+    "Projektinė veikla"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-row",
+    "tvs-cursor"
+   ],
+   "tarimo_kandidatai": [
+    "Title"
+   ],
+   "demo_duomenys": {
+    "puslapis": "Projektinė veikla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 9,
+   "epizodas": "ep_705_07_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_705_07",
+   "pamoka": "pam_705",
+   "failas": "07-juodojo-meniu-parinktys",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Black",
+    "Linkai",
+    "Pagrindinis",
+    "Parinktys",
+    "Class"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: formos skirtukai (Pagrindinis / Parinktys)"
+   ],
+   "tarimo_kandidatai": [
+    "Black",
+    "Class"
+   ],
+   "demo_duomenys": {
+    "nuoroda": "Pamokų laikas"
+   },
+   "naudoja_ir": [
+    "dal_693_03"
+   ]
+  },
+  {
+   "kadras": 10,
+   "epizodas": "ep_705_07_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_705_07",
+   "pamoka": "pam_705",
+   "failas": "07-fontawesome-kodas",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "list",
+    "list-ol",
+    "Light",
+    "HTML"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "naujas: Fontawesome ikonų tinklelis",
+    "naujas: ikonos langas su stiliaus pasirinkimu"
+   ],
+   "tarimo_kandidatai": [
+    "Fontawesome",
+    "list-ol",
+    "Light",
+    "HTML"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": [
+    "dal_693_03"
+   ]
+  },
+  {
+   "kadras": 11,
+   "epizodas": "ep_705_07_3",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_705_07",
+   "pamoka": "pam_705",
+   "failas": "07-ikonos-klase",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Class",
+    "fal fa-list-ol",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "Class",
+    "fal fa-list-ol",
+    "HTML"
+   ],
+   "demo_duomenys": {
+    "nuoroda": "Pamokų laikas"
+   },
+   "naudoja_ir": [
+    "dal_693_03"
+   ]
+  },
+  {
+   "kadras": 12,
+   "epizodas": "ep_705_08_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_705_08",
+   "pamoka": "pam_705",
+   "failas": "08-keturios-ikonos",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "navi",
+    "Navigacijos",
+    "4 ikonos",
+    "Linkai",
+    "Elektroninis dienynas",
+    "Tėvams",
+    "Mokiniams",
+    "Mokytojams"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "4 ikonos"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": [
+    "dal_693_02"
+   ]
+  },
+  {
+   "kadras": 13,
+   "epizodas": "ep_705_08_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_705_08",
+   "pamoka": "pam_705",
+   "failas": "08-dienyno-adresas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Elektroninis dienynas",
+    "Title",
+    "URL",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "URL"
+   ],
+   "demo_duomenys": {
+    "adresas": "https://dienynas.demo.lt/"
+   },
+   "naudoja_ir": [
+    "dal_693_02"
+   ]
+  }
+ ]
+}

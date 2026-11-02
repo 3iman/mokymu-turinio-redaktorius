@@ -3189,6 +3189,287 @@ const TEMPLATE_ANIMATIONS = {
 
     .card > .brand-bar { opacity: 0 !important; }
   `,
+  // >>> NAVIGACIJU-VALDYMAS (generuoja lessons/navigaciju-valdymas/animacijos.js — ranka neredaguoti)
+  '05-kur-rasti-navigacijas': `
+    /* Kamera: darbalaukis visas → priartėja prie viršutinio kairio kampo (meniu, paieška) → atsitraukia prie sąrašo */
+    .stage { animation: k5kamera 13s linear 0s both; }
+    @keyframes k5kamera {
+      0% { transform: scale(1); }
+      26.154% { transform: scale(1); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      30.769% { transform: scale(1.3); }
+      81.538% { transform: scale(1.3); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      87.692% { transform: scale(1); }
+      100% { transform: scale(1); }
+    }
+    /* Prožektorius slenka: darbalaukis → „≡“ → „Navigacijos“ meniu → paieška → sąrašo punktas */
+    .spot { animation: k5spot 13s linear 0s both; }
+    @keyframes k5spot {
+      0% { left: 357.0px; top: 389.0px; width: 381.0px; height: 73.0px; opacity: 0; }
+      7.692% { left: 357.0px; top: 389.0px; width: 381.0px; height: 73.0px; opacity: 0; }
+      10.769% { left: 357.0px; top: 389.0px; width: 381.0px; height: 73.0px; opacity: 1; }
+      30% { left: 357.0px; top: 389.0px; width: 381.0px; height: 73.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      33.846% { left: 14.0px; top: 189.0px; width: 50.0px; height: 44.0px; opacity: 1; }
+      38.462% { left: 14.0px; top: 189.0px; width: 50.0px; height: 44.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      41.538% { left: -3.0px; top: 247.0px; width: 328.0px; height: 60.0px; opacity: 1; }
+      48.462% { left: -3.0px; top: 247.0px; width: 328.0px; height: 60.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      52.308% { left: 137.0px; top: 13.5px; width: 330.0px; height: 50.0px; opacity: 1; }
+      67.692% { left: 137.0px; top: 13.5px; width: 330.0px; height: 50.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      70% { left: 137.0px; top: 13.5px; width: 360.0px; height: 195.2px; opacity: 1; }
+      73.846% { left: 137.0px; top: 13.5px; width: 360.0px; height: 195.2px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      77.692% { left: 140.0px; top: 110.7px; width: 354.0px; height: 62.0px; opacity: 1; }
+      81.538% { left: 140.0px; top: 110.7px; width: 354.0px; height: 62.0px; opacity: 1; }
+      84.615% { left: 140.0px; top: 110.7px; width: 354.0px; height: 62.0px; opacity: 0; }
+      100% { left: 140.0px; top: 110.7px; width: 354.0px; height: 62.0px; opacity: 0; }
+    }
+    /* Kursorius: ramybė → „☰“ → paieška → sąrašo punktas → ramybė */
+    .cursor-wrap { animation: k5kursorius 13s linear 0s both; }
+    @keyframes k5kursorius {
+      0% { transform: translate(1346.0px, 637.0px); }
+      30% { transform: translate(1346.0px, 637.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      34.615% { transform: translate(108.0px, 35.5px); }
+      48.462% { transform: translate(108.0px, 35.5px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      53.077% { transform: translate(293.0px, 35.5px); }
+      73.846% { transform: translate(293.0px, 35.5px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      78.462% { transform: translate(204.0px, 138.7px); }
+      83.846% { transform: translate(204.0px, 138.7px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      90.769% { transform: translate(1200.0px, 700.0px); }
+      100% { transform: translate(1200.0px, 700.0px); }
+    }
+    .rp1 { left: 112.0px; top: 38.5px; animation: ratilas 0.6s ease-out 4.7s forwards; }
+    .rp2 { left: 208.0px; top: 141.7px; animation: ratilas 0.6s ease-out 10.6s forwards; }
+    @keyframes ratilas { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    /* „☰“ išskleidžia meniu (ikona su užrašu), susiskleidžia perėjus į paiešką */
+    .side-x { animation: k5meniu 13s linear 0s both; }
+    @keyframes k5meniu {
+      0% { clip-path: inset(0 100% 0 0); }
+      36.154% { clip-path: inset(0 100% 0 0); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      39.231% { clip-path: inset(0 0 0 0); }
+      48.462% { clip-path: inset(0 0 0 0); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      50.769% { clip-path: inset(0 100% 0 0); }
+      100% { clip-path: inset(0 100% 0 0); }
+    }
+    /* Paieška: žymeklis, placeholder dingsta, „navi“ po raidę, išskleidžiamas sąrašas */
+    .caret { animation: k5caret 13s linear 0s both; }
+    @keyframes k5caret {
+      0% { opacity: 0; }
+      52.692% { opacity: 0; }
+      53.077% { opacity: 1; }
+      81.538% { opacity: 1; }
+      81.923% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .ph { animation: k5ph 0.05s linear 7.85s both; }
+    @keyframes k5ph { from { opacity: 1; } to { opacity: 0; } }
+    .typed .l1 { animation: fadeIn 0.01s linear 7.9s both; }
+    .typed .l2 { animation: fadeIn 0.01s linear 8.1s both; }
+    .typed .l3 { animation: fadeIn 0.01s linear 8.3s both; }
+    .typed .l4 { animation: fadeIn 0.01s linear 8.5s both; }
+    .dd { animation: k5dd 13s linear 0s both; }
+    @keyframes k5dd {
+      0% { opacity: 0; transform: translateY(8px); }
+      67.692% { opacity: 0; transform: translateY(8px); animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      70% { opacity: 1; transform: translateY(0); }
+      81.538% { opacity: 1; transform: translateY(0); }
+      83.846% { opacity: 0; transform: translateY(0); }
+      100% { opacity: 0; transform: translateY(0); }
+    }
+    /* Grupių sąrašas įslenka iš dešinės po spustelėjimo */
+    .scr2 { animation: k5sarasas 13s linear 0s both; }
+    @keyframes k5sarasas {
+      0% { opacity: 0; transform: translateX(60px); }
+      82.308% { opacity: 0; transform: translateX(60px); animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      86.154% { opacity: 1; transform: translateX(0); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+  `,
+  '05-nuorodu-medis': `
+    .stage { animation: k6kamera 9s linear 0s both; }
+    @keyframes k6kamera {
+      0% { transform: scale(1); }
+      8.889% { transform: scale(1); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      15.556% { transform: scale(1.25); }
+      28.889% { transform: scale(1.25); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      37.778% { transform: scale(1); }
+      100% { transform: scale(1); }
+    }
+    .spot { animation: k6spot 9s linear 0s both; }
+    @keyframes k6spot {
+      0% { left: 331.0px; top: 552.0px; width: 1324.0px; height: 82.0px; opacity: 0; }
+      3.333% { left: 331.0px; top: 552.0px; width: 1324.0px; height: 82.0px; opacity: 0; }
+      7.778% { left: 331.0px; top: 552.0px; width: 1324.0px; height: 82.0px; opacity: 1; }
+      11.111% { left: 331.0px; top: 552.0px; width: 1324.0px; height: 82.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      15.556% { left: 1530.9px; top: 568.5px; width: 106.1px; height: 50.0px; opacity: 1; }
+      28.889% { left: 1530.9px; top: 568.5px; width: 106.1px; height: 50.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      33.333% { left: 331.0px; top: 222.0px; width: 1324.0px; height: 540.0px; opacity: 1; }
+      48.889% { left: 331.0px; top: 222.0px; width: 1324.0px; height: 540.0px; opacity: 1; }
+      54.444% { left: 331.0px; top: 222.0px; width: 1324.0px; height: 540.0px; opacity: 0; }
+      100% { left: 331.0px; top: 222.0px; width: 1324.0px; height: 540.0px; opacity: 0; }
+    }
+    .cursor-wrap { animation: k6kursorius 9s linear 0s both; }
+    @keyframes k6kursorius {
+      0% { transform: translate(1146.0px, 697.0px); }
+      11.111% { transform: translate(1146.0px, 697.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      17.778% { transform: translate(1580.0px, 590.5px); }
+      32.222% { transform: translate(1580.0px, 590.5px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      40% { transform: translate(1300.0px, 760.0px); }
+      100% { transform: translate(1300.0px, 760.0px); }
+    }
+    .rp1 { left: 1584.0px; top: 593.5px; animation: ratilas 0.6s ease-out 2.6s forwards; }
+    @keyframes ratilas { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    /* Medis: ekranas pasikeičia po spustelėjimo, eilutės iš viršaus žemyn po vieną */
+    .scr2 { animation: k6medis 9s linear 0s both; }
+    @keyframes k6medis {
+      0% { opacity: 0; }
+      30% { opacity: 0; }
+      33.333% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+    .nd { animation: fadeUpLight 0.35s cubic-bezier(0.16, 1, 0.3, 1) 2.8s both; }
+    .nd:nth-child(2) { animation-delay: 2.95s; } .nd:nth-child(3) { animation-delay: 3.10s; }
+    .nd:nth-child(4) { animation-delay: 3.25s; } .nd:nth-child(5) { animation-delay: 3.40s; }
+    .nd:nth-child(6) { animation-delay: 3.55s; } .nd:nth-child(7) { animation-delay: 3.70s; }
+  `,
+  '05-nauja-nuoroda': `
+    .stage { animation: k7kamera 17s linear 0s both; }
+    @keyframes k7kamera {
+      0% { transform: scale(1); }
+      29.412% { transform: scale(1); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      34.118% { transform: scale(1.3); }
+      55.882% { transform: scale(1.3); animation-timing-function: cubic-bezier(.45,0,.2,1); }
+      62.941% { transform: scale(1); }
+      100% { transform: scale(1); }
+    }
+    .spot { animation: k7spot 17s linear 0s both; }
+    @keyframes k7spot {
+      0% { left: 329.0px; top: 140.0px; width: 195.4px; height: 58.0px; opacity: 0; }
+      2.353% { left: 329.0px; top: 140.0px; width: 195.4px; height: 58.0px; opacity: 0; }
+      4.706% { left: 329.0px; top: 140.0px; width: 195.4px; height: 58.0px; opacity: 1; }
+      18.824% { left: 329.0px; top: 140.0px; width: 195.4px; height: 58.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      21.176% { left: 511.0px; top: 289.0px; width: 660.0px; height: 68.0px; opacity: 1; }
+      25.882% { left: 511.0px; top: 289.0px; width: 660.0px; height: 68.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      28.824% { left: 357.0px; top: 445.0px; width: 132.6px; height: 50.0px; opacity: 1; }
+      43.529% { left: 357.0px; top: 445.0px; width: 132.6px; height: 50.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      45.882% { left: 209.0px; top: 129.0px; width: 356.0px; height: 68.0px; opacity: 1; }
+      51.765% { left: 209.0px; top: 129.0px; width: 356.0px; height: 68.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      53.529% { left: 1319.4px; top: 279.5px; width: 132.6px; height: 50.0px; opacity: 1; }
+      56.471% { left: 1319.4px; top: 279.5px; width: 132.6px; height: 50.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      59.412% { left: 357.0px; top: 819.0px; width: 131.5px; height: 50.0px; opacity: 1; }
+      72.941% { left: 357.0px; top: 819.0px; width: 131.5px; height: 50.0px; opacity: 1; }
+      75.294% { left: 357.0px; top: 819.0px; width: 131.5px; height: 50.0px; opacity: 0; }
+      100% { left: 357.0px; top: 819.0px; width: 131.5px; height: 50.0px; opacity: 0; }
+    }
+    .cursor-wrap { animation: k7kursorius 17s linear 0s both; }
+    @keyframes k7kursorius {
+      0% { transform: translate(1146.0px, 717.0px); }
+      9.412% { transform: translate(1146.0px, 717.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      12.941% { transform: translate(422.7px, 166.0px); }
+      20% { transform: translate(422.7px, 166.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      23.529% { transform: translate(633.0px, 326.0px); }
+      36.471% { transform: translate(633.0px, 326.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      40% { transform: translate(419.3px, 467.0px); }
+      50% { transform: translate(419.3px, 467.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      52.941% { transform: translate(1381.7px, 301.5px); }
+      61.176% { transform: translate(1381.7px, 301.5px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      65.882% { transform: translate(418.8px, 841.0px); }
+      75.294% { transform: translate(418.8px, 841.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      80% { transform: translate(1250.0px, 780.0px); }
+      100% { transform: translate(1250.0px, 780.0px); }
+    }
+    .rp1 { left: 426.7px; top: 169.0px; animation: ratilas 0.6s ease-out 2.8s forwards; }
+    .rp2 { left: 637.0px; top: 329.0px; animation: ratilas 0.6s ease-out 4.4s forwards; }
+    .rp3 { left: 423.3px; top: 470.0px; animation: ratilas 0.6s ease-out 7.2s forwards; }
+    .rp4 { left: 1385.7px; top: 304.5px; animation: ratilas 0.6s ease-out 9.1s forwards; }
+    .rp5 { left: 422.8px; top: 844.0px; animation: ratilas 0.6s ease-out 12.3s forwards; }
+    @keyframes ratilas { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
+    /* Langas „Kokio tipo linką norite sukurti?“ — išsiskleidžia, dingsta pasirinkus „Page“ */
+    .ov1 { animation: k7ov1 17s linear 0s both; }
+    @keyframes k7ov1 {
+      0% { opacity: 0; }
+      17.059% { opacity: 0; }
+      18.824% { opacity: 1; }
+      26.176% { opacity: 1; }
+      27.059% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .modal-type { animation: k7modal1 17s linear 0s both; }
+    @keyframes k7modal1 {
+      0% { opacity: 0; transform: scale(.94); }
+      17.059% { opacity: 0; transform: scale(.94); animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      19.118% { opacity: 1; transform: scale(1); }
+      26.176% { opacity: 1; transform: scale(1); }
+      27.059% { opacity: 0; transform: scale(1); }
+      100% { opacity: 0; transform: scale(1); }
+    }
+    /* Forma */
+    .scr2 { animation: k7forma 17s linear 0s both; }
+    @keyframes k7forma {
+      0% { opacity: 0; }
+      26.471% { opacity: 0; }
+      28.235% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+    /* Langas „Choose an entry.“: paieška „logo“, sąrašas susitraukia iki „Logopedas“ */
+    .ov2 { animation: k7ov2 17s linear 0s both; }
+    @keyframes k7ov2 {
+      0% { opacity: 0; }
+      42.941% { opacity: 0; }
+      44.706% { opacity: 1; }
+      53.824% { opacity: 1; }
+      55% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .modal-pick { animation: k7modal2 17s linear 0s both; }
+    @keyframes k7modal2 {
+      0% { opacity: 0; transform: scale(.94); }
+      42.941% { opacity: 0; transform: scale(.94); animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      45% { opacity: 1; transform: scale(1); }
+      53.824% { opacity: 1; transform: scale(1); }
+      55% { opacity: 0; transform: scale(1); }
+      100% { opacity: 0; transform: scale(1); }
+    }
+    .caret { animation: k7caret 17s linear 0s both; }
+    @keyframes k7caret {
+      0% { opacity: 0; }
+      44.706% { opacity: 0; }
+      45% { opacity: 1; }
+      53.529% { opacity: 1; }
+      53.824% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .ph2 { animation: k7ph 0.05s linear 7.85s both; }
+    @keyframes k7ph { from { opacity: 1; } to { opacity: 0; } }
+    .typed .l1 { animation: fadeIn 0.01s linear 7.9s both; }
+    .typed .l2 { animation: fadeIn 0.01s linear 8.1s both; }
+    .typed .l3 { animation: fadeIn 0.01s linear 8.3s both; }
+    .typed .l4 { animation: fadeIn 0.01s linear 8.5s both; }
+    .list-all { animation: k7visi 17s linear 0s both; }
+    @keyframes k7visi {
+      0% { opacity: 1; }
+      51.176% { opacity: 1; }
+      52.059% { opacity: 0; }
+      100% { opacity: 0; }
+    }
+    .list-one { animation: k7vienas 17s linear 0s both; }
+    @keyframes k7vienas {
+      0% { opacity: 0; }
+      51.471% { opacity: 0; }
+      52.647% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+    /* Pasirinktas puslapis atsiranda lauke „Page“ */
+    .picked-row { animation: fadeUpLight 0.35s cubic-bezier(0.16, 1, 0.3, 1) 9.3s both; }
+    /* Po „Išsaugoti“ — medis su nauja eilute apačioje, žalias blyksnis ties garsu „patvirtinimas“ */
+    .scr3 { animation: k7medis 17s linear 0s both; }
+    @keyframes k7medis {
+      0% { opacity: 0; }
+      72.941% { opacity: 0; }
+      74.706% { opacity: 1; }
+      100% { opacity: 1; }
+    }
+    .node-new { animation: fadeUpLight 0.4s cubic-bezier(0.16, 1, 0.3, 1) 12.6s both, blyksnis 0.7s ease-out 13.7s both; }
+    @keyframes blyksnis { 0% { box-shadow: 0 0 0 0 rgba(71,209,101,0); } 30% { box-shadow: 0 0 0 5px rgba(71,209,101,.9); } 100% { box-shadow: 0 0 0 0 rgba(71,209,101,0); } }
+  `,
+  // <<< NAVIGACIJU-VALDYMAS
 };
 
 // Fallback generic animation for unknown templates

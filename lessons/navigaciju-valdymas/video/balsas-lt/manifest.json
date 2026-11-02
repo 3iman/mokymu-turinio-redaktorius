@@ -1,0 +1,403 @@
+{
+  "hash": "b58987aa2a171711db094823e7666d0eb128fd4f79753acff93d95b0bed895e3",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 989646156,
+  "characters": 1824,
+  "start_in_frame": 0.6,
+  "created": "2026-11-02T18:39:58.950Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Grupės jau sukurtos",
+      "text": "Navigacijų /ˈsaːraʃʲɛ/ grupės jau /suˈkurtoːs/.",
+      "file": "k01-1.wav",
+      "duration": 2.963,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Grupės jau sukurtos",
+      "text": "Prie /kʲiɛkvʲiɛˈnoːs/ matote aprašymą, kurioje vietoje ji rodoma.",
+      "file": "k01-2.wav",
+      "duration": 3.997,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Grupės jau sukurtos",
+      "text": "Jums belieka /pasʲiˈrʲinktʲi/ reikiamą.",
+      "file": "k01-3.wav",
+      "duration": 2.25,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Sukuriate naują grupę",
+      "text": "Naują grupę pradedate mygtuku „Naujas meniu“.",
+      "file": "k02-1.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Sukuriate naują grupę",
+      "text": "/lauˈkʲɛ/ „Vardas“ įrašote grupės pavadinimą.",
+      "file": "k02-2.wav",
+      "duration": 3.37,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Sukuriate naują grupę",
+      "text": "Laukas „/slʌɡ/“ užsipildo pats – patikrinate ir išsaugote.",
+      "file": "k02-3.wav",
+      "duration": 4.423,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Atpažįstate išorinę nuorodą",
+      "text": "Prie nuorodos matote raudoną strėlytę.",
+      "file": "k03-1.wav",
+      "duration": 2.637,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Atpažįstate išorinę nuorodą",
+      "text": "Ji reiškia išorinę nuorodą.",
+      "file": "k03-2.wav",
+      "duration": 2.13,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Atpažįstate išorinę nuorodą",
+      "text": "Lankytoją ji išves už svetainės ribų.",
+      "file": "k03-3.wav",
+      "duration": 2.93,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Pasirenkate nuorodos tipą",
+      "text": "Kurdami nuorodą pirmiausia pasirenkate jos tipą.",
+      "file": "k04-1.wav",
+      "duration": 3.383,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Pasirenkate nuorodos tipą",
+      "text": "„Page“ priskiria puslapį iš svetainės medžio.",
+      "file": "k04-2.wav",
+      "duration": 3.024,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Pasirenkate nuorodos tipą",
+      "text": "„u er el“ veda į išorinę nuorodą.",
+      "file": "k04-3.wav",
+      "duration": 2.97,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Kur rasti „Navigacijos“",
+      "text": "„Navigacijos“ rasite darbalaukyje.",
+      "file": "k05-1.wav",
+      "duration": 2.463,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Kur rasti „Navigacijos“",
+      "text": "Arba kairiajame meniu.",
+      "file": "k05-2.wav",
+      "duration": 1.69,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Kur rasti „Navigacijos“",
+      "text": "Greičiausia – paieškoje įrašyti „navi“.",
+      "file": "k05-3.wav",
+      "duration": 3.01,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 4,
+      "title": "Kur rasti „Navigacijos“",
+      "text": "Ir pasirenkate „Navigacijos“.",
+      "file": "k05-4.wav",
+      "duration": 2.343,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Atidarote nuorodų medį",
+      "text": "Prie grupės „Main“ spaudžiate „Linkai“.",
+      "file": "k06-1.wav",
+      "duration": 2.997,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Atidarote nuorodų medį",
+      "text": "Atsiveria pagrindinės navigacijos medis.",
+      "file": "k06-2.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Puslapį pridedate į meniu",
+      "text": "Nuorodų medyje spaudžiate „Naujas linkas“ ir pasirenkate „Page“.",
+      "file": "k07-1.wav",
+      "duration": 4.61,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Puslapį pridedate į meniu",
+      "text": "/lauˈkʲɛ/ „Page“ susirandate puslapį „Logopedas“.",
+      "file": "k07-2.wav",
+      "duration": 3.45,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Puslapį pridedate į meniu",
+      "text": "Spaudžiate „Išsaugoti“ – nuoroda atsiranda medžio apačioje.",
+      "file": "k07-3.wav",
+      "duration": 4.17,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Meniu vardas gali skirtis",
+      "text": "/lauˈkʲɛ/ „Title“ įrašote, kaip nuoroda vadinsis meniu.",
+      "file": "k08-1.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Meniu vardas gali skirtis",
+      "text": "Priskirtas puslapis gali vadintis kitaip.",
+      "file": "k08-2.wav",
+      "duration": 2.69,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Meniu vardas gali skirtis",
+      "text": "Meniu lieka /ˈtrumpas/ pavadinimas.",
+      "file": "k08-3.wav",
+      "duration": 2.49,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 9,
+      "cue": 1,
+      "title": "Atidarote nuorodos parinktis",
+      "text": "Prie grupės „Black“ spaudžiate „Linkai“.",
+      "file": "k09-1.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 9,
+      "cue": 2,
+      "title": "Atidarote nuorodos parinktis",
+      "text": "Atidarote nuorodą, kuriai norite ikonėlės.",
+      "file": "k09-2.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 9,
+      "cue": 3,
+      "title": "Atidarote nuorodos parinktis",
+      "text": "Skirtuke „Parinktys“ laukas „Class“ kol kas tuščias.",
+      "file": "k09-3.wav",
+      "duration": 4.09,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 10,
+      "cue": 1,
+      "title": "Nukopijuojate ikonėlės kodą",
+      "text": "Fontawesome paieškoje įrašote ikonos vardą.",
+      "file": "k10-1.wav",
+      "duration": 3.21,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 10,
+      "cue": 2,
+      "title": "Nukopijuojate ikonėlės kodą",
+      "text": "Pasirenkate tinkamą ikoną.",
+      "file": "k10-2.wav",
+      "duration": 2.09,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 10,
+      "cue": 3,
+      "title": "Nukopijuojate ikonėlės kodą",
+      "text": "Stilių renkatės „Light“ ir nukopijuojate ha tė em el kodą.",
+      "file": "k10-3.wav",
+      "duration": 4.17,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 11,
+      "cue": 1,
+      "title": "Įklijuojate ikonėlės klasę",
+      "text": "/lauˈkʲɛ/ „Class“ įklijuojate nukopijuotą kodą.",
+      "file": "k11-1.wav",
+      "duration": 3.21,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 11,
+      "cue": 2,
+      "title": "Įklijuojate ikonėlės klasę",
+      "text": "Paliekate tik klasę – ha tė em el dalis ištrinate.",
+      "file": "k11-2.wav",
+      "duration": 3.797,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 11,
+      "cue": 3,
+      "title": "Įklijuojate ikonėlės klasę",
+      "text": "Spaudžiate „Atnaujinti“ ir ikonėlė atsiranda meniu.",
+      "file": "k11-3.wav",
+      "duration": 3.87,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 12,
+      "cue": 1,
+      "title": "Atidarote keturių ikonų nuorodas",
+      "text": "Paieškoje pasirenkate „Navigacijos“.",
+      "file": "k12-1.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 12,
+      "cue": 2,
+      "title": "Atidarote keturių ikonų nuorodas",
+      "text": "Prie grupės „keturios ikonos“ spaudžiate „Linkai“.",
+      "file": "k12-2.wav",
+      "duration": 3.77,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 12,
+      "cue": 3,
+      "title": "Atidarote keturių ikonų nuorodas",
+      "text": "Matote keturias titulinio puslapio nuorodas.",
+      "file": "k12-3.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 13,
+      "cue": 1,
+      "title": "Pakeičiate el. dienyno adresą",
+      "text": "/ˈsaːraʃʲɛ/ spaudžiate „Elektroninis dienynas“.",
+      "file": "k13-1.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 13,
+      "cue": 2,
+      "title": "Pakeičiate el. dienyno adresą",
+      "text": "/lauˈkʲɛ/ „u er el“ įrašote naują dienyno adresą.",
+      "file": "k13-2.wav",
+      "duration": 3.97,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 13,
+      "cue": 3,
+      "title": "Pakeičiate el. dienyno adresą",
+      "text": "Spaudžiate „Atnaujinti“ – nuoroda išsaugota.",
+      "file": "k13-3.wav",
+      "duration": 3.61,
+      "fits": true,
+      "reikia_sek": 13
+    }
+  ]
+}
