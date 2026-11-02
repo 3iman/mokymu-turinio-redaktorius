@@ -341,14 +341,14 @@ ${raides('k2slug', 's', N, 6.55, 0.1)}
 }
 
 /* ---------------------------------------------------------------------------------------------
- * KADRAS 4 — „Pasirenkate nuorodos tipą“ (12 s, ep_705_04_1)
+ * KADRAS 4 — „Pasirenkate nuorodos tipą“ (13 s, ep_705_04_1)
  *   1.2 balsas Kurdami nuorodą pirmiausia pasirenkate jos tipą.   → fokusas ant lango antraštės
  *   5.2 balsas „Page“ priskiria puslapį iš svetainės medžio.      → fokusas ir kursorius ant „Page“
  *   8.9 balsas „URL“ veda į išorinę nuorodą.                       → fokusas ir kursorius ant „URL“
  *  10.3 spustelejimas → langas užsidaro, forma „URL“
  * ------------------------------------------------------------------------------------------- */
 {
-  const D = 12, m = M['04-nuorodos-tipas'];
+  const D = 13, m = M['04-nuorodos-tipas'];   // 12 → 13 s (Eimantas 2026-11-03: po paskutinio sakinio liko 0,13 s — reikia ≥ 1 s ramybės)
   const op = { x: m.optpage.x + 120, y: c(m.optpage).y + 6 }, ou = { x: m.opturl.x + 120, y: c(m.opturl).y + 6 };
   entries['04-nuorodos-tipas'] = `
     .spot { animation: k4spot ${D}s linear 0s both; }

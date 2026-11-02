@@ -3667,52 +3667,52 @@ const TEMPLATE_ANIMATIONS = {
     }
   `,
   '04-nuorodos-tipas': `
-    .spot { animation: k4spot 12s linear 0s both; }
+    .spot { animation: k4spot 13s linear 0s both; }
     @keyframes k4spot {
       0% { left: 505.0px; top: 164.0px; width: 380.7px; height: 56.0px; opacity: 0; }
-      10% { left: 505.0px; top: 164.0px; width: 380.7px; height: 56.0px; opacity: 0; }
-      13.333% { left: 505.0px; top: 164.0px; width: 380.7px; height: 56.0px; opacity: 1; }
-      43.333% { left: 505.0px; top: 164.0px; width: 380.7px; height: 56.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
-      47.5% { left: 511.0px; top: 289.0px; width: 660.0px; height: 68.0px; opacity: 1; }
-      74.167% { left: 511.0px; top: 289.0px; width: 660.0px; height: 68.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
-      78.333% { left: 511.0px; top: 351.0px; width: 660.0px; height: 68.0px; opacity: 1; }
-      85.833% { left: 511.0px; top: 351.0px; width: 660.0px; height: 68.0px; opacity: 1; }
-      88.333% { left: 511.0px; top: 351.0px; width: 660.0px; height: 68.0px; opacity: 0; }
+      9.231% { left: 505.0px; top: 164.0px; width: 380.7px; height: 56.0px; opacity: 0; }
+      12.308% { left: 505.0px; top: 164.0px; width: 380.7px; height: 56.0px; opacity: 1; }
+      40% { left: 505.0px; top: 164.0px; width: 380.7px; height: 56.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      43.846% { left: 511.0px; top: 289.0px; width: 660.0px; height: 68.0px; opacity: 1; }
+      68.462% { left: 511.0px; top: 289.0px; width: 660.0px; height: 68.0px; opacity: 1; animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1); }
+      72.308% { left: 511.0px; top: 351.0px; width: 660.0px; height: 68.0px; opacity: 1; }
+      79.231% { left: 511.0px; top: 351.0px; width: 660.0px; height: 68.0px; opacity: 1; }
+      81.538% { left: 511.0px; top: 351.0px; width: 660.0px; height: 68.0px; opacity: 0; }
       100% { left: 511.0px; top: 351.0px; width: 660.0px; height: 68.0px; opacity: 0; }
     }
-    .cursor-wrap { animation: k4kursorius 12s linear 0s both; }
+    .cursor-wrap { animation: k4kursorius 13s linear 0s both; }
     @keyframes k4kursorius {
       0% { transform: translate(1246.0px, 777.0px); }
-      43.333% { transform: translate(1246.0px, 777.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
-      48.333% { transform: translate(633.0px, 326.0px); }
-      74.167% { transform: translate(633.0px, 326.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
-      78.333% { transform: translate(633.0px, 388.0px); }
-      90% { transform: translate(633.0px, 388.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
-      95% { transform: translate(1246.0px, 817.0px); }
+      40% { transform: translate(1246.0px, 777.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      44.615% { transform: translate(633.0px, 326.0px); }
+      68.462% { transform: translate(633.0px, 326.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      72.308% { transform: translate(633.0px, 388.0px); }
+      83.077% { transform: translate(633.0px, 388.0px); animation-timing-function: cubic-bezier(.2,.7,.3,1); }
+      87.692% { transform: translate(1246.0px, 817.0px); }
       100% { transform: translate(1246.0px, 817.0px); }
     }
     .rp1 { left: 637.0px; top: 391.0px; animation: ratilas 0.6s ease-out 10.3s forwards; }
     @keyframes ratilas { from { opacity: .7; transform: scale(.3); } to { opacity: 0; transform: scale(1.5); } }
     /* Langas virš medžio — iki spustelėjimo; tada forma „URL“ */
-    .scr1 { animation: k4medis 12s linear 0s both; }
+    .scr1 { animation: k4medis 13s linear 0s both; }
     @keyframes k4medis {
       0% { opacity: 1; }
-      86.667% { opacity: 1; }
-      89.167% { opacity: 0; }
+      80% { opacity: 1; }
+      82.308% { opacity: 0; }
       100% { opacity: 0; }
     }
-    .scr2 { animation: k4forma 12s linear 0s both; }
+    .scr2 { animation: k4forma 13s linear 0s both; }
     @keyframes k4forma {
       0% { opacity: 0; }
-      86.667% { opacity: 0; }
-      89.167% { opacity: 1; }
+      80% { opacity: 0; }
+      82.308% { opacity: 1; }
       100% { opacity: 1; }
     }
-    .caret2 { animation: k4caret 12s linear 0s both; }
+    .caret2 { animation: k4caret 13s linear 0s both; }
     @keyframes k4caret {
       0% { opacity: 0; }
-      89.167% { opacity: 0; }
-      89.583% { opacity: 1; }
+      82.308% { opacity: 0; }
+      82.692% { opacity: 1; }
       100% { opacity: 1; }
     }
   `,

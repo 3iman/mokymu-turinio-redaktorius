@@ -58,7 +58,9 @@ const musicPath = path.join(ROOT, 'assets', 'video', 'jiglr-malibu_cleverphant-m
 const WIDTH = 1920, HEIGHT = 1080, FPS = 30;
 const BG_COLOR = isDark ? '#151b2b' : '#f8f9fb';      // kaip build-video.js
 const VOICE_TARGET_LUFS = -19;                           // VIDEO_GAMYBA.md §7 „Balsas“
-const PLATFORM_MAX_S = 20;                               // platformos epizodo riba (tikslas ≤ 15 s; Eimantas 2026-10-31)
+const PLATFORM_MAX_S = 20;                              // platformos epizodo riba (tikslas ≤ 15 s; Eimantas 2026-10-31)
+const CLIP_FADE_S = 0.6;                                // garso nuslopinimas klipo gale (vaizdas netemdomas — viršelis = paskutinis kadras; Eimantas 2026-11-03)
+const TAIL_CALM_S = 1;                                  // ramybė po paskutinio sakinio iki kadro galo
 
 const sh = (cmd) => execSync(cmd, { stdio: 'pipe', encoding: 'utf-8', maxBuffer: 64 * 1024 * 1024 });
 const q = (p) => `"${p.replace(/"/g, '\\"')}"`;
@@ -158,6 +160,8 @@ function main() {
         at = z.at; text = z.value;
         const iki = it.cue < vc.length ? vc[it.cue].at : r.duration;
         if (at + it.duration > iki + 0.05) warn.push(`balsas ${it.cue} (${it.duration}s nuo ${at}s) užlipa ant ${iki.toFixed(1)}s`);
+        // paskutinis sakinys turi nutilti bent TAIL_CALM_S prieš kadro galą — kitaip klipas „nukertamas“ (Eimantas 2026-11-03, K4)
+        if (it.cue === vc.length && at + it.duration > r.duration - TAIL_CALM_S) warn.push(`paskutinis balsas baigiasi ${(r.duration - at - it.duration).toFixed(2)}s prieš galą (reikia ≥ ${TAIL_CALM_S}s) — pailgink kadrą kortelėje`);
       } else {
         at = startIn; text = r.balsas || it.text;
         if (at + it.duration > r.duration - 0.5) warn.push(`balsas (${it.duration}s) netelpa į ${r.duration}s`);
@@ -208,7 +212,8 @@ function main() {
     // tylus pagrindas, kad takelis būtų lygiai D ilgio ir klipas be balso turėtų garso takelį
     const silent = inputs.push(`-f lavfi -t ${D.toFixed(3)} -i anullsrc=r=44100:cl=stereo`);
     mixes.unshift(`[${silent}:a]`);
-    filters.push(`${mixes.join('')}amix=inputs=${mixes.length}:normalize=0:duration=first,alimiter=limit=0.891:level=false[aout]`);
+    // Pabaiga: viso garso nuslopinimas per paskutines CLIP_FADE_S — klipas nesibaigia „nukirstas“ (Eimantas 2026-11-03)
+    filters.push(`${mixes.join('')}amix=inputs=${mixes.length}:normalize=0:duration=first,alimiter=limit=0.891:level=false,afade=t=out:st=${Math.max(0, D - CLIP_FADE_S).toFixed(2)}:d=${CLIP_FADE_S}[aout]`);
     const outMp4 = path.join(outDir, `${name}.mp4`);
     sh(`ffmpeg -y -v error -i ${q(vid)} ${inputs.join(' ')} -filter_complex "${filters.join(';')}" -map 0:v -map "[aout]" -c:v copy -c:a aac -b:a 128k -t ${D.toFixed(3)} -movflags +faststart ${q(outMp4)}`);
 

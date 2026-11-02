@@ -980,3 +980,39 @@ lieka bazinės (galinės) būsenos. Dėl to redaktorius iš karto rodė kodo per
 `animation` deklaraciją, ir CSS kaskadoje lieka tik paskutinė. Taip dingo pažymėjimo spalva.
 **Sprendimas:** `timelines(a, prefix, D, sel, [(prop, steps), …])` – viena deklaracija su keliomis
 animacijomis. Tas pats pavojus jau buvo sugavęs kortelę 3 kadre (atskira `.dc.on` taisyklė).
+
+### 2026-11-03 · ⛔ Klipas negali baigtis nukirstas
+
+> „Tik weird pasirodė, kad taip staigiai nusikerta ir sustoja.“
+
+Platformos klipai baigėsi be jokio garso nuslopinimo, o K4 balsas nutilo 0,13 s prieš pabaigą.
+**Taisyklė:** po paskutinio sakinio lieka **≥ 1 s ramybės** (kortelės `trukme_s` ilginama, tekstas neliečiamas),
+o paskutinės **0,6 s** — viso garso nuslopinimas. Vaizdo į juodą netemdome: viršelis `.jpg` yra paskutinis kadras.
+`build-platform-clips.js` dabar pats įspėja („paskutinis balsas baigiasi … prieš galą“) ir pats slopina garsą
+(`CLIP_FADE_S`, `TAIL_CALM_S`). Įspėjimas = kortelės taisymas platformos sesijoje, ne montažas ranka.
+
+### 2026-11-03 · „Title“ neužsipildo prisegus puslapį
+
+> „Nereikia Title rašyti Logopedas, užtenka prisegti, bet ir po prisegimo title neįsirašo.“
+
+TVS nuorodos formoje „Title“ **lieka tuščias** ir po puslapio prisegimo — meniu rodo prisegto puslapio pavadinimą.
+„Title“ rašomas tik tada, kai meniu vardas turi skirtis nuo puslapio („Ugdymo grupės“ → „Grupės“) — tai atskiras kadras (K8).
+Kadre su prisegimu: laukas tuščias visą kadrą, nieko nerašome ir nieko neįrašome „automatiškai“. Pataisyta du kartus — nespėlioti, kaip TVS elgiasi; klausti.
+
+### 2026-11-03 · Rašymas po raidę — `max-width`, ne `opacity`
+
+> „Type to search kreivai padarytas.“
+
+Raidės slepiamos per `opacity` palieka vietą, todėl kursorius ir „placeholder“ stovi už viso teksto, o ne ten, kur rašoma.
+Rinkinyje `.tvs-typed .l` raidė yra `max-width: 0 → 1.2em` su `step-end`; „placeholder“ — `position: absolute`, bazėje `opacity: 0`.
+Trynimas — ta pati technika atgal (`max-width → 0`). Naudoti rinkinio klases, ne vienkartinį CSS.
+
+### 2026-11-03 · `<i class="…">` turinyje — tik HTML-escape'intas
+
+Tekstas su žymėmis (`<i class="fal fa-list-ol"></i>`) iš `content/lt.json` į šabloną įdedamas kaip gyvas HTML, todėl laukas
+lieka tuščias (K10 kodo eilutė, K11 laukas po trynimo, lenta 11). Rašyti `&lt;i class="…"&gt;` — tada rodoma kaip tekstas.
+
+### 2026-11-03 · Balsas netelpa — stumiamos žymos, ne tekstas
+
+K13 antras sakinys užlipo ant trečios žymos 0,27 s. Sprendimas: kortelėje laiko žymos +0,4 s (8,4 → 8,8; 9,4 → 9,8; 9,8 → 10,2),
+scenarijus pergeneruotas, animacija perstumta. Tekstas ir balso kešas nepaliesti — balsas negeneruojamas iš naujo.

@@ -100,7 +100,9 @@ Kortelėje pataisyta: pridėtas spustelėjimas „Išsaugoti“ (10,4 s) prieš 
 
 ---
 
-## Kadras 4 — „Pasirenkate nuorodos tipą“ (`ep_705_04_1`, 12 s)
+## Kadras 4 — „Pasirenkate nuorodos tipą“ (`ep_705_04_1`, 13 s)
+
+> Eimantas 2026-11-03: 12 → 13 s — po paskutinio sakinio buvo likę 0,13 s, klipas baigėsi nukirstas; dabar ≥ 1 s ramybės. Judesys nekeistas.
 
 **Viena žinutė:** kurdami nuorodą pirmiausia pasirenkate tipą: „Page“ — svetainės puslapis, „URL“ — išorinis adresas.
 

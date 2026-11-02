@@ -1,7 +1,7 @@
 {
   "pamoka": "navigaciju-valdymas",
   "lang": "lt",
-  "sugeneruota": "2026-11-02T21:25:50.638Z",
+  "sugeneruota": "2026-11-02T23:29:32.856Z",
   "balso_stiprinimas_db": 5.9,
   "muzika": false,
   "klipai": [
@@ -114,7 +114,7 @@
       "epizodas": "ep_705_04_1",
       "failas": "04-nuorodos-tipas",
       "pavadinimas": "Pasirenkate nuorodos tipą",
-      "trukme_s": 12,
+      "trukme_s": 13,
       "mp4": "ep_705_04_1.mp4",
       "vtt": "ep_705_04_1.vtt",
       "poster": "ep_705_04_1.jpg",

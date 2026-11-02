@@ -4,7 +4,7 @@
 **Kalba:** lt — ekrano užrašai ir TVS komponentai lieka originalo kalba (§7.3)
 **Balsas:** ElevenLabs, „Darius Cleverphant“ — modelis ir nustatymai pagal `VIDEO_GAMYBA.md` §7
 **Balso seed:** 989646156 – įrašomas automatiškai; pakeitus tekstą balsas generuojamas iš naujo
-**Trukmė:** 176 sek. (13 epizodai)
+**Trukmė:** 177 sek. (13 epizodai)
 **Šaltinis:** `clv-mokymu-platformos-redisign-html/turinys/adaptuota/kursai/*.json` › `explaineris` — generuoja `scripts/epizodai-i-scenarijus.py`; ranka neredaguoti.
 **Pamoka platformoje:** `pam_705` · senoji WP pamoka `navigaciju-valdymas`
 **Išvestis platformai:** kiekvienas kadras — atskiras klipas `{epizodo id}.mp4` + `.vtt` (subtitrai iš balso); YouTube rinkiniui — su intro / outro
@@ -16,7 +16,7 @@
 | 1 Grupės jau sukurtos | 13 sek. | 01-navigaciju-grupes | Navigacijų sąraše grupės jau sukurtos. Prie kiekvienos matote aprašymą, kurioje vietoje ji rodoma. Jums belieka pasirinkti reikiamą. |
 | 2 Sukuriate naują grupę | 14 sek. | 02-nauja-grupe | Naują grupę pradedate mygtuku „Naujas meniu“. Lauke „Vardas“ įrašote grupės pavadinimą. Laukas „Slug“ užsipildo pats – patikrinate ir išsaugote. |
 | 3 Atpažįstate išorinę nuorodą | 11 sek. | 03-isorine-nuoroda | Prie nuorodos matote raudoną strėlytę. Ji reiškia išorinę nuorodą. Lankytoją ji išves už svetainės ribų. |
-| 4 Pasirenkate nuorodos tipą | 12 sek. | 04-nuorodos-tipas | Kurdami nuorodą pirmiausia pasirenkate jos tipą. „Page“ priskiria puslapį iš svetainės medžio. „URL“ veda į išorinę nuorodą. |
+| 4 Pasirenkate nuorodos tipą | 13 sek. | 04-nuorodos-tipas | Kurdami nuorodą pirmiausia pasirenkate jos tipą. „Page“ priskiria puslapį iš svetainės medžio. „URL“ veda į išorinę nuorodą. |
 | 5 Kur rasti „Navigacijos“ | 13 sek. | 05-kur-rasti-navigacijas | „Navigacijos“ rasite darbalaukyje. Arba kairiajame meniu. Greičiausia – paieškoje įrašyti „navi“. Ir pasirenkate „Navigacijos“. |
 | 6 Atidarote nuorodų medį | 9 sek. | 05-nuorodu-medis | Prie grupės „Main“ spaudžiate „Linkai“. Atsiveria pagrindinės navigacijos medis. |
 | 7 Puslapį pridedate į meniu | 17 sek. | 05-nauja-nuoroda | Nuorodų medyje spaudžiate „Naujas linkas“ ir pasirenkate „Page“. Lauke „Page“ susirandate puslapį „Logopedas“. Spaudžiate „Išsaugoti“ – nuoroda atsiranda medžio apačioje. |
@@ -89,7 +89,7 @@
 | 4.6 | balsas | Ji reiškia išorinę nuorodą. |
 | 7.0 | balsas | Lankytoją ji išves už svetainės ribų. |
 
-### KADRAS 4: Pasirenkate nuorodos tipą (12 sek.) — epizodas
+### KADRAS 4: Pasirenkate nuorodos tipą (13 sek.) — epizodas
 **Failas:** `04-nuorodos-tipas.png`
 **Ekrane:** Modalinis langas „Kokio tipo linką norite sukurti?“ su dviem pasirinkimais — „Page“ ir „URL“. Fokusas stoja ties „Page“, tada ties „URL“; spaudžiama „URL“ ir atsiveria forma su laukais „Title“ ir „URL“.
 **Ekrano užrašai (tiksliai):** „Kokio tipo linką norite sukurti?“, „Page“, „URL“
