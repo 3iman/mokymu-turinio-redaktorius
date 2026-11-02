@@ -3460,8 +3460,6 @@ const TEMPLATE_ANIMATIONS = {
     }
     /* Pasirinktas puslapis atsiranda lauke „Page“ */
     .picked-row { animation: fadeUpLight 0.35s cubic-bezier(0.16, 1, 0.3, 1) 9.3s both; }
-    /* „Title“ užsipildo iš pasirinkto puslapio (ne rašoma ranka) */
-    .title-val { animation: fadeIn 0.3s linear 9.4s both; }
     /* Po „Išsaugoti“ — medis su nauja eilute apačioje, žalias blyksnis ties garsu „patvirtinimas“ */
     .scr3 { animation: k7medis 17s linear 0s both; }
     @keyframes k7medis {

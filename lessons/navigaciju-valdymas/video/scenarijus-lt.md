@@ -150,13 +150,13 @@
 
 ### KADRAS 7: Puslapį pridedate į meniu (17 sek.) — epizodas
 **Failas:** `05-nauja-nuoroda.png`
-**Ekrane:** Grupės „Main“ nuorodų medis; kursorius spaudžia „Naujas linkas“, lange pasirenka „Page“. Formoje lauke „Page“ — „Pažymėti“, paieškoje įrašoma „logo“, prie „Logopedas“ — „Pažymėti“; „Title“ užsipildo „Logopedas“ iš priskirto puslapio, tada „Išsaugoti“.
+**Ekrane:** Grupės „Main“ nuorodų medis; kursorius spaudžia „Naujas linkas“, lange pasirenka „Page“. Formoje lauke „Page“ — „Pažymėti“, paieškoje įrašoma „logo“, prie „Logopedas“ — „Pažymėti“; „Title“ lieka tuščias (meniu rodo priskirto puslapio pavadinimą), tada „Išsaugoti“.
 **Ekrano užrašai (tiksliai):** „Title“, „Naujas linkas“, „Page“, „URL“, „Pažymėti“, „Logopedas“, „Išsaugoti“
 **TVS UI komponentai:** tvs-row, tvs-btn, tvs-input, tvs-cursor, tvs-ripple, naujas: modalinis langas su pasirinkimu (Page / URL)
 **Demo duomenys:** puslapis: Logopedas
 **Tarimo kandidatai:** Page, Logopedas (tikrinti `kircio-patikra.js`)
 **Nuorodos (senas įrašas):** `nuorodos/05-nauja-nuoroda--klik03_011.6.jpg`, `nuorodos/05-nauja-nuoroda--sc05_016.2.jpg`, `nuorodos/05-nauja-nuoroda--sc07_019.3.jpg`, `nuorodos/05-nauja-nuoroda--sc09_026.8.jpg`
-**Komentaras:** epizodas `ep_705_05_2` · dalis `dal_705_05` „Navigacijų nuorodos (linko) pridėjimas“ · prioritetas 2 · pagrindas: dal_705_05 paaiškinimas („Logopedas“, pagrindinė navigacija); scenos 835: 3–6; Eimantas 2026-11-02: „Title“ ranka nerašomas — užsipildo iš priskirto puslapio („Logopedas“)
+**Komentaras:** epizodas `ep_705_05_2` · dalis `dal_705_05` „Navigacijų nuorodos (linko) pridėjimas“ · prioritetas 2 · pagrindas: dal_705_05 paaiškinimas („Logopedas“, pagrindinė navigacija); scenos 835: 3–6; Eimantas 2026-11-02: „Title“ nerašomas ir neužsipildo — užtenka prisegti puslapį, meniu rodo jo pavadinimą („Logopedas“)
 
 **Laiko žymos:**
 

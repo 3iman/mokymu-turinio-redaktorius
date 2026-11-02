@@ -211,8 +211,6 @@ ${fade('.list-all', 1, 0, 8.7, 8.85, D, 'k7visi')}
 ${fade('.list-one', 0, 1, 8.75, 8.95, D, 'k7vienas')}
     /* Pasirinktas puslapis atsiranda lauke „Page“ */
     .picked-row { animation: fadeUpLight 0.35s ${SPRING} 9.3s both; }
-    /* „Title“ užsipildo iš pasirinkto puslapio (ne rašoma ranka) */
-    .title-val { animation: fadeIn 0.3s linear 9.4s both; }
     /* Po „Išsaugoti“ — medis su nauja eilute apačioje, žalias blyksnis ties garsu „patvirtinimas“ */
 ${fade('.scr3', 0, 1, 12.4, 12.7, D, 'k7medis')}
     .node-new { animation: fadeUpLight 0.4s ${SPRING} 12.6s both, blyksnis 0.7s ease-out 13.7s both; }
