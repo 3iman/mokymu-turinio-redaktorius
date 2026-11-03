@@ -1,0 +1,226 @@
+{
+  "pamoka": "ka-reikia-zinoti-apie-paveikslelius",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T01:57:32.201Z",
+  "balso_stiprinimas_db": 5.5,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_697_01",
+      "failas": "01-paveiksleliu-formatai",
+      "pavadinimas": "Penki paveikslėlių formatai",
+      "trukme_s": 17,
+      "mp4": "viz_697_01.mp4",
+      "vtt": "viz_697_01.vtt",
+      "poster": "viz_697_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.07,
+          "tekstas": "Dažniausiai naudojate JPG."
+        },
+        {
+          "nuo_s": 4.3,
+          "iki_s": 9.35,
+          "tekstas": "PNG gali neturėti fono, GIF yra animuotas."
+        },
+        {
+          "nuo_s": 9.5,
+          "iki_s": 15.51,
+          "tekstas": "SVG skirtas vektorinei grafikai, WEBP užima mažiausiai vietos."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_697_02",
+      "failas": "02-kiti-formatai",
+      "pavadinimas": "Kelkite JPG arba PNG",
+      "trukme_s": 15,
+      "mp4": "viz_697_02.mp4",
+      "vtt": "viz_697_02.vtt",
+      "poster": "viz_697_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 7.33,
+          "tekstas": "Formatai BMP, TIF, AI ir EPS internetui netinka."
+        },
+        {
+          "nuo_s": 7.5,
+          "iki_s": 11.31,
+          "tekstas": "Konvertuojate juos į JPG arba PNG."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_697_03",
+      "failas": "03-sistema-sugeneruoja-dydi",
+      "pavadinimas": "Sistema sugeneruoja tinkamą dydį",
+      "trukme_s": 11,
+      "mp4": "viz_697_03.mp4",
+      "vtt": "viz_697_03.vtt",
+      "poster": "viz_697_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.17,
+          "tekstas": "Plotis ir aukštis matuojami pikseliais."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 8.95,
+          "tekstas": "Įkeliate paveikslėlį, o tinkamą dydį sistema sugeneruoja pati."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_697_04",
+      "failas": "04-mazinkite-nedidinkite",
+      "pavadinimas": "Mažinate, bet nedidinate",
+      "trukme_s": 12,
+      "mp4": "viz_697_04.mp4",
+      "vtt": "viz_697_04.vtt",
+      "poster": "viz_697_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.93,
+          "tekstas": "Padidintas paveikslėlis praranda kokybę."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 7.2,
+          "tekstas": "Mažinti galite, didinti ne."
+        },
+        {
+          "nuo_s": 7.4,
+          "iki_s": 10.16,
+          "tekstas": "Tas pats galioja kadruojant mažą fragmentą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_697_05",
+      "failas": "05-per-dideli-paveiksleliai",
+      "pavadinimas": "Per didelis dviem prasmėmis",
+      "trukme_s": 12,
+      "mp4": "viz_697_05.mp4",
+      "vtt": "viz_697_05.vtt",
+      "poster": "viz_697_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.73,
+          "tekstas": "Per didelis būna ir matmenimis, ir užimama vieta."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 7.55,
+          "tekstas": "Tada serveris failo neapdoros."
+        },
+        {
+          "nuo_s": 7.9,
+          "iki_s": 10.67,
+          "tekstas": "Renkatės tinkamus matmenis ir raišką."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "viz_697_06",
+      "failas": "06-rgb-ne-cmyk",
+      "pavadinimas": "Kelkite RGB paveikslėlius",
+      "trukme_s": 12,
+      "mp4": "viz_697_06.mp4",
+      "vtt": "viz_697_06.vtt",
+      "poster": "viz_697_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.97,
+          "tekstas": "CMYK koduotės spalvos sistemoje išsikraipo."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 7.73,
+          "tekstas": "Keista spalva ir yra ženklas."
+        },
+        {
+          "nuo_s": 7.9,
+          "iki_s": 10.39,
+          "tekstas": "Keliate RGB paveikslėlius."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "viz_697_07",
+      "failas": "07-rekomenduojamas-dydis",
+      "pavadinimas": "Geriausia 1920 x 1080",
+      "trukme_s": 13,
+      "mp4": "viz_697_07.mp4",
+      "vtt": "viz_697_07.vtt",
+      "poster": "viz_697_07.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.61,
+          "tekstas": "Sistema priima iki keturių su puse tūkstančio taškų."
+        },
+        {
+          "nuo_s": 5.5,
+          "iki_s": 7.71,
+          "tekstas": "Neviršijate HD raiškos."
+        },
+        {
+          "nuo_s": 7.9,
+          "iki_s": 10.44,
+          "tekstas": "Tokia nuotrauka užima visą ekraną."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "viz_697_08",
+      "failas": "08-paveikslelis-be-fono",
+      "pavadinimas": "Galerijoje nenaudokite be fono",
+      "trukme_s": 11,
+      "mp4": "viz_697_08.mp4",
+      "vtt": "viz_697_08.vtt",
+      "poster": "viz_697_08.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.28,
+          "tekstas": "Paveikslėlis be fono galerijoje iškrenta."
+        },
+        {
+          "nuo_s": 4.6,
+          "iki_s": 8.05,
+          "tekstas": "Naujienų įrašuose renkatės nuotraukas su fonu."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

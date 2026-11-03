@@ -1,0 +1,27 @@
+{
+ "pamokos_slug": "turinio-manipuliacija",
+ "pamoka_id": "pam_1586",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_1586_00",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1586_00",
+   "pamoka": "pam_1586",
+   "failas": "00-vienas-turinio-vienetas",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Priėmimas",
+    "Tėvams",
+    "Priėmimas prasidėjo"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Priėmimas į mokyklą"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

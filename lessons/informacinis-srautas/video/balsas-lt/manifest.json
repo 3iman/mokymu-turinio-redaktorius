@@ -1,0 +1,43 @@
+{
+  "hash": "5b0eaba901760ffebb8fc9bfe2e18a8686198965902f8863dc95f4ee925a1b85",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 652201829,
+  "characters": 191,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T01:45:10.109Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Spinta ar srautas",
+      "text": "Turinys sugula į stalčiukus, kurių niekas netikrina.",
+      "file": "k01-1.wav",
+      "duration": 3.87,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Spinta ar srautas",
+      "text": "Visą aktualią informaciją pirmiausia skelbiate naujiena.",
+      "file": "k01-2.wav",
+      "duration": 4.01,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Spinta ar srautas",
+      "text": "Tvarką įsivedate /vʲiduˈjɛ/ ir iškomunikuojate bendruomenei.",
+      "file": "k01-3.wav",
+      "duration": 4.063,
+      "fits": true,
+      "reikia_sek": 16
+    }
+  ]
+}

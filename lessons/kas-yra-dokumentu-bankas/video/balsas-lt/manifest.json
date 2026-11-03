@@ -1,0 +1,73 @@
+{
+  "hash": "da7dc9896219ffa8ddf737d3d9b3347a1a7b5420b7a362e15dc407d086a0f9dc",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 2777459066,
+  "characters": 330,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T02:04:33.263Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Ką vadiname dokumentu",
+      "text": "Svetainėje dokumentas – tai failas arba aplankas.",
+      "file": "k01-1.wav",
+      "duration": 4.15,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Ką vadiname dokumentu",
+      "text": "Tai, ką norite /atsʲiˈsʲuːstʲi/ ar persiųsti.",
+      "file": "k01-2.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Ką vadiname dokumentu",
+      "text": "Taip pat /atsʲisˈpaːusdʲintʲi/ arba pasirašyti.",
+      "file": "k01-3.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Kas nėra dokumentas",
+      "text": "Informacinio pobūdžio tekstai ir /pranʲɛˈʃʲimai/ nėra dokumentai.",
+      "file": "k02-1.wav",
+      "duration": 4.01,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Kas nėra dokumentas",
+      "text": "Juos publikuojate kaip straipsnį arba vidinį puslapį.",
+      "file": "k02-2.wav",
+      "duration": 3.85,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Kas nėra dokumentas",
+      "text": "Nuveda navigacija, /ʒʲiːˈma/ arba baneris.",
+      "file": "k02-3.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 15
+    }
+  ]
+}

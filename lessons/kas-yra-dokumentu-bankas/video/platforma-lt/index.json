@@ -1,0 +1,67 @@
+{
+  "pamoka": "kas-yra-dokumentu-bankas",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:06:02.143Z",
+  "balso_stiprinimas_db": 5.7,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_681_01",
+      "failas": "01-kas-yra-dokumentas",
+      "pavadinimas": "Ką vadiname dokumentu",
+      "trukme_s": 14,
+      "mp4": "viz_681_01.mp4",
+      "vtt": "viz_681_01.vtt",
+      "poster": "viz_681_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.35,
+          "tekstas": "Svetainėje dokumentas – tai failas arba aplankas."
+        },
+        {
+          "nuo_s": 5.5,
+          "iki_s": 8.55,
+          "tekstas": "Tai, ką norite atsisiųsti ar persiųsti."
+        },
+        {
+          "nuo_s": 8.8,
+          "iki_s": 12.05,
+          "tekstas": "Taip pat atsispausdinti arba pasirašyti."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_681_02",
+      "failas": "02-kas-nera-dokumentas",
+      "pavadinimas": "Kas nėra dokumentas",
+      "trukme_s": 16,
+      "mp4": "viz_681_02.mp4",
+      "vtt": "viz_681_02.vtt",
+      "poster": "viz_681_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.21,
+          "tekstas": "Informacinio pobūdžio tekstai ir pranešimai nėra dokumentai."
+        },
+        {
+          "nuo_s": 6.1,
+          "iki_s": 9.95,
+          "tekstas": "Juos publikuojate kaip straipsnį arba vidinį puslapį."
+        },
+        {
+          "nuo_s": 10.5,
+          "iki_s": 14.27,
+          "tekstas": "Nuveda navigacija, žyma arba baneris."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

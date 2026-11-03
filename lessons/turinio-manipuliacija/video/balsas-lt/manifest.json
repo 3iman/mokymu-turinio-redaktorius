@@ -1,0 +1,43 @@
+{
+  "hash": "f1233cea41765e9a491f0f1c5b51707647c466c5271816f4e869a7dfbd642e9b",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 3037985122,
+  "characters": 176,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T02:18:01.992Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Turinio vienetas tik vienas",
+      "text": "/skaitmʲɛˈnʲinʲis/ turinys lengvai dubliuojamas ir pernaudojamas.",
+      "file": "k01-1.wav",
+      "duration": 3.99,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Turinio vienetas tik vienas",
+      "text": "Tą pačią priėmimo informaciją parodote septyniose vietose.",
+      "file": "k01-2.wav",
+      "duration": 4.13,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Turinio vienetas tik vienas",
+      "text": "Turinio vienetas lieka vienas.",
+      "file": "k01-3.wav",
+      "duration": 2.383,
+      "fits": true,
+      "reikia_sek": 14
+    }
+  ]
+}

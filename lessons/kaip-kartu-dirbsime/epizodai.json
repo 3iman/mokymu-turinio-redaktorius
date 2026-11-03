@@ -1,0 +1,215 @@
+{
+ "pamokos_slug": "kaip-kartu-dirbsime",
+ "pamoka_id": "pam_689",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_689_01",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_689_01",
+   "pamoka": "pam_689",
+   "failas": "01-butelio-kakliukas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Didinti darbuotojų skaičių",
+    "Padidintų produkto kainą",
+    "Procesų tobulinimas",
+    "Tvaresnis sprendimas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_689_02",
+   "rusis": "koncepcija",
+   "sablonas": "dokumentu_sarasas",
+   "dalis": "dal_689_02",
+   "pamoka": "pam_689",
+   "failas": "02-kur-rasyti",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "turinys@cleverphant.lt",
+    "pagalba@cleverphant.lt",
+    "pagalba@wolet.lt",
+    "Turinys",
+    "Pagalba",
+    "Technika"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "laisko_tema": "53 Darbo užmokestis"
+   },
+   "naudoja_ir": [
+    "dal_689_04"
+   ]
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_689_03",
+   "rusis": "koncepcija",
+   "sablonas": "srautas",
+   "dalis": "dal_689_03",
+   "pamoka": "pam_689",
+   "failas": "03-vadybininko-laikas",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Turinio auditas pateiktas",
+    "~2 mėn.",
+    "Papildymas užsitęsia",
+    "Darbai patenka į eilę",
+    "Pagalbos centras",
+    "Paleidimo stadija"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_689_05",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_689_05",
+   "pamoka": "pam_689",
+   "failas": "05-kam-deleguoti",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Neretai deleguojama",
+    "Sklandžiausia",
+    "Administracijos narys",
+    "Raštinės darbuotojai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_689_06",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_689_06",
+   "pamoka": "pam_689",
+   "failas": "06-stebekite-darba",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Demo versija atvira",
+    "Laikinas svetainės adresas",
+    "Užsukate kartkartėmis"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "adresas": "demo.mokykla.lt"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "viz_689_07",
+   "rusis": "koncepcija",
+   "sablonas": "zingsniai",
+   "dalis": "dal_689_07",
+   "pamoka": "pam_689",
+   "failas": "07-pastebejimu-sarasas",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Deleguojate",
+    "Peržiūrite neatidėliodami",
+    "Pradedate nuo lengviausių"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "viz_689_08",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_689_08",
+   "pamoka": "pam_689",
+   "failas": "08-abejones-ir-atsakymas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Abejonės",
+    "Kodėl taip",
+    "Kokybės standartas",
+    "Auditorijų apklausos"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 8,
+   "epizodas": "viz_689_09",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_689_09",
+   "pamoka": "pam_689",
+   "failas": "09-paleidimo-greitis",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Pastangos komunikuoti",
+    "Disciplina",
+    "Nuoseklumas",
+    "Palankios aplinkybės"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 9,
+   "epizodas": "viz_689_10",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_689_10",
+   "pamoka": "pam_689",
+   "failas": "10-letai-uztikrintai",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Lėčiau dėl atidėliojimo",
+    "Lėčiau dėl gilinimosi",
+    "Uždelsta, bet kokybiška"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 10,
+   "epizodas": "viz_689_11",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_689_11",
+   "pamoka": "pam_689",
+   "failas": "11-o-kas-toliau",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Baigiasi sutartis",
+    "Mokyklos gimtadienis",
+    "Kitą savaitę auditas",
+    "Turinį sutvarkysime patys"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  }
+ ]
+}

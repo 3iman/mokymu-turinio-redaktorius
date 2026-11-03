@@ -1,0 +1,195 @@
+{
+ "pamokos_slug": "ka-reikia-zinoti-apie-paveikslelius",
+ "pamoka_id": "pam_697",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_697_01",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_697_01",
+   "pamoka": "pam_697",
+   "failas": "01-paveiksleliu-formatai",
+   "trukme_s": 17,
+   "ekrano_tekstai": [
+    "JPG",
+    "PNG",
+    "GIF",
+    "SVG",
+    "WEBP"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "JPG",
+    "PNG",
+    "GIF",
+    "SVG",
+    "WEBP"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_697_02",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_697_02",
+   "pamoka": "pam_697",
+   "failas": "02-kiti-formatai",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Taip",
+    "Ne",
+    "JPG",
+    "PNG",
+    "BMP",
+    "TIF"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "BMP",
+    "TIF",
+    "AI",
+    "EPS",
+    "JPG",
+    "PNG",
+    "PDF"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_697_03",
+   "rusis": "koncepcija",
+   "sablonas": "srautas",
+   "dalis": "dal_697_03",
+   "pamoka": "pam_697",
+   "failas": "03-sistema-sugeneruoja-dydi",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Įkeliate paveikslėlį",
+    "Sistema sugeneruoja",
+    "Svetainėje"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_697_04",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_697_04",
+   "pamoka": "pam_697",
+   "failas": "04-mazinkite-nedidinkite",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Taip",
+    "Ne",
+    "Mažinti",
+    "Didinti",
+    "Crop"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Crop"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_697_05",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_697_05",
+   "pamoka": "pam_697",
+   "failas": "05-per-dideli-paveiksleliai",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Per didelis",
+    "Tinkamas",
+    "Matmenys",
+    "Užimama vieta"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "viz_697_06",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_697_06",
+   "pamoka": "pam_697",
+   "failas": "06-rgb-ne-cmyk",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "RGB",
+    "CMYK",
+    "Išsikraipo spalvos"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "RGB",
+    "CMYK"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "viz_697_07",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_697_07",
+   "pamoka": "pam_697",
+   "failas": "07-rekomenduojamas-dydis",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Sistemos ribos",
+    "4500 x 4500",
+    "20 Mb",
+    "Geriausia",
+    "1920 x 1080"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "4500 x 4500",
+    "1920 x 1080",
+    "Mb",
+    "HD"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 8,
+   "epizodas": "viz_697_08",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_697_08",
+   "pamoka": "pam_697",
+   "failas": "08-paveikslelis-be-fono",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Taip",
+    "Ne",
+    "Be fono",
+    "Su fonu"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": [
+    "dal_697_09"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* Kadras 1 — „Sukuriate metraščio įrašą“ (ep_908_03_1): sąrašas → forma → svetainės metraštis
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 40% 40%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+  .stage > .scr:nth-of-type(1) { opacity: 0; }
+  .stage > .scr:nth-of-type(2) { opacity: 0; }
+  .stage > .scr:nth-of-type(3) { opacity: 1; }
+  .cursor-wrap { transform: translate(1376.0px, 817.0px); }
+  .caret-pav { opacity: 1; }
+  .caret-data { opacity: 1; }
+  .caret-intro { opacity: 1; }
+  .up-row { opacity: 1; }
+  .y-new { opacity: 1; }
+  .tl-card { opacity: 1; }
+
+
+  .tl-table .tvs-th, .tl-table .tvs-row { grid-template-columns: 30px 120px 1fr 200px 240px 150px; }
+  .tl-table .tvs-thumb.is-wide { width: 84px; height: 56px; }
+  .tl-form .intro { height: 80px; white-space: normal; align-items: flex-start; padding-top: 10px; line-height: 1.45; }
+  .tl-form .intro .tvs-typed { white-space: normal; }
+  .tl-form .btns { display: flex; gap: 8px; margin-bottom: 8px; }
+  .tl-form .tvs-thumb.is-wide { width: 72px; height: 48px; }
+  .scr3 { inset: 20px 40px; width: auto; height: auto; }
+  .tl-card { max-width: 620px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class=""></i><i class="is-bars"></i><i class=""></i><i class="is-on"></i><i class=""></i></div>
+        <div class="tvs-subnav"><span class="is-on">Timeline</span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">Metraščio modulis  /  Timeline</div>
+
+          <div><span class="tvs-btn " data-t="add"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>Pridėti</span></div>
+          <div class="tvs-table tl-table">
+            <div class="tvs-th"><div class="tvs-check"></div><span>Nuotraukos</span><span>Pavadinimas</span><span>Data</span><span>Autorius</span><span></span></div>
+            <div class="tvs-row"><div class="tvs-check"></div><div><span class="tvs-thumb is-wide"></span></div><div>2015</div><div>2015-09-01</div><div>Administratorius</div><div class="tvs-actions"><span class="tvs-btn is-tiny is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>Redaguoti</span></div></div><div class="tvs-row"><div class="tvs-check"></div><div><span class="tvs-thumb is-wide"></span></div><div>2014</div><div>2014-06-20</div><div>Administratorius</div><div class="tvs-actions"><span class="tvs-btn is-tiny is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>Redaguoti</span></div></div><div class="tvs-row"><div class="tvs-check"></div><div><span class="tvs-thumb is-wide"></span></div><div>2013</div><div>2013-09-02</div><div>Administratorius</div><div class="tvs-actions"><span class="tvs-btn is-tiny is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>Redaguoti</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scr scr2 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class=""></i><i class="is-bars"></i><i class=""></i><i class="is-on"></i><i class=""></i></div>
+        <div class="tvs-subnav"><span class="is-on">Timeline</span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">Metraščio modulis  /  Timeline  /  Pridėti</div>
+
+          <div class="tvs-form is-dense tl-form">
+            <div class="tvs-field" data-t="fpav"><div class="tvs-label">Pavadinimas<span class="tvs-req">*</span></div><div class="tvs-input is-focus"><span class="tvs-typed ty-pav" data-ty="pav"><span class="w"><span class="l l1">2</span><span class="l l2">0</span><span class="l l3">1</span><span class="l l4">6</span></span></span><span class="tvs-caret caret-pav"></span></div></div>
+            <div class="tvs-field"><div class="tvs-label">Laida</div><div class="tvs-input"></div></div>
+            <div class="tvs-field" data-t="fdata"><div class="tvs-label">Data<span class="tvs-req">*</span></div><div class="tvs-date"><span class="tvs-date-x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></span><span class="tvs-date-v"><span class="tvs-typed ty-data" data-ty="data"><span class="w"><span class="l l1">2</span><span class="l l2">0</span><span class="l l3">1</span><span class="l l4">6</span><span class="l l5">-</span><span class="l l6">0</span><span class="l l7">7</span><span class="l l8">-</span><span class="l l9">0</span><span class="l l10">5</span></span></span></span><span class="tvs-date-tz">Europe/Vilnius</span></div></div>
+            <div class="tvs-field" data-t="fintro"><div class="tvs-label">Intro</div><div class="tvs-input is-area intro"><span class="tvs-typed ty-intro" data-ty="intro"><span class="w"><span class="l l1">S</span><span class="l l2">a</span><span class="l l3">v</span><span class="l l4">i</span><span class="l l5">v</span><span class="l l6">a</span><span class="l l7">l</span><span class="l l8">d</span><span class="l l9">y</span><span class="l l10">b</span><span class="l l11">ė</span><span class="l l12">s</span></span><span class="l l13">&nbsp;</span><span class="w"><span class="l l14">t</span><span class="l l15">a</span><span class="l l16">r</span><span class="l l17">y</span><span class="l l18">b</span><span class="l l19">o</span><span class="l l20">s</span></span><span class="l l21">&nbsp;</span><span class="w"><span class="l l22">s</span><span class="l l23">p</span><span class="l l24">r</span><span class="l l25">e</span><span class="l l26">n</span><span class="l l27">d</span><span class="l l28">i</span><span class="l l29">m</span><span class="l l30">u</span></span><span class="l l31">&nbsp;</span><span class="w"><span class="l l32">p</span><span class="l l33">r</span><span class="l l34">i</span><span class="l l35">e</span></span><span class="l l36">&nbsp;</span><span class="w"><span class="l l37">m</span><span class="l l38">o</span><span class="l l39">k</span><span class="l l40">y</span><span class="l l41">k</span><span class="l l42">l</span><span class="l l43">o</span><span class="l l44">s</span></span><span class="l l45">&nbsp;</span><span class="w"><span class="l l46">p</span><span class="l l47">r</span><span class="l l48">i</span><span class="l l49">j</span><span class="l l50">u</span><span class="l l51">n</span><span class="l l52">g</span><span class="l l53">t</span><span class="l l54">a</span></span><span class="l l55">&nbsp;</span><span class="w"><span class="l l56">k</span><span class="l l57">a</span><span class="l l58">i</span><span class="l l59">m</span><span class="l l60">y</span><span class="l l61">n</span><span class="l l62">i</span><span class="l l63">n</span><span class="l l64">ė</span></span><span class="l l65">&nbsp;</span><span class="w"><span class="l l66">m</span><span class="l l67">o</span><span class="l l68">k</span><span class="l l69">y</span><span class="l l70">k</span><span class="l l71">l</span><span class="l l72">a</span><span class="l l73">.</span></span><span class="l l74">&nbsp;</span><span class="w"><span class="l l75">M</span><span class="l l76">o</span><span class="l l77">k</span><span class="l l78">y</span><span class="l l79">k</span><span class="l l80">l</span><span class="l l81">a</span></span><span class="l l82">&nbsp;</span><span class="w"><span class="l l83">p</span><span class="l l84">e</span><span class="l l85">r</span><span class="l l86">v</span><span class="l l87">a</span><span class="l l88">d</span><span class="l l89">i</span><span class="l l90">n</span><span class="l l91">t</span><span class="l l92">a</span><span class="l l93">.</span></span></span></div></div>
+            <div class="tvs-field" data-t="fnuot"><div class="tvs-label">Nuotraukos</div><div class="btns"><span class="tvs-btn is-tiny is-info">Select File</span><span class="tvs-btn is-tiny">Upload</span></div>
+              <div class="tvs-frow up-row"><span class="tvs-thumb is-wide"></span><div class="tvs-fmeta"><span class="tvs-fname">mokykla-2016.jpg</span><span class="tvs-fpath">local://metrastis/mokykla-2016.jpg</span><span class="tvs-badge">1600 x 1067</span></div></div></div>
+          </div>
+          <div class="tvs-form-foot"><span class="tvs-btn is-tiny" data-t="save"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>Išsaugoti</span><span class="tvs-btn is-tiny is-grey">Atšaukti</span></div>
+        </div>
+      </div>
+
+      <div class="scr scr3 tvs-sweb">
+
+        <div class="tvs-sweb-h"><div class="tvs-sweb-crest"></div><div class="tvs-sweb-name">Demo mokykla<small>Demo miestas</small></div></div>
+        <div class="tvs-sweb-nav"><span class="is-on">Apie mokyklą</span><span>Mokiniams</span><span>Tėvams</span><span>Naujienos</span><span>Kontaktai</span></div>
+        <div class="tvs-sweb-b">
+          <div class="tvs-sweb-t">Apie mokyklą</div>
+          <div class="tvs-sweb-sec">Metraštis</div>
+          <div class="tvs-tline">
+            <div class="tvs-tline-y" data-t="years"><span class="is-on y-new">2016</span><span>2015</span><span>2014</span><span>2013</span></div>
+            <div class="tvs-scard tl-card" data-t="card"><div class="tvs-scard-img"></div><div class="tvs-scard-b"><div class="tvs-scard-t">2016</div><div class="tvs-scard-d">2016-07-05</div><div class="tvs-scard-p">Savivaldybės tarybos sprendimu prie mokyklos prijungta kaimyninė mokykla. Mokykla pervadinta.</div></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="spot"></div>
+      <div class="tvs-ripple rp rp1"></div>
+      <div class="tvs-ripple rp rp2"></div>
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

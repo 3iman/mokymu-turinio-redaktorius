@@ -1,0 +1,241 @@
+{
+  "pamoka": "svetaines-pritaikymas-neregiams",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:17:56.425Z",
+  "balso_stiprinimas_db": 6,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_1625_01",
+      "failas": "01-kam-tai-aktualu",
+      "pavadinimas": "Svetainę jie girdi",
+      "trukme_s": 12,
+      "mp4": "viz_1625_01.mp4",
+      "vtt": "viz_1625_01.vtt",
+      "poster": "viz_1625_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.47,
+          "tekstas": "Regintis į svetainę žiūri."
+        },
+        {
+          "nuo_s": 3.6,
+          "iki_s": 7.18,
+          "tekstas": "Neregys ją girdi – skaitytuvas skaito viską."
+        },
+        {
+          "nuo_s": 7.3,
+          "iki_s": 10.02,
+          "tekstas": "Todėl svetainę tvarkote ir techniškai."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_1625_02",
+      "failas": "02-ar-visi-vienodai",
+      "pavadinimas": "Įgūdžiai skiriasi",
+      "trukme_s": 10,
+      "mp4": "viz_1625_02.mp4",
+      "vtt": "viz_1625_02.vtt",
+      "poster": "viz_1625_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.29,
+          "tekstas": "Vieni naršo labai greitai."
+        },
+        {
+          "nuo_s": 3.6,
+          "iki_s": 5.54,
+          "tekstas": "Kiti tik pradeda mokytis."
+        },
+        {
+          "nuo_s": 6.2,
+          "iki_s": 8.92,
+          "tekstas": "Todėl struktūrą darote kuo aiškesnę."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_1625_03",
+      "failas": "03-tvarkinga-svetaine",
+      "pavadinimas": "Ką duoda tvarkinga svetainė",
+      "trukme_s": 14,
+      "mp4": "viz_1625_03.mp4",
+      "vtt": "viz_1625_03.vtt",
+      "poster": "viz_1625_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.25,
+          "tekstas": "Pažymėtos antraštės leidžia peršokti nuo temos prie temos."
+        },
+        {
+          "nuo_s": 6,
+          "iki_s": 8.85,
+          "tekstas": "Aiškiai pavadinate mygtukus ir dokumentus."
+        },
+        {
+          "nuo_s": 9.5,
+          "iki_s": 13.03,
+          "tekstas": "Lankytojas žino, ką rinktis, neatidaręs failo."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_1625_04",
+      "failas": "04-alt-aprasai",
+      "pavadinimas": "Kada reikia alt aprašo",
+      "trukme_s": 13,
+      "mp4": "viz_1625_04.mp4",
+      "vtt": "viz_1625_04.vtt",
+      "poster": "viz_1625_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.73,
+          "tekstas": "Alt aprašą rašote, kai paveikslėlis perteikia prasmę."
+        },
+        {
+          "nuo_s": 5.6,
+          "iki_s": 7.94,
+          "tekstas": "Dekoratyviniam vaizdui jo nereikia."
+        },
+        {
+          "nuo_s": 8.6,
+          "iki_s": 11.68,
+          "tekstas": "Perteklinis aprašas skaitytuvą tik stabdo."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_1625_05",
+      "failas": "05-skaitymo-mygtukai",
+      "pavadinimas": "Mygtukas skaitymui balsu",
+      "trukme_s": 13,
+      "mp4": "viz_1625_05.mp4",
+      "vtt": "viz_1625_05.vtt",
+      "poster": "viz_1625_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.05,
+          "tekstas": "Neregiams šio mygtuko dažniausiai nereikia."
+        },
+        {
+          "nuo_s": 4.8,
+          "iki_s": 7.21,
+          "tekstas": "Skaitytuvą jie turi savo įrenginyje."
+        },
+        {
+          "nuo_s": 7.8,
+          "iki_s": 11.34,
+          "tekstas": "Naudos matote kitur – esant skaitymo sunkumams."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "viz_1625_06",
+      "failas": "06-be-specialiu-irankiu",
+      "pavadinimas": "Specialių įrankių nereikia",
+      "trukme_s": 13,
+      "mp4": "viz_1625_06.mp4",
+      "vtt": "viz_1625_06.vtt",
+      "poster": "viz_1625_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.68,
+          "tekstas": "Papildomų mygtukų ar atskiros versijos nekuriate."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 8.27,
+          "tekstas": "Įrankiai jau yra lankytojo įrenginyje."
+        },
+        {
+          "nuo_s": 8.5,
+          "iki_s": 11.39,
+          "tekstas": "Lieka techninė kokybė ir standartai."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "viz_1625_07",
+      "failas": "07-patikros-klaidos",
+      "pavadinimas": "Ne visos klaidos aktualios",
+      "trukme_s": 12,
+      "mp4": "viz_1625_07.mp4",
+      "vtt": "viz_1625_07.vtt",
+      "poster": "viz_1625_07.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.73,
+          "tekstas": "Automatinis įrankis rodo visas aptiktas klaidas."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 7.41,
+          "tekstas": "Dalis jų – spalvų kontrastai."
+        },
+        {
+          "nuo_s": 7.7,
+          "iki_s": 10.59,
+          "tekstas": "Neregiams aktualias atsirenkate patys."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "viz_1625_08",
+      "failas": "08-kaip-testavome",
+      "pavadinimas": "Kaip testavome svetainę",
+      "trukme_s": 14,
+      "mp4": "viz_1625_08.mp4",
+      "vtt": "viz_1625_08.vtt",
+      "poster": "viz_1625_08.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.13,
+          "tekstas": "Svetainę tikrinome automatiniais įrankiais."
+        },
+        {
+          "nuo_s": 4.8,
+          "iki_s": 7.82,
+          "tekstas": "Rekomendacijų gavome iš neregio specialisto."
+        },
+        {
+          "nuo_s": 8.5,
+          "iki_s": 12.11,
+          "tekstas": "Konsultuojamės toliau, todėl pastabas rašote mums."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

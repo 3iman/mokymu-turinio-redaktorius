@@ -1,0 +1,54 @@
+{
+ "pamokos_slug": "projektine-veikla",
+ "pamoka_id": "pam_683",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_683_02",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_683_02",
+   "pamoka": "pam_683",
+   "failas": "02-aprasymo-anatomija",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Tikslai",
+    "Uždaviniai",
+    "Partneriai",
+    "Rezultatai",
+    "Lėšos",
+    "Trukmė"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "projektas": "Erasmus+ „Judri mokykla“"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_683_04",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_683_04",
+   "pamoka": "pam_683",
+   "failas": "04-aprasymas-ir-straipsnis",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Visų projektų sąrašas",
+    "Nuorodos į straipsnius",
+    "Naujienų srautas",
+    "Baneris su data"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "projektas": "Erasmus+ „Judri mokykla“"
+   },
+   "naudoja_ir": [
+    "dal_683_01"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,207 @@
+{
+ "pamokos_slug": "irasu-kategorizavimas",
+ "pamoka_id": "pam_1471",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_1471_01",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_1471_01",
+   "pamoka": "pam_1471",
+   "failas": "01-ivykes-ar-busimas",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Renginiai",
+    "Kvietimas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "renginys": "Šimtadienio nuotraukų galerija",
+    "kvietimas": "Kvietimas į tėvų susirinkimą"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_1471_02",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1471_02",
+   "pamoka": "pam_1471",
+   "failas": "02-kategorija-pranesimas",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Pranešimas",
+    "Laikinas aktualumas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "irasas": "Pasikeitė pamokų laikas"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_1471_03",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1471_03",
+   "pamoka": "pam_1471",
+   "failas": "03-kategorija-didziuojames",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Didžiuojamės",
+    "Diplomas ir nuotrauka"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "irasas": "Pirma vieta rajono olimpiadoje"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_1471_04",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1471_04",
+   "pamoka": "pam_1471",
+   "failas": "04-kategorija-sveikinimas",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Sveikinimas",
+    "Galiojimo data"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "irasas": "Atvirukas Mokytojo dienai"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_1471_05",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1471_05",
+   "pamoka": "pam_1471",
+   "failas": "05-kategorija-konkursas",
+   "trukme_s": 10,
+   "ekrano_tekstai": [
+    "Konkursas",
+    "Aprašymas ir nuostatai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "irasas": "Piešinių konkurso nuostatai"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "viz_1471_06",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1471_06",
+   "pamoka": "pam_1471",
+   "failas": "06-kategorija-svarbu",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Svarbu!",
+    "Išskirtinis pranešimas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "irasas": "Rytoj mokykla nedirba"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "viz_1471_07",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1471_07",
+   "pamoka": "pam_1471",
+   "failas": "07-kategorija-kvietimas",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Kvietimas",
+    "Būsimi renginiai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "irasas": "Kvietimas į tėvų susirinkimą"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 8,
+   "epizodas": "viz_1471_08",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1471_08",
+   "pamoka": "pam_1471",
+   "failas": "08-kategorija-ugdymas-karjerai",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Ugdymas karjerai",
+    "Profesinė savišvieta"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "irasas": "Susitikimas su profesijos atstovu"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 9,
+   "epizodas": "viz_1471_09",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1471_09",
+   "pamoka": "pam_1471",
+   "failas": "09-kategorija-projektine-veikla",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Projektinė veikla",
+    "Visi projekto įrašai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "irasas": "ES projekto naujienos"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 10,
+   "epizodas": "viz_1471_10",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1471_10",
+   "pamoka": "pam_1471",
+   "failas": "10-kategorija-isvykos",
+   "trukme_s": 10,
+   "ekrano_tekstai": [
+    "Išvykos",
+    "Išvykos ir ekskursijos"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "irasas": "Ekskursija į Kernavę"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

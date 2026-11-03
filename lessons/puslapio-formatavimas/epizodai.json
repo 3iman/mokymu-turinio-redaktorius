@@ -1,0 +1,30 @@
+{
+ "pamokos_slug": "puslapio-formatavimas",
+ "pamoka_id": "pam_700",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_698_01",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_698_01",
+   "pamoka": "pam_700",
+   "failas": "01-formatuoto-teksto-dalys",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Pastraipa",
+    "Sąrašas",
+    "Pastorintas",
+    "Kursyvas",
+    "Antraštė",
+    "Citata"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "tekstas": "Demo mokyklos puslapio pastraipa"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

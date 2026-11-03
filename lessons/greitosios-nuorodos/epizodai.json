@@ -1,0 +1,28 @@
+{
+ "pamokos_slug": "greitosios-nuorodos",
+ "pamoka_id": "pam_1467",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_1467_00",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1467_00",
+   "pamoka": "pam_1467",
+   "failas": "00-lankytoju-tipai",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Tėvai",
+    "Mokytojai",
+    "Vaikai",
+    "Įstaigas kontroliuojančių institucijų darbuotojai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

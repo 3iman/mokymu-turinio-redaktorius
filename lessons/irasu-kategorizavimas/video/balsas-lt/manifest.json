@@ -1,0 +1,223 @@
+{
+  "hash": "0b3c88ca0e302a7ad4e75ffa6dbd2b143acf27c8b1aa7bd39de525b69a03b5b9",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 1402765170,
+  "characters": 1062,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T01:46:16.085Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Įvykęs ar būsimas renginys",
+      "text": "Kategorijoje „Renginiai“ talpinate straipsnius apie jau įvykusius renginius.",
+      "file": "k01-1.wav",
+      "duration": 5.15,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Įvykęs ar būsimas renginys",
+      "text": "Čia tinka ir nuotraukų galerijos.",
+      "file": "k01-2.wav",
+      "duration": 2.49,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Įvykęs ar būsimas renginys",
+      "text": "Apie būsimą renginį skelbiate kategorijoje „Kvietimas“.",
+      "file": "k01-3.wav",
+      "duration": 3.97,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Pranešimas",
+      "text": "Čia talpinate informaciją, kuri yra laikino aktualumo.",
+      "file": "k02-1.wav",
+      "duration": 3.93,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Pranešimas",
+      "text": "Būsimi renginiai, įstatymų ar tvarkos pakeitimai.",
+      "file": "k02-2.wav",
+      "duration": 3.73,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Didžiuojamės",
+      "text": "Šiai kategorijai priskiriate įrašus apie pasiekimus ir diplomus.",
+      "file": "k03-1.wav",
+      "duration": 4.463,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Didžiuojamės",
+      "text": "Talpinate ne tik diplomą, bet ir žmogaus nuotrauką.",
+      "file": "k03-2.wav",
+      "duration": 3.517,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Sveikinimas",
+      "text": "Čia talpinate atvirukus įvairioms /ˈproːɡoːms/.",
+      "file": "k04-1.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Sveikinimas",
+      "text": "Nustatote galiojimo datą – atvirukas aktualus tik /laikʲiˈnai/.",
+      "file": "k04-2.wav",
+      "duration": 4.41,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Konkursas",
+      "text": "Čia skelbiate konkursų aprašymus.",
+      "file": "k05-1.wav",
+      "duration": 2.423,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Konkursas",
+      "text": "Kartu – ir konkurso nuostatas.",
+      "file": "k05-2.wav",
+      "duration": 2.437,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Svarbu!",
+      "text": "Šią kategoriją naudojate, kai norite atkreipti dėmesį.",
+      "file": "k06-1.wav",
+      "duration": 3.61,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Svarbu!",
+      "text": "Pranešimas turi būti išskirtinis.",
+      "file": "k06-2.wav",
+      "duration": 2.69,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Kvietimas",
+      "text": "Kategoriją „Kvietimas“ naudojate skelbdami apie būsimus renginius.",
+      "file": "k07-1.wav",
+      "duration": 4.49,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Kvietimas",
+      "text": "Taip pat – apie susirinkimus.",
+      "file": "k07-2.wav",
+      "duration": 2.25,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Ugdymas karjerai",
+      "text": "Ši kategorija skirta profesinės savišvietos informacijai.",
+      "file": "k08-1.wav",
+      "duration": 3.85,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Ugdymas karjerai",
+      "text": "Čia ją ir sisteminate.",
+      "file": "k08-2.wav",
+      "duration": 1.85,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 9,
+      "cue": 1,
+      "title": "Projektinė veikla",
+      "text": "Šiai kategorijai priskiriate visus su projektine veikla susijusius įrašus.",
+      "file": "k09-1.wav",
+      "duration": 4.77,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 9,
+      "cue": 2,
+      "title": "Projektinė veikla",
+      "text": "Nė vieno nepaliekate be kategorijos.",
+      "file": "k09-2.wav",
+      "duration": 2.61,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 10,
+      "cue": 1,
+      "title": "Išvykos",
+      "text": "Šiai kategorijai priskiriate įrašus apie išvykas.",
+      "file": "k10-1.wav",
+      "duration": 3.29,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 10,
+      "cue": 2,
+      "title": "Išvykos",
+      "text": "Taip pat – apie ekskursijas.",
+      "file": "k10-2.wav",
+      "duration": 2.29,
+      "fits": true,
+      "reikia_sek": 10
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "lang": "lt",
+  "01_mokytoju_pavardes": {
+    "title": "„Neskelbsime pavardžių, nes BDAR“",
+    "old_title": "Dažna dingstis",
+    "old_step_1": "Neskelbsime mokytojų pavardžių",
+    "new_title": "Bendrieji reikalavimai, 16.3 p.",
+    "new_step_1": "Darbuotojų sąrašas",
+    "new_step_2": "Vardas ir pavardė, pareigos, kontaktai",
+    "summary": "BDAR ne draudžia, o įpareigoja žinoti"
+  },
+  "02_mokytojo_kvalifikacija": {
+    "title": "Mokytojo kvalifikacija",
+    "old_title": "Mitas",
+    "old_step_1": "„Neskelbsime mokytojo kvalifikacijos, nes BDAR“",
+    "new_title": "Bendrieji reikalavimai",
+    "new_step_1": "44 punktas",
+    "new_step_2": "Mokytojų kvalifikacija – tarp mokyklų internetu vykdomų funkcijų, kurioms reikalavimai taikomi",
+    "summary": "Tai ne BDAR klausimas, o prievolė"
+  },
+  "03_mokytoju_kontaktai": {
+    "title": "Mokytojų kontaktai",
+    "old_title": "Mitas",
+    "old_step_1": "„Neskelbsime mokytojų kontaktų, nes BDAR“",
+    "new_title": "Bendrieji reikalavimai",
+    "new_step_1": "16.3 punktas",
+    "new_step_2": "Darbuotojų sąrašas su telefono numeriu ir el. pašto adresu ar jo sudarymo tvarka",
+    "summary": "Tai ne BDAR klausimas, o prievolė"
+  },
+  "04_specialistu_darbo_laikas": {
+    "title": "Specialistų darbo laikas",
+    "old_title": "Mitas",
+    "old_step_1": "„Neskelbsime specialistų darbo laiko, nes BDAR“",
+    "new_title": "Bendrieji reikalavimai",
+    "new_step_1": "16.6 punktas",
+    "new_step_2": "Už asmenų aptarnavimą atsakingo darbuotojo kontaktinė informacija ir darbo laikas",
+    "summary": "Tai ne BDAR klausimas, o prievolė"
+  },
+  "05_vadovu_nuotraukos": {
+    "title": "Vadovų nuotraukos",
+    "old_title": "Mitas",
+    "old_step_1": "„Nedėsime vadovų nuotraukų, nes BDAR“",
+    "new_title": "Bendrieji reikalavimai",
+    "new_step_1": "16.1 punktas",
+    "new_step_2": "Įstaigos vadovo (-ų) nuotrauka (-os) ir gyvenimo aprašymas (-ai)",
+    "summary": "Tai ne BDAR klausimas, o prievolė"
+  },
+  "06_pareigybes_aprasymas": {
+    "title": "Pareigybės aprašymas",
+    "old_title": "Mitas",
+    "old_step_1": "„Nedėsime pareigybės aprašymo, nes BDAR“",
+    "new_title": "Bendrieji reikalavimai",
+    "new_step_1": "16.4 punktas",
+    "new_step_2": "Kiekvieno darbuotojo atliekamos funkcijos ir specialieji reikalavimai pareigybei",
+    "summary": "Tai ne BDAR klausimas, o prievolė"
+  },
+  "07_atlyginimu_vidurkiai": {
+    "title": "Atlyginimų vidurkiai",
+    "old_title": "Mitas",
+    "old_step_1": "„Neskelbsime atlyginimų vidurkių, nes BDAR“",
+    "new_title": "Bendrieji reikalavimai",
+    "new_step_1": "22.3 punktas",
+    "new_step_2": "Vienodas pareigas einančių darbuotojų darbo užmokestis; išimtis – kai pareigas eina tik vienas darbuotojas",
+    "summary": "Tai ne BDAR klausimas, o prievolė"
+  },
+  "08_duomenu_apsaugos_dokumentai": {
+    "title": "Duomenų apsaugos dokumentai",
+    "old_title": "Mitas",
+    "old_step_1": "„Neskelbsime asmens duomenų apsaugos taisyklių“",
+    "new_title": "Bendrieji reikalavimai",
+    "new_step_1": "25 punktas",
+    "new_step_2": "Asmens duomenų tvarkymo taisyklės, teisių įgyvendinimo tvarkos aprašas, pareigūno kontaktai",
+    "summary": "Tai ne BDAR klausimas, o prievolė"
+  }
+}

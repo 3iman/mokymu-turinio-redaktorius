@@ -1,0 +1,26 @@
+{
+ "pamokos_slug": "informacinis-srautas",
+ "pamoka_id": "pam_1469",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_1469_00",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_1469_00",
+   "pamoka": "pam_1469",
+   "failas": "00-spinta-ar-srautas",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Didelė spinta",
+    "Informacinis srautas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "naujiena": "Atnaujinti ugdymo dokumentai"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

@@ -1,0 +1,83 @@
+{
+ "pamokos_slug": "vidines-nuorodos-puslapyje",
+ "pamoka_id": "pam_909",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_909_02_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_909_02",
+   "pamoka": "pam_909",
+   "failas": "02-inkaras",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Dokumentai",
+    "Anchor",
+    "Anchor Properties",
+    "Anchor Name",
+    "dokumentai",
+    "OK"
+   ],
+   "tvs_ui": [
+    "naujas: teksto redaktoriaus įrankių juosta",
+    "tvs-window",
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "Anchor",
+    "Anchor Name",
+    "OK"
+   ],
+   "demo_duomenys": {
+    "puslapis": "Priėmimas į mokyklą",
+    "skiltis": "Dokumentai",
+    "inkaras": "dokumentai"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_909_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_909_03",
+   "pamoka": "pam_909",
+   "failas": "03-nuoroda-i-inkara",
+   "trukme_s": 19,
+   "ekrano_tekstai": [
+    "Dokumentai",
+    "Link",
+    "Link Type",
+    "By Anchor Name",
+    "dokumentai",
+    "OK"
+   ],
+   "tvs_ui": [
+    "naujas: teksto redaktoriaus įrankių juosta",
+    "tvs-window",
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "tvs-site"
+   ],
+   "tarimo_kandidatai": [
+    "Link",
+    "Link Type",
+    "Link to anchor in the text",
+    "By Anchor Name"
+   ],
+   "demo_duomenys": {
+    "puslapis": "Priėmimas į mokyklą",
+    "inkaras": "dokumentai"
+   },
+   "naudoja_ir": [
+    "dal_909_90"
+   ]
+  }
+ ]
+}

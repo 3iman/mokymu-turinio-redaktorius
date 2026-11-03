@@ -1,0 +1,38 @@
+{
+  "pamoka": "informacinis-srautas",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T01:45:47.402Z",
+  "balso_stiprinimas_db": 4.9,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_1469_00",
+      "failas": "00-spinta-ar-srautas",
+      "pavadinimas": "Spinta ar srautas",
+      "trukme_s": 16,
+      "mp4": "viz_1469_00.mp4",
+      "vtt": "viz_1469_00.vtt",
+      "poster": "viz_1469_00.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.07,
+          "tekstas": "Turinys sugula į stalčiukus, kurių niekas netikrina."
+        },
+        {
+          "nuo_s": 5.5,
+          "iki_s": 9.51,
+          "tekstas": "Visą aktualią informaciją pirmiausia skelbiate naujiena."
+        },
+        {
+          "nuo_s": 10.1,
+          "iki_s": 14.16,
+          "tekstas": "Tvarką įsivedate viduje ir iškomunikuojate bendruomenei."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

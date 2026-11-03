@@ -1,0 +1,301 @@
+{
+  "pamoka": "kaip-kartu-dirbsime",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:04:22.938Z",
+  "balso_stiprinimas_db": 5.7,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_689_01",
+      "failas": "01-butelio-kakliukas",
+      "pavadinimas": "Butelio kakliuko efektas",
+      "trukme_s": 13,
+      "mp4": "viz_689_01.mp4",
+      "vtt": "viz_689_01.vtt",
+      "poster": "viz_689_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.99,
+          "tekstas": "Švietimo įstaigos dirba vienodu ritmu."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 7.17,
+          "tekstas": "Daugiau darbuotojų brangintų produktą."
+        },
+        {
+          "nuo_s": 7.6,
+          "iki_s": 11.61,
+          "tekstas": "Tvaresnį kelią, procesų tobulinimą, matote dešinėje."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_689_02",
+      "failas": "02-kur-rasyti",
+      "pavadinimas": "Kur rašyti",
+      "trukme_s": 15,
+      "mp4": "viz_689_02.mp4",
+      "vtt": "viz_689_02.vtt",
+      "poster": "viz_689_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.89,
+          "tekstas": "Pagrindinė bendravimo priemonė yra elektroninis paštas."
+        },
+        {
+          "nuo_s": 5.7,
+          "iki_s": 10.38,
+          "tekstas": "Turinį, patarimus ir technikos klausimus rašote skirtingais adresais."
+        },
+        {
+          "nuo_s": 11.3,
+          "iki_s": 13.96,
+          "tekstas": "Dėl skambučio susitariate iš anksto."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_689_03",
+      "failas": "03-vadybininko-laikas",
+      "pavadinimas": "Vadybininkas ir projekto eiga",
+      "trukme_s": 14,
+      "mp4": "viz_689_03.mp4",
+      "vtt": "viz_689_03.vtt",
+      "poster": "viz_689_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.13,
+          "tekstas": "Vadybininkas prie projekto aktyviai veikia apie du mėnesius."
+        },
+        {
+          "nuo_s": 6.1,
+          "iki_s": 9.62,
+          "tekstas": "Jei papildymas užsitęsia, darbai patenka į eilę."
+        },
+        {
+          "nuo_s": 10.1,
+          "iki_s": 12.84,
+          "tekstas": "Tada atsakymus gaunate Pagalbos centre."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_689_05",
+      "failas": "05-kam-deleguoti",
+      "pavadinimas": "Kam deleguoti koordinavimą",
+      "trukme_s": 15,
+      "mp4": "viz_689_05.mp4",
+      "vtt": "viz_689_05.vtt",
+      "poster": "viz_689_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.33,
+          "tekstas": "Neretai koordinavimą perduodate svetainę prižiūrėjusiam mokytojui."
+        },
+        {
+          "nuo_s": 6.6,
+          "iki_s": 10.53,
+          "tekstas": "Sklandžiau sekasi, kai darbu užsiima administracijos narys."
+        },
+        {
+          "nuo_s": 11.4,
+          "iki_s": 14.01,
+          "tekstas": "Įtraukiate ir raštinės darbuotojus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": [
+        "paskutinis balsas baigiasi 0.99s prieš galą (reikia ≥ 1s) — pailgink kadrą kortelėje"
+      ]
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_689_06",
+      "failas": "06-stebekite-darba",
+      "pavadinimas": "Stebėkite mūsų darbą",
+      "trukme_s": 14,
+      "mp4": "viz_689_06.mp4",
+      "vtt": "viz_689_06.vtt",
+      "poster": "viz_689_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.85,
+          "tekstas": "Demonstracinė versija atvira visą projekto laikotarpį."
+        },
+        {
+          "nuo_s": 5.7,
+          "iki_s": 8.55,
+          "tekstas": "Laikiniu adresu užsukate kada norite."
+        },
+        {
+          "nuo_s": 8.8,
+          "iki_s": 12.05,
+          "tekstas": "Jei darbai sustojo, rašote Pagalbos centrui."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "viz_689_07",
+      "failas": "07-pastebejimu-sarasas",
+      "pavadinimas": "Kaip įveikti pastebėjimų sąrašą",
+      "trukme_s": 12,
+      "mp4": "viz_689_07.mp4",
+      "vtt": "viz_689_07.vtt",
+      "poster": "viz_689_07.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.85,
+          "tekstas": "Darbus deleguojate tam, kas gali iškart nuspręsti."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 7.75,
+          "tekstas": "Sąrašą peržiūrite neatidėliodami."
+        },
+        {
+          "nuo_s": 8.1,
+          "iki_s": 10.39,
+          "tekstas": "Pradedate nuo lengviausių užduočių."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "viz_689_08",
+      "failas": "08-abejones-ir-atsakymas",
+      "pavadinimas": "Abejonės ir atsakymas",
+      "trukme_s": 13,
+      "mp4": "viz_689_08.mp4",
+      "vtt": "viz_689_08.vtt",
+      "poster": "viz_689_08.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.97,
+          "tekstas": "Dėl pastebėjimų sąrašo kyla abejonių."
+        },
+        {
+          "nuo_s": 4.3,
+          "iki_s": 7.79,
+          "tekstas": "Tai kokybės standartas, pasiektas per ilgą laiką."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 11.73,
+          "tekstas": "Nesutinkate? Informuojate, o ne tylite."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "viz_689_09",
+      "failas": "09-paleidimo-greitis",
+      "pavadinimas": "Svetainės paleidimo greitis",
+      "trukme_s": 13,
+      "mp4": "viz_689_09.mp4",
+      "vtt": "viz_689_09.vtt",
+      "poster": "viz_689_09.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.97,
+          "tekstas": "Paleidimo greitis priklauso nuo kelių faktorių."
+        },
+        {
+          "nuo_s": 5.1,
+          "iki_s": 7.43,
+          "tekstas": "Svarbiausias yra komunikacija."
+        },
+        {
+          "nuo_s": 7.7,
+          "iki_s": 11.71,
+          "tekstas": "Jei sąrašas netrumpėja, greito rezultato nematysite."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 9,
+      "epizodas": "viz_689_10",
+      "failas": "10-letai-uztikrintai",
+      "pavadinimas": "Lėtai, bet užtikrintai",
+      "trukme_s": 14,
+      "mp4": "viz_689_10.mp4",
+      "vtt": "viz_689_10.vtt",
+      "poster": "viz_689_10.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.18,
+          "tekstas": "Darbus galite paskirstyti per ilgesnį laiką."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 8.34,
+          "tekstas": "Kuo daugiau laiko, tuo stipresnė pagunda atidėlioti."
+        },
+        {
+          "nuo_s": 9.2,
+          "iki_s": 12.42,
+          "tekstas": "Svarbiausia, kad lėtumas vestų į kokybę."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 10,
+      "epizodas": "viz_689_11",
+      "failas": "11-o-kas-toliau",
+      "pavadinimas": "Dažniausi klausimai prieš paleidimą",
+      "trukme_s": 11,
+      "mp4": "viz_689_11.mp4",
+      "vtt": "viz_689_11.vtt",
+      "poster": "viz_689_11.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.64,
+          "tekstas": "Prieš paleidimą kyla daug klausimų."
+        },
+        {
+          "nuo_s": 4.2,
+          "iki_s": 6.61,
+          "tekstas": "Galime tartis ir koreguoti planą."
+        },
+        {
+          "nuo_s": 7,
+          "iki_s": 9.94,
+          "tekstas": "Staigių, kardinalių pokyčių vengiate."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

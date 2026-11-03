@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* Kadras 1 — „Prisijungiate“ (ep_906_01_1): adreso juosta /admin → prisijungimas → darbalaukis
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 30% 20%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+  .stage > .scr:nth-of-type(1) { opacity: 0; }
+  .stage > .scr:nth-of-type(2) { opacity: 0; }
+  .stage > .scr:nth-of-type(3) { opacity: 1; }
+  .cursor-wrap { transform: translate(1346.0px, 797.0px); }
+  .caret-admin { opacity: 1; }
+  .caret-email { opacity: 1; }
+  .caret-pass { opacity: 1; }
+
+
+  .br { background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid #dfe3ea; box-shadow: 0 24px 60px rgba(30,40,70,.12); }
+  .br .tvs-chrome { position: relative; z-index: 2; }
+  .br-in { position: absolute; inset: 60px 0 0; overflow: hidden; }
+  .br-in > .scr { position: absolute; inset: 0; }
+  .br-site { position: absolute; inset: 0; border-radius: 0; border: 0; box-shadow: none; }
+  .br .tvs-login { inset: 0; }
+  .br-in .tvs-dash { width: 900px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 br">
+        <div class="tvs-chrome"><svg class="is-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 12H5M11 5l-7 7 7 7"/></svg><svg class="is-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 12h15M13 5l7 7-7 7"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3"/><path d="M19.5 3.5v5h-5" stroke-linejoin="round"/></svg><div class="tvs-omni" data-t="omni"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 10V7.5a5 5 0 0 1 10 0V10h1.5v12h-13V10zm2.5 0h5V7.5a2.5 2.5 0 0 0-5 0z"/></svg><span><span class="is-dim">https://</span>demomokykla.lt<span class="tvs-typed ty-admin" data-ty="admin"><span class="w"><span class="l l1">/</span><span class="l l2">a</span><span class="l l3">d</span><span class="l l4">m</span><span class="l l5">i</span><span class="l l6">n</span></span></span><span class="tvs-caret caret-admin"></span></span></div></div>
+        <div class="br-in"><div class="tvs-sweb br-site"><div class="tvs-sweb-h"><div class="tvs-sweb-crest"></div><div class="tvs-sweb-name">Demo mokykla<small>Demo miestas</small></div></div>
+          <div class="tvs-sweb-nav"><span class="is-on">Apie mokyklą</span><span>Mokiniams</span><span>Tėvams</span><span>Naujienos</span><span>Kontaktai</span></div>
+          <div class="tvs-sweb-b"><div class="tvs-sweb-t">Sveiki atvykę</div><div class="tvs-spage-cards"><div class="tvs-spage-card"><i></i><b></b><s></s></div><div class="tvs-spage-card"><i></i><b></b><s></s></div><div class="tvs-spage-card"><i></i><b></b><s></s></div></div></div></div></div>
+      </div>
+
+      <div class="scr scr2 br">
+        <div class="tvs-chrome"><svg class="is-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 12H5M11 5l-7 7 7 7"/></svg><svg class="is-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 12h15M13 5l7 7-7 7"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3"/><path d="M19.5 3.5v5h-5" stroke-linejoin="round"/></svg><div class="tvs-omni" data-t="omni2"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 10V7.5a5 5 0 0 1 10 0V10h1.5v12h-13V10zm2.5 0h5V7.5a2.5 2.5 0 0 0-5 0z"/></svg><span><span class="is-dim">https://</span>demomokykla.lt<span class="is-dim">/admin/login</span></span></div></div>
+        <div class="br-in"><div class="tvs-login"><div class="tvs-login-box">
+          <div class="tvs-login-h"><div class="tvs-logo"><i></i></div>Prisijungimas</div>
+          <div class="tvs-field" data-t="email"><div class="tvs-label">El. paštas arba vartotojo vardas</div><div class="tvs-input is-focus"><span class="tvs-typed ty-email" data-ty="email"><span class="w"><span class="l l1">v</span><span class="l l2">.</span><span class="l l3">k</span><span class="l l4">u</span><span class="l l5">d</span><span class="l l6">i</span><span class="l l7">r</span><span class="l l8">k</span><span class="l l9">a</span><span class="l l10">@</span><span class="l l11">m</span><span class="l l12">o</span><span class="l l13">k</span><span class="l l14">y</span><span class="l l15">k</span><span class="l l16">l</span><span class="l l17">a</span><span class="l l18">.</span><span class="l l19">l</span><span class="l l20">t</span></span></span><span class="tvs-caret caret-email"></span></div></div>
+          <div class="tvs-field" data-t="pass"><div class="tvs-label">Slaptažodis</div><div class="tvs-input tvs-pass"><span class="tvs-typed ty-pass" data-ty="pass"><span class="w"><span class="l l1">•</span><span class="l l2">•</span><span class="l l3">•</span><span class="l l4">•</span><span class="l l5">•</span><span class="l l6">•</span><span class="l l7">•</span><span class="l l8">•</span><span class="l l9">•</span><span class="l l10">•</span></span></span><span class="tvs-caret caret-pass"></span></div></div>
+          <div class="tvs-login-chk"><span class="tvs-check"></span>Prisiminti mane</div>
+          <div class="tvs-login-foot"><span class="tvs-btn " data-t="login">Prisijungti</span><a>Pamiršote slaptažodį?</a></div>
+        </div></div></div>
+      </div>
+
+      <div class="scr scr3 br">
+        <div class="tvs-chrome"><svg class="is-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 12H5M11 5l-7 7 7 7"/></svg><svg class="is-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M4 12h15M13 5l7 7-7 7"/></svg><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M19.5 12a7.5 7.5 0 1 1-2.2-5.3"/><path d="M19.5 3.5v5h-5" stroke-linejoin="round"/></svg><div class="tvs-omni" data-t="omni3"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M7 10V7.5a5 5 0 0 1 10 0V10h1.5v12h-13V10zm2.5 0h5V7.5a2.5 2.5 0 0 0-5 0z"/></svg><span><span class="is-dim">https://</span>demomokykla.lt<span class="is-dim">/admin</span></span></div></div>
+        <div class="br-in">
+      <div class="scr in-win tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class="is-on"></i><i class=""></i><i class="is-bars"></i><i class=""></i><i class=""></i><i class=""></i></div>
+        <div class="tvs-subnav"><span class="is-on">Darbalaukis</span><span>Papildiniai</span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">Darbalaukis</div>
+          <div class="tvs-dash"><div class="tvs-dash-h">Įrankiai</div><div class="tvs-dash-sub">Dažniausiai naudojami moduliai</div><div class="tvs-dash-grid"><div class="tvs-dash-i"><i></i>Puslapiai</div><div class="tvs-dash-i"><i></i>Naujienos</div><div class="tvs-dash-i"><i></i>Pranešimų juostelė</div><div class="tvs-dash-i"><i></i>Dokumentų bankas</div><div class="tvs-dash-i"><i></i>Vartotojai</div><div class="tvs-dash-i"><i></i>Autoriai</div><div class="tvs-dash-i"><i></i>Navigacijos</div><div class="tvs-dash-i"><i></i>Baneriai</div></div></div>
+        </div>
+      </div></div>
+      </div>
+      <div class="spot"></div>
+      <div class="tvs-ripple rp rp1"></div>
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

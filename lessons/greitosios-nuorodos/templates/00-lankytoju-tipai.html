@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/koncepcijos.css">
+<!-- Generuoja koncepcijos.js iš platformos kortelės — ranka neredaguoti. -->
+</head>
+<body>
+  <div class="card">
+    <div class="k-title">{{title}}</div>
+    <div class="k-panel" style="--k-fs:36px;max-width:1320px;margin:0 auto;width:100%"><div class="k-list"><div class="k-row b-tipas_1"><span class="k-num">1</span><div>{{tipas_1}}</div></div><div class="k-row b-tipas_2"><span class="k-num">2</span><div>{{tipas_2}}</div></div><div class="k-row b-tipas_3"><span class="k-num">3</span><div>{{tipas_3}}</div></div><div class="k-row b-tipas_4"><span class="k-num">4</span><div>{{tipas_4}}</div></div></div></div><div class="k-sum b-summary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V17h6v-.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg><span>{{summary}}</span></div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

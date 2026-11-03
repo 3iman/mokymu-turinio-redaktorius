@@ -1,0 +1,83 @@
+{
+  "hash": "4e144ccba735cdf991e6c97bf1d3a161e186f8919fbb54fe864fed80eaabde34",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 2330288320,
+  "characters": 333,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T02:05:55.640Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Išfiltruojate reikiamą kategoriją",
+      "text": "Dokumentų banke pasirenkate kategoriją.",
+      "file": "k01-1.wav",
+      "duration": 2.75,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Išfiltruojate reikiamą kategoriją",
+      "text": "Spaudžiate žalią mygtuką „Filtruoti“.",
+      "file": "k01-2.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Išfiltruojate reikiamą kategoriją",
+      "text": "/ˈsaːraʃʲɛ/ lieka tik jos dokumentai.",
+      "file": "k01-3.wav",
+      "duration": 2.37,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Pridedate kategoriją ir priminimą",
+      "text": "Kategorija jau pažymėta, nes ją išfiltravote.",
+      "file": "k02-1.wav",
+      "duration": 3.463,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Pridedate kategoriją ir priminimą",
+      "text": "Pavadinime yra žodis planas, todėl pridedate „Planavimo dokumentai“.",
+      "file": "k02-2.wav",
+      "duration": 4.877,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Pridedate kategoriją ir priminimą",
+      "text": "Nustatote priminimą ir išsaugote.",
+      "file": "k02-3.wav",
+      "duration": 2.69,
+      "fits": false,
+      "reikia_sek": 19
+    },
+    {
+      "kadras": 2,
+      "cue": 4,
+      "title": "Pridedate kategoriją ir priminimą",
+      "text": "Dokumentas atsiranda abiejuose rinkiniuose.",
+      "file": "k02-4.wav",
+      "duration": 3.103,
+      "fits": true,
+      "reikia_sek": 18
+    }
+  ]
+}

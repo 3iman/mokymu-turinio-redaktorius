@@ -1,0 +1,207 @@
+/*
+ * Koncepcijos filmų rinkinys (platformos „koncepcija“ vienetai, 2026-11-03).
+ * Šablonus generuoja koncepcijos.js iš kortelės laukų — vienkartinio CSS šablonuose nėra.
+ * Kalba ta pati kaip google-sheets-integracija etalonuose: pastelinis fonas, baltos kortelės,
+ * žalia = taip / nauja, raudona = ne / sena, mėlyna = neutrali grandis.
+ * Bazinė būsena = galutinė (PNG ir viršelis rodo rezultatą); judesys — tik video sluoksnyje.
+ */
+
+.k-title { font-size: 60px; font-weight: 700; color: var(--c-text); text-align: center; letter-spacing: -1.2px;
+           line-height: 1.1; margin-bottom: 52px; }
+.k-title.is-small { font-size: 52px; margin-bottom: 40px; }
+
+/* ---- Bendros dalys ---- */
+.k-panel { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 24px;
+           box-shadow: var(--c-shadow-card); padding: 40px 48px; }
+.k-sum { margin-top: 36px; display: flex; align-items: center; justify-content: center; gap: 16px;
+         background: var(--c-green-bg); border: 1px solid var(--c-green-border); border-radius: 18px;
+         padding: 24px 40px; font-size: 31px; font-weight: 600; color: var(--c-green-text); line-height: 1.35; text-align: center; }
+.k-sum svg { width: 34px; height: 34px; flex-shrink: 0; }
+.k-sum.is-note { background: var(--c-blue-bg); border-color: var(--c-blue-border); color: var(--c-blue-text); }
+.k-num { width: 46px; height: 46px; border-radius: 50%; flex-shrink: 0; display: flex; align-items: center; justify-content: center;
+         font-size: 22px; font-weight: 700; color: #fff; background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to)); }
+.k-hl { border-radius: 16px; }
+
+/* ---- Sąrašas (kortelė su punktais) ---- */
+.k-list { display: flex; flex-direction: column; gap: 14px; }
+.k-list.is-grid { display: grid; grid-template-columns: 1fr 1fr; column-gap: 28px; row-gap: 14px; }
+.k-row { display: flex; align-items: center; gap: 22px; padding: 14px 18px; border-radius: 16px;
+         font-size: var(--k-fs, 34px); color: var(--c-text); line-height: 1.35; }
+.k-row .k-pair { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; }
+.k-row .k-pair b { font-weight: 700; }
+.k-row .k-pair i { font-style: normal; color: var(--c-text-faint); font-weight: 700; }
+.k-row .k-pair span { color: var(--c-text-secondary); }
+.k-row.is-plain .k-num { display: none; }
+.k-two { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: start; }
+.k-two .k-panel.is-green { background: var(--c-green-bg); border-color: var(--c-green-border); }
+.k-panel-h { font-size: 26px; font-weight: 700; text-transform: uppercase; letter-spacing: .5px; color: var(--c-blue-text-vivid);
+             margin: 0 0 18px 18px; }
+.k-panel.is-green .k-panel-h { color: var(--c-green-text-vivid); }
+.k-panel.is-green .k-num { background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to)); }
+
+/* ---- Centras ir aplinka (hub) ---- */
+.k-hub { display: flex; flex-direction: column; align-items: center; gap: 34px; }
+.k-hub-c { font-size: 36px !important; background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to)); color: #fff; border-radius: 22px;
+           padding: 26px 46px; font-size: 32px; font-weight: 700; text-align: center; box-shadow: var(--c-shadow-card); max-width: 1100px; }
+.k-hub-c small { display: block; font-size: 22px; font-weight: 500; opacity: .9; margin-top: 8px; line-height: 1.35; }
+.k-hub-g { display: grid; grid-template-columns: repeat(var(--k-cols, 3), 1fr); gap: 18px; width: 100%; }
+.k-hub-i { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 18px; padding: 22px 26px; font-size: var(--k-fs, 29px);
+           color: var(--c-text); line-height: 1.3; display: flex; align-items: center; gap: 14px; box-shadow: var(--c-shadow-card); }
+.k-hub-i svg { width: 26px; height: 26px; flex-shrink: 0; }
+
+/* ---- Palyginimas (sena → nauja) ir taisyklingai / netaisyklingai ---- */
+.k-cmp { display: flex; gap: 40px; align-items: stretch; }
+.k-col { flex: 1; border-radius: 24px; padding: 40px 42px; }
+.k-col.is-old, .k-col.is-dont { background: var(--c-red-bg); border: 1px solid var(--c-red-border); }
+.k-col.is-new, .k-col.is-do { background: var(--c-green-bg); border: 1px solid var(--c-green-border); }
+.k-col-h { display: flex; align-items: center; gap: 18px; margin-bottom: 28px; }
+.k-col-i { width: 56px; height: 56px; border-radius: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.k-col-i svg { width: 28px; height: 28px; }
+.is-old .k-col-i, .is-dont .k-col-i { background: linear-gradient(135deg, var(--c-red-gradient-from), var(--c-red-gradient-to)); }
+.is-new .k-col-i, .is-do .k-col-i { background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to)); }
+.is-do .k-col-i, .is-dont .k-col-i { border-radius: 50%; }
+.k-col-t { font-size: 32px; font-weight: 700; line-height: 1.25; }
+.is-old .k-col-t { color: var(--c-red-text-vivid); text-transform: uppercase; letter-spacing: .5px; }
+.is-new .k-col-t { color: var(--c-green-text-vivid); text-transform: uppercase; letter-spacing: .5px; }
+.is-do .k-col-t { color: var(--c-green-text); }
+.is-dont .k-col-t { color: var(--c-red-text); }
+.k-steps { display: flex; flex-direction: column; gap: 18px; }
+.k-step { display: flex; align-items: flex-start; gap: 18px; font-size: var(--k-fs, 31px); color: var(--c-text-secondary); line-height: 1.42; }
+.k-step .k-sn { width: 42px; height: 42px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+                font-size: 20px; font-weight: 700; flex-shrink: 0; margin-top: 2px; }
+.is-old .k-sn { background: var(--c-red-border); color: var(--c-red-text-vivid); }
+.is-new .k-sn { background: var(--c-green-border); color: var(--c-green-text-vivid); }
+.is-do .k-sn { color: var(--c-green-text-vivid); font-size: 28px; }
+.is-dont .k-sn { color: var(--c-red-text-vivid); font-size: 28px; }
+.k-arrow { width: 64px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+.k-arrow div { width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
+               background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to)); }
+.k-arrow svg { width: 30px; height: 30px; }
+
+/* ---- Srautas ---- */
+.k-flow { display: flex; align-items: flex-start; justify-content: center; gap: 0; }
+.k-node { width: 440px; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 14px; padding: 18px; border-radius: 22px; }
+.k-node-i { width: 132px; height: 132px; border-radius: 30px; display: flex; align-items: center; justify-content: center;
+            font-size: 58px; font-weight: 800; color: #fff; box-shadow: var(--c-shadow-card); }
+.k-node.is-1 .k-node-i { background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to)); }
+.k-node.is-2 .k-node-i { background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to)); }
+.k-node.is-3 .k-node-i, .k-node.is-4 .k-node-i { background: linear-gradient(135deg, var(--c-purple-gradient-from), var(--c-purple-gradient-to)); }
+.k-node-l { font-size: 34px; font-weight: 800; color: var(--c-text); text-transform: uppercase; letter-spacing: .4px; line-height: 1.2; margin-top: 10px; }
+.k-node-d { font-size: 28px; color: var(--c-text-secondary); line-height: 1.45; }
+.k-link { width: 200px; display: flex; flex-direction: column; align-items: center; gap: 12px; padding-top: 52px; flex-shrink: 0; }
+.k-link-line { width: 170px; height: 0; border-top: 3px dashed var(--c-line); position: relative; }
+.k-link-line::after { content: ''; position: absolute; right: -4px; top: -9px; border-left: 14px solid var(--c-line);
+                      border-top: 7.5px solid transparent; border-bottom: 7.5px solid transparent; }
+.k-link-t { font-size: 21px; font-weight: 700; color: var(--c-text-muted); text-transform: uppercase; letter-spacing: .5px; text-align: center; line-height: 1.3; }
+
+/* ---- Žingsniai ---- */
+.k-zs { display: flex; flex-direction: column; gap: 26px; max-width: 1360px; margin: 0 auto; width: 100%; }
+.k-z { display: flex; align-items: flex-start; gap: 26px; padding: 10px 16px; border-radius: 18px; }
+.k-z .k-num { width: 64px; height: 64px; font-size: 30px; }
+.k-z:nth-child(4n+2) .k-num { background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to)); }
+.k-z:nth-child(4n+3) .k-num { background: linear-gradient(135deg, var(--c-purple-gradient-from), var(--c-purple-gradient-to)); }
+.k-z:nth-child(4n+4) .k-num { background: linear-gradient(135deg, var(--c-amber-gradient-from), var(--c-amber-gradient-to)); }
+.k-z-l { font-size: 36px; font-weight: 700; color: var(--c-text); line-height: 1.25; }
+.k-z-d { font-size: 29px; color: var(--c-text-secondary); line-height: 1.45; margin-top: 6px; }
+.k-z-d code, .k-code { font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace; font-size: .92em; background: var(--c-amber-bg);
+                       border: 1px solid var(--c-amber-border); color: var(--c-amber-text); border-radius: 8px; padding: 2px 10px; }
+
+/* ---- Dokumentų sąrašas ---- */
+.k-doc { display: flex; align-items: center; gap: 24px; padding: 22px 26px; border-radius: 18px; }
+.k-doc + .k-doc { border-top: 1px solid var(--c-border-soft); }
+.k-doc-i { width: 58px; height: 70px; border-radius: 10px; background: var(--c-blue-bg); border: 2px solid var(--c-blue-border); flex-shrink: 0;
+           display: flex; align-items: center; justify-content: center; color: var(--c-blue-text-vivid); font-size: 15px; font-weight: 800; }
+.k-doc-b { flex: 1; }
+.k-doc-l { font-size: 34px; font-weight: 700; color: var(--c-text); line-height: 1.25; }
+.k-doc-d { font-size: 27px; color: var(--c-text-secondary); margin-top: 6px; line-height: 1.4; }
+.k-tag { display: inline-block; font-size: 23px; font-weight: 700; padding: 8px 18px; border-radius: 999px; background: var(--c-blue-bg);
+         color: var(--c-blue-text-vivid); border: 1px solid var(--c-blue-border); white-space: nowrap; }
+
+/* ---- Persona ---- */
+.k-persona { display: grid; grid-template-columns: 300px 1fr; gap: 56px; align-items: center; max-width: 1400px; margin: 0 auto; }
+.k-sil { width: 300px; height: 300px; border-radius: 50%; background: linear-gradient(160deg, #e3e8f3, #cfd8ea); display: flex;
+         align-items: flex-end; justify-content: center; overflow: hidden; }
+.k-sil svg { width: 230px; height: 250px; }
+.k-facts { display: grid; grid-template-columns: 1fr 1fr; gap: 18px 28px; }
+.k-fact { padding: 16px 22px; border-radius: 16px; background: var(--c-surface); border: 1px solid var(--c-border); }
+.k-fact.is-wide { grid-column: 1 / -1; }
+.k-fact-l { font-size: 21px; font-weight: 700; color: var(--c-text-muted); text-transform: uppercase; letter-spacing: .6px; }
+.k-fact-v { font-size: 31px; color: var(--c-text); margin-top: 6px; line-height: 1.35; }
+
+/* ---- Kategorijos kortelė ---- */
+.k-cat { display: grid; grid-template-columns: 1fr; gap: 26px; max-width: 1240px; margin: 0 auto; width: 100%; }
+.k-cat .k-panel { padding: 36px 44px; }
+.k-cat-h { display: flex; align-items: center; gap: 20px; margin-bottom: 24px; }
+.k-cat-tag { font-size: 34px; font-weight: 800; color: #fff; padding: 12px 28px; border-radius: 14px;
+             background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to)); }
+.k-cat-ln { flex: 1; height: 14px; border-radius: 7px; background: var(--c-surface-alt); }
+.k-cat-t { font-size: 36px; color: var(--c-text); line-height: 1.45; }
+.k-cat-r { display: flex; gap: 18px; align-items: flex-start; background: var(--c-green-bg); border: 1px solid var(--c-green-border);
+           border-radius: 18px; padding: 24px 32px; font-size: 31px; color: var(--c-green-text); line-height: 1.4; font-weight: 600; }
+.k-cat-r svg { width: 32px; height: 32px; flex-shrink: 0; margin-top: 2px; }
+
+/* ---- Apibrėžimas ---- */
+.k-def { display: flex; flex-direction: column; align-items: center; gap: 22px; text-align: center; }
+.k-def-term { font-size: 76px; font-weight: 800; letter-spacing: -1.5px; color: var(--c-blue-text-vivid); line-height: 1.05; }
+.k-def-d { font-size: 36px; color: var(--c-text-secondary); max-width: 1300px; line-height: 1.4; }
+.k-chips { display: flex; flex-wrap: wrap; justify-content: center; gap: 18px; margin-top: 26px; max-width: 1500px; }
+.k-chip { font-size: 30px; font-weight: 600; padding: 14px 28px; border-radius: 999px; background: var(--c-surface); border: 1px solid var(--c-border);
+          color: var(--c-text); box-shadow: var(--c-shadow-card); }
+
+/* ---- Laiko juosta ---- */
+.k-tl { position: relative; display: grid; grid-template-columns: repeat(var(--k-n, 8), 1fr); padding: 150px 0; }
+.k-tl::before { content: ''; position: absolute; left: 4%; right: 4%; top: 50%; height: 6px; margin-top: -3px; border-radius: 3px; background: var(--c-border); }
+.k-tl-s { position: relative; display: flex; flex-direction: column; align-items: center; }
+.k-tl-d { width: 36px; height: 36px; border-radius: 50%; background: linear-gradient(135deg, var(--c-blue-gradient-from), var(--c-blue-gradient-to));
+          border: 6px solid #fff; box-shadow: 0 0 0 2px var(--c-blue-border); position: relative; z-index: 1; }
+.k-tl-s:last-child .k-tl-d { background: linear-gradient(135deg, var(--c-green-gradient-from), var(--c-green-gradient-to)); }
+.k-tl-l { position: absolute; width: 220px; text-align: center; font-size: 28px; font-weight: 700; color: var(--c-text); line-height: 1.25; }
+.k-tl-s:nth-child(odd) .k-tl-l { bottom: 62px; }
+.k-tl-s:nth-child(even) .k-tl-l { top: 62px; }
+.k-tl-n { font-size: 18px; font-weight: 700; color: var(--c-text-faint); display: block; margin-bottom: 4px; }
+
+/* ---- Dvi zonos ---- */
+.k-zones { display: flex; align-items: stretch; gap: 30px; }
+.k-zone { flex: 1; }
+.k-zone-h { font-size: 24px; font-weight: 800; text-transform: uppercase; letter-spacing: .6px; color: var(--c-text-muted); margin-bottom: 18px; }
+.k-zone-v { font-size: 36px; font-weight: 700; color: var(--c-text); line-height: 1.3; }
+.k-zone .k-panel { height: 100%; }
+.k-zone.is-off .k-zone-v { color: var(--c-red-text-vivid); }
+
+/* ---- Puslapio maketas ---- */
+.k-page { max-width: 1320px; margin: 0 auto; width: 100%; background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 22px;
+          box-shadow: var(--c-shadow-card); overflow: hidden; }
+.k-page-bar { height: 46px; background: var(--c-surface-alt); display: flex; align-items: center; gap: 10px; padding: 0 20px; }
+.k-page-bar i { width: 14px; height: 14px; border-radius: 50%; background: var(--c-line); }
+.k-page-b { padding: 34px 48px 44px; display: flex; flex-direction: column; gap: 22px; }
+.k-eu { display: flex; align-items: center; gap: 22px; background: #003399; color: #fff; border-radius: 14px; padding: 18px 26px; font-size: 24px; font-weight: 600; line-height: 1.35; }
+.k-eu-f { width: 86px; height: 58px; flex-shrink: 0; border-radius: 4px; background: #003399; border: 2px solid var(--c-eu-yellow); display: flex; align-items: center; justify-content: center; color: var(--c-eu-yellow); font-size: 26px; letter-spacing: -2px; }
+.k-page-t { font-size: 40px; font-weight: 800; color: var(--c-text); line-height: 1.2; }
+.k-page-p { font-size: 29px; color: var(--c-text-secondary); line-height: 1.5; }
+.k-page-m { font-size: 22px; font-weight: 700; color: var(--c-blue-text-vivid); }
+
+/* ---- URL anatomija ---- */
+.k-url { font-family: 'JetBrains Mono', 'SF Mono', Menlo, monospace; font-size: 34px; background: var(--c-surface); border: 1px solid var(--c-border);
+         border-radius: 18px; padding: 28px 34px; display: flex; flex-wrap: wrap; gap: 4px; justify-content: center; box-shadow: var(--c-shadow-card); }
+.k-url span { padding: 6px 10px; border-radius: 8px; }
+.k-url .is-a { color: var(--c-text-muted); }
+.k-url .is-b { background: var(--c-blue-bg); color: var(--c-blue-text-vivid); font-weight: 700; }
+.k-url .is-c { background: var(--c-green-bg); color: var(--c-green-text-vivid); font-weight: 700; }
+
+.k-steps.is-one .k-sn { display: none; }
+.k-sum.is-big { font-size: 42px; padding: 44px 60px; max-width: 1360px; margin: 20px auto 0; line-height: 1.3; }
+.k-sum.is-big svg { width: 46px; height: 46px; }
+
+/* ---- Naujienų srautas (kategorijos kortelė, 2026-11-03) ---- */
+.k-stream { display: grid; grid-template-columns: 1fr 1.7fr 1fr; gap: 34px; align-items: center; }
+.k-news { background: var(--c-surface); border: 1px solid var(--c-border); border-radius: 24px; overflow: hidden; box-shadow: var(--c-shadow-card); }
+.k-news.is-ghost { opacity: .5; transform: scale(.92); }
+.k-news-img { height: 230px; background: linear-gradient(135deg, #dbe4f5 0%, #e8e1f2 55%, #f6dce8 100%); position: relative; }
+.k-news.is-ghost .k-news-img { height: 170px; background: linear-gradient(135deg, #e6ebf4, #eef0f5); }
+.k-news-img .k-cat-tag { position: absolute; left: 30px; bottom: -26px; box-shadow: var(--c-shadow-card); }
+.k-news-b { padding: 50px 40px 40px; display: flex; flex-direction: column; gap: 14px; }
+.k-news.is-ghost .k-news-b { padding: 28px 26px; }
+.k-news-l { display: block; height: 16px; border-radius: 8px; background: var(--c-surface-alt); }
+.k-stream + .k-cat-r { margin: 34px auto 0; max-width: 1200px; }
+.k-stream .k-cat-t { font-size: 34px; line-height: 1.4; }
+.k-hub-c { padding: 30px 56px; }

@@ -1,0 +1,313 @@
+{
+  "hash": "d0347f1d8deae200e7af1b83e3c893c058ce234841d10cfc713e285b281dda18",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 96305071,
+  "characters": 1463,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T01:58:05.594Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Butelio kakliuko efektas",
+      "text": "Švietimo įstaigos dirba vienodu ritmu.",
+      "file": "k01-1.wav",
+      "duration": 2.79,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Butelio kakliuko efektas",
+      "text": "Daugiau darbuotojų /branˈɡʲintuː/ produktą.",
+      "file": "k01-2.wav",
+      "duration": 2.77,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Butelio kakliuko efektas",
+      "text": "Tvaresnį /ˈkʲɛːlʲaː/, procesų tobulinimą, matote dešinėje.",
+      "file": "k01-3.wav",
+      "duration": 4.01,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Kur rašyti",
+      "text": "Pagrindinė bendravimo priemonė yra elektroninis paštas.",
+      "file": "k02-1.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Kur rašyti",
+      "text": "Turinį, patarimus ir technikos klausimus rašote skirtingais adresais.",
+      "file": "k02-2.wav",
+      "duration": 4.677,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Kur rašyti",
+      "text": "Dėl skambučio susitariate iš anksto.",
+      "file": "k02-3.wav",
+      "duration": 2.663,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Vadybininkas ir projekto eiga",
+      "text": "Vadybininkas prie projekto aktyviai veikia apie du mėnesius.",
+      "file": "k03-1.wav",
+      "duration": 3.93,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Vadybininkas ir projekto eiga",
+      "text": "Jei papildymas užsitęsia, darbai patenka į eilę.",
+      "file": "k03-2.wav",
+      "duration": 3.517,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Vadybininkas ir projekto eiga",
+      "text": "Tada atsakymus gaunate Pagalbos centre.",
+      "file": "k03-3.wav",
+      "duration": 2.743,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Kam deleguoti koordinavimą",
+      "text": "Neretai koordinavimą perduodate svetainę prižiūrėjusiam mokytojui.",
+      "file": "k04-1.wav",
+      "duration": 4.13,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Kam deleguoti koordinavimą",
+      "text": "Sklandžiau sekasi, kai darbu užsiima administracijos narys.",
+      "file": "k04-2.wav",
+      "duration": 3.93,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Kam deleguoti koordinavimą",
+      "text": "Įtraukiate ir raštinės darbuotojus.",
+      "file": "k04-3.wav",
+      "duration": 2.61,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Stebėkite mūsų darbą",
+      "text": "Demonstracinė /ˈvʲɛrsʲija/ atvira visą projekto laikotarpį.",
+      "file": "k05-1.wav",
+      "duration": 3.65,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Stebėkite mūsų darbą",
+      "text": "Laikiniu adresu užsukate kada norite.",
+      "file": "k05-2.wav",
+      "duration": 2.85,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Stebėkite mūsų darbą",
+      "text": "Jei darbai /susˈtoːjoː/, rašote Pagalbos centrui.",
+      "file": "k05-3.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Kaip įveikti pastebėjimų sąrašą",
+      "text": "Darbus deleguojate tam, kas gali /iʃˈkart/ /nuspˈrʲɛːstʲi/.",
+      "file": "k06-1.wav",
+      "duration": 3.65,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Kaip įveikti pastebėjimų sąrašą",
+      "text": "Sąrašą peržiūrite neatidėliodami.",
+      "file": "k06-2.wav",
+      "duration": 2.45,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Kaip įveikti pastebėjimų sąrašą",
+      "text": "Pradedate nuo lengviausių užduočių.",
+      "file": "k06-3.wav",
+      "duration": 2.29,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Abejonės ir atsakymas",
+      "text": "Dėl pastebėjimų sąrašo kyla abejonių.",
+      "file": "k07-1.wav",
+      "duration": 2.77,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Abejonės ir atsakymas",
+      "text": "Tai kokybės standartas, /paˈsʲiɛktas/ per ilgą laiką.",
+      "file": "k07-2.wav",
+      "duration": 3.49,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Abejonės ir atsakymas",
+      "text": "Nesutinkate? Informuojate, o ne tylite.",
+      "file": "k07-3.wav",
+      "duration": 3.33,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Svetainės paleidimo greitis",
+      "text": "Paleidimo greitis priklauso nuo kelių faktorių.",
+      "file": "k08-1.wav",
+      "duration": 2.77,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Svetainės paleidimo greitis",
+      "text": "Svarbiausias yra komunikacija.",
+      "file": "k08-2.wav",
+      "duration": 2.33,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Svetainės paleidimo greitis",
+      "text": "Jei sąrašas netrumpėja, greito rezultato nematysite.",
+      "file": "k08-3.wav",
+      "duration": 4.01,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 9,
+      "cue": 1,
+      "title": "Lėtai, bet užtikrintai",
+      "text": "Darbus galite paskirstyti per ilgesnį laiką.",
+      "file": "k09-1.wav",
+      "duration": 2.983,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 9,
+      "cue": 2,
+      "title": "Lėtai, bet užtikrintai",
+      "text": "Kuo daugiau laiko, tuo stipresnė pagunda atidėlioti.",
+      "file": "k09-2.wav",
+      "duration": 3.437,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 9,
+      "cue": 3,
+      "title": "Lėtai, bet užtikrintai",
+      "text": "Svarbiausia, kad lėtumas /ˈvʲɛstuː/ į kokybę.",
+      "file": "k09-3.wav",
+      "duration": 3.223,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 10,
+      "cue": 1,
+      "title": "Dažniausi klausimai prieš paleidimą",
+      "text": "Prieš paleidimą kyla daug klausimų.",
+      "file": "k10-1.wav",
+      "duration": 2.437,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 10,
+      "cue": 2,
+      "title": "Dažniausi klausimai prieš paleidimą",
+      "text": "Galime /ˈtartʲis/ ir koreguoti planą.",
+      "file": "k10-2.wav",
+      "duration": 2.41,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 10,
+      "cue": 3,
+      "title": "Dažniausi klausimai prieš paleidimą",
+      "text": "Staigių, kardinalių pokyčių vengiate.",
+      "file": "k10-3.wav",
+      "duration": 2.943,
+      "fits": true,
+      "reikia_sek": 11
+    }
+  ]
+}

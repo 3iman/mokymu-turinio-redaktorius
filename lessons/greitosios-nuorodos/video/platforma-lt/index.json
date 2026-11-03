@@ -1,0 +1,38 @@
+{
+  "pamoka": "greitosios-nuorodos",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T01:45:04.875Z",
+  "balso_stiprinimas_db": 5.4,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_1467_00",
+      "failas": "00-lankytoju-tipai",
+      "pavadinimas": "Greitosios nuorodos pagal lankytojus",
+      "trukme_s": 16,
+      "mp4": "viz_1467_00.mp4",
+      "vtt": "viz_1467_00.vtt",
+      "poster": "viz_1467_00.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.43,
+          "tekstas": "Kas aktualu tėvams, mokytojams dažnai neaktualu."
+        },
+        {
+          "nuo_s": 5.6,
+          "iki_s": 9.57,
+          "tekstas": "Todėl nuorodų rinkinius sudarote pagal lankytojų tipus."
+        },
+        {
+          "nuo_s": 10.1,
+          "iki_s": 13.52,
+          "tekstas": "Rinkiniai nebūtinai rodomi toje pačioje vietoje."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

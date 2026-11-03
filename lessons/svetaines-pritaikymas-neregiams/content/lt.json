@@ -1,0 +1,85 @@
+{
+  "lang": "lt",
+  "01_kam_tai_aktualu": {
+    "title": "Kam tai aktualu",
+    "old_title": "Regintis vartotojas",
+    "old_step_1": "Žiūri į svetainę",
+    "new_title": "Neregys",
+    "new_step_1": "Svetainę „girdi“",
+    "new_step_2": "Ekrano skaitytuvas skaito viską, kas parašyta",
+    "summary": "Svarbu, kad svetainė būtų techniškai tvarkinga, net jei vizualiai atrodo gerai"
+  },
+  "02_ar_visi_vienodai": {
+    "title": "Ar visi naudojasi vienodai",
+    "old_title": "Vieni",
+    "old_step_1": "Naršo labai greitai",
+    "new_title": "Kiti",
+    "new_step_1": "Tik pradeda mokytis",
+    "summary": "Struktūra turi būti kuo aiškesnė, be vizualiai „išradingų“ sprendimų"
+  },
+  "03_tvarkinga_svetaine": {
+    "title": "Ką sprendžia techniškai tvarkinga svetainė",
+    "item_1": "Antraštės pažymėtos → galima peršokti nuo temos prie temos",
+    "item_2": "Mygtukai turi aiškius pavadinimus → vartotojas žino, ką jie daro",
+    "item_3": "Aiškūs dokumentų pavadinimai → galima pasirinkti neatidarius",
+    "item_4": "Sužymėta, ko skaitytuvas neturi matyti → taupomas laikas",
+    "item_1_a": "Antraštės pažymėtos",
+    "item_1_b": "galima peršokti nuo temos prie temos",
+    "item_2_a": "Mygtukai turi aiškius pavadinimus",
+    "item_2_b": "vartotojas žino, ką jie daro",
+    "item_3_a": "Aiškūs dokumentų pavadinimai",
+    "item_3_b": "galima pasirinkti neatidarius",
+    "item_4_a": "Sužymėta, ko skaitytuvas neturi matyti",
+    "item_4_b": "taupomas laikas"
+  },
+  "04_alt_aprasai": {
+    "title": "Kam reikia alt aprašo",
+    "do_title": "Su alt aprašu",
+    "do_1": "Paveikslėlis perteikia prasmę",
+    "do_2": "Svarbus komunikacijai",
+    "dont_title": "Be alt teksto",
+    "dont_1": "Dekoratyviniai vaizdai",
+    "dont_2": "Foniniai vaizdai"
+  },
+  "05_skaitymo_mygtukai": {
+    "title": "Mygtukai „skaitymui balsu“",
+    "old_title": "Neregiams",
+    "old_step_1": "Dažniausiai nereikalingi",
+    "old_step_2": "Įrenginiai jau turi savo skaitytuvus",
+    "new_title": "Kam galėtų praversti",
+    "new_step_1": "Žmonėms su skaitymo sunkumais ar disleksija",
+    "new_step_2": "Klausyti patogu ir vairuojant"
+  },
+  "06_be_specialiu_irankiu": {
+    "title": "Ar reikia specialių įrankių puslapyje",
+    "dont_title": "Nereikia",
+    "dont_1": "Papildomų mygtukų",
+    "dont_2": "Atskirų svetainės versijų",
+    "do_title": "Reikia",
+    "do_1": "Veikti pagal HTML standartus",
+    "do_2": "Techninės kokybės",
+    "do_3": "Tikrinimo automatiniais įrankiais (Lighthouse, WAVE)",
+    "summary": "Prieinamumas neregiams nėra vizualinis, tai techninė kokybė"
+  },
+  "07_patikros_klaidos": {
+    "title": "Kodėl WAVE rodo daug klaidų",
+    "old_title": "Ką rodo įrankis",
+    "old_step_1": "Visas aptiktas klaidas",
+    "old_step_2": "Pavyzdžiui, spalvų kontrastus",
+    "new_title": "Kas aktualu neregiams",
+    "new_step_1": "Tik tai, ką skaito ekrano skaitytuvas",
+    "summary": "Svarbu mokėti atsirinkti, kurios klaidos aktualios"
+  },
+  "08_kaip_testavome": {
+    "title": "Kaip buvo testuojama",
+    "step1_label": "Testavimo įrankiai",
+    "step1_desc": "Lighthouse, WAVE",
+    "arrow_label_1": "",
+    "step2_label": "Neregio IT specialisto rekomendacijos",
+    "step2_desc": "Realus naudojimosi patyrimas",
+    "arrow_label_2": "",
+    "step3_label": "Konsultuojamės toliau",
+    "step3_desc": "Ketiname tęsti",
+    "summary": "Automatinis patikrinimas ir žmogaus patirtis kartu"
+  }
+}

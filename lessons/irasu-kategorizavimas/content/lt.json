@@ -1,0 +1,49 @@
+{
+  "lang": "lt",
+  "01_ivykes_ar_busimas": {
+    "title": "Įvykęs ar būsimas renginys",
+    "old_title": "Renginiai",
+    "old_step_1": "Jau įvykę renginiai",
+    "old_step_2": "Nuotraukų galerijos",
+    "new_title": "Kvietimas",
+    "new_step_1": "Būsimi renginiai",
+    "new_step_2": "Susirinkimai"
+  },
+  "02_kategorija_pranesimas": {
+    "title": "Pranešimas",
+    "kam": "Informacija, kuri yra laikino aktualumo: būsimi renginiai, įstatymų ar tvarkos pakeitimai"
+  },
+  "03_kategorija_didziuojames": {
+    "title": "Didžiuojamės",
+    "kam": "Straipsniai ir žinutės apie pasiekimus, įvertinimus, diplomus, sporto rezultatus",
+    "taisykle": "Talpinate ne tik diplomą, bet ir apdovanoto žmogaus nuotrauką"
+  },
+  "04_kategorija_sveikinimas": {
+    "title": "Sveikinimas",
+    "kam": "Atvirukai įvairioms progoms"
+  },
+  "05_kategorija_konkursas": {
+    "title": "Konkursas",
+    "kam": "Konkursų aprašymai ir nuostatai"
+  },
+  "06_kategorija_svarbu": {
+    "title": "Svarbu!",
+    "kam": "Kai norite atkreipti dėmesį išskirtiniu pranešimu"
+  },
+  "07_kategorija_kvietimas": {
+    "title": "Kvietimas",
+    "kam": "Informacija apie būsimus renginius, susirinkimus"
+  },
+  "08_kategorija_ugdymas_karjerai": {
+    "title": "Ugdymas karjerai",
+    "kam": "Profesinės savišvietos informacijai sisteminti"
+  },
+  "09_kategorija_projektine_veikla": {
+    "title": "Projektinė veikla",
+    "kam": "Visi įrašai, susiję su projektine veikla"
+  },
+  "10_kategorija_isvykos": {
+    "title": "Išvykos",
+    "kam": "Įrašai apie išvykas, ekskursijas"
+  }
+}

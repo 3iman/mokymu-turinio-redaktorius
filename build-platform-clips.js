@@ -161,7 +161,7 @@ function main() {
         const iki = it.cue < vc.length ? vc[it.cue].at : r.duration;
         if (at + it.duration > iki + 0.05) warn.push(`balsas ${it.cue} (${it.duration}s nuo ${at}s) užlipa ant ${iki.toFixed(1)}s`);
         // paskutinis sakinys turi nutilti bent TAIL_CALM_S prieš kadro galą — kitaip klipas „nukertamas“ (Eimantas 2026-11-03, K4)
-        if (it.cue === vc.length && at + it.duration > r.duration - TAIL_CALM_S) warn.push(`paskutinis balsas baigiasi ${(r.duration - at - it.duration).toFixed(2)}s prieš galą (reikia ≥ ${TAIL_CALM_S}s) — pailgink kadrą kortelėje`);
+        if (it.cue === vc.length && at + it.duration > r.duration - TAIL_CALM_S + 0.05) warn.push(`paskutinis balsas baigiasi ${(r.duration - at - it.duration).toFixed(2)}s prieš galą (reikia ≥ ${TAIL_CALM_S}s) — pailgink kadrą kortelėje`);
       } else {
         at = startIn; text = r.balsas || it.text;
         if (at + it.duration > r.duration - 0.5) warn.push(`balsas (${it.duration}s) netelpa į ${r.duration}s`);

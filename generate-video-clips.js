@@ -40,6 +40,10 @@ function getArg(name) {
   return i !== -1 ? args[i + 1] : null;
 }
 const lessonSlug = getArg('lesson');
+const LESSON_ANIMATIONS = (() => {
+  const p = path.join(__dirname, 'lessons', lessonSlug || '', 'video', 'animacijos.json');
+  return lessonSlug && fs.existsSync(p) ? JSON.parse(fs.readFileSync(p, 'utf-8')) : {};
+})();
 const lang = getArg('lang') || 'lt';
 const isDark = args.includes('--dark');
 const isAllLangs = args.includes('--all-langs');
@@ -4444,7 +4448,9 @@ async function main() {
     if (!fs.existsSync(framesDir)) fs.mkdirSync(framesDir, { recursive: true });
 
     // Select per-template animation CSS
-    const templateCSS = TEMPLATE_ANIMATIONS[name] || FALLBACK_CSS;
+    // Pamokos animacijos (lessons/{slug}/video/animacijos.json — generuoja koncepcijos.js ir pan.) pirmesnės už bendrą žodyną:
+    // šablonų vardai skirtingose pamokose gali sutapti (2026-11-03).
+    const templateCSS = LESSON_ANIMATIONS[name] || TEMPLATE_ANIMATIONS[name] || FALLBACK_CSS;
     let fullCSS = COMMON_CSS + templateCSS;
 
     // Add number overlay CSS if we have scenario info

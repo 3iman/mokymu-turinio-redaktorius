@@ -1,0 +1,93 @@
+{
+  "hash": "6f24c516a6237da2571d717b2392b235968b18ecab3f3fa88105cc5bdbe7e937",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 1665258845,
+  "characters": 427,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T02:10:33.794Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Išjungiate papildinį ir keičiate tvarką",
+      "text": "Zonos /ˈsaːraʃʲɛ/ prie papildinio spaudžiate „Redaguoti“.",
+      "file": "k01-1.wav",
+      "duration": 3.95,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Išjungiate papildinį ir keičiate tvarką",
+      "text": "Jungiklį „Įjungtas/Išjungtas“ perjungiate į „No“ ir išsaugote.",
+      "file": "k01-2.wav",
+      "duration": 6.57,
+      "fits": false,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Išjungiate papildinį ir keičiate tvarką",
+      "text": "Tvarką keičiate tempdami už rodyklių ir spausdami „/ˈpɛr.rikʲuotʲi/“.",
+      "file": "k01-3.wav",
+      "duration": 4.29,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 1,
+      "cue": 4,
+      "title": "Išjungiate papildinį ir keičiate tvarką",
+      "text": "Svetainėje tvarka pasikeitė.",
+      "file": "k01-4.wav",
+      "duration": 2.21,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Nustatote greitąją nuorodą",
+      "text": "Prie „Quick link“ spaudžiate „Redaguoti“.",
+      "file": "k02-1.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Nustatote greitąją nuorodą",
+      "text": "/lauˈkʲɛ/ „link“ įrašote priėmimo puslapio adresą.",
+      "file": "k02-2.wav",
+      "duration": 3.61,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Nustatote greitąją nuorodą",
+      "text": "Prie „Image“ įkeliate paveikslėlį ir išsaugote.",
+      "file": "k02-3.wav",
+      "duration": 3.61,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 2,
+      "cue": 4,
+      "title": "Nustatote greitąją nuorodą",
+      "text": "Šoninėje /ˈjuostoːjɛ/ atsiranda nuoroda.",
+      "file": "k02-4.wav",
+      "duration": 2.783,
+      "fits": true,
+      "reikia_sek": 17
+    }
+  ]
+}

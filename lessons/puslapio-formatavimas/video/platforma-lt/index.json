@@ -1,0 +1,38 @@
+{
+  "pamoka": "puslapio-formatavimas",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:12:41.945Z",
+  "balso_stiprinimas_db": 5.6,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_698_01",
+      "failas": "01-formatuoto-teksto-dalys",
+      "pavadinimas": "Formatuoto teksto dalys",
+      "trukme_s": 14,
+      "mp4": "viz_698_01.mp4",
+      "vtt": "viz_698_01.vtt",
+      "poster": "viz_698_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.63,
+          "tekstas": "Tekstą rašote normalaus ilgumo pastraipomis."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 9.13,
+          "tekstas": "Sakiniai trumpi ir aiškūs – juos perskaitys visi."
+        },
+        {
+          "nuo_s": 9.3,
+          "iki_s": 12.99,
+          "tekstas": "Išskirti padės sąrašai, antraštės ir citata."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

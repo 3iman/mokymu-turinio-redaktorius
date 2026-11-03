@@ -1,0 +1,83 @@
+{
+  "hash": "4b8a0de3d82d0cea0eda6af4f800424c30b9a4f7f9c1a2cbe8e5f20d3c491d86",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 1872037141,
+  "characters": 363,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T02:08:46.801Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Įdedate inkarą prie skilties antraštės",
+      "text": "Žymeklį statote skilties antraštės pradžioje.",
+      "file": "k01-1.wav",
+      "duration": 3.39,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Įdedate inkarą prie skilties antraštės",
+      "text": "/ˈjuostoːjɛ/ spaudžiate „Anchor“ – vėliavėlę.",
+      "file": "k01-2.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Įdedate inkarą prie skilties antraštės",
+      "text": "/lauˈkʲɛ/ „Anchor Name“ įrašote „dokumentai“ ir spaudžiate „okei“.",
+      "file": "k01-3.wav",
+      "duration": 4.81,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Susiejate turinio eilutę su inkaru",
+      "text": "Pažymite eilutę „Dokumentai“ ir spaudžiate „Link“.",
+      "file": "k02-1.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 19
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Susiejate turinio eilutę su inkaru",
+      "text": "„Link Type“ keičiate į „Link to anchor in the text“.",
+      "file": "k02-2.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 19
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Susiejate turinio eilutę su inkaru",
+      "text": "Pasirenkate „dokumentai“ ir spaudžiate „okei“.",
+      "file": "k02-3.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 19
+    },
+    {
+      "kadras": 2,
+      "cue": 4,
+      "title": "Susiejate turinio eilutę su inkaru",
+      "text": "Eilutė nušoka prie skilties.",
+      "file": "k02-4.wav",
+      "duration": 2.29,
+      "fits": true,
+      "reikia_sek": 19
+    }
+  ]
+}

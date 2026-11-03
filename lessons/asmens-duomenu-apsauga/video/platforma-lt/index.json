@@ -1,0 +1,241 @@
+{
+  "pamoka": "asmens-duomenu-apsauga",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T01:42:31.094Z",
+  "balso_stiprinimas_db": 5.7,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_685_01",
+      "failas": "01-mokytoju-pavardes",
+      "pavadinimas": "Darbuotojų pavardės",
+      "trukme_s": 18,
+      "mp4": "viz_685_01.mp4",
+      "vtt": "viz_685_01.vtt",
+      "poster": "viz_685_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 6.69,
+          "tekstas": "Dažna dingstis – mokytojų pavardžių neskelbti dėl BDAR."
+        },
+        {
+          "nuo_s": 6.9,
+          "iki_s": 10.87,
+          "tekstas": "Bendrieji reikalavimai įpareigoja skelbti darbuotojų sąrašą."
+        },
+        {
+          "nuo_s": 11.8,
+          "iki_s": 15.69,
+          "tekstas": "Sąraše nurodote vardą, pareigas ir kontaktus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_685_02",
+      "failas": "02-mokytojo-kvalifikacija",
+      "pavadinimas": "Mokytojo kvalifikacija",
+      "trukme_s": 15,
+      "mp4": "viz_685_02.mp4",
+      "vtt": "viz_685_02.vtt",
+      "poster": "viz_685_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.53,
+          "tekstas": "Mitas – kad kvalifikacijos skelbti negalima."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 9.07,
+          "tekstas": "Bendrųjų reikalavimų 44 punktas sako kitaip."
+        },
+        {
+          "nuo_s": 9.3,
+          "iki_s": 13.27,
+          "tekstas": "Kvalifikaciją skelbiate kaip esminę mokyklos funkciją."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_685_03",
+      "failas": "03-mokytoju-kontaktai",
+      "pavadinimas": "Mokytojų kontaktai",
+      "trukme_s": 15,
+      "mp4": "viz_685_03.mp4",
+      "vtt": "viz_685_03.vtt",
+      "poster": "viz_685_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.97,
+          "tekstas": "Mitas – kad negalima skelbti net darbinių kontaktų."
+        },
+        {
+          "nuo_s": 5.4,
+          "iki_s": 9.17,
+          "tekstas": "Reikalavimai nurodo telefono numerį ir elektroninį paštą."
+        },
+        {
+          "nuo_s": 10.1,
+          "iki_s": 13.11,
+          "tekstas": "Arba paskelbiate jo sudarymo tvarką."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_685_04",
+      "failas": "04-specialistu-darbo-laikas",
+      "pavadinimas": "Specialistų darbo laikas",
+      "trukme_s": 16,
+      "mp4": "viz_685_04.mp4",
+      "vtt": "viz_685_04.vtt",
+      "poster": "viz_685_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.29,
+          "tekstas": "Mitas – kad darbo laiko skelbti negalima."
+        },
+        {
+          "nuo_s": 4.6,
+          "iki_s": 8.81,
+          "tekstas": "Reikalavimų 16.6 punktas nurodo priešingai."
+        },
+        {
+          "nuo_s": 9,
+          "iki_s": 13.09,
+          "tekstas": "Skelbiate už aptarnavimą atsakingo darbuotojo darbo laiką."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_685_05",
+      "failas": "05-vadovu-nuotraukos",
+      "pavadinimas": "Vadovų nuotraukos",
+      "trukme_s": 15,
+      "mp4": "viz_685_05.mp4",
+      "vtt": "viz_685_05.vtt",
+      "poster": "viz_685_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.37,
+          "tekstas": "Mitas – kad vadovų nuotraukų dėti negalima."
+        },
+        {
+          "nuo_s": 4.8,
+          "iki_s": 9.65,
+          "tekstas": "Reikalavimų 16.1 punktas jas skelbti įpareigoja."
+        },
+        {
+          "nuo_s": 9.8,
+          "iki_s": 12.81,
+          "tekstas": "Kartu patalpinate ir gyvenimo aprašymą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "viz_685_06",
+      "failas": "06-pareigybes-aprasymas",
+      "pavadinimas": "Pareigybės aprašymas",
+      "trukme_s": 17,
+      "mp4": "viz_685_06.mp4",
+      "vtt": "viz_685_06.vtt",
+      "poster": "viz_685_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.49,
+          "tekstas": "Mitas – kad pareigybės aprašymo dėti negalima."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 9.05,
+          "tekstas": "Reikalavimų 16.4 punktas sako kitaip."
+        },
+        {
+          "nuo_s": 9.2,
+          "iki_s": 13.77,
+          "tekstas": "Skelbiate kiekvieno darbuotojo funkcijas ir reikalavimus pareigybei."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "viz_685_07",
+      "failas": "07-atlyginimu-vidurkiai",
+      "pavadinimas": "Atlyginimų vidurkiai",
+      "trukme_s": 16,
+      "mp4": "viz_685_07.mp4",
+      "vtt": "viz_685_07.vtt",
+      "poster": "viz_685_07.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.57,
+          "tekstas": "Mitas – kad atlyginimų vidurkių skelbti negalima."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 8.83,
+          "tekstas": "Vidurkius pagal vienodas pareigas skelbti privalu."
+        },
+        {
+          "nuo_s": 9.4,
+          "iki_s": 13.49,
+          "tekstas": "Vienintelio darbuotojo duomenis skelbiate tik gavę sutikimą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "viz_685_08",
+      "failas": "08-duomenu-apsaugos-dokumentai",
+      "pavadinimas": "Duomenų apsaugos dokumentai",
+      "trukme_s": 16,
+      "mp4": "viz_685_08.mp4",
+      "vtt": "viz_685_08.vtt",
+      "poster": "viz_685_08.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.61,
+          "tekstas": "Mitas – kad apsaugos taisyklių skelbti nereikia."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 9.05,
+          "tekstas": "Reikalavimų 25 punktas nurodo visą sąrašą."
+        },
+        {
+          "nuo_s": 9.2,
+          "iki_s": 13.74,
+          "tekstas": "Skelbiate taisykles, tvarkos aprašą ir pareigūno kontaktus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

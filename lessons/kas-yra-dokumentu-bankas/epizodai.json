@@ -1,0 +1,55 @@
+{
+ "pamokos_slug": "kas-yra-dokumentu-bankas",
+ "pamoka_id": "pam_681",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_681_01",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_681_01",
+   "pamoka": "pam_681",
+   "failas": "01-kas-yra-dokumentas",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Dokumentas",
+    "Atsisiųsti",
+    "Persiųsti",
+    "Atsispausdinti",
+    "Pasirašyti"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "failas": "gimnazijos-nuostatai.pdf"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_681_02",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_681_02",
+   "pamoka": "pam_681",
+   "failas": "02-kas-nera-dokumentas",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Į dokumentų banką nereikia",
+    "Informacinio pobūdžio tekstai",
+    "Pranešimai",
+    "Publikuojate kaip",
+    "Straipsnį",
+    "Vidinį puslapį"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "PDF"
+   ],
+   "demo_duomenys": {
+    "pranesimas": "Pranešimas dėl mokinių atostogų"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

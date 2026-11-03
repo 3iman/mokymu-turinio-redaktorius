@@ -1,0 +1,78 @@
+{
+  "lang": "lt",
+  "01_paveiksleliu_formatai": {
+    "title": "Paveikslėlių formatai",
+    "item_1": "JPG — dažniausiai naudojamas",
+    "item_2": "PNG — gali neturėti fono",
+    "item_3": "GIF — animuotas",
+    "item_4": "SVG — vektorinė grafika",
+    "item_5": "WEBP — geriausias kokybės ir vietos santykis"
+  },
+  "02_kiti_formatai": {
+    "title": "Konvertuojate į JPG arba PNG",
+    "do_title": "Taip",
+    "do_1": "JPG",
+    "do_2": "PNG",
+    "dont_title": "Ne",
+    "dont_1": "BMP – pasenęs",
+    "dont_2": "TIF – spaudos formatas",
+    "dont_3": "AI, EPS – nekeliami",
+    "dont_4": "PDF – tik kaip prisegtukas"
+  },
+  "03_sistema_sugeneruoja_dydi": {
+    "title": "Paveikslėlio dydis",
+    "step1_label": "Įkeliate paveikslėlį",
+    "step1_desc": "Plotis ir aukštis matuojami pikseliais",
+    "arrow_label_1": "",
+    "step2_label": "Sistema sugeneruoja",
+    "step2_desc": "Tinkamo dydžio variantą",
+    "arrow_label_2": "",
+    "step3_label": "Svetainėje",
+    "step3_desc": "Nereikės mažinti kiekvieno atskirai"
+  },
+  "04_mazinkite_nedidinkite": {
+    "title": "Mažinate, nedidinate",
+    "do_title": "Taip",
+    "do_1": "Mažinti, jei reikia",
+    "dont_title": "Ne",
+    "dont_1": "Didinti skaitmeninius paveikslėlius",
+    "dont_2": "Kadruoti mažą fragmentą („Crop“)"
+  },
+  "05_per_dideli_paveiksleliai": {
+    "title": "Per didelis paveikslėlis",
+    "old_title": "Per didelis",
+    "old_step_1": "Matmenimis",
+    "old_step_2": "Užimama vieta",
+    "old_step_3": "Serveris neapdoros arba apribos failą",
+    "new_title": "Tinkamas",
+    "new_step_1": "Tinkami matmenys",
+    "new_step_2": "Tinkama raiška"
+  },
+  "06_rgb_ne_cmyk": {
+    "title": "RGB, ne CMYK",
+    "old_title": "CMYK",
+    "old_step_1": "Išsikraipo originalios spalvos",
+    "old_step_2": "Keistai paryškėja",
+    "new_title": "RGB",
+    "new_step_1": "Skaitmeninių paveikslėlių koduotė",
+    "summary": "Tikrinti kiekvieno nereikia"
+  },
+  "07_rekomenduojamas_dydis": {
+    "title": "Rekomenduojamas dydis",
+    "old_title": "Sistemos ribos",
+    "old_step_1": "4500 x 4500",
+    "old_step_2": "Iki 20 Mb",
+    "new_title": "Geriausia",
+    "new_step_1": "1920 x 1080 (HD)",
+    "new_step_2": "Užima mažiau vietos",
+    "summary": "Užima visą ekraną ir išlieka ryški"
+  },
+  "08_paveikslelis_be_fono": {
+    "title": "Paveikslėlis be fono galerijoje",
+    "dont_title": "Ne",
+    "dont_1": "Paveikslėlis be fono",
+    "dont_2": "Gadina bendrą galerijos vaizdą",
+    "do_title": "Taip",
+    "do_1": "Nuotrauka su fonu"
+  }
+}

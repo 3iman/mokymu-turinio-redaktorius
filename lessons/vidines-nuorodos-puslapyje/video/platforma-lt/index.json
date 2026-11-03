@@ -1,0 +1,106 @@
+{
+  "pamoka": "vidines-nuorodos-puslapyje",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:10:14.633Z",
+  "balso_stiprinimas_db": 5.6,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_909_02_1",
+      "failas": "02-inkaras",
+      "pavadinimas": "Įdedate inkarą prie skilties antraštės",
+      "trukme_s": 15,
+      "mp4": "ep_909_02_1.mp4",
+      "vtt": "ep_909_02_1.vtt",
+      "poster": "ep_909_02_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.59,
+          "tekstas": "Žymeklį statote skilties antraštės pradžioje."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 7.87,
+          "tekstas": "Juostoje spaudžiate „Anchor“ – vėliavėlę."
+        },
+        {
+          "nuo_s": 8.3,
+          "iki_s": 13.11,
+          "tekstas": "Lauke „Anchor Name“ įrašote „dokumentai“ ir spaudžiate „OK“."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.5,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 9.9,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 11.1,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_909_03_1",
+      "failas": "03-nuoroda-i-inkara",
+      "pavadinimas": "Susiejate turinio eilutę su inkaru",
+      "trukme_s": 19,
+      "mp4": "ep_909_03_1.mp4",
+      "vtt": "ep_909_03_1.vtt",
+      "poster": "ep_909_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1,
+          "iki_s": 4.69,
+          "tekstas": "Pažymite eilutę „Dokumentai“ ir spaudžiate „Link“."
+        },
+        {
+          "nuo_s": 5.1,
+          "iki_s": 8.87,
+          "tekstas": "„Link Type“ keičiate į „Link to anchor in the text“."
+        },
+        {
+          "nuo_s": 9.4,
+          "iki_s": 12.65,
+          "tekstas": "Pasirenkate „dokumentai“ ir spaudžiate „OK“."
+        },
+        {
+          "nuo_s": 13.2,
+          "iki_s": 15.49,
+          "tekstas": "Eilutė nušoka prie skilties."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 7.5,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 11,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 14.8,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "hash": "a3fa31d2cfbcf0a00d2ffc3e95404315e8d49b938addc78e6205979145222607",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 449018971,
+  "characters": 288,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T02:10:49.424Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Projekto aprašymo anatomija",
+      "text": "Aprašyme nurodote tikslus ir uždavinius.",
+      "file": "k01-1.wav",
+      "duration": 2.91,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Projekto aprašymo anatomija",
+      "text": "Taip pat autorius, partnerius, naudas ir rezultatus.",
+      "file": "k01-2.wav",
+      "duration": 4.57,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Projekto aprašymo anatomija",
+      "text": "Pabaigoje lėšos ir trukmė.",
+      "file": "k01-3.wav",
+      "duration": 2.49,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Aprašymas ir straipsnis",
+      "text": "Nuorodą į aprašymą paliekate visų projektų /ˈsaːraʃʲɛ/.",
+      "file": "k02-1.wav",
+      "duration": 3.61,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Aprašymas ir straipsnis",
+      "text": "Straipsniai keliauja naujienų srautu pagal datą.",
+      "file": "k02-2.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Aprašymas ir straipsnis",
+      "text": "Straipsnio be projekto aprašymo nebus.",
+      "file": "k02-3.wav",
+      "duration": 3.09,
+      "fits": true,
+      "reikia_sek": 14
+    }
+  ]
+}

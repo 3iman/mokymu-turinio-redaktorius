@@ -1,0 +1,253 @@
+{
+  "hash": "63b410c69dcdbadc8412d188d03cc095652dea4fce7dbf38bc28461c6d70e366",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 537118800,
+  "characters": 1310,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T01:23:23.453Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Darbuotojų pavardės",
+      "text": "/daʒˈna/ dingstis – mokytojų pavardžių /nʲɛsˈkʲɛːlbtʲi/ dėl BDAR.",
+      "file": "k01-1.wav",
+      "duration": 5.49,
+      "fits": false,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Darbuotojų pavardės",
+      "text": "Bendrieji reikalavimai įpareigoja /ˈskʲɛːlbtʲi/ darbuotojų sąrašą.",
+      "file": "k01-2.wav",
+      "duration": 3.97,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Darbuotojų pavardės",
+      "text": "/ˈsaːraʃʲɛ/ nurodote vardą, pareigas ir kontaktus.",
+      "file": "k01-3.wav",
+      "duration": 3.89,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Mokytojo kvalifikacija",
+      "text": "Mitas – kad kvalifikacijos /ˈskʲɛːlbtʲi/ negalima.",
+      "file": "k02-1.wav",
+      "duration": 3.33,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Mokytojo kvalifikacija",
+      "text": "Bendrųjų reikalavimų 44 punktas sako kitaip.",
+      "file": "k02-2.wav",
+      "duration": 4.17,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Mokytojo kvalifikacija",
+      "text": "Kvalifikaciją skelbiate kaip esminę mokyklos funkciją.",
+      "file": "k02-3.wav",
+      "duration": 3.97,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Mokytojų kontaktai",
+      "text": "Mitas – kad negalima /ˈskʲɛːlbtʲi/ net darbinių kontaktų.",
+      "file": "k03-1.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Mokytojų kontaktai",
+      "text": "Reikalavimai nurodo telefono numerį ir elektroninį paštą.",
+      "file": "k03-2.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Mokytojų kontaktai",
+      "text": "Arba paskelbiate jo sudarymo tvarką.",
+      "file": "k03-3.wav",
+      "duration": 3.01,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Specialistų darbo laikas",
+      "text": "Mitas – kad darbo laiko /ˈskʲɛːlbtʲi/ negalima.",
+      "file": "k04-1.wav",
+      "duration": 3.09,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Specialistų darbo laikas",
+      "text": "Reikalavimų 16.6 punktas nurodo priešingai.",
+      "file": "k04-2.wav",
+      "duration": 4.21,
+      "fits": false,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Specialistų darbo laikas",
+      "text": "Skelbiate už aptarnavimą atsakingo darbuotojo darbo laiką.",
+      "file": "k04-3.wav",
+      "duration": 4.09,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Vadovų nuotraukos",
+      "text": "Mitas – kad vadovų nuotraukų dėti negalima.",
+      "file": "k05-1.wav",
+      "duration": 3.17,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Vadovų nuotraukos",
+      "text": "Reikalavimų 16.1 punktas jas /ˈskʲɛːlbtʲi/ įpareigoja.",
+      "file": "k05-2.wav",
+      "duration": 4.85,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Vadovų nuotraukos",
+      "text": "Kartu patalpinate ir gyvenimo aprašymą.",
+      "file": "k05-3.wav",
+      "duration": 3.01,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Pareigybės aprašymas",
+      "text": "Mitas – kad pareigybės aprašymo dėti negalima.",
+      "file": "k06-1.wav",
+      "duration": 3.29,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Pareigybės aprašymas",
+      "text": "Reikalavimų 16.4 punktas sako kitaip.",
+      "file": "k06-2.wav",
+      "duration": 4.05,
+      "fits": false,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Pareigybės aprašymas",
+      "text": "Skelbiate kiekvieno darbuotojo funkcijas ir reikalavimus pareigybei.",
+      "file": "k06-3.wav",
+      "duration": 4.57,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Atlyginimų vidurkiai",
+      "text": "Mitas – kad atlyginimų vidurkių /ˈskʲɛːlbtʲi/ negalima.",
+      "file": "k07-1.wav",
+      "duration": 3.37,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Atlyginimų vidurkiai",
+      "text": "Vidurkius pagal vienodas pareigas /ˈskʲɛːlbtʲi/ privalu.",
+      "file": "k07-2.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Atlyginimų vidurkiai",
+      "text": "Vienintelio darbuotojo duomenis skelbiate tik gavę sutikimą.",
+      "file": "k07-3.wav",
+      "duration": 4.09,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Duomenų apsaugos dokumentai",
+      "text": "Mitas – kad apsaugos taisyklių /ˈskʲɛːlbtʲi/ nereikia.",
+      "file": "k08-1.wav",
+      "duration": 3.41,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Duomenų apsaugos dokumentai",
+      "text": "Reikalavimų 25 punktas nurodo visą sąrašą.",
+      "file": "k08-2.wav",
+      "duration": 3.85,
+      "fits": false,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Duomenų apsaugos dokumentai",
+      "text": "Skelbiate taisykles, tvarkos /ˈaːpraʃaː/ ir pareigūno kontaktus.",
+      "file": "k08-3.wav",
+      "duration": 4.543,
+      "fits": true,
+      "reikia_sek": 15
+    }
+  ]
+}

@@ -1,0 +1,254 @@
+{
+  "pamoka": "irasu-kategorizavimas",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T01:52:07.360Z",
+  "balso_stiprinimas_db": 6.1,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_1471_01",
+      "failas": "01-ivykes-ar-busimas",
+      "pavadinimas": "Įvykęs ar būsimas renginys",
+      "trukme_s": 16,
+      "mp4": "viz_1471_01.mp4",
+      "vtt": "viz_1471_01.vtt",
+      "poster": "viz_1471_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 6.35,
+          "tekstas": "Kategorijoje „Renginiai“ talpinate straipsnius apie jau įvykusius renginius."
+        },
+        {
+          "nuo_s": 7.4,
+          "iki_s": 9.89,
+          "tekstas": "Čia tinka ir nuotraukų galerijos."
+        },
+        {
+          "nuo_s": 10.2,
+          "iki_s": 14.17,
+          "tekstas": "Apie būsimą renginį skelbiate kategorijoje „Kvietimas“."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_1471_02",
+      "failas": "02-kategorija-pranesimas",
+      "pavadinimas": "Pranešimas",
+      "trukme_s": 11,
+      "mp4": "viz_1471_02.mp4",
+      "vtt": "viz_1471_02.vtt",
+      "poster": "viz_1471_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.13,
+          "tekstas": "Čia talpinate informaciją, kuri yra laikino aktualumo."
+        },
+        {
+          "nuo_s": 5.7,
+          "iki_s": 9.43,
+          "tekstas": "Būsimi renginiai, įstatymų ar tvarkos pakeitimai."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_1471_03",
+      "failas": "03-kategorija-didziuojames",
+      "pavadinimas": "Didžiuojamės",
+      "trukme_s": 12,
+      "mp4": "viz_1471_03.mp4",
+      "vtt": "viz_1471_03.vtt",
+      "poster": "viz_1471_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.66,
+          "tekstas": "Šiai kategorijai priskiriate įrašus apie pasiekimus ir diplomus."
+        },
+        {
+          "nuo_s": 6.4,
+          "iki_s": 9.92,
+          "tekstas": "Talpinate ne tik diplomą, bet ir žmogaus nuotrauką."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_1471_04",
+      "failas": "04-kategorija-sveikinimas",
+      "pavadinimas": "Sveikinimas",
+      "trukme_s": 11,
+      "mp4": "viz_1471_04.mp4",
+      "vtt": "viz_1471_04.vtt",
+      "poster": "viz_1471_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.17,
+          "tekstas": "Čia talpinate atvirukus įvairioms progoms."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 9.61,
+          "tekstas": "Nustatote galiojimo datą – atvirukas aktualus tik laikinai."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_1471_05",
+      "failas": "05-kategorija-konkursas",
+      "pavadinimas": "Konkursas",
+      "trukme_s": 10,
+      "mp4": "viz_1471_05.mp4",
+      "vtt": "viz_1471_05.vtt",
+      "poster": "viz_1471_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.62,
+          "tekstas": "Čia skelbiate konkursų aprašymus."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 7.64,
+          "tekstas": "Kartu – ir konkurso nuostatas."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "viz_1471_06",
+      "failas": "06-kategorija-svarbu",
+      "pavadinimas": "Svarbu!",
+      "trukme_s": 11,
+      "mp4": "viz_1471_06.mp4",
+      "vtt": "viz_1471_06.vtt",
+      "poster": "viz_1471_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.81,
+          "tekstas": "Šią kategoriją naudojate, kai norite atkreipti dėmesį."
+        },
+        {
+          "nuo_s": 5.7,
+          "iki_s": 8.39,
+          "tekstas": "Pranešimas turi būti išskirtinis."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "viz_1471_07",
+      "failas": "07-kategorija-kvietimas",
+      "pavadinimas": "Kvietimas",
+      "trukme_s": 12,
+      "mp4": "viz_1471_07.mp4",
+      "vtt": "viz_1471_07.vtt",
+      "poster": "viz_1471_07.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.69,
+          "tekstas": "Kategoriją „Kvietimas“ naudojate skelbdami apie būsimus renginius."
+        },
+        {
+          "nuo_s": 6.6,
+          "iki_s": 8.85,
+          "tekstas": "Taip pat – apie susirinkimus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "viz_1471_08",
+      "failas": "08-kategorija-ugdymas-karjerai",
+      "pavadinimas": "Ugdymas karjerai",
+      "trukme_s": 11,
+      "mp4": "viz_1471_08.mp4",
+      "vtt": "viz_1471_08.vtt",
+      "poster": "viz_1471_08.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.05,
+          "tekstas": "Ši kategorija skirta profesinės savišvietos informacijai."
+        },
+        {
+          "nuo_s": 5.9,
+          "iki_s": 7.75,
+          "tekstas": "Čia ją ir sisteminate."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 9,
+      "epizodas": "viz_1471_09",
+      "failas": "09-kategorija-projektine-veikla",
+      "pavadinimas": "Projektinė veikla",
+      "trukme_s": 12,
+      "mp4": "viz_1471_09.mp4",
+      "vtt": "viz_1471_09.vtt",
+      "poster": "viz_1471_09.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.97,
+          "tekstas": "Šiai kategorijai priskiriate visus su projektine veikla susijusius įrašus."
+        },
+        {
+          "nuo_s": 7.2,
+          "iki_s": 9.81,
+          "tekstas": "Nė vieno nepaliekate be kategorijos."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 10,
+      "epizodas": "viz_1471_10",
+      "failas": "10-kategorija-isvykos",
+      "pavadinimas": "Išvykos",
+      "trukme_s": 10,
+      "mp4": "viz_1471_10.mp4",
+      "vtt": "viz_1471_10.vtt",
+      "poster": "viz_1471_10.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.49,
+          "tekstas": "Šiai kategorijai priskiriate įrašus apie išvykas."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 7.49,
+          "tekstas": "Taip pat – apie ekskursijas."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

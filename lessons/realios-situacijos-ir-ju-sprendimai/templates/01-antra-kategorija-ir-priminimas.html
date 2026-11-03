@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* Kadras 2 — „Antra kategorija ir priminimas“ (ep_677_01_3): žyma jau yra → „Planavimo dokumentai“ → data → svetainėje du rinkiniai
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 45% 35%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+  .stage > .scr:nth-of-type(1) { opacity: 0; }
+  .stage > .scr:nth-of-type(2) { opacity: 1; }
+  .cursor-wrap { transform: translate(1376.0px, 817.0px); }
+  .caret-tag { opacity: 1; }
+  .caret-date { opacity: 1; }
+  .tag-in { opacity: 0; }
+  .chip2 { opacity: 1; }
+  .saved { opacity: 1; }
+
+
+  .plan { background: transparent; color: inherit; padding: 0 2px; border-radius: 3px; }
+  .d-form .tvs-tags { min-height: 58px; }
+  .chip-slot { position: relative; display: inline-flex; }
+  .tag-in { position: absolute; left: 0; top: 0; bottom: 0; display: inline-flex; align-items: center; padding-left: 6px; font-size: 21px; white-space: nowrap; }
+  .two-sets .tvs-sdocs-tr.is-hit { background: #fff6dd; }
+  .saved { opacity: 0; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-window is-nosubnav">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class=""></i><i class="is-bars"></i><i class="is-on"></i><i class=""></i><i class=""></i></div>
+        
+        <div class="tvs-main">
+          <div class="tvs-crumb">Dokumentų banko modulis  /  Dokumentai  /  Redaguoti</div>
+
+          <div class="tvs-alert saved">Dokumentas išsaugotas.</div>
+          <div class="tvs-form is-dense d-form">
+            <div class="tvs-field" data-t="ftitle"><div class="tvs-label">Pavadinimas<span class="tvs-req">*</span></div><div class="tvs-input is-value"><span>Vaiko gerovės komisijos veiklos <mark class="plan" data-t="plan">planas</mark> 2026 m.</span></div></div>
+            <div class="tvs-field" data-t="ftags"><div class="tvs-label">Kategorijos</div>
+              <div class="tvs-tags"><span class="tvs-chip">Vaiko gerovės komisija<span class="tvs-chip-x">×</span></span><span class="chip-slot"><span class="tvs-chip chip2">Planavimo dokumentai<span class="tvs-chip-x">×</span></span><span class="tag-in"><span class="tvs-typed ty-tag" data-ty="tag"><span class="w"><span class="l l1">P</span><span class="l l2">l</span><span class="l l3">a</span><span class="l l4">n</span><span class="l l5">a</span><span class="l l6">v</span><span class="l l7">i</span><span class="l l8">m</span><span class="l l9">o</span></span><span class="l l10">&nbsp;</span><span class="w"><span class="l l11">d</span><span class="l l12">o</span><span class="l l13">k</span><span class="l l14">u</span><span class="l l15">m</span><span class="l l16">e</span><span class="l l17">n</span><span class="l l18">t</span><span class="l l19">a</span><span class="l l20">i</span></span></span><span class="tvs-caret caret-tag"></span></span></span></div>
+              <div class="tvs-help">Separate values with a comma or by pressing "Enter".</div></div>
+            <div class="tvs-field" data-t="fdate"><div class="tvs-label">Patikrinimo data</div><div class="tvs-date"><span class="tvs-date-x"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"><path d="M5 5l14 14M19 5L5 19"/></svg></span><span class="tvs-date-v"><span class="tvs-typed ty-date" data-ty="date"><span class="w"><span class="l l1">2</span><span class="l l2">0</span><span class="l l3">2</span><span class="l l4">7</span><span class="l l5">-</span><span class="l l6">0</span><span class="l l7">1</span><span class="l l8">-</span><span class="l l9">1</span><span class="l l10">5</span></span><span class="l l11">&nbsp;</span><span class="w"><span class="l l12">0</span><span class="l l13">9</span><span class="l l14">:</span><span class="l l15">0</span><span class="l l16">0</span></span></span></span><span class="tvs-date-tz">Europe/Vilnius</span></div></div>
+            <div class="tvs-field"><div class="tvs-label">Komentaras</div><div class="tvs-input is-value com">Atnaujinti kitų metų planą</div></div>
+          </div>
+          <div class="tvs-form-foot"><span class="tvs-btn is-tiny"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>Atnaujinti</span><span class="tvs-btn is-tiny" data-t="save"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>Išsaugoti ir išeiti</span><span class="tvs-sp"></span><span class="tvs-btn is-tiny is-grey">Atšaukti</span></div>
+        </div>
+      </div>
+
+      <div class="scr scr2 tvs-sweb">
+
+        <div class="tvs-sweb-h"><div class="tvs-sweb-crest"></div><div class="tvs-sweb-name">Demo mokykla<small>Demo miestas</small></div></div>
+        <div class="tvs-sweb-nav"><span class="is-on">Apie mokyklą</span><span>Dokumentai</span><span>Mokiniams</span><span>Tėvams</span><span>Kontaktai</span></div>
+        <div class="tvs-sweb-b"><div class="tvs-sweb-t">Dokumentai</div>
+
+          <div class="two-sets">
+            <div class="tvs-sdocs " data-t="set1"><div class="tvs-sdocs-th"><span>Vaiko gerovės komisija</span><span>Atnaujinta</span><span>Dydis</span></div><div class="tvs-sdocs-tr is-hit"><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v11M7.5 10l4.5 4.5 4.5-4.5M3.5 15v5.5h17V15"/></svg></span><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 20l1-4.5L16 4.5l3.5 3.5-11 11z"/><path d="M14 7l3 3"/></svg></span><span>Vaiko gerovės komisijos veiklos planas 2026 m.</span><span class="is-date">2026-11-03 10:12:05</span><span class="is-size">412.30 KB</span></div><div class="tvs-sdocs-tr "><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v11M7.5 10l4.5 4.5 4.5-4.5M3.5 15v5.5h17V15"/></svg></span><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 20l1-4.5L16 4.5l3.5 3.5-11 11z"/><path d="M14 7l3 3"/></svg></span><span>Vaiko gerovės komisijos darbo reglamentas</span><span class="is-date">2025-09-01 08:30:11</span><span class="is-size">226.72 KB</span></div><div class="tvs-sdocs-tr "><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v11M7.5 10l4.5 4.5 4.5-4.5M3.5 15v5.5h17V15"/></svg></span><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 20l1-4.5L16 4.5l3.5 3.5-11 11z"/><path d="M14 7l3 3"/></svg></span><span>Pagalbos mokiniui teikimo tvarka</span><span class="is-date">2025-09-01 08:31:40</span><span class="is-size">198.04 KB</span></div></div>
+            <div class="tvs-sdocs " data-t="set2"><div class="tvs-sdocs-th"><span>Planavimo dokumentai</span><span>Atnaujinta</span><span>Dydis</span></div><div class="tvs-sdocs-tr "><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v11M7.5 10l4.5 4.5 4.5-4.5M3.5 15v5.5h17V15"/></svg></span><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 20l1-4.5L16 4.5l3.5 3.5-11 11z"/><path d="M14 7l3 3"/></svg></span><span>Ugdymo planas 2025–2026 m. m.</span><span class="is-date">2025-08-29 14:02:10</span><span class="is-size">1.67 MB</span></div><div class="tvs-sdocs-tr is-hit"><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v11M7.5 10l4.5 4.5 4.5-4.5M3.5 15v5.5h17V15"/></svg></span><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 20l1-4.5L16 4.5l3.5 3.5-11 11z"/><path d="M14 7l3 3"/></svg></span><span>Vaiko gerovės komisijos veiklos planas 2026 m.</span><span class="is-date">2026-11-03 10:12:05</span><span class="is-size">412.30 KB</span></div><div class="tvs-sdocs-tr "><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v11M7.5 10l4.5 4.5 4.5-4.5M3.5 15v5.5h17V15"/></svg></span><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 20l1-4.5L16 4.5l3.5 3.5-11 11z"/><path d="M14 7l3 3"/></svg></span><span>Strateginis planas 2025–2027 m.</span><span class="is-date">2025-01-20 09:15:00</span><span class="is-size">880.12 KB</span></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="spot"></div>
+      <div class="tvs-ripple rp rp1"></div>
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

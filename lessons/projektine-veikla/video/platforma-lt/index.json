@@ -1,0 +1,67 @@
+{
+  "pamoka": "projektine-veikla",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:12:06.611Z",
+  "balso_stiprinimas_db": 5.5,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_683_02",
+      "failas": "02-aprasymo-anatomija",
+      "pavadinimas": "Projekto aprašymo anatomija",
+      "trukme_s": 14,
+      "mp4": "viz_683_02.mp4",
+      "vtt": "viz_683_02.vtt",
+      "poster": "viz_683_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.11,
+          "tekstas": "Aprašyme nurodote tikslus ir uždavinius."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 9.07,
+          "tekstas": "Taip pat autorius, partnerius, naudas ir rezultatus."
+        },
+        {
+          "nuo_s": 9.3,
+          "iki_s": 11.79,
+          "tekstas": "Pabaigoje lėšos ir trukmė."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_683_04",
+      "failas": "04-aprasymas-ir-straipsnis",
+      "pavadinimas": "Aprašymas ir straipsnis",
+      "trukme_s": 14,
+      "mp4": "viz_683_04.mp4",
+      "vtt": "viz_683_04.vtt",
+      "poster": "viz_683_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.81,
+          "tekstas": "Nuorodą į aprašymą paliekate visų projektų sąraše."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 8.55,
+          "tekstas": "Straipsniai keliauja naujienų srautu pagal datą."
+        },
+        {
+          "nuo_s": 9.3,
+          "iki_s": 12.39,
+          "tekstas": "Straipsnio be projekto aprašymo nebus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

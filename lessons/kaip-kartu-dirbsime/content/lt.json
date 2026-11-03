@@ -1,0 +1,100 @@
+{
+  "lang": "lt",
+  "01_butelio_kakliukas": {
+    "title": "Butelio kakliuko efektas",
+    "old_title": "Didinti darbuotojų skaičių",
+    "old_step_1": "Padidintų produkto kainą",
+    "new_title": "Procesų tobulinimas",
+    "new_step_1": "Tvaresnis sprendimas",
+    "new_step_2": "Taikome sau, tikimės ir iš jūsų",
+    "summary": "Visi aktyvūs arba visi atsijungę"
+  },
+  "02_kur_rasyti": {
+    "title": "Kur rašyti",
+    "doc1_label": "turinys@cleverphant.lt",
+    "doc1_desc": "Turiniui siųsti",
+    "doc1_tag": "Turinys",
+    "doc2_label": "pagalba@cleverphant.lt",
+    "doc2_desc": "Patarimai, sąskaitos, sutartys",
+    "doc2_tag": "Pagalba",
+    "doc3_label": "pagalba@wolet.lt",
+    "doc3_desc": "Serveris, el. pašto dėžutės, domenai",
+    "doc3_tag": "Technika",
+    "summary": "Su vadybininku – el. paštu, dėl skambučio susitariate iš anksto"
+  },
+  "03_vadybininko_laikas": {
+    "title": "Vadybininkas ir projekto eiga",
+    "step1_label": "Turinio auditas pateiktas",
+    "step1_desc": "Vadybininkas aktyviai veikia ~2 mėn.",
+    "arrow_label_1": "Papildymas užsitęsia",
+    "step2_label": "Darbai patenka į eilę",
+    "step2_desc": "Komunikacija — Pagalbos centre",
+    "arrow_label_2": "Paleidimo stadija",
+    "step3_label": "Vadybininkas grįžta",
+    "step3_desc": "Tik paskutinėje paleidimo stadijoje"
+  },
+  "05_kam_deleguoti": {
+    "title": "Kam deleguoti turinio koordinavimą",
+    "old_title": "Neretai deleguojama",
+    "old_step_1": "Svetainę prižiūrėjusiam mokytojui",
+    "new_title": "Sklandžiausia",
+    "new_step_1": "Administracijos narys",
+    "new_step_2": "Kartu — raštinės darbuotojai",
+    "summary": "Išvengsite uždelsimų sprendimų grandinėje"
+  },
+  "06_stebekite_darba": {
+    "title": "Stebite mūsų darbą",
+    "item_1": "Demo versija atvira visą laiką",
+    "item_2": "Laikinas svetainės adresas – taip pat",
+    "item_3": "Užsukate kartkartėmis ir įsitikinate",
+    "summary": "Neramu, kad darbai sustojo? Klausiate vadybininko arba Pagalbos centro"
+  },
+  "07_pastebejimu_sarasas": {
+    "title": "Kaip įveikti pastebėjimų sąrašą",
+    "step1_num": "1",
+    "step1_label": "Deleguojate",
+    "step1_desc": "Darbuotojui, galinčiam iškart priimti sprendimus",
+    "step2_num": "2",
+    "step2_label": "Peržiūrite neatidėliodami",
+    "step2_desc_prefix": "Kuo greičiau atsakysite,",
+    "step2_desc_suffix": "tuo greičiau įgyvendinsime projektą",
+    "step3_num": "3",
+    "step3_label": "Pradedate nuo lengviausių",
+    "step3_desc": "Paslaugos, atsakingi asmenys, pareigybių aprašai"
+  },
+  "08_abejones_ir_atsakymas": {
+    "title": "Pastebėjimų sąrašas",
+    "old_title": "Abejonės",
+    "old_step_1": "Ar galima prašyti tokios informacijos?",
+    "old_step_2": "Gal apsieisim be to?",
+    "new_title": "Kodėl taip",
+    "new_step_1": "Kokybės standartas, pasiektas per ilgą laiką",
+    "new_step_2": "Auditorijų apklausomis ir asmeninėmis pastangomis",
+    "summary": "Nesutinkate – informuojate, o ne tylite"
+  },
+  "09_paleidimo_greitis": {
+    "title": "Svetainės paleidimo greitis",
+    "item_1": "Pastangos komunikuoti",
+    "item_2": "Disciplina",
+    "item_3": "Nuoseklumas",
+    "item_4": "Palankiai susiklosčiusios aplinkybės",
+    "summary": "Stengiamės skubėti lėtai"
+  },
+  "10_letai_uztikrintai": {
+    "title": "Lėtai, bet užtikrintai",
+    "old_title": "Lėčiau dėl atidėliojimo",
+    "old_step_1": "Kuo daugiau laiko, tuo stipresnė pagunda atidėlioti",
+    "new_title": "Lėčiau dėl gilinimosi",
+    "new_step_1": "Daugiau laiko turiniui, fotografavimui, tekstams",
+    "new_step_2": "Rezultatas uždelstas, bet kokybiškas",
+    "summary": "Svarbiausia, kad lėtumas vestų į kokybę"
+  },
+  "11_o_kas_toliau": {
+    "title": "O kas toliau?",
+    "item_1": "Ar galima paleisti greičiau – baigiasi sutartis?",
+    "item_2": "Ar galima greičiau – mokyklos gimtadienis?",
+    "item_3": "Ar galima greičiau – kitą savaitę auditas?",
+    "item_4": "Turinį sutvarkysime patys vėliau – ar galite paleisti?",
+    "summary": "Tariamės ir koreguojame, bet vengiame staigių, kardinalių pokyčių"
+  }
+}

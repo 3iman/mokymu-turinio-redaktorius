@@ -1,0 +1,13 @@
+{
+  "lang": "lt",
+  "00_dinaminis_turinys": {
+    "title": "Kaip veikia dinaminis turinys",
+    "step1_label": "Esami duomenys",
+    "step1_desc": "Duomenys, turinio formatai, dizaino elementai",
+    "arrow_label_1": "suformuojama",
+    "step2_label": "Svetainės elementai",
+    "step2_desc": "Įvairios paskirties elementai ir jų rinkiniai",
+    "arrow_label_2": "automatiškai arba pusiau automatiškai",
+    "step3_label": "Įvairios svetainės vietos"
+  }
+}

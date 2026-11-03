@@ -1,0 +1,27 @@
+{
+ "pamokos_slug": "dinaminis-turinys",
+ "pamoka_id": "pam_1470",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_1470_00",
+   "rusis": "koncepcija",
+   "sablonas": "srautas",
+   "dalis": "dal_1470_00",
+   "pamoka": "pam_1470",
+   "failas": "00-dinaminis-turinys",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Esami duomenys",
+    "Svetainės elementai",
+    "suformuojama"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "elementas": "Atsakingų darbuotojų profiliai"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

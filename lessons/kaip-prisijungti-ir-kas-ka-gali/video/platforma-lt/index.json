@@ -1,0 +1,105 @@
+{
+  "pamoka": "kaip-prisijungti-ir-kas-ka-gali",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:05:37.708Z",
+  "balso_stiprinimas_db": 5.5,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_906_01_1",
+      "failas": "01-prisijungimas",
+      "pavadinimas": "Prisijungiate prie svetainės valdymo",
+      "trukme_s": 17,
+      "mp4": "ep_906_01_1.mp4",
+      "vtt": "ep_906_01_1.vtt",
+      "poster": "ep_906_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.67,
+          "tekstas": "Prie svetainės adreso pridedate „/admin“."
+        },
+        {
+          "nuo_s": 5.9,
+          "iki_s": 8.99,
+          "tekstas": "Įrašote el. paštą ir slaptažodį."
+        },
+        {
+          "nuo_s": 9.3,
+          "iki_s": 15.79,
+          "tekstas": "Spaudžiate „Prisijungti“ – atsidaro darbalaukis."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 7.7,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 11.1,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 12.3,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_906_05_1",
+      "failas": "05-pridedate-kolega",
+      "pavadinimas": "Pridedate kolegą su role „Redakcija“",
+      "trukme_s": 18,
+      "mp4": "ep_906_05_1.mp4",
+      "vtt": "ep_906_05_1.vtt",
+      "poster": "ep_906_05_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 8.13,
+          "tekstas": "Sąraše „Vartotojai“ spaudžiate „Pridėti vartotoją“."
+        },
+        {
+          "nuo_s": 8.3,
+          "iki_s": 11.95,
+          "tekstas": "Užpildote vardą, pavardę ir el. paštą."
+        },
+        {
+          "nuo_s": 12.1,
+          "iki_s": 16.11,
+          "tekstas": "Prie „Rolės“ pažymite „Redakcija“ ir išsaugote."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 10.1,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 13.5,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 14.1,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 15.3,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

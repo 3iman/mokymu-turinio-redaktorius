@@ -1,0 +1,73 @@
+{
+  "hash": "f568b6b2af5315442ffe2b0ebf12e94816fd8b1df4fd46a8e01f7cf8683bb513",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 158012792,
+  "characters": 229,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T02:07:25.262Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Nukopijuojate navigacijos sintaksę",
+      "text": "Atidarote skirtuką „Sintaksė“.",
+      "file": "k01-1.wav",
+      "duration": 2.403,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Nukopijuojate navigacijos sintaksę",
+      "text": "Prie navigacijos pavyzdžio spaudžiate „Kopijuoti“.",
+      "file": "k01-2.wav",
+      "duration": 3.357,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Nukopijuojate navigacijos sintaksę",
+      "text": "Sintaksė nukopijuota.",
+      "file": "k01-3.wav",
+      "duration": 1.77,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Puslapyje atsiranda subpuslapiai",
+      "text": "Išsaugote puslapį.",
+      "file": "k02-1.wav",
+      "duration": 1.61,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Puslapyje atsiranda subpuslapiai",
+      "text": "Svetainėje vietoje sintaksės atsiranda subpuslapių sąrašas.",
+      "file": "k02-2.wav",
+      "duration": 4.37,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Puslapyje atsiranda subpuslapiai",
+      "text": "Navigacija nubraižyta.",
+      "file": "k02-3.wav",
+      "duration": 1.903,
+      "fits": true,
+      "reikia_sek": 12
+    }
+  ]
+}

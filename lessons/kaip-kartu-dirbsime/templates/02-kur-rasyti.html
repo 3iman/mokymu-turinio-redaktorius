@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/koncepcijos.css">
+<!-- Generuoja koncepcijos.js iš platformos kortelės — ranka neredaguoti. -->
+</head>
+<body>
+  <div class="card">
+    <div class="k-title">{{title}}</div>
+    <div class="k-panel" style="max-width:1380px;margin:0 auto;width:100%"><div class="k-doc b-d1"><div class="k-doc-i"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg></div><div class="k-doc-b"><div class="k-doc-l">{{doc1_label}}</div><div class="k-doc-d">{{doc1_desc}}</div></div><span class="k-tag">{{doc1_tag}}</span></div><div class="k-doc b-d2"><div class="k-doc-i"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg></div><div class="k-doc-b"><div class="k-doc-l">{{doc2_label}}</div><div class="k-doc-d">{{doc2_desc}}</div></div><span class="k-tag">{{doc2_tag}}</span></div><div class="k-doc b-d3"><div class="k-doc-i"><svg viewBox="0 0 24 24" width="30" height="30" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22 6 12 13 2 6"/></svg></div><div class="k-doc-b"><div class="k-doc-l">{{doc3_label}}</div><div class="k-doc-d">{{doc3_desc}}</div></div><span class="k-tag">{{doc3_tag}}</span></div></div><div class="k-sum b-summary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V17h6v-.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg><span>{{summary}}</span></div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

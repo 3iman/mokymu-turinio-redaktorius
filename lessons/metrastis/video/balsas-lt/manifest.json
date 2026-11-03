@@ -1,0 +1,53 @@
+{
+  "hash": "2509707d52ce5c04f21de771906e6943f079c812ea178b0c5080f17680a6ef31",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 1389045693,
+  "characters": 198,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T02:02:59.446Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Sukuriate metraščio įrašą",
+      "text": "Modulyje „Timeline“ spaudžiate „/prʲiˈdʲeːtʲi/“.",
+      "file": "k01-1.wav",
+      "duration": 3.283,
+      "fits": false,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Sukuriate metraščio įrašą",
+      "text": "Pavadinime – metai, /lauˈkʲɛ/ „Data“ – įvykio data.",
+      "file": "k01-2.wav",
+      "duration": 4.357,
+      "fits": false,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Sukuriate metraščio įrašą",
+      "text": "Du sakiniai įžangoje, nuotrauka, „Išsaugoti“.",
+      "file": "k01-3.wav",
+      "duration": 3.97,
+      "fits": false,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 1,
+      "cue": 4,
+      "title": "Sukuriate metraščio įrašą",
+      "text": "Metraštyje atsiranda kortelė.",
+      "file": "k01-4.wav",
+      "duration": 2.13,
+      "fits": true,
+      "reikia_sek": 16
+    }
+  ]
+}

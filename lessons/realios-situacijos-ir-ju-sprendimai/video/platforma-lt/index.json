@@ -1,0 +1,86 @@
+{
+  "pamoka": "realios-situacijos-ir-ju-sprendimai",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:07:09.674Z",
+  "balso_stiprinimas_db": 5,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_677_01_1",
+      "failas": "01-kategorijos-filtravimas",
+      "pavadinimas": "Išfiltruojate reikiamą kategoriją",
+      "trukme_s": 11,
+      "mp4": "ep_677_01_1.mp4",
+      "vtt": "ep_677_01_1.vtt",
+      "poster": "ep_677_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1,
+          "iki_s": 3.75,
+          "tekstas": "Dokumentų banke pasirenkate kategoriją."
+        },
+        {
+          "nuo_s": 4.3,
+          "iki_s": 7.11,
+          "tekstas": "Spaudžiate žalią mygtuką „Filtruoti“."
+        },
+        {
+          "nuo_s": 7.4,
+          "iki_s": 9.77,
+          "tekstas": "Sąraše lieka tik jos dokumentai."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.2,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_677_01_3",
+      "failas": "01-antra-kategorija-ir-priminimas",
+      "pavadinimas": "Pridedate kategoriją ir priminimą",
+      "trukme_s": 18,
+      "mp4": "ep_677_01_3.mp4",
+      "vtt": "ep_677_01_3.vtt",
+      "poster": "ep_677_01_3.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.66,
+          "tekstas": "Kategorija jau pažymėta, nes ją išfiltravote."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 9.78,
+          "tekstas": "Pavadinime yra žodis planas, todėl pridedate „Planavimo dokumentai“."
+        },
+        {
+          "nuo_s": 10.5,
+          "iki_s": 13.19,
+          "tekstas": "Nustatote priminimą ir išsaugote."
+        },
+        {
+          "nuo_s": 13.3,
+          "iki_s": 16.4,
+          "tekstas": "Dokumentas atsiranda abiejuose rinkiniuose."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 6.3,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 11.7,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

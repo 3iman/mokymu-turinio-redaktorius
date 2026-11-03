@@ -1,0 +1,43 @@
+{
+  "hash": "40f40ef0a8617728da20febc0ab750a11c9296b5bb7c061459c685eea73ad881",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 374011280,
+  "characters": 181,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T01:43:46.177Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Kaip veikia dinaminis turinys",
+      "text": "Dinaminį turinį suformuojate iš esamų duomenų.",
+      "file": "k01-1.wav",
+      "duration": 3.47,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Kaip veikia dinaminis turinys",
+      "text": "Rezultatas – įvairios paskirties svetainės elementai ir rinkiniai.",
+      "file": "k01-2.wav",
+      "duration": 4.53,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Kaip veikia dinaminis turinys",
+      "text": "Į svetainės vietas jie įterpiami automatiškai.",
+      "file": "k01-3.wav",
+      "duration": 3.463,
+      "fits": true,
+      "reikia_sek": 15
+    }
+  ]
+}

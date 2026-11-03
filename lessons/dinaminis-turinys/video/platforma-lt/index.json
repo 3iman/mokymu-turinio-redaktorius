@@ -1,0 +1,38 @@
+{
+  "pamoka": "dinaminis-turinys",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T01:44:23.132Z",
+  "balso_stiprinimas_db": 5.1,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_1470_00",
+      "failas": "00-dinaminis-turinys",
+      "pavadinimas": "Kaip veikia dinaminis turinys",
+      "trukme_s": 15,
+      "mp4": "viz_1470_00.mp4",
+      "vtt": "viz_1470_00.vtt",
+      "poster": "viz_1470_00.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.67,
+          "tekstas": "Dinaminį turinį suformuojate iš esamų duomenų."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 9.53,
+          "tekstas": "Rezultatas – įvairios paskirties svetainės elementai ir rinkiniai."
+        },
+        {
+          "nuo_s": 10.4,
+          "iki_s": 13.86,
+          "tekstas": "Į svetainės vietas jie įterpiami automatiškai."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

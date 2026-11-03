@@ -1,0 +1,56 @@
+{
+  "lang": "lt",
+  "01_persona_vadovas": {
+    "title": "Persona Nr. 1",
+    "amzius": "30–45 m.",
+    "issilavinimas": "Aukštasis (magistras)",
+    "darbas": "Tarptautinė įmonė, daug keliauja, komandos vadovas",
+    "komunikacija": "Visus reikalus tvarko el. paštu ir vaizdo skambučiais",
+    "summary": "Geriausias susitikimas – trumpas ir konkretus el. laiškas."
+  },
+  "02_persona_zinutes": {
+    "title": "Persona Nr. 2",
+    "amzius": "25–35 m.",
+    "issilavinimas": "Aukštasis",
+    "darbas": "Ketvirta darbovietė per dvejus metus – ieško savęs",
+    "komunikacija": "Mielai bendrauja žinutėmis",
+    "summary": "Niekada neturi laiko; mielai bendrauja žinutėmis."
+  },
+  "03_persona_telefonas": {
+    "title": "Persona Nr. 3",
+    "amzius": "25–35 m.",
+    "issilavinimas": "Profesinis",
+    "darbas": "Monotoniškas, fizinių ir psichologinių pastangų reikalaujantis darbas",
+    "komunikacija": "Pagrindinis įrankis – telefonas",
+    "summary": "Neturi kantrybės, nemėgsta nieko skaityti, gilintis; pagrindinis komunikacijos įrankis – telefonas."
+  },
+  "04_persona_vengia_bendravimo": {
+    "title": "Persona Nr. 4",
+    "amzius": "35–45 m.",
+    "issilavinimas": "Profesinis",
+    "darbas": "Neturi darbo, laukia pasiūlymo užimtumo tarnyboje",
+    "komunikacija": "Telefonas, pokalbių programėlės",
+    "summary": "Jei tik įmanoma, vengia bendravimo; naudojasi telefonu, pokalbių programėlėmis."
+  },
+  "05_persona_dokumentai": {
+    "title": "Persona Nr. 5",
+    "amzius": "35–45 m.",
+    "issilavinimas": "Aukštasis",
+    "darbas": "Valstybės tarnyba, svarbios pareigos",
+    "komunikacija": "Dokumentuota komunikacija, mėgsta telefoną",
+    "summary": "Dokumentuota komunikacija – jų arkliukas; tvarkyti reikalus ir bendrauti mėgsta telefonu."
+  },
+  "06_universalus_tekstas": {
+    "title": "Universalus komunikavimas",
+    "do_title": "Universalu",
+    "do_1": "Empatiškai aprašyta esmė",
+    "do_2": "Dokumentų nuorodos — papildomas šaltinis",
+    "do_3": "Suprantama iš pirmo karto",
+    "do_4": "Adresatui niekas nėra savaime suprantama",
+    "dont_title": "Neuniversalu",
+    "dont_1": "Nuorodos į LR įstatymus",
+    "dont_2": "Pernelyg „gudrūs“ tekstai",
+    "dont_3": "Daug profesinių sąvokų",
+    "dont_4": "Reikia išmanyti įstaigos specifiką"
+  }
+}

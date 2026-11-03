@@ -1,0 +1,60 @@
+{
+ "pamokos_slug": "su-navigacijomis-susije-klausimai",
+ "pamoka_id": "pam_693",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_693_04_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_693_04",
+   "pamoka": "pam_693",
+   "failas": "04-kopijuojate-sintakse",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Sintaksė",
+    "Kopijuoti",
+    "{{structure(19)}}"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "sintaksė"
+   ],
+   "demo_duomenys": {
+    "puslapis": "Ugdymas"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_693_04_4",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_693_04",
+   "pamoka": "pam_693",
+   "failas": "04-subpuslapiu-navigacija",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Atnaujinti",
+    "Peržiūrėti"
+   ],
+   "tvs_ui": [
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: svetainės subpuslapių sąrašas"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Ugdymas",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

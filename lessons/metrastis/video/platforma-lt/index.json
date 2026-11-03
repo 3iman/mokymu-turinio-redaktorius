@@ -1,0 +1,60 @@
+{
+  "pamoka": "metrastis",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:03:44.288Z",
+  "balso_stiprinimas_db": 5.4,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_908_03_1",
+      "failas": "03-metrascio-irasas",
+      "pavadinimas": "Sukuriate metraščio įrašą",
+      "trukme_s": 18,
+      "mp4": "ep_908_03_1.mp4",
+      "vtt": "ep_908_03_1.vtt",
+      "poster": "ep_908_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1,
+          "iki_s": 4.28,
+          "tekstas": "Modulyje „Timeline“ spaudžiate „Pridėti“."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 8.86,
+          "tekstas": "Pavadinime – metai, lauke „Data“ – įvykio data."
+        },
+        {
+          "nuo_s": 9.1,
+          "iki_s": 13.07,
+          "tekstas": "Du sakiniai įžangoje, nuotrauka, „Išsaugoti“."
+        },
+        {
+          "nuo_s": 13.3,
+          "iki_s": 15.43,
+          "tekstas": "Metraštyje atsiranda kortelė."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.7,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 11.1,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 14.7,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

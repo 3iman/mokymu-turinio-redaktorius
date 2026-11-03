@@ -1,0 +1,38 @@
+{
+  "pamoka": "turinio-manipuliacija",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:18:39.540Z",
+  "balso_stiprinimas_db": 4.9,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_1586_00",
+      "failas": "00-vienas-turinio-vienetas",
+      "pavadinimas": "Turinio vienetas tik vienas",
+      "trukme_s": 15,
+      "mp4": "viz_1586_00.mp4",
+      "vtt": "viz_1586_00.vtt",
+      "poster": "viz_1586_00.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.19,
+          "tekstas": "Skaitmeninis turinys lengvai dubliuojamas ir pernaudojamas."
+        },
+        {
+          "nuo_s": 6,
+          "iki_s": 10.13,
+          "tekstas": "Tą pačią priėmimo informaciją parodote septyniose vietose."
+        },
+        {
+          "nuo_s": 10.8,
+          "iki_s": 13.18,
+          "tekstas": "Turinio vienetas lieka vienas."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

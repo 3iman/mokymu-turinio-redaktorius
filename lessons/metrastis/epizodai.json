@@ -1,0 +1,47 @@
+{
+ "pamokos_slug": "metrastis",
+ "pamoka_id": "pam_908",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_908_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_908_03",
+   "pamoka": "pam_908",
+   "failas": "03-metrascio-irasas",
+   "trukme_s": 18,
+   "ekrano_tekstai": [
+    "Timeline",
+    "Pridėti",
+    "Pavadinimas",
+    "Data",
+    "Intro",
+    "Nuotraukos"
+   ],
+   "tvs_ui": [
+    "tvs-table",
+    "tvs-btn",
+    "tvs-input",
+    "naujas: datos pasirinkimo laukas",
+    "tvs-file",
+    "tvs-cursor",
+    "tvs-ripple",
+    "tvs-site"
+   ],
+   "tarimo_kandidatai": [
+    "Timeline",
+    "Intro",
+    "Body"
+   ],
+   "demo_duomenys": {
+    "pavadinimas": "2016",
+    "data": "2016-07-05",
+    "intro": "Savivaldybės tarybos sprendimu prie mokyklos prijungta kaimyninė mokykla."
+   },
+   "naudoja_ir": [
+    "dal_908_90"
+   ]
+  }
+ ]
+}

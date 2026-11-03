@@ -1,0 +1,183 @@
+{
+  "pamoka": "personos",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:10:40.813Z",
+  "balso_stiprinimas_db": 5.4,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_1468_01",
+      "failas": "01-persona-vadovas",
+      "pavadinimas": "Persona Nr. 1",
+      "trukme_s": 15,
+      "mp4": "viz_1468_01.mp4",
+      "vtt": "viz_1468_01.vtt",
+      "poster": "viz_1468_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.23,
+          "tekstas": "Komandos vadovas tarptautinėje įmonėje, daug keliauja."
+        },
+        {
+          "nuo_s": 5.7,
+          "iki_s": 9.51,
+          "tekstas": "Reikalus tvarko el. paštu ir vaizdo skambučiais."
+        },
+        {
+          "nuo_s": 9.7,
+          "iki_s": 13.31,
+          "tekstas": "Tokį žmogų pasiekiate trumpu ir konkrečiu laišku."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_1468_02",
+      "failas": "02-persona-zinutes",
+      "pavadinimas": "Persona Nr. 2",
+      "trukme_s": 13,
+      "mp4": "viz_1468_02.mp4",
+      "vtt": "viz_1468_02.vtt",
+      "poster": "viz_1468_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.89,
+          "tekstas": "Ketvirta darbovietė per dvejus metus."
+        },
+        {
+          "nuo_s": 4.3,
+          "iki_s": 8.23,
+          "tekstas": "Niekada neturi laiko, bet nuomonę turi apie viską."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 11.21,
+          "tekstas": "Tokį žmogų pasiekiate trumpa žinute."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_1468_03",
+      "failas": "03-persona-telefonas",
+      "pavadinimas": "Persona Nr. 3",
+      "trukme_s": 15,
+      "mp4": "viz_1468_03.mp4",
+      "vtt": "viz_1468_03.vtt",
+      "poster": "viz_1468_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 6.05,
+          "tekstas": "Monotoniškas, fizinių ir psichologinių pastangų reikalaujantis darbas."
+        },
+        {
+          "nuo_s": 6.9,
+          "iki_s": 10.35,
+          "tekstas": "Neturi kantrybės ir nemėgsta nieko skaityti."
+        },
+        {
+          "nuo_s": 10.6,
+          "iki_s": 13.13,
+          "tekstas": "Tokį žmogų pasiekiate telefonu."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_1468_04",
+      "failas": "04-persona-vengia-bendravimo",
+      "pavadinimas": "Persona Nr. 4",
+      "trukme_s": 13,
+      "mp4": "viz_1468_04.mp4",
+      "vtt": "viz_1468_04.vtt",
+      "poster": "viz_1468_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.97,
+          "tekstas": "Darbo neturi, laukia pasiūlymo užimtumo tarnyboje."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 8.07,
+          "tekstas": "Jei tik įmanoma, vengia bendravimo."
+        },
+        {
+          "nuo_s": 8.3,
+          "iki_s": 11.39,
+          "tekstas": "Tokį žmogų pasiekiate pokalbių programėle."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_1468_05",
+      "failas": "05-persona-dokumentai",
+      "pavadinimas": "Persona Nr. 5",
+      "trukme_s": 13,
+      "mp4": "viz_1468_05.mp4",
+      "vtt": "viz_1468_05.vtt",
+      "poster": "viz_1468_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.97,
+          "tekstas": "Valstybės tarnyba, svarbios pareigos."
+        },
+        {
+          "nuo_s": 4.3,
+          "iki_s": 7.59,
+          "tekstas": "Dokumentuota komunikacija – jų arkliukas."
+        },
+        {
+          "nuo_s": 7.8,
+          "iki_s": 11.17,
+          "tekstas": "Tokį žmogų pasiekiate telefonu ir raštu."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "viz_1468_06",
+      "failas": "06-universalus-tekstas",
+      "pavadinimas": "Universalus komunikavimas",
+      "trukme_s": 15,
+      "mp4": "viz_1468_06.mp4",
+      "vtt": "viz_1468_06.vtt",
+      "poster": "viz_1468_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.93,
+          "tekstas": "Vengiate nuorodų į įstatymus ir profesinių sąvokų."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 8.47,
+          "tekstas": "Esmę aprašote empatiškai ir paprastai."
+        },
+        {
+          "nuo_s": 8.7,
+          "iki_s": 12.48,
+          "tekstas": "Dokumentų nuorodas pateikiate kaip papildomą šaltinį."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

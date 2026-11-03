@@ -1,0 +1,131 @@
+{
+ "pamokos_slug": "personos",
+ "pamoka_id": "pam_1468",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_1468_01",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1468_01",
+   "pamoka": "pam_1468",
+   "failas": "01-persona-vadovas",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Persona Nr. 1",
+    "Amžius",
+    "Komunikacija"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "tipazas": "Komandos vadovas, daug keliauja"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_1468_02",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1468_02",
+   "pamoka": "pam_1468",
+   "failas": "02-persona-zinutes",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Persona Nr. 2",
+    "Amžius",
+    "Komunikacija"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "tipazas": "Ieško savęs, bendrauja žinutėmis"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_1468_03",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1468_03",
+   "pamoka": "pam_1468",
+   "failas": "03-persona-telefonas",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Persona Nr. 3",
+    "Amžius",
+    "Komunikacija"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "tipazas": "Fizinis darbas, skaityti nemėgsta"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_1468_04",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1468_04",
+   "pamoka": "pam_1468",
+   "failas": "04-persona-vengia-bendravimo",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Persona Nr. 4",
+    "Amžius",
+    "Komunikacija"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "tipazas": "Laukia darbo, vengia bendravimo"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_1468_05",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1468_05",
+   "pamoka": "pam_1468",
+   "failas": "05-persona-dokumentai",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Persona Nr. 5",
+    "Amžius",
+    "Komunikacija"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "tipazas": "Valstybės tarnyba, svarbios pareigos"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "viz_1468_06",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_1468_06",
+   "pamoka": "pam_1468",
+   "failas": "06-universalus-tekstas",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Neuniversalu",
+    "Universalu"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "pranesimas": "Pranešimas tėvams"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

@@ -1,0 +1,223 @@
+{
+  "hash": "471279bbfd6466415c1f09f9655756961a36f718cad581dda71797fbfb288dac",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 988736930,
+  "characters": 991,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T01:52:35.966Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Penki paveikslėlių formatai",
+      "text": "Dažniausiai naudojate jot pė gė.",
+      "file": "k01-1.wav",
+      "duration": 2.87,
+      "fits": false,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Penki paveikslėlių formatai",
+      "text": "pė en gė gali neturėti fono, gė i ef yra animuotas.",
+      "file": "k01-2.wav",
+      "duration": 5.05,
+      "fits": false,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Penki paveikslėlių formatai",
+      "text": "es vė gė skirtas vektorinei grafikai, vė e bė pė užima mažiausiai vietos.",
+      "file": "k01-3.wav",
+      "duration": 6.01,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Kelkite JPG arba PNG",
+      "text": "Formatai bė em pė, tė i ef, a i ir e pė es internetui netinka.",
+      "file": "k02-1.wav",
+      "duration": 6.13,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Kelkite JPG arba PNG",
+      "text": "Konvertuojate juos į jot pė gė arba pė en gė.",
+      "file": "k02-2.wav",
+      "duration": 3.81,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Sistema sugeneruoja tinkamą dydį",
+      "text": "/ˈploːtʲis/ ir aukštis matuojami pikseliais.",
+      "file": "k03-1.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Sistema sugeneruoja tinkamą dydį",
+      "text": "Įkeliate paveikslėlį, o tinkamą dydį sistema sugeneruoja pati.",
+      "file": "k03-2.wav",
+      "duration": 4.45,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Mažinate, bet nedidinate",
+      "text": "Padidintas paveikslėlis praranda kokybę.",
+      "file": "k04-1.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Mažinate, bet nedidinate",
+      "text": "Mažinti galite, didinti ne.",
+      "file": "k04-2.wav",
+      "duration": 2.703,
+      "fits": false,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Mažinate, bet nedidinate",
+      "text": "Tas pats galioja kadruojant mažą fragmentą.",
+      "file": "k04-3.wav",
+      "duration": 2.757,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Per didelis dviem prasmėmis",
+      "text": "Per didelis būna ir matmenimis, ir /ˈuʒʲimama/ vieta.",
+      "file": "k05-1.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Per didelis dviem prasmėmis",
+      "text": "Tada /ˈsʲɛrvʲɛrʲis/ failo neapdoros.",
+      "file": "k05-2.wav",
+      "duration": 2.25,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Per didelis dviem prasmėmis",
+      "text": "Renkatės tinkamus matmenis ir raišką.",
+      "file": "k05-3.wav",
+      "duration": 2.77,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Kelkite RGB paveikslėlius",
+      "text": "/ˌsiː ɛm waɪ ˈkeɪ/ koduotės spalvos sistemoje išsikraipo.",
+      "file": "k06-1.wav",
+      "duration": 3.77,
+      "fits": false,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Kelkite RGB paveikslėlius",
+      "text": "Keista /spalˈva/ ir yra ženklas.",
+      "file": "k06-2.wav",
+      "duration": 2.53,
+      "fits": false,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Kelkite RGB paveikslėlius",
+      "text": "Keliate er gė bė paveikslėlius.",
+      "file": "k06-3.wav",
+      "duration": 2.49,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Geriausia 1920 x 1080",
+      "text": "Sistema priima iki keturių su /puˈsʲɛ/ tūkstančio taškų.",
+      "file": "k07-1.wav",
+      "duration": 3.41,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Geriausia 1920 x 1080",
+      "text": "Neviršijate ha dė /raiʃˈkoːs/.",
+      "file": "k07-2.wav",
+      "duration": 2.21,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Geriausia 1920 x 1080",
+      "text": "Tokia nuotrauka užima visą ekraną.",
+      "file": "k07-3.wav",
+      "duration": 2.543,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Galerijoje nenaudokite be fono",
+      "text": "Paveikslėlis be fono galerijoje iškrenta.",
+      "file": "k08-1.wav",
+      "duration": 3.077,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Galerijoje nenaudokite be fono",
+      "text": "Naujienų įrašuose renkatės nuotraukas su fonu.",
+      "file": "k08-2.wav",
+      "duration": 3.45,
+      "fits": true,
+      "reikia_sek": 11
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "pamoka": "titulinio-papildiniai",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:19:11.509Z",
+  "balso_stiprinimas_db": 5.5,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_907_03_1",
+      "failas": "03-jungiklis-ir-tvarka",
+      "pavadinimas": "Išjungiate papildinį ir keičiate tvarką",
+      "trukme_s": 22,
+      "mp4": "ep_907_03_1.mp4",
+      "vtt": "ep_907_03_1.vtt",
+      "poster": "ep_907_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.15,
+          "tekstas": "Zonos sąraše prie papildinio spaudžiate „Redaguoti“."
+        },
+        {
+          "nuo_s": 5.5,
+          "iki_s": 12.07,
+          "tekstas": "Jungiklį „Įjungtas/Išjungtas“ perjungiate į „No“ ir išsaugote."
+        },
+        {
+          "nuo_s": 12.3,
+          "iki_s": 16.59,
+          "tekstas": "Tvarką keičiate tempdami už rodyklių ir spausdami „Perrikiuoti“."
+        },
+        {
+          "nuo_s": 17.8,
+          "iki_s": 20.01,
+          "tekstas": "Svetainėje tvarka pasikeitė."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 7.9,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 14.3,
+          "garsas": "paemimas"
+        },
+        {
+          "ties_s": 15,
+          "garsas": "numetimas"
+        },
+        {
+          "ties_s": 15.3,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 19,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": [
+        "22 s > 20 s (platformos riba)"
+      ]
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_907_05_1",
+      "failas": "05-greitoji-nuoroda",
+      "pavadinimas": "Nustatote greitąją nuorodą",
+      "trukme_s": 17,
+      "mp4": "ep_907_05_1.mp4",
+      "vtt": "ep_907_05_1.vtt",
+      "poster": "ep_907_05_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.17,
+          "tekstas": "Prie „Quick link“ spaudžiate „Redaguoti“."
+        },
+        {
+          "nuo_s": 4.6,
+          "iki_s": 8.21,
+          "tekstas": "Lauke „link“ įrašote priėmimo puslapio adresą."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 12.01,
+          "tekstas": "Prie „Image“ įkeliate paveikslėlį ir išsaugote."
+        },
+        {
+          "nuo_s": 12.3,
+          "iki_s": 15.08,
+          "tekstas": "Šoninėje juostoje atsiranda nuoroda."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.4,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 10.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 11,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 13.9,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

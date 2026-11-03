@@ -1,0 +1,26 @@
+{
+  "lang": "lt",
+  "02_aprasymo_anatomija": {
+    "title": "Projekto aprašymo anatomija",
+    "item_1": "Tikslai",
+    "item_2": "Uždaviniai",
+    "item_3": "Autoriai",
+    "item_4": "Partneriai",
+    "item_5": "Naudos",
+    "item_6": "Rezultatai",
+    "item_7": "Lėšos",
+    "item_8": "Trukmė",
+    "summary": "Keičiate tekstą, bet ne formą"
+  },
+  "04_aprasymas_ir_straipsnis": {
+    "title": "Projekto aprašymas ir straipsnis",
+    "old_title": "Projekto aprašymas",
+    "old_step_1": "Nuoroda visų projektų sąraše",
+    "old_step_2": "Nuorodos į straipsnius",
+    "old_step_3": "Baneris su publikavimo pabaigos data",
+    "new_title": "Straipsnis",
+    "new_step_1": "Naujienų sraute pagal datą",
+    "new_step_2": "Aktualus, kol nėra naujesnių",
+    "summary": "Straipsnio be projekto aprašymo nebus"
+  }
+}

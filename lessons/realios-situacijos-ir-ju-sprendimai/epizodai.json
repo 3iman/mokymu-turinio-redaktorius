@@ -1,0 +1,65 @@
+{
+ "pamokos_slug": "realios-situacijos-ir-ju-sprendimai",
+ "pamoka_id": "pam_677",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_677_01_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_677_01",
+   "pamoka": "pam_677",
+   "failas": "01-kategorijos-filtravimas",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Paieška",
+    "Kategorijos",
+    "Filtruoti",
+    "Valyti"
+   ],
+   "tvs_ui": [
+    "tvs-main",
+    "tvs-filter",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "kategorija": "Vaiko gerovės komisija"
+   },
+   "naudoja_ir": [
+    "dal_677_90",
+    "dal_710_02"
+   ]
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_677_01_3",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_677_01",
+   "pamoka": "pam_677",
+   "failas": "01-antra-kategorija-ir-priminimas",
+   "trukme_s": 18,
+   "ekrano_tekstai": [
+    "Kategorijos",
+    "Planavimo dokumentai",
+    "Patikrinimo data",
+    "Išsaugoti ir išeiti"
+   ],
+   "tvs_ui": [
+    "tvs-main",
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "kategorija_1": "Vaiko gerovės komisija",
+    "kategorija_2": "Planavimo dokumentai"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

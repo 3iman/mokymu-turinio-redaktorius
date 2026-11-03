@@ -648,3 +648,119 @@
 .tvs-spage-card s { display: block; margin: 0 18px; height: 12px; width: 45%; background: #e6e9ed; border-radius: 3px; text-decoration: none; }
 .tvs-site-menu svg { width: 26px; height: 24px; flex: 0 0 26px; color: #fff; }
 .tvs-site-menu div.is-head { justify-content: flex-start; padding-left: 70px; }
+
+/* =====================================================================
+ * 2026-11-03 — Svetainės puslapio dalys platformos epizodams (rezultatas svetainėje):
+ * antraštė su mokyklos vardu, meniu juosta, puslapio pavadinimas, kortelės, metraščio metų sąrašas.
+ * Šriftas ir spalvos — svetainės (--tvs-site-*), duomenys demo.
+ * ===================================================================== */
+.tvs-sweb { position: relative; background: #fff; font-family: var(--tvs-site-font); color: #333; overflow: hidden;
+            border-radius: 14px; border: 1px solid #dfe3ea; box-shadow: 0 24px 60px rgba(30, 40, 70, .12); }
+.tvs-sweb-h { display: flex; align-items: center; gap: 22px; padding: 22px 50px; background: #fff; border-bottom: 1px solid #ececec; }
+.tvs-sweb-crest { width: 54px; height: 62px; background: #c9d3dc; clip-path: polygon(0 0, 100% 0, 100% 62%, 50% 100%, 0 62%); }
+.tvs-sweb-name { font-size: 24px; font-weight: 700; color: #2b2b2b; line-height: 1.2; }
+.tvs-sweb-name small { display: block; font-size: 16px; font-weight: 400; color: #777; }
+.tvs-sweb-nav { display: flex; gap: 34px; padding: 0 50px; height: 58px; align-items: center; background: var(--tvs-site-th); color: #fff; font-size: 18px; font-weight: 500; }
+.tvs-sweb-nav .is-on { border-bottom: 3px solid #fff; padding-bottom: 4px; }
+.tvs-sweb-b { padding: 34px 50px; }
+.tvs-sweb-t { font-size: 34px; font-weight: 700; color: #222; margin-bottom: 22px; }
+.tvs-sweb-p { font-size: 19px; line-height: 1.6; color: #444; }
+.tvs-sweb-sec { font-size: 24px; font-weight: 700; color: #222; margin: 6px 0 18px; }
+.tvs-scard { background: #fff; border: 1px solid #e3e3e3; border-radius: 4px; overflow: hidden; }
+.tvs-scard-img { height: 170px; background: linear-gradient(150deg, #d9e1ea, #c3ccd6); }
+.tvs-scard-b { padding: 18px 20px; }
+.tvs-scard-t { font-size: 21px; font-weight: 700; color: #222; }
+.tvs-scard-d { font-size: 15px; color: #888; margin-top: 4px; }
+.tvs-scard-p { font-size: 17px; line-height: 1.5; color: #444; margin-top: 10px; }
+/* metraštis: metai kairėje, kortelė dešinėje */
+.tvs-tline { display: grid; grid-template-columns: 170px 1fr; gap: 34px; }
+.tvs-tline-y { display: flex; flex-direction: column; gap: 6px; border-left: 3px solid #e2e2e2; }
+.tvs-tline-y span { font-size: 22px; font-weight: 700; color: #999; padding: 10px 0 10px 22px; margin-left: -3px; border-left: 3px solid transparent; }
+.tvs-tline-y span.is-on { color: var(--tvs-site-th); border-left-color: var(--tvs-site-th); }
+.tvs-typed .w { display: inline-block; white-space: nowrap; }
+/* Tankesnė forma (ilgos formos, kad „Išsaugoti“ tilptų kadre; 2026-11-03) */
+.tvs-form.is-dense .tvs-field { padding: 12px 0; gap: 6px; }
+.tvs-form.is-dense .tvs-input, .tvs-form.is-dense .tvs-date, .tvs-form.is-dense .tvs-select { height: 46px; }
+.tvs-form.is-dense .tvs-label { font-size: 19px; }
+.tvs-form.is-dense + .tvs-form-foot { margin-top: 0; }
+.tvs-main.is-tight { gap: 14px; }
+/* Prisijungimo langas „Control Panel › Prisijungimas“ (skeleton admin 2026-10-18: du laukai, „Prisiminti mane“, „Prisijungti“) */
+.tvs-login { position: absolute; inset: 60px 0 0; background: var(--tvs-bg, #f1f1f1); display: flex; align-items: center; justify-content: center; }
+.tvs-login-box { width: 560px; background: #fff; border-radius: 4px; box-shadow: 0 10px 40px rgba(0,0,0,.08); padding: 40px 46px; display: flex; flex-direction: column; gap: 18px; }
+.tvs-login-h { font-size: 30px; font-weight: 600; color: var(--tvs-text); display: flex; align-items: center; gap: 16px; margin-bottom: 6px; }
+.tvs-login-h .tvs-logo { position: static; }
+.tvs-login-chk { display: flex; align-items: center; gap: 12px; font-size: 19px; color: var(--tvs-text-muted); }
+.tvs-login-chk .tvs-check { position: static; }
+.tvs-login-foot { display: flex; align-items: center; justify-content: space-between; margin-top: 6px; }
+.tvs-login-foot a { font-size: 18px; color: var(--tvs-info); text-decoration: none; }
+.tvs-login .tvs-btn { height: 48px; padding: 0 28px; font-size: 20px; }
+.tvs-pass .l { letter-spacing: 2px; }
+/* Pažymėtas langelis ir būsenos ženklelis sąraše (2026-11-03) */
+.tvs-check.is-on { background: var(--tvs-info) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12.5l4.5 4.5L19 7.5' fill='none' stroke='%23fff' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat; border-color: var(--tvs-info); }
+.tvs-chk-row { display: flex; align-items: center; gap: 14px; font-size: 20px; color: var(--tvs-text); padding: 4px 0; }
+.tvs-chk-row .tvs-help { font-size: 17px; }
+.tvs-state { display: inline-block; padding: 4px 12px; border-radius: 3px; font-size: 16px; font-weight: 700; color: #fff; background: var(--tvs-green); }
+.tvs-state.is-off { background: #b8bec4; }
+.stage > .tvs-sweb { inset: 20px 40px; width: auto; height: auto; }
+.tvs-sweb .tvs-sdocs + .tvs-sdocs { margin-top: 26px; }
+/* CKEditor dialogas (moono-lisa: balta, pilka antraštė, žalias OK) — „Anchor Properties“, „Link“ (2026-11-03) */
+.tvs-ckd { position: absolute; width: 640px; background: #fff; border: 1px solid #d1d1d1; box-shadow: 0 6px 30px rgba(0,0,0,.25); font-family: Arial, sans-serif; z-index: 20; }
+.tvs-ckd-h { display: flex; justify-content: space-between; align-items: center; padding: 14px 18px; background: #f8f8f8; border-bottom: 1px solid #d1d1d1; font-size: 20px; font-weight: 700; color: #484848; }
+.tvs-ckd-h .tvs-x { font-weight: 400; color: #777; }
+.tvs-ckd-tabs { display: flex; gap: 2px; padding: 10px 14px 0; background: #f8f8f8; border-bottom: 1px solid #d1d1d1; }
+.tvs-ckd-tabs span { padding: 9px 16px; font-size: 17px; color: #484848; border: 1px solid transparent; border-bottom: 0; }
+.tvs-ckd-tabs span.is-on { background: #fff; border-color: #d1d1d1; margin-bottom: -1px; }
+.tvs-ckd-b { padding: 20px 22px; display: flex; flex-direction: column; gap: 10px; font-size: 18px; color: #484848; }
+.tvs-ckd-in { height: 38px; border: 1px solid #bcbcbc; display: flex; align-items: center; padding: 0 10px; font-size: 18px; color: #222; background: #fff; }
+.tvs-ckd-in.is-select::after { content: '▾'; margin-left: auto; color: #777; }
+.tvs-ckd-f { display: flex; justify-content: flex-end; gap: 10px; padding: 14px 18px; background: #f8f8f8; border-top: 1px solid #d1d1d1; }
+.tvs-ckd-btn { padding: 8px 20px; border: 1px solid #bcbcbc; background: #fff; font-size: 17px; color: #484848; font-weight: 700; }
+.tvs-ckd-btn.is-ok { background: #09863e; border-color: #09863e; color: #fff; }
+.tvs-cke-body .tvs-anchor { display: inline-block; width: 18px; height: 18px; vertical-align: -2px; margin-right: 6px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 2h2v20H5zM8 3h11l-3 5 3 5H8z' fill='%23d33'/%3E%3C/svg%3E") center/contain no-repeat; }
+/* Sintaksių sąrašas (puslapio skirtukas „Sintaksė“): violetinis „Kopijuoti“, sintaksė, aprašymas */
+.tvs-syn { background: #fff; }
+.tvs-syn-r { display: grid; grid-template-columns: 150px 380px 1fr; align-items: center; gap: 18px; padding: 14px 24px; border-bottom: 1px solid var(--tvs-line); font-size: 19px; }
+.tvs-syn-r code { font-family: 'SF Mono', Menlo, monospace; font-size: 18px; color: #333; }
+.tvs-syn-r .tvs-help { font-size: 17px; }
+.tvs-btn.is-violet { background: var(--tvs-purple); }
+.tvs-toast { position: absolute; padding: 10px 18px; background: #222; color: #fff; border-radius: 4px; font-size: 18px; z-index: 30; }
+/* Svetainės šoninė juosta (papildiniai): blokai su antrašte, vertimo juosta, paveikslėlio nuoroda (2026-11-03) */
+.tvs-sside { display: flex; flex-direction: column; gap: 18px; }
+.tvs-sside-b { background: #fff; border: 1px solid #e3e3e3; border-radius: 4px; padding: 16px 18px; font-size: 18px; color: #444; }
+.tvs-sside-h { font-size: 19px; font-weight: 700; color: #222; margin-bottom: 10px; }
+.tvs-sside-tr { display: flex; align-items: center; gap: 10px; background: #f4f4f4; border: 1px solid #ddd; padding: 10px 14px; font-size: 17px; color: #555; }
+.tvs-sside-img { height: 150px; border-radius: 4px; display: flex; align-items: flex-end; padding: 16px; color: #fff; font-size: 24px; font-weight: 700;
+  background: linear-gradient(150deg, #2f7d5b, #1d5a44); }
+.tvs-sside-row { display: flex; justify-content: space-between; padding: 6px 0; border-bottom: 1px solid #eee; font-size: 16px; }
+/* Padalytas kadras (sintaksių pamokos): viršuje svetainė, apačioje TVS laukas „Turinys“ (2026-11-03) */
+.tvs-split { display: grid; grid-template-rows: 1fr 1fr; gap: 18px; padding: 10px 40px; }
+.tvs-split-top, .tvs-split-bot { position: relative; border-radius: 12px; overflow: hidden; border: 1px solid #dfe3ea; box-shadow: 0 16px 40px rgba(30,40,70,.10); background: #fff; }
+.tvs-split-tag { position: absolute; right: 14px; top: 10px; z-index: 3; font: 700 14px/1 var(--tvs-font); letter-spacing: .5px; text-transform: uppercase;
+  color: #fff; background: rgba(40,48,60,.75); padding: 6px 10px; border-radius: 4px; }
+.tvs-split-top .tvs-sweb-b { padding: 20px 40px; }
+.tvs-split-bot { background: var(--tvs-bg, #f1f1f1); padding: 16px 24px; display: flex; flex-direction: column; gap: 12px; }
+.tvs-split-bot .tvs-cke-body { min-height: 120px; font-size: 20px; }
+.tvs-split-bot .tvs-cke-top .tvs-cke-row:nth-child(n+2) { display: none; }   /* viena juostos eilė — vietos mažai */
+.tvs-syncode { font-family: 'SF Mono', Menlo, monospace; background: #f3f0fa; border-radius: 4px; padding: 2px 6px; color: #5b2a86; }
+.tvs-slink { color: var(--tvs-site-link); text-decoration: underline; }
+.tvs-logos { display: grid; grid-template-columns: repeat(3, 1fr); border: 1px solid #e3e3e3; }
+.tvs-logo-c { height: 120px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; border: 1px solid #eee; font-size: 16px; color: #555; }
+.tvs-logo-c b { width: 150px; height: 54px; border-radius: 6px; background: linear-gradient(135deg, #cfd8e3, #aebccd); }
+.tvs-logo-c b.is-2 { background: linear-gradient(135deg, #e3d6c9, #cdb7a0); width: 120px; border-radius: 30px; }
+.tvs-logo-c b.is-3 { background: linear-gradient(135deg, #d0e3d4, #9fc5a8); width: 170px; height: 40px; }
+.tvs-logo-c i { width: 54px; height: 54px; border-radius: 50%; background: var(--tvs-site-th); display: flex; align-items: center; justify-content: center; color: #fff; font-style: normal; font-size: 26px; }
+/* Svetainės naujienų sąrašas (srautas) ir vaizdo grotuvas svetainėje (2026-11-03) */
+.tvs-snews { display: flex; flex-direction: column; gap: 10px; }
+.tvs-snews-i { display: grid; grid-template-columns: 120px 1fr; gap: 16px; align-items: center; background: #fff; border: 1px solid #e6e6e6; border-radius: 4px; padding: 8px; }
+.tvs-snews-i i { height: 70px; border-radius: 3px; background: linear-gradient(150deg, #d9e1ea, #c3ccd6); }
+.tvs-snews-t { font-size: 18px; font-weight: 700; color: #222; }
+.tvs-snews-m { font-size: 14px; color: #888; margin-top: 4px; }
+.tvs-snews-m b { color: var(--tvs-site-link); font-weight: 500; }
+.tvs-svid { position: relative; background: #111; border-radius: 4px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+.tvs-svid::before { content: ''; position: absolute; inset: 0; background: linear-gradient(150deg, #3a4656, #1e2630); }
+.tvs-svid-play { position: relative; width: 64px; height: 46px; border-radius: 12px; background: #e62117; }
+.tvs-svid-play::after { content: ''; position: absolute; left: 26px; top: 13px; border-left: 16px solid #fff; border-top: 10px solid transparent; border-bottom: 10px solid transparent; }
+.tvs-svid-t { position: absolute; left: 14px; top: 10px; color: #fff; font: 600 16px var(--tvs-site-font); }
+.tvs-svid-bar { position: absolute; left: 0; right: 0; bottom: 0; height: 6px; background: rgba(255,255,255,.25); }
+.tvs-svid-bar i { display: block; height: 100%; width: 0; background: #e62117; }

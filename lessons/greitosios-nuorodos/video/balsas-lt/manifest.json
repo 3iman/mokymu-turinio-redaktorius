@@ -1,0 +1,43 @@
+{
+  "hash": "8ff15de411a09fd49b216985a7bd8036c91f83c857c0096e0332be343c94365a",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 1716156051,
+  "characters": 174,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T01:44:28.443Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Greitosios nuorodos pagal lankytojus",
+      "text": "Kas aktualu tėvams, mokytojams dažnai neaktualu.",
+      "file": "k01-1.wav",
+      "duration": 4.23,
+      "fits": false,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Greitosios nuorodos pagal lankytojus",
+      "text": "Todėl nuorodų rinkinius sudarote pagal lankytojų tipus.",
+      "file": "k01-2.wav",
+      "duration": 3.97,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Greitosios nuorodos pagal lankytojus",
+      "text": "Rinkiniai nebūtinai rodomi toje pačioje vietoje.",
+      "file": "k01-3.wav",
+      "duration": 3.423,
+      "fits": true,
+      "reikia_sek": 15
+    }
+  ]
+}

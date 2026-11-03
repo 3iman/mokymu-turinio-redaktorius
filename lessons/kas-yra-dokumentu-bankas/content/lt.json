@@ -1,0 +1,22 @@
+{
+  "lang": "lt",
+  "01_kas_yra_dokumentas": {
+    "title": "Ką vadiname dokumentu",
+    "term": "Dokumentas",
+    "alt_terms": "Dar vadinamas failu, aplanku",
+    "item_1": "Atsisiųsti",
+    "item_2": "Persiųsti",
+    "item_3": "Atsispausdinti",
+    "item_4": "Pasirašyti"
+  },
+  "02_kas_nera_dokumentas": {
+    "title": "Kas nėra dokumentas",
+    "old_title": "Į dokumentų banką nereikia",
+    "old_step_1": "Informacinio pobūdžio tekstai",
+    "old_step_2": "Pranešimai",
+    "new_title": "Publikuojate kaip",
+    "new_step_1": "Straipsnį",
+    "new_step_2": "Svetainės vidinį puslapį",
+    "summary": "Kartu naudojate navigaciją, žymą ar banerį"
+  }
+}

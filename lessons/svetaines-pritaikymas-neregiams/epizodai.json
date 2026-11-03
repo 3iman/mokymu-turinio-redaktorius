@@ -1,0 +1,199 @@
+{
+ "pamokos_slug": "svetaines-pritaikymas-neregiams",
+ "pamoka_id": "pam_1625",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_1625_01",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_1625_01",
+   "pamoka": "pam_1625",
+   "failas": "01-kam-tai-aktualu",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Regintis vartotojas",
+    "Žiūri",
+    "Neregys",
+    "Girdi",
+    "Ekrano skaitytuvas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_1625_02",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_1625_02",
+   "pamoka": "pam_1625",
+   "failas": "02-ar-visi-vienodai",
+   "trukme_s": 10,
+   "ekrano_tekstai": [
+    "Vieni",
+    "Naršo greitai",
+    "Kiti",
+    "Tik pradeda mokytis",
+    "Aiški struktūra"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_1625_03",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1625_03",
+   "pamoka": "pam_1625",
+   "failas": "03-tvarkinga-svetaine",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Pažymėtos antraštės",
+    "Galima peršokti",
+    "Aiškūs mygtukų pavadinimai",
+    "Aiškūs dokumentų pavadinimai",
+    "Paslėpta nuo skaitytuvo"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_1625_04",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_1625_04",
+   "pamoka": "pam_1625",
+   "failas": "04-alt-aprasai",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Su alt aprašu",
+    "Perteikia prasmę",
+    "Be alt teksto",
+    "Dekoratyviniai vaizdai",
+    "Foniniai vaizdai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "alt"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_1625_05",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_1625_05",
+   "pamoka": "pam_1625",
+   "failas": "05-skaitymo-mygtukai",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Neregiams",
+    "Dažniausiai nereikalingi",
+    "Skaitymo sunkumai",
+    "Disleksija"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "disleksija"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "viz_1625_06",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_1625_06",
+   "pamoka": "pam_1625",
+   "failas": "06-be-specialiu-irankiu",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Nereikia",
+    "Papildomų mygtukų",
+    "Atskirų versijų",
+    "Reikia",
+    "HTML standartų",
+    "Techninės kokybės"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "HTML"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "viz_1625_07",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_1625_07",
+   "pamoka": "pam_1625",
+   "failas": "07-patikros-klaidos",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "WAVE",
+    "Visos aptiktos klaidos",
+    "Spalvų kontrastai",
+    "Aktualu neregiams",
+    "Ekrano skaitytuvas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "WAVE"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 8,
+   "epizodas": "viz_1625_08",
+   "rusis": "koncepcija",
+   "sablonas": "srautas",
+   "dalis": "dal_1625_08",
+   "pamoka": "pam_1625",
+   "failas": "08-kaip-testavome",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Lighthouse, WAVE",
+    "Neregio specialisto pastabos",
+    "Konsultuojamės toliau"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Lighthouse",
+    "WAVE"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

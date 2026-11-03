@@ -1,0 +1,43 @@
+{
+  "hash": "c02231248d4a93b4ab115a7347fa6871f28fdbfabfb498a129dfb330c845e9e4",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 175730680,
+  "characters": 174,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T02:12:11.983Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Formatuoto teksto dalys",
+      "text": "Tekstą rašote normalaus ilgumo pastraipomis.",
+      "file": "k01-1.wav",
+      "duration": 3.23,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Formatuoto teksto dalys",
+      "text": "Sakiniai /trumˈpʲi/ ir aiškūs – juos perskaitys visi.",
+      "file": "k01-2.wav",
+      "duration": 3.93,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Formatuoto teksto dalys",
+      "text": "/iʃsˈkʲirtʲi/ padės sąrašai, antraštės ir /tsʲitaˈta/.",
+      "file": "k01-3.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 14
+    }
+  ]
+}

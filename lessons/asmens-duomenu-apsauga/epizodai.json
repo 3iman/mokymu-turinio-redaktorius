@@ -1,0 +1,189 @@
+{
+ "pamokos_slug": "asmens-duomenu-apsauga",
+ "pamoka_id": "pam_685",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_685_01",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_685_01",
+   "pamoka": "pam_685",
+   "failas": "01-mokytoju-pavardes",
+   "trukme_s": 18,
+   "ekrano_tekstai": [
+    "Dažna dingstis",
+    "16.3 punktas",
+    "Darbuotojų sąrašas",
+    "Vardas ir pavardė",
+    "Pareigos, kontaktai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "darbuotojas": "Vincas Kudirka",
+    "el_pastas": "v.kudirka@mokykla.lt"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_685_02",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_685_02",
+   "pamoka": "pam_685",
+   "failas": "02-mokytojo-kvalifikacija",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Mitas",
+    "Bendrieji reikalavimai",
+    "44 punktas",
+    "Mokytojų kvalifikacija"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "darbuotojas": "Jonas Mačiulis"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_685_03",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_685_03",
+   "pamoka": "pam_685",
+   "failas": "03-mokytoju-kontaktai",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Mitas",
+    "16.3 punktas",
+    "Telefono numeris",
+    "El. pašto adresas",
+    "Sudarymo tvarka"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "el_pastas": "v.kudirka@mokykla.lt"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_685_04",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_685_04",
+   "pamoka": "pam_685",
+   "failas": "04-specialistu-darbo-laikas",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Mitas",
+    "16.6 punktas",
+    "Kontaktinė informacija",
+    "Darbo laikas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "darbuotojas": "Julija Žymantienė",
+    "pareigos": "Logopedė"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_685_05",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_685_05",
+   "pamoka": "pam_685",
+   "failas": "05-vadovu-nuotraukos",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Mitas",
+    "16.1 punktas",
+    "Vadovo nuotrauka",
+    "Gyvenimo aprašymas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "vadovas": "Aleksandras Stulginskis"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "viz_685_06",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_685_06",
+   "pamoka": "pam_685",
+   "failas": "06-pareigybes-aprasymas",
+   "trukme_s": 17,
+   "ekrano_tekstai": [
+    "Mitas",
+    "16.4 punktas",
+    "Atliekamos funkcijos",
+    "Specialieji reikalavimai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "darbuotojas": "Marija Pečkauskaitė"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "viz_685_07",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_685_07",
+   "pamoka": "pam_685",
+   "failas": "07-atlyginimu-vidurkiai",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Mitas",
+    "22.3 punktas",
+    "Vienodos pareigos",
+    "Vienas darbuotojas",
+    "Reikia sutikimo"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "pareigybe": "Mokytojas"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 8,
+   "epizodas": "viz_685_08",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_685_08",
+   "pamoka": "pam_685",
+   "failas": "08-duomenu-apsaugos-dokumentai",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Mitas",
+    "25 punktas",
+    "Tvarkymo taisyklės",
+    "Teisių įgyvendinimo tvarka",
+    "Pareigūno kontaktai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "pareigunas": "Steponas Kairys",
+    "el_pastas": "s.kairys@mokykla.lt"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}
