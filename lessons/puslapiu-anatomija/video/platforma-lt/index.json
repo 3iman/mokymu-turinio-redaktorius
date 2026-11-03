@@ -1,0 +1,441 @@
+{
+  "pamoka": "puslapiu-anatomija",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T04:36:25.220Z",
+  "balso_stiprinimas_db": 5.7,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_701_01_1",
+      "failas": "01-naujas-puslapis",
+      "pavadinimas": "Sukuriate naują puslapį",
+      "trukme_s": 12,
+      "mp4": "ep_701_01_1.mp4",
+      "vtt": "ep_701_01_1.vtt",
+      "poster": "ep_701_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.63,
+          "tekstas": "Spaudžiate „Pridėti puslapį“."
+        },
+        {
+          "nuo_s": 3.8,
+          "iki_s": 6.41,
+          "tekstas": "Pasirenkate puslapio tipą „Default“."
+        },
+        {
+          "nuo_s": 6.8,
+          "iki_s": 10.58,
+          "tekstas": "Įrašote pavadinimą – puslapis laukia medžio apačioje."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.2,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 8.8,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_701_01_2",
+      "failas": "01-tempiate-medyje",
+      "pavadinimas": "Perrikiuojate puslapį medyje",
+      "trukme_s": 11,
+      "mp4": "ep_701_01_2.mp4",
+      "vtt": "ep_701_01_2.vtt",
+      "poster": "ep_701_01_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.76,
+          "tekstas": "Puslapį sugriebiate už rankenėlės."
+        },
+        {
+          "nuo_s": 4.1,
+          "iki_s": 6.11,
+          "tekstas": "Tempiate jį į norimą vietą."
+        },
+        {
+          "nuo_s": 6.4,
+          "iki_s": 9.25,
+          "tekstas": "Paleidžiate – tvarka medyje pasikeičia."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 1.6,
+          "garsas": "paemimas"
+        },
+        {
+          "ties_s": 6.8,
+          "garsas": "numetimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_701_02",
+      "failas": "02-puslapio-tipas",
+      "pavadinimas": "Puslapio tipai",
+      "trukme_s": 15,
+      "mp4": "viz_701_02.mp4",
+      "vtt": "viz_701_02.vtt",
+      "poster": "viz_701_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.3,
+          "tekstas": "Numatytasis tipas turi šoninį dizaino objektų stulpą."
+        },
+        {
+          "nuo_s": 5.8,
+          "iki_s": 7.96,
+          "tekstas": "Pilno ploto tipas jo neturi."
+        },
+        {
+          "nuo_s": 8.2,
+          "iki_s": 12.53,
+          "tekstas": "Jį pasirenkate, kai reikia viso pločio, pavyzdžiui, tvarkaraščiui."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "ep_701_03_1",
+      "failas": "03-subpuslapis",
+      "pavadinimas": "Sukuriate subpuslapį",
+      "trukme_s": 13,
+      "mp4": "ep_701_03_1.mp4",
+      "vtt": "ep_701_03_1.vtt",
+      "poster": "ep_701_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.81,
+          "tekstas": "Užvedate ant puslapio, prie kurio kuriate."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 7.43,
+          "tekstas": "Spaudžiate „Pridėti subpuslapį“."
+        },
+        {
+          "nuo_s": 7.6,
+          "iki_s": 10.73,
+          "tekstas": "Slug lauke matote tėvinio puslapio kelią."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 5.7,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 9.4,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "ep_701_04_1",
+      "failas": "04-pavadinimas-ir-slug",
+      "pavadinimas": "Pavadinimas ir Slug",
+      "trukme_s": 12,
+      "mp4": "ep_701_04_1.mp4",
+      "vtt": "ep_701_04_1.vtt",
+      "poster": "ep_701_04_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 3.45,
+          "tekstas": "Įrašote puslapio pavadinimą."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 6.61,
+          "tekstas": "Slug susikuria automatiškai."
+        },
+        {
+          "nuo_s": 7,
+          "iki_s": 10.77,
+          "tekstas": "Pakeitę pavadinimą, pamatysite, kad Slug nepasikeitė."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 9.4,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "viz_701_05",
+      "failas": "05-zymos",
+      "pavadinimas": "Žymos jungia įrašus",
+      "trukme_s": 15,
+      "mp4": "viz_701_05.mp4",
+      "vtt": "viz_701_05.vtt",
+      "poster": "viz_701_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.97,
+          "tekstas": "Žyma sujungia skirtinguose puslapiuose esančius įrašus."
+        },
+        {
+          "nuo_s": 5.9,
+          "iki_s": 9.27,
+          "tekstas": "Taip lankytojas randa visą vienos temos turinį."
+        },
+        {
+          "nuo_s": 9.8,
+          "iki_s": 13.53,
+          "tekstas": "Pirmiausia pasirenkate turinio organizavimo strategiją."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "ep_701_06_1",
+      "failas": "06-sintaksiu-pavyzdziai",
+      "pavadinimas": "Kopijuojate sintaksės pavyzdį",
+      "trukme_s": 14,
+      "mp4": "ep_701_06_1.mp4",
+      "vtt": "ep_701_06_1.vtt",
+      "poster": "ep_701_06_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.49,
+          "tekstas": "Skirtuke „Sintaksė“ randate tinkamą pavyzdį."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 8.8,
+          "tekstas": "Spaudžiate „Kopijuoti“ ir įklijuojate į „Turinys“."
+        },
+        {
+          "nuo_s": 9,
+          "iki_s": 12.16,
+          "tekstas": "Pavyzdinį numerį pakeičiate savo puslapio numeriu."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.3,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 10.8,
+          "garsas": "rasymas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "ep_701_08_1",
+      "failas": "08-paveiksleliu-galerija",
+      "pavadinimas": "Įkeliate nuotraukas į galeriją",
+      "trukme_s": 12,
+      "mp4": "ep_701_08_1.mp4",
+      "vtt": "ep_701_08_1.vtt",
+      "poster": "ep_701_08_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.53,
+          "tekstas": "Atidarote „Paveikslėlių galeriją“."
+        },
+        {
+          "nuo_s": 4.2,
+          "iki_s": 6.57,
+          "tekstas": "Nutempiate kelias nuotraukas iš karto."
+        },
+        {
+          "nuo_s": 7.4,
+          "iki_s": 10.53,
+          "tekstas": "Kartu jos negali viršyti šimto megabaitų."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.6,
+          "garsas": "numetimas"
+        },
+        {
+          "ties_s": 9.6,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 9,
+      "epizodas": "viz_701_09",
+      "failas": "09-vaizdo-irasu-galerija",
+      "pavadinimas": "Vaizdo įrašų galerija",
+      "trukme_s": 12,
+      "mp4": "viz_701_09.mp4",
+      "vtt": "viz_701_09.vtt",
+      "poster": "viz_701_09.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.89,
+          "tekstas": "Į galeriją dedate „YouTube“ ir „Vimeo“ įrašus."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 7.09,
+          "tekstas": "Jų skaičius neribojamas."
+        },
+        {
+          "nuo_s": 7.3,
+          "iki_s": 10.35,
+          "tekstas": "Kiekvienam įrašui pridedate naują bloką."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 10,
+      "epizodas": "viz_701_10",
+      "failas": "10-garso-formatai",
+      "pavadinimas": "Garso įrašų formatai",
+      "trukme_s": 14,
+      "mp4": "viz_701_10.mp4",
+      "vtt": "viz_701_10.vtt",
+      "poster": "viz_701_10.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.53,
+          "tekstas": "Garso galerija groja MP3 ir WAV failus."
+        },
+        {
+          "nuo_s": 5.7,
+          "iki_s": 8.03,
+          "tekstas": "WMA formatas netinka."
+        },
+        {
+          "nuo_s": 8.2,
+          "iki_s": 11.89,
+          "tekstas": "Pasirenkate MP3 – jis užima mažiau vietos."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 11,
+      "epizodas": "ep_701_11_1",
+      "failas": "11-atnaujinimo-data",
+      "pavadinimas": "Įjungiate atnaujinimo datą",
+      "trukme_s": 13,
+      "mp4": "ep_701_11_1.mp4",
+      "vtt": "ep_701_11_1.vtt",
+      "poster": "ep_701_11_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.17,
+          "tekstas": "Formoje randate jungiklį „Show updated“."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 7.6,
+          "tekstas": "Perjungiate jį į „Yes“ ir išsaugote."
+        },
+        {
+          "nuo_s": 7.8,
+          "iki_s": 11.01,
+          "tekstas": "Puslapio apačioje atsiranda atnaujinimo data."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.9,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 12,
+      "epizodas": "ep_701_12_1",
+      "failas": "12-turinys",
+      "pavadinimas": "Rašote ir formatuojate turinį",
+      "trukme_s": 14,
+      "mp4": "ep_701_12_1.mp4",
+      "vtt": "ep_701_12_1.vtt",
+      "poster": "ep_701_12_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.96,
+          "tekstas": "Lauke „Turinys“ rašote ir formatuojate tekstą."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 8,
+          "tekstas": "Tarp pastraipų įkopijuojate sintaksę."
+        },
+        {
+          "nuo_s": 8.3,
+          "iki_s": 11.52,
+          "tekstas": "Svetainėje jos vietoje atsiranda galerija."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.6,
+          "garsas": "rasymas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

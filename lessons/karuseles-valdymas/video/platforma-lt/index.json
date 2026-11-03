@@ -1,0 +1,114 @@
+{
+  "pamoka": "karuseles-valdymas",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T03:08:55.712Z",
+  "balso_stiprinimas_db": 5.4,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_711_02",
+      "failas": "02-karuseles-vizualas",
+      "pavadinimas": "Pagrindinis karuselės vizualas",
+      "trukme_s": 18,
+      "mp4": "viz_711_02.mp4",
+      "vtt": "viz_711_02.vtt",
+      "poster": "viz_711_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 7.23,
+          "tekstas": "Karuselės nuotrauka – 1920 x 606 pikselių."
+        },
+        {
+          "nuo_s": 7.4,
+          "iki_s": 11.01,
+          "tekstas": "Svarbus turinys turi tilpti tarp pirmų dviejų linijų."
+        },
+        {
+          "nuo_s": 11.8,
+          "iki_s": 15.77,
+          "tekstas": "Telefonui talpinate atskirą, kvadratu apkirptą nuotrauką."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_711_04_1",
+      "failas": "04-srifto-dydziai",
+      "pavadinimas": "Parenkate karuselės šrifto dydį",
+      "trukme_s": 16,
+      "mp4": "ep_711_04_1.mp4",
+      "vtt": "ep_711_04_1.vtt",
+      "poster": "ep_711_04_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.05,
+          "tekstas": "Antraštės dydį parenkate lauke „Title Font Size“."
+        },
+        {
+          "nuo_s": 5.5,
+          "iki_s": 8.23,
+          "tekstas": "Telefonui skirtas atskiras dydžio laukas."
+        },
+        {
+          "nuo_s": 8.9,
+          "iki_s": 10.79,
+          "tekstas": "Aprašymui – dar vienas."
+        },
+        {
+          "nuo_s": 11.1,
+          "iki_s": 14.31,
+          "tekstas": "Taip ilgesnis tekstas telpa ir mažame ekrane."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_711_05_1",
+      "failas": "05-teksto-spalva",
+      "pavadinimas": "Pakeičiate karuselės teksto spalvą",
+      "trukme_s": 13,
+      "mp4": "ep_711_05_1.mp4",
+      "vtt": "ep_711_05_1.vtt",
+      "poster": "ep_711_05_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.57,
+          "tekstas": "Laukelyje „Text Color“ pasirenkate spalvą."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 6.53,
+          "tekstas": "Išsaugote įrašą."
+        },
+        {
+          "nuo_s": 7.6,
+          "iki_s": 11.3,
+          "tekstas": "Svetainėje tekstas ant nuotraukos jau naujos spalvos."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 3,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

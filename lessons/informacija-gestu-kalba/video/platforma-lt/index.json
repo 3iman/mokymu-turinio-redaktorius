@@ -1,0 +1,200 @@
+{
+  "pamoka": "informacija-gestu-kalba",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T03:52:54.183Z",
+  "balso_stiprinimas_db": 5.9,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_1622_01",
+      "failas": "01-ka-rengiate",
+      "pavadinimas": "Rengiate scenarijų vertėjui",
+      "trukme_s": 11,
+      "mp4": "viz_1622_01.mp4",
+      "vtt": "viz_1622_01.vtt",
+      "poster": "viz_1622_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.35,
+          "tekstas": "Rengiate scenarijų gestų kalbos vertėjui."
+        },
+        {
+          "nuo_s": 4.6,
+          "iki_s": 5.73,
+          "tekstas": "Tai ne titrai."
+        },
+        {
+          "nuo_s": 6.8,
+          "iki_s": 9.61,
+          "tekstas": "Ir ne lengvai suprantamos kalbos tekstas."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_1622_02",
+      "failas": "02-kaip-pasakojimas",
+      "pavadinimas": "Scenarijus skamba kaip pasakojimas",
+      "trukme_s": 13,
+      "mp4": "viz_1622_02.mp4",
+      "vtt": "viz_1622_02.vtt",
+      "poster": "viz_1622_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.01,
+          "tekstas": "Rašote taip, kaip pasakotumėte gyvai."
+        },
+        {
+          "nuo_s": 4.3,
+          "iki_s": 6.95,
+          "tekstas": "Aiškiai, dalimis, be lentelių."
+        },
+        {
+          "nuo_s": 7.1,
+          "iki_s": 10.15,
+          "tekstas": "Santrumpas išskleidžiate pilnais žodžiais."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_1622_03",
+      "failas": "03-kaip-paruosti-teksta",
+      "pavadinimas": "Ko prašo vertėjai",
+      "trukme_s": 13,
+      "mp4": "viz_1622_03.mp4",
+      "vtt": "viz_1622_03.vtt",
+      "poster": "viz_1622_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.02,
+          "tekstas": "Scenarijų siunčiate Word failu, dvylika punktų šriftu."
+        },
+        {
+          "nuo_s": 5.7,
+          "iki_s": 8.67,
+          "tekstas": "Kiekvienai temai – atskiras vaizdo įrašas."
+        },
+        {
+          "nuo_s": 9.2,
+          "iki_s": 11.96,
+          "tekstas": "Pridedate geriausios kokybės logotipą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_1622_04",
+      "failas": "04-vaizdo-iraso-reikalavimai",
+      "pavadinimas": "Reikalavimai vaizdo įrašams",
+      "trukme_s": 12,
+      "mp4": "viz_1622_04.mp4",
+      "vtt": "viz_1622_04.vtt",
+      "poster": "viz_1622_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.09,
+          "tekstas": "Įrašus prašote mp4 formatu."
+        },
+        {
+          "nuo_s": 4.2,
+          "iki_s": 6.65,
+          "tekstas": "Garso takelio juose neturi būti."
+        },
+        {
+          "nuo_s": 7,
+          "iki_s": 9.74,
+          "tekstas": "Failo dydis – iki dvidešimties megabaitų."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_1622_05",
+      "failas": "05-nuo-scenarijaus-iki-video",
+      "pavadinimas": "Nuo scenarijaus iki įrašo",
+      "trukme_s": 13,
+      "mp4": "viz_1622_05.mp4",
+      "vtt": "viz_1622_05.vtt",
+      "poster": "viz_1622_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.16,
+          "tekstas": "Pavyzdinį scenarijų pritaikote savo įstaigai."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 7.63,
+          "tekstas": "Išsiunčiate vertėjams kartu su logotipu."
+        },
+        {
+          "nuo_s": 8.2,
+          "iki_s": 11.45,
+          "tekstas": "Gautus įrašus patalpinate svetainės puslapyje."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "ep_1622_05_1",
+      "failas": "05-gestu-video-i-puslapi",
+      "pavadinimas": "Įkeliate vertimą į puslapį",
+      "trukme_s": 16,
+      "mp4": "ep_1622_05_1.mp4",
+      "vtt": "ep_1622_05_1.vtt",
+      "poster": "ep_1622_05_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.05,
+          "tekstas": "Medyje atidarote puslapį „Informacija gestų kalba“."
+        },
+        {
+          "nuo_s": 5.4,
+          "iki_s": 7.53,
+          "tekstas": "Įkeliate gautą vaizdo įrašą."
+        },
+        {
+          "nuo_s": 9.4,
+          "iki_s": 12.38,
+          "tekstas": "Išsaugojus įrašas matomas svetainėje."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.8,
+          "garsas": "paemimas"
+        },
+        {
+          "ties_s": 11,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 11.4,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

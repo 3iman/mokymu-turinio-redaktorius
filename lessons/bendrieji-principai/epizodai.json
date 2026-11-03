@@ -1,0 +1,743 @@
+{
+ "pamokos_slug": "bendrieji-principai",
+ "pamoka_id": "pam_658",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_658_01_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_658_01",
+   "pamoka": "pam_658",
+   "failas": "01-kopijuoti-sintakse",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Kopijuoti",
+    "Sintaksė",
+    "Aprašymas",
+    "Turinys"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "tvs-input"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Struktūra ir kontaktai",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": [
+    "dal_692_04",
+    "dal_691_04",
+    "dal_692_90",
+    "dal_691_90",
+    "dal_908_05"
+   ]
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_658_01",
+   "rusis": "koncepcija",
+   "sablonas": "anatomija",
+   "dalis": "dal_658_01",
+   "pamoka": "pam_658",
+   "failas": "01-sintakses-anatomija",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Idėja",
+    "Nurodymai",
+    "{{ }}"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "sintakse": "{{plakatas({'width': '300'})}}"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_658_02",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_658_02",
+   "pamoka": "pam_658",
+   "failas": "02-ka-moka-sintakses",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Nuotraukos",
+    "Dokumentai",
+    "Profiliai",
+    "Straipsnių sąrašas",
+    "Pavieniai straipsniai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_658_03",
+   "rusis": "koncepcija",
+   "sablonas": "srautas",
+   "dalis": "dal_658_03",
+   "pamoka": "pam_658",
+   "failas": "03-sintakses-salygos",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Tuščia galerija",
+    "8 nuotraukos",
+    "Rezultatas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "galerija": "Ugdymo aplinka"
+   },
+   "naudoja_ir": [
+    "dal_700_07"
+   ]
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_658_04",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_658_04",
+   "pamoka": "pam_658",
+   "failas": "04-kada-pernaudoti",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Konkretu",
+    "Ne konkretu",
+    "{{images()}}",
+    "{{videos()}}"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "ID",
+    "SLUG"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "viz_658_05",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_658_05",
+   "pamoka": "pam_658",
+   "failas": "05-sintakse-be-stiliaus",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Taip",
+    "Ne",
+    "H2 antraštė",
+    "Sąrašo stilius",
+    "Bold, Italic"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "ep_658_06_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_658_06",
+   "pamoka": "pam_658",
+   "failas": "06-skirtukas-sintakse",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Bendri",
+    "Sintaksė",
+    "Kopijuoti",
+    "Aprašymas"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "tvs-filter"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Struktūra ir kontaktai"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 8,
+   "epizodas": "ep_658_06_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_658_06",
+   "pamoka": "pam_658",
+   "failas": "06-modulis-sintakses",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Type to search...",
+    "Sintaksės",
+    "Dokumentų bankas",
+    "Baneriai"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-row",
+    "naujas: viršutinės paieškos iškrentantis modulių sąrašas"
+   ],
+   "tarimo_kandidatai": [
+    "TVS"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 9,
+   "epizodas": "viz_680_01",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_680_01",
+   "pamoka": "pam_658",
+   "failas": "01-mazosiomis-raidemis",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Dokumentų pavadinimų rašymas",
+    "Pavadinimas mažosiomis raidėmis",
+    "Pavadinimas didžiosiomis raidėmis"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "dokumentas": "Mokinių pasiekimų ir pažangos vertinimo tvarkos aprašas"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 10,
+   "epizodas": "viz_680_02",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_680_02",
+   "pamoka": "pam_658",
+   "failas": "02-aiskus-pavadinimai",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Pilnas pavadinimas",
+    "Alternatyvus pavadinimas",
+    "Iš failo sugeneruotas pavadinimas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "pilnas": "Mokinių pasiekimų ir pažangos vertinimo tvarkos aprašas",
+    "alternatyvus": "Pažangos vertinimo tvarka"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 11,
+   "epizodas": "viz_680_03",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_680_03",
+   "pamoka": "pam_658",
+   "failas": "03-pdf-ar-doc",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "PDF",
+    "DOCX",
+    "Atsidaro naršyklėje",
+    "Parsisiunčia"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "PDF",
+    "DOCX"
+   ],
+   "demo_duomenys": {
+    "failas": "mokiniu-pazangos-tvarka.pdf"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 12,
+   "epizodas": "viz_680_04",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_680_04",
+   "pamoka": "pam_658",
+   "failas": "04-failo-vardo-rasyba",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Be lietuviškų raidžių",
+    "Nelogiškas pavadinimas",
+    "mokiniu-pazangos-tvarka.docx",
+    "03251-siga.docx"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "geras": "mokiniu_pazangos_tvarka.docx",
+    "blogas": "03251-siga.docx"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 13,
+   "epizodas": "viz_680_05",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_680_05",
+   "pamoka": "pam_658",
+   "failas": "05-kategorizavimas",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Nuostatai",
+    "Tvarkos",
+    "Korupcijos prevencija",
+    "Viena kategorija",
+    "Kelios kategorijos"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "failas": "korupcijos-prevencijos-tvarkos-aprasas.pdf"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 14,
+   "epizodas": "viz_680_06",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_680_06",
+   "pamoka": "pam_658",
+   "failas": "06-prezentaciju-talpinimas",
+   "trukme_s": 17,
+   "ekrano_tekstai": [
+    "Prezentacija kaip dokumentas",
+    "Prezentacija kaip galerija",
+    "gimnazijos-pristatymas.ppt"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "PDF",
+    "PPT"
+   ],
+   "demo_duomenys": {
+    "failas": "gimnazijos-pristatymas.ppt"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 15,
+   "epizodas": "viz_680_07",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_680_07",
+   "pamoka": "pam_658",
+   "failas": "07-banko-svara",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Akivaizdžiai senas dokumentas",
+    "darbo-uzmokestis-2015-II.pdf",
+    "2012-ugdymo-planas.pdf"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "senas": "strateginis-planas-2006-2010.pdf"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 16,
+   "epizodas": "viz_696_01",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_696_01",
+   "pamoka": "pam_658",
+   "failas": "01-pavadinimai-mazosiomis",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Taip",
+    "Ne",
+    "Mažosiomis raidėmis",
+    "Didžiosiomis raidėmis"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "pavadinimas": "Pirmokų šventė sporto salėje"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 17,
+   "epizodas": "viz_696_02",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_696_02",
+   "pamoka": "pam_658",
+   "failas": "02-aiskus-pavadinimas",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Taip",
+    "Ne",
+    "Iš vieno žodžio",
+    "Pernelyg abstraktus"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "blogas": "Renginys",
+    "geras": "Pirmokų šventė sporto salėje"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 18,
+   "epizodas": "viz_696_03",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_696_03",
+   "pamoka": "pam_658",
+   "failas": "03-iliustracija-neprivaloma",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Nereikia",
+    "Natūralu",
+    "Pranešimas apie nuostatus"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 19,
+   "epizodas": "viz_696_04",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_696_04",
+   "pamoka": "pam_658",
+   "failas": "04-nurodykite-autorius",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Nurodoma",
+    "Nepakanka",
+    "Straipsnio autorius",
+    "Fotografijos autorius"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "autorius": "Jonas Biliūnas",
+    "fotografas": "Marija Pečkauskaitė"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 20,
+   "epizodas": "viz_696_05",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_696_05",
+   "pamoka": "pam_658",
+   "failas": "05-nurodykite-data",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Paskelbimo data",
+    "Įvykio data",
+    "Datos nenurodėte"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "data": "2026-09-01"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 21,
+   "epizodas": "viz_696_06",
+   "rusis": "koncepcija",
+   "sablonas": "srautas",
+   "dalis": "dal_696_06",
+   "pamoka": "pam_658",
+   "failas": "06-paslepimo-data",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Publikuojate",
+    "Nustatote paslėpimo datą",
+    "Įrašas tampa neaktyvus"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "irasas": "Kvietimas į tėvų susirinkimą"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 22,
+   "epizodas": "viz_696_07",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_696_07",
+   "pamoka": "pam_658",
+   "failas": "07-kategorija-butina",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Būtina",
+    "Neįmanoma",
+    "Kategorija kiekvienam įrašui"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "kategorija": "Renginiai"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 23,
+   "epizodas": "viz_696_09",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_696_09",
+   "pamoka": "pam_658",
+   "failas": "09-nuotraukos-tarp-pastraipu",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Be nuotraukų",
+    "Kas trečią pastraipą",
+    "Ilgiau išlaiko dėmesį"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 24,
+   "epizodas": "viz_700_01",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_700_01",
+   "pamoka": "pam_658",
+   "failas": "01-formatuokite-saikingai",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Bold",
+    "Italic",
+    "Sąrašas",
+    "Numeracija",
+    "Antraštės",
+    "Citatos"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Demo mokyklos puslapis"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 25,
+   "epizodas": "ep_700_02_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_700_02",
+   "pamoka": "pam_658",
+   "failas": "02-ctrl-shift-v",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Turinys",
+    "Ctrl+Shift+V",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-window",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: klavišų užrašas ekrano apačioje"
+   ],
+   "tarimo_kandidatai": [
+    "Ctrl+Shift+V"
+   ],
+   "demo_duomenys": {
+    "tekstas": "Demo mokyklos naujienos pastraipa",
+    "saltinis": "Word dokumentas"
+   },
+   "naudoja_ir": [
+    "dal_700_90",
+    "dal_658_05"
+   ]
+  },
+  {
+   "kadras": 26,
+   "epizodas": "ep_700_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_700_03",
+   "pamoka": "pam_658",
+   "failas": "03-isvalote-formatavima",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Turinys",
+    "Ctrl+A",
+    "Tx"
+   ],
+   "tvs_ui": [
+    "tvs-window",
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: klavišų užrašas ekrano apačioje"
+   ],
+   "tarimo_kandidatai": [
+    "Ctrl+A",
+    "Tx"
+   ],
+   "demo_duomenys": {
+    "tekstas": "Demo mokyklos puslapio tekstas"
+   },
+   "naudoja_ir": [
+    "dal_695_11"
+   ]
+  },
+  {
+   "kadras": 27,
+   "epizodas": "ep_700_04_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_700_04",
+   "pamoka": "pam_658",
+   "failas": "04-dubliuojate-puslapi",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Dubliuoti",
+    "Peržiūrėti",
+    "Ištrinti"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-handle",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Priėmimas į mokyklą"
+   },
+   "naudoja_ir": [
+    "dal_683_02",
+    "dal_703_04",
+    "dal_703_90",
+    "dal_711_03"
+   ]
+  },
+  {
+   "kadras": 28,
+   "epizodas": "ep_700_08_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_700_08",
+   "pamoka": "pam_658",
+   "failas": "08-priminimas-perziureti",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Auditas",
+    "Patikrinimo data",
+    "Statusas",
+    "Peržiūrėti",
+    "Išsaugoti ir išeiti"
+   ],
+   "tvs_ui": [
+    "tvs-window",
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: datos pasirinkimo laukas"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Priėmimas į mokyklą",
+    "data": "2027-03-01"
+   },
+   "naudoja_ir": [
+    "dal_701_07",
+    "dal_700b_90"
+   ]
+  },
+  {
+   "kadras": 29,
+   "epizodas": "ep_700_09_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_700_09",
+   "pamoka": "pam_658",
+   "failas": "09-uzkoduota-nuoroda",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Peržiūrėti",
+    "/pages/preview/",
+    "Slug"
+   ],
+   "tvs_ui": [
+    "tvs-window",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "tvs-site",
+    "naujas: naršyklės adreso juosta"
+   ],
+   "tarimo_kandidatai": [
+    "Slug"
+   ],
+   "demo_duomenys": {
+    "adresas": "https://demo.svetainesmokykloms.lt/pages/preview/8f3k2m"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 30,
+   "epizodas": "viz_700_10",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_700_10",
+   "pamoka": "pam_658",
+   "failas": "10-navigacijos-pavadinimas",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Puslapio pavadinimas",
+    "Navigacijos pavadinimas",
+    "Trys žodžiai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Struktūra ir kontaktinė informacija",
+    "navigacija": "Struktūra ir kontaktai"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

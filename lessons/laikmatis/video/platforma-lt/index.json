@@ -1,0 +1,101 @@
+{
+  "pamoka": "laikmatis",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T03:11:30.256Z",
+  "balso_stiprinimas_db": 5.7,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_703_01_1",
+      "failas": "01-kur-laikmatis",
+      "pavadinimas": "Kur rodomas laikmatis",
+      "trukme_s": 12,
+      "mp4": "ep_703_01_1.mp4",
+      "vtt": "ep_703_01_1.vtt",
+      "poster": "ep_703_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.27,
+          "tekstas": "Laikmatį rasite dešinėje svetainės pusėje."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 7.11,
+          "tekstas": "Iš karto po juodąja navigacija."
+        },
+        {
+          "nuo_s": 7.3,
+          "iki_s": 10.67,
+          "tekstas": "Virš laikroduko – jūsų įrašyta antraštė."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_703_02",
+      "failas": "02-kelios-progos",
+      "pavadinimas": "Progų – daugiau nei viena",
+      "trukme_s": 12,
+      "mp4": "viz_703_02.mp4",
+      "vtt": "viz_703_02.vtt",
+      "poster": "viz_703_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.29,
+          "tekstas": "Sąraše numatote kelias progas iš karto."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 7.19,
+          "tekstas": "Vienai pasibaigus laikmatis sustoja."
+        },
+        {
+          "nuo_s": 7.5,
+          "iki_s": 10.36,
+          "tekstas": "Ir pats pradeda skaičiuoti iki kitos."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_703_03_1",
+      "failas": "03-laikmacio-laukai",
+      "pavadinimas": "Laikmačio formos laukai",
+      "trukme_s": 20,
+      "mp4": "ep_703_03_1.mp4",
+      "vtt": "ep_703_03_1.vtt",
+      "poster": "ep_703_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.24,
+          "tekstas": "„Antraštė“ – tekstas virš laikroduko."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 8.07,
+          "tekstas": "„Pabaigos data“ – įvykis, iki kurio skaičiuojate."
+        },
+        {
+          "nuo_s": 8.6,
+          "iki_s": 13.61,
+          "tekstas": "„Rodyti nuo“ ir „Rodyti iki“ valdo, kada laikmatis matomas."
+        },
+        {
+          "nuo_s": 13.8,
+          "iki_s": 17.75,
+          "tekstas": "„Tekstas pasibaigus“ – ką parodyti sulaukus įvykio."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

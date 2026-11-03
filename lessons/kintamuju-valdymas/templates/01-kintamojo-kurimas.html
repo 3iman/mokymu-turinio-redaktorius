@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* K1 — „Kintamojo kūrimas“ (ep_1473_01_1)
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 40% 35%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+.v-table .tvs-th, .v-table .tvs-row { grid-template-columns: 30px 1fr 1fr 220px; } .v-table code { font-family: 'SF Mono', Menlo, monospace; font-size: 18px; } .f-s { width: 300px; } .f-c { width: 260px; } .cat { border-radius: 3px; }
+  /* galutinė būsena (epizodai.js) — po pamokos CSS, kad visada laimėtų */
+  .stage > .scr:nth-of-type(1) { opacity: 0; }
+  .stage > .scr:nth-of-type(2) { opacity: 0; }
+  .stage > .scr:nth-of-type(3) { opacity: 1; }
+  .cursor-wrap { transform: translate(1396.0px, 817.0px); }
+  .caret-k1 { opacity: 1; }
+  .caret-k2 { opacity: 1; }
+  .caret-v { opacity: 1; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class="is-on"></i><i class="is-bars"></i><i class=""></i><i class=""></i><i class=""></i></div>
+        <div class="tvs-subnav"><span class="is-on">Vertimai</span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">Vertimai</div>
+<div><span class="tvs-btn " data-t="add"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>Sukurti</span></div><div class="tvs-filter"><div class="tvs-input f-s">Paieška</div><div class="tvs-select f-c" data-t="cf">Category</div><span class="tvs-btn ">Filtruoti</span></div><div class="tvs-table v-table" data-t="vt"><div class="tvs-th"><div class="tvs-check"></div><span>Key</span><span>Value</span><span>Category</span></div><div class="tvs-row"><div class="tvs-check"></div><div><code>bendra::el_pastas</code></div><div>info@demomokykla.lt</div><div>bendra</div></div><div class="tvs-row"><div class="tvs-check"></div><div><code>bendra::telefonas</code></div><div>8 600 00000</div><div>bendra</div></div></div>
+        </div>
+      </div>
+
+      <div class="scr scr2 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class="is-on"></i><i class="is-bars"></i><i class=""></i><i class=""></i><i class=""></i></div>
+        <div class="tvs-subnav"><span class="is-on">Vertimai</span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">Vertimai  /  Sukurti</div>
+<div class="tvs-form">
+            <div class="tvs-field" data-t="fk"><div class="tvs-label">Key<span class="tvs-req">*</span></div><div class="tvs-input is-focus"><span class="cat" data-t="cat"><span class="tvs-typed ty-k1" data-ty="k1"><span class="w"><span class="l l1">m</span><span class="l l2">o</span><span class="l l3">k</span><span class="l l4">y</span><span class="l l5">k</span><span class="l l6">l</span><span class="l l7">a</span></span></span></span><span class="tvs-typed ty-k2" data-ty="k2"><span class="w"><span class="l l1">:</span><span class="l l2">:</span><span class="l l3">p</span><span class="l l4">a</span><span class="l l5">v</span><span class="l l6">a</span><span class="l l7">d</span><span class="l l8">i</span><span class="l l9">n</span><span class="l l10">i</span><span class="l l11">m</span><span class="l l12">a</span><span class="l l13">s</span></span></span><span class="tvs-caret caret-k2"></span></div></div>
+            <div class="tvs-field" data-t="fv"><div class="tvs-label">Value (LT)</div><div class="tvs-input"><span class="tvs-typed ty-v" data-ty="v"><span class="w"><span class="l l1">D</span><span class="l l2">e</span><span class="l l3">m</span><span class="l l4">o</span></span><span class="l l5">&nbsp;</span><span class="w"><span class="l l6">p</span><span class="l l7">r</span><span class="l l8">o</span><span class="l l9">g</span><span class="l l10">i</span><span class="l l11">m</span><span class="l l12">n</span><span class="l l13">a</span><span class="l l14">z</span><span class="l l15">i</span><span class="l l16">j</span><span class="l l17">a</span></span></span><span class="tvs-caret caret-v"></span></div></div></div>
+          <div class="tvs-form-foot"><span class="tvs-btn is-tiny"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>Išsaugoti</span><span class="tvs-btn is-tiny" data-t="save"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>Išsaugoti ir išeiti</span></div>
+        </div>
+      </div>
+
+      <div class="scr scr3 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class="is-on"></i><i class="is-bars"></i><i class=""></i><i class=""></i><i class=""></i></div>
+        <div class="tvs-subnav"><span class="is-on">Vertimai</span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">Vertimai</div>
+<div><span class="tvs-btn "><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>Sukurti</span></div><div class="tvs-filter"><div class="tvs-input f-s">Paieška</div><div class="tvs-select f-c" data-t="cf">mokykla</div><span class="tvs-btn ">Filtruoti</span></div><div class="tvs-table v-table" data-t="vt"><div class="tvs-th"><div class="tvs-check"></div><span>Key</span><span>Value</span><span>Category</span></div><div class="tvs-row is-new nr" data-t="nr"><div class="tvs-check"></div><div><code>mokykla::pavadinimas</code></div><div>Demo progimnazija</div><div>mokykla</div></div><div class="tvs-row"><div class="tvs-check"></div><div><code>bendra::el_pastas</code></div><div>info@demomokykla.lt</div><div>bendra</div></div><div class="tvs-row"><div class="tvs-check"></div><div><code>bendra::telefonas</code></div><div>8 600 00000</div><div>bendra</div></div></div>
+        </div>
+      </div>
+      <div class="spot"></div>
+      <div class="tvs-ripple rp rp1"></div>
+      <div class="tvs-ripple rp rp2"></div>
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

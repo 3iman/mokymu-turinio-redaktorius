@@ -1,0 +1,433 @@
+{
+  "hash": "6131b6b230a3e64375c72abd94ca8c990e0e2a757c1248e161b08712cc4ad34e",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 4051723951,
+  "characters": 1893,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T03:02:24.964Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Įrašą atidarote mygtuku „Redaguoti“",
+      "text": "/ˈsaːraʃʲɛ/ susirandate reikiamą /ˈiːraʃaː/.",
+      "file": "k01-1.wav",
+      "duration": 2.79,
+      "fits": false,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Įrašą atidarote mygtuku „Redaguoti“",
+      "text": "Eilutės /ɡaˈlʲɛ/ spaudžiate „Redaguoti“.",
+      "file": "k01-2.wav",
+      "duration": 2.65,
+      "fits": true,
+      "reikia_sek": 8
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Nebeaktualų įrašą ištrinate",
+      "text": "Pažymite nebeaktualaus /ˈiːraʃoː/ langelį.",
+      "file": "k02-1.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 8
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Nebeaktualų įrašą ištrinate",
+      "text": "Apačioje spaudžiate „/iʃtˈrʲintʲi/“.",
+      "file": "k02-2.wav",
+      "duration": 2.53,
+      "fits": true,
+      "reikia_sek": 8
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Slug padarote unikalų",
+      "text": "Jei pavadinimas kartojasi, keičiate /slʌɡ/.",
+      "file": "k03-1.wav",
+      "duration": 2.93,
+      "fits": true,
+      "reikia_sek": 8
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Slug padarote unikalų",
+      "text": "Jis turi būti unikalus.",
+      "file": "k03-2.wav",
+      "duration": 1.93,
+      "fits": true,
+      "reikia_sek": 8
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Nurodote publikavimo ir slėpimo datą",
+      "text": "Publikavimo datą nurodote patys.",
+      "file": "k04-1.wav",
+      "duration": 2.53,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Nurodote publikavimo ir slėpimo datą",
+      "text": "Slėpimo data pasako, kada įrašas taps nematomas.",
+      "file": "k04-2.wav",
+      "duration": 3.89,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Autorių pasirenkate iš sąrašo",
+      "text": "/lauˈkʲɛ/ „Autoriai“ spaudžiate „Pažymėti“.",
+      "file": "k05-1.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Autorių pasirenkate iš sąrašo",
+      "text": "/ˈsaːraʃʲɛ/ randate kolegą ir spaudžiate „/prʲiˈdʲeːtʲi/“.",
+      "file": "k05-2.wav",
+      "duration": 3.45,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Autoriaus vardas atveria jo įrašus",
+      "text": "Svetainėje paspaudžiate autoriaus vardą.",
+      "file": "k06-1.wav",
+      "duration": 2.69,
+      "fits": true,
+      "reikia_sek": 8
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Autoriaus vardas atveria jo įrašus",
+      "text": "Matote visus jo straipsnius.",
+      "file": "k06-2.wav",
+      "duration": 2.29,
+      "fits": true,
+      "reikia_sek": 8
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Nuotraukų autorių įrašote laukelyje",
+      "text": "/lauˈkʲɛ/ „Nuotraukų autorius“ įrašote, kas fotografavo.",
+      "file": "k07-1.wav",
+      "duration": 4.01,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Nuotraukų autorių įrašote laukelyje",
+      "text": "Autoriaus /nʲɛˈʒʲinoːtʲɛ/ – nurodote šaltinį.",
+      "file": "k07-2.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Įrašui parenkate kategoriją",
+      "text": "/lauˈkʲɛ/ „Kategorija“ pasirenkate vieną iš mokyklos sąrašo.",
+      "file": "k08-1.wav",
+      "duration": 4.05,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Įrašui parenkate kategoriją",
+      "text": "Be kategorijos sistema /ˈiːraʃoː/ neišsaugos.",
+      "file": "k08-2.wav",
+      "duration": 3.33,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 9,
+      "cue": 1,
+      "title": "Įrašui priskiriate žymą",
+      "text": "/lauˈkʲɛ/ „Tags“ įrašote temą.",
+      "file": "k09-1.wav",
+      "duration": 2.53,
+      "fits": false,
+      "reikia_sek": 8
+    },
+    {
+      "kadras": 9,
+      "cue": 2,
+      "title": "Įrašui priskiriate žymą",
+      "text": "Paspaudus „Enter“ ji tampa /ʒʲiːˈma/.",
+      "file": "k09-2.wav",
+      "duration": 2.57,
+      "fits": true,
+      "reikia_sek": 7
+    },
+    {
+      "kadras": 10,
+      "cue": 1,
+      "title": "Pagrindinę nuotrauką paslepiate",
+      "text": "Jungiklį „Rodyti pagrindinę nuotrauką“ perjungiate į „No“.",
+      "file": "k10-1.wav",
+      "duration": 4.21,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 10,
+      "cue": 2,
+      "title": "Pagrindinę nuotrauką paslepiate",
+      "text": "Straipsnio viršuje nuotraukos nebelieka.",
+      "file": "k10-2.wav",
+      "duration": 2.93,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 11,
+      "cue": 1,
+      "title": "Kadruotę parenkate mygtuku „Crop“",
+      "text": "Automatinis kadravimas kartais nukerpa svarbią detalę.",
+      "file": "k11-1.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 11,
+      "cue": 2,
+      "title": "Kadruotę parenkate mygtuku „Crop“",
+      "text": "Spaudžiate „Crop“ ir patempiate rėmelį.",
+      "file": "k11-2.wav",
+      "duration": 3.01,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 11,
+      "cue": 3,
+      "title": "Kadruotę parenkate mygtuku „Crop“",
+      "text": "/ˈsaːraʃʲɛ/ nuotrauka atrodo taip, kaip parinkote.",
+      "file": "k11-3.wav",
+      "duration": 3.21,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 12,
+      "cue": 1,
+      "title": "Įžangą rašote lauke „Intro“",
+      "text": "/lauˈkʲɛ/ „Intro“ parašote vieną sakinį.",
+      "file": "k12-1.wav",
+      "duration": 2.93,
+      "fits": true,
+      "reikia_sek": 7
+    },
+    {
+      "kadras": 12,
+      "cue": 2,
+      "title": "Įžangą rašote lauke „Intro“",
+      "text": "Jį skaitytojas mato /ˈsaːraʃʲɛ/.",
+      "file": "k12-2.wav",
+      "duration": 2.21,
+      "fits": false,
+      "reikia_sek": 8
+    },
+    {
+      "kadras": 13,
+      "cue": 1,
+      "title": "Nuotraukas įterpiate sintakse",
+      "text": "Galerija savaime atsiranda straipsnio pabaigoje.",
+      "file": "k13-1.wav",
+      "duration": 3.09,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 13,
+      "cue": 2,
+      "title": "Nuotraukas įterpiate sintakse",
+      "text": "Kelias nuotraukas įterpiate tarp pastraipų.",
+      "file": "k13-2.wav",
+      "duration": 2.85,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 13,
+      "cue": 3,
+      "title": "Nuotraukas įterpiate sintakse",
+      "text": "Tam naudojate sintaksę.",
+      "file": "k13-3.wav",
+      "duration": 1.85,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 14,
+      "cue": 1,
+      "title": "Galeriją užrakinate slaptažodžiu",
+      "text": "Jungiklį „Apsaugotos nuotraukos“ įjungiate.",
+      "file": "k14-1.wav",
+      "duration": 3.117,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 14,
+      "cue": 2,
+      "title": "Galeriją užrakinate slaptažodžiu",
+      "text": "Galeriją pamatys tik įvedę slaptažodį.",
+      "file": "k14-2.wav",
+      "duration": 2.823,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 14,
+      "cue": 3,
+      "title": "Galeriją užrakinate slaptažodžiu",
+      "text": "Patį slaptažodį nustatote mokyklos nustatymuose.",
+      "file": "k14-3.wav",
+      "duration": 3.45,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 15,
+      "cue": 1,
+      "title": "Vaizdo įrašą dedate į viršų",
+      "text": "Į lauką „Video“ įklijuojate nuorodą.",
+      "file": "k15-1.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 15,
+      "cue": 2,
+      "title": "Vaizdo įrašą dedate į viršų",
+      "text": "Peržiūra atsiranda /iʃˈkart/ po lauku.",
+      "file": "k15-2.wav",
+      "duration": 2.49,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 15,
+      "cue": 3,
+      "title": "Vaizdo įrašą dedate į viršų",
+      "text": "Straipsnio viršuje ji pakeičia pagrindinę nuotrauką.",
+      "file": "k15-3.wav",
+      "duration": 3.383,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 16,
+      "cue": 1,
+      "title": "Svarbų įrašą prisegate",
+      "text": "Kortelėje „Nustatymas“ įjungiate „Pin“.",
+      "file": "k16-1.wav",
+      "duration": 3.15,
+      "fits": false,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 16,
+      "cue": 2,
+      "title": "Svarbų įrašą prisegate",
+      "text": "Įrašas atsistoja sąrašo viršuje.",
+      "file": "k16-2.wav",
+      "duration": 2.57,
+      "fits": true,
+      "reikia_sek": 8
+    },
+    {
+      "kadras": 17,
+      "cue": 1,
+      "title": "Garso failą įkeliate į „Audios“",
+      "text": "Skiltyje „Audios“ spaudžiate „Upload“.",
+      "file": "k17-1.wav",
+      "duration": 3.13,
+      "fits": false,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 17,
+      "cue": 2,
+      "title": "Garso failą įkeliate į „Audios“",
+      "text": "Nutempiate em pė trys arba vė a vė failą.",
+      "file": "k17-2.wav",
+      "duration": 3.57,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 18,
+      "cue": 1,
+      "title": "Grotuvą įjungiate sintakse",
+      "text": "Kortelėje „Sintaksė“ nukopijuojate garso sintaksę.",
+      "file": "k18-1.wav",
+      "duration": 3.57,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 18,
+      "cue": 2,
+      "title": "Grotuvą įjungiate sintakse",
+      "text": "Įklijuojate ją ten, kur norite grotuvo.",
+      "file": "k18-2.wav",
+      "duration": 2.93,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 19,
+      "cue": 1,
+      "title": "Rodomų įrašų skaičių nustatote",
+      "text": "/lauˈkʲɛ/ „Limitas“ nurodote, kiek naujienų rodyti.",
+      "file": "k19-1.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 19,
+      "cue": 2,
+      "title": "Rodomų įrašų skaičių nustatote",
+      "text": "/atskʲiˈrai/ nurodote skaičių pagrindiniam puslapiui.",
+      "file": "k19-2.wav",
+      "duration": 3.223,
+      "fits": true,
+      "reikia_sek": 10
+    }
+  ]
+}

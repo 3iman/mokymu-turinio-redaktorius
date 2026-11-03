@@ -1,0 +1,212 @@
+{
+ "pamokos_slug": "interneto-svetaines-kurimo-procesas",
+ "pamoka_id": "pam_684",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_684_01",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_684_01",
+   "pamoka": "pam_684",
+   "failas": "01-astuoni-etapai",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Demo versija",
+    "Turinio perkėlimas",
+    "Turinio kokybė",
+    "Konsultacijos",
+    "Domeno nukreipimas",
+    "Startas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_684_02",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_684_02",
+   "pamoka": "pam_684",
+   "failas": "02-vienas-perkelimas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Vyksta vieną kartą",
+    "Rankiniu būdu",
+    "Vėliau",
+    "Atnaujinimus siunčiate jūs"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_684_03",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_684_03",
+   "pamoka": "pam_684",
+   "failas": "03-kaip-siusti-turini",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Mums bus lengviau",
+    "Pastebėjimo ID atsakyme",
+    "Pastebėjimai papunkčiui",
+    "Vengiate",
+    "Tekstai PDF ar JPG"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "PDF",
+    "JPG"
+   ],
+   "demo_duomenys": {
+    "nuotrauka": "vincas-kudirka.jpg"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_684_04",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_684_04",
+   "pamoka": "pam_684",
+   "failas": "04-baigiamieji-darbai",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Baneriai",
+    "Paskutinės naujienos",
+    "Darbuotojų kolektyvas",
+    "Žinutė ir spalvos"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_684_05",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_684_05",
+   "pamoka": "pam_684",
+   "failas": "05-konsultacijos",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Ateinate nepasiruošę",
+    "Spėsime tik pagrindus",
+    "Su žinių pagrindu",
+    "Gilinamės į esmę",
+    "30 min."
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "viz_684_06",
+   "rusis": "koncepcija",
+   "sablonas": "srautas",
+   "dalis": "dal_684_06",
+   "pamoka": "pam_684",
+   "failas": "06-turinio-patvirtinimas",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Koordinatoriai",
+    "Parodote kolektyvui",
+    "Grįžtamasis ryšys",
+    "Saugoti penkerius metus"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "viz_684_07",
+   "rusis": "koncepcija",
+   "sablonas": "srautas",
+   "dalis": "dal_684_07",
+   "pamoka": "pam_684",
+   "failas": "07-domeno-nukreipimas",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Sugalvojate adresą",
+    "„Wolet“ registruoja",
+    "Paleidžiame",
+    "Nekorektiška registracija"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Wolet"
+   ],
+   "demo_duomenys": {
+    "adresas": "demomokykla.lt"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 8,
+   "epizodas": "ep_684_08_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_684_08",
+   "pamoka": "pam_684",
+   "failas": "08-juosteles-isjungimas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Pranešimai",
+    "Įjungta",
+    "Išsaugoti ir išeiti"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: svetainės pranešimų juostelė"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "zinute": "Interneto svetainės turinys dar kuriamas. Atsiprašome už galimus laikinus neatitikimus"
+   },
+   "naudoja_ir": [
+    "dal_684_90"
+   ]
+  },
+  {
+   "kadras": 9,
+   "epizodas": "viz_684_08",
+   "rusis": "koncepcija",
+   "sablonas": "zingsniai",
+   "dalis": "dal_684_08",
+   "pamoka": "pam_684",
+   "failas": "08-po-starto-darbai",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Senoji svetainė",
+    "Naujas adresas",
+    "Pranešate bendruomenei",
+    "Išjungiate juostelę"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

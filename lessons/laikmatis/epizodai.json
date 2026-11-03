@@ -1,0 +1,74 @@
+{
+ "pamokos_slug": "laikmatis",
+ "pamoka_id": "pam_703",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_703_01_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_703_01",
+   "pamoka": "pam_703",
+   "failas": "01-kur-laikmatis",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Iki naujų mokslo metų liko:"
+   ],
+   "tvs_ui": [
+    "tvs-cursor",
+    "naujas: svetainės šoninė juosta su laikrodžio papildiniu"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "antraste": "Iki naujų mokslo metų liko:"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_703_02",
+   "rusis": "koncepcija",
+   "sablonas": "srautas",
+   "dalis": "dal_703_02",
+   "pamoka": "pam_703",
+   "failas": "02-kelios-progos",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "automatiškai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "progos": "Rugsėjo 1-oji, rudens atostogos"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_703_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_703_03",
+   "pamoka": "pam_703",
+   "failas": "03-laikmacio-laukai",
+   "trukme_s": 20,
+   "ekrano_tekstai": [
+    "Antraštė",
+    "Pabaigos data",
+    "Rodyti nuo",
+    "Rodyti iki",
+    "Tekstas pasibaigus"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "naujas: datos ir laiko laukas"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "antraste": "Iki naujų mokslo metų liko:"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

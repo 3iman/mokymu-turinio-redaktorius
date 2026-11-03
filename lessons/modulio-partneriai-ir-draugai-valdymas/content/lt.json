@@ -1,0 +1,26 @@
+{
+  "lang": "lt",
+  "02_partneriai_tituliniame": {
+    "_epizodas": "ep_708_02_1"
+  },
+  "04_partnerio_nuoroda": {
+    "_epizodas": "ep_708_04_1"
+  },
+  "05_logotipu_isjungimas": {
+    "_epizodas": "ep_708_05_1"
+  },
+  "05_sekcija_dingsta": {
+    "_epizodas": "ep_708_05_2"
+  },
+  "03_logotipo_reikalavimai": {
+    "title": "Logotipas atrodo per mažas",
+    "do_title": "Tinka",
+    "do_1": "PNG arba SVG, be fono",
+    "do_2": "Apkirptas be tuščios erdvės",
+    "do_3": "300 x 300 pikselių",
+    "do_4": "Su nuoroda, atskirame lange",
+    "dont_title": "Netinka",
+    "dont_1": "Patalpintas su fonu",
+    "dont_2": "Aplink daug tuščios erdvės"
+  }
+}

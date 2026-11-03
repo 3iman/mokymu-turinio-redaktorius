@@ -1,0 +1,236 @@
+{
+ "pamokos_slug": "pasikartojancios-klaidos-straipsniuose",
+ "pamoka_id": "pam_694",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_694_01",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_694_01",
+   "pamoka": "pam_694",
+   "failas": "01-lygiavimas-pagal-kaire",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Taip",
+    "Ne",
+    "Pagal kairį kraštą",
+    "Pagal abu kraštus"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "pastraipa": "Demo mokyklos naujienos pastraipa"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_694_02",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_694_02",
+   "pamoka": "pam_694",
+   "failas": "02-vienas-pastraipu-skyrimas",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Taip",
+    "Ne",
+    "Tarpas tarp pastraipų",
+    "Pirmos eilutės atitraukimas",
+    "Abu būdai kartu"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_694_03",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_694_03",
+   "pamoka": "pam_694",
+   "failas": "03-sarasai-be-savadarbiu",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Taip",
+    "Ne",
+    "Žvaigždutės",
+    "Brūkšneliai",
+    "Rombai",
+    "Redaktoriaus sąrašas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "ep_694_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_694_03",
+   "pamoka": "pam_694",
+   "failas": "03-sarasas-redaktoriaus-funkcija",
+   "trukme_s": 10,
+   "ekrano_tekstai": [
+    "Turinys",
+    "Source",
+    "Format"
+   ],
+   "tvs_ui": [
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: teksto redaktoriaus įrankių juosta"
+   ],
+   "tarimo_kandidatai": [
+    "Source"
+   ],
+   "demo_duomenys": {
+    "sarasas": "Šventė, tėvų susirinkimas, ekskursija"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_694_04",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_694_04",
+   "pamoka": "pam_694",
+   "failas": "04-enter-ir-shift-enter",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "„Enter“",
+    "„Shift+Enter“",
+    "Nauja pastraipa",
+    "Tekstas nusikelia"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Enter",
+    "Shift"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "ep_694_04_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_694_04",
+   "pamoka": "pam_694",
+   "failas": "04-pastraipos-su-enter",
+   "trukme_s": 10,
+   "ekrano_tekstai": [
+    "Turinys",
+    "„Enter“",
+    "Nauja pastraipa"
+   ],
+   "tvs_ui": [
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: teksto redaktoriaus įrankių juosta"
+   ],
+   "tarimo_kandidatai": [
+    "Enter"
+   ],
+   "demo_duomenys": {
+    "pastraipa": "Pirmokai šventę pradėjo dainomis"
+   },
+   "naudoja_ir": [
+    "dal_903_90"
+   ]
+  },
+  {
+   "kadras": 7,
+   "epizodas": "viz_694_05",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_694_05",
+   "pamoka": "pam_694",
+   "failas": "05-autorius-funkcija",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Autoriai",
+    "Raštu teksto apačioje",
+    "Visi autoriaus įrašai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "autorius": "Marija Pečkauskaitė",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 8,
+   "epizodas": "viz_694_06",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_694_06",
+   "pamoka": "pam_694",
+   "failas": "06-horizontali-nuotrauka",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Taip",
+    "Ne",
+    "Horizontali titulinė",
+    "Vertikali titulinė",
+    "Nukirpta galva"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "plakatas": "Demo mokyklos šventės plakatas"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 9,
+   "epizodas": "viz_694_07",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_694_07",
+   "pamoka": "pam_694",
+   "failas": "07-vertikalios-nuotraukos",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Taip",
+    "Ne",
+    "Plakatų sintaksė",
+    "Vertikalios kaip sraute"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 10,
+   "epizodas": "viz_694_08",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_694_08",
+   "pamoka": "pam_694",
+   "failas": "08-kitos-klaidos",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Prastos nuotraukos",
+    "Nenaudojamos antraštės",
+    "Stiliaus šiukšlės",
+    "Neveikiančios nuorodos",
+    "Puslapių valdymas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  }
+ ]
+}

@@ -127,7 +127,7 @@ const LAYOUTS = [
       const n = num(k);
       if (i > 0) {
         const al = `arrow_label_${n - 1}`;
-        h += `<div class="k-link b-l${n - 1}"><div class="k-link-t">${L[al] && !isPh(L[al]) ? pair(al) : ''}</div><div class="k-link-line"></div></div>`;
+        h += `<div class="k-link b-l${n - 1}"><div class="k-link-t${/[@\/]|\.[a-z]{2,4}\b/i.test(L[al] || '') ? ' is-raw' : ''}">${L[al] && !isPh(L[al]) ? pair(al) : ''}</div><div class="k-link-line"></div></div>`;
         ctx.used.add(al);
       }
       const d = `step${n}_desc`;
@@ -386,6 +386,11 @@ for (const k of ep.kadrai) {
   if (only && !only.includes(k.failas)) continue;
   const v = cards[k.epizodas];
   if (!v) { report.push(`| ${k.kadras} | ${k.failas} | — | — | ⛔ kortelė ${k.epizodas} nerasta |`); continue; }
+  // Esama iliustracija (šablonas ne iš koncepcijos.js) — paliekama, animacija iš bendro žodyno (2026-11-03)
+  const tp = path.join(LDIR, 'templates', `${k.failas}.html`);
+  if (fs.existsSync(tp) && !fs.readFileSync(tp, 'utf-8').includes('koncepcijos.js')) {
+    report.push(`| ${k.kadras} | ${k.failas} | esama iliustracija | — | šablonas ir animacija — iš YouTube pamokos |`); continue;
+  }
   const L = { ...(v.laukai || {}) };
   const notes = [];
   for (const key of Object.keys(L)) if (isPh(L[key])) notes.push(`\`${key}\` — vietos rezervas „${L[key]}“, nerodomas`);

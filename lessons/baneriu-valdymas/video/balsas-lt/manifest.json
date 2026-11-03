@@ -1,0 +1,103 @@
+{
+  "hash": "f5422bf907f5114e599074d71a20878825d934553bc6b7fd22f0a302246fdcbf",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 808784470,
+  "characters": 407,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T03:03:49.365Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Banerio reikalavimai",
+      "text": "Visi baneriai – vienodo dydžio.",
+      "file": "k01-1.wav",
+      "duration": 2.27,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Banerio reikalavimai",
+      "text": "Spalvotas logotipas baltame /foːˈnʲɛ/ arba baltas spalvotame.",
+      "file": "k01-2.wav",
+      "duration": 4.25,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Banerio reikalavimai",
+      "text": "Aplink logotipą paliekate /laisˈvoːs/ vietos.",
+      "file": "k01-3.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Randate banerių papildinį",
+      "text": "Paieškoje pasirenkate „Papildiniai“.",
+      "file": "k02-1.wav",
+      "duration": 2.65,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Randate banerių papildinį",
+      "text": "Zonų /ˈsaːraʃʲɛ/ pereinate į papildinius.",
+      "file": "k02-2.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Randate banerių papildinį",
+      "text": "Prie papildinio „Banner“ spaudžiate „Redaguoti“.",
+      "file": "k02-3.wav",
+      "duration": 3.37,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Išjungiate atsitiktinę tvarką",
+      "text": "/lauˈkʲɛ/ „Order“ vietoje „Random“ pasirenkate „Manual“.",
+      "file": "k03-1.wav",
+      "duration": 4.09,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Išjungiate atsitiktinę tvarką",
+      "text": "Spaudžiate „Atnaujinti“.",
+      "file": "k03-2.wav",
+      "duration": 1.89,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Išjungiate atsitiktinę tvarką",
+      "text": "Baneriai nebekeičia eiliškumo.",
+      "file": "k03-3.wav",
+      "duration": 2.37,
+      "fits": true,
+      "reikia_sek": 11
+    }
+  ]
+}

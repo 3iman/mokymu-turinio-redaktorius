@@ -1,0 +1,59 @@
+{
+  "lang": "lt",
+  "06_naujas_subpuslapis": {
+    "_epizodas": "ep_1621_06_1"
+  },
+  "06_lengvos_kalbos_blokas": {
+    "_epizodas": "ep_1621_06_2"
+  },
+  "06_esamas_pavyzdys": {
+    "_epizodas": "ep_1621_06_3"
+  },
+  "01_teksto_patikra": {
+    "title": "Teksto patikra",
+    "step1_label": "Peržiūrite pavyzdį",
+    "step1_desc": "Patikrinate faktus",
+    "arrow_label_1": "",
+    "step2_label": "Teksto rengimo forma",
+    "step2_desc": "Užpildote",
+    "arrow_label_2": "kc@anta.lt",
+    "step3_label": "Rekomendacijos",
+    "step3_desc": "Apie vieną mėnesį"
+  },
+  "02_kas_tai_yra": {
+    "title": "Lengvai suprantama kalba",
+    "term": "Easy to read",
+    "definition": "Būdas rašyti informaciją taip, kad ją būtų lengva suprasti",
+    "scope_1": "Kuo daugiau žmonių",
+    "scope_2": "Įskaitant turinčius skaitymo ar suvokimo sunkumų"
+  },
+  "03_kam_tai_aktualu": {
+    "title": "Kam tai aktualu",
+    "item_1": "Žmonėms su intelekto ar raidos sutrikimais",
+    "item_2": "Vyresnio amžiaus žmonėms",
+    "item_3": "Asmenims, kurių gimtoji kalba kita",
+    "item_4": "Visiems, kuriems sunku susikaupti",
+    "benefit_1": "Greičiau suprasti svarbią informaciją",
+    "benefit_2": "Išvengti klaidingo interpretavimo",
+    "benefit_3": "Didinti savarankiškumą ir įsitraukimą"
+  },
+  "04_sunkus_ir_lengvas_sakinys": {
+    "title": "Kaip atrodo lengvai suprantamas tekstas",
+    "old_title": "Sunkiai suprantamas sakinys",
+    "old_step_1": "Atsižvelgiant į individualius vartotojų poreikius, paslaugų teikimo procesai gali būti modifikuojami siekiant didesnio efektyvumo.",
+    "new_title": "Lengvai suprantama kalba",
+    "new_step_1": "Paslaugos gali būti keičiamos, jei žmogui to reikia.",
+    "summary": "Trumpi sakiniai, įprasti žodžiai, svarbiausia – pradžioje"
+  },
+  "05_ar_visa_turini": {
+    "title": "Ar visą turinį rašyti lengvai suprantama kalba",
+    "do_title": "Taip daroma",
+    "do_1": "Atskira informacijos versija",
+    "do_2": "Aiškiai atskirti skyriai",
+    "do_3": "Paprastas, bet ne infantilus tekstas",
+    "dont_title": "Nereikia",
+    "dont_1": "Perrašyti visą svetainę",
+    "dont_2": "Nuvertinti turinį",
+    "summary": "Pagarbus būdas pasakyti tą patį šiek tiek paprasčiau"
+  }
+}

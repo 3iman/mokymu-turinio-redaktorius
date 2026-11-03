@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/koncepcijos.css">
+<!-- Generuoja koncepcijos.js iš platformos kortelės — ranka neredaguoti. -->
+</head>
+<body>
+  <div class="card">
+    <div class="k-title">{{title}}</div>
+    <div class="k-cmp" style="--k-fs:29px"><div class="k-col is-do b-do"><div class="k-col-h"><div class="k-col-i"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div class="k-col-t">{{do_title}}</div></div>
+        <div class="k-steps"><div class="k-step"><span class="k-sn">✓</span><span>{{do_1}}</span></div><div class="k-step"><span class="k-sn">✓</span><span>{{do_2}}</span></div><div class="k-step"><span class="k-sn">✓</span><span>{{do_3}}</span></div><div class="k-step"><span class="k-sn">✓</span><span>{{do_4}}</span></div></div></div><div class="k-col is-dont b-dont"><div class="k-col-h"><div class="k-col-i"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><div class="k-col-t">{{dont_title}}</div></div>
+        <div class="k-steps"><div class="k-step"><span class="k-sn">✗</span><span>{{dont_1}}</span></div><div class="k-step"><span class="k-sn">✗</span><span>{{dont_2}}</span></div></div></div></div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

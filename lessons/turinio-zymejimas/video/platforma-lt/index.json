@@ -1,0 +1,171 @@
+{
+  "pamoka": "turinio-zymejimas",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T04:38:53.261Z",
+  "balso_stiprinimas_db": 5.1,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_1472_01",
+      "failas": "01-zyma-egzaminai",
+      "pavadinimas": "#egzaminai",
+      "trukme_s": 11,
+      "mp4": "viz_1472_01.mp4",
+      "vtt": "viz_1472_01.vtt",
+      "poster": "viz_1472_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.39,
+          "tekstas": "Šia žyma pažymite įrašus apie pasiruošimą egzaminams."
+        },
+        {
+          "nuo_s": 5.7,
+          "iki_s": 9.07,
+          "tekstas": "Pažymėtą turinį vėliau panaudosite greičiau."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_1472_02",
+      "failas": "02-zyma-sveika-mokykla",
+      "pavadinimas": "#sveika_mokykla",
+      "trukme_s": 12,
+      "mp4": "viz_1472_02.mp4",
+      "vtt": "viz_1472_02.vtt",
+      "poster": "viz_1472_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 6.49,
+          "tekstas": "Šia žyma pažymite įrašus apie mokyklos gyvenimą sveikatingumo kontekste."
+        },
+        {
+          "nuo_s": 7.2,
+          "iki_s": 10.57,
+          "tekstas": "Pažymėtą turinį vėliau panaudosite greičiau."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_1472_03",
+      "failas": "03-zyma-knygynas",
+      "pavadinimas": "#knygynas",
+      "trukme_s": 12,
+      "mp4": "viz_1472_03.mp4",
+      "vtt": "viz_1472_03.vtt",
+      "poster": "viz_1472_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 6.17,
+          "tekstas": "Šia žyma pažymite įrašus, kuriuose rekomenduojamos perskaitytos knygos."
+        },
+        {
+          "nuo_s": 7.1,
+          "iki_s": 10.47,
+          "tekstas": "Pažymėtą turinį vėliau panaudosite greičiau."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_1472_04",
+      "failas": "04-zyma-naudinga",
+      "pavadinimas": "#naudinga",
+      "trukme_s": 12,
+      "mp4": "viz_1472_04.mp4",
+      "vtt": "viz_1472_04.vtt",
+      "poster": "viz_1472_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.85,
+          "tekstas": "Šia žyma pažymite įrašus apie naudingus šaltinius ar įrankius."
+        },
+        {
+          "nuo_s": 6.4,
+          "iki_s": 9.69,
+          "tekstas": "Pažymėtą turinį vėliau panaudosite greičiau."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_1472_05",
+      "failas": "05-zyma-rupestis",
+      "pavadinimas": "#rupestis",
+      "trukme_s": 10,
+      "mp4": "viz_1472_05.mp4",
+      "vtt": "viz_1472_05.vtt",
+      "poster": "viz_1472_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.73,
+          "tekstas": "Šia žyma pažymite psichologo žinutes mokiniams."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 8.41,
+          "tekstas": "Pažymėtą turinį vėliau panaudosite greičiau."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "ep_1472_06_1",
+      "failas": "06-zymu-juosta",
+      "pavadinimas": "Žymų juostą įjungiate",
+      "trukme_s": 14,
+      "mp4": "ep_1472_06_1.mp4",
+      "vtt": "ep_1472_06_1.vtt",
+      "poster": "ep_1472_06_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 3.61,
+          "tekstas": "Atidarote „Papildiniai“."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 8.41,
+          "tekstas": "Randate žymų juostos papildinį ir jį įjungiate."
+        },
+        {
+          "nuo_s": 8.6,
+          "iki_s": 12.41,
+          "tekstas": "Svetainėje atsiranda žymų atvaizdavimo juosta."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 9.8,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

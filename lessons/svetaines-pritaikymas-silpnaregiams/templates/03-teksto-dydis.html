@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* K4 — „Teksto dydis“ (ep_1624_03_2)
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 70% 25%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+.txt { font-size: 21px; max-width: 1200px; } .mnu { right: 70px; top: 50px; } .scr1 .txt { transform-origin: 0 0; }
+  /* galutinė būsena (epizodai.js) — po pamokos CSS, kad visada laimėtų */
+  .stage > .scr:nth-of-type(1) { opacity: 1; }
+  .cursor-wrap { transform: translate(1515.8px, 151.5px); }
+  .mnu { opacity: 0; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-sweb ">
+
+        <div class="tvs-a11y"><span data-t="">Kontrastas</span><span data-t="bt">Teksto didinimas</span><span data-t="">Nuorodų ryškinimas</span></div>
+        <div class="tvs-sweb-h"><div class="tvs-sweb-crest"></div><div class="tvs-sweb-name">Demo mokykla<small>Demo miestas</small></div></div>
+        <div class="tvs-sweb-nav"><span class="is-on">Apie mokyklą</span><span>Mokiniams</span><span>Tėvams</span><span>Kontaktai</span></div>
+        <div class="tvs-sweb-b"><div class="tvs-sweb-t">Apie mokyklą</div><div class="tvs-sweb-p txt" data-t="txt">Mokykla įkurta 1921 metais. Šiandien joje mokosi 640 mokinių. Daugiau apie mūsų <span class="tvs-slink lk">istoriją</span> ir <span class="tvs-slink lk">mokytojus</span> rasite atskiruose puslapiuose. Mokyklos <span class="tvs-slink lk">nuostatai</span> skelbiami dokumentų skiltyje.</div><div class="tvs-a11y-m mnu"><span data-t="s1">Dydis +1</span><span data-t="s2">Dydis +2</span><span data-t="s0">Normalus</span></div></div>
+      </div>
+      <div class="spot"></div>
+      <div class="tvs-ripple rp rp1"></div>
+      <div class="tvs-ripple rp rp2"></div>
+      <div class="tvs-ripple rp rp3"></div>
+      <div class="tvs-ripple rp rp4"></div>
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

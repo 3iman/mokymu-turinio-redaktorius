@@ -1,0 +1,373 @@
+{
+  "hash": "f26ef4abf2b9fa67df4f47c35f7a57d60b1c1f4c4222f4bf3b420f20348e038a",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 2276492214,
+  "characters": 1638,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T03:43:32.938Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Sukuriate naują puslapį",
+      "text": "Spaudžiate „/prʲiˈdʲeːtʲi/ puslapį“.",
+      "file": "k01-1.wav",
+      "duration": 2.43,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Sukuriate naują puslapį",
+      "text": "Pasirenkate puslapio tipą „Default“.",
+      "file": "k01-2.wav",
+      "duration": 2.61,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Sukuriate naują puslapį",
+      "text": "Įrašote pavadinimą – puslapis laukia medžio apačioje.",
+      "file": "k01-3.wav",
+      "duration": 3.783,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Perrikiuojate puslapį medyje",
+      "text": "Puslapį sugriebiate už rankenėlės.",
+      "file": "k02-1.wav",
+      "duration": 2.557,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Perrikiuojate puslapį medyje",
+      "text": "Tempiate jį į norimą vietą.",
+      "file": "k02-2.wav",
+      "duration": 2.01,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Perrikiuojate puslapį medyje",
+      "text": "Paleidžiate – tvarka medyje pasikeičia.",
+      "file": "k02-3.wav",
+      "duration": 2.85,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Puslapio tipai",
+      "text": "Numatytasis tipas turi šoninį dizaino objektų stulpą.",
+      "file": "k03-1.wav",
+      "duration": 3.903,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Puslapio tipai",
+      "text": "Pilno ploto tipas jo neturi.",
+      "file": "k03-2.wav",
+      "duration": 2.157,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Puslapio tipai",
+      "text": "Jį pasirenkate, kai reikia viso pločio, pavyzdžiui, tvarkaraščiui.",
+      "file": "k03-3.wav",
+      "duration": 4.33,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Sukuriate subpuslapį",
+      "text": "Užvedate ant puslapio, prie kurio kuriate.",
+      "file": "k04-1.wav",
+      "duration": 2.61,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Sukuriate subpuslapį",
+      "text": "Spaudžiate „/prʲiˈdʲeːtʲi/ subpuslapį“.",
+      "file": "k04-2.wav",
+      "duration": 2.73,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Sukuriate subpuslapį",
+      "text": "/slʌɡ/ /lauˈkʲɛ/ matote tėvinio puslapio /ˈkʲɛːlʲaː/.",
+      "file": "k04-3.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Pavadinimas ir Slug",
+      "text": "Įrašote puslapio pavadinimą.",
+      "file": "k05-1.wav",
+      "duration": 2.05,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Pavadinimas ir Slug",
+      "text": "/slʌɡ/ susikuria automatiškai.",
+      "file": "k05-2.wav",
+      "duration": 2.21,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Pavadinimas ir Slug",
+      "text": "Pakeitę pavadinimą, pamatysite, kad /slʌɡ/ nepasikeitė.",
+      "file": "k05-3.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Žymos jungia įrašus",
+      "text": "/ʒʲiːˈma/ sujungia skirtinguose puslapiuose esančius įrašus.",
+      "file": "k06-1.wav",
+      "duration": 3.57,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Žymos jungia įrašus",
+      "text": "Taip lankytojas randa visą vienos temos turinį.",
+      "file": "k06-2.wav",
+      "duration": 3.37,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Žymos jungia įrašus",
+      "text": "Pirmiausia pasirenkate turinio organizavimo strategiją.",
+      "file": "k06-3.wav",
+      "duration": 3.73,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Kopijuojate sintaksės pavyzdį",
+      "text": "Skirtuke „Sintaksė“ randate tinkamą pavyzdį.",
+      "file": "k07-1.wav",
+      "duration": 3.29,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Kopijuojate sintaksės pavyzdį",
+      "text": "Spaudžiate „Kopijuoti“ ir įklijuojate į „Turinys“.",
+      "file": "k07-2.wav",
+      "duration": 3.903,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Kopijuojate sintaksės pavyzdį",
+      "text": "Pavyzdinį numerį pakeičiate savo puslapio numeriu.",
+      "file": "k07-3.wav",
+      "duration": 3.157,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Įkeliate nuotraukas į galeriją",
+      "text": "Atidarote „Paveikslėlių galeriją“.",
+      "file": "k08-1.wav",
+      "duration": 2.33,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Įkeliate nuotraukas į galeriją",
+      "text": "Nutempiate kelias nuotraukas iš /ˈkartoː/.",
+      "file": "k08-2.wav",
+      "duration": 2.37,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Įkeliate nuotraukas į galeriją",
+      "text": "Kartu jos negali viršyti šimto megabaitų.",
+      "file": "k08-3.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 9,
+      "cue": 1,
+      "title": "Vaizdo įrašų galerija",
+      "text": "Į galeriją dedate „YouTube“ ir „Vimeo“ įrašus.",
+      "file": "k09-1.wav",
+      "duration": 3.49,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 9,
+      "cue": 2,
+      "title": "Vaizdo įrašų galerija",
+      "text": "Jų skaičius neribojamas.",
+      "file": "k09-2.wav",
+      "duration": 1.89,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 9,
+      "cue": 3,
+      "title": "Vaizdo įrašų galerija",
+      "text": "/kʲiɛkvʲiɛˈnaːm/ įrašui pridedate naują bloką.",
+      "file": "k09-3.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 10,
+      "cue": 1,
+      "title": "Garso įrašų formatai",
+      "text": "Garso galerija groja em pė trys ir vė a vė failus.",
+      "file": "k10-1.wav",
+      "duration": 4.13,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 10,
+      "cue": 2,
+      "title": "Garso įrašų formatai",
+      "text": "vė em a formatas netinka.",
+      "file": "k10-2.wav",
+      "duration": 2.33,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 10,
+      "cue": 3,
+      "title": "Garso įrašų formatai",
+      "text": "Pasirenkate em pė trys – jis užima mažiau vietos.",
+      "file": "k10-3.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 11,
+      "cue": 1,
+      "title": "Įjungiate atnaujinimo datą",
+      "text": "Formoje randate jungiklį „Show updated“.",
+      "file": "k11-1.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 11,
+      "cue": 2,
+      "title": "Įjungiate atnaujinimo datą",
+      "text": "Perjungiate jį į „Yes“ ir išsaugote.",
+      "file": "k11-2.wav",
+      "duration": 3.103,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 11,
+      "cue": 3,
+      "title": "Įjungiate atnaujinimo datą",
+      "text": "Puslapio apačioje atsiranda atnaujinimo data.",
+      "file": "k11-3.wav",
+      "duration": 3.21,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 12,
+      "cue": 1,
+      "title": "Rašote ir formatuojate turinį",
+      "text": "/lauˈkʲɛ/ „Turinys“ rašote ir formatuojate tekstą.",
+      "file": "k12-1.wav",
+      "duration": 3.763,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 12,
+      "cue": 2,
+      "title": "Rašote ir formatuojate turinį",
+      "text": "Tarp pastraipų įkopijuojate sintaksę.",
+      "file": "k12-2.wav",
+      "duration": 2.797,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 12,
+      "cue": 3,
+      "title": "Rašote ir formatuojate turinį",
+      "text": "Svetainėje jos vietoje atsiranda galerija.",
+      "file": "k12-3.wav",
+      "duration": 3.223,
+      "fits": true,
+      "reikia_sek": 13
+    }
+  ]
+}

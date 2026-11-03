@@ -1,0 +1,333 @@
+{
+  "pamoka": "turinio-audito-irankis",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T03:40:20.812Z",
+  "balso_stiprinimas_db": 5.7,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_688_01",
+      "failas": "01-paslaugos",
+      "pavadinimas": "Rinkinys „Paslaugos“",
+      "trukme_s": 14,
+      "mp4": "viz_688_01.mp4",
+      "vtt": "viz_688_01.vtt",
+      "poster": "viz_688_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.59,
+          "tekstas": "Rinkinyje patikrinate visų paslaugų aprašymus."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 8.53,
+          "tekstas": "Prie jų turi būti dokumentai ir atsakingas asmuo."
+        },
+        {
+          "nuo_s": 9.1,
+          "iki_s": 12.79,
+          "tekstas": "Nepamirštate maitinimo, pavežėjimo, patalpų nuomos."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_688_02",
+      "failas": "02-darbuotojai",
+      "pavadinimas": "Rinkinys „Darbuotojai“",
+      "trukme_s": 14,
+      "mp4": "viz_688_02.mp4",
+      "vtt": "viz_688_02.vtt",
+      "poster": "viz_688_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.97,
+          "tekstas": "Įsitikinate, kad lankytojas ras pareigybinius aprašus."
+        },
+        {
+          "nuo_s": 5.7,
+          "iki_s": 8.31,
+          "tekstas": "Taip pat darbo laiką ir kontaktus."
+        },
+        {
+          "nuo_s": 8.6,
+          "iki_s": 12.37,
+          "tekstas": "Pavaduotojų nuotraukos ir gyvenimo aprašymai privalomi."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_688_03",
+      "failas": "03-komisijos-ir-grupes",
+      "pavadinimas": "Komisijos ir darbo grupės",
+      "trukme_s": 12,
+      "mp4": "viz_688_03.mp4",
+      "vtt": "viz_688_03.vtt",
+      "poster": "viz_688_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.02,
+          "tekstas": "Pateikiate ne tik veikiančių grupių sąrašą."
+        },
+        {
+          "nuo_s": 4.8,
+          "iki_s": 7.32,
+          "tekstas": "Prie kiekvienos nurodote jos sudėtį."
+        },
+        {
+          "nuo_s": 7.8,
+          "iki_s": 10.49,
+          "tekstas": "Ir veiklą reglamentuojančius dokumentus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_688_04",
+      "failas": "04-dokumentai",
+      "pavadinimas": "Rinkinys „Dokumentai“",
+      "trukme_s": 13,
+      "mp4": "viz_688_04.mp4",
+      "vtt": "viz_688_04.vtt",
+      "poster": "viz_688_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 2.97,
+          "tekstas": "Vien nuostatų neužtenka."
+        },
+        {
+          "nuo_s": 4.2,
+          "iki_s": 7.65,
+          "tekstas": "Pateikiate visus veiklą reglamentuojančius dokumentus."
+        },
+        {
+          "nuo_s": 8.7,
+          "iki_s": 11.95,
+          "tekstas": "Taip pat įsakymus ir biudžetines ataskaitas."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_688_05",
+      "failas": "05-komunikacija",
+      "pavadinimas": "Rinkinys „Komunikacija“",
+      "trukme_s": 11,
+      "mp4": "viz_688_05.mp4",
+      "vtt": "viz_688_05.vtt",
+      "poster": "viz_688_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.69,
+          "tekstas": "Rinkinio neužtenka tik užpildyti."
+        },
+        {
+          "nuo_s": 4.2,
+          "iki_s": 6.29,
+          "tekstas": "Tekstą perskaitote iš naujo."
+        },
+        {
+          "nuo_s": 6.6,
+          "iki_s": 9.29,
+          "tekstas": "Ar kiekvienas skaitytojas supras vienodai?"
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "viz_688_06",
+      "failas": "06-administracijai",
+      "pavadinimas": "Rinkinys „Administracijai“",
+      "trukme_s": 14,
+      "mp4": "viz_688_06.mp4",
+      "vtt": "viz_688_06.vtt",
+      "poster": "viz_688_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.39,
+          "tekstas": "Šį rinkinį peržiūri vienas iš mokyklos vadovų."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 8.23,
+          "tekstas": "Daugumą namų darbų nustato bendrieji reikalavimai."
+        },
+        {
+          "nuo_s": 9.1,
+          "iki_s": 12.23,
+          "tekstas": "Plačiau juos rasite skyrelyje „Administracijai“."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "viz_688_07",
+      "failas": "07-pries-paleidima",
+      "pavadinimas": "Rinkinys „Prieš paleidimą“",
+      "trukme_s": 12,
+      "mp4": "viz_688_07.mp4",
+      "vtt": "viz_688_07.vtt",
+      "poster": "viz_688_07.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.17,
+          "tekstas": "Paskutinis rinkinys primena smulkias detales."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 7.07,
+          "tekstas": "Jas peržiūrite prieš paleidimą."
+        },
+        {
+          "nuo_s": 7.5,
+          "iki_s": 10.64,
+          "tekstas": "Taip svetainė atitinka kokybės standartus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "viz_688_08",
+      "failas": "08-atideta",
+      "pavadinimas": "Rinkinys „Atidėta“",
+      "trukme_s": 12,
+      "mp4": "viz_688_08.mp4",
+      "vtt": "viz_688_08.vtt",
+      "poster": "viz_688_08.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.8,
+          "tekstas": "Čia atrandate puslapius, kuriems reikia daugiau dėmesio."
+        },
+        {
+          "nuo_s": 5.8,
+          "iki_s": 7.73,
+          "tekstas": "Dalį jų aptariame su jumis."
+        },
+        {
+          "nuo_s": 8.2,
+          "iki_s": 10.86,
+          "tekstas": "Kitus išsiaiškiname komandos viduje."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 9,
+      "epizodas": "viz_688_09",
+      "failas": "09-atmesta",
+      "pavadinimas": "Rinkinys „Atmesta“",
+      "trukme_s": 12,
+      "mp4": "viz_688_09.mp4",
+      "vtt": "viz_688_09.vtt",
+      "poster": "viz_688_09.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.6,
+          "tekstas": "Čia patenka puslapiai, kurių kokybę reikia tobulinti."
+        },
+        {
+          "nuo_s": 5.6,
+          "iki_s": 7.53,
+          "tekstas": "Juos peržiūrite dar kartą."
+        },
+        {
+          "nuo_s": 8,
+          "iki_s": 10.49,
+          "tekstas": "Ir pataisote atrastus netikslumus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 10,
+      "epizodas": "viz_688_10",
+      "failas": "10-ivykdyta",
+      "pavadinimas": "Rinkinys „Įvykdyta“",
+      "trukme_s": 13,
+      "mp4": "viz_688_10.mp4",
+      "vtt": "viz_688_10.vtt",
+      "poster": "viz_688_10.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.01,
+          "tekstas": "Į šį rinkinį keliauja užbaigti puslapiai."
+        },
+        {
+          "nuo_s": 4.6,
+          "iki_s": 7.25,
+          "tekstas": "Pagal jį matote užbaigtumo procentą."
+        },
+        {
+          "nuo_s": 7.6,
+          "iki_s": 11.25,
+          "tekstas": "Progresas visada prasideda nuo penkiolikos procentų."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 11,
+      "epizodas": "ep_688_11_1",
+      "failas": "11-audito-numeris",
+      "pavadinimas": "Randate puslapio audito numerį",
+      "trukme_s": 13,
+      "mp4": "ep_688_11_1.mp4",
+      "vtt": "ep_688_11_1.vtt",
+      "poster": "ep_688_11_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.33,
+          "tekstas": "Lango viršuje spaudžiate rinkinį „Visi“."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 7.35,
+          "tekstas": "Atsiveria lentelė su visais puslapiais."
+        },
+        {
+          "nuo_s": 8,
+          "iki_s": 11.66,
+          "tekstas": "Stulpelyje „Audito nr.“ randate puslapio numerį."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

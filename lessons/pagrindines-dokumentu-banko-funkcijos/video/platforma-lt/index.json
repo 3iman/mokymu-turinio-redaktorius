@@ -1,0 +1,263 @@
+{
+  "pamoka": "pagrindines-dokumentu-banko-funkcijos",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T04:34:07.477Z",
+  "balso_stiprinimas_db": 5.6,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_678_01",
+      "failas": "01-pervadinti-pries-ikeliant",
+      "pavadinimas": "Pervadinate prieš įkeldami",
+      "trukme_s": 15,
+      "mp4": "viz_678_01.mp4",
+      "vtt": "viz_678_01.vtt",
+      "poster": "viz_678_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.59,
+          "tekstas": "Dokumentų pavadinimus redaguojate dar prieš talpindami į sistemą."
+        },
+        {
+          "nuo_s": 6.5,
+          "iki_s": 8.71,
+          "tekstas": "Taip išvengiate painiavos."
+        },
+        {
+          "nuo_s": 8.9,
+          "iki_s": 12.27,
+          "tekstas": "Failą lengva rasti ir kompiuteryje, ir svetainėje."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_678_03_1",
+      "failas": "03-nauja-subkategorija",
+      "pavadinimas": "Subkategoriją kuriate iš sąrašo",
+      "trukme_s": 15,
+      "mp4": "ep_678_03_1.mp4",
+      "vtt": "ep_678_03_1.vtt",
+      "poster": "ep_678_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.17,
+          "tekstas": "Užvedate pelytę ant kategorijos pavadinimo."
+        },
+        {
+          "nuo_s": 4.8,
+          "iki_s": 7.37,
+          "tekstas": "Eilutės dešinėje išnyra mygtukai."
+        },
+        {
+          "nuo_s": 7.6,
+          "iki_s": 10.29,
+          "tekstas": "Spaudžiate „Sukurti subkategoriją“."
+        },
+        {
+          "nuo_s": 10.6,
+          "iki_s": 13.21,
+          "tekstas": "Įrašote pavadinimą ir išsaugote."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 8.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 11.8,
+          "garsas": "rasymas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_678_05_1",
+      "failas": "05-dokumentu-trynimas",
+      "pavadinimas": "Pažymėtus dokumentus ištrinate",
+      "trukme_s": 11,
+      "mp4": "ep_678_05_1.mp4",
+      "vtt": "ep_678_05_1.vtt",
+      "poster": "ep_678_05_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1,
+          "iki_s": 3.33,
+          "tekstas": "Pažymite konkrečius dokumentus."
+        },
+        {
+          "nuo_s": 3.6,
+          "iki_s": 6.73,
+          "tekstas": "Sąrašo apačioje išnyra funkciniai mygtukai."
+        },
+        {
+          "nuo_s": 7.2,
+          "iki_s": 9.61,
+          "tekstas": "Spaudžiate raudoną „Ištrinti“."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 8.2,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "ep_678_05_2",
+      "failas": "05-redagavimo-mygtukas",
+      "pavadinimas": "Iš sąrašo pereinate į redagavimą",
+      "trukme_s": 12,
+      "mp4": "ep_678_05_2.mp4",
+      "vtt": "ep_678_05_2.vtt",
+      "poster": "ep_678_05_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1,
+          "iki_s": 2.69,
+          "tekstas": "Pažymite dokumentus."
+        },
+        {
+          "nuo_s": 3.4,
+          "iki_s": 6.53,
+          "tekstas": "Apačioje spaudžiate oranžinį „Redaguoti“."
+        },
+        {
+          "nuo_s": 6.8,
+          "iki_s": 9.77,
+          "tekstas": "Atsiveria pirmo dokumento redagavimo langas."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "ep_678_06_1",
+      "failas": "06-keliu-failu-ikelimas",
+      "pavadinimas": "Kelis failus keliate iš karto",
+      "trukme_s": 14,
+      "mp4": "ep_678_06_1.mp4",
+      "vtt": "ep_678_06_1.vtt",
+      "poster": "ep_678_06_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.69,
+          "tekstas": "Daugiau nei vieną dokumentą greičiau įkelsite per kategorijų sąrašą."
+        },
+        {
+          "nuo_s": 6.8,
+          "iki_s": 9.53,
+          "tekstas": "Prie kategorijos spaudžiate „Įkelti“."
+        },
+        {
+          "nuo_s": 9.9,
+          "iki_s": 12.27,
+          "tekstas": "Failus galite tiesiog įtempti."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 7.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 11.1,
+          "garsas": "numetimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "ep_678_06_2",
+      "failas": "06-pavadinimu-taisymas",
+      "pavadinimas": "Pavadinimus taisote vieną po kito",
+      "trukme_s": 15,
+      "mp4": "ep_678_06_2.mp4",
+      "vtt": "ep_678_06_2.vtt",
+      "poster": "ep_678_06_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.33,
+          "tekstas": "Lauke „Pavadinimas“ pataisote netvarkingą pavadinimą."
+        },
+        {
+          "nuo_s": 5.6,
+          "iki_s": 9.05,
+          "tekstas": "Spaudžiate „Išsaugoti ir redaguoti sekantį“."
+        },
+        {
+          "nuo_s": 9.3,
+          "iki_s": 11.55,
+          "tekstas": "Atsiveria kito dokumento langas."
+        },
+        {
+          "nuo_s": 12,
+          "iki_s": 13.97,
+          "tekstas": "Į sąrašą grįžti nereikia."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 6.8,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "viz_678_10",
+      "failas": "10-priminimai",
+      "pavadinimas": "Priminimų funkcija",
+      "trukme_s": 14,
+      "mp4": "viz_678_10.mp4",
+      "vtt": "viz_678_10.vtt",
+      "poster": "viz_678_10.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.33,
+          "tekstas": "Priminimų funkcija ypač lengva naudotis."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 8.31,
+          "tekstas": "Darbalaukyje matote, kurį dokumentą metas peržiūrėti."
+        },
+        {
+          "nuo_s": 9.1,
+          "iki_s": 12.12,
+          "tekstas": "Rekomenduojame išnaudoti jos privalumus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

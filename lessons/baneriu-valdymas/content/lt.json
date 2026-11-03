@@ -1,0 +1,18 @@
+{
+  "lang": "lt",
+  "03_baneriu_papildinys": {
+    "_epizodas": "ep_707_03_1"
+  },
+  "03_atsitiktine_tvarka_off": {
+    "_epizodas": "ep_707_03_2"
+  },
+  "01_banerio_reikalavimai": {
+    "title": "Banerio reikalavimai",
+    "do_title": "Tinka",
+    "do_1": "Vienodas dydis 525 x 300",
+    "do_2": "Spalvotas baltame fone",
+    "do_3": "Baltas spalvotame fone",
+    "do_4": "Vietos aplink logotipą",
+    "dont_title": "Netinka"
+  }
+}

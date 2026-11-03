@@ -1,0 +1,863 @@
+{
+  "hash": "0a0af3f6334e531a1bb827491f285bd5723fd0f3fef33967d08d3ae96645a276",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 3801318113,
+  "characters": 3880,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T03:55:44.730Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Sintaksę kopijuojate iš sąrašo",
+      "text": "Sintaksių /ˈsaːraʃʲɛ/ prie /rʲɛikʲaˈmoːs/ eilutės spaudžiate „Kopijuoti“.",
+      "file": "k01-1.wav",
+      "duration": 4.39,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Sintaksę kopijuojate iš sąrašo",
+      "text": "/lauˈkʲɛ/ „Turinys“ įklijuojate ją /ˈaːtskʲira/ /ɛiluˈtʲɛ/.",
+      "file": "k01-2.wav",
+      "duration": 3.89,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Sintaksę kopijuojate iš sąrašo",
+      "text": "Nieko perrašyti nereikia.",
+      "file": "k01-3.wav",
+      "duration": 1.85,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Sintaksės anatomija",
+      "text": "Garbanoti skliausteliai rodo, kad čia sintaksė.",
+      "file": "k02-1.wav",
+      "duration": 3.09,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Sintaksės anatomija",
+      "text": "/vʲiduˈjɛ/ — funkcijos vardas, /ˈsklʲaustuosʲɛ/ — nurodymai.",
+      "file": "k02-2.wav",
+      "duration": 3.943,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Sintaksės anatomija",
+      "text": "Todėl keičiate tik reikiamą dalį.",
+      "file": "k02-3.wav",
+      "duration": 2.397,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Ką moka sintaksės",
+      "text": "Sintaksėmis įterpiate nuotraukas ir dokumentus.",
+      "file": "k03-1.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Ką moka sintaksės",
+      "text": "Taip pat darbuotojų profilius.",
+      "file": "k03-2.wav",
+      "duration": 2.09,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Ką moka sintaksės",
+      "text": "Ir straipsnius — sąrašu arba po vieną.",
+      "file": "k03-3.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Sintaksė suveikia tik su sąlyga",
+      "text": "Sintaksė parodo tik tai, kas jau /iːˈkʲɛːlta/.",
+      "file": "k04-1.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Sintaksė suveikia tik su sąlyga",
+      "text": "Nurodėte aštuonias nuotraukas — tiek jų ir turi būti.",
+      "file": "k04-2.wav",
+      "duration": 3.59,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Sintaksė suveikia tik su sąlyga",
+      "text": "/ˈpʲirma/ patikrinate galeriją.",
+      "file": "k04-3.wav",
+      "duration": 2.03,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Kada sintaksę galima pernaudoti",
+      "text": "Sintaksę su ai di arba /slʌɡ/ įklijuojate bet kur.",
+      "file": "k05-1.wav",
+      "duration": 3.93,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Kada sintaksę galima pernaudoti",
+      "text": "Ji visada parodys tą patį.",
+      "file": "k05-2.wav",
+      "duration": 2.05,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Kada sintaksę galima pernaudoti",
+      "text": "Be jų — tik to puslapio turinys.",
+      "file": "k05-3.wav",
+      "duration": 2.61,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Sintaksė be jokio stiliaus",
+      "text": "Sintaksė jau turi savo išdėstymą.",
+      "file": "k06-1.wav",
+      "duration": 2.423,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Sintaksė be jokio stiliaus",
+      "text": "Todėl antraštės, sąrašo ar spalvos jai nededate.",
+      "file": "k06-2.wav",
+      "duration": 3.797,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Sintaksė be jokio stiliaus",
+      "text": "Paliekate paprastą pastraipą.",
+      "file": "k06-3.wav",
+      "duration": 2.143,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Sintaksių sąrašą randate skirtuke",
+      "text": "Puslapio redagavime spaudžiate skirtuką „Sintaksė“.",
+      "file": "k07-1.wav",
+      "duration": 3.517,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Sintaksių sąrašą randate skirtuke",
+      "text": "/ˈsaːraʃʲɛ/ prie kiekvieno kodo yra paaiškinimas.",
+      "file": "k07-2.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Sintaksių sąrašą randate skirtuke",
+      "text": "Pavyzdžius renkatės iš čia.",
+      "file": "k07-3.wav",
+      "duration": 1.943,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Modulį „Sintaksės“ randate paieškoje",
+      "text": "tė vė es viršuje atidarote /ˈpaːiɛʃkaː/.",
+      "file": "k08-1.wav",
+      "duration": 3.477,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Modulį „Sintaksės“ randate paieškoje",
+      "text": "/ˈsaːraʃʲɛ/ pasirenkate modulį „Sintaksės“.",
+      "file": "k08-2.wav",
+      "duration": 2.85,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Modulį „Sintaksės“ randate paieškoje",
+      "text": "Čia savo sintaksių sąrašą galite papildyti patys.",
+      "file": "k08-3.wav",
+      "duration": 3.37,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 9,
+      "cue": 1,
+      "title": "Pavadinimas mažosiomis raidėmis",
+      "text": "Dokumento pavadinimą rašote mažosiomis raidėmis.",
+      "file": "k09-1.wav",
+      "duration": 3.37,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 9,
+      "cue": 2,
+      "title": "Pavadinimas mažosiomis raidėmis",
+      "text": "Bendruomenėje žinomą /ˈtrumpʲinʲiː/ paliekate kaip papildomą.",
+      "file": "k09-2.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 10,
+      "cue": 1,
+      "title": "Aiškūs dokumentų pavadinimai",
+      "text": "Pavadinimas turi būti tikslus, aiškus ir teikti informacijos.",
+      "file": "k10-1.wav",
+      "duration": 4.45,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 10,
+      "cue": 2,
+      "title": "Aiškūs dokumentų pavadinimai",
+      "text": "Įsitikinate, kad jis suprantamas skaitytojui.",
+      "file": "k10-2.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 10,
+      "cue": 3,
+      "title": "Aiškūs dokumentų pavadinimai",
+      "text": "Ne alternatyvus ir ne failo vardas.",
+      "file": "k10-3.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 11,
+      "cue": 1,
+      "title": "PDF ar doc",
+      "text": "Dokumentai būna PDF arba doc formato.",
+      "file": "k11-1.wav",
+      "duration": 3.81,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 11,
+      "cue": 2,
+      "title": "PDF ar doc",
+      "text": "PDF atsidaro naršyklėje.",
+      "file": "k11-2.wav",
+      "duration": 2.37,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 11,
+      "cue": 3,
+      "title": "PDF ar doc",
+      "text": "Doc paliekate atvirą redagavimui ir taisymui.",
+      "file": "k11-3.wav",
+      "duration": 3.503,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 12,
+      "cue": 1,
+      "title": "Failo vardo rašyba",
+      "text": "Failo /varˈdʲɛ/ nenaudojate lietuviškų raidžių, kabučių, tarpų.",
+      "file": "k12-1.wav",
+      "duration": 4.71,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 12,
+      "cue": 2,
+      "title": "Failo vardo rašyba",
+      "text": "Žodžius atskiriate apatiniu brūkšniu.",
+      "file": "k12-2.wav",
+      "duration": 2.85,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 12,
+      "cue": 3,
+      "title": "Failo vardo rašyba",
+      "text": "Vardas turi atkartoti originalų pavadinimą.",
+      "file": "k12-3.wav",
+      "duration": 3.423,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 13,
+      "cue": 1,
+      "title": "Viena ar kelios kategorijos",
+      "text": "Talpindami dokumentą priskiriate jį /koːnkˈrʲɛtʃʲai/ kategorijai.",
+      "file": "k13-1.wav",
+      "duration": 4.037,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 13,
+      "cue": 2,
+      "title": "Viena ar kelios kategorijos",
+      "text": "Vienas dokumentas gali priklausyti kelioms.",
+      "file": "k13-2.wav",
+      "duration": 2.93,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 13,
+      "cue": 3,
+      "title": "Viena ar kelios kategorijos",
+      "text": "Toks dubliavimas yra normalus.",
+      "file": "k13-3.wav",
+      "duration": 2.37,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 14,
+      "cue": 1,
+      "title": "Prezentacijas talpinate PDF",
+      "text": "Prezentaciją talpinate PDF formatu.",
+      "file": "k14-1.wav",
+      "duration": 3.61,
+      "fits": false,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 14,
+      "cue": 2,
+      "title": "Prezentacijas talpinate PDF",
+      "text": "Arba išskirstote skaidrėmis ir pateikiate kaip paveikslėlių galeriją.",
+      "file": "k14-2.wav",
+      "duration": 4.61,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 14,
+      "cue": 3,
+      "title": "Prezentacijas talpinate PDF",
+      "text": "pė pė tė failo peržiūrėti galės ne visi lankytojai.",
+      "file": "k14-3.wav",
+      "duration": 4.73,
+      "fits": false,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 15,
+      "cue": 1,
+      "title": "Dokumentų banko švara",
+      "text": "Dokumentai būna aktualūs tik tam tikrą laiką.",
+      "file": "k15-1.wav",
+      "duration": 3.29,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 15,
+      "cue": 2,
+      "title": "Dokumentų banko švara",
+      "text": "Dokumentų banką peržiūrite /rʲɛɡulʲaˈrʲai/.",
+      "file": "k15-2.wav",
+      "duration": 2.77,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 15,
+      "cue": 3,
+      "title": "Dokumentų banko švara",
+      "text": "Pasenusius ištrinate arba atnaujinate.",
+      "file": "k15-3.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 16,
+      "cue": 1,
+      "title": "Pavadinimus rašote mažosiomis raidėmis",
+      "text": "/ˈdʲidʒʲoːsʲoːs/ /ˈraidʲeːs/ /ˈsaːraʃʲɛ/ skaitomos sunkiau.",
+      "file": "k16-1.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 16,
+      "cue": 2,
+      "title": "Pavadinimus rašote mažosiomis raidėmis",
+      "text": "Pavadinimus rašote mažosiomis raidėmis.",
+      "file": "k16-2.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 16,
+      "cue": 3,
+      "title": "Pavadinimus rašote mažosiomis raidėmis",
+      "text": "Navigacijų /ˈstʲilʲus/ nurodytas programiškai.",
+      "file": "k16-3.wav",
+      "duration": 3.21,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 17,
+      "cue": 1,
+      "title": "Pavadinimas kviečia skaityti",
+      "text": "Vieno žodžio pavadinimas nieko nepasako.",
+      "file": "k17-1.wav",
+      "duration": 3.01,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 17,
+      "cue": 2,
+      "title": "Pavadinimas kviečia skaityti",
+      "text": "Parašote taip, kad /skaitanˈtʲiːsʲis/ /supˈrastuː/ ir norėtų perskaityti.",
+      "file": "k17-2.wav",
+      "duration": 4.65,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 18,
+      "cue": 1,
+      "title": "Iliustracija nėra privaloma",
+      "text": "Iliustracijos dėl pačios iliustracijos nenaudojate.",
+      "file": "k18-1.wav",
+      "duration": 4.17,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 18,
+      "cue": 2,
+      "title": "Iliustracija nėra privaloma",
+      "text": "Pranešimą apie atnaujintus nuostatus iliustruoti nebus ką.",
+      "file": "k18-2.wav",
+      "duration": 4.29,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 19,
+      "cue": 1,
+      "title": "Nurodote abu autorius",
+      "text": "Įraše nurodote straipsnio autorių.",
+      "file": "k19-1.wav",
+      "duration": 2.49,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 19,
+      "cue": 2,
+      "title": "Nurodote abu autorius",
+      "text": "Ir fotografijos autorių.",
+      "file": "k19-2.wav",
+      "duration": 1.93,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 19,
+      "cue": 3,
+      "title": "Nurodote abu autorius",
+      "text": "Mokykloje autorystė /ɡʲɛrbʲaˈma/.",
+      "file": "k19-3.wav",
+      "duration": 2.49,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 20,
+      "cue": 1,
+      "title": "Datą nurodote patys",
+      "text": "Be /ˈdaːtoːs/ sistema įrašys paskelbimo dieną.",
+      "file": "k20-1.wav",
+      "duration": 3.29,
+      "fits": false,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 20,
+      "cue": 2,
+      "title": "Datą nurodote patys",
+      "text": "Nurodote įvykio datą.",
+      "file": "k20-2.wav",
+      "duration": 1.93,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 20,
+      "cue": 3,
+      "title": "Datą nurodote patys",
+      "text": "Ją galima /atˈsuktʲi/ arba /nuˈkʲɛːltʲi/ į ateitį.",
+      "file": "k20-3.wav",
+      "duration": 3.33,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 21,
+      "cue": 1,
+      "title": "Nustatote paslėpimo datą",
+      "text": "Kvietimas į susirinkimą po jo nebeaktualus.",
+      "file": "k21-1.wav",
+      "duration": 3.53,
+      "fits": false,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 21,
+      "cue": 2,
+      "title": "Nustatote paslėpimo datą",
+      "text": "Nustatote paslėpimo datą.",
+      "file": "k21-2.wav",
+      "duration": 2.21,
+      "fits": false,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 21,
+      "cue": 3,
+      "title": "Nustatote paslėpimo datą",
+      "text": "Įrašas tampa neaktyvus pats.",
+      "file": "k21-3.wav",
+      "duration": 2.29,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 22,
+      "cue": 1,
+      "title": "Kiekvienas įrašas turi kategoriją",
+      "text": "/ˈiːraʃoː/ be kategorijos sistema išsaugoti neleis.",
+      "file": "k22-1.wav",
+      "duration": 3.93,
+      "fits": false,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 22,
+      "cue": 2,
+      "title": "Kiekvienas įrašas turi kategoriją",
+      "text": "Kategorijas renkatės pagal iš anksto susitartą strategiją.",
+      "file": "k22-2.wav",
+      "duration": 3.97,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 23,
+      "cue": 1,
+      "title": "Nuotraukas įterpiate tarp pastraipų",
+      "text": "Ilgame įraše nuotrauką įterpiate kas trečią pastraipą.",
+      "file": "k23-1.wav",
+      "duration": 3.81,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 23,
+      "cue": 2,
+      "title": "Nuotraukas įterpiate tarp pastraipų",
+      "text": "Toks įrašas ilgiau išlaiko dėmesį.",
+      "file": "k23-2.wav",
+      "duration": 2.903,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 24,
+      "cue": 1,
+      "title": "Formatuokite saikingai",
+      "text": "Puslapiuose naudojate kuo mažiau formatavimo priemonių.",
+      "file": "k24-1.wav",
+      "duration": 3.55,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 24,
+      "cue": 2,
+      "title": "Formatuokite saikingai",
+      "text": "Paryškinimo, kursyvo, sąrašo ir antraščių tikrai pakanka.",
+      "file": "k24-2.wav",
+      "duration": 4.33,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 24,
+      "cue": 3,
+      "title": "Formatuokite saikingai",
+      "text": "Kitų priemonių neliečiate.",
+      "file": "k24-3.wav",
+      "duration": 2.09,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 25,
+      "cue": 1,
+      "title": "Įklijuojate be svetimo formatavimo",
+      "text": "Spragtelite /lauˈkʲɛ/ „Turinys“.",
+      "file": "k25-1.wav",
+      "duration": 2.41,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 25,
+      "cue": 2,
+      "title": "Įklijuojate be svetimo formatavimo",
+      "text": "Tekstą įklijuojate „kontrol šift vė“.",
+      "file": "k25-2.wav",
+      "duration": 2.97,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 25,
+      "cue": 3,
+      "title": "Įklijuojate be svetimo formatavimo",
+      "text": "Jis įsideda be svetimo formatavimo.",
+      "file": "k25-3.wav",
+      "duration": 2.85,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 26,
+      "cue": 1,
+      "title": "Išvalote įklijuoto teksto formatavimą",
+      "text": "Įklijuotas tekstas atsinešė Word formatavimą.",
+      "file": "k26-1.wav",
+      "duration": 3.29,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 26,
+      "cue": 2,
+      "title": "Išvalote įklijuoto teksto formatavimą",
+      "text": "Visą jį pažymite „kontrol a“.",
+      "file": "k26-2.wav",
+      "duration": 2.37,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 26,
+      "cue": 3,
+      "title": "Išvalote įklijuoto teksto formatavimą",
+      "text": "Spaudžiate „tė iks“ – formatavimas išsivalo.",
+      "file": "k26-3.wav",
+      "duration": 3.57,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 27,
+      "cue": 1,
+      "title": "Dubliuojate per ilgą puslapį",
+      "text": "Per ilgą puslapį dalijate į du.",
+      "file": "k27-1.wav",
+      "duration": 2.41,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 27,
+      "cue": 2,
+      "title": "Dubliuojate per ilgą puslapį",
+      "text": "Medyje užvedate ant puslapio eilutės.",
+      "file": "k27-2.wav",
+      "duration": 2.77,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 27,
+      "cue": 3,
+      "title": "Dubliuojate per ilgą puslapį",
+      "text": "Spaudžiate „Dubliuoti“ – gaunate kopiją.",
+      "file": "k27-3.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 28,
+      "cue": 1,
+      "title": "Nustatote priminimą peržiūrėti",
+      "text": "Atidarote skirtuką „Auditas“.",
+      "file": "k28-1.wav",
+      "duration": 2.17,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 28,
+      "cue": 2,
+      "title": "Nustatote priminimą peržiūrėti",
+      "text": "Pasirenkate datą, kada norite puslapį peržiūrėti.",
+      "file": "k28-2.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 28,
+      "cue": 3,
+      "title": "Nustatote priminimą peržiūrėti",
+      "text": "Statusą nustatote „Peržiūrėti“ ir išsaugote.",
+      "file": "k28-3.wav",
+      "duration": 3.423,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 29,
+      "cue": 1,
+      "title": "Dalinatės užkoduota nuoroda",
+      "text": "Puslapio apačioje spaudžiate „Peržiūrėti“.",
+      "file": "k29-1.wav",
+      "duration": 3.037,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 29,
+      "cue": 2,
+      "title": "Dalinatės užkoduota nuoroda",
+      "text": "Naršyklėje matote užkoduotą puslapio adresą.",
+      "file": "k29-2.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 29,
+      "cue": 3,
+      "title": "Dalinatės užkoduota nuoroda",
+      "text": "Jį žino tik tie, su kuriais pasidalinate.",
+      "file": "k29-3.wav",
+      "duration": 2.93,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 30,
+      "cue": 1,
+      "title": "Puslapio ir navigacijos pavadinimai",
+      "text": "Navigacijos pavadinimas negali būti ilgesnis nei trys žodžiai.",
+      "file": "k30-1.wav",
+      "duration": 3.943,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 30,
+      "cue": 2,
+      "title": "Puslapio ir navigacijos pavadinimai",
+      "text": "Todėl jis gali /nʲɛsuˈtaptʲi/ su puslapio pavadinimu.",
+      "file": "k30-2.wav",
+      "duration": 2.997,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 30,
+      "cue": 3,
+      "title": "Puslapio ir navigacijos pavadinimai",
+      "text": "Meniu paliekate trumpą.",
+      "file": "k30-3.wav",
+      "duration": 1.983,
+      "fits": true,
+      "reikia_sek": 14
+    }
+  ]
+}

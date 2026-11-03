@@ -1,0 +1,283 @@
+{
+  "hash": "0230fbfc88a8c8d4f73a08c63cecd081442efe72921f015c080c3bd19013b394",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 985205333,
+  "characters": 1293,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T03:22:03.506Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Tekstą lygiuojate pagal kairį kraštą",
+      "text": "Lygiuojant pagal abu kraštus tarp žodžių lieka dideli /ˈtaːrpai/.",
+      "file": "k01-1.wav",
+      "duration": 4.31,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Tekstą lygiuojate pagal kairį kraštą",
+      "text": "Brūkšnelius dėlioti užtrunka.",
+      "file": "k01-2.wav",
+      "duration": 2.05,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Tekstą lygiuojate pagal kairį kraštą",
+      "text": "Renkatės lygiavimą pagal kairį kraštą.",
+      "file": "k01-3.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Pastraipas skiriate vienu būdu",
+      "text": "Tarpas ir atitraukimas /atˈlʲiɛːka/ tą patį darbą.",
+      "file": "k02-1.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Pastraipas skiriate vienu būdu",
+      "text": "Naudojate vieną iš jų, ne abu kartu.",
+      "file": "k02-2.wav",
+      "duration": 3.01,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Pastraipas skiriate vienu būdu",
+      "text": "Atitraukimas tarpais mažame /ɛkraˈnʲɛ/ atrodo netvarkingai.",
+      "file": "k02-3.wav",
+      "duration": 3.89,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Sąrašą sudarote redaktoriaus funkcija",
+      "text": "Savadarbiai ženklai /ˈsaːraʃʲɛ/ vienas kito neatitinka.",
+      "file": "k03-1.wav",
+      "duration": 3.61,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Sąrašą sudarote redaktoriaus funkcija",
+      "text": "Sąrašą sudarote teksto redaktoriaus funkcija.",
+      "file": "k03-2.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Sąrašą sudarote redaktoriaus funkcija",
+      "text": "Lankytojas mato vientisą sąrašą.",
+      "file": "k03-3.wav",
+      "duration": 2.57,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Eilutes paverčiate sąrašu",
+      "text": "Pažymite eilutes, kurias norite /paˈvʲɛrstʲi/ sąrašu.",
+      "file": "k04-1.wav",
+      "duration": 3.41,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Eilutes paverčiate sąrašu",
+      "text": "Redaktoriaus /ˈjuostoːjɛ/ spaudžiate sąrašo mygtuką.",
+      "file": "k04-2.wav",
+      "duration": 3.45,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "„Enter“ pradeda naują pastraipą",
+      "text": "Pastraipa yra tekstas nuo vieno „Enter“ iki kito.",
+      "file": "k05-1.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "„Enter“ pradeda naują pastraipą",
+      "text": "„šift enter“ tik nukelia eilutę.",
+      "file": "k05-2.wav",
+      "duration": 2.45,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "„Enter“ pradeda naują pastraipą",
+      "text": "Citatoms ar himno eilutėms naudojate jį.",
+      "file": "k05-3.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Pastraipas atskiriate „Enter“ mygtuku",
+      "text": "Pastraipos /ɡaˈlʲɛ/ paspaudžiate „Enter“.",
+      "file": "k06-1.wav",
+      "duration": 2.61,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Pastraipas atskiriate „Enter“ mygtuku",
+      "text": "Rašote naują pastraipą, tarpas atsiranda savaime.",
+      "file": "k06-2.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Autorių nurodote funkcija „Autoriai“",
+      "text": "Autorių nurodote ne raštu teksto apačioje.",
+      "file": "k07-1.wav",
+      "duration": 3.01,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Autorių nurodote funkcija „Autoriai“",
+      "text": "Pasirenkate jį funkcija „Autoriai“.",
+      "file": "k07-2.wav",
+      "duration": 2.61,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Autorių nurodote funkcija „Autoriai“",
+      "text": "Paspaudus vardą matomi visi jo /ˈiːraʃai/.",
+      "file": "k07-3.wav",
+      "duration": 3.09,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Titulinei rinkitės horizontalią nuotrauką",
+      "text": "Vertikali nuotrauka /ˈsaːraʃʲɛ/ /nukʲɛrpaˈma/.",
+      "file": "k08-1.wav",
+      "duration": 2.69,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Titulinei rinkitės horizontalią nuotrauką",
+      "text": "Titulinei renkatės horizontalią.",
+      "file": "k08-2.wav",
+      "duration": 2.37,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Titulinei rinkitės horizontalią nuotrauką",
+      "text": "Plakatą įkeliate į patį straipsnį.",
+      "file": "k08-3.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 9,
+      "cue": 1,
+      "title": "Vertikalioms nuotraukoms naudojate sintakses",
+      "text": "Jei pakanka /ɣoːrʲizoːntaˈlʲuː/ nuotraukų, naudojate tik jas.",
+      "file": "k09-1.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 9,
+      "cue": 2,
+      "title": "Vertikalioms nuotraukoms naudojate sintakses",
+      "text": "Vertikalias įterpiate sintaksėmis, skirtomis plakatams ir diplomams.",
+      "file": "k09-2.wav",
+      "duration": 4.81,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 10,
+      "cue": 1,
+      "title": "Kitos pasikartojančios klaidos",
+      "text": "Šios /ˈklaidoːs/ kartojasi dažniausiai.",
+      "file": "k10-1.wav",
+      "duration": 2.37,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 10,
+      "cue": 2,
+      "title": "Kitos pasikartojančios klaidos",
+      "text": "Nuorodos, nuotraukos, antraštės ir stiliaus šiukšlės.",
+      "file": "k10-2.wav",
+      "duration": 4.05,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 10,
+      "cue": 3,
+      "title": "Kitos pasikartojančios klaidos",
+      "text": "Plačiau jas rasite kurse „Puslapių valdymas“.",
+      "file": "k10-3.wav",
+      "duration": 3.063,
+      "fits": true,
+      "reikia_sek": 13
+    }
+  ]
+}

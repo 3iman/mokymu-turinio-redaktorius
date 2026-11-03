@@ -1,0 +1,90 @@
+{
+ "pamokos_slug": "karuseles-valdymas",
+ "pamoka_id": "pam_711",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_711_02",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_711_02",
+   "pamoka": "pam_711",
+   "failas": "02-karuseles-vizualas",
+   "trukme_s": 18,
+   "ekrano_tekstai": [
+    "1920 x 606",
+    "1180 pikselių",
+    "Kvadratas telefone"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "1920 x 606",
+    "1180"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo gimnazija"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_711_04_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_711_04",
+   "pamoka": "pam_711",
+   "failas": "04-srifto-dydziai",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Title Font Size",
+    "Mobile Title Font Size",
+    "Description Font Size"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-row",
+    "tvs-cursor"
+   ],
+   "tarimo_kandidatai": [
+    "Title Font Size",
+    "Mobile Title Font Size",
+    "Description Font Size"
+   ],
+   "demo_duomenys": {
+    "irasas": "Mokyklą pristatantis"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_711_05_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_711_05",
+   "pamoka": "pam_711",
+   "failas": "05-teksto-spalva",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Text Color",
+    "Slides"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "Text Color",
+    "Slides"
+   ],
+   "demo_duomenys": {
+    "irasas": "Mokyklą pristatantis",
+    "mokykla": "Demo gimnazija"
+   },
+   "naudoja_ir": [
+    "dal_711_90"
+   ]
+  }
+ ]
+}

@@ -16,6 +16,11 @@
   .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
   .cursor-wrap .tvs-cursor { left: 0; top: 0; }
   [class*="caret-"] { opacity: 0; }
+.two { display: grid; grid-template-columns: 160px 1fr 200px; gap: 24px; } .two .tvs-field + .tvs-field { border-top: 0; }
+  .cke-field .tvs-cke-body { min-height: 90px; } .cke-field .tvs-cke-top .tvs-cke-row:nth-child(n+2) { display: none; }
+  .tvs-select { position: relative; } .c-v { position: absolute; left: 18px; color: var(--tvs-text); }
+  .dd-wrap { position: relative; height: 0; z-index: 5; } .cat-dd { position: absolute; left: 0; top: -2px; width: 100%; } .tvs-acc { max-width: 1100px; } .acc-new { }
+  /* galutinė būsena (epizodai.js) — po pamokos CSS, kad visada laimėtų */
   .stage > .scr:nth-of-type(1) { opacity: 0; }
   .stage > .scr:nth-of-type(2) { opacity: 1; }
   .cursor-wrap { transform: translate(1376.0px, 817.0px); }
@@ -26,10 +31,6 @@
   .c-v { opacity: 1; }
   .acc-new { opacity: 1; }
 
-.two { display: grid; grid-template-columns: 160px 1fr 200px; gap: 24px; } .two .tvs-field + .tvs-field { border-top: 0; }
-  .cke-field .tvs-cke-body { min-height: 90px; } .cke-field .tvs-cke-top .tvs-cke-row:nth-child(n+2) { display: none; }
-  .tvs-select { position: relative; } .c-v { position: absolute; left: 18px; color: var(--tvs-text); }
-  .dd-wrap { position: relative; height: 0; z-index: 5; } .cat-dd { position: absolute; left: 0; top: -2px; width: 100%; } .tvs-acc { max-width: 1100px; } .acc-new { }
 </style>
 </head>
 <body>

@@ -1,0 +1,163 @@
+{
+  "hash": "38c63e25c41471e7e8f3c5de6be9b060b46a961ce973e5deb1b011bc2253c800",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 908891041,
+  "characters": 742,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T03:55:55.562Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Kurkite lenteles ten, kur gebate",
+      "text": "Lentelę paruošiate sau įprastame redaktoriuje.",
+      "file": "k01-1.wav",
+      "duration": 3.23,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Kurkite lenteles ten, kur gebate",
+      "text": "Galutinį rezultatą nukopijuojate į turinio redaktorių.",
+      "file": "k01-2.wav",
+      "duration": 3.65,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Kurkite lenteles ten, kur gebate",
+      "text": "Taip išvengiate nesusipratimų ir dirbate greičiau.",
+      "file": "k01-3.wav",
+      "duration": 3.49,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Lygiuokite turinį pagal kairę",
+      "text": "Pagal kairę išlygiuotas turinys skaitomas lengviau.",
+      "file": "k02-1.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Lygiuokite turinį pagal kairę",
+      "text": "Tai numatytasis /ˈstʲilʲus/, todėl pastangų nereikia.",
+      "file": "k02-2.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Lygiuokite turinį pagal kairę",
+      "text": "Keisdami lygiavimą pažeidžiate vienodumo taisyklę.",
+      "file": "k02-3.wav",
+      "duration": 3.57,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Nestilizuokite lentelių",
+      "text": "Stilizuotos lentelės neša daug ha tė em el šiukšlių.",
+      "file": "k03-1.wav",
+      "duration": 3.65,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Nestilizuokite lentelių",
+      "text": "Dėl jų lentelė išsisaugo tik iš dalies.",
+      "file": "k03-2.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Nestilizuokite lentelių",
+      "text": "Tamsaus fono /rʲɛʒʲiˈmʲɛ/ jos tampa /nʲɛpˈrʲiɛinamoːs/.",
+      "file": "k03-3.wav",
+      "duration": 3.143,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Nepersistenkite su įmantrumu",
+      "text": "Kuo sudėtingesnė lentelė, tuo sunkiau ją atvaizduoti.",
+      "file": "k04-1.wav",
+      "duration": 3.597,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Nepersistenkite su įmantrumu",
+      "text": "Lankytojui ji /ˈruːpʲi/ tik kaip skaitomas formatas.",
+      "file": "k04-2.wav",
+      "duration": 3.303,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Nepersistenkite su įmantrumu",
+      "text": "Todėl renkatės paprastą struktūrą.",
+      "file": "k04-3.wav",
+      "duration": 2.437,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Pirma eilutė – spalvota kepurė",
+      "text": "Lenteles naudojame su spalvota /kʲɛpuˈrʲɛ/.",
+      "file": "k05-1.wav",
+      "duration": 2.77,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Pirma eilutė – spalvota kepurė",
+      "text": "Fonas yra dominuojanti svetainės /spalˈva/.",
+      "file": "k05-2.wav",
+      "duration": 2.85,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Pirma eilutė – spalvota kepurė",
+      "text": "Tekstas joje baltas.",
+      "file": "k05-3.wav",
+      "duration": 1.93,
+      "fits": true,
+      "reikia_sek": 12
+    }
+  ]
+}

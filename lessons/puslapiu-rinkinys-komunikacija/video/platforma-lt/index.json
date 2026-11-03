@@ -1,0 +1,433 @@
+{
+  "pamoka": "puslapiu-rinkinys-komunikacija",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T03:40:19.222Z",
+  "balso_stiprinimas_db": 5.8,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_686_01",
+      "failas": "01-pasiekimai",
+      "pavadinimas": "Pasiekimų puslapis",
+      "trukme_s": 13,
+      "mp4": "viz_686_01.mp4",
+      "vtt": "viz_686_01.vtt",
+      "poster": "viz_686_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.87,
+          "tekstas": "Pasiekimuose dažnai atsiduria statistikos lentelė."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 8.67,
+          "tekstas": "Vietoje jos atrenkate svarbiausius pasiekimus."
+        },
+        {
+          "nuo_s": 9.1,
+          "iki_s": 11.59,
+          "tekstas": "Formatą išlaikote vienodą visiems."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_686_02_1",
+      "failas": "02-gpm-skaiciai",
+      "pavadinimas": "Pakeičiate paramos skaičius",
+      "trukme_s": 13,
+      "mp4": "ep_686_02_1.mp4",
+      "vtt": "ep_686_02_1.vtt",
+      "poster": "ep_686_02_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.73,
+          "tekstas": "Kasmet pakeičiate tik paramos skaičius Vertimų modulyje."
+        },
+        {
+          "nuo_s": 6,
+          "iki_s": 7.85,
+          "tekstas": "Formato keisti nereikia."
+        },
+        {
+          "nuo_s": 8.2,
+          "iki_s": 11.34,
+          "tekstas": "Svetainės puslapyje matote naujus skaičius."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 9.6,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_686_02_2",
+      "failas": "02-gpm-ataskaita",
+      "pavadinimas": "Pridedate paramos ataskaitą",
+      "trukme_s": 14,
+      "mp4": "ep_686_02_2.mp4",
+      "vtt": "ep_686_02_2.vtt",
+      "poster": "ep_686_02_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.64,
+          "tekstas": "Prie paramos informacijos pridedate ataskaitą."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 8.7,
+          "tekstas": "Ataskaitos sintaksę įklijuojate ir atnaujinate."
+        },
+        {
+          "nuo_s": 9.1,
+          "iki_s": 12.38,
+          "tekstas": "Puslapyje atsiranda nauja dokumento nuoroda."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "paemimas"
+        },
+        {
+          "ties_s": 6.6,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_686_03",
+      "failas": "03-projektine-veikla",
+      "pavadinimas": "Projektinė veikla rinkinyje",
+      "trukme_s": 13,
+      "mp4": "viz_686_03.mp4",
+      "vtt": "viz_686_03.vtt",
+      "poster": "viz_686_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.17,
+          "tekstas": "Projektų informacijai svarbus vientisumas."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 7.71,
+          "tekstas": "Visus aprašymus pateikiate tuo pačiu formatu."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 11.37,
+          "tekstas": "Ypač svarbu Europos Sąjungos projektams."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_686_04",
+      "failas": "04-filosofija-misija-vizija",
+      "pavadinimas": "Filosofija, misija, vizija",
+      "trukme_s": 13,
+      "mp4": "viz_686_04.mp4",
+      "vtt": "viz_686_04.vtt",
+      "poster": "viz_686_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.09,
+          "tekstas": "Turinį šiam puslapiui greičiausiai jau turite."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 7.93,
+          "tekstas": "Įsitikinate, kad tekstus galima kopijuoti."
+        },
+        {
+          "nuo_s": 8.5,
+          "iki_s": 11.91,
+          "tekstas": "Paveikslėlyje ar prezentacijoje jų nededate."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "viz_686_05",
+      "failas": "05-mokyklos-himnas",
+      "pavadinimas": "Mokyklos himnas",
+      "trukme_s": 12,
+      "mp4": "viz_686_05.mp4",
+      "vtt": "viz_686_05.vtt",
+      "poster": "viz_686_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.97,
+          "tekstas": "Skelbdami himną nurodote jo autorių."
+        },
+        {
+          "nuo_s": 4.2,
+          "iki_s": 6.89,
+          "tekstas": "Taip pat pasinaudojate muzikos grotuvu."
+        },
+        {
+          "nuo_s": 7.5,
+          "iki_s": 10.36,
+          "tekstas": "Himną įkeliate MP3 formatu."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "viz_686_06",
+      "failas": "06-puslapis-nuorodos",
+      "pavadinimas": "Puslapis „Nuorodos“",
+      "trukme_s": 14,
+      "mp4": "viz_686_06.mp4",
+      "vtt": "viz_686_06.vtt",
+      "poster": "viz_686_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.97,
+          "tekstas": "Puslapis „Nuorodos“ nėra naudingų nuorodų sąrašas."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 8.46,
+          "tekstas": "Čia pateikiate susijusių institucijų svetaines."
+        },
+        {
+          "nuo_s": 9.2,
+          "iki_s": 12.7,
+          "tekstas": "Ministerijos, savivaldybės ir jos įstaigų."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "viz_686_07",
+      "failas": "07-apie-mokykla",
+      "pavadinimas": "Apie mokyklą",
+      "trukme_s": 13,
+      "mp4": "viz_686_07.mp4",
+      "vtt": "viz_686_07.vtt",
+      "poster": "viz_686_07.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.2,
+          "tekstas": "Čia pateikiate bendrą informaciją apie mokyklą."
+        },
+        {
+          "nuo_s": 5.1,
+          "iki_s": 6.71,
+          "tekstas": "Ir jos istoriją."
+        },
+        {
+          "nuo_s": 7.5,
+          "iki_s": 11.8,
+          "tekstas": "Istoriją reguliariai atnaujinate, minite svarbius įvykius."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 9,
+      "epizodas": "viz_686_08",
+      "failas": "08-mokyklos-simboliai",
+      "pavadinimas": "Mokyklos simboliai",
+      "trukme_s": 12,
+      "mp4": "viz_686_08.mp4",
+      "vtt": "viz_686_08.vtt",
+      "poster": "viz_686_08.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.88,
+          "tekstas": "Puslapyje talpinate mokyklos logotipą."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 6.05,
+          "tekstas": "Ir vėliavos nuotrauką."
+        },
+        {
+          "nuo_s": 6.8,
+          "iki_s": 10.97,
+          "tekstas": "Turite gaires? Pridedate jas ir vektorinius failus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 10,
+      "epizodas": "viz_686_09",
+      "failas": "09-tradiciniai-renginiai",
+      "pavadinimas": "Tradiciniai renginiai",
+      "trukme_s": 12,
+      "mp4": "viz_686_09.mp4",
+      "vtt": "viz_686_09.vtt",
+      "poster": "viz_686_09.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.73,
+          "tekstas": "Mokyklos turi nemažai tradicinių kasmetinių renginių."
+        },
+        {
+          "nuo_s": 5.6,
+          "iki_s": 8.25,
+          "tekstas": "Šis puslapis skirtas būtent jiems."
+        },
+        {
+          "nuo_s": 8.5,
+          "iki_s": 10.92,
+          "tekstas": "Visus surašote vienoje vietoje."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 11,
+      "epizodas": "viz_686_10",
+      "failas": "10-bendradarbiavimas",
+      "pavadinimas": "Socialiniai partneriai",
+      "trukme_s": 13,
+      "mp4": "viz_686_10.mp4",
+      "vtt": "viz_686_10.vtt",
+      "poster": "viz_686_10.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.72,
+          "tekstas": "Puslapyje išvardinate savo socialinius partnerius."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 8.55,
+          "tekstas": "Vizualiai patrauklesnis būdas yra logotipai."
+        },
+        {
+          "nuo_s": 9,
+          "iki_s": 11.38,
+          "tekstas": "Juos sudėliojate vienodo dydžio."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 12,
+      "epizodas": "viz_686_11",
+      "failas": "11-ugdymo-aplinka",
+      "pavadinimas": "Ugdymo aplinka",
+      "trukme_s": 14,
+      "mp4": "viz_686_11.mp4",
+      "vtt": "viz_686_11.vtt",
+      "poster": "viz_686_11.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.28,
+          "tekstas": "Čia parodote tai, ką turite gražiausio."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 8.95,
+          "tekstas": "Klases, koridorius, sporto salę, maitinimo patalpas."
+        },
+        {
+          "nuo_s": 9.1,
+          "iki_s": 12.27,
+          "tekstas": "Geros kokybės nuotraukos pakelia įvaizdį."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 13,
+      "epizodas": "viz_686_12",
+      "failas": "12-about-us",
+      "pavadinimas": "Skyrelis kitakalbiams",
+      "trukme_s": 14,
+      "mp4": "viz_686_12.mp4",
+      "vtt": "viz_686_12.vtt",
+      "poster": "viz_686_12.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.41,
+          "tekstas": "Šio skyrelio tikslas yra papasakoti apie įstaigą kitakalbiams."
+        },
+        {
+          "nuo_s": 6.3,
+          "iki_s": 8.99,
+          "tekstas": "Tai privalu pagal bendruosius reikalavimus."
+        },
+        {
+          "nuo_s": 9.9,
+          "iki_s": 12.87,
+          "tekstas": "Kalbą pasirenkate pagal savo bendruomenę."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 14,
+      "epizodas": "viz_686_13",
+      "failas": "13-priemimas",
+      "pavadinimas": "Priėmimas į mokyklą",
+      "trukme_s": 13,
+      "mp4": "viz_686_13.mp4",
+      "vtt": "viz_686_13.vtt",
+      "poster": "viz_686_13.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.26,
+          "tekstas": "Tėvams tai daug streso keliantis įvykis."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 8.03,
+          "tekstas": "Todėl rašote empatiškai, trumpai ir aiškiai."
+        },
+        {
+          "nuo_s": 8.2,
+          "iki_s": 11.17,
+          "tekstas": "Pridedate nuorodas į priėmimo dokumentus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

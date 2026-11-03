@@ -1,0 +1,283 @@
+{
+  "hash": "64748819df048ebfcac91c8c63d0dd6e73445e4bd5d0201791baaa8f398fb42c",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 453315185,
+  "characters": 1282,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T03:20:38.747Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Aštuoni kūrimo etapai",
+      "text": "Svetainė /kurʲaˈma/ aštuoniais etapais.",
+      "file": "k01-1.wav",
+      "duration": 2.99,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Aštuoni kūrimo etapai",
+      "text": "Pirmasis yra demo /ˈvʲɛrsʲija/, kurią stebite visą projektą.",
+      "file": "k01-2.wav",
+      "duration": 4.05,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Aštuoni kūrimo etapai",
+      "text": "Paskutinis yra startas.",
+      "file": "k01-3.wav",
+      "duration": 2.21,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Perkėlimas vyksta vieną kartą",
+      "text": "Turinį perkeliame rankiniu būdu ir vieną kartą.",
+      "file": "k02-1.wav",
+      "duration": 3.37,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Perkėlimas vyksta vieną kartą",
+      "text": "Vėlesnius atnaujinimus darote patys.",
+      "file": "k02-2.wav",
+      "duration": 2.703,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Perkėlimas vyksta vieną kartą",
+      "text": "Todėl padedate /nʲɛpraˈlʲɛːistʲi/ svarbių dalykų.",
+      "file": "k02-3.wav",
+      "duration": 2.917,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Kaip siųsti turinį",
+      "text": "Turinį siunčiate taip, kad jo nereikėtų maketuoti.",
+      "file": "k03-1.wav",
+      "duration": 3.37,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Kaip siųsti turinį",
+      "text": "Atsakyme nurodote pastebėjimo numerį.",
+      "file": "k03-2.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Kaip siųsti turinį",
+      "text": "Tekstų PDF ar jot pė gė formatu nesiunčiate.",
+      "file": "k03-3.wav",
+      "duration": 4.41,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Baigiamieji darbai",
+      "text": "Didiesiems darbams einant į pabaigą ateina smulkmenos.",
+      "file": "k04-1.wav",
+      "duration": 3.81,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Baigiamieji darbai",
+      "text": "Importuojame banerius, naujienas ir darbuotojų sąrašą.",
+      "file": "k04-2.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Baigiamieji darbai",
+      "text": "Dabar grįžtate ir prie spalvų.",
+      "file": "k04-3.wav",
+      "duration": 2.423,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Konsultacijai trisdešimt minučių",
+      "text": "Konsultacija trunka trisdešimt minučių.",
+      "file": "k05-1.wav",
+      "duration": 2.637,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Konsultacijai trisdešimt minučių",
+      "text": "Nepasiruošus spėjame tik /ˈpaːɡrʲindus/.",
+      "file": "k05-2.wav",
+      "duration": 2.85,
+      "fits": false,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Konsultacijai trisdešimt minučių",
+      "text": "Peržiūrėję kursus klausiate svarbiausio.",
+      "file": "k05-3.wav",
+      "duration": 2.69,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Turinio patvirtinimas prieš startą",
+      "text": "Koordinatoriai apie visą turinį žino ne viską.",
+      "file": "k06-1.wav",
+      "duration": 3.303,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Turinio patvirtinimas prieš startą",
+      "text": "Prieš startą svetainę parodote /vʲiˈsaːm/ kolektyvui.",
+      "file": "k06-2.wav",
+      "duration": 3.277,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Turinio patvirtinimas prieš startą",
+      "text": "Taip nepraleidžiate kam nors svarbaus turinio.",
+      "file": "k06-3.wav",
+      "duration": 2.85,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Domeno nukreipimas",
+      "text": "Naują svetainės adresą sugalvojate jūs.",
+      "file": "k07-1.wav",
+      "duration": 3.25,
+      "fits": false,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Domeno nukreipimas",
+      "text": "Registracija ir prieglauda yra partnerio „Wolet“ darbas.",
+      "file": "k07-2.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Domeno nukreipimas",
+      "text": "Jei prieigos prie domeno neturite, pranešate iš /ˈkartoː/.",
+      "file": "k07-3.wav",
+      "duration": 3.65,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Išjungiate pranešimų juostelę",
+      "text": "Po starto išjungiate /pranʲɛˈʃʲimuː/ juostelę.",
+      "file": "k08-1.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Išjungiate pranešimų juostelę",
+      "text": "Įraše perjungiate rodymą ir išsaugote.",
+      "file": "k08-2.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Išjungiate pranešimų juostelę",
+      "text": "Svetainės viršuje juostelės nebematote.",
+      "file": "k08-3.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 9,
+      "cue": 1,
+      "title": "Keturi darbai po starto",
+      "text": "Įsitikinate, kad senoji svetainė /iʃjunɡˈta/.",
+      "file": "k09-1.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 9,
+      "cue": 2,
+      "title": "Keturi darbai po starto",
+      "text": "Patikrinate adresą /paiɛʃˈkoːs/ sistemose ir kataloguose.",
+      "file": "k09-2.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 9,
+      "cue": 3,
+      "title": "Keturi darbai po starto",
+      "text": "Pranešate bendruomenei ir išjungiate juostelę.",
+      "file": "k09-3.wav",
+      "duration": 3.37,
+      "fits": true,
+      "reikia_sek": 14
+    }
+  ]
+}

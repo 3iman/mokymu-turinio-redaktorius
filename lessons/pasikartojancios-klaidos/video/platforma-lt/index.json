@@ -1,0 +1,457 @@
+{
+  "pamoka": "pasikartojancios-klaidos",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T03:54:03.546Z",
+  "balso_stiprinimas_db": 5.5,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_676_01",
+      "failas": "01-rinkinio-sintakse",
+      "pavadinimas": "Pavieniui ar rinkiniu",
+      "trukme_s": 14,
+      "mp4": "viz_676_01.mp4",
+      "vtt": "viz_676_01.vtt",
+      "poster": "viz_676_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.91,
+          "tekstas": "Kiekvienam dokumentui įterpiate po atskirą sintaksę."
+        },
+        {
+          "nuo_s": 5.5,
+          "iki_s": 8.43,
+          "tekstas": "Rinkinio sintaksę įterpiate tik kartą."
+        },
+        {
+          "nuo_s": 8.7,
+          "iki_s": 11.91,
+          "tekstas": "Naujam dokumentui užtenka priskirti kategoriją."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_676_02",
+      "failas": "02-metai-priekyje",
+      "pavadinimas": "Metai pavadinimo priekyje",
+      "trukme_s": 14,
+      "mp4": "viz_676_02.mp4",
+      "vtt": "viz_676_02.vtt",
+      "poster": "viz_676_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.81,
+          "tekstas": "Kai metai kartais gale, kartais priekyje, sąrašas pakrinka."
+        },
+        {
+          "nuo_s": 6.2,
+          "iki_s": 9.53,
+          "tekstas": "Metus ir ketvirčius rašote pavadinimo priekyje."
+        },
+        {
+          "nuo_s": 10.1,
+          "iki_s": 12.43,
+          "tekstas": "Tada dokumentai sugula tvarkingai."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_676_03",
+      "failas": "03-kategorija-privaloma",
+      "pavadinimas": "Dokumentui privaloma kategorija",
+      "trukme_s": 14,
+      "mp4": "viz_676_03.mp4",
+      "vtt": "viz_676_03.vtt",
+      "poster": "viz_676_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.97,
+          "tekstas": "Įkėlus dokumentą be kategorijos, jo nesimato dokumentų puslapyje."
+        },
+        {
+          "nuo_s": 6.7,
+          "iki_s": 9.7,
+          "tekstas": "Įkeldami pasirenkate konkrečią kategoriją."
+        },
+        {
+          "nuo_s": 10.2,
+          "iki_s": 12.9,
+          "tekstas": "Tinkamos nerandate – sukuriate naują."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_676_04",
+      "failas": "04-banko-prieziura",
+      "pavadinimas": "Dokumentų banko priežiūra",
+      "trukme_s": 14,
+      "mp4": "viz_676_04.mp4",
+      "vtt": "viz_676_04.vtt",
+      "poster": "viz_676_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.41,
+          "tekstas": "Dokumentus peržiūrite iškart po perkėlimo į naują svetainę."
+        },
+        {
+          "nuo_s": 6.2,
+          "iki_s": 8.17,
+          "tekstas": "Pasenusius pašalinate."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 11.53,
+          "tekstas": "Visą banką sutvarkote bent kartą per metus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_676_05",
+      "failas": "05-be-mokyklos-pavadinimo",
+      "pavadinimas": "Be mokyklos pavadinimo",
+      "trukme_s": 13,
+      "mp4": "viz_676_05.mp4",
+      "vtt": "viz_676_05.vtt",
+      "poster": "viz_676_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.81,
+          "tekstas": "Ilgas mokyklos pavadinimas priekyje apsunkina sąrašo nuskaitymą."
+        },
+        {
+          "nuo_s": 6.6,
+          "iki_s": 9.33,
+          "tekstas": "Dokumentai ir taip yra jūsų svetainėje."
+        },
+        {
+          "nuo_s": 9.9,
+          "iki_s": 11.95,
+          "tekstas": "Pavadinime jo nerašote."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "viz_676_06",
+      "failas": "06-ketvirciai-be-kategoriju",
+      "pavadinimas": "Ketvirčiai be atskirų kategorijų",
+      "trukme_s": 15,
+      "mp4": "viz_676_06.mp4",
+      "vtt": "viz_676_06.vtt",
+      "poster": "viz_676_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.77,
+          "tekstas": "Atskiros kategorijos metams ir ketvirčiams tik apsunkina darbą."
+        },
+        {
+          "nuo_s": 6.6,
+          "iki_s": 9.98,
+          "tekstas": "Metus ir ketvirčius rašote pavadinimų priekyje."
+        },
+        {
+          "nuo_s": 10.5,
+          "iki_s": 13.36,
+          "tekstas": "Iš kelių dokumentų sudedate archyvą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "viz_699_01",
+      "failas": "01-nuoroda-ar-grotuvas",
+      "pavadinimas": "Nuoroda ar grotuvas",
+      "trukme_s": 13,
+      "mp4": "viz_699_01.mp4",
+      "vtt": "viz_699_01.vtt",
+      "poster": "viz_699_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.38,
+          "tekstas": "Pilna „YouTube“ nuoroda išveda skaitytoją iš svetainės."
+        },
+        {
+          "nuo_s": 5.9,
+          "iki_s": 8.87,
+          "tekstas": "Vaizdo įrašą įterpiate grotuvo funkcija."
+        },
+        {
+          "nuo_s": 9.2,
+          "iki_s": 11.53,
+          "tekstas": "Tada skaitytojas lieka pas jus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "viz_699_02",
+      "failas": "02-prastos-nuotraukos",
+      "pavadinimas": "Prastos kokybės nuotraukos",
+      "trukme_s": 13,
+      "mp4": "viz_699_02.mp4",
+      "vtt": "viz_699_02.vtt",
+      "poster": "viz_699_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.3,
+          "iki_s": 5.27,
+          "tekstas": "Mažų, blankių ar išsiliejusių nuotraukų netalpinate."
+        },
+        {
+          "nuo_s": 5.7,
+          "iki_s": 8.51,
+          "tekstas": "Netinka ir keliančios neigiamas emocijas."
+        },
+        {
+          "nuo_s": 9.1,
+          "iki_s": 11.75,
+          "tekstas": "Grąžinate ir prašote tinkamesnės."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 9,
+      "epizodas": "viz_699_03",
+      "failas": "03-antrastes-palengvina-skaityma",
+      "pavadinimas": "Antraštės palengvina skaitymą",
+      "trukme_s": 13,
+      "mp4": "viz_699_03.mp4",
+      "vtt": "viz_699_03.vtt",
+      "poster": "viz_699_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.65,
+          "tekstas": "Vientisa teksto paklodė atbaido skaitytoją."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 8.26,
+          "tekstas": "Ilgesnį tekstą dalijate teminėmis pastraipomis."
+        },
+        {
+          "nuo_s": 8.9,
+          "iki_s": 11.46,
+          "tekstas": "Kiekvienai duodate savo antraštę."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 10,
+      "epizodas": "viz_699_04",
+      "failas": "04-formatavimo-siuksles",
+      "pavadinimas": "Formatavimo stiliaus šiukšlės",
+      "trukme_s": 14,
+      "mp4": "viz_699_04.mp4",
+      "vtt": "viz_699_04.vtt",
+      "poster": "viz_699_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.81,
+          "tekstas": "Neįprasti šriftai, spalvos ir keisti tarpai krinta į akis."
+        },
+        {
+          "nuo_s": 6.2,
+          "iki_s": 8.69,
+          "tekstas": "Pastebėję juos, iš karto pataisote."
+        },
+        {
+          "nuo_s": 9.3,
+          "iki_s": 12.63,
+          "tekstas": "Skaitytojai jautriai reaguoja į neapdairumą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 11,
+      "epizodas": "viz_699_06",
+      "failas": "06-plakatas-ar-tekstas",
+      "pavadinimas": "Plakatas ar tekstas",
+      "trukme_s": 15,
+      "mp4": "viz_699_06.mp4",
+      "vtt": "viz_699_06.vtt",
+      "poster": "viz_699_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.35,
+          "tekstas": "Plakate surašyto teksto neperskaito neregių programos."
+        },
+        {
+          "nuo_s": 5.9,
+          "iki_s": 8.59,
+          "tekstas": "Nenuskaito jo ir paieškos robotai."
+        },
+        {
+          "nuo_s": 8.8,
+          "iki_s": 13.37,
+          "tekstas": "Kvietimą surašote tekstu, akcentus sudedate antraštėmis."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 12,
+      "epizodas": "viz_699_07",
+      "failas": "07-atnaujinimo-data",
+      "pavadinimas": "Kur rodyti atnaujinimo datą",
+      "trukme_s": 13,
+      "mp4": "viz_699_07.mp4",
+      "vtt": "viz_699_07.vtt",
+      "poster": "viz_699_07.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.49,
+          "tekstas": "Atnaujinimo datą rodote tik ten, kur informacija kinta."
+        },
+        {
+          "nuo_s": 6.1,
+          "iki_s": 9.27,
+          "tekstas": "Tinkamas pavyzdys – „Priėmimas į mokyklą“."
+        },
+        {
+          "nuo_s": 9.6,
+          "iki_s": 11.97,
+          "tekstas": "Visuose puslapiuose jos nereikia."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 13,
+      "epizodas": "viz_699_08",
+      "failas": "08-nuorodu-pavadinimai",
+      "pavadinimas": "Nuorodų pavadinimai",
+      "trukme_s": 14,
+      "mp4": "viz_699_08.mp4",
+      "vtt": "viz_699_08.vtt",
+      "poster": "viz_699_08.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.89,
+          "tekstas": "Iš naršyklės nukopijuotos nuorodos neįsiminsite."
+        },
+        {
+          "nuo_s": 5.4,
+          "iki_s": 8.61,
+          "tekstas": "Nuorodos pavadinimas turi pasakyti, kas joje."
+        },
+        {
+          "nuo_s": 9.1,
+          "iki_s": 12.31,
+          "tekstas": "Vengiate „Spausk čia“ ir „Žiūrėk čia“."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 14,
+      "epizodas": "viz_699_09",
+      "failas": "09-nuorodu-patikra",
+      "pavadinimas": "Nuorodų patikra",
+      "trukme_s": 13,
+      "mp4": "viz_699_09.mp4",
+      "vtt": "viz_699_09.vtt",
+      "poster": "viz_699_09.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.48,
+          "tekstas": "Patikrinate, ar kiekviena nuoroda dar veikia."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 7.94,
+          "tekstas": "Tada – ar ji aktuali ir naudinga."
+        },
+        {
+          "nuo_s": 8.2,
+          "iki_s": 11.37,
+          "tekstas": "Pradedate nuo „Karjeros specialisto“ polapio."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 15,
+      "epizodas": "ep_699_10_1",
+      "failas": "10-nuoroda-naujame-lange",
+      "pavadinimas": "Nuoroda atsidaro naujame lange",
+      "trukme_s": 13,
+      "mp4": "ep_699_10_1.mp4",
+      "vtt": "ep_699_10_1.vtt",
+      "poster": "ep_699_10_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.61,
+          "tekstas": "Pažymite nuorodą į kitą svetainę."
+        },
+        {
+          "nuo_s": 4.2,
+          "iki_s": 7.93,
+          "tekstas": "Nuorodos lange pasirenkate atidarymą naujame lange."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 11.54,
+          "tekstas": "Svetainėje ji atsidaro antrame skirtuke."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 9.4,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

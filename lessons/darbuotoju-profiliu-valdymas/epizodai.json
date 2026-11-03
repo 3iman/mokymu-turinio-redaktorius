@@ -1,0 +1,155 @@
+{
+ "pamokos_slug": "darbuotoju-profiliu-valdymas",
+ "pamoka_id": "pam_706",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_706_02",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_706_02",
+   "pamoka": "pam_706",
+   "failas": "02-darbo-laiko-lentele",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Taip",
+    "Ne",
+    "9.00"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "diena": "Pirmadienis",
+    "laikas": "8.00–16.30"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_706_04_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_706_04",
+   "pamoka": "pam_706",
+   "failas": "04-darbuotoju-sarasas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Administracija",
+    "CV",
+    "Pareigybės aprašas",
+    "Darbo laikas",
+    "Kontaktai"
+   ],
+   "tvs_ui": [
+    "tvs-cursor",
+    "naujas: svetainės profilio kortelė (nuotrauka, pareigos, dokumentai, darbo laiko lentelė)"
+   ],
+   "tarimo_kandidatai": [
+    "CV"
+   ],
+   "demo_duomenys": {
+    "darbuotojas": "Marija Pečkauskaitė",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_706_06_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_706_06",
+   "pamoka": "pam_706",
+   "failas": "06-profilio-id",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Darbuotojai",
+    "Redaguoti",
+    "/edit/6"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-cursor",
+    "naujas: naršyklės adreso juosta su paryškinta dalimi"
+   ],
+   "tarimo_kandidatai": [
+    "ID"
+   ],
+   "demo_duomenys": {
+    "id": "6"
+   },
+   "naudoja_ir": [
+    "dal_706_03",
+    "dal_706_05"
+   ]
+  },
+  {
+   "kadras": 4,
+   "epizodas": "ep_706_08_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_706_08",
+   "pamoka": "pam_706",
+   "failas": "08-profilio-virsus",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "First Name",
+    "Last Name",
+    "Position",
+    "Description",
+    "Hours",
+    "Category"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor"
+   ],
+   "tarimo_kandidatai": [
+    "First Name",
+    "Position",
+    "Hours"
+   ],
+   "demo_duomenys": {
+    "darbuotojas": "Vincas Kudirka",
+    "pareigos": "Direktorius"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "ep_706_08_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_706_08",
+   "pamoka": "pam_706",
+   "failas": "08-profilio-apacia",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Phone",
+    "Email",
+    "Image",
+    "Cv",
+    "Pareigos",
+    "Dokumentas #1",
+    "Enabled"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "naujas: failo įkėlimo laukas (Select File / Upload)"
+   ],
+   "tarimo_kandidatai": [
+    "Cv",
+    "Email"
+   ],
+   "demo_duomenys": {
+    "telefonas": "(8 37) 00 00 00",
+    "pastas": "v.kudirka@mokykla.lt"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

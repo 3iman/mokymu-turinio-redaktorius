@@ -1,0 +1,934 @@
+{
+  "pamoka": "bendrieji-principai",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T04:15:09.885Z",
+  "balso_stiprinimas_db": 6,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_658_01_1",
+      "failas": "01-kopijuoti-sintakse",
+      "pavadinimas": "Sintaksę kopijuojate iš sąrašo",
+      "trukme_s": 14,
+      "mp4": "ep_658_01_1.mp4",
+      "vtt": "ep_658_01_1.vtt",
+      "poster": "ep_658_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.59,
+          "tekstas": "Sintaksių sąraše prie reikiamos eilutės spaudžiate „Kopijuoti“."
+        },
+        {
+          "nuo_s": 6.4,
+          "iki_s": 10.29,
+          "tekstas": "Lauke „Turinys“ įklijuojate ją atskira eilute."
+        },
+        {
+          "nuo_s": 10.5,
+          "iki_s": 12.35,
+          "tekstas": "Nieko perrašyti nereikia."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 7.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 11.7,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_658_01",
+      "failas": "01-sintakses-anatomija",
+      "pavadinimas": "Sintaksės anatomija",
+      "trukme_s": 13,
+      "mp4": "viz_658_01.mp4",
+      "vtt": "viz_658_01.vtt",
+      "poster": "viz_658_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.29,
+          "tekstas": "Garbanoti skliausteliai rodo, kad čia sintaksė."
+        },
+        {
+          "nuo_s": 5.1,
+          "iki_s": 9.04,
+          "tekstas": "Viduje — funkcijos vardas, skliaustuose — nurodymai."
+        },
+        {
+          "nuo_s": 9.4,
+          "iki_s": 11.8,
+          "tekstas": "Todėl keičiate tik reikiamą dalį."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_658_02",
+      "failas": "02-ka-moka-sintakses",
+      "pavadinimas": "Ką moka sintaksės",
+      "trukme_s": 12,
+      "mp4": "viz_658_02.mp4",
+      "vtt": "viz_658_02.vtt",
+      "poster": "viz_658_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.33,
+          "tekstas": "Sintaksėmis įterpiate nuotraukas ir dokumentus."
+        },
+        {
+          "nuo_s": 5.1,
+          "iki_s": 7.19,
+          "tekstas": "Taip pat darbuotojų profilius."
+        },
+        {
+          "nuo_s": 7.7,
+          "iki_s": 10.67,
+          "tekstas": "Ir straipsnius — sąrašu arba po vieną."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_658_03",
+      "failas": "03-sintakses-salygos",
+      "pavadinimas": "Sintaksė suveikia tik su sąlyga",
+      "trukme_s": 12,
+      "mp4": "viz_658_03.mp4",
+      "vtt": "viz_658_03.vtt",
+      "poster": "viz_658_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.25,
+          "tekstas": "Sintaksė parodo tik tai, kas jau įkelta."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 8.09,
+          "tekstas": "Nurodėte aštuonias nuotraukas — tiek jų ir turi būti."
+        },
+        {
+          "nuo_s": 8.9,
+          "iki_s": 10.93,
+          "tekstas": "Pirma patikrinate galeriją."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_658_04",
+      "failas": "04-kada-pernaudoti",
+      "pavadinimas": "Kada sintaksę galima pernaudoti",
+      "trukme_s": 14,
+      "mp4": "viz_658_04.mp4",
+      "vtt": "viz_658_04.vtt",
+      "poster": "viz_658_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.13,
+          "tekstas": "Sintaksę su ID arba SLUG įklijuojate bet kur."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 7.35,
+          "tekstas": "Ji visada parodys tą patį."
+        },
+        {
+          "nuo_s": 8.1,
+          "iki_s": 10.71,
+          "tekstas": "Be jų — tik to puslapio turinys."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "viz_658_05",
+      "failas": "05-sintakse-be-stiliaus",
+      "pavadinimas": "Sintaksė be jokio stiliaus",
+      "trukme_s": 12,
+      "mp4": "viz_658_05.mp4",
+      "vtt": "viz_658_05.vtt",
+      "poster": "viz_658_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.62,
+          "tekstas": "Sintaksė jau turi savo išdėstymą."
+        },
+        {
+          "nuo_s": 4,
+          "iki_s": 7.8,
+          "tekstas": "Todėl antraštės, sąrašo ar spalvos jai nededate."
+        },
+        {
+          "nuo_s": 8,
+          "iki_s": 10.14,
+          "tekstas": "Paliekate paprastą pastraipą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "ep_658_06_1",
+      "failas": "06-skirtukas-sintakse",
+      "pavadinimas": "Sintaksių sąrašą randate skirtuke",
+      "trukme_s": 13,
+      "mp4": "ep_658_06_1.mp4",
+      "vtt": "ep_658_06_1.vtt",
+      "poster": "ep_658_06_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.72,
+          "tekstas": "Puslapio redagavime spaudžiate skirtuką „Sintaksė“."
+        },
+        {
+          "nuo_s": 5.4,
+          "iki_s": 8.37,
+          "tekstas": "Sąraše prie kiekvieno kodo yra paaiškinimas."
+        },
+        {
+          "nuo_s": 9.1,
+          "iki_s": 11.04,
+          "tekstas": "Pavyzdžius renkatės iš čia."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "ep_658_06_2",
+      "failas": "06-modulis-sintakses",
+      "pavadinimas": "Modulį „Sintaksės“ randate paieškoje",
+      "trukme_s": 13,
+      "mp4": "ep_658_06_2.mp4",
+      "vtt": "ep_658_06_2.vtt",
+      "poster": "ep_658_06_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.68,
+          "tekstas": "TVS viršuje atidarote paiešką."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 7.75,
+          "tekstas": "Sąraše pasirenkate modulį „Sintaksės“."
+        },
+        {
+          "nuo_s": 8.1,
+          "iki_s": 11.47,
+          "tekstas": "Čia savo sintaksių sąrašą galite papildyti patys."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.3,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 9,
+      "epizodas": "viz_680_01",
+      "failas": "01-mazosiomis-raidemis",
+      "pavadinimas": "Pavadinimas mažosiomis raidėmis",
+      "trukme_s": 11,
+      "mp4": "viz_680_01.mp4",
+      "vtt": "viz_680_01.vtt",
+      "poster": "viz_680_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.77,
+          "tekstas": "Dokumento pavadinimą rašote mažosiomis raidėmis."
+        },
+        {
+          "nuo_s": 5.4,
+          "iki_s": 8.93,
+          "tekstas": "Bendruomenėje žinomą trumpinį paliekate kaip papildomą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 10,
+      "epizodas": "viz_680_02",
+      "failas": "02-aiskus-pavadinimai",
+      "pavadinimas": "Aiškūs dokumentų pavadinimai",
+      "trukme_s": 15,
+      "mp4": "viz_680_02.mp4",
+      "vtt": "viz_680_02.vtt",
+      "poster": "viz_680_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.85,
+          "tekstas": "Pavadinimas turi būti tikslus, aiškus ir teikti informacijos."
+        },
+        {
+          "nuo_s": 6.4,
+          "iki_s": 9.53,
+          "tekstas": "Įsitikinate, kad jis suprantamas skaitytojui."
+        },
+        {
+          "nuo_s": 10.1,
+          "iki_s": 13.23,
+          "tekstas": "Ne alternatyvus ir ne failo vardas."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 11,
+      "epizodas": "viz_680_03",
+      "failas": "03-pdf-ar-doc",
+      "pavadinimas": "PDF ar doc",
+      "trukme_s": 13,
+      "mp4": "viz_680_03.mp4",
+      "vtt": "viz_680_03.vtt",
+      "poster": "viz_680_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.01,
+          "tekstas": "Dokumentai būna PDF arba doc formato."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 7.57,
+          "tekstas": "PDF atsidaro naršyklėje."
+        },
+        {
+          "nuo_s": 7.8,
+          "iki_s": 11.3,
+          "tekstas": "Doc paliekate atvirą redagavimui ir taisymui."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 12,
+      "epizodas": "viz_680_04",
+      "failas": "04-failo-vardo-rasyba",
+      "pavadinimas": "Failo vardo rašyba",
+      "trukme_s": 15,
+      "mp4": "viz_680_04.mp4",
+      "vtt": "viz_680_04.vtt",
+      "poster": "viz_680_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 6.11,
+          "tekstas": "Failo varde nenaudojate lietuviškų raidžių, kabučių, tarpų."
+        },
+        {
+          "nuo_s": 6.3,
+          "iki_s": 9.15,
+          "tekstas": "Žodžius atskiriate apatiniu brūkšniu."
+        },
+        {
+          "nuo_s": 9.4,
+          "iki_s": 12.82,
+          "tekstas": "Vardas turi atkartoti originalų pavadinimą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 13,
+      "epizodas": "viz_680_05",
+      "failas": "05-kategorizavimas",
+      "pavadinimas": "Viena ar kelios kategorijos",
+      "trukme_s": 14,
+      "mp4": "viz_680_05.mp4",
+      "vtt": "viz_680_05.vtt",
+      "poster": "viz_680_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.44,
+          "tekstas": "Talpindami dokumentą priskiriate jį konkrečiai kategorijai."
+        },
+        {
+          "nuo_s": 6.2,
+          "iki_s": 9.13,
+          "tekstas": "Vienas dokumentas gali priklausyti kelioms."
+        },
+        {
+          "nuo_s": 9.8,
+          "iki_s": 12.17,
+          "tekstas": "Toks dubliavimas yra normalus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 14,
+      "epizodas": "viz_680_06",
+      "failas": "06-prezentaciju-talpinimas",
+      "pavadinimas": "Prezentacijas talpinate PDF",
+      "trukme_s": 17,
+      "mp4": "viz_680_06.mp4",
+      "vtt": "viz_680_06.vtt",
+      "poster": "viz_680_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.01,
+          "tekstas": "Prezentaciją talpinate PDF formatu."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 9.81,
+          "tekstas": "Arba išskirstote skaidrėmis ir pateikiate kaip paveikslėlių galeriją."
+        },
+        {
+          "nuo_s": 10.8,
+          "iki_s": 15.53,
+          "tekstas": "PPT failo peržiūrėti galės ne visi lankytojai."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 15,
+      "epizodas": "viz_680_07",
+      "failas": "07-banko-svara",
+      "pavadinimas": "Dokumentų banko švara",
+      "trukme_s": 13,
+      "mp4": "viz_680_07.mp4",
+      "vtt": "viz_680_07.vtt",
+      "poster": "viz_680_07.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.69,
+          "tekstas": "Dokumentai būna aktualūs tik tam tikrą laiką."
+        },
+        {
+          "nuo_s": 5.1,
+          "iki_s": 7.87,
+          "tekstas": "Dokumentų banką peržiūrite reguliariai."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 11.45,
+          "tekstas": "Pasenusius ištrinate arba atnaujinate."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 16,
+      "epizodas": "viz_696_01",
+      "failas": "01-pavadinimai-mazosiomis",
+      "pavadinimas": "Pavadinimus rašote mažosiomis raidėmis",
+      "trukme_s": 13,
+      "mp4": "viz_696_01.mp4",
+      "vtt": "viz_696_01.vtt",
+      "poster": "viz_696_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.33,
+          "tekstas": "Didžiosios raidės sąraše skaitomos sunkiau."
+        },
+        {
+          "nuo_s": 4.8,
+          "iki_s": 7.85,
+          "tekstas": "Pavadinimus rašote mažosiomis raidėmis."
+        },
+        {
+          "nuo_s": 8.2,
+          "iki_s": 11.41,
+          "tekstas": "Navigacijų stilius nurodytas programiškai."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 17,
+      "epizodas": "viz_696_02",
+      "failas": "02-aiskus-pavadinimas",
+      "pavadinimas": "Pavadinimas kviečia skaityti",
+      "trukme_s": 11,
+      "mp4": "viz_696_02.mp4",
+      "vtt": "viz_696_02.vtt",
+      "poster": "viz_696_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.21,
+          "tekstas": "Vieno žodžio pavadinimas nieko nepasako."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 9.15,
+          "tekstas": "Parašote taip, kad skaitantysis suprastų ir norėtų perskaityti."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 18,
+      "epizodas": "viz_696_03",
+      "failas": "03-iliustracija-neprivaloma",
+      "pavadinimas": "Iliustracija nėra privaloma",
+      "trukme_s": 13,
+      "mp4": "viz_696_03.mp4",
+      "vtt": "viz_696_03.vtt",
+      "poster": "viz_696_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.37,
+          "tekstas": "Iliustracijos dėl pačios iliustracijos nenaudojate."
+        },
+        {
+          "nuo_s": 5.6,
+          "iki_s": 9.89,
+          "tekstas": "Pranešimą apie atnaujintus nuostatus iliustruoti nebus ką."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 19,
+      "epizodas": "viz_696_04",
+      "failas": "04-nurodykite-autorius",
+      "pavadinimas": "Nurodote abu autorius",
+      "trukme_s": 11,
+      "mp4": "viz_696_04.mp4",
+      "vtt": "viz_696_04.vtt",
+      "poster": "viz_696_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.69,
+          "tekstas": "Įraše nurodote straipsnio autorių."
+        },
+        {
+          "nuo_s": 4.1,
+          "iki_s": 6.03,
+          "tekstas": "Ir fotografijos autorių."
+        },
+        {
+          "nuo_s": 6.5,
+          "iki_s": 8.99,
+          "tekstas": "Mokykloje autorystė gerbiama."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 20,
+      "epizodas": "viz_696_05",
+      "failas": "05-nurodykite-data",
+      "pavadinimas": "Datą nurodote patys",
+      "trukme_s": 12,
+      "mp4": "viz_696_05.mp4",
+      "vtt": "viz_696_05.vtt",
+      "poster": "viz_696_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.49,
+          "tekstas": "Be datos sistema įrašys paskelbimo dieną."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 6.63,
+          "tekstas": "Nurodote įvykio datą."
+        },
+        {
+          "nuo_s": 6.9,
+          "iki_s": 10.23,
+          "tekstas": "Ją galima atsukti arba nukelti į ateitį."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 21,
+      "epizodas": "viz_696_06",
+      "failas": "06-paslepimo-data",
+      "pavadinimas": "Nustatote paslėpimo datą",
+      "trukme_s": 12,
+      "mp4": "viz_696_06.mp4",
+      "vtt": "viz_696_06.vtt",
+      "poster": "viz_696_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.73,
+          "tekstas": "Kvietimas į susirinkimą po jo nebeaktualus."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 7.11,
+          "tekstas": "Nustatote paslėpimo datą."
+        },
+        {
+          "nuo_s": 7.3,
+          "iki_s": 9.59,
+          "tekstas": "Įrašas tampa neaktyvus pats."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 22,
+      "epizodas": "viz_696_07",
+      "failas": "07-kategorija-butina",
+      "pavadinimas": "Kiekvienas įrašas turi kategoriją",
+      "trukme_s": 12,
+      "mp4": "viz_696_07.mp4",
+      "vtt": "viz_696_07.vtt",
+      "poster": "viz_696_07.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.13,
+          "tekstas": "Įrašo be kategorijos sistema išsaugoti neleis."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 9.27,
+          "tekstas": "Kategorijas renkatės pagal iš anksto susitartą strategiją."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 23,
+      "epizodas": "viz_696_09",
+      "failas": "09-nuotraukos-tarp-pastraipu",
+      "pavadinimas": "Nuotraukas įterpiate tarp pastraipų",
+      "trukme_s": 12,
+      "mp4": "viz_696_09.mp4",
+      "vtt": "viz_696_09.vtt",
+      "poster": "viz_696_09.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.01,
+          "tekstas": "Ilgame įraše nuotrauką įterpiate kas trečią pastraipą."
+        },
+        {
+          "nuo_s": 5.7,
+          "iki_s": 8.6,
+          "tekstas": "Toks įrašas ilgiau išlaiko dėmesį."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 24,
+      "epizodas": "viz_700_01",
+      "failas": "01-formatuokite-saikingai",
+      "pavadinimas": "Formatuokite saikingai",
+      "trukme_s": 14,
+      "mp4": "viz_700_01.mp4",
+      "vtt": "viz_700_01.vtt",
+      "poster": "viz_700_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.95,
+          "tekstas": "Puslapiuose naudojate kuo mažiau formatavimo priemonių."
+        },
+        {
+          "nuo_s": 5.9,
+          "iki_s": 10.23,
+          "tekstas": "Paryškinimo, kursyvo, sąrašo ir antraščių tikrai pakanka."
+        },
+        {
+          "nuo_s": 10.6,
+          "iki_s": 12.69,
+          "tekstas": "Kitų priemonių neliečiate."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 25,
+      "epizodas": "ep_700_02_1",
+      "failas": "02-ctrl-shift-v",
+      "pavadinimas": "Įklijuojate be svetimo formatavimo",
+      "trukme_s": 13,
+      "mp4": "ep_700_02_1.mp4",
+      "vtt": "ep_700_02_1.vtt",
+      "poster": "ep_700_02_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.61,
+          "tekstas": "Spragtelite lauke „Turinys“."
+        },
+        {
+          "nuo_s": 3.8,
+          "iki_s": 6.77,
+          "tekstas": "Tekstą įklijuojate „Ctrl+Shift+V“."
+        },
+        {
+          "nuo_s": 7,
+          "iki_s": 9.85,
+          "tekstas": "Jis įsideda be svetimo formatavimo."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.2,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.2,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 8,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 26,
+      "epizodas": "ep_700_03_1",
+      "failas": "03-isvalote-formatavima",
+      "pavadinimas": "Išvalote įklijuoto teksto formatavimą",
+      "trukme_s": 13,
+      "mp4": "ep_700_03_1.mp4",
+      "vtt": "ep_700_03_1.vtt",
+      "poster": "ep_700_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.49,
+          "tekstas": "Įklijuotas tekstas atsinešė Word formatavimą."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 7.27,
+          "tekstas": "Visą jį pažymite „Ctrl+A“."
+        },
+        {
+          "nuo_s": 7.7,
+          "iki_s": 11.27,
+          "tekstas": "Spaudžiate „Tx“ – formatavimas išsivalo."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 6.1,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 8.9,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 27,
+      "epizodas": "ep_700_04_1",
+      "failas": "04-dubliuojate-puslapi",
+      "pavadinimas": "Dubliuojate per ilgą puslapį",
+      "trukme_s": 11,
+      "mp4": "ep_700_04_1.mp4",
+      "vtt": "ep_700_04_1.vtt",
+      "poster": "ep_700_04_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.61,
+          "tekstas": "Per ilgą puslapį dalijate į du."
+        },
+        {
+          "nuo_s": 3.8,
+          "iki_s": 6.57,
+          "tekstas": "Medyje užvedate ant puslapio eilutės."
+        },
+        {
+          "nuo_s": 6.9,
+          "iki_s": 9.95,
+          "tekstas": "Spaudžiate „Dubliuoti“ – gaunate kopiją."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 4.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 7.9,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 28,
+      "epizodas": "ep_700_08_1",
+      "failas": "08-priminimas-perziureti",
+      "pavadinimas": "Nustatote priminimą peržiūrėti",
+      "trukme_s": 13,
+      "mp4": "ep_700_08_1.mp4",
+      "vtt": "ep_700_08_1.vtt",
+      "poster": "ep_700_08_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.37,
+          "tekstas": "Atidarote skirtuką „Auditas“."
+        },
+        {
+          "nuo_s": 4,
+          "iki_s": 7.53,
+          "tekstas": "Pasirenkate datą, kada norite puslapį peržiūrėti."
+        },
+        {
+          "nuo_s": 8.1,
+          "iki_s": 11.52,
+          "tekstas": "Statusą nustatote „Peržiūrėti“ ir išsaugote."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 10.1,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 29,
+      "epizodas": "ep_700_09_1",
+      "failas": "09-uzkoduota-nuoroda",
+      "pavadinimas": "Dalinatės užkoduota nuoroda",
+      "trukme_s": 13,
+      "mp4": "ep_700_09_1.mp4",
+      "vtt": "ep_700_09_1.vtt",
+      "poster": "ep_700_09_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.24,
+          "tekstas": "Puslapio apačioje spaudžiate „Peržiūrėti“."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 7.95,
+          "tekstas": "Naršyklėje matote užkoduotą puslapio adresą."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 11.33,
+          "tekstas": "Jį žino tik tie, su kuriais pasidalinate."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 10,
+          "garsas": "paemimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 30,
+      "epizodas": "viz_700_10",
+      "failas": "10-navigacijos-pavadinimas",
+      "pavadinimas": "Puslapio ir navigacijos pavadinimai",
+      "trukme_s": 14,
+      "mp4": "viz_700_10.mp4",
+      "vtt": "viz_700_10.vtt",
+      "poster": "viz_700_10.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.34,
+          "tekstas": "Navigacijos pavadinimas negali būti ilgesnis nei trys žodžiai."
+        },
+        {
+          "nuo_s": 6.5,
+          "iki_s": 9.5,
+          "tekstas": "Todėl jis gali nesutapti su puslapio pavadinimu."
+        },
+        {
+          "nuo_s": 10.5,
+          "iki_s": 12.48,
+          "tekstas": "Meniu paliekate trumpą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

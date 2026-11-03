@@ -1,0 +1,228 @@
+{
+  "lang": "lt",
+  "01_kopijuoti_sintakse": {
+    "_epizodas": "ep_658_01_1"
+  },
+  "06_skirtukas_sintakse": {
+    "_epizodas": "ep_658_06_1"
+  },
+  "06_modulis_sintakses": {
+    "_epizodas": "ep_658_06_2"
+  },
+  "02_ctrl_shift_v": {
+    "_epizodas": "ep_700_02_1"
+  },
+  "03_isvalote_formatavima": {
+    "_epizodas": "ep_700_03_1"
+  },
+  "04_dubliuojate_puslapi": {
+    "_epizodas": "ep_700_04_1"
+  },
+  "08_priminimas_perziureti": {
+    "_epizodas": "ep_700_08_1"
+  },
+  "09_uzkoduota_nuoroda": {
+    "_epizodas": "ep_700_09_1"
+  },
+  "01_sintakses_anatomija": {
+    "title": "Sintaksės anatomija",
+    "url_label": "Sintaksė",
+    "url_base": "{{ }}",
+    "url_file_id": "Idėja",
+    "url_gid": "Nurodymai",
+    "gid_explain": "Atskirti kableliais, viengubomis kabutėmis, laužtiniais ir paprastais skliaustais"
+  },
+  "02_ka_moka_sintakses": {
+    "title": "Ką moka sintaksės",
+    "item_1": "Nuotraukų įterpimas",
+    "item_2": "Dokumentų įterpimas",
+    "item_3": "Profilių įterpimas",
+    "item_4": "Straipsnių sąrašo įterpimas",
+    "item_5": "Pavienių straipsnių įterpimas"
+  },
+  "03_sintakses_salygos": {
+    "title": "Sintaksės sąlygos",
+    "step1_label": "Idėja",
+    "step1_desc": "Pakviesti mokinius prie lentos",
+    "arrow_label_1": "nurodymas",
+    "step2_label": "Sąlyga",
+    "step2_desc": "Vaikai turi būti klasėje",
+    "arrow_label_2": "mūsų atveju",
+    "step3_label": "Rezultatas",
+    "step3_desc": "Galerijoje ne mažiau 8 paveikslėlių, kai nurodėte 8"
+  },
+  "04_kada_pernaudoti": {
+    "title": "Kada sintaksę galima pernaudoti",
+    "old_title": "Konkretu: yra ID ar SLUG",
+    "old_step_1": "Darbuotojo profilis",
+    "old_step_2": "Dokumentas",
+    "old_step_3": "Dokumentų rinkinys",
+    "old_step_4": "Nuoroda, navigacija",
+    "new_title": "Ne konkretu: nėra nei SLUG, nei ID",
+    "new_step_1": "{{images()}}",
+    "new_step_2": "{{videos()}}",
+    "summary": "Pernaudojamos bet kokiame puslapyje ar straipsnio įraše"
+  },
+  "05_sintakse_be_stiliaus": {
+    "title": "Sintaksė be stiliaus",
+    "do_title": "Taip",
+    "do_1": "Įterpiate su CTRL+SHIFT+V",
+    "dont_title": "Ne",
+    "dont_1": "H2, H3, H4 antraštės stilius",
+    "dont_2": "Sąrašo stilius",
+    "dont_3": "Bold, Italic ar spalva"
+  },
+  "01_mazosiomis_raidemis": {
+    "title": "Mažosiomis raidėmis",
+    "do_title": "Taip",
+    "do_1": "Mažosiomis raidėmis",
+    "do_2": "Trumpiniai tik kaip papildomi",
+    "dont_title": "Ne",
+    "dont_1": "Didžiosiomis raidėmis"
+  },
+  "02_aiskus_pavadinimai": {
+    "title": "Aiškūs dokumentų pavadinimai",
+    "do_title": "Tinka",
+    "do_1": "Pilnas pavadinimas",
+    "do_2": "Tikslus ir aiškus",
+    "do_3": "Teikia informacijos",
+    "dont_title": "Netinka",
+    "dont_1": "Alternatyvus pavadinimas",
+    "dont_2": "Iš failo sugeneruotas pavadinimas"
+  },
+  "03_pdf_ar_doc": {
+    "title": "Dokumentų formatai",
+    "old_title": "PDF",
+    "old_step_1": "Atsidaro naujame naršyklės lange",
+    "old_step_2": "Skaitymui",
+    "new_title": "DOCX",
+    "new_step_1": "Parsisiunčia",
+    "new_step_2": "Lieka atviras redagavimui ir taisymui"
+  },
+  "04_failo_vardo_rasyba": {
+    "title": "Dokumentų pavadinimų rašyba",
+    "do_title": "Tinka",
+    "do_1": "Be lietuviškų raidžių",
+    "do_2": "Be kabučių",
+    "do_3": "Be tarpų",
+    "do_4": "Žodžius skiria apatinis brūkšnys",
+    "dont_title": "Netinka",
+    "dont_1": "„03251-siga.docx“ — nelogiškas pavadinimas"
+  },
+  "05_kategorizavimas": {
+    "title": "Dokumentų kategorizavimas",
+    "old_title": "Viena kategorija",
+    "old_step_1": "Dokumentas randamas vienoje vietoje",
+    "new_title": "Kelios kategorijos",
+    "new_step_1": "Tas pats dokumentas keliose vietose",
+    "new_step_2": "Toks dubliavimas yra normalus",
+    "summary": "Padeda lengviau rasti, kai dokumentų skaičius didelis"
+  },
+  "06_prezentaciju_talpinimas": {
+    "title": "Prezentacijų talpinimas",
+    "dont_title": "Netinka",
+    "dont_1": "PPT dokumentas",
+    "do_title": "Tinka",
+    "do_1": "PDF formatu",
+    "do_2": "Skaidrės kaip horizontali paveikslėlių galerija"
+  },
+  "07_banko_svara": {
+    "title": "Dokumentų banko švara",
+    "dont_title": "Pasenę",
+    "dont_1": "Akivaizdžiai pasenę dokumentai",
+    "dont_2": "Aktualūs buvo tik tam tikrą laiką",
+    "do_title": "Tvarkoma",
+    "do_1": "Reguliariai peržiūrite",
+    "do_2": "Ištrinate arba atnaujinate"
+  },
+  "01_pavadinimai_mazosiomis": {
+    "title": "Pavadinimai mažosiomis raidėmis",
+    "do_title": "Taip",
+    "do_1": "Mažosiomis raidėmis",
+    "do_2": "Lengviau skaitomi",
+    "dont_title": "Ne",
+    "dont_1": "Didžiosiomis raidėmis"
+  },
+  "02_aiskus_pavadinimas": {
+    "title": "Aiškus įrašo pavadinimas",
+    "do_title": "Taip",
+    "do_1": "Suprantamas skaitančiajam",
+    "do_2": "Norisi perskaityti visą įrašą",
+    "dont_title": "Ne",
+    "dont_1": "Iš vieno žodžio",
+    "dont_2": "Pernelyg abstraktus"
+  },
+  "03_iliustracija_neprivaloma": {
+    "title": "Iliustracija – neprivaloma",
+    "dont_title": "Nereikia",
+    "dont_1": "Iliustracija dėl iliustracijos",
+    "do_title": "Natūralu",
+    "do_1": "Pranešimas apie atnaujintus nuostatus",
+    "do_2": "Iliustruoti nebus ką"
+  },
+  "04_nurodykite_autorius": {
+    "title": "Nurodote autorius",
+    "do_title": "Nurodoma",
+    "do_1": "Straipsnio autorius",
+    "do_2": "Fotografijos autorius",
+    "dont_title": "Nepakanka",
+    "dont_1": "Tik straipsnio autorius",
+    "summary": "Mokykla – vieta, kurioje turėtų būti gerbiama autorystė"
+  },
+  "05_nurodykite_data": {
+    "title": "Įrašo data",
+    "old_title": "Datos nenurodėte",
+    "old_step_1": "Spaudžiate „Išsaugoti“",
+    "old_step_2": "Sistema įrašo paskelbimo datą",
+    "new_title": "Datą nurodote",
+    "new_step_1": "Įvykio data",
+    "new_step_2": "Galima atsukti arba naudoti ateities datą",
+    "summary": "Be datos įrašas negali būti publikuojamas"
+  },
+  "06_paslepimo_data": {
+    "title": "Paslėpimo data",
+    "step1_label": "Publikuojate",
+    "step1_desc": "Kvietimas į tėvų susirinkimą",
+    "arrow_label_1": "",
+    "step2_label": "Nustatote paslėpimo datą",
+    "step2_desc": "Po mėnesio, mokslo metų gale",
+    "arrow_label_2": "",
+    "step3_label": "Įrašas tampa neaktyvus",
+    "step3_desc": "Nebeaktualus iš karto po susirinkimo",
+    "summary": "Ne visi įrašai turi keliauti į archyvą"
+  },
+  "07_kategorija_butina": {
+    "title": "Įrašus priskiriate kategorijoms",
+    "do_title": "Būtina",
+    "do_1": "Kategorija kiekvienam įrašui",
+    "do_2": "Pagal iš anksto susitartą strategiją",
+    "dont_title": "Neįmanoma",
+    "dont_1": "Įrašas be kategorijos – sistema to neleidžia"
+  },
+  "09_nuotraukos_tarp_pastraipu": {
+    "title": "Nuotraukos tarp pastraipų",
+    "old_title": "Daug teksto be nuotraukų",
+    "new_title": "Kas trečią, kas ketvirtą pastraipą",
+    "new_step_1": "Ilgiau išlaiko dėmesį",
+    "new_step_2": "Dažniau perskaitomi iki galo",
+    "summary": "Vizualiai patrauklesni"
+  },
+  "01_formatuokite_saikingai": {
+    "title": "Formatuojate saikingai",
+    "do_title": "Šių turėtų pakakti",
+    "do_1": "Bold ir Italic",
+    "do_2": "Sąrašas ir numeracija",
+    "do_3": "Antraštės",
+    "do_4": "Citatos",
+    "dont_title": "Kuo mažiau",
+    "dont_1": "Kitų formatavimo priemonių"
+  },
+  "10_navigacijos_pavadinimas": {
+    "title": "Puslapio ir navigacijos pavadinimai",
+    "old_title": "Puslapio pavadinimas",
+    "old_step_1": "Gali būti ilgas",
+    "new_title": "Navigacijos pavadinimas",
+    "new_step_1": "Ne ilgesnis nei trys žodžiai",
+    "summary": "Pavadinimai gali nesutapti"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "lang": "lt",
+  "11_audito_numeris": {
+    "_epizodas": "ep_688_11_1"
+  },
+  "01_paslaugos": {
+    "title": "Paslaugos",
+    "item_1": "Visų paslaugų aprašymai",
+    "item_2": "Susiję dokumentai",
+    "item_3": "Nurodytas atsakingas asmuo",
+    "item_4": "Maitinimas, pavežėjimas, patalpų nuoma"
+  },
+  "02_darbuotojai": {
+    "title": "Darbuotojai",
+    "item_1": "Pareigybiniai aprašai",
+    "item_2": "Darbo laikas",
+    "item_3": "Kontaktai",
+    "item_4": "Pavaduotojų nuotraukos ir CV – privalomi"
+  },
+  "03_komisijos_ir_grupes": {
+    "title": "Komisijos ir darbo grupės",
+    "item_1": "Kokios grupės veikia įstaigoje",
+    "item_2": "Jų sudėtis",
+    "item_3": "Veiklą reglamentuojantys dokumentai"
+  },
+  "04_dokumentai": {
+    "title": "Dokumentai",
+    "item_1": "Tvarkos aprašai",
+    "item_2": "Taisyklės",
+    "item_3": "Pareigybiniai aprašai",
+    "item_4": "Įsakymai ir nurodymai",
+    "item_5": "Biudžetinės ataskaitos",
+    "summary": "Dauguma mokyklų šios informacijos nepateikia – tai klaidinga"
+  },
+  "05_komunikacija": {
+    "title": "Komunikacija",
+    "item_1": "Ar pasakėte viską?",
+    "item_2": "Kaip pasakėte?",
+    "item_3": "Ar kiekvienas skaitytojas supras vienodai?"
+  },
+  "06_administracijai": {
+    "title": "Administracijai",
+    "item_1": "Peržiūri vienas iš vadovų",
+    "item_2": "Dauguma „namų darbų“ susiję su bendraisiais reikalavimais"
+  },
+  "07_pries_paleidima": {
+    "title": "Prieš paleidimą",
+    "item_1": "Priminimai prieš paleidimą",
+    "item_2": "Aukšti kokybės standartai"
+  },
+  "08_atideta": {
+    "title": "Atidėta",
+    "item_1": "Reikia pasitarti su jumis",
+    "item_2": "Arba mūsų komandos viduje"
+  },
+  "09_atmesta": {
+    "title": "Atmesta",
+    "item_1": "Peržiūrite dar kartą",
+    "item_2": "Pataisote atrastus netikslumus"
+  },
+  "10_ivykdyta": {
+    "title": "Įvykdyta",
+    "item_1": "Fiksuoja puslapio užbaigtumą",
+    "item_2": "Pirmieji – sisteminiai puslapiai",
+    "item_3": "Progresas visada prasideda nuo 15 %"
+  }
+}

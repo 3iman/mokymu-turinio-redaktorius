@@ -1,0 +1,176 @@
+{
+  "pamoka": "modulio-autoriai-valdymas",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T03:32:49.641Z",
+  "balso_stiprinimas_db": 5.5,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_704_01_1",
+      "failas": "01-nuotraukos-apkirpimas",
+      "pavadinimas": "Apkerpate autoriaus nuotrauką",
+      "trukme_s": 14,
+      "mp4": "ep_704_01_1.mp4",
+      "vtt": "ep_704_01_1.vtt",
+      "poster": "ep_704_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.31,
+          "tekstas": "Prie įkeltos nuotraukos spaudžiate apkirpimo mygtuką."
+        },
+        {
+          "nuo_s": 5.8,
+          "iki_s": 8.33,
+          "tekstas": "Pažymite sritį, kuri liks matoma."
+        },
+        {
+          "nuo_s": 8.8,
+          "iki_s": 12.29,
+          "tekstas": "Išsaugote – nuotrauka apkirpta tvarkingai."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.4,
+          "garsas": "paemimas"
+        },
+        {
+          "ties_s": 7.2,
+          "garsas": "numetimas"
+        },
+        {
+          "ties_s": 9.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 9.9,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_704_03",
+      "failas": "03-kas-ka-daro",
+      "pavadinimas": "Kas ką daro su sąrašu",
+      "trukme_s": 15,
+      "mp4": "viz_704_03.mp4",
+      "vtt": "viz_704_03.vtt",
+      "poster": "viz_704_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.77,
+          "tekstas": "Visų darbuotojų sąrašą į svetainę patalpiname mes."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 8.63,
+          "tekstas": "Su nuotrauka, pareigomis ir el. paštu."
+        },
+        {
+          "nuo_s": 8.8,
+          "iki_s": 12.73,
+          "tekstas": "Jums belieka jį atnaujinti ir papildyti naujais žmonėmis."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_704_04_1",
+      "failas": "04-naujas-autorius",
+      "pavadinimas": "Pridedate naują autorių",
+      "trukme_s": 16,
+      "mp4": "ep_704_04_1.mp4",
+      "vtt": "ep_704_04_1.vtt",
+      "poster": "ep_704_04_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.25,
+          "tekstas": "Sąraše spaudžiate „Pridėti autorių“."
+        },
+        {
+          "nuo_s": 4.6,
+          "iki_s": 8.37,
+          "tekstas": "Lauke „Full Name“ įrašote vardą ir pavardę."
+        },
+        {
+          "nuo_s": 8.6,
+          "iki_s": 13.29,
+          "tekstas": "Lauke „Position“ – pareigybę. Daugiau nieko privaloma nėra."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 10.6,
+          "garsas": "rasymas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "ep_704_04_2",
+      "failas": "04-keli-autoriai",
+      "pavadinimas": "Įkeliate kelis autorius",
+      "trukme_s": 15,
+      "mp4": "ep_704_04_2.mp4",
+      "vtt": "ep_704_04_2.vtt",
+      "poster": "ep_704_04_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.69,
+          "tekstas": "Lauke „Full Name“ kiekvieną autorių rašote naujoje eilutėje."
+        },
+        {
+          "nuo_s": 6.1,
+          "iki_s": 10.03,
+          "tekstas": "Lauke „Position“ pareigybes surašote ta pačia tvarka."
+        },
+        {
+          "nuo_s": 10.5,
+          "iki_s": 13.96,
+          "tekstas": "Išsaugojus sąraše atsiranda visi iš karto."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 7.7,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 11,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 11.5,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

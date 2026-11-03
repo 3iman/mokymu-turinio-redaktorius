@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* K5 — „Sekcija dingsta“ (ep_708_05_2)
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 50% 60%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+.clip { height: 640px; overflow: hidden; } .prow { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0; border: 1px solid #eee; } .prow .tvs-logo-c { height: 110px; } .foot { margin-top: 26px; padding: 18px; background: #e4e3e3; color: #666; font: 16px var(--tvs-site-font); }
+  .p-table .tvs-th, .p-table .tvs-row { grid-template-columns: 30px 1fr 160px; } .sw-slot { position: relative; height: 42px; } .sw-slot .tvs-switch { position: absolute; left: 0; top: 0; } .sb { opacity: 0; } .scroll { transform: translateY(-300px); }
+  /* galutinė būsena (epizodai.js) — po pamokos CSS, kad visada laimėtų */
+  .stage > .scr:nth-of-type(1) { opacity: 0; }
+  .stage > .scr:nth-of-type(2) { opacity: 1; }
+  .cursor-wrap { transform: translate(1246.0px, 777.0px); }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-sweb">
+
+        <div class="tvs-sweb-h"><div class="tvs-sweb-crest"></div><div class="tvs-sweb-name">Demo mokykla<small>Demo miestas</small></div></div>
+        <div class="tvs-sweb-nav"><span class="is-on">Apie mokyklą</span><span>Mokiniams</span><span>Tėvams</span><span>Naujienos</span><span>Kontaktai</span></div>
+        <div class="tvs-sweb-b"><div class="tvs-sweb-t">Sveiki atvykę</div>
+<div class="clip"><div class="scroll"><div class="tvs-spage-cards"><div class="tvs-spage-card"><i></i><b></b><s></s></div><div class="tvs-spage-card"><i></i><b></b><s></s></div><div class="tvs-spage-card"><i></i><b></b><s></s></div></div>
+          <div class="tvs-sweb-sec" style="margin-top:26px" data-t="tv">Tvarkaraščiai</div><div class="tvs-sweb-p">Pamokų, būrelių ir konsultacijų tvarkaraščiai.</div><div class="part " data-t="part"><div class="tvs-sweb-sec">Partneriai ir draugai</div><div class="prow"><div class="tvs-logo-c"><b class=""></b></div><div class="tvs-logo-c"><b class="is-2"></b></div><div class="tvs-logo-c"><b class="is-3"></b></div><div class="tvs-logo-c"><b class=""></b></div><div class="tvs-logo-c"><b class="is-2"></b></div></div></div><div class="foot">Demo gimnazija · Mokyklos g. 1 · info@demo.lt</div></div></div>
+        </div>
+      </div>
+
+      <div class="scr scr2 tvs-sweb">
+
+        <div class="tvs-sweb-h"><div class="tvs-sweb-crest"></div><div class="tvs-sweb-name">Demo mokykla<small>Demo miestas</small></div></div>
+        <div class="tvs-sweb-nav"><span class="is-on">Apie mokyklą</span><span>Mokiniams</span><span>Tėvams</span><span>Naujienos</span><span>Kontaktai</span></div>
+        <div class="tvs-sweb-b"><div class="tvs-sweb-t">Sveiki atvykę</div>
+<div class="clip"><div class="scroll"><div class="tvs-spage-cards"><div class="tvs-spage-card"><i></i><b></b><s></s></div><div class="tvs-spage-card"><i></i><b></b><s></s></div><div class="tvs-spage-card"><i></i><b></b><s></s></div></div>
+          <div class="tvs-sweb-sec" style="margin-top:26px" data-t="tv">Tvarkaraščiai</div><div class="tvs-sweb-p">Pamokų, būrelių ir konsultacijų tvarkaraščiai.</div><div class="foot">Demo gimnazija · Mokyklos g. 1 · info@demo.lt</div></div></div>
+        </div>
+      </div>
+      <div class="spot"></div>
+
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

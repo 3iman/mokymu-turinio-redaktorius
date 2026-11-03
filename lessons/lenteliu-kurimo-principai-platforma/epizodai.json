@@ -1,0 +1,116 @@
+{
+ "pamokos_slug": "lenteliu-kurimo-principai",
+ "pamoka_id": "pam_1584",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_1584_01",
+   "rusis": "koncepcija",
+   "sablonas": "srautas",
+   "dalis": "dal_1584_01",
+   "pamoka": "pam_1584",
+   "failas": "01-kurkite-kur-gebate",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Word",
+    "Turinio redaktorius",
+    "Svetainė",
+    "nukopijuojate"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Word"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_1584_02",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_1584_02",
+   "pamoka": "pam_1584",
+   "failas": "02-lygiavimas-kaire",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Taisyklingai",
+    "Netaisyklingai",
+    "Pagal kairę",
+    "Centre"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_1584_03",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_1584_03",
+   "pamoka": "pam_1584",
+   "failas": "03-nestilizuokite-lenteliu",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Švari lentelė",
+    "Stilizuota lentelė",
+    "HTML šiukšlės",
+    "Tamsus fonas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "HTML"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": [
+    "dal_1585_07"
+   ]
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_1584_04",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_1584_04",
+   "pamoka": "pam_1584",
+   "failas": "04-paprastumas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Įmantri",
+    "Paprasta",
+    "Sujungtos celės"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": [
+    "dal_699_05"
+   ]
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_1584_05",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_1584_05",
+   "pamoka": "pam_1584",
+   "failas": "05-spalvota-kepure",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Be kepurės",
+    "Su kepure",
+    "Baltas tekstas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "lentele": {
+     "lt": "Vincas Kudirka – Pirmininkas"
+    }
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

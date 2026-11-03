@@ -1,0 +1,274 @@
+{
+  "pamoka": "kaip-publikuoti-vaizdo-irasus-be-youtube",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T04:27:33.126Z",
+  "balso_stiprinimas_db": 5.9,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_691_01",
+      "failas": "01-tik-mp4",
+      "pavadinimas": "Tinka tik mp4",
+      "trukme_s": 11,
+      "mp4": "viz_691_01.mp4",
+      "vtt": "viz_691_01.vtt",
+      "poster": "viz_691_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.04,
+          "tekstas": "Sistema atvaizduoja tik mp4 formato įrašus."
+        },
+        {
+          "nuo_s": 5.5,
+          "iki_s": 8.07,
+          "tekstas": "Todėl įkeliate tik mp4."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_691_02_2",
+      "failas": "02-pridedate-failus",
+      "pavadinimas": "Pridedate failus į galeriją",
+      "trukme_s": 11,
+      "mp4": "ep_691_02_2.mp4",
+      "vtt": "ep_691_02_2.vtt",
+      "poster": "ep_691_02_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.12,
+          "tekstas": "Prie kiekvieno įrašo spaudžiate „Pridėti“."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 6.23,
+          "tekstas": "Langą uždarote."
+        },
+        {
+          "nuo_s": 6.7,
+          "iki_s": 9.03,
+          "tekstas": "Failai matomi galerijos sąraše."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 3.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.5,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 7.9,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_691_02_3",
+      "failas": "02-kopijuojate-kelia",
+      "pavadinimas": "Nukopijuojate kelią iki failo",
+      "trukme_s": 18,
+      "mp4": "ep_691_02_3.mp4",
+      "vtt": "ep_691_02_3.vtt",
+      "poster": "ep_691_02_3.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 3.89,
+          "tekstas": "Prie įrašo spaudžiate „Peržiūrėti“."
+        },
+        {
+          "nuo_s": 4.6,
+          "iki_s": 6.85,
+          "tekstas": "Jis atsidaro naujame lange."
+        },
+        {
+          "nuo_s": 7.6,
+          "iki_s": 16.57,
+          "tekstas": "Adreso juostoje kopijuojate dalį nuo „/files/“."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 9.6,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "ep_691_03_1",
+      "failas": "03-kelias-i-video-lauka",
+      "pavadinimas": "Kelią įklijuojate skirtuke „Video“",
+      "trukme_s": 8,
+      "mp4": "ep_691_03_1.mp4",
+      "vtt": "ep_691_03_1.vtt",
+      "poster": "ep_691_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.89,
+          "tekstas": "Skirtuke „Video“ pridedate bloką."
+        },
+        {
+          "nuo_s": 4,
+          "iki_s": 6.85,
+          "tekstas": "Į lauką įklijuojate nukopijuotą kelią."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.2,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 3.2,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.2,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 6.6,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "ep_691_03_2",
+      "failas": "03-kopijuojate-video-sintakse",
+      "pavadinimas": "Nukopijuojate vaizdo įrašo sintaksę",
+      "trukme_s": 9,
+      "mp4": "ep_691_03_2.mp4",
+      "vtt": "ep_691_03_2.vtt",
+      "poster": "ep_691_03_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.42,
+          "tekstas": "Atidarote skirtuką „Sintaksė“."
+        },
+        {
+          "nuo_s": 4,
+          "iki_s": 7.44,
+          "tekstas": "Prie vaizdo įrašo eilutės spaudžiate „Kopijuoti“."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.2,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.2,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.4,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "ep_691_04_2",
+      "failas": "04-grotuvai-svetaineje",
+      "pavadinimas": "Grotuvai atsiranda tekste",
+      "trukme_s": 9,
+      "mp4": "ep_691_04_2.mp4",
+      "vtt": "ep_691_04_2.vtt",
+      "poster": "ep_691_04_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1,
+          "iki_s": 2.65,
+          "tekstas": "Išsaugote įrašą."
+        },
+        {
+          "nuo_s": 3.4,
+          "iki_s": 6.98,
+          "tekstas": "Svetainėje grotuvai atsiranda tose pačiose vietose."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 4.8,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "ep_691_05_1",
+      "failas": "05-salinate-mp4",
+      "pavadinimas": "Mp4 pašalinate iš galerijos",
+      "trukme_s": 13,
+      "mp4": "ep_691_05_1.mp4",
+      "vtt": "ep_691_05_1.vtt",
+      "poster": "ep_691_05_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.68,
+          "tekstas": "Prie kiekvieno mp4 spaudžiate „Šalinti“."
+        },
+        {
+          "nuo_s": 5.5,
+          "iki_s": 7.95,
+          "tekstas": "Galerijoje lieka tik nuotraukos."
+        },
+        {
+          "nuo_s": 8.5,
+          "iki_s": 10.4,
+          "tekstas": "Spaudžiate „Atnaujinti“."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 3.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 9.5,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 10.7,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

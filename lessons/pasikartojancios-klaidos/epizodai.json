@@ -1,0 +1,359 @@
+{
+ "pamokos_slug": "pasikartojancios-klaidos",
+ "pamoka_id": "pam_676",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_676_01",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_676_01",
+   "pamoka": "pam_676",
+   "failas": "01-rinkinio-sintakse",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Talpinami pavieniui",
+    "Po atskirą sintaksę",
+    "Dokumentų rinkinio sintaksė",
+    "Įterpiama tik kartą",
+    "Planavimo dokumentai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "kategorija": "Planavimo dokumentai"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_676_02",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_676_02",
+   "pamoka": "pam_676",
+   "failas": "02-metai-priekyje",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Nenuosekliai",
+    "Nuosekliai",
+    "Metai, ketvirčiai priekyje",
+    "2023 m. I ketvirtis"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "dokumentas": "2023 m. I ketvirčio finansinė ataskaita"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_676_03",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_676_03",
+   "pamoka": "pam_676",
+   "failas": "03-kategorija-privaloma",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Klaida",
+    "Be kategorijos",
+    "Teisingai",
+    "Konkreti kategorija",
+    "Nuostatai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "dokumentas": "gimnazijos-nuostatai.pdf",
+    "kategorija": "Nuostatai"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_676_04",
+   "rusis": "koncepcija",
+   "sablonas": "zingsniai",
+   "dalis": "dal_676_04",
+   "pamoka": "pam_676",
+   "failas": "04-banko-prieziura",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Iškart po perkėlimo",
+    "Pašalinate",
+    "Kartą per metus",
+    "Tvarka priklauso nuo jūsų"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_676_05",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_676_05",
+   "pamoka": "pam_676",
+   "failas": "05-be-mokyklos-pavadinimo",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Ne",
+    "Taip",
+    "Demo mokyklos nuostatai",
+    "Nuostatai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "viz_676_06",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_676_06",
+   "pamoka": "pam_676",
+   "failas": "06-ketvirciai-be-kategoriju",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Atskiros kategorijos",
+    "Viena kategorija",
+    "Metai, ketvirčiai priekyje",
+    "ZIP archyvas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "ZIP"
+   ],
+   "demo_duomenys": {
+    "kategorija": "Veiklos ataskaitos"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "viz_699_01",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_699_01",
+   "pamoka": "pam_676",
+   "failas": "01-nuoroda-ar-grotuvas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Nuoroda",
+    "Grotuvas",
+    "Skaitytojas išeina",
+    "Skaitytojas lieka"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "YouTube",
+    "Vimeo"
+   ],
+   "demo_duomenys": {
+    "irasas": "Demo mokyklos šventės įrašas"
+   },
+   "naudoja_ir": [
+    "dal_696_11"
+   ]
+  },
+  {
+   "kadras": 8,
+   "epizodas": "viz_699_02",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_699_02",
+   "pamoka": "pam_676",
+   "failas": "02-prastos-nuotraukos",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Netalpinate",
+    "Mažų",
+    "Blankių",
+    "Išsiliejusių",
+    "Grąžinate nuotrauką"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "nuotrauka": "Demo mokyklos šventė"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 9,
+   "epizodas": "viz_699_03",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_699_03",
+   "pamoka": "pam_676",
+   "failas": "03-antrastes-palengvina-skaityma",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Teksto paklodė",
+    "Teminės pastraipos",
+    "Atskiros antraštės",
+    "Didesnis skaitomumas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Demo mokyklos istorija"
+   },
+   "naudoja_ir": [
+    "dal_696_08",
+    "dal_700_05"
+   ]
+  },
+  {
+   "kadras": 10,
+   "epizodas": "viz_699_04",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_699_04",
+   "pamoka": "pam_676",
+   "failas": "04-formatavimo-siuksles",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Šiukšlės",
+    "Neįprasti šriftai",
+    "Spalvos",
+    "Keisti tarpai",
+    "Pataisote"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Demo mokyklos naujiena"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 11,
+   "epizodas": "viz_699_06",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_699_06",
+   "pamoka": "pam_676",
+   "failas": "06-plakatas-ar-tekstas",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Plakatas paveikslėlyje",
+    "Informacija tekstu",
+    "Akcentai antraštėmis"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "kvietimas": "Kviečiame į Šimtadienį"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 12,
+   "epizodas": "viz_699_07",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_699_07",
+   "pamoka": "pam_676",
+   "failas": "07-atnaujinimo-data",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Rodote",
+    "Periodiškai kintanti informacija",
+    "Nepersistengiate",
+    "Visuose puslapiuose"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Priėmimas į mokyklą"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 13,
+   "epizodas": "viz_699_08",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_699_08",
+   "pamoka": "pam_676",
+   "failas": "08-nuorodu-pavadinimai",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Aiškus pavadinimas",
+    "Nusako, kas nuorodoje",
+    "„Spausk čia“",
+    "„Žiūrėk čia“"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "nuoroda": "Elektroninis dienynas"
+   },
+   "naudoja_ir": [
+    "dal_696_10"
+   ]
+  },
+  {
+   "kadras": 14,
+   "epizodas": "viz_699_09",
+   "rusis": "koncepcija",
+   "sablonas": "zingsniai",
+   "dalis": "dal_699_09",
+   "pamoka": "pam_676",
+   "failas": "09-nuorodu-patikra",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Ar veikia",
+    "Ar aktuali",
+    "Ar naudinga",
+    "„Karjeros specialisto“ polapis"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "polapis": "Karjeros specialistas"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 15,
+   "epizodas": "ep_699_10_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_699_10",
+   "pamoka": "pam_676",
+   "failas": "10-nuoroda-naujame-lange",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Turinys",
+    "Išsaugoti ir išeiti"
+   ],
+   "tvs_ui": [
+    "tvs-window",
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "tvs-site",
+    "naujas: nuorodos nustatymų langas"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "nuoroda": "Elektroninis dienynas",
+    "adresas": "https://dienynas.demo.lt/"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

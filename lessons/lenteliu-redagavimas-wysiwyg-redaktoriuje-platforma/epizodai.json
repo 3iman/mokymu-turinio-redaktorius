@@ -1,0 +1,251 @@
+{
+ "pamokos_slug": "lenteliu-redagavimas-wysiwyg-redaktoriuje",
+ "pamoka_id": "pam_1585",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_1585_01",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_1585_01",
+   "pamoka": "pam_1585",
+   "failas": "01-irankio-pasirinkimas",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Tinka",
+    "Nebepakanka",
+    "Google Sheets",
+    "PDF"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "WYSIWYG",
+    "PDF"
+   ],
+   "demo_duomenys": {
+    "pavyzdys": {
+     "lt": "Pamokų laikas, trumpa kainodara"
+    }
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_1585_02_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1585_02",
+   "pamoka": "pam_1585",
+   "failas": "02-nauja-eilute",
+   "trukme_s": 9,
+   "ekrano_tekstai": [
+    "Cell",
+    "Row",
+    "Column",
+    "Insert Row After",
+    "Table Properties"
+   ],
+   "tvs_ui": [
+    "tvs-table",
+    "tvs-row",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: kontekstinis meniu su submeniu"
+   ],
+   "tarimo_kandidatai": [
+    "Row",
+    "Insert Row After"
+   ],
+   "demo_duomenys": {
+    "lentele": {
+     "lt": "Pamokų laikas"
+    }
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_1585_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1585_03",
+   "pamoka": "pam_1585",
+   "failas": "03-pirma-eilute-antraste",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Table Properties",
+    "Headers",
+    "First Row",
+    "OK"
+   ],
+   "tvs_ui": [
+    "tvs-table",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: nustatymų langas su išskleidžiamu lauku"
+   ],
+   "tarimo_kandidatai": [
+    "Table Properties",
+    "Headers",
+    "First Row"
+   ],
+   "demo_duomenys": {
+    "lentele": {
+     "lt": "Gimnazijos taryba"
+    }
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "ep_1585_03_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1585_03",
+   "pamoka": "pam_1585",
+   "failas": "03-cele-antraste",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Cell Properties",
+    "Cell Type",
+    "Header",
+    "OK"
+   ],
+   "tvs_ui": [
+    "tvs-table",
+    "tvs-th",
+    "tvs-btn",
+    "tvs-cursor",
+    "naujas: nustatymų langas su išskleidžiamu lauku"
+   ],
+   "tarimo_kandidatai": [
+    "Cell Properties",
+    "Cell Type",
+    "Header"
+   ],
+   "demo_duomenys": {
+    "lentele": {
+     "lt": "Mokytojai ir tėvai"
+    }
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "ep_1585_04_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1585_04",
+   "pamoka": "pam_1585",
+   "failas": "04-isvalote-formatavima",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Tx",
+    "CTRL+A"
+   ],
+   "tvs_ui": [
+    "tvs-table",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "Tx",
+    "CTRL"
+   ],
+   "demo_duomenys": {
+    "lentele": {
+     "lt": "Darbo užmokestis"
+    }
+   },
+   "naudoja_ir": [
+    "dal_1585_05"
+   ]
+  },
+  {
+   "kadras": 6,
+   "epizodas": "ep_1585_05_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1585_05",
+   "pamoka": "pam_1585",
+   "failas": "05-plotis-100",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Table Properties",
+    "Width",
+    "100%",
+    "OK"
+   ],
+   "tvs_ui": [
+    "tvs-table",
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor"
+   ],
+   "tarimo_kandidatai": [
+    "Table Properties",
+    "Width"
+   ],
+   "demo_duomenys": {
+    "lentele": {
+     "lt": "Pamokų tvarkaraštis"
+    }
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "ep_1585_05_3",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1585_05",
+   "pamoka": "pam_1585",
+   "failas": "05-perspejimo-sintakse",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "{{t('table_ux_accessibility')}}",
+    "Nematote visos lentelės?"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-site",
+    "tvs-table"
+   ],
+   "tarimo_kandidatai": [
+    "table_ux_accessibility"
+   ],
+   "demo_duomenys": {
+    "lentele": {
+     "lt": "Pamokų tvarkaraštis"
+    }
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 8,
+   "epizodas": "viz_1585_06",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_1585_06",
+   "pamoka": "pam_1585",
+   "failas": "06-semantikos-klaidos",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Lentelė lentelėje",
+    "Bold vietoj antraštės",
+    "Tuščios eilutės",
+    "Cell type: Header"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "bold",
+    "Header"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  }
+ ]
+}

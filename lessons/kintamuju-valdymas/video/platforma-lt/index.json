@@ -1,0 +1,138 @@
+{
+  "pamoka": "kintamuju-valdymas",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T03:17:22.841Z",
+  "balso_stiprinimas_db": 5.1,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_1473_01_1",
+      "failas": "01-kintamojo-kurimas",
+      "pavadinimas": "Sukuriate kintamąjį",
+      "trukme_s": 13,
+      "mp4": "ep_1473_01_1.mp4",
+      "vtt": "ep_1473_01_1.vtt",
+      "poster": "ep_1473_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.36,
+          "tekstas": "Vertimų modulyje spaudžiate „Sukurti“."
+        },
+        {
+          "nuo_s": 4.6,
+          "iki_s": 7.96,
+          "tekstas": "Pavadinimą rašote su kategorija prieš dvitaškius."
+        },
+        {
+          "nuo_s": 8.7,
+          "iki_s": 11.87,
+          "tekstas": "Įrašote teksto gabalėlį ir išsaugote."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 10.1,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_1473_02",
+      "failas": "02-vienas-zodis",
+      "pavadinimas": "Progimnazija tampa gimnazija",
+      "trukme_s": 15,
+      "mp4": "viz_1473_02.mp4",
+      "vtt": "viz_1473_02.vtt",
+      "poster": "viz_1473_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.45,
+          "tekstas": "Žodis „progimnazija“ svetainėje vartojamas dešimtis kartų."
+        },
+        {
+          "nuo_s": 6,
+          "iki_s": 10.05,
+          "tekstas": "Rasti ir pakeisti visus rankiniu būdu užimtų daug laiko."
+        },
+        {
+          "nuo_s": 10.6,
+          "iki_s": 13.29,
+          "tekstas": "Su kintamuoju pakeičiate vieną kartą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_1473_03",
+      "failas": "03-gpm-parama",
+      "pavadinimas": "GPM paramos informacija",
+      "trukme_s": 15,
+      "mp4": "viz_1473_03.mp4",
+      "vtt": "viz_1473_03.vtt",
+      "poster": "viz_1473_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.13,
+          "tekstas": "Kasmet paramos informaciją rašote nuo nulio."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 8.99,
+          "tekstas": "Su kintamuoju pakeičiate kelis skaičius ir prisegate ataskaitą."
+        },
+        {
+          "nuo_s": 10.1,
+          "iki_s": 12.87,
+          "tekstas": "Taip išvengiate ir formatavimo griūties."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_1473_04",
+      "failas": "04-mygtukas-kintamuoju",
+      "pavadinimas": "Mygtuko įterpimas",
+      "trukme_s": 16,
+      "mp4": "viz_1473_04.mp4",
+      "vtt": "viz_1473_04.vtt",
+      "poster": "viz_1473_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.89,
+          "tekstas": "Kintamuoju galite paversti ir mygtuką."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 8.49,
+          "tekstas": "Sudėtingą kodo struktūrą teksto redaktoriumi lengva sugriauti."
+        },
+        {
+          "nuo_s": 9.5,
+          "iki_s": 13.76,
+          "tekstas": "Įterpiate vieną kintamąjį – lankytojas mato tvarkingą mygtuką."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

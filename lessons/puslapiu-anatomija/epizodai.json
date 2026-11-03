@@ -1,0 +1,343 @@
+{
+ "pamokos_slug": "puslapiu-anatomija",
+ "pamoka_id": "pam_701",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_701_01_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_701_01",
+   "pamoka": "pam_701",
+   "failas": "01-naujas-puslapis",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "+ Pridėti puslapį",
+    "Default",
+    "Išsaugoti"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-window",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Logopedas"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_701_01_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_701_01",
+   "pamoka": "pam_701",
+   "failas": "01-tempiate-medyje",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Veiklos sritys",
+    "Paslaugos",
+    "Default"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-handle",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Logopedas"
+   },
+   "naudoja_ir": [
+    "dal_690_02",
+    "dal_693_01",
+    "dal_701_03",
+    "dal_679_08",
+    "dal_705_05"
+   ]
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_701_02",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_701_02",
+   "pamoka": "pam_701",
+   "failas": "02-puslapio-tipas",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Default",
+    "Pilno ploto(full)",
+    "Šoninis stulpas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Pamokų tvarkaraštis"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "ep_701_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_701_03",
+   "pamoka": "pam_701",
+   "failas": "03-subpuslapis",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Pridėti subpuslapį",
+    "Slug *",
+    "Išsaugoti"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "Slug"
+   ],
+   "demo_duomenys": {
+    "tevinis": "Veiklos sritys",
+    "subpuslapis": "Logopedas"
+   },
+   "naudoja_ir": [
+    "dal_701_90"
+   ]
+  },
+  {
+   "kadras": 5,
+   "epizodas": "ep_701_04_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_701_04",
+   "pamoka": "pam_701",
+   "failas": "04-pavadinimas-ir-slug",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Pavadinimas *",
+    "Slug *",
+    "logopedas"
+   ],
+   "tvs_ui": [
+    "tvs-window",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "Slug"
+   ],
+   "demo_duomenys": {
+    "pavadinimas": "Logopedas",
+    "slug": "logopedas"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "viz_701_05",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_701_05",
+   "pamoka": "pam_701",
+   "failas": "05-zymos",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Žyma",
+    "Priėmimas",
+    "Projektai",
+    "Egzaminai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "zyma": "Priėmimas"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "ep_701_06_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_701_06",
+   "pamoka": "pam_701",
+   "failas": "06-sintaksiu-pavyzdziai",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Sintaksė",
+    "Kopijuoti",
+    "{{structure(19)}}",
+    "Turinys"
+   ],
+   "tvs_ui": [
+    "tvs-table",
+    "tvs-th",
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Veiklos sritys"
+   },
+   "naudoja_ir": [
+    "dal_693_04",
+    "dal_700_06"
+   ]
+  },
+  {
+   "kadras": 8,
+   "epizodas": "ep_701_08_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_701_08",
+   "pamoka": "pam_701",
+   "failas": "08-paveiksleliu-galerija",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Paveikslėlių galerija",
+    "Max: 100 MB",
+    "Pridėti",
+    "Vardas",
+    "Dydis"
+   ],
+   "tvs_ui": [
+    "tvs-window",
+    "tvs-file",
+    "tvs-btn",
+    "tvs-table",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "aplankas": "Demo mokyklos nuotraukos",
+    "nuotraukos": "Rugsejo-pirmoji (1-6).jpg"
+   },
+   "naudoja_ir": [
+    "dal_692_04",
+    "dal_691_02"
+   ]
+  },
+  {
+   "kadras": 9,
+   "epizodas": "viz_701_09",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_701_09",
+   "pamoka": "pam_701",
+   "failas": "09-vaizdo-irasu-galerija",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Videos",
+    "Video",
+    "YouTube"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "YouTube",
+    "Vimeo"
+   ],
+   "demo_duomenys": {
+    "irasas": "Demo mokyklos šventė"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 10,
+   "epizodas": "viz_701_10",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_701_10",
+   "pamoka": "pam_701",
+   "failas": "10-garso-formatai",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "audio/mpeg",
+    "2.94 MB",
+    "audio/x-wav",
+    "28.13 MB"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "MP3",
+    "WAV",
+    "WMA"
+   ],
+   "demo_duomenys": {
+    "irasas": "Mokyklos himnas.mp3"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 11,
+   "epizodas": "ep_701_11_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_701_11",
+   "pamoka": "pam_701",
+   "failas": "11-atnaujinimo-data",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Show updated",
+    "Yes",
+    "Išsaugoti ir išeiti"
+   ],
+   "tvs_ui": [
+    "tvs-window",
+    "tvs-check",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "tvs-site"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Priėmimas į mokyklą"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 12,
+   "epizodas": "ep_701_12_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_701_12",
+   "pamoka": "pam_701",
+   "failas": "12-turinys",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Turinys",
+    "Source",
+    "Styles",
+    "Format"
+   ],
+   "tvs_ui": [
+    "tvs-window",
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "tvs-site"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "tekstas": "Čia rašome tekstą, formatuojame jį."
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

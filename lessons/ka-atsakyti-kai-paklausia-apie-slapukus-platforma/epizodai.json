@@ -1,0 +1,246 @@
+{
+ "pamokos_slug": "ka-atsakyti-kai-paklausia-apie-slapukus",
+ "pamoka_id": "pam_1765",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_1765_01",
+   "rusis": "koncepcija",
+   "sablonas": "srautas",
+   "dalis": "dal_1765_01",
+   "pamoka": "pam_1765",
+   "failas": "01-is-kur-ateina-klausimas",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Inspekcija",
+    "Pareigūnas",
+    "Raštinė",
+    "Tai ne patikra"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_1765_02",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1765_02",
+   "pamoka": "pam_1765",
+   "failas": "02-tas-pats-modulis",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Turinio valdymo sistema",
+    "Jūsų svetainė",
+    "Kita mokykla",
+    "Darželis",
+    "Gimnazija",
+    "Progimnazija"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "TVS"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_1765_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1765_03",
+   "pamoka": "pam_1765",
+   "failas": "03-slapuku-valdymo-nuoroda",
+   "trukme_s": 10,
+   "ekrano_tekstai": [
+    "/slapuku-valdymas",
+    "Slapukų valdymas"
+   ],
+   "tvs_ui": [
+    "tvs-cursor",
+    "naujas: naršyklės adreso juosta"
+   ],
+   "tarimo_kandidatai": [
+    "slapuku-valdymas"
+   ],
+   "demo_duomenys": {
+    "svetaine": "demomokykla.lt"
+   },
+   "naudoja_ir": [
+    "dal_1765_90"
+   ]
+  },
+  {
+   "kadras": 4,
+   "epizodas": "ep_1765_04_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1765_04",
+   "pamoka": "pam_1765",
+   "failas": "04-privatus-langas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Naujas inkognito langas",
+    "Naujas privatusis langas",
+    "Sutinku",
+    "Nesutinku"
+   ],
+   "tvs_ui": [
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: naršyklės meniu",
+    "naujas: slapukų juosta"
+   ],
+   "tarimo_kandidatai": [
+    "inkognito"
+   ],
+   "demo_duomenys": {
+    "svetaine": "demomokykla.lt"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "ep_1765_04_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1765_04",
+   "pamoka": "pam_1765",
+   "failas": "04-vienodi-mygtukai",
+   "trukme_s": 7,
+   "ekrano_tekstai": [
+    "Sutinku",
+    "Nesutinku",
+    "Nustatymai"
+   ],
+   "tvs_ui": [
+    "tvs-cursor",
+    "naujas: slapukų juosta"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "svetaine": "demomokykla.lt"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "ep_1765_04_3",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1765_04",
+   "pamoka": "pam_1765",
+   "failas": "04-nustatymai-nepazymeta",
+   "trukme_s": 8,
+   "ekrano_tekstai": [
+    "Nustatymai",
+    "Slapukų valdymas",
+    "Sutinku",
+    "Nesutinku"
+   ],
+   "tvs_ui": [
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: slapukų juosta",
+    "naujas: slapukų jungikliai"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "svetaine": "demomokykla.lt"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "ep_1765_04_4",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1765_04",
+   "pamoka": "pam_1765",
+   "failas": "04-nuoroda-porasteje",
+   "trukme_s": 9,
+   "ekrano_tekstai": [
+    "Slapukų valdymas"
+   ],
+   "tvs_ui": [
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: svetainės poraštė"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "svetaine": "demomokykla.lt"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 8,
+   "epizodas": "viz_1765_05",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_1765_05",
+   "pamoka": "pam_1765",
+   "failas": "05-mygtukai-vienodi",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Taip neturi būti",
+    "Taip yra jūsų svetainėje"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "svetaine": "demomokykla.lt"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 9,
+   "epizodas": "viz_1765_06",
+   "rusis": "koncepcija",
+   "sablonas": "dokumentu_sarasas",
+   "dalis": "dal_1765_06",
+   "pamoka": "pam_1765",
+   "failas": "06-ka-renka",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Būtinieji",
+    "Google Analytics",
+    "Įterptas svetimas turinys"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Google Analytics"
+   ],
+   "demo_duomenys": {
+    "svetaine": "demomokykla.lt"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 10,
+   "epizodas": "viz_1765_07",
+   "rusis": "koncepcija",
+   "sablonas": "srautas",
+   "dalis": "dal_1765_07",
+   "pamoka": "pam_1765",
+   "failas": "07-vienas-taisymas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Pastaba",
+    "Persiunčiate",
+    "Pasiekia visus"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "kontaktas": "pagalba@cleverphant.lt"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

@@ -1,0 +1,243 @@
+{
+  "hash": "85d2fb5cf62bc08f9dcb6e140f0656ec43a31219ef3f56498f40b2b4626257a1",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 2278161564,
+  "characters": 1019,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T03:39:55.280Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Pervadinate prieš įkeldami",
+      "text": "Dokumentų pavadinimus redaguojate dar prieš talpindami į sistemą.",
+      "file": "k01-1.wav",
+      "duration": 4.39,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Pervadinate prieš įkeldami",
+      "text": "Taip išvengiate /ˈpaːinʲavoːs/.",
+      "file": "k01-2.wav",
+      "duration": 2.21,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Pervadinate prieš įkeldami",
+      "text": "Failą /ˈlʲɛnɡva/ rasti ir kompiuteryje, ir svetainėje.",
+      "file": "k01-3.wav",
+      "duration": 3.37,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Subkategoriją kuriate iš sąrašo",
+      "text": "Užvedate pelytę ant kategorijos pavadinimo.",
+      "file": "k02-1.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Subkategoriją kuriate iš sąrašo",
+      "text": "Eilutės dešinėje išnyra mygtukai.",
+      "file": "k02-2.wav",
+      "duration": 2.57,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Subkategoriją kuriate iš sąrašo",
+      "text": "Spaudžiate „Sukurti subkategoriją“.",
+      "file": "k02-3.wav",
+      "duration": 2.69,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 4,
+      "title": "Subkategoriją kuriate iš sąrašo",
+      "text": "Įrašote pavadinimą ir išsaugote.",
+      "file": "k02-4.wav",
+      "duration": 2.61,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Pažymėtus dokumentus ištrinate",
+      "text": "Pažymite konkrečius dokumentus.",
+      "file": "k03-1.wav",
+      "duration": 2.33,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Pažymėtus dokumentus ištrinate",
+      "text": "Sąrašo apačioje išnyra funkciniai mygtukai.",
+      "file": "k03-2.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Pažymėtus dokumentus ištrinate",
+      "text": "Spaudžiate raudoną „/iʃtˈrʲintʲi/“.",
+      "file": "k03-3.wav",
+      "duration": 2.41,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Iš sąrašo pereinate į redagavimą",
+      "text": "Pažymite dokumentus.",
+      "file": "k04-1.wav",
+      "duration": 1.69,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Iš sąrašo pereinate į redagavimą",
+      "text": "Apačioje spaudžiate oranžinį „Redaguoti“.",
+      "file": "k04-2.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Iš sąrašo pereinate į redagavimą",
+      "text": "Atsiveria pirmo dokumento redagavimo langas.",
+      "file": "k04-3.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Kelis failus keliate iš karto",
+      "text": "Daugiau nei vieną dokumentą greičiau įkelsite per kategorijų sąrašą.",
+      "file": "k05-1.wav",
+      "duration": 4.49,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Kelis failus keliate iš karto",
+      "text": "Prie kategorijos spaudžiate „/iːˈkʲɛːltʲi/“.",
+      "file": "k05-2.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Kelis failus keliate iš karto",
+      "text": "Failus galite tiesiog /iːˈtʲɛmptʲi/.",
+      "file": "k05-3.wav",
+      "duration": 2.37,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Pavadinimus taisote vieną po kito",
+      "text": "/lauˈkʲɛ/ „Pavadinimas“ pataisote netvarkingą pavadinimą.",
+      "file": "k06-1.wav",
+      "duration": 4.13,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Pavadinimus taisote vieną po kito",
+      "text": "Spaudžiate „Išsaugoti ir redaguoti sekantį“.",
+      "file": "k06-2.wav",
+      "duration": 3.45,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Pavadinimus taisote vieną po kito",
+      "text": "Atsiveria kito dokumento langas.",
+      "file": "k06-3.wav",
+      "duration": 2.25,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 6,
+      "cue": 4,
+      "title": "Pavadinimus taisote vieną po kito",
+      "text": "Į sąrašą /ˈɡrʲiːʒtʲi/ nereikia.",
+      "file": "k06-4.wav",
+      "duration": 1.97,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Priminimų funkcija",
+      "text": "Priminimų funkcija ypač /ˈlʲɛnɡva/ naudotis.",
+      "file": "k07-1.wav",
+      "duration": 2.93,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Priminimų funkcija",
+      "text": "Darbalaukyje matote, kurį dokumentą metas peržiūrėti.",
+      "file": "k07-2.wav",
+      "duration": 3.61,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Priminimų funkcija",
+      "text": "Rekomenduojame išnaudoti jos privalumus.",
+      "file": "k07-3.wav",
+      "duration": 3.023,
+      "fits": true,
+      "reikia_sek": 14
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+ "pamokos_slug": "modulio-autoriai-valdymas",
+ "pamoka_id": "pam_704",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_704_01_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_704_01",
+   "pamoka": "pam_704",
+   "failas": "01-nuotraukos-apkirpimas",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Nuotrauka",
+    "Select Image",
+    "Upload",
+    "Crop",
+    "Išsaugoti ir baigti"
+   ],
+   "tvs_ui": [
+    "tvs-btn",
+    "tvs-cursor",
+    "naujas: nuotraukos apkirpimo sritis su rėmeliu"
+   ],
+   "tarimo_kandidatai": [
+    "Image"
+   ],
+   "demo_duomenys": {
+    "autorius": "Vincas Kudirka"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_704_03",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_704_03",
+   "pamoka": "pam_704",
+   "failas": "03-kas-ka-daro",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Mes",
+    "Jūs"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "darbuotojas": "Marija Pečkauskaitė",
+    "pareigos": "Pavaduotoja"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_704_04_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_704_04",
+   "pamoka": "pam_704",
+   "failas": "04-naujas-autorius",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Pridėti autorių",
+    "Full Name",
+    "Position",
+    "Qualification",
+    "Email"
+   ],
+   "tvs_ui": [
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "Full Name",
+    "Position"
+   ],
+   "demo_duomenys": {
+    "autorius": "Vincas Kudirka",
+    "pareigos": "Direktorius"
+   },
+   "naudoja_ir": [
+    "dal_704_90"
+   ]
+  },
+  {
+   "kadras": 4,
+   "epizodas": "ep_704_04_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_704_04",
+   "pamoka": "pam_704",
+   "failas": "04-keli-autoriai",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Full Name",
+    "Position",
+    "Išsaugoti",
+    "Autoriai sukurtas sėkmingai"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: žalia sėkmės juosta virš sąrašo"
+   ],
+   "tarimo_kandidatai": [
+    "Full Name",
+    "Position"
+   ],
+   "demo_duomenys": {
+    "autoriai": "Vincas Kudirka, Marija Pečkauskaitė, Jonas Biliūnas",
+    "pareigos": "Direktorius, Pavaduotoja, Informatikos mokytojas"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

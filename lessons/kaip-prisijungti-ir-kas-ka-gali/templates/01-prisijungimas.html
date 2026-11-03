@@ -16,14 +16,6 @@
   .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
   .cursor-wrap .tvs-cursor { left: 0; top: 0; }
   [class*="caret-"] { opacity: 0; }
-  .stage > .scr:nth-of-type(1) { opacity: 0; }
-  .stage > .scr:nth-of-type(2) { opacity: 0; }
-  .stage > .scr:nth-of-type(3) { opacity: 1; }
-  .cursor-wrap { transform: translate(1346.0px, 797.0px); }
-  .caret-admin { opacity: 1; }
-  .caret-email { opacity: 1; }
-  .caret-pass { opacity: 1; }
-
 
   .br { background: #fff; border-radius: 14px; overflow: hidden; border: 1px solid #dfe3ea; box-shadow: 0 24px 60px rgba(30,40,70,.12); }
   .br .tvs-chrome { position: relative; z-index: 2; }
@@ -32,6 +24,15 @@
   .br-site { position: absolute; inset: 0; border-radius: 0; border: 0; box-shadow: none; }
   .br .tvs-login { inset: 0; }
   .br-in .tvs-dash { width: 900px; }
+  /* galutinė būsena (epizodai.js) — po pamokos CSS, kad visada laimėtų */
+  .stage > .scr:nth-of-type(1) { opacity: 0; }
+  .stage > .scr:nth-of-type(2) { opacity: 0; }
+  .stage > .scr:nth-of-type(3) { opacity: 1; }
+  .cursor-wrap { transform: translate(1346.0px, 797.0px); }
+  .caret-admin { opacity: 1; }
+  .caret-email { opacity: 1; }
+  .caret-pass { opacity: 1; }
+
 </style>
 </head>
 <body>

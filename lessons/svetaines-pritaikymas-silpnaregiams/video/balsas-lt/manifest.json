@@ -1,0 +1,173 @@
+{
+  "hash": "0fb46ef73c66b9c2c9817356ff8b5d704c30f3d0e7cc147b7d65c94daeabc5b0",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 3165844356,
+  "characters": 707,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T03:47:27.731Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Kam naudingas vaizdo įrankis",
+      "text": "Naršyklės nustatymus reikia žinoti, kur rasti.",
+      "file": "k01-1.wav",
+      "duration": 3.39,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Kam naudingas vaizdo įrankis",
+      "text": "Įrankį svetainėje pamatote iš /ˈkartoː/.",
+      "file": "k01-2.wav",
+      "duration": 2.69,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Kam naudingas vaizdo įrankis",
+      "text": "Dalinai regintiems to dažnai pakanka.",
+      "file": "k01-3.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Ne visi naudoja įrankį",
+      "text": "/nʲɛˈʒʲinoːtʲɛ/, kuo naudosis lankytojas.",
+      "file": "k02-1.wav",
+      "duration": 2.65,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Ne visi naudoja įrankį",
+      "text": "Vieni didina naršyklę, kiti – visą sistemą.",
+      "file": "k02-2.wav",
+      "duration": 3.49,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Ne visi naudoja įrankį",
+      "text": "Treti turi specialią programinę įrangą.",
+      "file": "k02-3.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Perjungiate kontrasto režimą",
+      "text": "Įrankio /ˈjuostoːjɛ/ spaudžiate „Kontrastas“.",
+      "file": "k03-1.wav",
+      "duration": 3.023,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Perjungiate kontrasto režimą",
+      "text": "Puslapis persijungia į kitą spalvų režimą.",
+      "file": "k03-2.wav",
+      "duration": 2.997,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Padidinate teksto dydį",
+      "text": "Spaudžiate teksto didinimo mygtuką.",
+      "file": "k04-1.wav",
+      "duration": 2.57,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Padidinate teksto dydį",
+      "text": "Renkatės pirmą arba antrą dydį.",
+      "file": "k04-2.wav",
+      "duration": 2.65,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Padidinate teksto dydį",
+      "text": "„Normalus“ grąžina pradinį tekstą.",
+      "file": "k04-3.wav",
+      "duration": 2.65,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Įjungiate ryškias nuorodas",
+      "text": "Spaudžiate „Nuorodų ryškinimas“.",
+      "file": "k05-1.wav",
+      "duration": 2.53,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Įjungiate ryškias nuorodas",
+      "text": "Nuorodos /tʲɛksˈtʲɛ/ atsiskiria nuo kitų žodžių.",
+      "file": "k05-2.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Trys mygtukai – sąmoningas pasirinkimas",
+      "text": "Daugiau mygtukų – daugiau vietų /pasʲiˈmʲɛstʲi/.",
+      "file": "k06-1.wav",
+      "duration": 3.01,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Trys mygtukai – sąmoningas pasirinkimas",
+      "text": "Trys aiškūs sprendžia pagrindinius sunkumus.",
+      "file": "k06-2.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Trys mygtukai – sąmoningas pasirinkimas",
+      "text": "Prireikus /koːnkrʲɛˈtʃʲoːs/ funkcijos, parašote mums.",
+      "file": "k06-3.wav",
+      "duration": 3.183,
+      "fits": true,
+      "reikia_sek": 13
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+{
+ "pamokos_slug": "svetaines-pritaikymas-silpnaregiams",
+ "pamoka_id": "pam_1624",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_1624_01",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_1624_01",
+   "pamoka": "pam_1624",
+   "failas": "01-kam-naudingas-irankis",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Naršyklės nustatymai",
+    "Reikia žinoti, kur",
+    "Įrankis svetainėje",
+    "Matomas iš karto"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_1624_02",
+   "rusis": "koncepcija",
+   "sablonas": "dokumentu_sarasas",
+   "dalis": "dal_1624_02",
+   "pamoka": "pam_1624",
+   "failas": "02-ne-visi-naudojasi",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Ctrl + +",
+    "Naršyklės didinimas",
+    "Sistemos mastelis",
+    "Speciali programinė įranga"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Ctrl"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_1624_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1624_03",
+   "pamoka": "pam_1624",
+   "failas": "03-kontrasto-rezimas",
+   "trukme_s": 9,
+   "ekrano_tekstai": [
+    "Kontrastas",
+    "Juodai ant balto",
+    "Baltai ant juodo"
+   ],
+   "tvs_ui": [
+    "tvs-site",
+    "tvs-site-h",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "ep_1624_03_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1624_03",
+   "pamoka": "pam_1624",
+   "failas": "03-teksto-dydis",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Teksto didinimas",
+    "Dydis +1",
+    "Dydis +2",
+    "Normalus"
+   ],
+   "tvs_ui": [
+    "tvs-site",
+    "tvs-site-h",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "ep_1624_03_3",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1624_03",
+   "pamoka": "pam_1624",
+   "failas": "03-ryskios-nuorodos",
+   "trukme_s": 9,
+   "ekrano_tekstai": [
+    "Nuorodų ryškinimas",
+    "Ryškios nuorodos"
+   ],
+   "tvs_ui": [
+    "tvs-site",
+    "tvs-site-h",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "viz_1624_04",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_1624_04",
+   "pamoka": "pam_1624",
+   "failas": "04-ar-pridesime-daugiau",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Daugiau įrankių",
+    "Vartotojai pasimeta",
+    "Trys mygtukai",
+    "Aiškūs ir praktiški"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": [
+    "dal_1624_05"
+   ]
+  }
+ ]
+}

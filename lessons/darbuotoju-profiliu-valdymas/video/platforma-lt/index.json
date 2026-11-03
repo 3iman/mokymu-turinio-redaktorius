@@ -1,0 +1,169 @@
+{
+  "pamoka": "darbuotoju-profiliu-valdymas",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T03:45:00.391Z",
+  "balso_stiprinimas_db": 5.8,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_706_02",
+      "failas": "02-darbo-laiko-lentele",
+      "pavadinimas": "Darbo laiko lentelė",
+      "trukme_s": 14,
+      "mp4": "viz_706_02.mp4",
+      "vtt": "viz_706_02.vtt",
+      "poster": "viz_706_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 6.03,
+          "tekstas": "Laiką rašote su tašku, o tarp laikų – brūkšnys be tarpų."
+        },
+        {
+          "nuo_s": 6.2,
+          "iki_s": 8.45,
+          "tekstas": "Pertrauka turi savo stulpelį."
+        },
+        {
+          "nuo_s": 8.7,
+          "iki_s": 11.83,
+          "tekstas": "Nedirbamų dienų eilutes paliekate tuščias."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_706_04_1",
+      "failas": "04-darbuotoju-sarasas",
+      "pavadinimas": "Peržiūrite darbuotojų sąrašą",
+      "trukme_s": 13,
+      "mp4": "ep_706_04_1.mp4",
+      "vtt": "ep_706_04_1.vtt",
+      "poster": "ep_706_04_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.09,
+          "tekstas": "Meniu pasirenkate „Administracija“."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 7.81,
+          "tekstas": "Kiekvienas profilis – su nuotrauka ir pareigomis."
+        },
+        {
+          "nuo_s": 8.5,
+          "iki_s": 11.19,
+          "tekstas": "Žemiau – dokumentai ir kontaktai."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_706_06_1",
+      "failas": "06-profilio-id",
+      "pavadinimas": "Randate profilio ID",
+      "trukme_s": 12,
+      "mp4": "ep_706_06_1.mp4",
+      "vtt": "ep_706_06_1.vtt",
+      "poster": "ep_706_06_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.61,
+          "tekstas": "Sąraše spaudžiate „Redaguoti“."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 7.55,
+          "tekstas": "Naršyklės adreso juostoje matote skaičių."
+        },
+        {
+          "nuo_s": 7.9,
+          "iki_s": 10.24,
+          "tekstas": "Tai ir yra profilio ID."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "ep_706_08_1",
+      "failas": "08-profilio-virsus",
+      "pavadinimas": "Profilio viršaus laukai",
+      "trukme_s": 13,
+      "mp4": "ep_706_08_1.mp4",
+      "vtt": "ep_706_08_1.vtt",
+      "poster": "ep_706_08_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.08,
+          "tekstas": "Prie darbuotojo spaudžiate „Redaguoti“."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 8.07,
+          "tekstas": "Viršuje pildote vardą, pavardę ir pareigas."
+        },
+        {
+          "nuo_s": 8.3,
+          "iki_s": 12.03,
+          "tekstas": "Žemiau – aprašymas, darbo laikas ir kategorija."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "ep_706_08_2",
+      "failas": "08-profilio-apacia",
+      "pavadinimas": "Profilio apačios laukai",
+      "trukme_s": 15,
+      "mp4": "ep_706_08_2.mp4",
+      "vtt": "ep_706_08_2.vtt",
+      "poster": "ep_706_08_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 3.77,
+          "tekstas": "Apačioje suvedate kontaktus."
+        },
+        {
+          "nuo_s": 4,
+          "iki_s": 7.97,
+          "tekstas": "Įkeliate nuotrauką, CV ir pareigybės aprašą."
+        },
+        {
+          "nuo_s": 8.2,
+          "iki_s": 12.3,
+          "tekstas": "Trims papildomiems dokumentams – savi laukai ir pavadinimai."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

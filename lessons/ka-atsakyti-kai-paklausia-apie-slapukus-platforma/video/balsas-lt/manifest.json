@@ -1,0 +1,273 @@
+{
+  "hash": "d06b0542effebca42d574cacd86e80ac0b4915e9c26c3c2e5507ccaeaafa4ca7",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 3911574612,
+  "characters": 1214,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T03:46:56.174Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Iš kur ateina klausimas",
+      "text": "Inspekcija primena, kaip turi /ˈvʲɛiktʲi/ slapukai.",
+      "file": "k01-1.wav",
+      "duration": 3.27,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Iš kur ateina klausimas",
+      "text": "Pareigūnas priminimą persiunčia įstaigoms, kurias /prʲiˈʒʲuːrʲi/.",
+      "file": "k01-2.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Iš kur ateina klausimas",
+      "text": "Tokį laišką gaunate, bet tai ne /patʲikˈra/.",
+      "file": "k01-3.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Visose svetainėse tas pats",
+      "text": "Slapukų valdymas yra turinio valdymo sistemos modulis.",
+      "file": "k02-1.wav",
+      "duration": 3.81,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Visose svetainėse tas pats",
+      "text": "Visoms svetainėms atnaujiname tą pačią jo versiją.",
+      "file": "k02-2.wav",
+      "duration": 3.463,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Visose svetainėse tas pats",
+      "text": "Todėl savo svetainėje nieko nekeičiate.",
+      "file": "k02-3.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Nuoroda, kurią siunčiate pareigūnui",
+      "text": "Prie savo adreso prirašote slapukų valdymo /ˈkʲɛːlʲaː/.",
+      "file": "k03-1.wav",
+      "duration": 3.437,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Nuoroda, kurią siunčiate pareigūnui",
+      "text": "Atsivėrusio puslapio nuorodą siunčiate pareigūnui.",
+      "file": "k03-2.wav",
+      "duration": 3.29,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Atsidarote privatų naršyklės langą",
+      "text": "Naršyklės meniu renkatės naują privatų langą.",
+      "file": "k04-1.wav",
+      "duration": 3.65,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Atsidarote privatų naršyklės langą",
+      "text": "Jame įvedate savo svetainės adresą.",
+      "file": "k04-2.wav",
+      "duration": 2.85,
+      "fits": false,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Atsidarote privatų naršyklės langą",
+      "text": "Apačioje pasirodo slapukų /ˈjuosta/.",
+      "file": "k04-3.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Mygtukai atrodo vienodai",
+      "text": "Pažiūrite į abu mygtukus.",
+      "file": "k05-1.wav",
+      "duration": 2.09,
+      "fits": false,
+      "reikia_sek": 8
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Mygtukai atrodo vienodai",
+      "text": "Jie vienodo dydžio ir spalvos.",
+      "file": "k05-2.wav",
+      "duration": 2.33,
+      "fits": true,
+      "reikia_sek": 7
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Pirmą kartą nepažymėta nieko",
+      "text": "/ˈjuostoːjɛ/ spaudžiate „Nustatymai“.",
+      "file": "k06-1.wav",
+      "duration": 2.53,
+      "fits": true,
+      "reikia_sek": 7
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Pirmą kartą nepažymėta nieko",
+      "text": "Pirmą kartą nepažymėta nieko.",
+      "file": "k06-2.wav",
+      "duration": 2.37,
+      "fits": true,
+      "reikia_sek": 7
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Nuoroda puslapio apačioje",
+      "text": "Nuslenkate į titulinio puslapio apačią.",
+      "file": "k07-1.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Nuoroda puslapio apačioje",
+      "text": "Ten rasite nuorodą „Slapukų valdymas“.",
+      "file": "k07-2.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Abu mygtukai vienodai prieinami",
+      "text": "Daugelyje svetainių „Sutinku“ ryškus, o „Nesutinku“ vos matomas.",
+      "file": "k08-1.wav",
+      "duration": 5.41,
+      "fits": false,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Abu mygtukai vienodai prieinami",
+      "text": "Geriausia praktika – vienodas abiejų mygtukų dizainas.",
+      "file": "k08-2.wav",
+      "duration": 3.85,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Abu mygtukai vienodai prieinami",
+      "text": "Savo svetainėje matote abu vienodus.",
+      "file": "k08-3.wav",
+      "duration": 2.93,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 9,
+      "cue": 1,
+      "title": "Ką renka jūsų svetainė",
+      "text": "Svetainė nerenka jokių asmens duomenų.",
+      "file": "k09-1.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 9,
+      "cue": 2,
+      "title": "Ką renka jūsų svetainė",
+      "text": "Būtinuosius slapukus paliekate – be jų svetainė /nʲɛˈvʲɛiktuː/.",
+      "file": "k09-2.wav",
+      "duration": 4.17,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 9,
+      "cue": 3,
+      "title": "Ką renka jūsų svetainė",
+      "text": "Visa kita lankytojas gali /uʒdˈraustʲi/.",
+      "file": "k09-3.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 10,
+      "cue": 1,
+      "title": "Vienas taisymas pasiekia visus",
+      "text": "Gavę konkrečią pastabą, laišką persiunčiate mums.",
+      "file": "k10-1.wav",
+      "duration": 3.33,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 10,
+      "cue": 2,
+      "title": "Vienas taisymas pasiekia visus",
+      "text": "Atsakome techniškai arba atnaujiname modulį.",
+      "file": "k10-2.wav",
+      "duration": 3.17,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 10,
+      "cue": 3,
+      "title": "Vienas taisymas pasiekia visus",
+      "text": "Naują versiją gauna visos mokyklos.",
+      "file": "k10-3.wav",
+      "duration": 2.983,
+      "fits": true,
+      "reikia_sek": 13
+    }
+  ]
+}

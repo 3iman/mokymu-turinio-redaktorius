@@ -1,0 +1,19 @@
+{
+  "lang": "lt",
+  "01_juosteles_uzdarymas": {
+    "_epizodas": "ep_702_01_1"
+  },
+  "04_nauja_zinute": {
+    "_epizodas": "ep_702_04_1"
+  },
+  "03_viena_zinute_sarase": {
+    "title": "Viena žinutė sąraše",
+    "do_title": "Rekomenduojame",
+    "do_1": "Vienas vienintelis įrašas",
+    "do_2": "Naujai žinutei — naujas įrašas",
+    "do_3": "Senąjį įrašą trinti",
+    "dont_title": "Painu",
+    "dont_1": "Daug įrašų sąraše",
+    "dont_2": "Neaišku, kuris aktyvus"
+  }
+}

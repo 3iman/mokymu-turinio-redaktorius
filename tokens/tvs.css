@@ -850,3 +850,31 @@ span.tvs-thumb { display: inline-block; vertical-align: middle; }
 .tvs-audbar span.is-on { background: var(--tvs-info); color: #fff; }
 .tvs-stags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
 .tvs-stags span { padding: 6px 14px; border-radius: 16px; background: #eef2f1; color: var(--tvs-site-th); font: 600 15px var(--tvs-site-font); }
+/* Svetainės prieinamumo juosta ir kontrasto režimas (2026-11-03) */
+.tvs-a11y { display: flex; justify-content: flex-end; gap: 8px; padding: 8px 50px; background: #f4f4f4; border-bottom: 1px solid #e5e5e5; font: 14px var(--tvs-site-font); }
+.tvs-a11y span { padding: 6px 12px; border: 1px solid #ccc; border-radius: 3px; background: #fff; color: #333; }
+.tvs-a11y-m { display: flex; flex-direction: column; background: #fff; border: 1px solid #ccc; box-shadow: 0 8px 20px rgba(0,0,0,.15); position: absolute; z-index: 8; font: 15px var(--tvs-site-font); }
+.tvs-a11y-m span { padding: 8px 16px; } .tvs-a11y-m span.is-hl { background: #eef2f1; }
+.tvs-sweb.is-contrast, .tvs-sweb.is-contrast .tvs-sweb-h, .tvs-sweb.is-contrast .tvs-sweb-b { background: #000; color: #fff; }
+.tvs-sweb.is-contrast .tvs-sweb-name, .tvs-sweb.is-contrast .tvs-sweb-t, .tvs-sweb.is-contrast .tvs-sweb-p { color: #fff; }
+.tvs-sweb.is-contrast .tvs-sweb-nav { background: #000; border-bottom: 2px solid #ff0; color: #ff0; }
+.tvs-sweb.is-contrast a, .tvs-sweb.is-contrast .tvs-slink { color: #ff0; }
+.tvs-sweb .tvs-slink.is-strong { background: #ff0; color: #000; font-weight: 700; text-decoration: underline; padding: 0 3px; }
+/* Puslapių medžio eilutė su veiksmais ir lengvos kalbos blokas svetainėje */
+.tvs-node .tvs-node-acts { margin-left: auto; display: flex; gap: 6px; }
+.tvs-ez { display: grid; grid-template-columns: 110px 1fr; gap: 20px; align-items: center; padding: 16px 0; border-bottom: 1px solid #eee; font: 22px/1.45 var(--tvs-site-font); color: #222; }
+.tvs-ez i { width: 110px; height: 110px; border-radius: 12px; background: #eef2f1; display: flex; align-items: center; justify-content: center; font-style: normal; font-size: 56px; }
+/* Įkėlimo langas kaip sluoksnis epizode: plotis pagal tėvą, eilutės žemesnės (2026-11-03) */
+.upw > .tvs-modal { position: relative; width: 100%; }
+.upw .tvs-up-row { min-height: 84px; }
+/* CKEditor kontekstinis meniu su submeniu ir lentelė redaktoriuje; naršyklės meniu, inkognito langas (2026-11-03) */
+.tvs-ckm { position: absolute; z-index: 25; background: #fff; border: 1px solid #d1d1d1; box-shadow: 0 6px 20px rgba(0,0,0,.2); font: 17px Arial, sans-serif; color: #484848; min-width: 230px; padding: 4px 0; }
+.tvs-ckm div { padding: 8px 18px 8px 34px; display: flex; justify-content: space-between; } .tvs-ckm div.is-hl { background: #e9e9e9; } .tvs-ckm div.is-sub::after { content: '▸'; color: #888; }
+.tvs-ckm hr { border: 0; border-top: 1px solid #e5e5e5; margin: 4px 0; }
+.tvs-cktab { border-collapse: collapse; font: 17px 'Times New Roman', serif; }
+.tvs-cktab td, .tvs-cktab th { border: 1px solid #999; padding: 6px 12px; min-width: 120px; text-align: left; }
+.tvs-cktab th { background: #ddd; font-weight: 700; }
+.tvs-bmenu { position: absolute; right: 18px; top: 52px; z-index: 25; background: #fff; border-radius: 8px; box-shadow: 0 8px 26px rgba(0,0,0,.22); padding: 8px 0; min-width: 300px; font: 16px Arial; color: #222; }
+.tvs-bmenu div { padding: 10px 20px; } .tvs-bmenu div.is-hl { background: #e8f0fe; }
+.tvs-chrome.is-incognito { background: #3c3c3c; } .tvs-chrome.is-incognito .tvs-omni { background: #202124; color: #e8eaed; }
+.tvs-cookiebar { position: absolute; left: 0; right: 0; bottom: 0; background: #fff; border-top: 1px solid #ddd; box-shadow: 0 -8px 24px rgba(0,0,0,.12); padding: 22px 50px; display: flex; align-items: center; justify-content: space-between; gap: 30px; font: 18px var(--tvs-site-font); color: #333; z-index: 5; }

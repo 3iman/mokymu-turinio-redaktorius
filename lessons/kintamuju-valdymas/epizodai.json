@@ -1,0 +1,99 @@
+{
+ "pamokos_slug": "kintamuju-valdymas",
+ "pamoka_id": "pam_1473",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_1473_01_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1473_01",
+   "pamoka": "pam_1473",
+   "failas": "01-kintamojo-kurimas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Vertimai",
+    "Sukurti",
+    "Key",
+    "Value",
+    "Išsaugoti ir išeiti"
+   ],
+   "tvs_ui": [
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "kintamasis": "mokykla::pavadinimas",
+    "reiksme": "Demo progimnazija"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_1473_02",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_1473_02",
+   "pamoka": "pam_1473",
+   "failas": "02-vienas-zodis",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Rankiniu būdu",
+    "Su kintamuoju"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "kintamasis": "progimnazija",
+    "nauja_reiksme": "gimnazija"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_1473_03",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_1473_03",
+   "pamoka": "pam_1473",
+   "failas": "03-gpm-parama",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Kasmet nuo nulio",
+    "Kintamasis",
+    "1,2 % GPM"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "GPM"
+   ],
+   "demo_duomenys": {
+    "ataskaita": "Paramos panaudojimo ataskaita"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_1473_04",
+   "rusis": "koncepcija",
+   "sablonas": "kodas_rezultatas",
+   "dalis": "dal_1473_04",
+   "pamoka": "pam_1473",
+   "failas": "04-mygtukas-kintamuoju",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Kintamasis redaktoriuje",
+    "Ką mato lankytojas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mygtukas": "Pildyti prašymą"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

@@ -1,0 +1,154 @@
+{
+ "pamokos_slug": "informacija-gestu-kalba",
+ "pamoka_id": "pam_1622",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_1622_01",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_1622_01",
+   "pamoka": "pam_1622",
+   "failas": "01-ka-rengiate",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Tai yra",
+    "Scenarijus vertėjui",
+    "Tai nėra",
+    "Titrai",
+    "Lengvai suprantama kalba"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_1622_02",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_1622_02",
+   "pamoka": "pam_1622",
+   "failas": "02-kaip-pasakojimas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Kaip pasakotumėte gyvai",
+    "Išskaidyta į dalis",
+    "Be lentelių ir grafų",
+    "Be santrumpų"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_1622_03",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1622_03",
+   "pamoka": "pam_1622",
+   "failas": "03-kaip-paruosti-teksta",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    ".docx, 12 šriftas",
+    "Viena tema, vienas video",
+    "1 video, 2 video",
+    "Įstaigos logotipas",
+    "Paruošta įkėlimui"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "docx"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_1622_04",
+   "rusis": "koncepcija",
+   "sablonas": "dokumentu_sarasas",
+   "dalis": "dal_1622_04",
+   "pamoka": "pam_1622",
+   "failas": "04-vaizdo-iraso-reikalavimai",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "mp4",
+    "Be garso takelio",
+    "Iki 10–20 Mb",
+    "Talpinimui svetainėje"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "mp4",
+    "Mb"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_1622_05",
+   "rusis": "koncepcija",
+   "sablonas": "srautas",
+   "dalis": "dal_1622_05",
+   "pamoka": "pam_1622",
+   "failas": "05-nuo-scenarijaus-iki-video",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Scenarijaus pavyzdys",
+    "Vertėjai",
+    "Logotipas",
+    "Informacija gestų kalba"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "vertimaigestais.lt"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "ep_1622_05_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1622_05",
+   "pamoka": "pam_1622",
+   "failas": "05-gestu-video-i-puslapi",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Informacija gestų kalba",
+    "Select File",
+    "Upload",
+    "Išsaugoti ir išeiti"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-file",
+    "tvs-cursor",
+    "tvs-ripple",
+    "tvs-site"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

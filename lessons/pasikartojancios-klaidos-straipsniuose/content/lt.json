@@ -1,0 +1,86 @@
+{
+  "lang": "lt",
+  "03_sarasas_redaktoriaus_funkcija": {
+    "_epizodas": "ep_694_03_1"
+  },
+  "04_pastraipos_su_enter": {
+    "_epizodas": "ep_694_04_1"
+  },
+  "01_lygiavimas_pagal_kaire": {
+    "title": "Lygiavimas pagal kairį kraštą",
+    "do_title": "Taip",
+    "do_1": "Pagal kairį kraštą",
+    "do_2": "Taip numatyta dizaino sistemoje",
+    "dont_title": "Ne",
+    "dont_1": "Pagal abu kraštus (Justify)",
+    "dont_2": "Neproporcingai dideli tarpai"
+  },
+  "02_vienas_pastraipu_skyrimas": {
+    "title": "Vienas pastraipų skyrimo būdas",
+    "do_title": "Taip",
+    "do_1": "Tarpas tarp pastraipų",
+    "do_2": "Arba pirmos eilutės atitraukimas",
+    "dont_title": "Ne",
+    "dont_1": "Abu būdai kartu",
+    "dont_2": "Atitraukimas keliais tarpais",
+    "dont_3": "Netvarkinga mažuose ekranuose"
+  },
+  "03_sarasai_be_savadarbiu": {
+    "title": "Sąrašai redaktoriaus funkcija",
+    "do_title": "Taip",
+    "do_1": "Redaktoriaus sąrašo funkcija",
+    "dont_title": "Ne",
+    "dont_1": "Žvaigždutės",
+    "dont_2": "Brūkšneliai",
+    "dont_3": "Rombai",
+    "dont_4": "Pasvirieji brūkšniai"
+  },
+  "04_enter_ir_shift_enter": {
+    "title": "„Enter“ ir „Shift+Enter“",
+    "old_title": "„Shift+Enter“",
+    "old_step_1": "Tekstas nusikelia",
+    "old_step_2": "Tai nėra nauja pastraipa",
+    "new_title": "„Enter“",
+    "new_step_1": "Nauja pastraipa",
+    "summary": "„Shift+Enter“ – citatoms, himno eilutėms"
+  },
+  "05_autorius_funkcija": {
+    "title": "Autorius funkcija „Autoriai“",
+    "old_title": "Raštu teksto apačioje",
+    "old_step_1": "Prisimena ne visi",
+    "new_title": "Funkcija „Autoriai“",
+    "new_step_1": "Keli autoriai",
+    "new_step_2": "Visi autoriaus įrašai susieti",
+    "summary": "Paspaudus vardą – visų jo įrašų sąrašas"
+  },
+  "06_horizontali_nuotrauka": {
+    "title": "Titulinė nuotrauka – horizontali",
+    "do_title": "Taip",
+    "do_1": "Horizontali titulinė nuotrauka",
+    "do_2": "Plakatui – viena frazuotė arba vizualas",
+    "dont_title": "Ne",
+    "dont_1": "Vertikali titulinė nuotrauka",
+    "dont_2": "Nukirptos kojos ar galva"
+  },
+  "07_vertikalios_nuotraukos": {
+    "title": "Vertikalios nuotraukos straipsnyje",
+    "do_title": "Taip",
+    "do_1": "Pakanka horizontalių — naudojate tik jas",
+    "do_2": "Vertikalioms — plakatų ir diplomų sintaksės",
+    "dont_title": "Ne",
+    "dont_1": "Vertikalios kaip socialinėje medijoje",
+    "dont_2": "„Facebook“, „Instagram“ formatas"
+  },
+  "08_kitos_klaidos": {
+    "title": "Kitos pasikartojančios klaidos",
+    "item_1": "„YouTube“ įrašai įkeliami kaip nuoroda",
+    "item_2": "Naudojamos prastos kokybės nuotraukos",
+    "item_3": "Nenaudojamos antraštės",
+    "item_4": "Paliekamos stiliaus šiukšlės",
+    "item_5": "Svarbiai informacijai naudojami paveikslėliai",
+    "item_6": "Netinkami nuorodų pavadinimai",
+    "item_7": "Neveikiančios nuorodos",
+    "item_8": "Už svetainės ribų nukeliančios nuorodos",
+    "summary": "Plačiau — kurse „Puslapių valdymas“"
+  }
+}

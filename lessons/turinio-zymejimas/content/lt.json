@@ -1,0 +1,26 @@
+{
+  "lang": "lt",
+  "06_zymu_juosta": {
+    "_epizodas": "ep_1472_06_1"
+  },
+  "01_zyma_egzaminai": {
+    "title": "#egzaminai",
+    "kam": "Įrašai apie pasiruošimą egzaminams"
+  },
+  "02_zyma_sveika_mokykla": {
+    "title": "#sveika_mokykla",
+    "kam": "Įrašai apie mokyklos gyvenimą sveikatingumo kontekste"
+  },
+  "03_zyma_knygynas": {
+    "title": "#knygynas",
+    "kam": "Įrašai, kuriuose mokytojai ir mokiniai rekomenduoja perskaitytas knygas"
+  },
+  "04_zyma_naudinga": {
+    "title": "#naudinga",
+    "kam": "Įrašai apie mokslui bei saviugdai naudingus šaltinius ar įrankius"
+  },
+  "05_zyma_rupestis": {
+    "title": "#rupestis",
+    "kam": "Įrašai, kuriuose psichologas dalinasi mokiniams aktualia informacija"
+  }
+}

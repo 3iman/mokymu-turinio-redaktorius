@@ -1,0 +1,43 @@
+{
+  "lang": "lt",
+  "03_kontrasto_rezimas": {
+    "_epizodas": "ep_1624_03_1"
+  },
+  "03_teksto_dydis": {
+    "_epizodas": "ep_1624_03_2"
+  },
+  "03_ryskios_nuorodos": {
+    "_epizodas": "ep_1624_03_3"
+  },
+  "01_kam_naudingas_irankis": {
+    "title": "Kam naudingas vaizdą keičiantis įrankis",
+    "old_title": "Naršyklės ar sistemos nustatymai",
+    "old_step_1": "Reikia žinoti, kur jie yra",
+    "old_step_2": "Dalis nenori ar nemoka",
+    "new_title": "Įrankis svetainėje",
+    "new_step_1": "Iš karto matomas",
+    "new_step_2": "Naudotis nesudėtinga"
+  },
+  "02_ne_visi_naudojasi": {
+    "title": "Ne visi naudojasi svetainės įrankiu",
+    "doc1_label": "Naršyklės didinimas",
+    "doc1_desc": "Ctrl + +",
+    "doc1_tag": "Dažniausia",
+    "doc2_label": "Operacinės sistemos mastelis",
+    "doc2_desc": "Sistemos nustatymai",
+    "doc2_tag": "Visoms programoms",
+    "doc3_label": "Speciali programinė įranga",
+    "doc3_desc": "Atskiras įrankis",
+    "doc3_tag": "Pažengusiems"
+  },
+  "04_ar_pridesime_daugiau": {
+    "title": "Ar pridėsime daugiau įrankių",
+    "old_title": "Daugiau įrankių",
+    "old_step_1": "Vartotojai pasimeta",
+    "old_step_2": "Papildomos rizikos svetainei",
+    "new_title": "Trys mygtukai",
+    "new_step_1": "Aiškūs ir praktiški",
+    "new_step_2": "Išsprendžia pagrindinius iššūkius",
+    "summary": "Universalus dizainas – spręsti esmines problemas paprastais sprendimais"
+  }
+}

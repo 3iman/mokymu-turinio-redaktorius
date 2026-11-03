@@ -1,0 +1,306 @@
+{
+  "pamoka": "pasikartojancios-klaidos-straipsniuose",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T03:28:58.016Z",
+  "balso_stiprinimas_db": 6.3,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_694_01",
+      "failas": "01-lygiavimas-pagal-kaire",
+      "pavadinimas": "Tekstą lygiuojate pagal kairį kraštą",
+      "trukme_s": 13,
+      "mp4": "viz_694_01.mp4",
+      "vtt": "viz_694_01.vtt",
+      "poster": "viz_694_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.51,
+          "tekstas": "Lygiuojant pagal abu kraštus tarp žodžių lieka dideli tarpai."
+        },
+        {
+          "nuo_s": 6.2,
+          "iki_s": 8.25,
+          "tekstas": "Brūkšnelius dėlioti užtrunka."
+        },
+        {
+          "nuo_s": 8.7,
+          "iki_s": 11.43,
+          "tekstas": "Renkatės lygiavimą pagal kairį kraštą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_694_02",
+      "failas": "02-vienas-pastraipu-skyrimas",
+      "pavadinimas": "Pastraipas skiriate vienu būdu",
+      "trukme_s": 15,
+      "mp4": "viz_694_02.mp4",
+      "vtt": "viz_694_02.vtt",
+      "poster": "viz_694_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.45,
+          "tekstas": "Tarpas ir atitraukimas atlieka tą patį darbą."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 7.91,
+          "tekstas": "Naudojate vieną iš jų, ne abu kartu."
+        },
+        {
+          "nuo_s": 8.1,
+          "iki_s": 11.99,
+          "tekstas": "Atitraukimas tarpais mažame ekrane atrodo netvarkingai."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_694_03",
+      "failas": "03-sarasai-be-savadarbiu",
+      "pavadinimas": "Sąrašą sudarote redaktoriaus funkcija",
+      "trukme_s": 13,
+      "mp4": "viz_694_03.mp4",
+      "vtt": "viz_694_03.vtt",
+      "poster": "viz_694_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.81,
+          "tekstas": "Savadarbiai ženklai sąraše vienas kito neatitinka."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 8.43,
+          "tekstas": "Sąrašą sudarote teksto redaktoriaus funkcija."
+        },
+        {
+          "nuo_s": 9.2,
+          "iki_s": 11.77,
+          "tekstas": "Lankytojas mato vientisą sąrašą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "ep_694_03_1",
+      "failas": "03-sarasas-redaktoriaus-funkcija",
+      "pavadinimas": "Eilutes paverčiate sąrašu",
+      "trukme_s": 10,
+      "mp4": "ep_694_03_1.mp4",
+      "vtt": "ep_694_03_1.vtt",
+      "poster": "ep_694_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.61,
+          "tekstas": "Pažymite eilutes, kurias norite paversti sąrašu."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 8.65,
+          "tekstas": "Redaktoriaus juostoje spaudžiate sąrašo mygtuką."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 7.6,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_694_04",
+      "failas": "04-enter-ir-shift-enter",
+      "pavadinimas": "„Enter“ pradeda naują pastraipą",
+      "trukme_s": 13,
+      "mp4": "viz_694_04.mp4",
+      "vtt": "viz_694_04.vtt",
+      "poster": "viz_694_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.73,
+          "tekstas": "Pastraipa yra tekstas nuo vieno „Enter“ iki kito."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 7.75,
+          "tekstas": "„Shift+Enter“ tik nukelia eilutę."
+        },
+        {
+          "nuo_s": 8.1,
+          "iki_s": 11.23,
+          "tekstas": "Citatoms ar himno eilutėms naudojate jį."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "ep_694_04_1",
+      "failas": "04-pastraipos-su-enter",
+      "pavadinimas": "Pastraipas atskiriate „Enter“ mygtuku",
+      "trukme_s": 10,
+      "mp4": "ep_694_04_1.mp4",
+      "vtt": "ep_694_04_1.vtt",
+      "poster": "ep_694_04_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.81,
+          "tekstas": "Pastraipos gale paspaudžiate „Enter“."
+        },
+        {
+          "nuo_s": 4.3,
+          "iki_s": 8.07,
+          "tekstas": "Rašote naują pastraipą, tarpas atsiranda savaime."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.9,
+          "garsas": "rasymas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "viz_694_05",
+      "failas": "05-autorius-funkcija",
+      "pavadinimas": "Autorių nurodote funkcija „Autoriai“",
+      "trukme_s": 12,
+      "mp4": "viz_694_05.mp4",
+      "vtt": "viz_694_05.vtt",
+      "poster": "viz_694_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.21,
+          "tekstas": "Autorių nurodote ne raštu teksto apačioje."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 7.31,
+          "tekstas": "Pasirenkate jį funkcija „Autoriai“."
+        },
+        {
+          "nuo_s": 7.7,
+          "iki_s": 10.79,
+          "tekstas": "Paspaudus vardą matomi visi jo įrašai."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "viz_694_06",
+      "failas": "06-horizontali-nuotrauka",
+      "pavadinimas": "Titulinei rinkitės horizontalią nuotrauką",
+      "trukme_s": 12,
+      "mp4": "viz_694_06.mp4",
+      "vtt": "viz_694_06.vtt",
+      "poster": "viz_694_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.89,
+          "tekstas": "Vertikali nuotrauka sąraše nukerpama."
+        },
+        {
+          "nuo_s": 4.3,
+          "iki_s": 6.67,
+          "tekstas": "Titulinei renkatės horizontalią."
+        },
+        {
+          "nuo_s": 7,
+          "iki_s": 9.73,
+          "tekstas": "Plakatą įkeliate į patį straipsnį."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 9,
+      "epizodas": "viz_694_07",
+      "failas": "07-vertikalios-nuotraukos",
+      "pavadinimas": "Vertikalioms nuotraukoms naudojate sintakses",
+      "trukme_s": 12,
+      "mp4": "viz_694_07.mp4",
+      "vtt": "viz_694_07.vtt",
+      "poster": "viz_694_07.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.97,
+          "tekstas": "Jei pakanka horizontalių nuotraukų, naudojate tik jas."
+        },
+        {
+          "nuo_s": 5.7,
+          "iki_s": 10.51,
+          "tekstas": "Vertikalias įterpiate sintaksėmis, skirtomis plakatams ir diplomams."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 10,
+      "epizodas": "viz_694_08",
+      "failas": "08-kitos-klaidos",
+      "pavadinimas": "Kitos pasikartojančios klaidos",
+      "trukme_s": 13,
+      "mp4": "viz_694_08.mp4",
+      "vtt": "viz_694_08.vtt",
+      "poster": "viz_694_08.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.57,
+          "tekstas": "Šios klaidos kartojasi dažniausiai."
+        },
+        {
+          "nuo_s": 4.2,
+          "iki_s": 8.25,
+          "tekstas": "Nuorodos, nuotraukos, antraštės ir stiliaus šiukšlės."
+        },
+        {
+          "nuo_s": 8.6,
+          "iki_s": 11.66,
+          "tekstas": "Plačiau jas rasite kurse „Puslapių valdymas“."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

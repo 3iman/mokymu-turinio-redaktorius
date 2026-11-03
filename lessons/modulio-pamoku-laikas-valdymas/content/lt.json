@@ -1,0 +1,23 @@
+{
+  "lang": "lt",
+  "01_pamoku_laikas_svetaineje": {
+    "_epizodas": "ep_710_01_1"
+  },
+  "03_laiko_irasas": {
+    "_epizodas": "ep_710_03_1"
+  },
+  "05_nauja_papildinio_zona": {
+    "_epizodas": "ep_710_05_1"
+  },
+  "05_papildinio_tipas": {
+    "_epizodas": "ep_710_05_2"
+  },
+  "04_kategoriju_pavadinimai": {
+    "title": "Kategorijų pavadinimai matomi tik TVS",
+    "cms_label": "TVS aplinka",
+    "cms_note": "Kategorijų sąrašas",
+    "site_label": "Svetainė",
+    "site_note": "Pavadinimas nerodomas",
+    "summary": "Kuriate kuo trumpesnius pavadinimus"
+  }
+}

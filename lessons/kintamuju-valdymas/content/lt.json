@@ -1,0 +1,35 @@
+{
+  "lang": "lt",
+  "01_kintamojo_kurimas": {
+    "_epizodas": "ep_1473_01_1"
+  },
+  "02_vienas_zodis": {
+    "title": "Progimnazija tampa gimnazija",
+    "old_title": "Rankiniu būdu",
+    "old_step_1": "Rasti visus nebetinkamus žodžius",
+    "old_step_2": "Pakeisti kiekvieną",
+    "old_step_3": "Užimtų labai daug laiko",
+    "new_title": "Su kintamuoju",
+    "new_step_1": "Pakeičiate vieną kartą",
+    "new_step_2": "Vos kelios sekundės",
+    "summary": "Tinka ir adresui, el. paštui, telefono numeriui"
+  },
+  "03_gpm_parama": {
+    "title": "1,2 % GPM paramos informacija",
+    "old_title": "Kasmet nuo nulio",
+    "old_step_1": "Rašoma iš naujo",
+    "old_step_2": "Formatavimo griūtis",
+    "old_step_3": "Skirtingi administratoriai – skirtingas turinys",
+    "new_title": "Kintamasis",
+    "new_step_1": "Pakeičiate kelis skaičius",
+    "new_step_2": "Prisegate panaudojimo ataskaitą",
+    "summary": "Tą patį galima daryti ir darbo užmokesčio lentelei"
+  },
+  "04_mygtukas_kintamuoju": {
+    "title": "Mygtuko įterpimas",
+    "editor_label": "Kintamasis redaktoriuje",
+    "code_warn": "Sudėtingą kodo struktūrą lengva sugriauti teksto redaktoriumi",
+    "result_label": "Ką mato lankytojas",
+    "table_h2": "Mygtukas arba „&lt;iframe&gt;“ gabalėlis"
+  }
+}

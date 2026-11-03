@@ -1,0 +1,131 @@
+{
+ "pamokos_slug": "turinio-zymejimas",
+ "pamoka_id": "pam_1472",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_1472_01",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1472_01",
+   "pamoka": "pam_1472",
+   "failas": "01-zyma-egzaminai",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "#egzaminai",
+    "Pasiruošimas egzaminams"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "irasas": "Egzaminų tvarkaraštis"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_1472_02",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1472_02",
+   "pamoka": "pam_1472",
+   "failas": "02-zyma-sveika-mokykla",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "#sveika_mokykla",
+    "Sveikatingumo kontekstas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "irasas": "Judriosios pertraukos"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_1472_03",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1472_03",
+   "pamoka": "pam_1472",
+   "failas": "03-zyma-knygynas",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "#knygynas",
+    "Knygų rekomendacijos"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "irasas": "Ką skaito dešimtokai"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_1472_04",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1472_04",
+   "pamoka": "pam_1472",
+   "failas": "04-zyma-naudinga",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "#naudinga",
+    "Šaltiniai ir įrankiai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "irasas": "Nemokamos mokymo priemonės"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_1472_05",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1472_05",
+   "pamoka": "pam_1472",
+   "failas": "05-zyma-rupestis",
+   "trukme_s": 10,
+   "ekrano_tekstai": [
+    "#rupestis",
+    "Psichologo žinutės"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "irasas": "Kaip susitarti su įtampa"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "ep_1472_06_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1472_06",
+   "pamoka": "pam_1472",
+   "failas": "06-zymu-juosta",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Papildiniai"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: žymų juosta svetainėje"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "zyma": "#egzaminai"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+{
+  "lang": "lt",
+  "05_gestu_video_i_puslapi": {
+    "_epizodas": "ep_1622_05_1"
+  },
+  "01_ka_rengiate": {
+    "title": "Ką rengiate",
+    "do_title": "Tai yra",
+    "do_1": "Scenarijus gestų kalbos vertėjui",
+    "dont_title": "Tai nėra",
+    "dont_1": "Titravimui skirtas tekstas",
+    "dont_2": "Lengvai suprantama kalba tekstas"
+  },
+  "02_kaip_pasakojimas": {
+    "title": "Scenarijus kaip pasakojimas",
+    "do_title": "Taip",
+    "do_1": "Aiškus, išskaidytas į dalis",
+    "do_2": "Kaip pasakotumėte gyvai",
+    "dont_title": "Ne",
+    "dont_1": "Lentelės, grafai",
+    "dont_2": "Per glausti sąrašai",
+    "dont_3": "Santrumpos: PUPP, LR"
+  },
+  "03_kaip_paruosti_teksta": {
+    "title": "Kaip paruošti tekstą",
+    "item_1": "Word formatas (.docx), 12 šriftas",
+    "item_2": "Viena tema — vienas vaizdo įrašas",
+    "item_3": "Pažymite „1 video“, „2 video“",
+    "item_4": "Pridedate įstaigos logotipą — geriausios kokybės",
+    "item_5": "Prašote įrašų, paruoštų įkėlimui į svetainę"
+  },
+  "04_vaizdo_iraso_reikalavimai": {
+    "title": "Kaip paruošti vaizdo įrašą",
+    "doc1_label": "Formatas",
+    "doc1_desc": "mp4",
+    "doc1_tag": "Būtina",
+    "doc2_label": "Garso takelis",
+    "doc2_desc": "Įrašuose jo neturi būti",
+    "doc2_tag": "Tyla taip pat sveria",
+    "doc3_label": "Failo dydis",
+    "doc3_desc": "Rekomenduojama iki 10–20 Mb",
+    "doc3_tag": "Talpinimui svetainėje"
+  },
+  "05_nuo_scenarijaus_iki_video": {
+    "title": "Nuo scenarijaus iki video svetainėje",
+    "step1_label": "Scenarijaus pavyzdys",
+    "step1_desc": "Pritaikote faktinę informaciją",
+    "arrow_label_1": "tinklapiupritaikymas@vertimaigestais.lt",
+    "step2_label": "Vertėjai",
+    "step2_desc": "Pridedate logotipą ir video reikalavimus",
+    "arrow_label_2": "kantriai laukiate",
+    "step3_label": "„Informacija gestų kalba“",
+    "step3_desc": "Patalpinate vaizdo įrašus"
+  }
+}

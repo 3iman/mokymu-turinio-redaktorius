@@ -90,7 +90,7 @@ const typed = (id, text, { caret = true, ph = '' } = {}) => {
   // Žodis — nelaužomas blokas, tarpas — atskira raidė su &nbsp; (kitaip daugiaeilutis tekstas praranda tarpus
   // arba lūžta per žodžio vidurį; metraštis 2026-11-03)
   let n = 0;
-  const L = String(text).split(/( )/).filter(w => w !== '').map(w => w === ' '
+  const L = String(text).split(/( |\n)/).filter(w => w !== '').map(w => w === '\n' ? '<br>' : w === ' '
     ? `<span class="l l${++n}">&nbsp;</span>`
     : `<span class="w">${[...w].map(ch => `<span class="l l${++n}">${esc(ch)}</span>`).join('')}</span>`).join('');
   return `${ph ? `<span class="tvs-ph ph-${id}">${esc(ph)}</span>` : ''}<span class="tvs-typed ty-${id}" data-ty="${id}">${L}</span>${caret ? `<span class="tvs-caret caret-${id}"></span>` : ''}`;
@@ -145,6 +145,12 @@ const split = (cls, { siteTitle = '', siteBody = '', editor = '', foot = '', tTo
 const split2 = (cls, { left = '', right = '', siteTitle = '', tL = 'sleft', tR = 'sright' }) => scr(`${cls} tvs-split2`, `
         <div class="tvs-split2-l" data-t="${tL}"><span class="tvs-split-tag">TVS</span>${left}</div>
         <div class="tvs-split2-r" data-t="${tR}"><span class="tvs-split-tag">Svetainė</span><div class="tvs-sweb-nav"><span class="is-on">${siteTitle}</span></div><div class="tvs-sweb-b">${right}</div></div>`);
+const VID_ICO = '<svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="1.5"/><path d="M3 9h18M3 15h18M7 5v4M7 15v4M17 5v4M17 15v4"/><path d="M10.5 10.3v3.4l3-1.7z" fill="#fff"/></svg>';
+/** Įkėlimo langas (lenta 07): title, rows [[vardas, dydis, mime, katalogas, cls?, t?]] */
+const upload = (title, rows = [], { cls = '', dz = 'dz' } = {}) => `<div class="tvs-modal is-static ${cls}"><div class="tvs-modal-h"><span>${title}</span><span class="tvs-x is-dark"${cls ? ` data-t="${cls}x"` : ''}>×</span></div>
+          <div class="up-sub"><span class="tvs-badge">Max: 100 MB</span></div>
+          <div class="tvs-modal-b"><div class="tvs-dz" data-t="${dz}"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l6 6h-4v7h-4V8H6zM3 17h4v2h10v-2h4v5H3z"/></svg>Click or drop files here to upload.</div></div>
+          ${rows.length ? `<div><div class="tvs-up-th"><span>Peržiūra</span><span>Vardas</span><span>Dydis</span><span>MIME tipas</span><span>Katalogas</span><span></span></div>${rows.map(([n, z, m, k, c, t]) => `<div class="tvs-up-row ${c || ''}"><span class="tvs-fico">${/video/.test(m) ? VID_ICO : ICO.file}</span><div class="tvs-fmeta"><span class="tvs-fname">${n}</span><span class="tvs-fpath">local://${k.toLowerCase()}/${n}</span></div><span>${z}</span><span>${m}</span><span>${k}</span><span class="tvs-btn is-tiny"${t ? ` data-t="${t}"` : ''}>${SVG.plus}Pridėti</span></div>`).join('')}</div>` : ''}</div>`;
 const btn = (label, { cls = '', icon = '', t = '' } = {}) => `<span class="tvs-btn ${cls}"${t ? ` data-t="${t}"` : ''}>${icon}${label}</span>`;
 
 // ---------- laikas ----------
@@ -233,9 +239,10 @@ async function measure(htmlFiles) {
     out[path.basename(f, '.html')] = await pg.evaluate(() => {
       const st = document.querySelector('.stage').getBoundingClientRect();
       const o = {};
+      const scrs = Array.from(document.querySelectorAll('.stage > .scr'));
       for (const el of document.querySelectorAll('[data-t]')) {
-        const r = el.getBoundingClientRect();
-        o[el.dataset.t] = { x: +(r.left - st.left).toFixed(1), y: +(r.top - st.top).toFixed(1), w: +r.width.toFixed(1), h: +r.height.toFixed(1) };
+        const r = el.getBoundingClientRect(), sc = el.closest('.stage > .scr');
+        o[el.dataset.t] = { x: +(r.left - st.left).toFixed(1), y: +(r.top - st.top).toFixed(1), w: +r.width.toFixed(1), h: +r.height.toFixed(1), s: sc ? scrs.indexOf(sc) + 1 : 0 };
       }
       const ty = {};
       for (const el of document.querySelectorAll('[data-ty]')) ty[el.dataset.ty] = el.querySelectorAll('.l').length;
@@ -300,6 +307,20 @@ function animate(id, def, M, C, D, pref) {
 
   // Prožektorius
   const spots = steps.filter(s => s.spot !== undefined);
+  // Prožektorius, likęs ant seno ekrano: jei pažymėti elementai ne naujame ekrane — užgesinamas su ekrano keitimu
+  const scrOf = (n) => {
+    if (n && typeof n === 'object' && n.ref) return scrOf(n.ref);
+    if (Array.isArray(n)) { const v = n.map(scrOf); return v.every(x => x === v[0]) ? v[0] : 0; }
+    if (typeof n === 'string' && M.rects[n]) return M.rects[n].s || 0;
+    return 0;
+  };
+  for (const sc of scrSteps) {
+    const before = spots.filter(s => s.at <= sc.at + 0.05), after = spots.find(s => s.at > sc.at + 0.05);
+    const last = before[before.length - 1];
+    if (!last || last.spot === null || (after && after.at <= sc.at + 0.6)) continue;
+    const ls = scrOf(last.spot);
+    if (ls && ls !== sc.scr) { spots.push({ spot: null, at: sc.at, auto: true }); spots.sort((a, b) => a.at - b.at); }
+  }
   if (spots.length) {
     const st = []; let prev = null, on = false;
     for (const s of spots) {
@@ -438,4 +459,4 @@ async function build(lessonDir, defs, opts = {}) {
   for (const id of ids) console.log(`  K${meta[id].k.kadras} ${id} · ${meta[id].D} s · b ${meta[id].C.b.join('/')} · g ${meta[id].C.g.join('/')}`);
 }
 
-module.exports = { split, split2, cke, ckd, tabs, SVG, ICO, top, side, subnav, win, scr, site, typed, btn, chrome, dash, DASH, docRow, docTable, sdocs, esc, build };
+module.exports = { upload, VID_ICO, split, split2, cke, ckd, tabs, SVG, ICO, top, side, subnav, win, scr, site, typed, btn, chrome, dash, DASH, docRow, docTable, sdocs, esc, build };

@@ -16,11 +16,6 @@
   .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
   .cursor-wrap .tvs-cursor { left: 0; top: 0; }
   [class*="caret-"] { opacity: 0; }
-  .stage > .scr:nth-of-type(1) { opacity: 1; }
-  .cursor-wrap { transform: translate(1496.0px, 397.0px); }
-  .caret-syn { opacity: 1; }
-  .navl { opacity: 1; }
-
 
   .tvs-split-bot .tvs-cke-body { min-height: 100px; }
   .subs { margin-top: 10px; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 24px; max-width: 900px; }
@@ -32,6 +27,12 @@
   .navl span { color: var(--tvs-site-link); }
   .omni-ov { position: absolute; left: 0; right: 0; top: 0; z-index: 4; box-shadow: 0 6px 20px rgba(0,0,0,.12); }
   .numhl { border-radius: 3px; }
+  /* galutinė būsena (epizodai.js) — po pamokos CSS, kad visada laimėtų */
+  .stage > .scr:nth-of-type(1) { opacity: 1; }
+  .cursor-wrap { transform: translate(1496.0px, 397.0px); }
+  .caret-syn { opacity: 1; }
+  .navl { opacity: 1; }
+
 </style>
 </head>
 <body>

@@ -1,0 +1,24 @@
+{
+  "lang": "lt",
+  "04_darbuotoju_sarasas": {
+    "_epizodas": "ep_706_04_1"
+  },
+  "06_profilio_id": {
+    "_epizodas": "ep_706_06_1"
+  },
+  "08_profilio_virsus": {
+    "_epizodas": "ep_706_08_1"
+  },
+  "08_profilio_apacia": {
+    "_epizodas": "ep_706_08_2"
+  },
+  "02_darbo_laiko_lentele": {
+    "title": "Darbo laiko lentelė",
+    "do_title": "Taip",
+    "do_1": "Laikas su tašku: 9.00",
+    "do_2": "Tarp laikų brūkšnys be tarpų",
+    "do_3": "Pertrauka atskirame stulpelyje",
+    "do_4": "Nedirbamų dienų eilutės tuščios",
+    "dont_title": "Ne"
+  }
+}

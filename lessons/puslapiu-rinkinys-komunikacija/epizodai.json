@@ -1,0 +1,320 @@
+{
+ "pamokos_slug": "puslapiu-rinkinys-komunikacija",
+ "pamoka_id": "pam_686",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_686_01",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_686_01",
+   "pamoka": "pam_686",
+   "failas": "01-pasiekimai",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Statistikos ataskaita",
+    "Rekomenduojame",
+    "Atrinkti svarbiausius",
+    "Vienodas formatas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "pasiekimas": "Respublikinė matematikos olimpiada"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_686_02_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_686_02",
+   "pamoka": "pam_686",
+   "failas": "02-gpm-skaiciai",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Vertimai",
+    "2proc",
+    "2proc::metai",
+    "Value",
+    "Išsaugoti ir išeiti"
+   ],
+   "tvs_ui": [
+    "tvs-filter",
+    "tvs-table",
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "GPM"
+   ],
+   "demo_duomenys": {
+    "metai": "2025",
+    "terminas": "2026-05-02"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_686_02_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_686_02",
+   "pamoka": "pam_686",
+   "failas": "02-gpm-ataskaita",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Turinys",
+    "{{dokumentubankas_file(ID)}}",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-editor",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "GPM"
+   ],
+   "demo_duomenys": {
+    "dokumentas": "2025 m. paramos panaudojimo ataskaita"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_686_03",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_686_03",
+   "pamoka": "pam_686",
+   "failas": "03-projektine-veikla",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Vientisumas",
+    "Tam tikras formatas",
+    "Ypač ES projektams"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_686_04",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_686_04",
+   "pamoka": "pam_686",
+   "failas": "04-filosofija-misija-vizija",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Taip",
+    "Tekstą galima kopijuoti",
+    "Ne",
+    "Tekstas paveikslėlyje",
+    "Tekstas prezentacijoje"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "viz_686_05",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_686_05",
+   "pamoka": "pam_686",
+   "failas": "05-mokyklos-himnas",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Nurodote autorių",
+    "Muzikos grotuvas",
+    "MP3 formatas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "MP3"
+   ],
+   "demo_duomenys": {
+    "autorius": "Juozas Naujalis"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "viz_686_06",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_686_06",
+   "pamoka": "pam_686",
+   "failas": "06-puslapis-nuorodos",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Taip",
+    "Ministerijos svetainė",
+    "Savivaldybės svetainė",
+    "Ne",
+    "Naudingos nuorodos bendruomenei"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 8,
+   "epizodas": "viz_686_07",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_686_07",
+   "pamoka": "pam_686",
+   "failas": "07-apie-mokykla",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Bendra informacija",
+    "Mokyklos istorija",
+    "Svarbūs įvykiai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 9,
+   "epizodas": "viz_686_08",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_686_08",
+   "pamoka": "pam_686",
+   "failas": "08-mokyklos-simboliai",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Logotipas",
+    "Vėliavos nuotrauka",
+    "Naudojimo gairės",
+    "Vektoriniai failai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 10,
+   "epizodas": "viz_686_09",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_686_09",
+   "pamoka": "pam_686",
+   "failas": "09-tradiciniai-renginiai",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Kasmetiniai renginiai",
+    "Vienas puslapis visiems"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "renginys": "Šimtadienis"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 11,
+   "epizodas": "viz_686_10",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_686_10",
+   "pamoka": "pam_686",
+   "failas": "10-bendradarbiavimas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Socialiniai partneriai",
+    "Logotipai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "partneris": "Demo partneris"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 12,
+   "epizodas": "viz_686_11",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_686_11",
+   "pamoka": "pam_686",
+   "failas": "11-ugdymo-aplinka",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Klasės",
+    "Koridoriai",
+    "Sporto salė",
+    "Maitinimo patalpos"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 13,
+   "epizodas": "viz_686_12",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_686_12",
+   "pamoka": "pam_686",
+   "failas": "12-about-us",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "About us",
+    "Über uns",
+    "O nas",
+    "Про нас"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 14,
+   "epizodas": "viz_686_13",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_686_13",
+   "pamoka": "pam_686",
+   "failas": "13-priemimas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Empatiškai",
+    "Trumpai",
+    "Aiškiai",
+    "Nuorodos į dokumentus"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  }
+ ]
+}

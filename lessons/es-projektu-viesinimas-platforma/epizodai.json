@@ -1,0 +1,55 @@
+{
+ "pamokos_slug": "es-projektu-viesinimas",
+ "pamoka_id": "pam_682",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_682_01",
+   "rusis": "koncepcija",
+   "sablonas": "puslapio_maketas",
+   "dalis": "dal_682_01",
+   "pamoka": "pam_682",
+   "failas": "01-es-logotipas-virsuje",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Projekto aprašymas",
+    "Logotipas viršuje",
+    "Ne mažesnis",
+    "Skelbiama penkerius metus"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "PDF"
+   ],
+   "demo_duomenys": {
+    "projektas": "Erasmus+ „Judri mokykla“",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_682_02",
+   "rusis": "koncepcija",
+   "sablonas": "dokumentu_sarasas",
+   "dalis": "dal_682_02",
+   "pamoka": "pam_682",
+   "failas": "02-cpva-dokumentai",
+   "trukme_s": 17,
+   "ekrano_tekstai": [
+    "ES emblemos naudojimas",
+    "Informacija svetainėje",
+    "Apie komunikaciją",
+    "PDF",
+    "DOCX"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "ES",
+    "CPVA"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  }
+ ]
+}

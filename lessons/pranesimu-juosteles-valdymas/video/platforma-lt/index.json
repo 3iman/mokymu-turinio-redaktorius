@@ -1,0 +1,118 @@
+{
+  "pamoka": "pranesimu-juosteles-valdymas",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T03:14:08.039Z",
+  "balso_stiprinimas_db": 5.3,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_702_01_1",
+      "failas": "01-juosteles-uzdarymas",
+      "pavadinimas": "Lankytojas uždaro juostelę",
+      "trukme_s": 11,
+      "mp4": "ep_702_01_1.mp4",
+      "vtt": "ep_702_01_1.vtt",
+      "poster": "ep_702_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.99,
+          "tekstas": "Matote, kaip lankytojas juostelę uždaro kryželiu."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 9.03,
+          "tekstas": "Perkrovus puslapį tos pačios žinutės jis nebemato."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_702_03",
+      "failas": "03-viena-zinute-sarase",
+      "pavadinimas": "Viena žinutė sąraše",
+      "trukme_s": 14,
+      "mp4": "viz_702_03.mp4",
+      "vtt": "viz_702_03.vtt",
+      "poster": "viz_702_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.33,
+          "tekstas": "Kai sąraše kaupiasi keli įrašai, neaišku, kuris rodomas."
+        },
+        {
+          "nuo_s": 5.8,
+          "iki_s": 8.01,
+          "tekstas": "Paliekate vieną vienintelį."
+        },
+        {
+          "nuo_s": 8.2,
+          "iki_s": 12.57,
+          "tekstas": "Naujai žinutei kuriate naują įrašą, o senąjį ištrinate."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_702_04_1",
+      "failas": "04-nauja-zinute",
+      "pavadinimas": "Sukuriate naują žinutę",
+      "trukme_s": 17,
+      "mp4": "ep_702_04_1.mp4",
+      "vtt": "ep_702_04_1.vtt",
+      "poster": "ep_702_04_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 3.77,
+          "tekstas": "Spaudžiate „Pridėti pranešimą“."
+        },
+        {
+          "nuo_s": 4.2,
+          "iki_s": 7.53,
+          "tekstas": "Lauke „Tekstas“ įrašote trumpą žinutę."
+        },
+        {
+          "nuo_s": 7.7,
+          "iki_s": 10.75,
+          "tekstas": "Nurodote, nuo kada iki kada ją rodyti."
+        },
+        {
+          "nuo_s": 10.9,
+          "iki_s": 15.51,
+          "tekstas": "Lauke „URL“ įrašote vidinę nuorodą ir išsaugote."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.6,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 9.1,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 12.7,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+ "pamokos_slug": "baneriu-valdymas",
+ "pamoka_id": "pam_707",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_707_01",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_707_01",
+   "pamoka": "pam_707",
+   "failas": "01-banerio-reikalavimai",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "525 x 300",
+    "Tinka",
+    "Netinka"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "partneris": "Demo partneris"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_707_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_707_03",
+   "pamoka": "pam_707",
+   "failas": "03-baneriu-papildinys",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Papildiniai",
+    "Zonos",
+    "Banner",
+    "Redaguoti"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple",
+    "tvs-filter"
+   ],
+   "tarimo_kandidatai": [
+    "Banner"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_707_03_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_707_03",
+   "pamoka": "pam_707",
+   "failas": "03-atsitiktine-tvarka-off",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Banerių grupė",
+    "Sidebar",
+    "Order",
+    "Random",
+    "Manual",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "Order",
+    "Random",
+    "Manual",
+    "Sidebar"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  }
+ ]
+}

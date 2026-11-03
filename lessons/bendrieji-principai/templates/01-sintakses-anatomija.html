@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/koncepcijos.css">
+<!-- Generuoja koncepcijos.js iš platformos kortelės — ranka neredaguoti. -->
+</head>
+<body>
+  <div class="card">
+    <div class="k-title">{{title}}</div>
+    <div class="k-panel-h b-ul" style="text-align:center;margin:0 0 18px">{{url_label}}</div><div class="k-url"><span class="is-a b-ua">{{url_base}}</span><span class="is-b b-ub">{{url_file_id}}</span><span class="is-c b-uc">{{url_gid}}</span></div><div class="k-sum is-note b-ge"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="11" x2="12" y2="17"/><circle cx="12" cy="7.5" r=".6" fill="currentColor"/></svg><span>{{gid_explain}}</span></div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

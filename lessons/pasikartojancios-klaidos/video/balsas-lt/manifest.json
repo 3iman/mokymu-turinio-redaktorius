@@ -1,0 +1,463 @@
+{
+  "hash": "0bb913c508891bead765554fafc8824b409f4a11d1a0563851181a7062ba8679",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 2495380223,
+  "characters": 2178,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T03:41:54.408Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Pavieniui ar rinkiniu",
+      "text": "/kʲiɛkvʲiɛˈnaːm/ dokumentui įterpiate po atskirą sintaksę.",
+      "file": "k01-1.wav",
+      "duration": 3.71,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Pavieniui ar rinkiniu",
+      "text": "Rinkinio sintaksę įterpiate tik kartą.",
+      "file": "k01-2.wav",
+      "duration": 2.93,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Pavieniui ar rinkiniu",
+      "text": "/nauˈjaːm/ dokumentui užtenka priskirti kategoriją.",
+      "file": "k01-3.wav",
+      "duration": 3.21,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Metai pavadinimo priekyje",
+      "text": "Kai metai kartais /ɡaˈlʲɛ/, kartais priekyje, sąrašas pakrinka.",
+      "file": "k02-1.wav",
+      "duration": 4.41,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Metai pavadinimo priekyje",
+      "text": "Metus ir ketvirčius rašote pavadinimo priekyje.",
+      "file": "k02-2.wav",
+      "duration": 3.33,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Metai pavadinimo priekyje",
+      "text": "Tada dokumentai sugula tvarkingai.",
+      "file": "k02-3.wav",
+      "duration": 2.33,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Dokumentui privaloma kategorija",
+      "text": "Įkėlus dokumentą be kategorijos, jo nesimato dokumentų puslapyje.",
+      "file": "k03-1.wav",
+      "duration": 4.57,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Dokumentui privaloma kategorija",
+      "text": "Įkeldami pasirenkate konkrečią kategoriją.",
+      "file": "k03-2.wav",
+      "duration": 2.997,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Dokumentui privaloma kategorija",
+      "text": "/tʲinkaˈmoːs/ nerandate – sukuriate naują.",
+      "file": "k03-3.wav",
+      "duration": 2.703,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Dokumentų banko priežiūra",
+      "text": "Dokumentus peržiūrite /iʃˈkart/ po perkėlimo į naują svetainę.",
+      "file": "k04-1.wav",
+      "duration": 4.01,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Dokumentų banko priežiūra",
+      "text": "Pasenusius pašalinate.",
+      "file": "k04-2.wav",
+      "duration": 1.97,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Dokumentų banko priežiūra",
+      "text": "Visą banką sutvarkote bent kartą per metus.",
+      "file": "k04-3.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Be mokyklos pavadinimo",
+      "text": "Ilgas mokyklos pavadinimas priekyje apsunkina sąrašo nuskaitymą.",
+      "file": "k05-1.wav",
+      "duration": 4.41,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Be mokyklos pavadinimo",
+      "text": "Dokumentai ir taip yra jūsų svetainėje.",
+      "file": "k05-2.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Be mokyklos pavadinimo",
+      "text": "Pavadinime jo nerašote.",
+      "file": "k05-3.wav",
+      "duration": 2.05,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Ketvirčiai be atskirų kategorijų",
+      "text": "Atskiros kategorijos metams ir ketvirčiams tik apsunkina darbą.",
+      "file": "k06-1.wav",
+      "duration": 4.37,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Ketvirčiai be atskirų kategorijų",
+      "text": "Metus ir ketvirčius rašote pavadinimų priekyje.",
+      "file": "k06-2.wav",
+      "duration": 3.383,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Ketvirčiai be atskirų kategorijų",
+      "text": "Iš kelių dokumentų sudedate archyvą.",
+      "file": "k06-3.wav",
+      "duration": 2.864,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Nuoroda ar grotuvas",
+      "text": "/pʲilˈna/ „YouTube“ nuoroda išveda skaitytoją iš svetainės.",
+      "file": "k07-1.wav",
+      "duration": 3.983,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Nuoroda ar grotuvas",
+      "text": "Vaizdo /ˈiːraʃaː/ įterpiate grotuvo funkcija.",
+      "file": "k07-2.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Nuoroda ar grotuvas",
+      "text": "Tada skaitytojas lieka pas jus.",
+      "file": "k07-3.wav",
+      "duration": 2.33,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Prastos kokybės nuotraukos",
+      "text": "Mažų, blankių ar išsiliejusių nuotraukų netalpinate.",
+      "file": "k08-1.wav",
+      "duration": 3.97,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Prastos kokybės nuotraukos",
+      "text": "Netinka ir keliančios neigiamas emocijas.",
+      "file": "k08-2.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Prastos kokybės nuotraukos",
+      "text": "Grąžinate ir prašote /tʲinkamʲɛsˈnʲeːs/.",
+      "file": "k08-3.wav",
+      "duration": 2.65,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 9,
+      "cue": 1,
+      "title": "Antraštės palengvina skaitymą",
+      "text": "/vʲiɛntʲiˈsa/ teksto paklodė atbaido skaitytoją.",
+      "file": "k09-1.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 9,
+      "cue": 2,
+      "title": "Antraštės palengvina skaitymą",
+      "text": "Ilgesnį tekstą dalijate teminėmis pastraipomis.",
+      "file": "k09-2.wav",
+      "duration": 3.263,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 9,
+      "cue": 3,
+      "title": "Antraštės palengvina skaitymą",
+      "text": "Kiekvienai duodate savo antraštę.",
+      "file": "k09-3.wav",
+      "duration": 2.557,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 10,
+      "cue": 1,
+      "title": "Formatavimo stiliaus šiukšlės",
+      "text": "/nʲɛiːprasˈtʲi/ šriftai, spalvos ir keisti /ˈtaːrpai/ krinta į akis.",
+      "file": "k10-1.wav",
+      "duration": 4.41,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 10,
+      "cue": 2,
+      "title": "Formatavimo stiliaus šiukšlės",
+      "text": "Pastebėję juos, iš /ˈkartoː/ pataisote.",
+      "file": "k10-2.wav",
+      "duration": 2.49,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 10,
+      "cue": 3,
+      "title": "Formatavimo stiliaus šiukšlės",
+      "text": "Skaitytojai jautriai reaguoja į neapdairumą.",
+      "file": "k10-3.wav",
+      "duration": 3.33,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 11,
+      "cue": 1,
+      "title": "Plakatas ar tekstas",
+      "text": "/plakaˈtʲɛ/ surašyto teksto neperskaito neregių programos.",
+      "file": "k11-1.wav",
+      "duration": 3.95,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 11,
+      "cue": 2,
+      "title": "Plakatas ar tekstas",
+      "text": "Nenuskaito jo ir /paiɛʃˈkoːs/ robotai.",
+      "file": "k11-2.wav",
+      "duration": 2.69,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 11,
+      "cue": 3,
+      "title": "Plakatas ar tekstas",
+      "text": "Kvietimą surašote tekstu, akcentus sudedate antraštėmis.",
+      "file": "k11-3.wav",
+      "duration": 4.57,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 12,
+      "cue": 1,
+      "title": "Kur rodyti atnaujinimo datą",
+      "text": "Atnaujinimo datą rodote tik ten, kur informacija kinta.",
+      "file": "k12-1.wav",
+      "duration": 4.09,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 12,
+      "cue": 2,
+      "title": "Kur rodyti atnaujinimo datą",
+      "text": "Tinkamas pavyzdys – „Priėmimas į mokyklą“.",
+      "file": "k12-2.wav",
+      "duration": 3.17,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 12,
+      "cue": 3,
+      "title": "Kur rodyti atnaujinimo datą",
+      "text": "Visuose puslapiuose jos nereikia.",
+      "file": "k12-3.wav",
+      "duration": 2.37,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 13,
+      "cue": 1,
+      "title": "Nuorodų pavadinimai",
+      "text": "Iš naršyklės nukopijuotos nuorodos neįsiminsite.",
+      "file": "k13-1.wav",
+      "duration": 3.49,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 13,
+      "cue": 2,
+      "title": "Nuorodų pavadinimai",
+      "text": "Nuorodos pavadinimas turi pasakyti, kas joje.",
+      "file": "k13-2.wav",
+      "duration": 3.21,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 13,
+      "cue": 3,
+      "title": "Nuorodų pavadinimai",
+      "text": "Vengiate „Spausk čia“ ir „Žiūrėk čia“.",
+      "file": "k13-3.wav",
+      "duration": 3.21,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 14,
+      "cue": 1,
+      "title": "Nuorodų patikra",
+      "text": "Patikrinate, ar kiekviena nuoroda dar veikia.",
+      "file": "k14-1.wav",
+      "duration": 3.077,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 14,
+      "cue": 2,
+      "title": "Nuorodų patikra",
+      "text": "Tada – ar ji aktuali ir naudinga.",
+      "file": "k14-2.wav",
+      "duration": 2.743,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 14,
+      "cue": 3,
+      "title": "Nuorodų patikra",
+      "text": "Pradedate nuo „Karjeros specialisto“ polapio.",
+      "file": "k14-3.wav",
+      "duration": 3.17,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 15,
+      "cue": 1,
+      "title": "Nuoroda atsidaro naujame lange",
+      "text": "Pažymite nuorodą į kitą svetainę.",
+      "file": "k15-1.wav",
+      "duration": 2.41,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 15,
+      "cue": 2,
+      "title": "Nuoroda atsidaro naujame lange",
+      "text": "Nuorodos /lanˈɡʲɛ/ pasirenkate atidarymą naujame /lanˈɡʲɛ/.",
+      "file": "k15-2.wav",
+      "duration": 3.73,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 15,
+      "cue": 3,
+      "title": "Nuoroda atsidaro naujame lange",
+      "text": "Svetainėje ji atsidaro antrame skirtuke.",
+      "file": "k15-3.wav",
+      "duration": 3.143,
+      "fits": true,
+      "reikia_sek": 13
+    }
+  ]
+}

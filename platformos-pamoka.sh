@@ -8,9 +8,10 @@
 # TVS epizodų šablonai piešiami atskirai (lessons/{slug}/sablonai.js ir pan.) — jų nėra, kadras praleidžiamas su įspėjimu.
 set -euo pipefail
 SLUG="$1"; shift || true
+DST="${DST:-$SLUG}"   # redaktoriaus katalogas (kai WP slug sutampa su YouTube pamoka — {slug}-platforma)
 RED="$(cd "$(dirname "$0")" && pwd)"
 PLAT="${PLATFORMA:-$HOME/Workspace/Mokymu-platforma}"
-L="$RED/lessons/$SLUG"
+L="$RED/lessons/$DST"
 
 sync_scenario() {
   ( cd "$PLAT" && python3 scripts/epizodai-i-scenarijus.py "$SLUG" >/dev/null )
@@ -29,25 +30,25 @@ PY
   fi
   # pamokos šablonų generatorius (TVS epizodai), jei yra
   [ -f "$L/sablonai.js" ] && node "$L/sablonai.js" >/dev/null || true
-  node "$RED/koncepcijos.js" --lesson "$SLUG" --platforma "$PLAT" >/dev/null
+  node "$RED/koncepcijos.js" --lesson "$DST" --platforma "$PLAT" >/dev/null
   [ -f "$L/animacijos.js" ] && node "$L/animacijos.js" >/dev/null || true
   [ -f "$L/epizodai-def.js" ] && node "$L/epizodai-def.js" >/dev/null || true
 }
 
 cd "$RED"
-echo "▶ $SLUG"
+echo "▶ $SLUG → lessons/$DST"
 sync_scenario
-node generate.js --png --lang lt --lesson "$SLUG" 2>&1 | grep -E "⚠|⛔|Exported" || true
+node generate.js --png --lang lt --lesson "$DST" 2>&1 | grep -E "⚠|⛔|Exported" || true
 if [ "${1:-}" != "--be-balso" ]; then
-  node generate-voice.js --lesson "$SLUG" --lang lt 2>&1 | grep -E "⛔|Seed|nepasikeitė|Įgarsinimas" || true
+  node generate-voice.js --lesson "$DST" --lang lt 2>&1 | grep -E "⛔|Seed|nepasikeitė|Įgarsinimas" || true
   FIX="$( cd "$PLAT" && python3 scripts/laikai-telpa.py --balsas --taisyti "$SLUG" --red="$RED" 2>&1 || true )"
   echo "$FIX" | grep -E "✎|⛔" || true
   if echo "$FIX" | grep "✎" >/dev/null; then
     echo "  žymos pastumtos pagal tikrą balsą — scenarijus ir animacijos iš naujo"
     sync_scenario
-    node generate.js --png --lang lt --lesson "$SLUG" >/dev/null 2>&1
+    node generate.js --png --lang lt --lesson "$DST" >/dev/null 2>&1
   fi
   ( cd "$PLAT" && python3 scripts/laikai-telpa.py --balsas "$SLUG" --red="$RED" | tail -2 ) || true
 fi
-node generate-video-clips.js --lesson "$SLUG" --lang lt 2>&1 | grep -E "Error|⛔|Done" || true
-node build-video.js --lesson "$SLUG" --lang lt --platforma 2>&1 | grep -E "✓|⛔|Kadrų" || true
+node generate-video-clips.js --lesson "$DST" --lang lt 2>&1 | grep -E "Error|⛔|Done" || true
+node build-video.js --lesson "$DST" --lang lt --platforma 2>&1 | grep -E "✓|⛔|Kadrų" || true

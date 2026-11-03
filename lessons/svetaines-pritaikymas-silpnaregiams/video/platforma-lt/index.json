@@ -1,0 +1,200 @@
+{
+  "pamoka": "svetaines-pritaikymas-silpnaregiams",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T04:44:02.502Z",
+  "balso_stiprinimas_db": 5.7,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_1624_01",
+      "failas": "01-kam-naudingas-irankis",
+      "pavadinimas": "Kam naudingas vaizdo įrankis",
+      "trukme_s": 12,
+      "mp4": "viz_1624_01.mp4",
+      "vtt": "viz_1624_01.vtt",
+      "poster": "viz_1624_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.59,
+          "tekstas": "Naršyklės nustatymus reikia žinoti, kur rasti."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 7.69,
+          "tekstas": "Įrankį svetainėje pamatote iš karto."
+        },
+        {
+          "nuo_s": 8,
+          "iki_s": 10.81,
+          "tekstas": "Dalinai regintiems to dažnai pakanka."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_1624_02",
+      "failas": "02-ne-visi-naudojasi",
+      "pavadinimas": "Ne visi naudoja įrankį",
+      "trukme_s": 12,
+      "mp4": "viz_1624_02.mp4",
+      "vtt": "viz_1624_02.vtt",
+      "poster": "viz_1624_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.85,
+          "tekstas": "Nežinote, kuo naudosis lankytojas."
+        },
+        {
+          "nuo_s": 4.1,
+          "iki_s": 7.59,
+          "tekstas": "Vieni didina naršyklę, kiti – visą sistemą."
+        },
+        {
+          "nuo_s": 7.7,
+          "iki_s": 10.75,
+          "tekstas": "Treti turi specialią programinę įrangą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_1624_03_1",
+      "failas": "03-kontrasto-rezimas",
+      "pavadinimas": "Perjungiate kontrasto režimą",
+      "trukme_s": 9,
+      "mp4": "ep_1624_03_1.mp4",
+      "vtt": "ep_1624_03_1.vtt",
+      "poster": "ep_1624_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.22,
+          "tekstas": "Įrankio juostoje spaudžiate „Kontrastas“."
+        },
+        {
+          "nuo_s": 4.6,
+          "iki_s": 7.6,
+          "tekstas": "Puslapis persijungia į kitą spalvų režimą."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.4,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "ep_1624_03_2",
+      "failas": "03-teksto-dydis",
+      "pavadinimas": "Padidinate teksto dydį",
+      "trukme_s": 12,
+      "mp4": "ep_1624_03_2.mp4",
+      "vtt": "ep_1624_03_2.vtt",
+      "poster": "ep_1624_03_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.77,
+          "tekstas": "Spaudžiate teksto didinimo mygtuką."
+        },
+        {
+          "nuo_s": 4.2,
+          "iki_s": 6.85,
+          "tekstas": "Renkatės pirmą arba antrą dydį."
+        },
+        {
+          "nuo_s": 7.4,
+          "iki_s": 10.05,
+          "tekstas": "„Normalus“ grąžina pradinį tekstą."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.6,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "ep_1624_03_3",
+      "failas": "03-ryskios-nuorodos",
+      "pavadinimas": "Įjungiate ryškias nuorodas",
+      "trukme_s": 9,
+      "mp4": "ep_1624_03_3.mp4",
+      "vtt": "ep_1624_03_3.vtt",
+      "poster": "ep_1624_03_3.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.73,
+          "tekstas": "Spaudžiate „Nuorodų ryškinimas“."
+        },
+        {
+          "nuo_s": 4.2,
+          "iki_s": 7.17,
+          "tekstas": "Nuorodos tekste atsiskiria nuo kitų žodžių."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.8,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "viz_1624_04",
+      "failas": "04-ar-pridesime-daugiau",
+      "pavadinimas": "Trys mygtukai – sąmoningas pasirinkimas",
+      "trukme_s": 13,
+      "mp4": "viz_1624_04.mp4",
+      "vtt": "viz_1624_04.vtt",
+      "poster": "viz_1624_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.21,
+          "tekstas": "Daugiau mygtukų – daugiau vietų pasimesti."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 7.75,
+          "tekstas": "Trys aiškūs sprendžia pagrindinius sunkumus."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 11.58,
+          "tekstas": "Prireikus konkrečios funkcijos, parašote mums."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

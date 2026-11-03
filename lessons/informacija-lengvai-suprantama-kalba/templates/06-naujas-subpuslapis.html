@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* K6 — „Naujas subpuslapis“ (ep_1621_06_1)
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 40% 30%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+.pt { background: #fff; padding: 12px; } .tm { position: absolute; left: 560px; top: 250px; width: 560px; z-index: 10; } .btns { display: flex; gap: 8px; } .ld { font-size: 18px; color: var(--tvs-text-muted); margin: 8px 0; }
+  .clip { height: 600px; overflow: hidden; } .foot { margin-top: 20px; padding: 16px; background: #f4f4f4; font: 18px/1.5 var(--tvs-site-font); color: #333; }
+  /* galutinė būsena (epizodai.js) — po pamokos CSS, kad visada laimėtų */
+  .stage > .scr:nth-of-type(1) { opacity: 0; }
+  .stage > .scr:nth-of-type(2) { opacity: 1; }
+  .cursor-wrap { transform: translate(1396.0px, 817.0px); }
+  .tm { opacity: 1; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class="is-on"></i><i class="is-bars"></i><i class=""></i><i class=""></i><i class=""></i></div>
+        <div class="tvs-subnav"><span class="is-on">Puslapiai</span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">Puslapiai</div>
+<div class="tvs-tree pt">
+            <div class="tvs-node"><div class="tvs-node-handle"></div>Apie mokyklą</div>
+            <div class="tvs-node is-l2" data-t="nlsk"><div class="tvs-node-handle"></div>Informacija lengvai suprantama kalba<div class="tvs-node-acts"><span class="tvs-btn is-tiny" data-t="addsub"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>Pridėti subpuslapį</span></div></div>
+            <div class="tvs-node is-l2" style="margin-left:80px" data-t="nex"><div class="tvs-node-handle"></div>Kviečiame susipažinti su Demo mokykla</div>
+            <div class="tvs-node is-l2"><div class="tvs-node-handle"></div>Informacija gestų kalba</div>
+            <div class="tvs-node"><div class="tvs-node-handle"></div>Mokiniams</div></div>
+        </div>
+        <div class="tvs-modal tm"><div class="tvs-modal-h"><span>Pasirinkite puslapio tipą</span><span class="tvs-x">×</span></div><div class="tvs-modal-b"><div class="tvs-opt">Default</div><div class="tvs-opt is-hover" data-t="optl">Lengvai suprantama kalba layout</div><div class="tvs-opt">Kontaktai</div></div></div>
+      </div>
+
+      <div class="scr scr2 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class="is-on"></i><i class="is-bars"></i><i class=""></i><i class=""></i><i class=""></i></div>
+        <div class="tvs-subnav"><span class="is-on">Puslapiai</span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">Puslapiai  /  Pridėti</div>
+<div class="tvs-form is-dense">
+            <div class="tvs-field" data-t="fp"><div class="tvs-label">Pavadinimas<span class="tvs-req">*</span></div><div class="tvs-input"></div></div>
+            <div class="tvs-field" data-t="fs"><div class="tvs-label">Slug<span class="tvs-req">*</span></div><div class="tvs-input"></div></div></div>
+        </div>
+      </div>
+      <div class="spot"></div>
+      <div class="tvs-ripple rp rp1"></div>
+      <div class="tvs-ripple rp rp2"></div>
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

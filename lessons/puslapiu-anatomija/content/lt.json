@@ -1,0 +1,54 @@
+{
+  "lang": "lt",
+  "01_naujas_puslapis": {
+    "_epizodas": "ep_701_01_1"
+  },
+  "01_tempiate_medyje": {
+    "_epizodas": "ep_701_01_2"
+  },
+  "03_subpuslapis": {
+    "_epizodas": "ep_701_03_1"
+  },
+  "04_pavadinimas_ir_slug": {
+    "_epizodas": "ep_701_04_1"
+  },
+  "06_sintaksiu_pavyzdziai": {
+    "_epizodas": "ep_701_06_1"
+  },
+  "08_paveiksleliu_galerija": {
+    "_epizodas": "ep_701_08_1"
+  },
+  "11_atnaujinimo_data": {
+    "_epizodas": "ep_701_11_1"
+  },
+  "12_turinys": {
+    "_epizodas": "ep_701_12_1"
+  },
+  "02_puslapio_tipas": {
+    "title": "Puslapio tipai",
+    "old_title": "Numatytasis (default)",
+    "old_step_1": "Su šoniniu dizaino objektų stulpu",
+    "new_title": "Pilno ploto (full)",
+    "new_step_1": "Be šoninio dizaino objektų stulpo"
+  },
+  "05_zymos": {
+    "title": "Žymos (temos)",
+    "tag_1": "Žyma",
+    "note": "Ta pati žyma jungia kelis įrašus",
+    "summary": "Rekomenduojame pasirengti turinio organizavimo strategiją"
+  },
+  "09_vaizdo_irasu_galerija": {
+    "title": "Vaizdo įrašų galerija",
+    "source_1": "„YouTube“",
+    "source_2": "„Vimeo“",
+    "summary": "Įrašų skaičius nėra ribojamas"
+  },
+  "10_garso_formatai": {
+    "title": "Garso įrašų formatai",
+    "do_title": "Tinka",
+    "do_1": "MP3 – užima mažiau vietos",
+    "do_2": "WAV",
+    "dont_title": "Netinka",
+    "dont_1": "WMA"
+  }
+}

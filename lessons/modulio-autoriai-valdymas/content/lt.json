@@ -1,0 +1,21 @@
+{
+  "lang": "lt",
+  "01_nuotraukos_apkirpimas": {
+    "_epizodas": "ep_704_01_1"
+  },
+  "04_naujas_autorius": {
+    "_epizodas": "ep_704_04_1"
+  },
+  "04_keli_autoriai": {
+    "_epizodas": "ep_704_04_2"
+  },
+  "03_kas_ka_daro": {
+    "title": "Autorių sąrašas sistemoje",
+    "old_title": "Mes",
+    "old_step_1": "Patalpiname visų darbuotojų sąrašą",
+    "old_step_2": "Nuotrauka, vardas, pareigos, el. paštas",
+    "new_title": "Jūs",
+    "new_step_1": "Užtikrinate, kad sąrašas atnaujintas",
+    "new_step_2": "Papildote naujais darbuotojais"
+  }
+}

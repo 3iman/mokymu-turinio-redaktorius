@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/koncepcijos.css">
+<!-- Generuoja koncepcijos.js iš platformos kortelės — ranka neredaguoti. -->
+</head>
+<body>
+  <div class="card">
+    <div class="k-title">{{title}}</div>
+    <div class="k-cmp" style="--k-fs:40px"><div class="k-col is-old b-old"><div class="k-col-h"><div class="k-col-i"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></div><div class="k-col-t">{{old_title}}</div></div>
+        <div class="k-steps"></div></div><div class="k-arrow b-arrow"><div><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></div></div><div class="k-col is-new b-new"><div class="k-col-h"><div class="k-col-i"><svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div><div class="k-col-t">{{new_title}}</div></div>
+        <div class="k-steps"><div class="k-step"><span class="k-sn">1</span><span>{{new_step_1}}</span></div><div class="k-step"><span class="k-sn">2</span><span>{{new_step_2}}</span></div></div></div></div><div class="k-sum b-summary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V17h6v-.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg><span>{{summary}}</span></div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

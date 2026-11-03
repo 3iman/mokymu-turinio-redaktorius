@@ -1,0 +1,151 @@
+{
+  "lang": "lt",
+  "10_nuoroda_naujame_lange": {
+    "_epizodas": "ep_699_10_1"
+  },
+  "01_rinkinio_sintakse": {
+    "title": "Pavieniui ar rinkiniu",
+    "old_title": "Talpinami pavieniui",
+    "old_step_1": "Kiekvienam dokumentui",
+    "old_step_2": "Po atskirą sintaksę",
+    "new_title": "Dokumentų rinkinio sintaksė",
+    "new_step_1": "Įterpiama tik kartą",
+    "new_step_2": "Užteks priskirti kategoriją",
+    "summary": "Beliks peržiūrėti ir atnaujinti pačius dokumentus"
+  },
+  "02_metai_priekyje": {
+    "title": "Metai pavadinimo priekyje",
+    "do_title": "Nuosekliai",
+    "do_1": "Metai, ketvirčiai priekyje",
+    "dont_title": "Nenuosekliai",
+    "dont_1": "Kartais gale, kartais priekyje",
+    "dont_2": "Tai su „m“, tai be jo"
+  },
+  "03_kategorija_privaloma": {
+    "title": "Dokumentas nepriskiriamas kategorijai",
+    "dont_title": "Klaida",
+    "dont_1": "Įkeliama nenurodžius kategorijos",
+    "dont_2": "Vėliau dokumento nesimato visų dokumentų puslapyje",
+    "dont_3": "Per didelis kategorijų skaičius klaidina",
+    "do_title": "Teisingai",
+    "do_1": "Pasirenkate konkrečią kategoriją",
+    "do_2": "Nerandate tinkamos — sukuriate naują",
+    "summary": "Priskirti kategoriją – paprastas veiksmas"
+  },
+  "04_banko_prieziura": {
+    "title": "Dokumentų banko priežiūra",
+    "step1_num": "1",
+    "step1_label": "Iškart po perkėlimo",
+    "step1_desc": "Peržiūrite dokumentus naujoje svetainėje",
+    "step2_num": "2",
+    "step2_label": "Pašalinate",
+    "step2_desc": "Neaktualius, pasenusius dokumentus",
+    "step3_num": "3",
+    "step3_label": "Kartą per metus",
+    "step3_desc": "Sutvarkote visą banką",
+    "step4_note": "Tvarka priklauso nuo jūsų"
+  },
+  "05_be_mokyklos_pavadinimo": {
+    "title": "Be mokyklos pavadinimo",
+    "do_title": "Taip",
+    "do_1": "Dokumentai jūsų svetainėje",
+    "dont_title": "Ne",
+    "dont_1": "Ilgas mokyklos pavadinimas priekyje",
+    "dont_2": "Apsunkina nuskaitymą sąraše"
+  },
+  "06_ketvirciai_be_kategoriju": {
+    "title": "Ketvirčiai be atskirų kategorijų",
+    "old_title": "Atskiros kategorijos",
+    "old_step_1": "Metams",
+    "old_step_2": "Ketvirčiams",
+    "new_title": "Viena kategorija",
+    "new_step_1": "Metai, ketvirčiai pavadinimo priekyje",
+    "new_step_2": "Atskiri dokumentai — ZIP archyve",
+    "summary": "Surikiuojate pageidaujama tvarka"
+  },
+  "01_nuoroda_ar_grotuvas": {
+    "title": "Nuoroda ar grotuvas",
+    "old_title": "Pilna „YouTube“ ar „Vimeo“ nuoroda",
+    "old_step_1": "Skaitytojas išeina iš svetainės",
+    "old_step_2": "Įtraukiamas pašalinio turinio",
+    "new_title": "Vaizdo įrašų grotuvo funkcija",
+    "new_step_1": "Skaitytojas lieka jūsų svetainėje",
+    "summary": "Kitų platformų nuorodos – rizika netekti skaitytojo"
+  },
+  "02_prastos_nuotraukos": {
+    "title": "Prastos kokybės nuotraukos",
+    "dont_title": "Netalpinate",
+    "dont_1": "Mažų",
+    "dont_2": "Blankių",
+    "dont_3": "Išsiliejusių",
+    "dont_4": "Neigiamas emocijas keliančių",
+    "do_title": "Vietoj to",
+    "do_1": "Grąžinate nuotrauką",
+    "do_2": "Prašote tinkamesnės",
+    "do_3": "Nesvarbu, kas prašo talpinti"
+  },
+  "03_antrastes_palengvina_skaityma": {
+    "title": "Antraštės palengvina skaitymą",
+    "old_title": "Teksto paklodė",
+    "old_step_1": "Viena ilga pastraipa",
+    "old_step_2": "Atbaido skaitytoją",
+    "new_title": "Teminės pastraipos",
+    "new_step_1": "Atskiros antraštės",
+    "new_step_2": "Didesnis skaitomumas",
+    "summary": "Tekstas – kaip muzika – turi būti harmoningas"
+  },
+  "04_formatavimo_siuksles": {
+    "title": "Formatavimo stiliaus šiukšlės",
+    "dont_title": "Šiukšlės",
+    "dont_1": "Neįprasto dydžio šriftai",
+    "dont_2": "Neįprasto storio šriftai",
+    "dont_3": "Spalvos",
+    "dont_4": "Keisti tarpai ir atitraukimai",
+    "do_title": "Pastebėjote",
+    "do_1": "Pataisote",
+    "do_2": "Jas lengva pastebėti"
+  },
+  "06_plakatas_ar_tekstas": {
+    "title": "Plakatas ar tekstas",
+    "old_title": "Plakatas paveikslėlio formatu",
+    "old_step_1": "Nenuskaito neregių programinė įranga",
+    "old_step_2": "Nenuskaito paieškos sistemų robotai",
+    "new_title": "Informacija tekstu",
+    "new_step_1": "Akcentai – antraštėmis",
+    "new_step_2": "Kitos dizaino sistemos funkcijos",
+    "summary": "Kvietimą surašote tekstu"
+  },
+  "07_atnaujinimo_data": {
+    "title": "Atnaujinimo data",
+    "do_title": "Rodote",
+    "do_1": "Kur informacija periodiškai kinta",
+    "do_2": "Pavyzdžiui, „Priėmimas į mokyklą“",
+    "dont_title": "Nepersistengiate",
+    "dont_1": "Bemaž visuose puslapiuose"
+  },
+  "08_nuorodu_pavadinimai": {
+    "title": "Nuorodų pavadinimai",
+    "do_title": "Taisyklingai",
+    "do_1": "Aiškus pavadinimas",
+    "do_2": "Nusako, kas toje nuorodoje",
+    "dont_title": "Netaisyklingai",
+    "dont_1": "Iš naršyklės nukopijuota nuoroda",
+    "dont_2": "„Spausk čia“",
+    "dont_3": "„Žiūrėk čia“"
+  },
+  "09_nuorodu_patikra": {
+    "title": "Nuorodų patikra",
+    "step1_num": "1",
+    "step1_label": "Ar veikia",
+    "step1_desc": "Atidarote kiekvieną nuorodą",
+    "step2_num": "2",
+    "step2_label": "Ar aktuali",
+    "step2_desc": "Metų metus keliauja iš svetainės į svetainę",
+    "step3_num": "3",
+    "step3_label": "Ar naudinga",
+    "step3_desc": "Jūsų interneto svetainei",
+    "step4_num": "4",
+    "step4_label": "Pradedate nuo",
+    "step4_desc": "„Karjeros specialisto“ polapio"
+  }
+}

@@ -1,0 +1,652 @@
+{
+  "pamoka": "naujienu-anatomija",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T04:31:58.482Z",
+  "balso_stiprinimas_db": 6.1,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_695_01_1",
+      "failas": "01-i-naujienos-valdyma",
+      "pavadinimas": "Įrašą atidarote mygtuku „Redaguoti“",
+      "trukme_s": 8,
+      "mp4": "ep_695_01_1.mp4",
+      "vtt": "ep_695_01_1.vtt",
+      "poster": "ep_695_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.99,
+          "tekstas": "Sąraše susirandate reikiamą įrašą."
+        },
+        {
+          "nuo_s": 4.1,
+          "iki_s": 6.75,
+          "tekstas": "Eilutės gale spaudžiate „Redaguoti“."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 5.3,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_695_01_2",
+      "failas": "01-irasa-istrinate",
+      "pavadinimas": "Nebeaktualų įrašą ištrinate",
+      "trukme_s": 8,
+      "mp4": "ep_695_01_2.mp4",
+      "vtt": "ep_695_01_2.vtt",
+      "poster": "ep_695_01_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.01,
+          "tekstas": "Pažymite nebeaktualaus įrašo langelį."
+        },
+        {
+          "nuo_s": 4.3,
+          "iki_s": 6.83,
+          "tekstas": "Apačioje spaudžiate „Ištrinti“."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 5.5,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.7,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_695_02_1",
+      "failas": "02-unikalus-slug",
+      "pavadinimas": "Slug padarote unikalų",
+      "trukme_s": 8,
+      "mp4": "ep_695_02_1.mp4",
+      "vtt": "ep_695_02_1.vtt",
+      "poster": "ep_695_02_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.13,
+          "tekstas": "Jei pavadinimas kartojasi, keičiate Slug."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 6.93,
+          "tekstas": "Jis turi būti unikalus."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 3.4,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 6.4,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "ep_695_03_1",
+      "failas": "03-publikavimo-ir-slepimo-datos",
+      "pavadinimas": "Nurodote publikavimo ir slėpimo datą",
+      "trukme_s": 10,
+      "mp4": "ep_695_03_1.mp4",
+      "vtt": "ep_695_03_1.vtt",
+      "poster": "ep_695_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.73,
+          "tekstas": "Publikavimo datą nurodote patys."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 8.89,
+          "tekstas": "Slėpimo data pasako, kada įrašas taps nematomas."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 3.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 7.2,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "ep_695_04_1",
+      "failas": "04-autorius-is-saraso",
+      "pavadinimas": "Autorių pasirenkate iš sąrašo",
+      "trukme_s": 9,
+      "mp4": "ep_695_04_1.mp4",
+      "vtt": "ep_695_04_1.vtt",
+      "poster": "ep_695_04_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.33,
+          "tekstas": "Lauke „Autoriai“ spaudžiate „Pažymėti“."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 7.95,
+          "tekstas": "Sąraše randate kolegą ir spaudžiate „Pridėti“."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.9,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.9,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "ep_695_04_2",
+      "failas": "04-visi-autoriaus-irasai",
+      "pavadinimas": "Autoriaus vardas atveria jo įrašus",
+      "trukme_s": 8,
+      "mp4": "ep_695_04_2.mp4",
+      "vtt": "ep_695_04_2.vtt",
+      "poster": "ep_695_04_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.89,
+          "tekstas": "Svetainėje paspaudžiate autoriaus vardą."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 6.79,
+          "tekstas": "Matote visus jo straipsnius."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "ep_695_05_1",
+      "failas": "05-nuotrauku-autorius",
+      "pavadinimas": "Nuotraukų autorių įrašote laukelyje",
+      "trukme_s": 10,
+      "mp4": "ep_695_05_1.mp4",
+      "vtt": "ep_695_05_1.vtt",
+      "poster": "ep_695_05_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.21,
+          "tekstas": "Lauke „Nuotraukų autorius“ įrašote, kas fotografavo."
+        },
+        {
+          "nuo_s": 5.5,
+          "iki_s": 8.31,
+          "tekstas": "Autoriaus nežinote – nurodote šaltinį."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "ep_695_06_1",
+      "failas": "06-kategorija-irasui",
+      "pavadinimas": "Įrašui parenkate kategoriją",
+      "trukme_s": 11,
+      "mp4": "ep_695_06_1.mp4",
+      "vtt": "ep_695_06_1.vtt",
+      "poster": "ep_695_06_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.25,
+          "tekstas": "Lauke „Kategorija“ pasirenkate vieną iš mokyklos sąrašo."
+        },
+        {
+          "nuo_s": 5.8,
+          "iki_s": 9.13,
+          "tekstas": "Be kategorijos sistema įrašo neišsaugos."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 7.8,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 9,
+      "epizodas": "ep_695_07_1",
+      "failas": "07-zyma-irasui",
+      "pavadinimas": "Įrašui priskiriate žymą",
+      "trukme_s": 8,
+      "mp4": "ep_695_07_1.mp4",
+      "vtt": "ep_695_07_1.vtt",
+      "poster": "ep_695_07_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.73,
+          "tekstas": "Lauke „Tags“ įrašote temą."
+        },
+        {
+          "nuo_s": 3.9,
+          "iki_s": 6.47,
+          "tekstas": "Paspaudus „Enter“ ji tampa žyma."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 5.1,
+          "garsas": "rasymas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 10,
+      "epizodas": "ep_695_08_1",
+      "failas": "08-pagrindine-nuotrauka-nerodoma",
+      "pavadinimas": "Pagrindinę nuotrauką paslepiate",
+      "trukme_s": 10,
+      "mp4": "ep_695_08_1.mp4",
+      "vtt": "ep_695_08_1.vtt",
+      "poster": "ep_695_08_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.41,
+          "tekstas": "Jungiklį „Rodyti pagrindinę nuotrauką“ perjungiate į „No“."
+        },
+        {
+          "nuo_s": 6,
+          "iki_s": 8.93,
+          "tekstas": "Straipsnio viršuje nuotraukos nebelieka."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 3,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 7.8,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 11,
+      "epizodas": "ep_695_09_1",
+      "failas": "09-nuotraukos-kadravimas",
+      "pavadinimas": "Kadruotę parenkate mygtuku „Crop“",
+      "trukme_s": 14,
+      "mp4": "ep_695_09_1.mp4",
+      "vtt": "ep_695_09_1.vtt",
+      "poster": "ep_695_09_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.73,
+          "tekstas": "Automatinis kadravimas kartais nukerpa svarbią detalę."
+        },
+        {
+          "nuo_s": 5.7,
+          "iki_s": 8.71,
+          "tekstas": "Spaudžiate „Crop“ ir patempiate rėmelį."
+        },
+        {
+          "nuo_s": 9,
+          "iki_s": 12.21,
+          "tekstas": "Sąraše nuotrauka atrodo taip, kaip parinkote."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 7.3,
+          "garsas": "paemimas"
+        },
+        {
+          "ties_s": 10.8,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 12,
+      "epizodas": "ep_695_10_1",
+      "failas": "10-izanga-irase",
+      "pavadinimas": "Įžangą rašote lauke „Intro“",
+      "trukme_s": 8,
+      "mp4": "ep_695_10_1.mp4",
+      "vtt": "ep_695_10_1.vtt",
+      "poster": "ep_695_10_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.13,
+          "tekstas": "Lauke „Intro“ parašote vieną sakinį."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 6.61,
+          "tekstas": "Jį skaitytojas mato sąraše."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "rasymas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 13,
+      "epizodas": "ep_695_12_1",
+      "failas": "12-nuotraukos-tarp-pastraipu",
+      "pavadinimas": "Nuotraukas įterpiate sintakse",
+      "trukme_s": 14,
+      "mp4": "ep_695_12_1.mp4",
+      "vtt": "ep_695_12_1.vtt",
+      "poster": "ep_695_12_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.29,
+          "tekstas": "Galerija savaime atsiranda straipsnio pabaigoje."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 8.05,
+          "tekstas": "Kelias nuotraukas įterpiate tarp pastraipų."
+        },
+        {
+          "nuo_s": 8.8,
+          "iki_s": 10.65,
+          "tekstas": "Tam naudojate sintaksę."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 6.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 10.4,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 14,
+      "epizodas": "ep_695_13_1",
+      "failas": "13-uzrakinta-galerija",
+      "pavadinimas": "Galeriją užrakinate slaptažodžiu",
+      "trukme_s": 13,
+      "mp4": "ep_695_13_1.mp4",
+      "vtt": "ep_695_13_1.vtt",
+      "poster": "ep_695_13_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.32,
+          "tekstas": "Jungiklį „Apsaugotos nuotraukos“ įjungiate."
+        },
+        {
+          "nuo_s": 4.8,
+          "iki_s": 7.62,
+          "tekstas": "Galeriją pamatys tik įvedę slaptažodį."
+        },
+        {
+          "nuo_s": 8,
+          "iki_s": 11.45,
+          "tekstas": "Patį slaptažodį nustatote mokyklos nustatymuose."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 9.8,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 15,
+      "epizodas": "ep_695_14_1",
+      "failas": "14-vaizdo-irasas-virsuje",
+      "pavadinimas": "Vaizdo įrašą dedate į viršų",
+      "trukme_s": 13,
+      "mp4": "ep_695_14_1.mp4",
+      "vtt": "ep_695_14_1.vtt",
+      "poster": "ep_695_14_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.09,
+          "tekstas": "Į lauką „Video“ įklijuojate nuorodą."
+        },
+        {
+          "nuo_s": 4.6,
+          "iki_s": 7.09,
+          "tekstas": "Peržiūra atsiranda iškart po lauku."
+        },
+        {
+          "nuo_s": 7.6,
+          "iki_s": 10.98,
+          "tekstas": "Straipsnio viršuje ji pakeičia pagrindinę nuotrauką."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 9.2,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 16,
+      "epizodas": "ep_695_15_1",
+      "failas": "15-irasa-prisegate",
+      "pavadinimas": "Svarbų įrašą prisegate",
+      "trukme_s": 9,
+      "mp4": "ep_695_15_1.mp4",
+      "vtt": "ep_695_15_1.vtt",
+      "poster": "ep_695_15_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.35,
+          "tekstas": "Kortelėje „Nustatymas“ įjungiate „Pin“."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 7.07,
+          "tekstas": "Įrašas atsistoja sąrašo viršuje."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.5,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 17,
+      "epizodas": "ep_695_16_1",
+      "failas": "16-garso-failas",
+      "pavadinimas": "Garso failą įkeliate į „Audios“",
+      "trukme_s": 10,
+      "mp4": "ep_695_16_1.mp4",
+      "vtt": "ep_695_16_1.vtt",
+      "poster": "ep_695_16_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.33,
+          "tekstas": "Skiltyje „Audios“ spaudžiate „Upload“."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 8.07,
+          "tekstas": "Nutempiate MP3 arba WAV failą."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.9,
+          "garsas": "numetimas"
+        },
+        {
+          "ties_s": 7.1,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 18,
+      "epizodas": "ep_695_16_2",
+      "failas": "16-garso-sintakse",
+      "pavadinimas": "Grotuvą įjungiate sintakse",
+      "trukme_s": 11,
+      "mp4": "ep_695_16_2.mp4",
+      "vtt": "ep_695_16_2.vtt",
+      "poster": "ep_695_16_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.77,
+          "tekstas": "Kortelėje „Sintaksė“ nukopijuojate garso sintaksę."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 8.23,
+          "tekstas": "Įklijuojate ją ten, kur norite grotuvo."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 7.1,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 8.9,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 19,
+      "epizodas": "ep_695_17_1",
+      "failas": "17-irasu-skaicius",
+      "pavadinimas": "Rodomų įrašų skaičių nustatote",
+      "trukme_s": 10,
+      "mp4": "ep_695_17_1.mp4",
+      "vtt": "ep_695_17_1.vtt",
+      "poster": "ep_695_17_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.73,
+          "tekstas": "Lauke „Limitas“ nurodote, kiek naujienų rodyti."
+        },
+        {
+          "nuo_s": 5.1,
+          "iki_s": 8.32,
+          "tekstas": "Atskirai nurodote skaičių pagrindiniam puslapiui."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 7.1,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

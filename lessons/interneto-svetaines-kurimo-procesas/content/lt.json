@@ -1,0 +1,95 @@
+{
+  "lang": "lt",
+  "08_juosteles_isjungimas": {
+    "_epizodas": "ep_684_08_1"
+  },
+  "01_astuoni_etapai": {
+    "title": "Interneto svetainės kūrimo procesas",
+    "step1_label": "Demo versija",
+    "step2_label": "Turinio perkėlimas",
+    "step3_label": "Turinio kokybė",
+    "step4_label": "Baigiamieji darbai",
+    "step5_label": "Konsultacijos",
+    "step6_label": "Turinio patvirtinimas",
+    "step7_label": "Domeno nukreipimas",
+    "step8_label": "Startas"
+  },
+  "02_vienas_perkelimas": {
+    "title": "Turinio perkėlimas",
+    "old_title": "Perkėlimas",
+    "old_step_1": "Vyksta vieną kartą",
+    "old_step_2": "Rankiniu būdu",
+    "old_step_3": "Reikia jūsų įsitraukimo",
+    "new_title": "Vėliau",
+    "new_step_1": "Atnaujinimus tikimės gauti iš jūsų",
+    "summary": "Sudėtingas ir laikui imlus procesas"
+  },
+  "03_kaip_siusti_turini": {
+    "title": "Kaip siųsti turinį",
+    "do_title": "Mums bus lengviau",
+    "do_1": "Pastebėjimo ID atsakyme",
+    "do_2": "Nuotraukos pavadintos vardu ir pavarde",
+    "do_3": "Originalus dokumento pavadinimas",
+    "do_4": "Pastebėjimai papunkčiui",
+    "dont_title": "Vengiate",
+    "dont_1": "Tekstų PDF ar JPG formatu"
+  },
+  "04_baigiamieji_darbai": {
+    "title": "Baigiamieji darbai",
+    "item_1": "Banerių importavimas",
+    "item_2": "Paskutiniųjų naujienų importavimas",
+    "item_3": "Viso darbuotojų kolektyvo sąrašas",
+    "item_4": "Žinutė, pagrindinis vizualas, spalvos",
+    "summary": "Smulkūs, bet svarbūs svetainės kokybei darbai"
+  },
+  "05_konsultacijos": {
+    "title": "Konsultacijos",
+    "old_title": "Ateinate nepasiruošę",
+    "old_step_1": "Spėsime tik pagrindus",
+    "old_step_2": "Kaip naudotis mokymų platforma",
+    "new_title": "Ateinate su žinių pagrindu",
+    "new_step_1": "Gilinamės į esmę",
+    "new_step_2": "Nagrinėjame klausimus",
+    "summary": "Konsultacijos trukmė – 30 min."
+  },
+  "06_turinio_patvirtinimas": {
+    "title": "Turinio patvirtinimas",
+    "step1_label": "Koordinatoriai",
+    "step1_desc": "Apie turinį žino ne viską",
+    "arrow_label_1": "",
+    "step2_label": "Parodote kolektyvui",
+    "step2_desc": "Prieš paleidžiant svetainę",
+    "arrow_label_2": "",
+    "step3_label": "Grįžtamasis ryšys",
+    "step3_desc": "Nelieka neperkelto svarbaus turinio",
+    "summary": "Pavyzdžiui, ES projektų informaciją reikia saugoti penkerius metus"
+  },
+  "07_domeno_nukreipimas": {
+    "title": "Domeno nukreipimas",
+    "step1_label": "Sugalvojate adresą",
+    "step1_desc": "Jei buvo „lm.lt“ – adresas bus kitoks",
+    "arrow_label_1": "",
+    "step2_label": "„Wolet“ registruoja",
+    "step2_desc": "Korektiška registracija ir priegloba",
+    "arrow_label_2": "",
+    "step3_label": "Paleidžiame",
+    "step3_desc": "Nekorektiška registracija – sunkumai",
+    "summary": "Nekorektiška: domenas registruotas fizinio asmens ar kitos įmonės"
+  },
+  "08_po_starto_darbai": {
+    "title": "Startavom! Kas dar?",
+    "step1_num": "1",
+    "step1_label": "Senoji svetainė",
+    "step1_desc": "Išjungta arba peradresuota",
+    "step2_num": "2",
+    "step2_label": "Naujas adresas",
+    "step2_desc_prefix": "Viešai prieinamas",
+    "step2_desc_code": "„Google“, „Facebook“, „Rekvizitai.lt“",
+    "step3_num": "3",
+    "step3_label": "Pranešate bendruomenei",
+    "step3_desc": "El. dienynas, socialiniai tinklai, el. paštas",
+    "step4_num": "4",
+    "step4_label": "Išjungiate pranešimų juostelę",
+    "step4_desc": "„Interneto svetainės turinys dar kuriamas…“"
+  }
+}

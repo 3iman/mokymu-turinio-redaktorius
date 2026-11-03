@@ -1,0 +1,208 @@
+{
+ "pamokos_slug": "pagrindines-dokumentu-banko-funkcijos",
+ "pamoka_id": "pam_678",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_678_01",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_678_01",
+   "pamoka": "pam_678",
+   "failas": "01-pervadinti-pries-ikeliant",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Po įkėlimo",
+    "Prieš įkeliant",
+    "Painiava",
+    "Lengva rasti"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "blogas": "fin_ataisk_23-IV.pdf",
+    "geras": "2023 m. III ketvirčio finansinė ataskaita"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_678_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_678_03",
+   "pamoka": "pam_678",
+   "failas": "03-nauja-subkategorija",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Sukurti subkategoriją",
+    "Peržiūrėti",
+    "Įkelti",
+    "Ištrinti",
+    "Nuostatai"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-actions",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "kategorija": "Nuostatai",
+    "subkategorija": "Tvarkų aprašai"
+   },
+   "naudoja_ir": [
+    "dal_690_02"
+   ]
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_678_05_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_678_05",
+   "pamoka": "pam_678",
+   "failas": "05-dokumentu-trynimas",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Perrikiuoti",
+    "Ištrinti",
+    "Redaguoti",
+    "Pavadinimas"
+   ],
+   "tvs_ui": [
+    "tvs-table",
+    "tvs-row",
+    "tvs-check",
+    "tvs-btn",
+    "tvs-cursor"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "dokumentas": "strateginis-planas-2006-2010.pdf"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "ep_678_05_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_678_05",
+   "pamoka": "pam_678",
+   "failas": "05-redagavimo-mygtukas",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Redaguoti",
+    "Ištrinti",
+    "Pavadinimas",
+    "Failas"
+   ],
+   "tvs_ui": [
+    "tvs-table",
+    "tvs-row",
+    "tvs-check",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "dokumentas": "2023 m. III ketvirčio finansinė ataskaita"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "ep_678_06_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_678_06",
+   "pamoka": "pam_678",
+   "failas": "06-keliu-failu-ikelimas",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Įkelti",
+    "Spausk arba įtempk failus",
+    "Vardas",
+    "Dydis",
+    "MIME tipas",
+    "Katalogas"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-actions",
+    "tvs-btn",
+    "tvs-placeholder",
+    "tvs-table",
+    "tvs-cursor"
+   ],
+   "tarimo_kandidatai": [
+    "MIME"
+   ],
+   "demo_duomenys": {
+    "kategorija": "Finansinių ataskaitų rinkiniai"
+   },
+   "naudoja_ir": [
+    "dal_678_04",
+    "dal_677_02",
+    "dal_678_90"
+   ]
+  },
+  {
+   "kadras": 6,
+   "epizodas": "ep_678_06_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_678_06",
+   "pamoka": "pam_678",
+   "failas": "06-pavadinimu-taisymas",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Pavadinimas",
+    "Išsaugoti ir redaguoti sekantį",
+    "Atnaujinti",
+    "Išsaugoti ir išeiti"
+   ],
+   "tvs_ui": [
+    "tvs-main",
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "blogas": "03251-siga.docx",
+    "geras": "2023 m. III ketvirčio finansinė ataskaita"
+   },
+   "naudoja_ir": [
+    "dal_677_02"
+   ]
+  },
+  {
+   "kadras": 7,
+   "epizodas": "viz_678_10",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_678_10",
+   "pamoka": "pam_678",
+   "failas": "10-priminimai",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Dokumentų priminimai",
+    "Patikrinimo data",
+    "Patikrinimo komentaras"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "komentaras": "Pakeisti prieš naujus mokslo metus",
+    "dokumentas": "Ugdymo planas"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

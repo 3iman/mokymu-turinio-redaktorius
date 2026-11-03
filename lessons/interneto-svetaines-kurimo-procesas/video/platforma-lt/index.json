@@ -1,0 +1,283 @@
+{
+  "pamoka": "interneto-svetaines-kurimo-procesas",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T04:23:38.297Z",
+  "balso_stiprinimas_db": 6,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_684_01",
+      "failas": "01-astuoni-etapai",
+      "pavadinimas": "Aštuoni kūrimo etapai",
+      "trukme_s": 14,
+      "mp4": "viz_684_01.mp4",
+      "vtt": "viz_684_01.vtt",
+      "poster": "viz_684_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.19,
+          "tekstas": "Svetainė kuriama aštuoniais etapais."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 8.45,
+          "tekstas": "Pirmasis yra demo versija, kurią stebite visą projektą."
+        },
+        {
+          "nuo_s": 8.9,
+          "iki_s": 11.11,
+          "tekstas": "Paskutinis yra startas."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_684_02",
+      "failas": "02-vienas-perkelimas",
+      "pavadinimas": "Perkėlimas vyksta vieną kartą",
+      "trukme_s": 13,
+      "mp4": "viz_684_02.mp4",
+      "vtt": "viz_684_02.vtt",
+      "poster": "viz_684_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.57,
+          "tekstas": "Turinį perkeliame rankiniu būdu ir vieną kartą."
+        },
+        {
+          "nuo_s": 5.1,
+          "iki_s": 7.8,
+          "tekstas": "Vėlesnius atnaujinimus darote patys."
+        },
+        {
+          "nuo_s": 8.1,
+          "iki_s": 11.02,
+          "tekstas": "Todėl padedate nepraleisti svarbių dalykų."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_684_03",
+      "failas": "03-kaip-siusti-turini",
+      "pavadinimas": "Kaip siųsti turinį",
+      "trukme_s": 14,
+      "mp4": "viz_684_03.mp4",
+      "vtt": "viz_684_03.vtt",
+      "poster": "viz_684_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.57,
+          "tekstas": "Turinį siunčiate taip, kad jo nereikėtų maketuoti."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 8.03,
+          "tekstas": "Atsakyme nurodote pastebėjimo numerį."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 12.81,
+          "tekstas": "Tekstų PDF ar JPG formatu nesiunčiate."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_684_04",
+      "failas": "04-baigiamieji-darbai",
+      "pavadinimas": "Baigiamieji darbai",
+      "trukme_s": 14,
+      "mp4": "viz_684_04.mp4",
+      "vtt": "viz_684_04.vtt",
+      "poster": "viz_684_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.01,
+          "tekstas": "Didiesiems darbams einant į pabaigą ateina smulkmenos."
+        },
+        {
+          "nuo_s": 5.7,
+          "iki_s": 9.47,
+          "tekstas": "Importuojame banerius, naujienas ir darbuotojų sąrašą."
+        },
+        {
+          "nuo_s": 10.2,
+          "iki_s": 12.62,
+          "tekstas": "Dabar grįžtate ir prie spalvų."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_684_05",
+      "failas": "05-konsultacijos",
+      "pavadinimas": "Konsultacijai trisdešimt minučių",
+      "trukme_s": 12,
+      "mp4": "viz_684_05.mp4",
+      "vtt": "viz_684_05.vtt",
+      "poster": "viz_684_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.84,
+          "tekstas": "Konsultacija trunka trisdešimt minučių."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 7.35,
+          "tekstas": "Nepasiruošus spėjame tik pagrindus."
+        },
+        {
+          "nuo_s": 7.5,
+          "iki_s": 10.19,
+          "tekstas": "Peržiūrėję kursus klausiate svarbiausio."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "viz_684_06",
+      "failas": "06-turinio-patvirtinimas",
+      "pavadinimas": "Turinio patvirtinimas prieš startą",
+      "trukme_s": 14,
+      "mp4": "viz_684_06.mp4",
+      "vtt": "viz_684_06.vtt",
+      "poster": "viz_684_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.5,
+          "tekstas": "Koordinatoriai apie visą turinį žino ne viską."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 8.28,
+          "tekstas": "Prieš startą svetainę parodote visam kolektyvui."
+        },
+        {
+          "nuo_s": 9,
+          "iki_s": 11.85,
+          "tekstas": "Taip nepraleidžiate kam nors svarbaus turinio."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "viz_684_07",
+      "failas": "07-domeno-nukreipimas",
+      "pavadinimas": "Domeno nukreipimas",
+      "trukme_s": 16,
+      "mp4": "viz_684_07.mp4",
+      "vtt": "viz_684_07.vtt",
+      "poster": "viz_684_07.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.45,
+          "tekstas": "Naują svetainės adresą sugalvojate jūs."
+        },
+        {
+          "nuo_s": 4.6,
+          "iki_s": 8.29,
+          "tekstas": "Registracija ir prieglauda yra partnerio „Wolet“ darbas."
+        },
+        {
+          "nuo_s": 9.2,
+          "iki_s": 12.85,
+          "tekstas": "Jei prieigos prie domeno neturite, pranešate iš karto."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "ep_684_08_1",
+      "failas": "08-juosteles-isjungimas",
+      "pavadinimas": "Išjungiate pranešimų juostelę",
+      "trukme_s": 13,
+      "mp4": "ep_684_08_1.mp4",
+      "vtt": "ep_684_08_1.vtt",
+      "poster": "ep_684_08_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.37,
+          "tekstas": "Po starto išjungiate pranešimų juostelę."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 7.51,
+          "tekstas": "Įraše perjungiate rodymą ir išsaugote."
+        },
+        {
+          "nuo_s": 8.5,
+          "iki_s": 11.55,
+          "tekstas": "Svetainės viršuje juostelės nebematote."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.1,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 9.9,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 9,
+      "epizodas": "viz_684_08",
+      "failas": "08-po-starto-darbai",
+      "pavadinimas": "Keturi darbai po starto",
+      "trukme_s": 14,
+      "mp4": "viz_684_08.mp4",
+      "vtt": "viz_684_08.vtt",
+      "poster": "viz_684_08.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.33,
+          "tekstas": "Įsitikinate, kad senoji svetainė išjungta."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 8.39,
+          "tekstas": "Patikrinate adresą paieškos sistemose ir kataloguose."
+        },
+        {
+          "nuo_s": 9.1,
+          "iki_s": 12.47,
+          "tekstas": "Pranešate bendruomenei ir išjungiate juostelę."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

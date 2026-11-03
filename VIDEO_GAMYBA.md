@@ -437,3 +437,28 @@ node build-video.js --lesson {slug} --lang lt --platforma --kadras 5,6   # tik n
 | Įspėjimai | kadras > 20 s (tikslas ≤ 15 s), balsas užlipa ant kitos žymos ar už kadro ribų, paskutinis balsas baigiasi < 1 s prieš galą, trūksta PNG / klipo / garso |
 
 ⛔ Prieš `--platforma` — tie patys žingsniai kaip YouTube filmukui: `generate.js --png`, `generate-video-clips.js`, `generate-voice.js`. Montažas ranka nedaromas.
+
+### Visa pamoka viena komanda (nuo 2026-11-03)
+
+```bash
+bash platformos-pamoka.sh {slug}                       # įprasta pamoka
+DST={slug}-platforma bash platformos-pamoka.sh {slug}  # kai lessons/{slug} jau užimtas YouTube filmuko
+```
+
+Eiga: platformos scenarijaus regeneravimas → `explaineriai/{slug}/*` kopija į `lessons/{DST}` (eilutė `**Balso seed:**` išsaugoma) → `sablonai.js`, `koncepcijos.js`, `animacijos.js`, `epizodai-def.js` (kurie yra) → `generate.js --png` → `generate-voice.js` → `laikai-telpa.py --balsas --taisyti` (jei ✎ — kortelių trukmės pakeistos, scenarijus perkuriamas) → `generate-video-clips.js` → `build-video.js --platforma`.
+
+| Įrankis | Kam |
+|---|---|
+| `koncepcijos.js` | koncepcinių kadrų šablonai iš kortelės `laukai` (palyginimas, srautas, žingsniai, laiko juosta, anatomija…); stilius `tokens/koncepcijos.css`; animacijos į `video/animacijos.json` (pamokos lygio, viršija bendras) |
+| `epizodai.js` | TVS epizodų variklis: pamokos `epizodai-def.js` aprašo ekranus ir žingsnius (spot / cur / click / type / show / zoom), variklis matuoja elementus puppeteer'iu ir rašo šabloną + keyframes |
+| `laikai-telpa.py --balsas` | tikros balso trukmės iš manifestų; kortelė ilginama, tekstas nekeičiamas |
+
+Spąstai (2026-11-03 naktis):
+
+1. Neredaguok `platformos-pamoka.sh`, kol jis veikia fone — bash skaito failą eigoje. Kiekvienai foninei užduočiai — atskira kopija.
+2. `grep -q` vamzdyje su `set -o pipefail` → SIGPIPE, sąlyga meluoja. Išvestį pirmiau į kintamąjį.
+3. `opacity:0` elementas vis tiek užima vietą — slėpk `max-width:0` arba absoliučiu sluoksniu.
+4. Du skirtingi selektoriai, animuojantys tą patį elementą, vienas kitą perrašo — vienas selektorius, viena `animation`.
+5. Statinis `opacity:0` pamokos CSS perrašytų galutinę PNG būseną — variklis bazinę būseną rašo PO pamokos CSS.
+6. Nežiūrėk PNG, kol fone perkuriami šablonai — matysi pusiau perrašytą būseną.
+7. Ilgi žodžiai be tarpų (el. paštai) rodyklių etiketėse — `overflow-wrap:anywhere`.

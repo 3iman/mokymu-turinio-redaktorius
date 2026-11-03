@@ -1,0 +1,163 @@
+{
+  "hash": "2fc813aa11e9593144b04d58258a0e82a19cfa8f4aa904fe1d3704a86d75c6a5",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 3558490108,
+  "characters": 670,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T03:41:20.451Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Darbo laiko lentelė",
+      "text": "Laiką rašote su /taʃˈku/, o tarp /laiˈkuː/ – brūkšnys be tarpų.",
+      "file": "k01-1.wav",
+      "duration": 4.83,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Darbo laiko lentelė",
+      "text": "Pertrauka turi savo stulpelį.",
+      "file": "k01-2.wav",
+      "duration": 2.25,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Darbo laiko lentelė",
+      "text": "Nedirbamų dienų eilutes paliekate tuščias.",
+      "file": "k01-3.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Peržiūrite darbuotojų sąrašą",
+      "text": "Meniu pasirenkate „Administracija“.",
+      "file": "k02-1.wav",
+      "duration": 2.69,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Peržiūrite darbuotojų sąrašą",
+      "text": "Kiekvienas profilis – su nuotrauka ir pareigomis.",
+      "file": "k02-2.wav",
+      "duration": 3.41,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Peržiūrite darbuotojų sąrašą",
+      "text": "Žemiau – dokumentai ir kontaktai.",
+      "file": "k02-3.wav",
+      "duration": 2.69,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Randate profilio ID",
+      "text": "/ˈsaːraʃʲɛ/ spaudžiate „Redaguoti“.",
+      "file": "k03-1.wav",
+      "duration": 2.41,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Randate profilio ID",
+      "text": "Naršyklės adreso /ˈjuostoːjɛ/ matote skaičių.",
+      "file": "k03-2.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Randate profilio ID",
+      "text": "Tai ir yra profilio ai di.",
+      "file": "k03-3.wav",
+      "duration": 2.343,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Profilio viršaus laukai",
+      "text": "Prie darbuotojo spaudžiate „Redaguoti“.",
+      "file": "k04-1.wav",
+      "duration": 2.677,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Profilio viršaus laukai",
+      "text": "Viršuje pildote vardą, pavardę ir pareigas.",
+      "file": "k04-2.wav",
+      "duration": 3.37,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Profilio viršaus laukai",
+      "text": "Žemiau – aprašymas, darbo laikas ir kategorija.",
+      "file": "k04-3.wav",
+      "duration": 3.73,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Profilio apačios laukai",
+      "text": "Apačioje suvedate kontaktus.",
+      "file": "k05-1.wav",
+      "duration": 2.37,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Profilio apačios laukai",
+      "text": "Įkeliate nuotrauką, CV ir pareigybės /ˈaːpraʃaː/.",
+      "file": "k05-2.wav",
+      "duration": 3.97,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Profilio apačios laukai",
+      "text": "Trims papildomiems dokumentams – savi laukai ir pavadinimai.",
+      "file": "k05-3.wav",
+      "duration": 4.103,
+      "fits": true,
+      "reikia_sek": 14
+    }
+  ]
+}

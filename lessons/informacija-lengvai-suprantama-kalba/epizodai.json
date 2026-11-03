@@ -1,0 +1,217 @@
+{
+ "pamokos_slug": "informacija-lengvai-suprantama-kalba",
+ "pamoka_id": "pam_1621",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_1621_01",
+   "rusis": "koncepcija",
+   "sablonas": "srautas",
+   "dalis": "dal_1621_01",
+   "pamoka": "pam_1621",
+   "failas": "01-teksto-patikra",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Teksto rengimo forma",
+    "kc@anta.lt",
+    "Rekomendacijos",
+    "apie mėnesį"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "kc@anta.lt"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_1621_02",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1621_02",
+   "pamoka": "pam_1621",
+   "failas": "02-kas-tai-yra",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Easy to read",
+    "Lengva suprasti",
+    "Skaitymo sunkumai",
+    "Kuo daugiau žmonių"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "easy to read"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_1621_03",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_1621_03",
+   "pamoka": "pam_1621",
+   "failas": "03-kam-tai-aktualu",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Intelekto ar raidos sutrikimai",
+    "Vyresnio amžiaus žmonės",
+    "Kita gimtoji kalba",
+    "Sunku susikaupti",
+    "Greičiau suprasti",
+    "Daugiau savarankiškumo"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_1621_04",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_1621_04",
+   "pamoka": "pam_1621",
+   "failas": "04-sunkus-ir-lengvas-sakinys",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Sunkiai suprantamas sakinys",
+    "Lengvai suprantama kalba",
+    "Trumpi sakiniai",
+    "Svarbiausia – pradžioje"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_1621_05",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_1621_05",
+   "pamoka": "pam_1621",
+   "failas": "05-ar-visa-turini",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Atskira versija",
+    "Aiškiai atskirti skyriai",
+    "Paprastas, ne infantilus",
+    "Ne visa svetainė"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "ep_1621_06_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1621_06",
+   "pamoka": "pam_1621",
+   "failas": "06-naujas-subpuslapis",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "+Pridėti subpuslapį",
+    "Lengvai suprantama kalba layout",
+    "Pavadinimas",
+    "Slug"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "tvs-window",
+    "naujas: tipo pasirinkimo langas su sąrašu"
+   ],
+   "tarimo_kandidatai": [
+    "layout",
+    "Slug"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla",
+    "puslapis": "Informacija lengvai suprantama kalba"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "ep_1621_06_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1621_06",
+   "pamoka": "pam_1621",
+   "failas": "06-lengvos-kalbos-blokas",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Lengvai suprantama kalba",
+    "Add Row",
+    "Bloko pavadinimas",
+    "Tekstas lengvai sk",
+    "Nuotrauka lengvai sk"
+   ],
+   "tvs_ui": [
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: kartotinio bloko juosta"
+   ],
+   "tarimo_kandidatai": [
+    "Add Row"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 8,
+   "epizodas": "ep_1621_06_3",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_1621_06",
+   "pamoka": "pam_1621",
+   "failas": "06-esamas-pavyzdys",
+   "trukme_s": 18,
+   "ekrano_tekstai": [
+    "Tekstas lengvai sk",
+    "Nuotrauka lengvai sk",
+    "Tekstas puslapio apačioje",
+    "Autoriai",
+    "Iliustracijų šaltiniai"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-cursor",
+    "tvs-ripple",
+    "tvs-file",
+    "naujas: kartotinio bloko juosta"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla",
+    "pavyzdys": "Kviečiame susipažinti su Demo mokykla",
+    "direktore": "Marija Pečkauskaitė"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

@@ -1,0 +1,28 @@
+{
+  "lang": "lt",
+  "02_pridedate_failus": {
+    "_epizodas": "ep_691_02_2"
+  },
+  "02_kopijuojate_kelia": {
+    "_epizodas": "ep_691_02_3"
+  },
+  "03_kelias_i_video_lauka": {
+    "_epizodas": "ep_691_03_1"
+  },
+  "03_kopijuojate_video_sintakse": {
+    "_epizodas": "ep_691_03_2"
+  },
+  "04_grotuvai_svetaineje": {
+    "_epizodas": "ep_691_04_2"
+  },
+  "05_salinate_mp4": {
+    "_epizodas": "ep_691_05_1"
+  },
+  "01_tik_mp4": {
+    "title": "Vaizdo įrašo formatas",
+    "do_title": "Sistema atvaizduoja",
+    "do_1": "mp4",
+    "dont_title": "Neatvaizduoja",
+    "dont_1": "Kiti formatai"
+  }
+}

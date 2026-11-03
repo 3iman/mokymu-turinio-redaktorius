@@ -1,0 +1,21 @@
+{
+  "lang": "lt",
+  "01_kur_laikmatis": {
+    "_epizodas": "ep_703_01_1"
+  },
+  "03_laikmacio_laukai": {
+    "_epizodas": "ep_703_03_1"
+  },
+  "02_kelios_progos": {
+    "title": "Progų – daugiau nei viena",
+    "step1_label": "Numatote progas",
+    "step1_desc": "Laikmačio sąraše kelios iš eilės",
+    "arrow_label_1": "",
+    "step2_label": "Vienas įvykis baigiasi",
+    "step2_desc": "Laikmatis sustoja",
+    "arrow_label_2": "automatiškai",
+    "step3_label": "Pradeda skaičiuoti iki kito",
+    "step3_desc": "Rankiniu būdu nustatyti nereikės",
+    "summary": "Atgalinis laikmatis reikalauja labai nedaug priežiūros"
+  }
+}

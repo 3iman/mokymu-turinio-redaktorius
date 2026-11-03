@@ -16,6 +16,9 @@
   .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
   .cursor-wrap .tvs-cursor { left: 0; top: 0; }
   [class*="caret-"] { opacity: 0; }
+.s-table .tvs-th, .s-table .tvs-row { grid-template-columns: 44px 36px 1fr 200px; } .f-s { width: 260px; } .f-c { width: 420px; position: relative; }
+  .c-v { position: absolute; left: 18px; color: var(--tvs-text); } .c-v2 { color: var(--tvs-text); } .tvs-acc { max-width: 1100px; } .acc-new { }
+  /* galutinė būsena (epizodai.js) — po pamokos CSS, kad visada laimėtų */
   .stage > .scr:nth-of-type(1) { opacity: 0; }
   .stage > .scr:nth-of-type(2) { opacity: 0; }
   .stage > .scr:nth-of-type(3) { opacity: 1; }
@@ -23,8 +26,6 @@
   .scr1 .c-ph { opacity: 0; }
   .scr1 .c-v { opacity: 1; }
 
-.s-table .tvs-th, .s-table .tvs-row { grid-template-columns: 44px 36px 1fr 200px; } .f-s { width: 260px; } .f-c { width: 420px; position: relative; }
-  .c-v { position: absolute; left: 18px; color: var(--tvs-text); } .c-v2 { color: var(--tvs-text); } .tvs-acc { max-width: 1100px; } .acc-new { }
 </style>
 </head>
 <body>

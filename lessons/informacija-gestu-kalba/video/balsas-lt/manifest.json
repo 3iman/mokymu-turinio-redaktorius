@@ -1,0 +1,193 @@
+{
+  "hash": "e14af5f688a392c30229c8afc23de2031336cc2346624b92a173a1b81562df24",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 714313287,
+  "characters": 776,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T03:15:34.311Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Rengiate scenarijų vertėjui",
+      "text": "Rengiate scenarijų /ˈɡʲɛstuː/ kalbos vertėjui.",
+      "file": "k01-1.wav",
+      "duration": 3.15,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Rengiate scenarijų vertėjui",
+      "text": "Tai ne titrai.",
+      "file": "k01-2.wav",
+      "duration": 1.13,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Rengiate scenarijų vertėjui",
+      "text": "Ir ne lengvai /suprantaˈmoːs/ kalbos tekstas.",
+      "file": "k01-3.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Scenarijus skamba kaip pasakojimas",
+      "text": "Rašote taip, kaip pasakotumėte /ɡʲiːˈvai/.",
+      "file": "k02-1.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Scenarijus skamba kaip pasakojimas",
+      "text": "Aiškiai, dalimis, be lentelių.",
+      "file": "k02-2.wav",
+      "duration": 2.65,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Scenarijus skamba kaip pasakojimas",
+      "text": "Santrumpas išskleidžiate pilnais žodžiais.",
+      "file": "k02-3.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Ko prašo vertėjai",
+      "text": "Scenarijų siunčiate Word failu, dvylika punktų šriftu.",
+      "file": "k03-1.wav",
+      "duration": 3.823,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Ko prašo vertėjai",
+      "text": "Kiekvienai /ˈtʲɛmai/ – atskiras vaizdo įrašas.",
+      "file": "k03-2.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Ko prašo vertėjai",
+      "text": "Pridedate geriausios kokybės logotipą.",
+      "file": "k03-3.wav",
+      "duration": 2.757,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Reikalavimai vaizdo įrašams",
+      "text": "Įrašus prašote em pė keturi formatu.",
+      "file": "k04-1.wav",
+      "duration": 2.89,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Reikalavimai vaizdo įrašams",
+      "text": "Garso takelio juose neturi būti.",
+      "file": "k04-2.wav",
+      "duration": 2.45,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Reikalavimai vaizdo įrašams",
+      "text": "Failo dydis – iki dvidešimties megabaitų.",
+      "file": "k04-3.wav",
+      "duration": 2.743,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Nuo scenarijaus iki įrašo",
+      "text": "Pavyzdinį scenarijų pritaikote savo įstaigai.",
+      "file": "k05-1.wav",
+      "duration": 2.957,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Nuo scenarijaus iki įrašo",
+      "text": "Išsiunčiate vertėjams kartu su logotipu.",
+      "file": "k05-2.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Nuo scenarijaus iki įrašo",
+      "text": "Gautus įrašus patalpinate svetainės puslapyje.",
+      "file": "k05-3.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Įkeliate vertimą į puslapį",
+      "text": "Medyje atidarote puslapį „Informacija /ˈɡʲɛstuː/ kalba“.",
+      "file": "k06-1.wav",
+      "duration": 3.85,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Įkeliate vertimą į puslapį",
+      "text": "Įkeliate gautą vaizdo /ˈiːraʃaː/.",
+      "file": "k06-2.wav",
+      "duration": 2.13,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Įkeliate vertimą į puslapį",
+      "text": "Išsaugojus įrašas matomas svetainėje.",
+      "file": "k06-3.wav",
+      "duration": 2.983,
+      "fits": true,
+      "reikia_sek": 16
+    }
+  ]
+}

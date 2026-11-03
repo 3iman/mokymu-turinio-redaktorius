@@ -1,0 +1,60 @@
+{
+  "lang": "lt",
+  "01_i_naujienos_valdyma": {
+    "_epizodas": "ep_695_01_1"
+  },
+  "01_irasa_istrinate": {
+    "_epizodas": "ep_695_01_2"
+  },
+  "02_unikalus_slug": {
+    "_epizodas": "ep_695_02_1"
+  },
+  "03_publikavimo_ir_slepimo_datos": {
+    "_epizodas": "ep_695_03_1"
+  },
+  "04_autorius_is_saraso": {
+    "_epizodas": "ep_695_04_1"
+  },
+  "04_visi_autoriaus_irasai": {
+    "_epizodas": "ep_695_04_2"
+  },
+  "05_nuotrauku_autorius": {
+    "_epizodas": "ep_695_05_1"
+  },
+  "06_kategorija_irasui": {
+    "_epizodas": "ep_695_06_1"
+  },
+  "07_zyma_irasui": {
+    "_epizodas": "ep_695_07_1"
+  },
+  "08_pagrindine_nuotrauka_nerodoma": {
+    "_epizodas": "ep_695_08_1"
+  },
+  "09_nuotraukos_kadravimas": {
+    "_epizodas": "ep_695_09_1"
+  },
+  "10_izanga_irase": {
+    "_epizodas": "ep_695_10_1"
+  },
+  "12_nuotraukos_tarp_pastraipu": {
+    "_epizodas": "ep_695_12_1"
+  },
+  "13_uzrakinta_galerija": {
+    "_epizodas": "ep_695_13_1"
+  },
+  "14_vaizdo_irasas_virsuje": {
+    "_epizodas": "ep_695_14_1"
+  },
+  "15_irasa_prisegate": {
+    "_epizodas": "ep_695_15_1"
+  },
+  "16_garso_failas": {
+    "_epizodas": "ep_695_16_1"
+  },
+  "16_garso_sintakse": {
+    "_epizodas": "ep_695_16_2"
+  },
+  "17_irasu_skaicius": {
+    "_epizodas": "ep_695_17_1"
+  }
+}

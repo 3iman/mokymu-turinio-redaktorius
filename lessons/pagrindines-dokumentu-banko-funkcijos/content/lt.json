@@ -1,0 +1,30 @@
+{
+  "lang": "lt",
+  "03_nauja_subkategorija": {
+    "_epizodas": "ep_678_03_1"
+  },
+  "05_dokumentu_trynimas": {
+    "_epizodas": "ep_678_05_1"
+  },
+  "05_redagavimo_mygtukas": {
+    "_epizodas": "ep_678_05_2"
+  },
+  "06_keliu_failu_ikelimas": {
+    "_epizodas": "ep_678_06_1"
+  },
+  "06_pavadinimu_taisymas": {
+    "_epizodas": "ep_678_06_2"
+  },
+  "01_pervadinti_pries_ikeliant": {
+    "title": "Kada pervadinti dokumentą",
+    "old_title": "Po įkėlimo",
+    "old_step_1": "Painiava",
+    "new_title": "Prieš įkeliant",
+    "new_step_1": "Lengva rasti kompiuteryje",
+    "new_step_2": "Lengva rasti svetainėje"
+  },
+  "10_priminimai": {
+    "title": "Priminimai",
+    "note": "Rekomenduojame išnaudoti jos privalumus"
+  }
+}

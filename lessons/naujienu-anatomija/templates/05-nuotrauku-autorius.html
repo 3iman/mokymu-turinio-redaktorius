@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* K7 — „Nuotraukų autorius“ (ep_695_05_1)
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 50% 50%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+
+  .n-table .tvs-th, .n-table .tvs-row { grid-template-columns: 30px 1fr 200px 260px 180px; }
+  .sw-slot { position: relative; height: 42px; } .sw-slot .tvs-switch { position: absolute; left: 0; top: 0; } .sb { opacity: 0; }
+  .tvs-split2 .tvs-form { padding: 0 18px; } .tvs-split2 .tvs-field { padding: 10px 0; }
+  .btns { display: flex; gap: 8px; margin-bottom: 6px; }
+  .tvs-split2-r .tvs-art-img { height: 200px; } .ph-by { opacity: 0; }
+  /* galutinė būsena (epizodai.js) — po pamokos CSS, kad visada laimėtų */
+  .stage > .scr:nth-of-type(1) { opacity: 1; }
+  .cursor-wrap { transform: translate(281.3px, 216.0px); }
+  .caret-ph { opacity: 1; }
+  .ph-by { opacity: 1; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-split2">
+
+        <div class="tvs-split2-l" data-t="sleft"><span class="tvs-split-tag">TVS</span><div class="tvs-form"><div class="tvs-field"><div class="tvs-label">Kategorija</div><div class="tvs-select">Renginiai</div></div><div class="tvs-field" data-t="fph"><div class="tvs-label">Nuotraukų autorius</div><div class="tvs-input is-focus"><span class="tvs-typed ty-ph" data-ty="ph"><span class="w"><span class="l l1">J</span><span class="l l2">o</span><span class="l l3">n</span><span class="l l4">a</span><span class="l l5">s</span></span><span class="l l6">&nbsp;</span><span class="w"><span class="l l7">B</span><span class="l l8">i</span><span class="l l9">l</span><span class="l l10">i</span><span class="l l11">ū</span><span class="l l12">n</span><span class="l l13">a</span><span class="l l14">s</span></span></span><span class="tvs-caret caret-ph"></span></div></div><div class="tvs-field"><div class="tvs-label">Intro</div><div class="tvs-input is-value">Pirmokai šventę pradėjo dainomis.</div></div></div></div>
+        <div class="tvs-split2-r" data-t="sright"><span class="tvs-split-tag">Svetainė</span><div class="tvs-sweb-nav"><span class="is-on">Naujienos</span></div><div class="tvs-sweb-b"><div class="tvs-photo tvs-art-img "></div>
+            <div class="tvs-art-t">Pirmokų šventė sporto salėje</div><div class="tvs-art-m">Paskelbta: 2026-09-01 · Kategorija: <b>Renginiai</b></div>
+            <div class="tvs-art-p">Rugsėjo 1-ąją pirmokai susirinko sporto salėje. Šventę vedė vyresniųjų klasių mokiniai.</div>
+            <div class="tvs-art-p">Po šventės pirmokai su mokytojomis apžiūrėjo savo klases.</div><div class="tvs-art-by ph-by" data-t="phby">📷 Nuotraukos: Jonas Biliūnas</div></div></div>
+      </div>
+      <div class="spot"></div>
+
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,197 @@
+{
+ "pamokos_slug": "kaip-publikuoti-vaizdo-irasus-be-youtube",
+ "pamoka_id": "pam_691",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_691_01",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_691_01",
+   "pamoka": "pam_691",
+   "failas": "01-tik-mp4",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "mp4",
+    "Kiti formatai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "mp4"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_691_02_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_691_02",
+   "pamoka": "pam_691",
+   "failas": "02-pridedate-failus",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Vardas",
+    "MIME tipas",
+    "Pridėti"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: įkėlimo lango lentelė"
+   ],
+   "tarimo_kandidatai": [
+    "mp4",
+    "MIME"
+   ],
+   "demo_duomenys": {
+    "irasas": "sventes-eisena.mp4"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_691_02_3",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_691_02",
+   "pamoka": "pam_691",
+   "failas": "02-kopijuojate-kelia",
+   "trukme_s": 18,
+   "ekrano_tekstai": [
+    "Peržiūrėti",
+    "/files/naujienos/",
+    "mp4"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: naršyklės adreso juosta su pažymėta kelio dalimi"
+   ],
+   "tarimo_kandidatai": [
+    "files",
+    "mp4"
+   ],
+   "demo_duomenys": {
+    "kelias": "/files/naujienos/sventes-eisena.mp4",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "ep_691_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_691_03",
+   "pamoka": "pam_691",
+   "failas": "03-kelias-i-video-lauka",
+   "trukme_s": 8,
+   "ekrano_tekstai": [
+    "Video",
+    "Add Row",
+    "Antraštė"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: formos skirtukai",
+    "naujas: video grotuvo blokas"
+   ],
+   "tarimo_kandidatai": [
+    "Add Row",
+    "Video"
+   ],
+   "demo_duomenys": {
+    "kelias": "/files/naujienos/sventes-eisena.mp4"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "ep_691_03_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_691_03",
+   "pamoka": "pam_691",
+   "failas": "03-kopijuojate-video-sintakse",
+   "trukme_s": 9,
+   "ekrano_tekstai": [
+    "Sintaksė",
+    "Kopijuoti",
+    "Aprašymas"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "sintaksė"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "ep_691_04_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_691_04",
+   "pamoka": "pam_691",
+   "failas": "04-grotuvai-svetaineje",
+   "trukme_s": 9,
+   "ekrano_tekstai": [
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: svetainės įrašas su grotuvu"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "ep_691_05_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_691_05",
+   "pamoka": "pam_691",
+   "failas": "05-salinate-mp4",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Nuotraukų galerija",
+    "Šalinti",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "mp4"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla",
+    "irasas": "sventes-eisena.mp4"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

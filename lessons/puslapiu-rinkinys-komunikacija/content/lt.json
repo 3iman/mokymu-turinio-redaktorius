@@ -1,0 +1,94 @@
+{
+  "lang": "lt",
+  "02_gpm_skaiciai": {
+    "_epizodas": "ep_686_02_1"
+  },
+  "02_gpm_ataskaita": {
+    "_epizodas": "ep_686_02_2"
+  },
+  "01_pasiekimai": {
+    "title": "Pasiekimai",
+    "old_title": "Neretai talpinama",
+    "old_step_1": "Statistikos ataskaitą primenantis turinys",
+    "old_step_2": "Kas, kur, ką laimėjo, koks mokytojas padėjo",
+    "new_title": "Rekomenduojame",
+    "new_step_1": "Atrinkti svarbiausius",
+    "new_step_2": "Patrauklesnis formatas",
+    "summary": "Vienodas formatas visiems pasiekimams"
+  },
+  "03_projektine_veikla": {
+    "title": "Projektinė veikla",
+    "item_1": "Vientisumas",
+    "item_2": "Tam tikras formatas",
+    "item_3": "Ypač svarbu ES projektams",
+    "summary": "Plačiau – skyreliuose „Projektinė veikla“ ir „ES projektų viešinimas“"
+  },
+  "04_filosofija_misija_vizija": {
+    "title": "Filosofija, misija, vizija",
+    "do_title": "Taip",
+    "do_1": "Tekstas, kurį galima kopijuoti",
+    "dont_title": "Ne",
+    "dont_1": "Tekstas paveikslėlyje",
+    "dont_2": "Tekstas prezentacijoje"
+  },
+  "05_mokyklos_himnas": {
+    "title": "Mokyklos himnas",
+    "item_1": "Nurodote autorių (-ius)",
+    "item_2": "Pasinaudojate muzikos grotuvo funkcija",
+    "item_3": "Himną patalpinate MP3 formatu"
+  },
+  "06_puslapis_nuorodos": {
+    "title": "Puslapis „Nuorodos“",
+    "do_title": "Taip",
+    "do_1": "Ministerijos svetainė",
+    "do_2": "Savivaldybės svetainė",
+    "do_3": "Su jūsų veikla susijusios įstaigos",
+    "dont_title": "Ne",
+    "dont_1": "Naudingos nuorodos bendruomenei"
+  },
+  "07_apie_mokykla": {
+    "title": "Apie mokyklą",
+    "item_1": "Bendra informacija apie mokyklą",
+    "item_2": "Mokyklos istorija",
+    "item_3": "Reguliariai atnaujinate, minite svarbius įvykius"
+  },
+  "08_mokyklos_simboliai": {
+    "title": "Mokyklos simboliai",
+    "item_1": "Logotipas",
+    "item_2": "Vėliavos nuotrauka",
+    "item_3": "Logotipo naudojimo gairės",
+    "item_4": "Vektoriniai dizaino failai"
+  },
+  "09_tradiciniai_renginiai": {
+    "title": "Tradiciniai renginiai",
+    "item_1": "Tradiciniai kasmetiniai renginiai",
+    "item_2": "Vienas puslapis jiems visiems"
+  },
+  "10_bendradarbiavimas": {
+    "title": "Bendradarbiavimas",
+    "item_1": "Socialiniai partneriai",
+    "item_2": "Vizualiai patrauklesnis būdas – logotipai"
+  },
+  "11_ugdymo_aplinka": {
+    "title": "Ugdymo aplinka",
+    "item_1": "Klasės",
+    "item_2": "Koridoriai",
+    "item_3": "Sporto salė",
+    "item_4": "Maitinimo patalpos",
+    "summary": "Geros kokybės nuotraukos pakelia įvaizdį į aukštesnį lygį"
+  },
+  "12_about_us": {
+    "title": "About us",
+    "item_1": "Nuo 2022 m. privalu pagal Bendruosius reikalavimus",
+    "item_2": "„About us“, „Über uns“, „O nas“",
+    "item_3": "Kalba priklauso nuo to, kokią bendruomenę informuoti aktualu"
+  },
+  "13_priemimas": {
+    "title": "Priėmimas į mokyklą ar darželį",
+    "item_1": "Empatiškai",
+    "item_2": "Trumpai",
+    "item_3": "Aiškiai",
+    "item_4": "Nuorodos į priėmimą reglamentuojančius dokumentus",
+    "summary": "Vaiko išleidimas į mokyklą tėvams – daug streso keliantis įvykis"
+  }
+}

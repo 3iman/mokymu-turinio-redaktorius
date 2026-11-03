@@ -1,0 +1,87 @@
+{
+ "pamokos_slug": "pranesimu-juosteles-valdymas",
+ "pamoka_id": "pam_702",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_702_01_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_702_01",
+   "pamoka": "pam_702",
+   "failas": "01-juosteles-uzdarymas",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Rugsėjo 1-osios šventė"
+   ],
+   "tvs_ui": [
+    "tvs-cursor",
+    "naujas: svetainės pranešimų juostelė su uždarymo kryželiu"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "zinute": "Rugsėjo 1-osios šventė – 10 val."
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_702_03",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_702_03",
+   "pamoka": "pam_702",
+   "failas": "03-viena-zinute-sarase",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Painu",
+    "Rekomenduojame"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "zinute": "Rugsėjo 1-osios šventė – 10 val."
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_702_04_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_702_04",
+   "pamoka": "pam_702",
+   "failas": "04-nauja-zinute",
+   "trukme_s": 17,
+   "ekrano_tekstai": [
+    "Pridėti pranešimą",
+    "Tekstas",
+    "Rodyti nuo",
+    "Rodyti iki",
+    "Įjungta",
+    "URL",
+    "Išsaugoti ir išeiti"
+   ],
+   "tvs_ui": [
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: datos pasirinkimo laukas"
+   ],
+   "tarimo_kandidatai": [
+    "URL"
+   ],
+   "demo_duomenys": {
+    "zinute": "Rugsėjo 1-osios šventė – 10 val.",
+    "nuoroda": "/renginiai"
+   },
+   "naudoja_ir": [
+    "dal_901_04",
+    "dal_902_03",
+    "dal_902_90",
+    "dal_702_90"
+   ]
+  }
+ ]
+}

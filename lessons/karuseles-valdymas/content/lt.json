@@ -1,0 +1,17 @@
+{
+  "lang": "lt",
+  "04_srifto_dydziai": {
+    "_epizodas": "ep_711_04_1"
+  },
+  "05_teksto_spalva": {
+    "_epizodas": "ep_711_05_1"
+  },
+  "02_karuseles_vizualas": {
+    "title": "Pagrindinis karuselės vizualas",
+    "full_size": "1920 x 606 pikselių",
+    "safe_zone": "Visas svarbus turinys — tarp pirmų dviejų linijų",
+    "visible_width": "1180 pikselių matosi bet kuriame ekrane",
+    "side_zones": "Kraštai gali būti nematomi",
+    "mobile": "Telefone — atskira, apkirpta nuotrauka, kvadratas"
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "hash": "329abde0be98f50bf4a1b06f6ee35cc745a1a1345a6e79250613cce5e866d51d",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 4028925978,
+  "characters": 702,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T03:45:57.982Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Tinka tik mp4",
+      "text": "Sistema atvaizduoja tik em pė keturi formato įrašus.",
+      "file": "k01-1.wav",
+      "duration": 3.843,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Tinka tik mp4",
+      "text": "Todėl įkeliate tik em pė keturi.",
+      "file": "k01-2.wav",
+      "duration": 2.57,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Pridedate failus į galeriją",
+      "text": "Prie kiekvieno /ˈiːraʃoː/ spaudžiate „/prʲiˈdʲeːtʲi/“.",
+      "file": "k02-1.wav",
+      "duration": 2.917,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Pridedate failus į galeriją",
+      "text": "Langą uždarote.",
+      "file": "k02-2.wav",
+      "duration": 1.53,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Pridedate failus į galeriją",
+      "text": "Failai matomi galerijos /ˈsaːraʃʲɛ/.",
+      "file": "k02-3.wav",
+      "duration": 2.33,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Nukopijuojate kelią iki failo",
+      "text": "Prie /ˈiːraʃoː/ spaudžiate „Peržiūrėti“.",
+      "file": "k03-1.wav",
+      "duration": 2.49,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Nukopijuojate kelią iki failo",
+      "text": "Jis atsidaro naujame /lanˈɡʲɛ/.",
+      "file": "k03-2.wav",
+      "duration": 2.25,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Nukopijuojate kelią iki failo",
+      "text": "Adreso /ˈjuostoːjɛ/ kopijuojate dalį nuo „//faɪlz//“.",
+      "file": "k03-3.wav",
+      "duration": 8.97,
+      "fits": false,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Kelią įklijuojate skirtuke „Video“",
+      "text": "Skirtuke „Video“ pridedate bloką.",
+      "file": "k04-1.wav",
+      "duration": 2.69,
+      "fits": false,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Kelią įklijuojate skirtuke „Video“",
+      "text": "Į lauką įklijuojate nukopijuotą /ˈkʲɛːlʲaː/.",
+      "file": "k04-2.wav",
+      "duration": 2.85,
+      "fits": true,
+      "reikia_sek": 8
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Nukopijuojate vaizdo įrašo sintaksę",
+      "text": "Atidarote skirtuką „Sintaksė“.",
+      "file": "k05-1.wav",
+      "duration": 2.223,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Nukopijuojate vaizdo įrašo sintaksę",
+      "text": "Prie vaizdo /ˈiːraʃoː/ eilutės spaudžiate „Kopijuoti“.",
+      "file": "k05-2.wav",
+      "duration": 3.437,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Grotuvai atsiranda tekste",
+      "text": "Išsaugote /ˈiːraʃaː/.",
+      "file": "k06-1.wav",
+      "duration": 1.65,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Grotuvai atsiranda tekste",
+      "text": "Svetainėje grotuvai atsiranda tose pačiose vietose.",
+      "file": "k06-2.wav",
+      "duration": 3.583,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Mp4 pašalinate iš galerijos",
+      "text": "Prie kiekvieno em pė keturi spaudžiate „Šalinti“.",
+      "file": "k07-1.wav",
+      "duration": 3.277,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Mp4 pašalinate iš galerijos",
+      "text": "Galerijoje lieka tik nuotraukos.",
+      "file": "k07-2.wav",
+      "duration": 2.45,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Mp4 pašalinate iš galerijos",
+      "text": "Spaudžiate „Atnaujinti“.",
+      "file": "k07-3.wav",
+      "duration": 1.903,
+      "fits": true,
+      "reikia_sek": 13
+    }
+  ]
+}

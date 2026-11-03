@@ -1,0 +1,245 @@
+{
+ "pamokos_slug": "turinio-audito-irankis",
+ "pamoka_id": "pam_688",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_688_01",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_688_01",
+   "pamoka": "pam_688",
+   "failas": "01-paslaugos",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Paslaugų aprašymai",
+    "Susiję dokumentai",
+    "Atsakingas asmuo",
+    "Maitinimas, pavežėjimas, nuoma"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "atsakingas": "Marija Pečkauskaitė"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_688_02",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_688_02",
+   "pamoka": "pam_688",
+   "failas": "02-darbuotojai",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Pareigybiniai aprašai",
+    "Darbo laikas",
+    "Kontaktai",
+    "Pavaduotojai yra vadovai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "darbuotojas": "Marija Pečkauskaitė",
+    "pareigos": "Direktoriaus pavaduotoja",
+    "el_pastas": "m.peckauskaite@mokykla.lt"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_688_03",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_688_03",
+   "pamoka": "pam_688",
+   "failas": "03-komisijos-ir-grupes",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Grupių sąrašas",
+    "Sudėtis",
+    "Reglamentuojantys dokumentai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "grupe": "Vaiko gerovės komisija",
+    "narys": "Jonas Biliūnas"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_688_04",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_688_04",
+   "pamoka": "pam_688",
+   "failas": "04-dokumentai",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Tvarkos aprašai",
+    "Taisyklės",
+    "Pareigybiniai aprašai",
+    "Įsakymai",
+    "Biudžetinės ataskaitos"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "dokumentas": "Demo mokyklos nuostatai"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_688_05",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_688_05",
+   "pamoka": "pam_688",
+   "failas": "05-komunikacija",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Ar pasakėte viską",
+    "Kaip pasakėte",
+    "Ar supras vienodai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "viz_688_06",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_688_06",
+   "pamoka": "pam_688",
+   "failas": "06-administracijai",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Peržiūri vadovas",
+    "Bendrieji reikalavimai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "vadovas": "Aleksandras Stulginskis"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "viz_688_07",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_688_07",
+   "pamoka": "pam_688",
+   "failas": "07-pries-paleidima",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Priminimai prieš paleidimą",
+    "Kokybės standartai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 8,
+   "epizodas": "viz_688_08",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_688_08",
+   "pamoka": "pam_688",
+   "failas": "08-atideta",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Reikia pasitarti",
+    "Komandos viduje"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 9,
+   "epizodas": "viz_688_09",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_688_09",
+   "pamoka": "pam_688",
+   "failas": "09-atmesta",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Peržiūrite dar kartą",
+    "Pataisote netikslumus"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 10,
+   "epizodas": "viz_688_10",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_688_10",
+   "pamoka": "pam_688",
+   "failas": "10-ivykdyta",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Puslapio užbaigtumas",
+    "Sisteminiai puslapiai",
+    "15 %"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 11,
+   "epizodas": "ep_688_11_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_688_11",
+   "pamoka": "pam_688",
+   "failas": "11-audito-numeris",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Visi",
+    "Audito nr.",
+    "Svetainės dalis",
+    "Komentarai"
+   ],
+   "tvs_ui": [
+    "tvs-table",
+    "tvs-th",
+    "tvs-row",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: audito įrankio rinkinių juosta"
+   ],
+   "tarimo_kandidatai": [
+    "Audito nr."
+   ],
+   "demo_duomenys": {
+    "puslapis": "Darbo užmokestis",
+    "audito_nr": "53"
+   },
+   "naudoja_ir": [
+    "dal_688b_90",
+    "dal_688_00",
+    "dal_688c_90"
+   ]
+  }
+ ]
+}

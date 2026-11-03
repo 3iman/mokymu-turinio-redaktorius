@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* K8 — „Paveikslėlių galerija“ (ep_701_08_1)
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 45% 40%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+.pt { background: #fff; padding: 12px; } .tm { position: absolute; left: 560px; top: 230px; width: 560px; z-index: 10; } .pa { opacity: 0; } .btns { display: flex; gap: 8px; }
+  .upw { position: absolute; left: 330px; top: 140px; width: 1150px; z-index: 10; } .up-sub { padding: 0 22px 8px; } .drop { position: absolute; z-index: 30; display: flex; gap: 8px; left: 760px; top: 30px; } .drop span { background: #fff; border: 1px solid #ccc; padding: 8px 12px; border-radius: 6px; box-shadow: 0 6px 16px rgba(0,0,0,.2); font-size: 16px; }
+  .sw-slot { position: relative; height: 42px; } .sw-slot .tvs-switch { position: absolute; left: 0; top: 0; } .sb { opacity: 0; } .tvs-cke-body { min-height: 200px; } .pre { color: var(--tvs-text-muted); } .uprow { opacity: 0; }
+  /* galutinė būsena (epizodai.js) — po pamokos CSS, kad visada laimėtų */
+  .stage > .scr:nth-of-type(1) { opacity: 1; }
+  .cursor-wrap { transform: translate(1413.2px, 565.0px); }
+  .upw { opacity: 1; }
+  .drop { opacity: 0; }
+  .uprow { opacity: 1; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class="is-on"></i><i class="is-bars"></i><i class=""></i><i class=""></i><i class=""></i></div>
+        <div class="tvs-subnav"><span class="is-on">Puslapiai</span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">Puslapiai  /  Veiklos sritys  /  Redaguoti</div>
+<div class="tvs-form is-dense"><div class="tvs-field" data-t="fg"><div class="tvs-label">Paveikslėlių galerija</div><div class="btns"><span class="tvs-btn is-tiny is-info">Select File</span><span class="tvs-btn is-tiny" data-t="upl">Upload</span></div></div></div>
+          <div class="tvs-form-foot"><span class="tvs-btn is-tiny" data-t="save"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>Išsaugoti</span><span class="tvs-btn is-tiny" data-t="save2"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>Išsaugoti ir išeiti</span></div>
+        </div>
+        <div class="upw"><div class="tvs-modal is-static up"><div class="tvs-modal-h"><span>Images</span><span class="tvs-x is-dark" data-t="upx">×</span></div>
+          <div class="up-sub"><span class="tvs-badge">Max: 100 MB</span></div>
+          <div class="tvs-modal-b"><div class="tvs-dz" data-t="dz"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l6 6h-4v7h-4V8H6zM3 17h4v2h10v-2h4v5H3z"/></svg>Click or drop files here to upload.</div></div>
+          <div><div class="tvs-up-th"><span>Peržiūra</span><span>Vardas</span><span>Dydis</span><span>MIME tipas</span><span>Katalogas</span><span></span></div><div class="tvs-up-row uprow"><span class="tvs-fico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/></svg></span><div class="tvs-fmeta"><span class="tvs-fname">Rugsejo-pirmoji (1).jpg</span><span class="tvs-fpath">local://puslapiai/Rugsejo-pirmoji (1).jpg</span></div><span>2.4 MB</span><span>image/jpeg</span><span>Puslapiai</span><span class="tvs-btn is-tiny" data-t="add1"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>Pridėti</span></div><div class="tvs-up-row uprow"><span class="tvs-fico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/></svg></span><div class="tvs-fmeta"><span class="tvs-fname">Rugsejo-pirmoji (2).jpg</span><span class="tvs-fpath">local://puslapiai/Rugsejo-pirmoji (2).jpg</span></div><span>2.4 MB</span><span>image/jpeg</span><span>Puslapiai</span><span class="tvs-btn is-tiny"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>Pridėti</span></div><div class="tvs-up-row uprow"><span class="tvs-fico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/></svg></span><div class="tvs-fmeta"><span class="tvs-fname">Rugsejo-pirmoji (3).jpg</span><span class="tvs-fpath">local://puslapiai/Rugsejo-pirmoji (3).jpg</span></div><span>2.4 MB</span><span>image/jpeg</span><span>Puslapiai</span><span class="tvs-btn is-tiny"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>Pridėti</span></div><div class="tvs-up-row uprow"><span class="tvs-fico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/></svg></span><div class="tvs-fmeta"><span class="tvs-fname">Rugsejo-pirmoji (4).jpg</span><span class="tvs-fpath">local://puslapiai/Rugsejo-pirmoji (4).jpg</span></div><span>2.4 MB</span><span>image/jpeg</span><span>Puslapiai</span><span class="tvs-btn is-tiny"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>Pridėti</span></div></div></div></div><div class="drop"><span>🖼 Rugsejo-pirmoji (1).jpg</span><span>🖼 +3</span></div>
+      </div>
+      <div class="spot"></div>
+      <div class="tvs-ripple rp rp1"></div>
+      <div class="tvs-ripple rp rp2"></div>
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

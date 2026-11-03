@@ -16,11 +16,12 @@
   .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
   .cursor-wrap .tvs-cursor { left: 0; top: 0; }
   [class*="caret-"] { opacity: 0; }
+.clip { height: 560px; overflow: hidden; } .pages { display: flex; flex-direction: column; align-items: center; gap: 18px; margin-top: 16px; }
+  .pg .tvs-xthumb { width: 520px; height: 300px; } .pdfl { display: inline-block; margin: 24px 0; font-size: 21px; color: var(--tvs-site-link); text-decoration: underline; }
+  /* galutinė būsena (epizodai.js) — po pamokos CSS, kad visada laimėtų */
   .stage > .scr:nth-of-type(1) { opacity: 1; }
   .cursor-wrap { transform: translate(1246.0px, 777.0px); }
 
-.clip { height: 560px; overflow: hidden; } .pages { display: flex; flex-direction: column; align-items: center; gap: 18px; margin-top: 16px; }
-  .pg .tvs-xthumb { width: 520px; height: 300px; } .pdfl { display: inline-block; margin: 24px 0; font-size: 21px; color: var(--tvs-site-link); text-decoration: underline; }
 </style>
 </head>
 <body>

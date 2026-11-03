@@ -1,0 +1,579 @@
+{
+ "pamokos_slug": "naujienu-anatomija",
+ "pamoka_id": "pam_695",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_695_01_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_01",
+   "pamoka": "pam_695",
+   "failas": "01-i-naujienos-valdyma",
+   "trukme_s": 8,
+   "ekrano_tekstai": [
+    "Naujienos",
+    "Pavadinimas",
+    "Kategorija",
+    "Redaguoti"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla",
+    "naujiena": "Pirmokų šventė sporto salėje"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_695_01_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_01",
+   "pamoka": "pam_695",
+   "failas": "01-irasa-istrinate",
+   "trukme_s": 8,
+   "ekrano_tekstai": [
+    "Visi",
+    "Šiukšlės",
+    "Ištrinti",
+    "Redaguoti"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: eilutės žymėjimo langelis"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "naujiena": "Kvietimas į tėvų susirinkimą"
+   },
+   "naudoja_ir": [
+    "dal_702_03"
+   ]
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_695_02_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_02",
+   "pamoka": "pam_695",
+   "failas": "02-unikalus-slug",
+   "trukme_s": 8,
+   "ekrano_tekstai": [
+    "Pavadinimas",
+    "Slug",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "Slug",
+    "URL"
+   ],
+   "demo_duomenys": {
+    "pavadinimas": "Pirmokų šventė",
+    "slug": "pirmoku-svente-2026"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "ep_695_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_03",
+   "pamoka": "pam_695",
+   "failas": "03-publikavimo-ir-slepimo-datos",
+   "trukme_s": 10,
+   "ekrano_tekstai": [
+    "Publikavimo data/laikas",
+    "Slėpimo data/laikas",
+    "Europe/Vilnius",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: datos pasirinkimo kalendorius"
+   ],
+   "tarimo_kandidatai": [
+    "Europe/Vilnius"
+   ],
+   "demo_duomenys": {
+    "publikuoti": "2026-09-01 12:00",
+    "paslepti": "2026-09-30 12:00"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "ep_695_04_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_04",
+   "pamoka": "pam_695",
+   "failas": "04-autorius-is-saraso",
+   "trukme_s": 9,
+   "ekrano_tekstai": [
+    "Autoriai",
+    "Pažymėti",
+    "Full Name",
+    "Pridėti"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: modalinis sąrašo langas su paieška"
+   ],
+   "tarimo_kandidatai": [
+    "Full Name"
+   ],
+   "demo_duomenys": {
+    "autorius": "Marija Pečkauskaitė",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": [
+    "dal_694_05"
+   ]
+  },
+  {
+   "kadras": 6,
+   "epizodas": "ep_695_04_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_04",
+   "pamoka": "pam_695",
+   "failas": "04-visi-autoriaus-irasai",
+   "trukme_s": 8,
+   "ekrano_tekstai": [
+    "Paskelbta:",
+    "Kategorija:",
+    "Plačiau"
+   ],
+   "tvs_ui": [
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: svetainės naujienų kortelė"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "autorius": "Marija Pečkauskaitė",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": [
+    "dal_704_02"
+   ]
+  },
+  {
+   "kadras": 7,
+   "epizodas": "ep_695_05_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_05",
+   "pamoka": "pam_695",
+   "failas": "05-nuotrauku-autorius",
+   "trukme_s": 10,
+   "ekrano_tekstai": [
+    "Nuotraukų autorius",
+    "Kategorija",
+    "Intro"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "Intro"
+   ],
+   "demo_duomenys": {
+    "fotografas": "Jonas Biliūnas"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 8,
+   "epizodas": "ep_695_06_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_06",
+   "pamoka": "pam_695",
+   "failas": "06-kategorija-irasui",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Kategorija",
+    "Renginiai",
+    "Pranešimai",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-btn",
+    "tvs-row",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: reikšmių pasirinkimo sąrašas"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "kategorija": "Renginiai"
+   },
+   "naudoja_ir": [
+    "dal_683_03"
+   ]
+  },
+  {
+   "kadras": 9,
+   "epizodas": "ep_695_07_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_07",
+   "pamoka": "pam_695",
+   "failas": "07-zyma-irasui",
+   "trukme_s": 8,
+   "ekrano_tekstai": [
+    "Tags",
+    "Audios",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: žymos ženklelis lauke"
+   ],
+   "tarimo_kandidatai": [
+    "Tags",
+    "Enter"
+   ],
+   "demo_duomenys": {
+    "zyma": "priesmokyklinis"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 10,
+   "epizodas": "ep_695_08_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_08",
+   "pamoka": "pam_695",
+   "failas": "08-pagrindine-nuotrauka-nerodoma",
+   "trukme_s": 10,
+   "ekrano_tekstai": [
+    "Rodyti pagrindinę nuotrauką",
+    "Yes",
+    "No",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: „Yes“ / „No“ jungiklis"
+   ],
+   "tarimo_kandidatai": [
+    "Yes",
+    "No"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla",
+    "naujiena": "Pirmokų šventė"
+   },
+   "naudoja_ir": [
+    "dal_694_06"
+   ]
+  },
+  {
+   "kadras": 11,
+   "epizodas": "ep_695_09_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_09",
+   "pamoka": "pam_695",
+   "failas": "09-nuotraukos-kadravimas",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Crop",
+    "Rodyti apkarpytą",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-btn",
+    "tvs-handle",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: kadruotės rėmelis virš nuotraukos"
+   ],
+   "tarimo_kandidatai": [
+    "Crop"
+   ],
+   "demo_duomenys": {
+    "nuotrauka": "Demo mokyklos šventės nuotrauka"
+   },
+   "naudoja_ir": [
+    "dal_695_90"
+   ]
+  },
+  {
+   "kadras": 12,
+   "epizodas": "ep_695_10_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_10",
+   "pamoka": "pam_695",
+   "failas": "10-izanga-irase",
+   "trukme_s": 8,
+   "ekrano_tekstai": [
+    "Intro",
+    "Turinys",
+    "Plačiau"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: teksto redaktoriaus įrankių juosta"
+   ],
+   "tarimo_kandidatai": [
+    "Intro"
+   ],
+   "demo_duomenys": {
+    "izanga": "Pirmokai šventę pradėjo dainomis"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 13,
+   "epizodas": "ep_695_12_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_12",
+   "pamoka": "pam_695",
+   "failas": "12-nuotraukos-tarp-pastraipu",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Turinys",
+    "{{images(2)}}",
+    "Nuotraukų galerija"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: teksto redaktoriaus įrankių juosta"
+   ],
+   "tarimo_kandidatai": [
+    "images"
+   ],
+   "demo_duomenys": {
+    "sintakse": "{{images(2)}}"
+   },
+   "naudoja_ir": [
+    "dal_695b_90"
+   ]
+  },
+  {
+   "kadras": 14,
+   "epizodas": "ep_695_13_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_13",
+   "pamoka": "pam_695",
+   "failas": "13-uzrakinta-galerija",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Apsaugotos nuotraukos",
+    "Slaptažodis",
+    "ATRAKINTI"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: „Yes“ / „No“ jungiklis"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "slaptazodis": "demo2026",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 15,
+   "epizodas": "ep_695_14_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_14",
+   "pamoka": "pam_695",
+   "failas": "14-vaizdo-irasas-virsuje",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Video",
+    "http://",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: vaizdo grotuvo peržiūra"
+   ],
+   "tarimo_kandidatai": [
+    "YouTube",
+    "Vimeo"
+   ],
+   "demo_duomenys": {
+    "video": "Demo mokyklos šventės įrašas"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 16,
+   "epizodas": "ep_695_15_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_15",
+   "pamoka": "pam_695",
+   "failas": "15-irasa-prisegate",
+   "trukme_s": 9,
+   "ekrano_tekstai": [
+    "Nustatymas",
+    "Pin",
+    "Yes",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: „Yes“ / „No“ jungiklis"
+   ],
+   "tarimo_kandidatai": [
+    "Pin"
+   ],
+   "demo_duomenys": {
+    "naujiena": "Priėmimas į pirmą klasę"
+   },
+   "naudoja_ir": [
+    "dal_901_04"
+   ]
+  },
+  {
+   "kadras": 17,
+   "epizodas": "ep_695_16_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_16",
+   "pamoka": "pam_695",
+   "failas": "16-garso-failas",
+   "trukme_s": 10,
+   "ekrano_tekstai": [
+    "Audios",
+    "Select File",
+    "Upload",
+    "Max: 100 MB"
+   ],
+   "tvs_ui": [
+    "tvs-btn",
+    "tvs-row",
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: failų numetimo langas"
+   ],
+   "tarimo_kandidatai": [
+    "MP3",
+    "WAV",
+    "Audios",
+    "Upload"
+   ],
+   "demo_duomenys": {
+    "failas": "demo-mokyklos-himnas.mp3"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 18,
+   "epizodas": "ep_695_16_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_16",
+   "pamoka": "pam_695",
+   "failas": "16-garso-sintakse",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Sintaksė",
+    "Kopijuoti",
+    "{{audio()}}",
+    "Turinys"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "audio"
+   ],
+   "demo_duomenys": {
+    "sintakse": "{{audio()}}"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 19,
+   "epizodas": "ep_695_17_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_695_17",
+   "pamoka": "pam_695",
+   "failas": "17-irasu-skaicius",
+   "trukme_s": 10,
+   "ekrano_tekstai": [
+    "Limitas",
+    "Namų puslapio limitas",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "limitas": "12",
+    "namu_puslapis": "6"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

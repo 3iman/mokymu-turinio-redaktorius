@@ -1,0 +1,173 @@
+{
+  "hash": "f5775783392d67a88f4789ef5f565a5388a32620ce5b28273cd7eab1962609f7",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 2490517721,
+  "characters": 756,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T03:33:24.818Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Pavadinimas virš laikroduko",
+      "text": "Šoninėje /ˈjuostoːjɛ/ matote pamokų laiko laikrodukus.",
+      "file": "k01-1.wav",
+      "duration": 3.95,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Pavadinimas virš laikroduko",
+      "text": "Užrašas virš laikroduko – tai papildinio pavadinimas.",
+      "file": "k01-2.wav",
+      "duration": 3.65,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Pavadinimas virš laikroduko",
+      "text": "Jis toks pat kaip papildinių /ˈsaːraʃʲɛ/.",
+      "file": "k01-3.wav",
+      "duration": 2.71,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Laiką rašote su tašku",
+      "text": "/lauˈkʲɛ/ „Nuo“ laiką rašote su /taʃˈku/.",
+      "file": "k02-1.wav",
+      "duration": 3.41,
+      "fits": false,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Laiką rašote su tašku",
+      "text": "Taip pat užpildote lauką „Iki“.",
+      "file": "k02-2.wav",
+      "duration": 2.53,
+      "fits": false,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Laiką rašote su tašku",
+      "text": "Pasirenkate tą kategoriją, kurios sąrašą pildote.",
+      "file": "k02-3.wav",
+      "duration": 3.45,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 2,
+      "cue": 4,
+      "title": "Laiką rašote su tašku",
+      "text": "Laikas atsiranda tos kategorijos /ˈsaːraʃʲɛ/.",
+      "file": "k02-4.wav",
+      "duration": 3.183,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Kategorijų pavadinimai matomi tik TVS",
+      "text": "Kategorijų pavadinimus matote tik turinio valdymo sistemoje.",
+      "file": "k03-1.wav",
+      "duration": 3.917,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Kategorijų pavadinimai matomi tik TVS",
+      "text": "Svetainėje jie nerodomi.",
+      "file": "k03-2.wav",
+      "duration": 1.97,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Kategorijų pavadinimai matomi tik TVS",
+      "text": "Todėl kuriate kuo trumpesnius pavadinimus.",
+      "file": "k03-3.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Zonoje „Home“ pradedate naują papildinį",
+      "text": "Paieškoje pasirenkate „Papildiniai“.",
+      "file": "k04-1.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Zonoje „Home“ pradedate naują papildinį",
+      "text": "Zonų /ˈsaːraʃʲɛ/ prie „Home“ spaudžiate violetinį mygtuką.",
+      "file": "k04-2.wav",
+      "duration": 3.89,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Zonoje „Home“ pradedate naują papildinį",
+      "text": "Tada – žalią „/prʲiˈdʲeːtʲi/ papildinį“.",
+      "file": "k04-3.wav",
+      "duration": 2.85,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Pasirenkate tipą ir kategoriją",
+      "text": "/ˈsaːraʃʲɛ/ pasirenkate tipą „Pamokų laikas“.",
+      "file": "k05-1.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Pasirenkate tipą ir kategoriją",
+      "text": "Įrašote pavadinimą ir nurodote kategoriją.",
+      "file": "k05-2.wav",
+      "duration": 3.09,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Pasirenkate tipą ir kategoriją",
+      "text": "Išsaugojus plėtinys atsiranda sąrašo apačioje.",
+      "file": "k05-3.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 13
+    }
+  ]
+}

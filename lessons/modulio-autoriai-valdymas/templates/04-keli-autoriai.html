@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* K4 — „Keli autoriai“ (ep_704_04_2)
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 40% 40%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+.a-table .tvs-th, .a-table .tvs-row { grid-template-columns: 30px 1fr 1fr; } .btns { display: flex; gap: 8px; margin-bottom: 8px; }
+  .crop-wrap { position: relative; width: 300px; overflow: hidden; } .crop-wrap .tvs-thumb { width: 300px; height: 400px; display: block; } .cropbox { position: absolute; left: 40px; top: 40px; width: 220px; height: 300px; border: 3px dashed #fff; box-shadow: 0 0 0 2000px rgba(0,0,0,.45); opacity: 0; }
+  .area { height: 120px; align-items: flex-start; padding-top: 10px; white-space: pre-line; line-height: 1.5; } .area .tvs-typed { white-space: pre-line; }
+  /* galutinė būsena (epizodai.js) — po pamokos CSS, kad visada laimėtų */
+  .stage > .scr:nth-of-type(1) { opacity: 0; }
+  .stage > .scr:nth-of-type(2) { opacity: 1; }
+  .cursor-wrap { transform: translate(1396.0px, 817.0px); }
+  .caret-n { opacity: 1; }
+  .caret-p { opacity: 1; }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class=""></i><i class="is-bars"></i><i class=""></i><i class=""></i><i class="is-on"></i></div>
+        <div class="tvs-subnav"><span class="is-on">Autoriai</span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">Autoriai  /  Pridėti autorių</div>
+<div class="tvs-form is-dense"><div class="tvs-field" data-t="fn"><div class="tvs-label">Full Name<span class="tvs-req">*</span></div><div class="tvs-input is-focus area"><span class="tvs-typed ty-n" data-ty="n"><span class="w"><span class="l l1">V</span><span class="l l2">i</span><span class="l l3">n</span><span class="l l4">c</span><span class="l l5">a</span><span class="l l6">s</span></span><span class="l l7">&nbsp;</span><span class="w"><span class="l l8">K</span><span class="l l9">u</span><span class="l l10">d</span><span class="l l11">i</span><span class="l l12">r</span><span class="l l13">k</span><span class="l l14">a</span></span><br><span class="w"><span class="l l15">M</span><span class="l l16">a</span><span class="l l17">r</span><span class="l l18">i</span><span class="l l19">j</span><span class="l l20">a</span></span><span class="l l21">&nbsp;</span><span class="w"><span class="l l22">P</span><span class="l l23">e</span><span class="l l24">č</span><span class="l l25">k</span><span class="l l26">a</span><span class="l l27">u</span><span class="l l28">s</span><span class="l l29">k</span><span class="l l30">a</span><span class="l l31">i</span><span class="l l32">t</span><span class="l l33">ė</span></span><br><span class="w"><span class="l l34">J</span><span class="l l35">o</span><span class="l l36">n</span><span class="l l37">a</span><span class="l l38">s</span></span><span class="l l39">&nbsp;</span><span class="w"><span class="l l40">B</span><span class="l l41">i</span><span class="l l42">l</span><span class="l l43">i</span><span class="l l44">ū</span><span class="l l45">n</span><span class="l l46">a</span><span class="l l47">s</span></span></span><span class="tvs-caret caret-n"></span></div></div><div class="tvs-field" data-t="fp"><div class="tvs-label">Position<span class="tvs-req">*</span></div><div class="tvs-input area"><span class="tvs-typed ty-p" data-ty="p"><span class="w"><span class="l l1">D</span><span class="l l2">i</span><span class="l l3">r</span><span class="l l4">e</span><span class="l l5">k</span><span class="l l6">t</span><span class="l l7">o</span><span class="l l8">r</span><span class="l l9">i</span><span class="l l10">u</span><span class="l l11">s</span></span><br><span class="w"><span class="l l12">P</span><span class="l l13">a</span><span class="l l14">v</span><span class="l l15">a</span><span class="l l16">d</span><span class="l l17">u</span><span class="l l18">o</span><span class="l l19">t</span><span class="l l20">o</span><span class="l l21">j</span><span class="l l22">a</span></span><br><span class="w"><span class="l l23">I</span><span class="l l24">n</span><span class="l l25">f</span><span class="l l26">o</span><span class="l l27">r</span><span class="l l28">m</span><span class="l l29">a</span><span class="l l30">t</span><span class="l l31">i</span><span class="l l32">k</span><span class="l l33">o</span><span class="l l34">s</span></span><span class="l l35">&nbsp;</span><span class="w"><span class="l l36">m</span><span class="l l37">o</span><span class="l l38">k</span><span class="l l39">y</span><span class="l l40">t</span><span class="l l41">o</span><span class="l l42">j</span><span class="l l43">a</span><span class="l l44">s</span></span></span><span class="tvs-caret caret-p"></span></div></div></div>
+          <div class="tvs-form-foot"><span class="tvs-btn is-tiny" data-t="save"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>Išsaugoti</span><span class="tvs-btn is-tiny" data-t="save2"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>Išsaugoti ir baigti</span></div>
+        </div>
+      </div>
+
+      <div class="scr scr2 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class=""></i><i class="is-bars"></i><i class=""></i><i class=""></i><i class="is-on"></i></div>
+        <div class="tvs-subnav"><span class="is-on">Autoriai</span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">Autoriai</div>
+<div class="tvs-alert">Autoriai sukurtas sėkmingai.</div><div><span class="tvs-btn " data-t="add"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>Pridėti autorių</span></div>
+          <div class="tvs-table a-table" data-t="atab"><div class="tvs-th"><div class="tvs-check"></div><span>Full Name</span><span>Position</span></div><div class="tvs-row is-new nw"><div class="tvs-check"></div><div>Vincas Kudirka</div><div>Direktorius</div></div><div class="tvs-row is-new nw"><div class="tvs-check"></div><div>Marija Pečkauskaitė</div><div>Pavaduotoja</div></div><div class="tvs-row is-new nw"><div class="tvs-check"></div><div>Jonas Biliūnas</div><div>Informatikos mokytojas</div></div><div class="tvs-row"><div class="tvs-check"></div><div>Žemaitė</div><div>Lietuvių kalbos mokytoja</div></div><div class="tvs-row"><div class="tvs-check"></div><div>Jonas Basanavičius</div><div>Istorijos mokytojas</div></div></div>
+        </div>
+      </div>
+      <div class="spot"></div>
+      <div class="tvs-ripple rp rp1"></div>
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

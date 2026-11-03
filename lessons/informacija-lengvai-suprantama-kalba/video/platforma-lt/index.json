@@ -1,0 +1,269 @@
+{
+  "pamoka": "informacija-lengvai-suprantama-kalba",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T03:54:57.857Z",
+  "balso_stiprinimas_db": 5.9,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_1621_01",
+      "failas": "01-teksto-patikra",
+      "pavadinimas": "Tekstą patikrina nemokamai",
+      "trukme_s": 13,
+      "mp4": "viz_1621_01.mp4",
+      "vtt": "viz_1621_01.vtt",
+      "poster": "viz_1621_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.87,
+          "tekstas": "Peržiūrite adaptuotą tekstą ir patikrinate faktus."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 8.79,
+          "tekstas": "Užpildytą teksto rengimo formą siunčiate agentūrai."
+        },
+        {
+          "nuo_s": 9.5,
+          "iki_s": 11.91,
+          "tekstas": "Atsakymo laukiate apie mėnesį."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_1621_02",
+      "failas": "02-kas-tai-yra",
+      "pavadinimas": "Kas yra lengvai suprantama kalba",
+      "trukme_s": 13,
+      "mp4": "viz_1621_02.mp4",
+      "vtt": "viz_1621_02.vtt",
+      "poster": "viz_1621_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.37,
+          "tekstas": "Rašote taip, kad suprastų kuo daugiau žmonių."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 8.07,
+          "tekstas": "Ir tie, kuriems skaityti ar suvokti sunku."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 11.17,
+          "tekstas": "Angliškas pavadinimas – easy to read."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_1621_03",
+      "failas": "03-kam-tai-aktualu",
+      "pavadinimas": "Kam tai aktualu",
+      "trukme_s": 13,
+      "mp4": "viz_1621_03.mp4",
+      "vtt": "viz_1621_03.vtt",
+      "poster": "viz_1621_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.01,
+          "tekstas": "Ši kalba svarbi daugiau žmonių, nei atrodo."
+        },
+        {
+          "nuo_s": 4.8,
+          "iki_s": 8.37,
+          "tekstas": "Suvokimo sunkumai, amžius, kita gimtoji kalba."
+        },
+        {
+          "nuo_s": 8.6,
+          "iki_s": 11.29,
+          "tekstas": "Padedate suprasti greičiau ir tiksliau."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_1621_04",
+      "failas": "04-sunkus-ir-lengvas-sakinys",
+      "pavadinimas": "Tas pats dviem būdais",
+      "trukme_s": 13,
+      "mp4": "viz_1621_04.mp4",
+      "vtt": "viz_1621_04.vtt",
+      "poster": "viz_1621_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.21,
+          "tekstas": "Kairėje – ilgas biurokratinis sakinys."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 7.13,
+          "tekstas": "Dešinėje tą patį pasakote trumpai."
+        },
+        {
+          "nuo_s": 7.3,
+          "iki_s": 11.31,
+          "tekstas": "Trumpi sakiniai, įprasti žodžiai, svarbiausia pradžioje."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_1621_05",
+      "failas": "05-ar-visa-turini",
+      "pavadinimas": "Ne visą svetainę",
+      "trukme_s": 13,
+      "mp4": "viz_1621_05.mp4",
+      "vtt": "viz_1621_05.vtt",
+      "poster": "viz_1621_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.5,
+          "tekstas": "Visos svetainės perrašyti nereikia."
+        },
+        {
+          "nuo_s": 4.2,
+          "iki_s": 8.16,
+          "tekstas": "Parengiate atskirą versiją arba aiškiai atskirtus skyrius."
+        },
+        {
+          "nuo_s": 9,
+          "iki_s": 11.86,
+          "tekstas": "Tekstas paprastas, bet ne infantilus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "ep_1621_06_1",
+      "failas": "06-naujas-subpuslapis",
+      "pavadinimas": "Pradedate naują subpuslapį",
+      "trukme_s": 13,
+      "mp4": "ep_1621_06_1.mp4",
+      "vtt": "ep_1621_06_1.vtt",
+      "poster": "ep_1621_06_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.24,
+          "tekstas": "Prie puslapio spaudžiate „Pridėti subpuslapį“."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 8.41,
+          "tekstas": "Lange renkatės lengvai suprantamos kalbos maketą."
+        },
+        {
+          "nuo_s": 9.1,
+          "iki_s": 11.83,
+          "tekstas": "Atsiveria tuščia naujo puslapio forma."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.4,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "ep_1621_06_2",
+      "failas": "06-lengvos-kalbos-blokas",
+      "pavadinimas": "Pridedate lengvos kalbos bloką",
+      "trukme_s": 14,
+      "mp4": "ep_1621_06_2.mp4",
+      "vtt": "ep_1621_06_2.vtt",
+      "poster": "ep_1621_06_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.05,
+          "tekstas": "Formoje slenkate iki skilties „Lengvai suprantama kalba“."
+        },
+        {
+          "nuo_s": 5.9,
+          "iki_s": 7.75,
+          "tekstas": "Spaudžiate „Add Row“."
+        },
+        {
+          "nuo_s": 8.9,
+          "iki_s": 11.55,
+          "tekstas": "Atsiranda blokas tekstui ir nuotraukai."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 7.1,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 10.9,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "ep_1621_06_3",
+      "failas": "06-esamas-pavyzdys",
+      "pavadinimas": "Pasižiūrite esamą pavyzdį",
+      "trukme_s": 18,
+      "mp4": "ep_1621_06_3.mp4",
+      "vtt": "ep_1621_06_3.vtt",
+      "poster": "ep_1621_06_3.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.29,
+          "tekstas": "Medyje spaudžiate esamo pavyzdžio pavadinimą."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 7.27,
+          "tekstas": "Peržiūrite, kaip užpildyti blokai."
+        },
+        {
+          "nuo_s": 8.3,
+          "iki_s": 11.79,
+          "tekstas": "Vienas blokas – viena mintis ir viena piktograma."
+        },
+        {
+          "nuo_s": 12.4,
+          "iki_s": 16.18,
+          "tekstas": "Apačioje surašote autorius ir iliustracijų šaltinius."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

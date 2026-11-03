@@ -1,0 +1,142 @@
+{
+ "pamokos_slug": "modulio-pamoku-laikas-valdymas",
+ "pamoka_id": "pam_710",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_710_01_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_710_01",
+   "pamoka": "pam_710",
+   "failas": "01-pamoku-laikas-svetaineje",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Pamokų laikas",
+    "1 klasių pamokų laikas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo gimnazija"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_710_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_710_03",
+   "pamoka": "pam_710",
+   "failas": "03-laiko-irasas",
+   "trukme_s": 17,
+   "ekrano_tekstai": [
+    "Nuo",
+    "Iki",
+    "08.10",
+    "Kategorija",
+    "1 klasė",
+    "1 klasių pamokų laikas",
+    "1. 08.10 – 08.45"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "kategorija": "1 klasė"
+   },
+   "naudoja_ir": [
+    "dal_710_90"
+   ]
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_710_04",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_710_04",
+   "pamoka": "pam_710",
+   "failas": "04-kategoriju-pavadinimai",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "TVS aplinka",
+    "Svetainė",
+    "Kategorijų sąrašas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "TVS"
+   ],
+   "demo_duomenys": {
+    "kategorija": "1 klasė"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "ep_710_05_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_710_05",
+   "pamoka": "pam_710",
+   "failas": "05-nauja-papildinio-zona",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Zonos",
+    "Home",
+    "Papildiniai",
+    "Pridėti papildinį",
+    "papil"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "Home"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo gimnazija"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "ep_710_05_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_710_05",
+   "pamoka": "pam_710",
+   "failas": "05-papildinio-tipas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Kokio tipo plėtinys?",
+    "Pamokų laikas",
+    "Pavadinimas",
+    "Kategorija",
+    "Išsaugoti"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "papildinys": "1 klasių pamokų laikas",
+    "kategorija": "1 klasė"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

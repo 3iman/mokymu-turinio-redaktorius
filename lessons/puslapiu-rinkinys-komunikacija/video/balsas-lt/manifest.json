@@ -1,0 +1,433 @@
+{
+  "hash": "a98c0b02c9e5f7904646466a09d6dd1571e3794a9c52e816c89fc110ed538d5d",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 2066156329,
+  "characters": 1917,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T03:30:23.841Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Pasiekimų puslapis",
+      "text": "Pasiekimuose dažnai atsiduria statistikos lentelė.",
+      "file": "k01-1.wav",
+      "duration": 3.67,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Pasiekimų puslapis",
+      "text": "Vietoje jos atrenkate svarbiausius pasiekimus.",
+      "file": "k01-2.wav",
+      "duration": 3.37,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Pasiekimų puslapis",
+      "text": "Formatą išlaikote vienodą visiems.",
+      "file": "k01-3.wav",
+      "duration": 2.49,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Pakeičiate paramos skaičius",
+      "text": "Kasmet pakeičiate tik paramos skaičius Vertimų modulyje.",
+      "file": "k02-1.wav",
+      "duration": 4.33,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Pakeičiate paramos skaičius",
+      "text": "Formato keisti nereikia.",
+      "file": "k02-2.wav",
+      "duration": 1.85,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Pakeičiate paramos skaičius",
+      "text": "Svetainės puslapyje matote naujus skaičius.",
+      "file": "k02-3.wav",
+      "duration": 3.143,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Pridedate paramos ataskaitą",
+      "text": "Prie paramos informacijos pridedate ataskaitą.",
+      "file": "k03-1.wav",
+      "duration": 3.237,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Pridedate paramos ataskaitą",
+      "text": "Ataskaitos sintaksę įklijuojate ir atnaujinate.",
+      "file": "k03-2.wav",
+      "duration": 3.503,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Pridedate paramos ataskaitą",
+      "text": "Puslapyje atsiranda nauja dokumento nuoroda.",
+      "file": "k03-3.wav",
+      "duration": 3.277,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Projektinė veikla rinkinyje",
+      "text": "Projektų informacijai svarbus vientisumas.",
+      "file": "k04-1.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Projektinė veikla rinkinyje",
+      "text": "Visus aprašymus pateikiate tuo pačiu formatu.",
+      "file": "k04-2.wav",
+      "duration": 3.01,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Projektinė veikla rinkinyje",
+      "text": "Ypač svarbu Europos Sąjungos projektams.",
+      "file": "k04-3.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Filosofija, misija, vizija",
+      "text": "Turinį šiam puslapiui greičiausiai jau turite.",
+      "file": "k05-1.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Filosofija, misija, vizija",
+      "text": "Įsitikinate, kad tekstus galima kopijuoti.",
+      "file": "k05-2.wav",
+      "duration": 2.93,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Filosofija, misija, vizija",
+      "text": "Paveikslėlyje ar prezentacijoje jų nededate.",
+      "file": "k05-3.wav",
+      "duration": 3.41,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Mokyklos himnas",
+      "text": "Skelbdami himną nurodote jo autorių.",
+      "file": "k06-1.wav",
+      "duration": 2.77,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Mokyklos himnas",
+      "text": "Taip pat pasinaudojate muzikos grotuvu.",
+      "file": "k06-2.wav",
+      "duration": 2.69,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Mokyklos himnas",
+      "text": "Himną įkeliate em pė trys formatu.",
+      "file": "k06-3.wav",
+      "duration": 2.863,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Puslapis „Nuorodos“",
+      "text": "Puslapis „Nuorodos“ nėra naudingų nuorodų sąrašas.",
+      "file": "k07-1.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Puslapis „Nuorodos“",
+      "text": "Čia pateikiate susijusių institucijų svetaines.",
+      "file": "k07-2.wav",
+      "duration": 3.157,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Puslapis „Nuorodos“",
+      "text": "Ministerijos, savivaldybės ir jos įstaigų.",
+      "file": "k07-3.wav",
+      "duration": 3.503,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Apie mokyklą",
+      "text": "Čia pateikiate bendrą informaciją apie mokyklą.",
+      "file": "k08-1.wav",
+      "duration": 2.997,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Apie mokyklą",
+      "text": "Ir jos istoriją.",
+      "file": "k08-2.wav",
+      "duration": 1.61,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Apie mokyklą",
+      "text": "Istoriją /rʲɛɡulʲaˈrʲai/ atnaujinate, minite svarbius įvykius.",
+      "file": "k08-3.wav",
+      "duration": 4.303,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 9,
+      "cue": 1,
+      "title": "Mokyklos simboliai",
+      "text": "Puslapyje talpinate mokyklos logotipą.",
+      "file": "k09-1.wav",
+      "duration": 2.677,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 9,
+      "cue": 2,
+      "title": "Mokyklos simboliai",
+      "text": "Ir vėliavos nuotrauką.",
+      "file": "k09-2.wav",
+      "duration": 1.65,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 9,
+      "cue": 3,
+      "title": "Mokyklos simboliai",
+      "text": "Turite /ɡaiˈrʲɛs/? Pridedate jas ir vektorinius failus.",
+      "file": "k09-3.wav",
+      "duration": 4.17,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 10,
+      "cue": 1,
+      "title": "Tradiciniai renginiai",
+      "text": "Mokyklos turi nemažai tradicinių kasmetinių renginių.",
+      "file": "k10-1.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 10,
+      "cue": 2,
+      "title": "Tradiciniai renginiai",
+      "text": "Šis puslapis skirtas būtent jiems.",
+      "file": "k10-2.wav",
+      "duration": 2.65,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 10,
+      "cue": 3,
+      "title": "Tradiciniai renginiai",
+      "text": "Visus surašote vienoje vietoje.",
+      "file": "k10-3.wav",
+      "duration": 2.423,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 11,
+      "cue": 1,
+      "title": "Socialiniai partneriai",
+      "text": "Puslapyje išvardinate savo socialinius partnerius.",
+      "file": "k11-1.wav",
+      "duration": 3.517,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 11,
+      "cue": 2,
+      "title": "Socialiniai partneriai",
+      "text": "/vʲizuaˈlʲai/ patrauklesnis /ˈbuːdas/ yra logotipai.",
+      "file": "k11-2.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 11,
+      "cue": 3,
+      "title": "Socialiniai partneriai",
+      "text": "Juos sudėliojate vienodo dydžio.",
+      "file": "k11-3.wav",
+      "duration": 2.383,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 12,
+      "cue": 1,
+      "title": "Ugdymo aplinka",
+      "text": "Čia parodote tai, ką turite gražiausio.",
+      "file": "k12-1.wav",
+      "duration": 3.077,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 12,
+      "cue": 2,
+      "title": "Ugdymo aplinka",
+      "text": "Klases, koridorius, sporto salę, maitinimo patalpas.",
+      "file": "k12-2.wav",
+      "duration": 4.45,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 12,
+      "cue": 3,
+      "title": "Ugdymo aplinka",
+      "text": "Geros kokybės nuotraukos pakelia įvaizdį.",
+      "file": "k12-3.wav",
+      "duration": 3.17,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 13,
+      "cue": 1,
+      "title": "Skyrelis kitakalbiams",
+      "text": "Šio skyrelio tikslas yra papasakoti apie įstaigą kitakalbiams.",
+      "file": "k13-1.wav",
+      "duration": 4.21,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 13,
+      "cue": 2,
+      "title": "Skyrelis kitakalbiams",
+      "text": "Tai privalu pagal bendruosius reikalavimus.",
+      "file": "k13-2.wav",
+      "duration": 2.69,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 13,
+      "cue": 3,
+      "title": "Skyrelis kitakalbiams",
+      "text": "/ˈkalbaː/ pasirenkate pagal savo bendruomenę.",
+      "file": "k13-3.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 14,
+      "cue": 1,
+      "title": "Priėmimas į mokyklą",
+      "text": "Tėvams tai daug streso keliantis įvykis.",
+      "file": "k14-1.wav",
+      "duration": 3.063,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 14,
+      "cue": 2,
+      "title": "Priėmimas į mokyklą",
+      "text": "Todėl rašote empatiškai, /trumˈpai/ ir aiškiai.",
+      "file": "k14-2.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 14,
+      "cue": 3,
+      "title": "Priėmimas į mokyklą",
+      "text": "Pridedate nuorodas į priėmimo dokumentus.",
+      "file": "k14-3.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 13
+    }
+  ]
+}

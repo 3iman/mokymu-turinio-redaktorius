@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/koncepcijos.css">
+<!-- Generuoja koncepcijos.js iš platformos kortelės — ranka neredaguoti. -->
+</head>
+<body>
+  <div class="card">
+    <div class="k-title">{{title}}</div>
+    <div class="k-zones"><div class="k-zone b-cms"><div class="k-panel"><div class="k-zone-h">{{cms_label}}</div><div class="k-zone-v">{{cms_note}}</div></div></div>
+      <div class="k-arrow b-x" style="width:140px"><svg viewBox="0 0 120 40" width="120" height="40"><line x1="6" y1="20" x2="104" y2="20" stroke="#cbd5e1" stroke-width="4" stroke-dasharray="10 8"/><polyline points="96 10 112 20 96 30" fill="none" stroke="#cbd5e1" stroke-width="4"/><line x1="44" y1="4" x2="76" y2="36" stroke="#dc2626" stroke-width="5" stroke-linecap="round"/><line x1="76" y1="4" x2="44" y2="36" stroke="#dc2626" stroke-width="5" stroke-linecap="round"/></svg></div>
+      <div class="k-zone is-off b-site"><div class="k-panel"><div class="k-zone-h">{{site_label}}</div><div class="k-zone-v">{{site_note}}</div></div></div></div><div class="k-sum b-summary"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18h6M10 22h4M12 2a7 7 0 0 0-4 12.7c.6.5 1 1.3 1 2.1V17h6v-.2c0-.8.4-1.6 1-2.1A7 7 0 0 0 12 2z"/></svg><span>{{summary}}</span></div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>
