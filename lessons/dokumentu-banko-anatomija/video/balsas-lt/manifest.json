@@ -1,0 +1,503 @@
+{
+  "hash": "25c371419cc02fd2566e82e45d3400dd0e2573cbdafd23835e3223430bf7839e",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 4137183135,
+  "characters": 2279,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T02:55:53.081Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Dokumentų banką randate paieška",
+      "text": "/paiɛʃˈkoːs/ laukelyje pradedate rašyti „dokumentų bankas“.",
+      "file": "k01-1.wav",
+      "duration": 4.23,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Dokumentų banką randate paieška",
+      "text": "/ˈsaːraʃʲɛ/ pasirenkate „Dokumentų bankas“.",
+      "file": "k01-2.wav",
+      "duration": 3.01,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Dokumentų bankas darbalaukyje",
+      "text": "Darbalaukyje randate skyrių „Dokumentų bankas“.",
+      "file": "k02-1.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 7
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Dokumentų bankas darbalaukyje",
+      "text": "Jį spaudžiate.",
+      "file": "k02-2.wav",
+      "duration": 1.25,
+      "fits": true,
+      "reikia_sek": 7
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Pieštuku atidarote dokumento įrašą",
+      "text": "Dokumento eilutėje spaudžiate pieštuko ikoną.",
+      "file": "k03-1.wav",
+      "duration": 3.21,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Pieštuku atidarote dokumento įrašą",
+      "text": "Atsiveria to dokumento valdymo aplinka.",
+      "file": "k03-2.wav",
+      "duration": 2.85,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Dokumentą randate svetainės paieška",
+      "text": "Svetainėje puslapis „Dokumentai“ rodo visus įstaigos dokumentus.",
+      "file": "k04-1.wav",
+      "duration": 4.85,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Dokumentą randate svetainės paieška",
+      "text": "Dešinėje matote kategorijų sąrašą.",
+      "file": "k04-2.wav",
+      "duration": 2.69,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Dokumentą randate svetainės paieška",
+      "text": "Viršuje įrašote pavadinimo dalį.",
+      "file": "k04-3.wav",
+      "duration": 2.53,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 4,
+      "cue": 4,
+      "title": "Dokumentą randate svetainės paieška",
+      "text": "Sąrašas susiaurėja iki ieškomo dokumento.",
+      "file": "k04-4.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Pavadinimas, aprašymas ir URL",
+      "text": "/lauˈkʲɛ/ „Pavadinimas“ rašote pilną dokumento pavadinimą.",
+      "file": "k05-1.wav",
+      "duration": 3.97,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Pavadinimas, aprašymas ir URL",
+      "text": "Bendruomenėje paplitusį pavadinimą rašote langelyje „Aprašymas“.",
+      "file": "k05-2.wav",
+      "duration": 4.29,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Pavadinimas, aprašymas ir URL",
+      "text": "Taip dokumentą lengviau rasti paieškoje.",
+      "file": "k05-3.wav",
+      "duration": 2.69,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 5,
+      "cue": 4,
+      "title": "Pavadinimas, aprašymas ir URL",
+      "text": "Laukas „u er el“ skirtas išorinėje duombazėje esančiam dokumentui.",
+      "file": "k05-4.wav",
+      "duration": 5.05,
+      "fits": true,
+      "reikia_sek": 20
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Failą įkeliate mygtuku Upload",
+      "text": "Spaudžiate „Select File“ ir pasirenkate failą.",
+      "file": "k06-1.wav",
+      "duration": 3.41,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Failą įkeliate mygtuku Upload",
+      "text": "Tada spaudžiate žalią mygtuką „Upload“.",
+      "file": "k06-2.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Failą įkeliate mygtuku Upload",
+      "text": "Failas atsiranda įraše.",
+      "file": "k06-3.wav",
+      "duration": 1.93,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Dokumentą priskiriate kategorijai",
+      "text": "Eilutėje „Kategorijos“ pradedate rašyti kategoriją.",
+      "file": "k07-1.wav",
+      "duration": 3.49,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Dokumentą priskiriate kategorijai",
+      "text": "Pasirenkate ją iš pasiūlymų.",
+      "file": "k07-2.wav",
+      "duration": 2.05,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Dokumentą priskiriate kategorijai",
+      "text": "Vienas dokumentas gali turėti ne vieną kategoriją.",
+      "file": "k07-3.wav",
+      "duration": 3.303,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Sukuriate naują kategoriją",
+      "text": "Kategorijų /ˈsaːraʃʲɛ/ spaudžiate žalią mygtuką „Sukurti“.",
+      "file": "k08-1.wav",
+      "duration": 3.717,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Sukuriate naują kategoriją",
+      "text": "Įrašote pavadinimą, o „/slʌɡ/“ susikuria pats.",
+      "file": "k08-2.wav",
+      "duration": 3.49,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Sukuriate naują kategoriją",
+      "text": "Išsaugojus kategorija atsiranda /ˈsaːraʃʲɛ/.",
+      "file": "k08-3.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 9,
+      "cue": 1,
+      "title": "Kategoriją užrakinate slaptažodžiu",
+      "text": "/lauˈkʲɛ/ „Password“ įrašote slaptažodį be lietuviškų raidžių.",
+      "file": "k09-1.wav",
+      "duration": 4.21,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 9,
+      "cue": 2,
+      "title": "Kategoriją užrakinate slaptažodžiu",
+      "text": "Spaudžiate „Atnaujinti“.",
+      "file": "k09-2.wav",
+      "duration": 1.81,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 9,
+      "cue": 3,
+      "title": "Kategoriją užrakinate slaptažodžiu",
+      "text": "Svetainėje prie dokumentų atsiranda /spʲiːˈna/.",
+      "file": "k09-3.wav",
+      "duration": 2.93,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 10,
+      "cue": 1,
+      "title": "Kategoriją paslepiate iš sąrašo",
+      "text": "Įjungiate „/ˈslʲeːptʲi/ kategoriją“.",
+      "file": "k10-1.wav",
+      "duration": 2.25,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 10,
+      "cue": 2,
+      "title": "Kategoriją paslepiate iš sąrašo",
+      "text": "Spaudžiate „Atnaujinti“.",
+      "file": "k10-2.wav",
+      "duration": 1.85,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 10,
+      "cue": 3,
+      "title": "Kategoriją paslepiate iš sąrašo",
+      "text": "Bendrame kategorijų /ˈsaːraʃʲɛ/ jos nebelieka.",
+      "file": "k10-3.wav",
+      "duration": 3.01,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 11,
+      "cue": 1,
+      "title": "Užrakintą kategoriją atrakinate slaptažodžiu",
+      "text": "Užrakintų kategorijų dokumentai lieka matomi.",
+      "file": "k11-1.wav",
+      "duration": 3.21,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 11,
+      "cue": 2,
+      "title": "Užrakintą kategoriją atrakinate slaptažodžiu",
+      "text": "Vietoje atsisiuntimo ikonos matote spyną.",
+      "file": "k11-2.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 11,
+      "cue": 3,
+      "title": "Užrakintą kategoriją atrakinate slaptažodžiu",
+      "text": "Įvedate slaptažodį ir spaudžiate „Atrakinti“.",
+      "file": "k11-3.wav",
+      "duration": 3.29,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 11,
+      "cue": 4,
+      "title": "Užrakintą kategoriją atrakinate slaptažodžiu",
+      "text": "Sistema jį kurį laiką atsimins.",
+      "file": "k11-4.wav",
+      "duration": 2.57,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 12,
+      "cue": 1,
+      "title": "Paieška ir kategorijų filtras",
+      "text": "/lauˈkʲɛ/ „/paiɛʃˈka/“ įrašote raktažodį.",
+      "file": "k12-1.wav",
+      "duration": 2.91,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 12,
+      "cue": 2,
+      "title": "Paieška ir kategorijų filtras",
+      "text": "Šalia pasirenkate kategoriją.",
+      "file": "k12-2.wav",
+      "duration": 2.17,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 12,
+      "cue": 3,
+      "title": "Paieška ir kategorijų filtras",
+      "text": "/paiɛʃˈka/ veikia paspaudus „Enter“ arba „Filtruoti“.",
+      "file": "k12-3.wav",
+      "duration": 3.73,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 12,
+      "cue": 4,
+      "title": "Paieška ir kategorijų filtras",
+      "text": "Mygtukas „Valyti“ grąžina pilną sąrašą.",
+      "file": "k12-4.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 13,
+      "cue": 1,
+      "title": "Dokumento ID adreso eilutėje",
+      "text": "Kiekvieno dokumento ai di yra unikalus.",
+      "file": "k13-1.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 13,
+      "cue": 2,
+      "title": "Dokumento ID adreso eilutėje",
+      "text": "Jį rasite naršyklės adreso eilutėje.",
+      "file": "k13-2.wav",
+      "duration": 2.89,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 13,
+      "cue": 3,
+      "title": "Dokumento ID adreso eilutėje",
+      "text": "ai di prireikia naudojant dokumentų įterpimo funkcijas.",
+      "file": "k13-3.wav",
+      "duration": 3.85,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 14,
+      "cue": 1,
+      "title": "Nustatote dokumento patikrinimo datą",
+      "text": "/lauˈkʲɛ/ „Patikrinimo data“ pasirenkate datą ateityje.",
+      "file": "k14-1.wav",
+      "duration": 4.01,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 14,
+      "cue": 2,
+      "title": "Nustatote dokumento patikrinimo datą",
+      "text": "Komentarą rašote tokį, kad suprastumėte ir po metų.",
+      "file": "k14-2.wav",
+      "duration": 3.73,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 14,
+      "cue": 3,
+      "title": "Nustatote dokumento patikrinimo datą",
+      "text": "Darbalaukyje priminimas pasirodys mėnesiu anksčiau.",
+      "file": "k14-3.wav",
+      "duration": 3.49,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 15,
+      "cue": 1,
+      "title": "Dokumentus perrikiuojate kategorijoje",
+      "text": "Filtre pasirenkate kategoriją arba subkategoriją.",
+      "file": "k15-1.wav",
+      "duration": 3.65,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 15,
+      "cue": 2,
+      "title": "Dokumentus perrikiuojate kategorijoje",
+      "text": "Sąrašo kairėje atsiranda rikiavimui skirtas kryžiukas.",
+      "file": "k15-2.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 15,
+      "cue": 3,
+      "title": "Dokumentus perrikiuojate kategorijoje",
+      "text": "Tempiate dokumentą į naują poziciją.",
+      "file": "k15-3.wav",
+      "duration": 2.57,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 15,
+      "cue": 4,
+      "title": "Dokumentus perrikiuojate kategorijoje",
+      "text": "Baigę spaudžiate žalią mygtuką „/ˈpɛr.rikʲuotʲi/“.",
+      "file": "k15-4.wav",
+      "duration": 3.09,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 16,
+      "cue": 1,
+      "title": "Sintaksę nukopijuojate vienu paspaudimu",
+      "text": "Sintakses rasite dokumentų /ˈsaːraʃʲɛ/.",
+      "file": "k16-1.wav",
+      "duration": 2.503,
+      "fits": true,
+      "reikia_sek": 8
+    },
+    {
+      "kadras": 16,
+      "cue": 2,
+      "title": "Sintaksę nukopijuojate vienu paspaudimu",
+      "text": "Prie jos spaudžiate violetinį mygtuką.",
+      "file": "k16-2.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 8
+    }
+  ]
+}

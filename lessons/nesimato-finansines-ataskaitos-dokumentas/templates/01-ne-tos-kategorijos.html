@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* Kadras 1 — „Ne tos kategorijos“ (ep_690_01_1): stulpelis „Kategorijos“ → forma su dviem žymomis
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 55% 35%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+.k-table .tvs-th, .k-table .tvs-row { grid-template-columns: 44px 36px 1fr 520px 200px; } .kat { font-size: 18px; color: var(--tvs-text-muted); }
+  .c1, .c2 { box-shadow: 0 0 0 3px rgba(229,50,45,0); }
+  /* galutinė būsena (epizodai.js) — po pamokos CSS, kad visada laimėtų */
+  .stage > .scr:nth-of-type(1) { opacity: 0; }
+  .stage > .scr:nth-of-type(2) { opacity: 1; }
+  .cursor-wrap { transform: translate(489.4px, 333.5px); }
+
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-window is-nosubnav">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class=""></i><i class="is-bars"></i><i class="is-on"></i><i class=""></i><i class=""></i></div>
+        
+        <div class="tvs-main">
+          <div class="tvs-crumb">Dokumentų banko modulis  /  Dokumentai</div>
+
+          <div class="tvs-table k-table" data-t="ktab"><div class="tvs-th"><span></span><div class="tvs-check"></div><span>Pavadinimas</span><span data-t="hkat">Kategorijos</span><span></span></div>
+            <div class="tvs-row"><div class="tvs-handle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5l3.6 3.6h-2.4v5.7h5.7V8.4l3.6 3.6-3.6 3.6v-2.4h-5.7v5.7h2.4L12 22.5l-3.6-3.6h2.4v-5.7H5.1v2.4L1.5 12l3.6-3.6v2.4h5.7V5.1H8.4z"/></svg></div><div class="tvs-check"></div><div class="tvs-title">2024 m. finansinių ataskaitų rinkinys</div><div class="kat">Finansinės ataskaitos >> 2024 m.</div><div class="tvs-actions"><span class="tvs-btn is-small is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>Redaguoti</span></div></div><div class="tvs-row" data-t="r"><div class="tvs-handle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5l3.6 3.6h-2.4v5.7h5.7V8.4l3.6 3.6-3.6 3.6v-2.4h-5.7v5.7h2.4L12 22.5l-3.6-3.6h2.4v-5.7H5.1v2.4L1.5 12l3.6-3.6v2.4h5.7V5.1H8.4z"/></svg></div><div class="tvs-check"></div><div class="tvs-title" data-t="dname">2023 m. finansinių ataskaitų rinkinys</div><div class="kat" data-t="dkat">Finansinės ataskaitos, Finansinės ataskaitos >> 2022 m.</div><div class="tvs-actions"><span class="tvs-btn is-small is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>Redaguoti</span></div></div><div class="tvs-row"><div class="tvs-handle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5l3.6 3.6h-2.4v5.7h5.7V8.4l3.6 3.6-3.6 3.6v-2.4h-5.7v5.7h2.4L12 22.5l-3.6-3.6h2.4v-5.7H5.1v2.4L1.5 12l3.6-3.6v2.4h5.7V5.1H8.4z"/></svg></div><div class="tvs-check"></div><div class="tvs-title">2022 m. finansinių ataskaitų rinkinys</div><div class="kat">Finansinės ataskaitos >> 2022 m.</div><div class="tvs-actions"><span class="tvs-btn is-small is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>Redaguoti</span></div></div><div class="tvs-row"><div class="tvs-handle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5l3.6 3.6h-2.4v5.7h5.7V8.4l3.6 3.6-3.6 3.6v-2.4h-5.7v5.7h2.4L12 22.5l-3.6-3.6h2.4v-5.7H5.1v2.4L1.5 12l3.6-3.6v2.4h5.7V5.1H8.4z"/></svg></div><div class="tvs-check"></div><div class="tvs-title">Biudžeto vykdymo ataskaita 2025 m.</div><div class="kat">Biudžeto vykdymo ataskaitos</div><div class="tvs-actions"><span class="tvs-btn is-small is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>Redaguoti</span></div></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scr scr2 tvs-window is-nosubnav">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class=""></i><i class="is-bars"></i><i class="is-on"></i><i class=""></i><i class=""></i></div>
+        
+        <div class="tvs-main">
+          <div class="tvs-crumb">Dokumentų banko modulis  /  Dokumentai  /  Redaguoti</div>
+
+          <div class="tvs-form is-dense">
+            <div class="tvs-field"><div class="tvs-label">Pavadinimas<span class="tvs-req">*</span></div><div class="tvs-input is-value">2023 m. finansinių ataskaitų rinkinys</div></div>
+            <div class="tvs-field" data-t="ftags"><div class="tvs-label">Kategorijos</div><div class="tvs-tags"><span class="tvs-chip c1" data-t="c1">Finansinės ataskaitos<span class="tvs-chip-x" data-t="c1x">×</span></span><span class="tvs-chip c2" data-t="c2">Finansinės ataskaitos >> 2022 m.<span class="tvs-chip-x" data-t="c2x">×</span></span></div><div class="tvs-help">Separate values with a comma or by pressing "Enter".</div></div>
+            <div class="tvs-field"><div class="tvs-label">Failas</div><div class="tvs-frow"><span class="tvs-fico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/></svg></span><div class="tvs-fmeta"><span class="tvs-fname">finansiniu-ataskaitu-rinkinys-2023.pdf</span><span class="tvs-fpath">local://dokumentubankas/finansiniu-ataskaitu-rinkinys-2023.pdf</span></div></div></div>
+          </div>
+          <div class="tvs-form-foot"><span class="tvs-btn is-tiny" data-t="upd"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>Atnaujinti</span><span class="tvs-btn is-tiny"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>Išsaugoti ir išeiti</span></div>
+        </div>
+      </div>
+      <div class="spot"></div>
+      <div class="tvs-ripple rp rp1"></div>
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

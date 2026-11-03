@@ -1,0 +1,114 @@
+{
+  "pamoka": "nesimato-finansines-ataskaitos-dokumentas",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:48:23.157Z",
+  "balso_stiprinimas_db": 5.8,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_690_01_1",
+      "failas": "01-ne-tos-kategorijos",
+      "pavadinimas": "Matote, kokios kategorijos priskirtos",
+      "trukme_s": 15,
+      "mp4": "ep_690_01_1.mp4",
+      "vtt": "ep_690_01_1.vtt",
+      "poster": "ep_690_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 6.31,
+          "tekstas": "Sąraše stulpelyje „Kategorijos“ matote, kas dokumentui priskirta."
+        },
+        {
+          "nuo_s": 6.7,
+          "iki_s": 8.47,
+          "tekstas": "Atidarote dokumentą."
+        },
+        {
+          "nuo_s": 9.3,
+          "iki_s": 13.23,
+          "tekstas": "Viena kategorija nereikalinga, kita – ne tų metų."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 7.7,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_690_03_2",
+      "failas": "03-du-kartus-lenteleje",
+      "pavadinimas": "Svetainėje dokumentas kartojasi",
+      "trukme_s": 13,
+      "mp4": "ep_690_03_2.mp4",
+      "vtt": "ep_690_03_2.vtt",
+      "poster": "ep_690_03_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.85,
+          "tekstas": "Lentelės viršuje matote dokumentą be metų."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 8.05,
+          "tekstas": "Žemiau, prie metų, – tas pats dokumentas."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 11.25,
+          "tekstas": "Todėl tėvinė kategorija nereikalinga."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_690_03_3",
+      "failas": "03-isimate-tevine",
+      "pavadinimas": "Išimate tėvinę kategoriją",
+      "trukme_s": 12,
+      "mp4": "ep_690_03_3.mp4",
+      "vtt": "ep_690_03_3.vtt",
+      "poster": "ep_690_03_3.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.17,
+          "tekstas": "Prie tėvinės kategorijos spaudžiate kryžiuką."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 8.11,
+          "tekstas": "Išsaugojus dokumentas lieka tik prie metų."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 10.97,
+          "tekstas": "Lentelėje jis matomas vieną kartą."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.9,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

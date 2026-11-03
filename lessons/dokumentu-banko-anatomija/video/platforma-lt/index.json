@@ -1,0 +1,604 @@
+{
+  "pamoka": "dokumentu-banko-anatomija",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T03:06:56.441Z",
+  "balso_stiprinimas_db": 5.8,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_679_01_1",
+      "failas": "01-paieska-virsuje",
+      "pavadinimas": "Dokumentų banką randate paieška",
+      "trukme_s": 10,
+      "mp4": "ep_679_01_1.mp4",
+      "vtt": "ep_679_01_1.vtt",
+      "poster": "ep_679_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1,
+          "iki_s": 5.23,
+          "tekstas": "Paieškos laukelyje pradedate rašyti „dokumentų bankas“."
+        },
+        {
+          "nuo_s": 5.5,
+          "iki_s": 8.51,
+          "tekstas": "Sąraše pasirenkate „Dokumentų bankas“."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 1.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 6.5,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_679_01_2",
+      "failas": "01-darbalaukio-skyrius",
+      "pavadinimas": "Dokumentų bankas darbalaukyje",
+      "trukme_s": 8,
+      "mp4": "ep_679_01_2.mp4",
+      "vtt": "ep_679_01_2.vtt",
+      "poster": "ep_679_01_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1,
+          "iki_s": 4.25,
+          "tekstas": "Darbalaukyje randate skyrių „Dokumentų bankas“."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 6.15,
+          "tekstas": "Jį spaudžiate."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 5.7,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_679_02_1",
+      "failas": "02-redagavimo-piestukas",
+      "pavadinimas": "Pieštuku atidarote dokumento įrašą",
+      "trukme_s": 9,
+      "mp4": "ep_679_02_1.mp4",
+      "vtt": "ep_679_02_1.vtt",
+      "poster": "ep_679_02_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1,
+          "iki_s": 4.21,
+          "tekstas": "Dokumento eilutėje spaudžiate pieštuko ikoną."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 7.55,
+          "tekstas": "Atsiveria to dokumento valdymo aplinka."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.2,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "ep_679_03_1",
+      "failas": "03-dokumentu-puslapis",
+      "pavadinimas": "Dokumentą randate svetainės paieška",
+      "trukme_s": 17,
+      "mp4": "ep_679_03_1.mp4",
+      "vtt": "ep_679_03_1.vtt",
+      "poster": "ep_679_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 6.05,
+          "tekstas": "Svetainėje puslapis „Dokumentai“ rodo visus įstaigos dokumentus."
+        },
+        {
+          "nuo_s": 6.4,
+          "iki_s": 9.09,
+          "tekstas": "Dešinėje matote kategorijų sąrašą."
+        },
+        {
+          "nuo_s": 9.3,
+          "iki_s": 11.83,
+          "tekstas": "Viršuje įrašote pavadinimo dalį."
+        },
+        {
+          "nuo_s": 12,
+          "iki_s": 15.25,
+          "tekstas": "Sąrašas susiaurėja iki ieškomo dokumento."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 10.3,
+          "garsas": "rasymas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "ep_679_06_1",
+      "failas": "06-pavadinimas-aprasymas-url",
+      "pavadinimas": "Pavadinimas, aprašymas ir URL",
+      "trukme_s": 21,
+      "mp4": "ep_679_06_1.mp4",
+      "vtt": "ep_679_06_1.vtt",
+      "poster": "ep_679_06_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.17,
+          "tekstas": "Lauke „Pavadinimas“ rašote pilną dokumento pavadinimą."
+        },
+        {
+          "nuo_s": 5.7,
+          "iki_s": 9.99,
+          "tekstas": "Bendruomenėje paplitusį pavadinimą rašote langelyje „Aprašymas“."
+        },
+        {
+          "nuo_s": 10.9,
+          "iki_s": 13.59,
+          "tekstas": "Taip dokumentą lengviau rasti paieškoje."
+        },
+        {
+          "nuo_s": 14.2,
+          "iki_s": 19.25,
+          "tekstas": "Laukas „URL“ skirtas išorinėje duombazėje esančiam dokumentui."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "rasymas"
+        }
+      ],
+      "ispejimai": [
+        "21 s > 20 s (platformos riba)"
+      ]
+    },
+    {
+      "kadras": 6,
+      "epizodas": "ep_679_07_1",
+      "failas": "07-failo-ikelimas",
+      "pavadinimas": "Failą įkeliate mygtuku Upload",
+      "trukme_s": 11,
+      "mp4": "ep_679_07_1.mp4",
+      "vtt": "ep_679_07_1.vtt",
+      "poster": "ep_679_07_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1,
+          "iki_s": 4.41,
+          "tekstas": "Spaudžiate „Select File“ ir pasirenkate failą."
+        },
+        {
+          "nuo_s": 4.8,
+          "iki_s": 7.61,
+          "tekstas": "Tada spaudžiate žalią mygtuką „Upload“."
+        },
+        {
+          "nuo_s": 8.1,
+          "iki_s": 10.03,
+          "tekstas": "Failas atsiranda įraše."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.2,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "ep_679_07_2",
+      "failas": "07-kategorijos-priskyrimas",
+      "pavadinimas": "Dokumentą priskiriate kategorijai",
+      "trukme_s": 13,
+      "mp4": "ep_679_07_2.mp4",
+      "vtt": "ep_679_07_2.vtt",
+      "poster": "ep_679_07_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.69,
+          "tekstas": "Eilutėje „Kategorijos“ pradedate rašyti kategoriją."
+        },
+        {
+          "nuo_s": 5.4,
+          "iki_s": 7.45,
+          "tekstas": "Pasirenkate ją iš pasiūlymų."
+        },
+        {
+          "nuo_s": 8.2,
+          "iki_s": 11.5,
+          "tekstas": "Vienas dokumentas gali turėti ne vieną kategoriją."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 6.6,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "ep_679_08_1",
+      "failas": "08-nauja-kategorija",
+      "pavadinimas": "Sukuriate naują kategoriją",
+      "trukme_s": 14,
+      "mp4": "ep_679_08_1.mp4",
+      "vtt": "ep_679_08_1.vtt",
+      "poster": "ep_679_08_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.92,
+          "tekstas": "Kategorijų sąraše spaudžiate žalią mygtuką „Sukurti“."
+        },
+        {
+          "nuo_s": 5.6,
+          "iki_s": 9.09,
+          "tekstas": "Įrašote pavadinimą, o „Slug“ susikuria pats."
+        },
+        {
+          "nuo_s": 9.3,
+          "iki_s": 12.35,
+          "tekstas": "Išsaugojus kategorija atsiranda sąraše."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.8,
+          "garsas": "rasymas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 9,
+      "epizodas": "ep_679_09_1",
+      "failas": "09-kategorijos-uzrakinimas",
+      "pavadinimas": "Kategoriją užrakinate slaptažodžiu",
+      "trukme_s": 13,
+      "mp4": "ep_679_09_1.mp4",
+      "vtt": "ep_679_09_1.vtt",
+      "poster": "ep_679_09_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1,
+          "iki_s": 5.21,
+          "tekstas": "Lauke „Password“ įrašote slaptažodį be lietuviškų raidžių."
+        },
+        {
+          "nuo_s": 5.8,
+          "iki_s": 7.61,
+          "tekstas": "Spaudžiate „Atnaujinti“."
+        },
+        {
+          "nuo_s": 7.9,
+          "iki_s": 10.83,
+          "tekstas": "Svetainėje prie dokumentų atsiranda spyna."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 6.6,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 10,
+      "epizodas": "ep_679_09_2",
+      "failas": "09-kategorijos-slepimas",
+      "pavadinimas": "Kategoriją paslepiate iš sąrašo",
+      "trukme_s": 10,
+      "mp4": "ep_679_09_2.mp4",
+      "vtt": "ep_679_09_2.vtt",
+      "poster": "ep_679_09_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1,
+          "iki_s": 3.25,
+          "tekstas": "Įjungiate „Slėpti kategoriją“."
+        },
+        {
+          "nuo_s": 3.6,
+          "iki_s": 5.45,
+          "tekstas": "Spaudžiate „Atnaujinti“."
+        },
+        {
+          "nuo_s": 5.7,
+          "iki_s": 8.71,
+          "tekstas": "Bendrame kategorijų sąraše jos nebelieka."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 1.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 4.4,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 11,
+      "epizodas": "ep_679_10_1",
+      "failas": "10-uzrakintos-atrakinimas",
+      "pavadinimas": "Užrakintą kategoriją atrakinate slaptažodžiu",
+      "trukme_s": 16,
+      "mp4": "ep_679_10_1.mp4",
+      "vtt": "ep_679_10_1.vtt",
+      "poster": "ep_679_10_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.41,
+          "tekstas": "Užrakintų kategorijų dokumentai lieka matomi."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 8.03,
+          "tekstas": "Vietoje atsisiuntimo ikonos matote spyną."
+        },
+        {
+          "nuo_s": 8.3,
+          "iki_s": 11.59,
+          "tekstas": "Įvedate slaptažodį ir spaudžiate „Atrakinti“."
+        },
+        {
+          "nuo_s": 12,
+          "iki_s": 14.57,
+          "tekstas": "Sistema jį kurį laiką atsimins."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 9.3,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 12,
+      "epizodas": "ep_679_11_1",
+      "failas": "11-paieska-ir-filtras",
+      "pavadinimas": "Paieška ir kategorijų filtras",
+      "trukme_s": 16,
+      "mp4": "ep_679_11_1.mp4",
+      "vtt": "ep_679_11_1.vtt",
+      "poster": "ep_679_11_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.11,
+          "tekstas": "Lauke „Paieška“ įrašote raktažodį."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 6.57,
+          "tekstas": "Šalia pasirenkate kategoriją."
+        },
+        {
+          "nuo_s": 6.9,
+          "iki_s": 10.63,
+          "tekstas": "Paieška veikia paspaudus „Enter“ arba „Filtruoti“."
+        },
+        {
+          "nuo_s": 11,
+          "iki_s": 14.05,
+          "tekstas": "Mygtukas „Valyti“ grąžina pilną sąrašą."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 8.1,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 13,
+      "epizodas": "ep_679_12_1",
+      "failas": "12-dokumento-id",
+      "pavadinimas": "Dokumento ID adreso eilutėje",
+      "trukme_s": 14,
+      "mp4": "ep_679_12_1.mp4",
+      "vtt": "ep_679_12_1.vtt",
+      "poster": "ep_679_12_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.33,
+          "tekstas": "Kiekvieno dokumento ID yra unikalus."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 7.39,
+          "tekstas": "Jį rasite naršyklės adreso eilutėje."
+        },
+        {
+          "nuo_s": 7.5,
+          "iki_s": 11.35,
+          "tekstas": "ID prireikia naudojant dokumentų įterpimo funkcijas."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 5.7,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 14,
+      "epizodas": "ep_679_13_1",
+      "failas": "13-patikrinimo-data",
+      "pavadinimas": "Nustatote dokumento patikrinimo datą",
+      "trukme_s": 15,
+      "mp4": "ep_679_13_1.mp4",
+      "vtt": "ep_679_13_1.vtt",
+      "poster": "ep_679_13_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.21,
+          "tekstas": "Lauke „Patikrinimo data“ pasirenkate datą ateityje."
+        },
+        {
+          "nuo_s": 5.4,
+          "iki_s": 9.13,
+          "tekstas": "Komentarą rašote tokį, kad suprastumėte ir po metų."
+        },
+        {
+          "nuo_s": 9.6,
+          "iki_s": 13.09,
+          "tekstas": "Darbalaukyje priminimas pasirodys mėnesiu anksčiau."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.8,
+          "garsas": "rasymas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 15,
+      "epizodas": "ep_679_14_1",
+      "failas": "14-dokumentu-rikiavimas",
+      "pavadinimas": "Dokumentus perrikiuojate kategorijoje",
+      "trukme_s": 18,
+      "mp4": "ep_679_14_1.mp4",
+      "vtt": "ep_679_14_1.vtt",
+      "poster": "ep_679_14_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.85,
+          "tekstas": "Filtre pasirenkate kategoriją arba subkategoriją."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 9.07,
+          "tekstas": "Sąrašo kairėje atsiranda rikiavimui skirtas kryžiukas."
+        },
+        {
+          "nuo_s": 9.8,
+          "iki_s": 12.37,
+          "tekstas": "Tempiate dokumentą į naują poziciją."
+        },
+        {
+          "nuo_s": 13.2,
+          "iki_s": 16.29,
+          "tekstas": "Baigę spaudžiate žalią mygtuką „Perrikiuoti“."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 10.8,
+          "garsas": "paemimas"
+        },
+        {
+          "ties_s": 12,
+          "garsas": "numetimas"
+        },
+        {
+          "ties_s": 14.6,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 16,
+      "epizodas": "ep_679_15_1",
+      "failas": "15-sintakses-kopijavimas",
+      "pavadinimas": "Sintaksę nukopijuojate vienu paspaudimu",
+      "trukme_s": 8,
+      "mp4": "ep_679_15_1.mp4",
+      "vtt": "ep_679_15_1.vtt",
+      "poster": "ep_679_15_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1,
+          "iki_s": 3.5,
+          "tekstas": "Sintakses rasite dokumentų sąraše."
+        },
+        {
+          "nuo_s": 3.9,
+          "iki_s": 6.63,
+          "tekstas": "Prie jos spaudžiate violetinį mygtuką."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

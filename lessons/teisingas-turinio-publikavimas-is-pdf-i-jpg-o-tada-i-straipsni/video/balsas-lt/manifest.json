@@ -1,0 +1,123 @@
+{
+  "hash": "9c4a07136788be6a305bf00d957538dc9d8809ffdf365e7e97091d7eb4f6328c",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 144878386,
+  "characters": 509,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T02:48:51.260Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Įkeliate PDF į konverterį",
+      "text": "Atsidarote nemokamą konvertavimo įrankį.",
+      "file": "k01-1.wav",
+      "duration": 3.07,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Įkeliate PDF į konverterį",
+      "text": "Spaudžiate „Select PDF /faɪlz/“.",
+      "file": "k01-2.wav",
+      "duration": 3.05,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Įkeliate PDF į konverterį",
+      "text": "Pasirenkate dokumentą kompiuteryje.",
+      "file": "k01-3.wav",
+      "duration": 2.25,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Konvertuojate ir atsisiunčiate",
+      "text": "Spaudžiate „/kənˈvɜːrt tə ˌdʒeɪ piː ˈdʒiː/“.",
+      "file": "k02-1.wav",
+      "duration": 2.837,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Konvertuojate ir atsisiunčiate",
+      "text": "Tada „/ˈdaʊnloʊd ˌdʒeɪ piː ˈdʒiː ˈɪmɪdʒɪz/“.",
+      "file": "k02-2.wav",
+      "duration": 3.023,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Konvertuojate ir atsisiunčiate",
+      "text": "Atsisiunčiamas archyvas su paveikslėliais.",
+      "file": "k02-3.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Išpakuojate ZIP archyvą",
+      "text": "Archyvą atidarote ir spaudžiate „/iʃskˈlʲɛistʲi/ viską“.",
+      "file": "k03-1.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Išpakuojate ZIP archyvą",
+      "text": "Pasirenkate /ˈaːplankaː/ ir spaudžiate „/iʃskˈlʲɛistʲi/“.",
+      "file": "k03-2.wav",
+      "duration": 3.41,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Skaitoma be atsisiuntimo",
+      "text": "Naujienoje matote PDF puslapius kaip paveikslėlius.",
+      "file": "k04-1.wav",
+      "duration": 3.81,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Skaitoma be atsisiuntimo",
+      "text": "Skaityti galima iš /ˈkartoː/.",
+      "file": "k04-2.wav",
+      "duration": 1.97,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Skaitoma be atsisiuntimo",
+      "text": "Apačioje lieka nuoroda /atsʲiˈsʲuːstʲi/.",
+      "file": "k04-3.wav",
+      "duration": 2.743,
+      "fits": true,
+      "reikia_sek": 13
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+ "pamokos_slug": "teisingas-turinio-publikavimas-is-pdf-i-jpg-o-tada-i-straipsni",
+ "pamoka_id": "pam_692",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_692_01_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_692_01",
+   "pamoka": "pam_692",
+   "failas": "01-ikeliate-pdf",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "PDF to JPG",
+    "Select PDF file"
+   ],
+   "tvs_ui": [
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: ilovepdf.com puslapis su raudonu mygtuku",
+    "naujas: kompiuterio failų pasirinkimo langas"
+   ],
+   "tarimo_kandidatai": [
+    "PDF",
+    "JPG",
+    "PDF to JPG",
+    "Select PDF file"
+   ],
+   "demo_duomenys": {
+    "dokumentas": "Mokyklos veiklos planas.pdf",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_692_01_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_692_01",
+   "pamoka": "pam_692",
+   "failas": "01-atsisiunciate-jpg",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "PAGE TO JPG",
+    "Convert to JPG",
+    "Download JPG images"
+   ],
+   "tvs_ui": [
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: ilovepdf.com pasirinkimų skydelis",
+    "naujas: naršyklės išsaugojimo langas"
+   ],
+   "tarimo_kandidatai": [
+    "JPG",
+    "Convert to JPG",
+    "Download JPG images",
+    "ZIP"
+   ],
+   "demo_duomenys": {
+    "archyvas": "veiklos-planas-jpg.zip"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_692_02_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_692_02",
+   "pamoka": "pam_692",
+   "failas": "02-ispakuojate-zip",
+   "trukme_s": 10,
+   "ekrano_tekstai": [
+    "Destination path",
+    "OK",
+    "Išskleisti viską…",
+    "Išskleisti"
+   ],
+   "tvs_ui": [
+    "tvs-cursor",
+    "tvs-ripple",
+    "naujas: išpakavimo langas su aplankų medžiu"
+   ],
+   "tarimo_kandidatai": [
+    "ZIP",
+    "WinRAR",
+    "Extract To"
+   ],
+   "demo_duomenys": {
+    "aplankas": "Demo mokykla / Naujienos",
+    "archyvas": "veiklos-planas-jpg.zip"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "ep_692_04_3",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_692_04",
+   "pamoka": "pam_692",
+   "failas": "04-rezultatas-svetaineje",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Parsisiųskite pdf formatu"
+   ],
+   "tvs_ui": [
+    "tvs-cursor",
+    "naujas: svetainės naujienos turinys su paveikslėliais"
+   ],
+   "tarimo_kandidatai": [
+    "PDF"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla",
+    "naujiena": "Mokslo metų pradžios tvarkaraštis"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

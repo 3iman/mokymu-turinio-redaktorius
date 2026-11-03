@@ -1,0 +1,27 @@
+{
+  "lang": "lt",
+  "01_visa_galerija": {
+    "_epizodas": "ep_661_01_1"
+  },
+  "02_viena_plati_nuotrauka": {
+    "_epizodas": "ep_661_02_1"
+  },
+  "03_dvi_nuotraukos_salia": {
+    "_epizodas": "ep_661_03_1"
+  },
+  "04_trys_nuotraukos_eiluteje": {
+    "_epizodas": "ep_661_04_1"
+  },
+  "05_nuotrauka_per_visa_ploti": {
+    "_epizodas": "ep_661_05_1"
+  },
+  "06_nuotraukos_plotis": {
+    "_epizodas": "ep_661_06_1"
+  },
+  "07_vertikalios_nuotraukos": {
+    "_epizodas": "ep_661_07_1"
+  },
+  "08_kiek_vertikaliu_nuotrauku": {
+    "_epizodas": "ep_661_08_1"
+  }
+}

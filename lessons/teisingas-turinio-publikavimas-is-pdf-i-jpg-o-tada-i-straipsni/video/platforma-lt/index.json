@@ -1,0 +1,155 @@
+{
+  "pamoka": "teisingas-turinio-publikavimas-is-pdf-i-jpg-o-tada-i-straipsni",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:51:20.745Z",
+  "balso_stiprinimas_db": 5.8,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_692_01_1",
+      "failas": "01-ikeliate-pdf",
+      "pavadinimas": "Įkeliate PDF į konverterį",
+      "trukme_s": 14,
+      "mp4": "ep_692_01_1.mp4",
+      "vtt": "ep_692_01_1.vtt",
+      "poster": "ep_692_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.47,
+          "tekstas": "Atsidarote nemokamą konvertavimo įrankį."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 7.75,
+          "tekstas": "Spaudžiate „Select PDF files“."
+        },
+        {
+          "nuo_s": 7.9,
+          "iki_s": 10.15,
+          "tekstas": "Pasirenkate dokumentą kompiuteryje."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 5.9,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 9.3,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_692_01_2",
+      "failas": "01-atsisiunciate-jpg",
+      "pavadinimas": "Konvertuojate ir atsisiunčiate",
+      "trukme_s": 14,
+      "mp4": "ep_692_01_2.mp4",
+      "vtt": "ep_692_01_2.vtt",
+      "poster": "ep_692_01_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.24,
+          "tekstas": "Spaudžiate „Convert to JPG“."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 8.02,
+          "tekstas": "Tada „Download JPG images“."
+        },
+        {
+          "nuo_s": 8.6,
+          "iki_s": 11.33,
+          "tekstas": "Atsisiunčiamas archyvas su paveikslėliais."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.2,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 10,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_692_02_1",
+      "failas": "02-ispakuojate-zip",
+      "pavadinimas": "Išpakuojate ZIP archyvą",
+      "trukme_s": 10,
+      "mp4": "ep_692_02_1.mp4",
+      "vtt": "ep_692_02_1.vtt",
+      "poster": "ep_692_02_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.97,
+          "tekstas": "Archyvą atidarote ir spaudžiate „Išskleisti viską“."
+        },
+        {
+          "nuo_s": 5.4,
+          "iki_s": 8.81,
+          "tekstas": "Pasirenkate aplanką ir spaudžiate „Išskleisti“."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 8.2,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "ep_692_04_3",
+      "failas": "04-rezultatas-svetaineje",
+      "pavadinimas": "Skaitoma be atsisiuntimo",
+      "trukme_s": 13,
+      "mp4": "ep_692_04_3.mp4",
+      "vtt": "ep_692_04_3.vtt",
+      "poster": "ep_692_04_3.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.21,
+          "tekstas": "Naujienoje matote PDF puslapius kaip paveikslėlius."
+        },
+        {
+          "nuo_s": 5.6,
+          "iki_s": 7.57,
+          "tekstas": "Skaityti galima iš karto."
+        },
+        {
+          "nuo_s": 8.6,
+          "iki_s": 11.34,
+          "tekstas": "Apačioje lieka nuoroda atsisiųsti."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

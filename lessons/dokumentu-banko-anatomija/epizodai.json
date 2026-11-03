@@ -1,0 +1,520 @@
+{
+ "pamokos_slug": "dokumentu-banko-anatomija",
+ "pamoka_id": "pam_679",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_679_01_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_679_01",
+   "pamoka": "pam_679",
+   "failas": "01-paieska-virsuje",
+   "trukme_s": 10,
+   "ekrano_tekstai": [
+    "Type to search...",
+    "Dokumentų bankas",
+    "Darbalaukis"
+   ],
+   "tvs_ui": [
+    "tvs-top",
+    "tvs-searchbar",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": [
+    "dal_702_02",
+    "dal_709_01",
+    "dal_708_01",
+    "dal_711_01",
+    "dal_710_02"
+   ]
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_679_01_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_679_01",
+   "pamoka": "pam_679",
+   "failas": "01-darbalaukio-skyrius",
+   "trukme_s": 8,
+   "ekrano_tekstai": [
+    "Įrankiai",
+    "Dokumentų bankas",
+    "Naujienos",
+    "Puslapiai"
+   ],
+   "tvs_ui": [
+    "tvs-main",
+    "tvs-row",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": [
+    "dal_702_02",
+    "dal_709_01",
+    "dal_708_01",
+    "dal_711_01"
+   ]
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_679_02_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_679_02",
+   "pamoka": "pam_679",
+   "failas": "02-redagavimo-piestukas",
+   "trukme_s": 9,
+   "ekrano_tekstai": [
+    "Finansinių ataskaitų rinkiniai",
+    "Atnaujinta",
+    "Dydis"
+   ],
+   "tvs_ui": [
+    "tvs-site",
+    "tvs-site-doc",
+    "tvs-table",
+    "tvs-row",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "dokumentas": "2023 m. III ketvirčio finansinė ataskaita"
+   },
+   "naudoja_ir": [
+    "dal_693_04",
+    "dal_677_03",
+    "dal_706_01",
+    "dal_706_90",
+    "dal_709_03"
+   ]
+  },
+  {
+   "kadras": 4,
+   "epizodas": "ep_679_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_679_03",
+   "pamoka": "pam_679",
+   "failas": "03-dokumentu-puslapis",
+   "trukme_s": 17,
+   "ekrano_tekstai": [
+    "Dokumentai",
+    "Ieškoti dokumentų",
+    "VISI FAILAI",
+    "NUOSTATAI",
+    "TVARKOS",
+    "Atnaujinta"
+   ],
+   "tvs_ui": [
+    "tvs-site",
+    "tvs-site-h",
+    "tvs-site-doc",
+    "tvs-searchbar",
+    "tvs-input",
+    "tvs-cursor"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla",
+    "dokumentas": "gimnazijos-nuostatai.pdf"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "ep_679_06_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_679_06",
+   "pamoka": "pam_679",
+   "failas": "06-pavadinimas-aprasymas-url",
+   "trukme_s": 21,
+   "ekrano_tekstai": [
+    "Pavadinimas",
+    "URL",
+    "Aprašymas",
+    "Įkėlimas naudojant url"
+   ],
+   "tvs_ui": [
+    "tvs-main",
+    "tvs-input",
+    "tvs-cursor"
+   ],
+   "tarimo_kandidatai": [
+    "URL"
+   ],
+   "demo_duomenys": {
+    "pavadinimas": "Mokinių pasiekimų ir pažangos vertinimo tvarkos aprašas",
+    "aprasymas": "Pažangos vertinimo tvarka"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "ep_679_07_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_679_07",
+   "pamoka": "pam_679",
+   "failas": "07-failo-ikelimas",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Failas",
+    "Select File",
+    "Upload",
+    "application/pdf"
+   ],
+   "tvs_ui": [
+    "tvs-main",
+    "tvs-btn",
+    "tvs-file",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "Select File",
+    "Upload"
+   ],
+   "demo_duomenys": {
+    "failas": "gimnazijos-nuostatai.pdf"
+   },
+   "naudoja_ir": [
+    "dal_679_05",
+    "dal_677_01",
+    "dal_679_90"
+   ]
+  },
+  {
+   "kadras": 7,
+   "epizodas": "ep_679_07_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_679_07",
+   "pamoka": "pam_679",
+   "failas": "07-kategorijos-priskyrimas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Kategorijos",
+    "Nuostatai",
+    "Tvarkų aprašai"
+   ],
+   "tvs_ui": [
+    "tvs-main",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "kategorija_1": "Nuostatai",
+    "kategorija_2": "Tvarkų aprašai"
+   },
+   "naudoja_ir": [
+    "dal_690_03",
+    "dal_690_90",
+    "dal_678_07"
+   ]
+  },
+  {
+   "kadras": 8,
+   "epizodas": "ep_679_08_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_679_08",
+   "pamoka": "pam_679",
+   "failas": "08-nauja-kategorija",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Sukurti",
+    "Pavadinimas",
+    "Slug",
+    "Išsaugoti",
+    "Kategorijos"
+   ],
+   "tvs_ui": [
+    "tvs-side",
+    "tvs-crumb",
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "Slug"
+   ],
+   "demo_duomenys": {
+    "kategorija": "Biudžeto vykdymo ataskaitų rinkiniai"
+   },
+   "naudoja_ir": [
+    "dal_678_02",
+    "dal_677_02",
+    "dal_679b_90"
+   ]
+  },
+  {
+   "kadras": 9,
+   "epizodas": "ep_679_09_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_679_09",
+   "pamoka": "pam_679",
+   "failas": "09-kategorijos-uzrakinimas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Password",
+    "Slėpti kategoriją",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-main",
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "Password"
+   ],
+   "demo_duomenys": {
+    "slaptazodis": "bananas",
+    "kategorija": "Prašymai"
+   },
+   "naudoja_ir": [
+    "dal_678_09"
+   ]
+  },
+  {
+   "kadras": 10,
+   "epizodas": "ep_679_09_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_679_09",
+   "pamoka": "pam_679",
+   "failas": "09-kategorijos-slepimas",
+   "trukme_s": 10,
+   "ekrano_tekstai": [
+    "Slėpti kategoriją",
+    "Paslėpta kategorija nebus rodoma",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-main",
+    "tvs-check",
+    "tvs-btn",
+    "tvs-cursor"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "kategorija": "Prašymai"
+   },
+   "naudoja_ir": [
+    "dal_678_09"
+   ]
+  },
+  {
+   "kadras": 11,
+   "epizodas": "ep_679_10_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_679_10",
+   "pamoka": "pam_679",
+   "failas": "10-uzrakintos-atrakinimas",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Nuostatai",
+    "ATRAKINTI",
+    "Atnaujinta",
+    "Dydis"
+   ],
+   "tvs_ui": [
+    "tvs-site",
+    "tvs-site-doc",
+    "tvs-table",
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "slaptazodis": "bananas",
+    "kategorija": "Nuostatai"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 12,
+   "epizodas": "ep_679_11_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_679_11",
+   "pamoka": "pam_679",
+   "failas": "11-paieska-ir-filtras",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Paieška",
+    "Kategorijos",
+    "Filtruoti",
+    "Valyti",
+    "Pavadinimas",
+    "Failas"
+   ],
+   "tvs_ui": [
+    "tvs-main",
+    "tvs-filter",
+    "tvs-input",
+    "tvs-btn",
+    "tvs-table",
+    "tvs-cursor"
+   ],
+   "tarimo_kandidatai": [
+    "Enter"
+   ],
+   "demo_duomenys": {
+    "raktazodis": "tvarka",
+    "kategorija": "Tvarkų aprašai"
+   },
+   "naudoja_ir": [
+    "dal_678_08",
+    "dal_677_03",
+    "dal_677_03",
+    "dal_678b_90"
+   ]
+  },
+  {
+   "kadras": 13,
+   "epizodas": "ep_679_12_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_679_12",
+   "pamoka": "pam_679",
+   "failas": "12-dokumento-id",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "edit/746",
+    "Pavadinimas",
+    "Dokumentų banko modulis"
+   ],
+   "tvs_ui": [
+    "tvs-window",
+    "tvs-top",
+    "tvs-crumb",
+    "tvs-cursor"
+   ],
+   "tarimo_kandidatai": [
+    "ID"
+   ],
+   "demo_duomenys": {
+    "id": "746"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 14,
+   "epizodas": "ep_679_13_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_679_13",
+   "pamoka": "pam_679",
+   "failas": "13-patikrinimo-data",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Patikrinimo data",
+    "Patikrinimo komentaras",
+    "Dokumentų priminimai",
+    "Atnaujinti"
+   ],
+   "tvs_ui": [
+    "tvs-main",
+    "tvs-input",
+    "tvs-btn",
+    "tvs-cursor"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "komentaras": "Pakeisti prieš naujus mokslo metus",
+    "data": "2027-04-20 12:00"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 15,
+   "epizodas": "ep_679_14_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_679_14",
+   "pamoka": "pam_679",
+   "failas": "14-dokumentu-rikiavimas",
+   "trukme_s": 18,
+   "ekrano_tekstai": [
+    "Filtruoti",
+    "Perrikiuoti",
+    "Nuostatai >> Taisyklės",
+    "Pavadinimas"
+   ],
+   "tvs_ui": [
+    "tvs-main",
+    "tvs-filter",
+    "tvs-row",
+    "tvs-handle",
+    "tvs-btn",
+    "tvs-cursor"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "kategorija": "Nuostatai >> Taisyklės"
+   },
+   "naudoja_ir": [
+    "dal_707_02",
+    "dal_706_07",
+    "dal_707_90",
+    "dal_709_04",
+    "dal_710_02",
+    "dal_710_05"
+   ]
+  },
+  {
+   "kadras": 16,
+   "epizodas": "ep_679_15_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_679_15",
+   "pamoka": "pam_679",
+   "failas": "15-sintakses-kopijavimas",
+   "trukme_s": 8,
+   "ekrano_tekstai": [
+    "Failas",
+    "Kategorijos",
+    "{{dokumentubankas_file(704)}}"
+   ],
+   "tvs_ui": [
+    "tvs-table",
+    "tvs-row",
+    "tvs-btn",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "kategorija": "Nuostatai"
+   },
+   "naudoja_ir": [
+    "dal_692_03",
+    "dal_679_04",
+    "dal_667_01"
+   ]
+  }
+ ]
+}

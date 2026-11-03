@@ -141,6 +141,10 @@ const tabs = (items, on = 0, ts = {}) => `<div class="tvs-tabs">${items.map((x, 
 const split = (cls, { siteTitle = '', siteBody = '', editor = '', foot = '', tTop = 'stop', tBot = 'sbot' }) => scr(`${cls} tvs-split`, `
         <div class="tvs-split-top" data-t="${tTop}"><span class="tvs-split-tag">Svetainė</span><div class="tvs-sweb-nav"><span class="is-on">${siteTitle}</span></div><div class="tvs-sweb-b">${siteBody}</div></div>
         <div class="tvs-split-bot" data-t="${tBot}"><span class="tvs-split-tag">TVS</span>${editor}${foot ? `<div class="tvs-form-foot">${foot}</div>` : ''}</div>`);
+/** Šoninis padalijimas: kairėje TVS dalis (forma), dešinėje svetainė */
+const split2 = (cls, { left = '', right = '', siteTitle = '', tL = 'sleft', tR = 'sright' }) => scr(`${cls} tvs-split2`, `
+        <div class="tvs-split2-l" data-t="${tL}"><span class="tvs-split-tag">TVS</span>${left}</div>
+        <div class="tvs-split2-r" data-t="${tR}"><span class="tvs-split-tag">Svetainė</span><div class="tvs-sweb-nav"><span class="is-on">${siteTitle}</span></div><div class="tvs-sweb-b">${right}</div></div>`);
 const btn = (label, { cls = '', icon = '', t = '' } = {}) => `<span class="tvs-btn ${cls}"${t ? ` data-t="${t}"` : ''}>${icon}${label}</span>`;
 
 // ---------- laikas ----------
@@ -150,12 +154,13 @@ function cues(card) {
 }
 function T(v, C) {
   if (typeof v === 'number') return v;
-  const m = String(v).match(/^([bg])(\d+)\s*([+-]\s*[\d.]+)?$/);
+  const m = String(v).match(/^([bg])(\d+)((?:\s*[+-]\s*[\d.]+)*)$/);
   if (!m) throw new Error(`blogas laikas: ${v}`);
   const arr = C[m[1]];
   const base = arr[parseInt(m[2], 10) - 1];
   if (base === undefined) throw new Error(`nėra žymos ${m[1]}${m[2]} (yra b:${C.b.length}, g:${C.g.length})`);
-  return +(base + (m[3] ? parseFloat(m[3].replace(/\s/g, '')) : 0)).toFixed(2);
+  const off = (m[3] || '').replace(/\s/g, '').match(/[+-][\d.]+/g) || [];
+  return +(base + off.reduce((a, x) => a + parseFloat(x), 0)).toFixed(2);
 }
 
 const pct = (t, D) => +Math.max(0, Math.min(100, (t / D) * 100)).toFixed(3);
@@ -192,8 +197,9 @@ function page(id, def, nClicks) {
   .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
   .cursor-wrap .tvs-cursor { left: 0; top: 0; }
   [class*="caret-"] { opacity: 0; }
-${def.baseCss || ''}
 ${def.css || ''}
+  /* galutinė būsena (epizodai.js) — po pamokos CSS, kad visada laimėtų */
+${def.baseCss || ''}
 </style>
 </head>
 <body>
@@ -432,4 +438,4 @@ async function build(lessonDir, defs, opts = {}) {
   for (const id of ids) console.log(`  K${meta[id].k.kadras} ${id} · ${meta[id].D} s · b ${meta[id].C.b.join('/')} · g ${meta[id].C.g.join('/')}`);
 }
 
-module.exports = { split, cke, ckd, tabs, SVG, ICO, top, side, subnav, win, scr, site, typed, btn, chrome, dash, DASH, docRow, docTable, sdocs, esc, build };
+module.exports = { split, split2, cke, ckd, tabs, SVG, ICO, top, side, subnav, win, scr, site, typed, btn, chrome, dash, DASH, docRow, docTable, sdocs, esc, build };

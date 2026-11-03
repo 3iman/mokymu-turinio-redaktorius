@@ -1,0 +1,358 @@
+{
+  "pamoka": "nuotrauku-tipo-sintakses",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:57:52.139Z",
+  "balso_stiprinimas_db": 5.7,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_661_01_1",
+      "failas": "01-visa-galerija",
+      "pavadinimas": "Visą galeriją įterpiate viena sintakse",
+      "trukme_s": 19,
+      "mp4": "ep_661_01_1.mp4",
+      "vtt": "ep_661_01_1.vtt",
+      "poster": "ep_661_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 6.39,
+          "tekstas": "Lauke „Turinys“ tuščioje eilutėje įrašote galerijos sintaksę."
+        },
+        {
+          "nuo_s": 6.6,
+          "iki_s": 9.93,
+          "tekstas": "Išsaugote puslapį ir grįžtate į svetainę."
+        },
+        {
+          "nuo_s": 10.1,
+          "iki_s": 13.91,
+          "tekstas": "Visos prie įrašo priskirtos nuotraukos atsiranda tinkleliu."
+        },
+        {
+          "nuo_s": 14.9,
+          "iki_s": 16.47,
+          "tekstas": "Nieko rikiuoti nereikia."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 3,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 15.7,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_661_02_1",
+      "failas": "02-viena-plati-nuotrauka",
+      "pavadinimas": "Viena plati nuotrauka iš galerijos",
+      "trukme_s": 14,
+      "mp4": "ep_661_02_1.mp4",
+      "vtt": "ep_661_02_1.vtt",
+      "poster": "ep_661_02_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.57,
+          "tekstas": "Skliaustuose įrašote vienetą — tiek nuotraukų ir matysite."
+        },
+        {
+          "nuo_s": 6.2,
+          "iki_s": 9.09,
+          "tekstas": "Svetainėje lieka viena plati nuotrauka."
+        },
+        {
+          "nuo_s": 9.5,
+          "iki_s": 12.47,
+          "tekstas": "Ji nukadruojama žemesnė nei originalas."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 7.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 10.7,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_661_03_1",
+      "failas": "03-dvi-nuotraukos-salia",
+      "pavadinimas": "Dvi nuotraukos viena šalia kitos",
+      "trukme_s": 14,
+      "mp4": "ep_661_03_1.mp4",
+      "vtt": "ep_661_03_1.vtt",
+      "poster": "ep_661_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 3.73,
+          "tekstas": "Skliaustuose įrašote dvejetą."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 7.74,
+          "tekstas": "Svetainėje nuotraukos sugula po dvi."
+        },
+        {
+          "nuo_s": 8,
+          "iki_s": 12,
+          "tekstas": "Keturioms nuotraukoms tą pačią sintaksę rašote du kartus."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 6.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 9.4,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "ep_661_04_1",
+      "failas": "04-trys-nuotraukos-eiluteje",
+      "pavadinimas": "Trys nuotraukos vienoje eilutėje",
+      "trukme_s": 16,
+      "mp4": "ep_661_04_1.mp4",
+      "vtt": "ep_661_04_1.vtt",
+      "poster": "ep_661_04_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 3.73,
+          "tekstas": "Skliaustuose įrašote trejetą."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 7.61,
+          "tekstas": "Išsaugote ir grįžtate į puslapį."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 11.61,
+          "tekstas": "Trys nuotraukos išsirikiuoja viena eilute."
+        },
+        {
+          "nuo_s": 11.9,
+          "iki_s": 14.79,
+          "tekstas": "Likusios galerijos nuotraukos nerodomos."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 6.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 12.9,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "ep_661_05_1",
+      "failas": "05-nuotrauka-per-visa-ploti",
+      "pavadinimas": "Nuotrauka matoma visa",
+      "trukme_s": 15,
+      "mp4": "ep_661_05_1.mp4",
+      "vtt": "ep_661_05_1.vtt",
+      "poster": "ep_661_05_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.41,
+          "tekstas": "Įrašote plakato sintaksę be skaičiaus."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 7.61,
+          "tekstas": "Nuotrauka proporcingai sumažinama."
+        },
+        {
+          "nuo_s": 8.1,
+          "iki_s": 11.43,
+          "tekstas": "Svetainėje ji matoma visa, per visą plotį."
+        },
+        {
+          "nuo_s": 11.6,
+          "iki_s": 13.21,
+          "tekstas": "Niekas nenukerpama."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 6.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 12.4,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "ep_661_06_1",
+      "failas": "06-nuotraukos-plotis",
+      "pavadinimas": "Nuotraukos plotį nurodote pats",
+      "trukme_s": 16,
+      "mp4": "ep_661_06_1.mp4",
+      "vtt": "ep_661_06_1.vtt",
+      "poster": "ep_661_06_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.21,
+          "tekstas": "Sintaksę įklijuojate iš TVS paruoštukų."
+        },
+        {
+          "nuo_s": 5.4,
+          "iki_s": 7.53,
+          "tekstas": "Keičiate tik skaičių kabutėse."
+        },
+        {
+          "nuo_s": 8.8,
+          "iki_s": 10.97,
+          "tekstas": "Jis nurodo plotį pikseliais."
+        },
+        {
+          "nuo_s": 11.6,
+          "iki_s": 13.65,
+          "tekstas": "Pačių kabučių neperrašote."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 6.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 12.6,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "ep_661_07_1",
+      "failas": "07-vertikalios-nuotraukos",
+      "pavadinimas": "Trijų nuotraukų eilutė mėgsta horizontalias",
+      "trukme_s": 14,
+      "mp4": "ep_661_07_1.mp4",
+      "vtt": "ep_661_07_1.vtt",
+      "poster": "ep_661_07_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.61,
+          "tekstas": "Prieš rašydami sintaksę pažiūrite, kokios nuotraukos įkeltos."
+        },
+        {
+          "nuo_s": 6.4,
+          "iki_s": 9.41,
+          "tekstas": "Horizontalios sugula tvarkinga eilute."
+        },
+        {
+          "nuo_s": 9.6,
+          "iki_s": 12.73,
+          "tekstas": "Vertikalios tokioje eilutėje apkarpomos."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 7.6,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "ep_661_08_1",
+      "failas": "08-kiek-vertikaliu-nuotrauku",
+      "pavadinimas": "Nurodote, kiek nuotraukų rodyti",
+      "trukme_s": 18,
+      "mp4": "ep_661_08_1.mp4",
+      "vtt": "ep_661_08_1.vtt",
+      "poster": "ep_661_08_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.01,
+          "tekstas": "Skliaustuose įrašote, kiek vertikalių nuotraukų rodyti."
+        },
+        {
+          "nuo_s": 5.9,
+          "iki_s": 8.71,
+          "tekstas": "Svetainėje jų atsiranda būtent tiek."
+        },
+        {
+          "nuo_s": 9.5,
+          "iki_s": 12.67,
+          "tekstas": "Taip galerijas patogu perskirti antraštėmis."
+        },
+        {
+          "nuo_s": 13.2,
+          "iki_s": 16.22,
+          "tekstas": "Be skaičiaus matomos visos nuotraukos."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 3,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 7.1,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

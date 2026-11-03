@@ -16,6 +16,13 @@
   .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
   .cursor-wrap .tvs-cursor { left: 0; top: 0; }
   [class*="caret-"] { opacity: 0; }
+
+  .f-search { width: 260px; } .f-cat { width: 420px; position: relative; }
+  .f-cat .v-cat { color: var(--tvs-text); }
+  .dd-wrap { position: relative; height: 0; z-index: 5; }
+  .cat-dd { position: absolute; left: 272px; top: -22px; width: 420px; box-shadow: 0 8px 24px rgba(0,0,0,.12); }
+  .scr2 .ph-cat { display: none; }
+  /* galutinė būsena (epizodai.js) — po pamokos CSS, kad visada laimėtų */
   .stage > .scr:nth-of-type(1) { opacity: 0; }
   .stage > .scr:nth-of-type(2) { opacity: 1; }
   .cursor-wrap { transform: translate(1376.0px, 817.0px); }
@@ -23,12 +30,6 @@
   .scr1 .ph-cat { opacity: 0; }
   .scr1 .v-cat { opacity: 1; }
 
-
-  .f-search { width: 260px; } .f-cat { width: 420px; position: relative; }
-  .f-cat .v-cat { color: var(--tvs-text); }
-  .dd-wrap { position: relative; height: 0; z-index: 5; }
-  .cat-dd { position: absolute; left: 272px; top: -22px; width: 420px; box-shadow: 0 8px 24px rgba(0,0,0,.12); }
-  .scr2 .ph-cat { display: none; }
 </style>
 </head>
 <body>

@@ -793,3 +793,60 @@ span.tvs-thumb { display: inline-block; vertical-align: middle; }
 .tvs-ctx div { padding: 9px 22px; } .tvs-ctx div.is-hl { background: #e5f1fb; } .tvs-ctx hr { border: 0; border-top: 1px solid #e5e5e5; margin: 4px 0; }
 .tvs-osbtn { display: inline-block; padding: 8px 26px; border: 1px solid #0067c0; background: #0067c0; color: #fff; font-size: 17px; border-radius: 4px; }
 .tvs-osbtn.is-sec { background: #fff; color: #222; border-color: #c9c9c9; }
+/* Nuotraukos svetainėje (galerijos sintaksės): neutralus kadras su „kalnu“ ir „saule“ — ne tikra nuotrauka (2026-11-03) */
+.tvs-photo { position: relative; overflow: hidden; border-radius: 3px; background: linear-gradient(170deg, #c9d8e8 0 55%, #9fb6a2 55% 100%); }
+.tvs-photo::before { content: ''; position: absolute; right: 18%; top: 14%; width: 14%; aspect-ratio: 1; border-radius: 50%; background: #f3e3b3; }
+.tvs-photo::after { content: ''; position: absolute; left: -10%; right: 30%; bottom: 0; height: 55%; background: #7f9c86; clip-path: polygon(0 100%, 45% 10%, 100% 100%); }
+.tvs-photo.is-v { background: linear-gradient(170deg, #d8d2e6 0 60%, #b6a9c9 60% 100%); }
+.tvs-photo.is-v::after { left: 10%; right: 10%; background: #a395bb; }
+/* Svetainės dokumentų puslapis: paieška, kategorijų sąrašas dešinėje, spyna ir atrakinimas (2026-11-03) */
+.tvs-sdp { display: grid; grid-template-columns: 1fr 300px; gap: 30px; }
+.tvs-sdp-s { height: 44px; border: 1px solid #ccc; border-radius: 3px; display: flex; align-items: center; padding: 0 14px; font-size: 17px; color: #999; margin-bottom: 14px; position: relative; }
+.tvs-sdp-c { display: flex; flex-direction: column; border: 1px solid #e3e3e3; }
+.tvs-sdp-c span { padding: 12px 16px; font: 600 15px var(--tvs-site-font); letter-spacing: .5px; color: #333; border-bottom: 1px solid #eee; }
+.tvs-sdp-c span.is-on { background: var(--tvs-site-th); color: #fff; }
+.tvs-lock { width: 18px; height: 18px; display: inline-block; vertical-align: -3px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2'%3E%3Crect x='5' y='11' width='14' height='10' rx='2'/%3E%3Cpath d='M8 11V7a4 4 0 0 1 8 0v4'/%3E%3C/svg%3E") center/contain no-repeat; }
+.tvs-unlock { display: flex; gap: 10px; padding: 10px 14px; background: #f6f6f6; }
+.tvs-unlock .tvs-sdp-s { margin: 0; width: 280px; color: #222; }
+.tvs-unlock b { background: var(--tvs-site-th); color: #fff; font: 700 15px var(--tvs-site-font); letter-spacing: .6px; padding: 0 18px; display: flex; align-items: center; border-radius: 3px; }
+/* Darbalaukio priminimų kortelė */
+.tvs-remind { background: #fff; border-radius: var(--tvs-radius); padding: 22px 28px; }
+.tvs-remind-h { font-size: 22px; font-weight: 600; margin-bottom: 10px; }
+.tvs-remind-r { display: grid; grid-template-columns: 1fr 200px 1fr; gap: 16px; padding: 12px 6px; border-bottom: 1px solid var(--tvs-line); font-size: 18px; }
+.tvs-remind-r.is-due { background: #fdecec; color: #b42318; }
+/* Šoninis padalijimas: kairėje TVS forma, dešinėje svetainė (naujienų pamokos, 2026-11-03) */
+.tvs-split2 { display: grid; grid-template-columns: 1.05fr 1fr; gap: 20px; padding: 10px 20px; }
+.tvs-split2 > div { position: relative; border-radius: 12px; overflow: hidden; border: 1px solid #dfe3ea; box-shadow: 0 16px 40px rgba(30,40,70,.10); }
+.tvs-split2-l { background: var(--tvs-bg, #f1f1f1); padding: 20px 22px; display: flex; flex-direction: column; gap: 12px; }
+.tvs-split2-r { background: #fff; }
+.tvs-split2-r .tvs-sweb-b { padding: 20px 26px; }
+.tvs-art-t { font-size: 26px; font-weight: 700; color: #222; margin: 10px 0 6px; }
+.tvs-art-m { font-size: 14px; color: #888; margin-bottom: 12px; } .tvs-art-m b { color: var(--tvs-site-link); font-weight: 500; }
+.tvs-art-p { font-size: 16px; line-height: 1.6; color: #444; margin-bottom: 10px; }
+.tvs-art-img { height: 190px; border-radius: 4px; margin-bottom: 12px; }
+.tvs-art-by { font-size: 15px; color: #555; display: flex; align-items: center; gap: 8px; margin-top: 8px; }
+.tvs-audio { display: flex; align-items: center; gap: 12px; background: #f1f3f4; border-radius: 26px; padding: 10px 16px; font-size: 14px; color: #333; }
+.tvs-audio i { width: 0; height: 0; border-left: 12px solid #333; border-top: 8px solid transparent; border-bottom: 8px solid transparent; }
+.tvs-audio s { flex: 1; height: 4px; background: #c7c7c7; border-radius: 2px; text-decoration: none; }
+/* Svetainės laikmatis (laikroduko papildinys) ir telefono rėmelis (2026-11-03) */
+.tvs-count { background: #fff; border: 1px solid #e3e3e3; padding: 16px; text-align: center; font-family: var(--tvs-site-font); }
+.tvs-count-h { font-size: 17px; font-weight: 700; color: #222; margin-bottom: 10px; }
+.tvs-count-g { display: flex; justify-content: center; gap: 8px; }
+.tvs-count-g div { width: 64px; background: var(--tvs-site-th); color: #fff; border-radius: 4px; padding: 8px 0; font-size: 24px; font-weight: 700; }
+.tvs-count-g small { display: block; font-size: 11px; font-weight: 400; opacity: .85; }
+.tvs-phone { width: 230px; height: 440px; border: 10px solid #222; border-radius: 30px; background: #fff; overflow: hidden; position: relative; }
+.tvs-car { position: relative; height: 100%; background: linear-gradient(160deg, #cfd8e3, #93a8be); display: flex; flex-direction: column; justify-content: flex-end; padding: 20px; }
+.tvs-car-t { font: 700 30px/1.15 var(--tvs-site-font); color: #fff; } .tvs-car-d { font: 16px/1.4 var(--tvs-site-font); color: #fff; margin-top: 6px; }
+.tvs-swatch { display: inline-block; width: 30px; height: 30px; border-radius: 4px; border: 1px solid #ccc; vertical-align: middle; margin-right: 10px; }
+.tvs-palette { display: grid; grid-template-columns: repeat(6, 34px); gap: 6px; background: #fff; border: 1px solid #ccc; padding: 10px; box-shadow: 0 8px 20px rgba(0,0,0,.15); width: max-content; }
+.tvs-palette i { width: 34px; height: 34px; border-radius: 4px; display: block; }
+/* Naršyklės skirtukai, audito būsenų juosta, žymų juosta svetainėje (2026-11-03) */
+.tvs-tabsbar { display: flex; gap: 4px; padding: 8px 12px 0; background: #dee1e6; }
+.tvs-tabsbar span { padding: 9px 18px; font: 15px Arial, sans-serif; color: #333; background: #cfd3d9; border-radius: 8px 8px 0 0; max-width: 260px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tvs-tabsbar span.is-on { background: #fff; }
+.tvs-audbar { display: flex; flex-wrap: wrap; gap: 8px; background: #fff; padding: 14px; border-radius: var(--tvs-radius); }
+.tvs-audbar span { padding: 8px 14px; border-radius: 3px; background: var(--tvs-crumb); font-size: 17px; color: var(--tvs-text); }
+.tvs-audbar span.is-on { background: var(--tvs-info); color: #fff; }
+.tvs-stags { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 14px; }
+.tvs-stags span { padding: 6px 14px; border-radius: 16px; background: #eef2f1; color: var(--tvs-site-th); font: 600 15px var(--tvs-site-font); }

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* K11 — „Užrakintos atrakinimas“ (ep_679_10_1)
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 40% 40%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+  .stage > .scr:nth-of-type(1) { opacity: 1; }
+  .cursor-wrap { transform: translate(451.3px, 491.0px); }
+  .caret-pw { opacity: 1; }
+  .un { opacity: 0; }
+
+
+  .f-s { width: 300px; position: relative; } .f-c { width: 380px; position: relative; } .c-v { position: absolute; left: 18px; color: var(--tvs-text); }
+  .btns { display: flex; gap: 8px; margin-bottom: 6px; } .fsz { font-size: 17px; color: var(--tvs-text-muted); margin-left: 24px; }
+  .c-table .tvs-th, .c-table .tvs-row { grid-template-columns: 30px 1fr 120px 200px; }
+  .sw-slot { position: relative; height: 42px; } .sw-slot .tvs-switch { position: absolute; left: 0; top: 0; }
+  .tvs-sweb .tvs-sdocs { font-size: 16px; } .lk .is-ico:first-child { visibility: hidden; } .lkk { position: absolute; margin-left: -48px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-sweb">
+
+        <div class="tvs-sweb-h"><div class="tvs-sweb-crest"></div><div class="tvs-sweb-name">Demo mokykla<small>Demo miestas</small></div></div>
+        <div class="tvs-sweb-nav"><span>Apie mokyklą</span><span class="is-on">Dokumentai</span><span>Mokiniams</span><span>Tėvams</span><span>Kontaktai</span></div>
+        <div class="tvs-sweb-b"><div class="tvs-sweb-t">Dokumentai</div>
+<div class="tw"><div class="tvs-sdocs " data-t="stab"><div class="tvs-sdocs-th"><span>Nuostatai</span><span>Atnaujinta</span><span>Dydis</span></div><div class="tvs-sdocs-tr r1" data-t="row1"><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v11M7.5 10l4.5 4.5 4.5-4.5M3.5 15v5.5h17V15"/></svg></span><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 20l1-4.5L16 4.5l3.5 3.5-11 11z"/><path d="M14 7l3 3"/></svg></span><span>Gimnazijos nuostatai</span><span class="is-date">2025-09-01 08:30:11</span><span class="is-size">884.95 KB</span></div><div class="tvs-sdocs-tr "><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v11M7.5 10l4.5 4.5 4.5-4.5M3.5 15v5.5h17V15"/></svg></span><span class="is-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"><path d="M4 20l1-4.5L16 4.5l3.5 3.5-11 11z"/><path d="M14 7l3 3"/></svg></span><span>Nuostatų pakeitimai 2024</span><span class="is-date">2024-06-12 11:00:00</span><span class="is-size">120.00 KB</span></div></div>
+      <div class="tvs-unlock un" data-t="un"><div class="tvs-sdp-s"><span class="tvs-typed ty-pw" data-ty="pw"><span class="w"><span class="l l1">•</span><span class="l l2">•</span><span class="l l3">•</span><span class="l l4">•</span><span class="l l5">•</span><span class="l l6">•</span><span class="l l7">•</span></span></span><span class="tvs-caret caret-pw"></span></div><b data-t="unb">ATRAKINTI</b></div></div>
+        </div>
+      </div>
+      <div class="spot"></div>
+      <div class="tvs-ripple rp rp1"></div>
+      <div class="tvs-ripple rp rp2"></div>
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

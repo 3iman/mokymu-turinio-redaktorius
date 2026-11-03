@@ -1,0 +1,303 @@
+{
+  "hash": "7b6eb41df206dc7b0aa39fc3caf7c40257047b5cf309aed94795302072a10efb",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 1729504742,
+  "characters": 1307,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T02:51:55.104Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Visą galeriją įterpiate viena sintakse",
+      "text": "/lauˈkʲɛ/ „Turinys“ tuščioje eilutėje įrašote galerijos sintaksę.",
+      "file": "k01-1.wav",
+      "duration": 4.99,
+      "fits": false,
+      "reikia_sek": 19
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Visą galeriją įterpiate viena sintakse",
+      "text": "Išsaugote puslapį ir grįžtate į svetainę.",
+      "file": "k01-2.wav",
+      "duration": 3.33,
+      "fits": false,
+      "reikia_sek": 19
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Visą galeriją įterpiate viena sintakse",
+      "text": "Visos prie /ˈiːraʃoː/ /prʲisˈkʲirtoːs/ nuotraukos atsiranda tinkleliu.",
+      "file": "k01-3.wav",
+      "duration": 3.81,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 1,
+      "cue": 4,
+      "title": "Visą galeriją įterpiate viena sintakse",
+      "text": "Nieko rikiuoti nereikia.",
+      "file": "k01-4.wav",
+      "duration": 1.57,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Viena plati nuotrauka iš galerijos",
+      "text": "/ˈsklʲaustuosʲɛ/ įrašote vienetą — tiek nuotraukų ir matysite.",
+      "file": "k02-1.wav",
+      "duration": 4.17,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Viena plati nuotrauka iš galerijos",
+      "text": "Svetainėje lieka viena plati nuotrauka.",
+      "file": "k02-2.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Viena plati nuotrauka iš galerijos",
+      "text": "Ji nukadruojama žemesnė nei originalas.",
+      "file": "k02-3.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Dvi nuotraukos viena šalia kitos",
+      "text": "/ˈsklʲaustuosʲɛ/ įrašote dvejetą.",
+      "file": "k03-1.wav",
+      "duration": 2.33,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Dvi nuotraukos viena šalia kitos",
+      "text": "Svetainėje nuotraukos sugula po dvi.",
+      "file": "k03-2.wav",
+      "duration": 2.743,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Dvi nuotraukos viena šalia kitos",
+      "text": "Keturioms nuotraukoms tą pačią sintaksę rašote du kartus.",
+      "file": "k03-3.wav",
+      "duration": 3.997,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Trys nuotraukos vienoje eilutėje",
+      "text": "/ˈsklʲaustuosʲɛ/ įrašote trejetą.",
+      "file": "k04-1.wav",
+      "duration": 2.33,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Trys nuotraukos vienoje eilutėje",
+      "text": "Išsaugote ir grįžtate į puslapį.",
+      "file": "k04-2.wav",
+      "duration": 2.61,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Trys nuotraukos vienoje eilutėje",
+      "text": "Trys nuotraukos išsirikiuoja viena /ɛiluˈtʲɛ/.",
+      "file": "k04-3.wav",
+      "duration": 3.21,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 4,
+      "cue": 4,
+      "title": "Trys nuotraukos vienoje eilutėje",
+      "text": "Likusios galerijos nuotraukos nerodomos.",
+      "file": "k04-4.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Nuotrauka matoma visa",
+      "text": "Įrašote plakato sintaksę be /ˈskaitʃʲaus/.",
+      "file": "k05-1.wav",
+      "duration": 3.01,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Nuotrauka matoma visa",
+      "text": "Nuotrauka proporcingai sumažinama.",
+      "file": "k05-2.wav",
+      "duration": 2.41,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Nuotrauka matoma visa",
+      "text": "Svetainėje ji matoma visa, per visą plotį.",
+      "file": "k05-3.wav",
+      "duration": 3.33,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 5,
+      "cue": 4,
+      "title": "Nuotrauka matoma visa",
+      "text": "Niekas /nʲɛˈnukʲɛrpama/.",
+      "file": "k05-4.wav",
+      "duration": 1.61,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Nuotraukos plotį nurodote pats",
+      "text": "Sintaksę įklijuojate iš tė vė es paruoštukų.",
+      "file": "k06-1.wav",
+      "duration": 3.81,
+      "fits": false,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Nuotraukos plotį nurodote pats",
+      "text": "Keičiate tik skaičių kabutėse.",
+      "file": "k06-2.wav",
+      "duration": 2.13,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Nuotraukos plotį nurodote pats",
+      "text": "Jis nurodo plotį pikseliais.",
+      "file": "k06-3.wav",
+      "duration": 2.17,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 6,
+      "cue": 4,
+      "title": "Nuotraukos plotį nurodote pats",
+      "text": "Pačių kabučių neperrašote.",
+      "file": "k06-4.wav",
+      "duration": 2.05,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Trijų nuotraukų eilutė mėgsta horizontalias",
+      "text": "Prieš rašydami sintaksę pažiūrite, kokios nuotraukos įkeltos.",
+      "file": "k07-1.wav",
+      "duration": 4.21,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Trijų nuotraukų eilutė mėgsta horizontalias",
+      "text": "/ɣoːrʲizoːnˈtaːlʲoːs/ sugula tvarkinga /ɛiluˈtʲɛ/.",
+      "file": "k07-2.wav",
+      "duration": 3.01,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Trijų nuotraukų eilutė mėgsta horizontalias",
+      "text": "/vʲɛrtʲiˈkaːlʲoːs/ tokioje eilutėje apkarpomos.",
+      "file": "k07-3.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Nurodote, kiek nuotraukų rodyti",
+      "text": "/ˈsklʲaustuosʲɛ/ įrašote, kiek /vʲɛrtʲikaˈlʲuː/ nuotraukų rodyti.",
+      "file": "k08-1.wav",
+      "duration": 3.61,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Nurodote, kiek nuotraukų rodyti",
+      "text": "Svetainėje jų atsiranda būtent tiek.",
+      "file": "k08-2.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Nurodote, kiek nuotraukų rodyti",
+      "text": "Taip galerijas patogu perskirti antraštėmis.",
+      "file": "k08-3.wav",
+      "duration": 3.17,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 8,
+      "cue": 4,
+      "title": "Nurodote, kiek nuotraukų rodyti",
+      "text": "Be /ˈskaitʃʲaus/ matomos visos nuotraukos.",
+      "file": "k08-4.wav",
+      "duration": 3.023,
+      "fits": true,
+      "reikia_sek": 17
+    }
+  ]
+}

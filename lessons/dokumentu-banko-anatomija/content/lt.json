@@ -1,0 +1,51 @@
+{
+  "lang": "lt",
+  "01_paieska_virsuje": {
+    "_epizodas": "ep_679_01_1"
+  },
+  "01_darbalaukio_skyrius": {
+    "_epizodas": "ep_679_01_2"
+  },
+  "02_redagavimo_piestukas": {
+    "_epizodas": "ep_679_02_1"
+  },
+  "03_dokumentu_puslapis": {
+    "_epizodas": "ep_679_03_1"
+  },
+  "06_pavadinimas_aprasymas_url": {
+    "_epizodas": "ep_679_06_1"
+  },
+  "07_failo_ikelimas": {
+    "_epizodas": "ep_679_07_1"
+  },
+  "07_kategorijos_priskyrimas": {
+    "_epizodas": "ep_679_07_2"
+  },
+  "08_nauja_kategorija": {
+    "_epizodas": "ep_679_08_1"
+  },
+  "09_kategorijos_uzrakinimas": {
+    "_epizodas": "ep_679_09_1"
+  },
+  "09_kategorijos_slepimas": {
+    "_epizodas": "ep_679_09_2"
+  },
+  "10_uzrakintos_atrakinimas": {
+    "_epizodas": "ep_679_10_1"
+  },
+  "11_paieska_ir_filtras": {
+    "_epizodas": "ep_679_11_1"
+  },
+  "12_dokumento_id": {
+    "_epizodas": "ep_679_12_1"
+  },
+  "13_patikrinimo_data": {
+    "_epizodas": "ep_679_13_1"
+  },
+  "14_dokumentu_rikiavimas": {
+    "_epizodas": "ep_679_14_1"
+  },
+  "15_sintakses_kopijavimas": {
+    "_epizodas": "ep_679_15_1"
+  }
+}

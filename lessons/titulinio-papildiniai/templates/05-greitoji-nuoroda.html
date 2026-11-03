@@ -16,6 +16,14 @@
   .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
   .cursor-wrap .tvs-cursor { left: 0; top: 0; }
   [class*="caret-"] { opacity: 0; }
+
+  .pz-table .tvs-th, .pz-table .tvs-row { grid-template-columns: 44px 36px 1fr 160px 200px; }
+  .sw-slot { position: relative; height: 42px; } .sw-slot .tvs-switch { position: absolute; left: 0; top: 0; } .sw-b { opacity: 0; }
+  .pz-site { display: grid; grid-template-columns: 1fr 420px; gap: 34px; }
+  .pz-site .tvs-spage-cards { grid-template-columns: 1fr 1fr; }
+  .btns { display: flex; gap: 8px; margin-bottom: 6px; }
+  .up-row .tvs-thumb.is-wide { width: 72px; height: 40px; }
+  /* galutinė būsena (epizodai.js) — po pamokos CSS, kad visada laimėtų */
   .stage > .scr:nth-of-type(1) { opacity: 0; }
   .stage > .scr:nth-of-type(2) { opacity: 0; }
   .stage > .scr:nth-of-type(3) { opacity: 1; }
@@ -24,13 +32,6 @@
   .up-row { opacity: 1; }
   .ql-new { opacity: 1; }
 
-
-  .pz-table .tvs-th, .pz-table .tvs-row { grid-template-columns: 44px 36px 1fr 160px 200px; }
-  .sw-slot { position: relative; height: 42px; } .sw-slot .tvs-switch { position: absolute; left: 0; top: 0; } .sw-b { opacity: 0; }
-  .pz-site { display: grid; grid-template-columns: 1fr 420px; gap: 34px; }
-  .pz-site .tvs-spage-cards { grid-template-columns: 1fr 1fr; }
-  .btns { display: flex; gap: 8px; margin-bottom: 6px; }
-  .up-row .tvs-thumb.is-wide { width: 72px; height: 40px; }
 </style>
 </head>
 <body>

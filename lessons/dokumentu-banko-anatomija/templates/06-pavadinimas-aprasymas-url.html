@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* K5 — „Pavadinimas, aprašymas, URL“ (ep_679_06_1)
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 45% 35%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+  .stage > .scr:nth-of-type(1) { opacity: 1; }
+  .cursor-wrap { transform: translate(737.8px, 443.3px); }
+  .caret-ttl { opacity: 1; }
+  .caret-dsc { opacity: 1; }
+
+
+  .f-s { width: 300px; position: relative; } .f-c { width: 380px; position: relative; } .c-v { position: absolute; left: 18px; color: var(--tvs-text); }
+  .btns { display: flex; gap: 8px; margin-bottom: 6px; } .fsz { font-size: 17px; color: var(--tvs-text-muted); margin-left: 24px; }
+  .c-table .tvs-th, .c-table .tvs-row { grid-template-columns: 30px 1fr 120px 200px; }
+  .sw-slot { position: relative; height: 42px; } .sw-slot .tvs-switch { position: absolute; left: 0; top: 0; }
+  .tvs-sweb .tvs-sdocs { font-size: 16px; } .xdb { display: inline-block; margin-left: 12px; font-size: 16px; color: #fff; background: var(--tvs-info); padding: 2px 10px; border-radius: 3px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class=""></i><i class="is-bars"></i><i class="is-on"></i><i class=""></i><i class=""></i></div>
+        <div class="tvs-subnav"><span class="is-on">Dokumentai</span><span><span data-t="subcat">Kategorijos</span></span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">Dokumentų banko modulis  /  Dokumentai  /  Sukurti</div>
+
+          <div class="tvs-form is-dense"><div class="tvs-field" data-t="fttl"><div class="tvs-label">Pavadinimas<span class="tvs-req">*</span></div><div class="tvs-input is-value"><span class="tvs-typed ty-ttl" data-ty="ttl"><span class="w"><span class="l l1">M</span><span class="l l2">o</span><span class="l l3">k</span><span class="l l4">i</span><span class="l l5">n</span><span class="l l6">i</span><span class="l l7">ų</span></span><span class="l l8">&nbsp;</span><span class="w"><span class="l l9">p</span><span class="l l10">a</span><span class="l l11">s</span><span class="l l12">i</span><span class="l l13">e</span><span class="l l14">k</span><span class="l l15">i</span><span class="l l16">m</span><span class="l l17">ų</span></span><span class="l l18">&nbsp;</span><span class="w"><span class="l l19">i</span><span class="l l20">r</span></span><span class="l l21">&nbsp;</span><span class="w"><span class="l l22">p</span><span class="l l23">a</span><span class="l l24">ž</span><span class="l l25">a</span><span class="l l26">n</span><span class="l l27">g</span><span class="l l28">o</span><span class="l l29">s</span></span><span class="l l30">&nbsp;</span><span class="w"><span class="l l31">v</span><span class="l l32">e</span><span class="l l33">r</span><span class="l l34">t</span><span class="l l35">i</span><span class="l l36">n</span><span class="l l37">i</span><span class="l l38">m</span><span class="l l39">o</span></span><span class="l l40">&nbsp;</span><span class="w"><span class="l l41">t</span><span class="l l42">v</span><span class="l l43">a</span><span class="l l44">r</span><span class="l l45">k</span><span class="l l46">o</span><span class="l l47">s</span></span><span class="l l48">&nbsp;</span><span class="w"><span class="l l49">a</span><span class="l l50">p</span><span class="l l51">r</span><span class="l l52">a</span><span class="l l53">š</span><span class="l l54">a</span><span class="l l55">s</span></span></span><span class="tvs-caret caret-ttl"></span></div></div><div class="tvs-field" data-t="furl"><div class="tvs-label">URL</div><div class="tvs-help">Įkėlimas naudojant url</div><div class="tvs-input"></div></div><div class="tvs-field" data-t="fdesc"><div class="tvs-label">Aprašymas</div><div class="tvs-input is-value"><span class="tvs-typed ty-dsc" data-ty="dsc"><span class="w"><span class="l l1">P</span><span class="l l2">a</span><span class="l l3">ž</span><span class="l l4">a</span><span class="l l5">n</span><span class="l l6">g</span><span class="l l7">o</span><span class="l l8">s</span></span><span class="l l9">&nbsp;</span><span class="w"><span class="l l10">v</span><span class="l l11">e</span><span class="l l12">r</span><span class="l l13">t</span><span class="l l14">i</span><span class="l l15">n</span><span class="l l16">i</span><span class="l l17">m</span><span class="l l18">o</span></span><span class="l l19">&nbsp;</span><span class="w"><span class="l l20">t</span><span class="l l21">v</span><span class="l l22">a</span><span class="l l23">r</span><span class="l l24">k</span><span class="l l25">a</span></span></span><span class="tvs-caret caret-dsc"></span></div></div><div class="tvs-field" data-t="ffile"><div class="tvs-label">Failas</div><div class="btns"><span class="tvs-btn is-tiny is-info" data-t="sel">Select File</span><span class="tvs-btn is-tiny" data-t="upl">Upload</span></div><div class="tvs-frow "><span class="tvs-fico"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/></svg></span><div class="tvs-fmeta"><span class="tvs-fname">gimnazijos-nuostatai.pdf</span><span class="tvs-fpath">local://dokumentubankas/gimnazijos-nuostatai.pdf</span></div><span class="fsz">884.95 KB</span><span class="fsz">application/pdf</span></div></div></div>
+          <div class="tvs-form-foot"><span class="tvs-btn is-tiny" data-t="upd"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>Atnaujinti</span><span class="tvs-btn is-tiny"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>Išsaugoti ir išeiti</span></div>
+        </div>
+      </div>
+      <div class="spot"></div>
+
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>
