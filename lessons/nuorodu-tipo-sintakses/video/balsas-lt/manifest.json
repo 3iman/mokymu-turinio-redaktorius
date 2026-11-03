@@ -1,0 +1,133 @@
+{
+  "hash": "64d98ef7b2d290f4ac4c8e4d58e0f6a493aaa21c14b6fb727b668c2096e8cfbf",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 2130975432,
+  "characters": 472,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T02:28:15.105Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Nuorodas su logotipais įterpiate puslapyje",
+      "text": "/lauˈkʲɛ/ „Turinys“ įklijuojate kategorijos sintaksę.",
+      "file": "k01-1.wav",
+      "duration": 3.79,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Nuorodas su logotipais įterpiate puslapyje",
+      "text": "Išsaugote puslapį.",
+      "file": "k01-2.wav",
+      "duration": 1.69,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Nuorodas su logotipais įterpiate puslapyje",
+      "text": "Svetainėje nuorodos atsiranda su logotipais.",
+      "file": "k01-3.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 4,
+      "title": "Nuorodas su logotipais įterpiate puslapyje",
+      "text": "Reikia bent trijų.",
+      "file": "k01-4.wav",
+      "duration": 1.65,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Nuorodą kuriate pagal puslapio ID",
+      "text": "/ˈsklʲaustuosʲɛ/ įrašote puslapio numerį.",
+      "file": "k02-1.wav",
+      "duration": 2.85,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Nuorodą kuriate pagal puslapio ID",
+      "text": "Nuorodos teksto rašyti nereikia.",
+      "file": "k02-2.wav",
+      "duration": 2.05,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Nuorodą kuriate pagal puslapio ID",
+      "text": "Jis paimamas iš puslapio pavadinimo.",
+      "file": "k02-3.wav",
+      "duration": 2.69,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 4,
+      "title": "Nuorodą kuriate pagal puslapio ID",
+      "text": "Nuoroda atsidaro tame pačiame /lanˈɡʲɛ/.",
+      "file": "k02-4.wav",
+      "duration": 2.77,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Nuorodą kuriate pagal puslapio SLUG",
+      "text": "Kabutėse įklijuojate puslapio adreso dalį.",
+      "file": "k03-1.wav",
+      "duration": 3.29,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Nuorodą kuriate pagal puslapio SLUG",
+      "text": "Ją nukopijuojate iš naršyklės /ˈjuostoːs/.",
+      "file": "k03-2.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Nuorodą kuriate pagal puslapio SLUG",
+      "text": "Domeno į kabutes neimate.",
+      "file": "k03-3.wav",
+      "duration": 2.21,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 3,
+      "cue": 4,
+      "title": "Nuorodą kuriate pagal puslapio SLUG",
+      "text": "Nuoroda atsidaro tame pačiame /lanˈɡʲɛ/.",
+      "file": "k03-4.wav",
+      "duration": 2.703,
+      "fits": true,
+      "reikia_sek": 15
+    }
+  ]
+}

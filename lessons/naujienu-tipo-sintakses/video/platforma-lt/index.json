@@ -1,0 +1,138 @@
+{
+  "pamoka": "naujienu-tipo-sintakses",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:41:01.098Z",
+  "balso_stiprinimas_db": 5.5,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_663_01_1",
+      "failas": "01-straipsniai-pagal-zymas",
+      "pavadinimas": "Straipsnius surenkate pagal žymas",
+      "trukme_s": 18,
+      "mp4": "ep_663_01_1.mp4",
+      "vtt": "ep_663_01_1.vtt",
+      "poster": "ep_663_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.63,
+          "tekstas": "Laužtiniuose skliaustuose išvardijate žymas."
+        },
+        {
+          "nuo_s": 5.1,
+          "iki_s": 8.39,
+          "tekstas": "Kiekvieną rašote viengubose kabutėse."
+        },
+        {
+          "nuo_s": 8.5,
+          "iki_s": 12.15,
+          "tekstas": "Svetainėje lieka tik tomis žymomis pažymėti straipsniai."
+        },
+        {
+          "nuo_s": 13.1,
+          "iki_s": 16.31,
+          "tekstas": "Taip atskiriate vieno projekto informaciją."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 14.5,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_663_02_1",
+      "failas": "02-straipsnis-pagal-id",
+      "pavadinimas": "Konkretų straipsnį įterpiate pagal ID",
+      "trukme_s": 16,
+      "mp4": "ep_663_02_1.mp4",
+      "vtt": "ep_663_02_1.vtt",
+      "poster": "ep_663_02_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.29,
+          "tekstas": "Skliaustuose įrašote straipsnio numerį."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 7.27,
+          "tekstas": "Kiekvienam straipsniui — sava eilutė."
+        },
+        {
+          "nuo_s": 8.1,
+          "iki_s": 11.23,
+          "tekstas": "Svetainėje jie atsiranda nurodyta tvarka."
+        },
+        {
+          "nuo_s": 11.5,
+          "iki_s": 14.43,
+          "tekstas": "Senos informacijos perrašyti nereikia."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 12.7,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_663_03_1",
+      "failas": "03-straipsniai-pagal-kategorija",
+      "pavadinimas": "Visą kategoriją parodote puslapyje",
+      "trukme_s": 16,
+      "mp4": "ep_663_03_1.mp4",
+      "vtt": "ep_663_03_1.vtt",
+      "poster": "ep_663_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.65,
+          "tekstas": "Vietoj žymų nurodote kategorijos numerį."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 8.29,
+          "tekstas": "Puslapyje atsiranda visi jai priskirti straipsniai."
+        },
+        {
+          "nuo_s": 9.2,
+          "iki_s": 11.05,
+          "tekstas": "Naujausi — viršuje."
+        },
+        {
+          "nuo_s": 11.6,
+          "iki_s": 13.77,
+          "tekstas": "Sąrašo prižiūrėti nereikia."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 13,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

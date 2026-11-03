@@ -1,0 +1,93 @@
+{
+ "pamokos_slug": "naujienu-tipo-sintakses",
+ "pamoka_id": "pam_663",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_663_01_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_663_01",
+   "pamoka": "pam_663",
+   "failas": "01-straipsniai-pagal-zymas",
+   "trukme_s": 18,
+   "ekrano_tekstai": [
+    "Turinys",
+    "'erasmus'",
+    "'projektai'",
+    "Pranešimai ir straipsniai"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-btn"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "zymos": "'erasmus', 'projektai'",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_663_02_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_663_02",
+   "pamoka": "pam_663",
+   "failas": "02-straipsnis-pagal-id",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Turinys",
+    "{{news_item(36)}}",
+    "Plačiau",
+    "Kategorija: Pranešimai"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-btn"
+   ],
+   "tarimo_kandidatai": [
+    "ID"
+   ],
+   "demo_duomenys": {
+    "straipsnis": "Prieš egzaminus",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": [
+    "dal_663_90"
+   ]
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_663_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_663_03",
+   "pamoka": "pam_663",
+   "failas": "03-straipsniai-pagal-kategorija",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Turinys",
+    "category_id",
+    "Projektų straipsniai",
+    "Daugiau"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-btn"
+   ],
+   "tarimo_kandidatai": [
+    "category_id"
+   ],
+   "demo_duomenys": {
+    "kategorija": "Projektai",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

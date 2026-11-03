@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* Kadras 2 — „Įrašas“ (ep_905_04_1): pavadinimas, „Atsakymas“, kategorija, „Išsaugoti“ → svetainėje nauja juosta
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 45% 40%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+  .stage > .scr:nth-of-type(1) { opacity: 0; }
+  .stage > .scr:nth-of-type(2) { opacity: 1; }
+  .cursor-wrap { transform: translate(1376.0px, 817.0px); }
+  .caret-pav { opacity: 1; }
+  .caret-ans { opacity: 1; }
+  .cat-dd { opacity: 0; }
+  .c-ph { opacity: 0; }
+  .c-v { opacity: 1; }
+  .acc-new { opacity: 1; }
+
+.two { display: grid; grid-template-columns: 160px 1fr 200px; gap: 24px; } .two .tvs-field + .tvs-field { border-top: 0; }
+  .cke-field .tvs-cke-body { min-height: 90px; } .cke-field .tvs-cke-top .tvs-cke-row:nth-child(n+2) { display: none; }
+  .tvs-select { position: relative; } .c-v { position: absolute; left: 18px; color: var(--tvs-text); }
+  .dd-wrap { position: relative; height: 0; z-index: 5; } .cat-dd { position: absolute; left: 0; top: -2px; width: 100%; } .tvs-acc { max-width: 1100px; } .acc-new { }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class=""></i><i class="is-bars"></i><i class=""></i><i class="is-on"></i><i class=""></i></div>
+        <div class="tvs-subnav"><span class="is-on">Suskleidimai</span><span><span data-t="subcat">Kategorijos</span></span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">Suskleidimai  /  Sukurti</div>
+<div class="tvs-form is-dense">
+            <div class="tvs-field" data-t="fpav"><div class="tvs-label">Pavadinimas<span class="tvs-req">*</span></div><div class="tvs-input is-focus"><span class="tvs-typed ty-pav" data-ty="pav"><span class="w"><span class="l l1">T</span><span class="l l2">a</span><span class="l l3">r</span><span class="l l4">p</span><span class="l l5">t</span><span class="l l6">a</span><span class="l l7">u</span><span class="l l8">t</span><span class="l l9">i</span><span class="l l10">n</span><span class="l l11">i</span><span class="l l12">o</span></span><span class="l l13">&nbsp;</span><span class="w"><span class="l l14">b</span><span class="l l15">a</span><span class="l l16">k</span><span class="l l17">a</span><span class="l l18">l</span><span class="l l19">a</span><span class="l l20">u</span><span class="l l21">r</span><span class="l l22">e</span><span class="l l23">a</span><span class="l l24">t</span><span class="l l25">o</span></span><span class="l l26">&nbsp;</span><span class="w"><span class="l l27">p</span><span class="l l28">r</span><span class="l l29">o</span><span class="l l30">g</span><span class="l l31">r</span><span class="l l32">a</span><span class="l l33">m</span><span class="l l34">a</span></span><span class="l l35">&nbsp;</span><span class="w"><span class="l l36">–</span></span><span class="l l37">&nbsp;</span><span class="w"><span class="l l38">a</span><span class="l l39">p</span><span class="l l40">i</span><span class="l l41">e</span></span><span class="l l42">&nbsp;</span><span class="w"><span class="l l43">k</span><span class="l l44">ą</span></span><span class="l l45">&nbsp;</span><span class="w"><span class="l l46">j</span><span class="l l47">i</span><span class="l l48">?</span></span></span><span class="tvs-caret caret-pav"></span></div></div>
+            <div class="tvs-field cke-field"><div class="tvs-label">Atsakymas</div><div class="tvs-cke" data-t="fans"><div class="tvs-cke-top">
+            <div class="tvs-cke-row"><div class="tvs-cke-g"><span class="tvs-cke-b is-label"><i class="tvs-cke-i is-source"></i>Source</span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-cut"></i></span><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-copy"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-paste"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-pastetext"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-pasteword"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-undo"></i></span><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-redo"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-replace"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b"><i class="tvs-cke-i is-selectall"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-bold"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-italic"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-underline"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-strike"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-subscript"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-superscript"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b"><i class="tvs-cke-i is-copyformatting"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-removeformat"></i></span></div></div>
+            <div class="tvs-cke-row"><div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-numberedlist"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-bulletedlist"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-outdent"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-indent"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b"><i class="tvs-cke-i is-blockquote"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-creatediv"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b is-on"><i class="tvs-cke-i is-justifyleft"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-justifycenter"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-justifyright"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-justifyblock"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-link"></i></span><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-unlink"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-anchor"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-table"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-horizontalrule"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-specialchar"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-pagebreak"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-iframe"></i></span></div></div>
+            <div class="tvs-cke-row"><span class="tvs-cke-combo">Styles</span><span class="tvs-cke-combo">Normal</span><span class="tvs-cke-combo">Font</span><span class="tvs-cke-combo is-short">Size</span><div class="tvs-cke-g"><span class="tvs-cke-b is-arrow"><i class="tvs-cke-i is-textcolor"></i></span><span class="tvs-cke-b is-arrow"><i class="tvs-cke-i is-bgcolor"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-maximize"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-showblocks"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-casechange"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-lowercase"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-uppercase"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-capitalize"></i></span></div></div>
+          </div><div class="tvs-cke-body"><p data-t="ans"><span class="tvs-typed ty-ans" data-ty="ans"><span class="w"><span class="l l1">T</span><span class="l l2">a</span><span class="l l3">i</span></span><span class="l l4">&nbsp;</span><span class="w"><span class="l l5">d</span><span class="l l6">v</span><span class="l l7">e</span><span class="l l8">j</span><span class="l l9">ų</span></span><span class="l l10">&nbsp;</span><span class="w"><span class="l l11">m</span><span class="l l12">e</span><span class="l l13">t</span><span class="l l14">ų</span></span><span class="l l15">&nbsp;</span><span class="w"><span class="l l16">p</span><span class="l l17">r</span><span class="l l18">o</span><span class="l l19">g</span><span class="l l20">r</span><span class="l l21">a</span><span class="l l22">m</span><span class="l l23">a</span></span><span class="l l24">&nbsp;</span><span class="w"><span class="l l25">1</span><span class="l l26">1</span><span class="l l27">–</span><span class="l l28">1</span><span class="l l29">2</span></span><span class="l l30">&nbsp;</span><span class="w"><span class="l l31">k</span><span class="l l32">l</span><span class="l l33">a</span><span class="l l34">s</span><span class="l l35">ė</span><span class="l l36">m</span><span class="l l37">s</span><span class="l l38">.</span></span><span class="l l39">&nbsp;</span><span class="w"><span class="l l40">M</span><span class="l l41">o</span><span class="l l42">k</span><span class="l l43">o</span><span class="l l44">m</span><span class="l l45">a</span><span class="l l46">s</span><span class="l l47">i</span></span><span class="l l48">&nbsp;</span><span class="w"><span class="l l49">š</span><span class="l l50">e</span><span class="l l51">š</span><span class="l l52">i</span><span class="l l53">ų</span></span><span class="l l54">&nbsp;</span><span class="w"><span class="l l55">d</span><span class="l l56">a</span><span class="l l57">l</span><span class="l l58">y</span><span class="l l59">k</span><span class="l l60">ų</span></span><span class="l l61">&nbsp;</span><span class="w"><span class="l l62">g</span><span class="l l63">r</span><span class="l l64">u</span><span class="l l65">p</span><span class="l l66">i</span><span class="l l67">ų</span><span class="l l68">,</span></span><span class="l l69">&nbsp;</span><span class="w"><span class="l l70">r</span><span class="l l71">a</span><span class="l l72">š</span><span class="l l73">o</span><span class="l l74">m</span><span class="l l75">a</span><span class="l l76">s</span></span><span class="l l77">&nbsp;</span><span class="w"><span class="l l78">t</span><span class="l l79">i</span><span class="l l80">r</span><span class="l l81">i</span><span class="l l82">a</span><span class="l l83">m</span><span class="l l84">a</span><span class="l l85">s</span><span class="l l86">i</span><span class="l l87">s</span></span><span class="l l88">&nbsp;</span><span class="w"><span class="l l89">d</span><span class="l l90">a</span><span class="l l91">r</span><span class="l l92">b</span><span class="l l93">a</span><span class="l l94">s</span><span class="l l95">.</span></span></span></p></div><div class="tvs-cke-bot"><span>body</span><span>p</span></div></div></div>
+            <div class="two"><div class="tvs-field"><div class="tvs-label">Kalba</div><div class="tvs-select is-value">LT</div></div>
+            <div class="tvs-field" data-t="fcat"><div class="tvs-label">Kategorija</div><div class="tvs-select" data-t="cat"><span class="c-ph">Choose an entry...</span><span class="c-v">Tarptautinis bakalaureatas</span></div>
+              <div class="dd-wrap"><div class="tvs-select-list cat-dd"><div class="tvs-select-opt">Priėmimas</div><div class="tvs-select-opt is-hl" data-t="opt">Tarptautinis bakalaureatas</div></div></div></div>
+            <div class="tvs-field"><div class="tvs-label">Enabled</div><div><span class="tvs-switch is-yes"><span>Yes</span><span></span></span></div></div></div>
+          </div>
+          <div class="tvs-form-foot"><span class="tvs-btn is-tiny" data-t="save"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>Išsaugoti</span><span class="tvs-btn is-tiny"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>Išsaugoti ir kurti kitą</span></div>
+        </div>
+      </div>
+
+      <div class="scr scr2 tvs-sweb">
+
+        <div class="tvs-sweb-h"><div class="tvs-sweb-crest"></div><div class="tvs-sweb-name">Demo mokykla<small>Demo miestas</small></div></div>
+        <div class="tvs-sweb-nav"><span>Apie mokyklą</span><span class="is-on">IB programa</span><span>Mokiniams</span><span>Tėvams</span><span>Kontaktai</span></div>
+        <div class="tvs-sweb-b"><div class="tvs-sweb-t">Tarptautinis bakalaureatas</div>
+<div class="tvs-sweb-p">Dažniausi klausimai apie IB programą.</div><br><div data-t="acc"><div class="tvs-acc"><div class="tvs-acc-i ">Kas yra IB diplomo programa?</div><div class="tvs-acc-i ">Kaip stoti į IB klases?</div><div class="tvs-acc-i ">Kiek kainuoja mokslas?</div><div class="tvs-acc-i acc-new">Tarptautinio bakalaureato programa – apie ką ji?</div></div></div>
+        </div>
+      </div>
+      <div class="spot"></div>
+      <div class="tvs-ripple rp rp1"></div>
+      <div class="tvs-ripple rp rp2"></div>
+      <div class="tvs-ripple rp rp3"></div>
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

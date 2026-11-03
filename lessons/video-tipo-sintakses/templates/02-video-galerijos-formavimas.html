@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* Kadras 2 — „Video galerijos formavimas“ (ep_662_02_1): skirtukas „Video“ → „Add Row“ → nuoroda → peržiūra
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 50% 50%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+  .stage > .scr:nth-of-type(1) { opacity: 0; }
+  .stage > .scr:nth-of-type(2) { opacity: 1; }
+  .cursor-wrap { transform: translate(1396.0px, 817.0px); }
+  .caret-u { opacity: 1; }
+  .newrow { opacity: 1; }
+  .ph-u { opacity: 0; }
+  .newrow .prev { opacity: 1; }
+
+
+  .pg-form { padding-top: 10px; padding-bottom: 10px; } .tvs-cke-body { min-height: 260px; }
+  .vlist { display: flex; flex-direction: column; gap: 14px; padding: 14px 20px; }
+  .vrow { display: grid; grid-template-columns: 1fr 1.4fr 260px; gap: 18px; align-items: end; padding: 12px 16px; }
+  .vrow .tvs-field { padding: 0; } .prev .tvs-svid { height: 120px; }
+  .vfoot { display: flex; gap: 8px; } .ph-u { color: #9aa0a6; position: absolute; left: 18px; } .newrow [data-t="r2url"] { position: relative; }
+  .newrow .prev { opacity: 0; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-window is-nosubnav">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class="is-on"></i><i class="is-bars"></i><i class=""></i><i class=""></i><i class=""></i></div>
+        
+        <div class="tvs-main">
+          <div class="tvs-crumb">Puslapiai  /  Renginiai  /  Redaguoti</div>
+
+          <div><div class="tvs-tabs"><div class="tvs-tab is-on">Turinys</div><div class="tvs-tab">Nustatymai</div><div class="tvs-tab" data-t="tabv">Video</div><div class="tvs-tab">SEO</div></div><div class="tvs-form pg-form"><div class="tvs-field cke-field"><div class="tvs-label">Turinys</div><div class="tvs-cke" data-t="cke"><div class="tvs-cke-top">
+            <div class="tvs-cke-row"><div class="tvs-cke-g"><span class="tvs-cke-b is-label"><i class="tvs-cke-i is-source"></i>Source</span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-cut"></i></span><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-copy"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-paste"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-pastetext"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-pasteword"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-undo"></i></span><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-redo"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-replace"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b"><i class="tvs-cke-i is-selectall"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-bold"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-italic"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-underline"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-strike"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-subscript"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-superscript"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b"><i class="tvs-cke-i is-copyformatting"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-removeformat"></i></span></div></div>
+            <div class="tvs-cke-row"><div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-numberedlist"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-bulletedlist"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-outdent"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-indent"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b"><i class="tvs-cke-i is-blockquote"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-creatediv"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b is-on"><i class="tvs-cke-i is-justifyleft"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-justifycenter"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-justifyright"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-justifyblock"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-link"></i></span><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-unlink"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-anchor"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-table"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-horizontalrule"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-specialchar"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-pagebreak"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-iframe"></i></span></div></div>
+            <div class="tvs-cke-row"><span class="tvs-cke-combo">Styles</span><span class="tvs-cke-combo">Normal</span><span class="tvs-cke-combo">Font</span><span class="tvs-cke-combo is-short">Size</span><div class="tvs-cke-g"><span class="tvs-cke-b is-arrow"><i class="tvs-cke-i is-textcolor"></i></span><span class="tvs-cke-b is-arrow"><i class="tvs-cke-i is-bgcolor"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-maximize"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-showblocks"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-casechange"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-lowercase"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-uppercase"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-capitalize"></i></span></div></div>
+          </div><div class="tvs-cke-body"><h3>Renginiai</h3><p>Mokyklos renginių akimirkos.</p></div><div class="tvs-cke-bot"><span>body</span><span>p</span></div></div></div></div></div>
+        </div>
+      </div>
+
+      <div class="scr scr2 tvs-window is-nosubnav">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class="is-on"></i><i class="is-bars"></i><i class=""></i><i class=""></i><i class=""></i></div>
+        
+        <div class="tvs-main">
+          <div class="tvs-crumb">Puslapiai  /  Renginiai  /  Redaguoti</div>
+
+          <div><div class="tvs-tabs"><div class="tvs-tab">Turinys</div><div class="tvs-tab">Nustatymai</div><div class="tvs-tab is-on">Video</div><div class="tvs-tab">SEO</div></div><div class="tvs-form pg-form vlist">
+            <div class="tvs-rep "><div class="tvs-rep-bar"><span class="tvs-check"></span>Video 1</div><div class="tvs-rep-body vrow">
+  <div class="tvs-field"><div class="tvs-label">Antraštė</div><div class="tvs-input is-value">Kalėdinis koncertas</div></div>
+  <div class="tvs-field"><div class="tvs-label">Video</div><div class="tvs-input is-value">https://www.youtube.com/watch?v=k4L3dEmo</div></div>
+  <div class="prev"><div class="tvs-svid "><span class="tvs-svid-t">Kalėdinis koncertas</span><span class="tvs-svid-play"></span><span class="tvs-svid-bar"><i></i></span></div></div></div></div>
+            <div class="tvs-rep newrow" data-t="r2"><div class="tvs-rep-bar"><span class="tvs-check"></span>Video 2</div><div class="tvs-rep-body vrow">
+  <div class="tvs-field"><div class="tvs-label">Antraštė</div><div class="tvs-input is-value">Rudens koncertas</div></div>
+  <div class="tvs-field"><div class="tvs-label">Video</div><div class="tvs-input is-value" data-t="r2url"><span class="ph-u">http://</span><span class="tvs-typed ty-u" data-ty="u"><span class="w"><span class="l l1">h</span><span class="l l2">t</span><span class="l l3">t</span><span class="l l4">p</span><span class="l l5">s</span><span class="l l6">:</span><span class="l l7">/</span><span class="l l8">/</span><span class="l l9">y</span><span class="l l10">o</span><span class="l l11">u</span><span class="l l12">t</span><span class="l l13">u</span><span class="l l14">.</span><span class="l l15">b</span><span class="l l16">e</span><span class="l l17">/</span><span class="l l18">r</span><span class="l l19">u</span><span class="l l20">d</span><span class="l l21">e</span><span class="l l22">n</span><span class="l l23">s</span><span class="l l24">-</span><span class="l l25">k</span><span class="l l26">o</span><span class="l l27">n</span><span class="l l28">c</span><span class="l l29">e</span><span class="l l30">r</span><span class="l l31">t</span><span class="l l32">a</span><span class="l l33">s</span></span></span><span class="tvs-caret caret-u"></span></div></div>
+  <div class="prev"><div class="tvs-svid "><span class="tvs-svid-t">Rudens koncertas</span><span class="tvs-svid-play"></span><span class="tvs-svid-bar"><i></i></span></div></div></div></div>
+            <div class="vfoot"><span class="tvs-btn is-tiny" data-t="addrow"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>Add Row</span><span class="tvs-btn is-tiny is-grey">Select All</span></div>
+          </div></div>
+        </div>
+      </div>
+      <div class="spot"></div>
+      <div class="tvs-ripple rp rp1"></div>
+      <div class="tvs-ripple rp rp2"></div>
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

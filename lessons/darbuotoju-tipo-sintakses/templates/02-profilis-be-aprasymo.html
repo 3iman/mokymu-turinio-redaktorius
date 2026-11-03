@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* Kadras 3 — „Profilis be aprašymo“ (ep_665_02_1): {'show_description': false} → aprašymas dingsta
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 50% 50%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+  .stage > .scr:nth-of-type(1) { opacity: 1; }
+  .cursor-wrap { transform: translate(1496.0px, 397.0px); }
+  .caret-opt { opacity: 1; }
+  .desc { opacity: 0; }
+
+
+  .tvs-split-bot .tvs-cke-body { min-height: 100px; }
+  .tvs-split-top .tvs-sweb-b { padding: 14px 40px; }
+  .syn { font-family: 'SF Mono', Menlo, monospace; font-size: 17px; padding: 2px 4px; border-radius: 3px; }
+  .sp { transform: scale(.8); transform-origin: 0 0; width: 125%; }
+  .profs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin-top: 8px; }
+  .pc { display: grid; grid-template-columns: 70px 1fr; gap: 12px; align-items: center; border: 1px solid #e6e6e6; padding: 10px; border-radius: 4px; font-size: 16px; }
+  .pc i { height: 80px; border-radius: 3px; background: linear-gradient(160deg, #e3e8f3, #cfd8ea); } .pc b { display: block; font-size: 17px; } .pc span { color: #777; font-size: 14px; }
+  .q { border-radius: 3px; } .tvs-split-top { overflow: hidden; } .desc { overflow: hidden; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-split">
+
+        <div class="tvs-split-top" data-t="stop"><span class="tvs-split-tag">Svetainė</span><div class="tvs-sweb-nav"><span class="is-on">Administracija</span></div><div class="tvs-sweb-b"><div class="pw" data-t="pw"><div class="tvs-sprof sp"><div class="tvs-sprof-photo"></div><div class="tvs-sprof-b">
+            <div class="tvs-sprof-name">Marija Pečkauskaitė</div><div class="tvs-sprof-pos">Direktoriaus pavaduotoja ugdymui</div>
+            <div class="tvs-sprof-sec desc" data-t="desc">Kuruoja pradinį ugdymą, neformalųjį švietimą ir mokinių pažangos stebėseną. Koordinuoja mokytojų metodinių grupių veiklą.</div>
+            <div class="tvs-sprof-sec tvs-sprof-muted">m.peckauskaite@mokykla.lt · tel. 8 600 00007</div></div></div></div></div></div>
+        <div class="tvs-split-bot" data-t="sbot"><span class="tvs-split-tag">TVS</span><div class="tvs-field cke-field"><div class="tvs-label">Turinys</div><div class="tvs-cke" data-t="cke"><div class="tvs-cke-top">
+            <div class="tvs-cke-row"><div class="tvs-cke-g"><span class="tvs-cke-b is-label"><i class="tvs-cke-i is-source"></i>Source</span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-cut"></i></span><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-copy"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-paste"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-pastetext"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-pasteword"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-undo"></i></span><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-redo"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-replace"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b"><i class="tvs-cke-i is-selectall"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-bold"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-italic"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-underline"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-strike"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-subscript"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-superscript"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b"><i class="tvs-cke-i is-copyformatting"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-removeformat"></i></span></div></div>
+            <div class="tvs-cke-row"><div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-numberedlist"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-bulletedlist"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-outdent"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-indent"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b"><i class="tvs-cke-i is-blockquote"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-creatediv"></i></span><span class="tvs-cke-sep"></span><span class="tvs-cke-b is-on"><i class="tvs-cke-i is-justifyleft"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-justifycenter"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-justifyright"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-justifyblock"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-link"></i></span><span class="tvs-cke-b is-off"><i class="tvs-cke-i is-unlink"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-anchor"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-table"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-horizontalrule"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-specialchar"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-pagebreak"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-iframe"></i></span></div></div>
+            <div class="tvs-cke-row"><span class="tvs-cke-combo">Styles</span><span class="tvs-cke-combo">Normal</span><span class="tvs-cke-combo">Font</span><span class="tvs-cke-combo is-short">Size</span><div class="tvs-cke-g"><span class="tvs-cke-b is-arrow"><i class="tvs-cke-i is-textcolor"></i></span><span class="tvs-cke-b is-arrow"><i class="tvs-cke-i is-bgcolor"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-maximize"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-showblocks"></i></span></div>
+              <div class="tvs-cke-g"><span class="tvs-cke-b"><i class="tvs-cke-i is-casechange"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-lowercase"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-uppercase"></i></span><span class="tvs-cke-b"><i class="tvs-cke-i is-capitalize"></i></span></div></div>
+          </div><div class="tvs-cke-body"><p>Administracija</p><p data-t="code">{{ staff_single(7<span class="tvs-typed ty-opt" data-ty="opt"><span class="w"><span class="l l1">,</span></span><span class="l l2">&nbsp;</span><span class="w"><span class="l l3">{</span><span class="l l4">'</span><span class="l l5">s</span><span class="l l6">h</span><span class="l l7">o</span><span class="l l8">w</span><span class="l l9">_</span><span class="l l10">d</span><span class="l l11">e</span><span class="l l12">s</span><span class="l l13">c</span><span class="l l14">r</span><span class="l l15">i</span><span class="l l16">p</span><span class="l l17">t</span><span class="l l18">i</span><span class="l l19">o</span><span class="l l20">n</span><span class="l l21">'</span><span class="l l22">:</span></span><span class="l l23">&nbsp;</span><span class="w"><span class="l l24">f</span><span class="l l25">a</span><span class="l l26">l</span><span class="l l27">s</span><span class="l l28">e</span><span class="l l29">}</span></span></span><span class="tvs-caret caret-opt"></span>) }}</p></div><div class="tvs-cke-bot"><span>body</span><span>p</span></div></div></div><div class="tvs-form-foot"><span class="tvs-btn is-tiny" data-t="upd"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"><path d="M4 4h13l3 3v13H4z"/><path d="M8 4v5h7V4M8 20v-6h8v6"/></svg>Atnaujinti</span></div></div>
+      </div>
+      <div class="spot"></div>
+      <div class="tvs-ripple rp rp1"></div>
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

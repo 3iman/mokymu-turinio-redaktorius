@@ -1,0 +1,483 @@
+{
+  "hash": "99065fedca079bf5650f438b70cf3f6f1f0c5522691df3c50f9cee95d2a8ff99",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 582541106,
+  "characters": 2053,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T01:43:21.880Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Darbo užmokesčio puslapis",
+      "text": "Skelbiate praėjusių metų vidurkius.",
+      "file": "k01-1.wav",
+      "duration": 2.51,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Darbo užmokesčio puslapis",
+      "text": "Ir naujausio ketvirčio duomenis pagal pareigybę.",
+      "file": "k01-2.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Darbo užmokesčio puslapis",
+      "text": "/vʲiɛˈnaːm/ žmogui einant pareigas, reikės jo sutikimo.",
+      "file": "k01-3.wav",
+      "duration": 3.61,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Paskatinimai ir apdovanojimai",
+      "text": "Šiame puslapyje skelbiate oficialius valstybės apdovanojimus.",
+      "file": "k02-1.wav",
+      "duration": 4.17,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Paskatinimai ir apdovanojimai",
+      "text": "Diplomus ir padėkas keliate prie pasiekimų arba naujienų.",
+      "file": "k02-2.wav",
+      "duration": 4.01,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Paskatinimai ir apdovanojimai",
+      "text": "Tokių neturite? Taip ir parašote.",
+      "file": "k02-3.wav",
+      "duration": 2.61,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Korupcijos prevencija",
+      "text": "Vieno tvarkos /ˈaːpraʃoː/ neužtenka.",
+      "file": "k03-1.wav",
+      "duration": 2.45,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Korupcijos prevencija",
+      "text": "Nurodote atsakingo asmens vardą ir pareigas.",
+      "file": "k03-2.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Korupcijos prevencija",
+      "text": "Taip pat kontaktinius duomenis.",
+      "file": "k03-3.wav",
+      "duration": 2.143,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Laisvos darbo vietos",
+      "text": "Puslapyje talpinate galiojančias skelbimų nuorodas.",
+      "file": "k04-1.wav",
+      "duration": 3.357,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Laisvos darbo vietos",
+      "text": "Pasenusias nuorodas pašalinate.",
+      "file": "k04-2.wav",
+      "duration": 2.37,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Laisvos darbo vietos",
+      "text": "Laisvų vietų nėra? Taip ir parašote.",
+      "file": "k04-3.wav",
+      "duration": 2.85,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Struktūros schema",
+      "text": "Puslapyje patalpinate struktūros schemos paveikslėlį.",
+      "file": "k05-1.wav",
+      "duration": 3.45,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Struktūros schema",
+      "text": "Įsitikinate, kad ji naujausia.",
+      "file": "k05-2.wav",
+      "duration": 2.21,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Struktūros schema",
+      "text": "Ir vis dar aktuali.",
+      "file": "k05-3.wav",
+      "duration": 1.61,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Civilinė sauga",
+      "text": "Patalpinate civilinės /sauˈɡoːs/ valdymo planą.",
+      "file": "k06-1.wav",
+      "duration": 3.023,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Civilinė sauga",
+      "text": "Prie jo nurodote atsakingo asmens vardą.",
+      "file": "k06-2.wav",
+      "duration": 2.877,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Civilinė sauga",
+      "text": "Ir kontaktinius duomenis.",
+      "file": "k06-3.wav",
+      "duration": 1.81,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Tarnybiniai lengvieji automobiliai",
+      "text": "Dažniausiai švietimo įstaigos tokio transporto neturi.",
+      "file": "k07-1.wav",
+      "duration": 3.49,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Tarnybiniai lengvieji automobiliai",
+      "text": "Vis tiek nepaliekate puslapio tuščio.",
+      "file": "k07-2.wav",
+      "duration": 2.69,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Tarnybiniai lengvieji automobiliai",
+      "text": "Turite? Užpildote duomenų lentelę.",
+      "file": "k07-3.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Veiklos sritys",
+      "text": "Veiklos sritys dažniausiai /ˈpatʲɛiktoːs/ mokyklos nuostatuose.",
+      "file": "k08-1.wav",
+      "duration": 3.81,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Veiklos sritys",
+      "text": "Jei tekstą galime nukopijuoti, nieko daryti nereikės.",
+      "file": "k08-2.wav",
+      "duration": 3.81,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Veiklos sritys",
+      "text": "Nuostatai skenuoti? Sritis atsiunčiate patys.",
+      "file": "k08-3.wav",
+      "duration": 3.57,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 9,
+      "cue": 1,
+      "title": "Asmens duomenų apsauga",
+      "text": "Nepamirštate nurodyti atsakingo pareigūno.",
+      "file": "k09-1.wav",
+      "duration": 2.93,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 9,
+      "cue": 2,
+      "title": "Asmens duomenų apsauga",
+      "text": "Jo vardą, pareigas ir kontaktus.",
+      "file": "k09-2.wav",
+      "duration": 2.623,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 9,
+      "cue": 3,
+      "title": "Asmens duomenų apsauga",
+      "text": "Kokius dokumentus /ˈskʲɛːlbtʲi/, nustato įstatymai.",
+      "file": "k09-3.wav",
+      "duration": 3.21,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 10,
+      "cue": 1,
+      "title": "Teisinė informacija",
+      "text": "Čia skelbiate teisės aktus, kuriais vadovaujatės.",
+      "file": "k10-1.wav",
+      "duration": 3.264,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 10,
+      "cue": 2,
+      "title": "Teisinė informacija",
+      "text": "Taisyklės ir tvarkos aprašai nėra teisės aktai.",
+      "file": "k10-2.wav",
+      "duration": 3.343,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 10,
+      "cue": 3,
+      "title": "Teisinė informacija",
+      "text": "Jų čia netalpinate.",
+      "file": "k10-3.wav",
+      "duration": 1.73,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 11,
+      "cue": 1,
+      "title": "Ūkio subjektų priežiūra",
+      "text": "Švietimo įstaigos ūkio subjektų priežiūros nevykdo.",
+      "file": "k11-1.wav",
+      "duration": 3.61,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 11,
+      "cue": 2,
+      "title": "Ūkio subjektų priežiūra",
+      "text": "Taip ir parašote puslapyje.",
+      "file": "k11-2.wav",
+      "duration": 1.89,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 11,
+      "cue": 3,
+      "title": "Ūkio subjektų priežiūra",
+      "text": "Vykdote? Patalpinate reikalingą informaciją.",
+      "file": "k11-3.wav",
+      "duration": 3.557,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 12,
+      "cue": 1,
+      "title": "Viešieji pirkimai",
+      "text": "Patalpinate viešųjų pirkimų tvarkos /ˈaːpraʃaː/.",
+      "file": "k12-1.wav",
+      "duration": 3.343,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 12,
+      "cue": 2,
+      "title": "Viešieji pirkimai",
+      "text": "Ir nuorodą į cė vė pė pė.",
+      "file": "k12-2.wav",
+      "duration": 2.75,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 12,
+      "cue": 3,
+      "title": "Viešieji pirkimai",
+      "text": "Dokumentus saugote paprastai penkerius metus.",
+      "file": "k12-3.wav",
+      "duration": 3.61,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 13,
+      "cue": 1,
+      "title": "Lėšos veiklai viešinti",
+      "text": "Užsakomųjų straipsnių neperkate.",
+      "file": "k13-1.wav",
+      "duration": 2.33,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 13,
+      "cue": 2,
+      "title": "Lėšos veiklai viešinti",
+      "text": "Viešųjų ryšių agentūrų nesamdote.",
+      "file": "k13-2.wav",
+      "duration": 2.69,
+      "fits": false,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 13,
+      "cue": 3,
+      "title": "Lėšos veiklai viešinti",
+      "text": "Tada nieko ir nerašote, tokių lėšų nėra.",
+      "file": "k13-3.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 14,
+      "cue": 1,
+      "title": "Dažniausiai užduodami klausimai",
+      "text": "Tai naujas reikalavimas svetainėms.",
+      "file": "k14-1.wav",
+      "duration": 2.45,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 14,
+      "cue": 2,
+      "title": "Dažniausiai užduodami klausimai",
+      "text": "Sąrašą sudaro tas, kas klausimus priima.",
+      "file": "k14-2.wav",
+      "duration": 2.93,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 14,
+      "cue": 3,
+      "title": "Dažniausiai užduodami klausimai",
+      "text": "Pavyzdžiui, sekretorė – jai darbą ir /ˈpatʲikʲitʲɛ/.",
+      "file": "k14-3.wav",
+      "duration": 3.49,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 15,
+      "cue": 1,
+      "title": "Konsultavimasis su visuomene",
+      "text": "Švietimo įstaigos konsultavimo su visuomene nevykdo.",
+      "file": "k15-1.wav",
+      "duration": 3.703,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 15,
+      "cue": 2,
+      "title": "Konsultavimasis su visuomene",
+      "text": "Todėl puslapį galite /paˈlʲiktʲi/ tuščią.",
+      "file": "k15-2.wav",
+      "duration": 2.477,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 16,
+      "cue": 1,
+      "title": "Pranešėjų apsauga",
+      "text": "Šį puslapį užpildėme už jus.",
+      "file": "k16-1.wav",
+      "duration": 2.37,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 16,
+      "cue": 2,
+      "title": "Pranešėjų apsauga",
+      "text": "Tai privalomas teisinis tekstas.",
+      "file": "k16-2.wav",
+      "duration": 2.25,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 16,
+      "cue": 3,
+      "title": "Pranešėjų apsauga",
+      "text": "Reikia papildyti? Atsiunčiate atnaujinimą.",
+      "file": "k16-3.wav",
+      "duration": 3.023,
+      "fits": true,
+      "reikia_sek": 11
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "lang": "lt",
+  "01_darbo_uzmokestis": {
+    "title": "Darbo užmokestis",
+    "item_1": "Praėjusių metų vidurkiai",
+    "item_2": "Naujausio ketvirčio duomenys",
+    "item_3": "Lentelė pagal pareigybę"
+  },
+  "02_apdovanojimai": {
+    "title": "Paskatinimai ir apdovanojimai",
+    "do_title": "Šiame puslapyje",
+    "do_1": "Oficialūs valstybės apdovanojimai",
+    "do_2": "Paskatinimai",
+    "do_3": "Nėra — taip ir parašote",
+    "dont_title": "Ne šiame puslapyje",
+    "dont_1": "Diplomai, padėkos raštai",
+    "dont_2": "→ Pasiekimai arba naujienos („Didžiuojamės“)"
+  },
+  "03_korupcijos_prevencija": {
+    "title": "Korupcijos prevencija",
+    "item_1": "Korupcijos tvarkos aprašas",
+    "item_2": "Atsakingo asmens vardas ir pavardė",
+    "item_3": "Pareigos",
+    "item_4": "Kontaktiniai duomenys",
+    "summary": "Atsakingiems asmenims sukuriamas profilio atvaizdavimas"
+  },
+  "04_laisvos_darbo_vietos": {
+    "title": "Laisvos darbo vietos",
+    "item_1": "Galiojančios karjeros skelbimų nuorodos",
+    "item_2": "Jeigu laisvų vietų nėra – taip ir parašote"
+  },
+  "05_strukturos_schema": {
+    "title": "Struktūros schema",
+    "item_1": "Struktūros schemos paveikslėlis",
+    "item_2": "Naujausia ir vis dar aktuali schema"
+  },
+  "06_civiline_sauga": {
+    "title": "Civilinė sauga",
+    "item_1": "„Civilinės saugos valdymo planas“",
+    "item_2": "Atsakingo asmens vardas ir pavardė",
+    "item_3": "Kontaktiniai duomenys"
+  },
+  "07_tarnybiniai_automobiliai": {
+    "title": "Tarnybiniai lengvieji automobiliai",
+    "item_1": "Dažniausiai švietimo įstaigos tokio transporto neturi",
+    "item_2": "Neturite – parašote apie tai",
+    "item_3": "Turite – užpildote duomenų lentelę"
+  },
+  "08_veiklos_sritys": {
+    "title": "Veiklos sritys",
+    "item_1": "Dažniausiai pateikta mokyklos nuostatuose",
+    "item_2": "Galima nukopijuoti – padarysime patys",
+    "item_3": "Skenuotas dokumentas – prašome pateikti"
+  },
+  "09_duomenu_apsauga": {
+    "title": "Asmens duomenų apsauga",
+    "item_1": "Atsakingas pareigūnas",
+    "item_2": "Dokumentai, kuriuos privalu skelbti pagal įstatymus"
+  },
+  "10_teisine_informacija": {
+    "title": "Teisinė informacija",
+    "do_title": "Tinka",
+    "do_1": "Teisės aktai, kuriais vadovaujatės",
+    "dont_title": "Netinka",
+    "dont_1": "Taisyklės",
+    "dont_2": "Tvarkos aprašai"
+  },
+  "11_ukio_subjektu_prieziura": {
+    "title": "Ūkio subjektų priežiūra",
+    "item_1": "Nevykdote – taip ir parašote",
+    "item_2": "Vykdote – patalpinate reikalingą informaciją"
+  },
+  "12_viesieji_pirkimai": {
+    "title": "Viešieji pirkimai",
+    "item_1": "Viešųjų pirkimų tvarkos aprašas",
+    "item_2": "Nuoroda į CVPP",
+    "item_3": "Ankstesnių metų dokumentai – paprastai penkeri metai"
+  },
+  "13_lesos_viesinimui": {
+    "title": "Lėšos veiklai viešinti",
+    "item_1": "Neperkate užsakomųjų straipsnių",
+    "item_2": "Nesamdote viešųjų ryšių agentūrų",
+    "item_3": "Tokių lėšų įstaiga neturi"
+  },
+  "14_dazniausi_klausimai": {
+    "title": "Dažniausiai užduodami klausimai",
+    "item_1": "Naujas reikalavimas svetainėms",
+    "item_2": "Natūralus turinio organizavimo būdas",
+    "item_3": "Sąrašą sudaro klausimus priimantis darbuotojas, pavyzdžiui, sekretorė"
+  },
+  "15_konsultavimasis": {
+    "title": "Konsultavimasis su visuomene",
+    "item_1": "Nevykdoma švietimo įstaigose",
+    "item_2": "Puslapį galite palikti tuščią"
+  },
+  "16_praneseju_apsauga": {
+    "title": "Pranešėjų apsauga",
+    "item_1": "Puslapį užpildėme už jus",
+    "item_2": "Privalomas teisinis tekstas",
+    "item_3": "Reikia papildyti – lauksime atnaujinimo"
+  }
+}

@@ -1,0 +1,91 @@
+{
+ "pamokos_slug": "nuorodu-tipo-sintakses",
+ "pamoka_id": "pam_664",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_664_01_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_664_01",
+   "pamoka": "pam_664",
+   "failas": "01-naudingos-nuorodos-puslapyje",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Turinys",
+    "{{nuorodos(1)}}",
+    "Nuorodos"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-btn",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "kategorija": "Naudingos nuorodos",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_664_02_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_664_02",
+   "pamoka": "pam_664",
+   "failas": "02-nuoroda-pagal-id",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Turinys",
+    "{{page_url(181)}}",
+    "Būrelių tvarkaraštis"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-btn"
+   ],
+   "tarimo_kandidatai": [
+    "ID"
+   ],
+   "demo_duomenys": {
+    "puslapis": "Būreliai",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": [
+    "dal_664_90"
+   ]
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_664_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_664_03",
+   "pamoka": "pam_664",
+   "failas": "03-nuoroda-pagal-sluga",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Turinys",
+    "{{page_url('tvarkarasciai/bureliu-tvarkarastis')}}",
+    "Būrelių tvarkaraštis"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-btn"
+   ],
+   "tarimo_kandidatai": [
+    "SLUG"
+   ],
+   "demo_duomenys": {
+    "slug": "tvarkarasciai/bureliu-tvarkarastis",
+    "puslapis": "Būrelių tvarkaraštis"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

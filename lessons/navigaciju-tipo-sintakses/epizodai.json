@@ -1,0 +1,128 @@
+{
+ "pamokos_slug": "navigaciju-tipo-sintakses",
+ "pamoka_id": "pam_666",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_666_01_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_666_01",
+   "pamoka": "pam_666",
+   "failas": "01-subpuslapiu-navigacija",
+   "trukme_s": 17,
+   "ekrano_tekstai": [
+    "Turinys",
+    "{{structure(6)}}",
+    "Atnaujinti",
+    "Administracija"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-btn",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Struktūra ir kontaktai",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": [
+    "dal_666_90"
+   ]
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_666_02_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_666_02",
+   "pamoka": "pam_666",
+   "failas": "02-subpuslapiai-blokeliais",
+   "trukme_s": 17,
+   "ekrano_tekstai": [
+    "Turinys",
+    "{{structure_blocks(18)}}",
+    "Apie būrelius",
+    "Daugiau"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-btn",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Apie būrelius",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_666_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_666_03",
+   "pamoka": "pam_666",
+   "failas": "03-navigacija-pagal-sluga",
+   "trukme_s": 17,
+   "ekrano_tekstai": [
+    "Turinys",
+    "{{nav('kiti_kontaktai')}}",
+    "Atnaujinti",
+    "Kiti kontaktai"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-btn",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "SLUG"
+   ],
+   "demo_duomenys": {
+    "grupe": "Kiti kontaktai",
+    "slug": "kiti_kontaktai",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "ep_666_03_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_666_03",
+   "pamoka": "pam_666",
+   "failas": "03-navigacijos-slugas",
+   "trukme_s": 18,
+   "ekrano_tekstai": [
+    "Meniu",
+    "Vardas",
+    "Redaguoti",
+    "Slug",
+    "kiti_kontaktai"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "SLUG"
+   ],
+   "demo_duomenys": {
+    "grupe": "Kiti kontaktai",
+    "slug": "kiti_kontaktai",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

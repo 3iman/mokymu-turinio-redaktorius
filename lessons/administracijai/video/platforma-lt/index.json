@@ -1,0 +1,468 @@
+{
+  "pamoka": "administracijai",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:29:24.874Z",
+  "balso_stiprinimas_db": 5.7,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_687_01",
+      "failas": "01-darbo-uzmokestis",
+      "pavadinimas": "Darbo užmokesčio puslapis",
+      "trukme_s": 13,
+      "mp4": "viz_687_01.mp4",
+      "vtt": "viz_687_01.vtt",
+      "poster": "viz_687_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.71,
+          "tekstas": "Skelbiate praėjusių metų vidurkius."
+        },
+        {
+          "nuo_s": 4.2,
+          "iki_s": 7.45,
+          "tekstas": "Ir naujausio ketvirčio duomenis pagal pareigybę."
+        },
+        {
+          "nuo_s": 8.2,
+          "iki_s": 11.81,
+          "tekstas": "Vienam žmogui einant pareigas, reikės jo sutikimo."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_687_02",
+      "failas": "02-apdovanojimai",
+      "pavadinimas": "Paskatinimai ir apdovanojimai",
+      "trukme_s": 15,
+      "mp4": "viz_687_02.mp4",
+      "vtt": "viz_687_02.vtt",
+      "poster": "viz_687_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.37,
+          "tekstas": "Šiame puslapyje skelbiate oficialius valstybės apdovanojimus."
+        },
+        {
+          "nuo_s": 6.2,
+          "iki_s": 10.21,
+          "tekstas": "Diplomus ir padėkas keliate prie pasiekimų arba naujienų."
+        },
+        {
+          "nuo_s": 10.9,
+          "iki_s": 13.51,
+          "tekstas": "Tokių neturite? Taip ir parašote."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_687_03",
+      "failas": "03-korupcijos-prevencija",
+      "pavadinimas": "Korupcijos prevencija",
+      "trukme_s": 12,
+      "mp4": "viz_687_03.mp4",
+      "vtt": "viz_687_03.vtt",
+      "poster": "viz_687_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.65,
+          "tekstas": "Vieno tvarkos aprašo neužtenka."
+        },
+        {
+          "nuo_s": 4.2,
+          "iki_s": 7.45,
+          "tekstas": "Nurodote atsakingo asmens vardą ir pareigas."
+        },
+        {
+          "nuo_s": 7.9,
+          "iki_s": 10.04,
+          "tekstas": "Taip pat kontaktinius duomenis."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_687_04",
+      "failas": "04-laisvos-darbo-vietos",
+      "pavadinimas": "Laisvos darbo vietos",
+      "trukme_s": 12,
+      "mp4": "viz_687_04.mp4",
+      "vtt": "viz_687_04.vtt",
+      "poster": "viz_687_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.56,
+          "tekstas": "Puslapyje talpinate galiojančias skelbimų nuorodas."
+        },
+        {
+          "nuo_s": 5.4,
+          "iki_s": 7.77,
+          "tekstas": "Pasenusias nuorodas pašalinate."
+        },
+        {
+          "nuo_s": 8,
+          "iki_s": 10.85,
+          "tekstas": "Laisvų vietų nėra? Taip ir parašote."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_687_05",
+      "failas": "05-strukturos-schema",
+      "pavadinimas": "Struktūros schema",
+      "trukme_s": 12,
+      "mp4": "viz_687_05.mp4",
+      "vtt": "viz_687_05.vtt",
+      "poster": "viz_687_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.65,
+          "tekstas": "Puslapyje patalpinate struktūros schemos paveikslėlį."
+        },
+        {
+          "nuo_s": 5.6,
+          "iki_s": 7.81,
+          "tekstas": "Įsitikinate, kad ji naujausia."
+        },
+        {
+          "nuo_s": 8.2,
+          "iki_s": 9.81,
+          "tekstas": "Ir vis dar aktuali."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "viz_687_06",
+      "failas": "06-civiline-sauga",
+      "pavadinimas": "Civilinė sauga",
+      "trukme_s": 12,
+      "mp4": "viz_687_06.mp4",
+      "vtt": "viz_687_06.vtt",
+      "poster": "viz_687_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.22,
+          "tekstas": "Patalpinate civilinės saugos valdymo planą."
+        },
+        {
+          "nuo_s": 4.8,
+          "iki_s": 7.68,
+          "tekstas": "Prie jo nurodote atsakingo asmens vardą."
+        },
+        {
+          "nuo_s": 8.1,
+          "iki_s": 9.91,
+          "tekstas": "Ir kontaktinius duomenis."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "viz_687_07",
+      "failas": "07-tarnybiniai-automobiliai",
+      "pavadinimas": "Tarnybiniai lengvieji automobiliai",
+      "trukme_s": 14,
+      "mp4": "viz_687_07.mp4",
+      "vtt": "viz_687_07.vtt",
+      "poster": "viz_687_07.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.69,
+          "tekstas": "Dažniausiai švietimo įstaigos tokio transporto neturi."
+        },
+        {
+          "nuo_s": 5.7,
+          "iki_s": 8.39,
+          "tekstas": "Vis tiek nepaliekate puslapio tuščio."
+        },
+        {
+          "nuo_s": 8.8,
+          "iki_s": 11.69,
+          "tekstas": "Turite? Užpildote duomenų lentelę."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "viz_687_08",
+      "failas": "08-veiklos-sritys",
+      "pavadinimas": "Veiklos sritys",
+      "trukme_s": 15,
+      "mp4": "viz_687_08.mp4",
+      "vtt": "viz_687_08.vtt",
+      "poster": "viz_687_08.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.01,
+          "tekstas": "Veiklos sritys dažniausiai pateiktos mokyklos nuostatuose."
+        },
+        {
+          "nuo_s": 6,
+          "iki_s": 9.81,
+          "tekstas": "Jei tekstą galime nukopijuoti, nieko daryti nereikės."
+        },
+        {
+          "nuo_s": 10.4,
+          "iki_s": 13.97,
+          "tekstas": "Nuostatai skenuoti? Sritis atsiunčiate patys."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 9,
+      "epizodas": "viz_687_09",
+      "failas": "09-duomenu-apsauga",
+      "pavadinimas": "Asmens duomenų apsauga",
+      "trukme_s": 13,
+      "mp4": "viz_687_09.mp4",
+      "vtt": "viz_687_09.vtt",
+      "poster": "viz_687_09.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.13,
+          "tekstas": "Nepamirštate nurodyti atsakingo pareigūno."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 7.32,
+          "tekstas": "Jo vardą, pareigas ir kontaktus."
+        },
+        {
+          "nuo_s": 7.5,
+          "iki_s": 10.71,
+          "tekstas": "Kokius dokumentus skelbti, nustato įstatymai."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 10,
+      "epizodas": "viz_687_10",
+      "failas": "10-teisine-informacija",
+      "pavadinimas": "Teisinė informacija",
+      "trukme_s": 13,
+      "mp4": "viz_687_10.mp4",
+      "vtt": "viz_687_10.vtt",
+      "poster": "viz_687_10.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.46,
+          "tekstas": "Čia skelbiate teisės aktus, kuriais vadovaujatės."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 8.64,
+          "tekstas": "Taisyklės ir tvarkos aprašai nėra teisės aktai."
+        },
+        {
+          "nuo_s": 9.2,
+          "iki_s": 10.93,
+          "tekstas": "Jų čia netalpinate."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 11,
+      "epizodas": "viz_687_11",
+      "failas": "11-ukio-subjektu-prieziura",
+      "pavadinimas": "Ūkio subjektų priežiūra",
+      "trukme_s": 13,
+      "mp4": "viz_687_11.mp4",
+      "vtt": "viz_687_11.vtt",
+      "poster": "viz_687_11.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.81,
+          "tekstas": "Švietimo įstaigos ūkio subjektų priežiūros nevykdo."
+        },
+        {
+          "nuo_s": 5.4,
+          "iki_s": 7.29,
+          "tekstas": "Taip ir parašote puslapyje."
+        },
+        {
+          "nuo_s": 7.8,
+          "iki_s": 11.36,
+          "tekstas": "Vykdote? Patalpinate reikalingą informaciją."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 12,
+      "epizodas": "viz_687_12",
+      "failas": "12-viesieji-pirkimai",
+      "pavadinimas": "Viešieji pirkimai",
+      "trukme_s": 13,
+      "mp4": "viz_687_12.mp4",
+      "vtt": "viz_687_12.vtt",
+      "poster": "viz_687_12.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.54,
+          "tekstas": "Patalpinate viešųjų pirkimų tvarkos aprašą."
+        },
+        {
+          "nuo_s": 4.8,
+          "iki_s": 7.55,
+          "tekstas": "Ir nuorodą į CVPP."
+        },
+        {
+          "nuo_s": 7.7,
+          "iki_s": 11.31,
+          "tekstas": "Dokumentus saugote paprastai penkerius metus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 13,
+      "epizodas": "viz_687_13",
+      "failas": "13-lesos-viesinimui",
+      "pavadinimas": "Lėšos veiklai viešinti",
+      "trukme_s": 12,
+      "mp4": "viz_687_13.mp4",
+      "vtt": "viz_687_13.vtt",
+      "poster": "viz_687_13.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.53,
+          "tekstas": "Užsakomųjų straipsnių neperkate."
+        },
+        {
+          "nuo_s": 4.2,
+          "iki_s": 6.89,
+          "tekstas": "Viešųjų ryšių agentūrų nesamdote."
+        },
+        {
+          "nuo_s": 7.1,
+          "iki_s": 10.35,
+          "tekstas": "Tada nieko ir nerašote, tokių lėšų nėra."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 14,
+      "epizodas": "viz_687_14",
+      "failas": "14-dazniausi-klausimai",
+      "pavadinimas": "Dažniausiai užduodami klausimai",
+      "trukme_s": 13,
+      "mp4": "viz_687_14.mp4",
+      "vtt": "viz_687_14.vtt",
+      "poster": "viz_687_14.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.65,
+          "tekstas": "Tai naujas reikalavimas svetainėms."
+        },
+        {
+          "nuo_s": 4.2,
+          "iki_s": 7.13,
+          "tekstas": "Sąrašą sudaro tas, kas klausimus priima."
+        },
+        {
+          "nuo_s": 7.5,
+          "iki_s": 10.99,
+          "tekstas": "Pavyzdžiui, sekretorė – jai darbą ir patikite."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 15,
+      "epizodas": "viz_687_15",
+      "failas": "15-konsultavimasis",
+      "pavadinimas": "Konsultavimasis su visuomene",
+      "trukme_s": 12,
+      "mp4": "viz_687_15.mp4",
+      "vtt": "viz_687_15.vtt",
+      "poster": "viz_687_15.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.9,
+          "tekstas": "Švietimo įstaigos konsultavimo su visuomene nevykdo."
+        },
+        {
+          "nuo_s": 5.5,
+          "iki_s": 7.98,
+          "tekstas": "Todėl puslapį galite palikti tuščią."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 16,
+      "epizodas": "viz_687_16",
+      "failas": "16-praneseju-apsauga",
+      "pavadinimas": "Pranešėjų apsauga",
+      "trukme_s": 11,
+      "mp4": "viz_687_16.mp4",
+      "vtt": "viz_687_16.vtt",
+      "poster": "viz_687_16.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.57,
+          "tekstas": "Šį puslapį užpildėme už jus."
+        },
+        {
+          "nuo_s": 4.2,
+          "iki_s": 6.45,
+          "tekstas": "Tai privalomas teisinis tekstas."
+        },
+        {
+          "nuo_s": 6.9,
+          "iki_s": 9.92,
+          "tekstas": "Reikia papildyti? Atsiunčiate atnaujinimą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

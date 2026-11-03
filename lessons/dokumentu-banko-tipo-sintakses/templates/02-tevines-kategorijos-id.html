@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* Kadras 2 — „Tėvinės kategorijos ID“ (ep_667_02_1): „Kategorijos“ → medyje numeris prie pavadinimo
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 40% 35%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+  .stage > .scr:nth-of-type(1) { opacity: 0; }
+  .stage > .scr:nth-of-type(2) { opacity: 1; }
+  .cursor-wrap { transform: translate(732.2px, 252.0px); }
+
+.cat-tree { background: #fff; padding: 14px; } .id13 { border-radius: 4px; padding: 0 4px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class=""></i><i class="is-bars"></i><i class="is-on"></i><i class=""></i><i class=""></i></div>
+        <div class="tvs-subnav"><span class="is-on">Dokumentai</span><span><span data-t="subcat">Kategorijos</span></span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">Dokumentų banko modulis  /  Dokumentai</div>
+
+          <div><span class="tvs-btn "><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round"><path d="M12 4v16M4 12h16"/></svg>Sukurti</span></div>
+          <div data-t="dlist"><div class="tvs-table is-compact"><div class="tvs-th"><span></span><div class="tvs-check"></div><span>Pavadinimas</span><span>Failas</span><span></span></div><div class="tvs-row "><div class="tvs-handle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5l3.6 3.6h-2.4v5.7h5.7V8.4l3.6 3.6-3.6 3.6v-2.4h-5.7v5.7h2.4L12 22.5l-3.6-3.6h2.4v-5.7H5.1v2.4L1.5 12l3.6-3.6v2.4h5.7V5.1H8.4z"/></svg></div><div class="tvs-check"></div><div class="tvs-title">Strateginis planas 2025–2027 m.</div><div class="tvs-file"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/></svg></div><div class="tvs-actions"><span class="tvs-btn is-small is-info"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M1.5 12S5.5 5 12 5s10.5 7 10.5 7-4 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/></svg></span><span class="tvs-btn is-small is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>Redaguoti</span></div></div><div class="tvs-row "><div class="tvs-handle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5l3.6 3.6h-2.4v5.7h5.7V8.4l3.6 3.6-3.6 3.6v-2.4h-5.7v5.7h2.4L12 22.5l-3.6-3.6h2.4v-5.7H5.1v2.4L1.5 12l3.6-3.6v2.4h5.7V5.1H8.4z"/></svg></div><div class="tvs-check"></div><div class="tvs-title">Metinis veiklos planas 2026 m.</div><div class="tvs-file"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/></svg></div><div class="tvs-actions"><span class="tvs-btn is-small is-info"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M1.5 12S5.5 5 12 5s10.5 7 10.5 7-4 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/></svg></span><span class="tvs-btn is-small is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>Redaguoti</span></div></div><div class="tvs-row "><div class="tvs-handle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5l3.6 3.6h-2.4v5.7h5.7V8.4l3.6 3.6-3.6 3.6v-2.4h-5.7v5.7h2.4L12 22.5l-3.6-3.6h2.4v-5.7H5.1v2.4L1.5 12l3.6-3.6v2.4h5.7V5.1H8.4z"/></svg></div><div class="tvs-check"></div><div class="tvs-title">Biudžeto vykdymo ataskaita 2025 m.</div><div class="tvs-file"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/></svg></div><div class="tvs-actions"><span class="tvs-btn is-small is-info"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M1.5 12S5.5 5 12 5s10.5 7 10.5 7-4 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/></svg></span><span class="tvs-btn is-small is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>Redaguoti</span></div></div><div class="tvs-row "><div class="tvs-handle"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 1.5l3.6 3.6h-2.4v5.7h5.7V8.4l3.6 3.6-3.6 3.6v-2.4h-5.7v5.7h2.4L12 22.5l-3.6-3.6h2.4v-5.7H5.1v2.4L1.5 12l3.6-3.6v2.4h5.7V5.1H8.4z"/></svg></div><div class="tvs-check"></div><div class="tvs-title">Darbo tvarkos taisyklės</div><div class="tvs-file"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2" stroke-linejoin="round"><rect x="8" y="8" width="12" height="13" rx="2"/><path d="M16 8V5a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/></svg></div><div class="tvs-actions"><span class="tvs-btn is-small is-info"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.2"><path d="M1.5 12S5.5 5 12 5s10.5 7 10.5 7-4 7-10.5 7S1.5 12 1.5 12z"/><circle cx="12" cy="12" r="3"/></svg></span><span class="tvs-btn is-small is-orange"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 17.3V21h3.7L17.8 9.9l-3.7-3.7zM20.7 7a1 1 0 0 0 0-1.4l-2.3-2.3a1 1 0 0 0-1.4 0l-1.8 1.8 3.7 3.7z"/></svg>Redaguoti</span></div></div></div></div>
+        </div>
+      </div>
+
+      <div class="scr scr2 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class=""></i><i class="is-bars"></i><i class="is-on"></i><i class=""></i><i class=""></i></div>
+        <div class="tvs-subnav"><span>Dokumentai</span><span class="is-on">Kategorijos</span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">Dokumentų banko modulis  /  Kategorijos</div>
+
+          <div class="tvs-tree cat-tree">
+            <div class="tvs-node"><div class="tvs-node-handle"></div>Ugdymo planai<span class="tvs-id">(#4)</span></div>
+            <div class="tvs-node" data-t="n13"><div class="tvs-node-handle"></div>Planavimo dokumentai<span class="tvs-id id13" data-t="id13">(#13)</span></div>
+            <div class="tvs-node is-l2"><div class="tvs-node-handle"></div>Strateginiai planai<span class="tvs-id">(#14)</span></div>
+            <div class="tvs-node is-l2"><div class="tvs-node-handle"></div>Metiniai veiklos planai<span class="tvs-id">(#15)</span></div>
+            <div class="tvs-node is-l2"><div class="tvs-node-handle"></div>Biudžeto vykdymo ataskaitų rinkiniai<span class="tvs-id">(#21)</span></div>
+            <div class="tvs-node"><div class="tvs-node-handle"></div>Tvarkos<span class="tvs-id">(#6)</span></div>
+          </div>
+        </div>
+      </div>
+      <div class="spot"></div>
+      <div class="tvs-ripple rp rp1"></div>
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

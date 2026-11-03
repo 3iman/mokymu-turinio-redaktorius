@@ -1,0 +1,132 @@
+{
+  "pamoka": "dokumentu-banko-tipo-sintakses",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:38:21.735Z",
+  "balso_stiprinimas_db": 5.4,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_667_01_2",
+      "failas": "01-vienas-dokumentas-puslapyje",
+      "pavadinimas": "Vieną dokumentą įterpiate į puslapį",
+      "trukme_s": 14,
+      "mp4": "ep_667_01_2.mp4",
+      "vtt": "ep_667_01_2.vtt",
+      "poster": "ep_667_01_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 6.11,
+          "tekstas": "Lauke „Turinys“ po antrašte įklijuojate nukopijuotą sintaksę."
+        },
+        {
+          "nuo_s": 6.4,
+          "iki_s": 7.57,
+          "tekstas": "Išsaugote."
+        },
+        {
+          "nuo_s": 8.8,
+          "iki_s": 12.13,
+          "tekstas": "Puslapyje lieka viena ryški dokumento nuoroda."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 7.2,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 10,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_667_02_1",
+      "failas": "02-tevines-kategorijos-id",
+      "pavadinimas": "Tėvinės kategorijos numerį randate kategorijose",
+      "trukme_s": 14,
+      "mp4": "ep_667_02_1.mp4",
+      "vtt": "ep_667_02_1.vtt",
+      "poster": "ep_667_02_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 3.9,
+          "tekstas": "Tėvinė kategorija dokumentų neturi."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 7.16,
+          "tekstas": "Todėl jos sintaksės sąraše nerasite."
+        },
+        {
+          "nuo_s": 7.4,
+          "iki_s": 11.53,
+          "tekstas": "Atidarote „Kategorijos“ ir pasižiūrite numerį prie pavadinimo."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 8.6,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_667_02_2",
+      "failas": "02-kategorijos-lentele",
+      "pavadinimas": "Visą kategoriją įterpiate lentele",
+      "trukme_s": 15,
+      "mp4": "ep_667_02_2.mp4",
+      "vtt": "ep_667_02_2.vtt",
+      "poster": "ep_667_02_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.53,
+          "tekstas": "Skliaustuose įrašote tos kategorijos numerį."
+        },
+        {
+          "nuo_s": 5.1,
+          "iki_s": 6.71,
+          "tekstas": "Išsaugote puslapį."
+        },
+        {
+          "nuo_s": 7.7,
+          "iki_s": 10.91,
+          "tekstas": "Svetainėje atsiranda visa dokumentų lentelė."
+        },
+        {
+          "nuo_s": 11.4,
+          "iki_s": 13.34,
+          "tekstas": "Su datomis ir dydžiais."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 6.1,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 12.2,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

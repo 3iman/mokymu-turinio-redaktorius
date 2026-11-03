@@ -1,0 +1,193 @@
+{
+  "pamoka": "navigaciju-tipo-sintakses",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:34:17.756Z",
+  "balso_stiprinimas_db": 5.6,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_666_01_1",
+      "failas": "01-subpuslapiu-navigacija",
+      "pavadinimas": "Subpuslapių navigaciją įterpiate sintakse",
+      "trukme_s": 17,
+      "mp4": "ep_666_01_1.mp4",
+      "vtt": "ep_666_01_1.vtt",
+      "poster": "ep_666_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.19,
+          "tekstas": "Įklijuojate navigacijos sintaksę."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 7.45,
+          "tekstas": "Skliaustuose įrašote to puslapio numerį."
+        },
+        {
+          "nuo_s": 7.8,
+          "iki_s": 10.53,
+          "tekstas": "Jį matote adreso juostos pabaigoje."
+        },
+        {
+          "nuo_s": 11,
+          "iki_s": 14.38,
+          "tekstas": "Išsaugojus atsiranda subpuslapių sąrašas."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.4,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 10,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 13,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_666_02_1",
+      "failas": "02-subpuslapiai-blokeliais",
+      "pavadinimas": "Subpuslapius parodote blokeliais",
+      "trukme_s": 17,
+      "mp4": "ep_666_02_1.mp4",
+      "vtt": "ep_666_02_1.vtt",
+      "poster": "ep_666_02_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.72,
+          "tekstas": "Tas pats puslapių sąrašas gali atrodyti kitaip."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 7.43,
+          "tekstas": "Įrašote blokelių sintaksę."
+        },
+        {
+          "nuo_s": 8.3,
+          "iki_s": 11.35,
+          "tekstas": "Skliaustuose — to paties puslapio numeris."
+        },
+        {
+          "nuo_s": 11.8,
+          "iki_s": 14.93,
+          "tekstas": "Subpuslapiai virsta kortelėmis su nuotraukomis."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 6.5,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 13.4,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_666_03_1",
+      "failas": "03-navigacija-pagal-sluga",
+      "pavadinimas": "Sukurtą navigaciją įterpiate pagal SLUG",
+      "trukme_s": 17,
+      "mp4": "ep_666_03_1.mp4",
+      "vtt": "ep_666_03_1.vtt",
+      "poster": "ep_666_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.97,
+          "tekstas": "Kabutėse įrašote navigacijos grupės SLUG."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 7.02,
+          "tekstas": "Spaudžiate „Atnaujinti“."
+        },
+        {
+          "nuo_s": 7.6,
+          "iki_s": 10.84,
+          "tekstas": "Puslapyje atsiranda visos tos grupės nuorodos."
+        },
+        {
+          "nuo_s": 11.4,
+          "iki_s": 14.69,
+          "tekstas": "Jas tvarkote navigacijų modulyje, ne čia."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 6.2,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 13.2,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "ep_666_03_2",
+      "failas": "03-navigacijos-slugas",
+      "pavadinimas": "Grupės SLUG randate modulyje „Meniu“",
+      "trukme_s": 18,
+      "mp4": "ep_666_03_2.mp4",
+      "vtt": "ep_666_03_2.vtt",
+      "poster": "ep_666_03_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.21,
+          "tekstas": "Navigacijų modulyje atidarote „Meniu“."
+        },
+        {
+          "nuo_s": 4.6,
+          "iki_s": 8.45,
+          "tekstas": "Sąraše randate savo grupę ir spaudžiate „Redaguoti“."
+        },
+        {
+          "nuo_s": 8.9,
+          "iki_s": 13.03,
+          "tekstas": "Lauke „Slug“ matote tai, ką rašysite į sintaksę."
+        },
+        {
+          "nuo_s": 13.2,
+          "iki_s": 15.77,
+          "tekstas": "Jį pažymite ir nusikopijuojate."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 10.9,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

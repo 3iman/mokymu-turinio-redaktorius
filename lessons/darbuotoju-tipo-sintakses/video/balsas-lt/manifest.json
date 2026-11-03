@@ -1,0 +1,143 @@
+{
+  "hash": "6817f9490da0800b6df53c9e3baf8c75ee0e2e7f9350ffd181a733e636bf51f5",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 1415048702,
+  "characters": 563,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T02:38:50.204Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Profilio sintaksę randate sąraše",
+      "text": "Darbuotojų /ˈsaːraʃʲɛ/ yra stulpelis su sintakse.",
+      "file": "k01-1.wav",
+      "duration": 3.363,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Profilio sintaksę randate sąraše",
+      "text": "Prie kiekvieno profilio joje matote jo numerį.",
+      "file": "k01-2.wav",
+      "duration": 3.117,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Profilio sintaksę randate sąraše",
+      "text": "Sintaksę pažymite ir nusikopijuojate.",
+      "file": "k01-3.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Kategorijos sintaksę randate kategorijose",
+      "text": "Kairėje pereinate į kategorijas.",
+      "file": "k02-1.wav",
+      "duration": 2.583,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Kategorijos sintaksę randate kategorijose",
+      "text": "Prie /kʲiɛkvʲiɛˈnoːs/ matote jos sąrašo sintaksę.",
+      "file": "k02-2.wav",
+      "duration": 3.117,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Kategorijos sintaksę randate kategorijose",
+      "text": "Nauja kategorija irgi turi.",
+      "file": "k02-3.wav",
+      "duration": 2.09,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Profilį rodote be aprašymo",
+      "text": "Po numerio įrašote papildomą nurodymą.",
+      "file": "k03-1.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Profilį rodote be aprašymo",
+      "text": "Jis išjungia profilio aprašymo laukelį.",
+      "file": "k03-2.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Profilį rodote be aprašymo",
+      "text": "Svetainėje lieka tik /ˈpaːrʲɛiɡoːs/ ir kontaktai.",
+      "file": "k03-3.wav",
+      "duration": 3.223,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Visą kategoriją įterpiate pagal SLUG",
+      "text": "Kabutėse įrašote kategorijos /slʌɡ/.",
+      "file": "k04-1.wav",
+      "duration": 2.797,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Visą kategoriją įterpiate pagal SLUG",
+      "text": "Jis turi /suˈtaptʲi/ su kategorijos sąrašu.",
+      "file": "k04-2.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Visą kategoriją įterpiate pagal SLUG",
+      "text": "Svetainėje atsiranda visi tos kategorijos darbuotojai.",
+      "file": "k04-3.wav",
+      "duration": 3.623,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 4,
+      "cue": 4,
+      "title": "Visą kategoriją įterpiate pagal SLUG",
+      "text": "Kabučių nepamirštate.",
+      "file": "k04-4.wav",
+      "duration": 1.77,
+      "fits": true,
+      "reikia_sek": 15
+    }
+  ]
+}

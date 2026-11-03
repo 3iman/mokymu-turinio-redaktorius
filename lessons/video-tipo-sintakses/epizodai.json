@@ -1,0 +1,93 @@
+{
+ "pamokos_slug": "video-tipo-sintakses",
+ "pamoka_id": "pam_662",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_662_01_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_662_01",
+   "pamoka": "pam_662",
+   "failas": "01-vienas-video",
+   "trukme_s": 18,
+   "ekrano_tekstai": [
+    "Turinys",
+    "{{videos({'limit': '1'})}}",
+    "Galima įkelti video"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-btn",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Renginiai",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": [
+    "dal_662_90"
+   ]
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_662_02_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_662_02",
+   "pamoka": "pam_662",
+   "failas": "02-video-galerijos-formavimas",
+   "trukme_s": 17,
+   "ekrano_tekstai": [
+    "Video",
+    "Add Row",
+    "Select All",
+    "http://",
+    "Antraštė"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-btn",
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "Add Row"
+   ],
+   "demo_duomenys": {
+    "irasas": "Rudens koncertas",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_662_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_662_03",
+   "pamoka": "pam_662",
+   "failas": "03-video-galerija",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Turinys",
+    "{{videos()}}",
+    "Videos"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-btn"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "puslapis": "Renginiai",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

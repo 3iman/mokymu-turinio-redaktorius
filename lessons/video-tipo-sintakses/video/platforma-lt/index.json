@@ -1,0 +1,141 @@
+{
+  "pamoka": "video-tipo-sintakses",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:39:43.105Z",
+  "balso_stiprinimas_db": 5.1,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_662_01_1",
+      "failas": "01-vienas-video",
+      "pavadinimas": "Vieną vaizdo įrašą per visą plotį",
+      "trukme_s": 18,
+      "mp4": "ep_662_01_1.mp4",
+      "vtt": "ep_662_01_1.vtt",
+      "poster": "ep_662_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.21,
+          "tekstas": "Puslapio skirtuke „Video“ jau pridėtas įrašas."
+        },
+        {
+          "nuo_s": 5.4,
+          "iki_s": 8.69,
+          "tekstas": "Lauke „Turinys“ nurodote ribą vienetui."
+        },
+        {
+          "nuo_s": 9,
+          "iki_s": 12.53,
+          "tekstas": "Svetainėje matomas vienas grotuvas per visą plotį."
+        },
+        {
+          "nuo_s": 13.1,
+          "iki_s": 15.99,
+          "tekstas": "Jį paleidžiate neišeidami iš puslapio."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 6.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 14.3,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_662_02_1",
+      "failas": "02-video-galerijos-formavimas",
+      "pavadinimas": "Vaizdo įrašus pridedate skirtuke „Video“",
+      "trukme_s": 17,
+      "mp4": "ep_662_02_1.mp4",
+      "vtt": "ep_662_02_1.vtt",
+      "poster": "ep_662_02_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.97,
+          "tekstas": "Puslapio redagavime pereinate į skirtuką „Video“."
+        },
+        {
+          "nuo_s": 5.5,
+          "iki_s": 8.59,
+          "tekstas": "Sąrašo apačioje spaudžiate „Add Row“."
+        },
+        {
+          "nuo_s": 8.8,
+          "iki_s": 11.77,
+          "tekstas": "Naujos eilutės lauke įklijuojate nuorodą."
+        },
+        {
+          "nuo_s": 12.2,
+          "iki_s": 14.33,
+          "tekstas": "Peržiūra pasirodo iš karto."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.5,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 10.2,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 13,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_662_03_1",
+      "failas": "03-video-galerija",
+      "pavadinimas": "Visus įrašus parodote viena sintakse",
+      "trukme_s": 14,
+      "mp4": "ep_662_03_1.mp4",
+      "vtt": "ep_662_03_1.vtt",
+      "poster": "ep_662_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.13,
+          "tekstas": "Lauke „Turinys“ įrašote sintaksę be nurodymų."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 8.95,
+          "tekstas": "Svetainėje matomi visi prie puslapio prisegti įrašai."
+        },
+        {
+          "nuo_s": 9.7,
+          "iki_s": 12.15,
+          "tekstas": "Nuo dviejų jie rikiuojasi po du."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 10.9,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

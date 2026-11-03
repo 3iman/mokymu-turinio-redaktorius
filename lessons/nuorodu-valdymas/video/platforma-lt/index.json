@@ -1,0 +1,136 @@
+{
+  "pamoka": "nuorodu-valdymas",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:27:52.065Z",
+  "balso_stiprinimas_db": 5.7,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_709_02_1",
+      "failas": "02-nuorodos-svetaineje",
+      "pavadinimas": "Nuorodos išdėstomos po tris",
+      "trukme_s": 12,
+      "mp4": "ep_709_02_1.mp4",
+      "vtt": "ep_709_02_1.vtt",
+      "poster": "ep_709_02_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.07,
+          "tekstas": "Nuorodas svetainėje matote lentelėje."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 7.47,
+          "tekstas": "Vienoje eilutėje telpa trys logotipai."
+        },
+        {
+          "nuo_s": 7.7,
+          "iki_s": 10.75,
+          "tekstas": "Vietoje logotipo galite naudoti ikonėlę."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_709_05_1",
+      "failas": "05-nuorodos-irasas",
+      "pavadinimas": "Užpildote nuorodos įrašo kortelę",
+      "trukme_s": 22,
+      "mp4": "ep_709_05_1.mp4",
+      "vtt": "ep_709_05_1.vtt",
+      "poster": "ep_709_05_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 3.65,
+          "tekstas": "Įkeliate logotipą be fono."
+        },
+        {
+          "nuo_s": 4.6,
+          "iki_s": 8.69,
+          "tekstas": "Nurodote kategoriją – kitaip nuoroda niekur nesimatys."
+        },
+        {
+          "nuo_s": 9.1,
+          "iki_s": 14.91,
+          "tekstas": "Laukelyje „Target“ įrašote „_blank“."
+        },
+        {
+          "nuo_s": 15.1,
+          "iki_s": 20.27,
+          "tekstas": "Nuoroda atsidarys naujame lange."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 6.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 10.7,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 15.7,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 16.2,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": [
+        "22 s > 20 s (platformos riba)"
+      ]
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_709_06_1",
+      "failas": "06-nuorodu-sintakse",
+      "pavadinimas": "Nukopijuojate nuorodų rinkinio sintaksę",
+      "trukme_s": 9,
+      "mp4": "ep_709_06_1.mp4",
+      "vtt": "ep_709_06_1.vtt",
+      "poster": "ep_709_06_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.53,
+          "tekstas": "Atidarote skyrių „Kategorijos“."
+        },
+        {
+          "nuo_s": 3.8,
+          "iki_s": 7.54,
+          "tekstas": "Violetinis mygtukas nukopijuoja įterpimo sintaksę."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.2,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 4.6,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 5,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

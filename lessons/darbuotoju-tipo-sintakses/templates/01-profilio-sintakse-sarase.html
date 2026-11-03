@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="{{lang}}">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./tokens/tokens.css">
+<link rel="stylesheet" href="./tokens/base.css">
+<link rel="stylesheet" href="./tokens/tvs.css">
+<style>
+  /* Kadras 1 — „Profilio sintaksė sąraše“ (ep_665_01_1): stulpelis „Sintaksė“ → {{ staff_single(6) }} pažymima ir nukopijuojama
+     Generuoja epizodai-def.js per epizodai.js — ranka neredaguoti. Bazinė būsena = galutinė (PNG rodo rezultatą). */
+  .stage { position: relative; width: 1680px; height: 904px; transform-origin: 50% 35%; }
+  .scr { position: absolute; inset: 0; width: 100%; height: 100%; }
+  .spot { position: absolute; left: 0; top: 0; width: 120px; height: 60px; border: 2.5px solid var(--tvs-info); border-radius: 6px;
+          box-shadow: 0 0 0 4000px rgba(0,0,0,.55); opacity: 0; z-index: 60; pointer-events: none; }
+  .rp { opacity: 0; z-index: 65; }
+  .cursor-wrap { position: absolute; left: 0; top: 0; width: 44px; height: 56px; z-index: 70; pointer-events: none; }
+  .cursor-wrap .tvs-cursor { left: 0; top: 0; }
+  [class*="caret-"] { opacity: 0; }
+  .stage > .scr:nth-of-type(1) { opacity: 1; }
+  .cursor-wrap { transform: translate(1135.9px, 252.0px); }
+  .toast { opacity: 1; }
+
+.st-table .tvs-th, .st-table .tvs-row { grid-template-columns: 30px 90px 1fr 300px 1fr; } .st-table .tvs-thumb { width: 54px; height: 54px; }
+  .syn { font-family: 'SF Mono', Menlo, monospace; font-size: 17px; padding: 2px 4px; border-radius: 3px; } .toast { left: 900px; top: 190px; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="stage">
+
+      <div class="scr scr1 tvs-window">
+        <div class="tvs-top"><div class="tvs-logo"><i></i></div><div class="tvs-burger"></div><div class="tvs-searchbar is-text is-placeholder" data-t="search">Type to search...</div></div>
+        <div class="tvs-side"><i class=""></i><i class=""></i><i class="is-bars"></i><i class=""></i><i class=""></i><i class="is-on"></i></div>
+        <div class="tvs-subnav"><span class="is-on">Darbuotojai</span><span>Kategorijos</span></div>
+        <div class="tvs-main">
+          <div class="tvs-crumb">Darbuotojai</div>
+
+          <div class="tvs-table st-table"><div class="tvs-th"><div class="tvs-check"></div><span>Image</span><span>Full name</span><span data-t="hsyn">Sintaksė</span><span>Position</span></div>
+            <div class="tvs-row" data-t="rowk"><div class="tvs-check"></div><div><span class="tvs-thumb"></span></div><div>Vincas Kudirka</div><div><code class="syn" data-t="synk">{{ staff_single(6) }}</code></div><div>Direktorius</div></div><div class="tvs-row"><div class="tvs-check"></div><div><span class="tvs-thumb"></span></div><div>Marija Pečkauskaitė</div><div><code class="syn">{{ staff_single(7) }}</code></div><div>Direktoriaus pavaduotoja ugdymui</div></div><div class="tvs-row"><div class="tvs-check"></div><div><span class="tvs-thumb"></span></div><div>Jonas Basanavičius</div><div><code class="syn">{{ staff_single(8) }}</code></div><div>Istorijos mokytojas</div></div><div class="tvs-row"><div class="tvs-check"></div><div><span class="tvs-thumb"></span></div><div>Žemaitė</div><div><code class="syn">{{ staff_single(9) }}</code></div><div>Lietuvių kalbos mokytoja</div></div>
+          </div>
+        </div>
+        <div class="tvs-toast toast">Nukopijuota</div>
+      </div>
+      <div class="spot"></div>
+      <div class="tvs-ripple rp rp1"></div>
+      <div class="cursor-wrap"><div class="tvs-cursor"><svg viewBox="0 0 44 56"><path d="M4 3v40l10.5-9.5 7 16 7.5-3.3-7-15.7H36z" fill="#1d1d1f" stroke="#fff" stroke-width="3" stroke-linejoin="round"/></svg></div></div>
+    </div>
+    <div class="brand-bar">
+      <img class="brand-logo brand-logo-light" src="{{brand_logo_path}}" alt="Cleverphant" />
+      <img class="brand-logo brand-logo-dark" src="{{brand_logo_dark_path}}" alt="Cleverphant" />
+    </div>
+  </div>
+</body>
+</html>

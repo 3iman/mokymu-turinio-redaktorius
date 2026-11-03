@@ -1,7 +1,7 @@
 {
   "pamoka": "kaip-kartu-dirbsime",
   "lang": "lt",
-  "sugeneruota": "2026-11-03T02:04:22.938Z",
+  "sugeneruota": "2026-11-03T02:29:46.403Z",
   "balso_stiprinimas_db": 5.7,
   "muzika": false,
   "klipai": [
@@ -119,9 +119,7 @@
         }
       ],
       "garsai": [],
-      "ispejimai": [
-        "paskutinis balsas baigiasi 0.99s prieš galą (reikia ≥ 1s) — pailgink kadrą kortelėje"
-      ]
+      "ispejimai": []
     },
     {
       "kadras": 5,

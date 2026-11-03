@@ -1,0 +1,162 @@
+{
+  "pamoka": "darbuotoju-tipo-sintakses",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:41:10.715Z",
+  "balso_stiprinimas_db": 5.1,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_665_01_1",
+      "failas": "01-profilio-sintakse-sarase",
+      "pavadinimas": "Profilio sintaksę randate sąraše",
+      "trukme_s": 13,
+      "mp4": "ep_665_01_1.mp4",
+      "vtt": "ep_665_01_1.vtt",
+      "poster": "ep_665_01_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.56,
+          "tekstas": "Darbuotojų sąraše yra stulpelis su sintakse."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 8.02,
+          "tekstas": "Prie kiekvieno profilio joje matote jo numerį."
+        },
+        {
+          "nuo_s": 8.7,
+          "iki_s": 11.59,
+          "tekstas": "Sintaksę pažymite ir nusikopijuojate."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 9.7,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_665_01_2",
+      "failas": "01-kategorijos-sintakse",
+      "pavadinimas": "Kategorijos sintaksę randate kategorijose",
+      "trukme_s": 11,
+      "mp4": "ep_665_01_2.mp4",
+      "vtt": "ep_665_01_2.vtt",
+      "poster": "ep_665_01_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.78,
+          "tekstas": "Kairėje pereinate į kategorijas."
+        },
+        {
+          "nuo_s": 4,
+          "iki_s": 7.12,
+          "tekstas": "Prie kiekvienos matote jos sąrašo sintaksę."
+        },
+        {
+          "nuo_s": 7.6,
+          "iki_s": 9.69,
+          "tekstas": "Nauja kategorija irgi turi."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.2,
+          "garsas": "spustelejimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_665_02_1",
+      "failas": "02-profilis-be-aprasymo",
+      "pavadinimas": "Profilį rodote be aprašymo",
+      "trukme_s": 13,
+      "mp4": "ep_665_02_1.mp4",
+      "vtt": "ep_665_02_1.vtt",
+      "poster": "ep_665_02_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.13,
+          "tekstas": "Po numerio įrašote papildomą nurodymą."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 7.89,
+          "tekstas": "Jis išjungia profilio aprašymo laukelį."
+        },
+        {
+          "nuo_s": 8.3,
+          "iki_s": 11.52,
+          "tekstas": "Svetainėje lieka tik pareigos ir kontaktai."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 3,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 6.2,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 9.9,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "ep_665_03_1",
+      "failas": "03-kategorijos-sarasas-pagal-sluga",
+      "pavadinimas": "Visą kategoriją įterpiate pagal SLUG",
+      "trukme_s": 15,
+      "mp4": "ep_665_03_1.mp4",
+      "vtt": "ep_665_03_1.vtt",
+      "poster": "ep_665_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.2,
+          "tekstas": "Kabutėse įrašote kategorijos SLUG."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 7.13,
+          "tekstas": "Jis turi sutapti su kategorijos sąrašu."
+        },
+        {
+          "nuo_s": 7.7,
+          "iki_s": 11.32,
+          "tekstas": "Svetainėje atsiranda visi tos kategorijos darbuotojai."
+        },
+        {
+          "nuo_s": 12.2,
+          "iki_s": 13.97,
+          "tekstas": "Kabučių nepamirštate."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 13,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

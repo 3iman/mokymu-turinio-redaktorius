@@ -1,0 +1,124 @@
+{
+ "pamokos_slug": "darbuotoju-tipo-sintakses",
+ "pamoka_id": "pam_665",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "ep_665_01_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_665_01",
+   "pamoka": "pam_665",
+   "failas": "01-profilio-sintakse-sarase",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Full name",
+    "Sintaksė",
+    "Position",
+    "{{ staff_single(6) }}"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-cursor",
+    "tvs-filter",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "darbuotojas": "Vincas Kudirka",
+    "pareigos": "Direktorius",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "ep_665_01_2",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_665_01",
+   "pamoka": "pam_665",
+   "failas": "01-kategorijos-sintakse",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Kategorijos",
+    "Title",
+    "Sintaksė",
+    "Administracija"
+   ],
+   "tvs_ui": [
+    "tvs-row",
+    "tvs-cursor",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "kategorija": "Administracija",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "ep_665_02_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_665_02",
+   "pamoka": "pam_665",
+   "failas": "02-profilis-be-aprasymo",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Turinys",
+    "show_description",
+    "Pareigybės aprašas",
+    "Kontaktai"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-btn",
+    "tvs-ripple"
+   ],
+   "tarimo_kandidatai": [
+    "show_description"
+   ],
+   "demo_duomenys": {
+    "darbuotojas": "Marija Pečkauskaitė",
+    "pareigos": "Direktoriaus pavaduotoja ugdymui",
+    "el_pastas": "m.peckauskaite@mokykla.lt",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": [
+    "dal_665_90"
+   ]
+  },
+  {
+   "kadras": 4,
+   "epizodas": "ep_665_03_1",
+   "rusis": "epizodas",
+   "sablonas": null,
+   "dalis": "dal_665_03",
+   "pamoka": "pam_665",
+   "failas": "03-kategorijos-sarasas-pagal-sluga",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Turinys",
+    "{{ staff('administracija') }}",
+    "Administracija"
+   ],
+   "tvs_ui": [
+    "tvs-input",
+    "tvs-cursor",
+    "tvs-btn"
+   ],
+   "tarimo_kandidatai": [
+    "SLUG"
+   ],
+   "demo_duomenys": {
+    "kategorija": "administracija",
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

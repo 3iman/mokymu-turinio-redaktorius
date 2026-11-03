@@ -1,0 +1,173 @@
+{
+  "hash": "4fda01100c5e2d7db4b8e302b22204158c33ef91392a622db36d35e0e990db24",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 1433164550,
+  "characters": 710,
+  "start_in_frame": 0.6,
+  "created": "2026-11-03T02:31:08.145Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Subpuslapių navigaciją įterpiate sintakse",
+      "text": "Įklijuojate navigacijos sintaksę.",
+      "file": "k01-1.wav",
+      "duration": 2.79,
+      "fits": false,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Subpuslapių navigaciją įterpiate sintakse",
+      "text": "/ˈsklʲaustuosʲɛ/ įrašote to puslapio numerį.",
+      "file": "k01-2.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Subpuslapių navigaciją įterpiate sintakse",
+      "text": "Jį matote adreso /ˈjuostoːs/ pabaigoje.",
+      "file": "k01-3.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 1,
+      "cue": 4,
+      "title": "Subpuslapių navigaciją įterpiate sintakse",
+      "text": "Išsaugojus atsiranda subpuslapių sąrašas.",
+      "file": "k01-4.wav",
+      "duration": 3.383,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Subpuslapius parodote blokeliais",
+      "text": "Tas pats puslapių sąrašas gali atrodyti kitaip.",
+      "file": "k02-1.wav",
+      "duration": 3.317,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Subpuslapius parodote blokeliais",
+      "text": "Įrašote blokelių sintaksę.",
+      "file": "k02-2.wav",
+      "duration": 2.13,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Subpuslapius parodote blokeliais",
+      "text": "/ˈsklʲaustuosʲɛ/ — to paties puslapio numeris.",
+      "file": "k02-3.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 2,
+      "cue": 4,
+      "title": "Subpuslapius parodote blokeliais",
+      "text": "Subpuslapiai /ˈvʲirsta/ kortelėmis su nuotraukomis.",
+      "file": "k02-4.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Sukurtą navigaciją įterpiate pagal SLUG",
+      "text": "Kabutėse įrašote navigacijos grupės /slʌɡ/.",
+      "file": "k03-1.wav",
+      "duration": 3.57,
+      "fits": false,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Sukurtą navigaciją įterpiate pagal SLUG",
+      "text": "Spaudžiate „Atnaujinti“.",
+      "file": "k03-2.wav",
+      "duration": 1.823,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Sukurtą navigaciją įterpiate pagal SLUG",
+      "text": "Puslapyje atsiranda visos tos grupės nuorodos.",
+      "file": "k03-3.wav",
+      "duration": 3.237,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 3,
+      "cue": 4,
+      "title": "Sukurtą navigaciją įterpiate pagal SLUG",
+      "text": "Jas tvarkote navigacijų modulyje, ne čia.",
+      "file": "k03-4.wav",
+      "duration": 3.29,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Grupės SLUG randate modulyje „Meniu“",
+      "text": "Navigacijų modulyje atidarote „Meniu“.",
+      "file": "k04-1.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Grupės SLUG randate modulyje „Meniu“",
+      "text": "/ˈsaːraʃʲɛ/ randate savo grupę ir spaudžiate „Redaguoti“.",
+      "file": "k04-2.wav",
+      "duration": 3.85,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Grupės SLUG randate modulyje „Meniu“",
+      "text": "/lauˈkʲɛ/ „/slʌɡ/“ matote tai, ką rašysite į sintaksę.",
+      "file": "k04-3.wav",
+      "duration": 4.13,
+      "fits": false,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 4,
+      "cue": 4,
+      "title": "Grupės SLUG randate modulyje „Meniu“",
+      "text": "Jį pažymite ir nusikopijuojate.",
+      "file": "k04-4.wav",
+      "duration": 2.57,
+      "fits": true,
+      "reikia_sek": 17
+    }
+  ]
+}

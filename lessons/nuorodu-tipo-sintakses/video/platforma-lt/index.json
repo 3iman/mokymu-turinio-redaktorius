@@ -1,0 +1,150 @@
+{
+  "pamoka": "nuorodu-tipo-sintakses",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:30:37.155Z",
+  "balso_stiprinimas_db": 5.3,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_664_01_2",
+      "failas": "01-naudingos-nuorodos-puslapyje",
+      "pavadinimas": "Nuorodas su logotipais įterpiate puslapyje",
+      "trukme_s": 14,
+      "mp4": "ep_664_01_2.mp4",
+      "vtt": "ep_664_01_2.vtt",
+      "poster": "ep_664_01_2.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 5.19,
+          "tekstas": "Lauke „Turinys“ įklijuojate kategorijos sintaksę."
+        },
+        {
+          "nuo_s": 5.5,
+          "iki_s": 7.19,
+          "tekstas": "Išsaugote puslapį."
+        },
+        {
+          "nuo_s": 7.5,
+          "iki_s": 10.55,
+          "tekstas": "Svetainėje nuorodos atsiranda su logotipais."
+        },
+        {
+          "nuo_s": 11.2,
+          "iki_s": 12.85,
+          "tekstas": "Reikia bent trijų."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 6.5,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 12,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_664_02_1",
+      "failas": "02-nuoroda-pagal-id",
+      "pavadinimas": "Nuorodą kuriate pagal puslapio ID",
+      "trukme_s": 16,
+      "mp4": "ep_664_02_1.mp4",
+      "vtt": "ep_664_02_1.vtt",
+      "poster": "ep_664_02_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.25,
+          "tekstas": "Skliaustuose įrašote puslapio numerį."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 7.05,
+          "tekstas": "Nuorodos teksto rašyti nereikia."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 11.09,
+          "tekstas": "Jis paimamas iš puslapio pavadinimo."
+        },
+        {
+          "nuo_s": 11.4,
+          "iki_s": 14.17,
+          "tekstas": "Nuoroda atsidaro tame pačiame lange."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 12,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 12.6,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_664_03_1",
+      "failas": "03-nuoroda-pagal-sluga",
+      "pavadinimas": "Nuorodą kuriate pagal puslapio SLUG",
+      "trukme_s": 16,
+      "mp4": "ep_664_03_1.mp4",
+      "vtt": "ep_664_03_1.vtt",
+      "poster": "ep_664_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.4,
+          "iki_s": 4.69,
+          "tekstas": "Kabutėse įklijuojate puslapio adreso dalį."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 7.73,
+          "tekstas": "Ją nukopijuojate iš naršyklės juostos."
+        },
+        {
+          "nuo_s": 8.6,
+          "iki_s": 10.81,
+          "tekstas": "Domeno į kabutes neimate."
+        },
+        {
+          "nuo_s": 11.4,
+          "iki_s": 14.1,
+          "tekstas": "Nuoroda atsidaro tame pačiame lange."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 12,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 12.6,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

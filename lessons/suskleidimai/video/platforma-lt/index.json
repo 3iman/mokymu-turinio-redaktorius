@@ -1,0 +1,164 @@
+{
+  "pamoka": "suskleidimai",
+  "lang": "lt",
+  "sugeneruota": "2026-11-03T02:43:32.097Z",
+  "balso_stiprinimas_db": 5.2,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "ep_905_03_1",
+      "failas": "03-kategorija-ir-sintakse",
+      "pavadinimas": "Sukuriate kategoriją ir įklijuojate sintaksę",
+      "trukme_s": 17,
+      "mp4": "ep_905_03_1.mp4",
+      "vtt": "ep_905_03_1.vtt",
+      "poster": "ep_905_03_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.87,
+          "tekstas": "Kategorijų sąraše spaudžiate „Sukurti“ ir įrašote pavadinimą."
+        },
+        {
+          "nuo_s": 6.2,
+          "iki_s": 10.01,
+          "tekstas": "Stulpelyje „Plugin“ nukopijuojate kategorijos sintaksę."
+        },
+        {
+          "nuo_s": 10.7,
+          "iki_s": 14.99,
+          "tekstas": "Puslapio turinyje įklijuojate ją po įvadu ir atnaujinate."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 3.2,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 8.2,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 13.1,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 14.3,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "ep_905_04_1",
+      "failas": "04-irasas",
+      "pavadinimas": "Sukuriate suskleidimo įrašą",
+      "trukme_s": 16,
+      "mp4": "ep_905_04_1.mp4",
+      "vtt": "ep_905_04_1.vtt",
+      "poster": "ep_905_04_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1,
+          "iki_s": 4.18,
+          "tekstas": "Spaudžiate „Sukurti“ ir įrašote pavadinimą."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 8.48,
+          "tekstas": "„Atsakymas“ – tai, kas atsiskleis paspaudus."
+        },
+        {
+          "nuo_s": 8.7,
+          "iki_s": 11.47,
+          "tekstas": "Pasirenkate kategoriją ir išsaugote."
+        },
+        {
+          "nuo_s": 11.7,
+          "iki_s": 14.39,
+          "tekstas": "Svetainėje atsiranda nauja juosta."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 2.8,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 7,
+          "garsas": "rasymas"
+        },
+        {
+          "ties_s": 9.3,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 9.8,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 10.4,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 13.3,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "ep_905_05_1",
+      "failas": "05-perrikiavimas",
+      "pavadinimas": "Perrikiuojate suskleidimus",
+      "trukme_s": 14,
+      "mp4": "ep_905_05_1.mp4",
+      "vtt": "ep_905_05_1.vtt",
+      "poster": "ep_905_05_1.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1,
+          "iki_s": 4.37,
+          "tekstas": "Pasirenkate kategoriją ir spaudžiate „Filtruoti“."
+        },
+        {
+          "nuo_s": 5.1,
+          "iki_s": 8.07,
+          "tekstas": "Suimate įrašą už rodyklių ir tempiate."
+        },
+        {
+          "nuo_s": 8.5,
+          "iki_s": 12.4,
+          "tekstas": "Spaudžiate „Perrikiuoti“ – kitaip tvarka neišsisaugo."
+        }
+      ],
+      "garsai": [
+        {
+          "ties_s": 3,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 7.1,
+          "garsas": "paemimas"
+        },
+        {
+          "ties_s": 7.9,
+          "garsas": "numetimas"
+        },
+        {
+          "ties_s": 10.5,
+          "garsas": "spustelejimas"
+        },
+        {
+          "ties_s": 11.7,
+          "garsas": "patvirtinimas"
+        }
+      ],
+      "ispejimai": []
+    }
+  ]
+}

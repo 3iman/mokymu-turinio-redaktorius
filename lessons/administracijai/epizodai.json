@@ -1,0 +1,332 @@
+{
+ "pamokos_slug": "administracijai",
+ "pamoka_id": "pam_687",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_687_01",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_687_01",
+   "pamoka": "pam_687",
+   "failas": "01-darbo-uzmokestis",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Praėjusių metų vidurkiai",
+    "Naujausias ketvirtis",
+    "Lentelė pagal pareigybę",
+    "Reikia sutikimo"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "pareigybe": "Mokytojas",
+    "darbuotojas": "Vincas Kudirka"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_687_02",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_687_02",
+   "pamoka": "pam_687",
+   "failas": "02-apdovanojimai",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Valstybės apdovanojimai",
+    "Paskatinimai",
+    "Diplomai, padėkos raštai",
+    "Kategorija „Didžiuojamės“"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_687_03",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_687_03",
+   "pamoka": "pam_687",
+   "failas": "03-korupcijos-prevencija",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Korupcijos tvarkos aprašas",
+    "Vardas ir pavardė",
+    "Pareigos",
+    "Kontaktiniai duomenys"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "atsakingas": "Jonas Biliūnas",
+    "el_pastas": "j.biliunas@mokykla.lt"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_687_04",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_687_04",
+   "pamoka": "pam_687",
+   "failas": "04-laisvos-darbo-vietos",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Galiojančios skelbimų nuorodos",
+    "Vietų nėra, parašote"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_687_05",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_687_05",
+   "pamoka": "pam_687",
+   "failas": "05-strukturos-schema",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Schemos paveikslėlis",
+    "Naujausia ir aktuali"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
+   "epizodas": "viz_687_06",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_687_06",
+   "pamoka": "pam_687",
+   "failas": "06-civiline-sauga",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "„Civilinės saugos valdymo planas“",
+    "Vardas ir pavardė",
+    "Kontaktiniai duomenys"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "atsakingas": "Kazys Grinius",
+    "el_pastas": "k.grinius@mokykla.lt"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "viz_687_07",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_687_07",
+   "pamoka": "pam_687",
+   "failas": "07-tarnybiniai-automobiliai",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Neturite, parašote",
+    "Turite, duomenų lentelė"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 8,
+   "epizodas": "viz_687_08",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_687_08",
+   "pamoka": "pam_687",
+   "failas": "08-veiklos-sritys",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Mokyklos nuostatai",
+    "Galima nukopijuoti",
+    "Skenuotas dokumentas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "dokumentas": "Demo mokyklos nuostatai"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 9,
+   "epizodas": "viz_687_09",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_687_09",
+   "pamoka": "pam_687",
+   "failas": "09-duomenu-apsauga",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Atsakingas pareigūnas",
+    "Dokumentai pagal įstatymus"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "pareigunas": "Steponas Kairys",
+    "el_pastas": "s.kairys@mokykla.lt"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 10,
+   "epizodas": "viz_687_10",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_687_10",
+   "pamoka": "pam_687",
+   "failas": "10-teisine-informacija",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Tinka",
+    "Teisės aktai",
+    "Netinka",
+    "Taisyklės",
+    "Tvarkos aprašai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 11,
+   "epizodas": "viz_687_11",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_687_11",
+   "pamoka": "pam_687",
+   "failas": "11-ukio-subjektu-prieziura",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Nevykdote, parašote",
+    "Vykdote, patalpinate informaciją"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 12,
+   "epizodas": "viz_687_12",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_687_12",
+   "pamoka": "pam_687",
+   "failas": "12-viesieji-pirkimai",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Tvarkos aprašas",
+    "Nuoroda į CVPP",
+    "Penkeri metai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "CVPP"
+   ],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 13,
+   "epizodas": "viz_687_13",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_687_13",
+   "pamoka": "pam_687",
+   "failas": "13-lesos-viesinimui",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Užsakomieji straipsniai",
+    "Viešųjų ryšių agentūros",
+    "Lėšų nėra"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 14,
+   "epizodas": "viz_687_14",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_687_14",
+   "pamoka": "pam_687",
+   "failas": "14-dazniausi-klausimai",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Naujas reikalavimas",
+    "Turinio organizavimo būdas",
+    "Klausimus priimantis darbuotojas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "darbuotojas": "Julija Žymantienė",
+    "pareigos": "Sekretorė"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 15,
+   "epizodas": "viz_687_15",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_687_15",
+   "pamoka": "pam_687",
+   "failas": "15-konsultavimasis",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Nevykdoma švietimo įstaigose",
+    "Puslapis lieka tuščias"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 16,
+   "epizodas": "viz_687_16",
+   "rusis": "koncepcija",
+   "sablonas": "naujas",
+   "dalis": "dal_687_16",
+   "pamoka": "pam_687",
+   "failas": "16-praneseju-apsauga",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Užpildėme už jus",
+    "Privalomas teisinis tekstas",
+    "Lauksime atnaujinimo"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {},
+   "naudoja_ir": []
+  }
+ ]
+}
