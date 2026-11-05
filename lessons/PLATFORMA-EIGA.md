@@ -14,7 +14,7 @@
 
 ## Reikia tavo sprendimo
 
-1. **Trys epizodai ilgesni nei 20 s** — balsas netelpa. Tekstų nekeičiau. Skaidyti į du epizodus ar trumpinti tekstą — tavo sprendimas:
+1. ✅ **Trys epizodai ilgesni nei 20 s — paliekam kaip yra** (Eimantas, 2026-11-05). Balsas netelpa, tekstų nekeičiau, epizodų neskaidau:
    - `ep_907_03_1` (titulinio-papildiniai K1) — 22 s
    - `ep_709_05_1` (nuorodu-valdymas K2) — 22 s
    - `ep_679_06_1` (dokumentu-banko-anatomija K5) — 21 s
