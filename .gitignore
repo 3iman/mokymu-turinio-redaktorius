@@ -33,3 +33,8 @@ lessons/*/video/subtitles/
 lessons/*/video/platforma-*/*.mp4
 lessons/*/video/platforma-*/*.jpg
 lessons/*/video/platforma-*/_tmp/
+
+# Senų ekrano įrašų kadrai pamokoje (Mokymu-platforma scripts/sena-scenos.py) — peržiūros medžiaga, regeneruojama
+lessons/*/nuorodos/
+# Gamybos paleidimų logai
+lessons/_*.log

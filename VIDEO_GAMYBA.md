@@ -452,6 +452,7 @@ Eiga: platformos scenarijaus regeneravimas → `explaineriai/{slug}/*` kopija į
 | `koncepcijos.js` | koncepcinių kadrų šablonai iš kortelės `laukai` (palyginimas, srautas, žingsniai, laiko juosta, anatomija…); stilius `tokens/koncepcijos.css`; animacijos į `video/animacijos.json` (pamokos lygio, viršija bendras) |
 | `epizodai.js` | TVS epizodų variklis: pamokos `epizodai-def.js` aprašo ekranus ir žingsnius (spot / cur / click / type / show / zoom), variklis matuoja elementus puppeteer'iu ir rašo šabloną + keyframes |
 | `laikai-telpa.py --balsas` | tikros balso trukmės iš manifestų; kortelė ilginama, tekstas nekeičiamas |
+| `platformos-sutampa.py` | visų pamokų scenarijai vs kortelių trukmės; neatitikimas = perkurti pamoką |
 
 Spąstai (2026-11-03 naktis):
 

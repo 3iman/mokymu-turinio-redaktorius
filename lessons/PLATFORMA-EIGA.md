@@ -4,7 +4,7 @@
 > Galioja: piešimas, įgarsinimas (ElevenLabs), montažas. NEgalioja: WP / YouTube publikavimas, tekstų ir kirčių keitimas.
 > Šaka abiejuose repo: `claude/friendly-allen-dh1gk0`.
 
-## Būsena ryto peržiūrai (2026-11-03)
+## Būsena (2026-11-03)
 
 **60 pamokų iš 62 pagamintos.** Dvi Google Sheets pamokos nepieštos — pagal promptą jų klipai imami iš esamų scenų.
 
@@ -12,19 +12,40 @@
 - Kiekviena pamoka: `bash platformos-pamoka.sh {slug}` (žr. VIDEO_GAMYBA.md).
 - Scenarijai ir kortelės sutampa visose pamokose (patikra 2026-11-03).
 
-## Reikia tavo sprendimo
+## Sprendimai (Eimantas, 2026-11-05)
 
-1. ✅ **Trys epizodai ilgesni nei 20 s — paliekam kaip yra** (Eimantas, 2026-11-05). Balsas netelpa, tekstų nekeičiau, epizodų neskaidau:
+1. **Trys epizodai ilgesni nei 20 s — paliekam kaip yra.** Tekstų nekeičiam, epizodų neskaidom:
    - `ep_907_03_1` (titulinio-papildiniai K1) — 22 s
    - `ep_709_05_1` (nuorodu-valdymas K2) — 22 s
    - `ep_679_06_1` (dokumentu-banko-anatomija K5) — 21 s
-2. **Keturios pamokos sutampa su YouTube pamokomis** (`ka-atsakyti-kai-paklausia-apie-slapukus`, `es-projektu-viesinimas`, `lenteliu-kurimo-principai`, `lenteliu-redagavimas-wysiwyg-redaktoriuje`). Padariau į `lessons/{slug}-platforma/`, kad YouTube pamokos liktų nepaliestos. Koncepcijų kadrai, kurių pavadinimai sutampa, nukopijuoti iš YouTube pamokos. `es-projektu…-platforma` kadre `02-cpva-dokumentai` šriftai padidinti platformai.
-3. **Prielaidos be pavyzdinio kadro** — patikrink, ar atitinka tikrą TVS:
+2. **`-platforma` pamokos — „darome viską vienodai“.** Atskirų `-platforma` aplankų nebelieka. Kaip sujungti su YouTube pamokomis, žr. „Handoff“ § Atvira.
+3. **Prielaidos be pavyzdinio kadro — tikrinsim darydami.** Kol kas paliekam, kaip nupiešta:
    - prisijungimo langas (kaip-prisijungti) — pieštas pagal skeleton faktus;
    - CKEditor dialogai ir kontekstinis meniu — moono-lisa stilius;
    - turinio-zymejimas — papildinio vardas „Žymų juosta“ (kortelė `kl_1472_2` dar atvira);
    - puslapiu-rinkinys-komunikacija K3 — GPM ataskaitos vieta;
    - informacija-gestu-kalba — video laukas kaip įprastas failo laukas.
+
+## Handoff kitai sesijai (2026-11-05)
+
+**Kas padaryta.** 60/62 pamokų: **199** koncepcijų klipai + **177** TVS epizodai, ~**84 min**. Abu repo šakoje `claude/friendly-allen-dh1gk0`, pushinta.
+
+**Kaip tęsti.**
+- Viena pamoka: `bash platformos-pamoka.sh {slug}` (žingsniai, įrankiai ir spąstai — `VIDEO_GAMYBA.md` § „Visa pamoka viena komanda“).
+- Vieno epizodo perpiešimas: `node generate-video-clips.js --lesson {slug} --lang lt --only {id1},{id2}` → `node build-video.js --lesson {slug} --lang lt --platforma`.
+- Scenarijų patikra po kortelių keitimo: `python3 platformos-sutampa.py` (visos 62 OK 2026-11-05).
+- Tekstai keičiami TIK kortelėse `Mokymu-platforma/turinys/adaptuota/kursai/*.json`, ne `scenarijus-lt.md`.
+
+**Kas ne gite (sąmoningai).**
+- `lessons/*/video/platforma-lt/*.mp4|.jpg` — gaminys, atkuriamas komanda.
+- `lessons/*/nuorodos/` — senų įrašų kadrai iš `Mokymu-platforma/scripts/sena-scenos.py`, regeneruojami.
+- `lessons/_*.log` — paleidimų logai.
+- Kitų sesijų failai (vaiduoklis-po-numeriu, YouTube failai, `uploads-log.json`, `VIZUALINES_TECHNIKOS.md`, `.claude/skills/`; platformos repo `turinys/QA-PAMOKOS.md`, `qa.json`, `.agents/`, `.codex/`) — ne šios sesijos, neliesti.
+
+**Atvira.**
+1. **`-platforma` suvienodinimas** (Sprendimai § 2). Keturios pamokos: `ka-atsakyti-kai-paklausia-apie-slapukus`, `es-projektu-viesinimas`, `lenteliu-kurimo-principai`, `lenteliu-redagavimas-wysiwyg-redaktoriuje`. Paprastas perkėlimas į `lessons/{slug}/` perrašytų YouTube pamokos `content/`, `templates/` (sutampa 7 kadrų vardai), `video/scenarijus-lt.md` ir `video/balsas-lt/`. Būdas laukia Eimanto patvirtinimo.
+2. **Dvi Google Sheets pamokos** — nepieštos, klipai imami iš esamų scenų.
+3. **Publikavimas į WP / YouTube** — neleistas, kol Eimantas nepasakys.
 
 ## Pamokos
 
