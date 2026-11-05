@@ -86,7 +86,7 @@
 ### KADRAS 10: Bet tai jie ir svarbūs (14 sek.)
 **Failas:** `09-porastes-informacija.png`
 **Ekrane:** antraštė „Jie kabo ant informacijos stendo“. Puslapio maketas, per jį nubrėžiamas žvilgsnio kelias su užrašu „taip akys bėga per puslapį“, tada maketas nuslenka žemyn iki galo ir sustoja ties porašte. Poraštė imituota kaip tikra: Gimnazija · Paslaugos · Ataskaitos · Informacija, paryškintas visas „Informacija“ stulpelis.
-**Komentaras:** ⛔ Slinkimas ir poraštės imitacija privalomi — kaip slapukų filme su „Slapukų valdymas“. Šablonas iš `lessons/ka-atsakyti-kai-paklausia-apie-slapukus/templates/03-kur-rasti-nuoroda.html`. Reikia `TEMPLATE_ANIMATIONS` įrašo. Žodžio „Z“ balse nevartojame.
+**Komentaras:** ⛔ Slinkimas ir poraštės imitacija privalomi — kaip slapukų filme su „Slapukų valdymas“. Šablonas iš `lessons/ka-atsakyti-kai-paklausia-apie-slapukus-youtube/templates/03-kur-rasti-nuoroda.html`. Reikia `TEMPLATE_ANIMATIONS` įrašo. Žodžio „Z“ balse nevartojame.
 
 **Komentaras:** ⛔ „Kitose duryse“ nušoka nuo analogijos (Eimantas 2026-09-16) — poraštė yra ne durys, o informacijos stendas mokyklos fojė, pro kurį praeina kiekvienas.
 ### KADRAS 11: Visada bus tokių, kurie parašys (13 sek.)

@@ -1,0 +1,85 @@
+{
+  "hash": "60ae1154ba9fc7aa45087bc6397b0b9ec488994ea030f60623d2273e5baf204c",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 1779642367,
+  "characters": 743,
+  "start_in_frame": 0.6,
+  "created": "2026-09-15T12:09:13.020Z",
+  "items": [
+    {
+      "kadras": 1,
+      "title": "Klausimas ir atsakymas",
+      "text": "Kartą per metus ar dažniau į ràštinę ateina laiškas iš asmens duomenų apsaugos pareigūno.",
+      "file": "k01.wav",
+      "duration": 5.31,
+      "fits": true,
+      "reikia_sek": 8
+    },
+    {
+      "kadras": 2,
+      "title": "Iš kur ateina klausimas",
+      "text": "Klausiama ne apie tai, ar naudojate slapukus, o apie tai, ar lankytojas turi tikrą pasirinkimą jų atsisakyti.",
+      "file": "k02.wav",
+      "duration": 7.71,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 3,
+      "title": "Visur toks pats modulis",
+      "text": "Reikalavimus stebime mes. Daryti jums nereikia nieko.",
+      "file": "k03.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 8
+    },
+    {
+      "kadras": 4,
+      "title": "Kur rasti nuorodą",
+      "text": "Sutikimą galima bet kada pakeisti per nuorodą Slapukų valdymas svetainės apačioje.",
+      "file": "k04.wav",
+      "duration": 4.89,
+      "fits": true,
+      "reikia_sek": 10
+    },
+    {
+      "kadras": 5,
+      "title": "Pirmą kartą nepažymėta nieko",
+      "text": "Jei lankytojui reikia langelį atžymėti, kad atsisakytų, tai jau ne sutikimas, o numatytoji tvarka.",
+      "file": "k05.wav",
+      "duration": 5.87,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 6,
+      "title": "Mygtukai vienodi",
+      "text": "Daugelyje svetainių Sutinku yra ryškus spalvotas mygtukas, o Nesutinku – pilkas tekstas šalia.",
+      "file": "k06.wav",
+      "duration": 6.03,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 7,
+      "title": "Ką renka",
+      "text": "Google slapukas atsiranda tik tuo atveju, jei mokykla pati naudoja „Google Analytics“. Jei nenaudojate, jo svetainėje nėra.",
+      "file": "k07.wav",
+      "duration": 7.37,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 8,
+      "title": "Naują versiją gauna visos",
+      "text": "Naują versiją gauna visos mokyklos – ne tik ta, kuri paklausė.",
+      "file": "k08.wav",
+      "duration": 4.27,
+      "fits": true,
+      "reikia_sek": 8
+    }
+  ]
+}

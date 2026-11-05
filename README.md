@@ -43,7 +43,7 @@ node generate.js --lang lt    # Tik lietuvių kalba
 │   ├── google-sheets-integracija/
 │   │   ├── templates/        ← 9 iliustracijų šablonai (00–08)
 │   │   └── content/          ← lt.json, en.json
-│   └── es-projektu-viesinimas/
+│   └── es-projektu-viesinimas-youtube/
 │       ├── templates/        ← 2 iliustracijų šablonai (01–02)
 │       └── content/          ← lt.json
 ├── generate.js               ← Generatorius (HTML + PNG per Puppeteer)

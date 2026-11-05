@@ -441,9 +441,10 @@ node build-video.js --lesson {slug} --lang lt --platforma --kadras 5,6   # tik n
 ### Visa pamoka viena komanda (nuo 2026-11-03)
 
 ```bash
-bash platformos-pamoka.sh {slug}                       # įprasta pamoka
-DST={slug}-platforma bash platformos-pamoka.sh {slug}  # kai lessons/{slug} jau užimtas YouTube filmuko
+bash platformos-pamoka.sh {slug}                       # visos pamokos vienodai: lessons/{slug}
 ```
+
+⛔ `lessons/{slug}` visada priklauso platformos pamokai (Eimantas 2026-11-05: „darome viską vienodai“). Jei ten jau guli senas YouTube filmukas, jis perkeliamas į `lessons/{slug}-youtube` (`mv` + `git add -f` anksčiau sekiotų `output/` failų), o ne platformos pamoka į kitą aplanką. YouTube įkėlimas nenukenčia: `yt_upload` žurnalo raktas imamas iš `youtube-lt.json` lauko `slug`, failas — iš lauko `video`, todėl kviečiama `--lesson {slug}-youtube`, o `video_id` lieka tas pats.
 
 Eiga: platformos scenarijaus regeneravimas → `explaineriai/{slug}/*` kopija į `lessons/{DST}` (eilutė `**Balso seed:**` išsaugoma) → `sablonai.js`, `koncepcijos.js`, `animacijos.js`, `epizodai-def.js` (kurie yra) → `generate.js --png` → `generate-voice.js` → `laikai-telpa.py --balsas --taisyti` (jei ✎ — kortelių trukmės pakeistos, scenarijus perkuriamas) → `generate-video-clips.js` → `build-video.js --platforma`.
 

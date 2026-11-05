@@ -445,7 +445,7 @@ urllib.request.urlopen(req)
 #### `.wp-update.py` pattern — po vieną skriptą kiekvienai pamokai
 
 - Vieta: `illustrations/lessons/{pamokos-slug}/.wp-update.py`
-- Template'as: `illustrations/lessons/lenteliu-redagavimas-wysiwyg-redaktoriuje/.wp-update.py`
+- Template'as: `illustrations/lessons/lenteliu-redagavimas-wysiwyg-redaktoriuje-youtube/.wp-update.py`
 - Skriptas: skaito `.env`, konstruoja `le_list` sąrašą su media ID'ais ir HTML tekstais, POST'ina, printina patvirtinimą (kiek skyrių grįžo, kokie image ID priskirti)
 
 #### End-to-end workflow

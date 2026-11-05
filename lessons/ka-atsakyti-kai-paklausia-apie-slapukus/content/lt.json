@@ -106,5 +106,20 @@
     "s3_label": "Pasiekia visus",
     "s3_desc": "Pataisymas pasiekia visas mokyklas iš karto.",
     "foot": "Nežinoti, ką atsakyti, nieko blogo. Tam ir esame."
+  },
+  "03_slapuku_valdymo_nuoroda": {
+    "_epizodas": "ep_1765_03_1"
+  },
+  "04_privatus_langas": {
+    "_epizodas": "ep_1765_04_1"
+  },
+  "04_vienodi_mygtukai": {
+    "_epizodas": "ep_1765_04_2"
+  },
+  "04_nustatymai_nepazymeta": {
+    "_epizodas": "ep_1765_04_3"
+  },
+  "04_nuoroda_porasteje": {
+    "_epizodas": "ep_1765_04_4"
   }
 }

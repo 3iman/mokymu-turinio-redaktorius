@@ -11,10 +11,10 @@
     "bc_1": "Titulinis",
     "bc_2": "Projektai",
     "bc_3": "ES finansuojami projektai",
-    "page_title": "Projektas \u201eGalimybių mokykla\u201c",
+    "page_title": "Projektas „Galimybių mokykla“",
     "eu_banner_text": "Bendrai finansuoja\nEuropos Sąjunga",
     "school_name": "Mokyklos pavadinimas",
-    "project_intro": "partnerio teisėmis dalyvauja projekte \u201eGalimybių mokykla\u201c Nr. 10-072-P-0001, kuris yra finansuojamas ES fondų lėšomis.",
+    "project_intro": "partnerio teisėmis dalyvauja projekte „Galimybių mokykla“ Nr. 10-072-P-0001, kuris yra finansuojamas ES fondų lėšomis.",
     "project_goal": "Šio projekto tikslas – stiprinti ugdymo, atliepiančio mokinių amžių ir poreikius, kokybę.",
     "project_period": "Projekto įgyvendinimas – nuo 2024 m. balandžio mėn. iki 2027 m. liepos mėn.",
     "project_executor": "Projekto vykdytojas – Nacionalinė švietimo agentūra.",
@@ -38,5 +38,12 @@
     "doc3_label": "Komunikacijos leidinys",
     "doc3_desc": "Ką projektų vykdytojai turėtų žinoti apie komunikaciją",
     "doc3_tag": "Leidinys"
+  },
+  "01_es_logotipas_virsuje": {
+    "title": "ES projekto aprašymo puslapis",
+    "page_title": "Projekto aprašymas",
+    "eu_banner_text": "Logotipas puslapio viršuje, ne mažesnis už kitus",
+    "project_intro": "Aprašymas tiesiai svetainėje, ne doc ar PDF",
+    "project_period": "Skelbiama tiek, kiek įsipareigota (~5 metai)"
   }
 }

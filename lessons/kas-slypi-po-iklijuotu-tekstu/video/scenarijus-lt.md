@@ -4,7 +4,7 @@
 > Būsena: **piešiama, 2026-10-11.** Eilė: filmukas be garso → pamoka → straipsnis. Generatorius: `../build_scenes.py`.
 
 **Formatas:** visi kadrai piešiami (HTML šablonai → PNG → animacija), kaip ankstesniuose filmukuose. Svetainė ir TVS redaktorius – imitacija, ne ekrano įrašas.
-**Vizualinis stilius:** kortelė ir naršyklės langas kaip `lenteliu-redagavimas-wysiwyg-redaktoriuje`, TVS – `tokens/tvs.css`.
+**Vizualinis stilius:** kortelė ir naršyklės langas kaip `lenteliu-redagavimas-wysiwyg-redaktoriuje-youtube`, TVS – `tokens/tvs.css`.
 **⛔ TVS redaktorius – toks, koks yra (Eimantas, 2026-10-11).** Trys įrankių eilės, kaip tikroje TVS: `../../formatavimo-pradziamokslis/tyrimas/tvs-redaktorius-tikras.webp`. Juostos nesupaprastinti iki B I U Tx. Siūlomas būdas: įrankių juosta iškerpama iš tikros nuotraukos (tiksliausia), turinio laukas – HTML, kad tekstas galėtų keistis; paspaudimai ir paryškinimai – sluoksnis ant mygtukų koordinačių.
 **Diktorius:** Dariaus balsas – tik Eimantui leidus.
 **Ekrano skaitytuvo balsas:** ElevenLabs, **ne Dariaus**. Monotoniškas, greitas, mašininis. Tikslumas nesvarbus, svarbus jausmas.

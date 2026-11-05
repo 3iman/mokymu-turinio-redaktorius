@@ -8,7 +8,7 @@
 # TVS epizodų šablonai piešiami atskirai (lessons/{slug}/sablonai.js ir pan.) — jų nėra, kadras praleidžiamas su įspėjimu.
 set -euo pipefail
 SLUG="$1"; shift || true
-DST="${DST:-$SLUG}"   # redaktoriaus katalogas (kai WP slug sutampa su YouTube pamoka — {slug}-platforma)
+DST="${DST:-$SLUG}"   # redaktoriaus katalogas; visada = slug (senas YouTube filmukas tokiu vardu → {slug}-youtube, žr. VIDEO_GAMYBA.md)
 RED="$(cd "$(dirname "$0")" && pwd)"
 PLAT="${PLATFORMA:-$HOME/Workspace/Mokymu-platforma}"
 L="$RED/lessons/$DST"

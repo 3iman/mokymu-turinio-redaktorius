@@ -1,0 +1,42 @@
+{
+  "lang": "lt",
+  "common": {},
+  "01_teisingas_projekto_puslapis": {
+    "title": "Teisingas projekto puslapis",
+    "browser_url": "www.mokykla.lt/projektai/es-finansuojami-projektai/galimybiu-mokykla/",
+    "nav_1": "Ugdymas",
+    "nav_2": "Paslaugos",
+    "nav_3": "Renginiai",
+    "nav_4": "Kontaktai",
+    "bc_1": "Titulinis",
+    "bc_2": "Projektai",
+    "bc_3": "ES finansuojami projektai",
+    "page_title": "Projektas \u201eGalimybių mokykla\u201c",
+    "eu_banner_text": "Bendrai finansuoja\nEuropos Sąjunga",
+    "school_name": "Mokyklos pavadinimas",
+    "project_intro": "partnerio teisėmis dalyvauja projekte \u201eGalimybių mokykla\u201c Nr. 10-072-P-0001, kuris yra finansuojamas ES fondų lėšomis.",
+    "project_goal": "Šio projekto tikslas – stiprinti ugdymo, atliepiančio mokinių amžių ir poreikius, kokybę.",
+    "project_period": "Projekto įgyvendinimas – nuo 2024 m. balandžio mėn. iki 2027 m. liepos mėn.",
+    "project_executor": "Projekto vykdytojas – Nacionalinė švietimo agentūra.",
+    "project_budget": "Bendras projekto biudžetas – 19 187 021,64 Eur.",
+    "sidebar_1": "Dokumentai",
+    "sidebar_2": "Projektai",
+    "sidebar_3": "Veiklos planas",
+    "ann_1": "ES logotipas – puslapio viršuje, ne tituliniame puslapyje",
+    "ann_2": "Ne mažesnis už kitus logotipus, proporcingas turiniui",
+    "ann_3": "Aprašymas tiesiogiai svetainėje – ne PDF ar DOC failuose",
+    "ann_4": "Publikuojama visą įsipareigotą laikotarpį (~5 metai)"
+  },
+  "02_cpva_dokumentai": {
+    "title": "Naudinga susipažinti",
+    "doc1_label": "ES emblemos naudojimas",
+    "doc1_desc": "Kaip teisingai naudoti ES emblemą vykdant programas",
+    "doc1_tag": "CPVA",
+    "doc2_label": "Informacija interneto svetainėje",
+    "doc2_desc": "Patarimai, kaip teisingai paskelbti informaciją apie projektą",
+    "doc2_tag": "Patarimai",
+    "doc3_label": "Komunikacijos leidinys",
+    "doc3_desc": "Ką projektų vykdytojai turėtų žinoti apie komunikaciją",
+    "doc3_tag": "Leidinys"
+  }
+}

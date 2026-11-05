@@ -119,5 +119,54 @@
     "arrow_direct": "Kopijuojate",
     "arrow_convert": "Konvertuojate",
     "arrow_paste": "Įklijuojate"
+  },
+  "01_kurkite_kur_gebate": {
+    "title": "Kuriate lenteles ten, kur gebate",
+    "step1_label": "Kur gebate",
+    "step1_desc": "Word, skaičiuoklė ar dirbtinis intelektas",
+    "arrow_label_1": "nukopijuojate",
+    "step2_label": "Turinio redaktorius",
+    "step2_desc": "Įklijuojate galutinį rezultatą",
+    "arrow_label_2": "",
+    "step3_label": "Svetainė",
+    "step3_desc": "Išvengiate nesusipratimų išsaugant"
+  },
+  "02_lygiavimas_kaire": {
+    "title": "Lygiuojate lentelės turinį pagal kairę",
+    "do_title": "Taisyklingai",
+    "do_1": "Lygiavimas pagal kairę",
+    "do_2": "Numatytasis stilius — pastangų nereikia",
+    "dont_title": "Netaisyklingai",
+    "dont_1": "Lygiavimas centre",
+    "dont_2": "Blogesnis nuskaitomumas",
+    "dont_3": "Pažeidžiama stiliaus vienodumo taisyklė"
+  },
+  "03_nestilizuokite_lenteliu": {
+    "title": "Nestilizuojate lentelių",
+    "do_title": "Švari lentelė",
+    "do_1": "Numatytasis stilius",
+    "do_2": "Veikia tamsaus fono režime",
+    "dont_title": "Stilizuota lentelė",
+    "dont_1": "HTML šiukšlės",
+    "dont_2": "Išsisaugo tik dalis lentelės",
+    "dont_3": "Nesuderinama su tamsaus fono režimu",
+    "dont_4": "Tampa neprieinama silpnaregiams"
+  },
+  "04_paprastumas": {
+    "title": "Nepersistengiate su lentelių įmantrumu",
+    "old_title": "Įmantri",
+    "old_step_1": "Sujungtos celės",
+    "old_step_2": "Sunku atvaizduoti svetainėje",
+    "new_title": "Paprasta",
+    "new_step_1": "Lengva greitai perskaityti",
+    "summary": "Vartotojai nevertina lentelės išvaizdos — jiems ji rūpi kaip formatas"
+  },
+  "05_spalvota_kepure": {
+    "title": "Nuspalvinate pirmą lentelės eilutę",
+    "old_title": "Be kepurės",
+    "old_step_1": "Pirma eilutė nesiskiria",
+    "new_title": "Su kepure",
+    "new_step_1": "Fonas — dominuojanti svetainės spalva",
+    "new_step_2": "Tekstas baltas"
   }
 }

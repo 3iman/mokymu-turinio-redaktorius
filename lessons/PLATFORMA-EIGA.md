@@ -18,7 +18,7 @@
    - `ep_907_03_1` (titulinio-papildiniai K1) — 22 s
    - `ep_709_05_1` (nuorodu-valdymas K2) — 22 s
    - `ep_679_06_1` (dokumentu-banko-anatomija K5) — 21 s
-2. **`-platforma` pamokos — „darome viską vienodai“.** Atskirų `-platforma` aplankų nebelieka. Kaip sujungti su YouTube pamokomis, žr. „Handoff“ § Atvira.
+2. **`-platforma` pamokos — „darome viską vienodai“.** ✅ Padaryta 2026-11-05: platformos pamokos dabar `lessons/{slug}/` kaip visos, seni YouTube filmukai perkelti į `lessons/{slug}-youtube/` (failai baitas į baitą, YouTube `video_id` nepaliestas).
 3. **Prielaidos be pavyzdinio kadro — tikrinsim darydami.** Kol kas paliekam, kaip nupiešta:
    - prisijungimo langas (kaip-prisijungti) — pieštas pagal skeleton faktus;
    - CKEditor dialogai ir kontekstinis meniu — moono-lisa stilius;
@@ -43,9 +43,10 @@
 - Kitų sesijų failai (vaiduoklis-po-numeriu, YouTube failai, `uploads-log.json`, `VIZUALINES_TECHNIKOS.md`, `.claude/skills/`; platformos repo `turinys/QA-PAMOKOS.md`, `qa.json`, `.agents/`, `.codex/`) — ne šios sesijos, neliesti.
 
 **Atvira.**
-1. **`-platforma` suvienodinimas** (Sprendimai § 2). Keturios pamokos: `ka-atsakyti-kai-paklausia-apie-slapukus`, `es-projektu-viesinimas`, `lenteliu-kurimo-principai`, `lenteliu-redagavimas-wysiwyg-redaktoriuje`. Paprastas perkėlimas į `lessons/{slug}/` perrašytų YouTube pamokos `content/`, `templates/` (sutampa 7 kadrų vardai), `video/scenarijus-lt.md` ir `video/balsas-lt/`. Būdas laukia Eimanto patvirtinimo.
-2. **Dvi Google Sheets pamokos** — nepieštos, klipai imami iš esamų scenų.
-3. **Publikavimas į WP / YouTube** — neleistas, kol Eimantas nepasakys.
+1. **Dvi Google Sheets pamokos** — nepieštos, klipai imami iš esamų scenų.
+2. **Publikavimas į WP / YouTube** — neleistas, kol Eimantas nepasakys.
+
+**YouTube filmukai su platformos vardu** (`es-projektu-viesinimas`, `ka-atsakyti-kai-paklausia-apie-slapukus`, `lenteliu-kurimo-principai`, `lenteliu-redagavimas-wysiwyg-redaktoriuje`) gyvena `lessons/{slug}-youtube/`. Įkėlimo įrankiui — `--lesson {slug}-youtube`; žurnalo raktas lieka senas (`slug` lauke `youtube-lt.json`), todėl pakartotinio įkėlimo nebus.
 
 ## Pamokos
 
@@ -60,14 +61,14 @@
 | dinaminis-turinys | 1 | 0 | 15 s | ✅ |
 | dokumentu-banko-anatomija | 0 | 16 | 213 s | ⚠️ `ep_679_06_1` 21 s |
 | dokumentu-banko-tipo-sintakses | 0 | 3 | 43 s | ✅ |
-| es-projektu-viesinimas-platforma | 2 | 0 | 31 s | ✅ |
+| es-projektu-viesinimas | 2 | 0 | 31 s | ✅ |
 | greitosios-nuorodos | 1 | 0 | 16 s | ✅ |
 | informacija-gestu-kalba | 5 | 1 | 78 s | ✅ |
 | informacija-lengvai-suprantama-kalba | 5 | 3 | 110 s | ✅ |
 | informacinis-srautas | 1 | 0 | 16 s | ✅ |
 | interneto-svetaines-kurimo-procesas | 8 | 1 | 124 s | ✅ |
 | irasu-kategorizavimas | 10 | 0 | 116 s | ✅ |
-| ka-atsakyti-kai-paklausia-apie-slapukus-platforma | 5 | 5 | 118 s | ✅ |
+| ka-atsakyti-kai-paklausia-apie-slapukus | 5 | 5 | 118 s | ✅ |
 | ka-reikia-zinoti-apie-paveikslelius | 8 | 0 | 103 s | ✅ |
 | kaip-kartu-dirbsime | 10 | 0 | 134 s | ✅ |
 | kaip-prisijungti-ir-kas-ka-gali | 0 | 2 | 35 s | ✅ |
@@ -76,8 +77,8 @@
 | kas-yra-dokumentu-bankas | 2 | 0 | 30 s | ✅ |
 | kintamuju-valdymas | 3 | 1 | 59 s | ✅ |
 | laikmatis | 1 | 2 | 44 s | ✅ |
-| lenteliu-kurimo-principai-platforma | 5 | 0 | 69 s | ✅ |
-| lenteliu-redagavimas-wysiwyg-redaktoriuje-platforma | 2 | 6 | 106 s | ✅ |
+| lenteliu-kurimo-principai | 5 | 0 | 69 s | ✅ |
+| lenteliu-redagavimas-wysiwyg-redaktoriuje | 2 | 6 | 106 s | ✅ |
 | metrastis | 0 | 1 | 18 s | ✅ |
 | modulio-autoriai-valdymas | 1 | 3 | 60 s | ✅ |
 | modulio-pamoku-laikas-valdymas | 1 | 4 | 70 s | ✅ |
