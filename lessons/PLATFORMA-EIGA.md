@@ -6,7 +6,7 @@
 
 ## Būsena (2026-11-27)
 
-**Visos 63 pamokos pagamintos — 471 klipas iš 473 unikalių filmų (~111 min), likę 2 — nuotraukos.** 2026-11-27 (Eimantas: „Ruošk ir gamink“): 16 pamokų perleistos su 61 nauja koncepcija (scenarijai platformoje 2026-11-27), 3 naujos pamokos (`komunikacijos-kalendorius`, `komunikacija-krizes-metu`, `tonas-kaip-mokykla-kalba`); dvi Google Sheets pamokos — 34 klipai iškirpti iš įgarsintų explainerių (`node build-platform-clips.js`), 19 jų 21–51 s palikti (DECISIONS 2026-10-31). Perdavimas devams: `_perdavimas/platformos-filmai-2026-11-27.zip` (ne gite) + platformos `handoff/filmai-manifestas.json`.
+**Visos 63 pamokos pagamintos — 471 klipas iš 473 unikalių filmų (~111 min), likę 2 — nuotraukos.** 2026-11-27 (Eimantas: „Ruošk ir gamink“): 16 pamokų perleistos su 61 nauja koncepcija (scenarijai platformoje 2026-11-27), 3 naujos pamokos (`komunikacijos-kalendorius`, `komunikacija-krizes-metu`, `tonas-kaip-mokykla-kalba`); dvi Google Sheets pamokos — 34 klipai iškirpti iš įgarsintų explainerių (`node build-platform-clips.js`), 19 jų 21–51 s palikti (DECISIONS 2026-10-31). Perdavimas devams: Google Drive `Mokymu-platforma-2.0-mp4/` — 11-23 archyvas (376 filmai) + `platformos-filmai-2026-11-27-dalys/` (papildymas: 95 nauji filmai, manifestas, README; 16 dalių po ≤ 9,5 MB, sujungimas `SUJUNGTI.txt`). Vietoje: `_perdavimas/platformos-filmai-2026-11-27.zip` (viskas, 585 MB) ir `-papildymas.zip` (ne gite) + platformos `handoff/filmai-manifestas.json`.
 
 Buvo 2026-11-03: 60 pamokų iš 62, 376 klipai.
 
