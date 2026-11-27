@@ -1,153 +1,183 @@
 {
-  "hash": "4a774863f05007b7c748facf3c8bcb098597eac5ddbfbdd1700c7c602a55e1c5",
+  "hash": "3135eccc642c5a76860e6e5f6fa08a590d8c484e308df247945b1dce5ffd4ffa",
   "voice_id": "eqJHjeWMPGJFD6VBf1J2",
   "model": "eleven_v3_dpo_20260217",
   "speed": 0.9,
   "lang": "lt",
   "seed": 2051860828,
-  "characters": 582,
+  "characters": 712,
   "start_in_frame": 0.6,
-  "created": "2026-11-03T03:37:25.108Z",
+  "created": "2026-11-27T17:40:47.733Z",
   "items": [
     {
       "kadras": 1,
       "cue": 1,
+      "title": "Kam tai",
+      "text": "Partnerių logotipai – titulinio apačioje.",
+      "file": "k01-1.wav",
+      "duration": 3.07,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Kam tai",
+      "text": "tė vė es modulis vadinasi „Klientai“.",
+      "file": "k01-2.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Kam tai",
+      "text": "„Tab“, „Enter“; skaitytuvas skaito pavadinimą.",
+      "file": "k01-3.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
       "title": "Logotipai – titulinio puslapio apačioje",
       "text": "Slenkate titulinį puslapį iki /apaˈtʃʲoːs/.",
-      "file": "k01-1.wav",
-      "duration": 3.03,
+      "file": "k02-1.wav",
+      "duration": 2.81,
       "fits": true,
       "reikia_sek": 12
     },
     {
-      "kadras": 1,
+      "kadras": 2,
       "cue": 2,
       "title": "Logotipai – titulinio puslapio apačioje",
       "text": "Ten ir atsiranda partnerių bei draugų logotipai.",
-      "file": "k01-2.wav",
-      "duration": 3.21,
+      "file": "k02-2.wav",
+      "duration": 3.29,
       "fits": true,
       "reikia_sek": 12
     },
     {
-      "kadras": 1,
+      "kadras": 2,
       "cue": 3,
       "title": "Logotipai – titulinio puslapio apačioje",
       "text": "Jie išdėstomi viena /ɛiluˈtʲɛ/.",
-      "file": "k01-3.wav",
-      "duration": 2.37,
+      "file": "k02-3.wav",
+      "duration": 2.49,
       "fits": true,
       "reikia_sek": 12
     },
     {
-      "kadras": 2,
+      "kadras": 3,
       "cue": 1,
       "title": "Logotipo reikalavimai",
       "text": "Logotipą talpinate be fono.",
-      "file": "k02-1.wav",
-      "duration": 2.33,
-      "fits": false,
+      "file": "k03-1.wav",
+      "duration": 2.17,
+      "fits": true,
       "reikia_sek": 13
     },
     {
-      "kadras": 2,
+      "kadras": 3,
       "cue": 2,
       "title": "Logotipo reikalavimai",
       "text": "Apkerpate jį tiek, kad /nʲɛˈlʲiktuː/ /tuʃˈtʃʲoːs/ erdvės.",
-      "file": "k02-2.wav",
-      "duration": 3.45,
+      "file": "k03-2.wav",
+      "duration": 3.53,
       "fits": true,
-      "reikia_sek": 12
+      "reikia_sek": 13
     },
     {
-      "kadras": 2,
+      "kadras": 3,
       "cue": 3,
       "title": "Logotipo reikalavimai",
       "text": "Su fonu logotipas atrodo per /ˈmaːʒas/.",
-      "file": "k02-3.wav",
-      "duration": 2.85,
-      "fits": true,
-      "reikia_sek": 12
-    },
-    {
-      "kadras": 3,
-      "cue": 1,
-      "title": "Įrašote partnerio nuorodą",
-      "text": "Laukelyje „u er el“ įrašote pilną nuorodą.",
-      "file": "k03-1.wav",
-      "duration": 3.77,
-      "fits": false,
-      "reikia_sek": 14
-    },
-    {
-      "kadras": 3,
-      "cue": 2,
-      "title": "Įrašote partnerio nuorodą",
-      "text": "Eilutėje „Target“ įrašote „/blæŋk/“.",
-      "file": "k03-2.wav",
-      "duration": 5.89,
-      "fits": false,
-      "reikia_sek": 17
-    },
-    {
-      "kadras": 3,
-      "cue": 3,
-      "title": "Įrašote partnerio nuorodą",
-      "text": "Nuoroda atsidarys naujame /lanˈɡʲɛ/.",
       "file": "k03-3.wav",
-      "duration": 2.41,
+      "duration": 2.81,
       "fits": true,
       "reikia_sek": 13
     },
     {
       "kadras": 4,
       "cue": 1,
-      "title": "Išjungiate partnerio logotipą",
-      "text": "Stulpelyje „Enabled“ išjungiate jungiklį.",
+      "title": "Įrašote partnerio nuorodą",
+      "text": "Laukelyje „u er el“ įrašote pilną nuorodą.",
       "file": "k04-1.wav",
-      "duration": 3.13,
+      "duration": 3.69,
       "fits": true,
-      "reikia_sek": 8
+      "reikia_sek": 17
     },
     {
       "kadras": 4,
       "cue": 2,
-      "title": "Išjungiate partnerio logotipą",
-      "text": "/ˈʒaːlʲas/ „Yes“ /ˈvʲirsta/ rožiniu „No“.",
+      "title": "Įrašote partnerio nuorodą",
+      "text": "Eilutėje „Target“ įrašote „/blæŋk/“.",
       "file": "k04-2.wav",
-      "duration": 3.29,
-      "fits": false,
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Įrašote partnerio nuorodą",
+      "text": "Nuoroda atsidarys naujame /lanˈɡʲɛ/.",
+      "file": "k04-3.wav",
+      "duration": 2.33,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Išjungiate partnerio logotipą",
+      "text": "Stulpelyje „Enabled“ išjungiate jungiklį.",
+      "file": "k05-1.wav",
+      "duration": 3.01,
+      "fits": true,
       "reikia_sek": 9
     },
     {
       "kadras": 5,
+      "cue": 2,
+      "title": "Išjungiate partnerio logotipą",
+      "text": "/ˈʒaːlʲas/ „Yes“ /ˈvʲirsta/ rožiniu „No“.",
+      "file": "k05-2.wav",
+      "duration": 3.17,
+      "fits": true,
+      "reikia_sek": 9
+    },
+    {
+      "kadras": 6,
       "cue": 1,
       "title": "Išjungus visus – sekcija dingsta",
       "text": "Perkraunate titulinį puslapį.",
-      "file": "k05-1.wav",
-      "duration": 2.05,
+      "file": "k06-1.wav",
+      "duration": 2.09,
       "fits": true,
-      "reikia_sek": 10
+      "reikia_sek": 11
     },
     {
-      "kadras": 5,
+      "kadras": 6,
       "cue": 2,
       "title": "Išjungus visus – sekcija dingsta",
       "text": "Išjungus visus įrašus dingsta visa sekcija.",
-      "file": "k05-2.wav",
-      "duration": 3.37,
+      "file": "k06-2.wav",
+      "duration": 3.41,
       "fits": true,
-      "reikia_sek": 10
+      "reikia_sek": 11
     },
     {
-      "kadras": 5,
+      "kadras": 6,
       "cue": 3,
       "title": "Išjungus visus – sekcija dingsta",
       "text": "Lankytojas jos nebemato.",
-      "file": "k05-3.wav",
+      "file": "k06-3.wav",
       "duration": 2.183,
       "fits": true,
-      "reikia_sek": 10
+      "reikia_sek": 11
     }
   ]
 }

@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:01.000 --> 00:00:04.290
+Abu numerius matote to paties failo adrese.
+
+2
+00:00:05.200 --> 00:00:09.610
+Failo numeris rodo patį failą – visoms jo lentelėms jis vienodas.
+
+3
+00:00:11.000 --> 00:00:17.670
+O gID rodo konkretų lapą. Jis nesikeičia net tada, kai lapą pervadinate.
+
+4
+00:00:18.000 --> 00:00:22.990
+Pirmasis lapas visada turi gID nulis – tai numatytasis lapas.

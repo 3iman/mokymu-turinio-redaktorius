@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:01.000 --> 00:00:03.890
+Langelyje visada rašote vieną eilutę.
+
+2
+00:00:04.600 --> 00:00:10.930
+Jei tekstą perkeliate į naują eilutę, svetainė gauna tik pirmąją, ir lentelė lūžta.
+
+3
+00:00:11.300 --> 00:00:13.710
+Vietoj to rašote per kablelį.
+
+4
+00:00:14.200 --> 00:00:18.770
+Google Sheets čia – duomenų bazė, ne teksto redaktorius.

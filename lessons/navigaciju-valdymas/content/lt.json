@@ -605,5 +605,15 @@
       "t",
       "/"
     ]
+  },
+  "00_kam_tai": {
+    "title": "Kur svetainėje gyvena navigacijos",
+    "item_1": "Pagrindinis meniu",
+    "item_2": "Juodoji navigacija",
+    "item_3": "Greitosios nuorodos apačioje",
+    "item_4": "Klaviatūra: Tab → Enter; skaitytuvas pasako submeniu",
+    "summary": "Naują puslapį į meniu dedate patys",
+    "item_4_a": "Klaviatūra: Tab",
+    "item_4_b": "Enter; skaitytuvas pasako submeniu"
   }
 }

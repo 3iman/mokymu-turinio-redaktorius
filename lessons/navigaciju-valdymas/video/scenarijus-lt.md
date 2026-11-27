@@ -4,7 +4,7 @@
 **Kalba:** lt — ekrano užrašai ir TVS komponentai lieka originalo kalba (§7.3)
 **Balsas:** ElevenLabs, „Darius Cleverphant“ — modelis ir nustatymai pagal `VIDEO_GAMYBA.md` §7
 **Balso seed:** 989646156 – įrašomas automatiškai; pakeitus tekstą balsas generuojamas iš naujo
-**Trukmė:** 177 sek. (13 epizodai)
+**Trukmė:** 195 sek. (14 epizodai)
 **Šaltinis:** `clv-mokymu-platformos-redisign-html/turinys/adaptuota/kursai/*.json` › `explaineris` — generuoja `scripts/epizodai-i-scenarijus.py`; ranka neredaguoti.
 **Pamoka platformoje:** `pam_705` · senoji WP pamoka `navigaciju-valdymas`
 **Išvestis platformai:** kiekvienas kadras — atskiras klipas `{epizodo id}.mp4` + `.vtt` (subtitrai iš balso); YouTube rinkiniui — su intro / outro
@@ -13,25 +13,46 @@
 
 | Kadras | Trukmė | Failas | Balsas |
 |---|---|---|---|
-| 1 Grupės jau sukurtos | 13 sek. | 01-navigaciju-grupes | Navigacijų sąraše grupės jau sukurtos. Prie kiekvienos matote aprašymą, kurioje vietoje ji rodoma. Jums belieka pasirinkti reikiamą. |
-| 2 Sukuriate naują grupę | 14 sek. | 02-nauja-grupe | Naują grupę pradedate mygtuku „Naujas meniu“. Lauke „Vardas“ įrašote grupės pavadinimą. Laukas „Slug“ užsipildo pats – patikrinate ir išsaugote. |
-| 3 Atpažįstate išorinę nuorodą | 11 sek. | 03-isorine-nuoroda | Prie nuorodos matote raudoną strėlytę. Ji reiškia išorinę nuorodą. Lankytoją ji išves už svetainės ribų. |
-| 4 Pasirenkate nuorodos tipą | 13 sek. | 04-nuorodos-tipas | Kurdami nuorodą pirmiausia pasirenkate jos tipą. „Page“ priskiria puslapį iš svetainės medžio. „URL“ veda į išorinę nuorodą. |
-| 5 Kur rasti „Navigacijos“ | 13 sek. | 05-kur-rasti-navigacijas | „Navigacijos“ rasite darbalaukyje. Arba kairiajame meniu. Greičiausia – paieškoje įrašyti „navi“. Ir pasirenkate „Navigacijos“. |
-| 6 Atidarote nuorodų medį | 9 sek. | 05-nuorodu-medis | Prie grupės „Main“ spaudžiate „Linkai“. Atsiveria pagrindinės navigacijos medis. |
-| 7 Puslapį pridedate į meniu | 17 sek. | 05-nauja-nuoroda | Nuorodų medyje spaudžiate „Naujas linkas“ ir pasirenkate „Page“. Lauke „Page“ susirandate puslapį „Logopedas“. Spaudžiate „Išsaugoti“ – nuoroda atsiranda medžio apačioje. |
-| 8 Meniu vardas gali skirtis | 13 sek. | 06-skirtingi-pavadinimai | Lauke „Title“ įrašote, kaip nuoroda vadinsis meniu. Priskirtas puslapis gali vadintis kitaip. Meniu lieka trumpas pavadinimas. |
-| 9 Atidarote nuorodos parinktis | 14 sek. | 07-juodojo-meniu-parinktys | Prie grupės „Black“ spaudžiate „Linkai“. Atidarote nuorodą, kuriai norite ikonėlės. Skirtuke „Parinktys“ laukas „Class“ kol kas tuščias. |
-| 10 Nukopijuojate ikonėlės kodą | 15 sek. | 07-fontawesome-kodas | Fontawesome paieškoje įrašote ikonos vardą. Pasirenkate tinkamą ikoną. Stilių renkatės „Light“ ir nukopijuojate HTML kodą. |
-| 11 Įklijuojate ikonėlės klasę | 16 sek. | 07-ikonos-klase | Lauke „Class“ įklijuojate nukopijuotą kodą. Paliekate tik klasę – HTML dalis ištrinate. Spaudžiate „Atnaujinti“ ir ikonėlė atsiranda meniu. |
-| 12 Atidarote keturių ikonų nuorodas | 15 sek. | 08-keturios-ikonos | Paieškoje pasirenkate „Navigacijos“. Prie grupės „4 ikonos“ spaudžiate „Linkai“. Matote keturias titulinio puslapio nuorodas. |
-| 13 Pakeičiate el. dienyno adresą | 14 sek. | 08-dienyno-adresas | Sąraše spaudžiate „Elektroninis dienynas“. Lauke „URL“ įrašote naują dienyno adresą. Spaudžiate „Atnaujinti“ – nuoroda išsaugota. |
+| 1 Kam tai | 17 sek. | 00-kam-tai | Naujas puslapis meniu pats neatsiranda. Navigacijas priskiriate patys. Meniu, juodoji navigacija, greitosios nuorodos. „Tab“ ir „Enter“; skaitytuvas pasako submeniu. |
+| 2 Grupės jau sukurtos | 13 sek. | 01-navigaciju-grupes | Navigacijų sąraše grupės jau sukurtos. Prie kiekvienos matote aprašymą, kurioje vietoje ji rodoma. Jums belieka pasirinkti reikiamą. |
+| 3 Sukuriate naują grupę | 15 sek. | 02-nauja-grupe | Naują grupę pradedate mygtuku „Naujas meniu“. Lauke „Vardas“ įrašote grupės pavadinimą. Laukas „Slug“ užsipildo pats – patikrinate ir išsaugote. |
+| 4 Atpažįstate išorinę nuorodą | 11 sek. | 03-isorine-nuoroda | Prie nuorodos matote raudoną strėlytę. Ji reiškia išorinę nuorodą. Lankytoją ji išves už svetainės ribų. |
+| 5 Pasirenkate nuorodos tipą | 13 sek. | 04-nuorodos-tipas | Kurdami nuorodą pirmiausia pasirenkate jos tipą. „Page“ priskiria puslapį iš svetainės medžio. „URL“ veda į išorinę nuorodą. |
+| 6 Kur rasti „Navigacijos“ | 13 sek. | 05-kur-rasti-navigacijas | „Navigacijos“ rasite darbalaukyje. Arba kairiajame meniu. Greičiausia – paieškoje įrašyti „navi“. Ir pasirenkate „Navigacijos“. |
+| 7 Atidarote nuorodų medį | 9 sek. | 05-nuorodu-medis | Prie grupės „Main“ spaudžiate „Linkai“. Atsiveria pagrindinės navigacijos medis. |
+| 8 Puslapį pridedate į meniu | 17 sek. | 05-nauja-nuoroda | Nuorodų medyje spaudžiate „Naujas linkas“ ir pasirenkate „Page“. Lauke „Page“ susirandate puslapį „Logopedas“. Spaudžiate „Išsaugoti“ – nuoroda atsiranda medžio apačioje. |
+| 9 Meniu vardas gali skirtis | 13 sek. | 06-skirtingi-pavadinimai | Lauke „Title“ įrašote, kaip nuoroda vadinsis meniu. Priskirtas puslapis gali vadintis kitaip. Meniu lieka trumpas pavadinimas. |
+| 10 Atidarote nuorodos parinktis | 14 sek. | 07-juodojo-meniu-parinktys | Prie grupės „Black“ spaudžiate „Linkai“. Atidarote nuorodą, kuriai norite ikonėlės. Skirtuke „Parinktys“ laukas „Class“ kol kas tuščias. |
+| 11 Nukopijuojate ikonėlės kodą | 15 sek. | 07-fontawesome-kodas | Fontawesome paieškoje įrašote ikonos vardą. Pasirenkate tinkamą ikoną. Stilių renkatės „Light“ ir nukopijuojate HTML kodą. |
+| 12 Įklijuojate ikonėlės klasę | 16 sek. | 07-ikonos-klase | Lauke „Class“ įklijuojate nukopijuotą kodą. Paliekate tik klasę – HTML dalis ištrinate. Spaudžiate „Atnaujinti“ ir ikonėlė atsiranda meniu. |
+| 13 Atidarote keturių ikonų nuorodas | 15 sek. | 08-keturios-ikonos | Paieškoje pasirenkate „Navigacijos“. Prie grupės „4 ikonos“ spaudžiate „Linkai“. Matote keturias titulinio puslapio nuorodas. |
+| 14 Pakeičiate el. dienyno adresą | 14 sek. | 08-dienyno-adresas | Sąraše spaudžiate „Elektroninis dienynas“. Lauke „URL“ įrašote naują dienyno adresą. Spaudžiate „Atnaujinti“ – nuoroda išsaugota. |
 
 ---
 
 ## Kadrai
 
-### KADRAS 1: Grupės jau sukurtos (13 sek.) — epizodas
+### KADRAS 1: Kam tai (17 sek.) — koncepcija
+**Failas:** `00-kam-tai.png`
+**Šablonas:** `perziura` · laukai: title, item_1, item_2, item_3, item_4, summary
+**Ekrane:** Šablonas `perziura`: svetainės schema su trimis pažymėtomis vietomis – meniu viršuje, juoda juosta, nuorodos apačioje; naujas puslapis nė vienoje, kol rodyklė jo neįdeda. Pabaigoje prieinamumo takelis: fokuso rėmelis per meniu punktus, skaitytuvo burbulas „turi submeniu“ (3–5 s).
+**Ekrano užrašai (tiksliai):** „Tab“, „Enter“
+**TVS UI komponentai:** —
+**Demo duomenys:** mokykla: Demo mokykla
+**Tarimo kandidatai:** Tab, Enter (tikrinti `kircio-patikra.js`)
+**Nuorodos (senas įrašas):** —
+**Komentaras:** epizodas `viz_705_00` · dalis `dal_705_00` „Kam tai“ · prioritetas 2 · pagrindas: dal_705_00 paaiškinimas; viz_705_00 laukai
+
+**Laiko žymos:**
+
+| Laikas | Kas | Tekstas arba garsas |
+|---|---|---|
+| 1.2 | balsas | Naujas puslapis meniu pats neatsiranda. |
+| 4.4 | balsas | Navigacijas priskiriate patys. |
+| 6.9 | balsas | Meniu, juodoji navigacija, greitosios nuorodos. |
+| 11.0 | balsas | „Tab“ ir „Enter“; skaitytuvas pasako submeniu. |
+
+### KADRAS 2: Grupės jau sukurtos (13 sek.) — epizodas
 **Failas:** `01-navigaciju-grupes.png`
 **Ekrane:** Navigacijų grupių sąrašas „Meniu“; kamera lėtai eina stulpeliu „Vardas“ — „4 ikonos“, „Black“, „Footer 1“, „Main“ — šalia kiekvienos šviečia aprašymas stulpelyje „Aprašymas“.
 **Ekrano užrašai (tiksliai):** „Vardas“, „Aprašymas“, „4 ikonos“, „Black“, „Main“
@@ -49,7 +70,7 @@
 | 4.4 | balsas | Prie kiekvienos matote aprašymą, kurioje vietoje ji rodoma. |
 | 9.2 | balsas | Jums belieka pasirinkti reikiamą. |
 
-### KADRAS 2: Sukuriate naują grupę (14 sek.) — epizodas
+### KADRAS 3: Sukuriate naują grupę (15 sek.) — epizodas
 **Failas:** `02-nauja-grupe.png`
 **Ekrane:** Grupių sąrašas; kursorius spaudžia žalią mygtuką „Naujas meniu“, atsiveria forma su laukais „Vardas“ ir „Slug“. Įrašomas vardas, „Slug“ užsipildo pats („pagalba-mokiniams“ — su brūkšneliu), spaudžiama „Išsaugoti“.
 **Ekrano užrašai (tiksliai):** „Naujas meniu“, „Vardas“, „Slug“, „Išsaugoti“
@@ -67,11 +88,11 @@
 | 2.6 | garsas | spustelejimas |
 | 5.1 | balsas | Lauke „Vardas“ įrašote grupės pavadinimą. |
 | 6.5 | garsas | rasymas |
-| 8.5 | balsas | Laukas „Slug“ užsipildo pats – patikrinate ir išsaugote. |
-| 10.9 | garsas | spustelejimas |
-| 11.4 | garsas | patvirtinimas |
+| 8.6 | balsas | Laukas „Slug“ užsipildo pats – patikrinate ir išsaugote. |
+| 11.0 | garsas | spustelejimas |
+| 11.5 | garsas | patvirtinimas |
 
-### KADRAS 3: Atpažįstate išorinę nuorodą (11 sek.) — epizodas
+### KADRAS 4: Atpažįstate išorinę nuorodą (11 sek.) — epizodas
 **Failas:** `03-isorine-nuoroda.png`
 **Ekrane:** Nuorodų sąrašas; kamera priartėja prie eilutės „Youtube kanalas“, kurioje šalia pavadinimo šviečia raudona strėlytės ikonėlė. Ikonėlė sumirksi.
 **Ekrano užrašai (tiksliai):** „Youtube kanalas“, „URL“
@@ -89,7 +110,7 @@
 | 4.6 | balsas | Ji reiškia išorinę nuorodą. |
 | 7.0 | balsas | Lankytoją ji išves už svetainės ribų. |
 
-### KADRAS 4: Pasirenkate nuorodos tipą (13 sek.) — epizodas
+### KADRAS 5: Pasirenkate nuorodos tipą (13 sek.) — epizodas
 **Failas:** `04-nuorodos-tipas.png`
 **Ekrane:** Modalinis langas „Kokio tipo linką norite sukurti?“ su dviem pasirinkimais — „Page“ ir „URL“. Fokusas stoja ties „Page“, tada ties „URL“; spaudžiama „URL“ ir atsiveria forma su laukais „Title“ ir „URL“.
 **Ekrano užrašai (tiksliai):** „Kokio tipo linką norite sukurti?“, „Page“, „URL“
@@ -108,7 +129,7 @@
 | 8.9 | balsas | „URL“ veda į išorinę nuorodą. |
 | 10.3 | garsas | spustelejimas |
 
-### KADRAS 5: Kur rasti „Navigacijos“ (13 sek.) — epizodas
+### KADRAS 6: Kur rasti „Navigacijos“ (13 sek.) — epizodas
 **Failas:** `05-kur-rasti-navigacijas.png`
 **Ekrane:** TVS darbalaukis („Darbalaukiai“ › „Įrankiai“). Fokusas ant „Navigacijos“ modulių sąraše (nespaudžiama). Tada fokusas ant suskleisto kairiojo meniu — ikona „≡“ (tokia pat kaip darbalaukyje prie „Navigacijos“); spaudžiamas „☰“, meniu išsiskleidžia ir prie tos pačios ikonos matosi užrašas „Navigacijos“ (nespaudžiama). Tada paieškos lauke „Type to search…“ įrašoma „navi“, išsiskleidžia sąrašas su grupe „Navigation“ ir spaudžiama „Navigacijos“ — atsiveria grupių sąrašas.
 **Ekrano užrašai (tiksliai):** „Darbalaukiai“, „Įrankiai“, „Puslapiai“, „Navigacijos“, „Type to search…“, „navi“, „Navigation“, „Links“
@@ -130,7 +151,7 @@
 | 9.6 | balsas | Ir pasirenkate „Navigacijos“. |
 | 10.6 | garsas | spustelejimas |
 
-### KADRAS 6: Atidarote nuorodų medį (9 sek.) — epizodas
+### KADRAS 7: Atidarote nuorodų medį (9 sek.) — epizodas
 **Failas:** `05-nuorodu-medis.png`
 **Ekrane:** Navigacijų grupių sąrašas; fokusas ant eilutės „Main“, kursorius spaudžia mėlyną „Linkai“, atsiveria nuorodų medis eilutė po eilutės.
 **Ekrano užrašai (tiksliai):** „Main“, „Linkai“, „Redaguoti“, „Vardas“, „Aprašymas“, „Naujas linkas“, „Page“, „URL“
@@ -148,7 +169,7 @@
 | 2.6 | garsas | spustelejimas |
 | 4.4 | balsas | Atsiveria pagrindinės navigacijos medis. |
 
-### KADRAS 7: Puslapį pridedate į meniu (17 sek.) — epizodas
+### KADRAS 8: Puslapį pridedate į meniu (17 sek.) — epizodas
 **Failas:** `05-nauja-nuoroda.png`
 **Ekrane:** Grupės „Main“ nuorodų medis; kursorius spaudžia „Naujas linkas“, lange pasirenka „Page“. Formoje lauke „Page“ — „Pažymėti“, paieškoje įrašoma „logo“, prie „Logopedas“ — „Pažymėti“; „Title“ lieka tuščias (meniu rodo priskirto puslapio pavadinimą), tada „Išsaugoti“.
 **Ekrano užrašai (tiksliai):** „Title“, „Naujas linkas“, „Page“, „URL“, „Pažymėti“, „Logopedas“, „Išsaugoti“
@@ -173,7 +194,7 @@
 | 12.3 | garsas | spustelejimas |
 | 13.7 | garsas | patvirtinimas |
 
-### KADRAS 8: Meniu vardas gali skirtis (13 sek.) — epizodas
+### KADRAS 9: Meniu vardas gali skirtis (13 sek.) — epizodas
 **Failas:** `06-skirtingi-pavadinimai.png`
 **Ekrane:** Nuorodos redagavimo forma; kameroje greta laukas „Title“ su reikšme „Projektai“ ir priskirtas puslapis „Projektinė veikla“. Abu užrašai sumirksi vienu metu.
 **Ekrano užrašai (tiksliai):** „Title“, „Projektai“, „Projektinė veikla“
@@ -191,7 +212,7 @@
 | 5.4 | balsas | Priskirtas puslapis gali vadintis kitaip. |
 | 8.8 | balsas | Meniu lieka trumpas pavadinimas. |
 
-### KADRAS 9: Atidarote nuorodos parinktis (14 sek.) — epizodas
+### KADRAS 10: Atidarote nuorodos parinktis (14 sek.) — epizodas
 **Failas:** `07-juodojo-meniu-parinktys.png`
 **Ekrane:** Grupių sąrašas; prie eilutės „Black“ spaudžiama „Linkai“, atsiveria juodojo meniu nuorodos. Pasirenkama viena nuoroda, formoje spaudžiamas skirtukas „Parinktys“ ir rodomas tuščias laukas „Class“.
 **Ekrano užrašai (tiksliai):** „Black“, „Linkai“, „Pagrindinis“, „Parinktys“, „Class“
@@ -212,7 +233,7 @@
 | 8.2 | balsas | Skirtuke „Parinktys“ laukas „Class“ kol kas tuščias. |
 | 9.0 | garsas | spustelejimas |
 
-### KADRAS 10: Nukopijuojate ikonėlės kodą (15 sek.) — epizodas
+### KADRAS 11: Nukopijuojate ikonėlės kodą (15 sek.) — epizodas
 **Failas:** `07-fontawesome-kodas.png`
 **Ekrane:** Fontawesome puslapis su ikonų tinkleliu; paieškoje įrašoma „list“, tinklelyje pažymima „list-ol“. Atsiveria ikonos langas su stiliais, pasirenkamas „Light“ ir nukopijuojamas HTML kodas.
 **Ekrano užrašai (tiksliai):** „list“, „list-ol“, „Light“, „HTML“
@@ -233,7 +254,7 @@
 | 8.4 | balsas | Stilių renkatės „Light“ ir nukopijuojate HTML kodą. |
 | 11.0 | garsas | patvirtinimas |
 
-### KADRAS 11: Įklijuojate ikonėlės klasę (16 sek.) — epizodas
+### KADRAS 12: Įklijuojate ikonėlės klasę (16 sek.) — epizodas
 **Failas:** `07-ikonos-klase.png`
 **Ekrane:** TVS skirtukas „Parinktys“; į lauką „Class“ įklijuojamas kodas, iš jo ištrinamos HTML dalys ir lieka tik klasė. Spaudžiama „Atnaujinti“, ekranas persijungia į svetainės juodąjį meniu, kuriame atsiranda ikonėlė.
 **Ekrano užrašai (tiksliai):** „Class“, „fal fa-list-ol“, „Atnaujinti“
@@ -255,7 +276,7 @@
 | 10.5 | garsas | spustelejimas |
 | 12.3 | garsas | patvirtinimas |
 
-### KADRAS 12: Atidarote keturių ikonų nuorodas (15 sek.) — epizodas
+### KADRAS 13: Atidarote keturių ikonų nuorodas (15 sek.) — epizodas
 **Failas:** `08-keturios-ikonos.png`
 **Ekrane:** TVS darbalaukis; paieškoje įrašoma „navi“ ir pasirenkama „Navigacijos“, grupių sąraše prie „4 ikonos“ spaudžiama „Linkai“ ir pasirodo keturios titulinio puslapio nuorodos: „Elektroninis dienynas“, „Tėvams“, „Mokiniams“, „Mokytojams“.
 **Ekrano užrašai (tiksliai):** „navi“, „Navigacijos“, „4 ikonos“, „Linkai“, „Elektroninis dienynas“, „Tėvams“, „Mokiniams“, „Mokytojams“
@@ -276,7 +297,7 @@
 | 5.8 | garsas | spustelejimas |
 | 8.7 | balsas | Matote keturias titulinio puslapio nuorodas. |
 
-### KADRAS 13: Pakeičiate el. dienyno adresą (14 sek.) — epizodas
+### KADRAS 14: Pakeičiate el. dienyno adresą (14 sek.) — epizodas
 **Failas:** `08-dienyno-adresas.png`
 **Ekrane:** Nuorodų sąrašas; spaudžiama „Elektroninis dienynas“, atsiveria forma. Lauke „URL“ senas adresas pažymimas ir pakeičiamas nauju, spaudžiama „Atnaujinti“.
 **Ekrano užrašai (tiksliai):** „Elektroninis dienynas“, „Title“, „URL“, „Atnaujinti“

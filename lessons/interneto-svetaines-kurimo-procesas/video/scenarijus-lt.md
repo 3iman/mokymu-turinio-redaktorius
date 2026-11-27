@@ -4,7 +4,7 @@
 **Kalba:** lt — ekrano užrašai ir TVS komponentai lieka originalo kalba (§7.3)
 **Balsas:** ElevenLabs, „Darius Cleverphant“ — modelis ir nustatymai pagal `VIDEO_GAMYBA.md` §7
 **Balso seed:** 453315185 – įrašomas automatiškai; pakeitus tekstą balsas generuojamas iš naujo
-**Trukmė:** 124 sek. (9 epizodai)
+**Trukmė:** 138 sek. (10 epizodai)
 **Šaltinis:** `clv-mokymu-platformos-redisign-html/turinys/adaptuota/kursai/*.json` › `explaineris` — generuoja `scripts/epizodai-i-scenarijus.py`; ranka neredaguoti.
 **Pamoka platformoje:** `pam_684` · senoji WP pamoka `interneto-svetaines-kurimo-procesas`
 **Išvestis platformai:** kiekvienas kadras — atskiras klipas `{epizodo id}.mp4` + `.vtt` (subtitrai iš balso); YouTube rinkiniui — su intro / outro
@@ -22,6 +22,7 @@
 | 7 Domeno nukreipimas | 16 sek. | 07-domeno-nukreipimas | Naują svetainės adresą sugalvojate jūs. Registracija ir prieglauda yra partnerio „Wolet“ darbas. Jei prieigos prie domeno neturite, pranešate iš karto. |
 | 8 Išjungiate pranešimų juostelę | 13 sek. | 08-juosteles-isjungimas | Po starto išjungiate pranešimų juostelę. Įraše perjungiate rodymą ir išsaugote. Svetainės viršuje juostelės nebematote. |
 | 9 Keturi darbai po starto | 14 sek. | 08-po-starto-darbai | Įsitikinate, kad senoji svetainė išjungta. Patikrinate adresą paieškos sistemose ir kataloguose. Pranešate bendruomenei ir išjungiate juostelę. |
+| 10 Mokymai perėmusiems administravimą | 14 sek. | 09-mokymai-peremusiems | Svetainę administravęs žmogus išeina, pareigą perima kitas. Naujam administratoriui vedame mokymus. Parašote pagalbos centrui – sutariame laiką. |
 
 ---
 
@@ -199,3 +200,22 @@
 | 1.2 | balsas | Įsitikinate, kad senoji svetainė išjungta. |
 | 4.7 | balsas | Patikrinate adresą paieškos sistemose ir kataloguose. |
 | 9.1 | balsas | Pranešate bendruomenei ir išjungiate juostelę. |
+
+### KADRAS 10: Mokymai perėmusiems administravimą (14 sek.) — koncepcija
+**Failas:** `09-mokymai-peremusiems.png`
+**Šablonas:** `perziura` · laukai: title, item_1, item_2, item_3, summary
+**Ekrane:** Šablonas `perziura`: žmogeliukas perduoda raktą kitam, laiškas į pagalbos centrą, kalendorius su sutartu laiku; apačioje „30 min“.
+**Ekrano užrašai (tiksliai):** „30 min“
+**TVS UI komponentai:** —
+**Demo duomenys:** mokykla: Demo mokykla
+**Tarimo kandidatai:** — (tikrinti `kircio-patikra.js`)
+**Nuorodos (senas įrašas):** —
+**Komentaras:** epizodas `viz_684_09` · dalis `dal_684_09` „Mokymai perėmusiems administravimą“ · prioritetas 2 · pagrindas: dal_684_09 paaiškinimas; viz_684_09 laukai
+
+**Laiko žymos:**
+
+| Laikas | Kas | Tekstas arba garsas |
+|---|---|---|
+| 1.2 | balsas | Svetainę administravęs žmogus išeina, pareigą perima kitas. |
+| 6.0 | balsas | Naujam administratoriui vedame mokymus. |
+| 9.2 | balsas | Parašote pagalbos centrui – sutariame laiką. |

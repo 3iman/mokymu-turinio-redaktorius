@@ -4,7 +4,7 @@
 **Kalba:** lt — ekrano užrašai ir TVS komponentai lieka originalo kalba (§7.3)
 **Balsas:** ElevenLabs, „Darius Cleverphant“ — modelis ir nustatymai pagal `VIDEO_GAMYBA.md` §7
 **Balso seed:** 1249631096 – įrašomas automatiškai; pakeitus tekstą balsas generuojamas iš naujo
-**Trukmė:** 43 sek. (3 epizodai)
+**Trukmė:** 59 sek. (4 epizodai)
 **Šaltinis:** `clv-mokymu-platformos-redisign-html/turinys/adaptuota/kursai/*.json` › `explaineris` — generuoja `scripts/epizodai-i-scenarijus.py`; ranka neredaguoti.
 **Pamoka platformoje:** `pam_709` · senoji WP pamoka `nuorodu-valdymas`
 **Išvestis platformai:** kiekvienas kadras — atskiras klipas `{epizodo id}.mp4` + `.vtt` (subtitrai iš balso); YouTube rinkiniui — su intro / outro
@@ -13,15 +13,35 @@
 
 | Kadras | Trukmė | Failas | Balsas |
 |---|---|---|---|
-| 1 Nuorodos išdėstomos po tris | 12 sek. | 02-nuorodos-svetaineje | Nuorodas svetainėje matote lentelėje. Vienoje eilutėje telpa trys logotipai. Vietoje logotipo galite naudoti ikonėlę. |
-| 2 Užpildote nuorodos įrašo kortelę | 22 sek. | 05-nuorodos-irasas | Įkeliate logotipą be fono. Nurodote kategoriją – kitaip nuoroda niekur nesimatys. Laukelyje „Target“ įrašote „_blank“. Nuoroda atsidarys naujame lange. |
-| 3 Nukopijuojate nuorodų rinkinio sintaksę | 9 sek. | 06-nuorodu-sintakse | Atidarote skyrių „Kategorijos“. Violetinis mygtukas nukopijuoja įterpimo sintaksę. |
+| 1 Kam tai | 16 sek. | 00-kam-tai | Modulis rodo naudingų nuorodų logotipus. Puslapis „Nuorodos“ – kas kita: tekstinės nuorodos į įstaigas. „Tab“, „Enter“; skaitytuvas skaito pavadinimą. |
+| 2 Nuorodos išdėstomos po tris | 12 sek. | 02-nuorodos-svetaineje | Nuorodas svetainėje matote lentelėje. Vienoje eilutėje telpa trys logotipai. Vietoje logotipo galite naudoti ikonėlę. |
+| 3 Užpildote nuorodos įrašo kortelę | 22 sek. | 05-nuorodos-irasas | Įkeliate logotipą be fono. Nurodote kategoriją – kitaip nuoroda niekur nesimatys. Laukelyje „Target“ įrašote „_blank“. Nuoroda atsidarys naujame lange. |
+| 4 Nukopijuojate nuorodų rinkinio sintaksę | 9 sek. | 06-nuorodu-sintakse | Atidarote skyrių „Kategorijos“. Violetinis mygtukas nukopijuoja įterpimo sintaksę. |
 
 ---
 
 ## Kadrai
 
-### KADRAS 1: Nuorodos išdėstomos po tris (12 sek.) — epizodas
+### KADRAS 1: Kam tai (16 sek.) — koncepcija
+**Failas:** `00-kam-tai.png`
+**Šablonas:** `perziura` · laukai: title, item_1, item_2, item_3, summary
+**Ekrane:** Šablonas `perziura`: kairėje logotipų lentelė po tris, dešinėje puslapis „Nuorodos“ su tekstinėmis eilutėmis; tarp jų ženklas „≠“. Pabaigoje prieinamumo takelis: fokusas ant kortelės, skaitytuvo burbulas su pavadinimu (3–5 s).
+**Ekrano užrašai (tiksliai):** „Nuorodos“, „Tab“, „Enter“
+**TVS UI komponentai:** —
+**Demo duomenys:** mokykla: Demo mokykla
+**Tarimo kandidatai:** Tab, Enter (tikrinti `kircio-patikra.js`)
+**Nuorodos (senas įrašas):** —
+**Komentaras:** epizodas `viz_709_00` · dalis `dal_709_00` „Kam tai“ · prioritetas 2 · pagrindas: dal_709_00 paaiškinimas; viz_709_00 laukai
+
+**Laiko žymos:**
+
+| Laikas | Kas | Tekstas arba garsas |
+|---|---|---|
+| 1.2 | balsas | Modulis rodo naudingų nuorodų logotipus. |
+| 4.7 | balsas | Puslapis „Nuorodos“ – kas kita: tekstinės nuorodos į įstaigas. |
+| 9.9 | balsas | „Tab“, „Enter“; skaitytuvas skaito pavadinimą. |
+
+### KADRAS 2: Nuorodos išdėstomos po tris (12 sek.) — epizodas
 **Failas:** `02-nuorodos-svetaineje.png`
 **Ekrane:** Svetainės puslapis su nuorodų lentele; kamera lėtai leidžiasi žemyn. Viena eilutė paryškinama – joje telpa trys logotipai; apatinėje eilutėje vietoje logotipo atsiranda ikonėlė.
 **Ekrano užrašai (tiksliai):** „Naudingos nuorodos“
@@ -39,7 +59,7 @@
 | 4.5 | balsas | Vienoje eilutėje telpa trys logotipai. |
 | 7.7 | balsas | Vietoje logotipo galite naudoti ikonėlę. |
 
-### KADRAS 2: Užpildote nuorodos įrašo kortelę (22 sek.) — epizodas
+### KADRAS 3: Užpildote nuorodos įrašo kortelę (22 sek.) — epizodas
 **Failas:** `05-nuorodos-irasas.png`
 **Ekrane:** Nuorodos įrašo kortelė; į viršutinį lauką įkeliamas logotipas be fono. Kamera leidžiasi prie lauko „Kategorija“, kuriame pasirenkamas rinkinys, ir prie lauko „Target“ su reikšme „_blank“; pabaigoje forma išsaugoma ir nuoroda atsiveria naujame lange.
 **Ekrano užrašai (tiksliai):** „Logotipas“, „Kategorija“, „Naudingos nuorodos“, „Target“, „_blank“
@@ -64,7 +84,7 @@
 | 15.7 | garsas | spustelejimas |
 | 16.2 | garsas | patvirtinimas |
 
-### KADRAS 3: Nukopijuojate nuorodų rinkinio sintaksę (9 sek.) — epizodas
+### KADRAS 4: Nukopijuojate nuorodų rinkinio sintaksę (9 sek.) — epizodas
 **Failas:** `06-nuorodu-sintakse.png`
 **Ekrane:** Nuorodų modulio šoninėje juostoje spaudžiamas punktas „Kategorijos“; atsiveria kategorijų sąrašas, kurio eilutės gale šviečia violetinis mygtukas su kopijavimo ikonėle. Jį paspaudus sintaksė trumpam nušvinta kaip nukopijuota.
 **Ekrano užrašai (tiksliai):** „Nuorodų modulis“, „Kategorijos“, „Kopijuoti“

@@ -1,53 +1,183 @@
 {
-  "hash": "2509707d52ce5c04f21de771906e6943f079c812ea178b0c5080f17680a6ef31",
+  "hash": "08da93494c69513cf1d33d23a36ffbd11577c196d2b4f64a70ce75abe51580fd",
   "voice_id": "eqJHjeWMPGJFD6VBf1J2",
   "model": "eleven_v3_dpo_20260217",
   "speed": 0.9,
   "lang": "lt",
   "seed": 1389045693,
-  "characters": 198,
+  "characters": 752,
   "start_in_frame": 0.6,
-  "created": "2026-11-03T02:02:59.446Z",
+  "created": "2026-11-27T16:34:28.634Z",
   "items": [
     {
       "kadras": 1,
       "cue": 1,
-      "title": "Sukuriate metraščio įrašą",
-      "text": "Modulyje „Timeline“ spaudžiate „/prʲiˈdʲeːtʲi/“.",
+      "title": "Kam metraštis",
+      "text": "Istorija kaip ilgas tekstas – jos niekas neskaito.",
       "file": "k01-1.wav",
-      "duration": 3.283,
+      "duration": 4.19,
       "fits": false,
-      "reikia_sek": 17
+      "reikia_sek": 13
     },
     {
       "kadras": 1,
       "cue": 2,
-      "title": "Sukuriate metraščio įrašą",
-      "text": "Pavadinime – metai, /lauˈkʲɛ/ „Data“ – įvykio data.",
+      "title": "Kam metraštis",
+      "text": "Metraštis ją sudeda į įrašus pagal metus.",
       "file": "k01-2.wav",
-      "duration": 4.357,
+      "duration": 3.25,
       "fits": false,
-      "reikia_sek": 17
+      "reikia_sek": 12
     },
     {
       "kadras": 1,
       "cue": 3,
-      "title": "Sukuriate metraščio įrašą",
-      "text": "Du sakiniai įžangoje, nuotrauka, „Išsaugoti“.",
+      "title": "Kam metraštis",
+      "text": "Kasmet pridedate vieną.",
       "file": "k01-3.wav",
-      "duration": 3.97,
+      "duration": 1.93,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Metraštis svetainėje",
+      "text": "Po tekstu – metų sąrašas ir kortelės.",
+      "file": "k02-1.wav",
+      "duration": 3.25,
       "fits": false,
       "reikia_sek": 17
     },
     {
-      "kadras": 1,
+      "kadras": 2,
+      "cue": 2,
+      "title": "Metraštis svetainėje",
+      "text": "Kortelė: nuotrauka, metai, įžanga.",
+      "file": "k02-2.wav",
+      "duration": 3.61,
+      "fits": false,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Metraštis svetainėje",
+      "text": "Įrašas atsidaro atskirame puslapyje.",
+      "file": "k02-3.wav",
+      "duration": 2.65,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 2,
+      "cue": 4,
+      "title": "Metraštis svetainėje",
+      "text": "„Tab“, rodyklės, „Enter“ – skaitytuvas skaito metus.",
+      "file": "k02-4.wav",
+      "duration": 4.49,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Kur rasti",
+      "text": "Kairiajame meniu modulis vadinasi „Timeline“.",
+      "file": "k03-1.wav",
+      "duration": 3.33,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Kur rasti",
+      "text": "/ˈsaːraʃʲɛ/ nuotrauka, pavadinimas, data, autorius.",
+      "file": "k03-2.wav",
+      "duration": 4.05,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Kur rasti",
+      "text": "Tvarką lemia data, ne eilė /ˈsaːraʃʲɛ/.",
+      "file": "k03-3.wav",
+      "duration": 3.01,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Sukuriate metraščio įrašą",
+      "text": "Modulyje „Timeline“ spaudžiate „/prʲiˈdʲeːtʲi/“.",
+      "file": "k04-1.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Sukuriate metraščio įrašą",
+      "text": "Pavadinime – metai, /lauˈkʲɛ/ „Data“ – įvykio data.",
+      "file": "k04-2.wav",
+      "duration": 4.13,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Sukuriate metraščio įrašą",
+      "text": "Du sakiniai įžangoje, nuotrauka, „Išsaugoti“.",
+      "file": "k04-3.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 4,
       "cue": 4,
       "title": "Sukuriate metraščio įrašą",
       "text": "Metraštyje atsiranda kortelė.",
-      "file": "k01-4.wav",
-      "duration": 2.13,
+      "file": "k04-4.wav",
+      "duration": 2.25,
       "fits": true,
-      "reikia_sek": 16
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Geras metraščio įrašas",
+      "text": "Vienas įvykis – vienas įrašas.",
+      "file": "k05-1.wav",
+      "duration": 2.57,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Geras metraščio įrašas",
+      "text": "Data iš dokumento, du trys sakiniai, viena nuotrauka.",
+      "file": "k05-2.wav",
+      "duration": 4.09,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Geras metraščio įrašas",
+      "text": "Laidai – numeris ir klasės nuotrauka.",
+      "file": "k05-3.wav",
+      "duration": 2.85,
+      "fits": true,
+      "reikia_sek": 12
     }
   ]
 }

@@ -65,6 +65,25 @@ Animuojama esama iliustracija `turinys/media/933-baneriai_02.jpg`.
 
 ---
 
+## `viz_707_00` — „Kam tai“ (16 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Baneris – langelis šoninėje juostoje, kuris veda į kitą svetainę.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Kur svetainėje rodomi baneriai“ · item_1: „Šoninė juosta po laikmačiu“ · item_2: „Logotipas → kita svetainė“ · item_3: „Viena grupė, tvarka papildinyje“ · item_4: „Klaviatūra: Tab → Enter; skaitytuvas skaito alternatyvų tekstą“ · summary: „Alternatyvų tekstą įrašote įkeldami“
+
+**Ekrane:** Šablonas `perziura`: svetainės dešinė juosta – laikmatis, po juo trys banerių langeliai su logotipais; vienas paspaudžiamas, atsiveria kitas langas. Pabaigoje prieinamumo takelis: fokusas ant banerio, skaitytuvo burbulas su partnerio pavadinimu (3–5 s).
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Baneris – logotipas šoninėje juostoje.“ |
+| 4,3 | išnyra kitas elementas | „Paspaudus veda į kitą svetainę.“ |
+| 6,9 | išnyra kitas elementas | „Rodomi iš eilės arba atsitiktinai.“ |
+| 9,8 | išvada / santrauka paryškėja | „„Tab“, „Enter“; skaitytuvas skaito partnerio pavadinimą.“ |
+| … –16 | ramiai (viršelis) | — |
+
+---
+
 ## Sprendimai
 
 Atvirų klausimų nėra.

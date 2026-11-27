@@ -62,6 +62,43 @@ Animuojama esama iliustracija `turinys/media/864-karusele.jpg`.
 
 ---
 
+## `viz_711_00` — „Kam tai“ (17 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Vienas kokybiškas kadras su žinute veikia stipriau nei dešimt besisukančių.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Karuselė titulinio viršuje“ · item_1: „Vienas kadras“ · item_2: „Žinutė ant kadro“ · item_3: „Kiti vaizdai → „Ugdymo aplinkoje““ · item_4: „Klaviatūra: rodyklės, Tab; judanti – sustabdoma“ · summary: „Vienas geras kadras stipriau nei dešimt“
+
+**Ekrane:** Šablonas `perziura`: titulinio viršus su vienu kadru ir žinute; dešimt mažų besisukančių kadrų išblunka, lieka vienas. Pabaigoje prieinamumo takelis: rodyklių klavišai keičia kadrą, pauzės ženklas, skaitytuvo burbulas su kadro tekstu (3–5 s).
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Karuselė – pirmas kadras svetainėje.“ |
+| 4,2 | išnyra kitas elementas | „Vienas geras kadras su žinute veikia stipriau.“ |
+| 8,0 | išnyra kitas elementas | „Erdves rodote „Ugdymo aplinkoje“.“ |
+| 10,7 | išvada / santrauka paryškėja | „Kelis kadrus keičiate rodyklėmis; judanti – sustabdoma.“ |
+| … –17 | ramiai (viršelis) | — |
+
+---
+
+## `viz_711_06` — „Kadras pagal mokyklos brandą“ (14 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Mintis → kreipimasis → apdirbimas → kadras pagal jūsų brandą.
+
+**Šablonas:** srautas
+**Etiketės:** title: „Kaip gimsta brando kadras“ · step1_label: „Jūsų mintis“ · step1_desc: „ir nuotraukos“ · arrow_label_1: „pagalba@cleverphant.lt“ · step2_label: „Apdirbame“ · step2_desc: „parenkame šriftą“ · arrow_label_2: „“ · step3_label: „Paruoštas kadras“ · step3_desc: „įkeliate kaip įprastą“
+
+**Ekrane:** Šablonas `srautas`: trys kortelės su rodyklėmis – nuotraukos ir sakinys, dizaino stalas su šriftų pavyzdžiais, paruoštas kadras karuselėje; virš pirmos rodyklės el. pašto adresas.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Kadras gali atrodyti kaip jūsų mokyklos plakatas.“ |
+| 5,2 | išnyra kitas elementas | „Atsiunčiate mintį ir nuotraukas.“ |
+| 7,9 | išvada / santrauka paryškėja | „Apdirbame, parenkame šriftą, grąžiname paruoštą kadrą.“ |
+| … –14 | ramiai (viršelis) | — |
+
+---
+
 ## Sprendimai
 
 Atvirų klausimų nėra.

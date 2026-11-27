@@ -4,13 +4,37 @@
  "kadrai": [
   {
    "kadras": 1,
+   "epizodas": "viz_708_00",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_708_00",
+   "pamoka": "pam_708",
+   "failas": "00-kam-tai",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Klientai",
+    "Tab",
+    "Enter"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Tab",
+    "Enter"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
    "epizodas": "ep_708_02_1",
    "rusis": "epizodas",
    "sablonas": null,
    "dalis": "dal_708_02",
    "pamoka": "pam_708",
    "failas": "02-partneriai-tituliniame",
-   "trukme_s": 12,
+   "trukme_s": 13,
    "ekrano_tekstai": [
     "Partneriai ir draugai",
     "Tvarkaraščiai"
@@ -24,7 +48,7 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 2,
+   "kadras": 3,
    "epizodas": "viz_708_03",
    "rusis": "koncepcija",
    "sablonas": "taisyklingai_netaisyklingai",
@@ -49,7 +73,7 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 3,
+   "kadras": 4,
    "epizodas": "ep_708_04_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -81,7 +105,7 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 4,
+   "kadras": 5,
    "epizodas": "ep_708_05_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -112,7 +136,7 @@
    ]
   },
   {
-   "kadras": 5,
+   "kadras": 6,
    "epizodas": "ep_708_05_2",
    "rusis": "epizodas",
    "sablonas": null,

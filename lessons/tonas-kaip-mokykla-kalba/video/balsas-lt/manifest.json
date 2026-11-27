@@ -1,0 +1,163 @@
+{
+  "hash": "bb7a7890031059a0dbb55411e85ccb7483cdaf9ad0d2f1fdb1b57de861e452bc",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 2670244293,
+  "characters": 723,
+  "start_in_frame": 0.6,
+  "created": "2026-11-27T16:48:52.053Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Kas skaito",
+      "text": "Svetainę skaito telefone, per pertrauką.",
+      "file": "k01-1.wav",
+      "duration": 2.99,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Kas skaito",
+      "text": "Trisdešimt sekundžių: kas, kada, ką daryti.",
+      "file": "k01-2.wav",
+      "duration": 3.53,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Kas skaito",
+      "text": "Neaišku – tekstas neperskaitytas, kad ir teisingas.",
+      "file": "k01-3.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "„Jūs“ ir vardas",
+      "text": "Rašote tam, kas skaito: „kviečiame jus“.",
+      "file": "k02-1.wav",
+      "duration": 3.41,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "„Jūs“ ir vardas",
+      "text": "Žmogų vadinate vardu ir pareigomis.",
+      "file": "k02-2.wav",
+      "duration": 2.57,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "„Jūs“ ir vardas",
+      "text": "Naujienoje užtenka „tėvai“ – globėjai supranta.",
+      "file": "k02-3.wav",
+      "duration": 3.37,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Vienas sakinys, vienas faktas",
+      "text": "Ilgas sakinys telefone netelpa į vieną žvilgsnį.",
+      "file": "k03-1.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Vienas sakinys, vienas faktas",
+      "text": "Vienas sakinys – keturi faktai.",
+      "file": "k03-2.wav",
+      "duration": 2.21,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Vienas sakinys, vienas faktas",
+      "text": "Perrašote į du sakinius po vieną faktą – trys sekundės.",
+      "file": "k03-3.wav",
+      "duration": 3.797,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Kanceliarizmai ir pakaitalai",
+      "text": "Kanceliarinį žodį keičiate kasdieniu.",
+      "file": "k04-1.wav",
+      "duration": 2.49,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Kanceliarizmai ir pakaitalai",
+      "text": "„Vykdoma“ – „vyksta“, „ugdymo įstaiga“ – „mokykla“.",
+      "file": "k04-2.wav",
+      "duration": 3.823,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Kanceliarizmai ir pakaitalai",
+      "text": "Tekstą perskaitote balsu – kaip tėvų susirinkime.",
+      "file": "k04-3.wav",
+      "duration": 3.263,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Personos kaip tono tikrinimas",
+      "text": "Prieš skelbdami perskaitote dviejų skaitytojų akimis.",
+      "file": "k05-1.wav",
+      "duration": 3.517,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Personos kaip tono tikrinimas",
+      "text": "Užimtas vadovas ir pamainomis dirbanti mama.",
+      "file": "k05-2.wav",
+      "duration": 3.09,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Personos kaip tono tikrinimas",
+      "text": "Bent viena nesupranta per pusę minutės – trumpinate.",
+      "file": "k05-3.wav",
+      "duration": 3.503,
+      "fits": true,
+      "reikia_sek": 15
+    }
+  ]
+}

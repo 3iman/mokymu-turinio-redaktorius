@@ -2,5 +2,39 @@
   "lang": "lt",
   "03_metrascio_irasas": {
     "_epizodas": "ep_908_03_1"
+  },
+  "00_kam_metrastis": {
+    "title": "Kam metraštis",
+    "item_1": "1946 · 1999 · 2016 – po įrašą",
+    "item_2": "Laidos viena po kitos",
+    "item_3": "Kasmet pridedate vieną",
+    "summary": "Istorija įrašais, ne vienu ilgu tekstu"
+  },
+  "01_metrastis_svetaineje": {
+    "title": "Metraštis svetainėje",
+    "item_1": "Išskleidžiamas metų sąrašas",
+    "item_2": "Kortelė: nuotrauka, metai, data, įžanga, „Plačiau“",
+    "item_3": "Įrašo puslapis su kitų metų navigacija",
+    "item_4": "Klaviatūra: Tab → rodyklės → Enter; skaitytuvas skaito metus",
+    "item_4_a": "Klaviatūra: Tab",
+    "item_4_b": "rodyklės"
+  },
+  "02_kur_rasti": {
+    "title": "Kur rasti",
+    "item_1": "Meniu „Timeline“",
+    "item_2": "Nuotraukos · Pavadinimas · Data · Autorius",
+    "item_3": "Tvarką lemia data",
+    "summary": "„Timeline“ – tai metraštis"
+  },
+  "04_geras_irasas": {
+    "title": "Geras įrašas",
+    "do_title": "Taip",
+    "do_1": "Vienas įvykis – vienas įrašas",
+    "do_2": "Data iš sprendimo ar įsakymo",
+    "do_3": "Įžanga – du trys sakiniai, viena nuotrauka",
+    "dont_title": "Ne",
+    "dont_1": "Keli įvykiai viename įraše",
+    "dont_2": "Penkios neryškios nuotraukos",
+    "summary": "Laidai: numeris ir metai, klasės nuotrauka"
   }
 }

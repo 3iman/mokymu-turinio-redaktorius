@@ -96,6 +96,25 @@ Kortelėje pataisyta: buvo „užvedate žymeklį ant „Redaguoti““ — už
 
 ---
 
+## `viz_706_00` — „Kam tai“ (16 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Vienas profilis – daug vietų svetainėje: sąrašai, puslapiai, atsakingi asmenys.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Kur svetainėje rodomi darbuotojai“ · item_1: „Administracija“ · item_2: „Specialistai“ · item_3: „Mokytojai“ · item_4: „Atsakingas asmuo puslapyje“ · item_5: „Klaviatūra: Tab → Enter; skaitytuvas skaito vardą ir pareigas“ · summary: „Vienas profilis – daug vietų“
+
+**Ekrane:** Šablonas `perziura`: vienas profilio portretas, iš jo rodyklės į keturias svetainės vietas – sąrašus ir puslapio bloką „Atsakingas asmuo“. Pabaigoje prieinamumo takelis: fokusas ant kortelės, skaitytuvo burbulas su vardu ir pareigomis (3–5 s).
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Vienas profilis – daug vietų svetainėje.“ |
+| 4,5 | išnyra kitas elementas | „Sąrašai, puslapiai, atsakingi asmenys.“ |
+| 7,6 | išnyra kitas elementas | „Vadovų nuotraukas skelbti privalu.“ |
+| 10,5 | išvada / santrauka paryškėja | „„Tab“, „Enter“; skaitytuvas skaito vardą ir pareigas.“ |
+| … –16 | ramiai (viršelis) | — |
+
+---
+
 ## Sprendimai
 
 Atvirų klausimų šiai pamokai nėra. Kortelių pataisos — kadrai 1 (tonas) ir 3 (veiksmas).

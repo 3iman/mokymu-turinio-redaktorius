@@ -5,5 +5,60 @@
   },
   "05_greitoji_nuoroda": {
     "_epizodas": "ep_907_05_1"
+  },
+  "00_kas_yra_papildiniai": {
+    "title": "Kas yra papildiniai",
+    "item_1": "Šoninė juosta: pamokų laikas, vertimas, Facebook, laikmatis",
+    "item_2": "Titulinis: „Apie mokyklą“, spalvotas laikmatis",
+    "item_3": "Kiekvienas – su jungikliu",
+    "summary": "Įjungiate ar išjungiate nekeisdami puslapių"
+  },
+  "01_papildiniai_svetaineje": {
+    "title": "Papildiniai svetainėje",
+    "item_1": "Dešinėje: pamokų laikas, vertimas, Facebook, laikmatis, baneriai, greitoji nuoroda",
+    "item_2": "Po naujienomis: „Apie mokyklą“",
+    "item_3": "Sraute: spalvotas laikmatis",
+    "item_4": "Klaviatūra: Tab eina per nuorodas; skaitytuvas skaito pavadinimus"
+  },
+  "02_kur_rasti": {
+    "title": "Kur rasti",
+    "item_1": "Home – titulinio juosta",
+    "item_2": "Default – vidinių puslapių juosta",
+    "item_3": "Titulinio apačia – „Apie mokyklą“",
+    "item_4": "Pieštukas svetainėje veda čia pat",
+    "summary": "Papildiniai › Zonos › „Papildiniai“"
+  },
+  "04_vertimas_ir_facebook": {
+    "title": "Du papildiniai be nustatymų",
+    "item_1": "Google vertimas → automatinis, ne prieinamumo vertimas",
+    "item_2": "Facebook langas → puslapis iš „Facebook valdymas“",
+    "item_3": "Nenaudojate → išjungiate",
+    "summary": "Abu turi tik jungiklį",
+    "item_1_a": "Google vertimas",
+    "item_1_b": "automatinis, ne prieinamumo vertimas",
+    "item_2_a": "Facebook langas",
+    "item_2_b": "puslapis iš „Facebook valdymas“",
+    "item_3_a": "Nenaudojate",
+    "item_3_b": "išjungiate"
+  },
+  "06_spalvotas_laikmatis": {
+    "title": "Du laikmačiai",
+    "item_1": "Šoninis → modulis „Laikmatis“, kuklus",
+    "item_2": "Sraute → papildinys: spalvos, ikonėlė, mygtukas",
+    "item_3": "Keli → kiekvienas su jungikliu",
+    "summary": "Zona „Titulinio naujienos“",
+    "item_1_a": "Šoninis",
+    "item_1_b": "modulis „Laikmatis“, kuklus",
+    "item_2_a": "Sraute",
+    "item_2_b": "papildinys: spalvos, ikonėlė, mygtukas",
+    "item_3_a": "Keli",
+    "item_3_b": "kiekvienas su jungikliu"
+  },
+  "07_apie_mokykla": {
+    "title": "Blokas „Apie mokyklą“",
+    "item_1": "Nuotrauka · tekstas · 4 skaičiai",
+    "item_2": "Skaičiai sensta – rugsėjį atnaujinate",
+    "item_3": "Ketvirtas blokelis – kuo didžiuojatės",
+    "summary": "Zona „Titulinio apačia“"
   }
 }

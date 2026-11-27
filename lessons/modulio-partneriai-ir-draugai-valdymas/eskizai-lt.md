@@ -102,6 +102,24 @@ Kortelėje pridėti likusių keturių jungiklių spustelėjimai.
 
 ---
 
+## `viz_708_00` — „Kam tai“ (13 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Partnerių juosta titulinio apačioje valdoma per modulį „Klientai“.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Kur svetainėje – partneriai ir draugai“ · item_1: „Titulinio apačia“ · item_2: „Logotipų juosta“ · item_3: „TVS modulis „Klientai““ · item_4: „Klaviatūra: Tab → Enter; skaitytuvas skaito pavadinimą“ · summary: „Kitas vardas – tas pats modulis“
+
+**Ekrane:** Šablonas `perziura`: titulinio apačia su logotipų juosta, rodyklė į TVS meniu punktą „Klientai“. Pabaigoje prieinamumo takelis: fokusas šoka per logotipus, skaitytuvo burbulas su pavadinimu (3–5 s).
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Partnerių logotipai – titulinio apačioje.“ |
+| 4,6 | išnyra kitas elementas | „TVS modulis vadinasi „Klientai“.“ |
+| 7,7 | išvada / santrauka paryškėja | „„Tab“, „Enter“; skaitytuvas skaito pavadinimą.“ |
+| … –13 | ramiai (viršelis) | — |
+
+---
+
 ## Sprendimai
 
 Atvirų klausimų nėra. Kortelių pataisos — kadrai 3 ir 4 (veiksmų garsai).

@@ -361,6 +361,25 @@ Pranešimo juostos po „Atnaujinti“ nepiešiame — jos teksto nė viename į
 
 ---
 
+## `viz_705_00` — „Kam tai“ (16 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Naujas puslapis meniu atsiranda tik tada, kai jį ten įdedate patys.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Kur svetainėje gyvena navigacijos“ · item_1: „Pagrindinis meniu“ · item_2: „Juodoji navigacija“ · item_3: „Greitosios nuorodos apačioje“ · item_4: „Klaviatūra: Tab → Enter; skaitytuvas pasako submeniu“ · summary: „Naują puslapį į meniu dedate patys“
+
+**Ekrane:** Šablonas `perziura`: svetainės schema su trimis pažymėtomis vietomis – meniu viršuje, juoda juosta, nuorodos apačioje; naujas puslapis nė vienoje, kol rodyklė jo neįdeda. Pabaigoje prieinamumo takelis: fokuso rėmelis per meniu punktus, skaitytuvo burbulas „turi submeniu“ (3–5 s).
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Naujas puslapis meniu pats neatsiranda.“ |
+| 4,4 | išnyra kitas elementas | „Navigacijas priskiriate patys.“ |
+| 6,9 | išnyra kitas elementas | „Meniu, juodoji navigacija, greitosios nuorodos.“ |
+| 10,8 | išvada / santrauka paryškėja | „„Tab“ ir „Enter“; skaitytuvas pasako submeniu.“ |
+| … –16 | ramiai (viršelis) | — |
+
+---
+
 ## Sprendimai
 
 **Atviri (reikia Eimanto):**

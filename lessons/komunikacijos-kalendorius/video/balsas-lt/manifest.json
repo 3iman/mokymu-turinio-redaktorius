@@ -1,0 +1,133 @@
+{
+  "hash": "27367db9f98dd82a489e0b6f757cce018017b69e31ba9ca316decb39ce0c5e13",
+  "voice_id": "eqJHjeWMPGJFD6VBf1J2",
+  "model": "eleven_v3_dpo_20260217",
+  "speed": 0.9,
+  "lang": "lt",
+  "seed": 2414440384,
+  "characters": 578,
+  "start_in_frame": 0.6,
+  "created": "2026-11-27T16:43:14.034Z",
+  "items": [
+    {
+      "kadras": 1,
+      "cue": 1,
+      "title": "Mokyklos metai ratu",
+      "text": "Svarbiausios naujienos nėra netikėtos.",
+      "file": "k01-1.wav",
+      "duration": 2.91,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 1,
+      "cue": 2,
+      "title": "Mokyklos metai ratu",
+      "text": "Priėmimas, rugsėjo pirmoji, egzaminai, vasara – kasmet.",
+      "file": "k01-2.wav",
+      "duration": 4.85,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 1,
+      "cue": 3,
+      "title": "Mokyklos metai ratu",
+      "text": "Planuojate kartą ir keičiate tik datas.",
+      "file": "k01-3.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 1,
+      "title": "Keturi fiksuoti taškai",
+      "text": "Keturiems taškams – data, kada žinutė pasirodo.",
+      "file": "k02-1.wav",
+      "duration": 3.65,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Keturi fiksuoti taškai",
+      "text": "Priėmimas – registracijos dieną, egzaminai – prieš dvi savaites.",
+      "file": "k02-2.wav",
+      "duration": 4.543,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Keturi fiksuoti taškai",
+      "text": "Prie keturių pridedate savas šventes.",
+      "file": "k02-3.wav",
+      "duration": 2.877,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Prieš ir po",
+      "text": "/kʲiɛkvʲiɛˈnaːm/ įvykiui – dvi žinutės.",
+      "file": "k03-1.wav",
+      "duration": 2.59,
+      "fits": false,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Prieš ir po",
+      "text": "„Prieš“ sako, ką daryti; „po“ – kaip buvo.",
+      "file": "k03-2.wav",
+      "duration": 3.71,
+      "fits": false,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Prieš ir po",
+      "text": "„Po“ skelbiate tą pačią dieną.",
+      "file": "k03-3.wav",
+      "duration": 2.49,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Kur gyvena kalendorius",
+      "text": "Kalendorius – lentelė su penkiais stulpeliais.",
+      "file": "k04-1.wav",
+      "duration": 3.09,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Kur gyvena kalendorius",
+      "text": "Laikote „Google Sheets“ faile, kurį mato visi, kas rašo.",
+      "file": "k04-2.wav",
+      "duration": 3.93,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Kur gyvena kalendorius",
+      "text": "Rugsėjį pakeičiate datas – darbas padarytas.",
+      "file": "k04-3.wav",
+      "duration": 3.383,
+      "fits": true,
+      "reikia_sek": 15
+    }
+  ]
+}

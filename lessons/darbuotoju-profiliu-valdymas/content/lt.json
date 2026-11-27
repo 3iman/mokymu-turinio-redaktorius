@@ -20,5 +20,16 @@
     "do_3": "Pertrauka atskirame stulpelyje",
     "do_4": "Nedirbamų dienų eilutės tuščios",
     "dont_title": "Ne"
+  },
+  "00_kam_tai": {
+    "title": "Kur svetainėje rodomi darbuotojai",
+    "item_1": "Administracija",
+    "item_2": "Specialistai",
+    "item_3": "Mokytojai",
+    "item_4": "Atsakingas asmuo puslapyje",
+    "item_5": "Klaviatūra: Tab → Enter; skaitytuvas skaito vardą ir pareigas",
+    "summary": "Vienas profilis – daug vietų",
+    "item_5_a": "Klaviatūra: Tab",
+    "item_5_b": "Enter; skaitytuvas skaito vardą ir pareigas"
   }
 }

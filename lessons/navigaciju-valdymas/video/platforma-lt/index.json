@@ -1,12 +1,46 @@
 {
   "pamoka": "navigaciju-valdymas",
   "lang": "lt",
-  "sugeneruota": "2026-11-02T23:29:32.856Z",
+  "sugeneruota": "2026-11-27T17:28:44.857Z",
   "balso_stiprinimas_db": 5.9,
   "muzika": false,
   "klipai": [
     {
       "kadras": 1,
+      "epizodas": "viz_705_00",
+      "failas": "00-kam-tai",
+      "pavadinimas": "Kam tai",
+      "trukme_s": 17,
+      "mp4": "viz_705_00.mp4",
+      "vtt": "viz_705_00.vtt",
+      "poster": "viz_705_00.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.03,
+          "tekstas": "Naujas puslapis meniu pats neatsiranda."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 6.73,
+          "tekstas": "Navigacijas priskiriate patys."
+        },
+        {
+          "nuo_s": 6.9,
+          "iki_s": 10.83,
+          "tekstas": "Meniu, juodoji navigacija, greitosios nuorodos."
+        },
+        {
+          "nuo_s": 11,
+          "iki_s": 14.77,
+          "tekstas": "„Tab“ ir „Enter“; skaitytuvas pasako submeniu."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
       "epizodas": "ep_705_01_1",
       "failas": "01-navigaciju-grupes",
       "pavadinimas": "Grupės jau sukurtos",
@@ -17,12 +51,12 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 4.16,
+          "iki_s": 3.93,
           "tekstas": "Navigacijų sąraše grupės jau sukurtos."
         },
         {
           "nuo_s": 4.4,
-          "iki_s": 8.4,
+          "iki_s": 8.25,
           "tekstas": "Prie kiekvienos matote aprašymą, kurioje vietoje ji rodoma."
         },
         {
@@ -35,28 +69,28 @@
       "ispejimai": []
     },
     {
-      "kadras": 2,
+      "kadras": 3,
       "epizodas": "ep_705_02_1",
       "failas": "02-nauja-grupe",
       "pavadinimas": "Sukuriate naują grupę",
-      "trukme_s": 14,
+      "trukme_s": 15,
       "mp4": "ep_705_02_1.mp4",
       "vtt": "ep_705_02_1.vtt",
       "poster": "ep_705_02_1.jpg",
       "balsas": [
         {
           "nuo_s": 1.4,
-          "iki_s": 4.93,
+          "iki_s": 4.65,
           "tekstas": "Naują grupę pradedate mygtuku „Naujas meniu“."
         },
         {
           "nuo_s": 5.1,
-          "iki_s": 8.47,
+          "iki_s": 8.43,
           "tekstas": "Lauke „Vardas“ įrašote grupės pavadinimą."
         },
         {
-          "nuo_s": 8.5,
-          "iki_s": 12.92,
+          "nuo_s": 8.6,
+          "iki_s": 13.17,
           "tekstas": "Laukas „Slug“ užsipildo pats – patikrinate ir išsaugote."
         }
       ],
@@ -70,18 +104,18 @@
           "garsas": "rasymas"
         },
         {
-          "ties_s": 10.9,
+          "ties_s": 11,
           "garsas": "spustelejimas"
         },
         {
-          "ties_s": 11.4,
+          "ties_s": 11.5,
           "garsas": "patvirtinimas"
         }
       ],
       "ispejimai": []
     },
     {
-      "kadras": 3,
+      "kadras": 4,
       "epizodas": "ep_705_03_1",
       "failas": "03-isorine-nuoroda",
       "pavadinimas": "Atpažįstate išorinę nuorodą",
@@ -92,17 +126,17 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 3.84,
+          "iki_s": 3.93,
           "tekstas": "Prie nuorodos matote raudoną strėlytę."
         },
         {
           "nuo_s": 4.6,
-          "iki_s": 6.73,
+          "iki_s": 6.65,
           "tekstas": "Ji reiškia išorinę nuorodą."
         },
         {
           "nuo_s": 7,
-          "iki_s": 9.93,
+          "iki_s": 9.82,
           "tekstas": "Lankytoją ji išves už svetainės ribų."
         }
       ],
@@ -110,7 +144,7 @@
       "ispejimai": []
     },
     {
-      "kadras": 4,
+      "kadras": 5,
       "epizodas": "ep_705_04_1",
       "failas": "04-nuorodos-tipas",
       "pavadinimas": "Pasirenkate nuorodos tipą",
@@ -121,17 +155,17 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 4.58,
+          "iki_s": 4.41,
           "tekstas": "Kurdami nuorodą pirmiausia pasirenkate jos tipą."
         },
         {
           "nuo_s": 5.2,
-          "iki_s": 8.22,
+          "iki_s": 8.33,
           "tekstas": "„Page“ priskiria puslapį iš svetainės medžio."
         },
         {
           "nuo_s": 8.9,
-          "iki_s": 11.87,
+          "iki_s": 11.84,
           "tekstas": "„URL“ veda į išorinę nuorodą."
         }
       ],
@@ -144,7 +178,7 @@
       "ispejimai": []
     },
     {
-      "kadras": 5,
+      "kadras": 6,
       "epizodas": "ep_705_05_4",
       "failas": "05-kur-rasti-navigacijas",
       "pavadinimas": "Kur rasti „Navigacijos“",
@@ -155,12 +189,12 @@
       "balsas": [
         {
           "nuo_s": 1,
-          "iki_s": 3.46,
+          "iki_s": 3.3,
           "tekstas": "„Navigacijos“ rasite darbalaukyje."
         },
         {
           "nuo_s": 3.9,
-          "iki_s": 5.59,
+          "iki_s": 5.55,
           "tekstas": "Arba kairiajame meniu."
         },
         {
@@ -170,7 +204,7 @@
         },
         {
           "nuo_s": 9.6,
-          "iki_s": 11.94,
+          "iki_s": 11.93,
           "tekstas": "Ir pasirenkate „Navigacijos“."
         }
       ],
@@ -191,7 +225,7 @@
       "ispejimai": []
     },
     {
-      "kadras": 6,
+      "kadras": 7,
       "epizodas": "ep_705_05_1",
       "failas": "05-nuorodu-medis",
       "pavadinimas": "Atidarote nuorodų medį",
@@ -202,7 +236,7 @@
       "balsas": [
         {
           "nuo_s": 1,
-          "iki_s": 4,
+          "iki_s": 3.89,
           "tekstas": "Prie grupės „Main“ spaudžiate „Linkai“."
         },
         {
@@ -220,7 +254,7 @@
       "ispejimai": []
     },
     {
-      "kadras": 7,
+      "kadras": 8,
       "epizodas": "ep_705_05_2",
       "failas": "05-nauja-nuoroda",
       "pavadinimas": "Puslapį pridedate į meniu",
@@ -231,17 +265,17 @@
       "balsas": [
         {
           "nuo_s": 1.6,
-          "iki_s": 6.21,
+          "iki_s": 6.37,
           "tekstas": "Nuorodų medyje spaudžiate „Naujas linkas“ ir pasirenkate „Page“."
         },
         {
           "nuo_s": 6.8,
-          "iki_s": 10.25,
+          "iki_s": 10.29,
           "tekstas": "Lauke „Page“ susirandate puslapį „Logopedas“."
         },
         {
           "nuo_s": 10.9,
-          "iki_s": 15.07,
+          "iki_s": 14.99,
           "tekstas": "Spaudžiate „Išsaugoti“ – nuoroda atsiranda medžio apačioje."
         }
       ],
@@ -278,7 +312,7 @@
       "ispejimai": []
     },
     {
-      "kadras": 8,
+      "kadras": 9,
       "epizodas": "ep_705_06_1",
       "failas": "06-skirtingi-pavadinimai",
       "pavadinimas": "Meniu vardas gali skirtis",
@@ -294,12 +328,12 @@
         },
         {
           "nuo_s": 5.4,
-          "iki_s": 8.09,
+          "iki_s": 8.05,
           "tekstas": "Priskirtas puslapis gali vadintis kitaip."
         },
         {
           "nuo_s": 8.8,
-          "iki_s": 11.29,
+          "iki_s": 11.13,
           "tekstas": "Meniu lieka trumpas pavadinimas."
         }
       ],
@@ -307,7 +341,7 @@
       "ispejimai": []
     },
     {
-      "kadras": 9,
+      "kadras": 10,
       "epizodas": "ep_705_07_1",
       "failas": "07-juodojo-meniu-parinktys",
       "pavadinimas": "Atidarote nuorodos parinktis",
@@ -318,12 +352,12 @@
       "balsas": [
         {
           "nuo_s": 1.4,
-          "iki_s": 4.29,
+          "iki_s": 4.33,
           "tekstas": "Prie grupės „Black“ spaudžiate „Linkai“."
         },
         {
           "nuo_s": 4.7,
-          "iki_s": 7.67,
+          "iki_s": 7.63,
           "tekstas": "Atidarote nuorodą, kuriai norite ikonėlės."
         },
         {
@@ -349,7 +383,7 @@
       "ispejimai": []
     },
     {
-      "kadras": 10,
+      "kadras": 11,
       "epizodas": "ep_705_07_2",
       "failas": "07-fontawesome-kodas",
       "pavadinimas": "Nukopijuojate ikonėlės kodą",
@@ -365,12 +399,12 @@
         },
         {
           "nuo_s": 5,
-          "iki_s": 7.09,
+          "iki_s": 7.14,
           "tekstas": "Pasirenkate tinkamą ikoną."
         },
         {
           "nuo_s": 8.4,
-          "iki_s": 12.57,
+          "iki_s": 12.83,
           "tekstas": "Stilių renkatės „Light“ ir nukopijuojate HTML kodą."
         }
       ],
@@ -391,7 +425,7 @@
       "ispejimai": []
     },
     {
-      "kadras": 11,
+      "kadras": 12,
       "epizodas": "ep_705_07_3",
       "failas": "07-ikonos-klase",
       "pavadinimas": "Įklijuojate ikonėlės klasę",
@@ -402,17 +436,17 @@
       "balsas": [
         {
           "nuo_s": 1.4,
-          "iki_s": 4.61,
+          "iki_s": 4.85,
           "tekstas": "Lauke „Class“ įklijuojate nukopijuotą kodą."
         },
         {
           "nuo_s": 5,
-          "iki_s": 8.8,
+          "iki_s": 8.85,
           "tekstas": "Paliekate tik klasę – HTML dalis ištrinate."
         },
         {
           "nuo_s": 9.1,
-          "iki_s": 12.97,
+          "iki_s": 12.63,
           "tekstas": "Spaudžiate „Atnaujinti“ ir ikonėlė atsiranda meniu."
         }
       ],
@@ -437,7 +471,7 @@
       "ispejimai": []
     },
     {
-      "kadras": 12,
+      "kadras": 13,
       "epizodas": "ep_705_08_1",
       "failas": "08-keturios-ikonos",
       "pavadinimas": "Atidarote keturių ikonų nuorodas",
@@ -448,17 +482,17 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 4.01,
+          "iki_s": 3.98,
           "tekstas": "Paieškoje pasirenkate „Navigacijos“."
         },
         {
           "nuo_s": 4.6,
-          "iki_s": 8.37,
+          "iki_s": 8.16,
           "tekstas": "Prie grupės „4 ikonos“ spaudžiate „Linkai“."
         },
         {
           "nuo_s": 8.7,
-          "iki_s": 11.75,
+          "iki_s": 11.55,
           "tekstas": "Matote keturias titulinio puslapio nuorodas."
         }
       ],
@@ -479,7 +513,7 @@
       "ispejimai": []
     },
     {
-      "kadras": 13,
+      "kadras": 14,
       "epizodas": "ep_705_08_2",
       "failas": "08-dienyno-adresas",
       "pavadinimas": "Pakeičiate el. dienyno adresą",
@@ -490,17 +524,17 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 4.45,
+          "iki_s": 4.25,
           "tekstas": "Sąraše spaudžiate „Elektroninis dienynas“."
         },
         {
           "nuo_s": 4.7,
-          "iki_s": 8.67,
+          "iki_s": 8.35,
           "tekstas": "Lauke „URL“ įrašote naują dienyno adresą."
         },
         {
           "nuo_s": 8.8,
-          "iki_s": 12.41,
+          "iki_s": 12.05,
           "tekstas": "Spaudžiate „Atnaujinti“ – nuoroda išsaugota."
         }
       ],

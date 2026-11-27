@@ -22,5 +22,15 @@
     "dont_title": "Netinka",
     "dont_1": "Patalpintas su fonu",
     "dont_2": "Aplink daug tuščios erdvės"
+  },
+  "00_kam_tai": {
+    "title": "Kur svetainėje – partneriai ir draugai",
+    "item_1": "Titulinio apačia",
+    "item_2": "Logotipų juosta",
+    "item_3": "TVS modulis „Klientai“",
+    "item_4": "Klaviatūra: Tab → Enter; skaitytuvas skaito pavadinimą",
+    "summary": "Kitas vardas – tas pats modulis",
+    "item_4_a": "Klaviatūra: Tab",
+    "item_4_b": "Enter; skaitytuvas skaito pavadinimą"
   }
 }

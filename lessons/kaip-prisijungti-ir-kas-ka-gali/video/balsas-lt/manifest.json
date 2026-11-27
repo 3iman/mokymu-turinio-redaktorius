@@ -1,73 +1,223 @@
 {
-  "hash": "9c06ace37aaa803e6ab71057576df131f22e64fa01eba10d92a469f9beacd682",
+  "hash": "8b0293a47601c7874b2c3e4bdd0631a1478a6553b43a64a523559189f16857cd",
   "voice_id": "eqJHjeWMPGJFD6VBf1J2",
   "model": "eleven_v3_dpo_20260217",
   "speed": 0.9,
   "lang": "lt",
   "seed": 528600013,
-  "characters": 304,
+  "characters": 994,
   "start_in_frame": 0.6,
-  "created": "2026-11-03T02:04:00.567Z",
+  "created": "2026-11-27T16:12:15.112Z",
   "items": [
     {
       "kadras": 1,
       "cue": 1,
-      "title": "Prisijungiate prie svetainės valdymo",
-      "text": "Prie svetainės adreso pridedate „/admin“.",
+      "title": "Nuo ko prasideda",
+      "text": "Svetainę valdo tas, kas turi prisijungimą.",
       "file": "k01-1.wav",
-      "duration": 4.47,
-      "fits": false,
-      "reikia_sek": 16
+      "duration": 3.11,
+      "fits": true,
+      "reikia_sek": 13
     },
     {
       "kadras": 1,
       "cue": 2,
-      "title": "Prisijungiate prie svetainės valdymo",
-      "text": "Įrašote el. paštą ir slaptažodį.",
+      "title": "Nuo ko prasideda",
+      "text": "Adresas visiems tas pats, skiriasi rolė.",
       "file": "k01-2.wav",
-      "duration": 3.09,
-      "fits": true,
+      "duration": 3.17,
+      "fits": false,
       "reikia_sek": 14
     },
     {
       "kadras": 1,
       "cue": 3,
-      "title": "Prisijungiate prie svetainės valdymo",
-      "text": "Spaudžiate „/prʲisʲiˈjunɡtʲi/“ – atsidaro darbalaukis.",
+      "title": "Nuo ko prasideda",
+      "text": "Rolė nusprendžia, ką galite – ne /ˈpaːrʲɛiɡoːs/.",
       "file": "k01-3.wav",
-      "duration": 6.49,
-      "fits": false,
-      "reikia_sek": 15
+      "duration": 3.343,
+      "fits": true,
+      "reikia_sek": 13
     },
     {
       "kadras": 2,
       "cue": 1,
-      "title": "Pridedate kolegą su role „Redakcija“",
-      "text": "/ˈsaːraʃʲɛ/ „Vartotojai“ spaudžiate „/prʲiˈdʲeːtʲi/ vartotoją“.",
+      "title": "Prisijungiate prie svetainės valdymo",
+      "text": "Prie svetainės adreso pridedate „/admin“.",
       "file": "k02-1.wav",
-      "duration": 6.93,
-      "fits": false,
+      "duration": 4.197,
+      "fits": true,
       "reikia_sek": 17
     },
     {
       "kadras": 2,
       "cue": 2,
-      "title": "Pridedate kolegą su role „Redakcija“",
-      "text": "Užpildote vardą, pavardę ir el. paštą.",
+      "title": "Prisijungiate prie svetainės valdymo",
+      "text": "Įrašote el. paštą ir slaptažodį.",
       "file": "k02-2.wav",
-      "duration": 3.65,
-      "fits": false,
-      "reikia_sek": 15
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 17
     },
     {
       "kadras": 2,
       "cue": 3,
-      "title": "Pridedate kolegą su role „Redakcija“",
-      "text": "Prie „Rolės“ pažymite „Redakcija“ ir išsaugote.",
+      "title": "Prisijungiate prie svetainės valdymo",
+      "text": "Spaudžiate „/prʲisʲiˈjunɡtʲi/“ – atsidaro darbalaukis.",
       "file": "k02-3.wav",
-      "duration": 4.01,
+      "duration": 6.063,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Pirmas prisijungimas",
+      "text": "Pirmą nuorodą gauna vadovas, galioja mėnesį.",
+      "file": "k03-1.wav",
+      "duration": 3.237,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Pirmas prisijungimas",
+      "text": "Slaptažodį renkatės patys, niekas jo neprašys.",
+      "file": "k03-2.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Pirmas prisijungimas",
+      "text": "Kolegas prideda mokyklos administratorius.",
+      "file": "k03-3.wav",
+      "duration": 2.85,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Ką matote prisijungę",
+      "text": "Prisijungę matote darbalaukį ir modulių meniu.",
+      "file": "k04-1.wav",
+      "duration": 3.21,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Ką matote prisijungę",
+      "text": "/paiɛʃˈka/ viršuje randa modulį pagal pavadinimą.",
+      "file": "k04-2.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Ką matote prisijungę",
+      "text": "Svetainėje – pieštukai ir „Turinio auditas“.",
+      "file": "k04-3.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Trys rolės",
+      "text": "Rolės trys. „Cleverphant“ turime tik mes.",
+      "file": "k05-1.wav",
+      "duration": 3.49,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Trys rolės",
+      "text": "„Manager“ tvarko dar vartotojus ir nustatymus.",
+      "file": "k05-2.wav",
+      "duration": 3.21,
       "fits": true,
       "reikia_sek": 14
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Trys rolės",
+      "text": "Vadovui – Manager, visiems kitiems – Redakcija.",
+      "file": "k05-3.wav",
+      "duration": 3.85,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Pridedate kolegą su role „Redakcija“",
+      "text": "/ˈsaːraʃʲɛ/ „Vartotojai“ spaudžiate „/prʲiˈdʲeːtʲi/ vartotoją“.",
+      "file": "k06-1.wav",
+      "duration": 3.49,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Pridedate kolegą su role „Redakcija“",
+      "text": "Užpildote vardą, pavardę ir el. paštą.",
+      "file": "k06-2.wav",
+      "duration": 3.61,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Pridedate kolegą su role „Redakcija“",
+      "text": "Prie „Rolės“ pažymite „Redakcija“ ir išsaugote.",
+      "file": "k06-3.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Kai žmogus išeina",
+      "text": "Išėjusio darbuotojo paskyrą išjungiate, ne ištrinate.",
+      "file": "k07-1.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Kai žmogus išeina",
+      "text": "/ˈiːraʃai/ ir istorija lieka.",
+      "file": "k07-2.wav",
+      "duration": 2.21,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Kai žmogus išeina",
+      "text": "Patikrinate, ar liko bent vienas „Manager“.",
+      "file": "k07-3.wav",
+      "duration": 3.103,
+      "fits": true,
+      "reikia_sek": 13
     }
   ]
 }

@@ -1,12 +1,104 @@
 {
   "pamoka": "metrastis",
   "lang": "lt",
-  "sugeneruota": "2026-11-03T02:32:19.547Z",
-  "balso_stiprinimas_db": 5.4,
+  "sugeneruota": "2026-11-27T16:38:03.301Z",
+  "balso_stiprinimas_db": 6,
   "muzika": false,
   "klipai": [
     {
       "kadras": 1,
+      "epizodas": "viz_908_00",
+      "failas": "00-kam-metrastis",
+      "pavadinimas": "Kam metraštis",
+      "trukme_s": 13,
+      "mp4": "viz_908_00.mp4",
+      "vtt": "viz_908_00.vtt",
+      "poster": "viz_908_00.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.39,
+          "tekstas": "Istorija kaip ilgas tekstas – jos niekas neskaito."
+        },
+        {
+          "nuo_s": 5.6,
+          "iki_s": 8.85,
+          "tekstas": "Metraštis ją sudeda į įrašus pagal metus."
+        },
+        {
+          "nuo_s": 9,
+          "iki_s": 10.93,
+          "tekstas": "Kasmet pridedate vieną."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_908_01",
+      "failas": "01-metrastis-svetaineje",
+      "pavadinimas": "Metraštis svetainėje",
+      "trukme_s": 18,
+      "mp4": "viz_908_01.mp4",
+      "vtt": "viz_908_01.vtt",
+      "poster": "viz_908_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.45,
+          "tekstas": "Po tekstu – metų sąrašas ir kortelės."
+        },
+        {
+          "nuo_s": 4.6,
+          "iki_s": 8.21,
+          "tekstas": "Kortelė: nuotrauka, metai, įžanga."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 11.05,
+          "tekstas": "Įrašas atsidaro atskirame puslapyje."
+        },
+        {
+          "nuo_s": 11.4,
+          "iki_s": 15.89,
+          "tekstas": "„Tab“, rodyklės, „Enter“ – skaitytuvas skaito metus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_908_02",
+      "failas": "02-kur-rasti",
+      "pavadinimas": "Kur rasti",
+      "trukme_s": 14,
+      "mp4": "viz_908_02.mp4",
+      "vtt": "viz_908_02.vtt",
+      "poster": "viz_908_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.53,
+          "tekstas": "Kairiajame meniu modulis vadinasi „Timeline“."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 8.95,
+          "tekstas": "Sąraše nuotrauka, pavadinimas, data, autorius."
+        },
+        {
+          "nuo_s": 9.1,
+          "iki_s": 12.11,
+          "tekstas": "Tvarką lemia data, ne eilė sąraše."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
       "epizodas": "ep_908_03_1",
       "failas": "03-metrascio-irasas",
       "pavadinimas": "Sukuriate metraščio įrašą",
@@ -17,22 +109,22 @@
       "balsas": [
         {
           "nuo_s": 1,
-          "iki_s": 4.28,
+          "iki_s": 3.89,
           "tekstas": "Modulyje „Timeline“ spaudžiate „Pridėti“."
         },
         {
           "nuo_s": 4.5,
-          "iki_s": 8.86,
+          "iki_s": 8.63,
           "tekstas": "Pavadinime – metai, lauke „Data“ – įvykio data."
         },
         {
           "nuo_s": 9.1,
-          "iki_s": 13.07,
+          "iki_s": 12.79,
           "tekstas": "Du sakiniai įžangoje, nuotrauka, „Išsaugoti“."
         },
         {
           "nuo_s": 13.3,
-          "iki_s": 15.43,
+          "iki_s": 15.55,
           "tekstas": "Metraštyje atsiranda kortelė."
         }
       ],
@@ -54,6 +146,35 @@
           "garsas": "patvirtinimas"
         }
       ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_908_04",
+      "failas": "04-geras-irasas",
+      "pavadinimas": "Geras metraščio įrašas",
+      "trukme_s": 13,
+      "mp4": "viz_908_04.mp4",
+      "vtt": "viz_908_04.vtt",
+      "poster": "viz_908_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.77,
+          "tekstas": "Vienas įvykis – vienas įrašas."
+        },
+        {
+          "nuo_s": 4,
+          "iki_s": 8.09,
+          "tekstas": "Data iš dokumento, du trys sakiniai, viena nuotrauka."
+        },
+        {
+          "nuo_s": 8.3,
+          "iki_s": 11.15,
+          "tekstas": "Laidai – numeris ir klasės nuotrauka."
+        }
+      ],
+      "garsai": [],
       "ispejimai": []
     }
   ]

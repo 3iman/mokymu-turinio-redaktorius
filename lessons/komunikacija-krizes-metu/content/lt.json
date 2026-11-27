@@ -1,0 +1,46 @@
+{
+  "lang": "lt",
+  "00_pirma_valanda": {
+    "title": "Pirma valanda",
+    "item_1": "Tėvai ieško oficialaus žodžio",
+    "item_2": "Tyla užpildoma nuogirdomis",
+    "item_3": "Trumpa žinutė laiku",
+    "summary": "Arba kalba svetainė, arba už ją kiti"
+  },
+  "01_trys_sakiniai": {
+    "title": "Trys sakiniai",
+    "item_1": "Kas įvyko → faktas be priežasčių",
+    "item_2": "Ką darome → dabar",
+    "item_3": "Kur kreiptis → ir kada atnaujinsime",
+    "summary": "Be priežasčių, kaltųjų, vertinimų",
+    "item_1_a": "Kas įvyko",
+    "item_1_b": "faktas be priežasčių",
+    "item_2_a": "Ką darome",
+    "item_2_b": "dabar",
+    "item_3_a": "Kur kreiptis",
+    "item_3_b": "ir kada atnaujinsime"
+  },
+  "02_kas_kalba": {
+    "title": "Kas kalba",
+    "step_1": "Rašo → pavaduotoja arba raštinė",
+    "step_2": "Tvirtina → vadovas",
+    "step_3": "Visi kiti → „informacija svetainėje“",
+    "summary": "Sutariate ramiu metu, pridedate prie kalendoriaus",
+    "step_1_a": "Rašo",
+    "step_1_b": "pavaduotoja arba raštinė",
+    "step_2_a": "Tvirtina",
+    "step_2_b": "vadovas",
+    "step_3_a": "Visi kiti",
+    "step_3_b": "„informacija svetainėje“"
+  },
+  "04_po_krizes": {
+    "title": "Po krizės",
+    "do_title": "Atnaujinti",
+    "do_1": "Paskutinis atnaujinimas su laiku",
+    "do_2": "Juostelė išjungta, prisegimas nuimtas",
+    "do_3": "Naujiena lieka",
+    "dont_title": "Ištrinti",
+    "dont_1": "Įvykių sekos nebėra",
+    "dont_2": "Atrodo kaip slėpimas"
+  }
+}

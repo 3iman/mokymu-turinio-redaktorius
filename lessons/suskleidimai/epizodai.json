@@ -4,6 +4,70 @@
  "kadrai": [
   {
    "kadras": 1,
+   "epizodas": "viz_905_00",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_905_00",
+   "pamoka": "pam_905",
+   "failas": "00-kam-suskleidimai",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "+"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_905_01",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_905_01",
+   "pamoka": "pam_905",
+   "failas": "01-suskleidimas-svetaineje",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "+",
+    "−",
+    "Tab",
+    "Enter"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Tab",
+    "Enter"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_905_02",
+   "rusis": "koncepcija",
+   "sablonas": "ui_maketas",
+   "dalis": "dal_905_02",
+   "pamoka": "pam_905",
+   "failas": "02-kur-rasti",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Suskleidimai",
+    "Kategorijos"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
    "epizodas": "ep_905_03_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -40,7 +104,7 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 2,
+   "kadras": 5,
    "epizodas": "ep_905_04_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -77,7 +141,7 @@
    ]
   },
   {
-   "kadras": 3,
+   "kadras": 6,
    "epizodas": "ep_905_05_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -102,6 +166,71 @@
    "tarimo_kandidatai": [],
    "demo_duomenys": {
     "kategorija": "Tarptautinis bakalaureatas"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "viz_905_06",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_905_06",
+   "pamoka": "pam_905",
+   "failas": "06-kada-ne-suskleidimai",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "DUK"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "DUK"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 8,
+   "epizodas": "viz_905_07",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_905_07",
+   "pamoka": "pam_905",
+   "failas": "07-atvaizdavimo-variantas",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "View",
+    "Default"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "View",
+    "Default"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 9,
+   "epizodas": "viz_905_08",
+   "rusis": "koncepcija",
+   "sablonas": "tvarka",
+   "dalis": "dal_905_08",
+   "pamoka": "pam_905",
+   "failas": "08-eile-pries-suskleidima",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "GOV.UK"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "GOV.UK"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
    },
    "naudoja_ir": []
   }

@@ -1,12 +1,41 @@
 {
   "pamoka": "kaip-prisijungti-ir-kas-ka-gali",
   "lang": "lt",
-  "sugeneruota": "2026-11-03T02:05:37.708Z",
+  "sugeneruota": "2026-11-27T16:17:30.474Z",
   "balso_stiprinimas_db": 5.5,
   "muzika": false,
   "klipai": [
     {
       "kadras": 1,
+      "epizodas": "viz_906_00",
+      "failas": "00-nuo-ko-prasideda",
+      "pavadinimas": "Nuo ko prasideda",
+      "trukme_s": 13,
+      "mp4": "viz_906_00.mp4",
+      "vtt": "viz_906_00.vtt",
+      "poster": "viz_906_00.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.31,
+          "tekstas": "Svetainę valdo tas, kas turi prisijungimą."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 7.87,
+          "tekstas": "Adresas visiems tas pats, skiriasi rolė."
+        },
+        {
+          "nuo_s": 8,
+          "iki_s": 11.34,
+          "tekstas": "Rolė nusprendžia, ką galite – ne pareigos."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
       "epizodas": "ep_906_01_1",
       "failas": "01-prisijungimas",
       "pavadinimas": "Prisijungiate prie svetainės valdymo",
@@ -17,17 +46,17 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 5.67,
+          "iki_s": 5.4,
           "tekstas": "Prie svetainės adreso pridedate „/admin“."
         },
         {
           "nuo_s": 5.9,
-          "iki_s": 8.99,
+          "iki_s": 8.87,
           "tekstas": "Įrašote el. paštą ir slaptažodį."
         },
         {
           "nuo_s": 9.3,
-          "iki_s": 15.79,
+          "iki_s": 15.36,
           "tekstas": "Spaudžiate „Prisijungti“ – atsidaro darbalaukis."
         }
       ],
@@ -52,7 +81,94 @@
       "ispejimai": []
     },
     {
-      "kadras": 2,
+      "kadras": 3,
+      "epizodas": "viz_906_02",
+      "failas": "02-pirmas-prisijungimas",
+      "pavadinimas": "Pirmas prisijungimas",
+      "trukme_s": 13,
+      "mp4": "viz_906_02.mp4",
+      "vtt": "viz_906_02.vtt",
+      "poster": "viz_906_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.44,
+          "tekstas": "Pirmą nuorodą gauna vadovas, galioja mėnesį."
+        },
+        {
+          "nuo_s": 4.8,
+          "iki_s": 8.33,
+          "tekstas": "Slaptažodį renkatės patys, niekas jo neprašys."
+        },
+        {
+          "nuo_s": 8.6,
+          "iki_s": 11.45,
+          "tekstas": "Kolegas prideda mokyklos administratorius."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_906_03",
+      "failas": "03-ka-matote-prisijunge",
+      "pavadinimas": "Ką matote prisijungę",
+      "trukme_s": 15,
+      "mp4": "viz_906_03.mp4",
+      "vtt": "viz_906_03.vtt",
+      "poster": "viz_906_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.41,
+          "tekstas": "Prisijungę matote darbalaukį ir modulių meniu."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 8.13,
+          "tekstas": "Paieška viršuje randa modulį pagal pavadinimą."
+        },
+        {
+          "nuo_s": 8.8,
+          "iki_s": 12.33,
+          "tekstas": "Svetainėje – pieštukai ir „Turinio auditas“."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_906_04",
+      "failas": "04-trys-roles",
+      "pavadinimas": "Trys rolės",
+      "trukme_s": 15,
+      "mp4": "viz_906_04.mp4",
+      "vtt": "viz_906_04.vtt",
+      "poster": "viz_906_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.69,
+          "tekstas": "Rolės trys. „Cleverphant“ turime tik mes."
+        },
+        {
+          "nuo_s": 4.9,
+          "iki_s": 8.11,
+          "tekstas": "„Manager“ tvarko dar vartotojus ir nustatymus."
+        },
+        {
+          "nuo_s": 8.7,
+          "iki_s": 12.55,
+          "tekstas": "Vadovui – Manager, visiems kitiems – Redakcija."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
       "epizodas": "ep_906_05_1",
       "failas": "05-pridedate-kolega",
       "pavadinimas": "Pridedate kolegą su role „Redakcija“",
@@ -63,17 +179,17 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 8.13,
+          "iki_s": 4.69,
           "tekstas": "Sąraše „Vartotojai“ spaudžiate „Pridėti vartotoją“."
         },
         {
           "nuo_s": 8.3,
-          "iki_s": 11.95,
+          "iki_s": 11.91,
           "tekstas": "Užpildote vardą, pavardę ir el. paštą."
         },
         {
           "nuo_s": 12.1,
-          "iki_s": 16.11,
+          "iki_s": 15.63,
           "tekstas": "Prie „Rolės“ pažymite „Redakcija“ ir išsaugote."
         }
       ],
@@ -99,6 +215,35 @@
           "garsas": "patvirtinimas"
         }
       ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "viz_906_06",
+      "failas": "06-kai-zmogus-iseina",
+      "pavadinimas": "Kai žmogus išeina",
+      "trukme_s": 14,
+      "mp4": "viz_906_06.mp4",
+      "vtt": "viz_906_06.vtt",
+      "poster": "viz_906_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.97,
+          "tekstas": "Išėjusio darbuotojo paskyrą išjungiate, ne ištrinate."
+        },
+        {
+          "nuo_s": 5.5,
+          "iki_s": 7.71,
+          "tekstas": "Įrašai ir istorija lieka."
+        },
+        {
+          "nuo_s": 7.9,
+          "iki_s": 11,
+          "tekstas": "Patikrinate, ar liko bent vienas „Manager“."
+        }
+      ],
+      "garsai": [],
       "ispejimai": []
     }
   ]

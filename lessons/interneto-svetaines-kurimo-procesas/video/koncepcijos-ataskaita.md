@@ -12,3 +12,4 @@ Generuoja `koncepcijos.js`. Tekstai — iš kortelės `laukai`, nekeisti.
 | 6 | 06-turinio-patvirtinimas | srautas | 4 / 3 | — |
 | 7 | 07-domeno-nukreipimas | srautas | 4 / 3 | — |
 | 9 | 08-po-starto-darbai | zingsniai | 4 / 3 | — |
+| 10 | 09-mokymai-peremusiems | kortele_su_sarasu | 4 / 3 | — |

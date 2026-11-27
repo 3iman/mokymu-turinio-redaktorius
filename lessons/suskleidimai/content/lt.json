@@ -8,5 +8,54 @@
   },
   "05_perrikiavimas": {
     "_epizodas": "ep_905_05_1"
+  },
+  "00_kam_suskleidimai": {
+    "title": "Kam suskleidimai",
+    "item_1": "Keli ilgi blokai viena tema",
+    "item_2": "Lankytojas atsiskleidžia tą, kurios ieško",
+    "item_3": "Trumpiems atsakymams – ne",
+    "summary": "Antraštės matomos, turinys – kai paspaudi"
+  },
+  "01_suskleidimas_svetaineje": {
+    "title": "Suskleidimas svetainėje",
+    "item_1": "Juosta: pavadinimas ir pliusas",
+    "item_2": "Atsiskleidžia tekstas, galerija, video, dokumentai",
+    "item_3": "Visi užverti, atidaryti galima kelis",
+    "item_4": "Klaviatūra: Tab → Enter; skaitytuvas pasako būseną",
+    "item_4_a": "Klaviatūra: Tab",
+    "item_4_b": "Enter; skaitytuvas pasako būseną"
+  },
+  "02_kur_rasti": {
+    "title": "Kur rasti",
+    "item_1": "Kairysis meniu › Suskleidimai",
+    "item_2": "Šalia – Kategorijos",
+    "item_3": "Filtrai: kalba, kategorija",
+    "summary": "Kategorija – blokas puslapyje, įrašai – jo juostos"
+  },
+  "06_kada_ne_suskleidimai": {
+    "title": "Kada suskleidimai, kada ne",
+    "do_title": "Suskleidimai",
+    "do_1": "5–8 vidutiniai blokai viena tema",
+    "do_2": "Programos, laidos, būreliai su aprašais",
+    "dont_title": "Ne suskleidimai",
+    "dont_1": "DUK iš 10–16 trumpų atsakymų",
+    "dont_2": "Visas puslapis viename suskleidime",
+    "summary": "Slinkti moka, spausti tingi"
+  },
+  "07_atvaizdavimo_variantas": {
+    "title": "Atvaizdavimo variantas",
+    "item_1": "„Default“ – juostos su pliusu",
+    "item_2": "Paruoštas variantas – pvz. su nuotraukomis",
+    "item_3": "Naują variantą paruošiame mes",
+    "summary": "Laukas „View“ kategorijoje"
+  },
+  "08_eile_pries_suskleidima": {
+    "title": "Eilė prieš suskleidimą",
+    "step_1": "Sutrumpinti turinį",
+    "step_2": "Antraštės – esminė info matoma iš karto",
+    "step_3": "Turinys viršuje su vidinėmis nuorodomis",
+    "step_4": "Polapis – savarankiška lankytojo užduotis",
+    "step_5": "Suskleidimas – papildoma pasirenkama detalė",
+    "summary": "GOV.UK eilė: suskleidimas paskutinis"
   }
 }

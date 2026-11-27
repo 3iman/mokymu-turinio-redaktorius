@@ -72,6 +72,24 @@ Kortelėje pridėtas violetinio mygtuko spustelėjimas prieš patvirtinimą.
 
 ---
 
+## `viz_709_00` — „Kam tai“ (15 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Logotipų lentelė naudingoms nuorodoms – ne tas pats, kas puslapis „Nuorodos“.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Kaip atrodo naudingos nuorodos“ · item_1: „Logotipų lentelė po tris“ · item_2: „Puslapis „Nuorodos“ → tekstinės nuorodos į įstaigas“ · item_3: „Klaviatūra: Tab → Enter; skaitytuvas skaito pavadinimą“ · summary: „Modulis ir puslapis – ne tas pats“
+
+**Ekrane:** Šablonas `perziura`: kairėje logotipų lentelė po tris, dešinėje puslapis „Nuorodos“ su tekstinėmis eilutėmis; tarp jų ženklas „≠“. Pabaigoje prieinamumo takelis: fokusas ant kortelės, skaitytuvo burbulas su pavadinimu (3–5 s).
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Modulis rodo naudingų nuorodų logotipus.“ |
+| 4,5 | išnyra kitas elementas | „Puslapis „Nuorodos“ – kas kita: tekstinės nuorodos į įstaigas.“ |
+| 9,5 | išvada / santrauka paryškėja | „„Tab“, „Enter“; skaitytuvas skaito pavadinimą.“ |
+| … –15 | ramiai (viršelis) | — |
+
+---
+
 ## Sprendimai
 
 Atvirų klausimų nėra. Kortelių pataisos — kadrai 2 ir 3 (veiksmų garsai).

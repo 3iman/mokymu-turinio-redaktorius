@@ -4,6 +4,29 @@
  "kadrai": [
   {
    "kadras": 1,
+   "epizodas": "viz_705_00",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_705_00",
+   "pamoka": "pam_705",
+   "failas": "00-kam-tai",
+   "trukme_s": 17,
+   "ekrano_tekstai": [
+    "Tab",
+    "Enter"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Tab",
+    "Enter"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
    "epizodas": "ep_705_01_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -31,14 +54,14 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 2,
+   "kadras": 3,
    "epizodas": "ep_705_02_1",
    "rusis": "epizodas",
    "sablonas": null,
    "dalis": "dal_705_02",
    "pamoka": "pam_705",
    "failas": "02-nauja-grupe",
-   "trukme_s": 14,
+   "trukme_s": 15,
    "ekrano_tekstai": [
     "Naujas meniu",
     "Vardas",
@@ -61,7 +84,7 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 3,
+   "kadras": 4,
    "epizodas": "ep_705_03_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -85,7 +108,7 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 4,
+   "kadras": 5,
    "epizodas": "ep_705_04_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -111,7 +134,7 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 5,
+   "kadras": 6,
    "epizodas": "ep_705_05_4",
    "rusis": "epizodas",
    "sablonas": null,
@@ -149,7 +172,7 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 6,
+   "kadras": 7,
    "epizodas": "ep_705_05_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -184,7 +207,7 @@
    ]
   },
   {
-   "kadras": 7,
+   "kadras": 8,
    "epizodas": "ep_705_05_2",
    "rusis": "epizodas",
    "sablonas": null,
@@ -223,7 +246,7 @@
    ]
   },
   {
-   "kadras": 8,
+   "kadras": 9,
    "epizodas": "ep_705_06_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -250,7 +273,7 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 9,
+   "kadras": 10,
    "epizodas": "ep_705_07_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -285,7 +308,7 @@
    ]
   },
   {
-   "kadras": 10,
+   "kadras": 11,
    "epizodas": "ep_705_07_2",
    "rusis": "epizodas",
    "sablonas": null,
@@ -317,7 +340,7 @@
    ]
   },
   {
-   "kadras": 11,
+   "kadras": 12,
    "epizodas": "ep_705_07_3",
    "rusis": "epizodas",
    "sablonas": null,
@@ -349,7 +372,7 @@
    ]
   },
   {
-   "kadras": 12,
+   "kadras": 13,
    "epizodas": "ep_705_08_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -385,7 +408,7 @@
    ]
   },
   {
-   "kadras": 13,
+   "kadras": 14,
    "epizodas": "ep_705_08_2",
    "rusis": "epizodas",
    "sablonas": null,

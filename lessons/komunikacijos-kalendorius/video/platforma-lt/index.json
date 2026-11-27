@@ -1,0 +1,125 @@
+{
+  "pamoka": "komunikacijos-kalendorius",
+  "lang": "lt",
+  "sugeneruota": "2026-11-27T16:45:46.715Z",
+  "balso_stiprinimas_db": 6.4,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_901_00",
+      "failas": "00-metai-ratu",
+      "pavadinimas": "Mokyklos metai ratu",
+      "trukme_s": 14,
+      "mp4": "viz_901_00.mp4",
+      "vtt": "viz_901_00.vtt",
+      "poster": "viz_901_00.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.11,
+          "tekstas": "Svarbiausios naujienos nėra netikėtos."
+        },
+        {
+          "nuo_s": 4.3,
+          "iki_s": 9.15,
+          "tekstas": "Priėmimas, rugsėjo pirmoji, egzaminai, vasara – kasmet."
+        },
+        {
+          "nuo_s": 9.3,
+          "iki_s": 12.27,
+          "tekstas": "Planuojate kartą ir keičiate tik datas."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_901_01",
+      "failas": "01-keturi-taskai",
+      "pavadinimas": "Keturi fiksuoti taškai",
+      "trukme_s": 16,
+      "mp4": "viz_901_01.mp4",
+      "vtt": "viz_901_01.vtt",
+      "poster": "viz_901_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.85,
+          "tekstas": "Keturiems taškams – data, kada žinutė pasirodo."
+        },
+        {
+          "nuo_s": 5.1,
+          "iki_s": 9.64,
+          "tekstas": "Priėmimas – registracijos dieną, egzaminai – prieš dvi savaites."
+        },
+        {
+          "nuo_s": 10.3,
+          "iki_s": 13.18,
+          "tekstas": "Prie keturių pridedate savas šventes."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_901_02",
+      "failas": "02-pries-ir-po",
+      "pavadinimas": "Prieš ir po",
+      "trukme_s": 12,
+      "mp4": "viz_901_02.mp4",
+      "vtt": "viz_901_02.vtt",
+      "poster": "viz_901_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.79,
+          "tekstas": "Kiekvienam įvykiui – dvi žinutės."
+        },
+        {
+          "nuo_s": 4,
+          "iki_s": 7.71,
+          "tekstas": "„Prieš“ sako, ką daryti; „po“ – kaip buvo."
+        },
+        {
+          "nuo_s": 7.9,
+          "iki_s": 10.39,
+          "tekstas": "„Po“ skelbiate tą pačią dieną."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_901_03",
+      "failas": "03-kalendoriaus-lentele",
+      "pavadinimas": "Kur gyvena kalendorius",
+      "trukme_s": 15,
+      "mp4": "viz_901_03.mp4",
+      "vtt": "viz_901_03.vtt",
+      "poster": "viz_901_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.29,
+          "tekstas": "Kalendorius – lentelė su penkiais stulpeliais."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 8.93,
+          "tekstas": "Laikote „Google Sheets“ faile, kurį mato visi, kas rašo."
+        },
+        {
+          "nuo_s": 9.6,
+          "iki_s": 12.98,
+          "tekstas": "Rugsėjį pakeičiate datas – darbas padarytas."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

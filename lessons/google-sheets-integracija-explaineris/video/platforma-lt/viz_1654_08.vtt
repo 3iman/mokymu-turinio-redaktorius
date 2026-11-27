@@ -1,0 +1,17 @@
+WEBVTT
+
+1
+00:00:01.000 --> 00:00:04.610
+Pirmas lapas visada turi gID nulis.
+
+2
+00:00:05.000 --> 00:00:10.690
+Jo vietos keisti nereikėtų – svetainė jį atpažįsta būtent pagal šį numerį.
+
+3
+00:00:11.000 --> 00:00:14.370
+Kitus lapus galima perkelti ar pervadinti laisvai.
+
+4
+00:00:15.000 --> 00:00:19.510
+Sistema juos atpažįsta pagal gID, ne pagal vietą.

@@ -10,7 +10,7 @@
    "dalis": "dal_688_01",
    "pamoka": "pam_688",
    "failas": "01-paslaugos",
-   "trukme_s": 14,
+   "trukme_s": 15,
    "ekrano_tekstai": [
     "Paslaugų aprašymai",
     "Susiję dokumentai",
@@ -78,7 +78,7 @@
    "dalis": "dal_688_04",
    "pamoka": "pam_688",
    "failas": "04-dokumentai",
-   "trukme_s": 13,
+   "trukme_s": 14,
    "ekrano_tekstai": [
     "Tvarkos aprašai",
     "Taisyklės",
@@ -213,7 +213,7 @@
    "dalis": "dal_688_11",
    "pamoka": "pam_688",
    "failas": "11-audito-numeris",
-   "trukme_s": 13,
+   "trukme_s": 14,
    "ekrano_tekstai": [
     "Visi",
     "Audito nr.",
@@ -240,6 +240,310 @@
     "dal_688_00",
     "dal_688c_90"
    ]
+  },
+  {
+   "kadras": 12,
+   "epizodas": "viz_688_15",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_688_15",
+   "pamoka": "pam_688",
+   "failas": "15-trys-rusys",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Administracijai",
+    "Patvirtinta",
+    "Patikslinti"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 13,
+   "epizodas": "viz_688_16",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_688_16",
+   "pamoka": "pam_688",
+   "failas": "16-patikslinti",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Patikslinti"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 14,
+   "epizodas": "viz_688_17",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_688_17",
+   "pamoka": "pam_688",
+   "failas": "17-atnaujinti-informacija",
+   "trukme_s": 11,
+   "ekrano_tekstai": [
+    "Atnaujinti informaciją"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 15,
+   "epizodas": "viz_688_18",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_688_18",
+   "pamoka": "pam_688",
+   "failas": "18-patvirtinta",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Patvirtinta",
+    "Įvykdyta"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 16,
+   "epizodas": "viz_688_19",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_688_19",
+   "pamoka": "pam_688",
+   "failas": "19-neaisku",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Neaišku"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 17,
+   "epizodas": "viz_688c_00",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_688c_00",
+   "pamoka": "pam_688",
+   "failas": "20-busena-ir-zyma",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Asmuo",
+    "Dok",
+    "Lengva"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 18,
+   "epizodas": "viz_688c_01",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_688c_01",
+   "pamoka": "pam_688",
+   "failas": "21-asmuo",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Asmuo"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla",
+    "asmuo": "Vincas Kudirka"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 19,
+   "epizodas": "viz_688c_02",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_688c_02",
+   "pamoka": "pam_688",
+   "failas": "22-di",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "DI"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "DI"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 20,
+   "epizodas": "viz_688c_03",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_688c_03",
+   "pamoka": "pam_688",
+   "failas": "23-dok",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Dok"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Dok"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 21,
+   "epizodas": "viz_688c_04",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_688c_04",
+   "pamoka": "pam_688",
+   "failas": "24-klausimai",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Klausimai",
+    "Valdymas",
+    "Kopijuoti laiško temą į iškarpinę"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 22,
+   "epizodas": "viz_688c_05",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_688c_05",
+   "pamoka": "pam_688",
+   "failas": "25-laukiam",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Laukiam"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 23,
+   "epizodas": "viz_688c_06",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_688c_06",
+   "pamoka": "pam_688",
+   "failas": "26-lengva",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Lengva"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 24,
+   "epizodas": "viz_688c_07",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_688c_07",
+   "pamoka": "pam_688",
+   "failas": "27-pritaikomumas",
+   "trukme_s": 17,
+   "ekrano_tekstai": [
+    "Pritaikomumas",
+    "4–8 savaitės"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "4–8"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 25,
+   "epizodas": "viz_688c_08",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_688c_08",
+   "pamoka": "pam_688",
+   "failas": "28-uzpildyti",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Užpildyti",
+    "Google Sheets"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Google Sheets"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla",
+    "darbuotojas": "Jonas Biliūnas"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 26,
+   "epizodas": "viz_688c_09",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_688c_09",
+   "pamoka": "pam_688",
+   "failas": "29-kodel-nenumesti",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "%"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
   }
  ]
 }

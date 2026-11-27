@@ -1,12 +1,41 @@
 {
   "pamoka": "nuorodu-valdymas",
   "lang": "lt",
-  "sugeneruota": "2026-11-03T04:32:40.491Z",
-  "balso_stiprinimas_db": 5.7,
+  "sugeneruota": "2026-11-27T17:40:04.437Z",
+  "balso_stiprinimas_db": 5.4,
   "muzika": false,
   "klipai": [
     {
       "kadras": 1,
+      "epizodas": "viz_709_00",
+      "failas": "00-kam-tai",
+      "pavadinimas": "Kam tai",
+      "trukme_s": 16,
+      "mp4": "viz_709_00.mp4",
+      "vtt": "viz_709_00.vtt",
+      "poster": "viz_709_00.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.51,
+          "tekstas": "Modulis rodo naudingų nuorodų logotipus."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 9.67,
+          "tekstas": "Puslapis „Nuorodos“ – kas kita: tekstinės nuorodos į įstaigas."
+        },
+        {
+          "nuo_s": 9.9,
+          "iki_s": 13.69,
+          "tekstas": "„Tab“, „Enter“; skaitytuvas skaito pavadinimą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
       "epizodas": "ep_709_02_1",
       "failas": "02-nuorodos-svetaineje",
       "pavadinimas": "Nuorodos išdėstomos po tris",
@@ -17,17 +46,17 @@
       "balsas": [
         {
           "nuo_s": 1.4,
-          "iki_s": 4.07,
+          "iki_s": 4.21,
           "tekstas": "Nuorodas svetainėje matote lentelėje."
         },
         {
           "nuo_s": 4.5,
-          "iki_s": 7.47,
+          "iki_s": 7.51,
           "tekstas": "Vienoje eilutėje telpa trys logotipai."
         },
         {
           "nuo_s": 7.7,
-          "iki_s": 10.75,
+          "iki_s": 10.71,
           "tekstas": "Vietoje logotipo galite naudoti ikonėlę."
         }
       ],
@@ -35,7 +64,7 @@
       "ispejimai": []
     },
     {
-      "kadras": 2,
+      "kadras": 3,
       "epizodas": "ep_709_05_1",
       "failas": "05-nuorodos-irasas",
       "pavadinimas": "Užpildote nuorodos įrašo kortelę",
@@ -51,7 +80,7 @@
         },
         {
           "nuo_s": 4.6,
-          "iki_s": 8.69,
+          "iki_s": 8.65,
           "tekstas": "Nurodote kategoriją – kitaip nuoroda niekur nesimatys."
         },
         {
@@ -61,7 +90,7 @@
         },
         {
           "nuo_s": 15.1,
-          "iki_s": 20.27,
+          "iki_s": 20.39,
           "tekstas": "Nuoroda atsidarys naujame lange."
         }
       ],
@@ -96,7 +125,7 @@
       ]
     },
     {
-      "kadras": 3,
+      "kadras": 4,
       "epizodas": "ep_709_06_1",
       "failas": "06-nuorodu-sintakse",
       "pavadinimas": "Nukopijuojate nuorodų rinkinio sintaksę",
@@ -107,12 +136,12 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 3.53,
+          "iki_s": 3.57,
           "tekstas": "Atidarote skyrių „Kategorijos“."
         },
         {
           "nuo_s": 3.8,
-          "iki_s": 7.54,
+          "iki_s": 7.58,
           "tekstas": "Violetinis mygtukas nukopijuoja įterpimo sintaksę."
         }
       ],

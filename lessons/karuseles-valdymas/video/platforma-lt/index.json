@@ -1,12 +1,46 @@
 {
   "pamoka": "karuseles-valdymas",
   "lang": "lt",
-  "sugeneruota": "2026-11-03T03:08:55.712Z",
-  "balso_stiprinimas_db": 5.4,
+  "sugeneruota": "2026-11-27T17:49:06.520Z",
+  "balso_stiprinimas_db": 5.7,
   "muzika": false,
   "klipai": [
     {
       "kadras": 1,
+      "epizodas": "viz_711_00",
+      "failas": "00-kam-tai",
+      "pavadinimas": "Kam tai",
+      "trukme_s": 18,
+      "mp4": "viz_711_00.mp4",
+      "vtt": "viz_711_00.vtt",
+      "poster": "viz_711_00.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.27,
+          "tekstas": "Karuselė – pirmas kadras svetainėje."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 7.87,
+          "tekstas": "Vienas geras kadras su žinute veikia stipriau."
+        },
+        {
+          "nuo_s": 8.3,
+          "iki_s": 11.03,
+          "tekstas": "Erdves rodote „Ugdymo aplinkoje“."
+        },
+        {
+          "nuo_s": 11.2,
+          "iki_s": 15.21,
+          "tekstas": "Kelis kadrus keičiate rodyklėmis; judanti – sustabdoma."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
       "epizodas": "viz_711_02",
       "failas": "02-karuseles-vizualas",
       "pavadinimas": "Pagrindinis karuselės vizualas",
@@ -17,17 +51,17 @@
       "balsas": [
         {
           "nuo_s": 1.4,
-          "iki_s": 7.23,
+          "iki_s": 6.93,
           "tekstas": "Karuselės nuotrauka – 1920 x 606 pikselių."
         },
         {
           "nuo_s": 7.4,
-          "iki_s": 11.01,
+          "iki_s": 10.89,
           "tekstas": "Svarbus turinys turi tilpti tarp pirmų dviejų linijų."
         },
         {
           "nuo_s": 11.8,
-          "iki_s": 15.77,
+          "iki_s": 15.61,
           "tekstas": "Telefonui talpinate atskirą, kvadratu apkirptą nuotrauką."
         }
       ],
@@ -35,7 +69,7 @@
       "ispejimai": []
     },
     {
-      "kadras": 2,
+      "kadras": 3,
       "epizodas": "ep_711_04_1",
       "failas": "04-srifto-dydziai",
       "pavadinimas": "Parenkate karuselės šrifto dydį",
@@ -51,17 +85,17 @@
         },
         {
           "nuo_s": 5.5,
-          "iki_s": 8.23,
+          "iki_s": 8.11,
           "tekstas": "Telefonui skirtas atskiras dydžio laukas."
         },
         {
           "nuo_s": 8.9,
-          "iki_s": 10.79,
+          "iki_s": 10.87,
           "tekstas": "Aprašymui – dar vienas."
         },
         {
           "nuo_s": 11.1,
-          "iki_s": 14.31,
+          "iki_s": 14.39,
           "tekstas": "Taip ilgesnis tekstas telpa ir mažame ekrane."
         }
       ],
@@ -69,7 +103,7 @@
       "ispejimai": []
     },
     {
-      "kadras": 3,
+      "kadras": 4,
       "epizodas": "ep_711_05_1",
       "failas": "05-teksto-spalva",
       "pavadinimas": "Pakeičiate karuselės teksto spalvą",
@@ -80,7 +114,7 @@
       "balsas": [
         {
           "nuo_s": 1.4,
-          "iki_s": 4.57,
+          "iki_s": 4.53,
           "tekstas": "Laukelyje „Text Color“ pasirenkate spalvą."
         },
         {
@@ -90,7 +124,7 @@
         },
         {
           "nuo_s": 7.6,
-          "iki_s": 11.3,
+          "iki_s": 11.21,
           "tekstas": "Svetainėje tekstas ant nuotraukos jau naujos spalvos."
         }
       ],
@@ -108,6 +142,35 @@
           "garsas": "patvirtinimas"
         }
       ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_711_06",
+      "failas": "06-kadras-pagal-branda",
+      "pavadinimas": "Kadras pagal mokyklos brandą",
+      "trukme_s": 14,
+      "mp4": "viz_711_06.mp4",
+      "vtt": "viz_711_06.vtt",
+      "poster": "viz_711_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.61,
+          "tekstas": "Kadras gali atrodyti kaip jūsų mokyklos plakatas."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 7.45,
+          "tekstas": "Atsiunčiate mintį ir nuotraukas."
+        },
+        {
+          "nuo_s": 7.9,
+          "iki_s": 11.91,
+          "tekstas": "Apdirbame, parenkame šriftą, grąžiname paruoštą kadrą."
+        }
+      ],
+      "garsai": [],
       "ispejimai": []
     }
   ]

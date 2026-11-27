@@ -63,5 +63,120 @@
     "item_1": "Fiksuoja puslapio užbaigtumą",
     "item_2": "Pirmieji – sisteminiai puslapiai",
     "item_3": "Progresas visada prasideda nuo 15 %"
+  },
+  "15_trys_rusys": {
+    "title": "Kas yra audito juostoje",
+    "item_1": "Turinio rinkiniai → kuriai daliai priklauso",
+    "item_2": "Būsenos → kur puslapis yra",
+    "item_3": "Darbo eilės → ko laukiame iš jūsų",
+    "summary": "Vardinės būsenos – mums, ne jums",
+    "item_1_a": "Turinio rinkiniai",
+    "item_1_b": "kuriai daliai priklauso",
+    "item_2_a": "Būsenos",
+    "item_2_b": "kur puslapis yra",
+    "item_3_a": "Darbo eilės",
+    "item_3_b": "ko laukiame iš jūsų"
+  },
+  "16_patikslinti": {
+    "title": "Patikslinti",
+    "item_1": "Komentare – ko trūksta",
+    "item_2": "Atsakote prie to paties audito nr.",
+    "item_3": "Puslapis grįžta į mūsų eilę",
+    "summary": "Atsakymas yra, bet jo neužtenka"
+  },
+  "17_atnaujinti_informacija": {
+    "title": "Atnaujinti informaciją",
+    "item_1": "Pasenęs tvarkaraštis, specialistas, projektas",
+    "item_2": "Atsiunčiate naują",
+    "item_3": "Arba parašote, kad nebereikia",
+    "summary": "Buvo teisinga, paseno"
+  },
+  "18_patvirtinta": {
+    "title": "Patvirtinta",
+    "item_1": "Jūs patvirtinote",
+    "item_2": "Mes įkeliame",
+    "item_3": "Procentą kelia tik „Įvykdyta“",
+    "summary": "Jūsų dalis baigta, mūsų dar ne"
+  },
+  "19_neaisku": {
+    "title": "Neaišku",
+    "item_1": "Ar paslauga teikiama?",
+    "item_2": "Kas atsakingas?",
+    "item_3": "Užtenka vieno sakinio",
+    "summary": "Pigiausias būdas pakelti progresą"
+  },
+  "20_busena_ir_zyma": {
+    "title": "Būsena ir žyma",
+    "item_1": "Būsena → kur puslapis yra",
+    "item_2": "Žyma → ko laukiame iš jūsų",
+    "item_3": "Aštuonios žymos, gali būti kelios",
+    "summary": "Žymų mygtukai viršuje filtruoja",
+    "item_1_a": "Būsena",
+    "item_1_b": "kur puslapis yra",
+    "item_2_a": "Žyma",
+    "item_2_b": "ko laukiame iš jūsų"
+  },
+  "21_asmuo": {
+    "title": "Žyma „Asmuo“",
+    "item_1": "Asmuo prie puslapio",
+    "item_2": "Patvirtinate ar pataisote",
+    "item_3": "Paslaugos nėra – pasakote",
+    "summary": "Kas atsakingas dabar?"
+  },
+  "22_di": {
+    "title": "Žyma „DI“",
+    "item_1": "Aprašymas iš jūsų medžiagos",
+    "item_2": "Skaitote kaip tėvai",
+    "item_3": "Patvirtinate arba siunčiate savo",
+    "summary": "Vienas faktas ne toks – parašote"
+  },
+  "23_dok": {
+    "title": "Žyma „Dok“",
+    "item_1": "Tvarkos aprašas, įsakymas, ataskaita",
+    "item_2": "Failas arba nuoroda į dokumentų banką",
+    "item_3": "Nėra – parašote",
+    "summary": "Puslapis nebelauks"
+  },
+  "24_klausimai": {
+    "title": "Žyma „Klausimai“",
+    "item_1": "Klausimas komentare",
+    "item_2": "Atsakote laišku",
+    "item_3": "Tema iš „Valdymas“ – su audito nr.",
+    "summary": "Atsakymas atsiduria prie tinkamo puslapio"
+  },
+  "25_laukiam": {
+    "title": "Žyma „Laukiam“",
+    "item_1": "Kažkas pažadėjo",
+    "item_2": "Dar ne metas",
+    "item_3": "Turite – siunčiate",
+    "summary": "Ne dėl jūsų"
+  },
+  "26_lengva": {
+    "title": "Žyma „Lengva“",
+    "item_1": "Vienas sakinys ar „taip / ne“",
+    "item_2": "Užima minutę",
+    "item_3": "Pradedate nuo jų",
+    "summary": "Toks pat progresas"
+  },
+  "27_pritaikomumas": {
+    "title": "Žyma „Pritaikomumas“",
+    "item_1": "Gestų kalba, lengvai suprantama kalba",
+    "item_2": "4–8 savaitės",
+    "item_3": "Neatidedate",
+    "summary": "Pradedate anksčiausiai"
+  },
+  "28_uzpildyti": {
+    "title": "Žyma „Užpildyti“",
+    "item_1": "Mokytojai, specialistai, komisijos",
+    "item_2": "Lentelė, ne laiškas",
+    "item_3": "Be perrašymo klaidų",
+    "summary": "„Google Sheets“ arba atsiųstas šablonas"
+  },
+  "29_kodel_nenumesti": {
+    "title": "Kodėl verta nenumesti",
+    "item_1": "Kiekvienas puslapis kelia procentą",
+    "item_2": "Po pusmečio tenka tikrinti iš naujo",
+    "item_3": "Dirbate rinkiniais",
+    "summary": "Įstrigote – rašote pagalbos centrui"
   }
 }

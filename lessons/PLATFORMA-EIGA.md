@@ -4,9 +4,11 @@
 > Galioja: piešimas, įgarsinimas (ElevenLabs), montažas. NEgalioja: WP / YouTube publikavimas, tekstų ir kirčių keitimas.
 > Šaka abiejuose repo: `claude/friendly-allen-dh1gk0`.
 
-## Būsena (2026-11-03)
+## Būsena (2026-11-27)
 
-**60 pamokų iš 62 pagamintos.** Dvi Google Sheets pamokos nepieštos — pagal promptą jų klipai imami iš esamų scenų.
+**Visos 63 pamokos pagamintos — 471 klipas iš 473 unikalių filmų (~111 min), likę 2 — nuotraukos.** 2026-11-27 (Eimantas: „Ruošk ir gamink“): 16 pamokų perleistos su 61 nauja koncepcija (scenarijai platformoje 2026-11-27), 3 naujos pamokos (`komunikacijos-kalendorius`, `komunikacija-krizes-metu`, `tonas-kaip-mokykla-kalba`); dvi Google Sheets pamokos — 34 klipai iškirpti iš įgarsintų explainerių (`node build-platform-clips.js`), 19 jų 21–51 s palikti (DECISIONS 2026-10-31). Perdavimas devams: `_perdavimas/platformos-filmai-2026-11-27.zip` (ne gite) + platformos `handoff/filmai-manifestas.json`.
+
+Buvo 2026-11-03: 60 pamokų iš 62, 376 klipai.
 
 - Klipai: `lessons/{slug}/video/platforma-lt/{epizodo id}.mp4` + `.vtt` + `.jpg` + `index.json`.
 - Kiekviena pamoka: `bash platformos-pamoka.sh {slug}` (žr. VIDEO_GAMYBA.md).
@@ -43,7 +45,7 @@
 - Kitų sesijų failai (vaiduoklis-po-numeriu, YouTube failai, `uploads-log.json`, `VIZUALINES_TECHNIKOS.md`, `.claude/skills/`; platformos repo `turinys/QA-PAMOKOS.md`, `qa.json`, `.agents/`, `.codex/`) — ne šios sesijos, neliesti.
 
 **Atvira.**
-1. **Dvi Google Sheets pamokos** — nepieštos, klipai imami iš esamų scenų.
+1. ~~Dvi Google Sheets pamokos~~ — klipai iškirpti 2026-11-27; 14 kadrų paskutinis balsas < 1 s prieš galą (smulkmena, kortelėse `trukme_s` +1 s).
 2. **Publikavimas į WP / YouTube** — neleistas, kol Eimantas nepasakys.
 
 **YouTube filmukai su platformos vardu** (`es-projektu-viesinimas`, `ka-atsakyti-kai-paklausia-apie-slapukus`, `lenteliu-kurimo-principai`, `lenteliu-redagavimas-wysiwyg-redaktoriuje`) gyvena `lessons/{slug}-youtube/`. Įkėlimo įrankiui — `--lesson {slug}-youtube`; žurnalo raktas lieka senas (`slug` lauke `youtube-lt.json`), todėl pakartotinio įkėlimo nebus.

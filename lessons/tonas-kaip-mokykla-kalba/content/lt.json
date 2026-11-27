@@ -1,0 +1,60 @@
+{
+  "lang": "lt",
+  "00_kas_skaito": {
+    "title": "Kas skaito",
+    "item_1": "Telefone, per pertrauką",
+    "item_2": "Trisdešimt sekundžių",
+    "item_3": "Kas, kada, ką daryti",
+    "summary": "Tonas – skaitomumas, ne mandagumas"
+  },
+  "01_jus_ir_vardas": {
+    "title": "Jūs ir vardas",
+    "do_title": "Taip",
+    "do_1": "Kviečiame jus",
+    "do_2": "Socialinė pedagogė Marija Pečkauskaitė",
+    "do_3": "Tėvai",
+    "dont_title": "Ne",
+    "dont_1": "Tėvai kviečiami",
+    "dont_2": "Atsakingas asmuo",
+    "dont_3": "Tėvai (globėjai, rūpintojai)"
+  },
+  "02_vienas_sakinys": {
+    "title": "Vienas sakinys – vienas faktas",
+    "old_title": "Vienas sakinys, keturi faktai",
+    "old_step_1": "Informuojame, kad dėl vykstančių remonto darbų…",
+    "old_step_2": "…iki spalio 15 d., todėl prašome…",
+    "new_title": "Du sakiniai, du faktai",
+    "new_step_1": "Iki spalio 15 d. vyksta remontas.",
+    "new_step_2": "Įeinate pro sporto salės duris.",
+    "summary": "Kur „todėl“ – ten taškas"
+  },
+  "03_kanceliarizmai": {
+    "title": "Kanceliarizmas → kasdienis žodis",
+    "item_1": "informuojame, kad → išbraukiate",
+    "item_2": "vykdoma → vyksta",
+    "item_3": "ugdymo įstaiga → mokykla",
+    "item_4": "kontaktinis asmuo → vardas ir telefonas",
+    "summary": "Perskaitote balsu, kaip tėvų susirinkime",
+    "item_1_a": "informuojame, kad",
+    "item_1_b": "išbraukiate",
+    "item_2_a": "vykdoma",
+    "item_2_b": "vyksta",
+    "item_3_a": "ugdymo įstaiga",
+    "item_3_b": "mokykla",
+    "item_4_a": "kontaktinis asmuo",
+    "item_4_b": "vardas ir telefonas"
+  },
+  "04_personos": {
+    "title": "Tono patikra personomis",
+    "step_1": "Užimtas vadovas → pirmas sakinys",
+    "step_2": "Pamainomis dirbanti mama → telefone po darbo",
+    "step_3": "Neaišku → trumpinate, ne pridedate",
+    "summary": "Du skaitytojai, trys klausimai, pusė minutės",
+    "step_1_a": "Užimtas vadovas",
+    "step_1_b": "pirmas sakinys",
+    "step_2_a": "Pamainomis dirbanti mama",
+    "step_2_b": "telefone po darbo",
+    "step_3_a": "Neaišku",
+    "step_3_b": "trumpinate, ne pridedate"
+  }
+}

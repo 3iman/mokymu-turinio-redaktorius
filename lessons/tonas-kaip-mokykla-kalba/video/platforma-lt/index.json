@@ -1,0 +1,154 @@
+{
+  "pamoka": "tonas-kaip-mokykla-kalba",
+  "lang": "lt",
+  "sugeneruota": "2026-11-27T16:52:05.988Z",
+  "balso_stiprinimas_db": 5.5,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_903_00",
+      "failas": "00-kas-skaito",
+      "pavadinimas": "Kas skaito",
+      "trukme_s": 15,
+      "mp4": "viz_903_00.mp4",
+      "vtt": "viz_903_00.vtt",
+      "poster": "viz_903_00.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.19,
+          "tekstas": "Svetainę skaito telefone, per pertrauką."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 8.03,
+          "tekstas": "Trisdešimt sekundžių: kas, kada, ką daryti."
+        },
+        {
+          "nuo_s": 8.2,
+          "iki_s": 11.89,
+          "tekstas": "Neaišku – tekstas neperskaitytas, kad ir teisingas."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_903_01",
+      "failas": "01-jus-ir-vardas",
+      "pavadinimas": "„Jūs“ ir vardas",
+      "trukme_s": 14,
+      "mp4": "viz_903_01.mp4",
+      "vtt": "viz_903_01.vtt",
+      "poster": "viz_903_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.61,
+          "tekstas": "Rašote tam, kas skaito: „kviečiame jus“."
+        },
+        {
+          "nuo_s": 4.8,
+          "iki_s": 7.37,
+          "tekstas": "Žmogų vadinate vardu ir pareigomis."
+        },
+        {
+          "nuo_s": 7.7,
+          "iki_s": 11.07,
+          "tekstas": "Naujienoje užtenka „tėvai“ – globėjai supranta."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_903_02",
+      "failas": "02-vienas-sakinys",
+      "pavadinimas": "Vienas sakinys, vienas faktas",
+      "trukme_s": 14,
+      "mp4": "viz_903_02.mp4",
+      "vtt": "viz_903_02.vtt",
+      "poster": "viz_903_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.73,
+          "tekstas": "Ilgas sakinys telefone netelpa į vieną žvilgsnį."
+        },
+        {
+          "nuo_s": 5.1,
+          "iki_s": 7.31,
+          "tekstas": "Vienas sakinys – keturi faktai."
+        },
+        {
+          "nuo_s": 7.7,
+          "iki_s": 11.5,
+          "tekstas": "Perrašote į du sakinius po vieną faktą – trys sekundės."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_903_03",
+      "failas": "03-kanceliarizmai",
+      "pavadinimas": "Kanceliarizmai ir pakaitalai",
+      "trukme_s": 15,
+      "mp4": "viz_903_03.mp4",
+      "vtt": "viz_903_03.vtt",
+      "poster": "viz_903_03.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.69,
+          "tekstas": "Kanceliarinį žodį keičiate kasdieniu."
+        },
+        {
+          "nuo_s": 4.3,
+          "iki_s": 8.12,
+          "tekstas": "„Vykdoma“ – „vyksta“, „ugdymo įstaiga“ – „mokykla“."
+        },
+        {
+          "nuo_s": 8.5,
+          "iki_s": 11.76,
+          "tekstas": "Tekstą perskaitote balsu – kaip tėvų susirinkime."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_903_04",
+      "failas": "04-personos",
+      "pavadinimas": "Personos kaip tono tikrinimas",
+      "trukme_s": 15,
+      "mp4": "viz_903_04.mp4",
+      "vtt": "viz_903_04.vtt",
+      "poster": "viz_903_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.72,
+          "tekstas": "Prieš skelbdami perskaitote dviejų skaitytojų akimis."
+        },
+        {
+          "nuo_s": 5.5,
+          "iki_s": 8.59,
+          "tekstas": "Užimtas vadovas ir pamainomis dirbanti mama."
+        },
+        {
+          "nuo_s": 9.1,
+          "iki_s": 12.6,
+          "tekstas": "Bent viena nesupranta per pusę minutės – trumpinate."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

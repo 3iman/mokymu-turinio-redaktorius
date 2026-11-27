@@ -5,5 +5,49 @@
   },
   "03_nuoroda_i_inkara": {
     "_epizodas": "ep_909_03_1"
+  },
+  "00_trecias_kelias": {
+    "title": "Trečias kelias ilgam puslapiui",
+    "item_1": "Suskleidimai → slepia",
+    "item_2": "Polapiai → išbarsto",
+    "item_3": "Vidinės nuorodos → viskas vienoje vietoje, vienu paspaudimu",
+    "summary": "Du mygtukai: „Anchor“ ir „Link“",
+    "item_1_a": "Suskleidimai",
+    "item_1_b": "slepia",
+    "item_2_a": "Polapiai",
+    "item_2_b": "išbarsto",
+    "item_3_a": "Vidinės nuorodos",
+    "item_3_b": "viskas vienoje vietoje, vienu paspaudimu"
+  },
+  "01_kaip_atrodo": {
+    "title": "Vidinės nuorodos svetainėje",
+    "item_1": "Sąrašas puslapio pradžioje",
+    "item_2": "Paspaudus nuslenka prie antraštės",
+    "item_3": "Adresas su „#“ – galima siųsti",
+    "summary": "Inkaras nematomas, matoma antraštė"
+  },
+  "04_vardu_taisykles": {
+    "title": "Inkarų vardai",
+    "do_title": "Taip",
+    "do_1": "dokumentai",
+    "do_2": "terminai",
+    "do_3": "Lotyniškos mažosios, be tarpų",
+    "dont_title": "Ne",
+    "dont_1": "Reikalingi dokumentai",
+    "dont_2": "skiltis1",
+    "summary": "Antraštę keičiate – vardas lieka"
+  },
+  "05_kada_per_sudetinga": {
+    "title": "Kada per sudėtinga",
+    "item_1": "Iki 5–6 pastovių skilčių → inkarai",
+    "item_2": "8+ arba kinta kas mėnesį → polapiai",
+    "item_3": "Nenorite dėlioti → parašote mums",
+    "summary": "Kiekviena skiltis – du veiksmai",
+    "item_1_a": "Iki 5–6 pastovių skilčių",
+    "item_1_b": "inkarai",
+    "item_2_a": "8+ arba kinta kas mėnesį",
+    "item_2_b": "polapiai",
+    "item_3_a": "Nenorite dėlioti",
+    "item_3_b": "parašote mums"
   }
 }

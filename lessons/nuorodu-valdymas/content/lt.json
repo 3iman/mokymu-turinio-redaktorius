@@ -8,5 +8,16 @@
   },
   "06_nuorodu_sintakse": {
     "_epizodas": "ep_709_06_1"
+  },
+  "00_kam_tai": {
+    "title": "Kaip atrodo naudingos nuorodos",
+    "item_1": "Logotipų lentelė po tris",
+    "item_2": "Puslapis „Nuorodos“ → tekstinės nuorodos į įstaigas",
+    "item_3": "Klaviatūra: Tab → Enter; skaitytuvas skaito pavadinimą",
+    "summary": "Modulis ir puslapis – ne tas pats",
+    "item_2_a": "Puslapis „Nuorodos“",
+    "item_2_b": "tekstinės nuorodos į įstaigas",
+    "item_3_a": "Klaviatūra: Tab",
+    "item_3_b": "Enter; skaitytuvas skaito pavadinimą"
   }
 }

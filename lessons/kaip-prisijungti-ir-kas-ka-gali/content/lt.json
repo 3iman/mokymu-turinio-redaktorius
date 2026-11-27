@@ -5,5 +5,49 @@
   },
   "05_pridedate_kolega": {
     "_epizodas": "ep_906_05_1"
+  },
+  "00_nuo_ko_prasideda": {
+    "title": "Nuo ko prasideda",
+    "item_1": "Adresas svetaine.lt/admin",
+    "item_2": "El. paštas ir slaptažodis",
+    "item_3": "Rolė nusprendžia, ką galite",
+    "summary": "Rolė, ne pareigos mokykloje"
+  },
+  "02_pirmas_prisijungimas": {
+    "title": "Pirmas prisijungimas",
+    "step_1": "Nuoroda vadovui, galioja mėnesį",
+    "step_2": "Slaptažodis – tik jūsų",
+    "step_3": "Kolegas prideda administratorius",
+    "summary": "Nuoroda pasibaigė – rašote pagalbos centrui"
+  },
+  "03_ka_matote_prisijunge": {
+    "title": "Ką matote prisijungę",
+    "item_1": "Darbalaukis ir kairysis meniu",
+    "item_2": "Paieška viršuje randa modulį",
+    "item_3": "Svetainėje – pieštukai ir „Turinio auditas“",
+    "summary": "Ką matote, priklauso nuo rolės"
+  },
+  "04_trys_roles": {
+    "title": "Trys rolės",
+    "role_1": "Cleverphant → mes",
+    "role_2": "Manager → vartotojai ir nustatymai",
+    "role_3": "Redakcija → turinys",
+    "summary": "Vadovui – Manager, visiems kitiems – Redakcija",
+    "role_1_a": "Cleverphant",
+    "role_1_b": "mes",
+    "role_2_a": "Manager",
+    "role_2_b": "vartotojai ir nustatymai",
+    "role_3_a": "Redakcija",
+    "role_3_b": "turinys"
+  },
+  "06_kai_zmogus_iseina": {
+    "title": "Kai žmogus išeina",
+    "do_title": "Išjungti",
+    "do_1": "„Ar šis vartotojas įjungtas?“ – No",
+    "do_2": "Įrašai ir istorija lieka",
+    "do_3": "Patikrinate, kas liko Manager",
+    "dont_title": "Ištrinti",
+    "dont_1": "Istorija dingsta",
+    "dont_2": "Svetainė be administratoriaus"
   }
 }

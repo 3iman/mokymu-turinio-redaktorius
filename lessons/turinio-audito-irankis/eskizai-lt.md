@@ -204,6 +204,276 @@ Kaip „Navigacijų valdyme“: viena žinutė, fokusas, ramus viršelis paskuti
 
 ---
 
+## `viz_688_15` — „Trys rūšys viename sąraše“ (14 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Rinkiniai, būsenos, eilės – trys rūšys vienoje juostoje.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Kas yra audito juostoje“ · item_1: „Turinio rinkiniai → kuriai daliai priklauso“ · item_2: „Būsenos → kur puslapis yra“ · item_3: „Darbo eilės → ko laukiame iš jūsų“ · summary: „Vardinės būsenos – mums, ne jums“
+
+**Ekrane:** Šablonas `perziura`: audito juostos chipai trimis spalvomis – rinkiniai, būsenos, eilės; po vieną grupę paryškėja, apačioje santrauka.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Audito juostoje – trys rūšys viename sąraše.“ |
+| 4,8 | išnyra kitas elementas | „Rinkiniai sako, kuriai daliai puslapis priklauso.“ |
+| 8,8 | išvada / santrauka paryškėja | „Būsenos – kur jis yra; eilės – ko laukiame iš jūsų.“ |
+| … –14 | ramiai (viršelis) | — |
+
+---
+
+## `viz_688_16` — „Patikslinti“ (13 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** „Patikslinti“ – atsakymas yra, bet jo neužtenka.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Patikslinti“ · item_1: „Komentare – ko trūksta“ · item_2: „Atsakote prie to paties audito nr.“ · item_3: „Puslapis grįžta į mūsų eilę“ · summary: „Atsakymas yra, bet jo neužtenka“
+
+**Ekrane:** Šablonas `perziura`: puslapio eilutė su chipu „Patikslinti“, šalia komentaro burbulas „trūksta datos“; rodyklė atgal į mūsų eilę.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Atsakymą gavome, bet įkelti dar negalime.“ |
+| 4,6 | išnyra kitas elementas | „Komentare parašyta, ko trūksta.“ |
+| 7,2 | išvada / santrauka paryškėja | „Atsakote prie to paties numerio – puslapis grįžta mums.“ |
+| … –13 | ramiai (viršelis) | — |
+
+---
+
+## `viz_688_17` — „Atnaujinti informaciją“ (11 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** „Atnaujinti informaciją“ – buvo teisinga, paseno.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Atnaujinti informaciją“ · item_1: „Pasenęs tvarkaraštis, specialistas, projektas“ · item_2: „Atsiunčiate naują“ · item_3: „Arba parašote, kad nebereikia“ · summary: „Buvo teisinga, paseno“
+
+**Ekrane:** Šablonas `perziura`: eilutė su chipu „Atnaujinti informaciją“, pernykštis tvarkaraštis su kalendoriaus ženklu, rodyklė į naują failą.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Turinys buvo teisingas, bet paseno.“ |
+| 4,1 | išnyra kitas elementas | „Atsiunčiate naują informaciją.“ |
+| 6,6 | išvada / santrauka paryškėja | „Arba parašote, kad puslapio nebereikia.“ |
+| … –11 | ramiai (viršelis) | — |
+
+---
+
+## `viz_688_18` — „Patvirtinta“ (12 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** „Patvirtinta“ – jūsų dalis baigta, mūsų dar ne.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Patvirtinta“ · item_1: „Jūs patvirtinote“ · item_2: „Mes įkeliame“ · item_3: „Procentą kelia tik „Įvykdyta““ · summary: „Jūsų dalis baigta, mūsų dar ne“
+
+**Ekrane:** Šablonas `perziura`: dvi pusės – jūsų varnelė ir mūsų eilė; chipas „Patvirtinta“ virsta „Įvykdyta“, progreso juosta pakyla tik tada.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Jūsų pusėje darbas baigtas, mūsų – dar ne.“ |
+| 4,7 | išnyra kitas elementas | „Įkėlę ir patikrinę pakeičiame į „Įvykdyta“.“ |
+| 8,2 | išvada / santrauka paryškėja | „Tik tada puslapis pakelia procentą.“ |
+| … –12 | ramiai (viršelis) | — |
+
+---
+
+## `viz_688_19` — „Neaišku“ (15 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** „Neaišku“ – vienas jūsų sakinys ir puslapis juda.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Neaišku“ · item_1: „Ar paslauga teikiama?“ · item_2: „Kas atsakingas?“ · item_3: „Užtenka vieno sakinio“ · summary: „Pigiausias būdas pakelti progresą“
+
+**Ekrane:** Šablonas `perziura`: eilutė su chipu „Neaišku“ ir klaustuku; trys trumpi atsakymai „neteikiame“, „atsakingas…“, „ištrinti“ – puslapis pajuda.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Negalime nuspręsti patys – gal paslaugos nėra.“ |
+| 5,0 | išnyra kitas elementas | „Parašote vieną sakinį: neteikiame, atsakingas, ištrinti.“ |
+| 9,6 | išvada / santrauka paryškėja | „Pigiausias būdas pakelti progresą.“ |
+| … –15 | ramiai (viršelis) | — |
+
+---
+
+## `viz_688c_00` — „Būsena ir žyma“ (15 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Būsena – kur puslapis; žyma – ko laukiame iš jūsų.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Būsena ir žyma“ · item_1: „Būsena → kur puslapis yra“ · item_2: „Žyma → ko laukiame iš jūsų“ · item_3: „Aštuonios žymos, gali būti kelios“ · summary: „Žymų mygtukai viršuje filtruoja“
+
+**Ekrane:** Šablonas `perziura`: puslapio eilutė su būsenos chipu ir dviem spalvotomis žymomis; viršuje žymų mygtukai su skaičiais, vienas paspaustas – lentelė susifiltruoja.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Prie eilutės – būsena ir žymos.“ |
+| 3,8 | išnyra kitas elementas | „Būsena sako, kur puslapis; žyma – ko laukiame iš jūsų.“ |
+| 8,2 | išvada / santrauka paryškėja | „Viršuje žymų mygtukai su skaičiais – spaudžiate ir filtruojate.“ |
+| … –15 | ramiai (viršelis) | — |
+
+---
+
+## `viz_688c_01` — „Asmuo“ (13 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Kas atsakingas dabar? Patvirtinate arba pataisote.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Žyma „Asmuo““ · item_1: „Asmuo prie puslapio“ · item_2: „Patvirtinate ar pataisote“ · item_3: „Paslaugos nėra – pasakote“ · summary: „Kas atsakingas dabar?“
+
+**Ekrane:** Šablonas `perziura`: žyma „Asmuo“ su žmogaus ženkliuku, prie puslapio – vardas su klaustuku; dvi rodyklės: varnelė „patvirtinu“ ir pieštukas „pataisau“.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Prie puslapio nurodytas žmogus, bet nesame tikri.“ |
+| 5,2 | išnyra kitas elementas | „Patvirtinate esamą arba parašote, kas atsakingas.“ |
+| 9,2 | išvada / santrauka paryškėja | „Paslaugos nebėra – parašote ir tai.“ |
+| … –13 | ramiai (viršelis) | — |
+
+---
+
+## `viz_688c_02` — „DI“ (13 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Aprašymą rašė DI – perskaitote ir patvirtinate.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Žyma „DI““ · item_1: „Aprašymas iš jūsų medžiagos“ · item_2: „Skaitote kaip tėvai“ · item_3: „Patvirtinate arba siunčiate savo“ · summary: „Vienas faktas ne toks – parašote“
+
+**Ekrane:** Šablonas `perziura`: žyma „DI“, puslapio aprašymo pastraipa su tėvų akių ženkliuku; po ja dvi parinktys – varnelė ir savo teksto lapas.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Aprašymą parengė dirbtinis intelektas iš jūsų medžiagos.“ |
+| 5,8 | išnyra kitas elementas | „Skaitote taip, kaip skaitys tėvai.“ |
+| 8,6 | išvada / santrauka paryškėja | „Patvirtinate arba atsiunčiate savo.“ |
+| … –13 | ramiai (viršelis) | — |
+
+---
+
+## `viz_688c_03` — „Dok“ (13 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Trūksta dokumento – atsiunčiate arba pasakote, kad nėra.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Žyma „Dok““ · item_1: „Tvarkos aprašas, įsakymas, ataskaita“ · item_2: „Failas arba nuoroda į dokumentų banką“ · item_3: „Nėra – parašote“ · summary: „Puslapis nebelauks“
+
+**Ekrane:** Šablonas `perziura`: žyma „Dok“ su lapo ženkliuku; tuščia dokumento vieta puslapyje, rodyklė iš failo arba iš dokumentų banko eilutės.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Trūksta oficialaus dokumento.“ |
+| 3,6 | išnyra kitas elementas | „Atsiunčiate failą arba nurodote dokumentų banko įrašą.“ |
+| 8,0 | išvada / santrauka paryškėja | „Dokumento nėra – parašote, puslapis nebelauks.“ |
+| … –13 | ramiai (viršelis) | — |
+
+---
+
+## `viz_688c_04` — „Klausimai“ (13 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Klausimas komentare – atsakote su audito numeriu.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Žyma „Klausimai““ · item_1: „Klausimas komentare“ · item_2: „Atsakote laišku“ · item_3: „Tema iš „Valdymas“ – su audito nr.“ · summary: „Atsakymas atsiduria prie tinkamo puslapio“
+
+**Ekrane:** Šablonas `perziura`: žyma „Klausimai“, komentaro burbulas su klaustuku; stulpelyje „Valdymas“ mygtukas „Kopijuoti laiško temą į iškarpinę“, laiškas su tema „Auditas nr. 12“.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Klausimas užrašytas komentare prie puslapio.“ |
+| 4,8 | išnyra kitas elementas | „Atsakote laišku su audito numeriu temoje.“ |
+| 8,2 | išvada / santrauka paryškėja | „Temą kopijuojate stulpelyje „Valdymas“.“ |
+| … –13 | ramiai (viršelis) | — |
+
+---
+
+## `viz_688c_05` — „Laukiam“ (11 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** „Laukiam“ – ne dėl jūsų; atsiunčiate, kai turite.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Žyma „Laukiam““ · item_1: „Kažkas pažadėjo“ · item_2: „Dar ne metas“ · item_3: „Turite – siunčiate“ · summary: „Ne dėl jūsų“
+
+**Ekrane:** Šablonas `perziura`: žyma „Laukiam“ su laikrodžio ženkliuku; kalendorius su pažymėta vėlesne data, rodyklė „kai turite“ – žyma nusiima.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Užduotis atidėta ne dėl jūsų.“ |
+| 3,6 | išnyra kitas elementas | „Kažkas pažadėjo medžiagą arba dar ne metas.“ |
+| 7,2 | išvada / santrauka paryškėja | „Turite – atsiunčiate, žyma nusiims.“ |
+| … –11 | ramiai (viršelis) | — |
+
+---
+
+## `viz_688c_06` — „Lengva“ (14 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** „Lengva“ – minutė darbo, toks pat progresas.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Žyma „Lengva““ · item_1: „Vienas sakinys ar „taip / ne““ · item_2: „Užima minutę“ · item_3: „Pradedate nuo jų“ · summary: „Toks pat progresas“
+
+**Ekrane:** Šablonas `perziura`: žyma „Lengva“ su plunksnos ženkliuku; ilgas sąrašas, kuriame lengvos eilutės užsižymi varnelėmis viena po kitos, progreso juosta kyla.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Smulkmena: sakinys arba „taip“, „ne“.“ |
+| 4,3 | išnyra kitas elementas | „Užima minutę, progresą kelia kaip didelė.“ |
+| 7,7 | išvada / santrauka paryškėja | „Pradedate nuo jų – sąrašas trumpėja greitai.“ |
+| … –14 | ramiai (viršelis) | — |
+
+---
+
+## `viz_688c_07` — „Pritaikomumas“ (15 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Pritaikomumas – 4–8 savaitės, pradedate pirmiausia.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Žyma „Pritaikomumas““ · item_1: „Gestų kalba, lengvai suprantama kalba“ · item_2: „4–8 savaitės“ · item_3: „Neatidedate“ · summary: „Pradedate anksčiausiai“
+
+**Ekrane:** Šablonas `perziura`: žyma „Pritaikomumas“ su rankos ženkliuku; laiko juosta „4–8 savaitės“ ilgesnė už kitų puslapių juostas, kurios jau baigtos.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Gestų kalba, lengvai suprantama kalba – 4–8 savaitės.“ |
+| 5,5 | išnyra kitas elementas | „Neatsakę pradžioje liksite su jais paskutiniai.“ |
+| 9,4 | išvada / santrauka paryškėja | „Pradedate nuo jų, net jei kiti puslapiai laukia.“ |
+| … –15 | ramiai (viršelis) | — |
+
+---
+
+## `viz_688c_08` — „Užpildyti“ (13 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** „Užpildyti“ – darbuotojų sąrašas lentelėje.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Žyma „Užpildyti““ · item_1: „Mokytojai, specialistai, komisijos“ · item_2: „Lentelė, ne laiškas“ · item_3: „Be perrašymo klaidų“ · summary: „„Google Sheets“ arba atsiųstas šablonas“
+
+**Ekrane:** Šablonas `perziura`: žyma „Užpildyti“ su lentelės ženkliuku; kairėje laiško tekstas perbrauktas, dešinėje lentelė su stulpeliais Vardas, Pareigos, Kontaktas.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Darbuotojų sąrašai: mokytojai, specialistai, komisijos.“ |
+| 5,7 | išnyra kitas elementas | „Pildote lentelę, ne laišką.“ |
+| 8,0 | išvada / santrauka paryškėja | „Taip sąrašas patenka be perrašymo klaidų.“ |
+| … –13 | ramiai (viršelis) | — |
+
+---
+
+## `viz_688c_09` — „Kodėl verta nenumesti“ (14 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Mestas sąrašas sensta; baigtas – kelia procentą.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Kodėl verta nenumesti“ · item_1: „Kiekvienas puslapis kelia procentą“ · item_2: „Po pusmečio tenka tikrinti iš naujo“ · item_3: „Dirbate rinkiniais“ · summary: „Įstrigote – rašote pagalbos centrui“
+
+**Ekrane:** Šablonas `perziura`: progreso juosta kyla su kiekviena varnele; šalia kalendorius „po pusmečio“ ir išblukusios eilutės, kurias tenka tikrinti iš naujo.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Sąrašas ilgas, bet baigtinis ir matomas.“ |
+| 4,5 | išnyra kitas elementas | „Kiekvienas puslapis iš karto kelia procentą.“ |
+| 8,1 | išvada / santrauka paryškėja | „Mestas sąrašas po pusmečio sensta – tikrinate iš naujo.“ |
+| … –14 | ramiai (viršelis) | — |
+
+---
+
 ## Sprendimai
 
 Atvirų klausimų nėra.

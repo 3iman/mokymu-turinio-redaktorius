@@ -1,12 +1,104 @@
 {
   "pamoka": "titulinio-papildiniai",
   "lang": "lt",
-  "sugeneruota": "2026-11-03T02:19:11.509Z",
-  "balso_stiprinimas_db": 5.5,
+  "sugeneruota": "2026-11-27T16:32:31.569Z",
+  "balso_stiprinimas_db": 5.9,
   "muzika": false,
   "klipai": [
     {
       "kadras": 1,
+      "epizodas": "viz_907_00",
+      "failas": "00-kas-yra-papildiniai",
+      "pavadinimas": "Kas yra papildiniai",
+      "trukme_s": 14,
+      "mp4": "viz_907_00.mp4",
+      "vtt": "viz_907_00.vtt",
+      "poster": "viz_907_00.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.59,
+          "tekstas": "Šone ir tituliniame yra blokų be puslapio."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 8.27,
+          "tekstas": "Tai papildiniai: zonos ir jungiklis kiekvienam."
+        },
+        {
+          "nuo_s": 8.6,
+          "iki_s": 12.09,
+          "tekstas": "Vasarą išjungiate, prieš priėmimą įjungiate."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_907_01",
+      "failas": "01-papildiniai-svetaineje",
+      "pavadinimas": "Papildiniai svetainėje",
+      "trukme_s": 16,
+      "mp4": "viz_907_01.mp4",
+      "vtt": "viz_907_01.vtt",
+      "poster": "viz_907_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.21,
+          "tekstas": "Dešinėje papildiniai eina zonos tvarka."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 6.69,
+          "tekstas": "Po naujienomis – „Apie mokyklą“."
+        },
+        {
+          "nuo_s": 7.1,
+          "iki_s": 9.46,
+          "tekstas": "Sraute – spalvotas laikmatis."
+        },
+        {
+          "nuo_s": 9.7,
+          "iki_s": 13.72,
+          "tekstas": "„Tab“ eina per nuorodas, skaitytuvas skaito pavadinimus."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_907_02",
+      "failas": "02-kur-rasti",
+      "pavadinimas": "Kur rasti",
+      "trukme_s": 15,
+      "mp4": "viz_907_02.mp4",
+      "vtt": "viz_907_02.vtt",
+      "poster": "viz_907_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.53,
+          "tekstas": "Kairiajame meniu „Papildiniai“ matote zonas."
+        },
+        {
+          "nuo_s": 4.8,
+          "iki_s": 8.62,
+          "tekstas": "Home – titulinis, Default – vidiniai puslapiai."
+        },
+        {
+          "nuo_s": 8.8,
+          "iki_s": 12.48,
+          "tekstas": "Prie zonos – „Papildiniai“: sąrašas su jungikliais."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
       "epizodas": "ep_907_03_1",
       "failas": "03-jungiklis-ir-tvarka",
       "pavadinimas": "Išjungiate papildinį ir keičiate tvarką",
@@ -17,22 +109,22 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 5.15,
+          "iki_s": 4.85,
           "tekstas": "Zonos sąraše prie papildinio spaudžiate „Redaguoti“."
         },
         {
           "nuo_s": 5.5,
-          "iki_s": 12.07,
+          "iki_s": 11.91,
           "tekstas": "Jungiklį „Įjungtas/Išjungtas“ perjungiate į „No“ ir išsaugote."
         },
         {
           "nuo_s": 12.3,
-          "iki_s": 16.59,
+          "iki_s": 16.51,
           "tekstas": "Tvarką keičiate tempdami už rodyklių ir spausdami „Perrikiuoti“."
         },
         {
           "nuo_s": 17.8,
-          "iki_s": 20.01,
+          "iki_s": 19.85,
           "tekstas": "Svetainėje tvarka pasikeitė."
         }
       ],
@@ -67,7 +159,36 @@
       ]
     },
     {
-      "kadras": 2,
+      "kadras": 5,
+      "epizodas": "viz_907_04",
+      "failas": "04-vertimas-ir-facebook",
+      "pavadinimas": "Google vertimas ir Facebook langas",
+      "trukme_s": 12,
+      "mp4": "viz_907_04.mp4",
+      "vtt": "viz_907_04.vtt",
+      "poster": "viz_907_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.65,
+          "tekstas": "Abu papildiniai turi tik jungiklį."
+        },
+        {
+          "nuo_s": 4,
+          "iki_s": 7.49,
+          "tekstas": "Vertimas automatinis – prieinamumo neatstoja."
+        },
+        {
+          "nuo_s": 7.7,
+          "iki_s": 10.67,
+          "tekstas": "Facebook nenaudojate – langą išjungiate."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
       "epizodas": "ep_907_05_1",
       "failas": "05-greitoji-nuoroda",
       "pavadinimas": "Nustatote greitąją nuorodą",
@@ -78,22 +199,22 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 4.17,
+          "iki_s": 3.97,
           "tekstas": "Prie „Quick link“ spaudžiate „Redaguoti“."
         },
         {
           "nuo_s": 4.6,
-          "iki_s": 8.21,
+          "iki_s": 8.17,
           "tekstas": "Lauke „link“ įrašote priėmimo puslapio adresą."
         },
         {
           "nuo_s": 8.4,
-          "iki_s": 12.01,
+          "iki_s": 11.77,
           "tekstas": "Prie „Image“ įkeliate paveikslėlį ir išsaugote."
         },
         {
           "nuo_s": 12.3,
-          "iki_s": 15.08,
+          "iki_s": 14.95,
           "tekstas": "Šoninėje juostoje atsiranda nuoroda."
         }
       ],
@@ -119,6 +240,64 @@
           "garsas": "patvirtinimas"
         }
       ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "viz_907_06",
+      "failas": "06-spalvotas-laikmatis",
+      "pavadinimas": "Spalvotas laikmatis naujienų sraute",
+      "trukme_s": 14,
+      "mp4": "viz_907_06.mp4",
+      "vtt": "viz_907_06.vtt",
+      "poster": "viz_907_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.97,
+          "tekstas": "Šoninis laikmatis kuklus, sraute – spalvotas."
+        },
+        {
+          "nuo_s": 5.2,
+          "iki_s": 9.37,
+          "tekstas": "Pirma naujienos vieta: fonas, ikonėlė, mygtukas."
+        },
+        {
+          "nuo_s": 9.6,
+          "iki_s": 12.33,
+          "tekstas": "Spalvas ir ikonėlę parenkame mes."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "viz_907_07",
+      "failas": "07-apie-mokykla",
+      "pavadinimas": "Blokas „Apie mokyklą“",
+      "trukme_s": 13,
+      "mp4": "viz_907_07.mp4",
+      "vtt": "viz_907_07.vtt",
+      "poster": "viz_907_07.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.33,
+          "tekstas": "Nuotrauka, keli sakiniai, keturi skaičiai."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 8.18,
+          "tekstas": "Skaičiai sensta – atnaujinate kiekvieną rugsėjį."
+        },
+        {
+          "nuo_s": 8.6,
+          "iki_s": 11.54,
+          "tekstas": "Ketvirtas blokelis – kuo didžiuojatės."
+        }
+      ],
+      "garsai": [],
       "ispejimai": []
     }
   ]

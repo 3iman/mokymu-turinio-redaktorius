@@ -1,12 +1,46 @@
 {
   "pamoka": "baneriu-valdymas",
   "lang": "lt",
-  "sugeneruota": "2026-11-03T04:18:20.255Z",
+  "sugeneruota": "2026-11-27T17:36:39.270Z",
   "balso_stiprinimas_db": 5.5,
   "muzika": false,
   "klipai": [
     {
       "kadras": 1,
+      "epizodas": "viz_707_00",
+      "failas": "00-kam-tai",
+      "pavadinimas": "Kam tai",
+      "trukme_s": 17,
+      "mp4": "viz_707_00.mp4",
+      "vtt": "viz_707_00.vtt",
+      "poster": "viz_707_00.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.55,
+          "tekstas": "Baneris – logotipas šoninėje juostoje."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 7.23,
+          "tekstas": "Paspaudus veda į kitą svetainę."
+        },
+        {
+          "nuo_s": 7.4,
+          "iki_s": 10.24,
+          "tekstas": "Rodomi iš eilės arba atsitiktinai."
+        },
+        {
+          "nuo_s": 10.4,
+          "iki_s": 14.46,
+          "tekstas": "„Tab“, „Enter“; skaitytuvas skaito partnerio pavadinimą."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
       "epizodas": "viz_707_01",
       "failas": "01-banerio-reikalavimai",
       "pavadinimas": "Banerio reikalavimai",
@@ -17,17 +51,17 @@
       "balsas": [
         {
           "nuo_s": 1.4,
-          "iki_s": 3.67,
+          "iki_s": 3.73,
           "tekstas": "Visi baneriai – vienodo dydžio."
         },
         {
           "nuo_s": 4,
-          "iki_s": 8.25,
+          "iki_s": 8.29,
           "tekstas": "Spalvotas logotipas baltame fone arba baltas spalvotame."
         },
         {
           "nuo_s": 8.6,
-          "iki_s": 11.73,
+          "iki_s": 11.77,
           "tekstas": "Aplink logotipą paliekate laisvos vietos."
         }
       ],
@@ -35,11 +69,11 @@
       "ispejimai": []
     },
     {
-      "kadras": 2,
+      "kadras": 3,
       "epizodas": "ep_707_03_1",
       "failas": "03-baneriu-papildinys",
       "pavadinimas": "Randate banerių papildinį",
-      "trukme_s": 12,
+      "trukme_s": 13,
       "mp4": "ep_707_03_1.mp4",
       "vtt": "ep_707_03_1.vtt",
       "poster": "ep_707_03_1.jpg",
@@ -51,12 +85,12 @@
         },
         {
           "nuo_s": 4.4,
-          "iki_s": 7.13,
+          "iki_s": 7.26,
           "tekstas": "Zonų sąraše pereinate į papildinius."
         },
         {
           "nuo_s": 7.4,
-          "iki_s": 10.77,
+          "iki_s": 10.76,
           "tekstas": "Prie papildinio „Banner“ spaudžiate „Redaguoti“."
         }
       ],
@@ -77,7 +111,7 @@
       "ispejimai": []
     },
     {
-      "kadras": 3,
+      "kadras": 4,
       "epizodas": "ep_707_03_2",
       "failas": "03-atsitiktine-tvarka-off",
       "pavadinimas": "Išjungiate atsitiktinę tvarką",
@@ -88,7 +122,7 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 5.29,
+          "iki_s": 5.33,
           "tekstas": "Lauke „Order“ vietoje „Random“ pasirenkate „Manual“."
         },
         {
@@ -98,7 +132,7 @@
         },
         {
           "nuo_s": 7.7,
-          "iki_s": 10.07,
+          "iki_s": 10.04,
           "tekstas": "Baneriai nebekeičia eiliškumo."
         }
       ],

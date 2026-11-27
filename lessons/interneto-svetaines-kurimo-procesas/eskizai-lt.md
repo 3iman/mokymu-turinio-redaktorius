@@ -170,6 +170,24 @@ Kaip „Navigacijų valdyme“: viena žinutė, fokusas, ramus viršelis paskuti
 
 ---
 
+## `viz_684_09` — „Mokymai perėmusiems administravimą“ (14 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Perėmėte svetainės administravimą? Parašykite – vedame mokymus.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Naujam administratoriui“ · item_1: „Pareigą perėmė kitas darbuotojas“ · item_2: „Rašote pagalbos centrui“ · item_3: „Sutariame mokymų laiką“ · summary: „30 min – jūsų klausimams“
+
+**Ekrane:** Šablonas `perziura`: žmogeliukas perduoda raktą kitam, laiškas į pagalbos centrą, kalendorius su sutartu laiku; apačioje „30 min“.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Svetainę administravęs žmogus išeina, pareigą perima kitas.“ |
+| 6,0 | išnyra kitas elementas | „Naujam administratoriui vedame mokymus.“ |
+| 9,2 | išvada / santrauka paryškėja | „Parašote pagalbos centrui – sutariame laiką.“ |
+| … –14 | ramiai (viršelis) | — |
+
+---
+
 ## Sprendimai
 
 Atvirų klausimų nėra.

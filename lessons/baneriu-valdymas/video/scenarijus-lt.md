@@ -4,7 +4,7 @@
 **Kalba:** lt — ekrano užrašai ir TVS komponentai lieka originalo kalba (§7.3)
 **Balsas:** ElevenLabs, „Darius Cleverphant“ — modelis ir nustatymai pagal `VIDEO_GAMYBA.md` §7
 **Balso seed:** 808784470 – įrašomas automatiškai; pakeitus tekstą balsas generuojamas iš naujo
-**Trukmė:** 37 sek. (3 epizodai)
+**Trukmė:** 55 sek. (4 epizodai)
 **Šaltinis:** `clv-mokymu-platformos-redisign-html/turinys/adaptuota/kursai/*.json` › `explaineris` — generuoja `scripts/epizodai-i-scenarijus.py`; ranka neredaguoti.
 **Pamoka platformoje:** `pam_707` · senoji WP pamoka `baneriu-valdymas`
 **Išvestis platformai:** kiekvienas kadras — atskiras klipas `{epizodo id}.mp4` + `.vtt` (subtitrai iš balso); YouTube rinkiniui — su intro / outro
@@ -13,15 +13,36 @@
 
 | Kadras | Trukmė | Failas | Balsas |
 |---|---|---|---|
-| 1 Banerio reikalavimai | 13 sek. | 01-banerio-reikalavimai | Visi baneriai – vienodo dydžio. Spalvotas logotipas baltame fone arba baltas spalvotame. Aplink logotipą paliekate laisvos vietos. |
-| 2 Randate banerių papildinį | 12 sek. | 03-baneriu-papildinys | Paieškoje pasirenkate „Papildiniai“. Zonų sąraše pereinate į papildinius. Prie papildinio „Banner“ spaudžiate „Redaguoti“. |
-| 3 Išjungiate atsitiktinę tvarką | 12 sek. | 03-atsitiktine-tvarka-off | Lauke „Order“ vietoje „Random“ pasirenkate „Manual“. Spaudžiate „Atnaujinti“. Baneriai nebekeičia eiliškumo. |
+| 1 Kam tai | 17 sek. | 00-kam-tai | Baneris – logotipas šoninėje juostoje. Paspaudus veda į kitą svetainę. Rodomi iš eilės arba atsitiktinai. „Tab“, „Enter“; skaitytuvas skaito partnerio pavadinimą. |
+| 2 Banerio reikalavimai | 13 sek. | 01-banerio-reikalavimai | Visi baneriai – vienodo dydžio. Spalvotas logotipas baltame fone arba baltas spalvotame. Aplink logotipą paliekate laisvos vietos. |
+| 3 Randate banerių papildinį | 13 sek. | 03-baneriu-papildinys | Paieškoje pasirenkate „Papildiniai“. Zonų sąraše pereinate į papildinius. Prie papildinio „Banner“ spaudžiate „Redaguoti“. |
+| 4 Išjungiate atsitiktinę tvarką | 12 sek. | 03-atsitiktine-tvarka-off | Lauke „Order“ vietoje „Random“ pasirenkate „Manual“. Spaudžiate „Atnaujinti“. Baneriai nebekeičia eiliškumo. |
 
 ---
 
 ## Kadrai
 
-### KADRAS 1: Banerio reikalavimai (13 sek.) — koncepcija
+### KADRAS 1: Kam tai (17 sek.) — koncepcija
+**Failas:** `00-kam-tai.png`
+**Šablonas:** `perziura` · laukai: title, item_1, item_2, item_3, item_4, summary
+**Ekrane:** Šablonas `perziura`: svetainės dešinė juosta – laikmatis, po juo trys banerių langeliai su logotipais; vienas paspaudžiamas, atsiveria kitas langas. Pabaigoje prieinamumo takelis: fokusas ant banerio, skaitytuvo burbulas su partnerio pavadinimu (3–5 s).
+**Ekrano užrašai (tiksliai):** „Tab“, „Enter“
+**TVS UI komponentai:** —
+**Demo duomenys:** mokykla: Demo mokykla
+**Tarimo kandidatai:** Tab, Enter (tikrinti `kircio-patikra.js`)
+**Nuorodos (senas įrašas):** —
+**Komentaras:** epizodas `viz_707_00` · dalis `dal_707_00` „Kam tai“ · prioritetas 2 · pagrindas: dal_707_00 paaiškinimas; viz_707_00 laukai
+
+**Laiko žymos:**
+
+| Laikas | Kas | Tekstas arba garsas |
+|---|---|---|
+| 1.2 | balsas | Baneris – logotipas šoninėje juostoje. |
+| 4.7 | balsas | Paspaudus veda į kitą svetainę. |
+| 7.4 | balsas | Rodomi iš eilės arba atsitiktinai. |
+| 10.4 | balsas | „Tab“, „Enter“; skaitytuvas skaito partnerio pavadinimą. |
+
+### KADRAS 2: Banerio reikalavimai (13 sek.) — koncepcija
 **Failas:** `01-banerio-reikalavimai.png`
 **Šablonas:** `taisyklingai_netaisyklingai` · laukai: title, do_title, do_1, do_2, do_3, do_4, dont_title
 **Ekrane:** Šablonas `taisyklingai_netaisyklingai`: dešinėje žalioje kortelėje keturi vienodo 525 × 300 dydžio baneriai — spalvoti baltame ir balti spalvotame fone, aplink logotipą matoma laisva erdvė; kairėje raudonoje – skirtingų dydžių ir prie pat krašto prigludę variantai. Matmenų užrašas atsiranda prie pirmo banerio.
@@ -40,7 +61,7 @@
 | 4.0 | balsas | Spalvotas logotipas baltame fone arba baltas spalvotame. |
 | 8.6 | balsas | Aplink logotipą paliekate laisvos vietos. |
 
-### KADRAS 2: Randate banerių papildinį (12 sek.) — epizodas
+### KADRAS 3: Randate banerių papildinį (13 sek.) — epizodas
 **Failas:** `03-baneriu-papildinys.png`
 **Ekrane:** Viršutinėje paieškoje renkamas žodis, iškrentančiame sąraše pasirenkama „Papildiniai“; atsiveria zonų sąrašas, iš jo pereinama į papildinių sąrašą, prie „Banner“ spaudžiama „Redaguoti“.
 **Ekrano užrašai (tiksliai):** „Papildiniai“, „Zonos“, „Banner“, „Redaguoti“
@@ -61,7 +82,7 @@
 | 7.4 | balsas | Prie papildinio „Banner“ spaudžiate „Redaguoti“. |
 | 8.4 | garsas | spustelejimas |
 
-### KADRAS 3: Išjungiate atsitiktinę tvarką (12 sek.) — epizodas
+### KADRAS 4: Išjungiate atsitiktinę tvarką (12 sek.) — epizodas
 **Failas:** `03-atsitiktine-tvarka-off.png`
 **Ekrane:** Papildinio forma; kamera priartėja prie lauko „Order“, kuriame įrašyta „Random“. Reikšmė pakeičiama į „Manual“ ir spaudžiamas žalias „Atnaujinti“.
 **Ekrano užrašai (tiksliai):** „Banerių grupė“, „Sidebar“, „Order“, „Random“, „Manual“, „Atnaujinti“

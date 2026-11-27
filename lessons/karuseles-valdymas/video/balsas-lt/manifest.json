@@ -1,113 +1,183 @@
 {
-  "hash": "b532072ca3b8c29dc901fe6f3dd3ebdba3b9dd81688e2fb26e364580ec765e2d",
+  "hash": "6e2390878fa5895289a423a8ddfcca7f4babf106a3bab414028dd96f296570c1",
   "voice_id": "eqJHjeWMPGJFD6VBf1J2",
   "model": "eleven_v3_dpo_20260217",
   "speed": 0.9,
   "lang": "lt",
   "seed": 1821842307,
-  "characters": 477,
+  "characters": 801,
   "start_in_frame": 0.6,
-  "created": "2026-11-03T03:06:15.434Z",
+  "created": "2026-11-27T17:45:09.934Z",
   "items": [
     {
       "kadras": 1,
       "cue": 1,
-      "title": "Pagrindinis karuselės vizualas",
-      "text": "Karuselės nuotrauka – 1920 iš 606 pikselių.",
+      "title": "Kam tai",
+      "text": "Karuselė – pirmas kadras svetainėje.",
       "file": "k01-1.wav",
-      "duration": 5.83,
+      "duration": 3.07,
       "fits": false,
       "reikia_sek": 18
     },
     {
       "kadras": 1,
       "cue": 2,
-      "title": "Pagrindinis karuselės vizualas",
-      "text": "Svarbus turinys turi /ˈtʲilptʲi/ tarp pirmų dviejų linijų.",
+      "title": "Kam tai",
+      "text": "Vienas geras kadras su /ʒʲinuˈtʲɛ/ veikia stipriau.",
       "file": "k01-2.wav",
-      "duration": 3.61,
+      "duration": 3.37,
       "fits": true,
-      "reikia_sek": 15
+      "reikia_sek": 17
     },
     {
       "kadras": 1,
       "cue": 3,
-      "title": "Pagrindinis karuselės vizualas",
-      "text": "Telefonui talpinate atskirą, kvadratu apkirptą nuotrauką.",
+      "title": "Kam tai",
+      "text": "Erdves rodote „Ugdymo aplinkoje“.",
       "file": "k01-3.wav",
-      "duration": 3.97,
+      "duration": 2.73,
+      "fits": false,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 1,
+      "cue": 4,
+      "title": "Kam tai",
+      "text": "Kelis kadrus keičiate rodyklėmis; judanti – sustabdoma.",
+      "file": "k01-4.wav",
+      "duration": 4.01,
       "fits": true,
-      "reikia_sek": 15
+      "reikia_sek": 17
     },
     {
       "kadras": 2,
       "cue": 1,
+      "title": "Pagrindinis karuselės vizualas",
+      "text": "Karuselės nuotrauka – 1920 iš 606 pikselių.",
+      "file": "k02-1.wav",
+      "duration": 5.53,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 2,
+      "cue": 2,
+      "title": "Pagrindinis karuselės vizualas",
+      "text": "Svarbus turinys turi /ˈtʲilptʲi/ tarp pirmų dviejų linijų.",
+      "file": "k02-2.wav",
+      "duration": 3.49,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Pagrindinis karuselės vizualas",
+      "text": "Telefonui talpinate atskirą, kvadratu apkirptą nuotrauką.",
+      "file": "k02-3.wav",
+      "duration": 3.81,
+      "fits": true,
+      "reikia_sek": 18
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
       "title": "Parenkate karuselės šrifto dydį",
       "text": "Antraštės dydį parenkate /lauˈkʲɛ/ „Title Font Size“.",
-      "file": "k02-1.wav",
+      "file": "k03-1.wav",
       "duration": 3.65,
       "fits": true,
       "reikia_sek": 16
     },
     {
-      "kadras": 2,
+      "kadras": 3,
       "cue": 2,
       "title": "Parenkate karuselės šrifto dydį",
       "text": "Telefonui skirtas atskiras dydžio laukas.",
-      "file": "k02-2.wav",
-      "duration": 2.73,
-      "fits": true,
-      "reikia_sek": 16
-    },
-    {
-      "kadras": 2,
-      "cue": 3,
-      "title": "Parenkate karuselės šrifto dydį",
-      "text": "Aprašymui – dar vienas.",
-      "file": "k02-3.wav",
-      "duration": 1.89,
-      "fits": true,
-      "reikia_sek": 16
-    },
-    {
-      "kadras": 2,
-      "cue": 4,
-      "title": "Parenkate karuselės šrifto dydį",
-      "text": "Taip ilgesnis tekstas telpa ir mažame /ɛkraˈnʲɛ/.",
-      "file": "k02-4.wav",
-      "duration": 3.21,
+      "file": "k03-2.wav",
+      "duration": 2.61,
       "fits": true,
       "reikia_sek": 16
     },
     {
       "kadras": 3,
+      "cue": 3,
+      "title": "Parenkate karuselės šrifto dydį",
+      "text": "Aprašymui – dar vienas.",
+      "file": "k03-3.wav",
+      "duration": 1.97,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 3,
+      "cue": 4,
+      "title": "Parenkate karuselės šrifto dydį",
+      "text": "Taip ilgesnis tekstas telpa ir mažame /ɛkraˈnʲɛ/.",
+      "file": "k03-4.wav",
+      "duration": 3.29,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 4,
       "cue": 1,
       "title": "Pakeičiate karuselės teksto spalvą",
       "text": "Laukelyje „Text Color“ pasirenkate spalvą.",
-      "file": "k03-1.wav",
-      "duration": 3.17,
+      "file": "k04-1.wav",
+      "duration": 3.13,
       "fits": true,
       "reikia_sek": 13
     },
     {
-      "kadras": 3,
+      "kadras": 4,
       "cue": 2,
       "title": "Pakeičiate karuselės teksto spalvą",
       "text": "Išsaugote /ˈiːraʃaː/.",
-      "file": "k03-2.wav",
+      "file": "k04-2.wav",
       "duration": 1.53,
       "fits": true,
       "reikia_sek": 13
     },
     {
-      "kadras": 3,
+      "kadras": 4,
       "cue": 3,
       "title": "Pakeičiate karuselės teksto spalvą",
       "text": "Svetainėje tekstas ant nuotraukos jau naujos spalvos.",
-      "file": "k03-3.wav",
-      "duration": 3.703,
+      "file": "k04-3.wav",
+      "duration": 3.61,
       "fits": true,
       "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Kadras pagal mokyklos brandą",
+      "text": "Kadras gali atrodyti kaip jūsų mokyklos plakatas.",
+      "file": "k05-1.wav",
+      "duration": 3.41,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Kadras pagal mokyklos brandą",
+      "text": "Atsiunčiate mintį ir nuotraukas.",
+      "file": "k05-2.wav",
+      "duration": 2.25,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Kadras pagal mokyklos brandą",
+      "text": "Apdirbame, parenkame šriftą, grąžiname paruoštą kadrą.",
+      "file": "k05-3.wav",
+      "duration": 4.01,
+      "fits": true,
+      "reikia_sek": 14
     }
   ]
 }

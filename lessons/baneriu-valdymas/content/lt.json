@@ -14,5 +14,17 @@
     "do_3": "Baltas spalvotame fone",
     "do_4": "Vietos aplink logotipą",
     "dont_title": "Netinka"
+  },
+  "00_kam_tai": {
+    "title": "Kur svetainėje rodomi baneriai",
+    "item_1": "Šoninė juosta po laikmačiu",
+    "item_2": "Logotipas → kita svetainė",
+    "item_3": "Viena grupė, tvarka papildinyje",
+    "item_4": "Klaviatūra: Tab → Enter; skaitytuvas skaito alternatyvų tekstą",
+    "summary": "Alternatyvų tekstą įrašote įkeldami",
+    "item_2_a": "Logotipas",
+    "item_2_b": "kita svetainė",
+    "item_4_a": "Klaviatūra: Tab",
+    "item_4_b": "Enter; skaitytuvas skaito alternatyvų tekstą"
   }
 }

@@ -1,0 +1,125 @@
+{
+  "pamoka": "komunikacija-krizes-metu",
+  "lang": "lt",
+  "sugeneruota": "2026-11-27T16:48:31.825Z",
+  "balso_stiprinimas_db": 5.5,
+  "muzika": false,
+  "klipai": [
+    {
+      "kadras": 1,
+      "epizodas": "viz_902_00",
+      "failas": "00-pirma-valanda",
+      "pavadinimas": "Pirma valanda",
+      "trukme_s": 15,
+      "mp4": "viz_902_00.mp4",
+      "vtt": "viz_902_00.vtt",
+      "poster": "viz_902_00.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.47,
+          "tekstas": "Pirmą valandą tėvai ieško oficialaus žodžio."
+        },
+        {
+          "nuo_s": 4.8,
+          "iki_s": 8.17,
+          "tekstas": "Svetainė tyli – už mokyklą kalba kiti."
+        },
+        {
+          "nuo_s": 8.4,
+          "iki_s": 12.73,
+          "tekstas": "Trumpa žinutė laiku vertingesnė už išsamią po dviejų dienų."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_902_01",
+      "failas": "01-trys-sakiniai",
+      "pavadinimas": "Trys sakiniai",
+      "trukme_s": 14,
+      "mp4": "viz_902_01.mp4",
+      "vtt": "viz_902_01.vtt",
+      "poster": "viz_902_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.57,
+          "tekstas": "Pirmoji žinutė – trys sakiniai."
+        },
+        {
+          "nuo_s": 3.8,
+          "iki_s": 6.66,
+          "tekstas": "Kas įvyko, ką darote, kur kreiptis."
+        },
+        {
+          "nuo_s": 6.9,
+          "iki_s": 11.5,
+          "tekstas": "Priežasčių ir kaltųjų nerašote – spėjimas tampa citata."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_902_02",
+      "failas": "02-kas-kalba",
+      "pavadinimas": "Kas kalba mokyklos vardu",
+      "trukme_s": 12,
+      "mp4": "viz_902_02.mp4",
+      "vtt": "viz_902_02.vtt",
+      "poster": "viz_902_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.37,
+          "tekstas": "Blogiausia, kai rašo visi."
+        },
+        {
+          "nuo_s": 3.6,
+          "iki_s": 7.09,
+          "tekstas": "Rašo vienas, vadovas tvirtina žodžiu „skelbk“."
+        },
+        {
+          "nuo_s": 7.4,
+          "iki_s": 9.77,
+          "tekstas": "Visi kiti nukreipia į svetainę."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
+      "epizodas": "viz_902_04",
+      "failas": "04-po-krizes",
+      "pavadinimas": "Po krizės: atnaujinti, ne ištrinti",
+      "trukme_s": 15,
+      "mp4": "viz_902_04.mp4",
+      "vtt": "viz_902_04.vtt",
+      "poster": "viz_902_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.93,
+          "tekstas": "Pasibaigus pridedate atnaujinimą su data ir laiku."
+        },
+        {
+          "nuo_s": 5.3,
+          "iki_s": 8.43,
+          "tekstas": "Juostelę išjungiate, prisegimą nuimate."
+        },
+        {
+          "nuo_s": 8.6,
+          "iki_s": 12.22,
+          "tekstas": "Naujienos neištrinate – ji lieka oficiali seka."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    }
+  ]
+}

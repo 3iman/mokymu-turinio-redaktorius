@@ -1,8 +1,8 @@
 {
   "pamoka": "interneto-svetaines-kurimo-procesas",
   "lang": "lt",
-  "sugeneruota": "2026-11-03T04:23:38.297Z",
-  "balso_stiprinimas_db": 6,
+  "sugeneruota": "2026-11-27T16:59:27.305Z",
+  "balso_stiprinimas_db": 5.7,
   "muzika": false,
   "klipai": [
     {
@@ -17,17 +17,17 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 4.19,
+          "iki_s": 4.03,
           "tekstas": "Svetainė kuriama aštuoniais etapais."
         },
         {
           "nuo_s": 4.4,
-          "iki_s": 8.45,
+          "iki_s": 8.57,
           "tekstas": "Pirmasis yra demo versija, kurią stebite visą projektą."
         },
         {
           "nuo_s": 8.9,
-          "iki_s": 11.11,
+          "iki_s": 10.83,
           "tekstas": "Paskutinis yra startas."
         }
       ],
@@ -46,12 +46,12 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 4.57,
+          "iki_s": 4.53,
           "tekstas": "Turinį perkeliame rankiniu būdu ir vieną kartą."
         },
         {
           "nuo_s": 5.1,
-          "iki_s": 7.8,
+          "iki_s": 7.68,
           "tekstas": "Vėlesnius atnaujinimus darote patys."
         },
         {
@@ -75,7 +75,7 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 4.57,
+          "iki_s": 4.53,
           "tekstas": "Turinį siunčiate taip, kad jo nereikėtų maketuoti."
         },
         {
@@ -104,17 +104,17 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 5.01,
+          "iki_s": 4.89,
           "tekstas": "Didiesiems darbams einant į pabaigą ateina smulkmenos."
         },
         {
           "nuo_s": 5.7,
-          "iki_s": 9.47,
+          "iki_s": 9.39,
           "tekstas": "Importuojame banerius, naujienas ir darbuotojų sąrašą."
         },
         {
           "nuo_s": 10.2,
-          "iki_s": 12.62,
+          "iki_s": 12.54,
           "tekstas": "Dabar grįžtate ir prie spalvų."
         }
       ],
@@ -133,17 +133,17 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 3.84,
+          "iki_s": 3.76,
           "tekstas": "Konsultacija trunka trisdešimt minučių."
         },
         {
           "nuo_s": 4.5,
-          "iki_s": 7.35,
+          "iki_s": 7.27,
           "tekstas": "Nepasiruošus spėjame tik pagrindus."
         },
         {
           "nuo_s": 7.5,
-          "iki_s": 10.19,
+          "iki_s": 10.18,
           "tekstas": "Peržiūrėję kursus klausiate svarbiausio."
         }
       ],
@@ -162,17 +162,17 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 4.5,
+          "iki_s": 4.44,
           "tekstas": "Koordinatoriai apie visą turinį žino ne viską."
         },
         {
           "nuo_s": 5,
-          "iki_s": 8.28,
+          "iki_s": 8.2,
           "tekstas": "Prieš startą svetainę parodote visam kolektyvui."
         },
         {
           "nuo_s": 9,
-          "iki_s": 11.85,
+          "iki_s": 11.77,
           "tekstas": "Taip nepraleidžiate kam nors svarbaus turinio."
         }
       ],
@@ -191,17 +191,17 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 4.45,
+          "iki_s": 4.17,
           "tekstas": "Naują svetainės adresą sugalvojate jūs."
         },
         {
           "nuo_s": 4.6,
-          "iki_s": 8.29,
+          "iki_s": 8.41,
           "tekstas": "Registracija ir prieglauda yra partnerio „Wolet“ darbas."
         },
         {
           "nuo_s": 9.2,
-          "iki_s": 12.85,
+          "iki_s": 12.81,
           "tekstas": "Jei prieigos prie domeno neturite, pranešate iš karto."
         }
       ],
@@ -220,17 +220,17 @@
       "balsas": [
         {
           "nuo_s": 1.4,
-          "iki_s": 4.37,
+          "iki_s": 4.25,
           "tekstas": "Po starto išjungiate pranešimų juostelę."
         },
         {
           "nuo_s": 4.7,
-          "iki_s": 7.51,
+          "iki_s": 7.55,
           "tekstas": "Įraše perjungiate rodymą ir išsaugote."
         },
         {
           "nuo_s": 8.5,
-          "iki_s": 11.55,
+          "iki_s": 11.43,
           "tekstas": "Svetainės viršuje juostelės nebematote."
         }
       ],
@@ -262,7 +262,7 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 4.33,
+          "iki_s": 4.25,
           "tekstas": "Įsitikinate, kad senoji svetainė išjungta."
         },
         {
@@ -272,8 +272,37 @@
         },
         {
           "nuo_s": 9.1,
-          "iki_s": 12.47,
+          "iki_s": 12.19,
           "tekstas": "Pranešate bendruomenei ir išjungiate juostelę."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 10,
+      "epizodas": "viz_684_09",
+      "failas": "09-mokymai-peremusiems",
+      "pavadinimas": "Mokymai perėmusiems administravimą",
+      "trukme_s": 14,
+      "mp4": "viz_684_09.mp4",
+      "vtt": "viz_684_09.vtt",
+      "poster": "viz_684_09.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 5.45,
+          "tekstas": "Svetainę administravęs žmogus išeina, pareigą perima kitas."
+        },
+        {
+          "nuo_s": 6,
+          "iki_s": 8.89,
+          "tekstas": "Naujam administratoriui vedame mokymus."
+        },
+        {
+          "nuo_s": 9.2,
+          "iki_s": 12.17,
+          "tekstas": "Parašote pagalbos centrui – sutariame laiką."
         }
       ],
       "garsai": [],

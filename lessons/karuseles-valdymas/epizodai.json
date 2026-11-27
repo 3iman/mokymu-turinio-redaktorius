@@ -4,6 +4,28 @@
  "kadrai": [
   {
    "kadras": 1,
+   "epizodas": "viz_711_00",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_711_00",
+   "pamoka": "pam_711",
+   "failas": "00-kam-tai",
+   "trukme_s": 18,
+   "ekrano_tekstai": [
+    "Ugdymo aplinka",
+    "Tab"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Tab"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
    "epizodas": "viz_711_02",
    "rusis": "koncepcija",
    "sablonas": "naujas",
@@ -27,7 +49,7 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 2,
+   "kadras": 3,
    "epizodas": "ep_711_04_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -56,7 +78,7 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 3,
+   "kadras": 4,
    "epizodas": "ep_711_05_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -85,6 +107,27 @@
    "naudoja_ir": [
     "dal_711_90"
    ]
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_711_06",
+   "rusis": "koncepcija",
+   "sablonas": "srautas",
+   "dalis": "dal_711_06",
+   "pamoka": "pam_711",
+   "failas": "06-kadras-pagal-branda",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "pagalba@cleverphant.lt"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "pagalba@cleverphant.lt"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
   }
  ]
 }

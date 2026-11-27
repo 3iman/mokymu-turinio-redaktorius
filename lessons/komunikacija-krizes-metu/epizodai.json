@@ -1,0 +1,86 @@
+{
+ "pamokos_slug": "komunikacija-krizes-metu",
+ "pamoka_id": "pam_902",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_902_00",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_902_00",
+   "pamoka": "pam_902",
+   "failas": "00-pirma-valanda",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "1 val."
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_902_01",
+   "rusis": "koncepcija",
+   "sablonas": "anatomija",
+   "dalis": "dal_902_01",
+   "pamoka": "pam_902",
+   "failas": "01-trys-sakiniai",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Kas įvyko",
+    "Ką darome",
+    "Kur kreiptis"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla",
+    "ivykis": "9 val. dingo šildymas"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_902_02",
+   "rusis": "koncepcija",
+   "sablonas": "tvarka",
+   "dalis": "dal_902_02",
+   "pamoka": "pam_902",
+   "failas": "02-kas-kalba",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "skelbk"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_902_04",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_902_04",
+   "pamoka": "pam_902",
+   "failas": "04-po-krizes",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Atnaujinti",
+    "Ištrinti"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

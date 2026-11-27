@@ -91,5 +91,12 @@
     "step4_num": "4",
     "step4_label": "Išjungiate pranešimų juostelę",
     "step4_desc": "„Interneto svetainės turinys dar kuriamas…“"
+  },
+  "09_mokymai_peremusiems": {
+    "title": "Naujam administratoriui",
+    "item_1": "Pareigą perėmė kitas darbuotojas",
+    "item_2": "Rašote pagalbos centrui",
+    "item_3": "Sutariame mokymų laiką",
+    "summary": "30 min – jūsų klausimams"
   }
 }

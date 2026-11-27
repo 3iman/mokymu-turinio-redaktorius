@@ -4,6 +4,26 @@
  "kadrai": [
   {
    "kadras": 1,
+   "epizodas": "viz_906_00",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_906_00",
+   "pamoka": "pam_906",
+   "failas": "00-nuo-ko-prasideda",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "svetaine.lt/admin"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla",
+    "adresas": "demo-mokykla.lt/admin"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
    "epizodas": "ep_906_01_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -37,7 +57,70 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 2,
+   "kadras": 3,
+   "epizodas": "viz_906_02",
+   "rusis": "koncepcija",
+   "sablonas": "tvarka",
+   "dalis": "dal_906_02",
+   "pamoka": "pam_906",
+   "failas": "02-pirmas-prisijungimas",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "mėnuo"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_906_03",
+   "rusis": "koncepcija",
+   "sablonas": "ui_maketas",
+   "dalis": "dal_906_03",
+   "pamoka": "pam_906",
+   "failas": "03-ka-matote-prisijunge",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Turinio auditas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_906_04",
+   "rusis": "koncepcija",
+   "sablonas": "dokumentu_sarasas",
+   "dalis": "dal_906_04",
+   "pamoka": "pam_906",
+   "failas": "04-trys-roles",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Cleverphant",
+    "Manager",
+    "Redakcija"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Cleverphant",
+    "Manager",
+    "Redakcija"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
    "epizodas": "ep_906_05_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -73,6 +156,30 @@
    "naudoja_ir": [
     "dal_906_90"
    ]
+  },
+  {
+   "kadras": 7,
+   "epizodas": "viz_906_06",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_906_06",
+   "pamoka": "pam_906",
+   "failas": "06-kai-zmogus-iseina",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Išjungti",
+    "Ištrinti",
+    "No"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Manager",
+    "No"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
   }
  ]
 }

@@ -4,6 +4,29 @@
  "kadrai": [
   {
    "kadras": 1,
+   "epizodas": "viz_707_00",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_707_00",
+   "pamoka": "pam_707",
+   "failas": "00-kam-tai",
+   "trukme_s": 17,
+   "ekrano_tekstai": [
+    "Tab",
+    "Enter"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Tab",
+    "Enter"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
    "epizodas": "viz_707_01",
    "rusis": "koncepcija",
    "sablonas": "taisyklingai_netaisyklingai",
@@ -24,14 +47,14 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 2,
+   "kadras": 3,
    "epizodas": "ep_707_03_1",
    "rusis": "epizodas",
    "sablonas": null,
    "dalis": "dal_707_03",
    "pamoka": "pam_707",
    "failas": "03-baneriu-papildinys",
-   "trukme_s": 12,
+   "trukme_s": 13,
    "ekrano_tekstai": [
     "Papildiniai",
     "Zonos",
@@ -53,7 +76,7 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 3,
+   "kadras": 4,
    "epizodas": "ep_707_03_2",
    "rusis": "epizodas",
    "sablonas": null,

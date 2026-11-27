@@ -4,6 +4,30 @@
  "kadrai": [
   {
    "kadras": 1,
+   "epizodas": "viz_706_00",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_706_00",
+   "pamoka": "pam_706",
+   "failas": "00-kam-tai",
+   "trukme_s": 17,
+   "ekrano_tekstai": [
+    "Tab",
+    "Enter"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Tab",
+    "Enter"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla",
+    "darbuotojas": "Jonas Basanavičius"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
    "epizodas": "viz_706_02",
    "rusis": "koncepcija",
    "sablonas": "taisyklingai_netaisyklingai",
@@ -25,7 +49,7 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 2,
+   "kadras": 3,
    "epizodas": "ep_706_04_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -54,7 +78,7 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 3,
+   "kadras": 4,
    "epizodas": "ep_706_06_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -85,7 +109,7 @@
    ]
   },
   {
-   "kadras": 4,
+   "kadras": 5,
    "epizodas": "ep_706_08_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -119,7 +143,7 @@
    "naudoja_ir": []
   },
   {
-   "kadras": 5,
+   "kadras": 6,
    "epizodas": "ep_706_08_2",
    "rusis": "epizodas",
    "sablonas": null,

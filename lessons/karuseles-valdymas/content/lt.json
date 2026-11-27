@@ -13,5 +13,26 @@
     "visible_width": "1180 pikselių matosi bet kuriame ekrane",
     "side_zones": "Kraštai gali būti nematomi",
     "mobile": "Telefone — atskira, apkirpta nuotrauka, kvadratas"
+  },
+  "00_kam_tai": {
+    "title": "Karuselė titulinio viršuje",
+    "item_1": "Vienas kadras",
+    "item_2": "Žinutė ant kadro",
+    "item_3": "Kiti vaizdai → „Ugdymo aplinkoje“",
+    "item_4": "Klaviatūra: rodyklės, Tab; judanti – sustabdoma",
+    "summary": "Vienas geras kadras stipriau nei dešimt",
+    "item_3_a": "Kiti vaizdai",
+    "item_3_b": "„Ugdymo aplinkoje“"
+  },
+  "06_kadras_pagal_branda": {
+    "title": "Kaip gimsta brando kadras",
+    "step1_label": "Jūsų mintis",
+    "step1_desc": "ir nuotraukos",
+    "arrow_label_1": "pagalba@cleverphant.lt",
+    "step2_label": "Apdirbame",
+    "step2_desc": "parenkame šriftą",
+    "arrow_label_2": "",
+    "step3_label": "Paruoštas kadras",
+    "step3_desc": "įkeliate kaip įprastą"
   }
 }

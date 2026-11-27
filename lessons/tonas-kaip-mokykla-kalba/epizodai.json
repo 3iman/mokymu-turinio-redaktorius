@@ -1,0 +1,106 @@
+{
+ "pamokos_slug": "tonas-kaip-mokykla-kalba",
+ "pamoka_id": "pam_903",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_903_00",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_903_00",
+   "pamoka": "pam_903",
+   "failas": "00-kas-skaito",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "30 s"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_903_01",
+   "rusis": "koncepcija",
+   "sablonas": "taisyklingai_netaisyklingai",
+   "dalis": "dal_903_01",
+   "pamoka": "pam_903",
+   "failas": "01-jus-ir-vardas",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Taip",
+    "Ne"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla",
+    "pedagoge": "Marija Pečkauskaitė"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_903_02",
+   "rusis": "koncepcija",
+   "sablonas": "palyginimas",
+   "dalis": "dal_903_02",
+   "pamoka": "pam_903",
+   "failas": "02-vienas-sakinys",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Vienas sakinys, keturi faktai",
+    "Du sakiniai, du faktai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_903_03",
+   "rusis": "koncepcija",
+   "sablonas": "dokumentu_sarasas",
+   "dalis": "dal_903_03",
+   "pamoka": "pam_903",
+   "failas": "03-kanceliarizmai",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "vykdoma",
+    "vyksta"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 5,
+   "epizodas": "viz_903_04",
+   "rusis": "koncepcija",
+   "sablonas": "zingsniai",
+   "dalis": "dal_903_04",
+   "pamoka": "pam_903",
+   "failas": "04-personos",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Užimtas vadovas",
+    "Pamainomis dirbanti mama"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

@@ -4,6 +4,75 @@
  "kadrai": [
   {
    "kadras": 1,
+   "epizodas": "viz_907_00",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_907_00",
+   "pamoka": "pam_907",
+   "failas": "00-kas-yra-papildiniai",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Facebook"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Facebook"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_907_01",
+   "rusis": "koncepcija",
+   "sablonas": "puslapio_maketas",
+   "dalis": "dal_907_01",
+   "pamoka": "pam_907",
+   "failas": "01-papildiniai-svetaineje",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Apie mokyklą",
+    "Default",
+    "Tab"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Default",
+    "Tab"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_907_02",
+   "rusis": "koncepcija",
+   "sablonas": "ui_maketas",
+   "dalis": "dal_907_02",
+   "pamoka": "pam_907",
+   "failas": "02-kur-rasti",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Papildiniai",
+    "Home",
+    "Default"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Home",
+    "Default"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
    "epizodas": "ep_907_03_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -43,7 +112,31 @@
    ]
   },
   {
-   "kadras": 2,
+   "kadras": 5,
+   "epizodas": "viz_907_04",
+   "rusis": "koncepcija",
+   "sablonas": "dokumentu_sarasas",
+   "dalis": "dal_907_04",
+   "pamoka": "pam_907",
+   "failas": "04-vertimas-ir-facebook",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Google",
+    "Facebook",
+    "Facebook valdymas"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Google",
+    "Facebook"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 6,
    "epizodas": "ep_907_05_1",
    "rusis": "epizodas",
    "sablonas": null,
@@ -77,6 +170,47 @@
    "demo_duomenys": {
     "nuoroda": "/priemimas",
     "paveikslelis": "Priėmimas 2027"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 7,
+   "epizodas": "viz_907_06",
+   "rusis": "koncepcija",
+   "sablonas": "dokumentu_sarasas",
+   "dalis": "dal_907_06",
+   "pamoka": "pam_907",
+   "failas": "06-spalvotas-laikmatis",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Titulinio naujienos"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 8,
+   "epizodas": "viz_907_07",
+   "rusis": "koncepcija",
+   "sablonas": "anatomija",
+   "dalis": "dal_907_07",
+   "pamoka": "pam_907",
+   "failas": "07-apie-mokykla",
+   "trukme_s": 13,
+   "ekrano_tekstai": [
+    "Apie mokyklą",
+    "350+",
+    "rugsėjis"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla",
+    "skaiciai": "350+ mokinių · 50 mokytojų · I–IV klasės · 5 laisvos vietos"
    },
    "naudoja_ir": []
   }

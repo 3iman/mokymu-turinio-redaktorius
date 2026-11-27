@@ -1,13 +1,13 @@
 {
-  "hash": "9d3551075e4251efc4b2c64606cd6ae42fe0f15310e098cc31016e20ce85bcfb",
+  "hash": "cfe8fa828d1a4a286cc18384e9796539247b8ffb9a0a39c810737028b932e3a3",
   "voice_id": "eqJHjeWMPGJFD6VBf1J2",
   "model": "eleven_v3_dpo_20260217",
   "speed": 0.9,
   "lang": "lt",
   "seed": 2177836710,
-  "characters": 1495,
+  "characters": 3612,
   "start_in_frame": 0.6,
-  "created": "2026-11-03T03:33:22.344Z",
+  "created": "2026-11-27T17:02:09.988Z",
   "items": [
     {
       "kadras": 1,
@@ -15,9 +15,9 @@
       "title": "Rinkinys „Paslaugos“",
       "text": "Rinkinyje patikrinate visų paslaugų aprašymus.",
       "file": "k01-1.wav",
-      "duration": 3.39,
+      "duration": 3.523,
       "fits": true,
-      "reikia_sek": 14
+      "reikia_sek": 15
     },
     {
       "kadras": 1,
@@ -25,9 +25,9 @@
       "title": "Rinkinys „Paslaugos“",
       "text": "Prie jų turi būti dokumentai ir atsakingas asmuo.",
       "file": "k01-2.wav",
-      "duration": 3.53,
+      "duration": 3.437,
       "fits": true,
-      "reikia_sek": 14
+      "reikia_sek": 15
     },
     {
       "kadras": 1,
@@ -35,9 +35,9 @@
       "title": "Rinkinys „Paslaugos“",
       "text": "Nepamirštate maitinimo, pavežėjimo, patalpų /ˈnuomoːs/.",
       "file": "k01-3.wav",
-      "duration": 3.69,
+      "duration": 3.77,
       "fits": true,
-      "reikia_sek": 14
+      "reikia_sek": 15
     },
     {
       "kadras": 2,
@@ -45,7 +45,7 @@
       "title": "Rinkinys „Darbuotojai“",
       "text": "Įsitikinate, kad lankytojas ras pareigybinius aprašus.",
       "file": "k02-1.wav",
-      "duration": 3.77,
+      "duration": 3.69,
       "fits": true,
       "reikia_sek": 14
     },
@@ -55,7 +55,7 @@
       "title": "Rinkinys „Darbuotojai“",
       "text": "Taip pat darbo laiką ir kontaktus.",
       "file": "k02-2.wav",
-      "duration": 2.61,
+      "duration": 2.57,
       "fits": true,
       "reikia_sek": 14
     },
@@ -65,7 +65,7 @@
       "title": "Rinkinys „Darbuotojai“",
       "text": "Pavaduotojų nuotraukos ir gyvenimo aprašymai privalomi.",
       "file": "k02-3.wav",
-      "duration": 3.77,
+      "duration": 3.85,
       "fits": true,
       "reikia_sek": 14
     },
@@ -75,7 +75,7 @@
       "title": "Komisijos ir darbo grupės",
       "text": "Pateikiate ne tik veikiančių grupių sąrašą.",
       "file": "k03-1.wav",
-      "duration": 2.823,
+      "duration": 2.743,
       "fits": true,
       "reikia_sek": 12
     },
@@ -95,7 +95,7 @@
       "title": "Komisijos ir darbo grupės",
       "text": "Ir veiklą reglamentuojančius dokumentus.",
       "file": "k03-3.wav",
-      "duration": 2.69,
+      "duration": 2.73,
       "fits": true,
       "reikia_sek": 12
     },
@@ -105,9 +105,9 @@
       "title": "Rinkinys „Dokumentai“",
       "text": "Vien nuostatų neužtenka.",
       "file": "k04-1.wav",
-      "duration": 1.77,
+      "duration": 1.89,
       "fits": true,
-      "reikia_sek": 13
+      "reikia_sek": 14
     },
     {
       "kadras": 4,
@@ -117,7 +117,7 @@
       "file": "k04-2.wav",
       "duration": 3.45,
       "fits": true,
-      "reikia_sek": 13
+      "reikia_sek": 14
     },
     {
       "kadras": 4,
@@ -125,9 +125,9 @@
       "title": "Rinkinys „Dokumentai“",
       "text": "Taip pat įsakymus ir biudžetines ataskaitas.",
       "file": "k04-3.wav",
-      "duration": 3.25,
+      "duration": 3.29,
       "fits": true,
-      "reikia_sek": 13
+      "reikia_sek": 14
     },
     {
       "kadras": 5,
@@ -135,7 +135,7 @@
       "title": "Rinkinys „Komunikacija“",
       "text": "Rinkinio neužtenka tik užpildyti.",
       "file": "k05-1.wav",
-      "duration": 2.49,
+      "duration": 2.53,
       "fits": true,
       "reikia_sek": 11
     },
@@ -145,7 +145,7 @@
       "title": "Rinkinys „Komunikacija“",
       "text": "Tekstą perskaitote iš naujo.",
       "file": "k05-2.wav",
-      "duration": 2.09,
+      "duration": 2.17,
       "fits": true,
       "reikia_sek": 11
     },
@@ -155,7 +155,7 @@
       "title": "Rinkinys „Komunikacija“",
       "text": "Ar kiekvienas skaitytojas supras vienodai?",
       "file": "k05-3.wav",
-      "duration": 2.69,
+      "duration": 2.77,
       "fits": true,
       "reikia_sek": 11
     },
@@ -165,7 +165,7 @@
       "title": "Rinkinys „Administracijai“",
       "text": "Šį rinkinį peržiūri vienas iš mokyklos vadovų.",
       "file": "k06-1.wav",
-      "duration": 3.19,
+      "duration": 3.21,
       "fits": true,
       "reikia_sek": 14
     },
@@ -175,7 +175,7 @@
       "title": "Rinkinys „Administracijai“",
       "text": "/ˈdauɡumaː/ namų darbų nustato bendrieji reikalavimai.",
       "file": "k06-2.wav",
-      "duration": 3.23,
+      "duration": 3.45,
       "fits": true,
       "reikia_sek": 14
     },
@@ -185,7 +185,7 @@
       "title": "Rinkinys „Administracijai“",
       "text": "Plačiau juos rasite skyrelyje „Administracijai“.",
       "file": "k06-3.wav",
-      "duration": 3.13,
+      "duration": 3.29,
       "fits": true,
       "reikia_sek": 14
     },
@@ -195,7 +195,7 @@
       "title": "Rinkinys „Prieš paleidimą“",
       "text": "Paskutinis rinkinys primena /smulˈkʲas/ detales.",
       "file": "k07-1.wav",
-      "duration": 2.97,
+      "duration": 3.13,
       "fits": true,
       "reikia_sek": 12
     },
@@ -215,7 +215,7 @@
       "title": "Rinkinys „Prieš paleidimą“",
       "text": "Taip svetainė atitinka kokybės standartus.",
       "file": "k07-3.wav",
-      "duration": 3.143,
+      "duration": 3.25,
       "fits": true,
       "reikia_sek": 12
     },
@@ -225,7 +225,7 @@
       "title": "Rinkinys „Atidėta“",
       "text": "Čia atrandate puslapius, kuriems reikia daugiau dėmesio.",
       "file": "k08-1.wav",
-      "duration": 3.597,
+      "duration": 3.73,
       "fits": true,
       "reikia_sek": 12
     },
@@ -255,7 +255,7 @@
       "title": "Rinkinys „Atmesta“",
       "text": "Čia patenka puslapiai, kurių kokybę reikia tobulinti.",
       "file": "k09-1.wav",
-      "duration": 3.397,
+      "duration": 3.477,
       "fits": true,
       "reikia_sek": 12
     },
@@ -275,7 +275,7 @@
       "title": "Rinkinys „Atmesta“",
       "text": "Ir pataisote atrastus netikslumus.",
       "file": "k09-3.wav",
-      "duration": 2.49,
+      "duration": 2.57,
       "fits": true,
       "reikia_sek": 12
     },
@@ -285,7 +285,7 @@
       "title": "Rinkinys „Įvykdyta“",
       "text": "Į šį rinkinį keliauja /uʒbaiɡˈtʲi/ puslapiai.",
       "file": "k10-1.wav",
-      "duration": 2.81,
+      "duration": 2.89,
       "fits": true,
       "reikia_sek": 13
     },
@@ -295,7 +295,7 @@
       "title": "Rinkinys „Įvykdyta“",
       "text": "Pagal jį matote užbaigtumo procentą.",
       "file": "k10-2.wav",
-      "duration": 2.65,
+      "duration": 2.81,
       "fits": true,
       "reikia_sek": 13
     },
@@ -305,7 +305,7 @@
       "title": "Rinkinys „Įvykdyta“",
       "text": "Progresas visada prasideda nuo penkiolikos procentų.",
       "file": "k10-3.wav",
-      "duration": 3.65,
+      "duration": 3.81,
       "fits": true,
       "reikia_sek": 13
     },
@@ -317,7 +317,7 @@
       "file": "k11-1.wav",
       "duration": 2.93,
       "fits": true,
-      "reikia_sek": 13
+      "reikia_sek": 14
     },
     {
       "kadras": 11,
@@ -325,9 +325,9 @@
       "title": "Randate puslapio audito numerį",
       "text": "Atsiveria lentelė su visais puslapiais.",
       "file": "k11-2.wav",
-      "duration": 2.65,
+      "duration": 2.81,
       "fits": true,
-      "reikia_sek": 13
+      "reikia_sek": 14
     },
     {
       "kadras": 11,
@@ -335,9 +335,459 @@
       "title": "Randate puslapio audito numerį",
       "text": "Stulpelyje „Audito numeris“ randate puslapio numerį.",
       "file": "k11-3.wav",
-      "duration": 3.663,
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 12,
+      "cue": 1,
+      "title": "Trys rūšys viename sąraše",
+      "text": "Audito /ˈjuostoːjɛ/ – trys rūšys viename /ˈsaːraʃʲɛ/.",
+      "file": "k12-1.wav",
+      "duration": 3.67,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 12,
+      "cue": 2,
+      "title": "Trys rūšys viename sąraše",
+      "text": "Rinkiniai sako, kuriai daliai puslapis priklauso.",
+      "file": "k12-2.wav",
+      "duration": 3.29,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 12,
+      "cue": 3,
+      "title": "Trys rūšys viename sąraše",
+      "text": "Būsenos – kur jis yra; eilės – ko laukiame iš jūsų.",
+      "file": "k12-3.wav",
+      "duration": 4.85,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 13,
+      "cue": 1,
+      "title": "Patikslinti",
+      "text": "Atsakymą gavome, bet /iːˈkʲɛːltʲi/ dar negalime.",
+      "file": "k13-1.wav",
+      "duration": 3.29,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 13,
+      "cue": 2,
+      "title": "Patikslinti",
+      "text": "Komentare parašyta, ko trūksta.",
+      "file": "k13-2.wav",
+      "duration": 2.25,
       "fits": true,
       "reikia_sek": 13
+    },
+    {
+      "kadras": 13,
+      "cue": 3,
+      "title": "Patikslinti",
+      "text": "Atsakote prie to paties numerio – puslapis grįžta mums.",
+      "file": "k13-3.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 14,
+      "cue": 1,
+      "title": "Atnaujinti informaciją",
+      "text": "Turinys buvo teisingas, bet paseno.",
+      "file": "k14-1.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 14,
+      "cue": 2,
+      "title": "Atnaujinti informaciją",
+      "text": "Atsiunčiate naują informaciją.",
+      "file": "k14-2.wav",
+      "duration": 2.09,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 14,
+      "cue": 3,
+      "title": "Atnaujinti informaciją",
+      "text": "Arba parašote, kad puslapio nebereikia.",
+      "file": "k14-3.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 15,
+      "cue": 1,
+      "title": "Patvirtinta",
+      "text": "Jūsų pusėje darbas baigtas, mūsų – dar ne.",
+      "file": "k15-1.wav",
+      "duration": 3.45,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 15,
+      "cue": 2,
+      "title": "Patvirtinta",
+      "text": "Įkėlę ir patikrinę pakeičiame į „Įvykdyta“.",
+      "file": "k15-2.wav",
+      "duration": 3.343,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 15,
+      "cue": 3,
+      "title": "Patvirtinta",
+      "text": "Tik tada puslapis pakelia procentą.",
+      "file": "k15-3.wav",
+      "duration": 2.477,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 16,
+      "cue": 1,
+      "title": "Neaišku",
+      "text": "Negalime /nuspˈrʲɛːstʲi/ patys – gal paslaugos nėra.",
+      "file": "k16-1.wav",
+      "duration": 3.45,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 16,
+      "cue": 2,
+      "title": "Neaišku",
+      "text": "Parašote vieną sakinį: neteikiame, atsakingas, /iʃtˈrʲintʲi/.",
+      "file": "k16-2.wav",
+      "duration": 4.65,
+      "fits": false,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 16,
+      "cue": 3,
+      "title": "Neaišku",
+      "text": "Pigiausias /ˈbuːdas/ pakelti progresą.",
+      "file": "k16-3.wav",
+      "duration": 2.503,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 17,
+      "cue": 1,
+      "title": "Būsena ir žyma",
+      "text": "Prie eilutės – būsena ir žymos.",
+      "file": "k17-1.wav",
+      "duration": 2.677,
+      "fits": false,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 17,
+      "cue": 2,
+      "title": "Būsena ir žyma",
+      "text": "Būsena sako, kur puslapis; /ʒʲiːˈma/ – ko laukiame iš jūsų.",
+      "file": "k17-2.wav",
+      "duration": 4.53,
+      "fits": false,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 17,
+      "cue": 3,
+      "title": "Būsena ir žyma",
+      "text": "Viršuje /ʒʲiːˈmuː/ mygtukai su skaičiais – spaudžiate ir filtruojate.",
+      "file": "k17-3.wav",
+      "duration": 4.423,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 18,
+      "cue": 1,
+      "title": "Asmuo",
+      "text": "Prie puslapio nurodytas žmogus, bet nesame tikri.",
+      "file": "k18-1.wav",
+      "duration": 3.397,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 18,
+      "cue": 2,
+      "title": "Asmuo",
+      "text": "Patvirtinate esamą arba parašote, kas atsakingas.",
+      "file": "k18-2.wav",
+      "duration": 3.57,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 18,
+      "cue": 3,
+      "title": "Asmuo",
+      "text": "Paslaugos nebėra – parašote ir tai.",
+      "file": "k18-3.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 19,
+      "cue": 1,
+      "title": "DI",
+      "text": "Aprašymą parengė dirbtinis intelektas iš jūsų medžiagos.",
+      "file": "k19-1.wav",
+      "duration": 3.73,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 19,
+      "cue": 2,
+      "title": "DI",
+      "text": "Skaitote taip, kaip skaitys tėvai.",
+      "file": "k19-2.wav",
+      "duration": 2.37,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 19,
+      "cue": 3,
+      "title": "DI",
+      "text": "Patvirtinate arba atsiunčiate savo.",
+      "file": "k19-3.wav",
+      "duration": 2.57,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 20,
+      "cue": 1,
+      "title": "Dok",
+      "text": "Trūksta oficialaus dokumento.",
+      "file": "k20-1.wav",
+      "duration": 2.13,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 20,
+      "cue": 2,
+      "title": "Dok",
+      "text": "Atsiunčiate failą arba nurodote dokumentų banko /ˈiːraʃaː/.",
+      "file": "k20-2.wav",
+      "duration": 3.77,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 20,
+      "cue": 3,
+      "title": "Dok",
+      "text": "Dokumento nėra – parašote, puslapis nebelauks.",
+      "file": "k20-3.wav",
+      "duration": 3.69,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 21,
+      "cue": 1,
+      "title": "Klausimai",
+      "text": "Klausimas užrašytas komentare prie puslapio.",
+      "file": "k21-1.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 21,
+      "cue": 2,
+      "title": "Klausimai",
+      "text": "Atsakote laišku su audito numeriu temoje.",
+      "file": "k21-2.wav",
+      "duration": 2.93,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 21,
+      "cue": 3,
+      "title": "Klausimai",
+      "text": "Temą kopijuojate stulpelyje „Valdymas“.",
+      "file": "k21-3.wav",
+      "duration": 2.81,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 22,
+      "cue": 1,
+      "title": "Laukiam",
+      "text": "Užduotis atidėta ne dėl jūsų.",
+      "file": "k22-1.wav",
+      "duration": 2.33,
+      "fits": false,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 22,
+      "cue": 2,
+      "title": "Laukiam",
+      "text": "Kažkas pažadėjo medžiagą arba dar ne metas.",
+      "file": "k22-2.wav",
+      "duration": 3.223,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 22,
+      "cue": 3,
+      "title": "Laukiam",
+      "text": "Turite – atsiunčiate, /ʒʲiːˈma/ nusiims.",
+      "file": "k22-3.wav",
+      "duration": 2.99,
+      "fits": true,
+      "reikia_sek": 11
+    },
+    {
+      "kadras": 23,
+      "cue": 1,
+      "title": "Lengva",
+      "text": "Smulkmena: sakinys arba „taip“, „ne“.",
+      "file": "k23-1.wav",
+      "duration": 3.33,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 23,
+      "cue": 2,
+      "title": "Lengva",
+      "text": "Užima minutę, progresą kelia kaip didelė.",
+      "file": "k23-2.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 23,
+      "cue": 3,
+      "title": "Lengva",
+      "text": "Pradedate nuo jų – sąrašas trumpėja greitai.",
+      "file": "k23-3.wav",
+      "duration": 3.41,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 24,
+      "cue": 1,
+      "title": "Pritaikomumas",
+      "text": "/ˈɡʲɛstuː/ kalba, lengvai /suprantaˈma/ kalba – 4–8 savaitės.",
+      "file": "k24-1.wav",
+      "duration": 5.29,
+      "fits": false,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 24,
+      "cue": 2,
+      "title": "Pritaikomumas",
+      "text": "Neatsakę pradžioje liksite su jais paskutiniai.",
+      "file": "k24-2.wav",
+      "duration": 3.09,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 24,
+      "cue": 3,
+      "title": "Pritaikomumas",
+      "text": "Pradedate nuo jų, net jei kiti puslapiai laukia.",
+      "file": "k24-3.wav",
+      "duration": 3.45,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 25,
+      "cue": 1,
+      "title": "Užpildyti",
+      "text": "Darbuotojų sąrašai: mokytojai, specialistai, komisijos.",
+      "file": "k25-1.wav",
+      "duration": 4.21,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 25,
+      "cue": 2,
+      "title": "Užpildyti",
+      "text": "Pildote lentelę, ne laišką.",
+      "file": "k25-2.wav",
+      "duration": 2.13,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 25,
+      "cue": 3,
+      "title": "Užpildyti",
+      "text": "Taip sąrašas patenka be perrašymo klaidų.",
+      "file": "k25-3.wav",
+      "duration": 2.89,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 26,
+      "cue": 1,
+      "title": "Kodėl verta nenumesti",
+      "text": "Sąrašas ilgas, bet baigtinis ir matomas.",
+      "file": "k26-1.wav",
+      "duration": 3.21,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 26,
+      "cue": 2,
+      "title": "Kodėl verta nenumesti",
+      "text": "Kiekvienas puslapis iš /ˈkartoː/ kelia procentą.",
+      "file": "k26-2.wav",
+      "duration": 3.09,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 26,
+      "cue": 3,
+      "title": "Kodėl verta nenumesti",
+      "text": "Mestas sąrašas po pusmečio sensta – tikrinate iš naujo.",
+      "file": "k26-3.wav",
+      "duration": 3.983,
+      "fits": true,
+      "reikia_sek": 14
     }
   ]
 }

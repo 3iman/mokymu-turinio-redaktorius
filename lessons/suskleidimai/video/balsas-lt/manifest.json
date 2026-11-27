@@ -1,111 +1,301 @@
 {
-  "hash": "dbd50957034b5bd22e7a6d293ce7ba2f2773511e4eccb70f130c12e732d3f514",
+  "hash": "09ad1b23127b804887a83348e201e3aabb68bb1d9ce6e648ea0a8ad65c215465",
   "voice_id": "eqJHjeWMPGJFD6VBf1J2",
   "model": "eleven_v3_dpo_20260217",
   "speed": 0.9,
   "lang": "lt",
   "seed": 1783538879,
-  "characters": 525,
+  "characters": 1383,
   "start_in_frame": 0.6,
-  "created": "2026-11-03T02:41:35.927Z",
+  "created": "2026-11-27T16:19:24.740Z",
   "items": [
     {
       "kadras": 1,
       "cue": 1,
-      "title": "Sukuriate kategoriją ir įklijuojate sintaksę",
-      "text": "Kategorijų /ˈsaːraʃʲɛ/ spaudžiate „Sukurti“ ir įrašote pavadinimą.",
+      "title": "Kam suskleidimai",
+      "text": "Keli ilgi blokai – tekstas neperžvelgiamas.",
       "file": "k01-1.wav",
-      "duration": 4.67,
-      "fits": true,
-      "reikia_sek": 17
+      "duration": 3.43,
+      "fits": false,
+      "reikia_sek": 13
     },
     {
       "kadras": 1,
       "cue": 2,
-      "title": "Sukuriate kategoriją ir įklijuojate sintaksę",
-      "text": "Stulpelyje „Plugin“ nukopijuojate kategorijos sintaksę.",
+      "title": "Kam suskleidimai",
+      "text": "Suskleidimai rodo tik antraštes.",
       "file": "k01-2.wav",
-      "duration": 3.81,
+      "duration": 2.53,
       "fits": true,
-      "reikia_sek": 17
+      "reikia_sek": 12
     },
     {
       "kadras": 1,
       "cue": 3,
-      "title": "Sukuriate kategoriją ir įklijuojate sintaksę",
-      "text": "Puslapio turinyje įklijuojate ją po įvadu ir atnaujinate.",
+      "title": "Kam suskleidimai",
+      "text": "Lankytojas atskleidžia tą, kurios ieško.",
       "file": "k01-3.wav",
-      "duration": 4.29,
+      "duration": 2.93,
       "fits": true,
-      "reikia_sek": 17
+      "reikia_sek": 12
     },
     {
       "kadras": 2,
       "cue": 1,
-      "title": "Sukuriate suskleidimo įrašą",
-      "text": "Spaudžiate „Sukurti“ ir įrašote pavadinimą.",
+      "title": "Suskleidimas svetainėje",
+      "text": "Svetainėje tai tamsi /ˈjuosta/ su pliusu.",
       "file": "k02-1.wav",
-      "duration": 3.183,
-      "fits": true,
+      "duration": 3.09,
+      "fits": false,
       "reikia_sek": 16
     },
     {
       "kadras": 2,
       "cue": 2,
-      "title": "Sukuriate suskleidimo įrašą",
-      "text": "„Atsakymas“ – tai, kas atsiskleis paspaudus.",
+      "title": "Suskleidimas svetainėje",
+      "text": "Paspaudus atsiskleidžia turinys.",
       "file": "k02-2.wav",
-      "duration": 3.477,
+      "duration": 2.37,
       "fits": true,
-      "reikia_sek": 16
+      "reikia_sek": 15
     },
     {
       "kadras": 2,
       "cue": 3,
-      "title": "Sukuriate suskleidimo įrašą",
-      "text": "Pasirenkate kategoriją ir išsaugote.",
+      "title": "Suskleidimas svetainėje",
+      "text": "Visi užverti, atverti galima kelis.",
       "file": "k02-3.wav",
-      "duration": 2.77,
-      "fits": true,
+      "duration": 3.357,
+      "fits": false,
       "reikia_sek": 16
     },
     {
       "kadras": 2,
       "cue": 4,
-      "title": "Sukuriate suskleidimo įrašą",
-      "text": "Svetainėje atsiranda nauja /ˈjuosta/.",
+      "title": "Suskleidimas svetainėje",
+      "text": "„Tab“, „Enter“ – skaitytuvas praneša būseną.",
       "file": "k02-4.wav",
-      "duration": 2.69,
+      "duration": 3.503,
       "fits": true,
-      "reikia_sek": 16
+      "reikia_sek": 15
     },
     {
       "kadras": 3,
       "cue": 1,
-      "title": "Perrikiuojate suskleidimus",
-      "text": "Pasirenkate kategoriją ir spaudžiate „Filtruoti“.",
+      "title": "Kur rasti",
+      "text": "Modulis – kairiajame meniu „Suskleidimai“.",
       "file": "k03-1.wav",
-      "duration": 3.37,
+      "duration": 3.05,
       "fits": true,
-      "reikia_sek": 14
+      "reikia_sek": 13
     },
     {
       "kadras": 3,
       "cue": 2,
-      "title": "Perrikiuojate suskleidimus",
-      "text": "Suimate /ˈiːraʃaː/ už rodyklių ir tempiate.",
+      "title": "Kur rasti",
+      "text": "Viena kategorija – vienas blokas puslapyje.",
       "file": "k03-2.wav",
-      "duration": 2.97,
+      "duration": 2.93,
       "fits": true,
-      "reikia_sek": 14
+      "reikia_sek": 13
     },
     {
       "kadras": 3,
       "cue": 3,
+      "title": "Kur rasti",
+      "text": "/ˈiːraʃai/ – jo /ˈjuostoːs/; viršuje filtrai.",
+      "file": "k03-3.wav",
+      "duration": 3.53,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Sukuriate kategoriją ir įklijuojate sintaksę",
+      "text": "Kategorijų /ˈsaːraʃʲɛ/ spaudžiate „Sukurti“ ir įrašote pavadinimą.",
+      "file": "k04-1.wav",
+      "duration": 4.37,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Sukuriate kategoriją ir įklijuojate sintaksę",
+      "text": "Stulpelyje „Plugin“ nukopijuojate kategorijos sintaksę.",
+      "file": "k04-2.wav",
+      "duration": 3.903,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Sukuriate kategoriją ir įklijuojate sintaksę",
+      "text": "Puslapio turinyje įklijuojate ją po įvadu ir atnaujinate.",
+      "file": "k04-3.wav",
+      "duration": 4.277,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Sukuriate suskleidimo įrašą",
+      "text": "Spaudžiate „Sukurti“ ir įrašote pavadinimą.",
+      "file": "k05-1.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Sukuriate suskleidimo įrašą",
+      "text": "„Atsakymas“ – tai, kas atsiskleis paspaudus.",
+      "file": "k05-2.wav",
+      "duration": 3.37,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Sukuriate suskleidimo įrašą",
+      "text": "Pasirenkate kategoriją ir išsaugote.",
+      "file": "k05-3.wav",
+      "duration": 2.57,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 5,
+      "cue": 4,
+      "title": "Sukuriate suskleidimo įrašą",
+      "text": "Svetainėje atsiranda nauja /ˈjuosta/.",
+      "file": "k05-4.wav",
+      "duration": 2.57,
+      "fits": true,
+      "reikia_sek": 16
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Perrikiuojate suskleidimus",
+      "text": "Pasirenkate kategoriją ir spaudžiate „Filtruoti“.",
+      "file": "k06-1.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Perrikiuojate suskleidimus",
+      "text": "Suimate /ˈiːraʃaː/ už rodyklių ir tempiate.",
+      "file": "k06-2.wav",
+      "duration": 2.93,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
       "title": "Perrikiuojate suskleidimus",
       "text": "Spaudžiate „/ˈpɛr.rikʲuotʲi/“ – kitaip tvarka neišsisaugo.",
-      "file": "k03-3.wav",
-      "duration": 3.903,
+      "file": "k06-3.wav",
+      "duration": 3.823,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Kada suskleidimai, kada ne",
+      "text": "Kiekvienas pliusas lankytojui – darbas.",
+      "file": "k07-1.wav",
+      "duration": 2.917,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Kada suskleidimai, kada ne",
+      "text": "Trumpą DUK rašote su antraštėmis, ne pliusais.",
+      "file": "k07-2.wav",
+      "duration": 4.21,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Kada suskleidimai, kada ne",
+      "text": "Viso puslapio į vieną suskleidimą nekraunate.",
+      "file": "k07-3.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Atvaizdavimo variantas",
+      "text": "/lauˈkʲɛ/ „View“ renkatės, kaip blokas atrodys.",
+      "file": "k08-1.wav",
+      "duration": 3.597,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Atvaizdavimo variantas",
+      "text": "„Default“ – /ˈjuostoːs/; kitas variantas – pvz. kortelės.",
+      "file": "k08-2.wav",
+      "duration": 4.543,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Atvaizdavimo variantas",
+      "text": "Variantą paruošiame mes, jūs pasirenkate.",
+      "file": "k08-3.wav",
+      "duration": 3.01,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 9,
+      "cue": 1,
+      "title": "Puslapyje, su nuorodomis, suskleidime ar polapyje?",
+      "text": "Suskleidimas – paskutinė vieta turiniui.",
+      "file": "k09-1.wav",
+      "duration": 2.71,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 9,
+      "cue": 2,
+      "title": "Puslapyje, su nuorodomis, suskleidime ar polapyje?",
+      "text": "/ˈpʲirma/ trumpinate, tada antraštės ir vidinės nuorodos.",
+      "file": "k09-2.wav",
+      "duration": 3.87,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 9,
+      "cue": 3,
+      "title": "Puslapyje, su nuorodomis, suskleidime ar polapyje?",
+      "text": "Savarankiška tema – polapis; detalė – suskleidimas.",
+      "file": "k09-3.wav",
+      "duration": 4.343,
       "fits": true,
       "reikia_sek": 14
     }

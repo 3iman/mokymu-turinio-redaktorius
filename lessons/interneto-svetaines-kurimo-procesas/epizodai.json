@@ -207,6 +207,25 @@
     "mokykla": "Demo mokykla"
    },
    "naudoja_ir": []
+  },
+  {
+   "kadras": 10,
+   "epizodas": "viz_684_09",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_684_09",
+   "pamoka": "pam_684",
+   "failas": "09-mokymai-peremusiems",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "30 min"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
   }
  ]
 }

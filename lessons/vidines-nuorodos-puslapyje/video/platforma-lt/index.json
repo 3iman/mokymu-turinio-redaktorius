@@ -1,12 +1,70 @@
 {
   "pamoka": "vidines-nuorodos-puslapyje",
   "lang": "lt",
-  "sugeneruota": "2026-11-03T02:10:14.633Z",
-  "balso_stiprinimas_db": 5.6,
+  "sugeneruota": "2026-11-27T16:42:57.664Z",
+  "balso_stiprinimas_db": 5.8,
   "muzika": false,
   "klipai": [
     {
       "kadras": 1,
+      "epizodas": "viz_909_00",
+      "failas": "00-trecias-kelias",
+      "pavadinimas": "Trečias kelias ilgam puslapiui",
+      "trukme_s": 14,
+      "mp4": "viz_909_00.mp4",
+      "vtt": "viz_909_00.vtt",
+      "poster": "viz_909_00.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.07,
+          "tekstas": "Ilgas puslapis su penkiomis skiltimis."
+        },
+        {
+          "nuo_s": 4.3,
+          "iki_s": 7.67,
+          "tekstas": "Suskleidimai slepia, polapiai išbarsto."
+        },
+        {
+          "nuo_s": 7.9,
+          "iki_s": 12.15,
+          "tekstas": "Trečias kelias: turinys viršuje, nuorodos į skiltis."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_909_01",
+      "failas": "01-kaip-atrodo",
+      "pavadinimas": "Kaip atrodo svetainėje",
+      "trukme_s": 14,
+      "mp4": "viz_909_01.mp4",
+      "vtt": "viz_909_01.vtt",
+      "poster": "viz_909_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.13,
+          "tekstas": "Lankytojui – sąrašas puslapio pradžioje."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 7.83,
+          "tekstas": "Paspaudus puslapis nuslenka iki antraštės."
+        },
+        {
+          "nuo_s": 8,
+          "iki_s": 12.29,
+          "tekstas": "Adrese atsiranda „#dokumentai“ – galite siųsti."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
       "epizodas": "ep_909_02_1",
       "failas": "02-inkaras",
       "pavadinimas": "Įdedate inkarą prie skilties antraštės",
@@ -17,17 +75,17 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 4.59,
+          "iki_s": 4.37,
           "tekstas": "Žymeklį statote skilties antraštės pradžioje."
         },
         {
           "nuo_s": 4.9,
-          "iki_s": 7.87,
+          "iki_s": 7.95,
           "tekstas": "Juostoje spaudžiate „Anchor“ – vėliavėlę."
         },
         {
           "nuo_s": 8.3,
-          "iki_s": 13.11,
+          "iki_s": 13.03,
           "tekstas": "Lauke „Anchor Name“ įrašote „dokumentai“ ir spaudžiate „OK“."
         }
       ],
@@ -52,7 +110,7 @@
       "ispejimai": []
     },
     {
-      "kadras": 2,
+      "kadras": 4,
       "epizodas": "ep_909_03_1",
       "failas": "03-nuoroda-i-inkara",
       "pavadinimas": "Susiejate turinio eilutę su inkaru",
@@ -63,7 +121,7 @@
       "balsas": [
         {
           "nuo_s": 1,
-          "iki_s": 4.69,
+          "iki_s": 4.73,
           "tekstas": "Pažymite eilutę „Dokumentai“ ir spaudžiate „Link“."
         },
         {
@@ -78,7 +136,7 @@
         },
         {
           "nuo_s": 13.2,
-          "iki_s": 15.49,
+          "iki_s": 15.57,
           "tekstas": "Eilutė nušoka prie skilties."
         }
       ],
@@ -100,6 +158,64 @@
           "garsas": "patvirtinimas"
         }
       ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 5,
+      "epizodas": "viz_909_04",
+      "failas": "04-vardu-taisykles",
+      "pavadinimas": "Vardų taisyklės",
+      "trukme_s": 13,
+      "mp4": "viz_909_04.mp4",
+      "vtt": "viz_909_04.vtt",
+      "poster": "viz_909_04.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.85,
+          "tekstas": "Vardas gyvena adrese: mažosios, be tarpų."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 7.93,
+          "tekstas": "Prasmingas – po metų matysis, kur veda."
+        },
+        {
+          "nuo_s": 8.2,
+          "iki_s": 10.82,
+          "tekstas": "Antraštę keičiate, inkaras lieka."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 6,
+      "epizodas": "viz_909_05",
+      "failas": "05-kada-per-sudetinga",
+      "pavadinimas": "Kada tai per sudėtinga",
+      "trukme_s": 13,
+      "mp4": "viz_909_05.mp4",
+      "vtt": "viz_909_05.vtt",
+      "poster": "viz_909_05.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.52,
+          "tekstas": "Kiekviena skiltis – du veiksmai."
+        },
+        {
+          "nuo_s": 3.9,
+          "iki_s": 7.15,
+          "tekstas": "Iki šešių pastovių skilčių inkarai atsiperka."
+        },
+        {
+          "nuo_s": 7.6,
+          "iki_s": 11.74,
+          "tekstas": "Daugiau ar kinta – polapiai; arba parašote mums."
+        }
+      ],
+      "garsai": [],
       "ispejimai": []
     }
   ]

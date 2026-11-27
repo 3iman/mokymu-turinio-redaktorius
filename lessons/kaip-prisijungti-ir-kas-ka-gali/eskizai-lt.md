@@ -1,4 +1,4 @@
-# Koncepto eskizai — „Kaip prisijungti ir kas ką gali“ (2 filmai)
+# Koncepto eskizai — „Kaip prisijungti ir kas ką gali“ (7 filmai: 2 epizodai patvirtinti 2026-10-31, 5 koncepcijos 2026-11-27 laukia „gerai“)
 
 Redaktoriaus CLAUDE.md §8 (a). Šaltiniai — kortelių nuorodos (seni įrašai, scenos peržiūrėtos A etape; prisijungimas — skeleton 2026-10-18). Padalyti kadrai: apačioje turinio redaktorius su pilna juosta, viršuje svetainė. Demo — „Demo mokykla“, garsūs mirę lietuviai, neutralūs vaizdai vietoje vaikų nuotraukų. Būsena: **✅ PATVIRTINTA — Eimantas 2026-10-31: „gerai, eskizai tinka“.**
 
@@ -44,6 +44,96 @@ Kaip „Navigacijų valdyme“: viena žinutė, fokusas, ramus viršelis paskuti
 | 10,8 | spustelėjimas (ratilas) — kitas ekranas / būsena | spustelejimas |
 | 12,0 | rezultatas trumpai žaliai sužimba | patvirtinimas |
 | … –14 | ramiai (viršelis) | — |
+
+---
+
+## `viz_906_00` — „Nuo ko prasideda“ (13 s, P2, koncepcija)
+
+**Žinutė:** Vienas adresas, du laukai, trys rolės.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Nuo ko prasideda“ · item_1: „Adresas svetaine.lt/admin“ · item_2: „El. paštas ir slaptažodis“ · item_3: „Rolė nusprendžia, ką galite“ · summary: „Rolė, ne pareigos mokykloje“
+
+**Ekrane:** Šablonas `perziura`: kortelė su trimis eilutėmis – adreso juosta „svetaine.lt/admin“, du prisijungimo laukai, rolės ženkliukas; eilutės išnyra po vieną, apačioje santrauka.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Svetainę valdo tas, kas turi prisijungimą.“ |
+| 4,7 | išnyra kitas elementas | „Adresas visiems tas pats, skiriasi rolė.“ |
+| 8,0 | išvada / santrauka paryškėja | „Rolė nusprendžia, ką galite – ne pareigos.“ |
+| … –13 | ramiai (viršelis) | — |
+
+---
+
+## `viz_906_02` — „Pirmas prisijungimas“ (13 s, P2, koncepcija)
+
+**Žinutė:** Vadovas gauna nuorodą, slaptažodį kuria pats, kolegas prideda pats.
+
+**Šablonas:** tvarka
+**Etiketės:** title: „Pirmas prisijungimas“ · step_1: „Nuoroda vadovui, galioja mėnesį“ · step_2: „Slaptažodis – tik jūsų“ · step_3: „Kolegas prideda administratorius“ · summary: „Nuoroda pasibaigė – rašote pagalbos centrui“
+
+**Ekrane:** Šablonas `tvarka`: trys numeruoti žingsniai vienas po kito – laiškas su nuoroda ir kalendoriaus ženklu „mėnuo“, slaptažodžio laukas su spynele, vartotojų sąrašas su nauja eilute; apačioje santrauka.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Pirmą nuorodą gauna vadovas, galioja mėnesį.“ |
+| 4,8 | išnyra kitas elementas | „Slaptažodį renkatės patys, niekas jo neprašys.“ |
+| 8,6 | išvada / santrauka paryškėja | „Kolegas prideda mokyklos administratorius.“ |
+| … –13 | ramiai (viršelis) | — |
+
+---
+
+## `viz_906_03` — „Ką matote prisijungę“ (15 s, P2, koncepcija)
+
+**Žinutė:** Kairėje moduliai, svetainėje pieštukai.
+
+**Šablonas:** ui_maketas
+**Etiketės:** title: „Ką matote prisijungę“ · item_1: „Darbalaukis ir kairysis meniu“ · item_2: „Paieška viršuje randa modulį“ · item_3: „Svetainėje – pieštukai ir „Turinio auditas““ · summary: „Ką matote, priklauso nuo rolės“
+
+**Ekrane:** Šablonas `ui_maketas` (generatoriuje – kortelė su sąrašu): supaprastintas TVS langas – kairysis meniu su moduliais, paieškos laukas viršuje; trečioje eilutėje svetainės blokas su pieštuku ir juodo meniu nuoroda „Turinio auditas“.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Prisijungę matote darbalaukį ir modulių meniu.“ |
+| 5,0 | išnyra kitas elementas | „Paieška viršuje randa modulį pagal pavadinimą.“ |
+| 8,8 | išvada / santrauka paryškėja | „Svetainėje – pieštukai ir „Turinio auditas“.“ |
+| … –15 | ramiai (viršelis) | — |
+
+---
+
+## `viz_906_04` — „Trys rolės“ (14 s, P2, koncepcija)
+
+**Žinutė:** Vadovui – Manager, visiems kitiems – Redakcija.
+
+**Šablonas:** dokumentu_sarasas
+**Etiketės:** title: „Trys rolės“ · role_1: „Cleverphant → mes“ · role_2: „Manager → vartotojai ir nustatymai“ · role_3: „Redakcija → turinys“ · summary: „Vadovui – Manager, visiems kitiems – Redakcija“
+
+**Ekrane:** Šablonas `dokumentu_sarasas`: trys eilutės „rolė → ką gali“, rolės vardas paryškintas; apačioje santraukos taisyklė. Be ✓ / ✗ ženklų – rolės nėra geros ar blogos.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Rolės trys. „Cleverphant“ turime tik mes.“ |
+| 4,6 | išnyra kitas elementas | „„Manager“ tvarko dar vartotojus ir nustatymus.“ |
+| 8,4 | išvada / santrauka paryškėja | „Vadovui – Manager, visiems kitiems – Redakcija.“ |
+| … –14 | ramiai (viršelis) | — |
+
+---
+
+## `viz_906_06` — „Kai žmogus išeina“ (13 s, P2, koncepcija)
+
+**Žinutė:** Išjungti, ne ištrinti; patikrinti, kas liko Manager.
+
+**Šablonas:** taisyklingai_netaisyklingai
+**Etiketės:** title: „Kai žmogus išeina“ · do_title: „Išjungti“ · do_1: „„Ar šis vartotojas įjungtas?“ – No“ · do_2: „Įrašai ir istorija lieka“ · do_3: „Patikrinate, kas liko Manager“ · dont_title: „Ištrinti“ · dont_1: „Istorija dingsta“ · dont_2: „Svetainė be administratoriaus“
+
+**Ekrane:** Šablonas `taisyklingai_netaisyklingai`: kairėje žalia kortelė „Išjungti“ su jungikliu ties „No“ ir išlikusia įrašų istorija, dešinėje raudona „Ištrinti“ su tuščia istorija ir užrakinta svetaine.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Išėjusio darbuotojo paskyrą išjungiate, ne ištrinate.“ |
+| 5,5 | išnyra kitas elementas | „Įrašai ir istorija lieka.“ |
+| 7,6 | išvada / santrauka paryškėja | „Patikrinate, ar liko bent vienas „Manager“.“ |
+| … –13 | ramiai (viršelis) | — |
 
 ---
 

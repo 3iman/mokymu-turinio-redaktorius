@@ -4,7 +4,7 @@
 **Kalba:** lt — ekrano užrašai ir TVS komponentai lieka originalo kalba (§7.3)
 **Balsas:** ElevenLabs, „Darius Cleverphant“ — modelis ir nustatymai pagal `VIDEO_GAMYBA.md` §7
 **Balso seed:** 2051860828 – įrašomas automatiškai; pakeitus tekstą balsas generuojamas iš naujo
-**Trukmė:** 62 sek. (5 epizodai)
+**Trukmė:** 76 sek. (6 epizodai)
 **Šaltinis:** `clv-mokymu-platformos-redisign-html/turinys/adaptuota/kursai/*.json` › `explaineris` — generuoja `scripts/epizodai-i-scenarijus.py`; ranka neredaguoti.
 **Pamoka platformoje:** `pam_708` · senoji WP pamoka `modulio-partneriai-ir-draugai-valdymas`
 **Išvestis platformai:** kiekvienas kadras — atskiras klipas `{epizodo id}.mp4` + `.vtt` (subtitrai iš balso); YouTube rinkiniui — su intro / outro
@@ -13,17 +13,37 @@
 
 | Kadras | Trukmė | Failas | Balsas |
 |---|---|---|---|
-| 1 Logotipai – titulinio puslapio apačioje | 12 sek. | 02-partneriai-tituliniame | Slenkate titulinį puslapį iki apačios. Ten ir atsiranda partnerių bei draugų logotipai. Jie išdėstomi viena eilute. |
-| 2 Logotipo reikalavimai | 13 sek. | 03-logotipo-reikalavimai | Logotipą talpinate be fono. Apkerpate jį tiek, kad neliktų tuščios erdvės. Su fonu logotipas atrodo per mažas. |
-| 3 Įrašote partnerio nuorodą | 17 sek. | 04-partnerio-nuoroda | Laukelyje „Url“ įrašote pilną nuorodą. Eilutėje „Target“ įrašote „_blank“. Nuoroda atsidarys naujame lange. |
-| 4 Išjungiate partnerio logotipą | 9 sek. | 05-logotipu-isjungimas | Stulpelyje „Enabled“ išjungiate jungiklį. Žalias „Yes“ virsta rožiniu „No“. |
-| 5 Išjungus visus – sekcija dingsta | 11 sek. | 05-sekcija-dingsta | Perkraunate titulinį puslapį. Išjungus visus įrašus dingsta visa sekcija. Lankytojas jos nebemato. |
+| 1 Kam tai | 13 sek. | 00-kam-tai | Partnerių logotipai – titulinio apačioje. TVS modulis vadinasi „Klientai“. „Tab“, „Enter“; skaitytuvas skaito pavadinimą. |
+| 2 Logotipai – titulinio puslapio apačioje | 13 sek. | 02-partneriai-tituliniame | Slenkate titulinį puslapį iki apačios. Ten ir atsiranda partnerių bei draugų logotipai. Jie išdėstomi viena eilute. |
+| 3 Logotipo reikalavimai | 13 sek. | 03-logotipo-reikalavimai | Logotipą talpinate be fono. Apkerpate jį tiek, kad neliktų tuščios erdvės. Su fonu logotipas atrodo per mažas. |
+| 4 Įrašote partnerio nuorodą | 17 sek. | 04-partnerio-nuoroda | Laukelyje „Url“ įrašote pilną nuorodą. Eilutėje „Target“ įrašote „_blank“. Nuoroda atsidarys naujame lange. |
+| 5 Išjungiate partnerio logotipą | 9 sek. | 05-logotipu-isjungimas | Stulpelyje „Enabled“ išjungiate jungiklį. Žalias „Yes“ virsta rožiniu „No“. |
+| 6 Išjungus visus – sekcija dingsta | 11 sek. | 05-sekcija-dingsta | Perkraunate titulinį puslapį. Išjungus visus įrašus dingsta visa sekcija. Lankytojas jos nebemato. |
 
 ---
 
 ## Kadrai
 
-### KADRAS 1: Logotipai – titulinio puslapio apačioje (12 sek.) — epizodas
+### KADRAS 1: Kam tai (13 sek.) — koncepcija
+**Failas:** `00-kam-tai.png`
+**Šablonas:** `perziura` · laukai: title, item_1, item_2, item_3, item_4, summary
+**Ekrane:** Šablonas `perziura`: titulinio apačia su logotipų juosta, rodyklė į TVS meniu punktą „Klientai“. Pabaigoje prieinamumo takelis: fokusas šoka per logotipus, skaitytuvo burbulas su pavadinimu (3–5 s).
+**Ekrano užrašai (tiksliai):** „Klientai“, „Tab“, „Enter“
+**TVS UI komponentai:** —
+**Demo duomenys:** mokykla: Demo mokykla
+**Tarimo kandidatai:** Tab, Enter (tikrinti `kircio-patikra.js`)
+**Nuorodos (senas įrašas):** —
+**Komentaras:** epizodas `viz_708_00` · dalis `dal_708_00` „Kam tai“ · prioritetas 2 · pagrindas: dal_708_00 paaiškinimas; viz_708_00 laukai
+
+**Laiko žymos:**
+
+| Laikas | Kas | Tekstas arba garsas |
+|---|---|---|
+| 1.2 | balsas | Partnerių logotipai – titulinio apačioje. |
+| 4.6 | balsas | TVS modulis vadinasi „Klientai“. |
+| 7.7 | balsas | „Tab“, „Enter“; skaitytuvas skaito pavadinimą. |
+
+### KADRAS 2: Logotipai – titulinio puslapio apačioje (13 sek.) — epizodas
 **Failas:** `02-partneriai-tituliniame.png`
 **Ekrane:** Svetainės titulinis puslapis slenkamas žemyn; pasiekus apačią išryškėja sekcija „Partneriai ir draugai“, kurioje logotipai išdėstyti viena eilute.
 **Ekrano užrašai (tiksliai):** „Partneriai ir draugai“, „Tvarkaraščiai“
@@ -41,7 +61,7 @@
 | 4.6 | balsas | Ten ir atsiranda partnerių bei draugų logotipai. |
 | 8.6 | balsas | Jie išdėstomi viena eilute. |
 
-### KADRAS 2: Logotipo reikalavimai (13 sek.) — koncepcija
+### KADRAS 3: Logotipo reikalavimai (13 sek.) — koncepcija
 **Failas:** `03-logotipo-reikalavimai.png`
 **Šablonas:** `taisyklingai_netaisyklingai` · laukai: title, do_title, do_1, do_2, do_3, do_4, dont_title, dont_1, dont_2
 **Ekrane:** Šablonas `taisyklingai_netaisyklingai`: dešinėje žalioje kortelėje logotipai be fono, apkirpti iki pat kraštų, su matmenų užrašu; kairėje raudonoje – tas pats logotipas baltame stačiakampyje ir su plačia tuščia erdve aplink, todėl atrodo mažesnis. Kortelės iškyla viena po kitos.
@@ -60,7 +80,7 @@
 | 3.9 | balsas | Apkerpate jį tiek, kad neliktų tuščios erdvės. |
 | 7.8 | balsas | Su fonu logotipas atrodo per mažas. |
 
-### KADRAS 3: Įrašote partnerio nuorodą (17 sek.) — epizodas
+### KADRAS 4: Įrašote partnerio nuorodą (17 sek.) — epizodas
 **Failas:** `04-partnerio-nuoroda.png`
 **Ekrane:** Partnerio įrašo kortelė; kamera priartėja prie lauko „Url“, į kurį įvedama pilna nuoroda. Žemiau esančioje eilutėje „Target“ įrašoma „_blank“, tada spaudžiamas žalias „Išsaugoti ir išeiti“.
 **Ekrano užrašai (tiksliai):** „Url“, „Target“, „_blank“, „Išsaugoti ir išeiti“
@@ -82,7 +102,7 @@
 | 11.9 | garsas | spustelejimas |
 | 12.4 | garsas | patvirtinimas |
 
-### KADRAS 4: Išjungiate partnerio logotipą (9 sek.) — epizodas
+### KADRAS 5: Išjungiate partnerio logotipą (9 sek.) — epizodas
 **Failas:** `05-logotipu-isjungimas.png`
 **Ekrane:** Partnerių sąrašas; kamera priartėja prie stulpelio „Enabled“. Kursorius perjungia pirmą jungiklį iš žalio „Yes“ į rožinį „No“, paskui taip pat ir likusius.
 **Ekrano užrašai (tiksliai):** „Enabled“, „Yes“, „No“
@@ -104,7 +124,7 @@
 | 3.6 | garsas | spustelejimas |
 | 4.4 | balsas | Žalias „Yes“ virsta rožiniu „No“. |
 
-### KADRAS 5: Išjungus visus – sekcija dingsta (11 sek.) — epizodas
+### KADRAS 6: Išjungus visus – sekcija dingsta (11 sek.) — epizodas
 **Failas:** `05-sekcija-dingsta.png`
 **Ekrane:** Dvi to paties svetainės puslapio būsenos: pirmiausia apačioje matoma sekcija „Partneriai ir draugai“ su logotipais, po perkrovimo jos vietoje lieka tik „Tvarkaraščiai“ ir poraštė. Perėjimas – trumpas persiliejimas.
 **Ekrano užrašai (tiksliai):** „Partneriai ir draugai“, „Tvarkaraščiai“

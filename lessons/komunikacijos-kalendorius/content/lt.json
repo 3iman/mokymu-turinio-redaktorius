@@ -1,0 +1,51 @@
+{
+  "lang": "lt",
+  "00_metai_ratu": {
+    "title": "Mokyklos metai ratu",
+    "item_1": "Pavasaris → priėmimas",
+    "item_2": "Rugsėjo 1-oji",
+    "item_3": "Gegužė–birželis → egzaminai",
+    "item_4": "Vasara → darbo laikas",
+    "summary": "Planuojate kartą, tik atnaujinate",
+    "item_1_a": "Pavasaris",
+    "item_1_b": "priėmimas",
+    "item_3_a": "Gegužė–birželis",
+    "item_3_b": "egzaminai",
+    "item_4_a": "Vasara",
+    "item_4_b": "darbo laikas"
+  },
+  "01_keturi_taskai": {
+    "title": "Keturi taškai ir jų datos",
+    "step_1": "Priėmimas → registracijos atidarymo dieną",
+    "step_2": "Rugsėjo 1-oji → paskutinę rugpjūčio savaitę",
+    "step_3": "Egzaminai → prieš dvi savaites",
+    "step_4": "Vasara → paskutinę mokslo metų savaitę",
+    "summary": "Pridedate savus: gimtadienį, koncertą",
+    "step_1_a": "Priėmimas",
+    "step_1_b": "registracijos atidarymo dieną",
+    "step_2_a": "Rugsėjo 1-oji",
+    "step_2_b": "paskutinę rugpjūčio savaitę",
+    "step_3_a": "Egzaminai",
+    "step_3_b": "prieš dvi savaites",
+    "step_4_a": "Vasara",
+    "step_4_b": "paskutinę mokslo metų savaitę"
+  },
+  "02_pries_ir_po": {
+    "title": "Dvi žinutės vienam įvykiui",
+    "item_1": "Prieš → data, vieta, iki kada",
+    "item_2": "Po → nuotraukos, du sakiniai, padėka",
+    "item_3": "Po – tą pačią dieną",
+    "summary": "Viena neatstoja kitos",
+    "item_1_a": "Prieš",
+    "item_1_b": "data, vieta, iki kada",
+    "item_2_a": "Po",
+    "item_2_b": "nuotraukos, du sakiniai, padėka"
+  },
+  "03_kalendoriaus_lentele": {
+    "title": "Kalendoriaus lentelė",
+    "item_1": "Data · Įvykis",
+    "item_2": "Žinutė prieš · Žinutė po",
+    "item_3": "Kas rašo",
+    "summary": "„Google Sheets“ failas, kurį mato visi"
+  }
+}

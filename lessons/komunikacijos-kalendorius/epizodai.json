@@ -1,0 +1,88 @@
+{
+ "pamokos_slug": "komunikacijos-kalendorius",
+ "pamoka_id": "pam_901",
+ "kadrai": [
+  {
+   "kadras": 1,
+   "epizodas": "viz_901_00",
+   "rusis": "koncepcija",
+   "sablonas": "perziura",
+   "dalis": "dal_901_00",
+   "pamoka": "pam_901",
+   "failas": "00-metai-ratu",
+   "trukme_s": 14,
+   "ekrano_tekstai": [
+    "Rugsėjo 1-oji"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 2,
+   "epizodas": "viz_901_01",
+   "rusis": "koncepcija",
+   "sablonas": "tvarka",
+   "dalis": "dal_901_01",
+   "pamoka": "pam_901",
+   "failas": "01-keturi-taskai",
+   "trukme_s": 16,
+   "ekrano_tekstai": [
+    "Priėmimas",
+    "Egzaminai"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 3,
+   "epizodas": "viz_901_02",
+   "rusis": "koncepcija",
+   "sablonas": "dokumentu_sarasas",
+   "dalis": "dal_901_02",
+   "pamoka": "pam_901",
+   "failas": "02-pries-ir-po",
+   "trukme_s": 12,
+   "ekrano_tekstai": [
+    "Prieš",
+    "Po"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  },
+  {
+   "kadras": 4,
+   "epizodas": "viz_901_03",
+   "rusis": "koncepcija",
+   "sablonas": "dokumentu_sarasas",
+   "dalis": "dal_901_03",
+   "pamoka": "pam_901",
+   "failas": "03-kalendoriaus-lentele",
+   "trukme_s": 15,
+   "ekrano_tekstai": [
+    "Data",
+    "Įvykis",
+    "Kas rašo"
+   ],
+   "tvs_ui": [],
+   "tarimo_kandidatai": [
+    "Google Sheets"
+   ],
+   "demo_duomenys": {
+    "mokykla": "Demo mokykla"
+   },
+   "naudoja_ir": []
+  }
+ ]
+}

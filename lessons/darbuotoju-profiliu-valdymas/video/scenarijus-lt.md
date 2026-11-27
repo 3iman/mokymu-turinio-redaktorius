@@ -4,7 +4,7 @@
 **Kalba:** lt — ekrano užrašai ir TVS komponentai lieka originalo kalba (§7.3)
 **Balsas:** ElevenLabs, „Darius Cleverphant“ — modelis ir nustatymai pagal `VIDEO_GAMYBA.md` §7
 **Balso seed:** 3558490108 – įrašomas automatiškai; pakeitus tekstą balsas generuojamas iš naujo
-**Trukmė:** 67 sek. (5 epizodai)
+**Trukmė:** 84 sek. (6 epizodai)
 **Šaltinis:** `clv-mokymu-platformos-redisign-html/turinys/adaptuota/kursai/*.json` › `explaineris` — generuoja `scripts/epizodai-i-scenarijus.py`; ranka neredaguoti.
 **Pamoka platformoje:** `pam_706` · senoji WP pamoka `darbuotoju-profiliu-valdymas`
 **Išvestis platformai:** kiekvienas kadras — atskiras klipas `{epizodo id}.mp4` + `.vtt` (subtitrai iš balso); YouTube rinkiniui — su intro / outro
@@ -13,17 +13,38 @@
 
 | Kadras | Trukmė | Failas | Balsas |
 |---|---|---|---|
-| 1 Darbo laiko lentelė | 14 sek. | 02-darbo-laiko-lentele | Laiką rašote su tašku, o tarp laikų – brūkšnys be tarpų. Pertrauka turi savo stulpelį. Nedirbamų dienų eilutes paliekate tuščias. |
-| 2 Peržiūrite darbuotojų sąrašą | 13 sek. | 04-darbuotoju-sarasas | Meniu pasirenkate „Administracija“. Kiekvienas profilis – su nuotrauka ir pareigomis. Žemiau – dokumentai ir kontaktai. |
-| 3 Randate profilio ID | 12 sek. | 06-profilio-id | Sąraše spaudžiate „Redaguoti“. Naršyklės adreso juostoje matote skaičių. Tai ir yra profilio ID. |
-| 4 Profilio viršaus laukai | 13 sek. | 08-profilio-virsus | Prie darbuotojo spaudžiate „Redaguoti“. Viršuje pildote vardą, pavardę ir pareigas. Žemiau – aprašymas, darbo laikas ir kategorija. |
-| 5 Profilio apačios laukai | 15 sek. | 08-profilio-apacia | Apačioje suvedate kontaktus. Įkeliate nuotrauką, CV ir pareigybės aprašą. Trims papildomiems dokumentams – savi laukai ir pavadinimai. |
+| 1 Kam tai | 17 sek. | 00-kam-tai | Vienas profilis – daug vietų svetainėje. Sąrašai, puslapiai, atsakingi asmenys. Vadovų nuotraukas skelbti privalu. „Tab“, „Enter“; skaitytuvas skaito vardą ir pareigas. |
+| 2 Darbo laiko lentelė | 14 sek. | 02-darbo-laiko-lentele | Laiką rašote su tašku, o tarp laikų – brūkšnys be tarpų. Pertrauka turi savo stulpelį. Nedirbamų dienų eilutes paliekate tuščias. |
+| 3 Peržiūrite darbuotojų sąrašą | 13 sek. | 04-darbuotoju-sarasas | Meniu pasirenkate „Administracija“. Kiekvienas profilis – su nuotrauka ir pareigomis. Žemiau – dokumentai ir kontaktai. |
+| 4 Randate profilio ID | 12 sek. | 06-profilio-id | Sąraše spaudžiate „Redaguoti“. Naršyklės adreso juostoje matote skaičių. Tai ir yra profilio ID. |
+| 5 Profilio viršaus laukai | 13 sek. | 08-profilio-virsus | Prie darbuotojo spaudžiate „Redaguoti“. Viršuje pildote vardą, pavardę ir pareigas. Žemiau – aprašymas, darbo laikas ir kategorija. |
+| 6 Profilio apačios laukai | 15 sek. | 08-profilio-apacia | Apačioje suvedate kontaktus. Įkeliate nuotrauką, CV ir pareigybės aprašą. Trims papildomiems dokumentams – savi laukai ir pavadinimai. |
 
 ---
 
 ## Kadrai
 
-### KADRAS 1: Darbo laiko lentelė (14 sek.) — koncepcija
+### KADRAS 1: Kam tai (17 sek.) — koncepcija
+**Failas:** `00-kam-tai.png`
+**Šablonas:** `perziura` · laukai: title, item_1, item_2, item_3, item_4, item_5, summary
+**Ekrane:** Šablonas `perziura`: vienas profilio portretas, iš jo rodyklės į keturias svetainės vietas – sąrašus ir puslapio bloką „Atsakingas asmuo“. Pabaigoje prieinamumo takelis: fokusas ant kortelės, skaitytuvo burbulas su vardu ir pareigomis (3–5 s).
+**Ekrano užrašai (tiksliai):** „Tab“, „Enter“
+**TVS UI komponentai:** —
+**Demo duomenys:** mokykla: Demo mokykla, darbuotojas: Jonas Basanavičius
+**Tarimo kandidatai:** Tab, Enter (tikrinti `kircio-patikra.js`)
+**Nuorodos (senas įrašas):** —
+**Komentaras:** epizodas `viz_706_00` · dalis `dal_706_00` „Kam tai“ · prioritetas 2 · pagrindas: dal_706_00 paaiškinimas; viz_706_00 laukai
+
+**Laiko žymos:**
+
+| Laikas | Kas | Tekstas arba garsas |
+|---|---|---|
+| 1.2 | balsas | Vienas profilis – daug vietų svetainėje. |
+| 4.5 | balsas | Sąrašai, puslapiai, atsakingi asmenys. |
+| 7.9 | balsas | Vadovų nuotraukas skelbti privalu. |
+| 10.9 | balsas | „Tab“, „Enter“; skaitytuvas skaito vardą ir pareigas. |
+
+### KADRAS 2: Darbo laiko lentelė (14 sek.) — koncepcija
 **Failas:** `02-darbo-laiko-lentele.png`
 **Šablonas:** `taisyklingai_netaisyklingai` · laukai: title, do_title, do_1, do_2, do_3, do_4, dont_title
 **Ekrane:** Šablonas `taisyklingai_netaisyklingai`: dvi darbo laiko lentelės greta. Dešinėje žalioje – laikas su tašku, brūkšnys be tarpų, pertrauka atskirame stulpelyje, nedirbamų dienų eilutės tuščios; kairėje raudonoje tie patys langeliai suformatuoti kitaip. Skirtumai sumirksi po vieną.
@@ -42,7 +63,7 @@
 | 6.2 | balsas | Pertrauka turi savo stulpelį. |
 | 8.7 | balsas | Nedirbamų dienų eilutes paliekate tuščias. |
 
-### KADRAS 2: Peržiūrite darbuotojų sąrašą (13 sek.) — epizodas
+### KADRAS 3: Peržiūrite darbuotojų sąrašą (13 sek.) — epizodas
 **Failas:** `04-darbuotoju-sarasas.png`
 **Ekrane:** Svetainės meniu „Struktūra ir kontaktai“ pasirenkama „Administracija“; puslapis lėtai slenka per profilių korteles — nuotrauka, pareigos, dokumentai, darbo laiko lentelė, kontaktai.
 **Ekrano užrašai (tiksliai):** „Administracija“, „CV“, „Pareigybės aprašas“, „Darbo laikas“, „Kontaktai“
@@ -61,7 +82,7 @@
 | 4.4 | balsas | Kiekvienas profilis – su nuotrauka ir pareigomis. |
 | 8.5 | balsas | Žemiau – dokumentai ir kontaktai. |
 
-### KADRAS 3: Randate profilio ID (12 sek.) — epizodas
+### KADRAS 4: Randate profilio ID (12 sek.) — epizodas
 **Failas:** `06-profilio-id.png`
 **Ekrane:** Darbuotojų sąrašas; kursorius spaudžia „Redaguoti“, atsiveria forma, kamera priartėja prie naršyklės adreso juostos, kurioje sumirksi paskutinis skaičius.
 **Ekrano užrašai (tiksliai):** „Darbuotojai“, „Redaguoti“, „/edit/6“
@@ -80,7 +101,7 @@
 | 4.5 | balsas | Naršyklės adreso juostoje matote skaičių. |
 | 7.9 | balsas | Tai ir yra profilio ID. |
 
-### KADRAS 4: Profilio viršaus laukai (13 sek.) — epizodas
+### KADRAS 5: Profilio viršaus laukai (13 sek.) — epizodas
 **Failas:** `08-profilio-virsus.png`
 **Ekrane:** Darbuotojų sąraše spaudžiama „Redaguoti“; atsiveria forma ir kamera lėtai leidžiasi per laukus — kiekvieno pavadinimas sumirksi: vardas, pavardė, pareigos, aprašymas, darbo laikas, kategorija.
 **Ekrano užrašai (tiksliai):** „First Name“, „Last Name“, „Position“, „Description“, „Hours“, „Category“
@@ -99,7 +120,7 @@
 | 4.7 | balsas | Viršuje pildote vardą, pavardę ir pareigas. |
 | 8.3 | balsas | Žemiau – aprašymas, darbo laikas ir kategorija. |
 
-### KADRAS 5: Profilio apačios laukai (15 sek.) — epizodas
+### KADRAS 6: Profilio apačios laukai (15 sek.) — epizodas
 **Failas:** `08-profilio-apacia.png`
 **Ekrane:** Ta pati forma, slenkama toliau: kontaktų laukai, nuotraukos ir CV įkėlimas, pareigybės aprašas ir trys dokumentų laukai su pavadinimais; apačioje sumirksi „Enabled“.
 **Ekrano užrašai (tiksliai):** „Phone“, „Email“, „Image“, „Cv“, „Pareigos“, „Dokumentas #1“, „Enabled“

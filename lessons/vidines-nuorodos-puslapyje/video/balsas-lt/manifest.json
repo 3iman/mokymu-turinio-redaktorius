@@ -1,83 +1,203 @@
 {
-  "hash": "4b8a0de3d82d0cea0eda6af4f800424c30b9a4f7f9c1a2cbe8e5f20d3c491d86",
+  "hash": "4d4b2cab91a49cb9174eba82d0240ad3f17266096e7c9911cd0a9f0b065d5fff",
   "voice_id": "eqJHjeWMPGJFD6VBf1J2",
   "model": "eleven_v3_dpo_20260217",
   "speed": 0.9,
   "lang": "lt",
   "seed": 1872037141,
-  "characters": 363,
+  "characters": 883,
   "start_in_frame": 0.6,
-  "created": "2026-11-03T02:08:46.801Z",
+  "created": "2026-11-27T16:38:45.455Z",
   "items": [
     {
       "kadras": 1,
       "cue": 1,
-      "title": "Įdedate inkarą prie skilties antraštės",
-      "text": "Žymeklį statote skilties antraštės pradžioje.",
+      "title": "Trečias kelias ilgam puslapiui",
+      "text": "Ilgas puslapis su penkiomis skiltimis.",
       "file": "k01-1.wav",
-      "duration": 3.39,
+      "duration": 2.87,
       "fits": true,
-      "reikia_sek": 15
+      "reikia_sek": 13
     },
     {
       "kadras": 1,
       "cue": 2,
-      "title": "Įdedate inkarą prie skilties antraštės",
-      "text": "/ˈjuostoːjɛ/ spaudžiate „Anchor“ – vėliavėlę.",
+      "title": "Trečias kelias ilgam puslapiui",
+      "text": "Suskleidimai slepia, polapiai išbarsto.",
       "file": "k01-2.wav",
-      "duration": 2.97,
-      "fits": true,
-      "reikia_sek": 15
+      "duration": 3.37,
+      "fits": false,
+      "reikia_sek": 14
     },
     {
       "kadras": 1,
       "cue": 3,
-      "title": "Įdedate inkarą prie skilties antraštės",
-      "text": "/lauˈkʲɛ/ „Anchor Name“ įrašote „dokumentai“ ir spaudžiate „okei“.",
+      "title": "Trečias kelias ilgam puslapiui",
+      "text": "Trečias kelias: turinys viršuje, nuorodos į skiltis.",
       "file": "k01-3.wav",
-      "duration": 4.81,
+      "duration": 4.25,
       "fits": true,
-      "reikia_sek": 15
+      "reikia_sek": 13
     },
     {
       "kadras": 2,
       "cue": 1,
-      "title": "Susiejate turinio eilutę su inkaru",
-      "text": "Pažymite eilutę „Dokumentai“ ir spaudžiate „Link“.",
+      "title": "Kaip atrodo svetainėje",
+      "text": "Lankytojui – sąrašas puslapio pradžioje.",
       "file": "k02-1.wav",
-      "duration": 3.69,
+      "duration": 2.93,
       "fits": true,
-      "reikia_sek": 19
+      "reikia_sek": 13
     },
     {
       "kadras": 2,
       "cue": 2,
+      "title": "Kaip atrodo svetainėje",
+      "text": "Paspaudus puslapis nuslenka iki antraštės.",
+      "file": "k02-2.wav",
+      "duration": 3.33,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 2,
+      "cue": 3,
+      "title": "Kaip atrodo svetainėje",
+      "text": "Adrese atsiranda „#dokumentai“ – galite siųsti.",
+      "file": "k02-3.wav",
+      "duration": 4.29,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Įdedate inkarą prie skilties antraštės",
+      "text": "Žymeklį statote skilties antraštės pradžioje.",
+      "file": "k03-1.wav",
+      "duration": 3.17,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Įdedate inkarą prie skilties antraštės",
+      "text": "/ˈjuostoːjɛ/ spaudžiate „Anchor“ – vėliavėlę.",
+      "file": "k03-2.wav",
+      "duration": 3.05,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Įdedate inkarą prie skilties antraštės",
+      "text": "/lauˈkʲɛ/ „Anchor Name“ įrašote „dokumentai“ ir spaudžiate „okei“.",
+      "file": "k03-3.wav",
+      "duration": 4.73,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Susiejate turinio eilutę su inkaru",
+      "text": "Pažymite eilutę „Dokumentai“ ir spaudžiate „Link“.",
+      "file": "k04-1.wav",
+      "duration": 3.73,
+      "fits": true,
+      "reikia_sek": 19
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
       "title": "Susiejate turinio eilutę su inkaru",
       "text": "„Link Type“ keičiate į „Link to anchor in the text“.",
-      "file": "k02-2.wav",
+      "file": "k04-2.wav",
       "duration": 3.77,
       "fits": true,
       "reikia_sek": 19
     },
     {
-      "kadras": 2,
+      "kadras": 4,
       "cue": 3,
       "title": "Susiejate turinio eilutę su inkaru",
       "text": "Pasirenkate „dokumentai“ ir spaudžiate „okei“.",
-      "file": "k02-3.wav",
+      "file": "k04-3.wav",
       "duration": 3.25,
       "fits": true,
       "reikia_sek": 19
     },
     {
-      "kadras": 2,
+      "kadras": 4,
       "cue": 4,
       "title": "Susiejate turinio eilutę su inkaru",
       "text": "Eilutė nušoka prie skilties.",
-      "file": "k02-4.wav",
-      "duration": 2.29,
+      "file": "k04-4.wav",
+      "duration": 2.37,
       "fits": true,
       "reikia_sek": 19
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Vardų taisyklės",
+      "text": "Vardas gyvena adrese: mažosios, be tarpų.",
+      "file": "k05-1.wav",
+      "duration": 3.65,
+      "fits": false,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Vardų taisyklės",
+      "text": "Prasmingas – po metų matysis, kur veda.",
+      "file": "k05-2.wav",
+      "duration": 2.93,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Vardų taisyklės",
+      "text": "Antraštę keičiate, inkaras lieka.",
+      "file": "k05-3.wav",
+      "duration": 2.623,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Kada tai per sudėtinga",
+      "text": "Kiekviena skiltis – du veiksmai.",
+      "file": "k06-1.wav",
+      "duration": 2.317,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Kada tai per sudėtinga",
+      "text": "Iki šešių pastovių skilčių inkarai atsiperka.",
+      "file": "k06-2.wav",
+      "duration": 3.25,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Kada tai per sudėtinga",
+      "text": "Daugiau ar kinta – polapiai; arba parašote mums.",
+      "file": "k06-3.wav",
+      "duration": 4.143,
+      "fits": true,
+      "reikia_sek": 13
     }
   ]
 }

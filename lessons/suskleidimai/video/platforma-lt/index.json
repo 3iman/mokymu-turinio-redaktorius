@@ -1,12 +1,104 @@
 {
   "pamoka": "suskleidimai",
   "lang": "lt",
-  "sugeneruota": "2026-11-03T02:43:32.097Z",
-  "balso_stiprinimas_db": 5.2,
+  "sugeneruota": "2026-11-27T16:25:44.220Z",
+  "balso_stiprinimas_db": 5.6,
   "muzika": false,
   "klipai": [
     {
       "kadras": 1,
+      "epizodas": "viz_905_00",
+      "failas": "00-kam-suskleidimai",
+      "pavadinimas": "Kam suskleidimai",
+      "trukme_s": 13,
+      "mp4": "viz_905_00.mp4",
+      "vtt": "viz_905_00.vtt",
+      "poster": "viz_905_00.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.63,
+          "tekstas": "Keli ilgi blokai – tekstas neperžvelgiamas."
+        },
+        {
+          "nuo_s": 4.8,
+          "iki_s": 7.33,
+          "tekstas": "Suskleidimai rodo tik antraštes."
+        },
+        {
+          "nuo_s": 7.5,
+          "iki_s": 10.43,
+          "tekstas": "Lankytojas atskleidžia tą, kurios ieško."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 2,
+      "epizodas": "viz_905_01",
+      "failas": "01-suskleidimas-svetaineje",
+      "pavadinimas": "Suskleidimas svetainėje",
+      "trukme_s": 16,
+      "mp4": "viz_905_01.mp4",
+      "vtt": "viz_905_01.vtt",
+      "poster": "viz_905_01.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.29,
+          "tekstas": "Svetainėje tai tamsi juosta su pliusu."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 6.87,
+          "tekstas": "Paspaudus atsiskleidžia turinys."
+        },
+        {
+          "nuo_s": 7.2,
+          "iki_s": 10.56,
+          "tekstas": "Visi užverti, atverti galima kelis."
+        },
+        {
+          "nuo_s": 10.8,
+          "iki_s": 14.3,
+          "tekstas": "„Tab“, „Enter“ – skaitytuvas praneša būseną."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 3,
+      "epizodas": "viz_905_02",
+      "failas": "02-kur-rasti",
+      "pavadinimas": "Kur rasti",
+      "trukme_s": 13,
+      "mp4": "viz_905_02.mp4",
+      "vtt": "viz_905_02.vtt",
+      "poster": "viz_905_02.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.25,
+          "tekstas": "Modulis – kairiajame meniu „Suskleidimai“."
+        },
+        {
+          "nuo_s": 4.7,
+          "iki_s": 7.63,
+          "tekstas": "Viena kategorija – vienas blokas puslapyje."
+        },
+        {
+          "nuo_s": 8.2,
+          "iki_s": 11.73,
+          "tekstas": "Įrašai – jo juostos; viršuje filtrai."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 4,
       "epizodas": "ep_905_03_1",
       "failas": "03-kategorija-ir-sintakse",
       "pavadinimas": "Sukuriate kategoriją ir įklijuojate sintaksę",
@@ -17,17 +109,17 @@
       "balsas": [
         {
           "nuo_s": 1.2,
-          "iki_s": 5.87,
+          "iki_s": 5.57,
           "tekstas": "Kategorijų sąraše spaudžiate „Sukurti“ ir įrašote pavadinimą."
         },
         {
           "nuo_s": 6.2,
-          "iki_s": 10.01,
+          "iki_s": 10.1,
           "tekstas": "Stulpelyje „Plugin“ nukopijuojate kategorijos sintaksę."
         },
         {
           "nuo_s": 10.7,
-          "iki_s": 14.99,
+          "iki_s": 14.98,
           "tekstas": "Puslapio turinyje įklijuojate ją po įvadu ir atnaujinate."
         }
       ],
@@ -52,7 +144,7 @@
       "ispejimai": []
     },
     {
-      "kadras": 2,
+      "kadras": 5,
       "epizodas": "ep_905_04_1",
       "failas": "04-irasas",
       "pavadinimas": "Sukuriate suskleidimo įrašą",
@@ -63,22 +155,22 @@
       "balsas": [
         {
           "nuo_s": 1,
-          "iki_s": 4.18,
+          "iki_s": 4.05,
           "tekstas": "Spaudžiate „Sukurti“ ir įrašote pavadinimą."
         },
         {
           "nuo_s": 5,
-          "iki_s": 8.48,
+          "iki_s": 8.37,
           "tekstas": "„Atsakymas“ – tai, kas atsiskleis paspaudus."
         },
         {
           "nuo_s": 8.7,
-          "iki_s": 11.47,
+          "iki_s": 11.27,
           "tekstas": "Pasirenkate kategoriją ir išsaugote."
         },
         {
           "nuo_s": 11.7,
-          "iki_s": 14.39,
+          "iki_s": 14.27,
           "tekstas": "Svetainėje atsiranda nauja juosta."
         }
       ],
@@ -111,7 +203,7 @@
       "ispejimai": []
     },
     {
-      "kadras": 3,
+      "kadras": 6,
       "epizodas": "ep_905_05_1",
       "failas": "05-perrikiavimas",
       "pavadinimas": "Perrikiuojate suskleidimus",
@@ -122,17 +214,17 @@
       "balsas": [
         {
           "nuo_s": 1,
-          "iki_s": 4.37,
+          "iki_s": 4.25,
           "tekstas": "Pasirenkate kategoriją ir spaudžiate „Filtruoti“."
         },
         {
           "nuo_s": 5.1,
-          "iki_s": 8.07,
+          "iki_s": 8.03,
           "tekstas": "Suimate įrašą už rodyklių ir tempiate."
         },
         {
           "nuo_s": 8.5,
-          "iki_s": 12.4,
+          "iki_s": 12.32,
           "tekstas": "Spaudžiate „Perrikiuoti“ – kitaip tvarka neišsisaugo."
         }
       ],
@@ -158,6 +250,93 @@
           "garsas": "patvirtinimas"
         }
       ],
+      "ispejimai": []
+    },
+    {
+      "kadras": 7,
+      "epizodas": "viz_905_06",
+      "failas": "06-kada-ne-suskleidimai",
+      "pavadinimas": "Kada suskleidimai, kada ne",
+      "trukme_s": 14,
+      "mp4": "viz_905_06.mp4",
+      "vtt": "viz_905_06.vtt",
+      "poster": "viz_905_06.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.12,
+          "tekstas": "Kiekvienas pliusas lankytojui – darbas."
+        },
+        {
+          "nuo_s": 4.4,
+          "iki_s": 8.61,
+          "tekstas": "Trumpą DUK rašote su antraštėmis, ne pliusais."
+        },
+        {
+          "nuo_s": 8.8,
+          "iki_s": 11.77,
+          "tekstas": "Viso puslapio į vieną suskleidimą nekraunate."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 8,
+      "epizodas": "viz_905_07",
+      "failas": "07-atvaizdavimo-variantas",
+      "pavadinimas": "Atvaizdavimo variantas",
+      "trukme_s": 15,
+      "mp4": "viz_905_07.mp4",
+      "vtt": "viz_905_07.vtt",
+      "poster": "viz_905_07.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 4.8,
+          "tekstas": "Lauke „View“ renkatės, kaip blokas atrodys."
+        },
+        {
+          "nuo_s": 5,
+          "iki_s": 9.54,
+          "tekstas": "„Default“ – juostos; kitas variantas – pvz. kortelės."
+        },
+        {
+          "nuo_s": 9.7,
+          "iki_s": 12.71,
+          "tekstas": "Variantą paruošiame mes, jūs pasirenkate."
+        }
+      ],
+      "garsai": [],
+      "ispejimai": []
+    },
+    {
+      "kadras": 9,
+      "epizodas": "viz_905_08",
+      "failas": "08-eile-pries-suskleidima",
+      "pavadinimas": "Puslapyje, su nuorodomis, suskleidime ar polapyje?",
+      "trukme_s": 15,
+      "mp4": "viz_905_08.mp4",
+      "vtt": "viz_905_08.vtt",
+      "poster": "viz_905_08.jpg",
+      "balsas": [
+        {
+          "nuo_s": 1.2,
+          "iki_s": 3.91,
+          "tekstas": "Suskleidimas – paskutinė vieta turiniui."
+        },
+        {
+          "nuo_s": 4.5,
+          "iki_s": 8.37,
+          "tekstas": "Pirma trumpinate, tada antraštės ir vidinės nuorodos."
+        },
+        {
+          "nuo_s": 8.8,
+          "iki_s": 13.14,
+          "tekstas": "Savarankiška tema – polapis; detalė – suskleidimas."
+        }
+      ],
+      "garsai": [],
       "ispejimai": []
     }
   ]

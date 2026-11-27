@@ -47,6 +47,78 @@ Kaip „Navigacijų valdyme“: viena žinutė, fokusas, ramus viršelis paskuti
 
 ---
 
+## `viz_909_00` — „Trečias kelias ilgam puslapiui“ (13 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Turinys viršuje → nuorodos nušoka į skiltis; tekstas lieka matomas.
+
+**Šablonas:** tvarka
+**Etiketės:** title: „Trečias kelias ilgam puslapiui“ · item_1: „Suskleidimai → slepia“ · item_2: „Polapiai → išbarsto“ · item_3: „Vidinės nuorodos → viskas vienoje vietoje, vienu paspaudimu“ · summary: „Du mygtukai: „Anchor“ ir „Link““
+
+**Ekrane:** Šablonas `tvarka` (trys eilutės su pora): ilgas puslapis „Priėmimas“ su penkiomis skiltimis; pirmoje eilutėje jos susitraukia į pliusus, antroje išsibarsto į penkis lapus, trečioje – lieka vienas lapas su turinio sąrašu viršuje ir rodyklėmis į skiltis.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Ilgas puslapis su penkiomis skiltimis.“ |
+| 4,3 | išnyra kitas elementas | „Suskleidimai slepia, polapiai išbarsto.“ |
+| 7,6 | išvada / santrauka paryškėja | „Trečias kelias: turinys viršuje, nuorodos į skiltis.“ |
+| … –13 | ramiai (viršelis) | — |
+
+---
+
+## `viz_909_01` — „Kaip atrodo svetainėje“ (13 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Sąrašas viršuje, paspaudus – nuslenka; adrese atsiranda #skiltis.
+
+**Šablonas:** perziura
+**Etiketės:** title: „Vidinės nuorodos svetainėje“ · item_1: „Sąrašas puslapio pradžioje“ · item_2: „Paspaudus nuslenka prie antraštės“ · item_3: „Adresas su „#“ – galima siųsti“ · summary: „Inkaras nematomas, matoma antraštė“
+
+**Ekrane:** Šablonas `perziura`: puslapio viršuje eilutė „Terminai · Dokumentai · Klasės · Klausimai · Kontaktai“; kursorius spaudžia „Dokumentai“, lapas nuslenka iki antraštės, adreso juostoje prisideda „#dokumentai“.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Lankytojui – sąrašas puslapio pradžioje.“ |
+| 4,5 | išnyra kitas elementas | „Paspaudus puslapis nuslenka iki antraštės.“ |
+| 8,0 | išvada / santrauka paryškėja | „Adrese atsiranda „#dokumentai“ – galite siųsti.“ |
+| … –13 | ramiai (viršelis) | — |
+
+---
+
+## `viz_909_04` — „Vardų taisyklės“ (12 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Mažosios, be tarpų, prasmingas: #dokumentai.
+
+**Šablonas:** taisyklingai_netaisyklingai
+**Etiketės:** title: „Inkarų vardai“ · do_title: „Taip“ · do_1: „dokumentai“ · do_2: „terminai“ · do_3: „Lotyniškos mažosios, be tarpų“ · dont_title: „Ne“ · dont_1: „Reikalingi dokumentai“ · dont_2: „skiltis1“ · summary: „Antraštę keičiate – vardas lieka“
+
+**Ekrane:** Šablonas `taisyklingai_netaisyklingai`: kairėje žalia kortelė su „#dokumentai“, „#terminai“; dešinėje raudona su „#Reikalingi dokumentai“ (tarpai perbraukti) ir „#skiltis1“; apačioje santrauka.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Vardas gyvena adrese: mažosios, be tarpų.“ |
+| 4,6 | išnyra kitas elementas | „Prasmingas – po metų matysis, kur veda.“ |
+| 7,8 | išvada / santrauka paryškėja | „Antraštę keičiate, inkaras lieka.“ |
+| … –12 | ramiai (viršelis) | — |
+
+---
+
+## `viz_909_05` — „Kada tai per sudėtinga“ (13 s, P2, koncepcija · 2026-11-27 laukia „gerai“)
+
+**Žinutė:** Iki 6 skilčių – inkarai; daugiau ar kinta – polapiai arba mes.
+
+**Šablonas:** tvarka
+**Etiketės:** title: „Kada per sudėtinga“ · item_1: „Iki 5–6 pastovių skilčių → inkarai“ · item_2: „8+ arba kinta kas mėnesį → polapiai“ · item_3: „Nenorite dėlioti → parašote mums“ · summary: „Kiekviena skiltis – du veiksmai“
+
+**Ekrane:** Šablonas `tvarka`: trys eilutės su pora – lapas su penkiomis skiltimis ir varnele, lapas su dešimčia skilčių virstantis į polapius, laiško ženklas „pagalba@cleverphant.lt“.
+
+| s | Vaizdas | Balsas / garsas |
+|---|---|---|
+| 1,2 | išnyra pirmas elementas (antraštė / pirma eilutė) | „Kiekviena skiltis – du veiksmai.“ |
+| 3,9 | išnyra kitas elementas | „Iki šešių pastovių skilčių inkarai atsiperka.“ |
+| 7,6 | išvada / santrauka paryškėja | „Daugiau ar kinta – polapiai; arba parašote mums.“ |
+| … –13 | ramiai (viršelis) | — |
+
+---
+
 ## Sprendimai
 
 Atvirų klausimų nėra.

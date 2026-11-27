@@ -1,93 +1,283 @@
 {
-  "hash": "6f24c516a6237da2571d717b2392b235968b18ecab3f3fa88105cc5bdbe7e937",
+  "hash": "f4ed4518c6c6e40e8fb3a6eb150cd339d3253e0eac83ab8e96eae3d4cfa31d2e",
   "voice_id": "eqJHjeWMPGJFD6VBf1J2",
   "model": "eleven_v3_dpo_20260217",
   "speed": 0.9,
   "lang": "lt",
   "seed": 1665258845,
-  "characters": 427,
+  "characters": 1279,
   "start_in_frame": 0.6,
-  "created": "2026-11-03T02:10:33.794Z",
+  "created": "2026-11-27T16:26:44.290Z",
   "items": [
     {
       "kadras": 1,
       "cue": 1,
-      "title": "Išjungiate papildinį ir keičiate tvarką",
-      "text": "Zonos /ˈsaːraʃʲɛ/ prie papildinio spaudžiate „Redaguoti“.",
+      "title": "Kas yra papildiniai",
+      "text": "Šone ir tituliniame yra blokų be puslapio.",
       "file": "k01-1.wav",
-      "duration": 3.95,
-      "fits": true,
-      "reikia_sek": 20
+      "duration": 3.39,
+      "fits": false,
+      "reikia_sek": 15
     },
     {
       "kadras": 1,
       "cue": 2,
-      "title": "Išjungiate papildinį ir keičiate tvarką",
-      "text": "Jungiklį „Įjungtas/Išjungtas“ perjungiate į „No“ ir išsaugote.",
+      "title": "Kas yra papildiniai",
+      "text": "Tai papildiniai: zonos ir jungiklis /kʲiɛkvʲiɛˈnaːm/.",
       "file": "k01-2.wav",
-      "duration": 6.57,
-      "fits": false,
-      "reikia_sek": 22
+      "duration": 3.57,
+      "fits": true,
+      "reikia_sek": 14
     },
     {
       "kadras": 1,
       "cue": 3,
-      "title": "Išjungiate papildinį ir keičiate tvarką",
-      "text": "Tvarką keičiate tempdami už rodyklių ir spausdami „/ˈpɛr.rikʲuotʲi/“.",
+      "title": "Kas yra papildiniai",
+      "text": "Vasarą išjungiate, prieš priėmimą įjungiate.",
       "file": "k01-3.wav",
-      "duration": 4.29,
+      "duration": 3.49,
       "fits": true,
-      "reikia_sek": 20
-    },
-    {
-      "kadras": 1,
-      "cue": 4,
-      "title": "Išjungiate papildinį ir keičiate tvarką",
-      "text": "Svetainėje tvarka pasikeitė.",
-      "file": "k01-4.wav",
-      "duration": 2.21,
-      "fits": true,
-      "reikia_sek": 20
+      "reikia_sek": 14
     },
     {
       "kadras": 2,
       "cue": 1,
-      "title": "Nustatote greitąją nuorodą",
-      "text": "Prie „Quick link“ spaudžiate „Redaguoti“.",
+      "title": "Papildiniai svetainėje",
+      "text": "Dešinėje papildiniai eina zonos tvarka.",
       "file": "k02-1.wav",
-      "duration": 2.97,
+      "duration": 3.01,
       "fits": true,
-      "reikia_sek": 17
+      "reikia_sek": 15
     },
     {
       "kadras": 2,
       "cue": 2,
-      "title": "Nustatote greitąją nuorodą",
-      "text": "/lauˈkʲɛ/ „link“ įrašote priėmimo puslapio adresą.",
+      "title": "Papildiniai svetainėje",
+      "text": "Po naujienomis – „Apie mokyklą“.",
       "file": "k02-2.wav",
-      "duration": 3.61,
+      "duration": 2.29,
       "fits": true,
-      "reikia_sek": 17
+      "reikia_sek": 15
     },
     {
       "kadras": 2,
       "cue": 3,
-      "title": "Nustatote greitąją nuorodą",
-      "text": "Prie „Image“ įkeliate paveikslėlį ir išsaugote.",
+      "title": "Papildiniai svetainėje",
+      "text": "Sraute – spalvotas laikmatis.",
       "file": "k02-3.wav",
-      "duration": 3.61,
-      "fits": true,
-      "reikia_sek": 17
+      "duration": 2.357,
+      "fits": false,
+      "reikia_sek": 16
     },
     {
       "kadras": 2,
       "cue": 4,
-      "title": "Nustatote greitąją nuorodą",
-      "text": "Šoninėje /ˈjuostoːjɛ/ atsiranda nuoroda.",
+      "title": "Papildiniai svetainėje",
+      "text": "„Tab“ eina per nuorodas, skaitytuvas skaito pavadinimus.",
       "file": "k02-4.wav",
-      "duration": 2.783,
+      "duration": 4.023,
+      "fits": true,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 3,
+      "cue": 1,
+      "title": "Kur rasti",
+      "text": "Kairiajame meniu „Papildiniai“ matote zonas.",
+      "file": "k03-1.wav",
+      "duration": 3.33,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 3,
+      "cue": 2,
+      "title": "Kur rasti",
+      "text": "Home – titulinis, Default – vidiniai puslapiai.",
+      "file": "k03-2.wav",
+      "duration": 3.823,
+      "fits": false,
+      "reikia_sek": 15
+    },
+    {
+      "kadras": 3,
+      "cue": 3,
+      "title": "Kur rasti",
+      "text": "Prie zonos – „Papildiniai“: sąrašas su jungikliais.",
+      "file": "k03-3.wav",
+      "duration": 3.677,
+      "fits": true,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 4,
+      "cue": 1,
+      "title": "Išjungiate papildinį ir keičiate tvarką",
+      "text": "Zonos /ˈsaːraʃʲɛ/ prie papildinio spaudžiate „Redaguoti“.",
+      "file": "k04-1.wav",
+      "duration": 3.65,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 4,
+      "cue": 2,
+      "title": "Išjungiate papildinį ir keičiate tvarką",
+      "text": "Jungiklį „Įjungtas/Išjungtas“ perjungiate į „No“ ir išsaugote.",
+      "file": "k04-2.wav",
+      "duration": 6.41,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 4,
+      "cue": 3,
+      "title": "Išjungiate papildinį ir keičiate tvarką",
+      "text": "Tvarką keičiate tempdami už rodyklių ir spausdami „/ˈpɛr.rikʲuotʲi/“.",
+      "file": "k04-3.wav",
+      "duration": 4.21,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 4,
+      "cue": 4,
+      "title": "Išjungiate papildinį ir keičiate tvarką",
+      "text": "Svetainėje tvarka pasikeitė.",
+      "file": "k04-4.wav",
+      "duration": 2.05,
+      "fits": true,
+      "reikia_sek": 22
+    },
+    {
+      "kadras": 5,
+      "cue": 1,
+      "title": "Google vertimas ir Facebook langas",
+      "text": "Abu papildiniai turi tik jungiklį.",
+      "file": "k05-1.wav",
+      "duration": 2.45,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 2,
+      "title": "Google vertimas ir Facebook langas",
+      "text": "Vertimas automatinis – prieinamumo neatstoja.",
+      "file": "k05-2.wav",
+      "duration": 3.49,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 5,
+      "cue": 3,
+      "title": "Google vertimas ir Facebook langas",
+      "text": "Facebook nenaudojate – langą išjungiate.",
+      "file": "k05-3.wav",
+      "duration": 2.97,
+      "fits": true,
+      "reikia_sek": 12
+    },
+    {
+      "kadras": 6,
+      "cue": 1,
+      "title": "Nustatote greitąją nuorodą",
+      "text": "Prie „Quick link“ spaudžiate „Redaguoti“.",
+      "file": "k06-1.wav",
+      "duration": 2.77,
       "fits": true,
       "reikia_sek": 17
+    },
+    {
+      "kadras": 6,
+      "cue": 2,
+      "title": "Nustatote greitąją nuorodą",
+      "text": "/lauˈkʲɛ/ „link“ įrašote priėmimo puslapio adresą.",
+      "file": "k06-2.wav",
+      "duration": 3.57,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 6,
+      "cue": 3,
+      "title": "Nustatote greitąją nuorodą",
+      "text": "Prie „Image“ įkeliate paveikslėlį ir išsaugote.",
+      "file": "k06-3.wav",
+      "duration": 3.37,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 6,
+      "cue": 4,
+      "title": "Nustatote greitąją nuorodą",
+      "text": "Šoninėje /ˈjuostoːjɛ/ atsiranda nuoroda.",
+      "file": "k06-4.wav",
+      "duration": 2.65,
+      "fits": true,
+      "reikia_sek": 17
+    },
+    {
+      "kadras": 7,
+      "cue": 1,
+      "title": "Spalvotas laikmatis naujienų sraute",
+      "text": "Šoninis laikmatis kuklus, sraute – spalvotas.",
+      "file": "k07-1.wav",
+      "duration": 3.77,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": 2,
+      "title": "Spalvotas laikmatis naujienų sraute",
+      "text": "/ˈpʲirma/ naujienos vieta: fonas, ikonėlė, mygtukas.",
+      "file": "k07-2.wav",
+      "duration": 4.17,
+      "fits": false,
+      "reikia_sek": 14
+    },
+    {
+      "kadras": 7,
+      "cue": 3,
+      "title": "Spalvotas laikmatis naujienų sraute",
+      "text": "Spalvas ir ikonėlę parenkame mes.",
+      "file": "k07-3.wav",
+      "duration": 2.73,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 1,
+      "title": "Blokas „Apie mokyklą“",
+      "text": "Nuotrauka, keli sakiniai, keturi skaičiai.",
+      "file": "k08-1.wav",
+      "duration": 3.13,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 2,
+      "title": "Blokas „Apie mokyklą“",
+      "text": "Skaičiai sensta – atnaujinate kiekvieną rugsėjį.",
+      "file": "k08-2.wav",
+      "duration": 3.477,
+      "fits": true,
+      "reikia_sek": 13
+    },
+    {
+      "kadras": 8,
+      "cue": 3,
+      "title": "Blokas „Apie mokyklą“",
+      "text": "Ketvirtas blokelis – kuo didžiuojatės.",
+      "file": "k08-3.wav",
+      "duration": 2.943,
+      "fits": true,
+      "reikia_sek": 13
     }
   ]
 }
